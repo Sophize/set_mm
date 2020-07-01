@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tcrank on Metamath](http://us.metamath.org/mpegif/tcrank.html)"
+  } ],
+  "names" : [ "tcrank" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wi", "#T_crnk", "#T_cfv", "#T_cA", "#T_wceq", "#T_crnk", "#T_cima", "#T_ctc", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This theorem expresses two different facts from the two subset implications in this equality.  In the forward direction, it says that the transitive closure has members of every rank below ` A ` .  Stated another way, to construct a set at a given rank, you have to climb the entire hierarchy of ordinals below ` ( rank `` A ) ` , constructing at least one set at each level in order to move up the ranks.  In the reverse direction, it says that every member of ` ( TC `` A ) ` has a rank below the rank of ` A ` , since intuitively it contains only the members of ` A ` and the members of those and so on, but nothing \"bigger\" than ` A ` .  (Contributed by Mario Carneiro, 23-Jun-2013.) ",
+  "statement" : "tcrank $p |- ( A e. U. ( R1 \" On ) -> ( rank ` A ) = ( rank \" ( TC ` A ) ) ) $."
+}

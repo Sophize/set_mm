@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mbfmax on Metamath](http://us.metamath.org/mpegif/mbfmax.html)"
+  } ],
+  "names" : [ "mbfmax" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cmbf", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmbf", "#T_cH", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cif--1", "#T_cF", "#T_cfv", "#T_vx", "#T_cle", "#T_cG", "#T_cfv", "#T_vx", "#T_cif--2", "#T_cG", "#T_cfv", "#T_vx", "#T_cif--3", "#T_cF", "#T_cfv", "#T_vx", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cmbf", "#T_cA", "#T_vx", "#T_cF", "#T_vx", "#T_cG", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The maximum of two functions is measurable.  (Contributed by Mario Carneiro, 18-Jun-2014.) ",
+  "statement" : "mbfmax.1 $e |- ( ph -> F : A --> RR ) $.\nmbfmax.2 $e |- ( ph -> F e. MblFn ) $.\nmbfmax.3 $e |- ( ph -> G : A --> RR ) $.\nmbfmax.4 $e |- ( ph -> G e. MblFn ) $.\nmbfmax.5 $e |- H = ( x e. A |-> if ( ( F ` x ) <_ ( G ` x ) , ( G ` x ) , ( F ` x ) ) ) $.\nmbfmax $p |- ( ph -> H e. MblFn ) $.\n$d A x $.\n$d F x $.\n$d G x $.\n$d ph x $."
+}

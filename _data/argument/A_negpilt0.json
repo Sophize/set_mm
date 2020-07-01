@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negpilt0 on Metamath](http://us.metamath.org/mpegif/negpilt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pipos | |- 0 < _pi |\n| 2 |  | #P_pire | |- _pi e. RR |\n| 3 |  | #P_lt0neg2 | |- ( _pi e. RR -> ( 0 < _pi <-> -u _pi < 0 ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( 0 < _pi <-> -u _pi < 0 ) |\n| 5 | 1, 4 | #P_mpbi | |- -u _pi < 0 |",
+  "conclusion" : "#P_negpilt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_clt", "#T_cpi", "#T_cpi", "#T_wcel", "#T_cr", "#T_cpi", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cpi", "#T_wb", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0", "#T_cc0", "#T_clt", "#T_cpi", "#T_wb", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_pire", "#P_mpbi", "#P_pipos", "#P_lt0neg2" ]
+}

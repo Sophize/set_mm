@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See restuni2 on Metamath](http://us.metamath.org/mpegif/restuni2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | restin.1 | |- X = U. J |\n| 2 |  | #P_simpl | |- ( ( J e. Top /\\ A e. V ) -> J e. Top ) |\n| 3 |  | #P_inss2 | |- ( A i^i X ) C_ X |\n| 4 | 1 | #P_restuni | |- ( ( J e. Top /\\ ( A i^i X ) C_ X ) -> ( A i^i X ) = U. ( J |`t ( A i^i X ) ) ) |\n| 5 | 2, 3, 4 | #P_sylancl | |- ( ( J e. Top /\\ A e. V ) -> ( A i^i X ) = U. ( J |`t ( A i^i X ) ) ) |\n| 6 | 1 | #P_restin | |- ( ( J e. Top /\\ A e. V ) -> ( J |`t A ) = ( J |`t ( A i^i X ) ) ) |\n| 7 | 6 | #P_unieqd | |- ( ( J e. Top /\\ A e. V ) -> U. ( J |`t A ) = U. ( J |`t ( A i^i X ) ) ) |\n| 8 | 5, 7 | #P_eqtr4d | |- ( ( J e. Top /\\ A e. V ) -> ( A i^i X ) = U. ( J |`t A ) ) |",
+  "conclusion" : "#P_restuni2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_wss", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cin", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_cin", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqd", "#P_inss2", "#P_sylancl", "#P_simpl", "#P_restuni", "#P_restin", "#P_eqtr4d" ]
+}

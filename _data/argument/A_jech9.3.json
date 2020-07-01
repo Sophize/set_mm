@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jech9.3 on Metamath](http://us.metamath.org/mpegif/jech9.3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r1fnon | |- R1 Fn On |\n| 2 |  | #P_fniunfv | |- ( R1 Fn On -> U_ x e. On ( R1 ` x ) = U. ran R1 ) |\n| 3 | 1, 2 | #P_ax-mp | |- U_ x e. On ( R1 ` x ) = U. ran R1 |\n| 4 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 5 | 1, 4 | #P_ax-mp | |- dom R1 = On |\n| 6 | 5 | #P_imaeq2i | |- ( R1 \" dom R1 ) = ( R1 \" On ) |\n| 7 |  | #P_imadmrn | |- ( R1 \" dom R1 ) = ran R1 |\n| 8 | 6, 7 | #P_eqtr3i | |- ( R1 \" On ) = ran R1 |\n| 9 | 8 | #P_unieqi | |- U. ( R1 \" On ) = U. ran R1 |\n| 10 |  | #P_unir1 | |- U. ( R1 \" On ) = _V |\n| 11 | 3, 9, 10 | #P_3eqtr2i | |- U_ x e. On ( R1 ` x ) = _V |",
+  "conclusion" : "#P_jech9.3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_con0", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cuni", "#T_crn", "#T_cr1", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_con0", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cuni", "#T_crn", "#T_cr1", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cr1", "#T_cima", "#T_cdm", "#T_cr1", "#T_wceq", "#T_cr1", "#T_cima", "#T_con0", "#T_cr1", "#T_cima", "#T_cdm", "#T_cr1", "#T_wceq", "#T_crn", "#T_cr1", "#T_cr1", "#T_cima", "#T_con0", "#T_wceq", "#T_crn", "#T_cr1", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wceq", "#T_cuni", "#T_crn", "#T_cr1", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wceq", "#T_cvv", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_con0", "#T_cr1", "#T_cfv", "#T_vx", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_3eqtr2i", "#P_ax-mp", "#P_imadmrn", "#P_unir1", "#P_fniunfv", "#P_eqtr3i", "#P_fndm", "#P_r1fnon", "#P_imaeq2i" ]
+}

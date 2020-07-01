@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-el on Metamath](http://us.metamath.org/mpegif/bj-el.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-zfpow | |- E. y A. z ( A. y ( y e. z -> y e. x ) -> z e. y ) |\n| 2 |  | #P_ax-9 | |- ( z = x -> ( y e. z -> y e. x ) ) |\n| 3 | 2 | #P_alrimiv | |- ( z = x -> A. y ( y e. z -> y e. x ) ) |\n| 4 |  | #P_ax-8 | |- ( z = x -> ( z e. y -> x e. y ) ) |\n| 5 | 3, 4 | #P_embantd | |- ( z = x -> ( ( A. y ( y e. z -> y e. x ) -> z e. y ) -> x e. y ) ) |\n| 6 | 5 | #P_bj-spimvv | |- ( A. z ( A. y ( y e. z -> y e. x ) -> z e. y ) -> x e. y ) |\n| 7 | 1, 6 | #P_eximii | |- E. y x e. y |\n\\\n Remove dependency on ~ ax-13 from ~ el .  (Contributed by BJ, 31-May-2019.)  (Proof modification is discouraged.) ",
+  "conclusion" : "#P_el",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wal", "#T_vz", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy", "#T_vx", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_embantd", "#P_ax-8", "#P_ax-9", "#P_bj-spimvv", "#P_eximii", "#P_alrimiv", "#P_bj-zfpow" ]
+}

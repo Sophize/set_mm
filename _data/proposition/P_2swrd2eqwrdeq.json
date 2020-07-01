@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2swrd2eqwrdeq on Metamath](http://us.metamath.org/mpegif/2swrd2eqwrdeq.html)"
+  } ],
+  "names" : [ "2swrd2eqwrdeq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_cU", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--2", "#T_c1", "#T_clt", "#T_chash", "#T_cfv", "#T_cW", "#T_wi", "#T_cW", "#T_wceq", "#T_cU", "#T_wb", "#T_chash", "#T_cfv", "#T_cW", "#T_wceq", "#T_chash", "#T_cfv", "#T_cU", "#T_wa", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c2", "#T_cop--3", "#T_wceq", "#T_cU", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c2", "#T_cop--3", "#T_w3a--1", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c2", "#T_wceq", "#T_cU", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c2", "#T_w3a--2", "#T_clsw", "#T_cfv", "#T_cW", "#T_wceq", "#T_clsw", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Two words of length at least 2 are equal if and only if they have the same prefix and the same two single symbols suffix.  (Contributed by AV, 24-Sep-2018.)  (Revised by Mario Carneiro/AV, 23-Oct-2018.) ",
+  "statement" : "2swrd2eqwrdeq $p |- ( ( W e. Word V /\\ U e. Word V /\\ 1 < ( # ` W ) ) -> ( W = U <-> ( ( # ` W ) = ( # ` U ) /\\ ( ( W substr <. 0 , ( ( # ` W ) - 2 ) >. ) = ( U substr <. 0 , ( ( # ` W ) - 2 ) >. ) /\\ ( W ` ( ( # ` W ) - 2 ) ) = ( U ` ( ( # ` W ) - 2 ) ) /\\ ( lastS ` W ) = ( lastS ` U ) ) ) ) ) $."
+}

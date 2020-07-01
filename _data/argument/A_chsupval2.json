@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chsupval2 on Metamath](http://us.metamath.org/mpegif/chsupval2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chsspwh | |- CH C_ ~P ~H |\n| 2 |  | #P_sstr2 | |- ( A C_ CH -> ( CH C_ ~P ~H -> A C_ ~P ~H ) ) |\n| 3 | 1, 2 | #P_mpi | |- ( A C_ CH -> A C_ ~P ~H ) |\n| 4 |  | #P_hsupval2 | |- ( A C_ ~P ~H -> ( \\/H ` A ) = |^| { x e. CH | U. A C_ x } ) |\n| 5 | 3, 4 | #P_syl | |- ( A C_ CH -> ( \\/H ` A ) = |^| { x e. CH | U. A C_ x } ) |",
+  "conclusion" : "#P_chsupval2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cch", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cch", "#T_wi", "#T_cch", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cch", "#T_crab--3", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA", "#T_wss", "#T_cch", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cch", "#T_crab--3", "#T_cuni", "#T_cA", "#T_wss", "#T_vx", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_chsspwh", "#P_hsupval2", "#P_mpi", "#P_syl" ]
+}

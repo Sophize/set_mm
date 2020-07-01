@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfii3 on Metamath](http://us.metamath.org/mpegif/dfii3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dfii3.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | #P_cnxmet | |- ( abs o. - ) e. ( *Met ` CC ) |\n| 3 |  | #P_unitssre | |- ( 0 [,] 1 ) C_ RR |\n| 4 |  | #P_ax-resscn | |- RR C_ CC |\n| 5 | 3, 4 | #P_sstri | |- ( 0 [,] 1 ) C_ CC |\n| 6 |  | #P_eqid | |- ( ( abs o. - ) |` ( ( 0 [,] 1 ) X. ( 0 [,] 1 ) ) ) = ( ( abs o. - ) |` ( ( 0 [,] 1 ) X. ( 0 [,] 1 ) ) ) |\n| 7 | 1 | #P_cnfldtopn | |- J = ( MetOpen ` ( abs o. - ) ) |\n| 8 |  | #P_df-ii | |- II = ( MetOpen ` ( ( abs o. - ) |` ( ( 0 [,] 1 ) X. ( 0 [,] 1 ) ) ) ) |\n| 9 | 6, 7, 8 | #P_metrest | |- ( ( ( abs o. - ) e. ( *Met ` CC ) /\\ ( 0 [,] 1 ) C_ CC ) -> ( J |`t ( 0 [,] 1 ) ) = II ) |\n| 10 | 2, 5, 9 | #P_mp2an | |- ( J |`t ( 0 [,] 1 ) ) = II |\n| 11 | 10 | #P_eqcomi | |- II = ( J |`t ( 0 [,] 1 ) ) |",
+  "conclusion" : "#P_dfii3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_cc0", "#T_cicc", "#T_c1", "#T_wss", "#T_cr", "#T_cr", "#T_wss", "#T_cc", "#T_cc0", "#T_cicc", "#T_c1", "#T_wss", "#T_cc", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cc0", "#T_cicc", "#T_c1", "#T_cxp", "#T_cc0", "#T_cicc", "#T_c1", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cc0", "#T_cicc", "#T_c1", "#T_cxp", "#T_cc0", "#T_cicc", "#T_c1", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cii", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cc0", "#T_cicc", "#T_c1", "#T_cxp", "#T_cc0", "#T_cicc", "#T_c1", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_wa", "#T_cc0", "#T_cicc", "#T_c1", "#T_wss", "#T_cc", "#T_wi", "#T_cJ", "#T_crest", "#T_cc0", "#T_cicc", "#T_c1", "#T_wceq", "#T_cii", "#T_cJ", "#T_crest", "#T_cc0", "#T_cicc", "#T_c1", "#T_wceq", "#T_cii", "#T_cii", "#T_wceq", "#T_cJ", "#T_crest", "#T_cc0", "#T_cicc", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unitssre", "#P_ax-resscn", "#P_eqid", "#P_df-ii", "#P_mp2an", "#P_cnfldtopn", "#P_sstri", "#P_metrest", "#P_cnxmet", "#P_eqcomi" ]
+}

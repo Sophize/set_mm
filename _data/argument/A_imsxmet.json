@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imsxmet on Metamath](http://us.metamath.org/mpegif/imsxmet.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | imsmet.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | imsmet.8 | |- D = ( IndMet ` U ) |\n| 3 | 1, 2 | #P_imsmet | |- ( U e. NrmCVec -> D e. ( Met ` X ) ) |\n| 4 |  | #P_metxmet | |- ( D e. ( Met ` X ) -> D e. ( *Met ` X ) ) |\n| 5 | 3, 4 | #P_syl | |- ( U e. NrmCVec -> D e. ( *Met ` X ) ) |",
+  "conclusion" : "#P_imsxmet",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wi", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imsmet", "#P_metxmet", "#P_syl" ]
+}

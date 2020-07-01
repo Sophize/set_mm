@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldualvaddcl on Metamath](http://us.metamath.org/mpegif/ldualvaddcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldualvaddcl.f | |- F = ( LFnl ` W ) |\n| 2 |  | ldualvaddcl.d | |- D = ( LDual ` W ) |\n| 3 |  | ldualvaddcl.p | |- .+ = ( +g ` D ) |\n| 4 |  | ldualvaddcl.w | |- ( ph -> W e. LMod ) |\n| 5 |  | ldualvaddcl.g | |- ( ph -> G e. F ) |\n| 6 |  | ldualvaddcl.h | |- ( ph -> H e. F ) |\n| 7 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 8 |  | #P_eqid | |- ( +g ` ( Scalar ` W ) ) = ( +g ` ( Scalar ` W ) ) |\n| 9 | 1, 7, 8, 2, 3, 4, 5, 6 | #P_ldualvadd | |- ( ph -> ( G .+ H ) = ( G oF ( +g ` ( Scalar ` W ) ) H ) ) |\n| 10 | 7, 8, 1, 4, 5, 6 | #P_lfladdcl | |- ( ph -> ( G oF ( +g ` ( Scalar ` W ) ) H ) e. F ) |\n| 11 | 9, 10 | #P_eqeltrd | |- ( ph -> ( G .+ H ) e. F ) |",
+  "conclusion" : "#P_ldualvaddcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_clfn", "#T_cfv", "#T_cW", "#T_cD", "#T_wceq", "#T_cld", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cF", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cF", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cG", "#T_c.pl", "#T_cH", "#T_wceq", "#T_cG", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cH", "#T_wph", "#T_wi", "#T_cG", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cH", "#T_wcel", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_c.pl", "#T_cH", "#T_wcel", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_lfladdcl", "#P_eqeltrd", "#P_ldualvadd" ]
+}

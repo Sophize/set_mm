@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpintrreld on Metamath](http://us.metamath.org/mpegif/xpintrreld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xpintrreld.r | |- ( ph -> ( R o. R ) C_ R ) |\n| 2 |  | xpintrreld.s | |- ( ph -> S = ( R i^i ( A X. B ) ) ) |\n| 3 |  | #P_xptrrel | |- ( ( A X. B ) o. ( A X. B ) ) C_ ( A X. B ) |\n| 4 | 3 | #P_a1i | |- ( ph -> ( ( A X. B ) o. ( A X. B ) ) C_ ( A X. B ) ) |\n| 5 | 1, 4, 2 | #P_trrelind | |- ( ph -> ( S o. S ) C_ S ) |",
+  "conclusion" : "#P_xpintrreld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_ccom", "#T_cR", "#T_wss", "#T_cR", "#T_wph", "#T_wi", "#T_cS", "#T_wceq", "#T_cR", "#T_cin", "#T_cA", "#T_cxp", "#T_cB", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cS", "#T_ccom", "#T_cS", "#T_wss", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trrelind", "#P_a1i", "#P_xptrrel" ]
+}

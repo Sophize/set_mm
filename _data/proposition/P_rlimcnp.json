@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlimcnp on Metamath](http://us.metamath.org/mpegif/rlimcnp.html)"
+  } ],
+  "names" : [ "rlimcnp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wph", "#T_wi", "#T_cc0", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_crp", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cR", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_crp", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wb", "#T_c1", "#T_cdiv", "#T_vx", "#T_wcel", "#T_cB", "#T_vx", "#T_wceq", "#T_cc0", "#T_wi", "#T_cR", "#T_wceq", "#T_cC", "#T_vx", "#T_wceq", "#T_c1", "#T_cdiv", "#T_vy", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wceq", "#T_cJ", "#T_crest", "#T_cA", "#T_wph", "#T_wi", "#T_vy", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cS", "#T_crli", "#T_cC", "#T_wb", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cR", "#T_wcel", "#T_cK", "#T_ccnp", "#T_cJ", "#T_cfv", "#T_cc0", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cR", "#T_vy", "#T_cS", "#T_vx", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Relate a limit of a real-valued sequence at infinity to the continuity of the function ` S ( y ) = R ( 1 / y ) ` at zero.  (Contributed by Mario Carneiro, 1-Mar-2015.) ",
+  "statement" : "rlimcnp.a $e |- ( ph -> A C_ ( 0 [,) +oo ) ) $.\nrlimcnp.0 $e |- ( ph -> 0 e. A ) $.\nrlimcnp.b $e |- ( ph -> B C_ RR+ ) $.\nrlimcnp.r $e |- ( ( ph /\\ x e. A ) -> R e. CC ) $.\nrlimcnp.d $e |- ( ( ph /\\ x e. RR+ ) -> ( x e. A <-> ( 1 / x ) e. B ) ) $.\nrlimcnp.c $e |- ( x = 0 -> R = C ) $.\nrlimcnp.s $e |- ( x = ( 1 / y ) -> R = S ) $.\nrlimcnp.j $e |- J = ( TopOpen ` CCfld ) $.\nrlimcnp.k $e |- K = ( J |`t A ) $.\nrlimcnp $p |- ( ph -> ( ( y e. B |-> S ) ~~>r C <-> ( x e. A |-> R ) e. ( ( K CnP J ) ` 0 ) ) ) $.\n$d A x y $.\n$d B x y $.\n$d C x y $.\n$d R y $.\n$d S x $.\n$d ph x y $."
+}

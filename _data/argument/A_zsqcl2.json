@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zsqcl2 on Metamath](http://us.metamath.org/mpegif/zsqcl2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zsqcl | |- ( A e. ZZ -> ( A ^ 2 ) e. ZZ ) |\n| 2 |  | #P_zre | |- ( A e. ZZ -> A e. RR ) |\n| 3 |  | #P_sqge0 | |- ( A e. RR -> 0 <_ ( A ^ 2 ) ) |\n| 4 | 2, 3 | #P_syl | |- ( A e. ZZ -> 0 <_ ( A ^ 2 ) ) |\n| 5 |  | #P_elnn0z | |- ( ( A ^ 2 ) e. NN0 <-> ( ( A ^ 2 ) e. ZZ /\\ 0 <_ ( A ^ 2 ) ) ) |\n| 6 | 1, 4, 5 | #P_sylanbrc | |- ( A e. ZZ -> ( A ^ 2 ) e. NN0 ) |",
+  "conclusion" : "#P_zsqcl2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cn0", "#T_wb", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cz", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_cexp", "#T_c2", "#T_wcel", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqge0", "#P_zre", "#P_syl", "#P_sylanbrc", "#P_zsqcl", "#P_elnn0z" ]
+}

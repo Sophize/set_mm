@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recgt1 on Metamath](http://us.metamath.org/mpegif/recgt1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_0lt1 | |- 0 < 1 |\n| 3 |  | #P_ltrec | |- ( ( ( 1 e. RR /\\ 0 < 1 ) /\\ ( A e. RR /\\ 0 < A ) ) -> ( 1 < A <-> ( 1 / A ) < ( 1 / 1 ) ) ) |\n| 4 | 1, 2, 3 | #P_mpanl12 | |- ( ( A e. RR /\\ 0 < A ) -> ( 1 < A <-> ( 1 / A ) < ( 1 / 1 ) ) ) |\n| 5 |  | #P_1div1e1 | |- ( 1 / 1 ) = 1 |\n| 6 | 5 | #P_breq2i | |- ( ( 1 / A ) < ( 1 / 1 ) <-> ( 1 / A ) < 1 ) |\n| 7 | 4, 6 | #P_syl6bb | |- ( ( A e. RR /\\ 0 < A ) -> ( 1 < A <-> ( 1 / A ) < 1 ) ) |",
+  "conclusion" : "#P_recgt1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_c1", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_c1", "#T_clt", "#T_cA.wceq", "#T_wb", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_cdiv", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_c1", "#T_clt", "#T_cA.wceq", "#T_wb", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_cdiv", "#T_c1", "#T_c1", "#T_cdiv", "#T_c1", "#T_wceq", "#T_c1", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_cdiv", "#T_c1", "#T_wb", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA", "#T_wi", "#T_c1", "#T_clt", "#T_cA", "#T_wb", "#T_c1", "#T_cdiv", "#T_cA", "#T_clt", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6bb", "#P_0lt1", "#P_ltrec", "#P_mpanl12", "#P_1div1e1", "#P_1re", "#P_breq2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlrel on Metamath](http://us.metamath.org/mpegif/hlrel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hlobn | |- ( x e. CHilOLD -> x e. CBan ) |\n| 2 | 1 | #P_ssriv | |- CHilOLD C_ CBan |\n| 3 |  | #P_bnrel | |- Rel CBan |\n| 4 |  | #P_relss | |- ( CHilOLD C_ CBan -> ( Rel CBan -> Rel CHilOLD ) ) |\n| 5 | 2, 3, 4 | #P_mp2 | |- Rel CHilOLD |",
+  "conclusion" : "#P_hlrel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_chlo", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ccbn", "#T_chlo", "#T_wss", "#T_ccbn", "#T_wrel", "#T_ccbn", "#T_chlo", "#T_wss", "#T_ccbn", "#T_wi", "#T_wrel", "#T_ccbn", "#T_wi", "#T_wrel", "#T_chlo", "#T_wrel", "#T_chlo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_hlobn", "#P_relss", "#P_bnrel", "#P_ssriv" ]
+}

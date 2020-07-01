@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfbi2 on Metamath](http://us.metamath.org/mpegif/dfbi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfbi1 | |- ( ( ph <-> ps ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) |\n| 2 |  | #P_df-an | |- ( ( ( ph -> ps ) /\\ ( ps -> ph ) ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) |\n| 3 | 1, 2 | #P_bitr4i | |- ( ( ph <-> ps ) <-> ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) |",
+  "conclusion" : "#P_dfbi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-an", "#P_bitr4i", "#P_dfbi1" ]
+}

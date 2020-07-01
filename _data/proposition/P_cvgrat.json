@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cvgrat on Metamath](http://us.metamath.org/mpegif/cvgrat.html)"
+  } ],
+  "names" : [ "cvgrat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cW", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cN", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_c1", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cZ", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cW", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_caddc", "#T_c1", "#T_cle", "#T_cA", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_cA", "#T_vk", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_cW", "#T_vk", "#T_cZ", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Ratio test for convergence of a complex infinite series.  If the ratio ` A ` of the absolute values of successive terms in an infinite sequence ` F ` is less than 1 for all terms beyond some index ` B ` , then the infinite sum of the terms of ` F ` converges to a complex number. Equivalent to first part of Exercise 4 of [Gleason] p. 182. (Contributed by NM, 26-Apr-2005.)  (Proof shortened by Mario Carneiro, 27-Apr-2014.) ",
+  "statement" : "cvgrat.1 $e |- Z = ( ZZ>= ` M ) $.\ncvgrat.2 $e |- W = ( ZZ>= ` N ) $.\ncvgrat.3 $e |- ( ph -> A e. RR ) $.\ncvgrat.4 $e |- ( ph -> A < 1 ) $.\ncvgrat.5 $e |- ( ph -> N e. Z ) $.\ncvgrat.6 $e |- ( ( ph /\\ k e. Z ) -> ( F ` k ) e. CC ) $.\ncvgrat.7 $e |- ( ( ph /\\ k e. W ) -> ( abs ` ( F ` ( k + 1 ) ) ) <_ ( A x. ( abs ` ( F ` k ) ) ) ) $.\ncvgrat $p |- ( ph -> seq M ( + , F ) e. dom ~~> ) $.\n$d A k $.\n$d F k $.\n$d M k $.\n$d N k $.\n$d W k $.\n$d Z k $.\n$d k ph $."
+}

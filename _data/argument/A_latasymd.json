@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latasymd on Metamath](http://us.metamath.org/mpegif/latasymd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | latasymd.b | |- B = ( Base ` K ) |\n| 2 |  | latasymd.l | |- .<_ = ( le ` K ) |\n| 3 |  | latasymd.3 | |- ( ph -> K e. Lat ) |\n| 4 |  | latasymd.4 | |- ( ph -> X e. B ) |\n| 5 |  | latasymd.5 | |- ( ph -> Y e. B ) |\n| 6 |  | latasymd.6 | |- ( ph -> X .<_ Y ) |\n| 7 |  | latasymd.7 | |- ( ph -> Y .<_ X ) |\n| 8 | 1, 2 | #P_latasymb | |- ( ( K e. Lat /\\ X e. B /\\ Y e. B ) -> ( ( X .<_ Y /\\ Y .<_ X ) <-> X = Y ) ) |\n| 9 | 3, 4, 5, 8 | #P_syl3anc | |- ( ph -> ( ( X .<_ Y /\\ Y .<_ X ) <-> X = Y ) ) |\n| 10 | 6, 7, 9 | #P_mpbi2and | |- ( ph -> X = Y ) |",
+  "conclusion" : "#P_latasymd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_clat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wph", "#T_wi", "#T_cY", "#T_c.le", "#T_cX", "#T_cK", "#T_wcel", "#T_clat", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wa", "#T_cY", "#T_c.le", "#T_cX", "#T_wb", "#T_cX", "#T_wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wa", "#T_cY", "#T_c.le", "#T_cX", "#T_wb", "#T_cX", "#T_wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbi2and", "#P_latasymb", "#P_syl3anc" ]
+}

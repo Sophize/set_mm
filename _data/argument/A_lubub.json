@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lubub on Metamath](http://us.metamath.org/mpegif/lubub.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lublem.b | |- B = ( Base ` K ) |\n| 2 |  | lublem.l | |- .<_ = ( le ` K ) |\n| 3 |  | lublem.u | |- U = ( lub ` K ) |\n| 4 | 1, 2, 3 | #P_lublem | |- ( ( K e. CLat /\\ S C_ B ) -> ( A. y e. S y .<_ ( U ` S ) /\\ A. z e. B ( A. y e. S y .<_ z -> ( U ` S ) .<_ z ) ) ) |\n| 5 | 4 | #P_simpld | |- ( ( K e. CLat /\\ S C_ B ) -> A. y e. S y .<_ ( U ` S ) ) |\n| 6 |  | #P_breq1 | |- ( y = X -> ( y .<_ ( U ` S ) <-> X .<_ ( U ` S ) ) ) |\n| 7 | 6 | #P_rspccva | |- ( ( A. y e. S y .<_ ( U ` S ) /\\ X e. S ) -> X .<_ ( U ` S ) ) |\n| 8 | 5, 7 | #P_stoic3 | |- ( ( K e. CLat /\\ S C_ B /\\ X e. S ) -> X .<_ ( U ` S ) ) |",
+  "conclusion" : "#P_lubub",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vz", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vy.tru", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vy.tru", "#T_c.le", "#T_vz", "#T_wi", "#T_cU", "#T_cfv", "#T_cS", "#T_c.le", "#T_vz", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vy.tru", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_wi", "#T_vy.tru", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_wb", "#T_cX", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vy.tru", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_wa", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_cK", "#T_wcel", "#T_ccla", "#T_w3a--1", "#T_cS", "#T_wss", "#T_cB", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_stoic3", "#P_breq1", "#P_rspccva", "#P_simpld", "#P_lublem" ]
+}

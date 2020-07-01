@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hhims on Metamath](http://us.metamath.org/mpegif/hhims.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhnv.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 |  | hhims.2 | |- D = ( normh o. -h ) |\n| 3 | 1 | #P_hhnv | |- U e. NrmCVec |\n| 4 | 1 | #P_hhvs | |- -h = ( -v ` U ) |\n| 5 | 1 | #P_hhnm | |- normh = ( normCV ` U ) |\n| 6 |  | #P_eqid | |- ( IndMet ` U ) = ( IndMet ` U ) |\n| 7 | 4, 5, 6 | #P_imsval | |- ( U e. NrmCVec -> ( IndMet ` U ) = ( normh o. -h ) ) |\n| 8 | 3, 7 | #P_ax-mp | |- ( IndMet ` U ) = ( normh o. -h ) |\n| 9 | 2, 8 | #P_eqtr4i | |- D = ( IndMet ` U ) |",
+  "conclusion" : "#P_hhims",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cD", "#T_wceq", "#T_cno", "#T_ccom", "#T_cmv", "#T_cU", "#T_wcel", "#T_cnv", "#T_cmv", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU", "#T_cno", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cno", "#T_ccom", "#T_cmv", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cno", "#T_ccom", "#T_cmv", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_ax-mp", "#P_hhnv", "#P_hhvs", "#P_hhnm", "#P_imsval" ]
+}

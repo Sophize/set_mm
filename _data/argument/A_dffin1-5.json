@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dffin1-5 on Metamath](http://us.metamath.org/mpegif/dffin1-5.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ensymb | |- ( x ~~ y <-> y ~~ x ) |\n| 2 | 1 | #P_rexbii | |- ( E. y e. _om x ~~ y <-> E. y e. _om y ~~ x ) |\n| 3 | 2 | #P_abbii | |- { x | E. y e. _om x ~~ y } = { x | E. y e. _om y ~~ x } |\n| 4 |  | #P_df-fin | |- Fin = { x | E. y e. _om x ~~ y } |\n| 5 |  | #P_dfima2 | |- ( ~~ \" _om ) = { x | E. y e. _om y ~~ x } |\n| 6 | 3, 4, 5 | #P_3eqtr4i | |- Fin = ( ~~ \" _om ) |",
+  "conclusion" : "#P_dffin1-5",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_cfn", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_cab--3", "#T_cen", "#T_cima", "#T_com", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_com", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_cfn", "#T_wceq", "#T_cen", "#T_cima", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ensymb", "#P_3eqtr4i", "#P_abbii", "#P_df-fin", "#P_dfima2", "#P_rexbii" ]
+}

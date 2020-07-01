@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bitri on Metamath](http://us.metamath.org/mpegif/bitri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bitri.1 | |- ( ph <-> ps ) |\n| 2 |  | bitri.2 | |- ( ps <-> ch ) |\n| 3 | 1 | #P_biimpi | |- ( ph -> ps ) |\n| 4 | 3, 2 | #P_sylib | |- ( ph -> ch ) |\n| 5 | 2 | #P_biimpri | |- ( ch -> ps ) |\n| 6 | 5, 1 | #P_sylibr | |- ( ch -> ph ) |\n| 7 | 4, 6 | #P_impbii | |- ( ph <-> ch ) |",
+  "conclusion" : "#P_bitri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_sylibr", "#P_sylib", "#P_biimpi", "#P_biimpri" ]
+}

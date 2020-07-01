@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inindif on Metamath](http://us.metamath.org/mpegif/inindif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inss2 | |- ( A i^i C ) C_ C |\n| 2 | 1 | #P_orci | |- ( ( A i^i C ) C_ C \\/ A C_ C ) |\n| 3 |  | #P_inss | |- ( ( ( A i^i C ) C_ C \\/ A C_ C ) -> ( ( A i^i C ) i^i A ) C_ C ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( ( A i^i C ) i^i A ) C_ C |\n| 5 |  | #P_inssdif0 | |- ( ( ( A i^i C ) i^i A ) C_ C <-> ( ( A i^i C ) i^i ( A \\ C ) ) = (/) ) |\n| 6 | 4, 5 | #P_mpbi | |- ( ( A i^i C ) i^i ( A \\ C ) ) = (/) |",
+  "conclusion" : "#P_inindif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cC", "#T_wo", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cC", "#T_wo", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_c0", "#T_cA", "#T_cin", "#T_cC", "#T_cin", "#T_cA", "#T_cdif", "#T_cC", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_inssdif0", "#P_ax-mp", "#P_orci", "#P_mpbi", "#P_inss2", "#P_inss" ]
+}

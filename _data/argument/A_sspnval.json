@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sspnval on Metamath](http://us.metamath.org/mpegif/sspnval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sspn.y | |- Y = ( BaseSet ` W ) |\n| 2 |  | sspn.n | |- N = ( normCV ` U ) |\n| 3 |  | sspn.m | |- M = ( normCV ` W ) |\n| 4 |  | sspn.h | |- H = ( SubSp ` U ) |\n| 5 | 1, 2, 3, 4 | #P_sspn | |- ( ( U e. NrmCVec /\\ W e. H ) -> M = ( N |` Y ) ) |\n| 6 | 5 | #P_fveq1d | |- ( ( U e. NrmCVec /\\ W e. H ) -> ( M ` A ) = ( ( N |` Y ) ` A ) ) |\n| 7 |  | #P_fvres | |- ( A e. Y -> ( ( N |` Y ) ` A ) = ( N ` A ) ) |\n| 8 | 6, 7 | #P_sylan9eq | |- ( ( ( U e. NrmCVec /\\ W e. H ) /\\ A e. Y ) -> ( M ` A ) = ( N ` A ) ) |\n| 9 | 8 | #P_3impa | |- ( ( U e. NrmCVec /\\ W e. H /\\ A e. Y ) -> ( M ` A ) = ( N ` A ) ) |",
+  "conclusion" : "#P_sspnval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_cba", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cM", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cW", "#T_cH", "#T_wceq", "#T_css", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cM", "#T_wceq", "#T_cN", "#T_cres", "#T_cY", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cM", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cN", "#T_cres", "#T_cY", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cY", "#T_wi", "#T_cN", "#T_cres", "#T_cY", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cY", "#T_wi", "#T_cM", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--2", "#T_cA", "#T_wcel", "#T_cY", "#T_wi", "#T_cM", "#T_cfv", "#T_cA", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvres", "#P_fveq1d", "#P_sspn", "#P_3impa", "#P_sylan9eq" ]
+}

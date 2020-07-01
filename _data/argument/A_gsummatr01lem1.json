@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsummatr01lem1 on Metamath](http://us.metamath.org/mpegif/gsummatr01lem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsummatr01.p | |- P = ( Base ` ( SymGrp ` N ) ) |\n| 2 |  | gsummatr01.r | |- R = { r e. P | ( r ` K ) = L } |\n| 3 |  | #P_fveq1 | |- ( r = Q -> ( r ` K ) = ( Q ` K ) ) |\n| 4 | 3 | #P_eqeq1d | |- ( r = Q -> ( ( r ` K ) = L <-> ( Q ` K ) = L ) ) |\n| 5 | 4, 2 | #P_elrab2 | |- ( Q e. R <-> ( Q e. P /\\ ( Q ` K ) = L ) ) |\n| 6 | 5 | #P_simplbi | |- ( Q e. R -> Q e. P ) |\n| 7 |  | #P_eqid | |- ( SymGrp ` N ) = ( SymGrp ` N ) |\n| 8 | 7, 1 | #P_symgfv | |- ( ( Q e. P /\\ X e. N ) -> ( Q ` X ) e. N ) |\n| 9 | 6, 8 | #P_sylan | |- ( ( Q e. R /\\ X e. N ) -> ( Q ` X ) e. N ) |",
+  "conclusion" : "#P_gsummatr01lem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cR", "#T_wceq", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vr", "#T_cfv", "#T_cK", "#T_wceq", "#T_cL", "#T_crab--4", "#T_vr", "#T_wceq", "#T_cQ", "#T_wi", "#T_vr", "#T_cfv", "#T_cK", "#T_wceq", "#T_cQ", "#T_cfv", "#T_cK", "#T_vr", "#T_wceq", "#T_cQ", "#T_wi", "#T_vr", "#T_cfv", "#T_cK", "#T_wceq", "#T_cL", "#T_wb", "#T_cQ", "#T_cfv", "#T_cK", "#T_wceq", "#T_cL", "#T_cQ", "#T_wcel", "#T_cR", "#T_wb", "#T_cQ", "#T_wcel", "#T_cP", "#T_wa", "#T_cQ", "#T_cfv", "#T_cK", "#T_wceq", "#T_cL", "#T_cQ", "#T_wcel", "#T_cR", "#T_wi", "#T_cQ", "#T_wcel", "#T_cP", "#T_csymg", "#T_cfv", "#T_cN", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wcel", "#T_cP", "#T_wa", "#T_cX", "#T_wcel", "#T_cN", "#T_wi", "#T_cQ", "#T_cfv", "#T_cX", "#T_wcel", "#T_cN", "#T_cQ", "#T_wcel", "#T_cR", "#T_wa", "#T_cX", "#T_wcel", "#T_cN", "#T_wi", "#T_cQ", "#T_cfv", "#T_cX", "#T_wcel", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_symgfv", "#P_elrab2", "#P_eqid", "#P_simplbi", "#P_sylan", "#P_eqeq1d", "#P_fveq1" ]
+}

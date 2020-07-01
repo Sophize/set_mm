@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See snss on Metamath](http://us.metamath.org/mpegif/snss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | snss.1 | |- A e. _V |\n| 2 |  | #P_elsn | |- ( x e. { A } <-> x = A ) |\n| 3 | 2 | #P_imbi1i | |- ( ( x e. { A } -> x e. B ) <-> ( x = A -> x e. B ) ) |\n| 4 | 3 | #P_albii | |- ( A. x ( x e. { A } -> x e. B ) <-> A. x ( x = A -> x e. B ) ) |\n| 5 |  | #P_dfss2 | |- ( { A } C_ B <-> A. x ( x e. { A } -> x e. B ) ) |\n| 6 | 1 | #P_clel2 | |- ( A e. B <-> A. x ( x = A -> x e. B ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4ri | |- ( A e. B <-> { A } C_ B ) |",
+  "conclusion" : "#P_snss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_albii", "#P_dfss2", "#P_3bitr4ri", "#P_elsn", "#P_clel2" ]
+}

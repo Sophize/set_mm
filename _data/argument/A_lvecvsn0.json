@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lvecvsn0 on Metamath](http://us.metamath.org/mpegif/lvecvsn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lvecmul0or.v | |- V = ( Base ` W ) |\n| 2 |  | lvecmul0or.s | |- .x. = ( .s ` W ) |\n| 3 |  | lvecmul0or.f | |- F = ( Scalar ` W ) |\n| 4 |  | lvecmul0or.k | |- K = ( Base ` F ) |\n| 5 |  | lvecmul0or.o | |- O = ( 0g ` F ) |\n| 6 |  | lvecmul0or.z | |- .0. = ( 0g ` W ) |\n| 7 |  | lvecmul0or.w | |- ( ph -> W e. LVec ) |\n| 8 |  | lvecmul0or.a | |- ( ph -> A e. K ) |\n| 9 |  | lvecmul0or.x | |- ( ph -> X e. V ) |\n| 10 | 1, 2, 3, 4, 5, 6, 7, 8, 9 | #P_lvecvs0or | |- ( ph -> ( ( A .x. X ) = .0. <-> ( A = O \\/ X = .0. ) ) ) |\n| 11 | 10 | #P_necon3abid | |- ( ph -> ( ( A .x. X ) =/= .0. <-> -. ( A = O \\/ X = .0. ) ) ) |\n| 12 |  | #P_neanior | |- ( ( A =/= O /\\ X =/= .0. ) <-> -. ( A = O \\/ X = .0. ) ) |\n| 13 | 11, 12 | #P_syl6bbr | |- ( ph -> ( ( A .x. X ) =/= .0. <-> ( A =/= O /\\ X =/= .0. ) ) ) |",
+  "conclusion" : "#P_lvecvsn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cO", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cF", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cK", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_c.x", "#T_cX", "#T_wceq", "#T_c.0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cO", "#T_wo", "#T_cX", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_c.x", "#T_cX", "#T_wne", "#T_c.0", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cO", "#T_wo", "#T_cX", "#T_wceq", "#T_c.0", "#T_cA.wceq", "#T_wne", "#T_cO", "#T_wa", "#T_cX", "#T_wne", "#T_c.0", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cO", "#T_wo", "#T_cX", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_cA", "#T_c.x", "#T_cX", "#T_wne", "#T_c.0", "#T_wb", "#T_cA", "#T_wne", "#T_cO", "#T_wa", "#T_cX", "#T_wne", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3abid", "#P_lvecvs0or", "#P_neanior", "#P_syl6bbr" ]
+}

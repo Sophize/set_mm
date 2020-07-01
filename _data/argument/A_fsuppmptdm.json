@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsuppmptdm on Metamath](http://us.metamath.org/mpegif/fsuppmptdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fsuppmptdm.f | |- F = ( x e. A |-> Y ) |\n| 2 |  | fsuppmptdm.a | |- ( ph -> A e. Fin ) |\n| 3 |  | fsuppmptdm.y | |- ( ( ph /\\ x e. A ) -> Y e. V ) |\n| 4 |  | fsuppmptdm.z | |- ( ph -> Z e. W ) |\n| 5 | 3, 1 | #P_fmptd | |- ( ph -> F : A --> V ) |\n| 6 | 5, 2, 4 | #P_fdmfifsupp | |- ( ph -> F finSupp Z ) |",
+  "conclusion" : "#P_fsuppmptdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cY", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdmfifsupp", "#P_fmptd" ]
+}

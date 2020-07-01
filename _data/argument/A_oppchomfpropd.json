@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oppchomfpropd on Metamath](http://us.metamath.org/mpegif/oppchomfpropd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oppchomfpropd.1 | |- ( ph -> ( Homf ` C ) = ( Homf ` D ) ) |\n| 2 | 1 | #P_tposeqd | |- ( ph -> tpos ( Homf ` C ) = tpos ( Homf ` D ) ) |\n| 3 |  | #P_eqid | |- ( oppCat ` C ) = ( oppCat ` C ) |\n| 4 |  | #P_eqid | |- ( Homf ` C ) = ( Homf ` C ) |\n| 5 | 3, 4 | #P_oppchomf | |- tpos ( Homf ` C ) = ( Homf ` ( oppCat ` C ) ) |\n| 6 |  | #P_eqid | |- ( oppCat ` D ) = ( oppCat ` D ) |\n| 7 |  | #P_eqid | |- ( Homf ` D ) = ( Homf ` D ) |\n| 8 | 6, 7 | #P_oppchomf | |- tpos ( Homf ` D ) = ( Homf ` ( oppCat ` D ) ) |\n| 9 | 2, 5, 8 | #P_3eqtr3g | |- ( ph -> ( Homf ` ( oppCat ` C ) ) = ( Homf ` ( oppCat ` D ) ) ) |",
+  "conclusion" : "#P_oppchomfpropd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_ctpos", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_ctpos", "#T_chomf", "#T_cfv", "#T_cD", "#T_coppc", "#T_cfv", "#T_cC", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cC", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_ctpos", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_coppc", "#T_cfv", "#T_cC", "#T_coppc", "#T_cfv", "#T_cD", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cD", "#T_chomf", "#T_cfv", "#T_cD", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cD", "#T_ctpos", "#T_chomf", "#T_cfv", "#T_cD", "#T_wceq", "#T_chomf", "#T_cfv", "#T_coppc", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_chomf", "#T_cfv", "#T_coppc", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_coppc", "#T_cfv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_tposeqd", "#P_oppchomf", "#P_3eqtr3g" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See locfinbas on Metamath](http://us.metamath.org/mpegif/locfinbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn s x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | locfinbas.1 | |- X = U. J |\n| 2 |  | locfinbas.2 | |- Y = U. A |\n| 3 | 1, 2 | #P_islocfin | |- ( A e. ( LocFin ` J ) <-> ( J e. Top /\\ X = Y /\\ A. s e. X E. n e. J ( s e. n /\\ { x e. A | ( x i^i n ) =/= (/) } e. Fin ) ) ) |\n| 4 | 3 | #P_simp2bi | |- ( A e. ( LocFin ` J ) -> X = Y ) |",
+  "conclusion" : "#P_locfinbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vs", "#T_vx", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cY", "#T_wceq", "#T_cuni", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_clocfin", "#T_cfv", "#T_cJ", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_cX", "#T_wceq", "#T_cY", "#T_w3a--2", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cX", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cJ", "#T_vs", "#T_wcel", "#T_vn", "#T_wa", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vx.wal", "#T_cin", "#T_vn", "#T_wne", "#T_c0", "#T_crab--4", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_clocfin", "#T_cfv", "#T_cJ", "#T_wi", "#T_cX", "#T_wceq", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simp2bi", "#P_islocfin" ]
+}

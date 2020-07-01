@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See predeq1 on Metamath](http://us.metamath.org/mpegif/predeq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- A = A |\n| 2 |  | #P_eqid | |- X = X |\n| 3 |  | #P_predeq123 | |- ( ( R = S /\\ A = A /\\ X = X ) -> Pred ( R , A , X ) = Pred ( S , A , X ) ) |\n| 4 | 1, 2, 3 | #P_mp3an23 | |- ( R = S -> Pred ( R , A , X ) = Pred ( S , A , X ) ) |",
+  "conclusion" : "#P_predeq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cX", "#T_wceq", "#T_cX", "#T_cR", "#T_wceq", "#T_cS", "#T_w3a--1", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_w3a--2", "#T_cX", "#T_wceq", "#T_cX", "#T_wi", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_wceq", "#T_cpred--1", "#T_cS", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_cR", "#T_wceq", "#T_cS", "#T_wi", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_cX", "#T_wceq", "#T_cpred--1", "#T_cS", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mp3an23", "#P_predeq123" ]
+}

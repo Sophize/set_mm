@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See soirri on Metamath](http://us.metamath.org/mpegif/soirri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | soi.1 | |- R Or S |\n| 2 |  | soi.2 | |- R C_ ( S X. S ) |\n| 3 |  | #P_sonr | |- ( ( R Or S /\\ A e. S ) -> -. A R A ) |\n| 4 | 1, 3 | #P_mpan | |- ( A e. S -> -. A R A ) |\n| 5 | 4 | #P_adantl | |- ( ( A e. S /\\ A e. S ) -> -. A R A ) |\n| 6 | 2 | #P_brel | |- ( A R A -> ( A e. S /\\ A e. S ) ) |\n| 7 | 6 | #P_con3i | |- ( -. ( A e. S /\\ A e. S ) -> -. A R A ) |\n| 8 | 5, 7 | #P_pm2.61i | |- -. A R A |",
+  "conclusion" : "#P_soirri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wor", "#T_cS", "#T_cR", "#T_wss", "#T_cS", "#T_cxp", "#T_cS", "#T_cR", "#T_wor", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wn", "#T_cA", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_mpan", "#P_con3i", "#P_sonr", "#P_pm2.61i", "#P_brel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brwdom3i on Metamath](http://us.metamath.org/mpegif/brwdom3i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relwdom | |- Rel ~<_* |\n| 2 | 1 | #P_brrelexi | |- ( X ~<_* Y -> X e. _V ) |\n| 3 | 1 | #P_brrelex2i | |- ( X ~<_* Y -> Y e. _V ) |\n| 4 |  | #P_brwdom3 | |- ( ( X e. _V /\\ Y e. _V ) -> ( X ~<_* Y <-> E. f A. x e. X E. y e. Y x = ( f ` y ) ) ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( X ~<_* Y -> ( X ~<_* Y <-> E. f A. x e. X E. y e. Y x = ( f ` y ) ) ) |\n| 6 | 5 | #P_ibi | |- ( X ~<_* Y -> E. f A. x e. X E. y e. Y x = ( f ` y ) ) |",
+  "conclusion" : "#P_brwdom3i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cwdom", "#T_cX", "#T_cwdom", "#T_cY", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_cX", "#T_cwdom", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_cwdom", "#T_cY", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cY", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vf", "#T_cfv", "#T_vy.tru", "#T_cX", "#T_cwdom", "#T_cY", "#T_wi", "#T_cX", "#T_cwdom", "#T_cY", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cY", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vf", "#T_cfv", "#T_vy.tru", "#T_cX", "#T_cwdom", "#T_cY", "#T_wi", "#T_wex", "#T_vf", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cY", "#T_vx", "#T_wceq", "#T_vf", "#T_cfv", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_brwdom3", "#P_ibi", "#P_relwdom", "#P_syl2anc", "#P_brrelex2i", "#P_brrelexi" ]
+}

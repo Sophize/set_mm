@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvply2 on Metamath](http://us.metamath.org/mpegif/dvply2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnring | |- CCfld e. Ring |\n| 2 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 3 | 2 | #P_subrgid | |- ( CCfld e. Ring -> CC e. ( SubRing ` CCfld ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- CC e. ( SubRing ` CCfld ) |\n| 5 |  | #P_plyssc | |- ( Poly ` S ) C_ ( Poly ` CC ) |\n| 6 | 5 | #P_sseli | |- ( F e. ( Poly ` S ) -> F e. ( Poly ` CC ) ) |\n| 7 |  | #P_dvply2g | |- ( ( CC e. ( SubRing ` CCfld ) /\\ F e. ( Poly ` CC ) ) -> ( CC _D F ) e. ( Poly ` CC ) ) |\n| 8 | 4, 6, 7 | #P_sylancr | |- ( F e. ( Poly ` S ) -> ( CC _D F ) e. ( Poly ` CC ) ) |",
+  "conclusion" : "#P_dvply2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_crg", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_wi", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cply", "#T_cfv", "#T_cS", "#T_wss", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_wi", "#T_cc", "#T_cdv", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cc", "#T_cdv", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnring", "#P_ax-mp", "#P_sseli", "#P_sylancr", "#P_subrgid", "#P_plyssc", "#P_dvply2g", "#P_cnfldbas" ]
+}

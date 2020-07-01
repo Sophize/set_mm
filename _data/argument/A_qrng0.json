@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qrng0 on Metamath](http://us.metamath.org/mpegif/qrng0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qrng.q | |- Q = ( CCfld |`s QQ ) |\n| 2 |  | #P_qsubdrg | |- ( QQ e. ( SubRing ` CCfld ) /\\ ( CCfld |`s QQ ) e. DivRing ) |\n| 3 | 2 | #P_simpli | |- QQ e. ( SubRing ` CCfld ) |\n| 4 |  | #P_subrgsubg | |- ( QQ e. ( SubRing ` CCfld ) -> QQ e. ( SubGrp ` CCfld ) ) |\n| 5 |  | #P_cnfld0 | |- 0 = ( 0g ` CCfld ) |\n| 6 | 1, 5 | #P_subg0 | |- ( QQ e. ( SubGrp ` CCfld ) -> 0 = ( 0g ` Q ) ) |\n| 7 | 3, 4, 6 | #P_mp2b | |- 0 = ( 0g ` Q ) |",
+  "conclusion" : "#P_qrng0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cq", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_ccnfld", "#T_cress", "#T_cq", "#T_wcel", "#T_cdr", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cq", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_cq", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cQ", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_qsubdrg", "#P_subg0", "#P_cnfld0", "#P_simpli", "#P_subrgsubg", "#P_mp2b" ]
+}

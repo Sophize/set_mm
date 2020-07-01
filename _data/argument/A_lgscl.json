@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lgscl on Metamath](http://us.metamath.org/mpegif/lgscl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssrab2 | |- { x e. ZZ | ( abs ` x ) <_ 1 } C_ ZZ |\n| 2 |  | #P_eqid | |- { x e. ZZ | ( abs ` x ) <_ 1 } = { x e. ZZ | ( abs ` x ) <_ 1 } |\n| 3 | 2 | #P_lgscl2 | |- ( ( A e. ZZ /\\ N e. ZZ ) -> ( A /L N ) e. { x e. ZZ | ( abs ` x ) <_ 1 } ) |\n| 4 | 1, 3 | #P_sseldi | |- ( ( A e. ZZ /\\ N e. ZZ ) -> ( A /L N ) e. ZZ ) |",
+  "conclusion" : "#P_lgscl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c1", "#T_crab--4", "#T_wss", "#T_cz", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c1", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c1", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_clgs", "#T_cN", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c1", "#T_crab--4", "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_clgs", "#T_cN", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrab2", "#P_eqid", "#P_sseldi", "#P_lgscl2" ]
+}

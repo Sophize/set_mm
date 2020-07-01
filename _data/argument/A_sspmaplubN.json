@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sspmaplubN on Metamath](http://us.metamath.org/mpegif/sspmaplubN.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sspmaplub.u | |- U = ( lub ` K ) |\n| 2 |  | sspmaplub.a | |- A = ( Atoms ` K ) |\n| 3 |  | sspmaplub.m | |- M = ( pmap ` K ) |\n| 4 |  | #P_eqid | |- ( _|_P ` K ) = ( _|_P ` K ) |\n| 5 | 2, 4 | #P_2polssN | |- ( ( K e. HL /\\ S C_ A ) -> S C_ ( ( _|_P ` K ) ` ( ( _|_P ` K ) ` S ) ) ) |\n| 6 | 1, 2, 3, 4 | #P_2polvalN | |- ( ( K e. HL /\\ S C_ A ) -> ( ( _|_P ` K ) ` ( ( _|_P ` K ) ` S ) ) = ( M ` ( U ` S ) ) ) |\n| 7 | 5, 6 | #P_sseqtrd | |- ( ( K e. HL /\\ S C_ A ) -> S C_ ( M ` ( U ` S ) ) ) |",
+  "conclusion" : "#P_sspmaplubN",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cM", "#T_wceq", "#T_cpmap", "#T_cfv", "#T_cK", "#T_cpolN", "#T_cfv", "#T_cK", "#T_wceq", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cS", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_wss", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cS", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cS", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cS", "#T_wceq", "#T_cM", "#T_cfv", "#T_cU", "#T_cfv", "#T_cS", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cS", "#T_wss", "#T_cA", "#T_wi", "#T_cS", "#T_wss", "#T_cM", "#T_cfv", "#T_cU", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_2polssN", "#P_sseqtrd", "#P_2polvalN" ]
+}

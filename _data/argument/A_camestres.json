@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See camestres on Metamath](http://us.metamath.org/mpegif/camestres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | camestres.maj | |- A. x ( ph -> ps ) |\n| 2 |  | camestres.min | |- A. x ( ch -> -. ps ) |\n| 3 | 2 | #P_spi | |- ( ch -> -. ps ) |\n| 4 | 1 | #P_spi | |- ( ph -> ps ) |\n| 5 | 3, 4 | #P_nsyl | |- ( ch -> -. ph ) |\n| 6 | 5 | #P_ax-gen | |- A. x ( ch -> -. ph ) |",
+  "conclusion" : "#P_camestres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nsyl", "#P_spi", "#P_ax-gen" ]
+}

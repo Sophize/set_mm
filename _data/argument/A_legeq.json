@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See legeq on Metamath](http://us.metamath.org/mpegif/legeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | legval.p | |- P = ( Base ` G ) |\n| 2 |  | legval.d | |- .- = ( dist ` G ) |\n| 3 |  | legval.i | |- I = ( Itv ` G ) |\n| 4 |  | legval.l | |- .<_ = ( leG ` G ) |\n| 5 |  | legval.g | |- ( ph -> G e. TarskiG ) |\n| 6 |  | legid.a | |- ( ph -> A e. P ) |\n| 7 |  | legid.b | |- ( ph -> B e. P ) |\n| 8 |  | legtrd.c | |- ( ph -> C e. P ) |\n| 9 |  | legtrd.d | |- ( ph -> D e. P ) |\n| 10 |  | legeq.1 | |- ( ph -> ( A .- B ) .<_ ( C .- C ) ) |\n| 11 | 1, 2, 3, 4, 5, 8, 6, 6, 7 | #P_leg0 | |- ( ph -> ( C .- C ) .<_ ( A .- B ) ) |\n| 12 | 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11 | #P_legtri3 | |- ( ph -> ( A .- B ) = ( C .- C ) ) |\n| 13 | 1, 2, 3, 5, 6, 7, 8, 12 | #P_axtgcgrid | |- ( ph -> A = B ) |",
+  "conclusion" : "#P_legeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_c.le", "#T_wceq", "#T_cleg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_c.mi", "#T_cB", "#T_c.le", "#T_cC", "#T_c.mi", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_c.mi", "#T_cC", "#T_c.le", "#T_cA.wceq", "#T_c.mi", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_c.mi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_c.mi", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_axtgcgrid", "#P_legtri3", "#P_leg0" ]
+}

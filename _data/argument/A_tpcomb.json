@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpcomb on Metamath](http://us.metamath.org/mpegif/tpcomb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tpcoma | |- { B , C , A } = { C , B , A } |\n| 2 |  | #P_tprot | |- { A , B , C } = { B , C , A } |\n| 3 |  | #P_tprot | |- { A , C , B } = { C , B , A } |\n| 4 | 1, 2, 3 | #P_3eqtr4i | |- { A , B , C } = { A , C , B } |",
+  "conclusion" : "#P_tpcomb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctp--1", "#T_cB.wceq", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_wceq", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_ctp--1", "#T_cB.wceq", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cB.wceq", "#T_ctp--4", "#T_wceq", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cB", "#T_ctp--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_tprot", "#P_tpcoma" ]
+}

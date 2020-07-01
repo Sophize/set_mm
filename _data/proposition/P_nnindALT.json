@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnindALT on Metamath](http://us.metamath.org/mpegif/nnindALT.html)"
+  } ],
+  "names" : [ "nnindALT" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cn", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_vx", "#T_wceq", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cA", "#T_wcel", "#T_cn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Mathematical Induction (inference schema).  The last four hypotheses give us the substitution instances we need; the first two are the induction step and the basis. This ALT version of ~ nnind has a different hypothesis order.  It may be easier to use with the metamath program's Proof Assistant, because \"MM-PA> assign last\" will be applied to the substitution instances first.  We may eventually use this one as the official version.  You may use either version.  After the proof is complete, the ALT version can be changed to the non-ALT version with \"MM-PA> minimize nnind /allow\". (Contributed by NM, 7-Dec-2005.)  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "statement" : "nnindALT.6 $e |- ( y e. NN -> ( ch -> th ) ) $.\nnnindALT.5 $e |- ps $.\nnnindALT.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.\nnnindALT.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nnnindALT.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nnnindALT.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nnnindALT $p |- ( A e. NN -> ta ) $.\n$d A x $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y $."
+}

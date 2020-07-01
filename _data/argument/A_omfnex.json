@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See omfnex on Metamath](http://us.metamath.org/mpegif/omfnex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 |  | #P_oaexg | |- ( ( x e. _V /\\ A e. V ) -> ( x +o A ) e. _V ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. V -> ( x +o A ) e. _V ) |\n| 4 | 3 | #P_ralrimivw | |- ( A e. V -> A. x e. _V ( x +o A ) e. _V ) |\n| 5 |  | #P_eqid | |- ( x e. _V |-> ( x +o A ) ) = ( x e. _V |-> ( x +o A ) ) |\n| 6 | 5 | #P_fnmpt | |- ( A. x e. _V ( x +o A ) e. _V -> ( x e. _V |-> ( x +o A ) ) Fn _V ) |\n| 7 | 4, 6 | #P_syl | |- ( A e. V -> ( x e. _V |-> ( x +o A ) ) Fn _V ) |",
+  "conclusion" : "#P_omfnex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cvv", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cvv", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_coa", "#T_cA.wceq", "#T_wfn", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_coa", "#T_cA", "#T_wfn", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oaexg", "#P_eqid", "#P_mpan", "#P_syl", "#P_vex", "#P_ralrimivw", "#P_fnmpt" ]
+}

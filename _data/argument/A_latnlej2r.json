@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latnlej2r on Metamath](http://us.metamath.org/mpegif/latnlej2r.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | latlej.b | |- B = ( Base ` K ) |\n| 2 |  | latlej.l | |- .<_ = ( le ` K ) |\n| 3 |  | latlej.j | |- .\\/ = ( join ` K ) |\n| 4 | 1, 2, 3 | #P_latnlej2 | |- ( ( K e. Lat /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) /\\ -. X .<_ ( Y .\\/ Z ) ) -> ( -. X .<_ Y /\\ -. X .<_ Z ) ) |\n| 5 | 4 | #P_simprd | |- ( ( K e. Lat /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) /\\ -. X .<_ ( Y .\\/ Z ) ) -> -. X .<_ Z ) |",
+  "conclusion" : "#P_latnlej2r",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_c.or", "#T_cZ", "#T_wi", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_wa", "#T_wn", "#T_cX", "#T_c.le", "#T_cZ", "#T_cK", "#T_wcel", "#T_clat", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_c.or", "#T_cZ", "#T_wi", "#T_wn", "#T_cX", "#T_c.le", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_latnlej2", "#P_simprd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elpwgdedVD on Metamath](http://us.metamath.org/mpegif/elpwgdedVD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elpwgdedVD.1 | |- (. ph ->. A e. _V ). |\n| 2 |  | elpwgdedVD.2 | |- (. ps ->. A C_ B ). |\n| 3 |  | #P_elpwg | |- ( A e. _V -> ( A e. ~P B <-> A C_ B ) ) |\n| 4 | 3 | #P_biimpar | |- ( ( A e. _V /\\ A C_ B ) -> A e. ~P B ) |\n| 5 | 1, 2, 4 | #P_el12 | |- (. (. ph ,. ps ). ->. A e. ~P B ). |",
+  "conclusion" : "#P_elpwgdedVD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_cA", "#T_wcel", "#T_cvv", "#T_wvd1--3", "#T_wvd1--1", "#T_wps", "#T_wvd1--2", "#T_cA", "#T_wss", "#T_cB", "#T_wvd1--3", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wvd1--1", "#T_wvhc2--1", "#T_wph", "#T_wvhc2--2", "#T_wps", "#T_wvhc2--3", "#T_wvd1--2", "#T_cA", "#T_wcel", "#T_cpw", "#T_cB", "#T_wvd1--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_el12", "#P_biimpar", "#P_elpwg" ]
+}

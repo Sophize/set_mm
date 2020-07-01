@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqsstrd on Metamath](http://us.metamath.org/mpegif/eqsstrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqsstrd.1 | |- ( ph -> A = B ) |\n| 2 |  | eqsstrd.2 | |- ( ph -> B C_ C ) |\n| 3 | 1 | #P_sseq1d | |- ( ph -> ( A C_ C <-> B C_ C ) ) |\n| 4 | 2, 3 | #P_mpbird | |- ( ph -> A C_ C ) |",
+  "conclusion" : "#P_eqsstrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq1d", "#P_mpbird" ]
+}

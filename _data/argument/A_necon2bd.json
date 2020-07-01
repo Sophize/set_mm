@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon2bd on Metamath](http://us.metamath.org/mpegif/necon2bd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon2bd.1 | |- ( ph -> ( ps -> A =/= B ) ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 1, 2 | #P_syl6ib | |- ( ph -> ( ps -> -. A = B ) ) |\n| 4 | 3 | #P_con2d | |- ( ph -> ( A = B -> -. ps ) ) |",
+  "conclusion" : "#P_necon2bd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ne", "#P_syl6ib", "#P_con2d" ]
+}

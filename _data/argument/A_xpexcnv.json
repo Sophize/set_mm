@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpexcnv on Metamath](http://us.metamath.org/mpegif/xpexcnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dmexg | |- ( ( A X. B ) e. _V -> dom ( A X. B ) e. _V ) |\n| 2 |  | #P_dmxp | |- ( B =/= (/) -> dom ( A X. B ) = A ) |\n| 3 | 2 | #P_eleq1d | |- ( B =/= (/) -> ( dom ( A X. B ) e. _V <-> A e. _V ) ) |\n| 4 | 1, 3 | #P_syl5ib | |- ( B =/= (/) -> ( ( A X. B ) e. _V -> A e. _V ) ) |\n| 5 | 4 | #P_imp | |- ( ( B =/= (/) /\\ ( A X. B ) e. _V ) -> A e. _V ) |",
+  "conclusion" : "#P_xpexcnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cB", "#T_wne", "#T_c0", "#T_wa", "#T_cA", "#T_cxp", "#T_cB", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dmxp", "#P_dmexg", "#P_imp", "#P_syl5ib", "#P_eleq1d" ]
+}

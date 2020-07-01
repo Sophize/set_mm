@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See atancj on Metamath](http://us.metamath.org/mpegif/atancj.html)"
+  } ],
+  "names" : [ "atancj" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cre", "#T_cfv", "#T_cA", "#T_wne", "#T_cc0", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_catan", "#T_wa", "#T_ccj", "#T_cfv", "#T_catan", "#T_cfv", "#T_cA", "#T_wceq", "#T_catan", "#T_cfv", "#T_ccj", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The arctangent function distributes under conjugation.  (The condition that ` Re ( A ) =/= 0 ` is necessary because the branch cuts are chosen so that the negative imaginary line \"agrees with\" neighboring values with negative real part, while the positive imaginary line agrees with values with positive real part.  This makes ~ atanneg true unconditionally but messes up conjugation symmetry, and it is impossible to have both in a single-valued function.  The claim is true on the imaginary line between ` -u 1 ` and ` 1 ` , though.)  (Contributed by Mario Carneiro, 31-Mar-2015.) ",
+  "statement" : "atancj $p |- ( ( A e. CC /\\ ( Re ` A ) =/= 0 ) -> ( A e. dom arctan /\\ ( * ` ( arctan ` A ) ) = ( arctan ` ( * ` A ) ) ) ) $."
+}

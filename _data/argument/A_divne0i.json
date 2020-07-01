@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divne0i on Metamath](http://us.metamath.org/mpegif/divne0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divneq0.3 | |- A =/= 0 |\n| 4 |  | divneq0.4 | |- B =/= 0 |\n| 5 |  | #P_divne0 | |- ( ( ( A e. CC /\\ A =/= 0 ) /\\ ( B e. CC /\\ B =/= 0 ) ) -> ( A / B ) =/= 0 ) |\n| 6 | 1, 3, 2, 4, 5 | #P_mp4an | |- ( A / B ) =/= 0 |",
+  "conclusion" : "#P_divne0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA", "#T_wne", "#T_cc0", "#T_cB", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_cA", "#T_cdiv", "#T_cB", "#T_wne", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_divne0", "#P_mp4an" ]
+}

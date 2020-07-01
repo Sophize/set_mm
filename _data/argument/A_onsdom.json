@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onsdom on Metamath](http://us.metamath.org/mpegif/onsdom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_harcl | |- ( har ` A ) e. On |\n| 2 |  | #P_harsdom | |- ( A e. dom card -> A ~< ( har ` A ) ) |\n| 3 |  | #P_breq2 | |- ( x = ( har ` A ) -> ( A ~< x <-> A ~< ( har ` A ) ) ) |\n| 4 | 3 | #P_rspcev | |- ( ( ( har ` A ) e. On /\\ A ~< ( har ` A ) ) -> E. x e. On A ~< x ) |\n| 5 | 1, 2, 4 | #P_sylancr | |- ( A e. dom card -> E. x e. On A ~< x ) |",
+  "conclusion" : "#P_onsdom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_char", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_char", "#T_cfv", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_char", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_char", "#T_cfv", "#T_cA.wceq", "#T_char", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_csdm", "#T_char", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_cA.wceq", "#T_csdm", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_cA", "#T_csdm", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_harsdom", "#P_sylancr", "#P_breq2", "#P_rspcev", "#P_harcl" ]
+}

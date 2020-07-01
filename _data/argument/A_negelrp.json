@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negelrp on Metamath](http://us.metamath.org/mpegif/negelrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elrp | |- ( -u A e. RR+ <-> ( -u A e. RR /\\ 0 < -u A ) ) |\n| 2 |  | #P_lt0neg1 | |- ( A e. RR -> ( A < 0 <-> 0 < -u A ) ) |\n| 3 |  | #P_renegcl | |- ( A e. RR -> -u A e. RR ) |\n| 4 | 3 | #P_biantrurd | |- ( A e. RR -> ( 0 < -u A <-> ( -u A e. RR /\\ 0 < -u A ) ) ) |\n| 5 | 2, 4 | #P_bitr2d | |- ( A e. RR -> ( ( -u A e. RR /\\ 0 < -u A ) <-> A < 0 ) ) |\n| 6 | 1, 5 | #P_syl5bb | |- ( A e. RR -> ( -u A e. RR+ <-> A < 0 ) ) |",
+  "conclusion" : "#P_negelrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wb", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA", "#T_wcel", "#T_crp", "#T_wb", "#T_cA", "#T_clt", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lt0neg1", "#P_syl5bb", "#P_biantrurd", "#P_bitr2d", "#P_renegcl", "#P_elrp" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ustuni on Metamath](http://us.metamath.org/mpegif/ustuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ustbasel | |- ( U e. ( UnifOn ` X ) -> ( X X. X ) e. U ) |\n| 2 |  | #P_ustssxp | |- ( ( U e. ( UnifOn ` X ) /\\ u e. U ) -> u C_ ( X X. X ) ) |\n| 3 | 2 | #P_ralrimiva | |- ( U e. ( UnifOn ` X ) -> A. u e. U u C_ ( X X. X ) ) |\n| 4 |  | #P_pwssb | |- ( U C_ ~P ( X X. X ) <-> A. u e. U u C_ ( X X. X ) ) |\n| 5 | 3, 4 | #P_sylibr | |- ( U e. ( UnifOn ` X ) -> U C_ ~P ( X X. X ) ) |\n| 6 |  | #P_elpwuni | |- ( ( X X. X ) e. U -> ( U C_ ~P ( X X. X ) <-> U. U = ( X X. X ) ) ) |\n| 7 | 6 | #P_biimpa | |- ( ( ( X X. X ) e. U /\\ U C_ ~P ( X X. X ) ) -> U. U = ( X X. X ) ) |\n| 8 | 1, 5, 7 | #P_syl2anc | |- ( U e. ( UnifOn ` X ) -> U. U = ( X X. X ) ) |",
+  "conclusion" : "#P_ustuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cU", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wa", "#T_vu", "#T_wcel", "#T_cU", "#T_wi", "#T_vu", "#T_wss", "#T_cX", "#T_cxp", "#T_cX", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_wral--1", "#T_vu", "#T_wral--2", "#T_cU", "#T_vu", "#T_wss", "#T_cX", "#T_cxp", "#T_cX", "#T_cU", "#T_wss", "#T_cpw", "#T_cX", "#T_cxp", "#T_cX", "#T_wb", "#T_wral--1", "#T_vu", "#T_wral--2", "#T_cU", "#T_vu", "#T_wss", "#T_cX", "#T_cxp", "#T_cX", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cU", "#T_wss", "#T_cpw", "#T_cX", "#T_cxp", "#T_cX", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cU", "#T_wss", "#T_cpw", "#T_cX", "#T_cxp", "#T_cX", "#T_wb", "#T_cuni", "#T_cU", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cU", "#T_wss", "#T_cpw", "#T_cX", "#T_cxp", "#T_cX", "#T_wi", "#T_cuni", "#T_cU", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cuni", "#T_cU", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwssb", "#P_biimpa", "#P_syl2anc", "#P_ustssxp", "#P_sylibr", "#P_ralrimiva", "#P_ustbasel", "#P_elpwuni" ]
+}

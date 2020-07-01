@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See soeq2 on Metamath](http://us.metamath.org/mpegif/soeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_soss | |- ( A C_ B -> ( R Or B -> R Or A ) ) |\n| 2 |  | #P_soss | |- ( B C_ A -> ( R Or A -> R Or B ) ) |\n| 3 | 1, 2 | #P_anim12i | |- ( ( A C_ B /\\ B C_ A ) -> ( ( R Or B -> R Or A ) /\\ ( R Or A -> R Or B ) ) ) |\n| 4 |  | #P_eqss | |- ( A = B <-> ( A C_ B /\\ B C_ A ) ) |\n| 5 |  | #P_dfbi2 | |- ( ( R Or B <-> R Or A ) <-> ( ( R Or B -> R Or A ) /\\ ( R Or A -> R Or B ) ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4i | |- ( A = B -> ( R Or B <-> R Or A ) ) |\n| 7 | 6 | #P_bicomd | |- ( A = B -> ( R Or A <-> R Or B ) ) |",
+  "conclusion" : "#P_soeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wb", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wb", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wor", "#T_cA", "#T_wb", "#T_cR", "#T_wor", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_soss", "#P_3imtr4i", "#P_eqss", "#P_bicomd", "#P_anim12i", "#P_dfbi2" ]
+}

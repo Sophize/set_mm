@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunot on Metamath](http://us.metamath.org/mpegif/wunot.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wun0.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wunop.2 | |- ( ph -> A e. U ) |\n| 3 |  | wunop.3 | |- ( ph -> B e. U ) |\n| 4 |  | wunot.3 | |- ( ph -> C e. U ) |\n| 5 |  | #P_df-ot | |- <. A , B , C >. = <. <. A , B >. , C >. |\n| 6 | 1, 2, 3 | #P_wunop | |- ( ph -> <. A , B >. e. U ) |\n| 7 | 1, 6, 4 | #P_wunop | |- ( ph -> <. <. A , B >. , C >. e. U ) |\n| 8 | 5, 7 | #P_syl5eqel | |- ( ph -> <. A , B , C >. e. U ) |",
+  "conclusion" : "#P_wunot",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cU", "#T_cotp--1", "#T_cA.wceq", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wph", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cotp--1", "#T_cA", "#T_cotp--2", "#T_cB", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunop", "#P_df-ot", "#P_syl5eqel" ]
+}

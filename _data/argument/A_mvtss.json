@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvtss on Metamath](http://us.metamath.org/mpegif/mvtss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mvtss.f | |- F = ( mVT ` T ) |\n| 2 |  | mvtss.k | |- K = ( mTC ` T ) |\n| 3 |  | #P_eqid | |- ( mType ` T ) = ( mType ` T ) |\n| 4 | 1, 3 | #P_mvtval | |- F = ran ( mType ` T ) |\n| 5 |  | #P_eqid | |- ( mVR ` T ) = ( mVR ` T ) |\n| 6 | 5, 2, 3 | #P_mtyf2 | |- ( T e. mFS -> ( mType ` T ) : ( mVR ` T ) --> K ) |\n| 7 |  | #P_frn | |- ( ( mType ` T ) : ( mVR ` T ) --> K -> ran ( mType ` T ) C_ K ) |\n| 8 | 6, 7 | #P_syl | |- ( T e. mFS -> ran ( mType ` T ) C_ K ) |\n| 9 | 4, 8 | #P_syl5eqss | |- ( T e. mFS -> F C_ K ) |",
+  "conclusion" : "#P_mvtss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cmvt", "#T_cfv", "#T_cT", "#T_cK", "#T_wceq", "#T_cmtc", "#T_cfv", "#T_cT", "#T_cmty", "#T_cfv", "#T_cT", "#T_wceq", "#T_cmty", "#T_cfv", "#T_cT", "#T_cF", "#T_wceq", "#T_crn", "#T_cmty", "#T_cfv", "#T_cT", "#T_cmvar", "#T_cfv", "#T_cT", "#T_wceq", "#T_cmvar", "#T_cfv", "#T_cT", "#T_cT", "#T_wcel", "#T_cmfs", "#T_wi", "#T_cmty", "#T_cfv", "#T_cT", "#T_wf--1", "#T_cmvar", "#T_cfv", "#T_cT", "#T_wf--2", "#T_cK", "#T_cmty", "#T_cfv", "#T_cT", "#T_wf--1", "#T_cmvar", "#T_cfv", "#T_cT", "#T_wf--2", "#T_cK", "#T_wi", "#T_crn", "#T_cmty", "#T_cfv", "#T_cT", "#T_wss", "#T_cK", "#T_cT", "#T_wcel", "#T_cmfs", "#T_wi", "#T_crn", "#T_cmty", "#T_cfv", "#T_cT", "#T_wss", "#T_cK", "#T_cT", "#T_wcel", "#T_cmfs", "#T_wi", "#T_cF", "#T_wss", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_syl5eqss", "#P_mtyf2", "#P_mvtval", "#P_syl", "#P_frn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsummptfif1o on Metamath](http://us.metamath.org/mpegif/gsummptfif1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsummptcl.b | |- B = ( Base ` G ) |\n| 2 |  | gsummptcl.g | |- ( ph -> G e. CMnd ) |\n| 3 |  | gsummptcl.n | |- ( ph -> N e. Fin ) |\n| 4 |  | gsummptcl.e | |- ( ph -> A. i e. N X e. B ) |\n| 5 |  | gsummptfif1o.f | |- F = ( i e. N |-> X ) |\n| 6 |  | gsummptfif1o.h | |- ( ph -> H : C -1-1-onto-> N ) |\n| 7 |  | #P_eqid | |- ( 0g ` G ) = ( 0g ` G ) |\n| 8 | 5 | #P_fmpt | |- ( A. i e. N X e. B <-> F : N --> B ) |\n| 9 | 4, 8 | #P_sylib | |- ( ph -> F : N --> B ) |\n| 10 |  | #P_fvex | |- ( 0g ` G ) e. _V |\n| 11 | 10 | #P_a1i | |- ( ph -> ( 0g ` G ) e. _V ) |\n| 12 | 9, 3, 11 | #P_fdmfifsupp | |- ( ph -> F finSupp ( 0g ` G ) ) |\n| 13 | 1, 7, 2, 3, 9, 12, 6 | #P_gsumf1o | |- ( ph -> ( G gsum F ) = ( G gsum ( F o. H ) ) ) |",
+  "conclusion" : "#P_gsummptfif1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_cX", "#T_wcel", "#T_cB", "#T_cF", "#T_wceq", "#T_vi", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_wph", "#T_wi", "#T_cH", "#T_wf1o--1", "#T_cC", "#T_wf1o--2", "#T_cN", "#T_c0g", "#T_cfv", "#T_cG", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf--1", "#T_cN", "#T_wf--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cN", "#T_wf--2", "#T_cB.wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_c0g", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wceq", "#T_cG", "#T_cgsu", "#T_cF", "#T_ccom", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_gsumf1o", "#P_fmpt", "#P_sylib", "#P_a1i", "#P_fvex", "#P_fdmfifsupp" ]
+}

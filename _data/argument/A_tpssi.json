@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpssi on Metamath](http://us.metamath.org/mpegif/tpssi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-tp | |- { A , B , C } = ( { A , B } u. { C } ) |\n| 2 |  | #P_prssi | |- ( ( A e. D /\\ B e. D ) -> { A , B } C_ D ) |\n| 3 | 2 | #P_3adant3 | |- ( ( A e. D /\\ B e. D /\\ C e. D ) -> { A , B } C_ D ) |\n| 4 |  | #P_snssi | |- ( C e. D -> { C } C_ D ) |\n| 5 | 4 | #P_3ad2ant3 | |- ( ( A e. D /\\ B e. D /\\ C e. D ) -> { C } C_ D ) |\n| 6 | 3, 5 | #P_unssd | |- ( ( A e. D /\\ B e. D /\\ C e. D ) -> ( { A , B } u. { C } ) C_ D ) |\n| 7 | 1, 6 | #P_syl5eqss | |- ( ( A e. D /\\ B e. D /\\ C e. D ) -> { A , B , C } C_ D ) |",
+  "conclusion" : "#P_tpssi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cD", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wss", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wss", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wss", "#T_cD", "#T_cA", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wss", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqss", "#P_prssi", "#P_3ad2ant3", "#P_unssd", "#P_snssi", "#P_df-tp", "#P_3adant3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wl-equsal on Metamath](http://us.metamath.org/mpegif/wl-equsal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wl-equsal.1 | |- F/ x ps |\n| 2 |  | wl-equsal.2 | |- ( x = y -> ( ph <-> ps ) ) |\n| 3 |  | #P_nftru | |- F/ x T. |\n| 4 | 1 | #P_a1i | |- ( T. -> F/ x ps ) |\n| 5 | 2 | #P_a1i | |- ( T. -> ( x = y -> ( ph <-> ps ) ) ) |\n| 6 | 3, 4, 5 | #P_wl-equsald | |- ( T. -> ( A. x ( x = y -> ph ) <-> ps ) ) |\n| 7 | 6 | #P_trud | |- ( A. x ( x = y -> ph ) <-> ps ) |",
+  "conclusion" : "#P_wl-equsal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wtru", "#T_wtru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wtru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wtru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_a1i", "#P_nftru", "#P_wl-equsald" ]
+}

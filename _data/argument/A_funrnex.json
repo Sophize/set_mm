@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funrnex on Metamath](http://us.metamath.org/mpegif/funrnex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funex | |- ( ( Fun F /\\ dom F e. B ) -> F e. _V ) |\n| 2 | 1 | #P_ex | |- ( Fun F -> ( dom F e. B -> F e. _V ) ) |\n| 3 |  | #P_rnexg | |- ( F e. _V -> ran F e. _V ) |\n| 4 | 2, 3 | #P_syl6com | |- ( dom F e. B -> ( Fun F -> ran F e. _V ) ) |",
+  "conclusion" : "#P_funrnex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_wfun", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cvv", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cF", "#T_wcel", "#T_cB", "#T_wi", "#T_wfun", "#T_cF", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6com", "#P_rnexg", "#P_ex", "#P_funex" ]
+}

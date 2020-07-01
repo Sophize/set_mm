@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See harmonic on Metamath](http://us.metamath.org/mpegif/harmonic.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "Divergence of the Harmonic Series", "harmonic" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_c1", "#T_cdiv", "#T_vn", "#T_cH", "#T_wceq", "#T_cseq--1", "#T_c1", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wn", "#T_cH", "#T_wcel", "#T_cdm", "#T_cli" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The harmonic series ` H ` diverges.  This fact follows from the stronger ~ emcl , which establishes that the harmonic series grows as ` log n + gamma + ` _o_(1), but this uses a more elementary method, attributed to Nicole Oresme (1323-1382).  This is Metamath 100 proof #34.  (Contributed by Mario Carneiro, 11-Jul-2014.) ",
+  "statement" : "harmonic.1 $e |- F = ( n e. NN |-> ( 1 / n ) ) $.\nharmonic.2 $e |- H = seq 1 ( + , F ) $.\nharmonic $p |- -. H e. dom ~~> $."
+}

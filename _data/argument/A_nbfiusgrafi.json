@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbfiusgrafi on Metamath](http://us.metamath.org/mpegif/nbfiusgrafi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simp1 | |- ( ( V USGrph E /\\ V e. Fin /\\ N e. V ) -> V USGrph E ) |\n| 2 |  | #P_simp3 | |- ( ( V USGrph E /\\ V e. Fin /\\ N e. V ) -> N e. V ) |\n| 3 |  | #P_usgrafis | |- ( ( V USGrph E /\\ V e. Fin ) -> E e. Fin ) |\n| 4 | 3 | #P_3adant3 | |- ( ( V USGrph E /\\ V e. Fin /\\ N e. V ) -> E e. Fin ) |\n| 5 |  | #P_nbusgrafi | |- ( ( V USGrph E /\\ N e. V /\\ E e. Fin ) -> ( <. V , E >. Neighbors N ) e. Fin ) |\n| 6 | 1, 2, 4, 5 | #P_syl3anc | |- ( ( V USGrph E /\\ V e. Fin /\\ N e. V ) -> ( <. V , E >. Neighbors N ) e. Fin ) |",
+  "conclusion" : "#P_nbfiusgrafi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cV", "#T_cusg", "#T_cE", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cN", "#T_wcel", "#T_cV", "#T_cV", "#T_cusg", "#T_cE", "#T_wa", "#T_cV", "#T_wcel", "#T_cfn", "#T_wi", "#T_cE", "#T_wcel", "#T_cfn", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cE", "#T_wcel", "#T_cfn", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cE", "#T_wcel", "#T_cfn", "#T_wi", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cN", "#T_wcel", "#T_cfn", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cN", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_usgrafis", "#P_nbusgrafi", "#P_simp3", "#P_syl3anc", "#P_simp1", "#P_3adant3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zring0 on Metamath](http://us.metamath.org/mpegif/zring0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cncrng | |- CCfld e. CRing |\n| 2 |  | #P_crngring | |- ( CCfld e. CRing -> CCfld e. Ring ) |\n| 3 |  | #P_ringmnd | |- ( CCfld e. Ring -> CCfld e. Mnd ) |\n| 4 | 1, 2, 3 | #P_mp2b | |- CCfld e. Mnd |\n| 5 |  | #P_0z | |- 0 e. ZZ |\n| 6 |  | #P_zsscn | |- ZZ C_ CC |\n| 7 |  | #P_df-zring | |- ZZring = ( CCfld |`s ZZ ) |\n| 8 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 9 |  | #P_cnfld0 | |- 0 = ( 0g ` CCfld ) |\n| 10 | 7, 8, 9 | #P_ress0g | |- ( ( CCfld e. Mnd /\\ 0 e. ZZ /\\ ZZ C_ CC ) -> 0 = ( 0g ` ZZring ) ) |\n| 11 | 4, 5, 6, 10 | #P_mp3an | |- 0 = ( 0g ` ZZring ) |",
+  "conclusion" : "#P_zring0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_wi", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_wi", "#T_ccnfld", "#T_wcel", "#T_cmnd", "#T_ccnfld", "#T_wcel", "#T_cmnd", "#T_cc0", "#T_wcel", "#T_cz", "#T_cz", "#T_wss", "#T_cc", "#T_zring", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cz", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cmnd", "#T_w3a--1", "#T_cc0", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cz", "#T_wss", "#T_cc", "#T_wi", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_zring", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_zring" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cncrng", "#P_mp3an", "#P_df-zring", "#P_zsscn", "#P_crngring", "#P_cnfld0", "#P_ress0g", "#P_mp2b", "#P_0z", "#P_cnfldbas", "#P_ringmnd" ]
+}

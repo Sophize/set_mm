@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chj4i on Metamath](http://us.metamath.org/mpegif/chj4i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | chj12.1 | |- A e. CH |\n| 2 |  | chj12.2 | |- B e. CH |\n| 3 |  | chj12.3 | |- C e. CH |\n| 4 |  | chj4.4 | |- D e. CH |\n| 5 | 2, 3, 4 | #P_chj12i | |- ( B vH ( C vH D ) ) = ( C vH ( B vH D ) ) |\n| 6 | 5 | #P_oveq2i | |- ( A vH ( B vH ( C vH D ) ) ) = ( A vH ( C vH ( B vH D ) ) ) |\n| 7 | 3, 4 | #P_chjcli | |- ( C vH D ) e. CH |\n| 8 | 1, 2, 7 | #P_chjassi | |- ( ( A vH B ) vH ( C vH D ) ) = ( A vH ( B vH ( C vH D ) ) ) |\n| 9 | 2, 4 | #P_chjcli | |- ( B vH D ) e. CH |\n| 10 | 1, 3, 9 | #P_chjassi | |- ( ( A vH C ) vH ( B vH D ) ) = ( A vH ( C vH ( B vH D ) ) ) |\n| 11 | 6, 8, 10 | #P_3eqtr4i | |- ( ( A vH B ) vH ( C vH D ) ) = ( ( A vH C ) vH ( B vH D ) ) |",
+  "conclusion" : "#P_chj4i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cC", "#T_wcel", "#T_cch", "#T_cD", "#T_wcel", "#T_cch", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cD", "#T_wceq", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cD", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cD", "#T_cC", "#T_chj", "#T_cD", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cD", "#T_cB.wceq", "#T_chj", "#T_cD", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cD", "#T_cA", "#T_chj", "#T_cB", "#T_chj", "#T_cC", "#T_chj", "#T_cD", "#T_wceq", "#T_cA", "#T_chj", "#T_cC", "#T_chj", "#T_cB", "#T_chj", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_chj12i", "#P_chjcli", "#P_chjassi", "#P_oveq2i" ]
+}

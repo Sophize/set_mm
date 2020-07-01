@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tustopn on Metamath](http://us.metamath.org/mpegif/tustopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tuslem.k | |- K = ( toUnifSp ` U ) |\n| 2 |  | tustopn.j | |- J = ( unifTop ` U ) |\n| 3 | 1 | #P_tuslem | |- ( U e. ( UnifOn ` X ) -> ( X = ( Base ` K ) /\\ U = ( UnifSet ` K ) /\\ ( unifTop ` U ) = ( TopOpen ` K ) ) ) |\n| 4 | 3 | #P_simp3d | |- ( U e. ( UnifOn ` X ) -> ( unifTop ` U ) = ( TopOpen ` K ) ) |\n| 5 | 2, 4 | #P_syl5eq | |- ( U e. ( UnifOn ` X ) -> J = ( TopOpen ` K ) ) |",
+  "conclusion" : "#P_tustopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_ctus", "#T_cfv", "#T_cU", "#T_cJ", "#T_wceq", "#T_cutop", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_w3a--1", "#T_cU", "#T_wceq", "#T_cunif", "#T_cfv", "#T_cK", "#T_w3a--2", "#T_cutop", "#T_cfv", "#T_cU", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cU", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tuslem", "#P_syl5eq", "#P_simp3d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relogiso on Metamath](http://us.metamath.org/mpegif/relogiso.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reefiso | |- ( exp |` RR ) Isom < , < ( RR , RR+ ) |\n| 2 |  | #P_isocnv | |- ( ( exp |` RR ) Isom < , < ( RR , RR+ ) -> `' ( exp |` RR ) Isom < , < ( RR+ , RR ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- `' ( exp |` RR ) Isom < , < ( RR+ , RR ) |\n| 4 |  | #P_dfrelog | |- ( log |` RR+ ) = `' ( exp |` RR ) |\n| 5 |  | #P_isoeq1 | |- ( ( log |` RR+ ) = `' ( exp |` RR ) -> ( ( log |` RR+ ) Isom < , < ( RR+ , RR ) <-> `' ( exp |` RR ) Isom < , < ( RR+ , RR ) ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( ( log |` RR+ ) Isom < , < ( RR+ , RR ) <-> `' ( exp |` RR ) Isom < , < ( RR+ , RR ) ) |\n| 7 | 3, 6 | #P_mpbir | |- ( log |` RR+ ) Isom < , < ( RR+ , RR ) |",
+  "conclusion" : "#P_relogiso",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_cr", "#T_wiso--3", "#T_crp", "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_cr", "#T_wiso--3", "#T_crp", "#T_wi", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_clog", "#T_cres", "#T_crp", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_clog", "#T_cres", "#T_crp", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wi", "#T_clog", "#T_cres", "#T_crp", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_wb", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_clog", "#T_cres", "#T_crp", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_wb", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr", "#T_clog", "#T_cres", "#T_crp", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_crp", "#T_wiso--3", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_reefiso", "#P_isocnv", "#P_mpbir", "#P_isoeq1", "#P_dfrelog" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-dcbi on Metamath](http://us.metamath.org/mpegif/bj-dcbi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( ( ph <-> ps ) -> ( ph <-> ps ) ) |\n| 2 |  | #P_bj-notbi | |- ( ( ph <-> ps ) -> ( -. ph <-> -. ps ) ) |\n| 3 | 1, 2 | #P_orbi12d | |- ( ( ph <-> ps ) -> ( ( ph \\/ -. ph ) <-> ( ps \\/ -. ps ) ) ) |\n| 4 |  | #P_df-dc | |- ( DECID ph <-> ( ph \\/ -. ph ) ) |\n| 5 |  | #P_df-dc | |- ( DECID ps <-> ( ps \\/ -. ps ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( ( ph <-> ps ) -> ( DECID ph <-> DECID ps ) ) |",
+  "conclusion" : "#P_bj-dcbi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wo", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wdc", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wn", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wb", "#T_wdc", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-dc", "#P_bj-notbi", "#P_orbi12d", "#P_3bitr4g", "#P_id" ]
+}

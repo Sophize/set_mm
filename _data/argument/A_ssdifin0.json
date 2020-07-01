@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssdifin0 on Metamath](http://us.metamath.org/mpegif/ssdifin0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssrin | |- ( A C_ ( B \\ C ) -> ( A i^i C ) C_ ( ( B \\ C ) i^i C ) ) |\n| 2 |  | #P_incom | |- ( ( B \\ C ) i^i C ) = ( C i^i ( B \\ C ) ) |\n| 3 |  | #P_disjdif | |- ( C i^i ( B \\ C ) ) = (/) |\n| 4 | 2, 3 | #P_eqtri | |- ( ( B \\ C ) i^i C ) = (/) |\n| 5 |  | #P_sseq0 | |- ( ( ( A i^i C ) C_ ( ( B \\ C ) i^i C ) /\\ ( ( B \\ C ) i^i C ) = (/) ) -> ( A i^i C ) = (/) ) |\n| 6 | 1, 4, 5 | #P_sylancl | |- ( A C_ ( B \\ C ) -> ( A i^i C ) = (/) ) |",
+  "conclusion" : "#P_ssdifin0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cC", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_c0", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cA", "#T_wss", "#T_cB", "#T_cdif", "#T_cC", "#T_wi", "#T_cA", "#T_cin", "#T_cC", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq0", "#P_eqtri", "#P_ssrin", "#P_incom", "#P_sylancl", "#P_disjdif" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abrexex on Metamath](http://us.metamath.org/mpegif/abrexex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abrexex.1 | |- A e. _V |\n| 2 |  | #P_eqid | |- ( x e. A |-> B ) = ( x e. A |-> B ) |\n| 3 | 2 | #P_rnmpt | |- ran ( x e. A |-> B ) = { y | E. x e. A y = B } |\n| 4 | 1 | #P_mptex | |- ( x e. A |-> B ) e. _V |\n| 5 | 4 | #P_rnex | |- ran ( x e. A |-> B ) e. _V |\n| 6 | 3, 5 | #P_eqeltrri | |- { y | E. x e. A y = B } e. _V |",
+  "conclusion" : "#P_abrexex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_crn", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_cab--3", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_crn", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_vy", "#T_wceq", "#T_cB", "#T_cab--3", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_rnmpt", "#P_mptex", "#P_rnex", "#P_eqeltrri" ]
+}

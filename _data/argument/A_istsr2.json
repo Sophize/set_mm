@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See istsr2 on Metamath](http://us.metamath.org/mpegif/istsr2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | istsr.1 | |- X = dom R |\n| 2 | 1 | #P_istsr | |- ( R e. TosetRel <-> ( R e. PosetRel /\\ ( X X. X ) C_ ( R u. `' R ) ) ) |\n| 3 |  | #P_qfto | |- ( ( X X. X ) C_ ( R u. `' R ) <-> A. x e. X A. y e. X ( x R y \\/ y R x ) ) |\n| 4 | 3 | #P_anbi2i | |- ( ( R e. PosetRel /\\ ( X X. X ) C_ ( R u. `' R ) ) <-> ( R e. PosetRel /\\ A. x e. X A. y e. X ( x R y \\/ y R x ) ) ) |\n| 5 | 2, 4 | #P_bitri | |- ( R e. TosetRel <-> ( R e. PosetRel /\\ A. x e. X A. y e. X ( x R y \\/ y R x ) ) ) |",
+  "conclusion" : "#P_istsr2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cdm", "#T_cR", "#T_cR", "#T_wcel", "#T_ctsr", "#T_wb", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_cX", "#T_cxp", "#T_cX", "#T_wss", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR", "#T_cX", "#T_cxp", "#T_cX", "#T_wss", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_wo", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_cX", "#T_cxp", "#T_cX", "#T_wss", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR", "#T_wb", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_wo", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_cR", "#T_wcel", "#T_ctsr", "#T_wb", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_vx", "#T_cR", "#T_vy", "#T_wo", "#T_vy", "#T_cR", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_istsr", "#P_anbi2i", "#P_bitri", "#P_qfto" ]
+}

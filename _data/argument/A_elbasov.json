@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elbasov on Metamath](http://us.metamath.org/mpegif/elbasov.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elbasov.o | |- Rel dom O |\n| 2 |  | elbasov.s | |- S = ( X O Y ) |\n| 3 |  | elbasov.b | |- B = ( Base ` S ) |\n| 4 |  | #P_n0i | |- ( A e. B -> -. B = (/) ) |\n| 5 | 1 | #P_ovprc | |- ( -. ( X e. _V /\\ Y e. _V ) -> ( X O Y ) = (/) ) |\n| 6 | 2, 5 | #P_syl5eq | |- ( -. ( X e. _V /\\ Y e. _V ) -> S = (/) ) |\n| 7 | 6 | #P_fveq2d | |- ( -. ( X e. _V /\\ Y e. _V ) -> ( Base ` S ) = ( Base ` (/) ) ) |\n| 8 |  | #P_base0 | |- (/) = ( Base ` (/) ) |\n| 9 | 7, 3, 8 | #P_3eqtr4g | |- ( -. ( X e. _V /\\ Y e. _V ) -> B = (/) ) |\n| 10 | 4, 9 | #P_nsyl2 | |- ( A e. B -> ( X e. _V /\\ Y e. _V ) ) |",
+  "conclusion" : "#P_elbasov",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cdm", "#T_cO", "#T_cS", "#T_wceq", "#T_cX", "#T_cO", "#T_cY", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_cO", "#T_cY", "#T_wceq", "#T_c0", "#T_wn", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cS", "#T_wceq", "#T_c0", "#T_wn", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cbs", "#T_cfv", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_c0", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_wn", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovprc", "#P_nsyl2", "#P_fveq2d", "#P_base0", "#P_n0i", "#P_syl5eq", "#P_3eqtr4g" ]
+}

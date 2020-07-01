@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See normval on Metamath](http://us.metamath.org/mpegif/normval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq12 | |- ( ( x = A /\\ x = A ) -> ( x .ih x ) = ( A .ih A ) ) |\n| 2 | 1 | #P_anidms | |- ( x = A -> ( x .ih x ) = ( A .ih A ) ) |\n| 3 | 2 | #P_fveq2d | |- ( x = A -> ( sqrt ` ( x .ih x ) ) = ( sqrt ` ( A .ih A ) ) ) |\n| 4 |  | #P_dfhnorm2 | |- normh = ( x e. ~H |-> ( sqrt ` ( x .ih x ) ) ) |\n| 5 |  | #P_fvex | |- ( sqrt ` ( A .ih A ) ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( A e. ~H -> ( normh ` A ) = ( sqrt ` ( A .ih A ) ) ) |",
+  "conclusion" : "#P_normval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cno", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_cA", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA", "#T_csp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_fveq2d", "#P_oveq12", "#P_dfhnorm2", "#P_fvex", "#P_anidms" ]
+}

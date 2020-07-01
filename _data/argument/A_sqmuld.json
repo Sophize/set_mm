@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqmuld on Metamath](http://us.metamath.org/mpegif/sqmuld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | expcld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulexpd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | #P_sqmul | |- ( ( A e. CC /\\ B e. CC ) -> ( ( A x. B ) ^ 2 ) = ( ( A ^ 2 ) x. ( B ^ 2 ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( ( A x. B ) ^ 2 ) = ( ( A ^ 2 ) x. ( B ^ 2 ) ) ) |",
+  "conclusion" : "#P_sqmuld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA", "#T_cexp", "#T_c2", "#T_cmul", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqmul", "#P_syl2anc" ]
+}

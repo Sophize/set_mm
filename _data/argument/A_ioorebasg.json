@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ioorebasg on Metamath](http://us.metamath.org/mpegif/ioorebasg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ioof | |- (,) : ( RR* X. RR* ) --> ~P RR |\n| 2 |  | #P_ffn | |- ( (,) : ( RR* X. RR* ) --> ~P RR -> (,) Fn ( RR* X. RR* ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- (,) Fn ( RR* X. RR* ) |\n| 4 |  | #P_fnovrn | |- ( ( (,) Fn ( RR* X. RR* ) /\\ A e. RR* /\\ B e. RR* ) -> ( A (,) B ) e. ran (,) ) |\n| 5 | 3, 4 | #P_mp3an1 | |- ( ( A e. RR* /\\ B e. RR* ) -> ( A (,) B ) e. ran (,) ) |",
+  "conclusion" : "#P_ioorebasg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cioo", "#T_wf--1", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cr", "#T_cioo", "#T_wf--1", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cr", "#T_wi", "#T_cioo", "#T_wfn", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cioo", "#T_wfn", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cioo", "#T_wfn", "#T_cxr", "#T_cxp", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_cioo", "#T_cA", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA", "#T_cioo", "#T_cB", "#T_wcel", "#T_crn", "#T_cioo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_ax-mp", "#P_fnovrn", "#P_ioof", "#P_mp3an1" ]
+}

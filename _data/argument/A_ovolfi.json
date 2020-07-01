@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovolfi on Metamath](http://us.metamath.org/mpegif/ovolfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( A C_ RR -> A C_ RR ) |\n| 2 |  | #P_isfinite | |- ( A e. Fin <-> A ~< _om ) |\n| 3 |  | #P_sdomdom | |- ( A ~< _om -> A ~<_ _om ) |\n| 4 | 2, 3 | #P_sylbi | |- ( A e. Fin -> A ~<_ _om ) |\n| 5 |  | #P_nnenom | |- NN ~~ _om |\n| 6 | 5 | #P_ensymi | |- _om ~~ NN |\n| 7 |  | #P_domentr | |- ( ( A ~<_ _om /\\ _om ~~ NN ) -> A ~<_ NN ) |\n| 8 | 4, 6, 7 | #P_sylancl | |- ( A e. Fin -> A ~<_ NN ) |\n| 9 |  | #P_ovolctb2 | |- ( ( A C_ RR /\\ A ~<_ NN ) -> ( vol* ` A ) = 0 ) |\n| 10 | 1, 8, 9 | #P_syl2anr | |- ( ( A e. Fin /\\ A C_ RR ) -> ( vol* ` A ) = 0 ) |",
+  "conclusion" : "#P_ovolfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_cn", "#T_cen", "#T_com", "#T_com", "#T_cen", "#T_cn", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_wa", "#T_com", "#T_cen", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cn", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_cdom", "#T_cn", "#T_wi", "#T_covol", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cfn", "#T_wa", "#T_cA", "#T_wss", "#T_cr", "#T_wi", "#T_covol", "#T_cfv", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nnenom", "#P_domentr", "#P_isfinite", "#P_sylancl", "#P_syl2anr", "#P_ensymi", "#P_sdomdom", "#P_id", "#P_sylbi", "#P_ovolctb2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lgseisenlem1 on Metamath](http://us.metamath.org/mpegif/lgseisenlem1.html)"
+  } ],
+  "names" : [ "lgseisenlem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cprime", "#T_cdif", "#T_csn--1", "#T_c2", "#T_csn--2", "#T_wph", "#T_wi", "#T_cQ", "#T_wcel", "#T_cprime", "#T_cdif", "#T_csn--1", "#T_c2", "#T_csn--2", "#T_wph", "#T_wi", "#T_cP", "#T_wne", "#T_cQ", "#T_cR", "#T_wceq", "#T_cQ", "#T_cmul", "#T_c2", "#T_cmul", "#T_vx", "#T_cmo", "#T_cP", "#T_cM", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_c1", "#T_cfz", "#T_cP", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_cmpt--2", "#T_cneg", "#T_c1", "#T_cexp", "#T_cR", "#T_cmul", "#T_cR", "#T_cmo", "#T_cP", "#T_cdiv", "#T_c2", "#T_wph", "#T_wi", "#T_cM", "#T_wf--1", "#T_c1", "#T_cfz", "#T_cP", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wf--2", "#T_c1", "#T_cfz", "#T_cP", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_cP", "#T_vx", "#T_cQ", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ lgseisen .  If ` R ( u ) = ( Q x. u ) mod P ` and ` M ( u ) = ( -u 1 ^ R ( u ) ) x. R ( u ) ` , then for any even ` 1 <_ u <_ P - 1 ` , ` M ( u ) ` is also an even integer ` 1 <_ M ( u ) <_ P - 1 ` .  To simplify these statements, we divide all the even numbers by ` 2 ` , so that it becomes the statement that ` M ( x / 2 ) = ( -u 1 ^ R ( x / 2 ) ) x. R ( x / 2 ) / 2 ` is an integer between ` 1 ` and ` ( P - 1 ) / 2 ` .  (Contributed by Mario Carneiro, 17-Jun-2015.) ",
+  "statement" : "lgseisen.1 $e |- ( ph -> P e. ( Prime \\ { 2 } ) ) $.\nlgseisen.2 $e |- ( ph -> Q e. ( Prime \\ { 2 } ) ) $.\nlgseisen.3 $e |- ( ph -> P =/= Q ) $.\nlgseisen.4 $e |- R = ( ( Q x. ( 2 x. x ) ) mod P ) $.\nlgseisen.5 $e |- M = ( x e. ( 1 ... ( ( P - 1 ) / 2 ) ) |-> ( ( ( ( -u 1 ^ R ) x. R ) mod P ) / 2 ) ) $.\nlgseisenlem1 $p |- ( ph -> M : ( 1 ... ( ( P - 1 ) / 2 ) ) --> ( 1 ... ( ( P - 1 ) / 2 ) ) ) $.\n$d P x $.\n$d Q x $.\n$d ph x $."
+}

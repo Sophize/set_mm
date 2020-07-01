@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See om2uz0i on Metamath](http://us.metamath.org/mpegif/om2uz0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | om2uz.1 | |- C e. ZZ |\n| 2 |  | om2uz.2 | |- G = ( rec ( ( x e. _V |-> ( x + 1 ) ) , C ) |` _om ) |\n| 3 | 2 | #P_fveq1i | |- ( G ` (/) ) = ( ( rec ( ( x e. _V |-> ( x + 1 ) ) , C ) |` _om ) ` (/) ) |\n| 4 |  | #P_fr0g | |- ( C e. ZZ -> ( ( rec ( ( x e. _V |-> ( x + 1 ) ) , C ) |` _om ) ` (/) ) = C ) |\n| 5 | 1, 4 | #P_ax-mp | |- ( ( rec ( ( x e. _V |-> ( x + 1 ) ) , C ) |` _om ) ` (/) ) = C |\n| 6 | 3, 5 | #P_eqtri | |- ( G ` (/) ) = C |",
+  "conclusion" : "#P_om2uz0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wcel", "#T_cz", "#T_cG", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cG", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_cC", "#T_wcel", "#T_cz", "#T_wi", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC", "#T_cG", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_fveq1i", "#P_fr0g" ]
+}

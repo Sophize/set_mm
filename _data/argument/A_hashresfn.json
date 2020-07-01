@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hashresfn on Metamath](http://us.metamath.org/mpegif/hashresfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hashf | |- # : _V --> ( NN0 u. { +oo } ) |\n| 2 |  | #P_ffn | |- ( # : _V --> ( NN0 u. { +oo } ) -> # Fn _V ) |\n| 3 |  | #P_fnresin2 | |- ( # Fn _V -> ( # |` ( A i^i _V ) ) Fn ( A i^i _V ) ) |\n| 4 | 1, 2, 3 | #P_mp2b | |- ( # |` ( A i^i _V ) ) Fn ( A i^i _V ) |\n| 5 |  | #P_inv1 | |- ( A i^i _V ) = A |\n| 6 | 5 | #P_reseq2i | |- ( # |` ( A i^i _V ) ) = ( # |` A ) |\n| 7 |  | #P_fneq12 | |- ( ( ( # |` ( A i^i _V ) ) = ( # |` A ) /\\ ( A i^i _V ) = A ) -> ( ( # |` ( A i^i _V ) ) Fn ( A i^i _V ) <-> ( # |` A ) Fn A ) ) |\n| 8 | 6, 5, 7 | #P_mp2an | |- ( ( # |` ( A i^i _V ) ) Fn ( A i^i _V ) <-> ( # |` A ) Fn A ) |\n| 9 | 4, 8 | #P_mpbi | |- ( # |` A ) Fn A |",
+  "conclusion" : "#P_hashresfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_chash", "#T_wf--1", "#T_cvv", "#T_wf--2", "#T_cn0", "#T_cun", "#T_csn--1", "#T_cpnf", "#T_csn--2", "#T_chash", "#T_wf--1", "#T_cvv", "#T_wf--2", "#T_cn0", "#T_cun", "#T_csn--1", "#T_cpnf", "#T_csn--2", "#T_wi", "#T_chash", "#T_wfn", "#T_cvv", "#T_chash", "#T_wfn", "#T_cvv", "#T_wi", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wfn", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wfn", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wceq", "#T_cA.wceq", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wceq", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wceq", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wfn", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wb", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_wfn", "#T_cA.wceq", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wfn", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wb", "#T_chash", "#T_cres", "#T_cA.wceq", "#T_wfn", "#T_cA.wceq", "#T_chash", "#T_cres", "#T_cA", "#T_wfn", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_reseq2i", "#P_mp2an", "#P_fneq12", "#P_mpbi", "#P_fnresin2", "#P_hashf", "#P_inv1", "#P_mp2b" ]
+}

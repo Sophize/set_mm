@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbciedf on Metamath](http://us.metamath.org/mpegif/sbciedf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbcied.1 | |- ( ph -> A e. V ) |\n| 2 |  | sbcied.2 | |- ( ( ph /\\ x = A ) -> ( ps <-> ch ) ) |\n| 3 |  | sbciedf.3 | |- F/ x ph |\n| 4 |  | sbciedf.4 | |- ( ph -> F/ x ch ) |\n| 5 | 2 | #P_ex | |- ( ph -> ( x = A -> ( ps <-> ch ) ) ) |\n| 6 | 3, 5 | #P_alrimi | |- ( ph -> A. x ( x = A -> ( ps <-> ch ) ) ) |\n| 7 |  | #P_sbciegft | |- ( ( A e. V /\\ F/ x ch /\\ A. x ( x = A -> ( ps <-> ch ) ) ) -> ( [. A / x ]. ps <-> ch ) ) |\n| 8 | 1, 4, 6, 7 | #P_syl3anc | |- ( ph -> ( [. A / x ]. ps <-> ch ) ) |",
+  "conclusion" : "#P_sbciedf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_w3a--1", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_w3a--2", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ex", "#P_alrimi", "#P_syl3anc", "#P_sbciegft" ]
+}

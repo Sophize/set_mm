@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trkgbas on Metamath](http://us.metamath.org/mpegif/trkgbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | trkgstr.w | |- W = { <. ( Base ` ndx ) , U >. , <. ( dist ` ndx ) , D >. , <. ( Itv ` ndx ) , I >. } |\n| 2 | 1 | #P_trkgstr | |- W Struct <. 1 , ; 1 6 >. |\n| 3 |  | #P_baseid | |- Base = Slot ( Base ` ndx ) |\n| 4 |  | #P_snsstp1 | |- { <. ( Base ` ndx ) , U >. } C_ { <. ( Base ` ndx ) , U >. , <. ( dist ` ndx ) , D >. , <. ( Itv ` ndx ) , I >. } |\n| 5 | 4, 1 | #P_sseqtr4i | |- { <. ( Base ` ndx ) , U >. } C_ W |\n| 6 | 2, 3, 5 | #P_strfv | |- ( U e. V -> U = ( Base ` W ) ) |",
+  "conclusion" : "#P_trkgbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cU", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cds", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_citv", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cI", "#T_cop--3", "#T_ctp--4", "#T_cW", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_cdc", "#T_c1", "#T_c6", "#T_cop--3", "#T_cbs", "#T_wceq", "#T_cslot", "#T_cbs", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cU", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cU", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cds", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_citv", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cI", "#T_cop--3", "#T_ctp--4", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cU", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cW", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_snsstp1", "#P_sseqtr4i", "#P_trkgstr", "#P_strfv", "#P_baseid" ]
+}

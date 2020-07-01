@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-omex2 on Metamath](http://us.metamath.org/mpegif/bj-omex2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-inf2--i | |- E. a A. x ( x e. a <-> ( x = (/) \\/ E. y e. a x = suc y ) ) |\n| 2 |  | #P_vex | |- a e. _V |\n| 3 |  | #P_bdcv | |- Bdd_ a |\n| 4 | 3 | #P_bj-inf2vn | |- ( a e. _V -> ( A. x ( x e. a <-> ( x = (/) \\/ E. y e. a x = suc y ) ) -> a = _om ) ) |\n| 5 | 2, 4 | #P_ax-mp | |- ( A. x ( x e. a <-> ( x = (/) \\/ E. y e. a x = suc y ) ) -> a = _om ) |\n| 6 | 1, 5 | #P_eximii | |- E. a a = _om |\n| 7 | 6 | #P_issetri | |- _om e. _V |",
+  "conclusion" : "#P_bj-omex2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vx", "#T_vy", "#T_wex", "#T_va", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_va", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_va", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_va", "#T_wcel", "#T_cvv", "#T_wbdc", "#T_va", "#T_va", "#T_wcel", "#T_cvv", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_va", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_va", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_wi", "#T_va", "#T_wceq", "#T_com", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_va", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_va", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_wi", "#T_va", "#T_wceq", "#T_com", "#T_wex", "#T_va", "#T_va", "#T_wceq", "#T_com", "#T_com", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdcv", "#P_ax-mp", "#P_issetri", "#P_ax-inf2--i", "#P_eximii", "#P_bj-inf2vn", "#P_vex" ]
+}

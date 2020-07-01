@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpinvhmeo on Metamath](http://us.metamath.org/mpegif/grpinvhmeo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgpcn.j | |- J = ( TopOpen ` G ) |\n| 2 |  | tgpinv.5 | |- I = ( invg ` G ) |\n| 3 | 1, 2 | #P_tgpinv | |- ( G e. TopGrp -> I e. ( J Cn J ) ) |\n| 4 |  | #P_tgpgrp | |- ( G e. TopGrp -> G e. Grp ) |\n| 5 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 6 | 5, 2 | #P_grpinvcnv | |- ( G e. Grp -> `' I = I ) |\n| 7 | 4, 6 | #P_syl | |- ( G e. TopGrp -> `' I = I ) |\n| 8 | 7, 3 | #P_eqeltrd | |- ( G e. TopGrp -> `' I e. ( J Cn J ) ) |\n| 9 |  | #P_ishmeo | |- ( I e. ( J Homeo J ) <-> ( I e. ( J Cn J ) /\\ `' I e. ( J Cn J ) ) ) |\n| 10 | 3, 8, 9 | #P_sylanbrc | |- ( G e. TopGrp -> I e. ( J Homeo J ) ) |",
+  "conclusion" : "#P_grpinvhmeo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_ccnv", "#T_cI", "#T_wceq", "#T_cI", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_ccnv", "#T_cI", "#T_wceq", "#T_cI", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_ccnv", "#T_cI", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cI", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cJ", "#T_wb", "#T_cI", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_wa", "#T_ccnv", "#T_cI", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpinvcnv", "#P_ishmeo", "#P_tgpgrp", "#P_eqid", "#P_eqeltrd", "#P_syl", "#P_sylanbrc", "#P_tgpinv" ]
+}

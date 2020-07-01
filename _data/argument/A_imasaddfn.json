@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imasaddfn on Metamath](http://us.metamath.org/mpegif/imasaddfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | imasaddf.f | |- ( ph -> F : V -onto-> B ) |\n| 2 |  | imasaddf.e | |- ( ( ph /\\ ( a e. V /\\ b e. V ) /\\ ( p e. V /\\ q e. V ) ) -> ( ( ( F ` a ) = ( F ` p ) /\\ ( F ` b ) = ( F ` q ) ) -> ( F ` ( a .x. b ) ) = ( F ` ( p .x. q ) ) ) ) |\n| 3 |  | imasaddf.u | |- ( ph -> U = ( F \"s R ) ) |\n| 4 |  | imasaddf.v | |- ( ph -> V = ( Base ` R ) ) |\n| 5 |  | imasaddf.r | |- ( ph -> R e. Z ) |\n| 6 |  | imasaddf.p | |- .x. = ( +g ` R ) |\n| 7 |  | imasaddf.a | |- .xb = ( +g ` U ) |\n| 8 | 3, 4, 1, 5, 6, 7 | #P_imasplusg | |- ( ph -> .xb = U_ p e. V U_ q e. V { <. <. ( F ` p ) , ( F ` q ) >. , ( F ` ( p .x. q ) ) >. } ) |\n| 9 | 1, 2, 8 | #P_imasaddfnlem | |- ( ph -> .xb Fn ( B X. B ) ) |",
+  "conclusion" : "#P_imasaddfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cV", "#T_wfo--2", "#T_cB", "#T_wph", "#T_w3a--1", "#T_va", "#T_wcel", "#T_cV", "#T_wa", "#T_vb", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_vp", "#T_wcel", "#T_cV", "#T_wa", "#T_vq", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfv", "#T_va", "#T_wceq", "#T_cF", "#T_cfv", "#T_vp", "#T_wa", "#T_cF", "#T_cfv", "#T_vb", "#T_wceq", "#T_cF", "#T_cfv", "#T_vq", "#T_wi", "#T_cF", "#T_cfv", "#T_va", "#T_c.x", "#T_vb", "#T_wceq", "#T_cF", "#T_cfv", "#T_vp", "#T_c.x", "#T_vq", "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_cF", "#T_cimas", "#T_cR", "#T_wph", "#T_wi", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cZ", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cR", "#T_c.xb", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_c.xb", "#T_wceq", "#T_ciun--1", "#T_vp", "#T_ciun--2", "#T_cV", "#T_ciun--1", "#T_vq", "#T_ciun--2", "#T_cV", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cF", "#T_cfv", "#T_vp", "#T_cop--2", "#T_cF", "#T_cfv", "#T_vq", "#T_cop--3", "#T_cop--2", "#T_cF", "#T_cfv", "#T_vp", "#T_c.x", "#T_vq", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wi", "#T_c.xb", "#T_wfn", "#T_cB", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imasaddfnlem", "#P_imasplusg" ]
+}

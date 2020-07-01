@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgellng on Metamath](http://us.metamath.org/mpegif/tgellng.html)"
+  } ],
+  "names" : [ "tgellng" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cY", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cL", "#T_cY", "#T_wb", "#T_cZ", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_w3o--1", "#T_cX", "#T_wcel", "#T_cZ", "#T_cI", "#T_cY", "#T_w3o--2", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Property of lying on the line going through points ` X ` and ` Y ` . Definition 4.10 of [Schwabhauser] p. 36.  We choose the notation ` Z e. ( X ( LineG `` G ) Y ) ` instead of \"colinear\" because ` LineG ` is a common structure slot for other axiomatizations of geometry.  (Contributed by Thierry Arnoux, 28-Mar-2019.) ",
+  "statement" : "tglngval.p $e |- P = ( Base ` G ) $.\ntglngval.l $e |- L = ( LineG ` G ) $.\ntglngval.i $e |- I = ( Itv ` G ) $.\ntglngval.g $e |- ( ph -> G e. TarskiG ) $.\ntglngval.x $e |- ( ph -> X e. P ) $.\ntglngval.y $e |- ( ph -> Y e. P ) $.\ntglngval.z $e |- ( ph -> X =/= Y ) $.\ntgellng.z $e |- ( ph -> Z e. P ) $.\ntgellng $p |- ( ph -> ( Z e. ( X L Y ) <-> ( Z e. ( X I Y ) \\/ X e. ( Z I Y ) \\/ Y e. ( X I Z ) ) ) ) $."
+}

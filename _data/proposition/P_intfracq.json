@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See intfracq on Metamath](http://us.metamath.org/mpegif/intfracq.html)"
+  } ],
+  "names" : [ "intfracq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cM", "#T_cdiv", "#T_cN", "#T_cF", "#T_wceq", "#T_cM", "#T_cdiv", "#T_cN", "#T_cmin", "#T_cZ", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_cle", "#T_cF", "#T_w3a--1", "#T_cF", "#T_cle", "#T_cN", "#T_cmin", "#T_c1", "#T_cdiv", "#T_cN", "#T_w3a--2", "#T_cM", "#T_cdiv", "#T_cN", "#T_wceq", "#T_cZ", "#T_caddc", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Decompose a rational number, expressed as a ratio, into integer and fractional parts.  The fractional part has a tighter bound than that of ~ intfrac2 .  (Contributed by NM, 16-Aug-2008.) ",
+  "statement" : "intfracq.1 $e |- Z = ( |_ ` ( M / N ) ) $.\nintfracq.2 $e |- F = ( ( M / N ) - Z ) $.\nintfracq $p |- ( ( M e. ZZ /\\ N e. NN ) -> ( 0 <_ F /\\ F <_ ( ( N - 1 ) / N ) /\\ ( M / N ) = ( Z + F ) ) ) $."
+}

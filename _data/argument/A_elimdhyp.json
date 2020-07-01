@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimdhyp on Metamath](http://us.metamath.org/mpegif/elimdhyp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elimdhyp.1 | |- ( ph -> ps ) |\n| 2 |  | elimdhyp.2 | |- ( A = if ( ph , A , B ) -> ( ps <-> ch ) ) |\n| 3 |  | elimdhyp.3 | |- ( B = if ( ph , A , B ) -> ( th <-> ch ) ) |\n| 4 |  | elimdhyp.4 | |- th |\n| 5 |  | #P_iftrue | |- ( ph -> if ( ph , A , B ) = A ) |\n| 6 | 5 | #P_eqcomd | |- ( ph -> A = if ( ph , A , B ) ) |\n| 7 | 6, 2 | #P_syl | |- ( ph -> ( ps <-> ch ) ) |\n| 8 | 1, 7 | #P_mpbid | |- ( ph -> ch ) |\n| 9 |  | #P_iffalse | |- ( -. ph -> if ( ph , A , B ) = B ) |\n| 10 | 9 | #P_eqcomd | |- ( -. ph -> B = if ( ph , A , B ) ) |\n| 11 | 10, 3 | #P_syl | |- ( -. ph -> ( th <-> ch ) ) |\n| 12 | 4, 11 | #P_mpbii | |- ( -. ph -> ch ) |\n| 13 | 8, 12 | #P_pm2.61i | |- ch |",
+  "conclusion" : "#P_elimdhyp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_cA", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wth", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iffalse", "#P_mpbii", "#P_iftrue", "#P_mpbid", "#P_eqcomd", "#P_syl", "#P_pm2.61i" ]
+}

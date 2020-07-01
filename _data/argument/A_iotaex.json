@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iotaex on Metamath](http://us.metamath.org/mpegif/iotaex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iotaval | |- ( A. x ( ph <-> x = z ) -> ( iota x ph ) = z ) |\n| 2 | 1 | #P_eqcomd | |- ( A. x ( ph <-> x = z ) -> z = ( iota x ph ) ) |\n| 3 | 2 | #P_eximi | |- ( E. z A. x ( ph <-> x = z ) -> E. z z = ( iota x ph ) ) |\n| 4 |  | #P_df-eu | |- ( E! x ph <-> E. z A. x ( ph <-> x = z ) ) |\n| 5 |  | #P_isset | |- ( ( iota x ph ) e. _V <-> E. z z = ( iota x ph ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4i | |- ( E! x ph -> ( iota x ph ) e. _V ) |\n| 7 |  | #P_iotanul | |- ( -. E! x ph -> ( iota x ph ) = (/) ) |\n| 8 |  | #P_0ex | |- (/) e. _V |\n| 9 | 7, 8 | #P_syl6eqel | |- ( -. E! x ph -> ( iota x ph ) e. _V ) |\n| 10 | 6, 9 | #P_pm2.61i | |- ( iota x ph ) e. _V |",
+  "conclusion" : "#P_iotaex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_vz", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_vz", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vz", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vz", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wcel", "#T_cvv", "#T_wn", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_c0", "#T_c0", "#T_wcel", "#T_cvv", "#T_wn", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wcel", "#T_cvv", "#T_cio", "#T_vx", "#T_wph", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-eu", "#P_isset", "#P_3imtr4i", "#P_iotanul", "#P_eqcomd", "#P_iotaval", "#P_0ex", "#P_pm2.61i", "#P_eximi", "#P_syl6eqel" ]
+}

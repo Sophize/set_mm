@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvsumi on Metamath](http://us.metamath.org/mpegif/cbvsumi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvsumi.1 | |- F/_ k B |\n| 2 |  | cbvsumi.2 | |- F/_ j C |\n| 3 |  | cbvsumi.3 | |- ( j = k -> B = C ) |\n| 4 |  | #P_nfcv | |- F/_ k A |\n| 5 |  | #P_nfcv | |- F/_ j A |\n| 6 | 3, 4, 5, 1, 2 | #P_cbvsum | |- sum_ j e. A B = sum_ k e. A C |",
+  "conclusion" : "#P_cbvsumi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vk", "#T_cB", "#T_wnfc", "#T_vj", "#T_cC", "#T_vj", "#T_wceq", "#T_vk", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wnfc", "#T_vk", "#T_cA.wceq", "#T_wnfc", "#T_vj", "#T_cA.wceq", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_cB", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_cbvsum" ]
+}

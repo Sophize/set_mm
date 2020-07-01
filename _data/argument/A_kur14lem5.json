@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kur14lem5 on Metamath](http://us.metamath.org/mpegif/kur14lem5.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | kur14lem.j | |- J e. Top |\n| 2 |  | kur14lem.x | |- X = U. J |\n| 3 |  | kur14lem.k | |- K = ( cls ` J ) |\n| 4 |  | kur14lem.i | |- I = ( int ` J ) |\n| 5 |  | kur14lem.a | |- A C_ X |\n| 6 | 2 | #P_clsidm | |- ( ( J e. Top /\\ A C_ X ) -> ( ( cls ` J ) ` ( ( cls ` J ) ` A ) ) = ( ( cls ` J ) ` A ) ) |\n| 7 | 1, 5, 6 | #P_mp2an | |- ( ( cls ` J ) ` ( ( cls ` J ) ` A ) ) = ( ( cls ` J ) ` A ) |\n| 8 | 3 | #P_fveq1i | |- ( K ` A ) = ( ( cls ` J ) ` A ) |\n| 9 | 3, 8 | #P_fveq12i | |- ( K ` ( K ` A ) ) = ( ( cls ` J ) ` ( ( cls ` J ) ` A ) ) |\n| 10 | 7, 9, 8 | #P_3eqtr4i | |- ( K ` ( K ` A ) ) = ( K ` A ) |",
+  "conclusion" : "#P_kur14lem5",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cK", "#T_wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cI", "#T_wceq", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cA", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cX", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_cK", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_cK", "#T_cfv", "#T_cK", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA.wceq", "#T_cK", "#T_cfv", "#T_cK", "#T_cfv", "#T_cA", "#T_wceq", "#T_cK", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_3eqtr4i", "#P_fveq1i", "#P_clsidm", "#P_fveq12i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stoic4b on Metamath](http://us.metamath.org/mpegif/stoic4b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | stoic4b.1 | |- ( ( ph /\\ ps ) -> ch ) |\n| 2 |  | stoic4b.2 | |- ( ( ( ch /\\ ph /\\ ps ) /\\ th ) -> ta ) |\n| 3 | 1 | #P_3adant3 | |- ( ( ph /\\ ps /\\ th ) -> ch ) |\n| 4 |  | #P_simp1 | |- ( ( ph /\\ ps /\\ th ) -> ph ) |\n| 5 |  | #P_simp2 | |- ( ( ph /\\ ps /\\ th ) -> ps ) |\n| 6 |  | #P_simp3 | |- ( ( ph /\\ ps /\\ th ) -> th ) |\n| 7 | 3, 4, 5, 6, 2 | #P_syl31anc | |- ( ( ph /\\ ps /\\ th ) -> ta ) |",
+  "conclusion" : "#P_stoic4b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wch", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wps", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wth", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl31anc", "#P_simp3", "#P_simp2", "#P_simp1", "#P_3adant3" ]
+}

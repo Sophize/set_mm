@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See climres on Metamath](http://us.metamath.org/mpegif/climres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( ZZ>= ` M ) = ( ZZ>= ` M ) |\n| 2 |  | #P_resexg | |- ( F e. V -> ( F |` ( ZZ>= ` M ) ) e. _V ) |\n| 3 | 2 | #P_adantl | |- ( ( M e. ZZ /\\ F e. V ) -> ( F |` ( ZZ>= ` M ) ) e. _V ) |\n| 4 |  | #P_simpr | |- ( ( M e. ZZ /\\ F e. V ) -> F e. V ) |\n| 5 |  | #P_simpl | |- ( ( M e. ZZ /\\ F e. V ) -> M e. ZZ ) |\n| 6 |  | #P_fvres | |- ( k e. ( ZZ>= ` M ) -> ( ( F |` ( ZZ>= ` M ) ) ` k ) = ( F ` k ) ) |\n| 7 | 6 | #P_adantl | |- ( ( ( M e. ZZ /\\ F e. V ) /\\ k e. ( ZZ>= ` M ) ) -> ( ( F |` ( ZZ>= ` M ) ) ` k ) = ( F ` k ) ) |\n| 8 | 1, 3, 4, 5, 7 | #P_climeq | |- ( ( M e. ZZ /\\ F e. V ) -> ( ( F |` ( ZZ>= ` M ) ) ~~> A <-> F ~~> A ) ) |",
+  "conclusion" : "#P_climres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_cuz", "#T_cfv", "#T_cM", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_wcel", "#T_cvv", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_wcel", "#T_cvv", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wcel", "#T_cV", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_cfv", "#T_vk", "#T_wceq", "#T_cF", "#T_cfv", "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cF", "#T_wcel", "#T_cV", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_cfv", "#T_vk", "#T_wceq", "#T_cF", "#T_cfv", "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_cli", "#T_cA", "#T_wb", "#T_cF", "#T_cli", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resexg", "#P_eqid", "#P_fvres", "#P_adantl", "#P_climeq", "#P_simpr", "#P_simpl" ]
+}

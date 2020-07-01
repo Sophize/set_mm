@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See con2d on Metamath](http://us.metamath.org/mpegif/con2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | con2d.1 | |- ( ph -> ( ps -> -. ch ) ) |\n| 2 |  | #P_notnot2 | |- ( -. -. ps -> ps ) |\n| 3 | 2, 1 | #P_syl5 | |- ( ph -> ( -. -. ps -> -. ch ) ) |\n| 4 | 3 | #P_con4d | |- ( ph -> ( ch -> -. ps ) ) |",
+  "conclusion" : "#P_con2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wn", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot2", "#P_syl5", "#P_con4d" ]
+}

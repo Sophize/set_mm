@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-xp on Metamath](http://us.metamath.org/mpegif/df-xp.html)"
+  } ],
+  "names" : [ "df-xp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_cxp", "#T_cB", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_copab--6", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Cartesian product of two classes.  This is also sometimes called the \"cross product\" but that term also has other meanings; we intentionally choose a less ambiguous term.  Definition 9.11 of [Quine] p. 64.  For example, ` ( { 1 , 5 } X. { 2 , 7 } ) = ` ` ( { <. 1 , 2 >. , <. 1 , 7 >. } u. { <. 5 , 2 >. , <. 5 , 7 >. } ) ` ( ~ ex-xp ).  Another example is that the set of rational numbers are defined in ~ df-q using the Cartesian product ` ( ZZ X. NN ) ` ; the left- and right-hand sides of the Cartesian product represent the top (integer) and bottom (natural) numbers of a fraction.  (Contributed by NM, 4-Jul-1994.) \n\n---\n\n Define the cross product of two classes.  Definition 9.11 of [Quine] p. 64.  For example, ( { 1 , 5 } ` X. ` { 2 , 7 } ) = ( { ` <. ` 1 , 2 ` >. ` , ` <. ` 1 , 7 ` >. ` } ` u. ` { ` <. ` 5 , 2 ` >. ` , ` <. ` 5 , 7 ` >. ` } ) .  Another example is that the set of rational numbers are defined in using the cross-product ( Z ` X. ` N ) ; the left- and right-hand sides of the cross-product represent the top (integer) and bottom (natural) numbers of a fraction.  (Contributed by NM, 4-Jul-1994.) ",
+  "statement" : "df-xp $p |- ( A X. B ) = { <. x , y >. | ( x e. A /\\ y e. B ) } $.\n$d A x y $.\n$d B x y $."
+}

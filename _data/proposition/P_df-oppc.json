@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-oppc on Metamath](http://us.metamath.org/mpegif/df-oppc.html)"
+  } ],
+  "names" : [ "df-oppc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_coppc", "#T_wceq", "#T_vf", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vf", "#T_csts", "#T_cop--1", "#T_chom", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_ctpos", "#T_chom", "#T_cfv", "#T_vf", "#T_cop--3", "#T_csts", "#T_cop--1", "#T_cco", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vu", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vf", "#T_cxp", "#T_cbs", "#T_cfv", "#T_vf", "#T_cmpt2--2", "#T_vz", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vf", "#T_cmpt2--4", "#T_ctpos", "#T_cop--1", "#T_vz", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_vu", "#T_cop--3", "#T_cco", "#T_cfv", "#T_vf", "#T_c1st", "#T_cfv", "#T_vu", "#T_cop--3", "#T_vf", "#T_vu", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define an opposite category, which is the same as the original category but with the direction of arrows the other way around.  Definition 3.5 of [Adamek] p. 25.  (Contributed by Mario Carneiro, 2-Jan-2017.) ",
+  "statement" : "df-oppc $p |- oppCat = ( f e. _V |-> ( ( f sSet <. ( Hom ` ndx ) , tpos ( Hom ` f ) >. ) sSet <. ( comp ` ndx ) , ( u e. ( ( Base ` f ) X. ( Base ` f ) ) , z e. ( Base ` f ) |-> tpos ( <. z , ( 2nd ` u ) >. ( comp ` f ) ( 1st ` u ) ) ) >. ) ) $.\n$d f u z $."
+}

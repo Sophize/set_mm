@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See testbitestn on Metamath](http://us.metamath.org/mpegif/testbitestn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_notnotnot | |- ( -. -. -. ph <-> -. ph ) |\n| 2 | 1 | #P_orbi2i | |- ( ( -. -. ph \\/ -. -. -. ph ) <-> ( -. -. ph \\/ -. ph ) ) |\n| 3 |  | #P_orcom | |- ( ( -. -. ph \\/ -. ph ) <-> ( -. ph \\/ -. -. ph ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( ( -. -. ph \\/ -. -. -. ph ) <-> ( -. ph \\/ -. -. ph ) ) |\n| 5 |  | #P_df-dc | |- ( DECID -. -. ph <-> ( -. -. ph \\/ -. -. -. ph ) ) |\n| 6 |  | #P_df-dc | |- ( DECID -. ph <-> ( -. ph \\/ -. -. ph ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4ri | |- ( DECID -. ph <-> DECID -. -. ph ) |",
+  "conclusion" : "#P_testbitestn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wph", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wn", "#T_wph", "#T_wb", "#T_wdc", "#T_wn", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-dc", "#P_orbi2i", "#P_orcom", "#P_notnotnot", "#P_3bitr4ri", "#P_bitri" ]
+}

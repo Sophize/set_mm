@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpcoid on Metamath](http://us.metamath.org/mpegif/xpcoid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_co01 | |- ( (/) o. (/) ) = (/) |\n| 2 |  | #P_id | |- ( A = (/) -> A = (/) ) |\n| 3 | 2 | #P_sqxpeqd | |- ( A = (/) -> ( A X. A ) = ( (/) X. (/) ) ) |\n| 4 |  | #P_0xp | |- ( (/) X. (/) ) = (/) |\n| 5 | 3, 4 | #P_syl6eq | |- ( A = (/) -> ( A X. A ) = (/) ) |\n| 6 | 5, 5 | #P_coeq12d | |- ( A = (/) -> ( ( A X. A ) o. ( A X. A ) ) = ( (/) o. (/) ) ) |\n| 7 | 1, 6, 5 | #P_3eqtr4a | |- ( A = (/) -> ( ( A X. A ) o. ( A X. A ) ) = ( A X. A ) ) |\n| 8 |  | #P_xpco | |- ( A =/= (/) -> ( ( A X. A ) o. ( A X. A ) ) = ( A X. A ) ) |\n| 9 | 7, 8 | #P_pm2.61ine | |- ( ( A X. A ) o. ( A X. A ) ) = ( A X. A ) |",
+  "conclusion" : "#P_xpcoid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_ccom", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cxp", "#T_c0", "#T_c0", "#T_cxp", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_ccom", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cA", "#T_cxp", "#T_cA", "#T_ccom", "#T_cA", "#T_cxp", "#T_cA", "#T_wceq", "#T_cA", "#T_cxp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.61ine", "#P_xpco", "#P_co01", "#P_0xp", "#P_coeq12d", "#P_3eqtr4a", "#P_sqxpeqd", "#P_id", "#P_syl6eq" ]
+}

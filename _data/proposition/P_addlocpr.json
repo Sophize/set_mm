@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See addlocpr on Metamath](http://us.metamath.org/mpegif/addlocpr.html)"
+  } ],
+  "names" : [ "addlocpr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cnp", "#T_wa", "#T_cB", "#T_wcel", "#T_cnp", "#T_wi", "#T_wral--1", "#T_vq", "#T_wral--2", "#T_cnq", "#T_wral--1", "#T_vr", "#T_wral--2", "#T_cnq", "#T_vq", "#T_cltq", "#T_vr", "#T_wi", "#T_vq", "#T_wcel", "#T_c1st", "#T_cfv", "#T_cA", "#T_cpp", "#T_cB", "#T_wo", "#T_vr", "#T_wcel", "#T_c2nd", "#T_cfv", "#T_cA", "#T_cpp", "#T_cB", "#T_cA", "#T_vq", "#T_vr", "#T_cB", "#T_vq", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Locatedness of addition on positive reals.  Lemma 11.16 in [BauerTaylor], p. 53.  The proof in BauerTaylor relies on signed rationals, so we replace it with another proof which applies ~ prarloc to both ` A ` and ` B ` , and uses ~ nqtri3or rather than ~ prloc to decide whether ` q ` is too big to be in the lower cut of ` A +P. B ` (and deduce that if it is, then ` r ` must be in the upper cut).  What the two proofs have in common is that they take the difference between ` q ` and ` r ` to determine how tight a range they need around the real numbers.  (Contributed by Jim Kingdon, 5-Dec-2019.) ",
+  "statement" : "addlocpr $p |- ( ( A e. P. /\\ B e. P. ) -> A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. ( 1st ` ( A +P. B ) ) \\/ r e. ( 2nd ` ( A +P. B ) ) ) ) ) $.\n$d A q r $.\n$d B q r $."
+}

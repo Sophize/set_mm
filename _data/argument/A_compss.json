@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See compss on Metamath](http://us.metamath.org/mpegif/compss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | compss.a | |- F = ( x e. ~P A |-> ( A \\ x ) ) |\n| 2 | 1 | #P_compsscnv | |- `' F = F |\n| 3 | 2 | #P_imaeq1i | |- ( `' F \" G ) = ( F \" G ) |\n| 4 |  | #P_difeq2 | |- ( x = y -> ( A \\ x ) = ( A \\ y ) ) |\n| 5 | 4 | #P_cbvmptv | |- ( x e. ~P A |-> ( A \\ x ) ) = ( y e. ~P A |-> ( A \\ y ) ) |\n| 6 | 1, 5 | #P_eqtri | |- F = ( y e. ~P A |-> ( A \\ y ) ) |\n| 7 | 6 | #P_mptpreima | |- ( `' F \" G ) = { y e. ~P A | ( A \\ y ) e. G } |\n| 8 | 3, 7 | #P_eqtr3i | |- ( F \" G ) = { y e. ~P A | ( A \\ y ) e. G } |",
+  "conclusion" : "#P_compss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cpw", "#T_cA", "#T_cmpt--2", "#T_cA", "#T_cdif", "#T_vx", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_ccnv", "#T_cF", "#T_cima", "#T_cG", "#T_wceq", "#T_cF", "#T_cima", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_vy.tru", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vy.tru", "#T_cF", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vy.tru", "#T_ccnv", "#T_cF", "#T_cima", "#T_cG", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cpw", "#T_cA.wceq", "#T_crab--3", "#T_cA.wceq", "#T_cdif", "#T_vy.tru", "#T_wcel", "#T_cG", "#T_crab--4", "#T_cF", "#T_cima", "#T_cG", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cpw", "#T_cA", "#T_crab--3", "#T_cA", "#T_cdif", "#T_vy", "#T_wcel", "#T_cG", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_difeq2", "#P_eqtr3i", "#P_compsscnv", "#P_cbvmptv", "#P_mptpreima", "#P_imaeq1i" ]
+}

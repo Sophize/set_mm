@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See caovord2 on Metamath](http://us.metamath.org/mpegif/caovord2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | caovord.1 | |- A e. _V |\n| 2 |  | caovord.2 | |- B e. _V |\n| 3 |  | caovord.3 | |- ( z e. S -> ( x R y <-> ( z F x ) R ( z F y ) ) ) |\n| 4 |  | caovord2.3 | |- C e. _V |\n| 5 |  | caovord2.com | |- ( x F y ) = ( y F x ) |\n| 6 | 1, 2, 3 | #P_caovord | |- ( C e. S -> ( A R B <-> ( C F A ) R ( C F B ) ) ) |\n| 7 | 4, 1, 5 | #P_caovcom | |- ( C F A ) = ( A F C ) |\n| 8 | 4, 2, 5 | #P_caovcom | |- ( C F B ) = ( B F C ) |\n| 9 | 7, 8 | #P_breq12i | |- ( ( C F A ) R ( C F B ) <-> ( A F C ) R ( B F C ) ) |\n| 10 | 6, 9 | #P_syl6bb | |- ( C e. S -> ( A R B <-> ( A F C ) R ( B F C ) ) ) |",
+  "conclusion" : "#P_caovord2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vz", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_cR", "#T_vy", "#T_wb", "#T_vz", "#T_cF", "#T_vx", "#T_cR", "#T_vz", "#T_cF", "#T_vy", "#T_cC", "#T_wcel", "#T_cvv", "#T_vx", "#T_cF", "#T_vy", "#T_wceq", "#T_vy", "#T_cF", "#T_vx", "#T_cC", "#T_wcel", "#T_cS", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cR", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_cC", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wb", "#T_cA", "#T_cF", "#T_cC", "#T_cR", "#T_cB", "#T_cF", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq12i", "#P_syl6bb", "#P_caovord", "#P_caovcom" ]
+}

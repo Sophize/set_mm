@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s3eqd on Metamath](http://us.metamath.org/mpegif/s3eqd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | s2eqd.1 | |- ( ph -> A = N ) |\n| 2 |  | s2eqd.2 | |- ( ph -> B = O ) |\n| 3 |  | s3eqd.3 | |- ( ph -> C = P ) |\n| 4 | 1, 2 | #P_s2eqd | |- ( ph -> <\" A B \"> = <\" N O \"> ) |\n| 5 | 3 | #P_s1eqd | |- ( ph -> <\" C \"> = <\" P \"> ) |\n| 6 | 4, 5 | #P_oveq12d | |- ( ph -> ( <\" A B \"> concat <\" C \"> ) = ( <\" N O \"> concat <\" P \"> ) ) |\n| 7 |  | #P_df-s3 | |- <\" A B C \"> = ( <\" A B \"> concat <\" C \"> ) |\n| 8 |  | #P_df-s3 | |- <\" N O P \"> = ( <\" N O \"> concat <\" P \"> ) |\n| 9 | 6, 7, 8 | #P_3eqtr4g | |- ( ph -> <\" A B C \"> = <\" N O P \"> ) |",
+  "conclusion" : "#P_s3eqd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cO", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cP", "#T_wph", "#T_wi", "#T_cs2--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cs2--2", "#T_wceq", "#T_cs2--1", "#T_cN", "#T_cO", "#T_cs2--2", "#T_wph", "#T_wi", "#T_cs1--1", "#T_cC", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cP", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cs2--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cC", "#T_cs1--2", "#T_wceq", "#T_cs2--1", "#T_cN", "#T_cO", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cP", "#T_cs1--2", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_wceq", "#T_cs2--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cC", "#T_cs1--2", "#T_cs3--1", "#T_cN", "#T_cO", "#T_cP", "#T_cs3--2", "#T_wceq", "#T_cs2--1", "#T_cN", "#T_cO", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cP", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cs3--1", "#T_cA", "#T_cB", "#T_cC", "#T_cs3--2", "#T_wceq", "#T_cs3--1", "#T_cN", "#T_cO", "#T_cP", "#T_cs3--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveq12d", "#P_df-s3", "#P_s2eqd", "#P_s1eqd", "#P_3eqtr4g" ]
+}

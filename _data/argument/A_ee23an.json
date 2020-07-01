@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee23an on Metamath](http://us.metamath.org/mpegif/ee23an.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee23an.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | ee23an.2 | |- ( ph -> ( ps -> ( th -> ta ) ) ) |\n| 3 |  | ee23an.3 | |- ( ( ch /\\ ta ) -> et ) |\n| 4 | 1 | #P_a1dd | |- ( ph -> ( ps -> ( th -> ch ) ) ) |\n| 5 | 4, 2, 3 | #P_ee33an | |- ( ph -> ( ps -> ( th -> et ) ) ) |",
+  "conclusion" : "#P_ee23an",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wch", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ee33an", "#P_a1dd" ]
+}

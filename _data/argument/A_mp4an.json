@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mp4an on Metamath](http://us.metamath.org/mpegif/mp4an.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mp4an.1 | |- ph |\n| 2 |  | mp4an.2 | |- ps |\n| 3 |  | mp4an.3 | |- ch |\n| 4 |  | mp4an.4 | |- th |\n| 5 |  | mp4an.5 | |- ( ( ( ph /\\ ps ) /\\ ( ch /\\ th ) ) -> ta ) |\n| 6 | 1, 2 | #P_pm3.2i | |- ( ph /\\ ps ) |\n| 7 | 3, 4 | #P_pm3.2i | |- ( ch /\\ th ) |\n| 8 | 6, 7, 5 | #P_mp2an | |- ta |",
+  "conclusion" : "#P_mp4an",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wch", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wch", "#T_wa", "#T_wth", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_pm3.2i" ]
+}

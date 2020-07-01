@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axtgsegcon on Metamath](http://us.metamath.org/mpegif/axtgsegcon.html)"
+  } ],
+  "names" : [ "axtgsegcon" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cP", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_vz", "#T_wa", "#T_cY", "#T_c.mi", "#T_vz", "#T_wceq", "#T_cA", "#T_c.mi", "#T_cB", "#T_c.mi", "#T_vz", "#T_cA", "#T_vz", "#T_cB", "#T_vz", "#T_cI", "#T_vz", "#T_cP", "#T_vz", "#T_cX", "#T_vz", "#T_cY", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of segment construction, Axiom A4 of [Schwabhauser] p. 11. As discussed in Axiom 4 of [Tarski1999] p. 178, \"The intuitive content [is that] given any line segment ` A B ` , one can construct a line segment congruent to it, starting at any point ` Y ` and going in the direction of any ray containing ` Y ` .  The ray is determined by the point ` Y ` and a second point ` X ` , the endpoint of the ray. The other endpoint of the line segment to be constructed is just the point ` z ` whose existence is asserted.\" (Contributed by Thierry Arnoux, 15-Mar-2019.) ",
+  "statement" : "axtrkg.p $e |- P = ( Base ` G ) $.\naxtrkg.d $e |- .- = ( dist ` G ) $.\naxtrkg.i $e |- I = ( Itv ` G ) $.\naxtrkg.g $e |- ( ph -> G e. TarskiG ) $.\naxtgsegcon.1 $e |- ( ph -> X e. P ) $.\naxtgsegcon.2 $e |- ( ph -> Y e. P ) $.\naxtgsegcon.3 $e |- ( ph -> A e. P ) $.\naxtgsegcon.4 $e |- ( ph -> B e. P ) $.\naxtgsegcon $p |- ( ph -> E. z e. P ( Y e. ( X I z ) /\\ ( Y .- z ) = ( A .- B ) ) ) $.\n$d .- z $.\n$d A z $.\n$d B z $.\n$d I z $.\n$d P z $.\n$d X z $.\n$d Y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abss on Metamath](http://us.metamath.org/mpegif/abss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_abid2 | |- { x | x e. A } = A |\n| 2 | 1 | #P_sseq2i | |- ( { x | ph } C_ { x | x e. A } <-> { x | ph } C_ A ) |\n| 3 |  | #P_ss2ab | |- ( { x | ph } C_ { x | x e. A } <-> A. x ( ph -> x e. A ) ) |\n| 4 | 2, 3 | #P_bitr3i | |- ( { x | ph } C_ A <-> A. x ( ph -> x e. A ) ) |",
+  "conclusion" : "#P_abss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wss", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wb", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wss", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wss", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wss", "#T_cA", "#T_wb", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ss2ab", "#P_abid2", "#P_sseq2i", "#P_bitr3i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See swrdccatin12d on Metamath](http://us.metamath.org/mpegif/swrdccatin12d.html)"
+  } ],
+  "names" : [ "swrdccatin12d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_chash", "#T_cfv", "#T_cA", "#T_wceq", "#T_cL", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cword", "#T_cV", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cL", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cL", "#T_cfz", "#T_cL", "#T_caddc", "#T_chash", "#T_cfv", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_cconcat", "#T_cB", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wceq", "#T_cA", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cL", "#T_cop--3", "#T_cconcat", "#T_cB", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cN", "#T_cmin", "#T_cL", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The subword of a concatenation of two words within both of the concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by Mario Carneiro/AV, 21-Oct-2018.) ",
+  "statement" : "swrdccatind.l $e |- ( ph -> ( # ` A ) = L ) $.\nswrdccatind.w $e |- ( ph -> ( A e. Word V /\\ B e. Word V ) ) $.\nswrdccatin12d.1 $e |- ( ph -> M e. ( 0 ... L ) ) $.\nswrdccatin12d.2 $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.\nswrdccatin12d $p |- ( ph -> ( ( A concat B ) substr <. M , N >. ) = ( ( A substr <. M , L >. ) concat ( B substr <. 0 , ( N - L ) >. ) ) ) $."
+}

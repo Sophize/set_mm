@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isrngo on Metamath](http://us.metamath.org/mpegif/isrngo.html)"
+  } ],
+  "names" : [ "isrngo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cH", "#T_wcel", "#T_cA", "#T_wi", "#T_cop--1", "#T_cG", "#T_cop--2", "#T_cH", "#T_cop--3", "#T_wcel", "#T_crngo", "#T_wb", "#T_cG", "#T_wcel", "#T_cablo", "#T_wa", "#T_cH", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cX", "#T_vx", "#T_cH", "#T_vy", "#T_cH", "#T_vz", "#T_wceq", "#T_vx", "#T_cH", "#T_vy", "#T_cH", "#T_vz", "#T_w3a--1", "#T_vx", "#T_cH", "#T_vy", "#T_cG", "#T_vz", "#T_wceq", "#T_vx", "#T_cH", "#T_vy", "#T_cG", "#T_vx", "#T_cH", "#T_vz", "#T_w3a--2", "#T_vx", "#T_cG", "#T_vy", "#T_cH", "#T_vz", "#T_wceq", "#T_vx", "#T_cH", "#T_vz", "#T_cG", "#T_vy", "#T_cH", "#T_vz", "#T_wa", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_vx", "#T_cH", "#T_vy", "#T_wceq", "#T_vy", "#T_wa", "#T_vy", "#T_cH", "#T_vx", "#T_wceq", "#T_vy", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_cH", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \"is a (unital) ring.\"  Definition of ring with unit in [Schechter] p. 187.  (Contributed by Jeff Hankins, 21-Nov-2006.) (Revised by Mario Carneiro, 21-Dec-2013.) (New usage is discouraged.) ",
+  "statement" : "isring.1 $e |- X = ran G $.\nisrngo $p |- ( H e. A -> ( <. G , H >. e. RingOps <-> ( ( G e. AbelOp /\\ H : ( X X. X ) --> X ) /\\ ( A. x e. X A. y e. X A. z e. X ( ( ( x H y ) H z ) = ( x H ( y H z ) ) /\\ ( x H ( y G z ) ) = ( ( x H y ) G ( x H z ) ) /\\ ( ( x G y ) H z ) = ( ( x H z ) G ( y H z ) ) ) /\\ E. x e. X A. y e. X ( ( x H y ) = y /\\ ( y H x ) = y ) ) ) ) ) $.\n$d G x y z $.\n$d H x y z $.\n$d X x y z $."
+}

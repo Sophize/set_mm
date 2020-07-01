@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prprc1 on Metamath](http://us.metamath.org/mpegif/prprc1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_snprc | |- ( -. A e. _V <-> { A } = (/) ) |\n| 2 |  | #P_uneq1 | |- ( { A } = (/) -> ( { A } u. { B } ) = ( (/) u. { B } ) ) |\n| 3 |  | #P_df-pr | |- { A , B } = ( { A } u. { B } ) |\n| 4 |  | #P_uncom | |- ( (/) u. { B } ) = ( { B } u. (/) ) |\n| 5 |  | #P_un0 | |- ( { B } u. (/) ) = { B } |\n| 6 | 4, 5 | #P_eqtr2i | |- { B } = ( (/) u. { B } ) |\n| 7 | 2, 3, 6 | #P_3eqtr4g | |- ( { A } = (/) -> { A , B } = { B } ) |\n| 8 | 1, 7 | #P_sylbi | |- ( -. A e. _V -> { A , B } = { B } ) |",
+  "conclusion" : "#P_prprc1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_c0", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_c0", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_c0", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wn", "#T_cA", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cB", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr2i", "#P_df-pr", "#P_snprc", "#P_uneq1", "#P_un0", "#P_uncom", "#P_3eqtr4g", "#P_sylbi" ]
+}

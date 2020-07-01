@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspid on Metamath](http://us.metamath.org/mpegif/lspid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nt\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspid.s | |- S = ( LSubSp ` W ) |\n| 2 |  | lspid.n | |- N = ( LSpan ` W ) |\n| 3 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 4 | 3, 1 | #P_lssss | |- ( U e. S -> U C_ ( Base ` W ) ) |\n| 5 | 3, 1, 2 | #P_lspval | |- ( ( W e. LMod /\\ U C_ ( Base ` W ) ) -> ( N ` U ) = |^| { t e. S | U C_ t } ) |\n| 6 | 4, 5 | #P_sylan2 | |- ( ( W e. LMod /\\ U e. S ) -> ( N ` U ) = |^| { t e. S | U C_ t } ) |\n| 7 |  | #P_intmin | |- ( U e. S -> |^| { t e. S | U C_ t } = U ) |\n| 8 | 7 | #P_adantl | |- ( ( W e. LMod /\\ U e. S ) -> |^| { t e. S | U C_ t } = U ) |\n| 9 | 6, 8 | #P_eqtrd | |- ( ( W e. LMod /\\ U e. S ) -> ( N ` U ) = U ) |",
+  "conclusion" : "#P_lspid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vt", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cW", "#T_wi", "#T_cN", "#T_cfv", "#T_cU", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cU", "#T_wss", "#T_vt", "#T_crab--4", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cN", "#T_cfv", "#T_cU", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cU", "#T_wss", "#T_vt", "#T_crab--4", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cU", "#T_wss", "#T_vt", "#T_crab--4", "#T_wceq", "#T_cU", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cU", "#T_wss", "#T_vt", "#T_crab--4", "#T_wceq", "#T_cU", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cN", "#T_cfv", "#T_cU", "#T_wceq", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sylan2", "#P_adantl", "#P_eqtrd", "#P_lssss", "#P_lspval", "#P_intmin" ]
+}

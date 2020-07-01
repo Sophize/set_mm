@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvelimor on Metamath](http://us.metamath.org/mpegif/dvelimor.html)"
+  } ],
+  "names" : [ "dvelimor" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wo", "#T_wnf", "#T_vx", "#T_wps", "#T_wps", "#T_vz", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Disjunctive distinct variable constraint elimination.  A user of this theorem starts with a formula ` ph ` (containing ` z ` ) and a distinct variable constraint between ` x ` and ` z ` .  The theorem makes it possible to replace the distinct variable constraint with the disjunct ` A. x x = y ` ( ` ps ` is just a version of ` ph ` with ` y ` substituted for ` z ` ).  (Contributed by Jim Kingdon, 11-May-2018.) ",
+  "statement" : "dvelimor.1 $e |- F/ x ph $.\ndvelimor.2 $e |- ( z = y -> ( ph <-> ps ) ) $.\ndvelimor $p |- ( A. x x = y \\/ F/ x ps ) $.\n$d ps z $.\n$d x z $."
+}

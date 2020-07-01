@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elbdop on Metamath](http://us.metamath.org/mpegif/elbdop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nt\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( t = T -> ( normop ` t ) = ( normop ` T ) ) |\n| 2 | 1 | #P_breq1d | |- ( t = T -> ( ( normop ` t ) < +oo <-> ( normop ` T ) < +oo ) ) |\n| 3 |  | #P_df-bdop | |- BndLinOp = { t e. LinOp | ( normop ` t ) < +oo } |\n| 4 | 2, 3 | #P_elrab2 | |- ( T e. BndLinOp <-> ( T e. LinOp /\\ ( normop ` T ) < +oo ) ) |",
+  "conclusion" : "#P_elbdop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vt", "#T_vt", "#T_wceq", "#T_cT", "#T_wi", "#T_cnop", "#T_cfv", "#T_vt", "#T_wceq", "#T_cnop", "#T_cfv", "#T_cT", "#T_vt", "#T_wceq", "#T_cT", "#T_wi", "#T_cnop", "#T_cfv", "#T_vt", "#T_clt", "#T_cpnf", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf", "#T_cbo", "#T_wceq", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_clo", "#T_crab--3", "#T_cnop", "#T_cfv", "#T_vt", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cT", "#T_wcel", "#T_cbo", "#T_wb", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_fveq2", "#P_breq1d", "#P_df-bdop" ]
+}

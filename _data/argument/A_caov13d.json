@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See caov13d on Metamath](http://us.metamath.org/mpegif/caov13d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | caovd.1 | |- ( ph -> A e. S ) |\n| 2 |  | caovd.2 | |- ( ph -> B e. S ) |\n| 3 |  | caovd.3 | |- ( ph -> C e. S ) |\n| 4 |  | caovd.com | |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x F y ) = ( y F x ) ) |\n| 5 |  | caovd.ass | |- ( ( ph /\\ ( x e. S /\\ y e. S /\\ z e. S ) ) -> ( ( x F y ) F z ) = ( x F ( y F z ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_caov31d | |- ( ph -> ( ( A F B ) F C ) = ( ( C F B ) F A ) ) |\n| 7 | 5, 1, 2, 3 | #P_caovassd | |- ( ph -> ( ( A F B ) F C ) = ( A F ( B F C ) ) ) |\n| 8 | 5, 3, 2, 1 | #P_caovassd | |- ( ph -> ( ( C F B ) F A ) = ( C F ( B F A ) ) ) |\n| 9 | 6, 7, 8 | #P_3eqtr3d | |- ( ph -> ( A F ( B F C ) ) = ( C F ( B F A ) ) ) |",
+  "conclusion" : "#P_caov13d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_cF", "#T_vy", "#T_wceq", "#T_vy", "#T_cF", "#T_vx", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_cF", "#T_vy", "#T_cF", "#T_vz", "#T_wceq", "#T_vx", "#T_cF", "#T_vy", "#T_cF", "#T_vz", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_cF", "#T_cC", "#T_wceq", "#T_cC", "#T_cF", "#T_cB", "#T_cF", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_caov31d", "#P_caovassd", "#P_3eqtr3d" ]
+}

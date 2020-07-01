@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-wwlk on Metamath](http://us.metamath.org/mpegif/df-wwlk.html)"
+  } ],
+  "names" : [ "df-wwlk" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cwwlk", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_cword", "#T_vv", "#T_crab--3", "#T_vw", "#T_wne", "#T_c0", "#T_wa", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cc0", "#T_cfzo", "#T_chash", "#T_cfv", "#T_vw", "#T_cmin", "#T_c1", "#T_cpr--1", "#T_vw", "#T_cfv", "#T_vi", "#T_cpr--2", "#T_vw", "#T_cfv", "#T_vi", "#T_caddc", "#T_c1", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_ve", "#T_crab--4", "#T_ve", "#T_vi", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Walks (in an undirected graph) as words over the set of vertices.  Such a word corresponds to the sequence p(0) p(1) ... p(n-1) p(n) of the vertices in a walk p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n) as defined in ~ df-wlk . ` w = (/) ` has to be excluded because a walk always consists of at least one vertex, see ~ wlkn0 .  (Contributed by Alexander van der Vekens, 15-Jul-2018.) ",
+  "statement" : "df-wwlk $p |- WWalks = ( v e. _V , e e. _V |-> { w e. Word v | ( w =/= (/) /\\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) ) { ( w ` i ) , ( w ` ( i + 1 ) ) } e. ran e ) } ) $.\n$d e i v w $."
+}

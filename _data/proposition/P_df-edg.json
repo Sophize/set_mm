@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-edg on Metamath](http://us.metamath.org/mpegif/df-edg.html)"
+  } ],
+  "names" : [ "df-edg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cedg", "#T_wceq", "#T_vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crn", "#T_c2nd", "#T_cfv", "#T_vg" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of edges of a graph, see also definition (\"E = E(G)\") in section I.1 of [Bollobas] p. 1.  This definition is very general:  It defines edges for any ordered pairs as the range of its second component (which even needs not to be a function).  Therefore, this definition could also be used for hypergraphs and multigraphs.  In these cases, however, the (possibly more than one) edges connecting the same vertices could not be distinguished anymore.  Therefore, this definition should only be used for undirected simple graphs.  (Contributed by AV, 1-Jan-2020.) ",
+  "statement" : "df-edg $p |- Edges = ( g e. _V |-> ran ( 2nd ` g ) ) $."
+}

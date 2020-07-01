@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See diagval on Metamath](http://us.metamath.org/mpegif/diagval.html)"
+  } ],
+  "names" : [ "diagval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_cC", "#T_cdiag", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cL", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c1stf", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the diagonal functor, which is the functor ` C --> ( D Func C ) ` whose object part is ` x e. C |-> ( y e. D |-> x ) ` .  We can define this equationally as the currying of the first projection functor, and by expressing it this way we get a quick proof of functoriality. (Contributed by Mario Carneiro, 6-Jan-2017.)  (Revised by Mario Carneiro, 15-Jan-2017.) ",
+  "statement" : "diagval.l $e |- L = ( C DiagFunc D ) $.\ndiagval.c $e |- ( ph -> C e. Cat ) $.\ndiagval.d $e |- ( ph -> D e. Cat ) $.\ndiagval $p |- ( ph -> L = ( <. C , D >. curryF ( C 1stF D ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ioossico on Metamath](http://us.metamath.org/mpegif/ioossico.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b w x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ioo | |- (,) = ( a e. RR* , b e. RR* |-> { x e. RR* | ( a < x /\\ x < b ) } ) |\n| 2 |  | #P_df-ico | |- [,) = ( a e. RR* , b e. RR* |-> { x e. RR* | ( a <_ x /\\ x < b ) } ) |\n| 3 |  | #P_xrltle | |- ( ( A e. RR* /\\ w e. RR* ) -> ( A < w -> A <_ w ) ) |\n| 4 |  | #P_idd | |- ( ( w e. RR* /\\ B e. RR* ) -> ( w < B -> w < B ) ) |\n| 5 | 1, 2, 3, 4 | #P_ixxssixx--i | |- ( A (,) B ) C_ ( A [,) B ) |",
+  "conclusion" : "#P_ioossico",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_vw", "#T_vx", "#T_cioo", "#T_wceq", "#T_va", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_va", "#T_clt", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_vb", "#T_crab--4", "#T_cico", "#T_wceq", "#T_va", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_va", "#T_cle", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_vb", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_vw", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_vw", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_vw", "#T_vw", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_vw", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_vw", "#T_clt", "#T_cB.wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wss", "#T_cA", "#T_cico", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ioo", "#P_xrltle", "#P_ixxssixx--i", "#P_idd", "#P_df-ico" ]
+}

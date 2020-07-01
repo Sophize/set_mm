@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sbel1 on Metamath](http://us.metamath.org/mpegif/bj-sbel1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sbsbc | |- ( [ y / x ] A e. B <-> [. y / x ]. A e. B ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_sbcel1g | |- ( y e. _V -> ( [. y / x ]. A e. B <-> [_ y / x ]_ A e. B ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( [. y / x ]. A e. B <-> [_ y / x ]_ A e. B ) |\n| 5 | 1, 4 | #P_bitri | |- ( [ y / x ] A e. B <-> [_ y / x ]_ A e. B ) |",
+  "conclusion" : "#P_bj-sbel1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_csb--1", "#T_vy", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sbsbc", "#P_sbcel1g", "#P_vex", "#P_bitri" ]
+}

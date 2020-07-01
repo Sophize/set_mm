@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.23t on Metamath](http://us.metamath.org/mpegif/19.23t.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exim | |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) |\n| 2 |  | #P_19.9t | |- ( F/ x ps -> ( E. x ps <-> ps ) ) |\n| 3 | 2 | #P_biimpd | |- ( F/ x ps -> ( E. x ps -> ps ) ) |\n| 4 | 1, 3 | #P_syl9r | |- ( F/ x ps -> ( A. x ( ph -> ps ) -> ( E. x ph -> ps ) ) ) |\n| 5 |  | #P_nfr | |- ( F/ x ps -> ( ps -> A. x ps ) ) |\n| 6 | 5 | #P_imim2d | |- ( F/ x ps -> ( ( E. x ph -> ps ) -> ( E. x ph -> A. x ps ) ) ) |\n| 7 |  | #P_19.38 | |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) |\n| 8 | 6, 7 | #P_syl6 | |- ( F/ x ps -> ( ( E. x ph -> ps ) -> A. x ( ph -> ps ) ) ) |\n| 9 | 4, 8 | #P_impbid | |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) |",
+  "conclusion" : "#P_19.23t",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exim", "#P_nfr", "#P_syl9r", "#P_impbid", "#P_19.9t", "#P_imim2d", "#P_biimpd", "#P_19.38", "#P_syl6" ]
+}

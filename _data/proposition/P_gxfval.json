@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gxfval on Metamath](http://us.metamath.org/mpegif/gxfval.html)"
+  } ],
+  "names" : [ "gxfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cG", "#T_cP", "#T_wceq", "#T_cgx", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cP", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cX", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cz", "#T_cmpt2--4", "#T_cif--1", "#T_vy", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cU", "#T_cif--3", "#T_cif--1", "#T_cc0", "#T_clt", "#T_vy", "#T_cif--2", "#T_cseq--1", "#T_c1", "#T_cG", "#T_cseq--2", "#T_cn", "#T_cxp", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cfv", "#T_vy", "#T_cif--3", "#T_cN", "#T_cfv", "#T_cseq--1", "#T_c1", "#T_cG", "#T_cseq--2", "#T_cn", "#T_cxp", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cfv", "#T_cneg", "#T_vy", "#T_cG", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cU", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the group power operator function.  (Contributed by Paul Chapman, 17-Apr-2009.)  (Revised by Mario Carneiro, 15-Dec-2013.) (New usage is discouraged.) ",
+  "statement" : "gxfval.1 $e |- X = ran G $.\ngxfval.2 $e |- U = ( GId ` G ) $.\ngxfval.3 $e |- N = ( inv ` G ) $.\ngxfval.4 $e |- P = ( ^g ` G ) $.\ngxfval $p |- ( G e. GrpOp -> P = ( x e. X , y e. ZZ |-> if ( y = 0 , U , if ( 0 < y , ( seq 1 ( G , ( NN X. { x } ) ) ` y ) , ( N ` ( seq 1 ( G , ( NN X. { x } ) ) ` -u y ) ) ) ) ) ) $.\n$d G x y $.\n$d N x y $.\n$d U x y $.\n$d X x y $.\n$d x y $.\n$d x y $."
+}

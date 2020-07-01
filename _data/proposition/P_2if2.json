@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2if2 on Metamath](http://us.metamath.org/mpegif/2if2.html)"
+  } ],
+  "names" : [ "2if2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cD", "#T_wceq", "#T_cA", "#T_wph", "#T_w3a--1", "#T_wn", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_cD", "#T_wceq", "#T_cB", "#T_wph", "#T_w3a--1", "#T_wn", "#T_wps", "#T_w3a--2", "#T_wn", "#T_wth", "#T_wi", "#T_cD", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cD", "#T_wceq", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cif--1", "#T_wth", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Resolve two nested conditionals.  (Contributed by Alexander van der Vekens, 27-Mar-2018.) ",
+  "statement" : "2if2.1 $e |- ( ( ph /\\ ps ) -> D = A ) $.\n2if2.2 $e |- ( ( ph /\\ -. ps /\\ th ) -> D = B ) $.\n2if2.3 $e |- ( ( ph /\\ -. ps /\\ -. th ) -> D = C ) $.\n2if2 $p |- ( ph -> D = if ( ps , A , if ( th , B , C ) ) ) $."
+}

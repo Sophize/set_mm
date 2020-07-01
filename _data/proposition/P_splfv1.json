@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See splfv1 on Metamath](http://us.metamath.org/mpegif/splfv1.html)"
+  } ],
+  "names" : [ "splfv1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cword", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cT", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cword", "#T_cA", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cF", "#T_wph", "#T_wi", "#T_cS", "#T_csplice", "#T_cotp--1", "#T_cF", "#T_cotp--2", "#T_cT", "#T_cotp--3", "#T_cR", "#T_cotp--4", "#T_cfv", "#T_cX", "#T_wceq", "#T_cS", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Symbols to the left of a splice are unaffected.  (Contributed by Stefan O'Rear, 23-Aug-2015.) ",
+  "statement" : "spllen.s $e |- ( ph -> S e. Word A ) $.\nspllen.f $e |- ( ph -> F e. ( 0 ... T ) ) $.\nspllen.t $e |- ( ph -> T e. ( 0 ... ( # ` S ) ) ) $.\nspllen.r $e |- ( ph -> R e. Word A ) $.\nsplfv1.x $e |- ( ph -> X e. ( 0 ..^ F ) ) $.\nsplfv1 $p |- ( ph -> ( ( S splice <. F , T , R >. ) ` X ) = ( S ` X ) ) $."
+}

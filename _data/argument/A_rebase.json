@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rebase on Metamath](http://us.metamath.org/mpegif/rebase.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-resscn | |- RR C_ CC |\n| 2 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 3 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 4 | 2, 3 | #P_ressbas2 | |- ( RR C_ CC -> RR = ( Base ` RRfld ) ) |\n| 5 | 1, 4 | #P_ax-mp | |- RR = ( Base ` RRfld ) |",
+  "conclusion" : "#P_rebase",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr", "#T_wss", "#T_cc", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wss", "#T_cc", "#T_wi", "#T_cr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_crefld", "#T_cr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_crefld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-resscn", "#P_ax-mp", "#P_ressbas2", "#P_df-refld", "#P_cnfldbas" ]
+}

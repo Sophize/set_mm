@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-denotes on Metamath](http://us.metamath.org/mpegif/bj-denotes.html)"
+  } ],
+  "names" : [ "bj-denotes" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wb", "#T_wex", "#T_vy", "#T_vy", "#T_wceq", "#T_cA", "#T_cA", "#T_vx", "#T_cA", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This would be the justification for the definition of the unary predicate \"E!\" by ` |- ( ` E! ` A <-> E. x x = A ) ` which could be interpreted as \" ` A ` exists\" or \" ` A ` denotes\".  It is interesting that this justification can be proved without ~ ax-ext nor ~ df-cleq (but of course using ~ df-clab and ~ df-clel ).  Once extensionality is postulated, then ~ isset will prove that \"existing\" (as a set) is equivalent to being a member of a class. Note that there is no dv condition on ` x , y ` but the theorem does not depend on ~ ax-13 .  Actually, the proof depends only on ax-1--7 and ~ sp . The symbol \"E!\" was chosen to be reminiscent of the analogous predicate in (inclusive or non-inclusive) free logic, which deals with the possibility of non-existent objects.  This analogy should not be taken too far, since here there are no equality axioms for classes: they are derived from ~ ax-ext (e.g. ~ eqid ).  In particular, one cannot even prove ` |- E. x x = A => |- A = A ` . With ~ ax-ext , the present theorem is obvious from ~ cbvexv and ~ eqeq1 (in free logic, the same proof holds since one has equality axioms for terms).  (Contributed by BJ, 29-Apr-2019.) (Proof modification is discouraged.) ",
+  "statement" : "bj-denotes $p |- ( E. x x = A <-> E. y y = A ) $.\n$d A x $.\n$d A y $."
+}

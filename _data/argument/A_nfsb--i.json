@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfsb on Metamath](http://us.metamath.org/mpegif/nfsb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfsb.1 | |- F/ z ph |\n| 2 | 1 | #P_nfsbxy | |- F/ z [ w / x ] ph |\n| 3 | 2 | #P_nfsbxy | |- F/ z [ y / w ] [ w / x ] ph |\n| 4 |  | #P_ax-17 | |- ( ph -> A. w ph ) |\n| 5 | 4 | #P_sbco2v | |- ( [ y / w ] [ w / x ] ph <-> [ y / x ] ph ) |\n| 6 | 5 | #P_nfbii | |- ( F/ z [ y / w ] [ w / x ] ph <-> F/ z [ y / x ] ph ) |\n| 7 | 3, 6 | #P_mpbi | |- F/ z [ y / x ] ph |",
+  "conclusion" : "#P_nfsb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wnf", "#T_vz", "#T_wph", "#T_wnf", "#T_vz", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wnf", "#T_vz", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wph", "#T_wi", "#T_wal", "#T_vw", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wnf", "#T_vz", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wnf", "#T_vz", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wnf", "#T_vz", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbi", "#P_nfsbxy", "#P_sbco2v", "#P_ax-17", "#P_nfbii" ]
+}

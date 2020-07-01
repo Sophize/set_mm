@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvelimf on Metamath](http://us.metamath.org/mpegif/dvelimf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvelimf.1 | |- ( ph -> A. x ph ) |\n| 2 |  | dvelimf.2 | |- ( ps -> A. z ps ) |\n| 3 |  | dvelimf.3 | |- ( z = y -> ( ph <-> ps ) ) |\n| 4 | 1 | #P_hbsb4 | |- ( -. A. x x = y -> ( [ y / z ] ph -> A. x [ y / z ] ph ) ) |\n| 5 | 2, 3 | #P_sbieh | |- ( [ y / z ] ph <-> ps ) |\n| 6 | 5 | #P_albii | |- ( A. x [ y / z ] ph <-> A. x ps ) |\n| 7 | 4, 5, 6 | #P_3imtr3g | |- ( -. A. x x = y -> ( ps -> A. x ps ) ) |\n\\\n Version of ~ dvelim without any variable restrictions.  (Contributed by NM, 1-Oct-2002.) ",
+  "conclusion" : "#P_dvelimf--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vz", "#T_wps", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbieh", "#P_albii", "#P_hbsb4", "#P_3imtr3g" ]
+}

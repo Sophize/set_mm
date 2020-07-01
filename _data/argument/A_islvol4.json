@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islvol4 on Metamath](http://us.metamath.org/mpegif/islvol4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lvolset.b | |- B = ( Base ` K ) |\n| 2 |  | lvolset.c | |- C = ( <o ` K ) |\n| 3 |  | lvolset.p | |- P = ( LPlanes ` K ) |\n| 4 |  | lvolset.v | |- V = ( LVols ` K ) |\n| 5 | 1, 2, 3, 4 | #P_islvol | |- ( K e. A -> ( X e. V <-> ( X e. B /\\ E. y e. P y C X ) ) ) |\n| 6 | 5 | #P_baibd | |- ( ( K e. A /\\ X e. B ) -> ( X e. V <-> E. y e. P y C X ) ) |",
+  "conclusion" : "#P_islvol4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cC", "#T_wceq", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cP", "#T_wceq", "#T_clpl", "#T_cfv", "#T_cK", "#T_cV", "#T_wceq", "#T_clvol", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cP", "#T_vy.tru", "#T_cC", "#T_cX", "#T_cK", "#T_wcel", "#T_cA", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cP", "#T_vy", "#T_cC", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baibd", "#P_islvol" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relsdom on Metamath](http://us.metamath.org/mpegif/relsdom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reldom | |- Rel ~<_ |\n| 2 |  | #P_reldif | |- ( Rel ~<_ -> Rel ( ~<_ \\ ~~ ) ) |\n| 3 |  | #P_df-sdom | |- ~< = ( ~<_ \\ ~~ ) |\n| 4 | 3 | #P_releqi | |- ( Rel ~< <-> Rel ( ~<_ \\ ~~ ) ) |\n| 5 | 2, 4 | #P_sylibr | |- ( Rel ~<_ -> Rel ~< ) |\n| 6 | 1, 5 | #P_ax-mp | |- Rel ~< |",
+  "conclusion" : "#P_relsdom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cdom", "#T_wrel", "#T_cdom", "#T_wi", "#T_wrel", "#T_cdom", "#T_cdif", "#T_cen", "#T_csdm", "#T_wceq", "#T_cdom", "#T_cdif", "#T_cen", "#T_wrel", "#T_csdm", "#T_wb", "#T_wrel", "#T_cdom", "#T_cdif", "#T_cen", "#T_wrel", "#T_cdom", "#T_wi", "#T_wrel", "#T_csdm", "#T_wrel", "#T_csdm" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_df-sdom", "#P_releqi", "#P_sylibr", "#P_reldom", "#P_reldif" ]
+}

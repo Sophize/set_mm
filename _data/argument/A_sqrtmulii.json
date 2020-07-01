@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtmulii on Metamath](http://us.metamath.org/mpegif/sqrtmulii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sqrth.1 | |- A e. RR |\n| 2 |  | sqr11.1 | |- B e. RR |\n| 3 |  | sqrmuli.1 | |- 0 <_ A |\n| 4 |  | sqrmuli.2 | |- 0 <_ B |\n| 5 | 1, 2 | #P_sqrtmuli | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( sqrt ` ( A x. B ) ) = ( ( sqrt ` A ) x. ( sqrt ` B ) ) ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- ( sqrt ` ( A x. B ) ) = ( ( sqrt ` A ) x. ( sqrt ` B ) ) |",
+  "conclusion" : "#P_sqrtmulii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cA", "#T_cc0", "#T_cle", "#T_cB", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_csqrt", "#T_cfv", "#T_cA", "#T_cmul", "#T_cB", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_sqrtmuli" ]
+}

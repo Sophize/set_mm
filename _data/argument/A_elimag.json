@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimag on Metamath](http://us.metamath.org/mpegif/elimag.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( y = A -> ( x B y <-> x B A ) ) |\n| 2 | 1 | #P_rexbidv | |- ( y = A -> ( E. x e. C x B y <-> E. x e. C x B A ) ) |\n| 3 |  | #P_dfima2 | |- ( B \" C ) = { y | E. x e. C x B y } |\n| 4 | 2, 3 | #P_elab2g | |- ( A e. V -> ( A e. ( B \" C ) <-> E. x e. C x B A ) ) |",
+  "conclusion" : "#P_elimag",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cB.wceq", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_cB.wceq", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cC", "#T_vx.wal", "#T_cB.wceq", "#T_vy.tru", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cC", "#T_vx.wal", "#T_cB.wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_cima", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cC", "#T_vx.wal", "#T_cB.wceq", "#T_vy.tru", "#T_cab--3", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_cima", "#T_cC", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cC", "#T_vx", "#T_cB", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfima2", "#P_breq2", "#P_rexbidv", "#P_elab2g" ]
+}

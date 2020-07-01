@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ectocl on Metamath](http://us.metamath.org/mpegif/ectocl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ectocl.1 | |- S = ( B /. R ) |\n| 2 |  | ectocl.2 | |- ( [ x ] R = A -> ( ph <-> ps ) ) |\n| 3 |  | ectocl.3 | |- ( x e. B -> ph ) |\n| 4 |  | #P_tru | |- T. |\n| 5 | 3 | #P_adantl | |- ( ( T. /\\ x e. B ) -> ph ) |\n| 6 | 1, 2, 5 | #P_ectocld | |- ( ( T. /\\ A e. S ) -> ps ) |\n| 7 | 4, 6 | #P_mpan | |- ( A e. S -> ps ) |",
+  "conclusion" : "#P_ectocl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cB", "#T_cqs", "#T_cR", "#T_cec--1", "#T_vx", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wph", "#T_wtru", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wtru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_cS", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_tru", "#P_ectocld", "#P_mpan" ]
+}

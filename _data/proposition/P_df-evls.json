@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-evls on Metamath](http://us.metamath.org/mpegif/df-evls.html)"
+  } ],
+  "names" : [ "df-evls" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ces", "#T_wceq", "#T_vi", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vs", "#T_cmpt2--3", "#T_ccrg", "#T_cmpt2--4", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vs", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_vr", "#T_cmpt--1", "#T_csubrg", "#T_cfv", "#T_vs", "#T_cmpt--2", "#T_csb--1", "#T_vi", "#T_cmpl", "#T_vs", "#T_cress", "#T_vr", "#T_csb--2", "#T_vw", "#T_csb--3", "#T_crio--1", "#T_vf", "#T_crio--2", "#T_vw", "#T_crh", "#T_vs", "#T_cpws", "#T_vb", "#T_cmap", "#T_vi", "#T_vf", "#T_ccom", "#T_cascl", "#T_cfv", "#T_vw", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_vr", "#T_cmpt--2", "#T_vb", "#T_cmap", "#T_vi", "#T_cxp", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wa", "#T_vf", "#T_ccom", "#T_vi", "#T_cmvr", "#T_vs", "#T_cress", "#T_vr", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_vi", "#T_cmpt--2", "#T_vg", "#T_cmpt--1", "#T_vb", "#T_cmap", "#T_vi", "#T_cmpt--2", "#T_vg", "#T_cfv", "#T_vx", "#T_vb", "#T_vf", "#T_vg", "#T_vi", "#T_vr", "#T_vs", "#T_vw", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the evaluation map for the polynomial algebra.  The function ` ( ( I evalSub S ) `` R ) : V --> ( S ^m ( S ^m I ) ) ` makes sense when ` I ` is an index set, ` S ` is a ring, ` R ` is a subring of ` S ` , and where ` V ` is the set of polynomials in ` ( I mPoly R ) ` .  This function maps an element of the formal polynomial algebra (with coefficients in ` R ` ) to a function from assignments ` I --> S ` of the variables to elements of ` S ` formed by evaluating the polynomial with the given assignments.  (Contributed by Stefan O'Rear, 11-Mar-2015.) ",
+  "statement" : "df-evls $p |- evalSub = ( i e. _V , s e. CRing |-> [_ ( Base ` s ) / b ]_ ( r e. ( SubRing ` s ) |-> [_ ( i mPoly ( s |`s r ) ) / w ]_ ( iota_ f e. ( w RingHom ( s ^s ( b ^m i ) ) ) ( ( f o. ( algSc ` w ) ) = ( x e. r |-> ( ( b ^m i ) X. { x } ) ) /\\ ( f o. ( i mVar ( s |`s r ) ) ) = ( x e. i |-> ( g e. ( b ^m i ) |-> ( g ` x ) ) ) ) ) ) ) $.\n$d b f g i r s w x $."
+}

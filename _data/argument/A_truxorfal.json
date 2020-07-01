@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See truxorfal on Metamath](http://us.metamath.org/mpegif/truxorfal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor | |- ( ( T. \\/_ F. ) <-> -. ( T. <-> F. ) ) |\n| 2 |  | #P_trubifal | |- ( ( T. <-> F. ) <-> F. ) |\n| 3 | 1, 2 | #P_xchbinx | |- ( ( T. \\/_ F. ) <-> -. F. ) |\n| 4 |  | #P_notfal | |- ( -. F. <-> T. ) |\n| 5 | 3, 4 | #P_bitri | |- ( ( T. \\/_ F. ) <-> T. ) |",
+  "conclusion" : "#P_truxorfal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wxo", "#T_wfal", "#T_wb", "#T_wn", "#T_wtru", "#T_wb", "#T_wfal", "#T_wtru", "#T_wb", "#T_wfal", "#T_wb", "#T_wfal", "#T_wtru", "#T_wxo", "#T_wfal", "#T_wb", "#T_wn", "#T_wfal", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wtru", "#T_wxo", "#T_wfal", "#T_wb", "#T_wtru" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notfal", "#P_df-xor", "#P_xchbinx", "#P_bitri", "#P_trubifal" ]
+}

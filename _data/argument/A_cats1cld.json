@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cats1cld on Metamath](http://us.metamath.org/mpegif/cats1cld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cats1cld.1 | |- T = ( S concat <\" X \"> ) |\n| 2 |  | cats1cld.2 | |- ( ph -> S e. Word A ) |\n| 3 |  | cats1cld.3 | |- ( ph -> X e. A ) |\n| 4 | 3 | #P_s1cld | |- ( ph -> <\" X \"> e. Word A ) |\n| 5 |  | #P_ccatcl | |- ( ( S e. Word A /\\ <\" X \"> e. Word A ) -> ( S concat <\" X \"> ) e. Word A ) |\n| 6 | 2, 4, 5 | #P_syl2anc | |- ( ph -> ( S concat <\" X \"> ) e. Word A ) |\n| 7 | 1, 6 | #P_syl5eqel | |- ( ph -> T e. Word A ) |",
+  "conclusion" : "#P_cats1cld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cword", "#T_cA", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cA.wceq", "#T_cS", "#T_wcel", "#T_cword", "#T_cA.wceq", "#T_wa", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cword", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ccatcl", "#P_syl5eqel", "#P_s1cld" ]
+}

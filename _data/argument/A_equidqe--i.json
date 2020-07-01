@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equidqe on Metamath](http://us.metamath.org/mpegif/equidqe.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-9--i | |- -. A. y -. y = x |\n| 2 |  | #P_ax-8--i | |- ( y = x -> ( y = x -> x = x ) ) |\n| 3 | 2 | #P_pm2.43i | |- ( y = x -> x = x ) |\n| 4 | 3 | #P_con3i | |- ( -. x = x -> -. y = x ) |\n| 5 | 4 | #P_alimi | |- ( A. y -. x = x -> A. y -. y = x ) |\n| 6 | 1, 5 | #P_mto | |- -. A. y -. x = x |",
+  "conclusion" : "#P_equidqe",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wal", "#T_vy.tru", "#T_wn", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wn", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wn", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vy", "#T_wn", "#T_vx", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_ax-8--i", "#P_ax-9--i", "#P_con3i", "#P_alimi", "#P_mto" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ralcom4f on Metamath](http://us.metamath.org/mpegif/ralcom4f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralcom4f.1 | |- F/_ y A |\n| 2 |  | #P_nfcv | |- F/_ x _V |\n| 3 | 1, 2 | #P_ralcomf | |- ( A. x e. A A. y e. _V ph <-> A. y e. _V A. x e. A ph ) |\n| 4 |  | #P_ralv | |- ( A. y e. _V ph <-> A. y ph ) |\n| 5 | 4 | #P_ralbii | |- ( A. x e. A A. y e. _V ph <-> A. x e. A A. y ph ) |\n| 6 |  | #P_ralv | |- ( A. y e. _V A. x e. A ph <-> A. y A. x e. A ph ) |\n| 7 | 3, 5, 6 | #P_3bitr3i | |- ( A. x e. A A. y ph <-> A. y A. x e. A ph ) |",
+  "conclusion" : "#P_ralcom4f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vy", "#T_cA", "#T_wnfc", "#T_vx.wal", "#T_cvv", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cvv", "#T_wph", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cvv", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cvv", "#T_wph", "#T_wb", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cvv", "#T_wph", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cvv", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wal", "#T_vy", "#T_wph", "#T_wb", "#T_wal", "#T_vy", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_ralv", "#P_ralcomf", "#P_ralbii", "#P_3bitr3i" ]
+}

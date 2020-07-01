@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mon1pcl on Metamath](http://us.metamath.org/mpegif/mon1pcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uc1pcl.p | |- P = ( Poly1 ` R ) |\n| 2 |  | uc1pcl.b | |- B = ( Base ` P ) |\n| 3 |  | mon1pcl.m | |- M = ( Monic1p ` R ) |\n| 4 |  | #P_eqid | |- ( 0g ` P ) = ( 0g ` P ) |\n| 5 |  | #P_eqid | |- ( deg1 ` R ) = ( deg1 ` R ) |\n| 6 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 7 | 1, 2, 4, 5, 3, 6 | #P_ismon1p | |- ( F e. M <-> ( F e. B /\\ F =/= ( 0g ` P ) /\\ ( ( coe1 ` F ) ` ( ( deg1 ` R ) ` F ) ) = ( 1r ` R ) ) ) |\n| 8 | 7 | #P_simp1bi | |- ( F e. M -> F e. B ) |",
+  "conclusion" : "#P_mon1pcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cM", "#T_wceq", "#T_cmn1", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cP", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cP", "#T_cdg1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cF", "#T_wcel", "#T_cM", "#T_wb", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cF", "#T_wne", "#T_c0g", "#T_cfv", "#T_cP", "#T_w3a--2", "#T_cco1", "#T_cfv", "#T_cF", "#T_cfv", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cfv", "#T_cF", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cF", "#T_wcel", "#T_cM", "#T_wi", "#T_cF", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ismon1p", "#P_simp1bi" ]
+}

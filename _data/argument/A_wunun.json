@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunun on Metamath](http://us.metamath.org/mpegif/wunun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wununi.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wununi.2 | |- ( ph -> A e. U ) |\n| 3 |  | wunpr.3 | |- ( ph -> B e. U ) |\n| 4 |  | #P_uniprg | |- ( ( A e. U /\\ B e. U ) -> U. { A , B } = ( A u. B ) ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( ph -> U. { A , B } = ( A u. B ) ) |\n| 6 | 1, 2, 3 | #P_wunpr | |- ( ph -> { A , B } e. U ) |\n| 7 | 1, 6 | #P_wununi | |- ( ph -> U. { A , B } e. U ) |\n| 8 | 5, 7 | #P_eqeltrrd | |- ( ph -> ( A u. B ) e. U ) |",
+  "conclusion" : "#P_wunun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cU", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cuni", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cuni", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cuni", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cA", "#T_cun", "#T_cB", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_syl2anc", "#P_uniprg", "#P_wunpr", "#P_wununi" ]
+}

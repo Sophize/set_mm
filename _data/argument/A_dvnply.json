@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvnply on Metamath](http://us.metamath.org/mpegif/dvnply.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_plyssc | |- ( Poly ` S ) C_ ( Poly ` CC ) |\n| 2 | 1 | #P_sseli | |- ( F e. ( Poly ` S ) -> F e. ( Poly ` CC ) ) |\n| 3 |  | #P_cnring | |- CCfld e. Ring |\n| 4 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 5 | 4 | #P_subrgid | |- ( CCfld e. Ring -> CC e. ( SubRing ` CCfld ) ) |\n| 6 | 3, 5 | #P_ax-mp | |- CC e. ( SubRing ` CCfld ) |\n| 7 |  | #P_dvnply2 | |- ( ( CC e. ( SubRing ` CCfld ) /\\ F e. ( Poly ` CC ) /\\ N e. NN0 ) -> ( ( CC Dn F ) ` N ) e. ( Poly ` CC ) ) |\n| 8 | 6, 7 | #P_mp3an1 | |- ( ( F e. ( Poly ` CC ) /\\ N e. NN0 ) -> ( ( CC Dn F ) ` N ) e. ( Poly ` CC ) ) |\n| 9 | 2, 8 | #P_sylan | |- ( ( F e. ( Poly ` S ) /\\ N e. NN0 ) -> ( ( CC Dn F ) ` N ) e. ( Poly ` CC ) ) |",
+  "conclusion" : "#P_dvnply",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cply", "#T_cfv", "#T_cS", "#T_wss", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_wi", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc", "#T_cdvn", "#T_cF", "#T_cfv", "#T_cN", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc", "#T_cdvn", "#T_cF", "#T_cfv", "#T_cN", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc", "#T_cdvn", "#T_cF", "#T_cfv", "#T_cN", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnring", "#P_ax-mp", "#P_sseli", "#P_subrgid", "#P_sylan", "#P_dvnply2", "#P_plyssc", "#P_mp3an1", "#P_cnfldbas" ]
+}

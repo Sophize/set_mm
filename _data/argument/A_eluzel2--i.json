@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eluzel2 on Metamath](http://us.metamath.org/mpegif/eluzel2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uzf | |- ZZ>= : ZZ --> ~P ZZ |\n| 2 |  | #P_frel | |- ( ZZ>= : ZZ --> ~P ZZ -> Rel ZZ>= ) |\n| 3 | 1, 2 | #P_ax-mp | |- Rel ZZ>= |\n| 4 |  | #P_relelfvdm | |- ( ( Rel ZZ>= /\\ N e. ( ZZ>= ` M ) ) -> M e. dom ZZ>= ) |\n| 5 | 3, 4 | #P_mpan | |- ( N e. ( ZZ>= ` M ) -> M e. dom ZZ>= ) |\n| 6 | 1 | #P_fdmi | |- dom ZZ>= = ZZ |\n| 7 | 5, 6 | #P_syl6eleq | |- ( N e. ( ZZ>= ` M ) -> M e. ZZ ) |",
+  "conclusion" : "#P_eluzel2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuz", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_cuz", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_wi", "#T_wrel", "#T_cuz", "#T_wrel", "#T_cuz", "#T_wrel", "#T_cuz", "#T_wa", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cdm", "#T_cuz", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cdm", "#T_cuz", "#T_cdm", "#T_cuz", "#T_wceq", "#T_cz", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_uzf", "#P_fdmi", "#P_relelfvdm", "#P_mpan", "#P_frel", "#P_syl6eleq" ]
+}

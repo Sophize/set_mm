@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexrp on Metamath](http://us.metamath.org/mpegif/rexrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elrp | |- ( x e. RR+ <-> ( x e. RR /\\ 0 < x ) ) |\n| 2 | 1 | #P_anbi1i | |- ( ( x e. RR+ /\\ ph ) <-> ( ( x e. RR /\\ 0 < x ) /\\ ph ) ) |\n| 3 |  | #P_anass | |- ( ( ( x e. RR /\\ 0 < x ) /\\ ph ) <-> ( x e. RR /\\ ( 0 < x /\\ ph ) ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( ( x e. RR+ /\\ ph ) <-> ( x e. RR /\\ ( 0 < x /\\ ph ) ) ) |\n| 5 | 4 | #P_rexbii2 | |- ( E. x e. RR+ ph <-> E. x e. RR ( 0 < x /\\ ph ) ) |",
+  "conclusion" : "#P_rexrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_wph", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_crp", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_cc0", "#T_clt", "#T_vx", "#T_wa", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anass", "#P_anbi1i", "#P_rexbii2", "#P_bitri", "#P_elrp" ]
+}

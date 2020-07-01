@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syli on Metamath](http://us.metamath.org/mpegif/syli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syli.1 | |- ( ps -> ( ph -> ch ) ) |\n| 2 |  | syli.2 | |- ( ch -> ( ph -> th ) ) |\n| 3 | 2 | #P_com12 | |- ( ph -> ( ch -> th ) ) |\n| 4 | 1, 3 | #P_sylcom | |- ( ps -> ( ph -> th ) ) |",
+  "conclusion" : "#P_syli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_com12", "#P_sylcom" ]
+}

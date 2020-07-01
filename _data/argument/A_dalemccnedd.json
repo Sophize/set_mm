@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dalemccnedd on Metamath](http://us.metamath.org/mpegif/dalemccnedd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | da.ps0 | |- ( ps <-> ( ( c e. A /\\ d e. A ) /\\ -. c .<_ Y /\\ ( d =/= c /\\ -. d .<_ Y /\\ C .<_ ( c .\\/ d ) ) ) ) |\n| 2 |  | #P_simp31 | |- ( ( ( c e. A /\\ d e. A ) /\\ -. c .<_ Y /\\ ( d =/= c /\\ -. d .<_ Y /\\ C .<_ ( c .\\/ d ) ) ) -> d =/= c ) |\n| 3 | 1, 2 | #P_sylbi | |- ( ps -> d =/= c ) |\n| 4 | 3 | #P_necomd | |- ( ps -> c =/= d ) |",
+  "conclusion" : "#P_dalemccnedd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wb", "#T_vc", "#T_wcel", "#T_cA", "#T_wa", "#T_vd", "#T_wcel", "#T_cA", "#T_w3a--1", "#T_wn", "#T_vc", "#T_c.le", "#T_cY", "#T_w3a--2", "#T_vd", "#T_wne", "#T_vc", "#T_w3a--1", "#T_wn", "#T_vd", "#T_c.le", "#T_cY", "#T_w3a--2", "#T_cC", "#T_c.le", "#T_vc", "#T_c.or", "#T_vd", "#T_vc", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vd", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_wn", "#T_vc", "#T_c.le", "#T_cY", "#T_w3a--2", "#T_vd", "#T_wne", "#T_vc", "#T_w3a--1", "#T_wn", "#T_vd", "#T_c.le", "#T_cY", "#T_w3a--2", "#T_cC", "#T_c.le", "#T_vc", "#T_c.or", "#T_vd", "#T_wi", "#T_vd", "#T_wne", "#T_vc", "#T_wps", "#T_wi", "#T_vd", "#T_wne", "#T_vc", "#T_wps", "#T_wi", "#T_vc", "#T_wne", "#T_vd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necomd", "#P_simp31", "#P_sylbi" ]
+}

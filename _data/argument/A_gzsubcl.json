@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gzsubcl on Metamath](http://us.metamath.org/mpegif/gzsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_gzcn | |- ( A e. Z[i] -> A e. CC ) |\n| 2 |  | #P_gzcn | |- ( B e. Z[i] -> B e. CC ) |\n| 3 |  | #P_negsub | |- ( ( A e. CC /\\ B e. CC ) -> ( A + -u B ) = ( A - B ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. Z[i] /\\ B e. Z[i] ) -> ( A + -u B ) = ( A - B ) ) |\n| 5 |  | #P_gznegcl | |- ( B e. Z[i] -> -u B e. Z[i] ) |\n| 6 |  | #P_gzaddcl | |- ( ( A e. Z[i] /\\ -u B e. Z[i] ) -> ( A + -u B ) e. Z[i] ) |\n| 7 | 5, 6 | #P_sylan2 | |- ( ( A e. Z[i] /\\ B e. Z[i] ) -> ( A + -u B ) e. Z[i] ) |\n| 8 | 4, 7 | #P_eqeltrrd | |- ( ( A e. Z[i] /\\ B e. Z[i] ) -> ( A - B ) e. Z[i] ) |",
+  "conclusion" : "#P_gzsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_wa", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cA", "#T_wcel", "#T_cgz", "#T_wa", "#T_cB", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wcel", "#T_cgz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_sylan2", "#P_gzaddcl", "#P_gzcn", "#P_syl2an", "#P_negsub", "#P_gznegcl" ]
+}

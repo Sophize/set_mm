@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-eumo0 on Metamath](http://us.metamath.org/mpegif/bj-eumo0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eumo0OLD.1 | |- F/ y ph |\n| 2 | 1 | #P_euf | |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) |\n| 3 |  | #P_bi1 | |- ( ( ph <-> x = y ) -> ( ph -> x = y ) ) |\n| 4 | 3 | #P_alimi | |- ( A. x ( ph <-> x = y ) -> A. x ( ph -> x = y ) ) |\n| 5 | 4 | #P_eximi | |- ( E. y A. x ( ph <-> x = y ) -> E. y A. x ( ph -> x = y ) ) |\n| 6 | 2, 5 | #P_sylbi | |- ( E! x ph -> E. y A. x ( ph -> x = y ) ) |\n\\\n Existential uniqueness implies \"at most one.\"  Used to be in the main part and deprecated in favor of ~ eumo and ~ mo2 .  (Contributed by NM, 8-Jul-1994.)  (Revised by BJ, 8-Jun-2019.) ",
+  "conclusion" : "#P_eumo0OLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vy", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bi1", "#P_euf", "#P_alimi", "#P_sylbi", "#P_eximi" ]
+}

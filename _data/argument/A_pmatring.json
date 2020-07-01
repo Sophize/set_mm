@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pmatring on Metamath](http://us.metamath.org/mpegif/pmatring.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pmatring.p | |- P = ( Poly1 ` R ) |\n| 2 |  | pmatring.c | |- C = ( N Mat P ) |\n| 3 | 1 | #P_ply1ring | |- ( R e. Ring -> P e. Ring ) |\n| 4 | 2 | #P_matring | |- ( ( N e. Fin /\\ P e. Ring ) -> C e. Ring ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( N e. Fin /\\ R e. Ring ) -> C e. Ring ) |",
+  "conclusion" : "#P_pmatring",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cP", "#T_wcel", "#T_crg", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cP", "#T_wcel", "#T_crg", "#T_wi", "#T_cC", "#T_wcel", "#T_crg", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cC", "#T_wcel", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_ply1ring", "#P_matring" ]
+}

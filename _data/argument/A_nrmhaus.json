@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nrmhaus on Metamath](http://us.metamath.org/mpegif/nrmhaus.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_haust1 | |- ( J e. Haus -> J e. Fre ) |\n| 2 |  | #P_nrmreg | |- ( ( J e. Nrm /\\ J e. Fre ) -> J e. Reg ) |\n| 3 | 2 | #P_ex | |- ( J e. Nrm -> ( J e. Fre -> J e. Reg ) ) |\n| 4 |  | #P_t1t0 | |- ( J e. Fre -> J e. Kol2 ) |\n| 5 |  | #P_reghaus | |- ( J e. Reg -> ( J e. Haus <-> J e. Kol2 ) ) |\n| 6 | 4, 5 | #P_syl5ibrcom | |- ( J e. Fre -> ( J e. Reg -> J e. Haus ) ) |\n| 7 | 3, 6 | #P_sylcom | |- ( J e. Nrm -> ( J e. Fre -> J e. Haus ) ) |\n| 8 | 1, 7 | #P_impbid2 | |- ( J e. Nrm -> ( J e. Haus <-> J e. Fre ) ) |",
+  "conclusion" : "#P_nrmhaus",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_wa", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_creg", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_creg", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct0", "#T_cJ", "#T_wcel", "#T_creg", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_wb", "#T_cJ", "#T_wcel", "#T_ct0", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_creg", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_wb", "#T_cJ", "#T_wcel", "#T_ct1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reghaus", "#P_nrmreg", "#P_t1t0", "#P_ex", "#P_haust1", "#P_syl5ibrcom", "#P_impbid2", "#P_sylcom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimge0 on Metamath](http://us.metamath.org/mpegif/elimge0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( A = if ( 0 <_ A , A , 0 ) -> ( 0 <_ A <-> 0 <_ if ( 0 <_ A , A , 0 ) ) ) |\n| 2 |  | #P_breq2 | |- ( 0 = if ( 0 <_ A , A , 0 ) -> ( 0 <_ 0 <-> 0 <_ if ( 0 <_ A , A , 0 ) ) ) |\n| 3 |  | #P_0re | |- 0 e. RR |\n| 4 | 3 | #P_leidi | |- 0 <_ 0 |\n| 5 | 1, 2, 4 | #P_elimhyp | |- 0 <_ if ( 0 <_ A , A , 0 ) |",
+  "conclusion" : "#P_elimge0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cc0", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_cle", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cc0", "#T_cc0", "#T_wceq", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cc0", "#T_wi", "#T_cc0", "#T_cle", "#T_cc0", "#T_wb", "#T_cc0", "#T_cle", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cc0", "#T_cc0", "#T_cle", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cA", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq2", "#P_leidi", "#P_elimhyp", "#P_0re" ]
+}

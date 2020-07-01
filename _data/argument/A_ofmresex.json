@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofmresex on Metamath](http://us.metamath.org/mpegif/ofmresex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ofmresex.a | |- ( ph -> A e. V ) |\n| 2 |  | ofmresex.b | |- ( ph -> B e. W ) |\n| 3 |  | #P_xpexg | |- ( ( A e. V /\\ B e. W ) -> ( A X. B ) e. _V ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A X. B ) e. _V ) |\n| 5 |  | #P_ofexg | |- ( ( A X. B ) e. _V -> ( oF R |` ( A X. B ) ) e. _V ) |\n| 6 | 4, 5 | #P_syl | |- ( ph -> ( oF R |` ( A X. B ) ) e. _V ) |",
+  "conclusion" : "#P_ofmresex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cW", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cof", "#T_cR", "#T_cres", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cof", "#T_cR", "#T_cres", "#T_cA", "#T_cxp", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_syl", "#P_xpexg", "#P_ofexg" ]
+}

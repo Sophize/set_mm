@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cpm2mf on Metamath](http://us.metamath.org/mpegif/cpm2mf.html)"
+  } ],
+  "names" : [ "cpm2mf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cI", "#T_wceq", "#T_cN", "#T_ccpmat2mat", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cI", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The inverse matrix transformation is a function from the constant polynomial matrices to the matrices over the base ring of the polynomials.  (Contributed by AV, 24-Nov-2019.)  (Revised by AV, 15-Dec-2019.) ",
+  "statement" : "cpm2mf.a $e |- A = ( N Mat R ) $.\ncpm2mf.k $e |- K = ( Base ` A ) $.\ncpm2mf.s $e |- S = ( N ConstPolyMat R ) $.\ncpm2mf.i $e |- I = ( N cPolyMatToMat R ) $.\ncpm2mf $p |- ( ( N e. Fin /\\ R e. Ring ) -> I : S --> K ) $."
+}

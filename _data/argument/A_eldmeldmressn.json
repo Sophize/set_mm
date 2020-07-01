@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eldmeldmressn on Metamath](http://us.metamath.org/mpegif/eldmeldmressn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eldmressnsn | |- ( X e. dom F -> X e. dom ( F |` { X } ) ) |\n| 2 |  | #P_elin | |- ( X e. ( { X } i^i dom F ) <-> ( X e. { X } /\\ X e. dom F ) ) |\n| 3 | 2 | #P_simprbi | |- ( X e. ( { X } i^i dom F ) -> X e. dom F ) |\n| 4 |  | #P_dmres | |- dom ( F |` { X } ) = ( { X } i^i dom F ) |\n| 5 | 3, 4 | #P_eleq2s | |- ( X e. dom ( F |` { X } ) -> X e. dom F ) |\n| 6 | 1, 5 | #P_impbii | |- ( X e. dom F <-> X e. dom ( F |` { X } ) ) |",
+  "conclusion" : "#P_eldmeldmressn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cX", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_wb", "#T_cX", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wa", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cX", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_wi", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wi", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_wb", "#T_cX", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cX", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2s", "#P_impbii", "#P_simprbi", "#P_elin", "#P_eldmressnsn", "#P_dmres" ]
+}

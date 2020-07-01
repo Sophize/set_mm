@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ncanth on Metamath](http://us.metamath.org/mpegif/ncanth.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1ovi | |- _I : _V -1-1-onto-> _V |\n| 2 |  | #P_pwv | |- ~P _V = _V |\n| 3 |  | #P_f1oeq3 | |- ( ~P _V = _V -> ( _I : _V -1-1-onto-> ~P _V <-> _I : _V -1-1-onto-> _V ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( _I : _V -1-1-onto-> ~P _V <-> _I : _V -1-1-onto-> _V ) |\n| 5 | 1, 4 | #P_mpbir | |- _I : _V -1-1-onto-> ~P _V |\n| 6 |  | #P_f1ofo | |- ( _I : _V -1-1-onto-> ~P _V -> _I : _V -onto-> ~P _V ) |\n| 7 | 5, 6 | #P_ax-mp | |- _I : _V -onto-> ~P _V |",
+  "conclusion" : "#P_ncanth",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_cpw", "#T_cvv", "#T_wceq", "#T_cvv", "#T_cpw", "#T_cvv", "#T_wceq", "#T_cvv", "#T_wi", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cpw", "#T_cvv", "#T_wb", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cpw", "#T_cvv", "#T_wb", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cpw", "#T_cvv", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cpw", "#T_cvv", "#T_wi", "#T_cid", "#T_wfo--1", "#T_cvv", "#T_wfo--2", "#T_cpw", "#T_cvv", "#T_cid", "#T_wfo--1", "#T_cvv", "#T_wfo--2", "#T_cpw", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwv", "#P_ax-mp", "#P_f1ofo", "#P_f1ovi", "#P_f1oeq3", "#P_mpbir" ]
+}

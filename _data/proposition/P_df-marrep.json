@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-marrep on Metamath](http://us.metamath.org/mpegif/df-marrep.html)"
+  } ],
+  "names" : [ "df-marrep" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmarrep", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vm", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vn", "#T_cmat", "#T_vr", "#T_cmpt2--2", "#T_vs", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vr", "#T_cmpt2--4", "#T_vk", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vl", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_vi", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_cif--1", "#T_vi", "#T_wceq", "#T_vk", "#T_cif--2", "#T_cif--1", "#T_vj", "#T_wceq", "#T_vl", "#T_cif--2", "#T_vs", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_vr", "#T_cif--3", "#T_vi", "#T_vm", "#T_vj", "#T_vi", "#T_vj", "#T_vk", "#T_vl", "#T_vm", "#T_vn", "#T_vr", "#T_vs" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the matrices whose k-th row is replaced by 0's and an arbitrary element of the underlying ring at the l-th column.  (Contributed by AV, 12-Feb-2019.) ",
+  "statement" : "df-marrep $p |- matRRep = ( n e. _V , r e. _V |-> ( m e. ( Base ` ( n Mat r ) ) , s e. ( Base ` r ) |-> ( k e. n , l e. n |-> ( i e. n , j e. n |-> if ( i = k , if ( j = l , s , ( 0g ` r ) ) , ( i m j ) ) ) ) ) ) $.\n$d i j k l m n r s $."
+}

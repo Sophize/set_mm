@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon4bbiddc on Metamath](http://us.metamath.org/mpegif/necon4bbiddc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon4bbiddc.1 | |- ( ph -> ( DECID ps -> ( DECID A = B -> ( -. ps <-> A =/= B ) ) ) ) |\n| 2 |  | #P_bicom | |- ( ( -. ps <-> A =/= B ) <-> ( A =/= B <-> -. ps ) ) |\n| 3 | 1, 2 | #P_syl8ib | |- ( ph -> ( DECID ps -> ( DECID A = B -> ( A =/= B <-> -. ps ) ) ) ) |\n| 4 | 3 | #P_com23 | |- ( ph -> ( DECID A = B -> ( DECID ps -> ( A =/= B <-> -. ps ) ) ) ) |\n| 5 | 4 | #P_necon4abiddc | |- ( ph -> ( DECID A = B -> ( DECID ps -> ( A = B <-> ps ) ) ) ) |\n| 6 | 5 | #P_com23 | |- ( ph -> ( DECID ps -> ( DECID A = B -> ( A = B <-> ps ) ) ) ) |\n| 7 |  | #P_bicom | |- ( ( A = B <-> ps ) <-> ( ps <-> A = B ) ) |\n| 8 | 6, 7 | #P_syl8ib | |- ( ph -> ( DECID ps -> ( DECID A = B -> ( ps <-> A = B ) ) ) ) |",
+  "conclusion" : "#P_necon4bbiddc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_cA", "#T_wne", "#T_cB", "#T_wn", "#T_wps", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wps", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon4abiddc", "#P_bicom", "#P_syl8ib", "#P_com23" ]
+}

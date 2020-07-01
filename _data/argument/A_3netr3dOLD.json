@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3netr3dOLD on Metamath](http://us.metamath.org/mpegif/3netr3dOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3netr3d.1 | |- ( ph -> A =/= B ) |\n| 2 |  | 3netr3d.2 | |- ( ph -> A = C ) |\n| 3 |  | 3netr3d.3 | |- ( ph -> B = D ) |\n| 4 | 2, 3 | #P_neeq12d | |- ( ph -> ( A =/= B <-> C =/= D ) ) |\n| 5 | 1, 4 | #P_mpbid | |- ( ph -> C =/= D ) |\n\\\n Obsolete proof of ~ 3netr3d as of 19-Nov-2019.  (Contributed by NM, 24-Jul-2012.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_3netr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wne", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_neeq12d" ]
+}

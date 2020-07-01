@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-fzo on Metamath](http://us.metamath.org/mpegif/df-fzo.html)"
+  } ],
+  "names" : [ "df-fzo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cfzo", "#T_wceq", "#T_vm", "#T_cmpt2--1", "#T_cz", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cz", "#T_cmpt2--4", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_vm", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function generating sets of integers using a _half-open_ range.  Read ` ( M ..^ N ) ` as the integers from ` M ` up to, but not including, ` N ` ; contrast with ` ( M ... N ) ` ~ df-fz , which includes ` N ` .  Not including the endpoint simplifies a number of formulae related to cardinality and splitting; contrast ~ fzosplit with ~ fzsplit , for instance.  (Contributed by Stefan O'Rear, 14-Aug-2015.) ",
+  "statement" : "df-fzo $p |- ..^ = ( m e. ZZ , n e. ZZ |-> ( m ... ( n - 1 ) ) ) $.\n$d m n $."
+}

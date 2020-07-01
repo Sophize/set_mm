@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See irec on Metamath](http://us.metamath.org/mpegif/irec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-icn | |- _i e. CC |\n| 2 | 1, 1 | #P_mulneg2i | |- ( _i x. -u _i ) = -u ( _i x. _i ) |\n| 3 |  | #P_ixi | |- ( _i x. _i ) = -u 1 |\n| 4 |  | #P_ax-1cn | |- 1 e. CC |\n| 5 | 1, 1 | #P_mulcli | |- ( _i x. _i ) e. CC |\n| 6 | 4, 5 | #P_negcon2i | |- ( 1 = -u ( _i x. _i ) <-> ( _i x. _i ) = -u 1 ) |\n| 7 | 3, 6 | #P_mpbir | |- 1 = -u ( _i x. _i ) |\n| 8 | 2, 7 | #P_eqtr4i | |- ( _i x. -u _i ) = 1 |\n| 9 |  | #P_negicn | |- -u _i e. CC |\n| 10 |  | #P_ine0 | |- _i =/= 0 |\n| 11 | 4, 1, 9, 10 | #P_divmuli | |- ( ( 1 / _i ) = -u _i <-> ( _i x. -u _i ) = 1 ) |\n| 12 | 8, 11 | #P_mpbir | |- ( 1 / _i ) = -u _i |",
+  "conclusion" : "#P_irec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_cneg", "#T_ci", "#T_wceq", "#T_cneg", "#T_ci", "#T_cmul", "#T_ci", "#T_ci", "#T_cmul", "#T_ci", "#T_wceq", "#T_cneg", "#T_c1", "#T_c1", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_ci", "#T_wcel", "#T_cc", "#T_c1", "#T_wceq", "#T_cneg", "#T_ci", "#T_cmul", "#T_ci", "#T_wb", "#T_ci", "#T_cmul", "#T_ci", "#T_wceq", "#T_cneg", "#T_c1", "#T_c1", "#T_wceq", "#T_cneg", "#T_ci", "#T_cmul", "#T_ci", "#T_ci", "#T_cmul", "#T_cneg", "#T_ci", "#T_wceq", "#T_c1", "#T_cneg", "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_wne", "#T_cc0", "#T_c1", "#T_cdiv", "#T_ci", "#T_wceq", "#T_cneg", "#T_ci", "#T_wb", "#T_ci", "#T_cmul", "#T_cneg", "#T_ci", "#T_wceq", "#T_c1", "#T_c1", "#T_cdiv", "#T_ci", "#T_wceq", "#T_cneg", "#T_ci" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_eqtr4i", "#P_mulcli", "#P_ixi", "#P_negcon2i", "#P_ax-1cn", "#P_mulneg2i", "#P_mpbir", "#P_negicn", "#P_ine0", "#P_divmuli" ]
+}

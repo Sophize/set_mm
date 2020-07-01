@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See moi on Metamath](http://us.metamath.org/mpegif/moi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | moi.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | moi.2 | |- ( x = B -> ( ph <-> ch ) ) |\n| 3 | 1, 2 | #P_mob | |- ( ( ( A e. C /\\ B e. D ) /\\ E* x ph /\\ ps ) -> ( A = B <-> ch ) ) |\n| 4 | 3 | #P_biimprd | |- ( ( ( A e. C /\\ B e. D ) /\\ E* x ph /\\ ps ) -> ( ch -> A = B ) ) |\n| 5 | 4 | #P_3expia | |- ( ( ( A e. C /\\ B e. D ) /\\ E* x ph ) -> ( ps -> ( ch -> A = B ) ) ) |\n| 6 | 5 | #P_impd | |- ( ( ( A e. C /\\ B e. D ) /\\ E* x ph ) -> ( ( ps /\\ ch ) -> A = B ) ) |\n| 7 | 6 | #P_3impia | |- ( ( ( A e. C /\\ B e. D ) /\\ E* x ph /\\ ( ps /\\ ch ) ) -> A = B ) |",
+  "conclusion" : "#P_moi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_w3a--2", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wch", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_w3a--2", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_wmo", "#T_vx", "#T_wph", "#T_w3a--2", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_mob", "#P_3expia", "#P_impd", "#P_3impia" ]
+}

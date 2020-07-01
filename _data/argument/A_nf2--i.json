@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nf2 on Metamath](http://us.metamath.org/mpegif/nf2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-nf | |- ( F/ x ph <-> A. x ( ph -> A. x ph ) ) |\n| 2 |  | #P_nfa1 | |- F/ x A. x ph |\n| 3 | 2 | #P_nfri | |- ( A. x ph -> A. x A. x ph ) |\n| 4 | 3 | #P_19.23h | |- ( A. x ( ph -> A. x ph ) <-> ( E. x ph -> A. x ph ) ) |\n| 5 | 1, 4 | #P_bitri | |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) |",
+  "conclusion" : "#P_nf2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vx", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfa1", "#P_df-nf", "#P_19.23h", "#P_bitri", "#P_nfri" ]
+}

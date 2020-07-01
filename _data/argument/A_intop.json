@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See intop on Metamath](http://us.metamath.org/mpegif/intop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nm n\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-intop | |- intOp = ( m e. _V , n e. _V |-> ( n ^m ( m X. m ) ) ) |\n| 2 | 1 | #P_elmpt2cl | |- ( .o. e. ( M intOp N ) -> ( M e. _V /\\ N e. _V ) ) |\n| 3 |  | #P_intopval | |- ( ( M e. _V /\\ N e. _V ) -> ( M intOp N ) = ( N ^m ( M X. M ) ) ) |\n| 4 | 3 | #P_eleq2d | |- ( ( M e. _V /\\ N e. _V ) -> ( .o. e. ( M intOp N ) <-> .o. e. ( N ^m ( M X. M ) ) ) ) |\n| 5 |  | #P_elmapi | |- ( .o. e. ( N ^m ( M X. M ) ) -> .o. : ( M X. M ) --> N ) |\n| 6 | 4, 5 | #P_syl6bi | |- ( ( M e. _V /\\ N e. _V ) -> ( .o. e. ( M intOp N ) -> .o. : ( M X. M ) --> N ) ) |\n| 7 | 2, 6 | #P_mpcom | |- ( .o. e. ( M intOp N ) -> .o. : ( M X. M ) --> N ) |",
+  "conclusion" : "#P_intop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vm", "#T_vn", "#T_cintop", "#T_wceq", "#T_vm", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vn", "#T_cmap", "#T_vm", "#T_cxp", "#T_vm", "#T_c.op", "#T_wcel", "#T_cM", "#T_cintop", "#T_cN", "#T_wi", "#T_cM", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cvv", "#T_cM", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cvv", "#T_wi", "#T_cM", "#T_cintop", "#T_cN", "#T_wceq", "#T_cN", "#T_cmap", "#T_cM", "#T_cxp", "#T_cM", "#T_cM", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cvv", "#T_wi", "#T_c.op", "#T_wcel", "#T_cM", "#T_cintop", "#T_cN", "#T_wb", "#T_c.op", "#T_wcel", "#T_cN", "#T_cmap", "#T_cM", "#T_cxp", "#T_cM", "#T_c.op", "#T_wcel", "#T_cN", "#T_cmap", "#T_cM", "#T_cxp", "#T_cM", "#T_wi", "#T_c.op", "#T_wf--1", "#T_cM", "#T_cxp", "#T_cM", "#T_wf--2", "#T_cN", "#T_cM", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cvv", "#T_wi", "#T_c.op", "#T_wcel", "#T_cM", "#T_cintop", "#T_cN", "#T_wi", "#T_c.op", "#T_wf--1", "#T_cM", "#T_cxp", "#T_cM", "#T_wf--2", "#T_cN", "#T_c.op", "#T_wcel", "#T_cM", "#T_cintop", "#T_cN", "#T_wi", "#T_c.op", "#T_wf--1", "#T_cM", "#T_cxp", "#T_cM", "#T_wf--2", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_elmapi", "#P_eleq2d", "#P_df-intop", "#P_elmpt2cl", "#P_syl6bi", "#P_intopval" ]
+}

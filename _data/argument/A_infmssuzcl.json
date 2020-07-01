@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infmssuzcl on Metamath](http://us.metamath.org/mpegif/infmssuzcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj k\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uzssz | |- ( ZZ>= ` M ) C_ ZZ |\n| 2 |  | #P_zssre | |- ZZ C_ RR |\n| 3 | 1, 2 | #P_sstri | |- ( ZZ>= ` M ) C_ RR |\n| 4 |  | #P_sstr | |- ( ( S C_ ( ZZ>= ` M ) /\\ ( ZZ>= ` M ) C_ RR ) -> S C_ RR ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( S C_ ( ZZ>= ` M ) -> S C_ RR ) |\n| 6 | 5 | #P_adantr | |- ( ( S C_ ( ZZ>= ` M ) /\\ S =/= (/) ) -> S C_ RR ) |\n| 7 |  | #P_uzwo | |- ( ( S C_ ( ZZ>= ` M ) /\\ S =/= (/) ) -> E. j e. S A. k e. S j <_ k ) |\n| 8 |  | #P_lbinfmcl | |- ( ( S C_ RR /\\ E. j e. S A. k e. S j <_ k ) -> sup ( S , RR , `' < ) e. S ) |\n| 9 | 6, 7, 8 | #P_syl2anc | |- ( ( S C_ ( ZZ>= ` M ) /\\ S =/= (/) ) -> sup ( S , RR , `' < ) e. S ) |",
+  "conclusion" : "#P_infmssuzcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vk", "#T_cuz", "#T_cfv", "#T_cM", "#T_wss", "#T_cz", "#T_cz", "#T_wss", "#T_cr", "#T_cuz", "#T_cfv", "#T_cM", "#T_wss", "#T_cr", "#T_cS", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cuz", "#T_cfv", "#T_cM", "#T_wss", "#T_cr", "#T_wi", "#T_cS", "#T_wss", "#T_cr", "#T_cS", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cS", "#T_wss", "#T_cr", "#T_cS", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cS", "#T_wne", "#T_c0", "#T_wi", "#T_cS", "#T_wss", "#T_cr", "#T_cS", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cS", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vj", "#T_wrex--2", "#T_cS", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cS", "#T_vj", "#T_cle", "#T_vk", "#T_cS", "#T_wss", "#T_cr", "#T_wa", "#T_wrex--1", "#T_vj", "#T_wrex--2", "#T_cS", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cS", "#T_vj", "#T_cle", "#T_vk", "#T_wi", "#T_csup--1", "#T_cS", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_wcel", "#T_cS", "#T_cS", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cS", "#T_wne", "#T_c0", "#T_wi", "#T_csup--1", "#T_cS", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_wcel", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_uzwo", "#P_uzssz", "#P_lbinfmcl", "#P_syl2anc", "#P_sstri", "#P_mpan2", "#P_zssre", "#P_sstr", "#P_adantr" ]
+}

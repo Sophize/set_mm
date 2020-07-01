@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unitg on Metamath](http://us.metamath.org/mpegif/unitg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tg1 | |- ( x e. ( topGen ` B ) -> x C_ U. B ) |\n| 2 |  | #P_selpw | |- ( x e. ~P U. B <-> x C_ U. B ) |\n| 3 | 1, 2 | #P_sylibr | |- ( x e. ( topGen ` B ) -> x e. ~P U. B ) |\n| 4 | 3 | #P_ssriv | |- ( topGen ` B ) C_ ~P U. B |\n| 5 |  | #P_sspwuni | |- ( ( topGen ` B ) C_ ~P U. B <-> U. ( topGen ` B ) C_ U. B ) |\n| 6 | 4, 5 | #P_mpbi | |- U. ( topGen ` B ) C_ U. B |\n| 7 | 6 | #P_a1i | |- ( B e. V -> U. ( topGen ` B ) C_ U. B ) |\n| 8 |  | #P_bastg | |- ( B e. V -> B C_ ( topGen ` B ) ) |\n| 9 | 8 | #P_unissd | |- ( B e. V -> U. B C_ U. ( topGen ` B ) ) |\n| 10 | 7, 9 | #P_eqssd | |- ( B e. V -> U. ( topGen ` B ) = U. B ) |",
+  "conclusion" : "#P_unitg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cuni", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cuni", "#T_cB.wceq", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cuni", "#T_cB.wceq", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cuni", "#T_cB.wceq", "#T_wb", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_cB.wceq", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB", "#T_wceq", "#T_cuni", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tg1", "#P_selpw", "#P_sylibr", "#P_mpbi", "#P_unissd", "#P_a1i", "#P_eqssd", "#P_ssriv", "#P_sspwuni", "#P_bastg" ]
+}

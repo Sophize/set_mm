@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difsnss on Metamath](http://us.metamath.org/mpegif/difsnss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uncom | |- ( ( A \\ { B } ) u. { B } ) = ( { B } u. ( A \\ { B } ) ) |\n| 2 |  | #P_snssi | |- ( B e. A -> { B } C_ A ) |\n| 3 |  | #P_undifss | |- ( { B } C_ A <-> ( { B } u. ( A \\ { B } ) ) C_ A ) |\n| 4 | 2, 3 | #P_sylib | |- ( B e. A -> ( { B } u. ( A \\ { B } ) ) C_ A ) |\n| 5 | 1, 4 | #P_syl5eqss | |- ( B e. A -> ( ( A \\ { B } ) u. { B } ) C_ A ) |",
+  "conclusion" : "#P_difsnss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cdif", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cA.wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cA.wceq", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_cA", "#T_cdif", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqss", "#P_sylib", "#P_uncom", "#P_undifss", "#P_snssi" ]
+}

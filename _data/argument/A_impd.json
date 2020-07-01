@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See impd on Metamath](http://us.metamath.org/mpegif/impd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | imp3.1 | |- ( ph -> ( ps -> ( ch -> th ) ) ) |\n| 2 | 1 | #P_com3l | |- ( ps -> ( ch -> ( ph -> th ) ) ) |\n| 3 | 2 | #P_imp | |- ( ( ps /\\ ch ) -> ( ph -> th ) ) |\n| 4 | 3 | #P_com12 | |- ( ph -> ( ( ps /\\ ch ) -> th ) ) |",
+  "conclusion" : "#P_impd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_com3l", "#P_imp", "#P_com12" ]
+}

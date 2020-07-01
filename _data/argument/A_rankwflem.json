@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rankwflem on Metamath](http://us.metamath.org/mpegif/rankwflem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elex | |- ( A e. V -> A e. _V ) |\n| 2 |  | #P_unir1 | |- U. ( R1 \" On ) = _V |\n| 3 | 1, 2 | #P_syl6eleqr | |- ( A e. V -> A e. U. ( R1 \" On ) ) |\n| 4 |  | #P_rankwflemb | |- ( A e. U. ( R1 \" On ) <-> E. x e. On A e. ( R1 ` suc x ) ) |\n| 5 | 3, 4 | #P_sylib | |- ( A e. V -> E. x e. On A e. ( R1 ` suc x ) ) |",
+  "conclusion" : "#P_rankwflem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wceq", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_csuc", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_cA", "#T_wcel", "#T_cr1", "#T_cfv", "#T_csuc", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rankwflemb", "#P_unir1", "#P_elex", "#P_sylib", "#P_syl6eleqr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2timesgt on Metamath](http://us.metamath.org/mpegif/2timesgt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rpre | |- ( A e. RR+ -> A e. RR ) |\n| 2 |  | #P_id | |- ( A e. RR+ -> A e. RR+ ) |\n| 3 | 1, 2 | #P_ltaddrp2d | |- ( A e. RR+ -> A < ( A + A ) ) |\n| 4 |  | #P_rpcn | |- ( A e. RR+ -> A e. CC ) |\n| 5 |  | #P_2times | |- ( A e. CC -> ( 2 x. A ) = ( A + A ) ) |\n| 6 | 5 | #P_eqcomd | |- ( A e. CC -> ( A + A ) = ( 2 x. A ) ) |\n| 7 | 4, 6 | #P_syl | |- ( A e. RR+ -> ( A + A ) = ( 2 x. A ) ) |\n| 8 | 3, 7 | #P_breqtrd | |- ( A e. RR+ -> A < ( 2 x. A ) ) |",
+  "conclusion" : "#P_2timesgt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_crp", "#T_wi", "#T_cA", "#T_clt", "#T_c2", "#T_cmul", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breqtrd", "#P_rpcn", "#P_ltaddrp2d", "#P_eqcomd", "#P_2times", "#P_syl", "#P_rpre", "#P_id" ]
+}

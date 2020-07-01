@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See adjsslnop on Metamath](http://us.metamath.org/mpegif/adjsslnop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nt\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_adjadj | |- ( t e. dom adjh -> ( adjh ` ( adjh ` t ) ) = t ) |\n| 2 |  | #P_dmadjrn | |- ( t e. dom adjh -> ( adjh ` t ) e. dom adjh ) |\n| 3 |  | #P_adjlnop | |- ( ( adjh ` t ) e. dom adjh -> ( adjh ` ( adjh ` t ) ) e. LinOp ) |\n| 4 | 2, 3 | #P_syl | |- ( t e. dom adjh -> ( adjh ` ( adjh ` t ) ) e. LinOp ) |\n| 5 | 1, 4 | #P_eqeltrrd | |- ( t e. dom adjh -> t e. LinOp ) |\n| 6 | 5 | #P_ssriv | |- dom adjh C_ LinOp |",
+  "conclusion" : "#P_adjsslnop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vt", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_wi", "#T_cado", "#T_cfv", "#T_cado", "#T_cfv", "#T_vt", "#T_wceq", "#T_vt", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_wi", "#T_cado", "#T_cfv", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_cado", "#T_cfv", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_wi", "#T_cado", "#T_cfv", "#T_cado", "#T_cfv", "#T_vt", "#T_wcel", "#T_clo", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_wi", "#T_cado", "#T_cfv", "#T_cado", "#T_cfv", "#T_vt", "#T_wcel", "#T_clo", "#T_vt", "#T_wcel", "#T_cdm", "#T_cado", "#T_wi", "#T_vt", "#T_wcel", "#T_clo", "#T_cdm", "#T_cado", "#T_wss", "#T_clo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adjadj", "#P_eqeltrrd", "#P_syl", "#P_dmadjrn", "#P_adjlnop", "#P_ssriv" ]
+}

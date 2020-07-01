@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ruv on Metamath](http://us.metamath.org/mpegif/ruv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-v | |- _V = { x | x = x } |\n| 2 |  | #P_equid | |- x = x |\n| 3 |  | #P_elirrv | |- -. x e. x |\n| 4 | 3 | #P_nelir | |- x e/ x |\n| 5 | 2, 4 | #P_2th | |- ( x = x <-> x e/ x ) |\n| 6 | 5 | #P_abbii | |- { x | x = x } = { x | x e/ x } |\n| 7 | 1, 6 | #P_eqtr2i | |- { x | x e/ x } = _V |",
+  "conclusion" : "#P_ruv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cvv", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_vx.wal", "#T_wnel", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wnel", "#T_vx.wal", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wnel", "#T_vx.wal", "#T_cab--3", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_wnel", "#T_vx", "#T_cab--3", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elirrv", "#P_eqtr2i", "#P_abbii", "#P_2th", "#P_nelir", "#P_df-v", "#P_equid" ]
+}

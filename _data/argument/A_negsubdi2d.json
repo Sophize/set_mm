@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negsubdi2d on Metamath](http://us.metamath.org/mpegif/negsubdi2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | pncand.2 | |- ( ph -> B e. CC ) |\n| 3 |  | #P_negsubdi2 | |- ( ( A e. CC /\\ B e. CC ) -> -u ( A - B ) = ( B - A ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> -u ( A - B ) = ( B - A ) ) |",
+  "conclusion" : "#P_negsubdi2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cneg", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cB", "#T_cmin", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_negsubdi2", "#P_syl2anc" ]
+}

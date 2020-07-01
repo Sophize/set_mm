@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfeld on Metamath](http://us.metamath.org/mpegif/nfeld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfeqd.1 | |- ( ph -> F/_ x A ) |\n| 2 |  | nfeqd.2 | |- ( ph -> F/_ x B ) |\n| 3 |  | #P_df-clel | |- ( A e. B <-> E. y ( y = A /\\ y e. B ) ) |\n| 4 |  | #P_nfv | |- F/ y ph |\n| 5 |  | #P_nfcvd | |- ( ph -> F/_ x y ) |\n| 6 | 5, 1 | #P_nfeqd | |- ( ph -> F/ x y = A ) |\n| 7 | 2 | #P_nfcrd | |- ( ph -> F/ x y e. B ) |\n| 8 | 6, 7 | #P_nfand | |- ( ph -> F/ x ( y = A /\\ y e. B ) ) |\n| 9 | 4, 8 | #P_nfexd | |- ( ph -> F/ x E. y ( y = A /\\ y e. B ) ) |\n| 10 | 3, 9 | #P_nfxfrd | |- ( ph -> F/ x A e. B ) |",
+  "conclusion" : "#P_nfeld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_nfcvd", "#P_nfexd", "#P_nfeqd", "#P_nfand", "#P_nfxfrd", "#P_df-clel", "#P_nfcrd" ]
+}

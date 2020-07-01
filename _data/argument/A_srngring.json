@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srngring on Metamath](http://us.metamath.org/mpegif/srngring.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( oppR ` R ) = ( oppR ` R ) |\n| 2 |  | #P_eqid | |- ( *rf ` R ) = ( *rf ` R ) |\n| 3 | 1, 2 | #P_srngrhm | |- ( R e. *Ring -> ( *rf ` R ) e. ( R RingHom ( oppR ` R ) ) ) |\n| 4 |  | #P_rhmrcl1 | |- ( ( *rf ` R ) e. ( R RingHom ( oppR ` R ) ) -> R e. Ring ) |\n| 5 | 3, 4 | #P_syl | |- ( R e. *Ring -> R e. Ring ) |",
+  "conclusion" : "#P_srngring",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_cstf", "#T_cfv", "#T_cR", "#T_wceq", "#T_cstf", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_csr", "#T_wi", "#T_cstf", "#T_cfv", "#T_cR", "#T_wcel", "#T_cR", "#T_crh", "#T_coppr", "#T_cfv", "#T_cR", "#T_cstf", "#T_cfv", "#T_cR", "#T_wcel", "#T_cR", "#T_crh", "#T_coppr", "#T_cfv", "#T_cR", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_csr", "#T_wi", "#T_cR", "#T_wcel", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_syl", "#P_rhmrcl1", "#P_srngrhm" ]
+}

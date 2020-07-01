@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtocl2gf on Metamath](http://us.metamath.org/mpegif/vtocl2gf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vtocl2gf.1 | |- F/_ x A |\n| 2 |  | vtocl2gf.2 | |- F/_ y A |\n| 3 |  | vtocl2gf.3 | |- F/_ y B |\n| 4 |  | vtocl2gf.4 | |- F/ x ps |\n| 5 |  | vtocl2gf.5 | |- F/ y ch |\n| 6 |  | vtocl2gf.6 | |- ( x = A -> ( ph <-> ps ) ) |\n| 7 |  | vtocl2gf.7 | |- ( y = B -> ( ps <-> ch ) ) |\n| 8 |  | vtocl2gf.8 | |- ph |\n| 9 |  | #P_elex | |- ( A e. V -> A e. _V ) |\n| 10 | 2 | #P_nfel1 | |- F/ y A e. _V |\n| 11 | 10, 5 | #P_nfim | |- F/ y ( A e. _V -> ch ) |\n| 12 | 7 | #P_imbi2d | |- ( y = B -> ( ( A e. _V -> ps ) <-> ( A e. _V -> ch ) ) ) |\n| 13 | 1, 4, 6, 8 | #P_vtoclgf | |- ( A e. _V -> ps ) |\n| 14 | 3, 11, 12, 13 | #P_vtoclgf | |- ( B e. W -> ( A e. _V -> ch ) ) |\n| 15 | 9, 14 | #P_mpan9 | |- ( ( A e. V /\\ B e. W ) -> ch ) |",
+  "conclusion" : "#P_vtocl2gf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vy", "#T_cA", "#T_wnfc", "#T_vy", "#T_cB", "#T_wnf", "#T_vx", "#T_wps", "#T_wnf", "#T_vy", "#T_wch", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wnf", "#T_vy.tru", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wnf", "#T_vy.tru", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wch", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wps", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wch", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wps", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wch", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfim", "#P_elex", "#P_nfel1", "#P_imbi2d", "#P_mpan9", "#P_vtoclgf" ]
+}

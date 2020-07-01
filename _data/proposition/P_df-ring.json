@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ring on Metamath](http://us.metamath.org/mpegif/df-ring.html)"
+  } ],
+  "names" : [ "df-ring" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crg", "#T_wceq", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cgrp", "#T_crab--3", "#T_cmgp", "#T_cfv", "#T_vf", "#T_wcel", "#T_cmnd", "#T_wa", "#T_wsbc--1", "#T_cbs", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vr", "#T_wsbc--3", "#T_wsbc--1", "#T_cplusg", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vp", "#T_wsbc--3", "#T_wsbc--1", "#T_cmulr", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vt", "#T_wsbc--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vr", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vr", "#T_vx", "#T_vt", "#T_vy", "#T_vp", "#T_vz", "#T_wceq", "#T_vx", "#T_vt", "#T_vy", "#T_vp", "#T_vx", "#T_vt", "#T_vz", "#T_wa", "#T_vx", "#T_vp", "#T_vy", "#T_vt", "#T_vz", "#T_wceq", "#T_vx", "#T_vt", "#T_vz", "#T_vp", "#T_vy", "#T_vt", "#T_vz", "#T_crab--4", "#T_vf", "#T_vp", "#T_vr", "#T_vt", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define class of all (unital) rings.  A unital ring is a set equipped with two everywhere-defined internal operations, whose first one is an additive group structure and the second one is a multiplicative monoid structure, and where the addition is left- and right-distributive for the multiplication.  Definition 1 in [BourbakiAlg1] p. 92 or definition of a ring with identity in part Preliminaries of [Roman] p. 19.  So that the additive structure must be abelian (see ~ ringcom ), care must be taken that in the case of a non-unital ring, the commutativity of addition must be postulated and cannot be proved from the other conditions.  (Contributed by NM, 18-Oct-2012.)  (Revised by Mario Carneiro, 27-Dec-2014.) ",
+  "statement" : "df-ring $p |- Ring = { f e. Grp | ( ( mulGrp ` f ) e. Mnd /\\ [. ( Base ` f ) / r ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ]. A. x e. r A. y e. r A. z e. r ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) ) /\\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) ) ) } $.\n$d f p r t x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspc2v on Metamath](http://us.metamath.org/mpegif/rspc2v.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspc2v.1 | |- ( x = A -> ( ph <-> ch ) ) |\n| 2 |  | rspc2v.2 | |- ( y = B -> ( ch <-> ps ) ) |\n| 3 |  | #P_nfv | |- F/ x ch |\n| 4 |  | #P_nfv | |- F/ y ps |\n| 5 | 3, 4, 1, 2 | #P_rspc2 | |- ( ( A e. C /\\ B e. D ) -> ( A. x e. C A. y e. D ph -> ps ) ) |",
+  "conclusion" : "#P_rspc2v",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_wnf", "#T_vy.tru", "#T_wps", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cC", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cD", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_rspc2" ]
+}

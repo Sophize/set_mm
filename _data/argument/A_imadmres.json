@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imadmres on Metamath](http://us.metamath.org/mpegif/imadmres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resdmres | |- ( A |` dom ( A |` B ) ) = ( A |` B ) |\n| 2 | 1 | #P_rneqi | |- ran ( A |` dom ( A |` B ) ) = ran ( A |` B ) |\n| 3 |  | #P_df-ima | |- ( A \" dom ( A |` B ) ) = ran ( A |` dom ( A |` B ) ) |\n| 4 |  | #P_df-ima | |- ( A \" B ) = ran ( A |` B ) |\n| 5 | 2, 3, 4 | #P_3eqtr4i | |- ( A \" dom ( A |` B ) ) = ( A \" B ) |",
+  "conclusion" : "#P_imadmres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cres", "#T_cdm", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cdm", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_cima", "#T_cdm", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cdm", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA", "#T_cima", "#T_cdm", "#T_cA", "#T_cres", "#T_cB", "#T_wceq", "#T_cA", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_resdmres", "#P_df-ima", "#P_rneqi" ]
+}

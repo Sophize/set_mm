@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See scmatstrbas on Metamath](http://us.metamath.org/mpegif/scmatstrbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | scmatstrbas.a | |- A = ( N Mat R ) |\n| 2 |  | scmatstrbas.c | |- C = ( N ScMat R ) |\n| 3 |  | scmatstrbas.s | |- S = ( A |`s C ) |\n| 4 |  | #P_eqid | |- ( Base ` A ) = ( Base ` A ) |\n| 5 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 6 |  | #P_eqid | |- ( 0g ` R ) = ( 0g ` R ) |\n| 7 | 1, 4, 5, 6, 2 | #P_scmatsrng | |- ( ( N e. Fin /\\ R e. Ring ) -> C e. ( SubRing ` A ) ) |\n| 8 | 3 | #P_subrgbas | |- ( C e. ( SubRing ` A ) -> C = ( Base ` S ) ) |\n| 9 | 8 | #P_eqcomd | |- ( C e. ( SubRing ` A ) -> ( Base ` S ) = C ) |\n| 10 | 7, 9 | #P_syl | |- ( ( N e. Fin /\\ R e. Ring ) -> ( Base ` S ) = C ) |",
+  "conclusion" : "#P_scmatstrbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cscmat", "#T_cR", "#T_cS", "#T_wceq", "#T_cA", "#T_cress", "#T_cC", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cC", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cA.wceq", "#T_cC", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cC", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cbs", "#T_cfv", "#T_cS", "#T_wceq", "#T_cC", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cbs", "#T_cfv", "#T_cS", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eqcomd", "#P_syl", "#P_scmatsrng", "#P_subrgbas" ]
+}

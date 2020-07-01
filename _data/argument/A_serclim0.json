@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See serclim0 on Metamath](http://us.metamath.org/mpegif/serclim0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( ZZ>= ` M ) = ( ZZ>= ` M ) |\n| 2 | 1 | #P_ser0f | |- ( M e. ZZ -> seq M ( + , ( ( ZZ>= ` M ) X. { 0 } ) ) = ( ( ZZ>= ` M ) X. { 0 } ) ) |\n| 3 |  | #P_0cn | |- 0 e. CC |\n| 4 |  | #P_ssid | |- ( ZZ>= ` M ) C_ ( ZZ>= ` M ) |\n| 5 |  | #P_fvex | |- ( ZZ>= ` M ) e. _V |\n| 6 | 4, 5 | #P_climconst2 | |- ( ( 0 e. CC /\\ M e. ZZ ) -> ( ( ZZ>= ` M ) X. { 0 } ) ~~> 0 ) |\n| 7 | 3, 6 | #P_mpan | |- ( M e. ZZ -> ( ( ZZ>= ` M ) X. { 0 } ) ~~> 0 ) |\n| 8 | 2, 7 | #P_eqbrtrd | |- ( M e. ZZ -> seq M ( + , ( ( ZZ>= ` M ) X. { 0 } ) ) ~~> 0 ) |",
+  "conclusion" : "#P_serclim0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuz", "#T_cfv", "#T_cM", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cc0", "#T_wcel", "#T_cc", "#T_cuz", "#T_cfv", "#T_cM", "#T_wss", "#T_cuz", "#T_cfv", "#T_cM", "#T_cuz", "#T_cfv", "#T_cM", "#T_wcel", "#T_cvv", "#T_cc0", "#T_wcel", "#T_cc", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cuz", "#T_cfv", "#T_cM", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cli", "#T_cc0", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cuz", "#T_cfv", "#T_cM", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cli", "#T_cc0", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cli", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ssid", "#P_0cn", "#P_ser0f", "#P_eqbrtrd", "#P_mpan", "#P_fvex", "#P_climconst2" ]
+}

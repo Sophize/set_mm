@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unisuc on Metamath](http://us.metamath.org/mpegif/unisuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unisuc.1 | |- A e. _V |\n| 2 |  | #P_ssequn1 | |- ( U. A C_ A <-> ( U. A u. A ) = A ) |\n| 3 |  | #P_df-tr | |- ( Tr A <-> U. A C_ A ) |\n| 4 |  | #P_df-suc | |- suc A = ( A u. { A } ) |\n| 5 | 4 | #P_unieqi | |- U. suc A = U. ( A u. { A } ) |\n| 6 |  | #P_uniun | |- U. ( A u. { A } ) = ( U. A u. U. { A } ) |\n| 7 | 1 | #P_unisn | |- U. { A } = A |\n| 8 | 7 | #P_uneq2i | |- ( U. A u. U. { A } ) = ( U. A u. A ) |\n| 9 | 5, 6, 8 | #P_3eqtri | |- U. suc A = ( U. A u. A ) |\n| 10 | 9 | #P_eqeq1i | |- ( U. suc A = A <-> ( U. A u. A ) = A ) |\n| 11 | 2, 3, 10 | #P_3bitr4i | |- ( Tr A <-> U. suc A = A ) |",
+  "conclusion" : "#P_unisuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wtr", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cA.wceq", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wtr", "#T_cA", "#T_wb", "#T_cuni", "#T_csuc", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_ssequn1", "#P_uneq2i", "#P_unisn", "#P_eqeq1i", "#P_3bitr4i", "#P_df-suc", "#P_3eqtri", "#P_uniun", "#P_df-tr" ]
+}

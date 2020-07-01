@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ringcOLD on Metamath](http://us.metamath.org/mpegif/df-ringcOLD.html)"
+  } ],
+  "names" : [ "df-ringcOLD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cringcOLD", "#T_wceq", "#T_vu", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csb--1", "#T_vu", "#T_cin", "#T_crg", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vb", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_chom", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_vb", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_vb", "#T_cmpt2--4", "#T_vx", "#T_crh", "#T_vy", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cco", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vv", "#T_cmpt2--1", "#T_vb", "#T_cxp", "#T_vb", "#T_cmpt2--2", "#T_vz", "#T_cmpt2--3", "#T_vb", "#T_cmpt2--4", "#T_vg", "#T_cmpt2--1", "#T_c2nd", "#T_cfv", "#T_vv", "#T_crh", "#T_vz", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_c1st", "#T_cfv", "#T_vv", "#T_crh", "#T_c2nd", "#T_cfv", "#T_vv", "#T_cmpt2--4", "#T_vg", "#T_ccom", "#T_vf", "#T_cop--3", "#T_ctp--4", "#T_vb", "#T_vf", "#T_vg", "#T_vu", "#T_vv", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definition of the category Ring, relativized to a subset ` u ` .  This is the category of all rings in ` u ` and homomorphisms between these rings.  Generally, we will take ` u ` to be a weak universe or Grothendieck universe, because these sets have closure properties as good as the real thing.  (Contributed by AV, 13-Feb-2020.) (New usage is discouraged.) ",
+  "statement" : "df-ringcOLD $p |- RingCatOLD = ( u e. _V |-> [_ ( u i^i Ring ) / b ]_ { <. ( Base ` ndx ) , b >. , <. ( Hom ` ndx ) , ( x e. b , y e. b |-> ( x RingHom y ) ) >. , <. ( comp ` ndx ) , ( v e. ( b X. b ) , z e. b |-> ( g e. ( ( 2nd ` v ) RingHom z ) , f e. ( ( 1st ` v ) RingHom ( 2nd ` v ) ) |-> ( g o. f ) ) ) >. } ) $.\n$d b f g u v x y z $."
+}

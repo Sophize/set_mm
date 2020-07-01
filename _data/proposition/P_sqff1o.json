@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqff1o on Metamath](http://us.metamath.org/mpegif/sqff1o.html)"
+  } ],
+  "names" : [ "sqff1o" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_cmu", "#T_cfv", "#T_vx", "#T_wne", "#T_cc0", "#T_wa", "#T_vx", "#T_cdvds", "#T_cN", "#T_crab--4", "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cS", "#T_cmpt--2", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cprime", "#T_crab--3", "#T_vp", "#T_cdvds", "#T_vn", "#T_crab--4", "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_vn", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cS", "#T_wf1o--2", "#T_cpw", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cprime", "#T_crab--3", "#T_vp", "#T_cdvds", "#T_cN", "#T_crab--4", "#T_cG", "#T_vn", "#T_vp", "#T_vx", "#T_cN", "#T_vn", "#T_vp", "#T_vx", "#T_cS", "#T_vn", "#T_vp" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " There is a bijection from the squarefree divisors of a number ` N ` to the powerset of the prime divisors of ` N ` .  Among other things, this implies that a number has ` 2 ^ k ` squarefree divisors where ` k ` is the number of prime divisors, and a squarefree number has ` 2 ^ k ` divisors (because all divisors of a squarefree number are squarefree). The inverse function to ` F ` takes the product of all the primes in some subset of prime divisors of ` N ` .  (Contributed by Mario Carneiro, 1-Jul-2015.) ",
+  "statement" : "sqff1o.1 $e |- S = { x e. NN | ( ( mmu ` x ) =/= 0 /\\ x || N ) } $.\nsqff1o.2 $e |- F = ( n e. S |-> { p e. Prime | p || n } ) $.\nsqff1o.3 $e |- G = ( n e. NN |-> ( p e. Prime |-> ( p pCnt n ) ) ) $.\nsqff1o $p |- ( N e. NN -> F : S -1-1-onto-> ~P { p e. Prime | p || N } ) $.\n$d G n p x $.\n$d N n p x $.\n$d S n p $."
+}

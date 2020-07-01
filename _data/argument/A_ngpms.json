@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ngpms on Metamath](http://us.metamath.org/mpegif/ngpms.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( norm ` G ) = ( norm ` G ) |\n| 2 |  | #P_eqid | |- ( -g ` G ) = ( -g ` G ) |\n| 3 |  | #P_eqid | |- ( dist ` G ) = ( dist ` G ) |\n| 4 | 1, 2, 3 | #P_isngp | |- ( G e. NrmGrp <-> ( G e. Grp /\\ G e. MetSp /\\ ( ( norm ` G ) o. ( -g ` G ) ) C_ ( dist ` G ) ) ) |\n| 5 | 4 | #P_simp2bi | |- ( G e. NrmGrp -> G e. MetSp ) |",
+  "conclusion" : "#P_ngpms",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cnm", "#T_cfv", "#T_cG", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cG", "#T_csg", "#T_cfv", "#T_cG", "#T_wceq", "#T_csg", "#T_cfv", "#T_cG", "#T_cds", "#T_cfv", "#T_cG", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_cmt", "#T_w3a--2", "#T_cnm", "#T_cfv", "#T_cG", "#T_ccom", "#T_csg", "#T_cfv", "#T_cG", "#T_wss", "#T_cds", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cG", "#T_wcel", "#T_cmt" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp2bi", "#P_isngp" ]
+}

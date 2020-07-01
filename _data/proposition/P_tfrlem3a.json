@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem3a on Metamath](http://us.metamath.org/mpegif/tfrlem3a.html)"
+  } ],
+  "names" : [ "tfrlem3a" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_cG", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_cA", "#T_wb", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_con0", "#T_cG", "#T_wfn", "#T_vz", "#T_wa", "#T_wral--1", "#T_vw", "#T_wral--2", "#T_vz", "#T_cG", "#T_cfv", "#T_vw", "#T_wceq", "#T_cF", "#T_cfv", "#T_cG", "#T_cres", "#T_vw", "#T_cF", "#T_vf", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cG", "#T_vf", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for transfinite recursion.  Let ` A ` be the class of \"acceptable\" functions.  The final thing we're interested in is the union of all these acceptable functions.  This lemma just changes some bound variables in ` A ` for later use.  (Contributed by NM, 9-Apr-1995.) ",
+  "statement" : "tfrlem3.1 $e |- A = { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.\ntfrlem3.2 $e |- G e. _V $.\ntfrlem3a $p |- ( G e. A <-> E. z e. On ( G Fn z /\\ A. w e. z ( G ` w ) = ( F ` ( G |` w ) ) ) ) $.\n$d F f w x y z $.\n$d G f w x y z $."
+}

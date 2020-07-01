@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sylan9 on Metamath](http://us.metamath.org/mpegif/sylan9.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sylan9.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | sylan9.2 | |- ( th -> ( ch -> ta ) ) |\n| 3 | 1, 2 | #P_syl9 | |- ( ph -> ( th -> ( ps -> ta ) ) ) |\n| 4 | 3 | #P_imp | |- ( ( ph /\\ th ) -> ( ps -> ta ) ) |",
+  "conclusion" : "#P_sylan9",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imp", "#P_syl9" ]
+}

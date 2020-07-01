@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subgid on Metamath](http://us.metamath.org/mpegif/subgid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | issubg.b | |- B = ( Base ` G ) |\n| 2 |  | #P_id | |- ( G e. Grp -> G e. Grp ) |\n| 3 |  | #P_ssid | |- B C_ B |\n| 4 | 3 | #P_a1i | |- ( G e. Grp -> B C_ B ) |\n| 5 | 1 | #P_ressid | |- ( G e. Grp -> ( G |`s B ) = G ) |\n| 6 | 5, 2 | #P_eqeltrd | |- ( G e. Grp -> ( G |`s B ) e. Grp ) |\n| 7 | 1 | #P_issubg | |- ( B e. ( SubGrp ` G ) <-> ( G e. Grp /\\ B C_ B /\\ ( G |`s B ) e. Grp ) ) |\n| 8 | 2, 4, 6, 7 | #P_syl3anbrc | |- ( G e. Grp -> B e. ( SubGrp ` G ) ) |",
+  "conclusion" : "#P_subgid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_cgrp", "#T_cB.wceq", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_w3a--2", "#T_cG", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cB", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssid", "#P_issubg", "#P_ressid", "#P_eqeltrd", "#P_syl3anbrc", "#P_a1i", "#P_id" ]
+}

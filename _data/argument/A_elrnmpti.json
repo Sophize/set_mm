@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrnmpti on Metamath](http://us.metamath.org/mpegif/elrnmpti.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rnmpt.1 | |- F = ( x e. A |-> B ) |\n| 2 |  | elrnmpti.2 | |- B e. _V |\n| 3 | 2 | #P_rgenw | |- A. x e. A B e. _V |\n| 4 | 1 | #P_elrnmptg | |- ( A. x e. A B e. _V -> ( C e. ran F <-> E. x e. A C = B ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( C e. ran F <-> E. x e. A C = B ) |",
+  "conclusion" : "#P_elrnmpti",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_cB", "#T_wcel", "#T_cvv", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cC", "#T_wcel", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_cC", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_elrnmptg", "#P_rgenw" ]
+}

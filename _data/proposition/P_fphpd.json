@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fphpd on Metamath](http://us.metamath.org/mpegif/fphpd.html)"
+  } ],
+  "names" : [ "fphpd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_csdm", "#T_cA", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cB", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cA", "#T_vx", "#T_wne", "#T_vy", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vy", "#T_cD", "#T_vx", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Pigeonhole principle expressed with implicit substitution.  If the range is smaller than the domain, two inputs must be mapped to the same output.  (Contributed by Stefan O'Rear, 19-Oct-2014.)  (Revised by Stefan O'Rear, 6-May-2015.) ",
+  "statement" : "fphpd.a $e |- ( ph -> B ~< A ) $.\nfphpd.b $e |- ( ( ph /\\ x e. A ) -> C e. B ) $.\nfphpd.c $e |- ( x = y -> C = D ) $.\nfphpd $p |- ( ph -> E. x e. A E. y e. A ( x =/= y /\\ C = D ) ) $.\n$d A x y $.\n$d B x y $.\n$d C y $.\n$d D x $.\n$d ph x y $."
+}

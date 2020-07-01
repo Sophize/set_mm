@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj602 on Metamath](http://us.metamath.org/mpegif/bnj602.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( X = Y -> ( y R X <-> y R Y ) ) |\n| 2 | 1 | #P_rabbidv | |- ( X = Y -> { y e. A | y R X } = { y e. A | y R Y } ) |\n| 3 |  | #P_df-bnj14 | |- _pred ( X , A , R ) = { y e. A | y R X } |\n| 4 |  | #P_df-bnj14 | |- _pred ( Y , A , R ) = { y e. A | y R Y } |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( X = Y -> _pred ( X , A , R ) = _pred ( Y , A , R ) ) |",
+  "conclusion" : "#P_bnj602",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cX", "#T_wceq", "#T_cY", "#T_wi", "#T_vy.tru", "#T_cR", "#T_cX", "#T_wb", "#T_vy.tru", "#T_cR", "#T_cY", "#T_cX", "#T_wceq", "#T_cY", "#T_wi", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vy.tru", "#T_cR", "#T_cX", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vy.tru", "#T_cR", "#T_cY", "#T_crab--4", "#T_c-bnj14--1", "#T_cX", "#T_c-bnj14--2", "#T_cA.wceq", "#T_c-bnj14--3", "#T_cR", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vy.tru", "#T_cR", "#T_cX", "#T_crab--4", "#T_c-bnj14--1", "#T_cY", "#T_c-bnj14--2", "#T_cA.wceq", "#T_c-bnj14--3", "#T_cR", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vy.tru", "#T_cR", "#T_cY", "#T_crab--4", "#T_cX", "#T_wceq", "#T_cY", "#T_wi", "#T_c-bnj14--1", "#T_cX", "#T_c-bnj14--2", "#T_cA", "#T_c-bnj14--3", "#T_cR", "#T_wceq", "#T_c-bnj14--1", "#T_cY", "#T_c-bnj14--2", "#T_cA", "#T_c-bnj14--3", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq2", "#P_rabbidv", "#P_df-bnj14", "#P_3eqtr4g" ]
+}

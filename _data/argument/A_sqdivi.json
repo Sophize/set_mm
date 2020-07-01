@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqdivi on Metamath](http://us.metamath.org/mpegif/sqdivi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sqval.1 | |- A e. CC |\n| 2 |  | sqmul.2 | |- B e. CC |\n| 3 |  | sqdiv.3 | |- B =/= 0 |\n| 4 | 1, 2, 1, 2, 3, 3 | #P_divmuldivi | |- ( ( A / B ) x. ( A / B ) ) = ( ( A x. A ) / ( B x. B ) ) |\n| 5 | 1, 2, 3 | #P_divcli | |- ( A / B ) e. CC |\n| 6 | 5 | #P_sqvali | |- ( ( A / B ) ^ 2 ) = ( ( A / B ) x. ( A / B ) ) |\n| 7 | 1 | #P_sqvali | |- ( A ^ 2 ) = ( A x. A ) |\n| 8 | 2 | #P_sqvali | |- ( B ^ 2 ) = ( B x. B ) |\n| 9 | 7, 8 | #P_oveq12i | |- ( ( A ^ 2 ) / ( B ^ 2 ) ) = ( ( A x. A ) / ( B x. B ) ) |\n| 10 | 4, 6, 9 | #P_3eqtr4i | |- ( ( A / B ) ^ 2 ) = ( ( A ^ 2 ) / ( B ^ 2 ) ) |",
+  "conclusion" : "#P_sqdivi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cB", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cdiv", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA", "#T_cdiv", "#T_cB", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA", "#T_cexp", "#T_c2", "#T_cdiv", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_divmuldivi", "#P_oveq12i", "#P_divcli", "#P_sqvali" ]
+}

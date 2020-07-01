@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chjval on Metamath](http://us.metamath.org/mpegif/chjval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chsh | |- ( A e. CH -> A e. SH ) |\n| 2 |  | #P_chsh | |- ( B e. CH -> B e. SH ) |\n| 3 |  | #P_shjval | |- ( ( A e. SH /\\ B e. SH ) -> ( A vH B ) = ( _|_ ` ( _|_ ` ( A u. B ) ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. CH /\\ B e. CH ) -> ( A vH B ) = ( _|_ ` ( _|_ ` ( A u. B ) ) ) ) |",
+  "conclusion" : "#P_chjval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_wa", "#T_cB", "#T_wcel", "#T_cch", "#T_wi", "#T_cA", "#T_chj", "#T_cB", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2an", "#P_chsh", "#P_shjval" ]
+}

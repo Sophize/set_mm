@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfrel2 on Metamath](http://us.metamath.org/mpegif/dfrel2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relcnv | |- Rel `' `' R |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 |  | #P_vex | |- y e. _V |\n| 4 | 2, 3 | #P_opelcnv | |- ( <. x , y >. e. `' `' R <-> <. y , x >. e. `' R ) |\n| 5 | 3, 2 | #P_opelcnv | |- ( <. y , x >. e. `' R <-> <. x , y >. e. R ) |\n| 6 | 4, 5 | #P_bitri | |- ( <. x , y >. e. `' `' R <-> <. x , y >. e. R ) |\n| 7 | 6 | #P_eqrelriv | |- ( ( Rel `' `' R /\\ Rel R ) -> `' `' R = R ) |\n| 8 | 1, 7 | #P_mpan | |- ( Rel R -> `' `' R = R ) |\n| 9 |  | #P_releq | |- ( `' `' R = R -> ( Rel `' `' R <-> Rel R ) ) |\n| 10 | 1, 9 | #P_mpbii | |- ( `' `' R = R -> Rel R ) |\n| 11 | 8, 10 | #P_impbii | |- ( Rel R <-> `' `' R = R ) |",
+  "conclusion" : "#P_dfrel2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wrel", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wb", "#T_cop--1", "#T_vy.tru", "#T_cop--2", "#T_vx.wal", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_cR", "#T_cop--1", "#T_vy.tru", "#T_cop--2", "#T_vx.wal", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_cR", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wrel", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wa", "#T_wrel", "#T_cR", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wi", "#T_wrel", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wb", "#T_wrel", "#T_cR", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wi", "#T_wrel", "#T_cR", "#T_wrel", "#T_cR", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opelcnv", "#P_mpbii", "#P_impbii", "#P_relcnv", "#P_mpan", "#P_vex", "#P_eqrelriv", "#P_bitri", "#P_releq" ]
+}

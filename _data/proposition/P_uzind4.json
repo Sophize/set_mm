@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzind4 on Metamath](http://us.metamath.org/mpegif/uzind4.html)"
+  } ],
+  "names" : [ "uzind4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_wceq", "#T_cM", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vj", "#T_wceq", "#T_vk", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vj", "#T_wceq", "#T_vk", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vj", "#T_wceq", "#T_cN", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_wps", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_wta", "#T_cM", "#T_vj", "#T_vk", "#T_cN", "#T_vj", "#T_wch", "#T_vj", "#T_vj", "#T_wps", "#T_vj", "#T_wta", "#T_vj", "#T_wth", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Induction on the upper set of integers that starts at an integer ` M ` .  The first four hypotheses give us the substitution instances we need, and the last two are the basis and the induction step. (Contributed by NM, 7-Sep-2005.) ",
+  "statement" : "uzind4.1 $e |- ( j = M -> ( ph <-> ps ) ) $.\nuzind4.2 $e |- ( j = k -> ( ph <-> ch ) ) $.\nuzind4.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.\nuzind4.4 $e |- ( j = N -> ( ph <-> ta ) ) $.\nuzind4.5 $e |- ( M e. ZZ -> ps ) $.\nuzind4.6 $e |- ( k e. ( ZZ>= ` M ) -> ( ch -> th ) ) $.\nuzind4 $p |- ( N e. ( ZZ>= ` M ) -> ta ) $.\n$d M j k $.\n$d N j $.\n$d ch j $.\n$d j ps $.\n$d j ta $.\n$d j th $.\n$d k ph $."
+}

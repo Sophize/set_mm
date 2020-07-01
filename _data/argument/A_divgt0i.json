@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divgt0i on Metamath](http://us.metamath.org/mpegif/divgt0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltplus1.1 | |- A e. RR |\n| 2 |  | prodgt0.2 | |- B e. RR |\n| 3 |  | #P_divgt0 | |- ( ( ( A e. RR /\\ 0 < A ) /\\ ( B e. RR /\\ 0 < B ) ) -> 0 < ( A / B ) ) |\n| 4 | 2, 3 | #P_mpanr1 | |- ( ( ( A e. RR /\\ 0 < A ) /\\ 0 < B ) -> 0 < ( A / B ) ) |\n| 5 | 1, 4 | #P_mpanl1 | |- ( ( 0 < A /\\ 0 < B ) -> 0 < ( A / B ) ) |",
+  "conclusion" : "#P_divgt0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cc0", "#T_clt", "#T_cA", "#T_wa", "#T_cc0", "#T_clt", "#T_cB", "#T_wi", "#T_cc0", "#T_clt", "#T_cA", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_mpanl1", "#P_divgt0" ]
+}

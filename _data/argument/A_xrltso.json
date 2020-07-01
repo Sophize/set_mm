@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrltso on Metamath](http://us.metamath.org/mpegif/xrltso.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xrlttri | |- ( ( x e. RR* /\\ y e. RR* ) -> ( x < y <-> -. ( x = y \\/ y < x ) ) ) |\n| 2 |  | #P_xrlttr | |- ( ( x e. RR* /\\ y e. RR* /\\ z e. RR* ) -> ( ( x < y /\\ y < z ) -> x < z ) ) |\n| 3 | 1, 2 | #P_isso2i | |- < Or RR* |",
+  "conclusion" : "#P_xrltso",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_vx.wal", "#T_wcel", "#T_cxr", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_wi", "#T_vx.wal", "#T_clt", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wo", "#T_vy.tru", "#T_clt", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cxr", "#T_wi", "#T_vx.wal", "#T_clt", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_clt", "#T_vz", "#T_wi", "#T_vx.wal", "#T_clt", "#T_vz", "#T_clt", "#T_wor", "#T_cxr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xrlttr", "#P_xrlttri", "#P_isso2i" ]
+}

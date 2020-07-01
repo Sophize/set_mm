@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shunssji on Metamath](http://us.metamath.org/mpegif/shunssji.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | shincl.1 | |- A e. SH |\n| 2 |  | shincl.2 | |- B e. SH |\n| 3 | 1 | #P_shssii | |- A C_ ~H |\n| 4 | 2 | #P_shssii | |- B C_ ~H |\n| 5 | 3, 4 | #P_unssi | |- ( A u. B ) C_ ~H |\n| 6 |  | #P_ococss | |- ( ( A u. B ) C_ ~H -> ( A u. B ) C_ ( _|_ ` ( _|_ ` ( A u. B ) ) ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- ( A u. B ) C_ ( _|_ ` ( _|_ ` ( A u. B ) ) ) |\n| 8 |  | #P_shjval | |- ( ( A e. SH /\\ B e. SH ) -> ( A vH B ) = ( _|_ ` ( _|_ ` ( A u. B ) ) ) ) |\n| 9 | 1, 2, 8 | #P_mp2an | |- ( A vH B ) = ( _|_ ` ( _|_ ` ( A u. B ) ) ) |\n| 10 | 7, 9 | #P_sseqtr4i | |- ( A u. B ) C_ ( A vH B ) |",
+  "conclusion" : "#P_shunssji",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_csh", "#T_cB", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA", "#T_cun", "#T_cB", "#T_wss", "#T_cA", "#T_chj", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ococss", "#P_shssii", "#P_ax-mp", "#P_mp2an", "#P_unssi", "#P_sseqtr4i", "#P_shjval" ]
+}

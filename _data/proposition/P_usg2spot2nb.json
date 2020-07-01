@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See usg2spot2nb on Metamath](http://us.metamath.org/mpegif/usg2spot2nb.html)"
+  } ],
+  "names" : [ "usg2spot2nb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cV", "#T_cxp", "#T_cV", "#T_cxp", "#T_cV", "#T_crab--3", "#T_vt", "#T_wcel", "#T_cV", "#T_c2spthot", "#T_cE", "#T_wa", "#T_c2nd", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vt", "#T_wceq", "#T_va", "#T_crab--4", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_cfv", "#T_cN", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cN", "#T_ciun--1", "#T_vy", "#T_ciun--2", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cN", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_csn--1", "#T_cotp--1", "#T_vx", "#T_cotp--2", "#T_cN", "#T_cotp--3", "#T_vy", "#T_cotp--4", "#T_csn--2", "#T_cE", "#T_va", "#T_vt", "#T_vx", "#T_vy", "#T_cN", "#T_va", "#T_vt", "#T_vx", "#T_vy", "#T_cV", "#T_va", "#T_vt", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The set of paths of length 2 with a given vertex in the middle for a finite graph is the union of all paths of length 2 from one neighbor to another neighbor of this vertex via this vertex.  (Contributed by Alexander van der Vekens, 9-Mar-2018.) ",
+  "statement" : "usgreghash2spot.m $e |- M = ( a e. V |-> { t e. ( ( V X. V ) X. V ) | ( t e. ( V 2SPathsOt E ) /\\ ( 2nd ` ( 1st ` t ) ) = a ) } ) $.\nusg2spot2nb $p |- ( ( V USGrph E /\\ V e. Fin /\\ N e. V ) -> ( M ` N ) = U_ x e. ( <. V , E >. Neighbors N ) U_ y e. ( ( <. V , E >. Neighbors N ) \\ { x } ) { <. x , N , y >. } ) $.\n$d E a t x y $.\n$d N a t x y $.\n$d V a t x y $."
+}

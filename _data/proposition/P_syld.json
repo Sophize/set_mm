@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syld on Metamath](http://us.metamath.org/mpegif/syld.html)"
+  } ],
+  "names" : [ "syld" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Syllogism deduction.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Mel L. O'Cat, 19-Feb-2008.)  (Proof shortened by Wolf Lammen, 3-Aug-2012.) Notice that ~ syld has the same form as ~ syl with ` ph ` added in front of each hypothesis and conclusion.  When all theorems referenced in a proof are converted in this way, we can replace ` ph ` with a hypothesis of the proof, allowing the hypothesis to be eliminated with ~ id and become an antecedent.  The Deduction Theorem for propositional calculus, e.g.  Theorem 3 in [Margaris] p. 56, tells us that this procedure is always possible. \n\n---\n\n Syllogism deduction. Notice that ~ syld has the same form as ~ syl with ` ph ` added in front of each hypothesis and conclusion.  When all theorems referenced in a proof are converted in this way, we can replace ` ph ` with a hypothesis of the proof, allowing the hypothesis to be eliminated with ~ id and become an antecedent.  The Deduction Theorem for propositional calculus, e.g.  Theorem 3 in [Margaris] p. 56, tells us that this procedure is always possible.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.)  (Proof shortened by Wolf Lammen, 3-Aug-2012.) ",
+  "statement" : "syld.1 $e |- ( ph -> ( ps -> ch ) ) $.\nsyld.2 $e |- ( ph -> ( ch -> th ) ) $.\nsyld $p |- ( ph -> ( ps -> th ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See foeq2 on Metamath](http://us.metamath.org/mpegif/foeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fneq2 | |- ( A = B -> ( F Fn A <-> F Fn B ) ) |\n| 2 | 1 | #P_anbi1d | |- ( A = B -> ( ( F Fn A /\\ ran F = C ) <-> ( F Fn B /\\ ran F = C ) ) ) |\n| 3 |  | #P_df-fo | |- ( F : A -onto-> C <-> ( F Fn A /\\ ran F = C ) ) |\n| 4 |  | #P_df-fo | |- ( F : B -onto-> C <-> ( F Fn B /\\ ran F = C ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A = B -> ( F : A -onto-> C <-> F : B -onto-> C ) ) |",
+  "conclusion" : "#P_foeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cC", "#T_wb", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cC", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cF", "#T_wfo--1", "#T_cB", "#T_wfo--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi1d", "#P_fneq2", "#P_df-fo", "#P_3bitr4g" ]
+}

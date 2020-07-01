@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relogrn on Metamath](http://us.metamath.org/mpegif/relogrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recn | |- ( A e. RR -> A e. CC ) |\n| 2 |  | #P_pipos | |- 0 < _pi |\n| 3 |  | #P_pire | |- _pi e. RR |\n| 4 |  | #P_lt0neg2 | |- ( _pi e. RR -> ( 0 < _pi <-> -u _pi < 0 ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( 0 < _pi <-> -u _pi < 0 ) |\n| 6 | 2, 5 | #P_mpbi | |- -u _pi < 0 |\n| 7 |  | #P_reim0 | |- ( A e. RR -> ( Im ` A ) = 0 ) |\n| 8 | 6, 7 | #P_syl5breqr | |- ( A e. RR -> -u _pi < ( Im ` A ) ) |\n| 9 |  | #P_0re | |- 0 e. RR |\n| 10 | 9, 3, 2 | #P_ltleii | |- 0 <_ _pi |\n| 11 | 7, 10 | #P_syl6eqbr | |- ( A e. RR -> ( Im ` A ) <_ _pi ) |\n| 12 |  | #P_ellogrn | |- ( A e. ran log <-> ( A e. CC /\\ -u _pi < ( Im ` A ) /\\ ( Im ` A ) <_ _pi ) ) |\n| 13 | 1, 8, 11, 12 | #P_syl3anbrc | |- ( A e. RR -> A e. ran log ) |",
+  "conclusion" : "#P_relogrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cc0", "#T_clt", "#T_cpi", "#T_cpi", "#T_wcel", "#T_cr", "#T_cpi", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cpi", "#T_wb", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0", "#T_cc0", "#T_clt", "#T_cpi", "#T_wb", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0", "#T_cneg", "#T_cpi", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cpi", "#T_clt", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cpi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cpi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_clog", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cneg", "#T_cpi", "#T_clt", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_w3a--2", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cpi", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_wcel", "#T_crn", "#T_clog" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ellogrn", "#P_syl3anbrc", "#P_reim0", "#P_syl5breqr", "#P_pire", "#P_syl6eqbr", "#P_mpbi", "#P_pipos", "#P_ltleii", "#P_recn", "#P_0re", "#P_lt0neg2" ]
+}

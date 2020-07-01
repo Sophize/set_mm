@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opelreal on Metamath](http://us.metamath.org/mpegif/opelreal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- 0R = 0R |\n| 2 |  | #P_df-r | |- RR = ( R. X. { 0R } ) |\n| 3 | 2 | #P_eleq2i | |- ( <. A , 0R >. e. RR <-> <. A , 0R >. e. ( R. X. { 0R } ) ) |\n| 4 |  | #P_opelxp | |- ( <. A , 0R >. e. ( R. X. { 0R } ) <-> ( A e. R. /\\ 0R e. { 0R } ) ) |\n| 5 |  | #P_0r | |- 0R e. R. |\n| 6 | 5 | #P_elexi | |- 0R e. _V |\n| 7 | 6 | #P_elsnc | |- ( 0R e. { 0R } <-> 0R = 0R ) |\n| 8 | 7 | #P_anbi2i | |- ( ( A e. R. /\\ 0R e. { 0R } ) <-> ( A e. R. /\\ 0R = 0R ) ) |\n| 9 | 3, 4, 8 | #P_3bitri | |- ( <. A , 0R >. e. RR <-> ( A e. R. /\\ 0R = 0R ) ) |\n| 10 | 1, 9 | #P_mpbiran2 | |- ( <. A , 0R >. e. RR <-> A e. R. ) |",
+  "conclusion" : "#P_opelreal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0r", "#T_wceq", "#T_c0r", "#T_cr", "#T_wceq", "#T_cnr", "#T_cxp", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_c0r", "#T_cop--3", "#T_wcel", "#T_cr", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_c0r", "#T_cop--3", "#T_wcel", "#T_cnr", "#T_cxp", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_c0r", "#T_cop--3", "#T_wcel", "#T_cnr", "#T_cxp", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wa", "#T_c0r", "#T_wcel", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_c0r", "#T_wcel", "#T_cnr", "#T_c0r", "#T_wcel", "#T_cvv", "#T_c0r", "#T_wcel", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_wb", "#T_c0r", "#T_wceq", "#T_c0r", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wa", "#T_c0r", "#T_wcel", "#T_csn--1", "#T_c0r", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wa", "#T_c0r", "#T_wceq", "#T_c0r", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_c0r", "#T_cop--3", "#T_wcel", "#T_cr", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wa", "#T_c0r", "#T_wceq", "#T_c0r", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_c0r", "#T_cop--3", "#T_wcel", "#T_cr", "#T_wb", "#T_cA", "#T_wcel", "#T_cnr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbiran2", "#P_elexi", "#P_elsnc", "#P_3bitri", "#P_0r", "#P_anbi2i", "#P_eleq2i", "#P_df-r", "#P_opelxp" ]
+}

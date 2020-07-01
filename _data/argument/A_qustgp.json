@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qustgp on Metamath](http://us.metamath.org/mpegif/qustgp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw x z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qustgp.h | |- H = ( G /s ( G ~QG Y ) ) |\n| 2 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 3 |  | #P_eqid | |- ( TopOpen ` G ) = ( TopOpen ` G ) |\n| 4 |  | #P_eqid | |- ( TopOpen ` H ) = ( TopOpen ` H ) |\n| 5 |  | #P_eqid | |- ( x e. ( Base ` G ) |-> [ x ] ( G ~QG Y ) ) = ( x e. ( Base ` G ) |-> [ x ] ( G ~QG Y ) ) |\n| 6 |  | #P_eqid | |- ( z e. ( Base ` G ) , w e. ( Base ` G ) |-> [ ( z ( -g ` G ) w ) ] ( G ~QG Y ) ) = ( z e. ( Base ` G ) , w e. ( Base ` G ) |-> [ ( z ( -g ` G ) w ) ] ( G ~QG Y ) ) |\n| 7 | 1, 2, 3, 4, 5, 6 | #P_qustgplem | |- ( ( G e. TopGrp /\\ Y e. ( NrmSGrp ` G ) ) -> H e. TopGrp ) |",
+  "conclusion" : "#P_qustgp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vx", "#T_vz", "#T_cH", "#T_wceq", "#T_cG", "#T_cqus", "#T_cG", "#T_cqg", "#T_cY", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_ctopn", "#T_cfv", "#T_cG", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_ctopn", "#T_cfv", "#T_cH", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cH", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_cG", "#T_cqg", "#T_cY", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_cG", "#T_cqg", "#T_cY", "#T_vz", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt2--2", "#T_vw", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt2--4", "#T_cec--1", "#T_vz", "#T_csg", "#T_cfv", "#T_cG", "#T_vw", "#T_cec--2", "#T_cG", "#T_cqg", "#T_cY", "#T_wceq", "#T_vz", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt2--2", "#T_vw", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt2--4", "#T_cec--1", "#T_vz", "#T_csg", "#T_cfv", "#T_cG", "#T_vw", "#T_cec--2", "#T_cG", "#T_cqg", "#T_cY", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wa", "#T_cY", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cG", "#T_wi", "#T_cH", "#T_wcel", "#T_ctgp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_qustgplem" ]
+}

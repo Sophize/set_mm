@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elfunsg on Metamath](http://us.metamath.org/mpegif/elfunsg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1 | |- ( f = F -> ( f e. Funs <-> F e. Funs ) ) |\n| 2 |  | #P_funeq | |- ( f = F -> ( Fun f <-> Fun F ) ) |\n| 3 |  | #P_vex | |- f e. _V |\n| 4 | 3 | #P_elfuns | |- ( f e. Funs <-> Fun f ) |\n| 5 | 1, 2, 4 | #P_vtoclbg | |- ( F e. V -> ( F e. Funs <-> Fun F ) ) |",
+  "conclusion" : "#P_elfunsg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cbvex4v.vf", "#T_wceq", "#T_cF", "#T_wi", "#T_cbvex4v.vf", "#T_wcel", "#T_cfuns", "#T_wb", "#T_cF", "#T_wcel", "#T_cfuns", "#T_cbvex4v.vf", "#T_wceq", "#T_cF", "#T_wi", "#T_wfun", "#T_cbvex4v.vf", "#T_wb", "#T_wfun", "#T_cF", "#T_cbvex4v.vf", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wcel", "#T_cfuns", "#T_wb", "#T_wfun", "#T_cbvex4v.vf", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wcel", "#T_cfuns", "#T_wb", "#T_wfun", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vtoclbg", "#P_eleq1", "#P_funeq", "#P_elfuns", "#P_vex" ]
+}

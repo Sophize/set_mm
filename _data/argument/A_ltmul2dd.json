@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltmul2dd on Metamath](http://us.metamath.org/mpegif/ltmul2dd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltmul1d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | ltmul1d.2 | |- ( ph -> B e. RR ) |\n| 3 |  | ltmul1d.3 | |- ( ph -> C e. RR+ ) |\n| 4 |  | ltdiv1dd.4 | |- ( ph -> A < B ) |\n| 5 | 1, 2, 3 | #P_ltmul2d | |- ( ph -> ( A < B <-> ( C x. A ) < ( C x. B ) ) ) |\n| 6 | 4, 5 | #P_mpbid | |- ( ph -> ( C x. A ) < ( C x. B ) ) |",
+  "conclusion" : "#P_ltmul2dd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_cmul", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_cmul", "#T_cA", "#T_clt", "#T_cC", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_ltmul2d" ]
+}

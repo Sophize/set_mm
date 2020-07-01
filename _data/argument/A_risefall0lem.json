@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See risefall0lem on Metamath](http://us.metamath.org/mpegif/risefall0lem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-neg | |- -u 1 = ( 0 - 1 ) |\n| 2 | 1 | #P_oveq2i | |- ( 0 ... -u 1 ) = ( 0 ... ( 0 - 1 ) ) |\n| 3 |  | #P_neg1lt0 | |- -u 1 < 0 |\n| 4 |  | #P_0z | |- 0 e. ZZ |\n| 5 |  | #P_neg1z | |- -u 1 e. ZZ |\n| 6 |  | #P_fzn | |- ( ( 0 e. ZZ /\\ -u 1 e. ZZ ) -> ( -u 1 < 0 <-> ( 0 ... -u 1 ) = (/) ) ) |\n| 7 | 4, 5, 6 | #P_mp2an | |- ( -u 1 < 0 <-> ( 0 ... -u 1 ) = (/) ) |\n| 8 | 3, 7 | #P_mpbi | |- ( 0 ... -u 1 ) = (/) |\n| 9 | 2, 8 | #P_eqtr3i | |- ( 0 ... ( 0 - 1 ) ) = (/) |",
+  "conclusion" : "#P_risefall0lem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_c1", "#T_wceq", "#T_cc0", "#T_cmin", "#T_c1", "#T_cc0", "#T_cfz", "#T_cneg", "#T_c1", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cz", "#T_cneg", "#T_c1", "#T_wcel", "#T_cz", "#T_cc0", "#T_wcel", "#T_cz", "#T_wa", "#T_cneg", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_wb", "#T_cc0", "#T_cfz", "#T_cneg", "#T_c1", "#T_wceq", "#T_c0", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_wb", "#T_cc0", "#T_cfz", "#T_cneg", "#T_c1", "#T_wceq", "#T_c0", "#T_cc0", "#T_cfz", "#T_cneg", "#T_c1", "#T_wceq", "#T_c0", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_neg1lt0", "#P_neg1z", "#P_eqtr3i", "#P_fzn", "#P_df-neg", "#P_mpbi", "#P_oveq2i", "#P_0z" ]
+}

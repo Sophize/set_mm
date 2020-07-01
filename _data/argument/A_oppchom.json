@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oppchom on Metamath](http://us.metamath.org/mpegif/oppchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oppchom.h | |- H = ( Hom ` C ) |\n| 2 |  | oppchom.o | |- O = ( oppCat ` C ) |\n| 3 | 1, 2 | #P_oppchomfval | |- tpos H = ( Hom ` O ) |\n| 4 | 3 | #P_oveqi | |- ( X tpos H Y ) = ( X ( Hom ` O ) Y ) |\n| 5 |  | #P_ovtpos | |- ( X tpos H Y ) = ( Y H X ) |\n| 6 | 4, 5 | #P_eqtr3i | |- ( X ( Hom ` O ) Y ) = ( Y H X ) |",
+  "conclusion" : "#P_oppchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_cO", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cC", "#T_ctpos", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cO", "#T_cX", "#T_ctpos", "#T_cH", "#T_cY", "#T_wceq", "#T_cX", "#T_chom", "#T_cfv", "#T_cO", "#T_cY", "#T_cX", "#T_ctpos", "#T_cH", "#T_cY", "#T_wceq", "#T_cY", "#T_cH", "#T_cX", "#T_cX", "#T_chom", "#T_cfv", "#T_cO", "#T_cY", "#T_wceq", "#T_cY", "#T_cH", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovtpos", "#P_eqtr3i", "#P_oppchomfval", "#P_oveqi" ]
+}

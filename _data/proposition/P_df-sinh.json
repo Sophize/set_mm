@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sinh on Metamath](http://us.metamath.org/mpegif/df-sinh.html)"
+  } ],
+  "names" : [ "df-sinh" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csinh", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx", "#T_cdiv", "#T_ci" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the hyperbolic sine function (sinh).  We define it this way for ~ cmpt , which requires the form ` ( x e. A |-> B ) ` .  See ~ sinhval-named for a simple way to evaluate it.  We define this function by dividing by ` _i ` , which uses fewer operations than many conventional definitions (and thus is more convenient to use in metamath).  See ~ sinh-conventional for a justification that our definition is the same as the conventional definition of sinh used in other sources.  (Contributed by David A. Wheeler, 20-Apr-2015.) ",
+  "statement" : "df-sinh $p |- sinh = ( x e. CC |-> ( ( sin ` ( _i x. x ) ) / _i ) ) $."
+}

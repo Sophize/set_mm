@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mdoc1i on Metamath](http://us.metamath.org/mpegif/mdoc1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mdoc1.1 | |- A e. CH |\n| 2 | 1 | #P_cmidi | |- A C_H A |\n| 3 | 1, 1, 2 | #P_cmcm2ii | |- A C_H ( _|_ ` A ) |\n| 4 | 1 | #P_choccli | |- ( _|_ ` A ) e. CH |\n| 5 | 1, 4 | #P_cmmdi | |- ( A C_H ( _|_ ` A ) -> A MH ( _|_ ` A ) ) |\n| 6 | 3, 5 | #P_ax-mp | |- A MH ( _|_ ` A ) |",
+  "conclusion" : "#P_mdoc1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_ccm", "#T_cA.wceq", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cmd", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_cmd", "#T_cort", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_cmcm2ii", "#P_cmmdi", "#P_cmidi", "#P_choccli" ]
+}

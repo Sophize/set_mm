@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chpf on Metamath](http://us.metamath.org/mpegif/chpf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-chp | |- psi = ( x e. RR |-> sum_ n e. ( 1 ... ( |_ ` x ) ) ( Lam ` n ) ) |\n| 2 |  | #P_fzfid | |- ( x e. RR -> ( 1 ... ( |_ ` x ) ) e. Fin ) |\n| 3 |  | #P_elfznn | |- ( n e. ( 1 ... ( |_ ` x ) ) -> n e. NN ) |\n| 4 | 3 | #P_adantl | |- ( ( x e. RR /\\ n e. ( 1 ... ( |_ ` x ) ) ) -> n e. NN ) |\n| 5 |  | #P_vmacl | |- ( n e. NN -> ( Lam ` n ) e. RR ) |\n| 6 | 4, 5 | #P_syl | |- ( ( x e. RR /\\ n e. ( 1 ... ( |_ ` x ) ) ) -> ( Lam ` n ) e. RR ) |\n| 7 | 2, 6 | #P_fsumrecl | |- ( x e. RR -> sum_ n e. ( 1 ... ( |_ ` x ) ) ( Lam ` n ) e. RR ) |\n| 8 | 1, 7 | #P_fmpti | |- psi : RR --> RR |",
+  "conclusion" : "#P_chpf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vx", "#T_cchp", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_cvma", "#T_cfv", "#T_vn", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vn", "#T_wcel", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_vn", "#T_wcel", "#T_cn", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_vn", "#T_wcel", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_vn", "#T_wcel", "#T_cn", "#T_vn", "#T_wcel", "#T_cn", "#T_wi", "#T_cvma", "#T_cfv", "#T_vn", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_vn", "#T_wcel", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_cvma", "#T_cfv", "#T_vn", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_cvma", "#T_cfv", "#T_vn", "#T_wcel", "#T_cr", "#T_cchp", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-chp", "#P_adantl", "#P_fmpti", "#P_fzfid", "#P_vmacl", "#P_elfznn", "#P_syl", "#P_fsumrecl" ]
+}

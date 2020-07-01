@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fulli on Metamath](http://us.metamath.org/mpegif/fulli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isfull.b | |- B = ( Base ` C ) |\n| 2 |  | isfull.j | |- J = ( Hom ` D ) |\n| 3 |  | isfull.h | |- H = ( Hom ` C ) |\n| 4 |  | fullfo.f | |- ( ph -> F ( C Full D ) G ) |\n| 5 |  | fullfo.x | |- ( ph -> X e. B ) |\n| 6 |  | fullfo.y | |- ( ph -> Y e. B ) |\n| 7 |  | fulli.r | |- ( ph -> R e. ( ( F ` X ) J ( F ` Y ) ) ) |\n| 8 | 1, 2, 3, 4, 5, 6 | #P_fullfo | |- ( ph -> ( X G Y ) : ( X H Y ) -onto-> ( ( F ` X ) J ( F ` Y ) ) ) |\n| 9 |  | #P_foelrn | |- ( ( ( X G Y ) : ( X H Y ) -onto-> ( ( F ` X ) J ( F ` Y ) ) /\\ R e. ( ( F ` X ) J ( F ` Y ) ) ) -> E. f e. ( X H Y ) R = ( ( X G Y ) ` f ) ) |\n| 10 | 8, 7, 9 | #P_syl2anc | |- ( ph -> E. f e. ( X H Y ) R = ( ( X G Y ) ` f ) ) |",
+  "conclusion" : "#P_fulli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cJ", "#T_wceq", "#T_chom", "#T_cfv", "#T_cD", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_cC", "#T_cful", "#T_cD", "#T_cG", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cF", "#T_cfv", "#T_cX", "#T_cJ", "#T_cF", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_cG", "#T_cY", "#T_wfo--1", "#T_cX", "#T_cH", "#T_cY", "#T_wfo--2", "#T_cF", "#T_cfv", "#T_cX", "#T_cJ", "#T_cF", "#T_cfv", "#T_cY", "#T_cX", "#T_cG", "#T_cY", "#T_wfo--1", "#T_cX", "#T_cH", "#T_cY", "#T_wfo--2", "#T_cF", "#T_cfv", "#T_cX", "#T_cJ", "#T_cF", "#T_cfv", "#T_cY", "#T_wa", "#T_cR", "#T_wcel", "#T_cF", "#T_cfv", "#T_cX", "#T_cJ", "#T_cF", "#T_cfv", "#T_cY", "#T_wi", "#T_wrex--1", "#T_cbvex4v.vf", "#T_wrex--2", "#T_cX", "#T_cH", "#T_cY", "#T_cR", "#T_wceq", "#T_cX", "#T_cG", "#T_cY", "#T_cfv", "#T_cbvex4v.vf", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vf", "#T_wrex--2", "#T_cX", "#T_cH", "#T_cY", "#T_cR", "#T_wceq", "#T_cX", "#T_cG", "#T_cY", "#T_cfv", "#T_vf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fullfo", "#P_syl2anc", "#P_foelrn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sadid2 on Metamath](http://us.metamath.org/mpegif/sadid2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0ss | |- (/) C_ NN0 |\n| 2 |  | #P_sadcom | |- ( ( (/) C_ NN0 /\\ A C_ NN0 ) -> ( (/) sadd A ) = ( A sadd (/) ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( A C_ NN0 -> ( (/) sadd A ) = ( A sadd (/) ) ) |\n| 4 |  | #P_sadid1 | |- ( A C_ NN0 -> ( A sadd (/) ) = A ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A C_ NN0 -> ( (/) sadd A ) = A ) |",
+  "conclusion" : "#P_sadid2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wss", "#T_cn0", "#T_c0", "#T_wss", "#T_cn0", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cn0", "#T_wi", "#T_c0", "#T_csad", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_csad", "#T_c0", "#T_cA.wceq", "#T_wss", "#T_cn0", "#T_wi", "#T_c0", "#T_csad", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_csad", "#T_c0", "#T_cA.wceq", "#T_wss", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_csad", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cn0", "#T_wi", "#T_c0", "#T_csad", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sadcom", "#P_0ss", "#P_eqtrd", "#P_mpan", "#P_sadid1" ]
+}

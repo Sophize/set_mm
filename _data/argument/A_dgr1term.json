@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dgr1term on Metamath](http://us.metamath.org/mpegif/dgr1term.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | coe1term.1 | |- F = ( z e. CC |-> ( A x. ( z ^ N ) ) ) |\n| 2 | 1 | #P_coe1termlem | |- ( ( A e. CC /\\ N e. NN0 ) -> ( ( coeff ` F ) = ( n e. NN0 |-> if ( n = N , A , 0 ) ) /\\ ( A =/= 0 -> ( deg ` F ) = N ) ) ) |\n| 3 | 2 | #P_simprd | |- ( ( A e. CC /\\ N e. NN0 ) -> ( A =/= 0 -> ( deg ` F ) = N ) ) |\n| 4 | 3 | #P_3impia | |- ( ( A e. CC /\\ N e. NN0 /\\ A =/= 0 ) -> ( deg ` F ) = N ) |\n| 5 | 4 | #P_3com23 | |- ( ( A e. CC /\\ A =/= 0 /\\ N e. NN0 ) -> ( deg ` F ) = N ) |",
+  "conclusion" : "#P_dgr1term",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_cA", "#T_cmul", "#T_vz", "#T_cexp", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cN", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cc0", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cN", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3com23", "#P_coe1termlem", "#P_3impia", "#P_simprd" ]
+}

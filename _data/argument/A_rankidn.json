@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rankidn on Metamath](http://us.metamath.org/mpegif/rankidn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( rank ` A ) = ( rank ` A ) |\n| 2 |  | #P_rankr1c | |- ( A e. U. ( R1 \" On ) -> ( ( rank ` A ) = ( rank ` A ) <-> ( -. A e. ( R1 ` ( rank ` A ) ) /\\ A e. ( R1 ` suc ( rank ` A ) ) ) ) ) |\n| 3 | 1, 2 | #P_mpbii | |- ( A e. U. ( R1 \" On ) -> ( -. A e. ( R1 ` ( rank ` A ) ) /\\ A e. ( R1 ` suc ( rank ` A ) ) ) ) |\n| 4 | 3 | #P_simpld | |- ( A e. U. ( R1 \" On ) -> -. A e. ( R1 ` ( rank ` A ) ) ) |",
+  "conclusion" : "#P_rankidn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wi", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_csuc", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_csuc", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cr1", "#T_cfv", "#T_crnk", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbii", "#P_simpld", "#P_rankr1c" ]
+}

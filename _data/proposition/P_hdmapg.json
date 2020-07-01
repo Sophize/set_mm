@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hdmapg on Metamath](http://us.metamath.org/mpegif/hdmapg.html)"
+  } ],
+  "names" : [ "hdmapg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_cdvh", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cU", "#T_cS", "#T_wceq", "#T_chdma", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cG", "#T_wceq", "#T_chg", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_cS", "#T_cfv", "#T_cY", "#T_cfv", "#T_cX", "#T_wceq", "#T_cS", "#T_cfv", "#T_cX", "#T_cfv", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Apply the scalar sigma function (involution) ` G ` to an inner product reverses the arguments.  The inner product of ` X ` and ` Y ` is represented by ` ( ( S `` Y ) `` X ) ` .  Line 15 in [Baer] p. 111, f(x,y) alpha = f(y,x).  (Contributed by NM, 14-Jun-2015.) ",
+  "statement" : "hdmapg.h $e |- H = ( LHyp ` K ) $.\nhdmapg.u $e |- U = ( ( DVecH ` K ) ` W ) $.\nhdmapg.v $e |- V = ( Base ` U ) $.\nhdmapg.s $e |- S = ( ( HDMap ` K ) ` W ) $.\nhdmapg.g $e |- G = ( ( HGMap ` K ) ` W ) $.\nhdmapg.k $e |- ( ph -> ( K e. HL /\\ W e. H ) ) $.\nhdmapg.x $e |- ( ph -> X e. V ) $.\nhdmapg.y $e |- ( ph -> Y e. V ) $.\nhdmapg $p |- ( ph -> ( G ` ( ( S ` Y ) ` X ) ) = ( ( S ` X ) ` Y ) ) $."
+}

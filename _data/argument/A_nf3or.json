@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nf3or on Metamath](http://us.metamath.org/mpegif/nf3or.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nf.1 | |- F/ x ph |\n| 2 |  | nf.2 | |- F/ x ps |\n| 3 |  | nf.3 | |- F/ x ch |\n| 4 |  | #P_df-3or | |- ( ( ph \\/ ps \\/ ch ) <-> ( ( ph \\/ ps ) \\/ ch ) ) |\n| 5 | 1, 2 | #P_nfor | |- F/ x ( ph \\/ ps ) |\n| 6 | 5, 3 | #P_nfor | |- F/ x ( ( ph \\/ ps ) \\/ ch ) |\n| 7 | 4, 6 | #P_nfxfr | |- F/ x ( ph \\/ ps \\/ ch ) |",
+  "conclusion" : "#P_nf3or",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wnf", "#T_vx", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfor", "#P_nfxfr", "#P_df-3or" ]
+}

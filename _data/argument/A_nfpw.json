@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfpw on Metamath](http://us.metamath.org/mpegif/nfpw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfpw.1 | |- F/_ x A |\n| 2 |  | #P_df-pw | |- ~P A = { y | y C_ A } |\n| 3 |  | #P_nfcv | |- F/_ x y |\n| 4 | 3, 1 | #P_nfss | |- F/ x y C_ A |\n| 5 | 4 | #P_nfab | |- F/_ x { y | y C_ A } |\n| 6 | 2, 5 | #P_nfcxfr | |- F/_ x ~P A |",
+  "conclusion" : "#P_nfpw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnfc", "#T_vx", "#T_cA", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wss", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_wnfc", "#T_vx", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfcxfr", "#P_nfss", "#P_nfab", "#P_df-pw" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ccase on Metamath](http://us.metamath.org/mpegif/ccase.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ccase.1 | |- ( ( ph /\\ ps ) -> ta ) |\n| 2 |  | ccase.2 | |- ( ( ch /\\ ps ) -> ta ) |\n| 3 |  | ccase.3 | |- ( ( ph /\\ th ) -> ta ) |\n| 4 |  | ccase.4 | |- ( ( ch /\\ th ) -> ta ) |\n| 5 | 1, 2 | #P_jaoian | |- ( ( ( ph \\/ ch ) /\\ ps ) -> ta ) |\n| 6 | 3, 4 | #P_jaoian | |- ( ( ( ph \\/ ch ) /\\ th ) -> ta ) |\n| 7 | 5, 6 | #P_jaodan | |- ( ( ( ph \\/ ch ) /\\ ( ps \\/ th ) ) -> ta ) |",
+  "conclusion" : "#P_ccase",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jaoian", "#P_jaodan" ]
+}

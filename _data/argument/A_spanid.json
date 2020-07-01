@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spanid on Metamath](http://us.metamath.org/mpegif/spanid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_shss | |- ( A e. SH -> A C_ ~H ) |\n| 2 |  | #P_spanval | |- ( A C_ ~H -> ( span ` A ) = |^| { x e. SH | A C_ x } ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. SH -> ( span ` A ) = |^| { x e. SH | A C_ x } ) |\n| 4 |  | #P_intmin | |- ( A e. SH -> |^| { x e. SH | A C_ x } = A ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A e. SH -> ( span ` A ) = A ) |",
+  "conclusion" : "#P_spanid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cspn", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cspn", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_csh", "#T_wi", "#T_cspn", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_spanval", "#P_shss", "#P_syl", "#P_intmin" ]
+}

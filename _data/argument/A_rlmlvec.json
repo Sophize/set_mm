@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlmlvec on Metamath](http://us.metamath.org/mpegif/rlmlvec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_drngring | |- ( R e. DivRing -> R e. Ring ) |\n| 2 |  | #P_rlmlmod | |- ( R e. Ring -> ( ringLMod ` R ) e. LMod ) |\n| 3 | 1, 2 | #P_syl | |- ( R e. DivRing -> ( ringLMod ` R ) e. LMod ) |\n| 4 |  | #P_rlmsca | |- ( R e. DivRing -> R = ( Scalar ` ( ringLMod ` R ) ) ) |\n| 5 |  | #P_id | |- ( R e. DivRing -> R e. DivRing ) |\n| 6 | 4, 5 | #P_eqeltrrd | |- ( R e. DivRing -> ( Scalar ` ( ringLMod ` R ) ) e. DivRing ) |\n| 7 |  | #P_eqid | |- ( Scalar ` ( ringLMod ` R ) ) = ( Scalar ` ( ringLMod ` R ) ) |\n| 8 | 7 | #P_islvec | |- ( ( ringLMod ` R ) e. LVec <-> ( ( ringLMod ` R ) e. LMod /\\ ( Scalar ` ( ringLMod ` R ) ) e. DivRing ) ) |\n| 9 | 3, 6, 8 | #P_sylanbrc | |- ( R e. DivRing -> ( ringLMod ` R ) e. LVec ) |",
+  "conclusion" : "#P_rlmlvec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cR", "#T_wcel", "#T_cdr", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cdr", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clvec", "#T_wb", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_wa", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cdr", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clvec" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_eqid", "#P_rlmlmod", "#P_rlmsca", "#P_drngring", "#P_syl", "#P_islvec", "#P_sylanbrc", "#P_id" ]
+}

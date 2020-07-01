@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decsucc on Metamath](http://us.metamath.org/mpegif/decsucc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decsucc.1 | |- A e. NN0 |\n| 2 |  | decsucc.2 | |- ( A + 1 ) = B |\n| 3 |  | decsucc.3 | |- N = ; A 9 |\n| 4 |  | #P_9nn0 | |- 9 e. NN0 |\n| 5 |  | #P_df-10 | |- 10 = ( 9 + 1 ) |\n| 6 |  | #P_df-dec | |- ; A 9 = ( ( 10 x. A ) + 9 ) |\n| 7 | 3, 6 | #P_eqtri | |- N = ( ( 10 x. A ) + 9 ) |\n| 8 | 4, 5, 1, 2, 7 | #P_numsucc | |- ( N + 1 ) = ( ( 10 x. B ) + 0 ) |\n| 9 |  | #P_df-dec | |- ; B 0 = ( ( 10 x. B ) + 0 ) |\n| 10 | 8, 9 | #P_eqtr4i | |- ( N + 1 ) = ; B 0 |",
+  "conclusion" : "#P_decsucc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cA", "#T_caddc", "#T_c1", "#T_wceq", "#T_cB", "#T_cN", "#T_wceq", "#T_cdc", "#T_cA", "#T_c9", "#T_c9", "#T_wcel", "#T_cn0", "#T_c10", "#T_wceq", "#T_c9", "#T_caddc", "#T_c1", "#T_cdc", "#T_cA.wceq", "#T_c9", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_c9", "#T_cN", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_c9", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_c10", "#T_cmul", "#T_cB.wceq", "#T_caddc", "#T_cc0", "#T_cdc", "#T_cB.wceq", "#T_cc0", "#T_wceq", "#T_c10", "#T_cmul", "#T_cB.wceq", "#T_caddc", "#T_cc0", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_cdc", "#T_cB", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-10", "#P_eqtr4i", "#P_eqtri", "#P_numsucc", "#P_df-dec", "#P_9nn0" ]
+}

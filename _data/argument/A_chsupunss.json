@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chsupunss on Metamath](http://us.metamath.org/mpegif/chsupunss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chsspwh | |- CH C_ ~P ~H |\n| 2 |  | #P_sstr | |- ( ( A C_ CH /\\ CH C_ ~P ~H ) -> A C_ ~P ~H ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A C_ CH -> A C_ ~P ~H ) |\n| 4 |  | #P_hsupunss | |- ( A C_ ~P ~H -> U. A C_ ( \\/H ` A ) ) |\n| 5 | 3, 4 | #P_syl | |- ( A C_ CH -> U. A C_ ( \\/H ` A ) ) |",
+  "conclusion" : "#P_chsupunss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cch", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cch", "#T_wa", "#T_cch", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chsup", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cch", "#T_wi", "#T_cuni", "#T_cA", "#T_wss", "#T_chsup", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chsspwh", "#P_syl", "#P_hsupunss", "#P_mpan2", "#P_sstr" ]
+}

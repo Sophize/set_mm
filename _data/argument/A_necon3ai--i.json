@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon3ai on Metamath](http://us.metamath.org/mpegif/necon3ai.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon3ai.1 | |- ( ph -> A = B ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 1 | #P_con3i | |- ( -. A = B -> -. ph ) |\n| 4 | 2, 3 | #P_sylbi | |- ( A =/= B -> -. ph ) |",
+  "conclusion" : "#P_necon3ai",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_wph", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ne", "#P_con3i", "#P_sylbi" ]
+}

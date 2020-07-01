@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efval2 on Metamath](http://us.metamath.org/mpegif/efval2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | efcvg.1 | |- F = ( n e. NN0 |-> ( ( A ^ n ) / ( ! ` n ) ) ) |\n| 2 |  | #P_efval | |- ( A e. CC -> ( exp ` A ) = sum_ k e. NN0 ( ( A ^ k ) / ( ! ` k ) ) ) |\n| 3 | 1 | #P_eftval | |- ( k e. NN0 -> ( F ` k ) = ( ( A ^ k ) / ( ! ` k ) ) ) |\n| 4 | 3 | #P_sumeq2i | |- sum_ k e. NN0 ( F ` k ) = sum_ k e. NN0 ( ( A ^ k ) / ( ! ` k ) ) |\n| 5 | 2, 4 | #P_syl6eqr | |- ( A e. CC -> ( exp ` A ) = sum_ k e. NN0 ( F ` k ) ) |",
+  "conclusion" : "#P_efval2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_cA.wceq", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_cA.wceq", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_cF", "#T_cfv", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eftval", "#P_efval", "#P_syl6eqr", "#P_sumeq2i" ]
+}

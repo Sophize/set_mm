@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hauslly on Metamath](http://us.metamath.org/mpegif/hauslly.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resthaus | |- ( ( j e. Haus /\\ x e. j ) -> ( j |`t x ) e. Haus ) |\n| 2 | 1 | #P_adantl | |- ( ( T. /\\ ( j e. Haus /\\ x e. j ) ) -> ( j |`t x ) e. Haus ) |\n| 3 |  | #P_haustop | |- ( j e. Haus -> j e. Top ) |\n| 4 | 3 | #P_ssriv | |- Haus C_ Top |\n| 5 | 4 | #P_a1i | |- ( T. -> Haus C_ Top ) |\n| 6 | 2, 5 | #P_restlly | |- ( T. -> Haus C_ Locally Haus ) |\n| 7 | 6 | #P_trud | |- Haus C_ Locally Haus |\n| 8 | 7 | #P_sseli | |- ( J e. Haus -> J e. Locally Haus ) |",
+  "conclusion" : "#P_hauslly",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vx", "#T_vj", "#T_wcel", "#T_cha", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_wi", "#T_vj", "#T_crest", "#T_vx.wal", "#T_wcel", "#T_cha", "#T_wtru", "#T_wa", "#T_vj", "#T_wcel", "#T_cha", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_wi", "#T_vj", "#T_crest", "#T_vx.wal", "#T_wcel", "#T_cha", "#T_vj", "#T_wcel", "#T_cha", "#T_wi", "#T_vj", "#T_wcel", "#T_ctop", "#T_cha", "#T_wss", "#T_ctop", "#T_wtru", "#T_wi", "#T_cha", "#T_wss", "#T_ctop", "#T_wtru", "#T_wi", "#T_cha", "#T_wss", "#T_clly", "#T_cha", "#T_cha", "#T_wss", "#T_clly", "#T_cha", "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_clly", "#T_cha" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_sseli", "#P_resthaus", "#P_adantl", "#P_restlly", "#P_a1i", "#P_haustop", "#P_ssriv" ]
+}

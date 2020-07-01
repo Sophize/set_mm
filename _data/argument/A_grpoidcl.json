@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpoidcl on Metamath](http://us.metamath.org/mpegif/grpoidcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpoidval.1 | |- X = ran G |\n| 2 |  | grpoidval.2 | |- U = ( GId ` G ) |\n| 3 | 1, 2 | #P_grpoidval | |- ( G e. GrpOp -> U = ( iota_ u e. X A. x e. X ( u G x ) = x ) ) |\n| 4 | 1 | #P_grpoideu | |- ( G e. GrpOp -> E! u e. X A. x e. X ( u G x ) = x ) |\n| 5 |  | #P_riotacl | |- ( E! u e. X A. x e. X ( u G x ) = x -> ( iota_ u e. X A. x e. X ( u G x ) = x ) e. X ) |\n| 6 | 4, 5 | #P_syl | |- ( G e. GrpOp -> ( iota_ u e. X A. x e. X ( u G x ) = x ) e. X ) |\n| 7 | 3, 6 | #P_eqeltrd | |- ( G e. GrpOp -> U e. X ) |",
+  "conclusion" : "#P_grpoidcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_vx", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cU", "#T_wceq", "#T_crio--1", "#T_vu", "#T_crio--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_wreu--1", "#T_vu", "#T_wreu--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wreu--1", "#T_vu", "#T_wreu--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_crio--1", "#T_vu", "#T_crio--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_crio--1", "#T_vu", "#T_crio--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cU", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpoidval", "#P_eqeltrd", "#P_syl", "#P_riotacl", "#P_grpoideu" ]
+}

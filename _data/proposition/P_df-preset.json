@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-preset on Metamath](http://us.metamath.org/mpegif/df-preset.html)"
+  } ],
+  "names" : [ "df-preset" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpreset", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wsbc--1", "#T_cbs", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vb", "#T_wsbc--3", "#T_wsbc--1", "#T_cple", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vr", "#T_wsbc--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vb", "#T_vx", "#T_vr", "#T_vx", "#T_wa", "#T_vx", "#T_vr", "#T_vy", "#T_wa", "#T_vy", "#T_vr", "#T_vz", "#T_wi", "#T_vx", "#T_vr", "#T_vz", "#T_cab--3", "#T_vb", "#T_vf", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of preordered sets (presets).  A preset is a set equipped with a transitive and reflexive relation. Preorders are a natural generalization of order for sets where there is a well-defined ordering, but it in some sense \"fails to capture the whole story\", in that there may be pairs of elements which are indistinguishable under the order.  Two elements which are not equal but are less-or-equal to each other behave the same under all order operations and may be thought of as \"tied\". A preorder can naturally be strengthened by requiring that there are no ties, resulting in a partial order, or by stating that all comparable pairs of elements _are_ tied, resulting in an equivalence relation. Every preorder naturally factors into these two types; the tied relation on a preorder is an equivalence relation and the quotient under that relation is a partial order.  (Contributed by FL, 17-Nov-2014.) (Revised by Stefan O'Rear, 31-Jan-2015.) ",
+  "statement" : "df-preset $p |- Preset = { f | [. ( Base ` f ) / b ]. [. ( le ` f ) / r ]. A. x e. b A. y e. b A. z e. b ( x r x /\\ ( ( x r y /\\ y r z ) -> x r z ) ) } $.\n$d b f r x y z $."
+}

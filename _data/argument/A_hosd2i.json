@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hosd2i on Metamath](http://us.metamath.org/mpegif/hosd2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hosd1.2 | |- T : ~H --> ~H |\n| 2 |  | hosd1.3 | |- U : ~H --> ~H |\n| 3 | 1, 2 | #P_hosd1i | |- ( T +op U ) = ( T -op ( 0hop -op U ) ) |\n| 4 | 2 | #P_hodidi | |- ( U -op U ) = 0hop |\n| 5 | 4 | #P_oveq1i | |- ( ( U -op U ) -op U ) = ( 0hop -op U ) |\n| 6 | 5 | #P_oveq2i | |- ( T -op ( ( U -op U ) -op U ) ) = ( T -op ( 0hop -op U ) ) |\n| 7 | 3, 6 | #P_eqtr4i | |- ( T +op U ) = ( T -op ( ( U -op U ) -op U ) ) |",
+  "conclusion" : "#P_hosd2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cU", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_chos", "#T_cU", "#T_wceq", "#T_cT", "#T_chod", "#T_ch0o", "#T_chod", "#T_cU", "#T_cU", "#T_chod", "#T_cU", "#T_wceq", "#T_ch0o", "#T_cU", "#T_chod", "#T_cU", "#T_chod", "#T_cU", "#T_wceq", "#T_ch0o", "#T_chod", "#T_cU", "#T_cT", "#T_chod", "#T_cU", "#T_chod", "#T_cU", "#T_chod", "#T_cU", "#T_wceq", "#T_cT", "#T_chod", "#T_ch0o", "#T_chod", "#T_cU", "#T_cT", "#T_chos", "#T_cU", "#T_wceq", "#T_cT", "#T_chod", "#T_cU", "#T_chod", "#T_cU", "#T_chod", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_hosd1i", "#P_oveq1i", "#P_oveq2i", "#P_hodidi" ]
+}

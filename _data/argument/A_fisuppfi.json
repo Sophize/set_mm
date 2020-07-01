@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fisuppfi on Metamath](http://us.metamath.org/mpegif/fisuppfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fisuppfi.1 | |- ( ph -> A e. Fin ) |\n| 2 |  | fisuppfi.2 | |- ( ph -> F : A --> B ) |\n| 3 |  | #P_cnvimass | |- ( `' F \" C ) C_ dom F |\n| 4 |  | #P_fdm | |- ( F : A --> B -> dom F = A ) |\n| 5 | 2, 4 | #P_syl | |- ( ph -> dom F = A ) |\n| 6 | 3, 5 | #P_syl5sseq | |- ( ph -> ( `' F \" C ) C_ A ) |\n| 7 |  | #P_ssfi | |- ( ( A e. Fin /\\ ( `' F \" C ) C_ A ) -> ( `' F \" C ) e. Fin ) |\n| 8 | 1, 6, 7 | #P_syl2anc | |- ( ph -> ( `' F \" C ) e. Fin ) |",
+  "conclusion" : "#P_fisuppfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_ccnv", "#T_cF", "#T_cima", "#T_cC", "#T_wss", "#T_cdm", "#T_cF", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_ccnv", "#T_cF", "#T_cima", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cC", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cC", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdm", "#P_cnvimass", "#P_syl2anc", "#P_syl", "#P_ssfi", "#P_syl5sseq" ]
+}

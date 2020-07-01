@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mvsb on Metamath](http://us.metamath.org/mpegif/df-mvsb.html)"
+  } ],
+  "names" : [ "df-mvsb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmvsb", "#T_wceq", "#T_vt", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_coprab--1", "#T_coprab--2", "#T_coprab--3", "#T_vs", "#T_coprab--4", "#T_vm", "#T_coprab--5", "#T_coprab--6", "#T_vx", "#T_coprab--7", "#T_coprab--8", "#T_vs", "#T_wcel", "#T_crn", "#T_cmsub", "#T_cfv", "#T_vt", "#T_wa", "#T_vm", "#T_wcel", "#T_cmvl", "#T_cfv", "#T_vt", "#T_w3a--1", "#T_wral--1", "#T_vv", "#T_wral--2", "#T_cmvar", "#T_cfv", "#T_vt", "#T_vm", "#T_cdm", "#T_cmevl", "#T_cfv", "#T_vt", "#T_vs", "#T_cfv", "#T_cmvh", "#T_cfv", "#T_vt", "#T_cfv", "#T_vv", "#T_w3a--2", "#T_vx", "#T_wceq", "#T_vv", "#T_cmpt--1", "#T_cmvar", "#T_cfv", "#T_vt", "#T_cmpt--2", "#T_vm", "#T_cmevl", "#T_cfv", "#T_vt", "#T_vs", "#T_cfv", "#T_cmvh", "#T_cfv", "#T_vt", "#T_cfv", "#T_vv", "#T_coprab--9", "#T_vm", "#T_vs", "#T_vt", "#T_vv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define substitution applied to a valuation.  (Contributed by Mario Carneiro, 14-Jul-2016.) ",
+  "statement" : "df-mvsb $p |- mVSubst = ( t e. _V |-> { <. <. s , m >. , x >. | ( ( s e. ran ( mSubst ` t ) /\\ m e. ( mVL ` t ) ) /\\ A. v e. ( mVR ` t ) m dom ( mEval ` t ) ( s ` ( ( mVH ` t ) ` v ) ) /\\ x = ( v e. ( mVR ` t ) |-> ( m ( mEval ` t ) ( s ` ( ( mVH ` t ) ` v ) ) ) ) ) } ) $.\n$d m s t v x $."
+}

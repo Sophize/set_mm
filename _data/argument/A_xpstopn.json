@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpstopn on Metamath](http://us.metamath.org/mpegif/xpstopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xpstps.t | |- T = ( R Xs. S ) |\n| 2 |  | xpstopn.j | |- J = ( TopOpen ` R ) |\n| 3 |  | xpstopn.k | |- K = ( TopOpen ` S ) |\n| 4 |  | xpstopn.o | |- O = ( TopOpen ` T ) |\n| 5 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 6 |  | #P_eqid | |- ( Base ` S ) = ( Base ` S ) |\n| 7 |  | #P_eqid | |- ( x e. ( Base ` R ) , y e. ( Base ` S ) |-> `' ( { x } +c { y } ) ) = ( x e. ( Base ` R ) , y e. ( Base ` S ) |-> `' ( { x } +c { y } ) ) |\n| 8 | 1, 2, 3, 4, 5, 6, 7 | #P_xpstopnlem2 | |- ( ( R e. TopSp /\\ S e. TopSp ) -> O = ( J tX K ) ) |",
+  "conclusion" : "#P_xpstopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cT", "#T_wceq", "#T_cR", "#T_cxps", "#T_cS", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cS", "#T_cO", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cT", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_vx.wal", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_cR", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_cS", "#T_cmpt2--4", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ccda", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_cR", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_cS", "#T_cmpt2--4", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ccda", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cR", "#T_wcel", "#T_ctps", "#T_wa", "#T_cS", "#T_wcel", "#T_ctps", "#T_wi", "#T_cO", "#T_wceq", "#T_cJ", "#T_ctx", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_xpstopnlem2" ]
+}

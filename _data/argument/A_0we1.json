@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0we1 on Metamath](http://us.metamath.org/mpegif/0we1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_br0 | |- -. (/) (/) (/) |\n| 2 |  | #P_rel0 | |- Rel (/) |\n| 3 |  | #P_wesn | |- ( Rel (/) -> ( (/) We { (/) } <-> -. (/) (/) (/) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( (/) We { (/) } <-> -. (/) (/) (/) ) |\n| 5 | 1, 4 | #P_mpbir | |- (/) We { (/) } |\n| 6 |  | #P_df1o2 | |- 1o = { (/) } |\n| 7 |  | #P_weeq2 | |- ( 1o = { (/) } -> ( (/) We 1o <-> (/) We { (/) } ) ) |\n| 8 | 6, 7 | #P_ax-mp | |- ( (/) We 1o <-> (/) We { (/) } ) |\n| 9 | 5, 8 | #P_mpbir | |- (/) We 1o |",
+  "conclusion" : "#P_0we1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_c0", "#T_c0", "#T_c0", "#T_wrel", "#T_c0", "#T_wrel", "#T_c0", "#T_wi", "#T_c0", "#T_wwe", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_wn", "#T_c0", "#T_c0", "#T_c0", "#T_c0", "#T_wwe", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_wn", "#T_c0", "#T_c0", "#T_c0", "#T_c0", "#T_wwe", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c1o", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c1o", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wi", "#T_c0", "#T_wwe", "#T_c1o", "#T_wb", "#T_c0", "#T_wwe", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c0", "#T_wwe", "#T_c1o", "#T_wb", "#T_c0", "#T_wwe", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c0", "#T_wwe", "#T_c1o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_weeq2", "#P_br0", "#P_rel0", "#P_df1o2", "#P_mpbir", "#P_wesn" ]
+}

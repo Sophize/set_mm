@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-drs on Metamath](http://us.metamath.org/mpegif/df-drs.html)"
+  } ],
+  "names" : [ "df-drs" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdrs", "#T_wceq", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cpreset", "#T_crab--3", "#T_wsbc--1", "#T_cbs", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vb", "#T_wsbc--3", "#T_wsbc--1", "#T_cple", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vr", "#T_wsbc--3", "#T_vb", "#T_wne", "#T_c0", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_vb", "#T_vx", "#T_vr", "#T_vz", "#T_wa", "#T_vy", "#T_vr", "#T_vz", "#T_crab--4", "#T_vb", "#T_vf", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of directed sets.  A directed set is a nonempty preordered set where every pair of elements have some upper bound.  Note that it is not required that there exist a _least_ upper bound. There is no consensus in the literature over whether directed sets are allowed to be empty.  It is slightly more convenient for us if they are not.  (Contributed by Stefan O'Rear, 1-Feb-2015.) ",
+  "statement" : "df-drs $p |- Dirset = { f e. Preset | [. ( Base ` f ) / b ]. [. ( le ` f ) / r ]. ( b =/= (/) /\\ A. x e. b A. y e. b E. z e. b ( x r z /\\ y r z ) ) } $.\n$d b f r x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unfir on Metamath](http://us.metamath.org/mpegif/unfir.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssun1 | |- A C_ ( A u. B ) |\n| 2 |  | #P_ssfi | |- ( ( ( A u. B ) e. Fin /\\ A C_ ( A u. B ) ) -> A e. Fin ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( ( A u. B ) e. Fin -> A e. Fin ) |\n| 4 |  | #P_ssun2 | |- B C_ ( A u. B ) |\n| 5 |  | #P_ssfi | |- ( ( ( A u. B ) e. Fin /\\ B C_ ( A u. B ) ) -> B e. Fin ) |\n| 6 | 4, 5 | #P_mpan2 | |- ( ( A u. B ) e. Fin -> B e. Fin ) |\n| 7 | 3, 6 | #P_jca | |- ( ( A u. B ) e. Fin -> ( A e. Fin /\\ B e. Fin ) ) |",
+  "conclusion" : "#P_unfir",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA", "#T_cun", "#T_cB", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssun1", "#P_ssun2", "#P_ssfi", "#P_jca", "#P_mpan2" ]
+}

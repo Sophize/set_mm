@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eximOLD on Metamath](http://us.metamath.org/mpegif/eximOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_con3 | |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) |\n| 2 | 1 | #P_al2imi | |- ( A. x ( ph -> ps ) -> ( A. x -. ps -> A. x -. ph ) ) |\n| 3 |  | #P_alnex | |- ( A. x -. ps <-> -. E. x ps ) |\n| 4 |  | #P_alnex | |- ( A. x -. ph <-> -. E. x ph ) |\n| 5 | 2, 3, 4 | #P_3imtr3g | |- ( A. x ( ph -> ps ) -> ( -. E. x ps -> -. E. x ph ) ) |\n| 6 | 5 | #P_con4d | |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) |\n\\\n Obsolete proof of ~ exim as of 4-Sep-2019.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 4-Jul-2014.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_exim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con3", "#P_alnex", "#P_al2imi", "#P_3imtr3g", "#P_con4d" ]
+}

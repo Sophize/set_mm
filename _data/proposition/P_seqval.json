@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqval on Metamath](http://us.metamath.org/mpegif/seqval.html)"
+  } ],
+  "names" : [ "seqval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_cop--1", "#T_vx", "#T_caddc", "#T_c1", "#T_cop--2", "#T_vx", "#T_vz", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vw", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vw", "#T_c.pl", "#T_cF", "#T_cfv", "#T_vz", "#T_caddc", "#T_c1", "#T_vy", "#T_cop--3", "#T_crdg--2", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cF", "#T_cfv", "#T_cM", "#T_cop--3", "#T_cres", "#T_com", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_wceq", "#T_crn", "#T_cR", "#T_c.pl", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cM", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the sequence builder function.  (Contributed by Mario Carneiro, 24-Jun-2013.) ",
+  "statement" : "seqval.1 $e |- R = ( rec ( ( x e. _V , y e. _V |-> <. ( x + 1 ) , ( x ( z e. _V , w e. _V |-> ( w .+ ( F ` ( z + 1 ) ) ) ) y ) >. ) , <. M , ( F ` M ) >. ) |` _om ) $.\nseqval $p |- seq M ( .+ , F ) = ran R $.\n$d .+ w x y z $.\n$d F w x y z $.\n$d M x y $."
+}

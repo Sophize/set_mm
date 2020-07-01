@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfbi1 on Metamath](http://us.metamath.org/mpegif/dfbi1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bi | |- -. ( ( ( ph <-> ps ) -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) -> -. ( -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) -> ( ph <-> ps ) ) ) |\n| 2 |  | #P_simplim | |- ( -. ( ( ( ph <-> ps ) -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) -> -. ( -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) -> ( ph <-> ps ) ) ) -> ( ( ph <-> ps ) -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ph <-> ps ) -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) |\n| 4 |  | #P_bi3 | |- ( ( ph -> ps ) -> ( ( ps -> ph ) -> ( ph <-> ps ) ) ) |\n| 5 | 4 | #P_impi | |- ( -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) -> ( ph <-> ps ) ) |\n| 6 | 3, 5 | #P_impbii | |- ( ( ph <-> ps ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) |",
+  "conclusion" : "#P_dfbi1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_impbii", "#P_impi", "#P_bi3", "#P_df-bi", "#P_simplim" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumparts on Metamath](http://us.metamath.org/mpegif/fsumparts.html)"
+  } ],
+  "names" : [ "fsumparts" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_wceq", "#T_vj", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cV", "#T_wceq", "#T_cW", "#T_vk", "#T_wceq", "#T_vj", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cV", "#T_wceq", "#T_cX", "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cA", "#T_wceq", "#T_cD", "#T_wa", "#T_cV", "#T_wceq", "#T_cY", "#T_vk", "#T_wceq", "#T_cN", "#T_wi", "#T_cA", "#T_wceq", "#T_cE", "#T_wa", "#T_cV", "#T_wceq", "#T_cZ", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cV", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cM", "#T_cfzo", "#T_cN", "#T_cB", "#T_cmul", "#T_cX", "#T_cmin", "#T_cW", "#T_wceq", "#T_cE", "#T_cmul", "#T_cZ", "#T_cmin", "#T_cD", "#T_cmul", "#T_cY", "#T_cmin", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cM", "#T_cfzo", "#T_cN", "#T_cC", "#T_cmin", "#T_cB", "#T_cmul", "#T_cX", "#T_cA", "#T_vj", "#T_cB", "#T_vk", "#T_cC", "#T_vk", "#T_cD", "#T_vk", "#T_cE", "#T_vk", "#T_cM", "#T_vj", "#T_vk", "#T_cN", "#T_vj", "#T_vk", "#T_cV", "#T_vj", "#T_cW", "#T_vk", "#T_cX", "#T_vk", "#T_cY", "#T_vk", "#T_cZ", "#T_vk", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Summation by parts.  (Contributed by Mario Carneiro, 13-Apr-2016.) ",
+  "statement" : "fsumparts.b $e |- ( k = j -> ( A = B /\\ V = W ) ) $.\nfsumparts.c $e |- ( k = ( j + 1 ) -> ( A = C /\\ V = X ) ) $.\nfsumparts.d $e |- ( k = M -> ( A = D /\\ V = Y ) ) $.\nfsumparts.e $e |- ( k = N -> ( A = E /\\ V = Z ) ) $.\nfsumparts.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nfsumparts.2 $e |- ( ( ph /\\ k e. ( M ... N ) ) -> A e. CC ) $.\nfsumparts.3 $e |- ( ( ph /\\ k e. ( M ... N ) ) -> V e. CC ) $.\nfsumparts $p |- ( ph -> sum_ j e. ( M ..^ N ) ( B x. ( X - W ) ) = ( ( ( E x. Z ) - ( D x. Y ) ) - sum_ j e. ( M ..^ N ) ( ( C - B ) x. X ) ) ) $.\n$d A j $.\n$d B k $.\n$d C k $.\n$d D k $.\n$d E k $.\n$d M j k $.\n$d N j k $.\n$d V j $.\n$d W k $.\n$d X k $.\n$d Y k $.\n$d Z k $.\n$d j k ph $."
+}

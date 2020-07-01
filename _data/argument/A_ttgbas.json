@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ttgbas on Metamath](http://us.metamath.org/mpegif/ttgbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ttgval.n | |- G = ( toTG ` H ) |\n| 2 |  | ttgbas.1 | |- B = ( Base ` H ) |\n| 3 |  | #P_df-base | |- Base = Slot 1 |\n| 4 |  | #P_1nn | |- 1 e. NN |\n| 5 |  | #P_6nn0 | |- 6 e. NN0 |\n| 6 |  | #P_1nn0 | |- 1 e. NN0 |\n| 7 |  | #P_1lt10 | |- 1 < 10 |\n| 8 | 4, 5, 6, 7 | #P_declti | |- 1 < ; 1 6 |\n| 9 | 1, 3, 4, 8 | #P_ttglem | |- ( Base ` H ) = ( Base ` G ) |\n| 10 | 2, 9 | #P_eqtri | |- B = ( Base ` G ) |",
+  "conclusion" : "#P_ttgbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cttg", "#T_cfv", "#T_cH", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cH", "#T_cbs", "#T_wceq", "#T_cslot", "#T_c1", "#T_c1", "#T_wcel", "#T_cn", "#T_c6", "#T_wcel", "#T_cn0", "#T_c1", "#T_wcel", "#T_cn0", "#T_c1", "#T_clt", "#T_c10", "#T_c1", "#T_clt", "#T_cdc", "#T_c1", "#T_c6", "#T_cbs", "#T_cfv", "#T_cH", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1nn0", "#P_ttglem", "#P_eqtri", "#P_1nn", "#P_df-base", "#P_declti", "#P_1lt10", "#P_6nn0" ]
+}

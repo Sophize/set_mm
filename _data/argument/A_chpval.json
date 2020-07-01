@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chpval on Metamath](http://us.metamath.org/mpegif/chpval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( x = A -> ( |_ ` x ) = ( |_ ` A ) ) |\n| 2 | 1 | #P_oveq2d | |- ( x = A -> ( 1 ... ( |_ ` x ) ) = ( 1 ... ( |_ ` A ) ) ) |\n| 3 | 2 | #P_sumeq1d | |- ( x = A -> sum_ n e. ( 1 ... ( |_ ` x ) ) ( Lam ` n ) = sum_ n e. ( 1 ... ( |_ ` A ) ) ( Lam ` n ) ) |\n| 4 |  | #P_df-chp | |- psi = ( x e. RR |-> sum_ n e. ( 1 ... ( |_ ` x ) ) ( Lam ` n ) ) |\n| 5 |  | #P_sumex | |- sum_ n e. ( 1 ... ( |_ ` A ) ) ( Lam ` n ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( A e. RR -> ( psi ` A ) = sum_ n e. ( 1 ... ( |_ ` A ) ) ( Lam ` n ) ) |",
+  "conclusion" : "#P_chpval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_cvma", "#T_cfv", "#T_vn", "#T_wceq", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cvma", "#T_cfv", "#T_vn", "#T_cchp", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx.wal", "#T_cvma", "#T_cfv", "#T_vn", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cvma", "#T_cfv", "#T_vn", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cchp", "#T_cfv", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA", "#T_cvma", "#T_cfv", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-chp", "#P_fvmpt", "#P_oveq2d", "#P_fveq2", "#P_sumeq1d", "#P_sumex" ]
+}

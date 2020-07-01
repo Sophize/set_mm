@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-eupa on Metamath](http://us.metamath.org/mpegif/df-eupa.html)"
+  } ],
+  "names" : [ "df-eupa" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ceup", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vv", "#T_cumg", "#T_ve", "#T_wa", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn0", "#T_vf", "#T_wf1o--1", "#T_c1", "#T_cfz", "#T_vn", "#T_wf1o--2", "#T_cdm", "#T_ve", "#T_w3a--1", "#T_vp", "#T_wf--1", "#T_cc0", "#T_cfz", "#T_vn", "#T_wf--2", "#T_vv", "#T_w3a--2", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_c1", "#T_cfz", "#T_vn", "#T_ve", "#T_cfv", "#T_vf", "#T_cfv", "#T_vk", "#T_wceq", "#T_cpr--1", "#T_vp", "#T_cfv", "#T_vk", "#T_cmin", "#T_c1", "#T_cpr--2", "#T_vp", "#T_cfv", "#T_vk", "#T_cpr--3", "#T_copab--6", "#T_ve", "#T_vf", "#T_vk", "#T_vn", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Eulerian paths on an undirected multigraph. (Contributed by Mario Carneiro, 12-Mar-2015.) ",
+  "statement" : "df-eupa $p |- EulPaths = ( v e. _V , e e. _V |-> { <. f , p >. | ( v UMGrph e /\\ E. n e. NN0 ( f : ( 1 ... n ) -1-1-onto-> dom e /\\ p : ( 0 ... n ) --> v /\\ A. k e. ( 1 ... n ) ( e ` ( f ` k ) ) = { ( p ` ( k - 1 ) ) , ( p ` k ) } ) ) } ) $.\n$d e f k n p v $."
+}

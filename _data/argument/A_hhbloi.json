@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hhbloi on Metamath](http://us.metamath.org/mpegif/hhbloi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhnmo.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 |  | hhblo.2 | |- B = ( U BLnOp U ) |\n| 3 |  | #P_df-bdop | |- BndLinOp = { x e. LinOp | ( normop ` x ) < +oo } |\n| 4 | 1 | #P_hhnv | |- U e. NrmCVec |\n| 5 |  | #P_eqid | |- ( U normOpOLD U ) = ( U normOpOLD U ) |\n| 6 | 1, 5 | #P_hhnmoi | |- normop = ( U normOpOLD U ) |\n| 7 |  | #P_eqid | |- ( U LnOp U ) = ( U LnOp U ) |\n| 8 | 1, 7 | #P_hhlnoi | |- LinOp = ( U LnOp U ) |\n| 9 | 6, 8, 2 | #P_bloval | |- ( ( U e. NrmCVec /\\ U e. NrmCVec ) -> B = { x e. LinOp | ( normop ` x ) < +oo } ) |\n| 10 | 4, 4, 9 | #P_mp2an | |- B = { x e. LinOp | ( normop ` x ) < +oo } |\n| 11 | 3, 10 | #P_eqtr4i | |- BndLinOp = B |",
+  "conclusion" : "#P_hhbloi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cB", "#T_wceq", "#T_cU", "#T_cblo", "#T_cU", "#T_cbo", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_clo", "#T_crab--3", "#T_cnop", "#T_cfv", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cU", "#T_wcel", "#T_cnv", "#T_cU", "#T_cnmoo", "#T_cU", "#T_wceq", "#T_cU", "#T_cnmoo", "#T_cU", "#T_cnop", "#T_wceq", "#T_cU", "#T_cnmoo", "#T_cU", "#T_cU", "#T_clno", "#T_cU", "#T_wceq", "#T_cU", "#T_clno", "#T_cU", "#T_clo", "#T_wceq", "#T_cU", "#T_clno", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_clo", "#T_crab--3", "#T_cnop", "#T_cfv", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cB.wceq", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_clo", "#T_crab--3", "#T_cnop", "#T_cfv", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cbo", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_mp2an", "#P_hhnv", "#P_hhlnoi", "#P_bloval", "#P_hhnmoi", "#P_df-bdop" ]
+}

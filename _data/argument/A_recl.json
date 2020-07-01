@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recl on Metamath](http://us.metamath.org/mpegif/recl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reval | |- ( A e. CC -> ( Re ` A ) = ( ( A + ( * ` A ) ) / 2 ) ) |\n| 2 |  | #P_cjth | |- ( A e. CC -> ( ( A + ( * ` A ) ) e. RR /\\ ( _i x. ( A - ( * ` A ) ) ) e. RR ) ) |\n| 3 | 2 | #P_simpld | |- ( A e. CC -> ( A + ( * ` A ) ) e. RR ) |\n| 4 | 3 | #P_rehalfcld | |- ( A e. CC -> ( ( A + ( * ` A ) ) / 2 ) e. RR ) |\n| 5 | 1, 4 | #P_eqeltrd | |- ( A e. CC -> ( Re ` A ) e. RR ) |",
+  "conclusion" : "#P_recl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_cmin", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rehalfcld", "#P_reval", "#P_simpld", "#P_eqeltrd", "#P_cjth" ]
+}

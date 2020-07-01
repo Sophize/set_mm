@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eelTT1 on Metamath](http://us.metamath.org/mpegif/eelTT1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eelTT1.1 | |- ( T. -> ph ) |\n| 2 |  | eelTT1.2 | |- ( T. -> ps ) |\n| 3 |  | eelTT1.3 | |- ( ch -> th ) |\n| 4 |  | eelTT1.4 | |- ( ( ph /\\ ps /\\ th ) -> ta ) |\n| 5 |  | #P_3anass | |- ( ( T. /\\ T. /\\ ch ) <-> ( T. /\\ ( T. /\\ ch ) ) ) |\n| 6 |  | #P_anabs5 | |- ( ( T. /\\ ( T. /\\ ch ) ) <-> ( T. /\\ ch ) ) |\n| 7 |  | #P_truan | |- ( ( T. /\\ ch ) <-> ch ) |\n| 8 | 5, 6, 7 | #P_3bitri | |- ( ( T. /\\ T. /\\ ch ) <-> ch ) |\n| 9 | 1, 4 | #P_syl3an1 | |- ( ( T. /\\ ps /\\ th ) -> ta ) |\n| 10 | 2, 9 | #P_syl3an2 | |- ( ( T. /\\ T. /\\ th ) -> ta ) |\n| 11 | 3, 10 | #P_syl3an3 | |- ( ( T. /\\ T. /\\ ch ) -> ta ) |\n| 12 | 8, 11 | #P_sylbir | |- ( ch -> ta ) |",
+  "conclusion" : "#P_eelTT1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wi", "#T_wph", "#T_wtru", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wtru", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wtru", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wtru", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wb", "#T_wtru", "#T_wa", "#T_wch", "#T_wtru", "#T_wa", "#T_wch", "#T_wb", "#T_wch", "#T_wtru", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wch", "#T_wtru", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wtru", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wtru", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wta", "#T_wch", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_truan", "#P_3bitri", "#P_sylbir", "#P_anabs5", "#P_syl3an2", "#P_3anass", "#P_syl3an3", "#P_syl3an1" ]
+}

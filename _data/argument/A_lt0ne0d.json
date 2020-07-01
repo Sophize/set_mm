@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lt0ne0d on Metamath](http://us.metamath.org/mpegif/lt0ne0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt0ne0d.1 | |- ( ph -> A < 0 ) |\n| 2 |  | #P_0re | |- 0 e. RR |\n| 3 | 2 | #P_ltnri | |- -. 0 < 0 |\n| 4 |  | #P_breq1 | |- ( A = 0 -> ( A < 0 <-> 0 < 0 ) ) |\n| 5 | 3, 4 | #P_mtbiri | |- ( A = 0 -> -. A < 0 ) |\n| 6 | 5 | #P_necon2ai | |- ( A < 0 -> A =/= 0 ) |\n| 7 | 1, 6 | #P_syl | |- ( ph -> A =/= 0 ) |",
+  "conclusion" : "#P_lt0ne0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cr", "#T_wn", "#T_cc0", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_necon2ai", "#P_syl", "#P_ltnri", "#P_0re", "#P_mtbiri" ]
+}

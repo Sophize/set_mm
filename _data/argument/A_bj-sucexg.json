@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sucexg on Metamath](http://us.metamath.org/mpegif/bj-sucexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-snexg | |- ( A e. V -> { A } e. _V ) |\n| 2 | 1 | #P_pm4.71i | |- ( A e. V <-> ( A e. V /\\ { A } e. _V ) ) |\n| 3 | 2 | #P_biimpi | |- ( A e. V -> ( A e. V /\\ { A } e. _V ) ) |\n| 4 |  | #P_bj-unexg | |- ( ( A e. V /\\ { A } e. _V ) -> ( A u. { A } ) e. _V ) |\n| 5 |  | #P_df-suc | |- suc A = ( A u. { A } ) |\n| 6 | 5 | #P_eleq1i | |- ( suc A e. _V <-> ( A u. { A } ) e. _V ) |\n| 7 | 6 | #P_biimpri | |- ( ( A u. { A } ) e. _V -> suc A e. _V ) |\n| 8 | 3, 4, 7 | #P_3syl | |- ( A e. V -> suc A e. _V ) |",
+  "conclusion" : "#P_bj-sucexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csuc", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-snexg", "#P_3syl", "#P_df-suc", "#P_eleq1i", "#P_biimpi", "#P_bj-unexg", "#P_biimpri", "#P_pm4.71i" ]
+}

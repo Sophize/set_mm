@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neldif on Metamath](http://us.metamath.org/mpegif/neldif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eldif | |- ( A e. ( B \\ C ) <-> ( A e. B /\\ -. A e. C ) ) |\n| 2 | 1 | #P_simplbi2 | |- ( A e. B -> ( -. A e. C -> A e. ( B \\ C ) ) ) |\n| 3 | 2 | #P_con1d | |- ( A e. B -> ( -. A e. ( B \\ C ) -> A e. C ) ) |\n| 4 | 3 | #P_imp | |- ( ( A e. B /\\ -. A e. ( B \\ C ) ) -> A e. C ) |",
+  "conclusion" : "#P_neldif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wn", "#T_cA", "#T_wcel", "#T_cB", "#T_cdif", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_simplbi2", "#P_imp", "#P_con1d" ]
+}

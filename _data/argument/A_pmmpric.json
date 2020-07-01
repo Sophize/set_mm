@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pmmpric on Metamath](http://us.metamath.org/mpegif/pmmpric.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pmmpric.p | |- P = ( Poly1 ` R ) |\n| 2 |  | pmmpric.c | |- C = ( N Mat P ) |\n| 3 |  | pmmpric.a | |- A = ( N Mat R ) |\n| 4 |  | pmmpric.q | |- Q = ( Poly1 ` A ) |\n| 5 |  | #P_eqid | |- ( N pMatToMatPoly R ) = ( N pMatToMatPoly R ) |\n| 6 | 1, 2, 3, 4, 5 | #P_pm2mprngiso | |- ( ( N e. Fin /\\ R e. Ring ) -> ( N pMatToMatPoly R ) e. ( C RingIso Q ) ) |\n| 7 |  | #P_ne0i | |- ( ( N pMatToMatPoly R ) e. ( C RingIso Q ) -> ( C RingIso Q ) =/= (/) ) |\n| 8 | 6, 7 | #P_syl | |- ( ( N e. Fin /\\ R e. Ring ) -> ( C RingIso Q ) =/= (/) ) |\n| 9 |  | #P_brric | |- ( C ~=r Q <-> ( C RingIso Q ) =/= (/) ) |\n| 10 | 8, 9 | #P_sylibr | |- ( ( N e. Fin /\\ R e. Ring ) -> C ~=r Q ) |",
+  "conclusion" : "#P_pmmpric",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cQ", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cA", "#T_cN", "#T_cpm2mp", "#T_cR", "#T_wceq", "#T_cN", "#T_cpm2mp", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cN", "#T_cpm2mp", "#T_cR", "#T_wcel", "#T_cC", "#T_crs", "#T_cQ", "#T_cN", "#T_cpm2mp", "#T_cR", "#T_wcel", "#T_cC", "#T_crs", "#T_cQ", "#T_wi", "#T_cC", "#T_crs", "#T_cQ", "#T_wne", "#T_c0", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cC", "#T_crs", "#T_cQ", "#T_wne", "#T_c0", "#T_cC", "#T_cric", "#T_cQ", "#T_wb", "#T_cC", "#T_crs", "#T_cQ", "#T_wne", "#T_c0", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cC", "#T_cric", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_pm2mprngiso", "#P_sylibr", "#P_brric", "#P_syl", "#P_ne0i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leneltd on Metamath](http://us.metamath.org/mpegif/leneltd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | leneltd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | leneltd.2 | |- ( ph -> B e. RR ) |\n| 3 |  | leneltd.3 | |- ( ph -> A <_ B ) |\n| 4 |  | leneltd.4 | |- ( ph -> B =/= A ) |\n| 5 | 1, 2, 3 | #P_leltned | |- ( ph -> ( A < B <-> B =/= A ) ) |\n| 6 | 4, 5 | #P_mpbird | |- ( ph -> A < B ) |",
+  "conclusion" : "#P_leneltd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cA", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_leltned", "#P_mpbird" ]
+}

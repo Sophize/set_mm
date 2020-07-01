@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fin11a on Metamath](http://us.metamath.org/mpegif/fin11a.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elpwi | |- ( x e. ~P A -> x C_ A ) |\n| 2 |  | #P_ssfi | |- ( ( A e. Fin /\\ x C_ A ) -> x e. Fin ) |\n| 3 | 1, 2 | #P_sylan2 | |- ( ( A e. Fin /\\ x e. ~P A ) -> x e. Fin ) |\n| 4 | 3 | #P_orcd | |- ( ( A e. Fin /\\ x e. ~P A ) -> ( x e. Fin \\/ ( A \\ x ) e. Fin ) ) |\n| 5 | 4 | #P_ralrimiva | |- ( A e. Fin -> A. x e. ~P A ( x e. Fin \\/ ( A \\ x ) e. Fin ) ) |\n| 6 |  | #P_isfin1a | |- ( A e. Fin -> ( A e. Fin1a <-> A. x e. ~P A ( x e. Fin \\/ ( A \\ x ) e. Fin ) ) ) |\n| 7 | 5, 6 | #P_mpbird | |- ( A e. Fin -> A e. Fin1a ) |",
+  "conclusion" : "#P_fin11a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wo", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wo", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin1a", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wo", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA", "#T_wcel", "#T_cfin1a" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elpwi", "#P_sylan2", "#P_isfin1a", "#P_orcd", "#P_ssfi", "#P_ralrimiva", "#P_mpbird" ]
+}

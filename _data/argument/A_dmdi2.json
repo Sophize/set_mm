@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmdi2 on Metamath](http://us.metamath.org/mpegif/dmdi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dmdi | |- ( ( ( A e. CH /\\ B e. CH /\\ C e. CH ) /\\ ( A MH* B /\\ B C_ C ) ) -> ( ( C i^i A ) vH B ) = ( C i^i ( A vH B ) ) ) |\n| 2 |  | #P_eqimss2 | |- ( ( ( C i^i A ) vH B ) = ( C i^i ( A vH B ) ) -> ( C i^i ( A vH B ) ) C_ ( ( C i^i A ) vH B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( ( A e. CH /\\ B e. CH /\\ C e. CH ) /\\ ( A MH* B /\\ B C_ C ) ) -> ( C i^i ( A vH B ) ) C_ ( ( C i^i A ) vH B ) ) |",
+  "conclusion" : "#P_dmdi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_cdmd", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cch", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cch", "#T_wa", "#T_cA", "#T_cdmd", "#T_cB", "#T_wa", "#T_cB", "#T_wss", "#T_cC", "#T_wi", "#T_cC", "#T_cin", "#T_cA", "#T_chj", "#T_cB", "#T_wss", "#T_cC", "#T_cin", "#T_cA", "#T_chj", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqimss2", "#P_dmdi", "#P_syl" ]
+}

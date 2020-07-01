@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See joincom on Metamath](http://us.metamath.org/mpegif/joincom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | joincom.b | |- B = ( Base ` K ) |\n| 2 |  | joincom.j | |- .\\/ = ( join ` K ) |\n| 3 | 1, 2 | #P_joincomALT | |- ( ( K e. Poset /\\ X e. B /\\ Y e. B ) -> ( X .\\/ Y ) = ( Y .\\/ X ) ) |\n| 4 | 3 | #P_adantr | |- ( ( ( K e. Poset /\\ X e. B /\\ Y e. B ) /\\ ( <. X , Y >. e. dom .\\/ /\\ <. Y , X >. e. dom .\\/ ) ) -> ( X .\\/ Y ) = ( Y .\\/ X ) ) |",
+  "conclusion" : "#P_joincom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.or", "#T_cY", "#T_wceq", "#T_cY", "#T_c.or", "#T_cX", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wa", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.or", "#T_wa", "#T_cop--1", "#T_cY", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.or", "#T_wi", "#T_cX", "#T_c.or", "#T_cY", "#T_wceq", "#T_cY", "#T_c.or", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_joincomALT", "#P_adantr" ]
+}

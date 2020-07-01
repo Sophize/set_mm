@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvmpt2v on Metamath](http://us.metamath.org/mpegif/cbvmpt2v.html)"
+  } ],
+  "names" : [ "cbvmpt2v" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vz", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_vy", "#T_wceq", "#T_vw", "#T_wi", "#T_cE", "#T_wceq", "#T_cD", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_wceq", "#T_vz", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vw", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cD", "#T_cA", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cC", "#T_vw", "#T_vz", "#T_cD", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule to change the bound variable in a maps-to function, using implicit substitution.  With a longer proof analogous to ~ cbvmpt , some distinct variable requirements could be eliminated.  (Contributed by NM, 11-Jun-2013.) ",
+  "statement" : "cbvmpt2v.1 $e |- ( x = z -> C = E ) $.\ncbvmpt2v.2 $e |- ( y = w -> E = D ) $.\ncbvmpt2v $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. B |-> D ) $.\n$d A w x y z $.\n$d B w x y z $.\n$d C w z $.\n$d D x y $."
+}

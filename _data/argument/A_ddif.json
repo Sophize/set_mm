@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ddif on Metamath](http://us.metamath.org/mpegif/ddif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 |  | #P_eldif | |- ( x e. ( _V \\ A ) <-> ( x e. _V /\\ -. x e. A ) ) |\n| 3 | 1, 2 | #P_mpbiran | |- ( x e. ( _V \\ A ) <-> -. x e. A ) |\n| 4 | 3 | #P_con2bii | |- ( x e. A <-> -. x e. ( _V \\ A ) ) |\n| 5 | 1 | #P_biantrur | |- ( -. x e. ( _V \\ A ) <-> ( x e. _V /\\ -. x e. ( _V \\ A ) ) ) |\n| 6 | 4, 5 | #P_bitr2i | |- ( ( x e. _V /\\ -. x e. ( _V \\ A ) ) <-> x e. A ) |\n| 7 | 6 | #P_difeqri | |- ( _V \\ ( _V \\ A ) ) = A |",
+  "conclusion" : "#P_ddif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_con2bii", "#P_difeqri", "#P_biantrur", "#P_vex", "#P_mpbiran", "#P_bitr2i" ]
+}

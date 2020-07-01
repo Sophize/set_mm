@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sshjcl on Metamath](http://us.metamath.org/mpegif/sshjcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sshjval | |- ( ( A C_ ~H /\\ B C_ ~H ) -> ( A vH B ) = ( _|_ ` ( _|_ ` ( A u. B ) ) ) ) |\n| 2 |  | #P_unss | |- ( ( A C_ ~H /\\ B C_ ~H ) <-> ( A u. B ) C_ ~H ) |\n| 3 |  | #P_ocss | |- ( ( A u. B ) C_ ~H -> ( _|_ ` ( A u. B ) ) C_ ~H ) |\n| 4 |  | #P_occl | |- ( ( _|_ ` ( A u. B ) ) C_ ~H -> ( _|_ ` ( _|_ ` ( A u. B ) ) ) e. CH ) |\n| 5 | 3, 4 | #P_syl | |- ( ( A u. B ) C_ ~H -> ( _|_ ` ( _|_ ` ( A u. B ) ) ) e. CH ) |\n| 6 | 2, 5 | #P_sylbi | |- ( ( A C_ ~H /\\ B C_ ~H ) -> ( _|_ ` ( _|_ ` ( A u. B ) ) ) e. CH ) |\n| 7 | 1, 6 | #P_eqeltrd | |- ( ( A C_ ~H /\\ B C_ ~H ) -> ( A vH B ) e. CH ) |",
+  "conclusion" : "#P_sshjcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA", "#T_wss", "#T_chil", "#T_wa", "#T_cB", "#T_wss", "#T_chil", "#T_wi", "#T_cA", "#T_chj", "#T_cB", "#T_wcel", "#T_cch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_occl", "#P_unss", "#P_eqeltrd", "#P_syl", "#P_ocss", "#P_sylbi", "#P_sshjval" ]
+}

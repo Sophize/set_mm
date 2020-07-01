@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvrcl2 on Metamath](http://us.metamath.org/mpegif/mvrcl2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mvrf.s | |- S = ( I mPwSer R ) |\n| 2 |  | mvrf.v | |- V = ( I mVar R ) |\n| 3 |  | mvrf.b | |- B = ( Base ` S ) |\n| 4 |  | mvrf.i | |- ( ph -> I e. W ) |\n| 5 |  | mvrf.r | |- ( ph -> R e. Ring ) |\n| 6 |  | mvrcl2.x | |- ( ph -> X e. I ) |\n| 7 | 1, 2, 3, 4, 5 | #P_mvrf | |- ( ph -> V : I --> B ) |\n| 8 | 7, 6 | #P_ffvelrnd | |- ( ph -> ( V ` X ) e. B ) |",
+  "conclusion" : "#P_mvrcl2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cI", "#T_cmps", "#T_cR", "#T_cV", "#T_wceq", "#T_cI", "#T_cmvr", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cI", "#T_wph", "#T_wi", "#T_cV", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cV", "#T_cfv", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffvelrnd", "#P_mvrf" ]
+}

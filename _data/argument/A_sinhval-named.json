@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sinhval-named on Metamath](http://us.metamath.org/mpegif/sinhval-named.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq2 | |- ( x = A -> ( _i x. x ) = ( _i x. A ) ) |\n| 2 | 1 | #P_fveq2d | |- ( x = A -> ( sin ` ( _i x. x ) ) = ( sin ` ( _i x. A ) ) ) |\n| 3 | 2 | #P_oveq1d | |- ( x = A -> ( ( sin ` ( _i x. x ) ) / _i ) = ( ( sin ` ( _i x. A ) ) / _i ) ) |\n| 4 |  | #P_df-sinh | |- sinh = ( x e. CC |-> ( ( sin ` ( _i x. x ) ) / _i ) ) |\n| 5 |  | #P_ovex | |- ( ( sin ` ( _i x. A ) ) / _i ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( A e. CC -> ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) |",
+  "conclusion" : "#P_sinhval-named",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_wceq", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_wceq", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cdiv", "#T_ci", "#T_wceq", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_ci", "#T_csinh", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cdiv", "#T_ci", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_ci", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_csinh", "#T_cfv", "#T_cA", "#T_wceq", "#T_csin", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA", "#T_cdiv", "#T_ci" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_df-sinh", "#P_fvmpt", "#P_fveq2d", "#P_oveq2", "#P_oveq1d" ]
+}

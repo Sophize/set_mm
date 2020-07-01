@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See orim12i on Metamath](http://us.metamath.org/mpegif/orim12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | orim12i.1 | |- ( ph -> ps ) |\n| 2 |  | orim12i.2 | |- ( ch -> th ) |\n| 3 | 1 | #P_orcd | |- ( ph -> ( ps \\/ th ) ) |\n| 4 | 2 | #P_olcd | |- ( ch -> ( ps \\/ th ) ) |\n| 5 | 3, 4 | #P_jaoi | |- ( ( ph \\/ ch ) -> ( ps \\/ th ) ) |",
+  "conclusion" : "#P_orim12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wch", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wph", "#T_wo", "#T_wch", "#T_wi", "#T_wps", "#T_wo", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jaoi", "#P_orcd", "#P_olcd" ]
+}

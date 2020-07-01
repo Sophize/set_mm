@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brafn on Metamath](http://us.metamath.org/mpegif/brafn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hicl | |- ( ( x e. ~H /\\ A e. ~H ) -> ( x .ih A ) e. CC ) |\n| 2 | 1 | #P_ancoms | |- ( ( A e. ~H /\\ x e. ~H ) -> ( x .ih A ) e. CC ) |\n| 3 |  | #P_eqid | |- ( x e. ~H |-> ( x .ih A ) ) = ( x e. ~H |-> ( x .ih A ) ) |\n| 4 | 2, 3 | #P_fmptd | |- ( A e. ~H -> ( x e. ~H |-> ( x .ih A ) ) : ~H --> CC ) |\n| 5 |  | #P_brafval | |- ( A e. ~H -> ( bra ` A ) = ( x e. ~H |-> ( x .ih A ) ) ) |\n| 6 | 5 | #P_feq1d | |- ( A e. ~H -> ( ( bra ` A ) : ~H --> CC <-> ( x e. ~H |-> ( x .ih A ) ) : ~H --> CC ) ) |\n| 7 | 4, 6 | #P_mpbird | |- ( A e. ~H -> ( bra ` A ) : ~H --> CC ) |",
+  "conclusion" : "#P_brafn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA.wceq", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_cc", "#T_wb", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_cc", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_hicl", "#P_brafval", "#P_feq1d", "#P_ancoms", "#P_fmptd", "#P_mpbird" ]
+}

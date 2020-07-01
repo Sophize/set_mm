@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rintm on Metamath](http://us.metamath.org/mpegif/rintm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_incom | |- ( A i^i |^| X ) = ( |^| X i^i A ) |\n| 2 |  | #P_intssuni2m | |- ( ( X C_ ~P A /\\ E. x x e. X ) -> |^| X C_ U. ~P A ) |\n| 3 |  | #P_ssid | |- ~P A C_ ~P A |\n| 4 |  | #P_sspwuni | |- ( ~P A C_ ~P A <-> U. ~P A C_ A ) |\n| 5 | 3, 4 | #P_mpbi | |- U. ~P A C_ A |\n| 6 | 2, 5 | #P_syl6ss | |- ( ( X C_ ~P A /\\ E. x x e. X ) -> |^| X C_ A ) |\n| 7 |  | #P_df-ss | |- ( |^| X C_ A <-> ( |^| X i^i A ) = |^| X ) |\n| 8 | 6, 7 | #P_sylib | |- ( ( X C_ ~P A /\\ E. x x e. X ) -> ( |^| X i^i A ) = |^| X ) |\n| 9 | 1, 8 | #P_syl5eq | |- ( ( X C_ ~P A /\\ E. x x e. X ) -> ( A i^i |^| X ) = |^| X ) |",
+  "conclusion" : "#P_rintm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cint", "#T_cX", "#T_wceq", "#T_cint", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_cX", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_wi", "#T_cint", "#T_cX", "#T_wss", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cX", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_wi", "#T_cint", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_cint", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cint", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_cX", "#T_cX", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_wi", "#T_cint", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_cX", "#T_cX", "#T_wss", "#T_cpw", "#T_cA", "#T_wa", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cin", "#T_cint", "#T_cX", "#T_wceq", "#T_cint", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ss", "#P_ssid", "#P_syl6ss", "#P_intssuni2m", "#P_mpbi", "#P_sylib", "#P_incom", "#P_syl5eq", "#P_sspwuni" ]
+}

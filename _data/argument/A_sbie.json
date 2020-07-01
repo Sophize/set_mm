@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbie on Metamath](http://us.metamath.org/mpegif/sbie.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbie.1 | |- F/ x ps |\n| 2 |  | sbie.2 | |- ( x = y -> ( ph <-> ps ) ) |\n| 3 |  | #P_equsb1 | |- [ y / x ] x = y |\n| 4 | 2 | #P_sbimi | |- ( [ y / x ] x = y -> [ y / x ] ( ph <-> ps ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- [ y / x ] ( ph <-> ps ) |\n| 6 | 1 | #P_sbf | |- ( [ y / x ] ps <-> ps ) |\n| 7 | 6 | #P_sblbis | |- ( [ y / x ] ( ph <-> ps ) <-> ( [ y / x ] ph <-> ps ) ) |\n| 8 | 5, 7 | #P_mpbi | |- ( [ y / x ] ph <-> ps ) |",
+  "conclusion" : "#P_sbie",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mpbi", "#P_sbf", "#P_equsb1", "#P_sbimi", "#P_sblbis" ]
+}

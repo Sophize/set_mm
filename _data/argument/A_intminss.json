@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See intminss on Metamath](http://us.metamath.org/mpegif/intminss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | intminss.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_elrab | |- ( A e. { x e. B | ph } <-> ( A e. B /\\ ps ) ) |\n| 3 |  | #P_intss1 | |- ( A e. { x e. B | ph } -> |^| { x e. B | ph } C_ A ) |\n| 4 | 2, 3 | #P_sylbir | |- ( ( A e. B /\\ ps ) -> |^| { x e. B | ph } C_ A ) |",
+  "conclusion" : "#P_intminss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wss", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wps", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_sylbir", "#P_intss1" ]
+}

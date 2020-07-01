@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neg11ad on Metamath](http://us.metamath.org/mpegif/neg11ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | neg11ad.2 | |- ( ph -> B e. CC ) |\n| 3 |  | #P_neg11 | |- ( ( A e. CC /\\ B e. CC ) -> ( -u A = -u B <-> A = B ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( -u A = -u B <-> A = B ) ) |",
+  "conclusion" : "#P_neg11ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cneg", "#T_cA", "#T_wceq", "#T_cneg", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_neg11" ]
+}

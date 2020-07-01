@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fununmo on Metamath](http://us.metamath.org/mpegif/fununmo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funmo | |- ( Fun ( F u. G ) -> E* y x ( F u. G ) y ) |\n| 2 |  | #P_orc | |- ( x F y -> ( x F y \\/ x G y ) ) |\n| 3 |  | #P_brun | |- ( x ( F u. G ) y <-> ( x F y \\/ x G y ) ) |\n| 4 | 2, 3 | #P_sylibr | |- ( x F y -> x ( F u. G ) y ) |\n| 5 | 4 | #P_moimi | |- ( E* y x ( F u. G ) y -> E* y x F y ) |\n| 6 | 1, 5 | #P_syl | |- ( Fun ( F u. G ) -> E* y x F y ) |",
+  "conclusion" : "#P_fununmo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_cun", "#T_cG", "#T_wi", "#T_wmo", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_cun", "#T_cG", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wo", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_cun", "#T_cG", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wo", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_cF", "#T_cun", "#T_cG", "#T_vy.tru", "#T_wmo", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_cun", "#T_cG", "#T_vy.tru", "#T_wi", "#T_wmo", "#T_vy.tru", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wfun", "#T_cF", "#T_cun", "#T_cG", "#T_wi", "#T_wmo", "#T_vy", "#T_vx", "#T_cF", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funmo", "#P_orc", "#P_sylibr", "#P_syl", "#P_brun", "#P_moimi" ]
+}

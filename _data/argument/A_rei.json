@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rei on Metamath](http://us.metamath.org/mpegif/rei.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-icn | |- _i e. CC |\n| 2 |  | #P_ax-1cn | |- 1 e. CC |\n| 3 | 1, 2 | #P_mulcli | |- ( _i x. 1 ) e. CC |\n| 4 | 3 | #P_addid2i | |- ( 0 + ( _i x. 1 ) ) = ( _i x. 1 ) |\n| 5 | 4 | #P_fveq2i | |- ( Re ` ( 0 + ( _i x. 1 ) ) ) = ( Re ` ( _i x. 1 ) ) |\n| 6 |  | #P_0re | |- 0 e. RR |\n| 7 |  | #P_1re | |- 1 e. RR |\n| 8 |  | #P_crre | |- ( ( 0 e. RR /\\ 1 e. RR ) -> ( Re ` ( 0 + ( _i x. 1 ) ) ) = 0 ) |\n| 9 | 6, 7, 8 | #P_mp2an | |- ( Re ` ( 0 + ( _i x. 1 ) ) ) = 0 |\n| 10 | 1 | #P_mulid1i | |- ( _i x. 1 ) = _i |\n| 11 | 10 | #P_fveq2i | |- ( Re ` ( _i x. 1 ) ) = ( Re ` _i ) |\n| 12 | 5, 9, 11 | #P_3eqtr3ri | |- ( Re ` _i ) = 0 |",
+  "conclusion" : "#P_rei",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ci", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_c1", "#T_wcel", "#T_cc", "#T_cc0", "#T_caddc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_c1", "#T_cre", "#T_cfv", "#T_cc0", "#T_caddc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_cre", "#T_cfv", "#T_ci", "#T_cmul", "#T_c1", "#T_cc0", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_wcel", "#T_cr", "#T_wi", "#T_cre", "#T_cfv", "#T_cc0", "#T_caddc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_cc0", "#T_cre", "#T_cfv", "#T_cc0", "#T_caddc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_cc0", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_ci", "#T_cre", "#T_cfv", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_cre", "#T_cfv", "#T_ci", "#T_cre", "#T_cfv", "#T_ci", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_fveq2i", "#P_addid2i", "#P_mp2an", "#P_mulcli", "#P_crre", "#P_3eqtr3ri", "#P_ax-1cn", "#P_mulid1i", "#P_0re", "#P_1re" ]
+}

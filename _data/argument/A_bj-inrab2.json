@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-inrab2 on Metamath](http://us.metamath.org/mpegif/bj-inrab2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-inrab | |- ( { x e. A | ph } i^i { x e. A | ps } ) = { x e. ( A i^i A ) | ( ph /\\ ps ) } |\n| 2 |  | #P_nfv | |- F/ x T. |\n| 3 |  | #P_inidm | |- ( A i^i A ) = A |\n| 4 | 3 | #P_a1i | |- ( T. -> ( A i^i A ) = A ) |\n| 5 | 2, 4 | #P_bj-rabeqd | |- ( T. -> { x e. ( A i^i A ) | ( ph /\\ ps ) } = { x e. A | ( ph /\\ ps ) } ) |\n| 6 | 5 | #P_trud | |- { x e. ( A i^i A ) | ( ph /\\ ps ) } = { x e. A | ( ph /\\ ps ) } |\n| 7 | 1, 6 | #P_eqtri | |- ( { x e. A | ph } i^i { x e. A | ps } ) = { x e. A | ( ph /\\ ps ) } |",
+  "conclusion" : "#P_bj-inrab2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_cin", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4", "#T_wnf", "#T_vx.wal", "#T_wtru", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_cin", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wph", "#T_wa", "#T_wps", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-inrab", "#P_nfv", "#P_trud", "#P_eqtri", "#P_inidm", "#P_a1i", "#P_bj-rabeqd" ]
+}

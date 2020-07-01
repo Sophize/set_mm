@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrxfsupp on Metamath](http://us.metamath.org/mpegif/rrxfsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rrxmval.1 | |- X = { h e. ( RR ^m I ) | h finSupp 0 } |\n| 2 |  | rrxf.1 | |- ( ph -> F e. X ) |\n| 3 | 2, 1 | #P_syl6eleq | |- ( ph -> F e. { h e. ( RR ^m I ) | h finSupp 0 } ) |\n| 4 |  | #P_breq1 | |- ( h = F -> ( h finSupp 0 <-> F finSupp 0 ) ) |\n| 5 | 4 | #P_elrab | |- ( F e. { h e. ( RR ^m I ) | h finSupp 0 } <-> ( F e. ( RR ^m I ) /\\ F finSupp 0 ) ) |\n| 6 | 3, 5 | #P_sylib | |- ( ph -> ( F e. ( RR ^m I ) /\\ F finSupp 0 ) ) |\n| 7 | 6 | #P_simprd | |- ( ph -> F finSupp 0 ) |\n| 8 | 7 | #P_fsuppimpd | |- ( ph -> ( F supp 0 ) e. Fin ) |",
+  "conclusion" : "#P_rrxfsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cr", "#T_cmap", "#T_cI", "#T_crab--3", "#T_vh", "#T_cfsupp", "#T_cc0", "#T_crab--4", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cr", "#T_cmap", "#T_cI", "#T_crab--3", "#T_vh", "#T_cfsupp", "#T_cc0", "#T_crab--4", "#T_vh", "#T_wceq", "#T_cF", "#T_wi", "#T_vh", "#T_cfsupp", "#T_cc0", "#T_wb", "#T_cF", "#T_cfsupp", "#T_cc0", "#T_cF", "#T_wcel", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cr", "#T_cmap", "#T_cI", "#T_crab--3", "#T_vh", "#T_cfsupp", "#T_cc0", "#T_crab--4", "#T_wb", "#T_cF", "#T_wcel", "#T_cr", "#T_cmap", "#T_cI", "#T_wa", "#T_cF", "#T_cfsupp", "#T_cc0", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cr", "#T_cmap", "#T_cI", "#T_wa", "#T_cF", "#T_cfsupp", "#T_cc0", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cc0", "#T_wph", "#T_wi", "#T_cF", "#T_csupp", "#T_cc0", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_breq1", "#P_sylib", "#P_simprd", "#P_syl6eleq", "#P_fsuppimpd" ]
+}

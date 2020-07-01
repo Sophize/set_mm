@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See int-add02d on Metamath](http://us.metamath.org/mpegif/int-add02d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | int-add02d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | int-add02d.2 | |- ( ph -> A = B ) |\n| 3 | 1 | #P_recnd | |- ( ph -> A e. CC ) |\n| 4 | 3 | #P_addid2d | |- ( ph -> ( 0 + A ) = A ) |\n| 5 | 4, 2 | #P_eqtrd | |- ( ph -> ( 0 + A ) = B ) |",
+  "conclusion" : "#P_int-add02d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cc0", "#T_caddc", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_recnd", "#P_addid2d" ]
+}

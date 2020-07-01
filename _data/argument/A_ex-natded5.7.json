@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ex-natded5.7 on Metamath](http://us.metamath.org/mpegif/ex-natded5.7.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ex-natded5.7.1 | |- ( ph -> ( ps \\/ ( ch /\\ th ) ) ) |\n| 2 |  | #P_simpr | |- ( ( ph /\\ ps ) -> ps ) |\n| 3 | 2 | #P_orcd | |- ( ( ph /\\ ps ) -> ( ps \\/ ch ) ) |\n| 4 |  | #P_simpr | |- ( ( ph /\\ ( ch /\\ th ) ) -> ( ch /\\ th ) ) |\n| 5 | 4 | #P_simpld | |- ( ( ph /\\ ( ch /\\ th ) ) -> ch ) |\n| 6 | 5 | #P_olcd | |- ( ( ph /\\ ( ch /\\ th ) ) -> ( ps \\/ ch ) ) |\n| 7 | 3, 6, 1 | #P_mpjaodan | |- ( ph -> ( ps \\/ ch ) ) |",
+  "conclusion" : "#P_ex-natded5.7",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wph", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_simpr", "#P_orcd", "#P_olcd", "#P_mpjaodan" ]
+}

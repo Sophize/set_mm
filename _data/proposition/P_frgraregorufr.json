@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frgraregorufr on Metamath](http://us.metamath.org/mpegif/frgraregorufr.html)"
+  } ],
+  "names" : [ "frgraregorufr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cfrgra", "#T_cE", "#T_wi", "#T_wrex--1", "#T_va", "#T_wrex--2", "#T_cV", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_va", "#T_wceq", "#T_cK", "#T_wi", "#T_wral--1", "#T_vv", "#T_wral--2", "#T_cV", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_vv", "#T_wceq", "#T_cK", "#T_wo", "#T_wrex--1", "#T_vv", "#T_wrex--2", "#T_cV", "#T_wral--1", "#T_vw", "#T_wral--2", "#T_cV", "#T_cdif", "#T_csn--1", "#T_vv", "#T_csn--2", "#T_cpr--1", "#T_vv", "#T_cpr--2", "#T_vw", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_cE", "#T_va", "#T_vv", "#T_vw", "#T_cK", "#T_va", "#T_vv", "#T_vw", "#T_cV", "#T_va", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For each nonnegative integer K there are either no edges having degree K, or all vertices have degree K in a friendship graph, unless there is a universal friend.  This corresponds to claim 2 in [Huneke] p. 2: \"Suppose there is a vertex of degree k > 1. ... all vertices have degree k, unless there is a universal friend. ...  It follows that G is k-regular, i.e., the degree of every vertex is k\".  (Contributed by Alexander van der Vekens, 1-Jan-2018.) ",
+  "statement" : "frgraregorufr $p |- ( V FriendGrph E -> ( E. a e. V ( ( V VDeg E ) ` a ) = K -> ( A. v e. V ( ( V VDeg E ) ` v ) = K \\/ E. v e. V A. w e. ( V \\ { v } ) { v , w } e. ran E ) ) ) $.\n$d E a v w $.\n$d K a v w $.\n$d V a v w $."
+}

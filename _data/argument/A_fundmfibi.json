@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fundmfibi on Metamath](http://us.metamath.org/mpegif/fundmfibi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dmfi | |- ( F e. Fin -> dom F e. Fin ) |\n| 2 |  | #P_funfn | |- ( Fun F <-> F Fn dom F ) |\n| 3 |  | #P_fnfi | |- ( ( F Fn dom F /\\ dom F e. Fin ) -> F e. Fin ) |\n| 4 | 2, 3 | #P_sylanb | |- ( ( Fun F /\\ dom F e. Fin ) -> F e. Fin ) |\n| 5 | 4 | #P_ex | |- ( Fun F -> ( dom F e. Fin -> F e. Fin ) ) |\n| 6 | 1, 5 | #P_impbid2 | |- ( Fun F -> ( F e. Fin <-> dom F e. Fin ) ) |",
+  "conclusion" : "#P_fundmfibi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cF", "#T_wb", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_wb", "#T_cdm", "#T_cF", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylanb", "#P_fnfi", "#P_ex", "#P_dmfi", "#P_funfn", "#P_impbid2" ]
+}

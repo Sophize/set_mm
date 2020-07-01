@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cphsca on Metamath](http://us.metamath.org/mpegif/cphsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cphsca.f | |- F = ( Scalar ` W ) |\n| 2 |  | cphsca.k | |- K = ( Base ` F ) |\n| 3 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 4 |  | #P_eqid | |- ( .i ` W ) = ( .i ` W ) |\n| 5 |  | #P_eqid | |- ( norm ` W ) = ( norm ` W ) |\n| 6 | 3, 4, 5, 1, 2 | #P_iscph | |- ( W e. CPreHil <-> ( ( W e. PreHil /\\ W e. NrmMod /\\ F = ( CCfld |`s K ) ) /\\ ( sqrt \" ( K i^i ( 0 [,) +oo ) ) ) C_ K /\\ ( norm ` W ) = ( x e. ( Base ` W ) |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) ) ) |\n| 7 | 6 | #P_simp1bi | |- ( W e. CPreHil -> ( W e. PreHil /\\ W e. NrmMod /\\ F = ( CCfld |`s K ) ) ) |\n| 8 | 7 | #P_simp3d | |- ( W e. CPreHil -> F = ( CCfld |`s K ) ) |",
+  "conclusion" : "#P_cphsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cip", "#T_cfv", "#T_cW", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_cnm", "#T_cfv", "#T_cW", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_ccph", "#T_wb", "#T_cW", "#T_wcel", "#T_cphl", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cnlm", "#T_w3a--2", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK", "#T_w3a--1", "#T_csqrt", "#T_cima", "#T_cK", "#T_cin", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wss", "#T_cK", "#T_w3a--2", "#T_cnm", "#T_cfv", "#T_cW", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cW", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cW", "#T_wcel", "#T_cphl", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cnlm", "#T_w3a--2", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp1bi", "#P_iscph", "#P_simp3d" ]
+}

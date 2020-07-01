@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logdmss on Metamath](http://us.metamath.org/mpegif/logdmss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | logcn.d | |- D = ( CC \\ ( -oo (,] 0 ) ) |\n| 2 | 1 | #P_ellogdm | |- ( x e. D <-> ( x e. CC /\\ ( x e. RR -> x e. RR+ ) ) ) |\n| 3 | 2 | #P_simplbi | |- ( x e. D -> x e. CC ) |\n| 4 | 1 | #P_logdmn0 | |- ( x e. D -> x =/= 0 ) |\n| 5 |  | #P_eldifsn | |- ( x e. ( CC \\ { 0 } ) <-> ( x e. CC /\\ x =/= 0 ) ) |\n| 6 | 3, 4, 5 | #P_sylanbrc | |- ( x e. D -> x e. ( CC \\ { 0 } ) ) |\n| 7 | 6 | #P_ssriv | |- D C_ ( CC \\ { 0 } ) |",
+  "conclusion" : "#P_logdmss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cD", "#T_wceq", "#T_cc", "#T_cdif", "#T_cmnf", "#T_cioc", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_cD", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_vx.wal", "#T_wcel", "#T_cD", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cD", "#T_wi", "#T_vx.wal", "#T_wne", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wne", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_cD", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cD", "#T_wss", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplbi", "#P_eldifsn", "#P_ellogdm", "#P_sylanbrc", "#P_logdmn0", "#P_ssriv" ]
+}

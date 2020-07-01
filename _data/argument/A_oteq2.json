@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oteq2 on Metamath](http://us.metamath.org/mpegif/oteq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opeq2 | |- ( A = B -> <. C , A >. = <. C , B >. ) |\n| 2 | 1 | #P_opeq1d | |- ( A = B -> <. <. C , A >. , D >. = <. <. C , B >. , D >. ) |\n| 3 |  | #P_df-ot | |- <. C , A , D >. = <. <. C , A >. , D >. |\n| 4 |  | #P_df-ot | |- <. C , B , D >. = <. <. C , B >. , D >. |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> <. C , A , D >. = <. C , B , D >. ) |",
+  "conclusion" : "#P_oteq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_cotp--1", "#T_cC", "#T_cotp--2", "#T_cA.wceq", "#T_cotp--3", "#T_cD", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_cotp--1", "#T_cC", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cD", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cotp--1", "#T_cC", "#T_cotp--2", "#T_cA", "#T_cotp--3", "#T_cD", "#T_cotp--4", "#T_wceq", "#T_cotp--1", "#T_cC", "#T_cotp--2", "#T_cB", "#T_cotp--3", "#T_cD", "#T_cotp--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ot", "#P_opeq2", "#P_3eqtr4g", "#P_opeq1d" ]
+}

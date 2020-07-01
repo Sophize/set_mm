@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordgt0ge1 on Metamath](http://us.metamath.org/mpegif/ordgt0ge1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0elon | |- (/) e. On |\n| 2 |  | #P_ordelsuc | |- ( ( (/) e. On /\\ Ord A ) -> ( (/) e. A <-> suc (/) C_ A ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( Ord A -> ( (/) e. A <-> suc (/) C_ A ) ) |\n| 4 |  | #P_df-1o | |- 1o = suc (/) |\n| 5 | 4 | #P_sseq1i | |- ( 1o C_ A <-> suc (/) C_ A ) |\n| 6 | 3, 5 | #P_syl6bbr | |- ( Ord A -> ( (/) e. A <-> 1o C_ A ) ) |",
+  "conclusion" : "#P_ordgt0ge1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wcel", "#T_con0", "#T_c0", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_c1o", "#T_wceq", "#T_csuc", "#T_c0", "#T_c1o", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cA", "#T_wi", "#T_c0", "#T_wcel", "#T_cA", "#T_wb", "#T_c1o", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordelsuc", "#P_mpan", "#P_sseq1i", "#P_0elon", "#P_df-1o", "#P_syl6bbr" ]
+}

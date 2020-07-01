@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspc on Metamath](http://us.metamath.org/mpegif/rspc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspc.1 | |- F/ x ps |\n| 2 |  | rspc.2 | |- ( x = A -> ( ph <-> ps ) ) |\n| 3 |  | #P_df-ral | |- ( A. x e. B ph <-> A. x ( x e. B -> ph ) ) |\n| 4 |  | #P_nfcv | |- F/_ x A |\n| 5 |  | #P_nfv | |- F/ x A e. B |\n| 6 | 5, 1 | #P_nfim | |- F/ x ( A e. B -> ps ) |\n| 7 |  | #P_eleq1 | |- ( x = A -> ( x e. B <-> A e. B ) ) |\n| 8 | 7, 2 | #P_imbi12d | |- ( x = A -> ( ( x e. B -> ph ) <-> ( A e. B -> ps ) ) ) |\n| 9 | 4, 6, 8 | #P_spcgf | |- ( A e. B -> ( A. x ( x e. B -> ph ) -> ( A e. B -> ps ) ) ) |\n| 10 | 9 | #P_pm2.43a | |- ( A e. B -> ( A. x ( x e. B -> ph ) -> ps ) ) |\n| 11 | 3, 10 | #P_syl5bi | |- ( A e. B -> ( A. x e. B ph -> ps ) ) |",
+  "conclusion" : "#P_rspc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfv", "#P_nfim", "#P_spcgf", "#P_df-ral", "#P_eleq1", "#P_imbi12d", "#P_syl5bi", "#P_pm2.43a" ]
+}

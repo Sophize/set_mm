@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unidmrn on Metamath](http://us.metamath.org/mpegif/unidmrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relcnv | |- Rel `' A |\n| 2 |  | #P_relfld | |- ( Rel `' A -> U. U. `' A = ( dom `' A u. ran `' A ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- U. U. `' A = ( dom `' A u. ran `' A ) |\n| 4 | 3 | #P_equncomi | |- U. U. `' A = ( ran `' A u. dom `' A ) |\n| 5 |  | #P_dfdm4 | |- dom A = ran `' A |\n| 6 |  | #P_df-rn | |- ran A = dom `' A |\n| 7 | 5, 6 | #P_uneq12i | |- ( dom A u. ran A ) = ( ran `' A u. dom `' A ) |\n| 8 | 4, 7 | #P_eqtr4i | |- U. U. `' A = ( dom A u. ran A ) |",
+  "conclusion" : "#P_unidmrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_cuni", "#T_ccnv", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_cuni", "#T_cuni", "#T_ccnv", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_cuni", "#T_cuni", "#T_ccnv", "#T_cA.wceq", "#T_wceq", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cdm", "#T_cA.wceq", "#T_wceq", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_cA.wceq", "#T_wceq", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cuni", "#T_cuni", "#T_ccnv", "#T_cA", "#T_wceq", "#T_cdm", "#T_cA", "#T_cun", "#T_crn", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_ax-mp", "#P_relfld", "#P_relcnv", "#P_equncomi", "#P_df-rn", "#P_dfdm4", "#P_uneq12i" ]
+}

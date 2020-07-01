@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relelec on Metamath](http://us.metamath.org/mpegif/relelec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elex | |- ( A e. [ B ] R -> A e. _V ) |\n| 2 |  | #P_ecexr | |- ( A e. [ B ] R -> B e. _V ) |\n| 3 | 1, 2 | #P_jca | |- ( A e. [ B ] R -> ( A e. _V /\\ B e. _V ) ) |\n| 4 | 3 | #P_adantl | |- ( ( Rel R /\\ A e. [ B ] R ) -> ( A e. _V /\\ B e. _V ) ) |\n| 5 |  | #P_brrelex12 | |- ( ( Rel R /\\ B R A ) -> ( B e. _V /\\ A e. _V ) ) |\n| 6 | 5 | #P_ancomd | |- ( ( Rel R /\\ B R A ) -> ( A e. _V /\\ B e. _V ) ) |\n| 7 |  | #P_elecg | |- ( ( A e. _V /\\ B e. _V ) -> ( A e. [ B ] R <-> B R A ) ) |\n| 8 | 4, 6, 7 | #P_pm5.21nd | |- ( Rel R -> ( A e. [ B ] R <-> B R A ) ) |",
+  "conclusion" : "#P_relelec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wb", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wi", "#T_cA", "#T_wcel", "#T_cec--1", "#T_cB", "#T_cec--2", "#T_cR", "#T_wb", "#T_cB", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elex", "#P_adantl", "#P_pm5.21nd", "#P_brrelex12", "#P_elecg", "#P_ecexr", "#P_jca", "#P_ancomd" ]
+}

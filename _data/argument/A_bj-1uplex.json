@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-1uplex on Metamath](http://us.metamath.org/mpegif/bj-1uplex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-pr11val | |- pr1 (| A |) = A |\n| 2 |  | #P_bj-pr1ex | |- ( (| A |) e. _V -> pr1 (| A |) e. _V ) |\n| 3 | 1, 2 | #P_syl5eqelr | |- ( (| A |) e. _V -> A e. _V ) |\n| 4 |  | #P_df-bj-1upl | |- (| A |) = ( { (/) } X. tag A ) |\n| 5 |  | #P_p0ex | |- { (/) } e. _V |\n| 6 |  | #P_bj-xtagex | |- ( { (/) } e. _V -> ( A e. _V -> ( { (/) } X. tag A ) e. _V ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- ( A e. _V -> ( { (/) } X. tag A ) e. _V ) |\n| 8 | 4, 7 | #P_syl5eqel | |- ( A e. _V -> (| A |) e. _V ) |\n| 9 | 3, 8 | #P_impbii | |- ( (| A |) e. _V <-> A e. _V ) |",
+  "conclusion" : "#P_bj-1uplex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_bj-cpr1", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wceq", "#T_cA.wceq", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_bj-cpr1", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wcel", "#T_cvv", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wcel", "#T_cvv", "#T_bj-c1upl--1", "#T_cA", "#T_bj-c1upl--2", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_bj-pr1ex", "#P_impbii", "#P_df-bj-1upl", "#P_bj-xtagex", "#P_syl5eqel", "#P_p0ex", "#P_syl5eqelr", "#P_bj-pr11val" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee30 on Metamath](http://us.metamath.org/mpegif/ee30.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee30.1 | |- ( ph -> ( ps -> ( ch -> th ) ) ) |\n| 2 |  | ee30.2 | |- ta |\n| 3 |  | ee30.3 | |- ( th -> ( ta -> et ) ) |\n| 4 | 2 | #P_a1i | |- ( ch -> ta ) |\n| 5 | 4 | #P_a1i | |- ( ps -> ( ch -> ta ) ) |\n| 6 | 5 | #P_a1i | |- ( ph -> ( ps -> ( ch -> ta ) ) ) |\n| 7 | 1, 6, 3 | #P_ee33 | |- ( ph -> ( ps -> ( ch -> et ) ) ) |",
+  "conclusion" : "#P_ee30",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wta", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wch", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ee33", "#P_a1i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negsubdi2i on Metamath](http://us.metamath.org/mpegif/negsubdi2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidi.1 | |- A e. CC |\n| 2 |  | pncan3i.2 | |- B e. CC |\n| 3 | 1, 2 | #P_negsubdii | |- -u ( A - B ) = ( -u A + B ) |\n| 4 | 1 | #P_negcli | |- -u A e. CC |\n| 5 | 2, 1 | #P_negsubi | |- ( B + -u A ) = ( B - A ) |\n| 6 | 2, 4, 5 | #P_addcomli | |- ( -u A + B ) = ( B - A ) |\n| 7 | 3, 6 | #P_eqtri | |- -u ( A - B ) = ( B - A ) |",
+  "conclusion" : "#P_negsubdi2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cneg", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cneg", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cB", "#T_cmin", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_negsubi", "#P_addcomli", "#P_negsubdii", "#P_negcli" ]
+}

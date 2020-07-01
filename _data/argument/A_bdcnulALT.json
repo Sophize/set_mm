@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcnulALT on Metamath](http://us.metamath.org/mpegif/bdcnulALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bdcvv | |- Bdd_ _V |\n| 2 | 1, 1 | #P_bdcdif | |- Bdd_ ( _V \\ _V ) |\n| 3 |  | #P_df-nul | |- (/) = ( _V \\ _V ) |\n| 4 | 2, 3 | #P_bdceqir | |- Bdd_ (/) |\n\\\n Alternate proof of ~ bdcnul .  Similarly, for the next few theorems proving boundedness of a class, one can either use their definition followed by ~ bdceqir , or use the corresponding characterizations of its elements followed by ~ bdelir .  (Contributed by BJ, 3-Oct-2019.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_bdcnul",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbdc", "#T_cvv", "#T_wbdc", "#T_cvv", "#T_cdif", "#T_cvv", "#T_c0", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_wbdc", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdcdif", "#P_bdceqir", "#P_bdcvv", "#P_df-nul" ]
+}

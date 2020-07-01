@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnm2 on Metamath](http://us.metamath.org/mpegif/nnm2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-2o | |- 2o = suc 1o |\n| 2 | 1 | #P_oveq2i | |- ( A .o 2o ) = ( A .o suc 1o ) |\n| 3 |  | #P_1onn | |- 1o e. _om |\n| 4 |  | #P_nnmsuc | |- ( ( A e. _om /\\ 1o e. _om ) -> ( A .o suc 1o ) = ( ( A .o 1o ) +o A ) ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( A e. _om -> ( A .o suc 1o ) = ( ( A .o 1o ) +o A ) ) |\n| 6 |  | #P_nnm1 | |- ( A e. _om -> ( A .o 1o ) = A ) |\n| 7 | 6 | #P_oveq1d | |- ( A e. _om -> ( ( A .o 1o ) +o A ) = ( A +o A ) ) |\n| 8 | 5, 7 | #P_eqtrd | |- ( A e. _om -> ( A .o suc 1o ) = ( A +o A ) ) |\n| 9 | 2, 8 | #P_syl5eq | |- ( A e. _om -> ( A .o 2o ) = ( A +o A ) ) |",
+  "conclusion" : "#P_nnm2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2o", "#T_wceq", "#T_csuc", "#T_c1o", "#T_cA.wceq", "#T_comu", "#T_c2o", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c1o", "#T_c1o", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_c1o", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_c1o", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_c1o", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c1o", "#T_coa", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_coa", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_cA", "#T_comu", "#T_c2o", "#T_wceq", "#T_cA", "#T_coa", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1onn", "#P_eqtrd", "#P_nnmsuc", "#P_oveq1d", "#P_nnm1", "#P_mpan2", "#P_syl5eq", "#P_oveq2i", "#P_df-2o" ]
+}

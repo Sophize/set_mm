@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-nfn on Metamath](http://us.metamath.org/mpegif/bj-nfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_notnot | |- ( ph <-> -. -. ph ) |\n| 2 | 1 | #P_albii | |- ( A. x ph <-> A. x -. -. ph ) |\n| 3 | 2 | #P_orbi1i | |- ( ( A. x ph \\/ A. x -. ph ) <-> ( A. x -. -. ph \\/ A. x -. ph ) ) |\n| 4 |  | #P_orcom | |- ( ( A. x -. -. ph \\/ A. x -. ph ) <-> ( A. x -. ph \\/ A. x -. -. ph ) ) |\n| 5 | 3, 4 | #P_bitri | |- ( ( A. x ph \\/ A. x -. ph ) <-> ( A. x -. ph \\/ A. x -. -. ph ) ) |\n| 6 |  | #P_bj-nf3 | |- ( FF/ x ph <-> ( A. x ph \\/ A. x -. ph ) ) |\n| 7 |  | #P_bj-nf3 | |- ( FF/ x -. ph <-> ( A. x -. ph \\/ A. x -. -. ph ) ) |\n| 8 | 5, 6, 7 | #P_3bitr4i | |- ( FF/ x ph <-> FF/ x -. ph ) |",
+  "conclusion" : "#P_bj-nfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wnff", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnff", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wn", "#T_wph", "#T_wnff", "#T_vx", "#T_wph", "#T_wb", "#T_wnff", "#T_vx", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot", "#P_orbi1i", "#P_albii", "#P_orcom", "#P_bj-nf3", "#P_3bitr4i", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl2and on Metamath](http://us.metamath.org/mpegif/syl2and.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl2and.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | syl2and.2 | |- ( ph -> ( th -> ta ) ) |\n| 3 |  | syl2and.3 | |- ( ph -> ( ( ch /\\ ta ) -> et ) ) |\n| 4 | 2, 3 | #P_sylan2d | |- ( ph -> ( ( ch /\\ th ) -> et ) ) |\n| 5 | 1, 4 | #P_syland | |- ( ph -> ( ( ps /\\ th ) -> et ) ) |",
+  "conclusion" : "#P_syl2and",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2d", "#P_syland" ]
+}

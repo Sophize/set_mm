@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wesn on Metamath](http://us.metamath.org/mpegif/wesn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_frsn | |- ( Rel R -> ( R Fr { A } <-> -. A R A ) ) |\n| 2 |  | #P_sosn | |- ( Rel R -> ( R Or { A } <-> -. A R A ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( Rel R -> ( ( R Fr { A } /\\ R Or { A } ) <-> ( -. A R A /\\ -. A R A ) ) ) |\n| 4 |  | #P_df-we | |- ( R We { A } <-> ( R Fr { A } /\\ R Or { A } ) ) |\n| 5 |  | #P_pm4.24 | |- ( -. A R A <-> ( -. A R A /\\ -. A R A ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( Rel R -> ( R We { A } <-> -. A R A ) ) |",
+  "conclusion" : "#P_wesn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wfr", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wor", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wfr", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wa", "#T_cR", "#T_wor", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_cR", "#T_wwe", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_cR", "#T_wfr", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wa", "#T_cR", "#T_wor", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wwe", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wb", "#T_wn", "#T_cA", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frsn", "#P_sosn", "#P_3bitr4g", "#P_pm4.24", "#P_anbi12d", "#P_df-we" ]
+}

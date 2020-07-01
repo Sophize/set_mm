@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recoscl on Metamath](http://us.metamath.org/mpegif/recoscl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recosval | |- ( A e. RR -> ( cos ` A ) = ( Re ` ( exp ` ( _i x. A ) ) ) ) |\n| 2 |  | #P_ax-icn | |- _i e. CC |\n| 3 |  | #P_recn | |- ( A e. RR -> A e. CC ) |\n| 4 |  | #P_mulcl | |- ( ( _i e. CC /\\ A e. CC ) -> ( _i x. A ) e. CC ) |\n| 5 | 2, 3, 4 | #P_sylancr | |- ( A e. RR -> ( _i x. A ) e. CC ) |\n| 6 |  | #P_efcl | |- ( ( _i x. A ) e. CC -> ( exp ` ( _i x. A ) ) e. CC ) |\n| 7 | 5, 6 | #P_syl | |- ( A e. RR -> ( exp ` ( _i x. A ) ) e. CC ) |\n| 8 | 7 | #P_recld | |- ( A e. RR -> ( Re ` ( exp ` ( _i x. A ) ) ) e. RR ) |\n| 9 | 1, 8 | #P_eqeltrd | |- ( A e. RR -> ( cos ` A ) e. RR ) |",
+  "conclusion" : "#P_recoscl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_ci", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_ci", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_sylancr", "#P_recosval", "#P_mulcl", "#P_eqeltrd", "#P_syl", "#P_efcl", "#P_recld", "#P_recn" ]
+}

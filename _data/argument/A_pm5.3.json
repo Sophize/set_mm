@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm5.3 on Metamath](http://us.metamath.org/mpegif/pm5.3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_impexp | |- ( ( ( ph /\\ ps ) -> ch ) <-> ( ph -> ( ps -> ch ) ) ) |\n| 2 |  | #P_imdistan | |- ( ( ph -> ( ps -> ch ) ) <-> ( ( ph /\\ ps ) -> ( ph /\\ ch ) ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( ( ( ph /\\ ps ) -> ch ) <-> ( ( ph /\\ ps ) -> ( ph /\\ ch ) ) ) |",
+  "conclusion" : "#P_pm5.3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imdistan", "#P_impexp", "#P_bitri" ]
+}

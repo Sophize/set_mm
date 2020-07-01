@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfild on Metamath](http://us.metamath.org/mpegif/isfild.html)"
+  } ],
+  "names" : [ "isfild" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cF", "#T_wb", "#T_vx", "#T_wss", "#T_cA", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wsbc--1", "#T_c0", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wph", "#T_w3a--1", "#T_vy", "#T_wss", "#T_cA", "#T_w3a--2", "#T_vz", "#T_wss", "#T_vy", "#T_wi", "#T_wsbc--1", "#T_vz", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wi", "#T_wsbc--1", "#T_vy", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wph", "#T_w3a--1", "#T_vy", "#T_wss", "#T_cA", "#T_w3a--2", "#T_vz", "#T_wss", "#T_cA", "#T_wi", "#T_wsbc--1", "#T_vy", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wa", "#T_wsbc--1", "#T_vz", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wi", "#T_wsbc--1", "#T_vy", "#T_cin", "#T_vz", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cA", "#T_cA", "#T_vx", "#T_vy", "#T_cA", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_cF", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_wph", "#T_vy", "#T_vz", "#T_wps", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Sufficient condition for a set of the form ` { x e. ~P A | ph } ` to be a filter.  (Contributed by Mario Carneiro, 1-Dec-2013.)  (Revised by Stefan O'Rear, 2-Aug-2015.) ",
+  "statement" : "isfild.1 $e |- ( ph -> ( x e. F <-> ( x C_ A /\\ ps ) ) ) $.\nisfild.2 $e |- ( ph -> A e. _V ) $.\nisfild.3 $e |- ( ph -> [. A / x ]. ps ) $.\nisfild.4 $e |- ( ph -> -. [. (/) / x ]. ps ) $.\nisfild.5 $e |- ( ( ph /\\ y C_ A /\\ z C_ y ) -> ( [. z / x ]. ps -> [. y / x ]. ps ) ) $.\nisfild.6 $e |- ( ( ph /\\ y C_ A /\\ z C_ A ) -> ( ( [. y / x ]. ps /\\ [. z / x ]. ps ) -> [. ( y i^i z ) / x ]. ps ) ) $.\nisfild $p |- ( ph -> F e. ( Fil ` A ) ) $.\n$d A x y $.\n$d A y z $.\n$d F x y $.\n$d F y z $.\n$d ph x y $.\n$d ph y z $.\n$d ps y $."
+}

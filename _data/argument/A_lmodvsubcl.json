@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodvsubcl on Metamath](http://us.metamath.org/mpegif/lmodvsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmodvsubcl.v | |- V = ( Base ` W ) |\n| 2 |  | lmodvsubcl.m | |- .- = ( -g ` W ) |\n| 3 |  | #P_lmodgrp | |- ( W e. LMod -> W e. Grp ) |\n| 4 | 1, 2 | #P_grpsubcl | |- ( ( W e. Grp /\\ X e. V /\\ Y e. V ) -> ( X .- Y ) e. V ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( W e. LMod /\\ X e. V /\\ Y e. V ) -> ( X .- Y ) e. V ) |",
+  "conclusion" : "#P_lmodvsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_cgrp", "#T_cW", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cV", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpsubcl", "#P_lmodgrp", "#P_syl3an1" ]
+}

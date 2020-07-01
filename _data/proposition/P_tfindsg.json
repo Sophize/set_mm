@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfindsg on Metamath](http://us.metamath.org/mpegif/tfindsg.html)"
+  } ],
+  "names" : [ "tfindsg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wss", "#T_vy", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wlim", "#T_vx", "#T_wa", "#T_cB", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wss", "#T_vx", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_cB", "#T_wss", "#T_vy", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wss", "#T_cA", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfinite Induction (inference schema), using implicit substitutions. The first four hypotheses establish the substitutions we need.  The last three are the basis, the induction step for successors, and the induction step for limit ordinals.  The basis of this version is an arbitrary ordinal ` B ` instead of zero.  Remark in [TakeutiZaring] p. 57.  (Contributed by NM, 5-Mar-2004.) ",
+  "statement" : "tfindsg.1 $e |- ( x = B -> ( ph <-> ps ) ) $.\ntfindsg.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\ntfindsg.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\ntfindsg.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\ntfindsg.5 $e |- ( B e. On -> ps ) $.\ntfindsg.6 $e |- ( ( ( y e. On /\\ B e. On ) /\\ B C_ y ) -> ( ch -> th ) ) $.\ntfindsg.7 $e |- ( ( ( Lim x /\\ B e. On ) /\\ B C_ x ) -> ( A. y e. x ( B C_ y -> ch ) -> ph ) ) $.\ntfindsg $p |- ( ( ( A e. On /\\ B e. On ) /\\ B C_ A ) -> ta ) $.\n$d A x $.\n$d B x y $.\n$d ch x $.\n$d ph y $.\n$d ta x $.\n$d th x $."
+}

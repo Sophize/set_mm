@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfovd on Metamath](http://us.metamath.org/mpegif/nfovd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfovd.2 | |- ( ph -> F/_ x A ) |\n| 2 |  | nfovd.3 | |- ( ph -> F/_ x F ) |\n| 3 |  | nfovd.4 | |- ( ph -> F/_ x B ) |\n| 4 |  | #P_df-ov | |- ( A F B ) = ( F ` <. A , B >. ) |\n| 5 | 1, 3 | #P_nfopd | |- ( ph -> F/_ x <. A , B >. ) |\n| 6 | 2, 5 | #P_nffvd | |- ( ph -> F/_ x ( F ` <. A , B >. ) ) |\n| 7 | 4, 6 | #P_nfcxfrd | |- ( ph -> F/_ x ( A F B ) ) |",
+  "conclusion" : "#P_nfovd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cF", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_cF", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ov", "#P_nfcxfrd", "#P_nffvd", "#P_nfopd" ]
+}

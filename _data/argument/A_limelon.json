@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See limelon on Metamath](http://us.metamath.org/mpegif/limelon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_limord | |- ( Lim A -> Ord A ) |\n| 2 |  | #P_elong | |- ( A e. B -> ( A e. On <-> Ord A ) ) |\n| 3 | 1, 2 | #P_syl5ibr | |- ( A e. B -> ( Lim A -> A e. On ) ) |\n| 4 | 3 | #P_imp | |- ( ( A e. B /\\ Lim A ) -> A e. On ) |",
+  "conclusion" : "#P_limelon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wlim", "#T_cA", "#T_wi", "#T_cA", "#T_wcel", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elong", "#P_syl5ibr", "#P_imp", "#P_limord" ]
+}

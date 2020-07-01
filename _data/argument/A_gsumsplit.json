@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumsplit on Metamath](http://us.metamath.org/mpegif/gsumsplit.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsumsplit.b | |- B = ( Base ` G ) |\n| 2 |  | gsumsplit.z | |- .0. = ( 0g ` G ) |\n| 3 |  | gsumsplit.p | |- .+ = ( +g ` G ) |\n| 4 |  | gsumsplit.g | |- ( ph -> G e. CMnd ) |\n| 5 |  | gsumsplit.a | |- ( ph -> A e. V ) |\n| 6 |  | gsumsplit.f | |- ( ph -> F : A --> B ) |\n| 7 |  | gsumsplit.w | |- ( ph -> F finSupp .0. ) |\n| 8 |  | gsumsplit.i | |- ( ph -> ( C i^i D ) = (/) ) |\n| 9 |  | gsumsplit.u | |- ( ph -> A = ( C u. D ) ) |\n| 10 |  | #P_eqid | |- ( Cntz ` G ) = ( Cntz ` G ) |\n| 11 |  | #P_cmnmnd | |- ( G e. CMnd -> G e. Mnd ) |\n| 12 | 4, 11 | #P_syl | |- ( ph -> G e. Mnd ) |\n| 13 | 1, 10, 4, 6 | #P_cntzcmnf | |- ( ph -> ran F C_ ( ( Cntz ` G ) ` ran F ) ) |\n| 14 | 1, 2, 3, 10, 12, 5, 6, 13, 7, 8, 9 | #P_gsumzsplit | |- ( ph -> ( G gsum F ) = ( ( G gsum ( F |` C ) ) .+ ( G gsum ( F |` D ) ) ) ) |",
+  "conclusion" : "#P_gsumsplit",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_c.0", "#T_wph", "#T_wi", "#T_cC", "#T_cin", "#T_cD", "#T_wceq", "#T_c0", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_cun", "#T_cD", "#T_ccntz", "#T_cfv", "#T_cG", "#T_wceq", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cfv", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wceq", "#T_cG", "#T_cgsu", "#T_cF", "#T_cres", "#T_cC", "#T_c.pl", "#T_cG", "#T_cgsu", "#T_cF", "#T_cres", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_cntzcmnf", "#P_syl", "#P_gsumzsplit", "#P_cmnmnd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltp1 on Metamath](http://us.metamath.org/mpegif/ltp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_0lt1 | |- 0 < 1 |\n| 3 |  | #P_ltaddpos | |- ( ( 1 e. RR /\\ A e. RR ) -> ( 0 < 1 <-> A < ( A + 1 ) ) ) |\n| 4 | 2, 3 | #P_mpbii | |- ( ( 1 e. RR /\\ A e. RR ) -> A < ( A + 1 ) ) |\n| 5 | 1, 4 | #P_mpan | |- ( A e. RR -> A < ( A + 1 ) ) |",
+  "conclusion" : "#P_ltp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_clt", "#T_cA", "#T_caddc", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbii", "#P_0lt1", "#P_ltaddpos", "#P_mpan", "#P_1re" ]
+}

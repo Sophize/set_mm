@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.21t on Metamath](http://us.metamath.org/mpegif/19.21t.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfr | |- ( F/ x ph -> ( ph -> A. x ph ) ) |\n| 2 |  | #P_alim | |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) |\n| 3 | 1, 2 | #P_syl9 | |- ( F/ x ph -> ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) ) |\n| 4 |  | #P_19.9t | |- ( F/ x ph -> ( E. x ph <-> ph ) ) |\n| 5 | 4 | #P_imbi1d | |- ( F/ x ph -> ( ( E. x ph -> A. x ps ) <-> ( ph -> A. x ps ) ) ) |\n| 6 |  | #P_19.38 | |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) |\n| 7 | 5, 6 | #P_syl6bir | |- ( F/ x ph -> ( ( ph -> A. x ps ) -> A. x ( ph -> ps ) ) ) |\n| 8 | 3, 7 | #P_impbid | |- ( F/ x ph -> ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) |",
+  "conclusion" : "#P_19.21t",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1d", "#P_nfr", "#P_syl6bir", "#P_alim", "#P_impbid", "#P_19.9t", "#P_syl9", "#P_19.38" ]
+}

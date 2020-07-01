@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vscacn on Metamath](http://us.metamath.org/mpegif/vscacn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | istlm.s | |- .x. = ( .sf ` W ) |\n| 2 |  | istlm.j | |- J = ( TopOpen ` W ) |\n| 3 |  | istlm.f | |- F = ( Scalar ` W ) |\n| 4 |  | istlm.k | |- K = ( TopOpen ` F ) |\n| 5 | 1, 2, 3, 4 | #P_istlm | |- ( W e. TopMod <-> ( ( W e. TopMnd /\\ W e. LMod /\\ F e. TopRing ) /\\ .x. e. ( ( K tX J ) Cn J ) ) ) |\n| 6 | 5 | #P_simprbi | |- ( W e. TopMod -> .x. e. ( ( K tX J ) Cn J ) ) |",
+  "conclusion" : "#P_vscacn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.x", "#T_wceq", "#T_cscaf", "#T_cfv", "#T_cW", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wb", "#T_cW", "#T_wcel", "#T_ctmd", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_ctrg", "#T_wa", "#T_c.x", "#T_wcel", "#T_cK", "#T_ctx", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wi", "#T_c.x", "#T_wcel", "#T_cK", "#T_ctx", "#T_cJ", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprbi", "#P_istlm" ]
+}

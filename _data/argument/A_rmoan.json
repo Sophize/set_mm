@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rmoan on Metamath](http://us.metamath.org/mpegif/rmoan.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_moan | |- ( E* x ( x e. A /\\ ph ) -> E* x ( ps /\\ ( x e. A /\\ ph ) ) ) |\n| 2 |  | #P_an12 | |- ( ( ps /\\ ( x e. A /\\ ph ) ) <-> ( x e. A /\\ ( ps /\\ ph ) ) ) |\n| 3 | 2 | #P_mobii | |- ( E* x ( ps /\\ ( x e. A /\\ ph ) ) <-> E* x ( x e. A /\\ ( ps /\\ ph ) ) ) |\n| 4 | 1, 3 | #P_sylib | |- ( E* x ( x e. A /\\ ph ) -> E* x ( x e. A /\\ ( ps /\\ ph ) ) ) |\n| 5 |  | #P_df-rmo | |- ( E* x e. A ph <-> E* x ( x e. A /\\ ph ) ) |\n| 6 |  | #P_df-rmo | |- ( E* x e. A ( ps /\\ ph ) <-> E* x ( x e. A /\\ ( ps /\\ ph ) ) ) |\n| 7 | 4, 5, 6 | #P_3imtr4i | |- ( E* x e. A ph -> E* x e. A ( ps /\\ ph ) ) |",
+  "conclusion" : "#P_rmoan",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_wps", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wps", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wps", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wb", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_wps", "#T_wa", "#T_wph", "#T_wb", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wrmo--1", "#T_vx", "#T_wrmo--2", "#T_cA", "#T_wph", "#T_wi", "#T_wrmo--1", "#T_vx", "#T_wrmo--2", "#T_cA", "#T_wps", "#T_wa", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mobii", "#P_3imtr4i", "#P_an12", "#P_sylib", "#P_moan", "#P_df-rmo" ]
+}

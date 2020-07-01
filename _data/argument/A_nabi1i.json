@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nabi1i on Metamath](http://us.metamath.org/mpegif/nabi1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nabi1i.1 | |- ( ph <-> ps ) |\n| 2 |  | nabi1i.2 | |- ( ps -/\\ ch ) |\n| 3 | 1 | #P_bicomi | |- ( ps <-> ph ) |\n| 4 | 3 | #P_nanbi1i | |- ( ( ps -/\\ ch ) <-> ( ph -/\\ ch ) ) |\n| 5 | 2, 4 | #P_mpbi | |- ( ph -/\\ ch ) |",
+  "conclusion" : "#P_nabi1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wnan", "#T_wch", "#T_wps", "#T_wb", "#T_wph", "#T_wps", "#T_wnan", "#T_wch", "#T_wb", "#T_wph", "#T_wnan", "#T_wch", "#T_wph", "#T_wnan", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nanbi1i", "#P_mpbi", "#P_bicomi" ]
+}

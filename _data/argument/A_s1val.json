@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s1val on Metamath](http://us.metamath.org/mpegif/s1val.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-s1 | |- <\" A \"> = { <. 0 , ( _I ` A ) >. } |\n| 2 |  | #P_fvi | |- ( A e. V -> ( _I ` A ) = A ) |\n| 3 | 2 | #P_opeq2d | |- ( A e. V -> <. 0 , ( _I ` A ) >. = <. 0 , A >. ) |\n| 4 | 3 | #P_sneqd | |- ( A e. V -> { <. 0 , ( _I ` A ) >. } = { <. 0 , A >. } ) |\n| 5 | 1, 4 | #P_syl5eq | |- ( A e. V -> <\" A \"> = { <. 0 , A >. } ) |",
+  "conclusion" : "#P_s1val",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvi", "#P_sneqd", "#P_syl5eq", "#P_opeq2d", "#P_df-s1" ]
+}

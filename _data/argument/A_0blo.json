@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0blo on Metamath](http://us.metamath.org/mpegif/0blo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 0blo.0 | |- Z = ( U 0op W ) |\n| 2 |  | 0blo.7 | |- B = ( U BLnOp W ) |\n| 3 |  | #P_eqid | |- ( U LnOp W ) = ( U LnOp W ) |\n| 4 | 1, 3 | #P_0lno | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> Z e. ( U LnOp W ) ) |\n| 5 |  | #P_eqid | |- ( U normOpOLD W ) = ( U normOpOLD W ) |\n| 6 | 5, 1 | #P_nmoo0 | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> ( ( U normOpOLD W ) ` Z ) = 0 ) |\n| 7 |  | #P_0re | |- 0 e. RR |\n| 8 | 6, 7 | #P_syl6eqel | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> ( ( U normOpOLD W ) ` Z ) e. RR ) |\n| 9 | 5, 3, 2 | #P_isblo2 | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> ( Z e. B <-> ( Z e. ( U LnOp W ) /\\ ( ( U normOpOLD W ) ` Z ) e. RR ) ) ) |\n| 10 | 4, 8, 9 | #P_mpbir2and | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> Z e. B ) |",
+  "conclusion" : "#P_0blo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cU", "#T_c0o", "#T_cW", "#T_cB", "#T_wceq", "#T_cU", "#T_cblo", "#T_cW", "#T_cU", "#T_clno", "#T_cW", "#T_wceq", "#T_cU", "#T_clno", "#T_cW", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_cU", "#T_cnmoo", "#T_cW", "#T_wceq", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cfv", "#T_cZ", "#T_wceq", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cr", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cfv", "#T_cZ", "#T_wcel", "#T_cr", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cZ", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_wa", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cfv", "#T_cZ", "#T_wcel", "#T_cr", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0lno", "#P_eqid", "#P_isblo2", "#P_nmoo0", "#P_mpbir2and", "#P_0re", "#P_syl6eqel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idssxp on Metamath](http://us.metamath.org/mpegif/idssxp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fnresi | |- ( _I |` A ) Fn A |\n| 2 |  | #P_fnrel | |- ( ( _I |` A ) Fn A -> Rel ( _I |` A ) ) |\n| 3 |  | #P_relssdmrn | |- ( Rel ( _I |` A ) -> ( _I |` A ) C_ ( dom ( _I |` A ) X. ran ( _I |` A ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2b | |- ( _I |` A ) C_ ( dom ( _I |` A ) X. ran ( _I |` A ) ) |\n| 5 |  | #P_dmresi | |- dom ( _I |` A ) = A |\n| 6 |  | #P_rnresi | |- ran ( _I |` A ) = A |\n| 7 | 5, 6 | #P_xpeq12i | |- ( dom ( _I |` A ) X. ran ( _I |` A ) ) = ( A X. A ) |\n| 8 | 4, 7 | #P_sseqtri | |- ( _I |` A ) C_ ( A X. A ) |",
+  "conclusion" : "#P_idssxp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wfn", "#T_cA.wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_wrel", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wrel", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wi", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_crn", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cid", "#T_cres", "#T_cA", "#T_wss", "#T_cA", "#T_cxp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rnresi", "#P_fnrel", "#P_sseqtri", "#P_dmresi", "#P_relssdmrn", "#P_xpeq12i", "#P_fnresi", "#P_mp2b" ]
+}

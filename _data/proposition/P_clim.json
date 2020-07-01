@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clim on Metamath](http://us.metamath.org/mpegif/clim.html)"
+  } ],
+  "names" : [ "clim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cz", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_cli", "#T_cA", "#T_wb", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vj", "#T_wrex--2", "#T_cz", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_vj", "#T_cB", "#T_wcel", "#T_cc", "#T_wa", "#T_cabs", "#T_cfv", "#T_cB", "#T_cmin", "#T_cA", "#T_clt", "#T_vx", "#T_cA", "#T_vj", "#T_vk", "#T_vx", "#T_cF", "#T_vj", "#T_vk", "#T_vx", "#T_vj", "#T_vk", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express the predicate:  The limit of complex number sequence ` F ` is ` A ` , or ` F ` converges to ` A ` .  This means that for any real ` x ` , no matter how small, there always exists an integer ` j ` such that the absolute difference of any later complex number in the sequence and the limit is less than ` x ` .  (Contributed by NM, 28-Aug-2005.) (Revised by Mario Carneiro, 28-Apr-2015.) ",
+  "statement" : "clim.1 $e |- ( ph -> F e. V ) $.\nclim.3 $e |- ( ( ph /\\ k e. ZZ ) -> ( F ` k ) = B ) $.\nclim $p |- ( ph -> ( F ~~> A <-> ( A e. CC /\\ A. x e. RR+ E. j e. ZZ A. k e. ( ZZ>= ` j ) ( B e. CC /\\ ( abs ` ( B - A ) ) < x ) ) ) ) $.\n$d A j k x $.\n$d F j k x $.\n$d j k ph x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frsucmpt on Metamath](http://us.metamath.org/mpegif/frsucmpt.html)"
+  } ],
+  "names" : [ "frsucmpt" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wnfc", "#T_vx", "#T_cD", "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cC", "#T_crdg--2", "#T_cA", "#T_cres", "#T_com", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cB", "#T_wcel", "#T_com", "#T_wa", "#T_cD", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfv", "#T_csuc", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The successor value resulting from finite recursive definition generation (special case where the generation function is expressed in maps-to notation).  (Contributed by NM, 14-Sep-2003.)  (Revised by Scott Fenton, 2-Nov-2011.) ",
+  "statement" : "frsucmpt.1 $e |- F/_ x A $.\nfrsucmpt.2 $e |- F/_ x B $.\nfrsucmpt.3 $e |- F/_ x D $.\nfrsucmpt.4 $e |- F = ( rec ( ( x e. _V |-> C ) , A ) |` _om ) $.\nfrsucmpt.5 $e |- ( x = ( F ` B ) -> C = D ) $.\nfrsucmpt $p |- ( ( B e. _om /\\ D e. V ) -> ( F ` suc B ) = D ) $."
+}

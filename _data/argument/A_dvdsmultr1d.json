@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvdsmultr1d on Metamath](http://us.metamath.org/mpegif/dvdsmultr1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvdsmultr1d.1 | |- ( ph -> K e. ZZ ) |\n| 2 |  | dvdsmultr1d.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | dvdsmultr1d.3 | |- ( ph -> N e. ZZ ) |\n| 4 |  | dvdsmultr1d.4 | |- ( ph -> K || M ) |\n| 5 |  | #P_dvdsmultr1 | |- ( ( K e. ZZ /\\ M e. ZZ /\\ N e. ZZ ) -> ( K || M -> K || ( M x. N ) ) ) |\n| 6 | 1, 2, 3, 5 | #P_syl3anc | |- ( ph -> ( K || M -> K || ( M x. N ) ) ) |\n| 7 | 4, 6 | #P_mpd | |- ( ph -> K || ( M x. N ) ) |",
+  "conclusion" : "#P_dvdsmultr1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cK", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_syl3anc", "#P_dvdsmultr1" ]
+}

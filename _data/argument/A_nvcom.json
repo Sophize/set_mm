@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvcom on Metamath](http://us.metamath.org/mpegif/nvcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvgcl.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvgcl.2 | |- G = ( +v ` U ) |\n| 3 | 2 | #P_nvablo | |- ( U e. NrmCVec -> G e. AbelOp ) |\n| 4 | 1, 2 | #P_bafval | |- X = ran G |\n| 5 | 4 | #P_ablocom | |- ( ( G e. AbelOp /\\ A e. X /\\ B e. X ) -> ( A G B ) = ( B G A ) ) |\n| 6 | 3, 5 | #P_syl3an1 | |- ( ( U e. NrmCVec /\\ A e. X /\\ B e. X ) -> ( A G B ) = ( B G A ) ) |",
+  "conclusion" : "#P_nvcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cG", "#T_wcel", "#T_cablo", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cG", "#T_wcel", "#T_cablo", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cG", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_wceq", "#T_cB", "#T_cG", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ablocom", "#P_nvablo", "#P_bafval", "#P_syl3an1" ]
+}

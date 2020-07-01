@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nm0 on Metamath](http://us.metamath.org/mpegif/nm0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nm0.n | |- N = ( norm ` G ) |\n| 2 |  | nm0.z | |- .0. = ( 0g ` G ) |\n| 3 |  | #P_eqid | |- .0. = .0. |\n| 4 |  | #P_ngpgrp | |- ( G e. NrmGrp -> G e. Grp ) |\n| 5 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 6 | 5, 2 | #P_grpidcl | |- ( G e. Grp -> .0. e. ( Base ` G ) ) |\n| 7 | 4, 6 | #P_syl | |- ( G e. NrmGrp -> .0. e. ( Base ` G ) ) |\n| 8 | 5, 1, 2 | #P_nmeq0 | |- ( ( G e. NrmGrp /\\ .0. e. ( Base ` G ) ) -> ( ( N ` .0. ) = 0 <-> .0. = .0. ) ) |\n| 9 | 7, 8 | #P_mpdan | |- ( G e. NrmGrp -> ( ( N ` .0. ) = 0 <-> .0. = .0. ) ) |\n| 10 | 3, 9 | #P_mpbiri | |- ( G e. NrmGrp -> ( N ` .0. ) = 0 ) |",
+  "conclusion" : "#P_nm0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c.0", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_c.0", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_c.0", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wa", "#T_c.0", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_cN", "#T_cfv", "#T_c.0", "#T_wceq", "#T_cc0", "#T_wb", "#T_c.0", "#T_wceq", "#T_c.0", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cN", "#T_cfv", "#T_c.0", "#T_wceq", "#T_cc0", "#T_wb", "#T_c.0", "#T_wceq", "#T_c.0", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cN", "#T_cfv", "#T_c.0", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_eqid", "#P_mpbiri", "#P_grpidcl", "#P_syl", "#P_nmeq0", "#P_ngpgrp" ]
+}

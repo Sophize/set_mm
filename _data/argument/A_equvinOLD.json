@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equvinOLD on Metamath](http://us.metamath.org/mpegif/equvinOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_equvini | |- ( x = y -> E. z ( x = z /\\ z = y ) ) |\n| 2 |  | #P_equtr | |- ( x = z -> ( z = y -> x = y ) ) |\n| 3 | 2 | #P_imp | |- ( ( x = z /\\ z = y ) -> x = y ) |\n| 4 | 3 | #P_exlimiv | |- ( E. z ( x = z /\\ z = y ) -> x = y ) |\n| 5 | 1, 4 | #P_impbii | |- ( x = y <-> E. z ( x = z /\\ z = y ) ) |\n\\\n Obsolete proof of ~ equvin as of 10-Jun-2019.  (Contributed by NM, 5-Aug-1993.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_equvin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx", "#T_wceq", "#T_vy", "#T_wb", "#T_wex", "#T_vz", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_vz", "#T_wceq", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_exlimiv", "#P_imp", "#P_equvini", "#P_equtr" ]
+}

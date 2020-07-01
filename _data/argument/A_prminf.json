@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prminf on Metamath](http://us.metamath.org/mpegif/prminf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn p\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_prmnn | |- ( p e. Prime -> p e. NN ) |\n| 2 | 1 | #P_ssriv | |- Prime C_ NN |\n| 3 |  | #P_prmunb | |- ( n e. NN -> E. p e. Prime n < p ) |\n| 4 | 3 | #P_rgen | |- A. n e. NN E. p e. Prime n < p |\n| 5 |  | #P_unben | |- ( ( Prime C_ NN /\\ A. n e. NN E. p e. Prime n < p ) -> Prime ~~ NN ) |\n| 6 | 2, 4, 5 | #P_mp2an | |- Prime ~~ NN |",
+  "conclusion" : "#P_prminf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vp", "#T_vp", "#T_wcel", "#T_cprime", "#T_wi", "#T_vp", "#T_wcel", "#T_cn", "#T_cprime", "#T_wss", "#T_cn", "#T_vn", "#T_wcel", "#T_cn", "#T_wi", "#T_wrex--1", "#T_vp", "#T_wrex--2", "#T_cprime", "#T_vn", "#T_clt", "#T_vp", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cn", "#T_wrex--1", "#T_vp", "#T_wrex--2", "#T_cprime", "#T_vn", "#T_clt", "#T_vp", "#T_cprime", "#T_wss", "#T_cn", "#T_wa", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cn", "#T_wrex--1", "#T_vp", "#T_wrex--2", "#T_cprime", "#T_vn", "#T_clt", "#T_vp", "#T_wi", "#T_cprime", "#T_cen", "#T_cn", "#T_cprime", "#T_cen", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_prmunb", "#P_mp2an", "#P_unben", "#P_rgen", "#P_prmnn", "#P_ssriv" ]
+}

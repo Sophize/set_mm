@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prodfclim1 on Metamath](http://us.metamath.org/mpegif/prodfclim1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prodf1.1 | |- Z = ( ZZ>= ` M ) |\n| 2 | 1 | #P_prodf1f | |- ( M e. ZZ -> seq M ( x. , ( Z X. { 1 } ) ) = ( Z X. { 1 } ) ) |\n| 3 |  | #P_ax-1cn | |- 1 e. CC |\n| 4 | 1 | #P_eqimss2i | |- ( ZZ>= ` M ) C_ Z |\n| 5 |  | #P_fvex | |- ( ZZ>= ` M ) e. _V |\n| 6 | 1, 5 | #P_eqeltri | |- Z e. _V |\n| 7 | 4, 6 | #P_climconst2 | |- ( ( 1 e. CC /\\ M e. ZZ ) -> ( Z X. { 1 } ) ~~> 1 ) |\n| 8 | 3, 7 | #P_mpan | |- ( M e. ZZ -> ( Z X. { 1 } ) ~~> 1 ) |\n| 9 | 2, 8 | #P_eqbrtrd | |- ( M e. ZZ -> seq M ( x. , ( Z X. { 1 } ) ) ~~> 1 ) |",
+  "conclusion" : "#P_prodfclim1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_wceq", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_c1", "#T_wcel", "#T_cc", "#T_cuz", "#T_cfv", "#T_cM", "#T_wss", "#T_cZ", "#T_cuz", "#T_cfv", "#T_cM", "#T_wcel", "#T_cvv", "#T_cZ", "#T_wcel", "#T_cvv", "#T_c1", "#T_wcel", "#T_cc", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_cli", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_cli", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_cli", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_ax-1cn", "#P_prodf1f", "#P_eqbrtrd", "#P_mpan", "#P_fvex", "#P_climconst2", "#P_eqimss2i" ]
+}

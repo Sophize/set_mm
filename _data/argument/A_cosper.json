@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cosper on Metamath](http://us.metamath.org/mpegif/cosper.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cosval | |- ( A e. CC -> ( cos ` A ) = ( ( ( exp ` ( _i x. A ) ) + ( exp ` ( -u _i x. A ) ) ) / 2 ) ) |\n| 2 |  | #P_cosval | |- ( ( A + ( K x. ( 2 x. _pi ) ) ) e. CC -> ( cos ` ( A + ( K x. ( 2 x. _pi ) ) ) ) = ( ( ( exp ` ( _i x. ( A + ( K x. ( 2 x. _pi ) ) ) ) ) + ( exp ` ( -u _i x. ( A + ( K x. ( 2 x. _pi ) ) ) ) ) ) / 2 ) ) |\n| 3 | 1, 2 | #P_sinperlem | |- ( ( A e. CC /\\ K e. ZZ ) -> ( cos ` ( A + ( K x. ( 2 x. _pi ) ) ) ) = ( cos ` A ) ) |",
+  "conclusion" : "#P_cosper",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_ce", "#T_cfv", "#T_cneg", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_c2", "#T_cA.wceq", "#T_caddc", "#T_cK", "#T_cmul", "#T_c2", "#T_cmul", "#T_cpi", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_cK", "#T_cmul", "#T_c2", "#T_cmul", "#T_cpi", "#T_wceq", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cK", "#T_cmul", "#T_c2", "#T_cmul", "#T_cpi", "#T_caddc", "#T_ce", "#T_cfv", "#T_cneg", "#T_ci", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cK", "#T_cmul", "#T_c2", "#T_cmul", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cK", "#T_wcel", "#T_cz", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA", "#T_caddc", "#T_cK", "#T_cmul", "#T_c2", "#T_cmul", "#T_cpi", "#T_wceq", "#T_ccos", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sinperlem", "#P_cosval" ]
+}

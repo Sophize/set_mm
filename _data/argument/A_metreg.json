@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See metreg on Metamath](http://us.metamath.org/mpegif/metreg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | metnrm.j | |- J = ( MetOpen ` D ) |\n| 2 | 1 | #P_metnrm | |- ( D e. ( *Met ` X ) -> J e. Nrm ) |\n| 3 | 1 | #P_methaus | |- ( D e. ( *Met ` X ) -> J e. Haus ) |\n| 4 |  | #P_haust1 | |- ( J e. Haus -> J e. Fre ) |\n| 5 | 3, 4 | #P_syl | |- ( D e. ( *Met ` X ) -> J e. Fre ) |\n| 6 |  | #P_nrmreg | |- ( ( J e. Nrm /\\ J e. Fre ) -> J e. Reg ) |\n| 7 | 2, 5, 6 | #P_syl2anc | |- ( D e. ( *Met ` X ) -> J e. Reg ) |",
+  "conclusion" : "#P_metreg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_cJ", "#T_wcel", "#T_cnrm", "#T_wa", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_creg", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_creg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_metnrm", "#P_methaus", "#P_nrmreg", "#P_syl2anc", "#P_haust1", "#P_syl" ]
+}

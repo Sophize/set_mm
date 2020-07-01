@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sect on Metamath](http://us.metamath.org/mpegif/df-sect.html)"
+  } ],
+  "names" : [ "df-sect" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csect", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_vx", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vg", "#T_copab--4", "#T_copab--5", "#T_wsbc--1", "#T_chom", "#T_cfv", "#T_vc", "#T_wsbc--2", "#T_vh", "#T_wsbc--3", "#T_vf", "#T_wcel", "#T_vx", "#T_vh", "#T_vy", "#T_wa", "#T_vg", "#T_wcel", "#T_vy", "#T_vh", "#T_vx", "#T_wa", "#T_vg", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_cco", "#T_cfv", "#T_vc", "#T_vx", "#T_vf", "#T_wceq", "#T_ccid", "#T_cfv", "#T_vc", "#T_cfv", "#T_vx", "#T_copab--6", "#T_vc", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function returning the section relation in a category.  Given arrows ` f : X --> Y ` and ` g : Y --> X ` , we say ` f Sect g ` , that is, ` f ` is a section of ` g ` , if ` g o. f = 1 `` X ` .  If there there is an arrow ` g ` with ` f Sect g ` , the arrow ` f ` is called a _section_, see definition 7.19 of [Adamek] p. 106.  (Contributed by Mario Carneiro, 2-Jan-2017.) ",
+  "statement" : "df-sect $p |- Sect = ( c e. Cat |-> ( x e. ( Base ` c ) , y e. ( Base ` c ) |-> { <. f , g >. | [. ( Hom ` c ) / h ]. ( ( f e. ( x h y ) /\\ g e. ( y h x ) ) /\\ ( g ( <. x , y >. ( comp ` c ) x ) f ) = ( ( Id ` c ) ` x ) ) } ) ) $.\n$d c f g h x y $."
+}

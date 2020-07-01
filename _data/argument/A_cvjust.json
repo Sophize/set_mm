@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cvjust on Metamath](http://us.metamath.org/mpegif/cvjust.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfcleq | |- ( x = { y | y e. x } <-> A. z ( z e. x <-> z e. { y | y e. x } ) ) |\n| 2 |  | #P_df-clab | |- ( z e. { y | y e. x } <-> [ z / y ] y e. x ) |\n| 3 |  | #P_elsb3 | |- ( [ z / y ] y e. x <-> z e. x ) |\n| 4 | 2, 3 | #P_bitr2i | |- ( z e. x <-> z e. { y | y e. x } ) |\n| 5 | 1, 4 | #P_mpgbir | |- x = { y | y e. x } |",
+  "conclusion" : "#P_cvjust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx.wal", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_cab--3", "#T_wb", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_cab--3", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_cab--3", "#T_vx", "#T_wceq", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_vy", "#T_wcel", "#T_vx", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfcleq", "#P_df-clab", "#P_elsb3", "#P_bitr2i", "#P_mpgbir" ]
+}

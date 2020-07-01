@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psssdm on Metamath](http://us.metamath.org/mpegif/psssdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psssdm.1 | |- X = dom R |\n| 2 | 1 | #P_psssdm2 | |- ( R e. PosetRel -> dom ( R i^i ( A X. A ) ) = ( X i^i A ) ) |\n| 3 |  | #P_dfss1 | |- ( A C_ X <-> ( X i^i A ) = A ) |\n| 4 | 3 | #P_biimpi | |- ( A C_ X -> ( X i^i A ) = A ) |\n| 5 | 2, 4 | #P_sylan9eq | |- ( ( R e. PosetRel /\\ A C_ X ) -> dom ( R i^i ( A X. A ) ) = A ) |",
+  "conclusion" : "#P_psssdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cdm", "#T_cR", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cdm", "#T_cR", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cX", "#T_wb", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cX", "#T_wi", "#T_cX", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_cA", "#T_wss", "#T_cX", "#T_wi", "#T_cdm", "#T_cR", "#T_cin", "#T_cA", "#T_cxp", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfss1", "#P_psssdm2", "#P_biimpi", "#P_sylan9eq" ]
+}

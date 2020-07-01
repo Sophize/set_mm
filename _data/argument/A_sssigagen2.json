@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sssigagen2 on Metamath](http://us.metamath.org/mpegif/sssigagen2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( A e. V /\\ B C_ A ) -> B C_ A ) |\n| 2 |  | #P_sssigagen | |- ( A e. V -> A C_ ( sigaGen ` A ) ) |\n| 3 | 2 | #P_adantr | |- ( ( A e. V /\\ B C_ A ) -> A C_ ( sigaGen ` A ) ) |\n| 4 | 1, 3 | #P_sstrd | |- ( ( A e. V /\\ B C_ A ) -> B C_ ( sigaGen ` A ) ) |",
+  "conclusion" : "#P_sssigagen2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wss", "#T_cA", "#T_wi", "#T_cB", "#T_wss", "#T_csigagen", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sssigagen", "#P_sstrd", "#P_simpr", "#P_adantr" ]
+}

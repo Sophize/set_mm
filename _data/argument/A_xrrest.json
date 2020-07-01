@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrrest on Metamath](http://us.metamath.org/mpegif/xrrest.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xrrest.1 | |- X = ( ordTop ` <_ ) |\n| 2 |  | xrrest.2 | |- R = ( topGen ` ran (,) ) |\n| 3 | 1 | #P_oveq1i | |- ( X |`t RR ) = ( ( ordTop ` <_ ) |`t RR ) |\n| 4 | 3 | #P_xrtgioo | |- ( topGen ` ran (,) ) = ( X |`t RR ) |\n| 5 | 2, 4 | #P_eqtri | |- R = ( X |`t RR ) |\n| 6 | 5 | #P_oveq1i | |- ( R |`t A ) = ( ( X |`t RR ) |`t A ) |\n| 7 |  | #P_fvex | |- ( ordTop ` <_ ) e. _V |\n| 8 | 1, 7 | #P_eqeltri | |- X e. _V |\n| 9 |  | #P_reex | |- RR e. _V |\n| 10 |  | #P_restabs | |- ( ( X e. _V /\\ A C_ RR /\\ RR e. _V ) -> ( ( X |`t RR ) |`t A ) = ( X |`t A ) ) |\n| 11 | 8, 9, 10 | #P_mp3an13 | |- ( A C_ RR -> ( ( X |`t RR ) |`t A ) = ( X |`t A ) ) |\n| 12 | 6, 11 | #P_syl5req | |- ( A C_ RR -> ( X |`t A ) = ( R |`t A ) ) |",
+  "conclusion" : "#P_xrrest",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cordt", "#T_cfv", "#T_cle", "#T_cR", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cX", "#T_crest", "#T_cr", "#T_wceq", "#T_cordt", "#T_cfv", "#T_cle", "#T_crest", "#T_cr", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_cX", "#T_crest", "#T_cr", "#T_cR", "#T_wceq", "#T_cX", "#T_crest", "#T_cr", "#T_cR", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cX", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_cordt", "#T_cfv", "#T_cle", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cvv", "#T_cr", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_w3a--2", "#T_cr", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cX", "#T_crest", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_wi", "#T_cX", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cX", "#T_crest", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cr", "#T_wi", "#T_cX", "#T_crest", "#T_cA", "#T_wceq", "#T_cR", "#T_crest", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_eqeltri", "#P_mp3an13", "#P_syl5req", "#P_reex", "#P_restabs", "#P_oveq1i", "#P_fvex", "#P_xrtgioo" ]
+}

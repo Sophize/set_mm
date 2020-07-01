@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exintrbi on Metamath](http://us.metamath.org/mpegif/exintrbi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm4.71 | |- ( ( ph -> ps ) <-> ( ph <-> ( ph /\\ ps ) ) ) |\n| 2 | 1 | #P_albii | |- ( A. x ( ph -> ps ) <-> A. x ( ph <-> ( ph /\\ ps ) ) ) |\n| 3 |  | #P_exbi | |- ( A. x ( ph <-> ( ph /\\ ps ) ) -> ( E. x ph <-> E. x ( ph /\\ ps ) ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( A. x ( ph -> ps ) -> ( E. x ph <-> E. x ( ph /\\ ps ) ) ) |",
+  "conclusion" : "#P_exintrbi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm4.71", "#P_albii", "#P_exbi", "#P_sylbi" ]
+}

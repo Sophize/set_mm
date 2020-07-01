@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See posprs on Metamath](http://us.metamath.org/mpegif/posprs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` K ) = ( Base ` K ) |\n| 2 |  | #P_eqid | |- ( le ` K ) = ( le ` K ) |\n| 3 | 1, 2 | #P_ispos2 | |- ( K e. Poset <-> ( K e. Preset /\\ A. x e. ( Base ` K ) A. y e. ( Base ` K ) ( ( x ( le ` K ) y /\\ y ( le ` K ) x ) -> x = y ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( K e. Poset -> K e. Preset ) |",
+  "conclusion" : "#P_posprs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cple", "#T_cfv", "#T_cK", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cpo", "#T_wb", "#T_cK", "#T_wcel", "#T_cpreset", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cK", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_cple", "#T_cfv", "#T_cK", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_cple", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_cK", "#T_wcel", "#T_cpo", "#T_wi", "#T_cK", "#T_wcel", "#T_cpreset" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_ispos2" ]
+}

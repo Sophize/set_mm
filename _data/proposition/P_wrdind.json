@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wrdind on Metamath](http://us.metamath.org/mpegif/wrdind.html)"
+  } ],
+  "names" : [ "wrdind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_cconcat", "#T_cs1--1", "#T_vz", "#T_cs1--2", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cword", "#T_cB", "#T_wa", "#T_vz", "#T_wcel", "#T_cB", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cword", "#T_cB", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_vz", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_vz", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform induction over the structure of a word.  (Contributed by Mario Carneiro, 27-Sep-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) ",
+  "statement" : "wrdind.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\nwrdind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nwrdind.3 $e |- ( x = ( y concat <\" z \"> ) -> ( ph <-> th ) ) $.\nwrdind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nwrdind.5 $e |- ps $.\nwrdind.6 $e |- ( ( y e. Word B /\\ z e. B ) -> ( ch -> th ) ) $.\nwrdind $p |- ( A e. Word B -> ta ) $.\n$d A x $.\n$d B x y z $.\n$d ch x $.\n$d ph y z $.\n$d ta x $.\n$d th x $."
+}

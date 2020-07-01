@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssdif2d on Metamath](http://us.metamath.org/mpegif/ssdif2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ssdifd.1 | |- ( ph -> A C_ B ) |\n| 2 |  | ssdif2d.2 | |- ( ph -> C C_ D ) |\n| 3 | 2 | #P_sscond | |- ( ph -> ( A \\ D ) C_ ( A \\ C ) ) |\n| 4 | 1 | #P_ssdifd | |- ( ph -> ( A \\ C ) C_ ( B \\ C ) ) |\n| 5 | 3, 4 | #P_sstrd | |- ( ph -> ( A \\ D ) C_ ( B \\ C ) ) |",
+  "conclusion" : "#P_ssdif2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wss", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdif", "#T_cD", "#T_wss", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cdif", "#T_cD", "#T_wss", "#T_cB", "#T_cdif", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstrd", "#P_sscond", "#P_ssdifd" ]
+}

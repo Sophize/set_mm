@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifclda on Metamath](http://us.metamath.org/mpegif/ifclda.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ifclda.1 | |- ( ( ph /\\ ps ) -> A e. C ) |\n| 2 |  | ifclda.2 | |- ( ( ph /\\ -. ps ) -> B e. C ) |\n| 3 |  | #P_iftrue | |- ( ps -> if ( ps , A , B ) = A ) |\n| 4 | 3 | #P_adantl | |- ( ( ph /\\ ps ) -> if ( ps , A , B ) = A ) |\n| 5 | 4, 1 | #P_eqeltrd | |- ( ( ph /\\ ps ) -> if ( ps , A , B ) e. C ) |\n| 6 |  | #P_iffalse | |- ( -. ps -> if ( ps , A , B ) = B ) |\n| 7 | 6 | #P_adantl | |- ( ( ph /\\ -. ps ) -> if ( ps , A , B ) = B ) |\n| 8 | 7, 2 | #P_eqeltrd | |- ( ( ph /\\ -. ps ) -> if ( ps , A , B ) e. C ) |\n| 9 | 5, 8 | #P_pm2.61dan | |- ( ph -> if ( ps , A , B ) e. C ) |",
+  "conclusion" : "#P_ifclda",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_cB", "#T_wcel", "#T_cC", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wn", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iffalse", "#P_pm2.61dan", "#P_iftrue", "#P_adantl", "#P_eqeltrd" ]
+}

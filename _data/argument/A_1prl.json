@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1prl on Metamath](http://us.metamath.org/mpegif/1prl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-i1p | |- 1P = <. { x | x <Q 1Q } , { y | 1Q <Q y } >. |\n| 2 | 1 | #P_fveq2i | |- ( 1st ` 1P ) = ( 1st ` <. { x | x <Q 1Q } , { y | 1Q <Q y } >. ) |\n| 3 |  | #P_ltnqex | |- { x | x <Q 1Q } e. _V |\n| 4 |  | #P_gtnqex | |- { y | 1Q <Q y } e. _V |\n| 5 | 3, 4 | #P_op1st | |- ( 1st ` <. { x | x <Q 1Q } , { y | 1Q <Q y } >. ) = { x | x <Q 1Q } |\n| 6 | 2, 5 | #P_eqtri | |- ( 1st ` 1P ) = { x | x <Q 1Q } |",
+  "conclusion" : "#P_1prl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_c1p", "#T_wceq", "#T_cop--1", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cltq", "#T_c1q", "#T_cab--3", "#T_cop--2", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c1q", "#T_cltq", "#T_vy.tru", "#T_cab--3", "#T_cop--3", "#T_c1st", "#T_cfv", "#T_c1p", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cltq", "#T_c1q", "#T_cab--3", "#T_cop--2", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c1q", "#T_cltq", "#T_vy.tru", "#T_cab--3", "#T_cop--3", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cltq", "#T_c1q", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c1q", "#T_cltq", "#T_vy.tru", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cltq", "#T_c1q", "#T_cab--3", "#T_cop--2", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c1q", "#T_cltq", "#T_vy.tru", "#T_cab--3", "#T_cop--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cltq", "#T_c1q", "#T_cab--3", "#T_c1st", "#T_cfv", "#T_c1p", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_cltq", "#T_c1q", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_eqtri", "#P_gtnqex", "#P_op1st", "#P_ltnqex", "#P_df-i1p" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssind on Metamath](http://us.metamath.org/mpegif/ssind.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ssind.1 | |- ( ph -> A C_ B ) |\n| 2 |  | ssind.2 | |- ( ph -> A C_ C ) |\n| 3 |  | #P_ssin | |- ( ( A C_ B /\\ A C_ C ) <-> A C_ ( B i^i C ) ) |\n| 4 | 3 | #P_biimpi | |- ( ( A C_ B /\\ A C_ C ) -> A C_ ( B i^i C ) ) |\n| 5 | 1, 2, 4 | #P_syl2anc | |- ( ph -> A C_ ( B i^i C ) ) |",
+  "conclusion" : "#P_ssind",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_cin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ssin", "#P_biimpi" ]
+}

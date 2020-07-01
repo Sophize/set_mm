@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-idl on Metamath](http://us.metamath.org/mpegif/df-idl.html)"
+  } ],
+  "names" : [ "df-idl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cidl", "#T_wceq", "#T_vr", "#T_cmpt--1", "#T_crngo", "#T_cmpt--2", "#T_crab--1", "#T_vi", "#T_crab--2", "#T_cpw", "#T_crn", "#T_c1st", "#T_cfv", "#T_vr", "#T_crab--3", "#T_cgi", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vr", "#T_wcel", "#T_vi", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vi", "#T_vx", "#T_c1st", "#T_cfv", "#T_vr", "#T_vy", "#T_wcel", "#T_vi", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_crn", "#T_c1st", "#T_cfv", "#T_vr", "#T_vz", "#T_c2nd", "#T_cfv", "#T_vr", "#T_vx", "#T_wcel", "#T_vi", "#T_wa", "#T_vx", "#T_c2nd", "#T_cfv", "#T_vr", "#T_vz", "#T_wcel", "#T_vi", "#T_crab--4", "#T_vi", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of (two-sided) ideals of a ring ` R ` .  A subset of ` R ` is an ideal if it contains ` 0 ` , is closed under addition, and is closed under multiplication on either side by any element of ` R ` . (Contributed by Jeff Madsen, 10-Jun-2010.) ",
+  "statement" : "df-idl $p |- Idl = ( r e. RingOps |-> { i e. ~P ran ( 1st ` r ) | ( ( GId ` ( 1st ` r ) ) e. i /\\ A. x e. i ( A. y e. i ( x ( 1st ` r ) y ) e. i /\\ A. z e. ran ( 1st ` r ) ( ( z ( 2nd ` r ) x ) e. i /\\ ( x ( 2nd ` r ) z ) e. i ) ) ) } ) $.\n$d i r x y z $."
+}

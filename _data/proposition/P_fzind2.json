@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzind2 on Metamath](http://us.metamath.org/mpegif/fzind2.html)"
+  } ],
+  "names" : [ "fzind2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cM", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cK", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_cM", "#T_cfzo", "#T_cN", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_wta", "#T_cK", "#T_vx", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Induction on the integers from ` M ` to ` N ` inclusive.  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  Version of ~ fzind using integer range definitions.  (Contributed by Mario Carneiro, 6-Feb-2016.) ",
+  "statement" : "fzind2.1 $e |- ( x = M -> ( ph <-> ps ) ) $.\nfzind2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfzind2.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nfzind2.4 $e |- ( x = K -> ( ph <-> ta ) ) $.\nfzind2.5 $e |- ( N e. ( ZZ>= ` M ) -> ps ) $.\nfzind2.6 $e |- ( y e. ( M ..^ N ) -> ( ch -> th ) ) $.\nfzind2 $p |- ( K e. ( M ... N ) -> ta ) $.\n$d K x $.\n$d M x y $.\n$d N x y $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $."
+}

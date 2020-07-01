@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funcfn2 on Metamath](http://us.metamath.org/mpegif/funcfn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | funcfn2.b | |- B = ( Base ` D ) |\n| 2 |  | funcfn2.f | |- ( ph -> F ( D Func E ) G ) |\n| 3 |  | #P_eqid | |- ( Hom ` D ) = ( Hom ` D ) |\n| 4 |  | #P_eqid | |- ( Hom ` E ) = ( Hom ` E ) |\n| 5 | 1, 3, 4, 2 | #P_funcixp | |- ( ph -> G e. X_ x e. ( B X. B ) ( ( ( F ` ( 1st ` x ) ) ( Hom ` E ) ( F ` ( 2nd ` x ) ) ) ^m ( ( Hom ` D ) ` x ) ) ) |\n| 6 |  | #P_ixpfn | |- ( G e. X_ x e. ( B X. B ) ( ( ( F ` ( 1st ` x ) ) ( Hom ` E ) ( F ` ( 2nd ` x ) ) ) ^m ( ( Hom ` D ) ` x ) ) -> G Fn ( B X. B ) ) |\n| 7 | 5, 6 | #P_syl | |- ( ph -> G Fn ( B X. B ) ) |",
+  "conclusion" : "#P_funcfn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_cD", "#T_cfunc", "#T_cE", "#T_cG", "#T_chom", "#T_cfv", "#T_cD", "#T_wceq", "#T_chom", "#T_cfv", "#T_cD", "#T_chom", "#T_cfv", "#T_cE", "#T_wceq", "#T_chom", "#T_cfv", "#T_cE", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cF", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cE", "#T_cF", "#T_cfv", "#T_c2nd", "#T_cfv", "#T_vx.wal", "#T_cmap", "#T_chom", "#T_cfv", "#T_cD", "#T_cfv", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cF", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cE", "#T_cF", "#T_cfv", "#T_c2nd", "#T_cfv", "#T_vx.wal", "#T_cmap", "#T_chom", "#T_cfv", "#T_cD", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_cG", "#T_wfn", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cG", "#T_wfn", "#T_cB", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ixpfn", "#P_eqid", "#P_funcixp", "#P_syl" ]
+}

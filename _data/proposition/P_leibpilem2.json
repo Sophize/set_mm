@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leibpilem2 on Metamath](http://us.metamath.org/mpegif/leibpilem2.html)"
+  } ],
+  "names" : [ "leibpilem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cneg", "#T_c1", "#T_cexp", "#T_vn", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vn", "#T_caddc", "#T_c1", "#T_cG", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vk", "#T_wceq", "#T_cc0", "#T_wo", "#T_c2", "#T_cdvds", "#T_vk", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cneg", "#T_c1", "#T_cexp", "#T_vk", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_cdiv", "#T_vk", "#T_cA", "#T_wcel", "#T_cvv", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cA", "#T_wb", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cli", "#T_cA", "#T_cG", "#T_vn", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Leibniz formula for ` _pi ` .  (Contributed by Mario Carneiro, 7-Apr-2015.) ",
+  "statement" : "leibpi.1 $e |- F = ( n e. NN0 |-> ( ( -u 1 ^ n ) / ( ( 2 x. n ) + 1 ) ) ) $.\nleibpilem2.2 $e |- G = ( k e. NN0 |-> if ( ( k = 0 \\/ 2 || k ) , 0 , ( ( -u 1 ^ ( ( k - 1 ) / 2 ) ) / k ) ) ) $.\nleibpilem2.3 $e |- A e. _V $.\nleibpilem2 $p |- ( seq 0 ( + , F ) ~~> A <-> seq 0 ( + , G ) ~~> A ) $.\n$d G n $.\n$d k n $."
+}

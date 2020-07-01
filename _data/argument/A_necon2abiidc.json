@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon2abiidc on Metamath](http://us.metamath.org/mpegif/necon2abiidc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon2abiidc.1 | |- ( DECID ph -> ( A = B <-> -. ph ) ) |\n| 2 | 1 | #P_bicomd | |- ( DECID ph -> ( -. ph <-> A = B ) ) |\n| 3 | 2 | #P_necon1abiidc | |- ( DECID ph -> ( A =/= B <-> ph ) ) |\n| 4 | 3 | #P_bicomd | |- ( DECID ph -> ( ph <-> A =/= B ) ) |",
+  "conclusion" : "#P_necon2abiidc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wdc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bicomd", "#P_necon1abiidc" ]
+}

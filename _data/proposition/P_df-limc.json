@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-limc on Metamath](http://us.metamath.org/mpegif/df-limc.html)"
+  } ],
+  "names" : [ "df-limc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_climc", "#T_wceq", "#T_vf", "#T_cmpt2--1", "#T_cc", "#T_cpm", "#T_cc", "#T_cmpt2--2", "#T_vx", "#T_cmpt2--3", "#T_cc", "#T_cmpt2--4", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_wsbc--1", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wsbc--2", "#T_vj", "#T_wsbc--3", "#T_vz", "#T_cmpt--1", "#T_cdm", "#T_vf", "#T_cun", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cmpt--2", "#T_cif--1", "#T_vz", "#T_wceq", "#T_vx", "#T_cif--2", "#T_vy", "#T_cif--3", "#T_vf", "#T_cfv", "#T_vz", "#T_wcel", "#T_vj", "#T_crest", "#T_cdm", "#T_vf", "#T_cun", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_ccnp", "#T_vj", "#T_cfv", "#T_vx", "#T_cab--3", "#T_vf", "#T_vj", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of limits of a complex function at a point.  Under normal circumstances, this will be a singleton or empty, depending on whether the limit exists.  (Contributed by Mario Carneiro, 24-Dec-2016.) ",
+  "statement" : "df-limc $p |- limCC = ( f e. ( CC ^pm CC ) , x e. CC |-> { y | [. ( TopOpen ` CCfld ) / j ]. ( z e. ( dom f u. { x } ) |-> if ( z = x , y , ( f ` z ) ) ) e. ( ( ( j |`t ( dom f u. { x } ) ) CnP j ) ` x ) } ) $.\n$d f j x y z $."
+}

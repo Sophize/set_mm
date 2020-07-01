@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difeqri on Metamath](http://us.metamath.org/mpegif/difeqri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | difeqri.1 | |- ( ( x e. A /\\ -. x e. B ) <-> x e. C ) |\n| 2 |  | #P_eldif | |- ( x e. ( A \\ B ) <-> ( x e. A /\\ -. x e. B ) ) |\n| 3 | 2, 1 | #P_bitri | |- ( x e. ( A \\ B ) <-> x e. C ) |\n| 4 | 3 | #P_eqriv | |- ( A \\ B ) = C |",
+  "conclusion" : "#P_difeqri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_wn", "#T_vx", "#T_wcel", "#T_cB", "#T_wb", "#T_vx", "#T_wcel", "#T_cC", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_cA", "#T_cdif", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_bitri", "#P_eqriv" ]
+}

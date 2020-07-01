@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrcf on Metamath](http://us.metamath.org/mpegif/mrcf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ns x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mrcfval.f | |- F = ( mrCls ` C ) |\n| 2 |  | #P_mrcflem | |- ( C e. ( Moore ` X ) -> ( x e. ~P X |-> |^| { s e. C | x C_ s } ) : ~P X --> C ) |\n| 3 | 1 | #P_mrcfval | |- ( C e. ( Moore ` X ) -> F = ( x e. ~P X |-> |^| { s e. C | x C_ s } ) ) |\n| 4 | 3 | #P_feq1d | |- ( C e. ( Moore ` X ) -> ( F : ~P X --> C <-> ( x e. ~P X |-> |^| { s e. C | x C_ s } ) : ~P X --> C ) ) |\n| 5 | 2, 4 | #P_mpbird | |- ( C e. ( Moore ` X ) -> F : ~P X --> C ) |",
+  "conclusion" : "#P_mrcf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vs", "#T_vx", "#T_cF", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cC", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cX", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_vs", "#T_crab--4", "#T_wf--1", "#T_cpw", "#T_cX", "#T_wf--2", "#T_cC", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cX", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_vs", "#T_crab--4", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wf--1", "#T_cpw", "#T_cX", "#T_wf--2", "#T_cC", "#T_wb", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cX", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_vs", "#T_crab--4", "#T_wf--1", "#T_cpw", "#T_cX", "#T_wf--2", "#T_cC", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wf--1", "#T_cpw", "#T_cX", "#T_wf--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mrcflem", "#P_feq1d", "#P_mrcfval", "#P_mpbird" ]
+}

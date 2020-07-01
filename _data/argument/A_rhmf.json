@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rhmf on Metamath](http://us.metamath.org/mpegif/rhmf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rhmf.b | |- B = ( Base ` R ) |\n| 2 |  | rhmf.c | |- C = ( Base ` S ) |\n| 3 |  | #P_rhmghm | |- ( F e. ( R RingHom S ) -> F e. ( R GrpHom S ) ) |\n| 4 | 1, 2 | #P_ghmf | |- ( F e. ( R GrpHom S ) -> F : B --> C ) |\n| 5 | 3, 4 | #P_syl | |- ( F e. ( R RingHom S ) -> F : B --> C ) |",
+  "conclusion" : "#P_rhmf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crh", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_cghm", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_cghm", "#T_cS", "#T_wi", "#T_cF", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cC", "#T_cF", "#T_wcel", "#T_cR", "#T_crh", "#T_cS", "#T_wi", "#T_cF", "#T_wf--1", "#T_cB", "#T_wf--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ghmf", "#P_rhmghm", "#P_syl" ]
+}

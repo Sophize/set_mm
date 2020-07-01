@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r1suc on Metamath](http://us.metamath.org/mpegif/r1suc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r1sucg | |- ( A e. dom R1 -> ( R1 ` suc A ) = ~P ( R1 ` A ) ) |\n| 2 |  | #P_r1fnon | |- R1 Fn On |\n| 3 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 4 | 2, 3 | #P_ax-mp | |- dom R1 = On |\n| 5 | 4 | #P_eqcomi | |- On = dom R1 |\n| 6 | 1, 5 | #P_eleq2s | |- ( A e. On -> ( R1 ` suc A ) = ~P ( R1 ` A ) ) |",
+  "conclusion" : "#P_r1suc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_cr1", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cpw", "#T_cr1", "#T_cfv", "#T_cA.wceq", "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_con0", "#T_wceq", "#T_cdm", "#T_cr1", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cr1", "#T_cfv", "#T_csuc", "#T_cA", "#T_wceq", "#T_cpw", "#T_cr1", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eleq2s", "#P_fndm", "#P_r1fnon", "#P_r1sucg", "#P_eqcomi" ]
+}

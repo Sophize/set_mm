@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dm0 on Metamath](http://us.metamath.org/mpegif/dm0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eq0 | |- ( dom (/) = (/) <-> A. x -. x e. dom (/) ) |\n| 2 |  | #P_noel | |- -. <. x , y >. e. (/) |\n| 3 | 2 | #P_nex | |- -. E. y <. x , y >. e. (/) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 | 4 | #P_eldm2 | |- ( x e. dom (/) <-> E. y <. x , y >. e. (/) ) |\n| 6 | 3, 5 | #P_mtbir | |- -. x e. dom (/) |\n| 7 | 1, 6 | #P_mpgbir | |- dom (/) = (/) |",
+  "conclusion" : "#P_dm0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_c0", "#T_wn", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_wn", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_c0", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_c0", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nex", "#P_noel", "#P_eldm2", "#P_vex", "#P_mtbir", "#P_mpgbir", "#P_eq0" ]
+}

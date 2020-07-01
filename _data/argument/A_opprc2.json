@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opprc2 on Metamath](http://us.metamath.org/mpegif/opprc2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( A e. _V /\\ B e. _V ) -> B e. _V ) |\n| 2 | 1 | #P_con3i | |- ( -. B e. _V -> -. ( A e. _V /\\ B e. _V ) ) |\n| 3 |  | #P_opprc | |- ( -. ( A e. _V /\\ B e. _V ) -> <. A , B >. = (/) ) |\n| 4 | 2, 3 | #P_syl | |- ( -. B e. _V -> <. A , B >. = (/) ) |",
+  "conclusion" : "#P_opprc2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_c0", "#T_wn", "#T_cB", "#T_wcel", "#T_cvv", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opprc", "#P_con3i", "#P_syl", "#P_simpr" ]
+}

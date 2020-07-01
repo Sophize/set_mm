@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovmpt2df on Metamath](http://us.metamath.org/mpegif/ovmpt2df.html)"
+  } ],
+  "names" : [ "ovmpt2df" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cR", "#T_wi", "#T_wps", "#T_wnfc", "#T_vx", "#T_cF", "#T_wnf", "#T_vx", "#T_wps", "#T_wnfc", "#T_vy", "#T_cF", "#T_wnf", "#T_vy", "#T_wps", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cC", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cD", "#T_cmpt2--4", "#T_cR", "#T_wi", "#T_wps", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Alternate deduction version of ~ ovmpt2 , suitable for iteration. (Contributed by Mario Carneiro, 7-Jan-2017.) ",
+  "statement" : "ovmpt2df.1 $e |- ( ph -> A e. C ) $.\novmpt2df.2 $e |- ( ( ph /\\ x = A ) -> B e. D ) $.\novmpt2df.3 $e |- ( ( ph /\\ ( x = A /\\ y = B ) ) -> R e. V ) $.\novmpt2df.4 $e |- ( ( ph /\\ ( x = A /\\ y = B ) ) -> ( ( A F B ) = R -> ps ) ) $.\novmpt2df.5 $e |- F/_ x F $.\novmpt2df.6 $e |- F/ x ps $.\novmpt2df.7 $e |- F/_ y F $.\novmpt2df.8 $e |- F/ y ps $.\novmpt2df $p |- ( ph -> ( F = ( x e. C , y e. D |-> R ) -> ps ) ) $.\n$d A x y $.\n$d B y $.\n$d ph x y $."
+}

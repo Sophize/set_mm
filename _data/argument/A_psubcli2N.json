@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psubcli2N on Metamath](http://us.metamath.org/mpegif/psubcli2N.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psubcli2.p | |- ._|_ = ( _|_P ` K ) |\n| 2 |  | psubcli2.c | |- C = ( PSubCl ` K ) |\n| 3 |  | #P_eqid | |- ( Atoms ` K ) = ( Atoms ` K ) |\n| 4 | 3, 1, 2 | #P_ispsubclN | |- ( K e. D -> ( X e. C <-> ( X C_ ( Atoms ` K ) /\\ ( ._|_ ` ( ._|_ ` X ) ) = X ) ) ) |\n| 5 | 4 | #P_simplbda | |- ( ( K e. D /\\ X e. C ) -> ( ._|_ ` ( ._|_ ` X ) ) = X ) |",
+  "conclusion" : "#P_psubcli2N",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.pe", "#T_wceq", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cC", "#T_wceq", "#T_cpscN", "#T_cfv", "#T_cK", "#T_catm", "#T_cfv", "#T_cK", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cD", "#T_wi", "#T_cX", "#T_wcel", "#T_cC", "#T_wb", "#T_cX", "#T_wss", "#T_catm", "#T_cfv", "#T_cK", "#T_wa", "#T_c.pe", "#T_cfv", "#T_c.pe", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cK", "#T_wcel", "#T_cD", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_c.pe", "#T_cfv", "#T_c.pe", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbda", "#P_ispsubclN" ]
+}

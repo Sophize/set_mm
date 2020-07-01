@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofexg on Metamath](http://us.metamath.org/mpegif/ofexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf g x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-of | |- oF R = ( f e. _V , g e. _V |-> ( x e. ( dom f i^i dom g ) |-> ( ( f ` x ) R ( g ` x ) ) ) ) |\n| 2 | 1 | #P_mpt2fun | |- Fun oF R |\n| 3 |  | #P_resfunexg | |- ( ( Fun oF R /\\ A e. V ) -> ( oF R |` A ) e. _V ) |\n| 4 | 2, 3 | #P_mpan | |- ( A e. V -> ( oF R |` A ) e. _V ) |",
+  "conclusion" : "#P_ofexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_vg", "#T_vx", "#T_cof", "#T_cR", "#T_wceq", "#T_cbvex4v.vf", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_cbvex4v.vg", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx.wal", "#T_cmpt--1", "#T_cdm", "#T_cbvex4v.vf", "#T_cin", "#T_cdm", "#T_cbvex4v.vg", "#T_cmpt--2", "#T_cbvex4v.vf", "#T_cfv", "#T_vx.wal", "#T_cR", "#T_cbvex4v.vg", "#T_cfv", "#T_vx.wal", "#T_wfun", "#T_cof", "#T_cR", "#T_wfun", "#T_cof", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cof", "#T_cR", "#T_cres", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cof", "#T_cR", "#T_cres", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpt2fun", "#P_resfunexg", "#P_df-of", "#P_mpan" ]
+}

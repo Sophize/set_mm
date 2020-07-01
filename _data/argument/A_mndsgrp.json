@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mndsgrp on Metamath](http://us.metamath.org/mpegif/mndsgrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ne x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 2 |  | #P_eqid | |- ( +g ` G ) = ( +g ` G ) |\n| 3 | 1, 2 | #P_ismnddef | |- ( G e. Mnd <-> ( G e. SGrp /\\ E. e e. ( Base ` G ) A. x e. ( Base ` G ) ( ( e ( +g ` G ) x ) = x /\\ ( x ( +g ` G ) e ) = x ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( G e. Mnd -> G e. SGrp ) |",
+  "conclusion" : "#P_mndsgrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ve", "#T_vx", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wb", "#T_cG", "#T_wcel", "#T_csgrp", "#T_wa", "#T_wrex--1", "#T_ve", "#T_wrex--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_ve", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cG", "#T_ve", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cG", "#T_wcel", "#T_csgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_ismnddef" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fundmeng on Metamath](http://us.metamath.org/mpegif/fundmeng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funeq | |- ( x = F -> ( Fun x <-> Fun F ) ) |\n| 2 |  | #P_dmeq | |- ( x = F -> dom x = dom F ) |\n| 3 |  | #P_id | |- ( x = F -> x = F ) |\n| 4 | 2, 3 | #P_breq12d | |- ( x = F -> ( dom x ~~ x <-> dom F ~~ F ) ) |\n| 5 | 1, 4 | #P_imbi12d | |- ( x = F -> ( ( Fun x -> dom x ~~ x ) <-> ( Fun F -> dom F ~~ F ) ) ) |\n| 6 |  | #P_vex | |- x e. _V |\n| 7 | 6 | #P_fundmen | |- ( Fun x -> dom x ~~ x ) |\n| 8 | 5, 7 | #P_vtoclg | |- ( F e. V -> ( Fun F -> dom F ~~ F ) ) |\n| 9 | 8 | #P_imp | |- ( ( F e. V /\\ Fun F ) -> dom F ~~ F ) |",
+  "conclusion" : "#P_fundmeng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_wi", "#T_wfun", "#T_vx.wal", "#T_wb", "#T_wfun", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_wceq", "#T_cdm", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_cen", "#T_vx.wal", "#T_wb", "#T_cdm", "#T_cF", "#T_cen", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_wi", "#T_wfun", "#T_vx.wal", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_cen", "#T_vx.wal", "#T_wb", "#T_wfun", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_cen", "#T_cF", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wfun", "#T_vx.wal", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_cen", "#T_vx.wal", "#T_cF", "#T_wcel", "#T_cV", "#T_wi", "#T_wfun", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_cen", "#T_cF", "#T_cF", "#T_wcel", "#T_cV", "#T_wa", "#T_wfun", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_cen", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dmeq", "#P_fundmen", "#P_vtoclg", "#P_funeq", "#P_imbi12d", "#P_imp", "#P_vex", "#P_id", "#P_breq12d" ]
+}

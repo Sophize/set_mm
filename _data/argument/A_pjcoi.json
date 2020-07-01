@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjcoi on Metamath](http://us.metamath.org/mpegif/pjcoi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjco.1 | |- G e. CH |\n| 2 |  | pjco.2 | |- H e. CH |\n| 3 | 1 | #P_pjfi | |- ( projh ` G ) : ~H --> ~H |\n| 4 | 2 | #P_pjfi | |- ( projh ` H ) : ~H --> ~H |\n| 5 | 3, 4 | #P_hocoi | |- ( A e. ~H -> ( ( ( projh ` G ) o. ( projh ` H ) ) ` A ) = ( ( projh ` G ) ` ( ( projh ` H ) ` A ) ) ) |",
+  "conclusion" : "#P_pjcoi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cch", "#T_cH", "#T_wcel", "#T_cch", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hocoi", "#P_pjfi" ]
+}

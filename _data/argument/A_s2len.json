@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s2len on Metamath](http://us.metamath.org/mpegif/s2len.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-s2 | |- <\" A B \"> = ( <\" A \"> concat <\" B \"> ) |\n| 2 |  | #P_s1cli | |- <\" A \"> e. Word _V |\n| 3 |  | #P_s1len | |- ( # ` <\" A \"> ) = 1 |\n| 4 |  | #P_1p1e2 | |- ( 1 + 1 ) = 2 |\n| 5 | 1, 2, 3, 4 | #P_cats1len | |- ( # ` <\" A B \"> ) = 2 |",
+  "conclusion" : "#P_s2len",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs2--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cs2--2", "#T_wceq", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_cconcat", "#T_cs1--1", "#T_cB.wceq", "#T_cs1--2", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_chash", "#T_cfv", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_c1", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_chash", "#T_cfv", "#T_cs2--1", "#T_cA", "#T_cB", "#T_cs2--2", "#T_wceq", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-s2", "#P_s1len", "#P_1p1e2", "#P_s1cli", "#P_cats1len" ]
+}

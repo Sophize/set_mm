@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsum1 on Metamath](http://us.metamath.org/mpegif/fsum1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fsum1.1 | |- ( k = M -> A = B ) |\n| 2 |  | #P_fzsn | |- ( M e. ZZ -> ( M ... M ) = { M } ) |\n| 3 | 2 | #P_adantr | |- ( ( M e. ZZ /\\ B e. CC ) -> ( M ... M ) = { M } ) |\n| 4 | 3 | #P_sumeq1d | |- ( ( M e. ZZ /\\ B e. CC ) -> sum_ k e. ( M ... M ) A = sum_ k e. { M } A ) |\n| 5 | 1 | #P_sumsn | |- ( ( M e. ZZ /\\ B e. CC ) -> sum_ k e. { M } A = B ) |\n| 6 | 4, 5 | #P_eqtrd | |- ( ( M e. ZZ /\\ B e. CC ) -> sum_ k e. ( M ... M ) A = B ) |",
+  "conclusion" : "#P_fsum1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfz", "#T_cM", "#T_wceq", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cM", "#T_cfz", "#T_cM", "#T_wceq", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cM", "#T_cA.wceq", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cA.wceq", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cc", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cM", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_sumsn", "#P_sumeq1d", "#P_fzsn", "#P_adantr" ]
+}

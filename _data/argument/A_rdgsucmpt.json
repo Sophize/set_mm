@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rdgsucmpt on Metamath](http://us.metamath.org/mpegif/rdgsucmpt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rdgsucmpt.1 | |- F = rec ( ( x e. _V |-> C ) , A ) |\n| 2 |  | rdgsucmpt.2 | |- ( x = ( F ` B ) -> C = D ) |\n| 3 |  | #P_nfcv | |- F/_ x A |\n| 4 |  | #P_nfcv | |- F/_ x B |\n| 5 |  | #P_nfcv | |- F/_ x D |\n| 6 | 3, 4, 5, 1, 2 | #P_rdgsucmptf | |- ( ( B e. On /\\ D e. V ) -> ( F ` suc B ) = D ) |",
+  "conclusion" : "#P_rdgsucmpt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cC", "#T_crdg--2", "#T_cA", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_cD", "#T_cB", "#T_wcel", "#T_con0", "#T_wa", "#T_cD", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfv", "#T_csuc", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_rdgsucmptf" ]
+}

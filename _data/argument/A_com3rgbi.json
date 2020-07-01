@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See com3rgbi on Metamath](http://us.metamath.org/mpegif/com3rgbi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.04 | |- ( ( ph -> ( ps -> ( ch -> th ) ) ) -> ( ps -> ( ph -> ( ch -> th ) ) ) ) |\n| 2 | 1 | #P_com24 | |- ( ( ph -> ( ps -> ( ch -> th ) ) ) -> ( ch -> ( ph -> ( ps -> th ) ) ) ) |\n| 3 |  | #P_pm2.04 | |- ( ( ch -> ( ph -> ( ps -> th ) ) ) -> ( ph -> ( ch -> ( ps -> th ) ) ) ) |\n| 4 | 3 | #P_com34 | |- ( ( ch -> ( ph -> ( ps -> th ) ) ) -> ( ph -> ( ps -> ( ch -> th ) ) ) ) |\n| 5 | 2, 4 | #P_impbii | |- ( ( ph -> ( ps -> ( ch -> th ) ) ) <-> ( ch -> ( ph -> ( ps -> th ) ) ) ) |",
+  "conclusion" : "#P_com3rgbi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.04", "#P_impbii", "#P_com24", "#P_com34" ]
+}

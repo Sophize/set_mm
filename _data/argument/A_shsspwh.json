@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shsspwh on Metamath](http://us.metamath.org/mpegif/shsspwh.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pwuni | |- SH C_ ~P U. SH |\n| 2 |  | #P_helsh | |- ~H e. SH |\n| 3 |  | #P_shss | |- ( x e. SH -> x C_ ~H ) |\n| 4 | 3 | #P_rgen | |- A. x e. SH x C_ ~H |\n| 5 |  | #P_ssunieq | |- ( ( ~H e. SH /\\ A. x e. SH x C_ ~H ) -> ~H = U. SH ) |\n| 6 | 2, 4, 5 | #P_mp2an | |- ~H = U. SH |\n| 7 | 6 | #P_pweqi | |- ~P ~H = ~P U. SH |\n| 8 | 1, 7 | #P_sseqtr4i | |- SH C_ ~P ~H |",
+  "conclusion" : "#P_shsspwh",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_csh", "#T_wss", "#T_cpw", "#T_cuni", "#T_csh", "#T_chil", "#T_wcel", "#T_csh", "#T_vx.wal", "#T_wcel", "#T_csh", "#T_wi", "#T_vx.wal", "#T_wss", "#T_chil", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_csh", "#T_vx.wal", "#T_wss", "#T_chil", "#T_chil", "#T_wcel", "#T_csh", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_csh", "#T_vx.wal", "#T_wss", "#T_chil", "#T_wi", "#T_chil", "#T_wceq", "#T_cuni", "#T_csh", "#T_chil", "#T_wceq", "#T_cuni", "#T_csh", "#T_cpw", "#T_chil", "#T_wceq", "#T_cpw", "#T_cuni", "#T_csh", "#T_csh", "#T_wss", "#T_cpw", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssunieq", "#P_mp2an", "#P_helsh", "#P_sseqtr4i", "#P_shss", "#P_pwuni", "#P_rgen", "#P_pweqi" ]
+}

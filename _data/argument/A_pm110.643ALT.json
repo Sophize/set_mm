@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm110.643ALT on Metamath](http://us.metamath.org/mpegif/pm110.643ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1on | |- 1o e. On |\n| 2 | 1 | #P_onordi | |- Ord 1o |\n| 3 |  | #P_ordirr | |- ( Ord 1o -> -. 1o e. 1o ) |\n| 4 | 2, 3 | #P_ax-mp | |- -. 1o e. 1o |\n| 5 |  | #P_cda1en | |- ( ( 1o e. On /\\ -. 1o e. 1o ) -> ( 1o +c 1o ) ~~ suc 1o ) |\n| 6 | 1, 4, 5 | #P_mp2an | |- ( 1o +c 1o ) ~~ suc 1o |\n| 7 |  | #P_df-2o | |- 2o = suc 1o |\n| 8 | 6, 7 | #P_breqtrri | |- ( 1o +c 1o ) ~~ 2o |\n\\\n Alternate proof of ~ pm110.643 .  (Contributed by Mario Carneiro, 29-Apr-2015.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_pm110.643",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1o", "#T_wcel", "#T_con0", "#T_word", "#T_c1o", "#T_word", "#T_c1o", "#T_wi", "#T_wn", "#T_c1o", "#T_wcel", "#T_c1o", "#T_wn", "#T_c1o", "#T_wcel", "#T_c1o", "#T_c1o", "#T_wcel", "#T_con0", "#T_wa", "#T_wn", "#T_c1o", "#T_wcel", "#T_c1o", "#T_wi", "#T_c1o", "#T_ccda", "#T_c1o", "#T_cen", "#T_csuc", "#T_c1o", "#T_c1o", "#T_ccda", "#T_c1o", "#T_cen", "#T_csuc", "#T_c1o", "#T_c2o", "#T_wceq", "#T_csuc", "#T_c1o", "#T_c1o", "#T_ccda", "#T_c1o", "#T_cen", "#T_c2o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_1on", "#P_ordirr", "#P_cda1en", "#P_onordi", "#P_breqtrri", "#P_df-2o" ]
+}

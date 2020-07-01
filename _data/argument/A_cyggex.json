@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cyggex on Metamath](http://us.metamath.org/mpegif/cyggex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cygctb.1 | |- B = ( Base ` G ) |\n| 2 |  | cyggex.o | |- E = ( gEx ` G ) |\n| 3 | 1, 2 | #P_cyggex2 | |- ( G e. CycGrp -> E = if ( B e. Fin , ( # ` B ) , 0 ) ) |\n| 4 |  | #P_iftrue | |- ( B e. Fin -> if ( B e. Fin , ( # ` B ) , 0 ) = ( # ` B ) ) |\n| 5 | 3, 4 | #P_sylan9eq | |- ( ( G e. CycGrp /\\ B e. Fin ) -> E = ( # ` B ) ) |",
+  "conclusion" : "#P_cyggex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cE", "#T_wceq", "#T_cgex", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccyg", "#T_wi", "#T_cE", "#T_wceq", "#T_cif--1", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cif--2", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_cif--3", "#T_cc0", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cif--1", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cif--2", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_cif--3", "#T_cc0", "#T_wceq", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_ccyg", "#T_wa", "#T_cB", "#T_wcel", "#T_cfn", "#T_wi", "#T_cE", "#T_wceq", "#T_chash", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iftrue", "#P_cyggex2", "#P_sylan9eq" ]
+}

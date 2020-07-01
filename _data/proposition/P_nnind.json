@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnind on Metamath](http://us.metamath.org/mpegif/nnind.html)"
+  } ],
+  "names" : [ "nnind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cn", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Mathematical Induction (inference schema).  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  See ~ nnaddcl for an example of its use.  See ~ nn0ind for induction on nonnegative integers and ~ uzind , ~ uzind4 for induction on an arbitrary upper set of integers.  See ~ indstr for strong induction.  See also ~ nnindALT .  This is an alternative for Metamath 100 proof #74.  (Contributed by NM, 10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) \n\n---\n\n Principle of Mathematical Induction (inference schema).  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  See ~ nnaddcl for an example of its use.  This is an alternative for Metamath 100 proof #74.  (Contributed by NM, 10-Jan-1997.)  (Revised by Mario Carneiro, 16-Jun-2013.) ",
+  "statement" : "nnind.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.\nnnind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nnnind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nnnind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nnnind.5 $e |- ps $.\nnnind.6 $e |- ( y e. NN -> ( ch -> th ) ) $.\nnnind $p |- ( A e. NN -> ta ) $.\n$d A x $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y $."
+}

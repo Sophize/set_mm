@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rmov on Metamath](http://us.metamath.org/mpegif/rmov.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rmo | |- ( E* x e. _V ph <-> E* x ( x e. _V /\\ ph ) ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 | 2 | #P_biantrur | |- ( ph <-> ( x e. _V /\\ ph ) ) |\n| 4 | 3 | #P_mobii | |- ( E* x ph <-> E* x ( x e. _V /\\ ph ) ) |\n| 5 | 1, 4 | #P_bitr4i | |- ( E* x e. _V ph <-> E* x ph ) |",
+  "conclusion" : "#P_rmov",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cvv", "#T_wph", "#T_wb", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wmo", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_wrmo--1", "#T_vx", "#T_wrmo--2", "#T_cvv", "#T_wph", "#T_wb", "#T_wmo", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mobii", "#P_biantrur", "#P_df-rmo", "#P_vex", "#P_bitr4i" ]
+}

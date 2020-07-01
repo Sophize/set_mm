@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wl-sb8t on Metamath](http://us.metamath.org/mpegif/wl-sb8t.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfa1 | |- F/ x A. x F/ y ph |\n| 2 |  | #P_nfnf1 | |- F/ y F/ y ph |\n| 3 | 2 | #P_nfal | |- F/ y A. x F/ y ph |\n| 4 |  | #P_sp | |- ( A. x F/ y ph -> F/ y ph ) |\n| 5 |  | #P_wl-nfs1t | |- ( F/ y ph -> F/ x [ y / x ] ph ) |\n| 6 | 5 | #P_sps | |- ( A. x F/ y ph -> F/ x [ y / x ] ph ) |\n| 7 |  | #P_sbequ12 | |- ( x = y -> ( ph <-> [ y / x ] ph ) ) |\n| 8 | 7 | #P_a1i | |- ( A. x F/ y ph -> ( x = y -> ( ph <-> [ y / x ] ph ) ) ) |\n| 9 | 1, 3, 4, 6, 8 | #P_cbv2 | |- ( A. x F/ y ph -> ( A. x ph <-> A. y [ y / x ] ph ) ) |",
+  "conclusion" : "#P_wl-sb8t",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wnf", "#T_vy.tru", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wnf", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vx", "#T_wnf", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vy", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbequ12", "#P_nfa1", "#P_nfnf1", "#P_nfal", "#P_sps", "#P_wl-nfs1t", "#P_a1i", "#P_cbv2", "#P_sp" ]
+}

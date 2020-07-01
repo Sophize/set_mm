@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspsnel3 on Metamath](http://us.metamath.org/mpegif/lspsnel3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspsnss.s | |- S = ( LSubSp ` W ) |\n| 2 |  | lspsnss.n | |- N = ( LSpan ` W ) |\n| 3 |  | lspsnel3.w | |- ( ph -> W e. LMod ) |\n| 4 |  | lspsnel3.u | |- ( ph -> U e. S ) |\n| 5 |  | lspsnel3.x | |- ( ph -> X e. U ) |\n| 6 |  | lspsnel3.y | |- ( ph -> Y e. ( N ` { X } ) ) |\n| 7 | 1, 2 | #P_lspsnss | |- ( ( W e. LMod /\\ U e. S /\\ X e. U ) -> ( N ` { X } ) C_ U ) |\n| 8 | 3, 4, 5, 7 | #P_syl3anc | |- ( ph -> ( N ` { X } ) C_ U ) |\n| 9 | 8, 6 | #P_sseldd | |- ( ph -> Y e. U ) |",
+  "conclusion" : "#P_lspsnel3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cU", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cU", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseldd", "#P_lspsnss", "#P_syl3anc" ]
+}

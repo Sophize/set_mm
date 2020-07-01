@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbn2 on Metamath](http://us.metamath.org/mpegif/nbn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm5.21im | |- ( -. ph -> ( -. ps -> ( ph <-> ps ) ) ) |\n| 2 |  | #P_bi2 | |- ( ( ph <-> ps ) -> ( ps -> ph ) ) |\n| 3 |  | #P_mtt | |- ( -. ph -> ( -. ps <-> ( ps -> ph ) ) ) |\n| 4 | 2, 3 | #P_syl5ibr | |- ( -. ph -> ( ( ph <-> ps ) -> -. ps ) ) |\n| 5 | 1, 4 | #P_impbid | |- ( -. ph -> ( -. ps <-> ( ph <-> ps ) ) ) |",
+  "conclusion" : "#P_nbn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.21im", "#P_bi2", "#P_mtt", "#P_syl5ibr", "#P_impbid" ]
+}

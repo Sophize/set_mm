@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpnei on Metamath](http://us.metamath.org/mpegif/tpnei.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tpnei.1 | |- X = U. J |\n| 2 | 1 | #P_topopn | |- ( J e. Top -> X e. J ) |\n| 3 |  | #P_opnneiss | |- ( ( J e. Top /\\ X e. J /\\ S C_ X ) -> X e. ( ( nei ` J ) ` S ) ) |\n| 4 | 3 | #P_3exp | |- ( J e. Top -> ( X e. J -> ( S C_ X -> X e. ( ( nei ` J ) ` S ) ) ) ) |\n| 5 | 2, 4 | #P_mpd | |- ( J e. Top -> ( S C_ X -> X e. ( ( nei ` J ) ` S ) ) ) |\n| 6 |  | #P_ssnei | |- ( ( J e. Top /\\ X e. ( ( nei ` J ) ` S ) ) -> S C_ X ) |\n| 7 | 6 | #P_ex | |- ( J e. Top -> ( X e. ( ( nei ` J ) ` S ) -> S C_ X ) ) |\n| 8 | 5, 7 | #P_impbid | |- ( J e. Top -> ( S C_ X <-> X e. ( ( nei ` J ) ` S ) ) ) |",
+  "conclusion" : "#P_tpnei",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cJ", "#T_w3a--2", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_cJ", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wb", "#T_cX", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_ssnei", "#P_topopn", "#P_ex", "#P_impbid", "#P_opnneiss", "#P_3exp" ]
+}

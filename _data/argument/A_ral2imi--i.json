@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ral2imi on Metamath](http://us.metamath.org/mpegif/ral2imi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ral2imi.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 | 1 | #P_ralimi | |- ( A. x e. A ph -> A. x e. A ( ps -> ch ) ) |\n| 3 |  | #P_ralim | |- ( A. x e. A ( ps -> ch ) -> ( A. x e. A ps -> A. x e. A ch ) ) |\n| 4 | 2, 3 | #P_syl | |- ( A. x e. A ph -> ( A. x e. A ps -> A. x e. A ch ) ) |",
+  "conclusion" : "#P_ral2imi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wch", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wps", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ralimi", "#P_ralim", "#P_syl" ]
+}

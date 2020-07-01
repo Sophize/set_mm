@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r10 on Metamath](http://us.metamath.org/mpegif/r10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-r1 | |- R1 = rec ( ( x e. _V |-> ~P x ) , (/) ) |\n| 2 | 1 | #P_fveq1i | |- ( R1 ` (/) ) = ( rec ( ( x e. _V |-> ~P x ) , (/) ) ` (/) ) |\n| 3 |  | #P_0ex | |- (/) e. _V |\n| 4 | 3 | #P_rdg0 | |- ( rec ( ( x e. _V |-> ~P x ) , (/) ) ` (/) ) = (/) |\n| 5 | 2, 4 | #P_eqtri | |- ( R1 ` (/) ) = (/) |",
+  "conclusion" : "#P_r10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cr1", "#T_wceq", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cpw", "#T_vx.wal", "#T_crdg--2", "#T_c0", "#T_cr1", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cpw", "#T_vx.wal", "#T_crdg--2", "#T_c0", "#T_cfv", "#T_c0", "#T_c0", "#T_wcel", "#T_cvv", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cpw", "#T_vx.wal", "#T_crdg--2", "#T_c0", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_cr1", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-r1", "#P_rdg0", "#P_eqtri", "#P_fveq1i", "#P_0ex" ]
+}

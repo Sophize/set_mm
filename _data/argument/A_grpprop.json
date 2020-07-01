@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpprop on Metamath](http://us.metamath.org/mpegif/grpprop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpprop.b | |- ( Base ` K ) = ( Base ` L ) |\n| 2 |  | grpprop.p | |- ( +g ` K ) = ( +g ` L ) |\n| 3 |  | #P_eqidd | |- ( T. -> ( Base ` K ) = ( Base ` K ) ) |\n| 4 | 1 | #P_a1i | |- ( T. -> ( Base ` K ) = ( Base ` L ) ) |\n| 5 | 2 | #P_oveqi | |- ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) |\n| 6 | 5 | #P_a1i | |- ( ( T. /\\ ( x e. ( Base ` K ) /\\ y e. ( Base ` K ) ) ) -> ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) |\n| 7 | 3, 4, 6 | #P_grppropd | |- ( T. -> ( K e. Grp <-> L e. Grp ) ) |\n| 8 | 7 | #P_trud | |- ( K e. Grp <-> L e. Grp ) |",
+  "conclusion" : "#P_grpprop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_cplusg", "#T_cfv", "#T_cK", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cL", "#T_wtru", "#T_wi", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_wtru", "#T_wi", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cK", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cL", "#T_vy.tru", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cK", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cK", "#T_wi", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cK", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cL", "#T_vy.tru", "#T_wtru", "#T_wi", "#T_cK", "#T_wcel", "#T_cgrp", "#T_wb", "#T_cL", "#T_wcel", "#T_cgrp", "#T_cK", "#T_wcel", "#T_cgrp", "#T_wb", "#T_cL", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_grppropd", "#P_eqidd", "#P_a1i", "#P_oveqi" ]
+}

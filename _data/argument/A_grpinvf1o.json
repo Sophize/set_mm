@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpinvf1o on Metamath](http://us.metamath.org/mpegif/grpinvf1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpinvinv.b | |- B = ( Base ` G ) |\n| 2 |  | grpinvinv.n | |- N = ( invg ` G ) |\n| 3 |  | grpinv11.g | |- ( ph -> G e. Grp ) |\n| 4 | 1, 2 | #P_grpinvf | |- ( G e. Grp -> N : B --> B ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> N : B --> B ) |\n| 6 |  | #P_ffn | |- ( N : B --> B -> N Fn B ) |\n| 7 | 5, 6 | #P_syl | |- ( ph -> N Fn B ) |\n| 8 | 1, 2 | #P_grpinvcnv | |- ( G e. Grp -> `' N = N ) |\n| 9 | 3, 8 | #P_syl | |- ( ph -> `' N = N ) |\n| 10 | 9 | #P_fneq1d | |- ( ph -> ( `' N Fn B <-> N Fn B ) ) |\n| 11 | 7, 10 | #P_mpbird | |- ( ph -> `' N Fn B ) |\n| 12 |  | #P_dff1o4 | |- ( N : B -1-1-onto-> B <-> ( N Fn B /\\ `' N Fn B ) ) |\n| 13 | 7, 11, 12 | #P_sylanbrc | |- ( ph -> N : B -1-1-onto-> B ) |",
+  "conclusion" : "#P_grpinvf1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cN", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cN", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cB.wceq", "#T_cN", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_ccnv", "#T_cN", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_ccnv", "#T_cN", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_ccnv", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_wb", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_ccnv", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_cN", "#T_wf1o--1", "#T_cB.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wb", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_wa", "#T_ccnv", "#T_cN", "#T_wfn", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cN", "#T_wf1o--1", "#T_cB", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpinvcnv", "#P_ffn", "#P_syl", "#P_sylanbrc", "#P_grpinvf", "#P_fneq1d", "#P_dff1o4", "#P_mpbird" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eu5 on Metamath](http://us.metamath.org/mpegif/eu5.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_euex | |- ( E! x ph -> E. x ph ) |\n| 2 |  | #P_eumo | |- ( E! x ph -> E* x ph ) |\n| 3 | 1, 2 | #P_jca | |- ( E! x ph -> ( E. x ph /\\ E* x ph ) ) |\n| 4 |  | #P_df-mo | |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) |\n| 5 | 4 | #P_biimpi | |- ( E* x ph -> ( E. x ph -> E! x ph ) ) |\n| 6 | 5 | #P_imp | |- ( ( E* x ph /\\ E. x ph ) -> E! x ph ) |\n| 7 | 6 | #P_ancoms | |- ( ( E. x ph /\\ E* x ph ) -> E! x ph ) |\n| 8 | 3, 7 | #P_impbii | |- ( E! x ph <-> ( E. x ph /\\ E* x ph ) ) |",
+  "conclusion" : "#P_eu5",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wmo", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_df-mo", "#P_imp", "#P_jca", "#P_biimpi", "#P_eumo", "#P_euex", "#P_ancoms" ]
+}

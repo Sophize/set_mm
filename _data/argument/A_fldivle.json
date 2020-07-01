@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fldivle on Metamath](http://us.metamath.org/mpegif/fldivle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rerpdivcl | |- ( ( K e. RR /\\ L e. RR+ ) -> ( K / L ) e. RR ) |\n| 2 |  | #P_fllelt | |- ( ( K / L ) e. RR -> ( ( |_ ` ( K / L ) ) <_ ( K / L ) /\\ ( K / L ) < ( ( |_ ` ( K / L ) ) + 1 ) ) ) |\n| 3 |  | #P_simpl | |- ( ( ( |_ ` ( K / L ) ) <_ ( K / L ) /\\ ( K / L ) < ( ( |_ ` ( K / L ) ) + 1 ) ) -> ( |_ ` ( K / L ) ) <_ ( K / L ) ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( ( K e. RR /\\ L e. RR+ ) -> ( |_ ` ( K / L ) ) <_ ( K / L ) ) |",
+  "conclusion" : "#P_fldivle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cr", "#T_wa", "#T_cL", "#T_wcel", "#T_crp", "#T_wi", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cr", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL", "#T_wa", "#T_cK", "#T_cdiv", "#T_cL", "#T_clt", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_caddc", "#T_c1", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL", "#T_wa", "#T_cK", "#T_cdiv", "#T_cL", "#T_clt", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_caddc", "#T_c1", "#T_wi", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL", "#T_cK", "#T_wcel", "#T_cr", "#T_wa", "#T_cL", "#T_wcel", "#T_crp", "#T_wi", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3syl", "#P_fllelt", "#P_simpl", "#P_rerpdivcl" ]
+}

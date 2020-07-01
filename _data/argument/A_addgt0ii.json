@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See addgt0ii on Metamath](http://us.metamath.org/mpegif/addgt0ii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt_2.1 | |- A e. RR |\n| 2 |  | lt_2.2 | |- B e. RR |\n| 3 |  | addgt0i.3 | |- 0 < A |\n| 4 |  | addgt0i.4 | |- 0 < B |\n| 5 | 1, 2 | #P_addgt0i | |- ( ( 0 < A /\\ 0 < B ) -> 0 < ( A + B ) ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- 0 < ( A + B ) |",
+  "conclusion" : "#P_addgt0ii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_cA", "#T_cc0", "#T_clt", "#T_cB", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cc0", "#T_clt", "#T_cA", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_addgt0i" ]
+}

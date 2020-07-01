@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See num0h on Metamath](http://us.metamath.org/mpegif/num0h.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | numnncl.1 | |- T e. NN0 |\n| 2 |  | numnncl.2 | |- A e. NN0 |\n| 3 | 1 | #P_nn0cni | |- T e. CC |\n| 4 | 3 | #P_mul01i | |- ( T x. 0 ) = 0 |\n| 5 | 4 | #P_oveq1i | |- ( ( T x. 0 ) + A ) = ( 0 + A ) |\n| 6 | 2 | #P_nn0cni | |- A e. CC |\n| 7 | 6 | #P_addid2i | |- ( 0 + A ) = A |\n| 8 | 5, 7 | #P_eqtr2i | |- A = ( ( T x. 0 ) + A ) |",
+  "conclusion" : "#P_num0h",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_cn0", "#T_cA", "#T_wcel", "#T_cn0", "#T_cT", "#T_wcel", "#T_cc", "#T_cT", "#T_cmul", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cT", "#T_cmul", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wceq", "#T_cT", "#T_cmul", "#T_cc0", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addid2i", "#P_eqtr2i", "#P_nn0cni", "#P_oveq1i", "#P_mul01i" ]
+}

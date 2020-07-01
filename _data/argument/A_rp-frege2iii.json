@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rp-frege2iii on Metamath](http://us.metamath.org/mpegif/rp-frege2iii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rp-a2iii.1 | |- ps |\n| 2 |  | rp-a2iii.2 | |- ( ps -> ch ) |\n| 3 |  | rp-a2iii.3 | |- ( ps -> ( ch -> ph ) ) |\n| 4 |  | #P_ax-frege2 | |- ( ( ps -> ( ch -> ph ) ) -> ( ( ps -> ch ) -> ( ps -> ph ) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ( ps -> ch ) -> ( ps -> ph ) ) |\n| 6 | 2, 5 | #P_ax-mp | |- ( ps -> ph ) |\n| 7 | 1, 6 | #P_ax-mp | |- ph |",
+  "conclusion" : "#P_rp-frege2iii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wps", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wph", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ax-frege2" ]
+}

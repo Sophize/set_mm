@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See assraddsubd on Metamath](http://us.metamath.org/mpegif/assraddsubd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | assraddsubd.1 | |- ( ph -> B e. CC ) |\n| 2 |  | assraddsubd.2 | |- ( ph -> C e. CC ) |\n| 3 |  | assraddsubd.3 | |- ( ph -> D e. CC ) |\n| 4 |  | assraddsubd.4 | |- ( ph -> A = ( ( B + C ) - D ) ) |\n| 5 | 1, 2, 3 | #P_addsubassd | |- ( ph -> ( ( B + C ) - D ) = ( B + ( C - D ) ) ) |\n| 6 | 4, 5 | #P_eqtrd | |- ( ph -> A = ( B + ( C - D ) ) ) |",
+  "conclusion" : "#P_assraddsubd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_caddc", "#T_cC", "#T_cmin", "#T_cD", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_cmin", "#T_cD", "#T_wceq", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_cmin", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_caddc", "#T_cC", "#T_cmin", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addsubassd", "#P_eqtrd" ]
+}

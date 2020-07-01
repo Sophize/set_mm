@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See evl1gsumaddval on Metamath](http://us.metamath.org/mpegif/evl1gsumaddval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | evl1gsumadd.q | |- Q = ( eval1 ` R ) |\n| 2 |  | evl1gsumadd.k | |- K = ( Base ` R ) |\n| 3 |  | evl1gsumadd.w | |- W = ( Poly1 ` R ) |\n| 4 |  | evl1gsumadd.p | |- P = ( R ^s K ) |\n| 5 |  | evl1gsumadd.b | |- B = ( Base ` W ) |\n| 6 |  | evl1gsumadd.r | |- ( ph -> R e. CRing ) |\n| 7 |  | evl1gsumadd.y | |- ( ( ph /\\ x e. N ) -> Y e. B ) |\n| 8 |  | evl1gsumadd.n | |- ( ph -> N C_ NN0 ) |\n| 9 |  | evl1gsumaddval.f | |- ( ph -> N e. Fin ) |\n| 10 |  | evl1gsumaddval.c | |- ( ph -> C e. K ) |\n| 11 | 7 | #P_ralrimiva | |- ( ph -> A. x e. N Y e. B ) |\n| 12 | 1, 3, 2, 5, 6, 10, 11, 9 | #P_evl1gsumd | |- ( ph -> ( ( Q ` ( W gsum ( x e. N |-> Y ) ) ) ` C ) = ( R gsum ( x e. N |-> ( ( Q ` Y ) ` C ) ) ) ) |",
+  "conclusion" : "#P_evl1gsumaddval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_ce1", "#T_cfv", "#T_cR", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cW", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cP", "#T_wceq", "#T_cR", "#T_cpws", "#T_cK", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cN", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cN", "#T_wss", "#T_cn0", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cK", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cN", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cQ", "#T_cfv", "#T_cW", "#T_cgsu", "#T_vx", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cY", "#T_cfv", "#T_cC", "#T_wceq", "#T_cR", "#T_cgsu", "#T_vx", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cQ", "#T_cfv", "#T_cY", "#T_cfv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_evl1gsumd", "#P_ralrimiva" ]
+}

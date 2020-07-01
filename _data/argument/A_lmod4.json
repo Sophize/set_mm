@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmod4 on Metamath](http://us.metamath.org/mpegif/lmod4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmod4.v | |- V = ( Base ` W ) |\n| 2 |  | lmod4.p | |- .+ = ( +g ` W ) |\n| 3 |  | #P_lmodcmn | |- ( W e. LMod -> W e. CMnd ) |\n| 4 | 1, 2 | #P_cmn4 | |- ( ( W e. CMnd /\\ ( X e. V /\\ Y e. V ) /\\ ( Z e. V /\\ U e. V ) ) -> ( ( X .+ Y ) .+ ( Z .+ U ) ) = ( ( X .+ Z ) .+ ( Y .+ U ) ) ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( W e. LMod /\\ ( X e. V /\\ Y e. V ) /\\ ( Z e. V /\\ U e. V ) ) -> ( ( X .+ Y ) .+ ( Z .+ U ) ) = ( ( X .+ Z ) .+ ( Y .+ U ) ) ) |",
+  "conclusion" : "#P_lmod4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_ccmn", "#T_cW", "#T_wcel", "#T_ccmn", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_wa", "#T_cY", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cV", "#T_wa", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cU", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cU", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_wa", "#T_cY", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cV", "#T_wa", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cU", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lmodcmn", "#P_cmn4", "#P_syl3an1" ]
+}

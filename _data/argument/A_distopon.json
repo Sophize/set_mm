@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See distopon on Metamath](http://us.metamath.org/mpegif/distopon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_distop | |- ( A e. V -> ~P A e. Top ) |\n| 2 |  | #P_unipw | |- U. ~P A = A |\n| 3 | 2 | #P_eqcomi | |- A = U. ~P A |\n| 4 | 3 | #P_a1i | |- ( A e. V -> A = U. ~P A ) |\n| 5 |  | #P_istopon | |- ( ~P A e. ( TopOn ` A ) <-> ( ~P A e. Top /\\ A = U. ~P A ) ) |\n| 6 | 1, 4, 5 | #P_sylanbrc | |- ( A e. V -> ~P A e. ( TopOn ` A ) ) |",
+  "conclusion" : "#P_distopon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_ctop", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cpw", "#T_cA", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_distop", "#P_istopon", "#P_unipw", "#P_sylanbrc", "#P_a1i", "#P_eqcomi" ]
+}

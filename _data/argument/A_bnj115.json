@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj115 on Metamath](http://us.metamath.org/mpegif/bnj115.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj115.1 | |- ( et <-> A. n e. D ( ta -> th ) ) |\n| 2 |  | #P_df-ral | |- ( A. n e. D ( ta -> th ) <-> A. n ( n e. D -> ( ta -> th ) ) ) |\n| 3 |  | #P_impexp | |- ( ( ( n e. D /\\ ta ) -> th ) <-> ( n e. D -> ( ta -> th ) ) ) |\n| 4 | 3 | #P_bicomi | |- ( ( n e. D -> ( ta -> th ) ) <-> ( ( n e. D /\\ ta ) -> th ) ) |\n| 5 | 4 | #P_albii | |- ( A. n ( n e. D -> ( ta -> th ) ) <-> A. n ( ( n e. D /\\ ta ) -> th ) ) |\n| 6 | 1, 2, 5 | #P_3bitri | |- ( et <-> A. n ( ( n e. D /\\ ta ) -> th ) ) |",
+  "conclusion" : "#P_bnj115",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wet", "#T_wb", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cD", "#T_wta", "#T_wi", "#T_wth", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cD", "#T_wta", "#T_wi", "#T_wth", "#T_wb", "#T_wal", "#T_vn", "#T_vn", "#T_wcel", "#T_cD", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_vn", "#T_wcel", "#T_cD", "#T_wa", "#T_wta", "#T_wi", "#T_wth", "#T_wb", "#T_vn", "#T_wcel", "#T_cD", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_vn", "#T_wcel", "#T_cD", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_wb", "#T_vn", "#T_wcel", "#T_cD", "#T_wa", "#T_wta", "#T_wi", "#T_wth", "#T_wal", "#T_vn", "#T_vn", "#T_wcel", "#T_cD", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_wb", "#T_wal", "#T_vn", "#T_vn", "#T_wcel", "#T_cD", "#T_wa", "#T_wta", "#T_wi", "#T_wth", "#T_wet", "#T_wb", "#T_wal", "#T_vn", "#T_vn", "#T_wcel", "#T_cD", "#T_wa", "#T_wta", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albii", "#P_df-ral", "#P_3bitri", "#P_impexp", "#P_bicomi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elpm2 on Metamath](http://us.metamath.org/mpegif/elpm2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elmap.1 | |- A e. _V |\n| 2 |  | elmap.2 | |- B e. _V |\n| 3 |  | #P_elpm2g | |- ( ( A e. _V /\\ B e. _V ) -> ( F e. ( A ^pm B ) <-> ( F : dom F --> A /\\ dom F C_ B ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( F e. ( A ^pm B ) <-> ( F : dom F --> A /\\ dom F C_ B ) ) |",
+  "conclusion" : "#P_elpm2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_cpm", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cA.wceq", "#T_wa", "#T_cdm", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_cF", "#T_wcel", "#T_cA", "#T_cpm", "#T_cB", "#T_wb", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cA", "#T_wa", "#T_cdm", "#T_cF", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_elpm2g" ]
+}

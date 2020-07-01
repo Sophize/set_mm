@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-cbv3tb on Metamath](http://us.metamath.org/mpegif/bj-cbv3tb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_19.9t | |- ( F/ x ps -> ( E. x ps <-> ps ) ) |\n| 2 | 1 | #P_biimpd | |- ( F/ x ps -> ( E. x ps -> ps ) ) |\n| 3 | 2 | #P_alimi | |- ( A. y F/ x ps -> A. y ( E. x ps -> ps ) ) |\n| 4 |  | #P_nfr | |- ( F/ y ph -> ( ph -> A. y ph ) ) |\n| 5 | 4 | #P_alimi | |- ( A. x F/ y ph -> A. x ( ph -> A. y ph ) ) |\n| 6 |  | #P_bj-cbv3ta | |- ( A. x A. y ( x = y -> ( ph -> ps ) ) -> ( ( A. y ( E. x ps -> ps ) /\\ A. x ( ph -> A. y ph ) ) -> ( A. x ph -> A. y ps ) ) ) |\n| 7 | 3, 5, 6 | #P_syl2ani | |- ( A. x A. y ( x = y -> ( ph -> ps ) ) -> ( ( A. y F/ x ps /\\ A. x F/ y ph ) -> ( A. x ph -> A. y ps ) ) ) |",
+  "conclusion" : "#P_bj-cbv3tb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vy", "#T_wnf", "#T_vx", "#T_wps", "#T_wa", "#T_wal", "#T_vx", "#T_wnf", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2ani", "#P_nfr", "#P_alimi", "#P_bj-cbv3ta", "#P_19.9t", "#P_biimpd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltrnlaut on Metamath](http://us.metamath.org/mpegif/ltrnlaut.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltrnlaut.h | |- H = ( LHyp ` K ) |\n| 2 |  | ltrnlaut.i | |- I = ( LAut ` K ) |\n| 3 |  | ltrnlaut.t | |- T = ( ( LTrn ` K ) ` W ) |\n| 4 |  | #P_eqid | |- ( ( LDil ` K ) ` W ) = ( ( LDil ` K ) ` W ) |\n| 5 | 1, 4, 3 | #P_ltrnldil | |- ( ( ( K e. V /\\ W e. H ) /\\ F e. T ) -> F e. ( ( LDil ` K ) ` W ) ) |\n| 6 | 1, 2, 4 | #P_ldillaut | |- ( ( ( K e. V /\\ W e. H ) /\\ F e. ( ( LDil ` K ) ` W ) ) -> F e. I ) |\n| 7 | 5, 6 | #P_syldan | |- ( ( ( K e. V /\\ W e. H ) /\\ F e. T ) -> F e. I ) |",
+  "conclusion" : "#P_ltrnlaut",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cI", "#T_wceq", "#T_claut", "#T_cfv", "#T_cK", "#T_cT", "#T_wceq", "#T_cltrn", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cldil", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wceq", "#T_cldil", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cF", "#T_wcel", "#T_cldil", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cF", "#T_wcel", "#T_cldil", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wi", "#T_cF", "#T_wcel", "#T_cI", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cF", "#T_wcel", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ltrnldil", "#P_ldillaut", "#P_syldan" ]
+}

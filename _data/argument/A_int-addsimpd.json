@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See int-addsimpd on Metamath](http://us.metamath.org/mpegif/int-addsimpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | int-addsimpd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | int-addsimpd.2 | |- ( ph -> A = B ) |\n| 3 | 1 | #P_recnd | |- ( ph -> A e. CC ) |\n| 4 | 3, 2 | #P_subeq0bd | |- ( ph -> ( A - B ) = 0 ) |\n| 5 | 4 | #P_eqcomd | |- ( ph -> 0 = ( A - B ) ) |",
+  "conclusion" : "#P_int-addsimpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_cc0", "#T_wceq", "#T_cA", "#T_cmin", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subeq0bd", "#P_eqcomd", "#P_recnd" ]
+}

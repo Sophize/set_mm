@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symghash on Metamath](http://us.metamath.org/mpegif/symghash.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgbas.1 | |- G = ( SymGrp ` A ) |\n| 2 |  | symgbas.2 | |- B = ( Base ` G ) |\n| 3 | 1, 2 | #P_symgbas | |- B = { f | f : A -1-1-onto-> A } |\n| 4 | 3 | #P_fveq2i | |- ( # ` B ) = ( # ` { f | f : A -1-1-onto-> A } ) |\n| 5 |  | #P_hashfac | |- ( A e. Fin -> ( # ` { f | f : A -1-1-onto-> A } ) = ( ! ` ( # ` A ) ) ) |\n| 6 | 4, 5 | #P_syl5eq | |- ( A e. Fin -> ( # ` B ) = ( ! ` ( # ` A ) ) ) |",
+  "conclusion" : "#P_symghash",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cA", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_cbvex4v.vf", "#T_cab--2", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cA.wceq", "#T_cab--3", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_cab--1", "#T_cbvex4v.vf", "#T_cab--2", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cA.wceq", "#T_cab--3", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_chash", "#T_cfv", "#T_cab--1", "#T_cbvex4v.vf", "#T_cab--2", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cfa", "#T_cfv", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_chash", "#T_cfv", "#T_cB", "#T_wceq", "#T_cfa", "#T_cfv", "#T_chash", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_symgbas", "#P_hashfac", "#P_syl5eq" ]
+}

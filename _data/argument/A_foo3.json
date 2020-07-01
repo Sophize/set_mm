@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See foo3 on Metamath](http://us.metamath.org/mpegif/foo3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | foo3.1 | |- ph |\n| 2 |  | #P_df-v | |- _V = { x | x = x } |\n| 3 |  | #P_equid | |- x = x |\n| 4 | 3, 1 | #P_2th | |- ( x = x <-> ph ) |\n| 5 | 4 | #P_abbii | |- { x | x = x } = { x | ph } |\n| 6 | 2, 5 | #P_eqtri | |- _V = { x | ph } |",
+  "conclusion" : "#P_foo3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_cvv", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_wph", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_cvv", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_abbii", "#P_2th", "#P_df-v", "#P_equid" ]
+}

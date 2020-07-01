@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnelOLD on Metamath](http://us.metamath.org/mpegif/nnelOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_notnot | |- ( A e. B <-> -. -. A e. B ) |\n| 2 | 1 | #P_bicomi | |- ( -. -. A e. B <-> A e. B ) |\n| 3 |  | #P_df-nel | |- ( A e/ B <-> -. A e. B ) |\n| 4 | 2, 3 | #P_xchnxbir | |- ( -. A e/ B <-> A e. B ) |\n\\\n Obsolete proof of ~ nnel as of 25-Nov-2019.  (Contributed by Alexander van der Vekens, 18-Jan-2018.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_nnel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wn", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wnel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wn", "#T_cA", "#T_wnel", "#T_cB", "#T_wb", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot", "#P_xchnxbir", "#P_bicomi", "#P_df-nel" ]
+}

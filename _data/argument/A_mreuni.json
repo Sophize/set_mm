@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mreuni on Metamath](http://us.metamath.org/mpegif/mreuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_mre1cl | |- ( C e. ( Moore ` X ) -> X e. C ) |\n| 2 |  | #P_mresspw | |- ( C e. ( Moore ` X ) -> C C_ ~P X ) |\n| 3 |  | #P_elpwuni | |- ( X e. C -> ( C C_ ~P X <-> U. C = X ) ) |\n| 4 | 3 | #P_biimpa | |- ( ( X e. C /\\ C C_ ~P X ) -> U. C = X ) |\n| 5 | 1, 2, 4 | #P_syl2anc | |- ( C e. ( Moore ` X ) -> U. C = X ) |",
+  "conclusion" : "#P_mreuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cC", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cC", "#T_wss", "#T_cpw", "#T_cX", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cC", "#T_wss", "#T_cpw", "#T_cX", "#T_wb", "#T_cuni", "#T_cC", "#T_wceq", "#T_cX", "#T_cX", "#T_wcel", "#T_cC", "#T_wa", "#T_cC", "#T_wss", "#T_cpw", "#T_cX", "#T_wi", "#T_cuni", "#T_cC", "#T_wceq", "#T_cX", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cuni", "#T_cC", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mre1cl", "#P_biimpa", "#P_mresspw", "#P_syl2anc", "#P_elpwuni" ]
+}

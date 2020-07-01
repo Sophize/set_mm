@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cfom on Metamath](http://us.metamath.org/mpegif/cfom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cfle | |- ( cf ` _om ) C_ _om |\n| 2 |  | #P_limom | |- Lim _om |\n| 3 |  | #P_omex | |- _om e. _V |\n| 4 | 3 | #P_cflim2 | |- ( Lim _om <-> Lim ( cf ` _om ) ) |\n| 5 | 2, 4 | #P_mpbi | |- Lim ( cf ` _om ) |\n| 6 |  | #P_limomss | |- ( Lim ( cf ` _om ) -> _om C_ ( cf ` _om ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- _om C_ ( cf ` _om ) |\n| 8 | 1, 7 | #P_eqssi | |- ( cf ` _om ) = _om |",
+  "conclusion" : "#P_cfom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccf", "#T_cfv", "#T_com", "#T_wss", "#T_com", "#T_wlim", "#T_com", "#T_com", "#T_wcel", "#T_cvv", "#T_wlim", "#T_com", "#T_wb", "#T_wlim", "#T_ccf", "#T_cfv", "#T_com", "#T_wlim", "#T_ccf", "#T_cfv", "#T_com", "#T_wlim", "#T_ccf", "#T_cfv", "#T_com", "#T_wi", "#T_com", "#T_wss", "#T_ccf", "#T_cfv", "#T_com", "#T_com", "#T_wss", "#T_ccf", "#T_cfv", "#T_com", "#T_ccf", "#T_cfv", "#T_com", "#T_wceq", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_limomss", "#P_limom", "#P_mpbi", "#P_eqssi", "#P_cfle", "#P_cflim2", "#P_omex" ]
+}

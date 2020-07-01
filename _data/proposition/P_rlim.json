@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlim on Metamath](http://us.metamath.org/mpegif/rlim.html)"
+  } ],
+  "names" : [ "rlim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wa", "#T_vz", "#T_wcel", "#T_cA", "#T_wi", "#T_cF", "#T_cfv", "#T_vz", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_crli", "#T_cC", "#T_wb", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cA", "#T_vy", "#T_cle", "#T_vz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cB", "#T_cmin", "#T_cC", "#T_clt", "#T_vx", "#T_cA", "#T_vz", "#T_cC", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express the predicate:  The limit of complex number function ` F ` is ` C ` , or ` F ` converges to ` C ` , in the real sense.  This means that for any real ` x ` , no matter how small, there always exists a number ` y ` such that the absolute difference of any number in the function beyond ` y ` and the limit is less than ` x ` .  (Contributed by Mario Carneiro, 16-Sep-2014.)  (Revised by Mario Carneiro, 28-Apr-2015.) ",
+  "statement" : "rlim.1 $e |- ( ph -> F : A --> CC ) $.\nrlim.2 $e |- ( ph -> A C_ RR ) $.\nrlim.4 $e |- ( ( ph /\\ z e. A ) -> ( F ` z ) = B ) $.\nrlim $p |- ( ph -> ( F ~~>r C <-> ( C e. CC /\\ A. x e. RR+ E. y e. RR A. z e. A ( y <_ z -> ( abs ` ( B - C ) ) < x ) ) ) ) $.\n$d A z $.\n$d C x y z $.\n$d F x y z $.\n$d ph x y z $."
+}

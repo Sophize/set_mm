@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dgreq on Metamath](http://us.metamath.org/mpegif/dgreq.html)"
+  } ],
+  "names" : [ "dgreq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_cima", "#T_cuz", "#T_cfv", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cA", "#T_cfv", "#T_vk", "#T_cmul", "#T_vz", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cA", "#T_cfv", "#T_cN", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cN", "#T_cA", "#T_vk", "#T_vz", "#T_cN", "#T_vk", "#T_vz", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the highest term in a polynomial expression is nonzero, then the polynomial's degree is completely determined.  (Contributed by Mario Carneiro, 24-Jul-2014.) ",
+  "statement" : "dgreq.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.\ndgreq.2 $e |- ( ph -> N e. NN0 ) $.\ndgreq.3 $e |- ( ph -> A : NN0 --> CC ) $.\ndgreq.4 $e |- ( ph -> ( A \" ( ZZ>= ` ( N + 1 ) ) ) = { 0 } ) $.\ndgreq.5 $e |- ( ph -> F = ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.\ndgreq.6 $e |- ( ph -> ( A ` N ) =/= 0 ) $.\ndgreq $p |- ( ph -> ( deg ` F ) = N ) $.\n$d A k z $.\n$d N k z $.\n$d k ph z $."
+}

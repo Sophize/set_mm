@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iffalsed on Metamath](http://us.metamath.org/mpegif/iffalsed.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iffalsed.1 | |- ( ph -> -. ch ) |\n| 2 |  | #P_iffalse | |- ( -. ch -> if ( ch , A , B ) = B ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> if ( ch , A , B ) = B ) |",
+  "conclusion" : "#P_iffalsed",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wn", "#T_wch", "#T_wi", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iffalse", "#P_syl" ]
+}

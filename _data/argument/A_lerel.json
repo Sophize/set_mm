@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lerel on Metamath](http://us.metamath.org/mpegif/lerel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_lerelxr | |- <_ C_ ( RR* X. RR* ) |\n| 2 |  | #P_relxp | |- Rel ( RR* X. RR* ) |\n| 3 |  | #P_relss | |- ( <_ C_ ( RR* X. RR* ) -> ( Rel ( RR* X. RR* ) -> Rel <_ ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- Rel <_ |",
+  "conclusion" : "#P_lerel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cle", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wrel", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cle", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wi", "#T_wrel", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wi", "#T_wrel", "#T_cle", "#T_wrel", "#T_cle" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_relxp", "#P_lerelxr", "#P_relss" ]
+}

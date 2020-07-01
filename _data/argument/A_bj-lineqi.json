@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-lineqi on Metamath](http://us.metamath.org/mpegif/bj-lineqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-lineq.a | |- ( ph -> A e. CC ) |\n| 2 |  | bj-lineq.b | |- ( ph -> B e. CC ) |\n| 3 |  | bj-lineq.x | |- ( ph -> X e. CC ) |\n| 4 |  | bj-lineq.y | |- ( ph -> Y e. CC ) |\n| 5 |  | bj-lineq.n0 | |- ( ph -> A =/= 0 ) |\n| 6 |  | bj-lineqi.1 | |- ( ph -> ( ( A x. X ) + B ) = Y ) |\n| 7 | 1, 2, 3, 4, 5 | #P_bj-lineq | |- ( ph -> ( ( ( A x. X ) + B ) = Y <-> X = ( ( Y - B ) / A ) ) ) |\n| 8 | 6, 7 | #P_mpbid | |- ( ph -> X = ( ( Y - B ) / A ) ) |",
+  "conclusion" : "#P_bj-lineqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cX", "#T_caddc", "#T_cB", "#T_wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cX", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cY", "#T_wb", "#T_cX", "#T_wceq", "#T_cY", "#T_cmin", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_cY", "#T_cmin", "#T_cB", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_bj-lineq" ]
+}

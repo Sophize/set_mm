@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rerest on Metamath](http://us.metamath.org/mpegif/rerest.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgioo2.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | rerest.2 | |- R = ( topGen ` ran (,) ) |\n| 3 | 1 | #P_tgioo2 | |- ( topGen ` ran (,) ) = ( J |`t RR ) |\n| 4 | 2, 3 | #P_eqtri | |- R = ( J |`t RR ) |\n| 5 | 4 | #P_oveq1i | |- ( R |`t A ) = ( ( J |`t RR ) |`t A ) |\n| 6 | 1 | #P_cnfldtop | |- J e. Top |\n| 7 |  | #P_reex | |- RR e. _V |\n| 8 |  | #P_restabs | |- ( ( J e. Top /\\ A C_ RR /\\ RR e. _V ) -> ( ( J |`t RR ) |`t A ) = ( J |`t A ) ) |\n| 9 | 6, 7, 8 | #P_mp3an13 | |- ( A C_ RR -> ( ( J |`t RR ) |`t A ) = ( J |`t A ) ) |\n| 10 | 5, 9 | #P_syl5req | |- ( A C_ RR -> ( J |`t A ) = ( R |`t A ) ) |",
+  "conclusion" : "#P_rerest",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cR", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_cJ", "#T_crest", "#T_cr", "#T_cR", "#T_wceq", "#T_cJ", "#T_crest", "#T_cr", "#T_cR", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cJ", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cr", "#T_wcel", "#T_cvv", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_w3a--2", "#T_cr", "#T_wcel", "#T_cvv", "#T_wi", "#T_cJ", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cr", "#T_wi", "#T_cJ", "#T_crest", "#T_cr", "#T_crest", "#T_cA.wceq", "#T_wceq", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cr", "#T_wi", "#T_cJ", "#T_crest", "#T_cA", "#T_wceq", "#T_cR", "#T_crest", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_mp3an13", "#P_syl5req", "#P_reex", "#P_tgioo2", "#P_cnfldtop", "#P_restabs", "#P_oveq1i" ]
+}

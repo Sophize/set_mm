@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See otexg on Metamath](http://us.metamath.org/mpegif/otexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ot | |- <. A , B , C >. = <. <. A , B >. , C >. |\n| 2 |  | #P_opexg | |- ( ( A e. U /\\ B e. V ) -> <. A , B >. e. _V ) |\n| 3 |  | #P_opexg | |- ( ( <. A , B >. e. _V /\\ C e. W ) -> <. <. A , B >. , C >. e. _V ) |\n| 4 | 2, 3 | #P_sylan | |- ( ( ( A e. U /\\ B e. V ) /\\ C e. W ) -> <. <. A , B >. , C >. e. _V ) |\n| 5 | 1, 4 | #P_syl5eqel | |- ( ( ( A e. U /\\ B e. V ) /\\ C e. W ) -> <. A , B , C >. e. _V ) |\n| 6 | 5 | #P_3impa | |- ( ( A e. U /\\ B e. V /\\ C e. W ) -> <. A , B , C >. e. _V ) |",
+  "conclusion" : "#P_otexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cotp--1", "#T_cA.wceq", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cW", "#T_wi", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cC", "#T_wcel", "#T_cW", "#T_wi", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cC", "#T_wcel", "#T_cW", "#T_wi", "#T_cotp--1", "#T_cA.wceq", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cU", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cW", "#T_wi", "#T_cotp--1", "#T_cA", "#T_cotp--2", "#T_cB", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_df-ot", "#P_syl5eqel", "#P_opexg", "#P_3impa" ]
+}

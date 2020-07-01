@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjclem2 on Metamath](http://us.metamath.org/mpegif/pjclem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjclem1.1 | |- G e. CH |\n| 2 |  | pjclem1.2 | |- H e. CH |\n| 3 |  | #P_incom | |- ( G i^i H ) = ( H i^i G ) |\n| 4 | 3 | #P_fveq2i | |- ( projh ` ( G i^i H ) ) = ( projh ` ( H i^i G ) ) |\n| 5 | 1, 2 | #P_pjclem1 | |- ( G C_H H -> ( ( projh ` G ) o. ( projh ` H ) ) = ( projh ` ( G i^i H ) ) ) |\n| 6 | 1, 2 | #P_cmcmi | |- ( G C_H H <-> H C_H G ) |\n| 7 | 2, 1 | #P_pjclem1 | |- ( H C_H G -> ( ( projh ` H ) o. ( projh ` G ) ) = ( projh ` ( H i^i G ) ) ) |\n| 8 | 6, 7 | #P_sylbi | |- ( G C_H H -> ( ( projh ` H ) o. ( projh ` G ) ) = ( projh ` ( H i^i G ) ) ) |\n| 9 | 4, 5, 8 | #P_3eqtr4a | |- ( G C_H H -> ( ( projh ` G ) o. ( projh ` H ) ) = ( ( projh ` H ) o. ( projh ` G ) ) ) |",
+  "conclusion" : "#P_pjclem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cch", "#T_cH", "#T_wcel", "#T_cch", "#T_cG", "#T_cin", "#T_cH", "#T_wceq", "#T_cH", "#T_cin", "#T_cG", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cin", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cin", "#T_cG", "#T_cG", "#T_ccm", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cin", "#T_cH", "#T_cG", "#T_ccm", "#T_cH", "#T_wb", "#T_cH", "#T_ccm", "#T_cG", "#T_cH", "#T_ccm", "#T_cG", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cH", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cin", "#T_cG", "#T_cG", "#T_ccm", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cH", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cin", "#T_cG", "#T_cG", "#T_ccm", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_ccom", "#T_cpjh", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_incom", "#P_pjclem1", "#P_3eqtr4a", "#P_cmcmi", "#P_sylbi" ]
+}

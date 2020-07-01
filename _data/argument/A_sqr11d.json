@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqr11d on Metamath](http://us.metamath.org/mpegif/sqr11d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqrcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | resqrcld.2 | |- ( ph -> 0 <_ A ) |\n| 3 |  | sqr11d.3 | |- ( ph -> B e. RR ) |\n| 4 |  | sqr11d.4 | |- ( ph -> 0 <_ B ) |\n| 5 |  | sqrt11d.5 | |- ( ph -> ( sqrt ` A ) = ( sqrt ` B ) ) |\n| 6 |  | #P_sqrt11 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ ( B e. RR /\\ 0 <_ B ) ) -> ( ( sqrt ` A ) = ( sqrt ` B ) <-> A = B ) ) |\n| 7 | 1, 2, 3, 4, 6 | #P_syl22anc | |- ( ph -> ( ( sqrt ` A ) = ( sqrt ` B ) <-> A = B ) ) |\n| 8 | 5, 7 | #P_mpbid | |- ( ph -> A = B ) |",
+  "conclusion" : "#P_sqr11d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cB", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_sqrt11", "#P_syl22anc" ]
+}

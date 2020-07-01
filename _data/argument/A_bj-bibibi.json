@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-bibibi on Metamath](http://us.metamath.org/mpegif/bj-bibibi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm5.501 | |- ( ph -> ( ps <-> ( ph <-> ps ) ) ) |\n| 2 |  | #P_bianir | |- ( ( ps /\\ ( ph <-> ps ) ) -> ph ) |\n| 3 | 2 | #P_ex | |- ( ps -> ( ( ph <-> ps ) -> ph ) ) |\n| 4 |  | #P_bibif | |- ( -. ps -> ( ( ph <-> ps ) <-> -. ph ) ) |\n| 5 | 4 | #P_con2bid | |- ( -. ps -> ( ph <-> -. ( ph <-> ps ) ) ) |\n| 6 | 5 | #P_biimprd | |- ( -. ps -> ( -. ( ph <-> ps ) -> ph ) ) |\n| 7 | 3, 6 | #P_bija | |- ( ( ps <-> ( ph <-> ps ) ) -> ph ) |\n| 8 | 1, 7 | #P_impbii | |- ( ph <-> ( ps <-> ( ph <-> ps ) ) ) |",
+  "conclusion" : "#P_bj-bibibi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wa", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_impbii", "#P_bianir", "#P_ex", "#P_bija", "#P_bibif", "#P_pm5.501", "#P_con2bid" ]
+}

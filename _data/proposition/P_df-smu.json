@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-smu on Metamath](http://us.metamath.org/mpegif/df-smu.html)"
+  } ],
+  "names" : [ "df-smu" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csmu", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cpw", "#T_cn0", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cpw", "#T_cn0", "#T_cmpt2--4", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_vk", "#T_wcel", "#T_cseq--1", "#T_cc0", "#T_vp", "#T_cmpt2--1", "#T_cpw", "#T_cn0", "#T_cmpt2--2", "#T_vm", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_vp", "#T_csad", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_vm", "#T_wcel", "#T_vx", "#T_wa", "#T_vn", "#T_cmin", "#T_vm", "#T_wcel", "#T_vy", "#T_crab--4", "#T_cseq--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_vn", "#T_cmin", "#T_c1", "#T_cfv", "#T_vk", "#T_caddc", "#T_c1", "#T_crab--4", "#T_vk", "#T_vm", "#T_vn", "#T_vp", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the multiplication of two bit sequences, using repeated sequence addition.  (Contributed by Mario Carneiro, 9-Sep-2016.) ",
+  "statement" : "df-smu $p |- smul = ( x e. ~P NN0 , y e. ~P NN0 |-> { k e. NN0 | k e. ( seq 0 ( ( p e. ~P NN0 , m e. NN0 |-> ( p sadd { n e. NN0 | ( m e. x /\\ ( n - m ) e. y ) } ) ) , ( n e. NN0 |-> if ( n = 0 , (/) , ( n - 1 ) ) ) ) ` ( k + 1 ) ) } ) $.\n$d k m n p x y $."
+}

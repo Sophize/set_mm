@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnrfgtr on Metamath](http://us.metamath.org/mpegif/lnrfgtr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lnrfg.s | |- S = ( Scalar ` M ) |\n| 2 |  | lnrfgtr.u | |- U = ( LSubSp ` M ) |\n| 3 |  | lnrfgtr.n | |- N = ( M |`s P ) |\n| 4 | 1 | #P_lnrfg | |- ( ( M e. LFinGen /\\ S e. LNoeR ) -> M e. LNoeM ) |\n| 5 | 2, 3 | #P_lnmlssfg | |- ( ( M e. LNoeM /\\ P e. U ) -> N e. LFinGen ) |\n| 6 | 4, 5 | #P_stoic3 | |- ( ( M e. LFinGen /\\ S e. LNoeR /\\ P e. U ) -> N e. LFinGen ) |",
+  "conclusion" : "#P_lnrfgtr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_csca", "#T_cfv", "#T_cM", "#T_cU", "#T_wceq", "#T_clss", "#T_cfv", "#T_cM", "#T_cN", "#T_wceq", "#T_cM", "#T_cress", "#T_cP", "#T_cM", "#T_wcel", "#T_clfig", "#T_wa", "#T_cS", "#T_wcel", "#T_clnr", "#T_wi", "#T_cM", "#T_wcel", "#T_clnm", "#T_cM", "#T_wcel", "#T_clnm", "#T_wa", "#T_cP", "#T_wcel", "#T_cU", "#T_wi", "#T_cN", "#T_wcel", "#T_clfig", "#T_cM", "#T_wcel", "#T_clfig", "#T_w3a--1", "#T_cS", "#T_wcel", "#T_clnr", "#T_w3a--2", "#T_cP", "#T_wcel", "#T_cU", "#T_wi", "#T_cN", "#T_wcel", "#T_clfig" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_stoic3", "#P_lnrfg", "#P_lnmlssfg" ]
+}

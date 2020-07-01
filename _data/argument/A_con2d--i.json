@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See con2d on Metamath](http://us.metamath.org/mpegif/con2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | con2d.1 | |- ( ph -> ( ps -> -. ch ) ) |\n| 2 |  | #P_ax-in2 | |- ( -. ch -> ( ch -> -. ps ) ) |\n| 3 | 1, 2 | #P_syl6 | |- ( ph -> ( ps -> ( ch -> -. ps ) ) ) |\n| 4 | 3 | #P_com23 | |- ( ph -> ( ch -> ( ps -> -. ps ) ) ) |\n| 5 |  | #P_pm2.01 | |- ( ( ps -> -. ps ) -> -. ps ) |\n| 6 | 4, 5 | #P_syl6 | |- ( ph -> ( ch -> -. ps ) ) |",
+  "conclusion" : "#P_con2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wn", "#T_wch", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.01", "#P_ax-in2", "#P_syl6", "#P_com23" ]
+}

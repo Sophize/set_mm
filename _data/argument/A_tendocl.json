@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tendocl on Metamath](http://us.metamath.org/mpegif/tendocl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tendof.h | |- H = ( LHyp ` K ) |\n| 2 |  | tendof.t | |- T = ( ( LTrn ` K ) ` W ) |\n| 3 |  | tendof.e | |- E = ( ( TEndo ` K ) ` W ) |\n| 4 | 1, 2, 3 | #P_tendof | |- ( ( ( K e. V /\\ W e. H ) /\\ S e. E ) -> S : T --> T ) |\n| 5 | 4 | #P_3adant3 | |- ( ( ( K e. V /\\ W e. H ) /\\ S e. E /\\ F e. T ) -> S : T --> T ) |\n| 6 |  | #P_simp3 | |- ( ( ( K e. V /\\ W e. H ) /\\ S e. E /\\ F e. T ) -> F e. T ) |\n| 7 | 5, 6 | #P_ffvelrnd | |- ( ( ( K e. V /\\ W e. H ) /\\ S e. E /\\ F e. T ) -> ( S ` F ) e. T ) |",
+  "conclusion" : "#P_tendocl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cT", "#T_wceq", "#T_cltrn", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cE", "#T_wceq", "#T_ctendo", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cS", "#T_wcel", "#T_cE", "#T_wi", "#T_cS", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cT", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--1", "#T_cS", "#T_wcel", "#T_cE", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cS", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cT", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--1", "#T_cS", "#T_wcel", "#T_cE", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cF", "#T_wcel", "#T_cT", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--1", "#T_cS", "#T_wcel", "#T_cE", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cS", "#T_cfv", "#T_cF", "#T_wcel", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffvelrnd", "#P_simp3", "#P_tendof", "#P_3adant3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s1rn on Metamath](http://us.metamath.org/mpegif/s1rn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_s1val | |- ( A e. V -> <\" A \"> = { <. 0 , A >. } ) |\n| 2 | 1 | #P_rneqd | |- ( A e. V -> ran <\" A \"> = ran { <. 0 , A >. } ) |\n| 3 |  | #P_c0ex | |- 0 e. _V |\n| 4 | 3 | #P_rnsnop | |- ran { <. 0 , A >. } = { A } |\n| 5 | 2, 4 | #P_syl6eq | |- ( A e. V -> ran <\" A \"> = { A } ) |",
+  "conclusion" : "#P_s1rn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_crn", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_crn", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cc0", "#T_wcel", "#T_cvv", "#T_crn", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_crn", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cA", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_c0ex", "#P_s1val", "#P_rneqd", "#P_rnsnop", "#P_syl6eq" ]
+}

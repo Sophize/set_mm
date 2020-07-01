@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See domprobmeas on Metamath](http://us.metamath.org/mpegif/domprobmeas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elprob | |- ( P e. Prob <-> ( P e. U. ran measures /\\ ( P ` U. dom P ) = 1 ) ) |\n| 2 | 1 | #P_simplbi | |- ( P e. Prob -> P e. U. ran measures ) |\n| 3 |  | #P_measbasedom | |- ( P e. U. ran measures <-> P e. ( measures ` dom P ) ) |\n| 4 | 2, 3 | #P_sylib | |- ( P e. Prob -> P e. ( measures ` dom P ) ) |",
+  "conclusion" : "#P_domprobmeas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wcel", "#T_cprb", "#T_wb", "#T_cP", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_wa", "#T_cP", "#T_cfv", "#T_cuni", "#T_cdm", "#T_cP", "#T_wceq", "#T_c1", "#T_cP", "#T_wcel", "#T_cprb", "#T_wi", "#T_cP", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_cP", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_wb", "#T_cP", "#T_wcel", "#T_cmeas", "#T_cfv", "#T_cdm", "#T_cP", "#T_cP", "#T_wcel", "#T_cprb", "#T_wi", "#T_cP", "#T_wcel", "#T_cmeas", "#T_cfv", "#T_cdm", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplbi", "#P_elprob", "#P_sylib", "#P_measbasedom" ]
+}

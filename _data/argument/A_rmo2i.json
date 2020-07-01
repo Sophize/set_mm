@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rmo2i on Metamath](http://us.metamath.org/mpegif/rmo2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rmo2.1 | |- F/ y ph |\n| 2 |  | #P_rexex | |- ( E. y e. A A. x e. A ( ph -> x = y ) -> E. y A. x e. A ( ph -> x = y ) ) |\n| 3 | 1 | #P_rmo2 | |- ( E* x e. A ph <-> E. y A. x e. A ( ph -> x = y ) ) |\n| 4 | 2, 3 | #P_sylibr | |- ( E. y e. A A. x e. A ( ph -> x = y ) -> E* x e. A ph ) |",
+  "conclusion" : "#P_rmo2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cA", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wrmo--1", "#T_vx", "#T_wrmo--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylibr", "#P_rexex", "#P_rmo2" ]
+}

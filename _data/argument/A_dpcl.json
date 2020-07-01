@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dpcl on Metamath](http://us.metamath.org/mpegif/dpcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dpval | |- ( ( A e. NN0 /\\ B e. RR ) -> ( A . B ) = _ A B ) |\n| 2 |  | #P_nn0re | |- ( A e. NN0 -> A e. RR ) |\n| 3 |  | #P_dp2cl | |- ( ( A e. RR /\\ B e. RR ) -> _ A B e. RR ) |\n| 4 | 2, 3 | #P_sylan | |- ( ( A e. NN0 /\\ B e. RR ) -> _ A B e. RR ) |\n| 5 | 1, 4 | #P_eqeltrd | |- ( ( A e. NN0 /\\ B e. RR ) -> ( A . B ) e. RR ) |",
+  "conclusion" : "#P_dpcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cdp", "#T_cB.wceq", "#T_wceq", "#T_cdp2", "#T_cA.wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cdp2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cdp2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cn0", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cdp", "#T_cB", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dp2cl", "#P_sylan", "#P_eqeltrd", "#P_nn0re", "#P_dpval" ]
+}

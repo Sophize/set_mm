@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See istsr on Metamath](http://us.metamath.org/mpegif/istsr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nr\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | istsr.1 | |- X = dom R |\n| 2 |  | #P_dmeq | |- ( r = R -> dom r = dom R ) |\n| 3 | 2, 1 | #P_syl6eqr | |- ( r = R -> dom r = X ) |\n| 4 | 3 | #P_sqxpeqd | |- ( r = R -> ( dom r X. dom r ) = ( X X. X ) ) |\n| 5 |  | #P_id | |- ( r = R -> r = R ) |\n| 6 |  | #P_cnveq | |- ( r = R -> `' r = `' R ) |\n| 7 | 5, 6 | #P_uneq12d | |- ( r = R -> ( r u. `' r ) = ( R u. `' R ) ) |\n| 8 | 4, 7 | #P_sseq12d | |- ( r = R -> ( ( dom r X. dom r ) C_ ( r u. `' r ) <-> ( X X. X ) C_ ( R u. `' R ) ) ) |\n| 9 |  | #P_df-tsr | |- TosetRel = { r e. PosetRel | ( dom r X. dom r ) C_ ( r u. `' r ) } |\n| 10 | 8, 9 | #P_elrab2 | |- ( R e. TosetRel <-> ( R e. PosetRel /\\ ( X X. X ) C_ ( R u. `' R ) ) ) |",
+  "conclusion" : "#P_istsr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vr", "#T_cX", "#T_wceq", "#T_cdm", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cdm", "#T_vr", "#T_wceq", "#T_cdm", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cdm", "#T_vr", "#T_wceq", "#T_cX", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cdm", "#T_vr", "#T_cxp", "#T_cdm", "#T_vr", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_vr", "#T_wceq", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_ccnv", "#T_vr", "#T_wceq", "#T_ccnv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_vr", "#T_cun", "#T_ccnv", "#T_vr", "#T_wceq", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cdm", "#T_vr", "#T_cxp", "#T_cdm", "#T_vr", "#T_wss", "#T_vr", "#T_cun", "#T_ccnv", "#T_vr", "#T_wb", "#T_cX", "#T_cxp", "#T_cX", "#T_wss", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR", "#T_ctsr", "#T_wceq", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cps", "#T_crab--3", "#T_cdm", "#T_vr", "#T_cxp", "#T_cdm", "#T_vr", "#T_wss", "#T_vr", "#T_cun", "#T_ccnv", "#T_vr", "#T_crab--4", "#T_cR", "#T_wcel", "#T_ctsr", "#T_wb", "#T_cR", "#T_wcel", "#T_cps", "#T_wa", "#T_cX", "#T_cxp", "#T_cX", "#T_wss", "#T_cR", "#T_cun", "#T_ccnv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dmeq", "#P_elrab2", "#P_uneq12d", "#P_syl6eqr", "#P_cnveq", "#P_df-tsr", "#P_sqxpeqd", "#P_id", "#P_sseq12d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subeq0 on Metamath](http://us.metamath.org/mpegif/subeq0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_subid | |- ( B e. CC -> ( B - B ) = 0 ) |\n| 2 | 1 | #P_adantl | |- ( ( A e. CC /\\ B e. CC ) -> ( B - B ) = 0 ) |\n| 3 | 2 | #P_eqeq2d | |- ( ( A e. CC /\\ B e. CC ) -> ( ( A - B ) = ( B - B ) <-> ( A - B ) = 0 ) ) |\n| 4 |  | #P_subcan2 | |- ( ( A e. CC /\\ B e. CC /\\ B e. CC ) -> ( ( A - B ) = ( B - B ) <-> A = B ) ) |\n| 5 | 4 | #P_3anidm23 | |- ( ( A e. CC /\\ B e. CC ) -> ( ( A - B ) = ( B - B ) <-> A = B ) ) |\n| 6 | 3, 5 | #P_bitr3d | |- ( ( A e. CC /\\ B e. CC ) -> ( ( A - B ) = 0 <-> A = B ) ) |",
+  "conclusion" : "#P_subeq0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cB", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subcan2", "#P_adantl", "#P_3anidm23", "#P_eqeq2d", "#P_subid", "#P_bitr3d" ]
+}

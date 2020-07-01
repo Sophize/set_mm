@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cshwsidrepswmod0 on Metamath](http://us.metamath.org/mpegif/cshwsidrepswmod0.html)"
+  } ],
+  "names" : [ "cshwsidrepswmod0" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_chash", "#T_cfv", "#T_cW", "#T_wcel", "#T_cprime", "#T_w3a--2", "#T_cL", "#T_wcel", "#T_cz", "#T_wi", "#T_cW", "#T_ccsh", "#T_cL", "#T_wceq", "#T_cW", "#T_wi", "#T_cL", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_wceq", "#T_cc0", "#T_wo", "#T_cW", "#T_wceq", "#T_cW", "#T_cfv", "#T_cc0", "#T_creps", "#T_chash", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If cyclically shifting a word of length being a prime number results in the word itself, the shift must be either by 0 (modulo the length of the word) or the word must be a \"repeated symbol word\".  (Contributed by AV, 18-May-2018.)  (Revised by AV, 10-Nov-2018.) ",
+  "statement" : "cshwsidrepswmod0 $p |- ( ( W e. Word V /\\ ( # ` W ) e. Prime /\\ L e. ZZ ) -> ( ( W cyclShift L ) = W -> ( ( L mod ( # ` W ) ) = 0 \\/ W = ( ( W ` 0 ) repeatS ( # ` W ) ) ) ) ) $."
+}

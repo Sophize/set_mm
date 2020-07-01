@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofmresval on Metamath](http://us.metamath.org/mpegif/ofmresval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ofmresval.f | |- ( ph -> F e. A ) |\n| 2 |  | ofmresval.g | |- ( ph -> G e. B ) |\n| 3 |  | #P_ovres | |- ( ( F e. A /\\ G e. B ) -> ( F ( oF R |` ( A X. B ) ) G ) = ( F oF R G ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( F ( oF R |` ( A X. B ) ) G ) = ( F oF R G ) ) |",
+  "conclusion" : "#P_ofmresval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cB", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_cG", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_cof", "#T_cR", "#T_cres", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cG", "#T_wceq", "#T_cF", "#T_cof", "#T_cR", "#T_cG", "#T_wph", "#T_wi", "#T_cF", "#T_cof", "#T_cR", "#T_cres", "#T_cA", "#T_cxp", "#T_cB", "#T_cG", "#T_wceq", "#T_cF", "#T_cof", "#T_cR", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ovres" ]
+}

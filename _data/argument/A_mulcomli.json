@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulcomli on Metamath](http://us.metamath.org/mpegif/mulcomli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | axi.1 | |- A e. CC |\n| 2 |  | axi.2 | |- B e. CC |\n| 3 |  | mulcomli.3 | |- ( A x. B ) = C |\n| 4 | 2, 1 | #P_mulcomi | |- ( B x. A ) = ( A x. B ) |\n| 5 | 4, 3 | #P_eqtri | |- ( B x. A ) = C |",
+  "conclusion" : "#P_mulcomli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA", "#T_cmul", "#T_cB", "#T_wceq", "#T_cC", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cB", "#T_cmul", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulcomi", "#P_eqtri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expge0d on Metamath](http://us.metamath.org/mpegif/expge0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reexpcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | reexpcld.2 | |- ( ph -> N e. NN0 ) |\n| 3 |  | expge0d.3 | |- ( ph -> 0 <_ A ) |\n| 4 |  | #P_expge0 | |- ( ( A e. RR /\\ N e. NN0 /\\ 0 <_ A ) -> 0 <_ ( A ^ N ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> 0 <_ ( A ^ N ) ) |",
+  "conclusion" : "#P_expge0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_cexp", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_expge0", "#P_syl3anc" ]
+}

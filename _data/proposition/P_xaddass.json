@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xaddass on Metamath](http://us.metamath.org/mpegif/xaddass.html)"
+  } ],
+  "names" : [ "xaddass" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA", "#T_wne", "#T_cmnf", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB", "#T_wne", "#T_cmnf", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wa", "#T_cC", "#T_wne", "#T_cmnf", "#T_wi", "#T_cA", "#T_cxad", "#T_cB", "#T_cxad", "#T_cC", "#T_wceq", "#T_cA", "#T_cxad", "#T_cB", "#T_cxad", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Associativity of extended real addition.  The correct condition here is \"it is not the case that both ` +oo ` and ` -oo ` appear as one of ` A , B , C ` , i.e. ` -. { +oo , -oo } C_ { A , B , C } ` \", but this condition is difficult to work with, so we break the theorem into two parts: this one, where ` -oo ` is not present in ` A , B , C ` , and ~ xaddass2 , where ` +oo ` is not present.  (Contributed by Mario Carneiro, 20-Aug-2015.) ",
+  "statement" : "xaddass $p |- ( ( ( A e. RR* /\\ A =/= -oo ) /\\ ( B e. RR* /\\ B =/= -oo ) /\\ ( C e. RR* /\\ C =/= -oo ) ) -> ( ( A +e B ) +e C ) = ( A +e ( B +e C ) ) ) $."
+}

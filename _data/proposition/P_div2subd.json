@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See div2subd on Metamath](http://us.metamath.org/mpegif/div2subd.html)"
+  } ],
+  "names" : [ "div2subd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_cdiv", "#T_cC", "#T_cmin", "#T_cD", "#T_wceq", "#T_cB", "#T_cmin", "#T_cA", "#T_cdiv", "#T_cD", "#T_cmin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Swap subtrahend and minuend inside the numerator and denominator of a fraction.  Deduction form of ~ div2sub .  (Contributed by David Moews, 28-Feb-2017.) ",
+  "statement" : "div2subd.1 $e |- ( ph -> A e. CC ) $.\ndiv2subd.2 $e |- ( ph -> B e. CC ) $.\ndiv2subd.3 $e |- ( ph -> C e. CC ) $.\ndiv2subd.4 $e |- ( ph -> D e. CC ) $.\ndiv2subd.5 $e |- ( ph -> C =/= D ) $.\ndiv2subd $p |- ( ph -> ( ( A - B ) / ( C - D ) ) = ( ( B - A ) / ( D - C ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See knatar on Metamath](http://us.metamath.org/mpegif/knatar.html)"
+  } ],
+  "names" : [ "knatar" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cpw", "#T_cA", "#T_crab--3", "#T_cF", "#T_cfv", "#T_vz", "#T_wss", "#T_vz", "#T_crab--4", "#T_cA", "#T_wcel", "#T_cV", "#T_w3a--1", "#T_cF", "#T_cfv", "#T_cA", "#T_wss", "#T_cA", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cpw", "#T_cA", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpw", "#T_vx", "#T_cF", "#T_cfv", "#T_vy", "#T_wss", "#T_cF", "#T_cfv", "#T_vx", "#T_wi", "#T_cX", "#T_wss", "#T_cA", "#T_wa", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Knaster-Tarski theorem says that every monotone function over a complete lattice has a (least) fixpoint.  Here we specialize this theorem to the case when the lattice is the powerset lattice ` ~P A ` . (Contributed by Mario Carneiro, 11-Jun-2015.) ",
+  "statement" : "knatar.1 $e |- X = |^| { z e. ~P A | ( F ` z ) C_ z } $.\nknatar $p |- ( ( A e. V /\\ ( F ` A ) C_ A /\\ A. x e. ~P A A. y e. ~P x ( F ` y ) C_ ( F ` x ) ) -> ( X C_ A /\\ ( F ` X ) = X ) ) $.\n$d A x y z $.\n$d F x y z $.\n$d X x y $."
+}

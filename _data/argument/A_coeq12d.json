@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coeq12d on Metamath](http://us.metamath.org/mpegif/coeq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | coeq12d.1 | |- ( ph -> A = B ) |\n| 2 |  | coeq12d.2 | |- ( ph -> C = D ) |\n| 3 | 1 | #P_coeq1d | |- ( ph -> ( A o. C ) = ( B o. C ) ) |\n| 4 | 2 | #P_coeq2d | |- ( ph -> ( B o. C ) = ( B o. D ) ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( ph -> ( A o. C ) = ( B o. D ) ) |",
+  "conclusion" : "#P_coeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_ccom", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_ccom", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB", "#T_ccom", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_coeq2d", "#P_coeq1d" ]
+}

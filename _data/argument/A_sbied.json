@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbied on Metamath](http://us.metamath.org/mpegif/sbied.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbied.1 | |- F/ x ph |\n| 2 |  | sbied.2 | |- ( ph -> F/ x ch ) |\n| 3 |  | sbied.3 | |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) |\n| 4 | 1 | #P_sbrim | |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) |\n| 5 | 1, 2 | #P_nfim1 | |- F/ x ( ph -> ch ) |\n| 6 | 3 | #P_com12 | |- ( x = y -> ( ph -> ( ps <-> ch ) ) ) |\n| 7 | 6 | #P_pm5.74d | |- ( x = y -> ( ( ph -> ps ) <-> ( ph -> ch ) ) ) |\n| 8 | 5, 7 | #P_sbie | |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> ch ) ) |\n| 9 | 4, 8 | #P_bitr3i | |- ( ( ph -> [ y / x ] ps ) <-> ( ph -> ch ) ) |\n| 10 | 9 | #P_pm5.74ri | |- ( ph -> ( [ y / x ] ps <-> ch ) ) |",
+  "conclusion" : "#P_sbied",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wch", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbie", "#P_nfim1", "#P_pm5.74ri", "#P_pm5.74d", "#P_sbrim", "#P_com12", "#P_bitr3i" ]
+}

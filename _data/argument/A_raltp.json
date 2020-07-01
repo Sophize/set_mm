@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See raltp on Metamath](http://us.metamath.org/mpegif/raltp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | raltp.1 | |- A e. _V |\n| 2 |  | raltp.2 | |- B e. _V |\n| 3 |  | raltp.3 | |- C e. _V |\n| 4 |  | raltp.4 | |- ( x = A -> ( ph <-> ps ) ) |\n| 5 |  | raltp.5 | |- ( x = B -> ( ph <-> ch ) ) |\n| 6 |  | raltp.6 | |- ( x = C -> ( ph <-> th ) ) |\n| 7 | 4, 5, 6 | #P_raltpg | |- ( ( A e. _V /\\ B e. _V /\\ C e. _V ) -> ( A. x e. { A , B , C } ph <-> ( ps /\\ ch /\\ th ) ) ) |\n| 8 | 1, 2, 3, 7 | #P_mp3an | |- ( A. x e. { A , B , C } ph <-> ( ps /\\ ch /\\ th ) ) |",
+  "conclusion" : "#P_raltp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_cC", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cvv", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wph", "#T_wb", "#T_wps", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wph", "#T_wb", "#T_wps", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_raltpg" ]
+}

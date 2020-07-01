@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cmnmnd on Metamath](http://us.metamath.org/mpegif/cmnmnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 2 |  | #P_eqid | |- ( +g ` G ) = ( +g ` G ) |\n| 3 | 1, 2 | #P_iscmn | |- ( G e. CMnd <-> ( G e. Mnd /\\ A. x e. ( Base ` G ) A. y e. ( Base ` G ) ( x ( +g ` G ) y ) = ( y ( +g ` G ) x ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( G e. CMnd -> G e. Mnd ) |",
+  "conclusion" : "#P_cmnmnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wb", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_iscmn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfuni2 on Metamath](http://us.metamath.org/mpegif/dfuni2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-uni | |- U. A = { x | E. y ( x e. y /\\ y e. A ) } |\n| 2 |  | #P_exancom | |- ( E. y ( x e. y /\\ y e. A ) <-> E. y ( y e. A /\\ x e. y ) ) |\n| 3 |  | #P_df-rex | |- ( E. y e. A x e. y <-> E. y ( y e. A /\\ x e. y ) ) |\n| 4 | 2, 3 | #P_bitr4i | |- ( E. y ( x e. y /\\ y e. A ) <-> E. y e. A x e. y ) |\n| 5 | 4 | #P_abbii | |- { x | E. y ( x e. y /\\ y e. A ) } = { x | E. y e. A x e. y } |\n| 6 | 1, 5 | #P_eqtri | |- U. A = { x | E. y e. A x e. y } |",
+  "conclusion" : "#P_dfuni2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_cuni", "#T_cA", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cA", "#T_vx", "#T_wcel", "#T_vy", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_abbii", "#P_df-uni", "#P_exancom", "#P_df-rex", "#P_bitr4i" ]
+}

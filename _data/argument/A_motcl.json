@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See motcl on Metamath](http://us.metamath.org/mpegif/motcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismot.p | |- P = ( Base ` G ) |\n| 2 |  | ismot.m | |- .- = ( dist ` G ) |\n| 3 |  | motgrp.1 | |- ( ph -> G e. V ) |\n| 4 |  | motco.2 | |- ( ph -> F e. ( G Ismt G ) ) |\n| 5 |  | motcl.a | |- ( ph -> A e. P ) |\n| 6 | 1, 2, 3, 4 | #P_motf1o | |- ( ph -> F : P -1-1-onto-> P ) |\n| 7 |  | #P_f1of | |- ( F : P -1-1-onto-> P -> F : P --> P ) |\n| 8 | 6, 7 | #P_syl | |- ( ph -> F : P --> P ) |\n| 9 | 8, 5 | #P_ffvelrnd | |- ( ph -> ( F ` A ) e. P ) |",
+  "conclusion" : "#P_motcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cG", "#T_cismt", "#T_cG", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cP", "#T_wf1o--2", "#T_cP", "#T_cF", "#T_wf1o--1", "#T_cP", "#T_wf1o--2", "#T_cP", "#T_wi", "#T_cF", "#T_wf--1", "#T_cP", "#T_wf--2", "#T_cP", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cP", "#T_wf--2", "#T_cP", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wcel", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1of", "#P_ffvelrnd", "#P_syl", "#P_motf1o" ]
+}

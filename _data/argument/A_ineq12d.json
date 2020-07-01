@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ineq12d on Metamath](http://us.metamath.org/mpegif/ineq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ineq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | ineq12d.2 | |- ( ph -> C = D ) |\n| 3 |  | #P_ineq12 | |- ( ( A = B /\\ C = D ) -> ( A i^i C ) = ( B i^i D ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A i^i C ) = ( B i^i D ) ) |",
+  "conclusion" : "#P_ineq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cin", "#T_cC", "#T_wceq", "#T_cB", "#T_cin", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ineq12" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elALT on Metamath](http://us.metamath.org/mpegif/elALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_snid | |- x e. { x } |\n| 3 |  | #P_snex | |- { x } e. _V |\n| 4 |  | #P_eleq2 | |- ( y = { x } -> ( x e. y <-> x e. { x } ) ) |\n| 5 | 3, 4 | #P_spcev | |- ( x e. { x } -> E. y x e. y ) |\n| 6 | 2, 5 | #P_ax-mp | |- E. y x e. y |\n\\\n Alternate proof of ~ el , shorter but requiring more axioms. (Contributed by NM, 4-Jan-2002.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_el",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy", "#T_vx", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eleq2", "#P_spcev", "#P_snid", "#P_vex", "#P_snex" ]
+}

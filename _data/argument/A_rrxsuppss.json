@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrxsuppss on Metamath](http://us.metamath.org/mpegif/rrxsuppss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rrxmval.1 | |- X = { h e. ( RR ^m I ) | h finSupp 0 } |\n| 2 |  | rrxf.1 | |- ( ph -> F e. X ) |\n| 3 |  | #P_suppssdm | |- ( F supp 0 ) C_ dom F |\n| 4 | 1, 2 | #P_rrxf | |- ( ph -> F : I --> RR ) |\n| 5 |  | #P_fdm | |- ( F : I --> RR -> dom F = I ) |\n| 6 | 4, 5 | #P_syl | |- ( ph -> dom F = I ) |\n| 7 | 3, 6 | #P_syl5sseq | |- ( ph -> ( F supp 0 ) C_ I ) |",
+  "conclusion" : "#P_rrxsuppss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cr", "#T_cmap", "#T_cI", "#T_crab--3", "#T_vh", "#T_cfsupp", "#T_cc0", "#T_crab--4", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cF", "#T_csupp", "#T_cc0", "#T_wss", "#T_cdm", "#T_cF", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cr", "#T_cF", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cr", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cI", "#T_wph", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cI", "#T_wph", "#T_wi", "#T_cF", "#T_csupp", "#T_cc0", "#T_wss", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdm", "#P_suppssdm", "#P_syl", "#P_rrxf", "#P_syl5sseq" ]
+}

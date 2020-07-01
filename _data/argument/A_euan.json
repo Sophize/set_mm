@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euan on Metamath](http://us.metamath.org/mpegif/euan.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | moanim.1 | |- F/ x ph |\n| 2 |  | #P_euex | |- ( E! x ( ph /\\ ps ) -> E. x ( ph /\\ ps ) ) |\n| 3 |  | #P_simpl | |- ( ( ph /\\ ps ) -> ph ) |\n| 4 | 1, 3 | #P_exlimi | |- ( E. x ( ph /\\ ps ) -> ph ) |\n| 5 | 2, 4 | #P_syl | |- ( E! x ( ph /\\ ps ) -> ph ) |\n| 6 |  | #P_ibar | |- ( ph -> ( ps <-> ( ph /\\ ps ) ) ) |\n| 7 | 1, 6 | #P_eubid | |- ( ph -> ( E! x ps <-> E! x ( ph /\\ ps ) ) ) |\n| 8 | 7 | #P_biimprcd | |- ( E! x ( ph /\\ ps ) -> ( ph -> E! x ps ) ) |\n| 9 | 5, 8 | #P_jcai | |- ( E! x ( ph /\\ ps ) -> ( ph /\\ E! x ps ) ) |\n| 10 | 7 | #P_biimpa | |- ( ( ph /\\ E! x ps ) -> E! x ( ph /\\ ps ) ) |\n| 11 | 9, 10 | #P_impbii | |- ( E! x ( ph /\\ ps ) <-> ( ph /\\ E! x ps ) ) |",
+  "conclusion" : "#P_euan",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wb", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wa", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_weu", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_biimpa", "#P_ibar", "#P_eubid", "#P_syl", "#P_jcai", "#P_simpl", "#P_euex", "#P_exlimi", "#P_biimprcd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbv2 on Metamath](http://us.metamath.org/mpegif/cbv2.html)"
+  } ],
+  "names" : [ "cbv2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vy", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wb", "#T_wal", "#T_vy", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule used to change bound variables, using implicit substitution. (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  Format hypotheses to common style.  (Revised by Wolf Lammen, 13-May-2018.) \n\n---\n\n Rule used to change bound variables, using implicit substitution. Revised to align format of hypotheses to common style.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  (Revised by Wolf Lammen, 13-May-2018.) ",
+  "statement" : "cbv2.1 $e |- F/ x ph $.\ncbv2.2 $e |- F/ y ph $.\ncbv2.3 $e |- ( ph -> F/ y ps ) $.\ncbv2.4 $e |- ( ph -> F/ x ch ) $.\ncbv2.5 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.\ncbv2 $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $."
+}

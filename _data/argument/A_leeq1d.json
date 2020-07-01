@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leeq1d on Metamath](http://us.metamath.org/mpegif/leeq1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | leeq1d.1 | |- ( ph -> A <_ C ) |\n| 2 |  | leeq1d.2 | |- ( ph -> A = B ) |\n| 3 |  | leeq1d.3 | |- ( ph -> A e. RR ) |\n| 4 |  | leeq1d.4 | |- ( ph -> C e. RR ) |\n| 5 | 2 | #P_breq1d | |- ( ph -> ( A <_ C <-> B <_ C ) ) |\n| 6 | 1, 5 | #P_mpbid | |- ( ph -> B <_ C ) |",
+  "conclusion" : "#P_leeq1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_cle", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_breq1d" ]
+}

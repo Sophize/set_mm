@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gzsubrg on Metamath](http://us.metamath.org/mpegif/gzsubrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_gzcn | |- ( x e. Z[i] -> x e. CC ) |\n| 2 |  | #P_gzaddcl | |- ( ( x e. Z[i] /\\ y e. Z[i] ) -> ( x + y ) e. Z[i] ) |\n| 3 |  | #P_gznegcl | |- ( x e. Z[i] -> -u x e. Z[i] ) |\n| 4 |  | #P_1z | |- 1 e. ZZ |\n| 5 |  | #P_zgz | |- ( 1 e. ZZ -> 1 e. Z[i] ) |\n| 6 | 4, 5 | #P_ax-mp | |- 1 e. Z[i] |\n| 7 |  | #P_gzmulcl | |- ( ( x e. Z[i] /\\ y e. Z[i] ) -> ( x x. y ) e. Z[i] ) |\n| 8 | 1, 2, 3, 6, 7 | #P_cnsubrglem | |- Z[i] e. ( SubRing ` CCfld ) |",
+  "conclusion" : "#P_gzsubrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wcel", "#T_cgz", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cgz", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cgz", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cgz", "#T_vx.wal", "#T_wcel", "#T_cgz", "#T_wi", "#T_cneg", "#T_vx.wal", "#T_wcel", "#T_cgz", "#T_c1", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_wcel", "#T_cgz", "#T_c1", "#T_wcel", "#T_cgz", "#T_vx.wal", "#T_wcel", "#T_cgz", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cgz", "#T_wi", "#T_vx.wal", "#T_cmul", "#T_vy.tru", "#T_wcel", "#T_cgz", "#T_cgz", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnsubrglem", "#P_ax-mp", "#P_gzaddcl", "#P_zgz", "#P_gzcn", "#P_1z", "#P_gzmulcl", "#P_gznegcl" ]
+}

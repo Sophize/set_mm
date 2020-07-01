@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See condandc on Metamath](http://us.metamath.org/mpegif/condandc.html)"
+  } ],
+  "names" : [ "condandc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Proof by contradiction.  This only holds for decidable propositions, as it is part of the family of theorems which assume ` -. ps ` , derive a contradiction, and therefore conclude ` ps ` .  By contrast, assuming ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` , as in ~ pm2.65 , is valid for all propositions.  (Contributed by Jim Kingdon, 13-May-2018.) ",
+  "statement" : "condandc.1 $e |- ( ( ph /\\ -. ps ) -> ch ) $.\ncondandc.2 $e |- ( ( ph /\\ -. ps ) -> -. ch ) $.\ncondandc $p |- ( DECID ps -> ( ph -> ps ) ) $."
+}

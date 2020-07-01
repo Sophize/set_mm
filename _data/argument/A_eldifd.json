@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eldifd on Metamath](http://us.metamath.org/mpegif/eldifd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eldifd.1 | |- ( ph -> A e. B ) |\n| 2 |  | eldifd.2 | |- ( ph -> -. A e. C ) |\n| 3 |  | #P_eldif | |- ( A e. ( B \\ C ) <-> ( A e. B /\\ -. A e. C ) ) |\n| 4 | 1, 2, 3 | #P_sylanbrc | |- ( ph -> A e. ( B \\ C ) ) |",
+  "conclusion" : "#P_eldifd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_cdif", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_sylanbrc" ]
+}

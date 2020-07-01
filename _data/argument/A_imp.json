@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imp on Metamath](http://us.metamath.org/mpegif/imp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | imp.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | #P_df-an | |- ( ( ph /\\ ps ) <-> -. ( ph -> -. ps ) ) |\n| 3 | 1 | #P_impi | |- ( -. ( ph -> -. ps ) -> ch ) |\n| 4 | 2, 3 | #P_sylbi | |- ( ( ph /\\ ps ) -> ch ) |",
+  "conclusion" : "#P_imp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impi", "#P_df-an", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedth2h on Metamath](http://us.metamath.org/mpegif/dedth2h.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dedth2h.1 | |- ( A = if ( ph , A , C ) -> ( ch <-> th ) ) |\n| 2 |  | dedth2h.2 | |- ( B = if ( ps , B , D ) -> ( th <-> ta ) ) |\n| 3 |  | dedth2h.3 | |- ta |\n| 4 | 1 | #P_imbi2d | |- ( A = if ( ph , A , C ) -> ( ( ps -> ch ) <-> ( ps -> th ) ) ) |\n| 5 | 2, 3 | #P_dedth | |- ( ps -> th ) |\n| 6 | 4, 5 | #P_dedth | |- ( ph -> ( ps -> ch ) ) |\n| 7 | 6 | #P_imp | |- ( ( ph /\\ ps ) -> ch ) |",
+  "conclusion" : "#P_dedth2h",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cC", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cD", "#T_wi", "#T_wth", "#T_wb", "#T_wta", "#T_wta", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cC", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imp", "#P_imbi2d", "#P_dedth" ]
+}

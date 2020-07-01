@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sitg on Metamath](http://us.metamath.org/mpegif/df-sitg.html)"
+  } ],
+  "names" : [ "df-sitg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csitg", "#T_wceq", "#T_vw", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vm", "#T_cmpt2--3", "#T_cuni", "#T_crn", "#T_cmeas", "#T_cmpt2--4", "#T_vf", "#T_cmpt--1", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_cdm", "#T_vm", "#T_cmbfm", "#T_csigagen", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_vw", "#T_crab--3", "#T_crn", "#T_vg", "#T_wcel", "#T_cfn", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crn", "#T_vg", "#T_cdif", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_vw", "#T_csn--2", "#T_vm", "#T_cfv", "#T_ccnv", "#T_vg", "#T_cima", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wcel", "#T_cc0", "#T_cico", "#T_cpnf", "#T_crab--4", "#T_cmpt--2", "#T_vw", "#T_cgsu", "#T_vx", "#T_cmpt--1", "#T_crn", "#T_vf", "#T_cdif", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_vw", "#T_csn--2", "#T_cmpt--2", "#T_crrh", "#T_cfv", "#T_csca", "#T_cfv", "#T_vw", "#T_cfv", "#T_vm", "#T_cfv", "#T_ccnv", "#T_vf", "#T_cima", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cvsca", "#T_cfv", "#T_vw", "#T_vx", "#T_vf", "#T_vg", "#T_vm", "#T_vw", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the integral of simple functions from a measurable space ` dom m ` to a generic space ` w ` equipped with the right scalar product. ` w ` will later be required to be a Banach space. These simple functions are required to take finitely many different values: this is expressed by ` ran g e. Fin ` in the definition. Moreover, for each ` x ` , the pre-image ` ( ``' g \" { x } ) ` is requested to be measurable, of finite measure. In this definition, ` ( sigaGen `` ( TopOpen `` w ) ) ` is the Borel sigma-algebra on ` w ` , and the functions ` g ` range over the measurable functions over that Borel algebra. Definition 2.4.1 of [Bogachev] p. 118.  (Contributed by Thierry Arnoux, 21-Oct-2017.) ",
+  "statement" : "df-sitg $p |- sitg = ( w e. _V , m e. U. ran measures |-> ( f e. { g e. ( dom m MblFnM ( sigaGen ` ( TopOpen ` w ) ) ) | ( ran g e. Fin /\\ A. x e. ( ran g \\ { ( 0g ` w ) } ) ( m ` ( `' g \" { x } ) ) e. ( 0 [,) +oo ) ) } |-> ( w gsum ( x e. ( ran f \\ { ( 0g ` w ) } ) |-> ( ( ( RRHom ` ( Scalar ` w ) ) ` ( m ` ( `' f \" { x } ) ) ) ( .s ` w ) x ) ) ) ) ) $.\n$d f g m w x $."
+}

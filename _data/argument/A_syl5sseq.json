@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl5sseq on Metamath](http://us.metamath.org/mpegif/syl5sseq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl5sseq.1 | |- B C_ A |\n| 2 |  | syl5sseq.2 | |- ( ph -> A = C ) |\n| 3 |  | #P_sseq2 | |- ( A = C -> ( B C_ A <-> B C_ C ) ) |\n| 4 | 3 | #P_biimpa | |- ( ( A = C /\\ B C_ A ) -> B C_ C ) |\n| 5 | 2, 1, 4 | #P_sylancl | |- ( ph -> B C_ C ) |",
+  "conclusion" : "#P_syl5sseq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wss", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_sseq2", "#P_sylancl" ]
+}

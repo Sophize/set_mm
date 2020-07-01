@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvrab on Metamath](http://us.metamath.org/mpegif/cbvrab.html)"
+  } ],
+  "names" : [ "cbvrab" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vy", "#T_cA", "#T_wnf", "#T_vy", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wps", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule to change the bound variable in a restricted class abstraction, using implicit substitution.  This version has bound-variable hypotheses in place of distinct variable conditions.  (Contributed by Andrew Salmon, 11-Jul-2011.)  (Revised by Mario Carneiro, 9-Oct-2016.) ",
+  "statement" : "cbvrab.1 $e |- F/_ x A $.\ncbvrab.2 $e |- F/_ y A $.\ncbvrab.3 $e |- F/ y ph $.\ncbvrab.4 $e |- F/ x ps $.\ncbvrab.5 $e |- ( x = y -> ( ph <-> ps ) ) $.\ncbvrab $p |- { x e. A | ph } = { y e. A | ps } $."
+}

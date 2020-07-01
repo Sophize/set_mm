@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chcon2i on Metamath](http://us.metamath.org/mpegif/chcon2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ch0le.1 | |- A e. CH |\n| 2 |  | chjcl.2 | |- B e. CH |\n| 3 | 1, 2 | #P_chsscon2i | |- ( A C_ ( _|_ ` B ) <-> B C_ ( _|_ ` A ) ) |\n| 4 | 2, 1 | #P_chsscon1i | |- ( ( _|_ ` B ) C_ A <-> ( _|_ ` A ) C_ B ) |\n| 5 | 3, 4 | #P_anbi12i | |- ( ( A C_ ( _|_ ` B ) /\\ ( _|_ ` B ) C_ A ) <-> ( B C_ ( _|_ ` A ) /\\ ( _|_ ` A ) C_ B ) ) |\n| 6 |  | #P_eqss | |- ( A = ( _|_ ` B ) <-> ( A C_ ( _|_ ` B ) /\\ ( _|_ ` B ) C_ A ) ) |\n| 7 |  | #P_eqss | |- ( B = ( _|_ ` A ) <-> ( B C_ ( _|_ ` A ) /\\ ( _|_ ` A ) C_ B ) ) |\n| 8 | 5, 6, 7 | #P_3bitr4i | |- ( A = ( _|_ ` B ) <-> B = ( _|_ ` A ) ) |",
+  "conclusion" : "#P_chcon2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wa", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wa", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cort", "#T_cfv", "#T_cB", "#T_wb", "#T_cB", "#T_wceq", "#T_cort", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_chsscon2i", "#P_eqss", "#P_chsscon1i", "#P_3bitr4i" ]
+}

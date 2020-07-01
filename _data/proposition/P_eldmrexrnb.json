@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eldmrexrnb on Metamath](http://us.metamath.org/mpegif/eldmrexrnb.html)"
+  } ],
+  "names" : [ "eldmrexrnb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wa", "#T_c0", "#T_wnel", "#T_crn", "#T_cF", "#T_wi", "#T_cY", "#T_wcel", "#T_cdm", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_crn", "#T_cF", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_cF", "#T_vx", "#T_cY", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For any element in the domain of a function, there is an element in the range of the function which is the value of the function at that element.  Because of the definition ~ df-fv of the value of a function, the theorem is only valid in general if the empty set is not contained in the range of the function (the implication \"to the right\" is always valid).  Indeed, with the definition ~ df-fv of the value of a function, ` ( F `` Y ) = (/) ` may mean that the value of ` F ` at ` Y ` is the empty set or that ` F ` is not defined at ` Y ` .  (Contributed by Alexander van der Vekens, 17-Dec-2017.) ",
+  "statement" : "eldmrexrnb $p |- ( ( Fun F /\\ (/) e/ ran F ) -> ( Y e. dom F <-> E. x e. ran F x = ( F ` Y ) ) ) $.\n$d F x $.\n$d Y x $."
+}

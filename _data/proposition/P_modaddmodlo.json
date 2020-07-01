@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See modaddmodlo on Metamath](http://us.metamath.org/mpegif/modaddmodlo.html)"
+  } ],
+  "names" : [ "modaddmodlo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cn", "#T_wi", "#T_cB", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cM", "#T_cmin", "#T_cA", "#T_cmo", "#T_cM", "#T_wi", "#T_cB", "#T_caddc", "#T_cA", "#T_cmo", "#T_cM", "#T_wceq", "#T_cB", "#T_caddc", "#T_cA", "#T_cmo", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The sum of an integer modulo a positive integer and another integer equals the sum of the two integers modulo the positive integer if the other integer is in the lower part of the range between 0 and the positive integer.  (Contributed by AV, 30-Oct-2018.) ",
+  "statement" : "modaddmodlo $p |- ( ( A e. ZZ /\\ M e. NN ) -> ( B e. ( 0 ..^ ( M - ( A mod M ) ) ) -> ( B + ( A mod M ) ) = ( ( B + A ) mod M ) ) ) $."
+}

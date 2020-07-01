@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eupickbi on Metamath](http://us.metamath.org/mpegif/eupickbi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eupicka | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( ph -> ps ) ) |\n| 2 | 1 | #P_ex | |- ( E! x ph -> ( E. x ( ph /\\ ps ) -> A. x ( ph -> ps ) ) ) |\n| 3 |  | #P_euex | |- ( E! x ph -> E. x ph ) |\n| 4 |  | #P_exintr | |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ( ph /\\ ps ) ) ) |\n| 5 | 3, 4 | #P_syl5com | |- ( E! x ph -> ( A. x ( ph -> ps ) -> E. x ( ph /\\ ps ) ) ) |\n| 6 | 2, 5 | #P_impbid | |- ( E! x ph -> ( E. x ( ph /\\ ps ) <-> A. x ( ph -> ps ) ) ) |",
+  "conclusion" : "#P_eupickbi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ex", "#P_exintr", "#P_impbid", "#P_eupicka", "#P_euex", "#P_syl5com" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ensdomtr on Metamath](http://us.metamath.org/mpegif/ensdomtr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_endom | |- ( A ~~ B -> A ~<_ B ) |\n| 2 |  | #P_domsdomtr | |- ( ( A ~<_ B /\\ B ~< C ) -> A ~< C ) |\n| 3 | 1, 2 | #P_sylan | |- ( ( A ~~ B /\\ B ~< C ) -> A ~< C ) |",
+  "conclusion" : "#P_ensdomtr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_csdm", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cC", "#T_cA", "#T_cen", "#T_cB", "#T_wa", "#T_cB", "#T_csdm", "#T_cC", "#T_wi", "#T_cA", "#T_csdm", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_domsdomtr", "#P_endom" ]
+}

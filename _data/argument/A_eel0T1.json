@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eel0T1 on Metamath](http://us.metamath.org/mpegif/eel0T1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eel0T1.1 | |- ph |\n| 2 |  | eel0T1.2 | |- ( T. -> ps ) |\n| 3 |  | eel0T1.3 | |- ( ch -> th ) |\n| 4 |  | eel0T1.4 | |- ( ( ph /\\ ps /\\ th ) -> ta ) |\n| 5 |  | #P_3anass | |- ( ( ph /\\ T. /\\ ch ) <-> ( ph /\\ ( T. /\\ ch ) ) ) |\n| 6 |  | #P_simpr | |- ( ( ph /\\ ( T. /\\ ch ) ) -> ( T. /\\ ch ) ) |\n| 7 | 1 | #P_jctl | |- ( ( T. /\\ ch ) -> ( ph /\\ ( T. /\\ ch ) ) ) |\n| 8 | 6, 7 | #P_impbii | |- ( ( ph /\\ ( T. /\\ ch ) ) <-> ( T. /\\ ch ) ) |\n| 9 |  | #P_truan | |- ( ( T. /\\ ch ) <-> ch ) |\n| 10 | 5, 8, 9 | #P_3bitri | |- ( ( ph /\\ T. /\\ ch ) <-> ch ) |\n| 11 | 2, 4 | #P_syl3an2 | |- ( ( ph /\\ T. /\\ th ) -> ta ) |\n| 12 | 3, 11 | #P_syl3an3 | |- ( ( ph /\\ T. /\\ ch ) -> ta ) |\n| 13 | 10, 12 | #P_sylbir | |- ( ch -> ta ) |",
+  "conclusion" : "#P_eel0T1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wtru", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wi", "#T_wtru", "#T_wa", "#T_wch", "#T_wtru", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wtru", "#T_wa", "#T_wch", "#T_wb", "#T_wtru", "#T_wa", "#T_wch", "#T_wtru", "#T_wa", "#T_wch", "#T_wb", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wta", "#T_wch", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_truan", "#P_3bitri", "#P_sylbir", "#P_syl3an2", "#P_3anass", "#P_jctl", "#P_syl3an3", "#P_simpr" ]
+}

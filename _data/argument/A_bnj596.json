@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj596 on Metamath](http://us.metamath.org/mpegif/bnj596.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj596.1 | |- ( ph -> A. x ph ) |\n| 2 |  | bnj596.2 | |- ( ph -> E. x ps ) |\n| 3 | 2 | #P_ancli | |- ( ph -> ( ph /\\ E. x ps ) ) |\n| 4 | 1 | #P_nfi | |- F/ x ph |\n| 5 | 4 | #P_19.42 | |- ( E. x ( ph /\\ ps ) <-> ( ph /\\ E. x ps ) ) |\n| 6 | 3, 5 | #P_sylibr | |- ( ph -> E. x ( ph /\\ ps ) ) |",
+  "conclusion" : "#P_bnj596",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wph", "#T_wi", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfi", "#P_ancli", "#P_19.42", "#P_sylibr" ]
+}

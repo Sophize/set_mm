@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1i on Metamath](http://us.metamath.org/mpegif/necon1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1i.1 | |- ( A =/= B -> C = D ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 2, 1 | #P_sylbir | |- ( -. A = B -> C = D ) |\n| 4 | 3 | #P_necon1ai | |- ( C =/= D -> A = B ) |",
+  "conclusion" : "#P_necon1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cC", "#T_wne", "#T_cD", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon1ai", "#P_sylbir", "#P_df-ne" ]
+}

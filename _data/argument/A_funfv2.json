@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funfv2 on Metamath](http://us.metamath.org/mpegif/funfv2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funfv | |- ( Fun F -> ( F ` A ) = U. ( F \" { A } ) ) |\n| 2 |  | #P_funrel | |- ( Fun F -> Rel F ) |\n| 3 |  | #P_relimasn | |- ( Rel F -> ( F \" { A } ) = { y | A F y } ) |\n| 4 | 2, 3 | #P_syl | |- ( Fun F -> ( F \" { A } ) = { y | A F y } ) |\n| 5 | 4 | #P_unieqd | |- ( Fun F -> U. ( F \" { A } ) = U. { y | A F y } ) |\n| 6 | 1, 5 | #P_eqtrd | |- ( Fun F -> ( F ` A ) = U. { y | A F y } ) |",
+  "conclusion" : "#P_funfv2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cF", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wfun", "#T_cF", "#T_wi", "#T_wrel", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--3", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--3", "#T_wfun", "#T_cF", "#T_wi", "#T_cuni", "#T_cF", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--3", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_cA", "#T_cF", "#T_vy", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funfv", "#P_eqtrd", "#P_unieqd", "#P_funrel", "#P_syl", "#P_relimasn" ]
+}

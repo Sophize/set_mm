@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See utoptopon on Metamath](http://us.metamath.org/mpegif/utoptopon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_utoptop | |- ( U e. ( UnifOn ` X ) -> ( unifTop ` U ) e. Top ) |\n| 2 |  | #P_utopbas | |- ( U e. ( UnifOn ` X ) -> X = U. ( unifTop ` U ) ) |\n| 3 |  | #P_istopon | |- ( ( unifTop ` U ) e. ( TopOn ` X ) <-> ( ( unifTop ` U ) e. Top /\\ X = U. ( unifTop ` U ) ) ) |\n| 4 | 1, 2, 3 | #P_sylanbrc | |- ( U e. ( UnifOn ` X ) -> ( unifTop ` U ) e. ( TopOn ` X ) ) |",
+  "conclusion" : "#P_utoptopon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cU", "#T_wcel", "#T_ctop", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wceq", "#T_cuni", "#T_cutop", "#T_cfv", "#T_cU", "#T_cutop", "#T_cfv", "#T_cU", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wb", "#T_cutop", "#T_cfv", "#T_cU", "#T_wcel", "#T_ctop", "#T_wa", "#T_cX", "#T_wceq", "#T_cuni", "#T_cutop", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cU", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_istopon", "#P_sylanbrc", "#P_utopbas", "#P_utoptop" ]
+}

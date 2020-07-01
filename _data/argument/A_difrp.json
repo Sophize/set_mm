@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difrp on Metamath](http://us.metamath.org/mpegif/difrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_posdif | |- ( ( A e. RR /\\ B e. RR ) -> ( A < B <-> 0 < ( B - A ) ) ) |\n| 2 |  | #P_resubcl | |- ( ( B e. RR /\\ A e. RR ) -> ( B - A ) e. RR ) |\n| 3 | 2 | #P_ancoms | |- ( ( A e. RR /\\ B e. RR ) -> ( B - A ) e. RR ) |\n| 4 |  | #P_elrp | |- ( ( B - A ) e. RR+ <-> ( ( B - A ) e. RR /\\ 0 < ( B - A ) ) ) |\n| 5 | 4 | #P_baib | |- ( ( B - A ) e. RR -> ( ( B - A ) e. RR+ <-> 0 < ( B - A ) ) ) |\n| 6 | 3, 5 | #P_syl | |- ( ( A e. RR /\\ B e. RR ) -> ( ( B - A ) e. RR+ <-> 0 < ( B - A ) ) ) |\n| 7 | 1, 6 | #P_bitr4d | |- ( ( A e. RR /\\ B e. RR ) -> ( A < B <-> ( B - A ) e. RR+ ) ) |",
+  "conclusion" : "#P_difrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wb", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wb", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wb", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wb", "#T_cB", "#T_cmin", "#T_cA", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resubcl", "#P_bitr4d", "#P_posdif", "#P_syl", "#P_baib", "#P_ancoms", "#P_elrp" ]
+}

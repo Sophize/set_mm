@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmressnsn on Metamath](http://us.metamath.org/mpegif/dmressnsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dmres | |- dom ( F |` { A } ) = ( { A } i^i dom F ) |\n| 2 |  | #P_snssi | |- ( A e. dom F -> { A } C_ dom F ) |\n| 3 |  | #P_df-ss | |- ( { A } C_ dom F <-> ( { A } i^i dom F ) = { A } ) |\n| 4 | 2, 3 | #P_sylib | |- ( A e. dom F -> ( { A } i^i dom F ) = { A } ) |\n| 5 | 1, 4 | #P_syl5eq | |- ( A e. dom F -> dom ( F |` { A } ) = { A } ) |",
+  "conclusion" : "#P_dmressnsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cdm", "#T_cF", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cdm", "#T_cF", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cin", "#T_cdm", "#T_cF", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cdm", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ss", "#P_sylib", "#P_dmres", "#P_snssi", "#P_syl5eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0cnALT on Metamath](http://us.metamath.org/mpegif/0cnALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-icn | |- _i e. CC |\n| 2 |  | #P_cnegex | |- ( _i e. CC -> E. x e. CC ( _i + x ) = 0 ) |\n| 3 | 1, 2 | #P_ax-mp | |- E. x e. CC ( _i + x ) = 0 |\n| 4 |  | #P_addcl | |- ( ( _i e. CC /\\ x e. CC ) -> ( _i + x ) e. CC ) |\n| 5 | 1, 4 | #P_mpan | |- ( x e. CC -> ( _i + x ) e. CC ) |\n| 6 |  | #P_eleq1 | |- ( ( _i + x ) = 0 -> ( ( _i + x ) e. CC <-> 0 e. CC ) ) |\n| 7 | 5, 6 | #P_syl5ibcom | |- ( x e. CC -> ( ( _i + x ) = 0 -> 0 e. CC ) ) |\n| 8 | 7 | #P_rexlimiv | |- ( E. x e. CC ( _i + x ) = 0 -> 0 e. CC ) |\n| 9 | 3, 8 | #P_ax-mp | |- 0 e. CC |\n\\\n Alternate proof of ~ 0cn .  (Contributed by NM, 19-Feb-2005.)  (Revised by Mario Carneiro, 27-May-2016.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_0cn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_wcel", "#T_cc", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_ci", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wi", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wb", "#T_cc0", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_wcel", "#T_cc", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_ci", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_wcel", "#T_cc", "#T_cc0", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_ax-mp", "#P_syl5ibcom", "#P_cnegex", "#P_addcl", "#P_eleq1", "#P_mpan", "#P_rexlimiv" ]
+}

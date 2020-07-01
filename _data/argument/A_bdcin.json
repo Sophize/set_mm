@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcin on Metamath](http://us.metamath.org/mpegif/bdcin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdcdif.1 | |- Bdd_ A |\n| 2 |  | bdcdif.2 | |- Bdd_ B |\n| 3 | 1 | #P_bdeli | |- Bdd x e. A |\n| 4 | 2 | #P_bdeli | |- Bdd x e. B |\n| 5 | 3, 4 | #P_ax-bdan | |- Bdd ( x e. A /\\ x e. B ) |\n| 6 | 5 | #P_bdcab | |- Bdd_ { x | ( x e. A /\\ x e. B ) } |\n| 7 |  | #P_df-in | |- ( A i^i B ) = { x | ( x e. A /\\ x e. B ) } |\n| 8 | 6, 7 | #P_bdceqir | |- Bdd_ ( A i^i B ) |",
+  "conclusion" : "#P_bdcin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wbdc", "#T_cA", "#T_wbdc", "#T_cB", "#T_wbd", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wbd", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wbd", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wbdc", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_wbdc", "#T_cA", "#T_cin", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdeli", "#P_bdceqir", "#P_ax-bdan", "#P_df-in", "#P_bdcab" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frlmbasf on Metamath](http://us.metamath.org/mpegif/frlmbasf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frlmval.f | |- F = ( R freeLMod I ) |\n| 2 |  | frlmbasmap.n | |- N = ( Base ` R ) |\n| 3 |  | frlmbasmap.b | |- B = ( Base ` F ) |\n| 4 | 1, 2, 3 | #P_frlmbasmap | |- ( ( I e. W /\\ X e. B ) -> X e. ( N ^m I ) ) |\n| 5 |  | #P_fvex | |- ( Base ` R ) e. _V |\n| 6 | 2, 5 | #P_eqeltri | |- N e. _V |\n| 7 |  | #P_elmapg | |- ( ( N e. _V /\\ I e. W ) -> ( X e. ( N ^m I ) <-> X : I --> N ) ) |\n| 8 | 6, 7 | #P_mpan | |- ( I e. W -> ( X e. ( N ^m I ) <-> X : I --> N ) ) |\n| 9 | 8 | #P_adantr | |- ( ( I e. W /\\ X e. B ) -> ( X e. ( N ^m I ) <-> X : I --> N ) ) |\n| 10 | 4, 9 | #P_mpbid | |- ( ( I e. W /\\ X e. B ) -> X : I --> N ) |",
+  "conclusion" : "#P_frlmbasf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cR", "#T_cfrlm", "#T_cI", "#T_cN", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cI", "#T_wcel", "#T_cW", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cmap", "#T_cI", "#T_cbs", "#T_cfv", "#T_cR", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cvv", "#T_wa", "#T_cI", "#T_wcel", "#T_cW", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cmap", "#T_cI", "#T_wb", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_cI", "#T_wcel", "#T_cW", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cmap", "#T_cI", "#T_wb", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_cI", "#T_wcel", "#T_cW", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cmap", "#T_cI", "#T_wb", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_cI", "#T_wcel", "#T_cW", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frlmbasmap", "#P_eqeltri", "#P_elmapg", "#P_mpbid", "#P_mpan", "#P_fvex", "#P_adantr" ]
+}

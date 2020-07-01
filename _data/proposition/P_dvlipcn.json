@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvlipcn on Metamath](http://us.metamath.org/mpegif/dvlipcn.html)"
+  } ],
+  "names" : [ "dvlipcn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cX", "#T_wss", "#T_cc", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cxr", "#T_cB", "#T_wceq", "#T_cA", "#T_cbl", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cR", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cdm", "#T_cc", "#T_cdv", "#T_cF", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cabs", "#T_cfv", "#T_cc", "#T_cdv", "#T_cF", "#T_cfv", "#T_vx", "#T_cle", "#T_cM", "#T_wph", "#T_wa", "#T_cY", "#T_wcel", "#T_cB", "#T_wa", "#T_cZ", "#T_wcel", "#T_cB", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_cY", "#T_cmin", "#T_cF", "#T_cfv", "#T_cZ", "#T_cle", "#T_cM", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cY", "#T_cmin", "#T_cZ", "#T_cB", "#T_vx", "#T_cF", "#T_vx", "#T_cM", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A complex function with derivative bounded by ` M ` on an open ball is Lipschitz continuous with Lipschitz constant equal to ` M ` . (Contributed by Mario Carneiro, 18-Mar-2015.) ",
+  "statement" : "dvlipcn.x $e |- ( ph -> X C_ CC ) $.\ndvlipcn.f $e |- ( ph -> F : X --> CC ) $.\ndvlipcn.a $e |- ( ph -> A e. CC ) $.\ndvlipcn.r $e |- ( ph -> R e. RR* ) $.\ndvlipcn.b $e |- B = ( A ( ball ` ( abs o. - ) ) R ) $.\ndvlipcn.d $e |- ( ph -> B C_ dom ( CC _D F ) ) $.\ndvlipcn.m $e |- ( ph -> M e. RR ) $.\ndvlipcn.l $e |- ( ( ph /\\ x e. B ) -> ( abs ` ( ( CC _D F ) ` x ) ) <_ M ) $.\ndvlipcn $p |- ( ( ph /\\ ( Y e. B /\\ Z e. B ) ) -> ( abs ` ( ( F ` Y ) - ( F ` Z ) ) ) <_ ( M x. ( abs ` ( Y - Z ) ) ) ) $.\n$d B x $.\n$d F x $.\n$d M x $.\n$d ph x $."
+}

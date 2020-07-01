@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ralimdaaOLD on Metamath](http://us.metamath.org/mpegif/ralimdaaOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralimdaa.1 | |- F/ x ph |\n| 2 |  | ralimdaa.2 | |- ( ( ph /\\ x e. A ) -> ( ps -> ch ) ) |\n| 3 | 2 | #P_ex | |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) |\n| 4 | 3 | #P_a2d | |- ( ph -> ( ( x e. A -> ps ) -> ( x e. A -> ch ) ) ) |\n| 5 | 1, 4 | #P_alimd | |- ( ph -> ( A. x ( x e. A -> ps ) -> A. x ( x e. A -> ch ) ) ) |\n| 6 |  | #P_df-ral | |- ( A. x e. A ps <-> A. x ( x e. A -> ps ) ) |\n| 7 |  | #P_df-ral | |- ( A. x e. A ch <-> A. x ( x e. A -> ch ) ) |\n| 8 | 5, 6, 7 | #P_3imtr4g | |- ( ph -> ( A. x e. A ps -> A. x e. A ch ) ) |\n\\\n Obsolete proof of ~ ralimdaa as of 4-Dec-2019.  (Contributed by NM, 22-Sep-2003.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_ralimdaa",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wch", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wps", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alimd", "#P_df-ral", "#P_ex", "#P_3imtr4g", "#P_a2d" ]
+}

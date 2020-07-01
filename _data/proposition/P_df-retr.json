@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-retr on Metamath](http://us.metamath.org/mpegif/df-retr.html)"
+  } ],
+  "names" : [ "df-retr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cretr", "#T_wceq", "#T_vj", "#T_cmpt2--1", "#T_ctop", "#T_cmpt2--2", "#T_vk", "#T_cmpt2--3", "#T_ctop", "#T_cmpt2--4", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_vj", "#T_ccn", "#T_vk", "#T_crab--3", "#T_wrex--1", "#T_vs", "#T_wrex--2", "#T_vk", "#T_ccn", "#T_vj", "#T_vr", "#T_ccom", "#T_vs", "#T_vj", "#T_chtpy", "#T_vj", "#T_cid", "#T_cres", "#T_cuni", "#T_vj", "#T_wne", "#T_c0", "#T_crab--4", "#T_vj", "#T_vk", "#T_vr", "#T_vs" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of retractions on two topological spaces.  We say that ` R ` is a retraction from ` J ` to ` K ` . or ` R e. ( J Retr K ) ` iff there is an ` S ` such that ` R : J --> K , S : K --> J ` are continuous functions called the retraction and section respectively, and their composite ` R o. S ` is homotopic to the identity map.  If a retraction exists, we say ` J ` is a retract of ` K ` .  (This terminology is borrowed from HoTT and appears to be nonstandard, although it has similaries to the concept of retract in the category of topological spaces and to a deformation retract in general topology.)  Two topological spaces that are retracts of each other are called homotopy equivalent.  (Contributed by Mario Carneiro, 11-Feb-2015.) ",
+  "statement" : "df-retr $p |- Retr = ( j e. Top , k e. Top |-> { r e. ( j Cn k ) | E. s e. ( k Cn j ) ( ( r o. s ) ( j Htpy j ) ( _I |` U. j ) ) =/= (/) } ) $.\n$d j k r s $."
+}

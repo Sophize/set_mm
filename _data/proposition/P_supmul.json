@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supmul on Metamath](http://us.metamath.org/mpegif/supmul.html)"
+  } ],
+  "names" : [ "supmul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wrex--1", "#T_vv", "#T_wrex--2", "#T_cA", "#T_wrex--1", "#T_vb", "#T_wrex--2", "#T_cB", "#T_vz", "#T_wceq", "#T_vv", "#T_cmul", "#T_vb", "#T_cab--3", "#T_wph", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_cc0", "#T_cle", "#T_vx", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_cc0", "#T_cle", "#T_vx", "#T_w3a--1", "#T_cA", "#T_wss", "#T_cr", "#T_w3a--1", "#T_cA", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_vy", "#T_cle", "#T_vx", "#T_w3a--2", "#T_cB", "#T_wss", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_vy", "#T_cle", "#T_vx", "#T_wph", "#T_wi", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cmul", "#T_csup--1", "#T_cB", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_csup--1", "#T_cC", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cA", "#T_vb", "#T_vv", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vb", "#T_vv", "#T_vx", "#T_vy", "#T_vz", "#T_cC", "#T_vx", "#T_vb", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The supremum function distributes over multiplication, in the sense that ` ( sup A ) x. ( sup B ) = sup ( A x. B ) ` , where ` A x. B ` is shorthand for ` { a x. b | a e. A , b e. B } ` and is defined as ` C ` below.  We made use of this in our definition of multiplication in the Dedekind cut construction of the reals (see ~ df-mp ).  (Contributed by Mario Carneiro, 5-Jul-2013.)  (Revised by Mario Carneiro, 6-Sep-2014.) ",
+  "statement" : "supmul.1 $e |- C = { z | E. v e. A E. b e. B z = ( v x. b ) } $.\nsupmul.2 $e |- ( ph <-> ( ( A. x e. A 0 <_ x /\\ A. x e. B 0 <_ x ) /\\ ( A C_ RR /\\ A =/= (/) /\\ E. x e. RR A. y e. A y <_ x ) /\\ ( B C_ RR /\\ B =/= (/) /\\ E. x e. RR A. y e. B y <_ x ) ) ) $.\nsupmul $p |- ( ph -> ( sup ( A , RR , < ) x. sup ( B , RR , < ) ) = sup ( C , RR , < ) ) $.\n$d A b v x y z $.\n$d B b v x y z $.\n$d C x $.\n$d b ph z $."
+}

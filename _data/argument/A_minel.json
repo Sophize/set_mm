@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See minel on Metamath](http://us.metamath.org/mpegif/minel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inelcm | |- ( ( A e. C /\\ A e. B ) -> ( C i^i B ) =/= (/) ) |\n| 2 | 1 | #P_necon2bi | |- ( ( C i^i B ) = (/) -> -. ( A e. C /\\ A e. B ) ) |\n| 3 |  | #P_imnan | |- ( ( A e. C -> -. A e. B ) <-> -. ( A e. C /\\ A e. B ) ) |\n| 4 | 2, 3 | #P_sylibr | |- ( ( C i^i B ) = (/) -> ( A e. C -> -. A e. B ) ) |\n| 5 | 4 | #P_con2d | |- ( ( C i^i B ) = (/) -> ( A e. B -> -. A e. C ) ) |\n| 6 | 5 | #P_impcom | |- ( ( A e. B /\\ ( C i^i B ) = (/) ) -> -. A e. C ) |",
+  "conclusion" : "#P_minel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_cC", "#T_cin", "#T_cB", "#T_wceq", "#T_c0", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon2bi", "#P_imnan", "#P_sylibr", "#P_inelcm", "#P_con2d", "#P_impcom" ]
+}

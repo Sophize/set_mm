@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mp3an on Metamath](http://us.metamath.org/mpegif/mp3an.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mp3an.1 | |- ph |\n| 2 |  | mp3an.2 | |- ps |\n| 3 |  | mp3an.3 | |- ch |\n| 4 |  | mp3an.4 | |- ( ( ph /\\ ps /\\ ch ) -> th ) |\n| 5 | 1, 4 | #P_mp3an1 | |- ( ( ps /\\ ch ) -> th ) |\n| 6 | 2, 3, 5 | #P_mp2an | |- th |",
+  "conclusion" : "#P_mp3an",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_mp3an1" ]
+}

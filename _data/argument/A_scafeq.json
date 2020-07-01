@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See scafeq on Metamath](http://us.metamath.org/mpegif/scafeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | scaffval.b | |- B = ( Base ` W ) |\n| 2 |  | scaffval.f | |- F = ( Scalar ` W ) |\n| 3 |  | scaffval.k | |- K = ( Base ` F ) |\n| 4 |  | scaffval.a | |- .xb = ( .sf ` W ) |\n| 5 |  | scaffval.s | |- .x. = ( .s ` W ) |\n| 6 |  | #P_fnov | |- ( .x. Fn ( K X. B ) <-> .x. = ( x e. K , y e. B |-> ( x .x. y ) ) ) |\n| 7 | 6 | #P_biimpi | |- ( .x. Fn ( K X. B ) -> .x. = ( x e. K , y e. B |-> ( x .x. y ) ) ) |\n| 8 | 1, 2, 3, 4, 5 | #P_scaffval | |- .xb = ( x e. K , y e. B |-> ( x .x. y ) ) |\n| 9 | 7, 8 | #P_syl6reqr | |- ( .x. Fn ( K X. B ) -> .xb = .x. ) |",
+  "conclusion" : "#P_scafeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.xb", "#T_wceq", "#T_cscaf", "#T_cfv", "#T_cW", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_c.x", "#T_wfn", "#T_cK", "#T_cxp", "#T_cB.wceq", "#T_wb", "#T_c.x", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cK", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_c.x", "#T_wfn", "#T_cK", "#T_cxp", "#T_cB.wceq", "#T_wi", "#T_c.x", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cK", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_c.xb", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cK", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_c.x", "#T_wfn", "#T_cK", "#T_cxp", "#T_cB", "#T_wi", "#T_c.xb", "#T_wceq", "#T_c.x" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_scaffval", "#P_fnov", "#P_syl6reqr", "#P_biimpi" ]
+}

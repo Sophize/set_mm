@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpoinvcl on Metamath](http://us.metamath.org/mpegif/grpoinvcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpinvcl.1 | |- X = ran G |\n| 2 |  | grpinvcl.2 | |- N = ( inv ` G ) |\n| 3 |  | #P_eqid | |- ( GId ` G ) = ( GId ` G ) |\n| 4 | 1, 3, 2 | #P_grpoinvval | |- ( ( G e. GrpOp /\\ A e. X ) -> ( N ` A ) = ( iota_ y e. X ( y G A ) = ( GId ` G ) ) ) |\n| 5 | 1, 3 | #P_grpoinveu | |- ( ( G e. GrpOp /\\ A e. X ) -> E! y e. X ( y G A ) = ( GId ` G ) ) |\n| 6 |  | #P_riotacl | |- ( E! y e. X ( y G A ) = ( GId ` G ) -> ( iota_ y e. X ( y G A ) = ( GId ` G ) ) e. X ) |\n| 7 | 5, 6 | #P_syl | |- ( ( G e. GrpOp /\\ A e. X ) -> ( iota_ y e. X ( y G A ) = ( GId ` G ) ) e. X ) |\n| 8 | 4, 7 | #P_eqeltrd | |- ( ( G e. GrpOp /\\ A e. X ) -> ( N ` A ) e. X ) |",
+  "conclusion" : "#P_grpoinvcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cN", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cG", "#T_cgi", "#T_cfv", "#T_cG", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cX", "#T_vy.tru", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cX", "#T_vy.tru", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cX", "#T_vy.tru", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_wi", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cX", "#T_vy.tru", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cX", "#T_vy.tru", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_grpoinveu", "#P_eqeltrd", "#P_grpoinvval", "#P_syl", "#P_riotacl" ]
+}

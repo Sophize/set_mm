@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvnobday on Metamath](http://us.metamath.org/mpegif/fvnobday.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bdayelon | |- ( bday ` A ) e. On |\n| 2 | 1 | #P_onirri | |- -. ( bday ` A ) e. ( bday ` A ) |\n| 3 |  | #P_bdayval | |- ( A e. No -> ( bday ` A ) = dom A ) |\n| 4 | 3 | #P_eleq2d | |- ( A e. No -> ( ( bday ` A ) e. ( bday ` A ) <-> ( bday ` A ) e. dom A ) ) |\n| 5 | 2, 4 | #P_mtbii | |- ( A e. No -> -. ( bday ` A ) e. dom A ) |\n| 6 |  | #P_ndmfv | |- ( -. ( bday ` A ) e. dom A -> ( A ` ( bday ` A ) ) = (/) ) |\n| 7 | 5, 6 | #P_syl | |- ( A e. No -> ( A ` ( bday ` A ) ) = (/) ) |",
+  "conclusion" : "#P_fvnobday",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wn", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_csur", "#T_wi", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_csur", "#T_wi", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_csur", "#T_wi", "#T_wn", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cA.wceq", "#T_wn", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cfv", "#T_cbday", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_wcel", "#T_csur", "#T_wi", "#T_cA", "#T_cfv", "#T_cbday", "#T_cfv", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ndmfv", "#P_onirri", "#P_eleq2d", "#P_bdayval", "#P_mtbii", "#P_syl", "#P_bdayelon" ]
+}

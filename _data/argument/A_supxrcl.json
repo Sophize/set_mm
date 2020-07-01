@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supxrcl on Metamath](http://us.metamath.org/mpegif/supxrcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xrltso | |- < Or RR* |\n| 2 | 1 | #P_a1i | |- ( A C_ RR* -> < Or RR* ) |\n| 3 |  | #P_xrsupss | |- ( A C_ RR* -> E. x e. RR* ( A. y e. A -. x < y /\\ A. y e. RR* ( y < x -> E. z e. A y < z ) ) ) |\n| 4 | 2, 3 | #P_supcl | |- ( A C_ RR* -> sup ( A , RR* , < ) e. RR* ) |",
+  "conclusion" : "#P_supxrcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_clt", "#T_wor", "#T_cxr", "#T_cA.wceq", "#T_wss", "#T_cxr", "#T_wi", "#T_clt", "#T_wor", "#T_cxr", "#T_cA.wceq", "#T_wss", "#T_cxr", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cxr", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_vx.wal", "#T_clt", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cxr", "#T_vy.tru", "#T_clt", "#T_vx.wal", "#T_wi", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_clt", "#T_vz", "#T_cA", "#T_wss", "#T_cxr", "#T_wi", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wcel", "#T_cxr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_supcl", "#P_xrltso", "#P_a1i", "#P_xrsupss" ]
+}

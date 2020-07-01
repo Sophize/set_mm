@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vmaprm on Metamath](http://us.metamath.org/mpegif/vmaprm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_prmnn | |- ( P e. Prime -> P e. NN ) |\n| 2 | 1 | #P_nncnd | |- ( P e. Prime -> P e. CC ) |\n| 3 | 2 | #P_exp1d | |- ( P e. Prime -> ( P ^ 1 ) = P ) |\n| 4 | 3 | #P_fveq2d | |- ( P e. Prime -> ( Lam ` ( P ^ 1 ) ) = ( Lam ` P ) ) |\n| 5 |  | #P_1nn | |- 1 e. NN |\n| 6 |  | #P_vmappw | |- ( ( P e. Prime /\\ 1 e. NN ) -> ( Lam ` ( P ^ 1 ) ) = ( log ` P ) ) |\n| 7 | 5, 6 | #P_mpan2 | |- ( P e. Prime -> ( Lam ` ( P ^ 1 ) ) = ( log ` P ) ) |\n| 8 | 4, 7 | #P_eqtr3d | |- ( P e. Prime -> ( Lam ` P ) = ( log ` P ) ) |",
+  "conclusion" : "#P_vmaprm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_wcel", "#T_cn", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_wcel", "#T_cc", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_cexp", "#T_c1", "#T_wceq", "#T_cP", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cvma", "#T_cfv", "#T_cP", "#T_cexp", "#T_c1", "#T_wceq", "#T_cvma", "#T_cfv", "#T_cP", "#T_c1", "#T_wcel", "#T_cn", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_c1", "#T_wcel", "#T_cn", "#T_wi", "#T_cvma", "#T_cfv", "#T_cP", "#T_cexp", "#T_c1", "#T_wceq", "#T_clog", "#T_cfv", "#T_cP", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cvma", "#T_cfv", "#T_cP", "#T_cexp", "#T_c1", "#T_wceq", "#T_clog", "#T_cfv", "#T_cP", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cvma", "#T_cfv", "#T_cP", "#T_wceq", "#T_clog", "#T_cfv", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exp1d", "#P_1nn", "#P_fveq2d", "#P_mpan2", "#P_eqtr3d", "#P_vmappw", "#P_prmnn", "#P_nncnd" ]
+}

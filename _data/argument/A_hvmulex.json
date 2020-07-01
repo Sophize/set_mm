@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvmulex on Metamath](http://us.metamath.org/mpegif/hvmulex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hfvmul | |- .h : ( CC X. ~H ) --> ~H |\n| 2 |  | #P_cnex | |- CC e. _V |\n| 3 |  | #P_ax-hilex | |- ~H e. _V |\n| 4 | 2, 3 | #P_xpex | |- ( CC X. ~H ) e. _V |\n| 5 |  | #P_fex | |- ( ( .h : ( CC X. ~H ) --> ~H /\\ ( CC X. ~H ) e. _V ) -> .h e. _V ) |\n| 6 | 1, 4, 5 | #P_mp2an | |- .h e. _V |",
+  "conclusion" : "#P_hvmulex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csm", "#T_wf--1", "#T_cc", "#T_cxp", "#T_chil", "#T_wf--2", "#T_chil", "#T_cc", "#T_wcel", "#T_cvv", "#T_chil", "#T_wcel", "#T_cvv", "#T_cc", "#T_cxp", "#T_chil", "#T_wcel", "#T_cvv", "#T_csm", "#T_wf--1", "#T_cc", "#T_cxp", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cc", "#T_cxp", "#T_chil", "#T_wcel", "#T_cvv", "#T_wi", "#T_csm", "#T_wcel", "#T_cvv", "#T_csm", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_ax-hfvmul", "#P_ax-hilex", "#P_cnex", "#P_fex", "#P_xpex" ]
+}

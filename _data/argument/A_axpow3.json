@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axpow3 on Metamath](http://us.metamath.org/mpegif/axpow3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_axpow2 | |- E. y A. z ( z C_ x -> z e. y ) |\n| 2 | 1 | #P_bm1.3ii | |- E. y A. z ( z e. y <-> z C_ x ) |\n| 3 |  | #P_bicom | |- ( ( z C_ x <-> z e. y ) <-> ( z e. y <-> z C_ x ) ) |\n| 4 | 3 | #P_albii | |- ( A. z ( z C_ x <-> z e. y ) <-> A. z ( z e. y <-> z C_ x ) ) |\n| 5 | 4 | #P_exbii | |- ( E. y A. z ( z C_ x <-> z e. y ) <-> E. y A. z ( z e. y <-> z C_ x ) ) |\n| 6 | 2, 5 | #P_mpbir | |- E. y A. z ( z C_ x <-> z e. y ) |",
+  "conclusion" : "#P_axpow3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wss", "#T_vx.wal", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wex", "#T_vy", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx", "#T_wb", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_albii", "#P_bicom", "#P_mpbir", "#P_axpow2", "#P_bm1.3ii" ]
+}

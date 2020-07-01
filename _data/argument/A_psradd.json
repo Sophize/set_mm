@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psradd on Metamath](http://us.metamath.org/mpegif/psradd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psrplusg.s | |- S = ( I mPwSer R ) |\n| 2 |  | psrplusg.b | |- B = ( Base ` S ) |\n| 3 |  | psrplusg.a | |- .+ = ( +g ` R ) |\n| 4 |  | psrplusg.p | |- .+b = ( +g ` S ) |\n| 5 |  | psradd.x | |- ( ph -> X e. B ) |\n| 6 |  | psradd.y | |- ( ph -> Y e. B ) |\n| 7 | 1, 2, 3, 4 | #P_psrplusg | |- .+b = ( oF .+ |` ( B X. B ) ) |\n| 8 | 7 | #P_oveqi | |- ( X .+b Y ) = ( X ( oF .+ |` ( B X. B ) ) Y ) |\n| 9 | 5, 6 | #P_ofmresval | |- ( ph -> ( X ( oF .+ |` ( B X. B ) ) Y ) = ( X oF .+ Y ) ) |\n| 10 | 8, 9 | #P_syl5eq | |- ( ph -> ( X .+b Y ) = ( X oF .+ Y ) ) |",
+  "conclusion" : "#P_psradd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cI", "#T_cmps", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cR", "#T_c.pb", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_c.pb", "#T_wceq", "#T_cof", "#T_c.pl", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cX", "#T_c.pb", "#T_cY", "#T_wceq", "#T_cX", "#T_cof", "#T_c.pl", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_cof", "#T_c.pl", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_wceq", "#T_cX", "#T_cof", "#T_c.pl", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c.pb", "#T_cY", "#T_wceq", "#T_cX", "#T_cof", "#T_c.pl", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_psrplusg", "#P_syl5eq", "#P_ofmresval", "#P_oveqi" ]
+}

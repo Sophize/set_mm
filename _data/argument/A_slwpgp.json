@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See slwpgp on Metamath](http://us.metamath.org/mpegif/slwpgp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | slwpgp.1 | |- S = ( G |`s H ) |\n| 2 |  | #P_eqid | |- H = H |\n| 3 |  | #P_slwsubg | |- ( H e. ( P pSyl G ) -> H e. ( SubGrp ` G ) ) |\n| 4 | 1 | #P_slwispgp | |- ( ( H e. ( P pSyl G ) /\\ H e. ( SubGrp ` G ) ) -> ( ( H C_ H /\\ P pGrp S ) <-> H = H ) ) |\n| 5 | 3, 4 | #P_mpdan | |- ( H e. ( P pSyl G ) -> ( ( H C_ H /\\ P pGrp S ) <-> H = H ) ) |\n| 6 | 2, 5 | #P_mpbiri | |- ( H e. ( P pSyl G ) -> ( H C_ H /\\ P pGrp S ) ) |\n| 7 | 6 | #P_simprd | |- ( H e. ( P pSyl G ) -> P pGrp S ) |",
+  "conclusion" : "#P_slwpgp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cG", "#T_cress", "#T_cH", "#T_cH", "#T_wceq", "#T_cH", "#T_cH", "#T_wcel", "#T_cP", "#T_cslw", "#T_cG", "#T_wi", "#T_cH", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cH", "#T_wcel", "#T_cP", "#T_cslw", "#T_cG", "#T_wa", "#T_cH", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cH", "#T_wss", "#T_cH", "#T_wa", "#T_cP", "#T_cpgp", "#T_cS", "#T_wb", "#T_cH", "#T_wceq", "#T_cH", "#T_cH", "#T_wcel", "#T_cP", "#T_cslw", "#T_cG", "#T_wi", "#T_cH", "#T_wss", "#T_cH", "#T_wa", "#T_cP", "#T_cpgp", "#T_cS", "#T_wb", "#T_cH", "#T_wceq", "#T_cH", "#T_cH", "#T_wcel", "#T_cP", "#T_cslw", "#T_cG", "#T_wi", "#T_cH", "#T_wss", "#T_cH", "#T_wa", "#T_cP", "#T_cpgp", "#T_cS", "#T_cH", "#T_wcel", "#T_cP", "#T_cslw", "#T_cG", "#T_wi", "#T_cP", "#T_cpgp", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_slwispgp", "#P_mpdan", "#P_eqid", "#P_mpbiri", "#P_slwsubg", "#P_simprd" ]
+}

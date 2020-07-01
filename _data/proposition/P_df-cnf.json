@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cnf on Metamath](http://us.metamath.org/mpegif/df-cnf.html)"
+  } ],
+  "names" : [ "df-cnf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnf", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_con0", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_con0", "#T_cmpt2--4", "#T_vf", "#T_cmpt--1", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_vx", "#T_cmap", "#T_vy", "#T_crab--3", "#T_vg", "#T_cfsupp", "#T_c0", "#T_crab--4", "#T_cmpt--2", "#T_csb--1", "#T_coi--1", "#T_cep", "#T_coi--2", "#T_vf", "#T_csupp", "#T_c0", "#T_csb--2", "#T_vh", "#T_csb--3", "#T_cseqom--1", "#T_vk", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vz", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx", "#T_coe", "#T_vh", "#T_cfv", "#T_vk", "#T_comu", "#T_vf", "#T_cfv", "#T_vh", "#T_cfv", "#T_vk", "#T_coa", "#T_vz", "#T_cseqom--2", "#T_c0", "#T_cfv", "#T_cdm", "#T_vh", "#T_vf", "#T_vg", "#T_vh", "#T_vk", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Cantor normal form function, which takes as input a finitely supported function from ` y ` to ` x ` and outputs the corresponding member of the ordinal exponential ` x ^o y ` .  The content of the original Cantor Normal Form theorem is that for ` x = _om ` this function is a bijection onto ` _om ^o y ` for any ordinal ` y ` (or, since the function restricts naturally to different ordinals, the statement that the composite function is a bijection to ` On ` ).  More can be said about the function, however, and in particular it is an order isomorphism for a certain easily defined well-ordering of the finitely supported functions, which gives an alternate definition ~ cantnffval2 of this function in terms of ~ df-oi .  (Contributed by Mario Carneiro, 25-May-2015.)  (Revised by AV, 28-Jun-2019.) ",
+  "statement" : "df-cnf $p |- CNF = ( x e. On , y e. On |-> ( f e. { g e. ( x ^m y ) | g finSupp (/) } |-> [_ OrdIso ( _E , ( f supp (/) ) ) / h ]_ ( seqom ( ( k e. _V , z e. _V |-> ( ( ( x ^o ( h ` k ) ) .o ( f ` ( h ` k ) ) ) +o z ) ) , (/) ) ` dom h ) ) ) $.\n$d f g h k x y z $."
+}

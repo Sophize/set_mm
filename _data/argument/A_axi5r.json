@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axi5r on Metamath](http://us.metamath.org/mpegif/axi5r.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hba1 | |- ( A. x ph -> A. x A. x ph ) |\n| 2 |  | #P_hba1 | |- ( A. x ps -> A. x A. x ps ) |\n| 3 | 1, 2 | #P_hbim | |- ( ( A. x ph -> A. x ps ) -> A. x ( A. x ph -> A. x ps ) ) |\n| 4 |  | #P_sp | |- ( A. x ps -> ps ) |\n| 5 | 4 | #P_imim2i | |- ( ( A. x ph -> A. x ps ) -> ( A. x ph -> ps ) ) |\n| 6 | 3, 5 | #P_alrimih | |- ( ( A. x ph -> A. x ps ) -> A. x ( A. x ph -> ps ) ) |",
+  "conclusion" : "#P_axi5r",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alrimih", "#P_hba1", "#P_imim2i", "#P_hbim", "#P_sp" ]
+}

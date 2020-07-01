@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cos0 on Metamath](http://us.metamath.org/mpegif/cos0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0re | |- 0 e. RR |\n| 2 |  | #P_recosval | |- ( 0 e. RR -> ( cos ` 0 ) = ( Re ` ( exp ` ( _i x. 0 ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( cos ` 0 ) = ( Re ` ( exp ` ( _i x. 0 ) ) ) |\n| 4 |  | #P_it0e0 | |- ( _i x. 0 ) = 0 |\n| 5 | 4 | #P_fveq2i | |- ( exp ` ( _i x. 0 ) ) = ( exp ` 0 ) |\n| 6 |  | #P_ef0 | |- ( exp ` 0 ) = 1 |\n| 7 | 5, 6 | #P_eqtri | |- ( exp ` ( _i x. 0 ) ) = 1 |\n| 8 | 7 | #P_fveq2i | |- ( Re ` ( exp ` ( _i x. 0 ) ) ) = ( Re ` 1 ) |\n| 9 |  | #P_re1 | |- ( Re ` 1 ) = 1 |\n| 10 | 8, 9 | #P_eqtri | |- ( Re ` ( exp ` ( _i x. 0 ) ) ) = 1 |\n| 11 | 3, 10 | #P_eqtri | |- ( cos ` 0 ) = 1 |",
+  "conclusion" : "#P_cos0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_ci", "#T_cmul", "#T_cc0", "#T_wceq", "#T_cc0", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_wceq", "#T_ce", "#T_cfv", "#T_cc0", "#T_ce", "#T_cfv", "#T_cc0", "#T_wceq", "#T_c1", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_wceq", "#T_c1", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_wceq", "#T_cre", "#T_cfv", "#T_c1", "#T_cre", "#T_cfv", "#T_c1", "#T_wceq", "#T_c1", "#T_cre", "#T_cfv", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_cc0", "#T_wceq", "#T_c1", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_ef0", "#P_ax-mp", "#P_eqtri", "#P_re1", "#P_recosval", "#P_it0e0", "#P_0re" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sb10f on Metamath](http://us.metamath.org/mpegif/sb10f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sb10f.1 | |- ( ph -> A. x ph ) |\n| 2 | 1 | #P_hbsb | |- ( [ y / z ] ph -> A. x [ y / z ] ph ) |\n| 3 |  | #P_sbequ | |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) |\n| 4 | 2, 3 | #P_equsex--i | |- ( E. x ( x = y /\\ [ x / z ] ph ) <-> [ y / z ] ph ) |\n| 5 | 4 | #P_bicomi | |- ( [ y / z ] ph <-> E. x ( x = y /\\ [ x / z ] ph ) ) |\n\\\n Hao Wang's identity axiom P6 in Irving Copi, _Symbolic Logic_ (5th ed., 1979), p. 328.  In traditional predicate calculus, this is a sole axiom for identity from which the usual ones can be derived.  (Contributed by NM, 9-May-2005.) ",
+  "conclusion" : "#P_sb10f--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wa", "#T_wsb--1", "#T_vx", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hbsb", "#P_sbequ", "#P_equsex--i", "#P_bicomi" ]
+}

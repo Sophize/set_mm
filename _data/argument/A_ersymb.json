@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ersymb on Metamath](http://us.metamath.org/mpegif/ersymb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ersymb.1 | |- ( ph -> R Er X ) |\n| 2 | 1 | #P_adantr | |- ( ( ph /\\ A R B ) -> R Er X ) |\n| 3 |  | #P_simpr | |- ( ( ph /\\ A R B ) -> A R B ) |\n| 4 | 2, 3 | #P_ersym | |- ( ( ph /\\ A R B ) -> B R A ) |\n| 5 | 1 | #P_adantr | |- ( ( ph /\\ B R A ) -> R Er X ) |\n| 6 |  | #P_simpr | |- ( ( ph /\\ B R A ) -> B R A ) |\n| 7 | 5, 6 | #P_ersym | |- ( ( ph /\\ B R A ) -> A R B ) |\n| 8 | 4, 7 | #P_impbida | |- ( ph -> ( A R B <-> B R A ) ) |",
+  "conclusion" : "#P_ersymb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wb", "#T_cB", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ersym", "#P_simpr", "#P_impbida", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See camestros on Metamath](http://us.metamath.org/mpegif/camestros.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | camestros.maj | |- A. x ( ph -> ps ) |\n| 2 |  | camestros.min | |- A. x ( ch -> -. ps ) |\n| 3 |  | camestros.e | |- E. x ch |\n| 4 | 2 | #P_spi | |- ( ch -> -. ps ) |\n| 5 | 1 | #P_spi | |- ( ph -> ps ) |\n| 6 | 4, 5 | #P_nsyl | |- ( ch -> -. ph ) |\n| 7 | 6 | #P_ancli | |- ( ch -> ( ch /\\ -. ph ) ) |\n| 8 | 3, 7 | #P_eximii | |- E. x ( ch /\\ -. ph ) |",
+  "conclusion" : "#P_camestros",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wex", "#T_vx", "#T_wch", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wch", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancli", "#P_nsyl", "#P_eximii", "#P_spi" ]
+}

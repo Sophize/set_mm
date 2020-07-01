@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mgpsumunsn on Metamath](http://us.metamath.org/mpegif/mgpsumunsn.html)"
+  } ],
+  "names" : [ "mgpsumunsn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cN", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cN", "#T_wi", "#T_cA", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cR", "#T_vk", "#T_wceq", "#T_cI", "#T_wi", "#T_cA", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cM", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cA", "#T_wceq", "#T_cM", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cI", "#T_csn--2", "#T_cmpt--2", "#T_cA", "#T_c.x", "#T_cX", "#T_cI", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_cR", "#T_vk", "#T_cX", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Extract a summand/factor from the group sum for the multiplicative group of a unital ring.  (Contributed by AV, 29-Dec-2018.) ",
+  "statement" : "mgpsumunsn.m $e |- M = ( mulGrp ` R ) $.\nmgpsumunsn.t $e |- .x. = ( .r ` R ) $.\nmgpsumunsn.r $e |- ( ph -> R e. CRing ) $.\nmgpsumunsn.n $e |- ( ph -> N e. Fin ) $.\nmgpsumunsn.i $e |- ( ph -> I e. N ) $.\nmgpsumunsn.a $e |- ( ( ph /\\ k e. N ) -> A e. ( Base ` R ) ) $.\nmgpsumunsn.x $e |- ( ph -> X e. ( Base ` R ) ) $.\nmgpsumunsn.e $e |- ( k = I -> A = X ) $.\nmgpsumunsn $p |- ( ph -> ( M gsum ( k e. N |-> A ) ) = ( ( M gsum ( k e. ( N \\ { I } ) |-> A ) ) .x. X ) ) $.\n$d I k $.\n$d M k $.\n$d N k $.\n$d R k $.\n$d X k $.\n$d k ph $."
+}

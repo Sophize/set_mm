@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlpar2 on Metamath](http://us.metamath.org/mpegif/hlpar2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlpar2.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | hlpar2.2 | |- G = ( +v ` U ) |\n| 3 |  | hlpar2.3 | |- M = ( -v ` U ) |\n| 4 |  | hlpar2.6 | |- N = ( normCV ` U ) |\n| 5 |  | #P_hlph | |- ( U e. CHilOLD -> U e. CPreHilOLD ) |\n| 6 | 1, 2, 3, 4 | #P_phpar2 | |- ( ( U e. CPreHilOLD /\\ A e. X /\\ B e. X ) -> ( ( ( N ` ( A G B ) ) ^ 2 ) + ( ( N ` ( A M B ) ) ^ 2 ) ) = ( 2 x. ( ( ( N ` A ) ^ 2 ) + ( ( N ` B ) ^ 2 ) ) ) ) |\n| 7 | 5, 6 | #P_syl3an1 | |- ( ( U e. CHilOLD /\\ A e. X /\\ B e. X ) -> ( ( ( N ` ( A G B ) ) ^ 2 ) + ( ( N ` ( A M B ) ) ^ 2 ) ) = ( 2 x. ( ( ( N ` A ) ^ 2 ) + ( ( N ` B ) ^ 2 ) ) ) ) |",
+  "conclusion" : "#P_hlpar2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cM", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU", "#T_cN", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_chlo", "#T_wi", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_caddc", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cM", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_c2", "#T_cmul", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_caddc", "#T_cN", "#T_cfv", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cU", "#T_wcel", "#T_chlo", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA", "#T_cG", "#T_cB", "#T_cexp", "#T_c2", "#T_caddc", "#T_cN", "#T_cfv", "#T_cA", "#T_cM", "#T_cB", "#T_cexp", "#T_c2", "#T_wceq", "#T_c2", "#T_cmul", "#T_cN", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_caddc", "#T_cN", "#T_cfv", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hlph", "#P_syl3an1", "#P_phpar2" ]
+}

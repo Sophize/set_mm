@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-bpoly on Metamath](http://us.metamath.org/mpegif/df-bpoly.html)"
+  } ],
+  "names" : [ "df-bpoly" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbp", "#T_wceq", "#T_vm", "#T_cmpt2--1", "#T_cn0", "#T_cmpt2--2", "#T_vx", "#T_cmpt2--3", "#T_cc", "#T_cmpt2--4", "#T_cwrecs--1", "#T_clt", "#T_cwrecs--2", "#T_cn0", "#T_cwrecs--3", "#T_vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csb--1", "#T_chash", "#T_cfv", "#T_cdm", "#T_vg", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_vx", "#T_cexp", "#T_vn", "#T_cmin", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cdm", "#T_vg", "#T_vn", "#T_cbc", "#T_vk", "#T_cmul", "#T_vg", "#T_cfv", "#T_vk", "#T_cdiv", "#T_vn", "#T_cmin", "#T_vk", "#T_caddc", "#T_c1", "#T_cfv", "#T_vm", "#T_vg", "#T_vk", "#T_vm", "#T_vn", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Bernoulli polynomials.  Here we use well-founded recursion to define the Bernoulli polynomials.  This agrees with most textbook definitions, although explicit formulae do exist.  (Contributed by Scott Fenton, 22-May-2014.) ",
+  "statement" : "df-bpoly $p |- BernPoly = ( m e. NN0 , x e. CC |-> ( wrecs ( < , NN0 , ( g e. _V |-> [_ ( # ` dom g ) / n ]_ ( ( x ^ n ) - sum_ k e. dom g ( ( n _C k ) x. ( ( g ` k ) / ( ( n - k ) + 1 ) ) ) ) ) ) ` m ) ) $.\n$d g k m n x $."
+}

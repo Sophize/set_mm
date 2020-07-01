@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltnsym on Metamath](http://us.metamath.org/mpegif/ltnsym.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_axlttri | |- ( ( A e. RR /\\ B e. RR ) -> ( A < B <-> -. ( A = B \\/ B < A ) ) ) |\n| 2 |  | #P_pm2.46 | |- ( -. ( A = B \\/ B < A ) -> -. B < A ) |\n| 3 | 1, 2 | #P_syl6bi | |- ( ( A e. RR /\\ B e. RR ) -> ( A < B -> -. B < A ) ) |",
+  "conclusion" : "#P_ltnsym",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wi", "#T_wn", "#T_cB", "#T_clt", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.46", "#P_syl6bi", "#P_axlttri" ]
+}

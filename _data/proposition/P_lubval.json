@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lubval on Metamath](http://us.metamath.org/mpegif/lubval.html)"
+  } ],
+  "names" : [ "lubval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_wps", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_vz", "#T_wi", "#T_vx", "#T_c.le", "#T_vz", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_cU", "#T_cfv", "#T_cS", "#T_wceq", "#T_crio--1", "#T_vx", "#T_crio--2", "#T_cB", "#T_wps", "#T_cB", "#T_vx", "#T_vz", "#T_cK", "#T_vx", "#T_vy", "#T_vz", "#T_cS", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the least upper bound function of a poset.  Out-of-domain arguments (those not satisfying ` S e. dom U ` ) are allowed for convenience, evaluating to the empty set.  (Contributed by NM, 12-Sep-2011.)  (Revised by NM, 9-Sep-2018.) ",
+  "statement" : "lubval.b $e |- B = ( Base ` K ) $.\nlubval.l $e |- .<_ = ( le ` K ) $.\nlubval.u $e |- U = ( lub ` K ) $.\nlubval.p $e |- ( ps <-> ( A. y e. S y .<_ x /\\ A. z e. B ( A. y e. S y .<_ z -> x .<_ z ) ) ) $.\nlubval.k $e |- ( ph -> K e. V ) $.\nlubval.s $e |- ( ph -> S C_ B ) $.\nlubval $p |- ( ph -> ( U ` S ) = ( iota_ x e. B ps ) ) $.\n$d B x z $.\n$d K x y z $.\n$d S x y z $."
+}

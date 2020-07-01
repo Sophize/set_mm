@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See snelsingles on Metamath](http://us.metamath.org/mpegif/snelsingles.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | snelsingles.1 | |- A e. _V |\n| 2 |  | #P_isset | |- ( A e. _V <-> E. x x = A ) |\n| 3 |  | #P_eqcom | |- ( x = A <-> A = x ) |\n| 4 | 3 | #P_exbii | |- ( E. x x = A <-> E. x A = x ) |\n| 5 | 2, 4 | #P_bitri | |- ( A e. _V <-> E. x A = x ) |\n| 6 | 1, 5 | #P_mpbi | |- E. x A = x |\n| 7 |  | #P_sneq | |- ( A = x -> { A } = { x } ) |\n| 8 | 6, 7 | #P_eximii | |- E. x { A } = { x } |\n| 9 |  | #P_elsingles | |- ( { A } e. Singletons <-> E. x { A } = { x } ) |\n| 10 | 8, 9 | #P_mpbir | |- { A } e. Singletons |",
+  "conclusion" : "#P_snelsingles",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wex", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_csingles", "#T_wb", "#T_wex", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wcel", "#T_csingles" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_isset", "#P_eximii", "#P_mpbi", "#P_sneq", "#P_mpbir", "#P_elsingles", "#P_bitri", "#P_eqcom" ]
+}

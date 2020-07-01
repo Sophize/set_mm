@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fz10 on Metamath](http://us.metamath.org/mpegif/fz10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0lt1 | |- 0 < 1 |\n| 2 |  | #P_1z | |- 1 e. ZZ |\n| 3 |  | #P_0z | |- 0 e. ZZ |\n| 4 |  | #P_fzn | |- ( ( 1 e. ZZ /\\ 0 e. ZZ ) -> ( 0 < 1 <-> ( 1 ... 0 ) = (/) ) ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( 0 < 1 <-> ( 1 ... 0 ) = (/) ) |\n| 6 | 1, 5 | #P_mpbi | |- ( 1 ... 0 ) = (/) |",
+  "conclusion" : "#P_fz10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_clt", "#T_c1", "#T_c1", "#T_wcel", "#T_cz", "#T_cc0", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_wa", "#T_cc0", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_clt", "#T_c1", "#T_wb", "#T_c1", "#T_cfz", "#T_cc0", "#T_wceq", "#T_c0", "#T_cc0", "#T_clt", "#T_c1", "#T_wb", "#T_c1", "#T_cfz", "#T_cc0", "#T_wceq", "#T_c0", "#T_c1", "#T_cfz", "#T_cc0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_0lt1", "#P_fzn", "#P_mpbi", "#P_1z", "#P_0z" ]
+}

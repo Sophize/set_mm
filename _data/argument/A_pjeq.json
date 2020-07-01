@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjeq on Metamath](http://us.metamath.org/mpegif/pjeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pjhth | |- ( H e. CH -> ( H +H ( _|_ ` H ) ) = ~H ) |\n| 2 | 1 | #P_eleq2d | |- ( H e. CH -> ( A e. ( H +H ( _|_ ` H ) ) <-> A e. ~H ) ) |\n| 3 | 2 | #P_biimpar | |- ( ( H e. CH /\\ A e. ~H ) -> A e. ( H +H ( _|_ ` H ) ) ) |\n| 4 |  | #P_pjpreeq | |- ( ( H e. CH /\\ A e. ( H +H ( _|_ ` H ) ) ) -> ( ( ( projh ` H ) ` A ) = B <-> ( B e. H /\\ E. x e. ( _|_ ` H ) A = ( B +h x ) ) ) ) |\n| 5 | 3, 4 | #P_syldan | |- ( ( H e. CH /\\ A e. ~H ) -> ( ( ( projh ` H ) ` A ) = B <-> ( B e. H /\\ E. x e. ( _|_ ` H ) A = ( B +h x ) ) ) ) |",
+  "conclusion" : "#P_pjeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_cH", "#T_cph", "#T_cort", "#T_cfv", "#T_cH", "#T_wceq", "#T_chil", "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cH", "#T_cph", "#T_cort", "#T_cfv", "#T_cH", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_cH", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cH", "#T_cph", "#T_cort", "#T_cfv", "#T_cH", "#T_cH", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cH", "#T_cph", "#T_cort", "#T_cfv", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cH", "#T_wa", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cort", "#T_cfv", "#T_cH", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cva", "#T_vx.wal", "#T_cH", "#T_wcel", "#T_cch", "#T_wa", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cB", "#T_wcel", "#T_cH", "#T_wa", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cort", "#T_cfv", "#T_cH", "#T_cA", "#T_wceq", "#T_cB", "#T_cva", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_biimpar", "#P_pjhth", "#P_pjpreeq", "#P_syldan" ]
+}

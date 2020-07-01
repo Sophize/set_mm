@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmgmOLD on Metamath](http://us.metamath.org/mpegif/clmgmOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clmgmOLD.1 | |- X = dom dom G |\n| 2 | 1 | #P_ismgmOLD | |- ( G e. Magma -> ( G e. Magma <-> G : ( X X. X ) --> X ) ) |\n| 3 |  | #P_fovrn | |- ( ( G : ( X X. X ) --> X /\\ A e. X /\\ B e. X ) -> ( A G B ) e. X ) |\n| 4 | 3 | #P_3exp | |- ( G : ( X X. X ) --> X -> ( A e. X -> ( B e. X -> ( A G B ) e. X ) ) ) |\n| 5 | 2, 4 | #P_syl6bi | |- ( G e. Magma -> ( G e. Magma -> ( A e. X -> ( B e. X -> ( A G B ) e. X ) ) ) ) |\n| 6 | 5 | #P_pm2.43i | |- ( G e. Magma -> ( A e. X -> ( B e. X -> ( A G B ) e. X ) ) ) |\n| 7 | 6 | #P_3imp | |- ( ( G e. Magma /\\ A e. X /\\ B e. X ) -> ( A G B ) e. X ) |",
+  "conclusion" : "#P_clmgmOLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cG", "#T_cG", "#T_wcel", "#T_cmagm", "#T_wi", "#T_cG", "#T_wcel", "#T_cmagm", "#T_wb", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cmagm", "#T_wi", "#T_cG", "#T_wcel", "#T_cmagm", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cmagm", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cmagm", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_ismgmOLD", "#P_syl6bi", "#P_3imp", "#P_3exp", "#P_fovrn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pwexg on Metamath](http://us.metamath.org/mpegif/pwexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pweq | |- ( x = A -> ~P x = ~P A ) |\n| 2 | 1 | #P_eleq1d | |- ( x = A -> ( ~P x e. _V <-> ~P A e. _V ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_pwex | |- ~P x e. _V |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> ~P A e. _V ) |",
+  "conclusion" : "#P_pwexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cpw", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_vtoclg", "#P_pweq", "#P_vex", "#P_eleq1d" ]
+}

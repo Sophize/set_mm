@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frmdelbas on Metamath](http://us.metamath.org/mpegif/frmdelbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frmdbas.m | |- M = ( freeMnd ` I ) |\n| 2 |  | frmdbas.b | |- B = ( Base ` M ) |\n| 3 |  | #P_id | |- ( X e. B -> X e. B ) |\n| 4 | 1, 2 | #P_elbasfv | |- ( X e. B -> I e. _V ) |\n| 5 | 1, 2 | #P_frmdbas | |- ( I e. _V -> B = Word I ) |\n| 6 | 4, 5 | #P_syl | |- ( X e. B -> B = Word I ) |\n| 7 | 3, 6 | #P_eleqtrd | |- ( X e. B -> X e. Word I ) |",
+  "conclusion" : "#P_frmdelbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cfrmd", "#T_cfv", "#T_cI", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cI", "#T_wcel", "#T_cvv", "#T_cI", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cword", "#T_cI", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cword", "#T_cI", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wcel", "#T_cword", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frmdbas", "#P_eleqtrd", "#P_syl", "#P_elbasfv", "#P_id" ]
+}

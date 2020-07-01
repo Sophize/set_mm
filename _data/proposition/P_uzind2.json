@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzind2 on Metamath](http://us.metamath.org/mpegif/uzind2.html)"
+  } ],
+  "names" : [ "uzind2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_wceq", "#T_cM", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vj", "#T_wceq", "#T_vk", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vj", "#T_wceq", "#T_vk", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vj", "#T_wceq", "#T_cN", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_wps", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_vk", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_vk", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_cN", "#T_wi", "#T_wta", "#T_cM", "#T_vj", "#T_vk", "#T_cN", "#T_vj", "#T_wch", "#T_vj", "#T_vj", "#T_wps", "#T_vj", "#T_wta", "#T_vj", "#T_wth", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Induction on the upper integers that start _after_ an integer ` M ` . The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  (Contributed by NM, 25-Jul-2005.) ",
+  "statement" : "uzind2.1 $e |- ( j = ( M + 1 ) -> ( ph <-> ps ) ) $.\nuzind2.2 $e |- ( j = k -> ( ph <-> ch ) ) $.\nuzind2.3 $e |- ( j = ( k + 1 ) -> ( ph <-> th ) ) $.\nuzind2.4 $e |- ( j = N -> ( ph <-> ta ) ) $.\nuzind2.5 $e |- ( M e. ZZ -> ps ) $.\nuzind2.6 $e |- ( ( M e. ZZ /\\ k e. ZZ /\\ M < k ) -> ( ch -> th ) ) $.\nuzind2 $p |- ( ( M e. ZZ /\\ N e. ZZ /\\ M < N ) -> ta ) $.\n$d M j k $.\n$d N j $.\n$d ch j $.\n$d j ps $.\n$d j ta $.\n$d j th $.\n$d k ph $."
+}

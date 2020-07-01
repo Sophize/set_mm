@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspindp4 on Metamath](http://us.metamath.org/mpegif/lspindp4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspindp3.v | |- V = ( Base ` W ) |\n| 2 |  | lspindp3.p | |- .+ = ( +g ` W ) |\n| 3 |  | lspindp4.n | |- N = ( LSpan ` W ) |\n| 4 |  | lspindp4.w | |- ( ph -> W e. LMod ) |\n| 5 |  | lspindp4.x | |- ( ph -> X e. V ) |\n| 6 |  | lspindp4.y | |- ( ph -> Y e. V ) |\n| 7 |  | lspindp4.z | |- ( ph -> Z e. V ) |\n| 8 |  | lspindp4.e | |- ( ph -> -. Z e. ( N ` { X , Y } ) ) |\n| 9 | 1, 2, 3, 4, 5, 6 | #P_lspprabs | |- ( ph -> ( N ` { X , ( X .+ Y ) } ) = ( N ` { X , Y } ) ) |\n| 10 | 8, 9 | #P_neleqtrrd | |- ( ph -> -. Z e. ( N ` { X , ( X .+ Y ) } ) ) |",
+  "conclusion" : "#P_lspindp4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_wn", "#T_cZ", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cX", "#T_c.pl", "#T_cY", "#T_cpr--3", "#T_wceq", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wph", "#T_wi", "#T_wn", "#T_cZ", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cX", "#T_c.pl", "#T_cY", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neleqtrrd", "#P_lspprabs" ]
+}

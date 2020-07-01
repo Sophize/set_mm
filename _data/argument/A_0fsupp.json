@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0fsupp on Metamath](http://us.metamath.org/mpegif/0fsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_supp0 | |- ( Z e. V -> ( (/) supp Z ) = (/) ) |\n| 2 |  | #P_0fin | |- (/) e. Fin |\n| 3 | 1, 2 | #P_syl6eqel | |- ( Z e. V -> ( (/) supp Z ) e. Fin ) |\n| 4 |  | #P_fun0 | |- Fun (/) |\n| 5 |  | #P_0ex | |- (/) e. _V |\n| 6 |  | #P_funisfsupp | |- ( ( Fun (/) /\\ (/) e. _V /\\ Z e. V ) -> ( (/) finSupp Z <-> ( (/) supp Z ) e. Fin ) ) |\n| 7 | 4, 5, 6 | #P_mp3an12 | |- ( Z e. V -> ( (/) finSupp Z <-> ( (/) supp Z ) e. Fin ) ) |\n| 8 | 3, 7 | #P_mpbird | |- ( Z e. V -> (/) finSupp Z ) |",
+  "conclusion" : "#P_0fsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_csupp", "#T_cZ", "#T_wceq", "#T_c0", "#T_c0", "#T_wcel", "#T_cfn", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_c0", "#T_c0", "#T_wcel", "#T_cvv", "#T_wfun", "#T_c0", "#T_w3a--1", "#T_c0", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_c0", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_c0", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_cfsupp", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0fin", "#P_mp3an12", "#P_funisfsupp", "#P_fun0", "#P_0ex", "#P_supp0", "#P_syl6eqel", "#P_mpbird" ]
+}

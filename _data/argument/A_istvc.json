@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See istvc on Metamath](http://us.metamath.org/mpegif/istvc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tlmtrg.f | |- F = ( Scalar ` W ) |\n| 2 |  | #P_fveq2 | |- ( x = W -> ( Scalar ` x ) = ( Scalar ` W ) ) |\n| 3 | 2, 1 | #P_syl6eqr | |- ( x = W -> ( Scalar ` x ) = F ) |\n| 4 | 3 | #P_eleq1d | |- ( x = W -> ( ( Scalar ` x ) e. TopDRing <-> F e. TopDRing ) ) |\n| 5 |  | #P_df-tvc | |- TopVec = { x e. TopMod | ( Scalar ` x ) e. TopDRing } |\n| 6 | 4, 5 | #P_elrab2 | |- ( W e. TopVec <-> ( W e. TopMod /\\ F e. TopDRing ) ) |",
+  "conclusion" : "#P_istvc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ctdrg", "#T_wb", "#T_cF", "#T_wcel", "#T_ctdrg", "#T_ctvc", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_ctlm", "#T_crab--3", "#T_csca", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ctdrg", "#T_crab--4", "#T_cW", "#T_wcel", "#T_ctvc", "#T_wb", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wa", "#T_cF", "#T_wcel", "#T_ctdrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_fveq2", "#P_df-tvc", "#P_syl6eqr", "#P_eleq1d" ]
+}

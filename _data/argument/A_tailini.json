@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tailini on Metamath](http://us.metamath.org/mpegif/tailini.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tailini.1 | |- X = dom D |\n| 2 | 1 | #P_dirref | |- ( ( D e. DirRel /\\ A e. X ) -> A D A ) |\n| 3 | 1 | #P_eltail | |- ( ( D e. DirRel /\\ A e. X /\\ A e. X ) -> ( A e. ( ( tail ` D ) ` A ) <-> A D A ) ) |\n| 4 | 3 | #P_3anidm23 | |- ( ( D e. DirRel /\\ A e. X ) -> ( A e. ( ( tail ` D ) ` A ) <-> A D A ) ) |\n| 5 | 2, 4 | #P_mpbird | |- ( ( D e. DirRel /\\ A e. X ) -> A e. ( ( tail ` D ) ` A ) ) |",
+  "conclusion" : "#P_tailini",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cdm", "#T_cD", "#T_cD", "#T_wcel", "#T_cdir", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cD", "#T_cA.wceq", "#T_cD", "#T_wcel", "#T_cdir", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctail", "#T_cfv", "#T_cD", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cD", "#T_cA.wceq", "#T_cD", "#T_wcel", "#T_cdir", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctail", "#T_cfv", "#T_cD", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cD", "#T_cA.wceq", "#T_cD", "#T_wcel", "#T_cdir", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_wcel", "#T_ctail", "#T_cfv", "#T_cD", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dirref", "#P_eltail", "#P_3anidm23", "#P_mpbird" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-clabel on Metamath](http://us.metamath.org/mpegif/bj-clabel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-clel | |- ( { x | ph } e. A <-> E. y ( y = { x | ph } /\\ y e. A ) ) |\n| 2 |  | #P_bj-abeq2 | |- ( y = { x | ph } <-> A. x ( x e. y <-> ph ) ) |\n| 3 | 2 | #P_anbi2ci | |- ( ( y = { x | ph } /\\ y e. A ) <-> ( y e. A /\\ A. x ( x e. y <-> ph ) ) ) |\n| 4 | 3 | #P_exbii | |- ( E. y ( y = { x | ph } /\\ y e. A ) <-> E. y ( y e. A /\\ A. x ( x e. y <-> ph ) ) ) |\n| 5 | 1, 4 | #P_bitri | |- ( { x | ph } e. A <-> E. y ( y e. A /\\ A. x ( x e. y <-> ph ) ) ) |",
+  "conclusion" : "#P_bj-clabel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wph", "#T_vy.tru", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wph", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wph", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cA", "#T_wb", "#T_wex", "#T_vy", "#T_vy", "#T_wcel", "#T_cA", "#T_wa", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-abeq2", "#P_anbi2ci", "#P_exbii", "#P_df-clel", "#P_bitri" ]
+}

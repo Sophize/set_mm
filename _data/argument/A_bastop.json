@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bastop on Metamath](http://us.metamath.org/mpegif/bastop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tgtop | |- ( B e. Top -> ( topGen ` B ) = B ) |\n| 2 |  | #P_tgcl | |- ( B e. TopBases -> ( topGen ` B ) e. Top ) |\n| 3 |  | #P_eleq1 | |- ( ( topGen ` B ) = B -> ( ( topGen ` B ) e. Top <-> B e. Top ) ) |\n| 4 | 2, 3 | #P_syl5ibcom | |- ( B e. TopBases -> ( ( topGen ` B ) = B -> B e. Top ) ) |\n| 5 | 1, 4 | #P_impbid2 | |- ( B e. TopBases -> ( B e. Top <-> ( topGen ` B ) = B ) ) |",
+  "conclusion" : "#P_bastop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_ctb", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_cB.wceq", "#T_wcel", "#T_ctb", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_cB", "#T_wcel", "#T_ctb", "#T_wi", "#T_cB", "#T_wcel", "#T_ctop", "#T_wb", "#T_ctg", "#T_cfv", "#T_cB", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgcl", "#P_syl5ibcom", "#P_eleq1", "#P_tgtop", "#P_impbid2" ]
+}

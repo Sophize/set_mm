@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isnum3 on Metamath](http://us.metamath.org/mpegif/isnum3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cardid2 | |- ( A e. dom card -> ( card ` A ) ~~ A ) |\n| 2 |  | #P_cardon | |- ( card ` A ) e. On |\n| 3 |  | #P_isnumi | |- ( ( ( card ` A ) e. On /\\ ( card ` A ) ~~ A ) -> A e. dom card ) |\n| 4 | 2, 3 | #P_mpan | |- ( ( card ` A ) ~~ A -> A e. dom card ) |\n| 5 | 1, 4 | #P_impbii | |- ( A e. dom card <-> ( card ` A ) ~~ A ) |",
+  "conclusion" : "#P_isnum3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_ccrd", "#T_cfv", "#T_cA", "#T_cen", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isnumi", "#P_impbii", "#P_cardid2", "#P_cardon", "#P_mpan" ]
+}

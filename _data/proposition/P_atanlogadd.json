@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See atanlogadd on Metamath](http://us.metamath.org/mpegif/atanlogadd.html)"
+  } ],
+  "names" : [ "atanlogadd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cdm", "#T_catan", "#T_wi", "#T_clog", "#T_cfv", "#T_c1", "#T_caddc", "#T_ci", "#T_cmul", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_c1", "#T_cmin", "#T_ci", "#T_cmul", "#T_cA", "#T_wcel", "#T_crn", "#T_clog" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The rule ` sqrt ( z w ) = ( sqrt z ) ( sqrt w ) ` is not always true on the complex numbers, but it is true when the arguments of ` z ` and ` w ` sum to within the interval ` ( -u _pi , _pi ] ` , so there are some cases such as this one with ` z = 1 + _i A ` and ` w = 1 - _i A ` which are true unconditionally.  This result can also be stated as \" ` sqrt ( 1 + z ) + sqrt ( 1 - z ) ` is analytic\".  (Contributed by Mario Carneiro, 3-Apr-2015.) ",
+  "statement" : "atanlogadd $p |- ( A e. dom arctan -> ( ( log ` ( 1 + ( _i x. A ) ) ) + ( log ` ( 1 - ( _i x. A ) ) ) ) e. ran log ) $."
+}

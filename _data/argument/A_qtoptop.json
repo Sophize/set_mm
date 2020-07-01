@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qtoptop on Metamath](http://us.metamath.org/mpegif/qtoptop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qtoptop.1 | |- X = U. J |\n| 2 |  | #P_simpl | |- ( ( J e. Top /\\ F Fn X ) -> J e. Top ) |\n| 3 |  | #P_id | |- ( F Fn X -> F Fn X ) |\n| 4 | 1 | #P_topopn | |- ( J e. Top -> X e. J ) |\n| 5 |  | #P_fnex | |- ( ( F Fn X /\\ X e. J ) -> F e. _V ) |\n| 6 | 3, 4, 5 | #P_syl2anr | |- ( ( J e. Top /\\ F Fn X ) -> F e. _V ) |\n| 7 |  | #P_fnfun | |- ( F Fn X -> Fun F ) |\n| 8 | 7 | #P_adantl | |- ( ( J e. Top /\\ F Fn X ) -> Fun F ) |\n| 9 |  | #P_qtoptop2 | |- ( ( J e. Top /\\ F e. _V /\\ Fun F ) -> ( J qTop F ) e. Top ) |\n| 10 | 2, 6, 8, 9 | #P_syl3anc | |- ( ( J e. Top /\\ F Fn X ) -> ( J qTop F ) e. Top ) |",
+  "conclusion" : "#P_qtoptop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_cF", "#T_wfn", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_cJ", "#T_cF", "#T_wfn", "#T_cX", "#T_wa", "#T_cX", "#T_wcel", "#T_cJ", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_wfun", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_wfun", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_wfun", "#T_cF", "#T_wi", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wcel", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_fnex", "#P_topopn", "#P_syl3anc", "#P_syl2anr", "#P_simpl", "#P_qtoptop2", "#P_fnfun", "#P_id" ]
+}

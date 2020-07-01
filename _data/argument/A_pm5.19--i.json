@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm5.19 on Metamath](http://us.metamath.org/mpegif/pm5.19.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bi1 | |- ( ( ph <-> -. ph ) -> ( ph -> -. ph ) ) |\n| 2 | 1 | #P_pm2.01d | |- ( ( ph <-> -. ph ) -> -. ph ) |\n| 3 |  | #P_id | |- ( ( ph <-> -. ph ) -> ( ph <-> -. ph ) ) |\n| 4 | 2, 3 | #P_mpbird | |- ( ( ph <-> -. ph ) -> ph ) |\n| 5 | 4, 2 | #P_pm2.65i | |- -. ( ph <-> -. ph ) |",
+  "conclusion" : "#P_pm5.19",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.65i", "#P_bi1", "#P_pm2.01d", "#P_id", "#P_mpbird" ]
+}

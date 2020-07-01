@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcsuc on Metamath](http://us.metamath.org/mpegif/bdcsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bdcv | |- Bdd_ x |\n| 2 |  | #P_bdcsn | |- Bdd_ { x } |\n| 3 | 1, 2 | #P_bdcun | |- Bdd_ ( x u. { x } ) |\n| 4 |  | #P_df-suc | |- suc x = ( x u. { x } ) |\n| 5 | 3, 4 | #P_bdceqir | |- Bdd_ suc x |",
+  "conclusion" : "#P_bdcsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbdc", "#T_vx.wal", "#T_wbdc", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wbdc", "#T_vx.wal", "#T_cun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_csuc", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wbdc", "#T_csuc", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdcv", "#P_bdceqir", "#P_bdcun", "#P_bdcsn", "#P_df-suc" ]
+}

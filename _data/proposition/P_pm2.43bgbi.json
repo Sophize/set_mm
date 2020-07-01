@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.43bgbi on Metamath](http://us.metamath.org/mpegif/pm2.43bgbi.html)"
+  } ],
+  "names" : [ "pm2.43bgbi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Logical equivalence of a 2-left-nested implication and a 1-left-nested implicated when two antecedents of the former implication are identical. (Contributed by Alan Sare, 18-Mar-2012.) (Proof modification is discouraged.)  (New usage is discouraged.) The following User's Proof is a Virtual Deduction proof completed automatically by the tools program completeusersproof.cmd, which invokes Mel L. O'Cat's mmj2 and Norm Megill's Metamath Proof Assistant. The completed Virtual Deduction Proof (not shown) was minimized.  The minimized proof is shown. <HTML> <TABLE> <TR> <TD> 1::      <TD> ` |- ( ( ph -> ( ps -> ( ph -> ch ) ) ) ` ` -> ( ph -> ( ph -> ( ps -> ch ) ) ) ) ` <TR> <TD> 2::      <TD> ` |- ( ( ph -> ( ph -> ( ps -> ch ) ) ) ` ` -> ( ph -> ( ps -> ch ) ) ) ` <TR> <TD> 3:1,2:   <TD> ` |- ( ( ph -> ( ps -> ( ph -> ch ) ) ) ` ` -> ( ph -> ( ps -> ch ) ) ) ` <TR> <TD> 4::      <TD> ` |- ( ( ph -> ( ps -> ch ) ) -> ( ps ` ` -> ( ph -> ch ) ) ) ` <TR> <TD> 5:3,4:   <TD> ` |- ( ( ph -> ( ps -> ( ph -> ch ) ) ) ` ` -> ( ps -> ( ph -> ch ) ) ) ` <TR> <TD> 6::      <TD> ` |- ( ( ps -> ( ph -> ch ) ) -> ( ph ` ` -> ( ps -> ( ph -> ch ) ) ) ) ` <TR> <TD> qed:5,6: <TD> ` |- ( ( ph -> ( ps -> ( ph -> ch ) ) ) ` ` <-> ( ps -> ( ph -> ch ) ) ) ` </TABLE> </HTML> ",
+  "statement" : "pm2.43bgbi $p |- ( ( ph -> ( ps -> ( ph -> ch ) ) ) <-> ( ps -> ( ph -> ch ) ) ) $."
+}

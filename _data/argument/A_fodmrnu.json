@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fodmrnu on Metamath](http://us.metamath.org/mpegif/fodmrnu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fofn | |- ( F : A -onto-> B -> F Fn A ) |\n| 2 |  | #P_fofn | |- ( F : C -onto-> D -> F Fn C ) |\n| 3 |  | #P_fndmu | |- ( ( F Fn A /\\ F Fn C ) -> A = C ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( F : A -onto-> B /\\ F : C -onto-> D ) -> A = C ) |\n| 5 |  | #P_forn | |- ( F : A -onto-> B -> ran F = B ) |\n| 6 |  | #P_forn | |- ( F : C -onto-> D -> ran F = D ) |\n| 7 | 5, 6 | #P_sylan9req | |- ( ( F : A -onto-> B /\\ F : C -onto-> D ) -> B = D ) |\n| 8 | 4, 7 | #P_jca | |- ( ( F : A -onto-> B /\\ F : C -onto-> D ) -> ( A = C /\\ B = D ) ) |",
+  "conclusion" : "#P_fodmrnu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_cF", "#T_wfo--1", "#T_cC", "#T_wfo--2", "#T_cD", "#T_wi", "#T_cF", "#T_wfn", "#T_cC", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_cF", "#T_wfn", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cC", "#T_wfo--2", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cC", "#T_wfo--2", "#T_cD", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cD", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cC", "#T_wfo--2", "#T_cD", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cC", "#T_wfo--2", "#T_cD", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan9req", "#P_fndmu", "#P_syl2an", "#P_fofn", "#P_jca", "#P_forn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rnin on Metamath](http://us.metamath.org/mpegif/rnin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvin | |- `' ( A i^i B ) = ( `' A i^i `' B ) |\n| 2 | 1 | #P_dmeqi | |- dom `' ( A i^i B ) = dom ( `' A i^i `' B ) |\n| 3 |  | #P_dmin | |- dom ( `' A i^i `' B ) C_ ( dom `' A i^i dom `' B ) |\n| 4 | 2, 3 | #P_eqsstri | |- dom `' ( A i^i B ) C_ ( dom `' A i^i dom `' B ) |\n| 5 |  | #P_df-rn | |- ran ( A i^i B ) = dom `' ( A i^i B ) |\n| 6 |  | #P_df-rn | |- ran A = dom `' A |\n| 7 |  | #P_df-rn | |- ran B = dom `' B |\n| 8 | 6, 7 | #P_ineq12i | |- ( ran A i^i ran B ) = ( dom `' A i^i dom `' B ) |\n| 9 | 4, 5, 8 | #P_3sstr4i | |- ran ( A i^i B ) C_ ( ran A i^i ran B ) |",
+  "conclusion" : "#P_rnin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_ccnv", "#T_cB.wceq", "#T_wss", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wss", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_crn", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cin", "#T_crn", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA", "#T_cin", "#T_cB", "#T_wss", "#T_crn", "#T_cA", "#T_cin", "#T_crn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvin", "#P_ineq12i", "#P_3sstr4i", "#P_dmin", "#P_eqsstri", "#P_df-rn", "#P_dmeqi" ]
+}

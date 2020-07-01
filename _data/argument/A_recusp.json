@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recusp on Metamath](http://us.metamath.org/mpegif/recusp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0re | |- 0 e. RR |\n| 2 | 1 | #P_ne0ii | |- RR =/= (/) |\n| 3 |  | #P_recms | |- RRfld e. CMetSp |\n| 4 |  | #P_reust | |- ( UnifSt ` RRfld ) = ( metUnif ` ( ( dist ` RRfld ) |` ( RR X. RR ) ) ) |\n| 5 |  | #P_rebase | |- RR = ( Base ` RRfld ) |\n| 6 |  | #P_eqid | |- ( ( dist ` RRfld ) |` ( RR X. RR ) ) = ( ( dist ` RRfld ) |` ( RR X. RR ) ) |\n| 7 |  | #P_eqid | |- ( UnifSt ` RRfld ) = ( UnifSt ` RRfld ) |\n| 8 | 5, 6, 7 | #P_cmetcusp1 | |- ( ( RR =/= (/) /\\ RRfld e. CMetSp /\\ ( UnifSt ` RRfld ) = ( metUnif ` ( ( dist ` RRfld ) |` ( RR X. RR ) ) ) ) -> RRfld e. CUnifSp ) |\n| 9 | 2, 3, 4, 8 | #P_mp3an | |- RRfld e. CUnifSp |",
+  "conclusion" : "#P_recusp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cr", "#T_cr", "#T_wne", "#T_c0", "#T_crefld", "#T_wcel", "#T_ccms", "#T_cuss", "#T_cfv", "#T_crefld", "#T_wceq", "#T_cmetu", "#T_cfv", "#T_cds", "#T_cfv", "#T_crefld", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_crefld", "#T_cds", "#T_cfv", "#T_crefld", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wceq", "#T_cds", "#T_cfv", "#T_crefld", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cuss", "#T_cfv", "#T_crefld", "#T_wceq", "#T_cuss", "#T_cfv", "#T_crefld", "#T_cr", "#T_wne", "#T_c0", "#T_w3a--1", "#T_crefld", "#T_wcel", "#T_ccms", "#T_w3a--2", "#T_cuss", "#T_cfv", "#T_crefld", "#T_wceq", "#T_cmetu", "#T_cfv", "#T_cds", "#T_cfv", "#T_crefld", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wi", "#T_crefld", "#T_wcel", "#T_ccusp", "#T_crefld", "#T_wcel", "#T_ccusp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_eqid", "#P_ne0ii", "#P_rebase", "#P_recms", "#P_cmetcusp1", "#P_0re", "#P_reust" ]
+}

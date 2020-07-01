@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cadcoma on Metamath](http://us.metamath.org/mpegif/cadcoma.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ancom | |- ( ( ph /\\ ps ) <-> ( ps /\\ ph ) ) |\n| 2 |  | #P_xorcom | |- ( ( ph \\/_ ps ) <-> ( ps \\/_ ph ) ) |\n| 3 | 2 | #P_anbi2i | |- ( ( ch /\\ ( ph \\/_ ps ) ) <-> ( ch /\\ ( ps \\/_ ph ) ) ) |\n| 4 | 1, 3 | #P_orbi12i | |- ( ( ( ph /\\ ps ) \\/ ( ch /\\ ( ph \\/_ ps ) ) ) <-> ( ( ps /\\ ph ) \\/ ( ch /\\ ( ps \\/_ ph ) ) ) ) |\n| 5 |  | #P_df-cad | |- ( cadd ( ph , ps , ch ) <-> ( ( ph /\\ ps ) \\/ ( ch /\\ ( ph \\/_ ps ) ) ) ) |\n| 6 |  | #P_df-cad | |- ( cadd ( ps , ph , ch ) <-> ( ( ps /\\ ph ) \\/ ( ch /\\ ( ps \\/_ ph ) ) ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4i | |- ( cadd ( ph , ps , ch ) <-> cadd ( ps , ph , ch ) ) |",
+  "conclusion" : "#P_cadcoma",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wxo", "#T_wph", "#T_wch", "#T_wa", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wch", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wxo", "#T_wps", "#T_wcad--1", "#T_wps", "#T_wcad--2", "#T_wph", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wcad--1", "#T_wps", "#T_wcad--2", "#T_wph", "#T_wcad--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_orbi12i", "#P_anbi2i", "#P_xorcom", "#P_3bitr4i", "#P_df-cad" ]
+}

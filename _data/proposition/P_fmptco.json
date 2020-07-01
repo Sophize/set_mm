@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fmptco on Metamath](http://us.metamath.org/mpegif/fmptco.html)"
+  } ],
+  "names" : [ "fmptco" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cR", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cR", "#T_wph", "#T_wi", "#T_cG", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cS", "#T_vy", "#T_wceq", "#T_cR", "#T_wi", "#T_cS", "#T_wceq", "#T_cT", "#T_wph", "#T_wi", "#T_cG", "#T_ccom", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cT", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_cR", "#T_vy", "#T_cS", "#T_vx", "#T_cT", "#T_vy", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Composition of two functions expressed as ordered-pair class abstractions.  If ` F ` has the equation ` ( x + 2 ) ` and ` G ` the equation ` ( 3 * z ) ` then ` ( G o. F ) ` has the equation ` ( 3 * ( x + 2 ) ) ` .  (Contributed by FL, 21-Jun-2012.)  (Revised by Mario Carneiro, 24-Jul-2014.) \n\n---\n\n Composition of two functions expressed as ordered-pair class abstractions.  If ` F ` has the equation ( x + 2 ) and ` G ` the equation ( 3 * z ) then ` ( G o. F ) ` has the equation ( 3 * ( x + 2 ) ) .  (Contributed by FL, 21-Jun-2012.)  (Revised by Mario Carneiro, 24-Jul-2014.) ",
+  "statement" : "fmptco.1 $e |- ( ( ph /\\ x e. A ) -> R e. B ) $.\nfmptco.2 $e |- ( ph -> F = ( x e. A |-> R ) ) $.\nfmptco.3 $e |- ( ph -> G = ( y e. B |-> S ) ) $.\nfmptco.4 $e |- ( y = R -> S = T ) $.\nfmptco $p |- ( ph -> ( G o. F ) = ( x e. A |-> T ) ) $.\n$d A x $.\n$d B x y $.\n$d R y $.\n$d S x $.\n$d T y $.\n$d ph x $."
+}

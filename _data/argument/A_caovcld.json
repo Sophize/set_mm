@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See caovcld on Metamath](http://us.metamath.org/mpegif/caovcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | caovclg.1 | |- ( ( ph /\\ ( x e. C /\\ y e. D ) ) -> ( x F y ) e. E ) |\n| 2 |  | caovcld.2 | |- ( ph -> A e. C ) |\n| 3 |  | caovcld.3 | |- ( ph -> B e. D ) |\n| 4 |  | #P_id | |- ( ph -> ph ) |\n| 5 | 1 | #P_caovclg | |- ( ( ph /\\ ( A e. C /\\ B e. D ) ) -> ( A F B ) e. E ) |\n| 6 | 4, 2, 3, 5 | #P_syl12anc | |- ( ph -> ( A F B ) e. E ) |",
+  "conclusion" : "#P_caovcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cC", "#T_wa", "#T_vy", "#T_wcel", "#T_cD", "#T_wi", "#T_vx", "#T_cF", "#T_vy", "#T_wcel", "#T_cE", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cE", "#T_wph", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wcel", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_caovclg", "#P_syl12anc", "#P_id" ]
+}

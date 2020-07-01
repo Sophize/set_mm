@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfcdeq on Metamath](http://us.metamath.org/mpegif/nfcdeq.html)"
+  } ],
+  "names" : [ "nfcdeq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_vy", "#T_wps", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If we have a conditional equality proof, where ` ph ` is ` ph ( x ) ` and ` ps ` is ` ph ( y ) ` , and ` ph ( x ) ` in fact does not have ` x ` free in it according to ` F/ ` , then ` ph ( x ) <-> ph ( y ) ` unconditionally.  This proves that ` F/ x ph ` is actually a not-free predicate.  (Contributed by Mario Carneiro, 11-Aug-2016.) ",
+  "statement" : "nfcdeq.1 $e |- F/ x ph $.\nnfcdeq.2 $e |- CondEq ( x = y -> ( ph <-> ps ) ) $.\nnfcdeq $p |- ( ph <-> ps ) $.\n$d ph y $.\n$d ps x $."
+}

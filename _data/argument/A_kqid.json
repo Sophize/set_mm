@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kqid on Metamath](http://us.metamath.org/mpegif/kqid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | kqval.2 | |- F = ( x e. X |-> { y e. J | x e. y } ) |\n| 2 | 1 | #P_kqffn | |- ( J e. ( TopOn ` X ) -> F Fn X ) |\n| 3 |  | #P_qtopid | |- ( ( J e. ( TopOn ` X ) /\\ F Fn X ) -> F e. ( J Cn ( J qTop F ) ) ) |\n| 4 | 2, 3 | #P_mpdan | |- ( J e. ( TopOn ` X ) -> F e. ( J Cn ( J qTop F ) ) ) |\n| 5 | 1 | #P_kqval | |- ( J e. ( TopOn ` X ) -> ( KQ ` J ) = ( J qTop F ) ) |\n| 6 | 5 | #P_oveq2d | |- ( J e. ( TopOn ` X ) -> ( J Cn ( KQ ` J ) ) = ( J Cn ( J qTop F ) ) ) |\n| 7 | 4, 6 | #P_eleqtrrd | |- ( J e. ( TopOn ` X ) -> F e. ( J Cn ( KQ ` J ) ) ) |",
+  "conclusion" : "#P_kqid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_vx", "#T_wcel", "#T_vy", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wfn", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cF", "#T_wfn", "#T_cX", "#T_wi", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_ccn", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_ckq", "#T_cfv", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_qtopid", "#P_kqffn", "#P_oveq2d", "#P_kqval", "#P_eleqtrrd" ]
+}

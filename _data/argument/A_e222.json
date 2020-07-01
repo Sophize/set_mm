@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See e222 on Metamath](http://us.metamath.org/mpegif/e222.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | e222.1 | |- (. ph ,. ps ->. ch ). |\n| 2 |  | e222.2 | |- (. ph ,. ps ->. th ). |\n| 3 |  | e222.3 | |- (. ph ,. ps ->. ta ). |\n| 4 |  | e222.4 | |- ( ch -> ( th -> ( ta -> et ) ) ) |\n| 5 | 3 | #P_dfvd2i | |- ( ph -> ( ps -> ta ) ) |\n| 6 | 5 | #P_imp | |- ( ( ph /\\ ps ) -> ta ) |\n| 7 | 1 | #P_dfvd2i | |- ( ph -> ( ps -> ch ) ) |\n| 8 | 7 | #P_imp | |- ( ( ph /\\ ps ) -> ch ) |\n| 9 | 2 | #P_dfvd2i | |- ( ph -> ( ps -> th ) ) |\n| 10 | 9 | #P_imp | |- ( ( ph /\\ ps ) -> th ) |\n| 11 | 8, 10, 4 | #P_syl2im | |- ( ( ph /\\ ps ) -> ( ( ph /\\ ps ) -> ( ta -> et ) ) ) |\n| 12 | 11 | #P_pm2.43i | |- ( ( ph /\\ ps ) -> ( ta -> et ) ) |\n| 13 | 6, 12 | #P_syl5com | |- ( ( ph /\\ ps ) -> ( ( ph /\\ ps ) -> et ) ) |\n| 14 | 13 | #P_pm2.43i | |- ( ( ph /\\ ps ) -> et ) |\n| 15 | 14 | #P_ex | |- ( ph -> ( ps -> et ) ) |\n| 16 | 15 | #P_dfvd2ir | |- (. ph ,. ps ->. et ). |",
+  "conclusion" : "#P_e222",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wch", "#T_wvd2--4", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wth", "#T_wvd2--4", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wta", "#T_wvd2--4", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wet", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wet", "#T_wvd2--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_syl2im", "#P_ex", "#P_imp", "#P_dfvd2i", "#P_dfvd2ir", "#P_syl5com" ]
+}

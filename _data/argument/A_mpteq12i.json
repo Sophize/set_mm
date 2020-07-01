@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpteq12i on Metamath](http://us.metamath.org/mpegif/mpteq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpteq12i.1 | |- A = C |\n| 2 |  | mpteq12i.2 | |- B = D |\n| 3 | 1 | #P_a1i | |- ( T. -> A = C ) |\n| 4 | 2 | #P_a1i | |- ( T. -> B = D ) |\n| 5 | 3, 4 | #P_mpteq12dv | |- ( T. -> ( x e. A |-> B ) = ( x e. C |-> D ) ) |\n| 6 | 5 | #P_trud | |- ( x e. A |-> B ) = ( x e. C |-> D ) |",
+  "conclusion" : "#P_mpteq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cC", "#T_cB", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wtru", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cD", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_a1i", "#P_mpteq12dv" ]
+}

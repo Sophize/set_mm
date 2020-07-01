@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See le0neg1 on Metamath](http://us.metamath.org/mpegif/le0neg1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0re | |- 0 e. RR |\n| 2 |  | #P_leneg | |- ( ( A e. RR /\\ 0 e. RR ) -> ( A <_ 0 <-> -u 0 <_ -u A ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. RR -> ( A <_ 0 <-> -u 0 <_ -u A ) ) |\n| 4 |  | #P_neg0 | |- -u 0 = 0 |\n| 5 | 4 | #P_breq1i | |- ( -u 0 <_ -u A <-> 0 <_ -u A ) |\n| 6 | 3, 5 | #P_syl6bb | |- ( A e. RR -> ( A <_ 0 <-> 0 <_ -u A ) ) |",
+  "conclusion" : "#P_le0neg1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cc0", "#T_wb", "#T_cneg", "#T_cc0", "#T_cle", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cc0", "#T_wb", "#T_cneg", "#T_cc0", "#T_cle", "#T_cneg", "#T_cA.wceq", "#T_cneg", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cneg", "#T_cc0", "#T_cle", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_cle", "#T_cneg", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cle", "#T_cc0", "#T_wb", "#T_cc0", "#T_cle", "#T_cneg", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6bb", "#P_leneg", "#P_mpan2", "#P_breq1i", "#P_0re", "#P_neg0" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rucALT on Metamath](http://us.metamath.org/mpegif/rucALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnex | |- NN e. _V |\n| 2 | 1 | #P_canth2 | |- NN ~< ~P NN |\n| 3 |  | #P_rpnnen | |- RR ~~ ~P NN |\n| 4 | 3 | #P_ensymi | |- ~P NN ~~ RR |\n| 5 |  | #P_sdomentr | |- ( ( NN ~< ~P NN /\\ ~P NN ~~ RR ) -> NN ~< RR ) |\n| 6 | 2, 4, 5 | #P_mp2an | |- NN ~< RR |\n\\\n Alternate proof of ~ ruc .  This proof is a simple corollary of ~ rpnnen , which determines the exact cardinality of the reals.  For an alternate proof discussed at ~ http://us.metamath.org/mpeuni/mmcomplex.html#uncountable , see ~ ruc . (Contributed by NM, 13-Oct-2004.)  (Revised by Mario Carneiro, 13-May-2013.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_ruc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cn", "#T_wcel", "#T_cvv", "#T_cn", "#T_csdm", "#T_cpw", "#T_cn", "#T_cr", "#T_cen", "#T_cpw", "#T_cn", "#T_cpw", "#T_cn", "#T_cen", "#T_cr", "#T_cn", "#T_csdm", "#T_cpw", "#T_cn", "#T_wa", "#T_cpw", "#T_cn", "#T_cen", "#T_cr", "#T_wi", "#T_cn", "#T_csdm", "#T_cr", "#T_cn", "#T_csdm", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_canth2", "#P_sdomentr", "#P_rpnnen", "#P_nnex", "#P_ensymi" ]
+}

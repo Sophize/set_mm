@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dom2d on Metamath](http://us.metamath.org/mpegif/dom2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dom2d.1 | |- ( ph -> ( x e. A -> C e. B ) ) |\n| 2 |  | dom2d.2 | |- ( ph -> ( ( x e. A /\\ y e. A ) -> ( C = D <-> x = y ) ) ) |\n| 3 | 1, 2 | #P_dom2lem | |- ( ph -> ( x e. A |-> C ) : A -1-1-> B ) |\n| 4 |  | #P_f1domg | |- ( B e. R -> ( ( x e. A |-> C ) : A -1-1-> B -> A ~<_ B ) ) |\n| 5 | 3, 4 | #P_syl5com | |- ( ph -> ( B e. R -> A ~<_ B ) ) |",
+  "conclusion" : "#P_dom2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wb", "#T_vx", "#T_wceq", "#T_vy", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cC", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cC", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cR", "#T_wi", "#T_cA", "#T_cdom", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1domg", "#P_dom2lem", "#P_syl5com" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See diadm on Metamath](http://us.metamath.org/mpegif/diadm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | diafn.b | |- B = ( Base ` K ) |\n| 2 |  | diafn.l | |- .<_ = ( le ` K ) |\n| 3 |  | diafn.h | |- H = ( LHyp ` K ) |\n| 4 |  | diafn.i | |- I = ( ( DIsoA ` K ) ` W ) |\n| 5 | 1, 2, 3, 4 | #P_diafn | |- ( ( K e. V /\\ W e. H ) -> I Fn { x e. B | x .<_ W } ) |\n| 6 |  | #P_fndm | |- ( I Fn { x e. B | x .<_ W } -> dom I = { x e. B | x .<_ W } ) |\n| 7 | 5, 6 | #P_syl | |- ( ( K e. V /\\ W e. H ) -> dom I = { x e. B | x .<_ W } ) |",
+  "conclusion" : "#P_diadm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cI", "#T_wceq", "#T_cdia", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cI", "#T_wfn", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_vx.wal", "#T_c.le", "#T_cW", "#T_crab--4", "#T_cI", "#T_wfn", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_vx.wal", "#T_c.le", "#T_cW", "#T_crab--4", "#T_wi", "#T_cdm", "#T_cI", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_vx.wal", "#T_c.le", "#T_cW", "#T_crab--4", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cdm", "#T_cI", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_vx", "#T_c.le", "#T_cW", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_diafn", "#P_syl", "#P_fndm" ]
+}

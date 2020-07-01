@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lidl0 on Metamath](http://us.metamath.org/mpegif/lidl0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lidl0.u | |- U = ( LIdeal ` R ) |\n| 2 |  | lidl0.z | |- .0. = ( 0g ` R ) |\n| 3 |  | #P_rlmlmod | |- ( R e. Ring -> ( ringLMod ` R ) e. LMod ) |\n| 4 |  | #P_rlm0 | |- ( 0g ` R ) = ( 0g ` ( ringLMod ` R ) ) |\n| 5 | 2, 4 | #P_eqtri | |- .0. = ( 0g ` ( ringLMod ` R ) ) |\n| 6 |  | #P_eqid | |- ( LSubSp ` ( ringLMod ` R ) ) = ( LSubSp ` ( ringLMod ` R ) ) |\n| 7 | 5, 6 | #P_lsssn0 | |- ( ( ringLMod ` R ) e. LMod -> { .0. } e. ( LSubSp ` ( ringLMod ` R ) ) ) |\n| 8 | 3, 7 | #P_syl | |- ( R e. Ring -> { .0. } e. ( LSubSp ` ( ringLMod ` R ) ) ) |\n| 9 |  | #P_lidlval | |- ( LIdeal ` R ) = ( LSubSp ` ( ringLMod ` R ) ) |\n| 10 | 1, 9 | #P_eqtri | |- U = ( LSubSp ` ( ringLMod ` R ) ) |\n| 11 | 8, 10 | #P_syl6eleqr | |- ( R e. Ring -> { .0. } e. U ) |",
+  "conclusion" : "#P_lidl0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_eqid", "#P_rlm0", "#P_lsssn0", "#P_lidlval", "#P_rlmlmod", "#P_syl", "#P_syl6eleqr" ]
+}

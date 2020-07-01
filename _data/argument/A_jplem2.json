@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jplem2 on Metamath](http://us.metamath.org/mpegif/jplem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jp.1 | |- S = ( x e. CH |-> ( ( normh ` ( ( projh ` x ) ` u ) ) ^ 2 ) ) |\n| 2 |  | jp.2 | |- A e. CH |\n| 3 | 2 | #P_jplem1 | |- ( ( u e. ~H /\\ ( normh ` u ) = 1 ) -> ( u e. A <-> ( ( normh ` ( ( projh ` A ) ` u ) ) ^ 2 ) = 1 ) ) |\n| 4 | 1 | #P_strlem2 | |- ( A e. CH -> ( S ` A ) = ( ( normh ` ( ( projh ` A ) ` u ) ) ^ 2 ) ) |\n| 5 | 2, 4 | #P_ax-mp | |- ( S ` A ) = ( ( normh ` ( ( projh ` A ) ` u ) ) ^ 2 ) |\n| 6 | 5 | #P_eqeq1i | |- ( ( S ` A ) = 1 <-> ( ( normh ` ( ( projh ` A ) ` u ) ) ^ 2 ) = 1 ) |\n| 7 | 3, 6 | #P_syl6bbr | |- ( ( u e. ~H /\\ ( normh ` u ) = 1 ) -> ( u e. A <-> ( S ` A ) = 1 ) ) |",
+  "conclusion" : "#P_jplem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cch", "#T_cmpt--2", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_vx", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_cA", "#T_wcel", "#T_cch", "#T_vu", "#T_wcel", "#T_chil", "#T_wa", "#T_cno", "#T_cfv", "#T_vu", "#T_wceq", "#T_c1", "#T_wi", "#T_vu", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wb", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_vu", "#T_wcel", "#T_chil", "#T_wa", "#T_cno", "#T_cfv", "#T_vu", "#T_wceq", "#T_c1", "#T_wi", "#T_vu", "#T_wcel", "#T_cA", "#T_wb", "#T_cS", "#T_cfv", "#T_cA", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_jplem1", "#P_eqeq1i", "#P_strlem2", "#P_syl6bbr" ]
+}

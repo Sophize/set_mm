@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unss2 on Metamath](http://us.metamath.org/mpegif/unss2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unss1 | |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) |\n| 2 |  | #P_uncom | |- ( C u. A ) = ( A u. C ) |\n| 3 |  | #P_uncom | |- ( C u. B ) = ( B u. C ) |\n| 4 | 1, 2, 3 | #P_3sstr4g | |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) |",
+  "conclusion" : "#P_unss2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_cC", "#T_cun", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cC", "#T_cun", "#T_cA", "#T_wss", "#T_cC", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3sstr4g", "#P_unss1", "#P_uncom" ]
+}

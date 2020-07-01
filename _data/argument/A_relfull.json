@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relfull on Metamath](http://us.metamath.org/mpegif/relfull.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fullfunc | |- ( C Full D ) C_ ( C Func D ) |\n| 2 |  | #P_relfunc | |- Rel ( C Func D ) |\n| 3 |  | #P_relss | |- ( ( C Full D ) C_ ( C Func D ) -> ( Rel ( C Func D ) -> Rel ( C Full D ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- Rel ( C Full D ) |",
+  "conclusion" : "#P_relfull",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_cful", "#T_cD", "#T_wss", "#T_cC", "#T_cfunc", "#T_cD", "#T_wrel", "#T_cC", "#T_cfunc", "#T_cD", "#T_cC", "#T_cful", "#T_cD", "#T_wss", "#T_cC", "#T_cfunc", "#T_cD", "#T_wi", "#T_wrel", "#T_cC", "#T_cfunc", "#T_cD", "#T_wi", "#T_wrel", "#T_cC", "#T_cful", "#T_cD", "#T_wrel", "#T_cC", "#T_cful", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_relfunc", "#P_relss", "#P_fullfunc" ]
+}

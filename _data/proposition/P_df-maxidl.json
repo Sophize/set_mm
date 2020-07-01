@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-maxidl on Metamath](http://us.metamath.org/mpegif/df-maxidl.html)"
+  } ],
+  "names" : [ "df-maxidl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmaxidl", "#T_wceq", "#T_vr", "#T_cmpt--1", "#T_crngo", "#T_cmpt--2", "#T_crab--1", "#T_vi", "#T_crab--2", "#T_cidl", "#T_cfv", "#T_vr", "#T_crab--3", "#T_vi", "#T_wne", "#T_crn", "#T_c1st", "#T_cfv", "#T_vr", "#T_wa", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cidl", "#T_cfv", "#T_vr", "#T_vi", "#T_wss", "#T_vj", "#T_wi", "#T_vj", "#T_wceq", "#T_vi", "#T_wo", "#T_vj", "#T_wceq", "#T_crn", "#T_c1st", "#T_cfv", "#T_vr", "#T_crab--4", "#T_vi", "#T_vj", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of maximal ideals of a ring ` R ` .  A proper ideal is called maximal if it is maximal with respect to inclusion among proper ideals.  (Contributed by Jeff Madsen, 5-Jan-2011.) ",
+  "statement" : "df-maxidl $p |- MaxIdl = ( r e. RingOps |-> { i e. ( Idl ` r ) | ( i =/= ran ( 1st ` r ) /\\ A. j e. ( Idl ` r ) ( i C_ j -> ( j = i \\/ j = ran ( 1st ` r ) ) ) ) } ) $.\n$d i j r $."
+}

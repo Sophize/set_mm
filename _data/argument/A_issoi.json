@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See issoi on Metamath](http://us.metamath.org/mpegif/issoi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | issoi.1 | |- ( x e. A -> -. x R x ) |\n| 2 |  | issoi.2 | |- ( ( x e. A /\\ y e. A /\\ z e. A ) -> ( ( x R y /\\ y R z ) -> x R z ) ) |\n| 3 |  | issoi.3 | |- ( ( x e. A /\\ y e. A ) -> ( x R y \\/ x = y \\/ y R x ) ) |\n| 4 | 1 | #P_adantl | |- ( ( T. /\\ x e. A ) -> -. x R x ) |\n| 5 | 2 | #P_adantl | |- ( ( T. /\\ ( x e. A /\\ y e. A /\\ z e. A ) ) -> ( ( x R y /\\ y R z ) -> x R z ) ) |\n| 6 | 4, 5 | #P_ispod | |- ( T. -> R Po A ) |\n| 7 | 3 | #P_adantl | |- ( ( T. /\\ ( x e. A /\\ y e. A ) ) -> ( x R y \\/ x = y \\/ y R x ) ) |\n| 8 | 6, 7 | #P_issod | |- ( T. -> R Or A ) |\n| 9 | 8 | #P_trud | |- R Or A |",
+  "conclusion" : "#P_issoi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wn", "#T_vx", "#T_cR", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cA", "#T_wi", "#T_vx", "#T_cR", "#T_vy", "#T_wa", "#T_vy", "#T_cR", "#T_vz", "#T_wi", "#T_vx", "#T_cR", "#T_vz", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_vx", "#T_cR", "#T_vy", "#T_w3o--1", "#T_vx", "#T_wceq", "#T_vy", "#T_w3o--2", "#T_vy", "#T_cR", "#T_vx", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_cR", "#T_vx.wal", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_cR", "#T_vz", "#T_wi", "#T_vx.wal", "#T_cR", "#T_vz", "#T_wtru", "#T_wi", "#T_cR", "#T_wpo", "#T_cA.wceq", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_w3o--1", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_w3o--2", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_wtru", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cR", "#T_wor", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_adantl", "#P_issod", "#P_ispod" ]
+}

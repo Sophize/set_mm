@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-unc on Metamath](http://us.metamath.org/mpegif/df-unc.html)"
+  } ],
+  "names" : [ "df-unc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cunc", "#T_cF", "#T_wceq", "#T_coprab--1", "#T_coprab--2", "#T_coprab--3", "#T_vx", "#T_coprab--4", "#T_vy", "#T_coprab--5", "#T_coprab--6", "#T_vz", "#T_coprab--7", "#T_coprab--8", "#T_vy", "#T_cF", "#T_cfv", "#T_vx", "#T_vz", "#T_coprab--9", "#T_cF", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the uncurrying of ` F ` , which takes a function producing functions, and transforms it into a two-argument function.  (Contributed by Mario Carneiro, 7-Jan-2017.) ",
+  "statement" : "df-unc $p |- uncurry F = { <. <. x , y >. , z >. | y ( F ` x ) z } $.\n$d F x y z $."
+}

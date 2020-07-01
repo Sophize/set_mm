@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See weeq2 on Metamath](http://us.metamath.org/mpegif/weeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_freq2 | |- ( A = B -> ( R Fr A <-> R Fr B ) ) |\n| 2 |  | #P_soeq2 | |- ( A = B -> ( R Or A <-> R Or B ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( A = B -> ( ( R Fr A /\\ R Or A ) <-> ( R Fr B /\\ R Or B ) ) ) |\n| 4 |  | #P_df-we | |- ( R We A <-> ( R Fr A /\\ R Or A ) ) |\n| 5 |  | #P_df-we | |- ( R We B <-> ( R Fr B /\\ R Or B ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( A = B -> ( R We A <-> R We B ) ) |",
+  "conclusion" : "#P_weeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cR", "#T_wwe", "#T_cB.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wwe", "#T_cA", "#T_wb", "#T_cR", "#T_wwe", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_freq2", "#P_soeq2", "#P_3bitr4g", "#P_anbi12d", "#P_df-we" ]
+}

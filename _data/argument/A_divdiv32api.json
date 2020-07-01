@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divdiv32api on Metamath](http://us.metamath.org/mpegif/divdiv32api.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | divmulapi.4 | |- B # 0 |\n| 5 |  | divdiv32api.5 | |- C # 0 |\n| 6 | 1, 2, 3 | #P_divdiv23apzi | |- ( ( B # 0 /\\ C # 0 ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) |\n| 7 | 4, 5, 6 | #P_mp2an | |- ( ( A / B ) / C ) = ( ( A / C ) / B ) |",
+  "conclusion" : "#P_divdiv32api",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cB", "#T_cap", "#T_cc0", "#T_cC", "#T_cap", "#T_cc0", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cA", "#T_cdiv", "#T_cB", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_divdiv23apzi" ]
+}

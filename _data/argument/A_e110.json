@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See e110 on Metamath](http://us.metamath.org/mpegif/e110.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | e110.1 | |- (. ph ->. ps ). |\n| 2 |  | e110.2 | |- (. ph ->. ch ). |\n| 3 |  | e110.3 | |- th |\n| 4 |  | e110.4 | |- ( ps -> ( ch -> ( th -> ta ) ) ) |\n| 5 | 3 | #P_vd01 | |- (. ph ->. th ). |\n| 6 | 1, 2, 5, 4 | #P_e111 | |- (. ph ->. ta ). |",
+  "conclusion" : "#P_e110",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_wps", "#T_wvd1--3", "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_wch", "#T_wvd1--3", "#T_wth", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_wth", "#T_wvd1--3", "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_wta", "#T_wvd1--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_e111", "#P_vd01" ]
+}

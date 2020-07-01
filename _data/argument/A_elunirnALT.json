@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elunirnALT on Metamath](http://us.metamath.org/mpegif/elunirnALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_imadmrn | |- ( F \" dom F ) = ran F |\n| 2 | 1 | #P_unieqi | |- U. ( F \" dom F ) = U. ran F |\n| 3 | 2 | #P_eleq2i | |- ( A e. U. ( F \" dom F ) <-> A e. U. ran F ) |\n| 4 |  | #P_eluniima | |- ( Fun F -> ( A e. U. ( F \" dom F ) <-> E. x e. dom F A e. ( F ` x ) ) ) |\n| 5 | 3, 4 | #P_syl5bbr | |- ( Fun F -> ( A e. U. ran F <-> E. x e. dom F A e. ( F ` x ) ) ) |\n\\\n Alternate proof of ~ elunirn .  It is shorter but requires ~ ax-pow (through ~ eluniima , ~ funiunfv , ~ ndmfv ).  (Contributed by NM, 24-Sep-2006.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_elunirn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wceq", "#T_crn", "#T_cF", "#T_cuni", "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wceq", "#T_cuni", "#T_crn", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_crn", "#T_cF", "#T_wfun", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wfun", "#T_cF", "#T_wi", "#T_cA", "#T_wcel", "#T_cuni", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cdm", "#T_cF", "#T_cA", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_imadmrn", "#P_eleq2i", "#P_eluniima", "#P_syl5bbr" ]
+}

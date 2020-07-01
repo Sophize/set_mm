@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cofuval on Metamath](http://us.metamath.org/mpegif/cofuval.html)"
+  } ],
+  "names" : [ "cofuval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cD", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cD", "#T_cfunc", "#T_cE", "#T_wph", "#T_wi", "#T_cG", "#T_ccofu", "#T_cF", "#T_wceq", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cG", "#T_ccom", "#T_c1st", "#T_cfv", "#T_cF", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_cB", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_c1st", "#T_cfv", "#T_cF", "#T_cfv", "#T_vx", "#T_c2nd", "#T_cfv", "#T_cG", "#T_c1st", "#T_cfv", "#T_cF", "#T_cfv", "#T_vy", "#T_ccom", "#T_vx", "#T_c2nd", "#T_cfv", "#T_cF", "#T_vy", "#T_cop--3", "#T_cB", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cG", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the composition of two functors.  (Contributed by Mario Carneiro, 3-Jan-2017.) ",
+  "statement" : "cofuval.b $e |- B = ( Base ` C ) $.\ncofuval.f $e |- ( ph -> F e. ( C Func D ) ) $.\ncofuval.g $e |- ( ph -> G e. ( D Func E ) ) $.\ncofuval $p |- ( ph -> ( G o.func F ) = <. ( ( 1st ` G ) o. ( 1st ` F ) ) , ( x e. B , y e. B |-> ( ( ( ( 1st ` F ) ` x ) ( 2nd ` G ) ( ( 1st ` F ) ` y ) ) o. ( x ( 2nd ` F ) y ) ) ) >. ) $.\n$d B x y $.\n$d F x y $.\n$d G x y $.\n$d ph x y $.\n$d x y $.\n$d x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mtpxor on Metamath](http://us.metamath.org/mpegif/mtpxor.html)"
+  } ],
+  "names" : [ "mtpxor" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Modus tollendo ponens (original exclusive-or version), aka disjunctive syllogism, similar to ~ mtpor , one of the five \"indemonstrables\" in Stoic logic.  The rule says, \"if ` ph ` is not true, and either ` ph ` or ` ps ` (exclusively) are true, then ` ps ` must be true.\"  Today the name \"modus tollendo ponens\" often refers to a variant, the inclusive-or version as defined in ~ mtpor .  See rule 3 on [Lopez-Astorga] p. 12 (note that the \"or\" is the same as ~ mptxor , that is, it is exclusive-or ~ df-xor ), rule 3 of [Sanford] p. 39 (where it is not as clearly stated which kind of \"or\" is used but it appears to be in the same sense as ~ mptxor ), and rule A5 in [Hitchcock] p. 5 (exclusive-or is expressly used).  (Contributed by David A. Wheeler, 4-Jul-2016.) (Proof shortened by Wolf Lammen, 11-Nov-2017.)  (Proof shortened by BJ, 19-Apr-2019.) ",
+  "statement" : "mtpxor.min $e |- -. ph $.\nmtpxor.maj $e |- ( ph \\/_ ps ) $.\nmtpxor $p |- ps $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexlimd2 on Metamath](http://us.metamath.org/mpegif/rexlimd2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rexlimd2.1 | |- F/ x ph |\n| 2 |  | rexlimd2.2 | |- ( ph -> F/ x ch ) |\n| 3 |  | rexlimd2.3 | |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) |\n| 4 | 1, 3 | #P_ralrimi | |- ( ph -> A. x e. A ( ps -> ch ) ) |\n| 5 |  | #P_r19.23t | |- ( F/ x ch -> ( A. x e. A ( ps -> ch ) <-> ( E. x e. A ps -> ch ) ) ) |\n| 6 | 2, 5 | #P_syl | |- ( ph -> ( A. x e. A ( ps -> ch ) <-> ( E. x e. A ps -> ch ) ) ) |\n| 7 | 4, 6 | #P_mpbid | |- ( ph -> ( E. x e. A ps -> ch ) ) |",
+  "conclusion" : "#P_rexlimd2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_r19.23t", "#P_mpbid", "#P_syl", "#P_ralrimi" ]
+}

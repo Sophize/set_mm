@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eflgam on Metamath](http://us.metamath.org/mpegif/eflgam.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-gam | |- _G = ( exp o. log_G ) |\n| 2 | 1 | #P_fveq1i | |- ( _G ` A ) = ( ( exp o. log_G ) ` A ) |\n| 3 |  | #P_lgamf | |- log_G : ( CC \\ ( ZZ \\ NN ) ) --> CC |\n| 4 |  | #P_fvco3 | |- ( ( log_G : ( CC \\ ( ZZ \\ NN ) ) --> CC /\\ A e. ( CC \\ ( ZZ \\ NN ) ) ) -> ( ( exp o. log_G ) ` A ) = ( exp ` ( log_G ` A ) ) ) |\n| 5 | 3, 4 | #P_mpan | |- ( A e. ( CC \\ ( ZZ \\ NN ) ) -> ( ( exp o. log_G ) ` A ) = ( exp ` ( log_G ` A ) ) ) |\n| 6 | 2, 5 | #P_syl5req | |- ( A e. ( CC \\ ( ZZ \\ NN ) ) -> ( exp ` ( log_G ` A ) ) = ( _G ` A ) ) |",
+  "conclusion" : "#P_eflgam",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cgam", "#T_wceq", "#T_ce", "#T_ccom", "#T_clgam", "#T_cgam", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ce", "#T_ccom", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_clgam", "#T_wf--1", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wf--2", "#T_cc", "#T_clgam", "#T_wf--1", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wf--2", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wi", "#T_ce", "#T_ccom", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wi", "#T_ce", "#T_ccom", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wi", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA", "#T_wceq", "#T_cgam", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5req", "#P_fveq1i", "#P_lgamf", "#P_fvco3", "#P_mpan", "#P_df-gam" ]
+}

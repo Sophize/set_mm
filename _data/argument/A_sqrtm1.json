@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtm1 on Metamath](http://us.metamath.org/mpegif/sqrtm1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_0le1 | |- 0 <_ 1 |\n| 3 |  | #P_sqrtneg | |- ( ( 1 e. RR /\\ 0 <_ 1 ) -> ( sqrt ` -u 1 ) = ( _i x. ( sqrt ` 1 ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( sqrt ` -u 1 ) = ( _i x. ( sqrt ` 1 ) ) |\n| 5 |  | #P_sqrt1 | |- ( sqrt ` 1 ) = 1 |\n| 6 | 5 | #P_oveq2i | |- ( _i x. ( sqrt ` 1 ) ) = ( _i x. 1 ) |\n| 7 |  | #P_ax-icn | |- _i e. CC |\n| 8 | 7 | #P_mulid1i | |- ( _i x. 1 ) = _i |\n| 9 | 4, 6, 8 | #P_3eqtrri | |- _i = ( sqrt ` -u 1 ) |",
+  "conclusion" : "#P_sqrtm1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_c1", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cneg", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_c1", "#T_csqrt", "#T_cfv", "#T_cneg", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_c1", "#T_csqrt", "#T_cfv", "#T_c1", "#T_wceq", "#T_c1", "#T_ci", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_c1", "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_ci", "#T_ci", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cneg", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_3eqtrri", "#P_mp2an", "#P_0le1", "#P_sqrtneg", "#P_mulid1i", "#P_oveq2i", "#P_1re", "#P_sqrt1" ]
+}

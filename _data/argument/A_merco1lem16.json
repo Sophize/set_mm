@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See merco1lem16 on Metamath](http://us.metamath.org/mpegif/merco1lem16.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_merco1lem15 | |- ( ( ph -> ch ) -> ( ph -> ( ps -> ch ) ) ) |\n| 2 |  | #P_merco1lem11 | |- ( ( ( ph -> ch ) -> ( ph -> ( ps -> ch ) ) ) -> ( ( ( ( ta -> ph ) -> ( ( ph -> ch ) -> F. ) ) -> F. ) -> ( ph -> ( ps -> ch ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ( ( ta -> ph ) -> ( ( ph -> ch ) -> F. ) ) -> F. ) -> ( ph -> ( ps -> ch ) ) ) |\n| 4 |  | #P_merco1 | |- ( ( ( ( ( ta -> ph ) -> ( ( ph -> ch ) -> F. ) ) -> F. ) -> ( ph -> ( ps -> ch ) ) ) -> ( ( ( ph -> ( ps -> ch ) ) -> ta ) -> ( ( ph -> ch ) -> ta ) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ( ( ph -> ( ps -> ch ) ) -> ta ) -> ( ( ph -> ch ) -> ta ) ) |",
+  "conclusion" : "#P_merco1lem16",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wfal", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wfal", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wfal", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_merco1lem15", "#P_ax-mp", "#P_merco1", "#P_merco1lem11" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mgptopn on Metamath](http://us.metamath.org/mpegif/mgptopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mgpbas.1 | |- M = ( mulGrp ` R ) |\n| 2 |  | mgptopn.2 | |- J = ( TopOpen ` R ) |\n| 3 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 4 |  | #P_eqid | |- ( TopSet ` R ) = ( TopSet ` R ) |\n| 5 | 3, 4 | #P_topnval | |- ( ( TopSet ` R ) |`t ( Base ` R ) ) = ( TopOpen ` R ) |\n| 6 | 1, 3 | #P_mgpbas | |- ( Base ` R ) = ( Base ` M ) |\n| 7 | 1 | #P_mgptset | |- ( TopSet ` R ) = ( TopSet ` M ) |\n| 8 | 6, 7 | #P_topnval | |- ( ( TopSet ` R ) |`t ( Base ` R ) ) = ( TopOpen ` M ) |\n| 9 | 2, 5, 8 | #P_3eqtr2i | |- J = ( TopOpen ` M ) |",
+  "conclusion" : "#P_mgptopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cts", "#T_cfv", "#T_cR", "#T_wceq", "#T_cts", "#T_cfv", "#T_cR", "#T_cts", "#T_cfv", "#T_cR", "#T_crest", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cts", "#T_cfv", "#T_cR", "#T_wceq", "#T_cts", "#T_cfv", "#T_cM", "#T_cts", "#T_cfv", "#T_cR", "#T_crest", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cM", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr2i", "#P_eqid", "#P_topnval", "#P_mgptset", "#P_mgpbas" ]
+}

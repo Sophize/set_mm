@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unfi2 on Metamath](http://us.metamath.org/mpegif/unfi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfinite2 | |- ( A ~< _om -> A e. Fin ) |\n| 2 |  | #P_isfinite2 | |- ( B ~< _om -> B e. Fin ) |\n| 3 |  | #P_unfi | |- ( ( A e. Fin /\\ B e. Fin ) -> ( A u. B ) e. Fin ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A ~< _om /\\ B ~< _om ) -> ( A u. B ) e. Fin ) |\n| 5 |  | #P_fin2inf | |- ( A ~< _om -> _om e. _V ) |\n| 6 | 5 | #P_adantr | |- ( ( A ~< _om /\\ B ~< _om ) -> _om e. _V ) |\n| 7 |  | #P_isfiniteg | |- ( _om e. _V -> ( ( A u. B ) e. Fin <-> ( A u. B ) ~< _om ) ) |\n| 8 | 6, 7 | #P_syl | |- ( ( A ~< _om /\\ B ~< _om ) -> ( ( A u. B ) e. Fin <-> ( A u. B ) ~< _om ) ) |\n| 9 | 4, 8 | #P_mpbid | |- ( ( A ~< _om /\\ B ~< _om ) -> ( A u. B ) ~< _om ) |",
+  "conclusion" : "#P_unfi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wa", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_com", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wa", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wa", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_csdm", "#T_com", "#T_cA", "#T_csdm", "#T_com", "#T_wa", "#T_cB", "#T_csdm", "#T_com", "#T_wi", "#T_cA", "#T_cun", "#T_cB", "#T_csdm", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unfi", "#P_fin2inf", "#P_isfinite2", "#P_mpbid", "#P_syl", "#P_syl2an", "#P_adantr", "#P_isfiniteg" ]
+}

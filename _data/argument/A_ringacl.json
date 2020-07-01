@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringacl on Metamath](http://us.metamath.org/mpegif/ringacl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ringacl.b | |- B = ( Base ` R ) |\n| 2 |  | ringacl.p | |- .+ = ( +g ` R ) |\n| 3 |  | #P_ringgrp | |- ( R e. Ring -> R e. Grp ) |\n| 4 | 1, 2 | #P_grpcl | |- ( ( R e. Grp /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) e. B ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( R e. Ring /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) e. B ) |",
+  "conclusion" : "#P_ringacl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_cgrp", "#T_cR", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpcl", "#P_syl3an1", "#P_ringgrp" ]
+}

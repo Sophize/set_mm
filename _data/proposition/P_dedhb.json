@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedhb on Metamath](http://us.metamath.org/mpegif/dedhb.html)"
+  } ],
+  "names" : [ "dedhb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wal", "#T_vx", "#T_vz", "#T_wcel", "#T_cA", "#T_cab--3", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wnfc", "#T_vx", "#T_cA", "#T_wi", "#T_wph", "#T_cA", "#T_vz", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A deduction theorem for converting the inference ` |- F/_ x A ` => ` |- ph ` into a closed theorem.  Use ~ nfa1 and ~ nfab to eliminate the hypothesis of the substitution instance ` ps ` of the inference.  For converting the inference form into a deduction form, ~ abidnf is useful.  (Contributed by NM, 8-Dec-2006.) ",
+  "statement" : "dedhb.1 $e |- ( A = { z | A. x z e. A } -> ( ph <-> ps ) ) $.\ndedhb.2 $e |- ps $.\ndedhb $p |- ( F/_ x A -> ph ) $.\n$d A z $.\n$d x z $."
+}

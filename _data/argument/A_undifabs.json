@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See undifabs on Metamath](http://us.metamath.org/mpegif/undifabs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_undif3 | |- ( A u. ( A \\ B ) ) = ( ( A u. A ) \\ ( B \\ A ) ) |\n| 2 |  | #P_unidm | |- ( A u. A ) = A |\n| 3 | 2 | #P_difeq1i | |- ( ( A u. A ) \\ ( B \\ A ) ) = ( A \\ ( B \\ A ) ) |\n| 4 |  | #P_difdif | |- ( A \\ ( B \\ A ) ) = A |\n| 5 | 1, 3, 4 | #P_3eqtri | |- ( A u. ( A \\ B ) ) = A |",
+  "conclusion" : "#P_undifabs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_cun", "#T_cA", "#T_cdif", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_undif3", "#P_difeq1i", "#P_difdif", "#P_3eqtri", "#P_unidm" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ap on Metamath](http://us.metamath.org/mpegif/df-ap.html)"
+  } ],
+  "names" : [ "df-ap" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cap", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cr", "#T_wrex--1", "#T_vs", "#T_wrex--2", "#T_cr", "#T_wrex--1", "#T_vt", "#T_wrex--2", "#T_cr", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cr", "#T_vx", "#T_wceq", "#T_vr", "#T_caddc", "#T_ci", "#T_cmul", "#T_vs", "#T_wa", "#T_vy", "#T_wceq", "#T_vt", "#T_caddc", "#T_ci", "#T_cmul", "#T_vu", "#T_wa", "#T_vr", "#T_creap", "#T_vt", "#T_wo", "#T_vs", "#T_creap", "#T_vu", "#T_copab--6", "#T_vr", "#T_vs", "#T_vt", "#T_vu", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define complex apartness.  Definition 6.1 of [Geuvers], p. 17. Two numbers are considered apart if it is possible to separate them. One common usage is that we can divide by a number if it is apart from zero (see for example ~ recclap which says that a number apart from zero has a reciprocal). The defining characteristics of an apartness are irreflexivity ( ~ apirr ), symmetry ( ~ apsym ), and cotransitivity ( ~ apcotr ). Apartness implies negated equality, as seen at ~ apne , and the converse would also follow if we assumed excluded middle. In addition, apartness of complex numbers is tight, which means that two numbers which are not apart are equal ( ~ apti ). (Contributed by Jim Kingdon, 26-Jan-2020.) ",
+  "statement" : "df-ap $p |- # = { <. x , y >. | E. r e. RR E. s e. RR E. t e. RR E. u e. RR ( ( x = ( r + ( _i x. s ) ) /\\ y = ( t + ( _i x. u ) ) ) /\\ ( r #RR t \\/ s #RR u ) ) } $.\n$d r s t u x y $."
+}

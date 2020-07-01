@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rankxpl on Metamath](http://us.metamath.org/mpegif/rankxpl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rankxpl.1 | |- A e. _V |\n| 2 |  | rankxpl.2 | |- B e. _V |\n| 3 |  | #P_unixp | |- ( ( A X. B ) =/= (/) -> U. U. ( A X. B ) = ( A u. B ) ) |\n| 4 | 3 | #P_fveq2d | |- ( ( A X. B ) =/= (/) -> ( rank ` U. U. ( A X. B ) ) = ( rank ` ( A u. B ) ) ) |\n| 5 | 1, 2 | #P_xpex | |- ( A X. B ) e. _V |\n| 6 | 5 | #P_uniex | |- U. ( A X. B ) e. _V |\n| 7 | 6 | #P_rankuniss | |- ( rank ` U. U. ( A X. B ) ) C_ ( rank ` U. ( A X. B ) ) |\n| 8 | 5 | #P_rankuniss | |- ( rank ` U. ( A X. B ) ) C_ ( rank ` ( A X. B ) ) |\n| 9 | 7, 8 | #P_sstri | |- ( rank ` U. U. ( A X. B ) ) C_ ( rank ` ( A X. B ) ) |\n| 10 | 4, 9 | #P_syl6eqssr | |- ( ( A X. B ) =/= (/) -> ( rank ` ( A u. B ) ) C_ ( rank ` ( A X. B ) ) ) |",
+  "conclusion" : "#P_rankxpl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_crnk", "#T_cfv", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_crnk", "#T_cfv", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_crnk", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_crnk", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_crnk", "#T_cfv", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cA", "#T_cxp", "#T_cB", "#T_wne", "#T_c0", "#T_wi", "#T_crnk", "#T_cfv", "#T_cA", "#T_cun", "#T_cB", "#T_wss", "#T_crnk", "#T_cfv", "#T_cA", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rankuniss", "#P_fveq2d", "#P_unixp", "#P_sstri", "#P_xpex", "#P_uniex", "#P_syl6eqssr" ]
+}

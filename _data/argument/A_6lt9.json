@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 6lt9 on Metamath](http://us.metamath.org/mpegif/6lt9.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_6lt7 | |- 6 < 7 |\n| 2 |  | #P_7lt9 | |- 7 < 9 |\n| 3 |  | #P_6re | |- 6 e. RR |\n| 4 |  | #P_7re | |- 7 e. RR |\n| 5 |  | #P_9re | |- 9 e. RR |\n| 6 | 3, 4, 5 | #P_lttri | |- ( ( 6 < 7 /\\ 7 < 9 ) -> 6 < 9 ) |\n| 7 | 1, 2, 6 | #P_mp2an | |- 6 < 9 |",
+  "conclusion" : "#P_6lt9",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c6", "#T_clt", "#T_c7", "#T_c7", "#T_clt", "#T_c9", "#T_c6", "#T_wcel", "#T_cr", "#T_c7", "#T_wcel", "#T_cr", "#T_c9", "#T_wcel", "#T_cr", "#T_c6", "#T_clt", "#T_c7", "#T_wa", "#T_c7", "#T_clt", "#T_c9", "#T_wi", "#T_c6", "#T_clt", "#T_c9", "#T_c6", "#T_clt", "#T_c9" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_7re", "#P_9re", "#P_6lt7", "#P_6re", "#P_7lt9" ]
+}

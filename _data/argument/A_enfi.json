@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See enfi on Metamath](http://us.metamath.org/mpegif/enfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_enen1 | |- ( A ~~ B -> ( A ~~ x <-> B ~~ x ) ) |\n| 2 | 1 | #P_rexbidv | |- ( A ~~ B -> ( E. x e. _om A ~~ x <-> E. x e. _om B ~~ x ) ) |\n| 3 |  | #P_isfi | |- ( A e. Fin <-> E. x e. _om A ~~ x ) |\n| 4 |  | #P_isfi | |- ( B e. Fin <-> E. x e. _om B ~~ x ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A ~~ B -> ( A e. Fin <-> B e. Fin ) ) |",
+  "conclusion" : "#P_enfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wb", "#T_cB.wceq", "#T_cen", "#T_vx.wal", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cB.wceq", "#T_cen", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cB.wceq", "#T_cen", "#T_vx.wal", "#T_cA", "#T_cen", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wb", "#T_cB", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isfi", "#P_enen1", "#P_rexbidv", "#P_3bitr4g" ]
+}

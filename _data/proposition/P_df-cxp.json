@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cxp on Metamath](http://us.metamath.org/mpegif/df-cxp.html)"
+  } ],
+  "names" : [ "df-cxp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccxp", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cmpt2--4", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cif--1", "#T_vy", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cc0", "#T_cif--3", "#T_ce", "#T_cfv", "#T_vy", "#T_cmul", "#T_clog", "#T_cfv", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the power function on complex numbers.  Note that the value of this function when ` x = 0 ` and ` ( Re `` y ) <_ 0 , y =/= 0 ` should properly be undefined, but defining it by convention this way simplifies the domain.  (Contributed by Mario Carneiro, 2-Aug-2014.) ",
+  "statement" : "df-cxp $p |- ^c = ( x e. CC , y e. CC |-> if ( x = 0 , if ( y = 0 , 1 , 0 ) , ( exp ` ( y x. ( log ` x ) ) ) ) ) $.\n$d x y $."
+}

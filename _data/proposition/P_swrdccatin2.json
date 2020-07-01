@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See swrdccatin2 on Metamath](http://us.metamath.org/mpegif/swrdccatin2.html)"
+  } ],
+  "names" : [ "swrdccatin2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_chash", "#T_cfv", "#T_cA", "#T_cA", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cL", "#T_cfz", "#T_cN", "#T_wa", "#T_cN", "#T_wcel", "#T_cL", "#T_cfz", "#T_cL", "#T_caddc", "#T_chash", "#T_cfv", "#T_cB", "#T_wi", "#T_cA", "#T_cconcat", "#T_cB", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wceq", "#T_cB", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cmin", "#T_cL", "#T_cop--2", "#T_cN", "#T_cmin", "#T_cL", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The subword of a concatenation of two words within the second of the concatenated words.  (Contributed by Alexander van der Vekens, 28-Mar-2018.)  (Revised by Alexander van der Vekens, 27-May-2018.) ",
+  "statement" : "swrdccatin12.l $e |- L = ( # ` A ) $.\nswrdccatin2 $p |- ( ( A e. Word V /\\ B e. Word V ) -> ( ( M e. ( L ... N ) /\\ N e. ( L ... ( L + ( # ` B ) ) ) ) -> ( ( A concat B ) substr <. M , N >. ) = ( B substr <. ( M - L ) , ( N - L ) >. ) ) ) $."
+}

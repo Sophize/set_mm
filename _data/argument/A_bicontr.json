@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bicontr on Metamath](http://us.metamath.org/mpegif/bicontr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_biid | |- ( ph <-> ph ) |\n| 2 |  | #P_notbinot1 | |- ( -. ( -. ph <-> ph ) <-> ( ph <-> ph ) ) |\n| 3 | 1, 2 | #P_mpbir | |- -. ( -. ph <-> ph ) |\n| 4 | 3 | #P_bifal | |- ( ( -. ph <-> ph ) <-> F. ) |",
+  "conclusion" : "#P_bicontr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wph", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wph", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wfal" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biid", "#P_notbinot1", "#P_bifal", "#P_mpbir" ]
+}

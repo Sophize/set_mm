@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See repizf2 on Metamath](http://us.metamath.org/mpegif/repizf2.html)"
+  } ],
+  "names" : [ "repizf2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vz", "#T_wph", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vw", "#T_wmo", "#T_vy", "#T_wph", "#T_wi", "#T_wex", "#T_vz", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_vw", "#T_crab--3", "#T_wex", "#T_vy", "#T_wph", "#T_crab--4", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_vz", "#T_wph", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Replacement.  This version of replacement is stronger than ~ repizf in the sense that ` ph ` does not need to map all values of ` x ` in ` w ` to a value of ` y ` .  The resulting set contains those elements for which there is a value of ` y ` and in that sense, this theorem combines ~ repizf with ~ ax-sep .  Another variation would be ` A. x e. w E* y ph -> { y | E. x ( x e. w /\\ ph ) } e. _V ` but we don't have a proof of that yet.  (Contributed by Jim Kingdon, 7-Sep-2018.) ",
+  "statement" : "repizf2.1 $e |- F/ z ph $.\nrepizf2 $p |- ( A. x e. w E* y ph -> E. z A. x e. { x e. w | E. y ph } E. y e. z ph ) $.\n$d w x y z $."
+}

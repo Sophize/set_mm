@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnindf on Metamath](http://us.metamath.org/mpegif/nnindf.html)"
+  } ],
+  "names" : [ "nnindf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_vx", "#T_wceq", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cn", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Mathematical Induction, using a bound-variable hypothesis instead of distinct variables.  (Contributed by Thierry Arnoux, 6-May-2018.) ",
+  "statement" : "nnindf.x $e |- F/ y ph $.\nnnindf.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.\nnnindf.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nnnindf.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nnnindf.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nnnindf.5 $e |- ps $.\nnnindf.6 $e |- ( y e. NN -> ( ch -> th ) ) $.\nnnindf $p |- ( A e. NN -> ta ) $.\n$d A x $.\n$d ch x $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y $."
+}

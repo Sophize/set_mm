@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latmass on Metamath](http://us.metamath.org/mpegif/latmass.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | latmass.b | |- B = ( Base ` K ) |\n| 2 |  | latmass.m | |- ./\\ = ( meet ` K ) |\n| 3 |  | #P_eqid | |- ( ODual ` K ) = ( ODual ` K ) |\n| 4 | 3 | #P_odulat | |- ( K e. Lat -> ( ODual ` K ) e. Lat ) |\n| 5 | 3, 1 | #P_odubas | |- B = ( Base ` ( ODual ` K ) ) |\n| 6 | 3, 2 | #P_odujoin | |- ./\\ = ( join ` ( ODual ` K ) ) |\n| 7 | 5, 6 | #P_latjass | |- ( ( ( ODual ` K ) e. Lat /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X ./\\ Y ) ./\\ Z ) = ( X ./\\ ( Y ./\\ Z ) ) ) |\n| 8 | 4, 7 | #P_sylan | |- ( ( K e. Lat /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X ./\\ Y ) ./\\ Z ) = ( X ./\\ ( Y ./\\ Z ) ) ) |",
+  "conclusion" : "#P_latmass",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.an", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_codu", "#T_cfv", "#T_cK", "#T_wceq", "#T_codu", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wi", "#T_codu", "#T_cfv", "#T_cK", "#T_wcel", "#T_clat", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_codu", "#T_cfv", "#T_cK", "#T_c.an", "#T_wceq", "#T_cjn", "#T_cfv", "#T_codu", "#T_cfv", "#T_cK", "#T_codu", "#T_cfv", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_c.an", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.an", "#T_cY", "#T_c.an", "#T_cZ", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_c.an", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.an", "#T_cY", "#T_c.an", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sylan", "#P_odulat", "#P_odubas", "#P_latjass", "#P_odujoin" ]
+}

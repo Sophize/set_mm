@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rpsup on Metamath](http://us.metamath.org/mpegif/rpsup.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ioorp | |- ( 0 (,) +oo ) = RR+ |\n| 2 | 1 | #P_supeq1i | |- sup ( ( 0 (,) +oo ) , RR* , < ) = sup ( RR+ , RR* , < ) |\n| 3 |  | #P_0xr | |- 0 e. RR* |\n| 4 |  | #P_0re | |- 0 e. RR |\n| 5 |  | #P_renepnf | |- ( 0 e. RR -> 0 =/= +oo ) |\n| 6 | 4, 5 | #P_ax-mp | |- 0 =/= +oo |\n| 7 |  | #P_ioopnfsup | |- ( ( 0 e. RR* /\\ 0 =/= +oo ) -> sup ( ( 0 (,) +oo ) , RR* , < ) = +oo ) |\n| 8 | 3, 6, 7 | #P_mp2an | |- sup ( ( 0 (,) +oo ) , RR* , < ) = +oo |\n| 9 | 2, 8 | #P_eqtr3i | |- sup ( RR+ , RR* , < ) = +oo |",
+  "conclusion" : "#P_rpsup",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_cioo", "#T_cpnf", "#T_wceq", "#T_crp", "#T_csup--1", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_csup--1", "#T_crp", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_wne", "#T_cpnf", "#T_cc0", "#T_wne", "#T_cpnf", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wa", "#T_cc0", "#T_wne", "#T_cpnf", "#T_wi", "#T_csup--1", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_cpnf", "#T_csup--1", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_cpnf", "#T_csup--1", "#T_crp", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_cpnf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_eqtr3i", "#P_0xr", "#P_ioorp", "#P_renepnf", "#P_supeq1i", "#P_ioopnfsup", "#P_0re" ]
+}

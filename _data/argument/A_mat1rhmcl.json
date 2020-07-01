@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mat1rhmcl on Metamath](http://us.metamath.org/mpegif/mat1rhmcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mat1rhmval.k | |- K = ( Base ` R ) |\n| 2 |  | mat1rhmval.a | |- A = ( { E } Mat R ) |\n| 3 |  | mat1rhmval.b | |- B = ( Base ` A ) |\n| 4 |  | mat1rhmval.o | |- O = <. E , E >. |\n| 5 |  | mat1rhmval.f | |- F = ( x e. K |-> { <. O , x >. } ) |\n| 6 | 2, 1, 4 | #P_mat1dimbas | |- ( ( R e. Ring /\\ E e. V /\\ X e. K ) -> { <. O , X >. } e. ( Base ` A ) ) |\n| 7 | 1, 2, 3, 4, 5 | #P_mat1rhmval | |- ( ( R e. Ring /\\ E e. V /\\ X e. K ) -> ( F ` X ) = { <. O , X >. } ) |\n| 8 | 3 | #P_a1i | |- ( ( R e. Ring /\\ E e. V /\\ X e. K ) -> B = ( Base ` A ) ) |\n| 9 | 6, 7, 8 | #P_3eltr4d | |- ( ( R e. Ring /\\ E e. V /\\ X e. K ) -> ( F ` X ) e. B ) |",
+  "conclusion" : "#P_mat1rhmcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_csn--1", "#T_cE", "#T_csn--2", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cO", "#T_wceq", "#T_cop--1", "#T_cE", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cK", "#T_cmpt--2", "#T_csn--1", "#T_cop--1", "#T_cO", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_csn--2", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cE", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cK", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cO", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cE", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cK", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cO", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cE", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cK", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cE", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cK", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mat1rhmval", "#P_mat1dimbas", "#P_a1i", "#P_3eltr4d" ]
+}

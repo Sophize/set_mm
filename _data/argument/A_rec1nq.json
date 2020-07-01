@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rec1nq on Metamath](http://us.metamath.org/mpegif/rec1nq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1nq | |- 1Q e. Q. |\n| 2 |  | #P_recclnq | |- ( 1Q e. Q. -> ( *Q ` 1Q ) e. Q. ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( *Q ` 1Q ) e. Q. |\n| 4 |  | #P_mulcomnqg | |- ( ( ( *Q ` 1Q ) e. Q. /\\ 1Q e. Q. ) -> ( ( *Q ` 1Q ) .Q 1Q ) = ( 1Q .Q ( *Q ` 1Q ) ) ) |\n| 5 | 3, 1, 4 | #P_mp2an | |- ( ( *Q ` 1Q ) .Q 1Q ) = ( 1Q .Q ( *Q ` 1Q ) ) |\n| 6 |  | #P_mulidnq | |- ( ( *Q ` 1Q ) e. Q. -> ( ( *Q ` 1Q ) .Q 1Q ) = ( *Q ` 1Q ) ) |\n| 7 | 1, 2, 6 | #P_mp2b | |- ( ( *Q ` 1Q ) .Q 1Q ) = ( *Q ` 1Q ) |\n| 8 |  | #P_recidnq | |- ( 1Q e. Q. -> ( 1Q .Q ( *Q ` 1Q ) ) = 1Q ) |\n| 9 | 1, 8 | #P_ax-mp | |- ( 1Q .Q ( *Q ` 1Q ) ) = 1Q |\n| 10 | 5, 7, 9 | #P_3eqtr3i | |- ( *Q ` 1Q ) = 1Q |",
+  "conclusion" : "#P_rec1nq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1q", "#T_wcel", "#T_cnq", "#T_c1q", "#T_wcel", "#T_cnq", "#T_wi", "#T_crq", "#T_cfv", "#T_c1q", "#T_wcel", "#T_cnq", "#T_crq", "#T_cfv", "#T_c1q", "#T_wcel", "#T_cnq", "#T_crq", "#T_cfv", "#T_c1q", "#T_wcel", "#T_cnq", "#T_wa", "#T_c1q", "#T_wcel", "#T_cnq", "#T_wi", "#T_crq", "#T_cfv", "#T_c1q", "#T_cmq", "#T_c1q", "#T_wceq", "#T_c1q", "#T_cmq", "#T_crq", "#T_cfv", "#T_c1q", "#T_crq", "#T_cfv", "#T_c1q", "#T_cmq", "#T_c1q", "#T_wceq", "#T_c1q", "#T_cmq", "#T_crq", "#T_cfv", "#T_c1q", "#T_crq", "#T_cfv", "#T_c1q", "#T_wcel", "#T_cnq", "#T_wi", "#T_crq", "#T_cfv", "#T_c1q", "#T_cmq", "#T_c1q", "#T_wceq", "#T_crq", "#T_cfv", "#T_c1q", "#T_crq", "#T_cfv", "#T_c1q", "#T_cmq", "#T_c1q", "#T_wceq", "#T_crq", "#T_cfv", "#T_c1q", "#T_c1q", "#T_wcel", "#T_cnq", "#T_wi", "#T_c1q", "#T_cmq", "#T_crq", "#T_cfv", "#T_c1q", "#T_wceq", "#T_c1q", "#T_c1q", "#T_cmq", "#T_crq", "#T_cfv", "#T_c1q", "#T_wceq", "#T_c1q", "#T_crq", "#T_cfv", "#T_c1q", "#T_wceq", "#T_c1q" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_3eqtr3i", "#P_recclnq", "#P_mulcomnqg", "#P_recidnq", "#P_1nq", "#P_mulidnq", "#P_mp2b" ]
+}

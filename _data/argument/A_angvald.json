@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See angvald on Metamath](http://us.metamath.org/mpegif/angvald.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ang.1 | |- F = ( x e. ( CC \\ { 0 } ) , y e. ( CC \\ { 0 } ) |-> ( Im ` ( log ` ( y / x ) ) ) ) |\n| 2 |  | angvald.1 | |- ( ph -> X e. CC ) |\n| 3 |  | angvald.2 | |- ( ph -> X =/= 0 ) |\n| 4 |  | angvald.3 | |- ( ph -> Y e. CC ) |\n| 5 |  | angvald.4 | |- ( ph -> Y =/= 0 ) |\n| 6 | 1 | #P_angval | |- ( ( ( X e. CC /\\ X =/= 0 ) /\\ ( Y e. CC /\\ Y =/= 0 ) ) -> ( X F Y ) = ( Im ` ( log ` ( Y / X ) ) ) ) |\n| 7 | 2, 3, 4, 5, 6 | #P_syl22anc | |- ( ph -> ( X F Y ) = ( Im ` ( log ` ( Y / X ) ) ) ) |",
+  "conclusion" : "#P_angvald",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vx", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_wne", "#T_cc0", "#T_cX", "#T_wcel", "#T_cc", "#T_wa", "#T_cX", "#T_wne", "#T_cc0", "#T_wa", "#T_cY", "#T_wcel", "#T_cc", "#T_wa", "#T_cY", "#T_wne", "#T_cc0", "#T_wi", "#T_cX", "#T_cF", "#T_cY", "#T_wceq", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_cY", "#T_cdiv", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_cF", "#T_cY", "#T_wceq", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_cY", "#T_cdiv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_angval", "#P_syl22anc" ]
+}

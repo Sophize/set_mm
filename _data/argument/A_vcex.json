@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vcex on Metamath](http://us.metamath.org/mpegif/vcex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-br | |- ( G CVecOLD S <-> <. G , S >. e. CVecOLD ) |\n| 2 |  | #P_vcrel | |- Rel CVecOLD |\n| 3 |  | #P_df-rel | |- ( Rel CVecOLD <-> CVecOLD C_ ( _V X. _V ) ) |\n| 4 | 2, 3 | #P_mpbi | |- CVecOLD C_ ( _V X. _V ) |\n| 5 | 4 | #P_brel | |- ( G CVecOLD S -> ( G e. _V /\\ S e. _V ) ) |\n| 6 | 1, 5 | #P_sylbir | |- ( <. G , S >. e. CVecOLD -> ( G e. _V /\\ S e. _V ) ) |",
+  "conclusion" : "#P_vcex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_cvc", "#T_cS", "#T_wb", "#T_cop--1", "#T_cG", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_wcel", "#T_cvc", "#T_wrel", "#T_cvc", "#T_wrel", "#T_cvc", "#T_wb", "#T_cvc", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cvc", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cG", "#T_cvc", "#T_cS", "#T_wi", "#T_cG", "#T_wcel", "#T_cvv", "#T_wa", "#T_cS", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cG", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_wcel", "#T_cvc", "#T_wi", "#T_cG", "#T_wcel", "#T_cvv", "#T_wa", "#T_cS", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_df-rel", "#P_sylbir", "#P_mpbi", "#P_vcrel", "#P_brel" ]
+}

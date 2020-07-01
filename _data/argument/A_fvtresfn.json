@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvtresfn on Metamath](http://us.metamath.org/mpegif/fvtresfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvtresfn.f | |- F = ( x e. B |-> ( x |` V ) ) |\n| 2 |  | #P_resexg | |- ( X e. B -> ( X |` V ) e. _V ) |\n| 3 |  | #P_reseq1 | |- ( x = X -> ( x |` V ) = ( X |` V ) ) |\n| 4 | 3, 1 | #P_fvmptg | |- ( ( X e. B /\\ ( X |` V ) e. _V ) -> ( F ` X ) = ( X |` V ) ) |\n| 5 | 2, 4 | #P_mpdan | |- ( X e. B -> ( F ` X ) = ( X |` V ) ) |",
+  "conclusion" : "#P_fvtresfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_vx", "#T_cres", "#T_cV", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_cres", "#T_cV", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_vx.wal", "#T_cres", "#T_cV", "#T_wceq", "#T_cX", "#T_cres", "#T_cV", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_cres", "#T_cV", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cres", "#T_cV", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cres", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resexg", "#P_mpdan", "#P_reseq1", "#P_fvmptg" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exrot4 on Metamath](http://us.metamath.org/mpegif/exrot4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_excom13 | |- ( E. y E. z E. w ph <-> E. w E. z E. y ph ) |\n| 2 | 1 | #P_exbii | |- ( E. x E. y E. z E. w ph <-> E. x E. w E. z E. y ph ) |\n| 3 |  | #P_excom13 | |- ( E. x E. w E. z E. y ph <-> E. z E. w E. x E. y ph ) |\n| 4 | 2, 3 | #P_bitri | |- ( E. x E. y E. z E. w ph <-> E. z E. w E. x E. y ph ) |",
+  "conclusion" : "#P_exrot4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy.tru", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wb", "#T_wex", "#T_vw", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vw", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vw", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wb", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wb", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_excom13", "#P_exbii", "#P_bitri" ]
+}

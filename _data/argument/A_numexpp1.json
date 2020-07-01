@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See numexpp1 on Metamath](http://us.metamath.org/mpegif/numexpp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | numexp.1 | |- A e. NN0 |\n| 2 |  | numexpp1.2 | |- M e. NN0 |\n| 3 |  | numexpp1.3 | |- ( M + 1 ) = N |\n| 4 |  | numexpp1.4 | |- ( ( A ^ M ) x. A ) = C |\n| 5 | 1 | #P_nn0cni | |- A e. CC |\n| 6 |  | #P_expp1 | |- ( ( A e. CC /\\ M e. NN0 ) -> ( A ^ ( M + 1 ) ) = ( ( A ^ M ) x. A ) ) |\n| 7 | 5, 2, 6 | #P_mp2an | |- ( A ^ ( M + 1 ) ) = ( ( A ^ M ) x. A ) |\n| 8 | 3 | #P_oveq2i | |- ( A ^ ( M + 1 ) ) = ( A ^ N ) |\n| 9 | 7, 8, 4 | #P_3eqtr3i | |- ( A ^ N ) = C |",
+  "conclusion" : "#P_numexpp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cM", "#T_wcel", "#T_cn0", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cN", "#T_cA", "#T_cexp", "#T_cM", "#T_cmul", "#T_cA", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_cA", "#T_cexp", "#T_cN", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_nn0cni", "#P_expp1", "#P_3eqtr3i", "#P_oveq2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfse on Metamath](http://us.metamath.org/mpegif/nfse.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nffr.r | |- F/_ x R |\n| 2 |  | nffr.a | |- F/_ x A |\n| 3 |  | #P_df-se | |- ( R Se A <-> A. b e. A { a e. A | a R b } e. _V ) |\n| 4 |  | #P_nfcv | |- F/_ x a |\n| 5 |  | #P_nfcv | |- F/_ x b |\n| 6 | 4, 1, 5 | #P_nfbr | |- F/ x a R b |\n| 7 | 6, 2 | #P_nfrabxy | |- F/_ x { a e. A | a R b } |\n| 8 | 7 | #P_nfel1 | |- F/ x { a e. A | a R b } e. _V |\n| 9 | 2, 8 | #P_nfralxy | |- F/ x A. b e. A { a e. A | a R b } e. _V |\n| 10 | 3, 9 | #P_nfxfr | |- F/ x R Se A |",
+  "conclusion" : "#P_nfse",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_wnfc", "#T_vx", "#T_cR", "#T_wnfc", "#T_vx", "#T_cA", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_wb", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cA.wceq", "#T_crab--1", "#T_va", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_va", "#T_cR", "#T_vb", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wnfc", "#T_vx.wal", "#T_va", "#T_wnfc", "#T_vx.wal", "#T_vb", "#T_wnf", "#T_vx.wal", "#T_va", "#T_cR", "#T_vb", "#T_wnfc", "#T_vx.wal", "#T_crab--1", "#T_va", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_va", "#T_cR", "#T_vb", "#T_crab--4", "#T_wnf", "#T_vx.wal", "#T_crab--1", "#T_va", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_va", "#T_cR", "#T_vb", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wnf", "#T_vx.wal", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cA.wceq", "#T_crab--1", "#T_va", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_va", "#T_cR", "#T_vb", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wnf", "#T_vx", "#T_cR", "#T_wse", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_df-se", "#P_nfbr", "#P_nfrabxy", "#P_nfel1", "#P_nfralxy", "#P_nfxfr" ]
+}

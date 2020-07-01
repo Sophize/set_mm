@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oranabs on Metamath](http://us.metamath.org/mpegif/oranabs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_biortn | |- ( ps -> ( ph <-> ( -. ps \\/ ph ) ) ) |\n| 2 |  | #P_orcom | |- ( ( -. ps \\/ ph ) <-> ( ph \\/ -. ps ) ) |\n| 3 | 1, 2 | #P_syl6rbb | |- ( ps -> ( ( ph \\/ -. ps ) <-> ph ) ) |\n| 4 | 3 | #P_pm5.32ri | |- ( ( ( ph \\/ -. ps ) /\\ ps ) <-> ( ph /\\ ps ) ) |",
+  "conclusion" : "#P_oranabs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orcom", "#P_pm5.32ri", "#P_biortn", "#P_syl6rbb" ]
+}

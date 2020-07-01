@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mstopn on Metamath](http://us.metamath.org/mpegif/mstopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isms.j | |- J = ( TopOpen ` K ) |\n| 2 |  | isms.x | |- X = ( Base ` K ) |\n| 3 |  | isms.d | |- D = ( ( dist ` K ) |` ( X X. X ) ) |\n| 4 | 1, 2, 3 | #P_isms2 | |- ( K e. MetSp <-> ( D e. ( Met ` X ) /\\ J = ( MetOpen ` D ) ) ) |\n| 5 | 4 | #P_simprbi | |- ( K e. MetSp -> J = ( MetOpen ` D ) ) |",
+  "conclusion" : "#P_mstopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cD", "#T_wceq", "#T_cds", "#T_cfv", "#T_cK", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_cK", "#T_wcel", "#T_cmt", "#T_wb", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wa", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cK", "#T_wcel", "#T_cmt", "#T_wi", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprbi", "#P_isms2" ]
+}

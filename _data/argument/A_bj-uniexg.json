@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-uniexg on Metamath](http://us.metamath.org/mpegif/bj-uniexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unieq | |- ( x = A -> U. x = U. A ) |\n| 2 | 1 | #P_eleq1d | |- ( x = A -> ( U. x e. _V <-> U. A e. _V ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_bj-uniex | |- U. x e. _V |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> U. A e. _V ) |",
+  "conclusion" : "#P_bj-uniexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_vx.wal", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cuni", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-uniex", "#P_vtoclg", "#P_unieq", "#P_vex", "#P_eleq1d" ]
+}

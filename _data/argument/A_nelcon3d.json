@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nelcon3d on Metamath](http://us.metamath.org/mpegif/nelcon3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nelcon3d.1 | |- ( ph -> ( A e. B -> C e. D ) ) |\n| 2 | 1 | #P_con3d | |- ( ph -> ( -. C e. D -> -. A e. B ) ) |\n| 3 |  | #P_df-nel | |- ( C e/ D <-> -. C e. D ) |\n| 4 |  | #P_df-nel | |- ( A e/ B <-> -. A e. B ) |\n| 5 | 2, 3, 4 | #P_3imtr4g | |- ( ph -> ( C e/ D -> A e/ B ) ) |",
+  "conclusion" : "#P_nelcon3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_wn", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cC", "#T_wnel", "#T_cD", "#T_wb", "#T_wn", "#T_cC", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wnel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_wnel", "#T_cD", "#T_wi", "#T_cA", "#T_wnel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3imtr4g", "#P_df-nel", "#P_con3d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrecd on Metamath](http://us.metamath.org/mpegif/sqrecd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | expcld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | sqrecd.1 | |- ( ph -> A =/= 0 ) |\n| 3 |  | #P_2z | |- 2 e. ZZ |\n| 4 | 3 | #P_a1i | |- ( ph -> 2 e. ZZ ) |\n| 5 |  | #P_exprec | |- ( ( A e. CC /\\ A =/= 0 /\\ 2 e. ZZ ) -> ( ( 1 / A ) ^ 2 ) = ( 1 / ( A ^ 2 ) ) ) |\n| 6 | 1, 2, 4, 5 | #P_syl3anc | |- ( ph -> ( ( 1 / A ) ^ 2 ) = ( 1 / ( A ^ 2 ) ) ) |",
+  "conclusion" : "#P_sqrecd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_c2", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_c2", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_c2", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wph", "#T_wi", "#T_c1", "#T_cdiv", "#T_cA", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cA", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exprec", "#P_2z", "#P_syl3anc", "#P_a1i" ]
+}

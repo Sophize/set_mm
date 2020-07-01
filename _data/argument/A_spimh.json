@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spimh on Metamath](http://us.metamath.org/mpegif/spimh.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spimh.1 | |- ( ps -> A. x ps ) |\n| 2 |  | spimh.2 | |- ( x = y -> ( ph -> ps ) ) |\n| 3 | 2, 1 | #P_syl6com | |- ( ph -> ( x = y -> A. x ps ) ) |\n| 4 | 3 | #P_alimi | |- ( A. x ph -> A. x ( x = y -> A. x ps ) ) |\n| 5 |  | #P_ax9o | |- ( A. x ( x = y -> A. x ps ) -> ps ) |\n| 6 | 4, 5 | #P_syl | |- ( A. x ph -> ps ) |",
+  "conclusion" : "#P_spimh",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6com", "#P_alimi", "#P_ax9o", "#P_syl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mapsspm on Metamath](http://us.metamath.org/mpegif/mapsspm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elmapex | |- ( f e. ( A ^m B ) -> ( A e. _V /\\ B e. _V ) ) |\n| 2 | 1 | #P_simprd | |- ( f e. ( A ^m B ) -> B e. _V ) |\n| 3 | 1 | #P_simpld | |- ( f e. ( A ^m B ) -> A e. _V ) |\n| 4 |  | #P_elmapi | |- ( f e. ( A ^m B ) -> f : B --> A ) |\n| 5 |  | #P_fpmg | |- ( ( B e. _V /\\ A e. _V /\\ f : B --> A ) -> f e. ( A ^pm B ) ) |\n| 6 | 2, 3, 4, 5 | #P_syl3anc | |- ( f e. ( A ^m B ) -> f e. ( A ^pm B ) ) |\n| 7 | 6 | #P_ssriv | |- ( A ^m B ) C_ ( A ^pm B ) |",
+  "conclusion" : "#P_mapsspm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cbvex4v.vf", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cA.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cpm", "#T_cB.wceq", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_wcel", "#T_cA.wceq", "#T_cpm", "#T_cB.wceq", "#T_cA", "#T_cmap", "#T_cB", "#T_wss", "#T_cA", "#T_cpm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elmapi", "#P_simpld", "#P_syl3anc", "#P_simprd", "#P_elmapex", "#P_fpmg", "#P_ssriv" ]
+}

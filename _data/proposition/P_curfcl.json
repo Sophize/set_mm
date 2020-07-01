@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See curfcl on Metamath](http://us.metamath.org/mpegif/curfcl.html)"
+  } ],
+  "names" : [ "curfcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cF", "#T_cQ", "#T_wceq", "#T_cD", "#T_cfuc", "#T_cE", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_cxpc", "#T_cD", "#T_cfunc", "#T_cE", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The curry functor of a functor ` F : C X. D --> E ` is a functor ` curryF ( F ) : C --> ( D --> E ) ` .  (Contributed by Mario Carneiro, 13-Jan-2017.) ",
+  "statement" : "curfcl.g $e |- G = ( <. C , D >. curryF F ) $.\ncurfcl.q $e |- Q = ( D FuncCat E ) $.\ncurfcl.c $e |- ( ph -> C e. Cat ) $.\ncurfcl.d $e |- ( ph -> D e. Cat ) $.\ncurfcl.f $e |- ( ph -> F e. ( ( C Xc. D ) Func E ) ) $.\ncurfcl $p |- ( ph -> G e. ( C Func Q ) ) $."
+}

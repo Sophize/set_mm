@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See txprel on Metamath](http://us.metamath.org/mpegif/txprel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_txpss3v | |- ( A (x) B ) C_ ( _V X. ( _V X. _V ) ) |\n| 2 |  | #P_xpss | |- ( _V X. ( _V X. _V ) ) C_ ( _V X. _V ) |\n| 3 | 1, 2 | #P_sstri | |- ( A (x) B ) C_ ( _V X. _V ) |\n| 4 |  | #P_df-rel | |- ( Rel ( A (x) B ) <-> ( A (x) B ) C_ ( _V X. _V ) ) |\n| 5 | 3, 4 | #P_mpbir | |- Rel ( A (x) B ) |",
+  "conclusion" : "#P_txprel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_ctxp", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_ctxp", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cA.wceq", "#T_ctxp", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_ctxp", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cA", "#T_ctxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-rel", "#P_txpss3v", "#P_xpss", "#P_mpbir", "#P_sstri" ]
+}

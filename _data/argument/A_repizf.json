@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See repizf on Metamath](http://us.metamath.org/mpegif/repizf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ax-coll.1 | |- F/ b ph |\n| 2 |  | #P_euex | |- ( E! y ph -> E. y ph ) |\n| 3 | 2 | #P_ralimi | |- ( A. x e. a E! y ph -> A. x e. a E. y ph ) |\n| 4 | 1 | #P_ax-coll | |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) |\n| 5 | 3, 4 | #P_syl | |- ( A. x e. a E! y ph -> E. b A. x e. a E. y e. b ph ) |",
+  "conclusion" : "#P_repizf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vb", "#T_wph", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_va", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_va", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_va", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wex", "#T_vb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_va", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_vb", "#T_wph", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_va", "#T_weu", "#T_vy", "#T_wph", "#T_wi", "#T_wex", "#T_vb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_va", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_vb", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ralimi", "#P_ax-coll", "#P_syl", "#P_euex" ]
+}

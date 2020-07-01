@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bitri on Metamath](http://us.metamath.org/mpegif/bitri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bitri.1 | |- ( ph <-> ps ) |\n| 2 |  | bitri.2 | |- ( ps <-> ch ) |\n| 3 | 1, 2 | #P_sylbb | |- ( ph -> ch ) |\n| 4 | 2 | #P_biimpri | |- ( ch -> ps ) |\n| 5 | 4, 1 | #P_sylibr | |- ( ch -> ph ) |\n| 6 | 3, 5 | #P_impbii | |- ( ph <-> ch ) |",
+  "conclusion" : "#P_bitri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylbb", "#P_impbii", "#P_sylibr", "#P_biimpri" ]
+}

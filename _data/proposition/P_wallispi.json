@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wallispi on Metamath](http://us.metamath.org/mpegif/wallispi.html)"
+  } ],
+  "names" : [ "wallispi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_c2", "#T_cmul", "#T_vk", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vk", "#T_cmin", "#T_c1", "#T_cmul", "#T_c2", "#T_cmul", "#T_vk", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vk", "#T_caddc", "#T_c1", "#T_cW", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_vn", "#T_cW", "#T_cli", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cF", "#T_vn", "#T_cF", "#T_vn", "#T_vk", "#T_vn", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Wallis' formula for &pi; :  Wallis' product converges to &pi; / 2 . (Contributed by Glauco Siliprandi, 29-Jun-2017.) ",
+  "statement" : "wallispi.1 $e |- F = ( k e. NN |-> ( ( ( 2 x. k ) / ( ( 2 x. k ) - 1 ) ) x. ( ( 2 x. k ) / ( ( 2 x. k ) + 1 ) ) ) ) $.\nwallispi.2 $e |- W = ( n e. NN |-> ( seq 1 ( x. , F ) ` n ) ) $.\nwallispi $p |- W ~~> ( _pi / 2 ) $.\n$d F n $.\n$d F n $.\n$d k n $.\n$d k n $."
+}

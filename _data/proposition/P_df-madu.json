@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-madu on Metamath](http://us.metamath.org/mpegif/df-madu.html)"
+  } ],
+  "names" : [ "df-madu" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmadu", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vm", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_vn", "#T_cmat", "#T_vr", "#T_cmpt--2", "#T_vi", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_vn", "#T_cmdat", "#T_vr", "#T_cfv", "#T_vk", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vl", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_cif--1", "#T_vk", "#T_wceq", "#T_vj", "#T_cif--2", "#T_cif--1", "#T_vl", "#T_wceq", "#T_vi", "#T_cif--2", "#T_cur", "#T_cfv", "#T_vr", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_vr", "#T_cif--3", "#T_vk", "#T_vm", "#T_vl", "#T_vi", "#T_vj", "#T_vk", "#T_vl", "#T_vm", "#T_vn", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the adjugate or adjunct (matrix of cofactors) of a square matrix.  This definition gives the standard cofactors, however the internal minors are not the standard minors, see definition in [Lang] p. 518.  (Contributed by Stefan O'Rear, 7-Sep-2015.)  (Revised by SO, 10-Jul-2018.) ",
+  "statement" : "df-madu $p |- maAdju = ( n e. _V , r e. _V |-> ( m e. ( Base ` ( n Mat r ) ) |-> ( i e. n , j e. n |-> ( ( n maDet r ) ` ( k e. n , l e. n |-> if ( k = j , if ( l = i , ( 1r ` r ) , ( 0g ` r ) ) , ( k m l ) ) ) ) ) ) ) $.\n$d i j k l m n r $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imimorbdc on Metamath](http://us.metamath.org/mpegif/imimorbdc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfor2dc | |- ( DECID ps -> ( ( ps \\/ ch ) <-> ( ( ps -> ch ) -> ch ) ) ) |\n| 2 | 1 | #P_imbi2d | |- ( DECID ps -> ( ( ph -> ( ps \\/ ch ) ) <-> ( ph -> ( ( ps -> ch ) -> ch ) ) ) ) |\n| 3 |  | #P_bi2.04 | |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <-> ( ph -> ( ( ps -> ch ) -> ch ) ) ) |\n| 4 | 2, 3 | #P_syl6rbbr | |- ( DECID ps -> ( ( ( ps -> ch ) -> ( ph -> ch ) ) <-> ( ph -> ( ps \\/ ch ) ) ) ) |",
+  "conclusion" : "#P_imimorbdc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wch", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wch", "#T_wdc", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfor2dc", "#P_bi2.04", "#P_imbi2d", "#P_syl6rbbr" ]
+}

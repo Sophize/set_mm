@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acongeq12d on Metamath](http://us.metamath.org/mpegif/acongeq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | acongeq12d.1 | |- ( ph -> B = C ) |\n| 2 |  | acongeq12d.2 | |- ( ph -> D = E ) |\n| 3 | 1, 2 | #P_oveq12d | |- ( ph -> ( B - D ) = ( C - E ) ) |\n| 4 | 3 | #P_breq2d | |- ( ph -> ( A || ( B - D ) <-> A || ( C - E ) ) ) |\n| 5 | 2 | #P_negeqd | |- ( ph -> -u D = -u E ) |\n| 6 | 1, 5 | #P_oveq12d | |- ( ph -> ( B - -u D ) = ( C - -u E ) ) |\n| 7 | 6 | #P_breq2d | |- ( ph -> ( A || ( B - -u D ) <-> A || ( C - -u E ) ) ) |\n| 8 | 4, 7 | #P_orbi12d | |- ( ph -> ( ( A || ( B - D ) \\/ A || ( B - -u D ) ) <-> ( A || ( C - E ) \\/ A || ( C - -u E ) ) ) ) |",
+  "conclusion" : "#P_acongeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cD", "#T_wceq", "#T_cE", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cD", "#T_wceq", "#T_cC", "#T_cmin", "#T_cE", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdvds", "#T_cB.wceq", "#T_cmin", "#T_cD", "#T_wb", "#T_cA.wceq", "#T_cdvds", "#T_cC", "#T_cmin", "#T_cE", "#T_wph", "#T_wi", "#T_cneg", "#T_cD", "#T_wceq", "#T_cneg", "#T_cE", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cmin", "#T_cneg", "#T_cD", "#T_wceq", "#T_cC", "#T_cmin", "#T_cneg", "#T_cE", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdvds", "#T_cB.wceq", "#T_cmin", "#T_cneg", "#T_cD", "#T_wb", "#T_cA.wceq", "#T_cdvds", "#T_cC", "#T_cmin", "#T_cneg", "#T_cE", "#T_wph", "#T_wi", "#T_cA", "#T_cdvds", "#T_cB", "#T_cmin", "#T_cD", "#T_wo", "#T_cA", "#T_cdvds", "#T_cB", "#T_cmin", "#T_cneg", "#T_cD", "#T_wb", "#T_cA", "#T_cdvds", "#T_cC", "#T_cmin", "#T_cE", "#T_wo", "#T_cA", "#T_cdvds", "#T_cC", "#T_cmin", "#T_cneg", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveq12d", "#P_negeqd", "#P_orbi12d", "#P_breq2d" ]
+}

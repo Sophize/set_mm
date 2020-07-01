@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfur2 on Metamath](http://us.metamath.org/mpegif/dfur2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dfur2.b | |- B = ( Base ` R ) |\n| 2 |  | dfur2.t | |- .x. = ( .r ` R ) |\n| 3 |  | dfur2.u | |- .1. = ( 1r ` R ) |\n| 4 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 5 | 4, 1 | #P_mgpbas | |- B = ( Base ` ( mulGrp ` R ) ) |\n| 6 | 4, 2 | #P_mgpplusg | |- .x. = ( +g ` ( mulGrp ` R ) ) |\n| 7 | 4, 3 | #P_ringidval | |- .1. = ( 0g ` ( mulGrp ` R ) ) |\n| 8 | 5, 6, 7 | #P_grpidval | |- .1. = ( iota e ( e e. B /\\ A. x e. B ( ( e .x. x ) = x /\\ ( x .x. e ) = x ) ) ) |",
+  "conclusion" : "#P_dfur2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cio", "#T_ve", "#T_ve", "#T_wcel", "#T_cB", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_ve", "#T_c.x", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_vx", "#T_c.x", "#T_ve", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_grpidval", "#P_mgpplusg", "#P_mgpbas", "#P_ringidval" ]
+}

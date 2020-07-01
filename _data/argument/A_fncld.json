@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fncld on Metamath](http://us.metamath.org/mpegif/fncld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- j e. _V |\n| 2 | 1 | #P_uniex | |- U. j e. _V |\n| 3 | 2 | #P_pwex | |- ~P U. j e. _V |\n| 4 | 3 | #P_rabex | |- { x e. ~P U. j | ( U. j \\ x ) e. j } e. _V |\n| 5 |  | #P_df-cld | |- Clsd = ( j e. Top |-> { x e. ~P U. j | ( U. j \\ x ) e. j } ) |\n| 6 | 4, 5 | #P_fnmpti | |- Clsd Fn Top |",
+  "conclusion" : "#P_fncld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vx", "#T_vj", "#T_wcel", "#T_cvv", "#T_cuni", "#T_vj", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cuni", "#T_vj", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_cuni", "#T_vj", "#T_crab--3", "#T_cuni", "#T_vj", "#T_cdif", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_ccld", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_ctop", "#T_cmpt--2", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_cuni", "#T_vj", "#T_crab--3", "#T_cuni", "#T_vj", "#T_cdif", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_crab--4", "#T_ccld", "#T_wfn", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_df-cld", "#P_rabex", "#P_vex", "#P_fnmpti", "#P_uniex" ]
+}

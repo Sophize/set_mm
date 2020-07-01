@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnmptkc on Metamath](http://us.metamath.org/mpegif/cnmptkc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnmptk1.j | |- ( ph -> J e. ( TopOn ` X ) ) |\n| 2 |  | cnmptk1.k | |- ( ph -> K e. ( TopOn ` Y ) ) |\n| 3 |  | #P_fconstmpt | |- ( Y X. { x } ) = ( y e. Y |-> x ) |\n| 4 | 3 | #P_mpteq2i | |- ( x e. X |-> ( Y X. { x } ) ) = ( x e. X |-> ( y e. Y |-> x ) ) |\n| 5 |  | #P_xkoccn | |- ( ( K e. ( TopOn ` Y ) /\\ J e. ( TopOn ` X ) ) -> ( x e. X |-> ( Y X. { x } ) ) e. ( J Cn ( J ^ko K ) ) ) |\n| 6 | 2, 1, 5 | #P_syl2anc | |- ( ph -> ( x e. X |-> ( Y X. { x } ) ) e. ( J Cn ( J ^ko K ) ) ) |\n| 7 | 4, 6 | #P_syl5eqelr | |- ( ph -> ( x e. X |-> ( y e. Y |-> x ) ) e. ( J Cn ( J ^ko K ) ) ) |",
+  "conclusion" : "#P_cnmptkc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cY", "#T_cY", "#T_cxp", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_vx.wal", "#T_vx.wal", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cY", "#T_cxp", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_vy.tru", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_vx.wal", "#T_cK", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cY", "#T_wa", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cY", "#T_cxp", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cxko", "#T_cK", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cY", "#T_cxp", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cxko", "#T_cK", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_vy", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_vx", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cxko", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xkoccn", "#P_syl2anc", "#P_mpteq2i", "#P_syl5eqelr", "#P_fconstmpt" ]
+}

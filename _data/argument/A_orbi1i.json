@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See orbi1i on Metamath](http://us.metamath.org/mpegif/orbi1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | orbi2i.1 | |- ( ph <-> ps ) |\n| 2 |  | #P_orcom | |- ( ( ph \\/ ch ) <-> ( ch \\/ ph ) ) |\n| 3 | 1 | #P_orbi2i | |- ( ( ch \\/ ph ) <-> ( ch \\/ ps ) ) |\n| 4 |  | #P_orcom | |- ( ( ch \\/ ps ) <-> ( ps \\/ ch ) ) |\n| 5 | 2, 3, 4 | #P_3bitri | |- ( ( ph \\/ ch ) <-> ( ps \\/ ch ) ) |",
+  "conclusion" : "#P_orbi1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wo", "#T_wch", "#T_wb", "#T_wch", "#T_wo", "#T_wph", "#T_wch", "#T_wo", "#T_wph", "#T_wb", "#T_wch", "#T_wo", "#T_wps", "#T_wch", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wo", "#T_wch", "#T_wb", "#T_wps", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orbi2i", "#P_orcom", "#P_3bitri" ]
+}

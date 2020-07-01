@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r1lim on Metamath](http://us.metamath.org/mpegif/r1lim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_limelon | |- ( ( A e. B /\\ Lim A ) -> A e. On ) |\n| 2 |  | #P_r1fnon | |- R1 Fn On |\n| 3 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 4 | 2, 3 | #P_ax-mp | |- dom R1 = On |\n| 5 | 1, 4 | #P_syl6eleqr | |- ( ( A e. B /\\ Lim A ) -> A e. dom R1 ) |\n| 6 |  | #P_r1limg | |- ( ( A e. dom R1 /\\ Lim A ) -> ( R1 ` A ) = U_ x e. A ( R1 ` x ) ) |\n| 7 | 5, 6 | #P_sylancom | |- ( ( A e. B /\\ Lim A ) -> ( R1 ` A ) = U_ x e. A ( R1 ` x ) ) |",
+  "conclusion" : "#P_r1lim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wa", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_cr1", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wlim", "#T_cA", "#T_wi", "#T_cr1", "#T_cfv", "#T_cA", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cr1", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_syl6eleqr", "#P_fndm", "#P_sylancom", "#P_r1fnon", "#P_limelon", "#P_r1limg" ]
+}

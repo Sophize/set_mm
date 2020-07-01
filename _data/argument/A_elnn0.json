@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elnn0 on Metamath](http://us.metamath.org/mpegif/elnn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-n0 | |- NN0 = ( NN u. { 0 } ) |\n| 2 | 1 | #P_eleq2i | |- ( A e. NN0 <-> A e. ( NN u. { 0 } ) ) |\n| 3 |  | #P_elun | |- ( A e. ( NN u. { 0 } ) <-> ( A e. NN \\/ A e. { 0 } ) ) |\n| 4 |  | #P_c0ex | |- 0 e. _V |\n| 5 | 4 | #P_elsnc2 | |- ( A e. { 0 } <-> A = 0 ) |\n| 6 | 5 | #P_orbi2i | |- ( ( A e. NN \\/ A e. { 0 } ) <-> ( A e. NN \\/ A = 0 ) ) |\n| 7 | 2, 3, 6 | #P_3bitri | |- ( A e. NN0 <-> ( A e. NN \\/ A = 0 ) ) |",
+  "conclusion" : "#P_elnn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cn0", "#T_wceq", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cc0", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cn0", "#T_wb", "#T_cA", "#T_wcel", "#T_cn", "#T_wo", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-n0", "#P_c0ex", "#P_orbi2i", "#P_3bitri", "#P_eleq2i", "#P_elsnc2", "#P_elun" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subrg1ascl on Metamath](http://us.metamath.org/mpegif/subrg1ascl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subrg1ascl.p | |- P = ( Poly1 ` R ) |\n| 2 |  | subrg1ascl.a | |- A = ( algSc ` P ) |\n| 3 |  | subrg1ascl.h | |- H = ( R |`s T ) |\n| 4 |  | subrg1ascl.u | |- U = ( Poly1 ` H ) |\n| 5 |  | subrg1ascl.r | |- ( ph -> T e. ( SubRing ` R ) ) |\n| 6 |  | subrg1ascl.c | |- C = ( algSc ` U ) |\n| 7 |  | #P_eqid | |- ( 1o mPoly R ) = ( 1o mPoly R ) |\n| 8 | 1, 2 | #P_ply1ascl | |- A = ( algSc ` ( 1o mPoly R ) ) |\n| 9 |  | #P_eqid | |- ( 1o mPoly H ) = ( 1o mPoly H ) |\n| 10 |  | #P_1on | |- 1o e. On |\n| 11 | 10 | #P_a1i | |- ( ph -> 1o e. On ) |\n| 12 | 4, 6 | #P_ply1ascl | |- C = ( algSc ` ( 1o mPoly H ) ) |\n| 13 | 7, 8, 3, 9, 11, 5, 12 | #P_subrgascl | |- ( ph -> C = ( A |` T ) ) |",
+  "conclusion" : "#P_subrg1ascl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cP", "#T_cH", "#T_wceq", "#T_cR", "#T_cress", "#T_cT", "#T_cU", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cH", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cU", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cA.wceq", "#T_wceq", "#T_cascl", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_c1o", "#T_cmpl", "#T_cH", "#T_wceq", "#T_c1o", "#T_cmpl", "#T_cH", "#T_c1o", "#T_wcel", "#T_con0", "#T_wph", "#T_wi", "#T_c1o", "#T_wcel", "#T_con0", "#T_cC", "#T_wceq", "#T_cascl", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cH", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cA", "#T_cres", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subrgascl", "#P_eqid", "#P_1on", "#P_a1i", "#P_ply1ascl" ]
+}

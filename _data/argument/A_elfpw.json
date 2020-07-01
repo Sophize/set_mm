@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elfpw on Metamath](http://us.metamath.org/mpegif/elfpw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elin | |- ( A e. ( ~P B i^i Fin ) <-> ( A e. ~P B /\\ A e. Fin ) ) |\n| 2 |  | #P_elpwg | |- ( A e. Fin -> ( A e. ~P B <-> A C_ B ) ) |\n| 3 | 2 | #P_pm5.32ri | |- ( ( A e. ~P B /\\ A e. Fin ) <-> ( A C_ B /\\ A e. Fin ) ) |\n| 4 | 1, 3 | #P_bitri | |- ( A e. ( ~P B i^i Fin ) <-> ( A C_ B /\\ A e. Fin ) ) |",
+  "conclusion" : "#P_elfpw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_cin", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_cpw", "#T_cB", "#T_cin", "#T_cfn", "#T_wb", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cA", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elin", "#P_pm5.32ri", "#P_bitri", "#P_elpwg" ]
+}

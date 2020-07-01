@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ang180lem1 on Metamath](http://us.metamath.org/mpegif/ang180lem1.html)"
+  } ],
+  "names" : [ "ang180lem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vx", "#T_cT", "#T_wceq", "#T_clog", "#T_cfv", "#T_c1", "#T_cdiv", "#T_c1", "#T_cmin", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_cA", "#T_cmin", "#T_c1", "#T_cdiv", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_cA", "#T_cN", "#T_wceq", "#T_cT", "#T_cdiv", "#T_ci", "#T_cdiv", "#T_c2", "#T_cmul", "#T_cpi", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_cA", "#T_wne", "#T_c1", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cT", "#T_cdiv", "#T_ci", "#T_wcel", "#T_cr", "#T_cA", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ ang180 .  Show that the \"revolution number\" ` N ` is an integer, using ~ efeq1 to show that since the product of the three arguments ` A , 1 / ( 1 - A ) , ( A - 1 ) / A ` is ` -u 1 ` , the sum of the logarithms must be an integer multiple of ` 2 _pi _i ` away from ` _pi _i = log ( -u 1 ) ` .  (Contributed by Mario Carneiro, 23-Sep-2014.) ",
+  "statement" : "ang.1 $e |- F = ( x e. ( CC \\ { 0 } ) , y e. ( CC \\ { 0 } ) |-> ( Im ` ( log ` ( y / x ) ) ) ) $.\nang180lem1.2 $e |- T = ( ( ( log ` ( 1 / ( 1 - A ) ) ) + ( log ` ( ( A - 1 ) / A ) ) ) + ( log ` A ) ) $.\nang180lem1.3 $e |- N = ( ( ( T / _i ) / ( 2 x. _pi ) ) - ( 1 / 2 ) ) $.\nang180lem1 $p |- ( ( A e. CC /\\ A =/= 0 /\\ A =/= 1 ) -> ( N e. ZZ /\\ ( T / _i ) e. RR ) ) $.\n$d A x y $.\n$d x y $.\n$d x y $."
+}

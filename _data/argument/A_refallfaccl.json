@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See refallfaccl on Metamath](http://us.metamath.org/mpegif/refallfaccl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-resscn | |- RR C_ CC |\n| 2 |  | #P_1re | |- 1 e. RR |\n| 3 |  | #P_remulcl | |- ( ( x e. RR /\\ y e. RR ) -> ( x x. y ) e. RR ) |\n| 4 |  | #P_nn0re | |- ( k e. NN0 -> k e. RR ) |\n| 5 |  | #P_resubcl | |- ( ( A e. RR /\\ k e. RR ) -> ( A - k ) e. RR ) |\n| 6 | 4, 5 | #P_sylan2 | |- ( ( A e. RR /\\ k e. NN0 ) -> ( A - k ) e. RR ) |\n| 7 | 1, 2, 3, 6 | #P_fallfaccllem | |- ( ( A e. RR /\\ N e. NN0 ) -> ( A FallFac N ) e. RR ) |",
+  "conclusion" : "#P_refallfaccl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_vx", "#T_vy", "#T_cr", "#T_wss", "#T_cc", "#T_c1", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_cmul", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_vk", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_vk", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_vk", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_vk", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_cfallfac", "#T_cN", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-resscn", "#P_fallfaccllem", "#P_resubcl", "#P_sylan2", "#P_nn0re", "#P_remulcl", "#P_1re" ]
+}

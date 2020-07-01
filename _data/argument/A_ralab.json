@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ralab on Metamath](http://us.metamath.org/mpegif/ralab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralab.1 | |- ( y = x -> ( ph <-> ps ) ) |\n| 2 |  | #P_df-ral | |- ( A. x e. { y | ph } ch <-> A. x ( x e. { y | ph } -> ch ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3, 1 | #P_elab | |- ( x e. { y | ph } <-> ps ) |\n| 5 | 4 | #P_imbi1i | |- ( ( x e. { y | ph } -> ch ) <-> ( ps -> ch ) ) |\n| 6 | 5 | #P_albii | |- ( A. x ( x e. { y | ph } -> ch ) <-> A. x ( ps -> ch ) ) |\n| 7 | 2, 6 | #P_bitri | |- ( A. x e. { y | ph } ch <-> A. x ( ps -> ch ) ) |",
+  "conclusion" : "#P_ralab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wceq", "#T_vx", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wi", "#T_wch", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wch", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wi", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wch", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wch", "#T_wb", "#T_wal", "#T_vx", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_elab", "#P_albii", "#P_df-ral", "#P_vex", "#P_bitri" ]
+}

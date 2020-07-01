@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See assaascl0 on Metamath](http://us.metamath.org/mpegif/assaascl0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ascl0.a | |- A = ( algSc ` W ) |\n| 2 |  | ascl0.f | |- F = ( Scalar ` W ) |\n| 3 |  | assaascl0.a | |- ( ph -> W e. AssAlg ) |\n| 4 |  | #P_assalmod | |- ( W e. AssAlg -> W e. LMod ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> W e. LMod ) |\n| 6 |  | #P_assaring | |- ( W e. AssAlg -> W e. Ring ) |\n| 7 | 3, 6 | #P_syl | |- ( ph -> W e. Ring ) |\n| 8 | 1, 2, 5, 7 | #P_ascl0 | |- ( ph -> ( A ` ( 0g ` F ) ) = ( 0g ` W ) ) |",
+  "conclusion" : "#P_assaascl0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_casa", "#T_cW", "#T_wcel", "#T_casa", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_cW", "#T_wcel", "#T_casa", "#T_wi", "#T_cW", "#T_wcel", "#T_crg", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_crg", "#T_wph", "#T_wi", "#T_cA", "#T_cfv", "#T_c0g", "#T_cfv", "#T_cF", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_assaring", "#P_ascl0", "#P_syl", "#P_assalmod" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovidi on Metamath](http://us.metamath.org/mpegif/ovidi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ovidi.2 | |- ( ( x e. R /\\ y e. S ) -> E* z ph ) |\n| 2 |  | ovidi.3 | |- F = { <. <. x , y >. , z >. | ( ( x e. R /\\ y e. S ) /\\ ph ) } |\n| 3 |  | #P_moanimv | |- ( E* z ( ( x e. R /\\ y e. S ) /\\ ph ) <-> ( ( x e. R /\\ y e. S ) -> E* z ph ) ) |\n| 4 | 1, 3 | #P_mpbir | |- E* z ( ( x e. R /\\ y e. S ) /\\ ph ) |\n| 5 | 4, 2 | #P_ovidig | |- ( ( ( x e. R /\\ y e. S ) /\\ ph ) -> ( x F y ) = z ) |\n| 6 | 5 | #P_ex | |- ( ( x e. R /\\ y e. S ) -> ( ph -> ( x F y ) = z ) ) |",
+  "conclusion" : "#P_ovidi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cR", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wmo", "#T_vz", "#T_wph", "#T_cF", "#T_wceq", "#T_coprab--1", "#T_coprab--2", "#T_coprab--3", "#T_vx", "#T_coprab--4", "#T_vy", "#T_coprab--5", "#T_coprab--6", "#T_vz", "#T_coprab--7", "#T_coprab--8", "#T_vx", "#T_wcel", "#T_cR", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wa", "#T_wph", "#T_coprab--9", "#T_wmo", "#T_vz", "#T_vx.wal", "#T_wcel", "#T_cR", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cR", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_wi", "#T_wmo", "#T_vz", "#T_wph", "#T_wmo", "#T_vz", "#T_vx.wal", "#T_wcel", "#T_cR", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_cR", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_wa", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cF", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_vx", "#T_wcel", "#T_cR", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wph", "#T_wi", "#T_vx", "#T_cF", "#T_vy", "#T_wceq", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovidig", "#P_ex", "#P_moanimv", "#P_mpbir" ]
+}

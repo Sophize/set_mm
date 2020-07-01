@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subne0ad on Metamath](http://us.metamath.org/mpegif/subne0ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | pncand.2 | |- ( ph -> B e. CC ) |\n| 3 |  | subne0ad.3 | |- ( ph -> ( A - B ) =/= 0 ) |\n| 4 | 1, 2 | #P_subeq0ad | |- ( ph -> ( ( A - B ) = 0 <-> A = B ) ) |\n| 5 | 4 | #P_necon3bid | |- ( ph -> ( ( A - B ) =/= 0 <-> A =/= B ) ) |\n| 6 | 3, 5 | #P_mpbid | |- ( ph -> A =/= B ) |",
+  "conclusion" : "#P_subne0ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subeq0ad", "#P_mpbid", "#P_necon3bid" ]
+}

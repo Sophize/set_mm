@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nelprd on Metamath](http://us.metamath.org/mpegif/nelprd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nelprd.1 | |- ( ph -> A =/= B ) |\n| 2 |  | nelprd.2 | |- ( ph -> A =/= C ) |\n| 3 |  | #P_neanior | |- ( ( A =/= B /\\ A =/= C ) <-> -. ( A = B \\/ A = C ) ) |\n| 4 |  | #P_elpri | |- ( A e. { B , C } -> ( A = B \\/ A = C ) ) |\n| 5 | 4 | #P_con3i | |- ( -. ( A = B \\/ A = C ) -> -. A e. { B , C } ) |\n| 6 | 3, 5 | #P_sylbi | |- ( ( A =/= B /\\ A =/= C ) -> -. A e. { B , C } ) |\n| 7 | 1, 2, 6 | #P_syl2anc | |- ( ph -> -. A e. { B , C } ) |",
+  "conclusion" : "#P_nelprd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cC", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wph", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cpr--1", "#T_cB", "#T_cpr--2", "#T_cC", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elpri", "#P_syl2anc", "#P_neanior", "#P_con3i", "#P_sylbi" ]
+}

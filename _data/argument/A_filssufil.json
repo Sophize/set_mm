@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See filssufil on Metamath](http://us.metamath.org/mpegif/filssufil.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_filtop | |- ( F e. ( Fil ` X ) -> X e. F ) |\n| 2 |  | #P_pwexg | |- ( X e. F -> ~P X e. _V ) |\n| 3 |  | #P_pwexg | |- ( ~P X e. _V -> ~P ~P X e. _V ) |\n| 4 |  | #P_numth3 | |- ( ~P ~P X e. _V -> ~P ~P X e. dom card ) |\n| 5 | 1, 2, 3, 4 | #P_4syl | |- ( F e. ( Fil ` X ) -> ~P ~P X e. dom card ) |\n| 6 |  | #P_filssufilg | |- ( ( F e. ( Fil ` X ) /\\ ~P ~P X e. dom card ) -> E. f e. ( UFil ` X ) F C_ f ) |\n| 7 | 5, 6 | #P_mpdan | |- ( F e. ( Fil ` X ) -> E. f e. ( UFil ` X ) F C_ f ) |",
+  "conclusion" : "#P_filssufil",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cF", "#T_cX", "#T_wcel", "#T_cF", "#T_wi", "#T_cpw", "#T_cX", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cX", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_wrex--1", "#T_cbvex4v.vf", "#T_wrex--2", "#T_cufil", "#T_cfv", "#T_cX", "#T_cF", "#T_wss", "#T_cbvex4v.vf", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_wrex--1", "#T_vf", "#T_wrex--2", "#T_cufil", "#T_cfv", "#T_cX", "#T_cF", "#T_wss", "#T_vf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_pwexg", "#P_4syl", "#P_filssufilg", "#P_numth3", "#P_filtop" ]
+}

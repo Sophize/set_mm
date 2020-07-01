@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rec11api on Metamath](http://us.metamath.org/mpegif/rec11api.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | #P_rec11ap | |- ( ( ( A e. CC /\\ A # 0 ) /\\ ( B e. CC /\\ B # 0 ) ) -> ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) |\n| 4 | 1, 3 | #P_mpanl1 | |- ( ( A # 0 /\\ ( B e. CC /\\ B # 0 ) ) -> ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) |\n| 5 | 2, 4 | #P_mpanr1 | |- ( ( A # 0 /\\ B # 0 ) -> ( ( 1 / A ) = ( 1 / B ) <-> A = B ) ) |",
+  "conclusion" : "#P_rec11api",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wi", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wi", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_cap", "#T_cc0", "#T_wa", "#T_cB", "#T_cap", "#T_cc0", "#T_wi", "#T_c1", "#T_cdiv", "#T_cA", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_mpanl1", "#P_rec11ap" ]
+}

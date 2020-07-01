@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgmov1 on Metamath](http://us.metamath.org/mpegif/symgmov1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgmov1.p | |- P = ( Base ` ( SymGrp ` N ) ) |\n| 2 |  | #P_eqid | |- ( SymGrp ` N ) = ( SymGrp ` N ) |\n| 3 | 2, 1 | #P_symgfv | |- ( ( Q e. P /\\ n e. N ) -> ( Q ` n ) e. N ) |\n| 4 |  | #P_risset | |- ( ( Q ` n ) e. N <-> E. k e. N k = ( Q ` n ) ) |\n| 5 |  | #P_eqcom | |- ( k = ( Q ` n ) <-> ( Q ` n ) = k ) |\n| 6 | 5 | #P_rexbii | |- ( E. k e. N k = ( Q ` n ) <-> E. k e. N ( Q ` n ) = k ) |\n| 7 | 4, 6 | #P_bitri | |- ( ( Q ` n ) e. N <-> E. k e. N ( Q ` n ) = k ) |\n| 8 | 3, 7 | #P_sylib | |- ( ( Q e. P /\\ n e. N ) -> E. k e. N ( Q ` n ) = k ) |\n| 9 | 8 | #P_ralrimiva | |- ( Q e. P -> A. n e. N E. k e. N ( Q ` n ) = k ) |",
+  "conclusion" : "#P_symgmov1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_csymg", "#T_cfv", "#T_cN", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wcel", "#T_cP", "#T_wa", "#T_vn", "#T_wcel", "#T_cN", "#T_wi", "#T_cQ", "#T_cfv", "#T_vn", "#T_wcel", "#T_cN", "#T_cQ", "#T_cfv", "#T_vn", "#T_wcel", "#T_cN", "#T_wb", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_vk", "#T_wceq", "#T_cQ", "#T_cfv", "#T_vn", "#T_vk", "#T_wceq", "#T_cQ", "#T_cfv", "#T_vn", "#T_wb", "#T_cQ", "#T_cfv", "#T_vn", "#T_wceq", "#T_vk", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_vk", "#T_wceq", "#T_cQ", "#T_cfv", "#T_vn", "#T_wb", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vn", "#T_wceq", "#T_vk", "#T_cQ", "#T_cfv", "#T_vn", "#T_wcel", "#T_cN", "#T_wb", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vn", "#T_wceq", "#T_vk", "#T_cQ", "#T_wcel", "#T_cP", "#T_wa", "#T_vn", "#T_wcel", "#T_cN", "#T_wi", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vn", "#T_wceq", "#T_vk", "#T_cQ", "#T_wcel", "#T_cP", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cN", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vn", "#T_wceq", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_symgfv", "#P_eqid", "#P_risset", "#P_rexbii", "#P_sylib", "#P_ralrimiva", "#P_bitri", "#P_eqcom" ]
+}

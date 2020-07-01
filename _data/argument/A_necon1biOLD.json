@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1biOLD on Metamath](http://us.metamath.org/mpegif/necon1biOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1bi.1 | |- ( A =/= B -> ph ) |\n| 2 | 1 | #P_con3i | |- ( -. ph -> -. A =/= B ) |\n| 3 |  | #P_nne | |- ( -. A =/= B <-> A = B ) |\n| 4 | 2, 3 | #P_sylib | |- ( -. ph -> A = B ) |\n\\\n Obsolete proof of ~ necon1bi as of 22-Nov-2019.  (Contributed by NM, 18-Mar-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_necon1bi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylib", "#P_con3i", "#P_nne" ]
+}

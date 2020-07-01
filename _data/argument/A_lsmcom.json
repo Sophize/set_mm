@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsmcom on Metamath](http://us.metamath.org/mpegif/lsmcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lsmcom.s | |- .(+) = ( LSSum ` G ) |\n| 2 |  | #P_id | |- ( G e. Abel -> G e. Abel ) |\n| 3 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 4 | 3 | #P_subgss | |- ( T e. ( SubGrp ` G ) -> T C_ ( Base ` G ) ) |\n| 5 | 3 | #P_subgss | |- ( U e. ( SubGrp ` G ) -> U C_ ( Base ` G ) ) |\n| 6 | 3, 1 | #P_lsmcomx | |- ( ( G e. Abel /\\ T C_ ( Base ` G ) /\\ U C_ ( Base ` G ) ) -> ( T .(+) U ) = ( U .(+) T ) ) |\n| 7 | 2, 4, 5, 6 | #P_syl3an | |- ( ( G e. Abel /\\ T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> ( T .(+) U ) = ( U .(+) T ) ) |",
+  "conclusion" : "#P_lsmcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.po", "#T_wceq", "#T_clsm", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cabl", "#T_wi", "#T_cG", "#T_wcel", "#T_cabl", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cabl", "#T_w3a--1", "#T_cT", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_w3a--2", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_c.po", "#T_cT", "#T_cG", "#T_wcel", "#T_cabl", "#T_w3a--1", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--2", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_c.po", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_lsmcomx", "#P_subgss", "#P_syl3an", "#P_id" ]
+}

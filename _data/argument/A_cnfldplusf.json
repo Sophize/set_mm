@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfldplusf on Metamath](http://us.metamath.org/mpegif/cnfldplusf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-addf | |- + : ( CC X. CC ) --> CC |\n| 2 |  | #P_ffn | |- ( + : ( CC X. CC ) --> CC -> + Fn ( CC X. CC ) ) |\n| 3 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 4 |  | #P_cnfldadd | |- + = ( +g ` CCfld ) |\n| 5 |  | #P_eqid | |- ( +f ` CCfld ) = ( +f ` CCfld ) |\n| 6 | 3, 4, 5 | #P_plusfeq | |- ( + Fn ( CC X. CC ) -> ( +f ` CCfld ) = + ) |\n| 7 | 1, 2, 6 | #P_mp2b | |- ( +f ` CCfld ) = + |\n| 8 | 7 | #P_eqcomi | |- + = ( +f ` CCfld ) |",
+  "conclusion" : "#P_cnfldplusf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_caddc", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wf--2", "#T_cc", "#T_caddc", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wf--2", "#T_cc", "#T_wi", "#T_caddc", "#T_wfn", "#T_cc", "#T_cxp", "#T_cc", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_cplusf", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cplusf", "#T_cfv", "#T_ccnfld", "#T_caddc", "#T_wfn", "#T_cc", "#T_cxp", "#T_cc", "#T_wi", "#T_cplusf", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_caddc", "#T_cplusf", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_caddc", "#T_caddc", "#T_wceq", "#T_cplusf", "#T_cfv", "#T_ccnfld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_eqid", "#P_cnfldadd", "#P_cnfldbas", "#P_plusfeq", "#P_mp2b", "#P_ax-addf", "#P_eqcomi" ]
+}

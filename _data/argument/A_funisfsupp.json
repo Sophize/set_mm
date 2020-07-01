@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funisfsupp on Metamath](http://us.metamath.org/mpegif/funisfsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfsupp | |- ( ( R e. V /\\ Z e. W ) -> ( R finSupp Z <-> ( Fun R /\\ ( R supp Z ) e. Fin ) ) ) |\n| 2 | 1 | #P_3adant1 | |- ( ( Fun R /\\ R e. V /\\ Z e. W ) -> ( R finSupp Z <-> ( Fun R /\\ ( R supp Z ) e. Fin ) ) ) |\n| 3 |  | #P_ibar | |- ( Fun R -> ( ( R supp Z ) e. Fin <-> ( Fun R /\\ ( R supp Z ) e. Fin ) ) ) |\n| 4 | 3 | #P_bicomd | |- ( Fun R -> ( ( Fun R /\\ ( R supp Z ) e. Fin ) <-> ( R supp Z ) e. Fin ) ) |\n| 5 | 4 | #P_3ad2ant1 | |- ( ( Fun R /\\ R e. V /\\ Z e. W ) -> ( ( Fun R /\\ ( R supp Z ) e. Fin ) <-> ( R supp Z ) e. Fin ) ) |\n| 6 | 2, 5 | #P_bitrd | |- ( ( Fun R /\\ R e. V /\\ Z e. W ) -> ( R finSupp Z <-> ( R supp Z ) e. Fin ) ) |",
+  "conclusion" : "#P_funisfsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cV", "#T_wa", "#T_cZ", "#T_wcel", "#T_cW", "#T_wi", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cR", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cW", "#T_wi", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cR", "#T_wi", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wb", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cR", "#T_wi", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wb", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cR", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cW", "#T_wi", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wb", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cR", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cW", "#T_wi", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3ad2ant1", "#P_3adant1", "#P_bitrd", "#P_ibar", "#P_bicomd", "#P_isfsupp" ]
+}

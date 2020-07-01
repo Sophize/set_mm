@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-crct on Metamath](http://us.metamath.org/mpegif/df-crct.html)"
+  } ],
+  "names" : [ "df-crct" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccrct", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vv", "#T_ctrail", "#T_ve", "#T_vp", "#T_wa", "#T_vp", "#T_cfv", "#T_cc0", "#T_wceq", "#T_vp", "#T_cfv", "#T_chash", "#T_cfv", "#T_vf", "#T_copab--6", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all circuits (in an undirected graph). According to Wikipedia (\"Cycle (graph theory)\", ~ https://en.wikipedia.org/wiki/Cycle_(graph_theory) , 3-Oct-2017):  \"A circuit can be a closed walk allowing repetitions of vertices but not edges;\"; according to Wikipedia (\"Glossary of graph theory terms\", ~ https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms, 3-Oct-2017):  \"A circuit may refer to ... a trail (a closed tour without repeated edges), ...\". Following Bollobas (\"A trail whose endvertices coincide (a closed trail) is called a circuit.\", see Definition of [Bollobas] p. 5.), a circuit is a closed trail without repeated edges.  So the circuit is also represented by the following sequence: p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) (Contributed by Alexander van der Vekens, 3-Oct-2017.) ",
+  "statement" : "df-crct $p |- Circuits = ( v e. _V , e e. _V |-> { <. f , p >. | ( f ( v Trails e ) p /\\ ( p ` 0 ) = ( p ` ( # ` f ) ) ) } ) $.\n$d e f p v $."
+}

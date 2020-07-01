@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgfixf on Metamath](http://us.metamath.org/mpegif/symgfixf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgfixf.p | |- P = ( Base ` ( SymGrp ` N ) ) |\n| 2 |  | symgfixf.q | |- Q = { q e. P | ( q ` K ) = K } |\n| 3 |  | symgfixf.s | |- S = ( Base ` ( SymGrp ` ( N \\ { K } ) ) ) |\n| 4 |  | symgfixf.h | |- H = ( q e. Q |-> ( q |` ( N \\ { K } ) ) ) |\n| 5 |  | #P_eqid | |- ( N \\ { K } ) = ( N \\ { K } ) |\n| 6 | 1, 2, 3, 5 | #P_symgfixelsi | |- ( ( K e. N /\\ q e. Q ) -> ( q |` ( N \\ { K } ) ) e. S ) |\n| 7 | 6, 4 | #P_fmptd | |- ( K e. N -> H : Q --> S ) |",
+  "conclusion" : "#P_symgfixf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wceq", "#T_crab--1", "#T_vq", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vq", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_crab--4", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cH", "#T_wceq", "#T_vq", "#T_cmpt--1", "#T_cQ", "#T_cmpt--2", "#T_vq", "#T_cres", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_wceq", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_vq", "#T_wcel", "#T_cQ", "#T_wi", "#T_vq", "#T_cres", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_wcel", "#T_cS", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cH", "#T_wf--1", "#T_cQ", "#T_wf--2", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_symgfixelsi", "#P_fmptd" ]
+}

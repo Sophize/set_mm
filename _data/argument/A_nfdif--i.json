@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfdif on Metamath](http://us.metamath.org/mpegif/nfdif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfdif.1 | |- F/_ x A |\n| 2 |  | nfdif.2 | |- F/_ x B |\n| 3 |  | #P_dfdif2 | |- ( A \\ B ) = { y e. A | -. y e. B } |\n| 4 | 2 | #P_nfcri | |- F/ x y e. B |\n| 5 | 4 | #P_nfn | |- F/ x -. y e. B |\n| 6 | 5, 1 | #P_nfrabxy | |- F/_ x { y e. A | -. y e. B } |\n| 7 | 3, 6 | #P_nfcxfr | |- F/_ x ( A \\ B ) |",
+  "conclusion" : "#P_nfdif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_crab--4", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_crab--4", "#T_wnfc", "#T_vx", "#T_cA", "#T_cdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcxfr", "#P_nfcri", "#P_nfrabxy", "#P_nfn", "#P_dfdif2" ]
+}

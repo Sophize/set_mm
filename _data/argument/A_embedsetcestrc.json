@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See embedsetcestrc on Metamath](http://us.metamath.org/mpegif/embedsetcestrc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | funcsetcestrc.s | |- S = ( SetCat ` U ) |\n| 2 |  | funcsetcestrc.c | |- C = ( Base ` S ) |\n| 3 |  | funcsetcestrc.f | |- ( ph -> F = ( x e. C |-> { <. ( Base ` ndx ) , x >. } ) ) |\n| 4 |  | funcsetcestrc.u | |- ( ph -> U e. WUni ) |\n| 5 |  | funcsetcestrc.o | |- ( ph -> _om e. U ) |\n| 6 |  | funcsetcestrc.g | |- ( ph -> G = ( x e. C , y e. C |-> ( _I |` ( y ^m x ) ) ) ) |\n| 7 |  | funcsetcestrc.e | |- E = ( ExtStrCat ` U ) |\n| 8 |  | embedsetcestrc.b | |- B = ( Base ` E ) |\n| 9 | 1, 2, 3, 4, 5, 6, 7 | #P_fthsetcestrc | |- ( ph -> F ( S Faith E ) G ) |\n| 10 | 1, 2, 3, 4, 5, 7, 8 | #P_embedsetcestrclem | |- ( ph -> F : C -1-1-> B ) |\n| 11 | 9, 10 | #P_jca | |- ( ph -> ( F ( S Faith E ) G /\\ F : C -1-1-> B ) ) |",
+  "conclusion" : "#P_embedsetcestrc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_com", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cC", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cC", "#T_cmpt2--4", "#T_cid", "#T_cres", "#T_vy", "#T_cmap", "#T_vx", "#T_cE", "#T_wceq", "#T_cestrc", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cE", "#T_wph", "#T_wi", "#T_cF", "#T_cS", "#T_cfth", "#T_cE", "#T_cG", "#T_wph", "#T_wi", "#T_cF", "#T_wf1--1", "#T_cC", "#T_wf1--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_cS", "#T_cfth", "#T_cE", "#T_cG", "#T_wa", "#T_cF", "#T_wf1--1", "#T_cC", "#T_wf1--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_embedsetcestrclem", "#P_fthsetcestrc", "#P_jca" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elon2 on Metamath](http://us.metamath.org/mpegif/elon2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eloni | |- ( A e. On -> Ord A ) |\n| 2 |  | #P_elex | |- ( A e. On -> A e. _V ) |\n| 3 | 1, 2 | #P_jca | |- ( A e. On -> ( Ord A /\\ A e. _V ) ) |\n| 4 |  | #P_elong | |- ( A e. _V -> ( A e. On <-> Ord A ) ) |\n| 5 | 4 | #P_biimparc | |- ( ( Ord A /\\ A e. _V ) -> A e. On ) |\n| 6 | 3, 5 | #P_impbii | |- ( A e. On <-> ( Ord A /\\ A e. _V ) ) |",
+  "conclusion" : "#P_elon2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA.wceq", "#T_word", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA", "#T_wa", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimparc", "#P_impbii", "#P_elex", "#P_elong", "#P_eloni", "#P_jca" ]
+}

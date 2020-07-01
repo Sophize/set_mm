@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ertr2d on Metamath](http://us.metamath.org/mpegif/ertr2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ersymb.1 | |- ( ph -> R Er X ) |\n| 2 |  | ertrd.5 | |- ( ph -> A R B ) |\n| 3 |  | ertrd.6 | |- ( ph -> B R C ) |\n| 4 | 1, 2, 3 | #P_ertrd | |- ( ph -> A R C ) |\n| 5 | 1, 4 | #P_ersym | |- ( ph -> C R A ) |",
+  "conclusion" : "#P_ertr2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_cR", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ersym", "#P_ertrd" ]
+}

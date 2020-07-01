@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See honegneg on Metamath](http://us.metamath.org/mpegif/honegneg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neg1mulneg1e1 | |- ( -u 1 x. -u 1 ) = 1 |\n| 2 | 1 | #P_oveq1i | |- ( ( -u 1 x. -u 1 ) .op T ) = ( 1 .op T ) |\n| 3 |  | #P_neg1cn | |- -u 1 e. CC |\n| 4 |  | #P_homulass | |- ( ( -u 1 e. CC /\\ -u 1 e. CC /\\ T : ~H --> ~H ) -> ( ( -u 1 x. -u 1 ) .op T ) = ( -u 1 .op ( -u 1 .op T ) ) ) |\n| 5 | 3, 3, 4 | #P_mp3an12 | |- ( T : ~H --> ~H -> ( ( -u 1 x. -u 1 ) .op T ) = ( -u 1 .op ( -u 1 .op T ) ) ) |\n| 6 |  | #P_homulid2 | |- ( T : ~H --> ~H -> ( 1 .op T ) = T ) |\n| 7 | 2, 5, 6 | #P_3eqtr3a | |- ( T : ~H --> ~H -> ( -u 1 .op ( -u 1 .op T ) ) = T ) |",
+  "conclusion" : "#P_honegneg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_wceq", "#T_c1", "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_c1", "#T_chot", "#T_cT", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_cneg", "#T_c1", "#T_chot", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_cneg", "#T_c1", "#T_chot", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_cT", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_chot", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_homulid2", "#P_neg1cn", "#P_mp3an12", "#P_homulass", "#P_neg1mulneg1e1", "#P_3eqtr3a", "#P_oveq1i" ]
+}

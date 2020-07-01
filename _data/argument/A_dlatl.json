@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dlatl on Metamath](http://us.metamath.org/mpegif/dlatl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` K ) = ( Base ` K ) |\n| 2 |  | #P_eqid | |- ( join ` K ) = ( join ` K ) |\n| 3 |  | #P_eqid | |- ( meet ` K ) = ( meet ` K ) |\n| 4 | 1, 2, 3 | #P_isdlat | |- ( K e. DLat <-> ( K e. Lat /\\ A. x e. ( Base ` K ) A. y e. ( Base ` K ) A. z e. ( Base ` K ) ( x ( meet ` K ) ( y ( join ` K ) z ) ) = ( ( x ( meet ` K ) y ) ( join ` K ) ( x ( meet ` K ) z ) ) ) ) |\n| 5 | 4 | #P_simplbi | |- ( K e. DLat -> K e. Lat ) |",
+  "conclusion" : "#P_dlatl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cjn", "#T_cfv", "#T_cK", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cmee", "#T_cfv", "#T_cK", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cdlat", "#T_wb", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cK", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cK", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_cmee", "#T_cfv", "#T_cK", "#T_vy.tru", "#T_cjn", "#T_cfv", "#T_cK", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_cmee", "#T_cfv", "#T_cK", "#T_vy.tru", "#T_cjn", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_cmee", "#T_cfv", "#T_cK", "#T_vz", "#T_cK", "#T_wcel", "#T_cdlat", "#T_wi", "#T_cK", "#T_wcel", "#T_clat" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isdlat" ]
+}

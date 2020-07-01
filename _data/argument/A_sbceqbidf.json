@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbceqbidf on Metamath](http://us.metamath.org/mpegif/sbceqbidf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbceqbidf.1 | |- F/ x ph |\n| 2 |  | sbceqbidf.2 | |- ( ph -> A = B ) |\n| 3 |  | sbceqbidf.3 | |- ( ph -> ( ps <-> ch ) ) |\n| 4 | 1, 3 | #P_abbid | |- ( ph -> { x | ps } = { x | ch } ) |\n| 5 | 2, 4 | #P_eleq12d | |- ( ph -> ( A e. { x | ps } <-> B e. { x | ch } ) ) |\n| 6 |  | #P_df-sbc | |- ( [. A / x ]. ps <-> A e. { x | ps } ) |\n| 7 |  | #P_df-sbc | |- ( [. B / x ]. ch <-> B e. { x | ch } ) |\n| 8 | 5, 6, 7 | #P_3bitr4g | |- ( ph -> ( [. A / x ]. ps <-> [. B / x ]. ch ) ) |",
+  "conclusion" : "#P_sbceqbidf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wch", "#T_cab--3", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wch", "#T_cab--3", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wch", "#T_cab--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wsbc--1", "#T_cB", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abbid", "#P_df-sbc", "#P_3bitr4g", "#P_eleq12d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brun on Metamath](http://us.metamath.org/mpegif/brun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elun | |- ( <. A , B >. e. ( R u. S ) <-> ( <. A , B >. e. R \\/ <. A , B >. e. S ) ) |\n| 2 |  | #P_df-br | |- ( A ( R u. S ) B <-> <. A , B >. e. ( R u. S ) ) |\n| 3 |  | #P_df-br | |- ( A R B <-> <. A , B >. e. R ) |\n| 4 |  | #P_df-br | |- ( A S B <-> <. A , B >. e. S ) |\n| 5 | 3, 4 | #P_orbi12i | |- ( ( A R B \\/ A S B ) <-> ( <. A , B >. e. R \\/ <. A , B >. e. S ) ) |\n| 6 | 1, 2, 5 | #P_3bitr4i | |- ( A ( R u. S ) B <-> ( A R B \\/ A S B ) ) |",
+  "conclusion" : "#P_brun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cun", "#T_cS", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wo", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cun", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cun", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wo", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA", "#T_cR", "#T_cun", "#T_cS", "#T_cB", "#T_wb", "#T_cA", "#T_cR", "#T_cB", "#T_wo", "#T_cA", "#T_cS", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_orbi12i", "#P_3bitr4i", "#P_elun" ]
+}

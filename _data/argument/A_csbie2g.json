@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbie2g on Metamath](http://us.metamath.org/mpegif/csbie2g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | csbie2g.1 | |- ( x = y -> B = C ) |\n| 2 |  | csbie2g.2 | |- ( y = A -> C = D ) |\n| 3 |  | #P_df-csb | |- [_ A / x ]_ B = { z | [. A / x ]. z e. B } |\n| 4 | 1 | #P_eleq2d | |- ( x = y -> ( z e. B <-> z e. C ) ) |\n| 5 | 2 | #P_eleq2d | |- ( y = A -> ( z e. C <-> z e. D ) ) |\n| 6 | 4, 5 | #P_sbcie2g | |- ( A e. V -> ( [. A / x ]. z e. B <-> z e. D ) ) |\n| 7 | 6 | #P_abbi1dv | |- ( A e. V -> { z | [. A / x ]. z e. B } = D ) |\n| 8 | 3, 7 | #P_syl5eq | |- ( A e. V -> [_ A / x ]_ B = D ) |",
+  "conclusion" : "#P_csbie2g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_vy", "#T_wceq", "#T_cA", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vz", "#T_wcel", "#T_cC", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vz", "#T_wcel", "#T_cC", "#T_wb", "#T_vz", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vz", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_wceq", "#T_cD", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abbi1dv", "#P_eleq2d", "#P_df-csb", "#P_sbcie2g", "#P_syl5eq" ]
+}

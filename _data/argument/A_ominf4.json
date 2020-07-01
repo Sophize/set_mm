@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ominf4 on Metamath](http://us.metamath.org/mpegif/ominf4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( _om e. Fin4 -> _om e. Fin4 ) |\n| 2 |  | #P_peano1 | |- (/) e. _om |\n| 3 |  | #P_difsnpss | |- ( (/) e. _om <-> ( _om \\ { (/) } ) C. _om ) |\n| 4 | 2, 3 | #P_mpbi | |- ( _om \\ { (/) } ) C. _om |\n| 5 |  | #P_limom | |- Lim _om |\n| 6 | 5 | #P_limenpsi | |- ( _om e. Fin4 -> _om ~~ ( _om \\ { (/) } ) ) |\n| 7 | 6 | #P_ensymd | |- ( _om e. Fin4 -> ( _om \\ { (/) } ) ~~ _om ) |\n| 8 |  | #P_fin4i | |- ( ( ( _om \\ { (/) } ) C. _om /\\ ( _om \\ { (/) } ) ~~ _om ) -> -. _om e. Fin4 ) |\n| 9 | 4, 7, 8 | #P_sylancr | |- ( _om e. Fin4 -> -. _om e. Fin4 ) |\n| 10 | 1, 9 | #P_pm2.65i | |- -. _om e. Fin4 |",
+  "conclusion" : "#P_ominf4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_com", "#T_wcel", "#T_cfin4", "#T_wi", "#T_com", "#T_wcel", "#T_cfin4", "#T_c0", "#T_wcel", "#T_com", "#T_c0", "#T_wcel", "#T_com", "#T_wb", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wpss", "#T_com", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wpss", "#T_com", "#T_wlim", "#T_com", "#T_com", "#T_wcel", "#T_cfin4", "#T_wi", "#T_com", "#T_cen", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_com", "#T_wcel", "#T_cfin4", "#T_wi", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cen", "#T_com", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wpss", "#T_com", "#T_wa", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cen", "#T_com", "#T_wi", "#T_wn", "#T_com", "#T_wcel", "#T_cfin4", "#T_com", "#T_wcel", "#T_cfin4", "#T_wi", "#T_wn", "#T_com", "#T_wcel", "#T_cfin4", "#T_wn", "#T_com", "#T_wcel", "#T_cfin4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_difsnpss", "#P_peano1", "#P_limenpsi", "#P_pm2.65i", "#P_sylancr", "#P_mpbi", "#P_limom", "#P_fin4i", "#P_id", "#P_ensymd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frg2woteqm on Metamath](http://us.metamath.org/mpegif/frg2woteqm.html)"
+  } ],
+  "names" : [ "frg2woteqm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cfrgra", "#T_cE", "#T_wa", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_cotp--1", "#T_cA", "#T_cotp--2", "#T_cP", "#T_cotp--3", "#T_cB", "#T_cotp--4", "#T_wcel", "#T_cA", "#T_cV", "#T_c2wlkonot", "#T_cE", "#T_cB", "#T_wa", "#T_cotp--1", "#T_cB", "#T_cotp--2", "#T_cQ", "#T_cotp--3", "#T_cA", "#T_cotp--4", "#T_wcel", "#T_cB", "#T_cV", "#T_c2wlkonot", "#T_cE", "#T_cA", "#T_wi", "#T_cQ", "#T_wceq", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " There is a (simple) path of length 2 from one vertex to another vertex in a friendship graph if and only if there is a (simple) path of length 2 from the other vertex back to the first vertex.  (Contributed by Alexander van der Vekens, 20-Feb-2018.) ",
+  "statement" : "frg2woteqm $p |- ( ( V FriendGrph E /\\ A =/= B ) -> ( ( <. A , P , B >. e. ( A ( V 2WalksOnOt E ) B ) /\\ <. B , Q , A >. e. ( B ( V 2WalksOnOt E ) A ) ) -> Q = P ) ) $."
+}

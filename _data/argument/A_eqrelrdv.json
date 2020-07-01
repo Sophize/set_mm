@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqrelrdv on Metamath](http://us.metamath.org/mpegif/eqrelrdv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqrelrdv.1 | |- Rel A |\n| 2 |  | eqrelrdv.2 | |- Rel B |\n| 3 |  | eqrelrdv.3 | |- ( ph -> ( <. x , y >. e. A <-> <. x , y >. e. B ) ) |\n| 4 | 3 | #P_alrimivv | |- ( ph -> A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) |\n| 5 |  | #P_eqrel | |- ( ( Rel A /\\ Rel B ) -> ( A = B <-> A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( A = B <-> A. x A. y ( <. x , y >. e. A <-> <. x , y >. e. B ) ) |\n| 7 | 4, 6 | #P_sylibr | |- ( ph -> A = B ) |",
+  "conclusion" : "#P_eqrelrdv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA", "#T_wrel", "#T_cB", "#T_wph", "#T_wi", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cA", "#T_wb", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_wrel", "#T_cA.wceq", "#T_wa", "#T_wrel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_alrimivv", "#P_eqrel", "#P_sylibr" ]
+}

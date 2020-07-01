@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imaexg on Metamath](http://us.metamath.org/mpegif/imaexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_imassrn | |- ( A \" B ) C_ ran A |\n| 2 |  | #P_rnexg | |- ( A e. V -> ran A e. _V ) |\n| 3 |  | #P_ssexg | |- ( ( ( A \" B ) C_ ran A /\\ ran A e. _V ) -> ( A \" B ) e. _V ) |\n| 4 | 1, 2, 3 | #P_sylancr | |- ( A e. V -> ( A \" B ) e. _V ) |",
+  "conclusion" : "#P_imaexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wss", "#T_crn", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wss", "#T_crn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_cima", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssexg", "#P_sylancr", "#P_rnexg", "#P_imassrn" ]
+}

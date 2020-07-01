@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax12wdemo on Metamath](http://us.metamath.org/mpegif/ax12wdemo.html)"
+  } ],
+  "names" : [ "ax12wdemo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vy", "#T_vx", "#T_wcel", "#T_vy", "#T_w3a--1", "#T_wal", "#T_vx", "#T_vz", "#T_wcel", "#T_vx", "#T_w3a--2", "#T_wal", "#T_vy", "#T_wal", "#T_vz", "#T_vy", "#T_wcel", "#T_vx", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vx", "#T_wcel", "#T_vy", "#T_w3a--1", "#T_wal", "#T_vx", "#T_vz", "#T_wcel", "#T_vx", "#T_w3a--2", "#T_wal", "#T_vy", "#T_wal", "#T_vz", "#T_vy", "#T_wcel", "#T_vx", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Example of an application of ~ ax12w that results in an instance of ~ ax-12 for a contrived formula with mixed free and bound variables, ` ( x e. y /\\ A. x z e. x /\\ A. y A. z y e. x ) ` , in place of ` ph ` .  The proof illustrates bound variable renaming with ~ cbvalvw to obtain fresh variables to avoid distinct variable clashes.  Uses only Tarski's FOL axiom schemes.  (Contributed by NM, 14-Apr-2017.) ",
+  "statement" : "ax12wdemo $p |- ( x = y -> ( A. y ( x e. y /\\ A. x z e. x /\\ A. y A. z y e. x ) -> A. x ( x = y -> ( x e. y /\\ A. x z e. x /\\ A. y A. z y e. x ) ) ) ) $.\n$d x y z $."
+}

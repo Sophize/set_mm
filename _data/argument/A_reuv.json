@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuv on Metamath](http://us.metamath.org/mpegif/reuv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-reu | |- ( E! x e. _V ph <-> E! x ( x e. _V /\\ ph ) ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 | 2 | #P_biantrur | |- ( ph <-> ( x e. _V /\\ ph ) ) |\n| 4 | 3 | #P_eubii | |- ( E! x ph <-> E! x ( x e. _V /\\ ph ) ) |\n| 5 | 1, 4 | #P_bitr4i | |- ( E! x e. _V ph <-> E! x ph ) |",
+  "conclusion" : "#P_reuv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cvv", "#T_wph", "#T_wb", "#T_weu", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_weu", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wph", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cvv", "#T_wph", "#T_wb", "#T_weu", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-reu", "#P_biantrur", "#P_vex", "#P_eubii", "#P_bitr4i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rabexd on Metamath](http://us.metamath.org/mpegif/rabexd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rabexd.1 | |- B = { x e. A | ps } |\n| 2 |  | rabexd.2 | |- ( ph -> A e. V ) |\n| 3 |  | #P_rabexg | |- ( A e. V -> { x e. A | ps } e. _V ) |\n| 4 | 2, 3 | #P_syl | |- ( ph -> { x e. A | ps } e. _V ) |\n| 5 | 1, 4 | #P_syl5eqel | |- ( ph -> B e. _V ) |",
+  "conclusion" : "#P_rabexd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rabexg", "#P_syl5eqel", "#P_syl" ]
+}

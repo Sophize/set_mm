@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ramub1 on Metamath](http://us.metamath.org/mpegif/ramub1.html)"
+  } ],
+  "names" : [ "ramub1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cR", "#T_wf--2", "#T_cn", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cR", "#T_cmpt--2", "#T_cM", "#T_cram", "#T_vy", "#T_cmpt--1", "#T_cR", "#T_cmpt--2", "#T_cif--1", "#T_vy", "#T_wceq", "#T_vx", "#T_cif--2", "#T_cF", "#T_cfv", "#T_vx", "#T_cmin", "#T_c1", "#T_cif--3", "#T_cF", "#T_cfv", "#T_vy", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cR", "#T_wf--2", "#T_cn0", "#T_wph", "#T_wi", "#T_cM", "#T_cmin", "#T_c1", "#T_cram", "#T_cG", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cM", "#T_cram", "#T_cF", "#T_cle", "#T_cM", "#T_cmin", "#T_c1", "#T_cram", "#T_cG", "#T_caddc", "#T_c1", "#T_cF", "#T_vx", "#T_vy", "#T_cG", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Inductive step for Ramsey's theorem, in the form of an explicit upper bound.  (Contributed by Mario Carneiro, 23-Apr-2015.) ",
+  "statement" : "ramub1.m $e |- ( ph -> M e. NN ) $.\nramub1.r $e |- ( ph -> R e. Fin ) $.\nramub1.f $e |- ( ph -> F : R --> NN ) $.\nramub1.g $e |- G = ( x e. R |-> ( M Ramsey ( y e. R |-> if ( y = x , ( ( F ` x ) - 1 ) , ( F ` y ) ) ) ) ) $.\nramub1.1 $e |- ( ph -> G : R --> NN0 ) $.\nramub1.2 $e |- ( ph -> ( ( M - 1 ) Ramsey G ) e. NN0 ) $.\nramub1 $p |- ( ph -> ( M Ramsey F ) <_ ( ( ( M - 1 ) Ramsey G ) + 1 ) ) $.\n$d F x y $.\n$d G x y $.\n$d M x y $.\n$d R x y $.\n$d ph x y $.\n$d x y $.\n$d x y $.\n$d x y $.\n$d x y $.\n$d x y $."
+}

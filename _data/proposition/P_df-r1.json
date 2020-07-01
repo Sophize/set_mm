@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-r1 on Metamath](http://us.metamath.org/mpegif/df-r1.html)"
+  } ],
+  "names" : [ "df-r1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr1", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cpw", "#T_vx", "#T_crdg--2", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the cumulative hierarchy of sets function, using Takeuti and Zaring's notation ( ` R1 ` ).  Starting with the empty set, this function builds up layers of sets where the next layer is the power set of the previous layer (and the union of previous layers when the argument is a limit ordinal).  Using the Axiom of Regularity, we can show that any set whatsoever belongs to one of the layers of this hierarchy (see ~ tz9.13 ).  Our definition expresses Definition 9.9 of [TakeutiZaring] p. 76 in a closed form, from which we derive the recursive definition as theorems ~ r10 , ~ r1suc , and ~ r1lim . Theorem ~ r1val1 shows a recursive definition that works for all values, and theorems ~ r1val2 and ~ r1val3 show the value expressed in terms of rank.  Other notations for this function are _R_ with the argument as a subscript (Equation 3.1 of [BellMachover] p. 477), ` _V ` with a subscript (Definition of [Enderton] p. 202), _M_ with a subscript (Definition 15.19 of [Monk1] p. 113), the capital Greek letter psi (Definition of [Mendelson] p. 281), and bold-face R (Definition 2.1 of [Kunen] p. 95).  (Contributed by NM, 2-Sep-2003.) ",
+  "statement" : "df-r1 $p |- R1 = rec ( ( x e. _V |-> ~P x ) , (/) ) $."
+}

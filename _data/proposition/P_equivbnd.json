@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equivbnd on Metamath](http://us.metamath.org/mpegif/equivbnd.html)"
+  } ],
+  "names" : [ "equivbnd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cbnd", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crp", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cN", "#T_vy", "#T_cle", "#T_cR", "#T_cmul", "#T_vx", "#T_cM", "#T_vy", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cbnd", "#T_cfv", "#T_cX", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the metric ` M ` is \"strongly finer\" than ` N ` (meaning that there is a positive real constant ` R ` such that ` N ( x , y ) <_ R x. M ( x , y ) ` ), then boundedness of ` M ` implies boundedness of ` N ` .  (Using this theorem twice in each direction states that if two metrics are strongly equivalent, then one is bounded iff the other is.)  (Contributed by Mario Carneiro, 14-Sep-2015.) ",
+  "statement" : "equivbnd.1 $e |- ( ph -> M e. ( Bnd ` X ) ) $.\nequivbnd.2 $e |- ( ph -> N e. ( Met ` X ) ) $.\nequivbnd.3 $e |- ( ph -> R e. RR+ ) $.\nequivbnd.4 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x N y ) <_ ( R x. ( x M y ) ) ) $.\nequivbnd $p |- ( ph -> N e. ( Bnd ` X ) ) $.\n$d M x y $.\n$d N x y $.\n$d R x y $.\n$d X x y $.\n$d ph x y $."
+}

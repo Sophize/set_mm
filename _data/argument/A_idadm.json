@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idadm on Metamath](http://us.metamath.org/mpegif/idadm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idafval.i | |- I = ( IdA ` C ) |\n| 2 |  | idafval.b | |- B = ( Base ` C ) |\n| 3 |  | idafval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | idahom.x | |- ( ph -> X e. B ) |\n| 5 |  | #P_eqid | |- ( HomA ` C ) = ( HomA ` C ) |\n| 6 | 1, 2, 3, 4, 5 | #P_idahom | |- ( ph -> ( I ` X ) e. ( X ( HomA ` C ) X ) ) |\n| 7 | 5 | #P_homadm | |- ( ( I ` X ) e. ( X ( HomA ` C ) X ) -> ( domA ` ( I ` X ) ) = X ) |\n| 8 | 6, 7 | #P_syl | |- ( ph -> ( domA ` ( I ` X ) ) = X ) |",
+  "conclusion" : "#P_idadm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cida", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_choma", "#T_cfv", "#T_cC", "#T_wceq", "#T_choma", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cX", "#T_choma", "#T_cfv", "#T_cC", "#T_cX", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cX", "#T_choma", "#T_cfv", "#T_cC", "#T_cX", "#T_wi", "#T_cdoma", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cdoma", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_idahom", "#P_homadm", "#P_syl" ]
+}

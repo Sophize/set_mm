@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oion on Metamath](http://us.metamath.org/mpegif/oion.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oicl.1 | |- F = OrdIso ( R , A ) |\n| 2 | 1 | #P_oicl | |- Ord dom F |\n| 3 | 1 | #P_oiexg | |- ( A e. V -> F e. _V ) |\n| 4 |  | #P_dmexg | |- ( F e. _V -> dom F e. _V ) |\n| 5 |  | #P_elong | |- ( dom F e. _V -> ( dom F e. On <-> Ord dom F ) ) |\n| 6 | 3, 4, 5 | #P_3syl | |- ( A e. V -> ( dom F e. On <-> Ord dom F ) ) |\n| 7 | 2, 6 | #P_mpbiri | |- ( A e. V -> dom F e. On ) |",
+  "conclusion" : "#P_oion",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_coi--1", "#T_cR", "#T_coi--2", "#T_cA", "#T_word", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cvv", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cF", "#T_wcel", "#T_cvv", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cdm", "#T_cF", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_3syl", "#P_dmexg", "#P_elong", "#P_oicl", "#P_oiexg" ]
+}

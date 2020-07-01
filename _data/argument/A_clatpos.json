@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clatpos on Metamath](http://us.metamath.org/mpegif/clatpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` K ) = ( Base ` K ) |\n| 2 |  | #P_eqid | |- ( lub ` K ) = ( lub ` K ) |\n| 3 |  | #P_eqid | |- ( glb ` K ) = ( glb ` K ) |\n| 4 | 1, 2, 3 | #P_isclat | |- ( K e. CLat <-> ( K e. Poset /\\ ( dom ( lub ` K ) = ~P ( Base ` K ) /\\ dom ( glb ` K ) = ~P ( Base ` K ) ) ) ) |\n| 5 | 4 | #P_simplbi | |- ( K e. CLat -> K e. Poset ) |",
+  "conclusion" : "#P_clatpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_club", "#T_cfv", "#T_cK", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_cglb", "#T_cfv", "#T_cK", "#T_wceq", "#T_cglb", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ccla", "#T_wb", "#T_cK", "#T_wcel", "#T_cpo", "#T_wa", "#T_cdm", "#T_club", "#T_cfv", "#T_cK", "#T_wceq", "#T_cpw", "#T_cbs", "#T_cfv", "#T_cK", "#T_wa", "#T_cdm", "#T_cglb", "#T_cfv", "#T_cK", "#T_wceq", "#T_cpw", "#T_cbs", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ccla", "#T_wi", "#T_cK", "#T_wcel", "#T_cpo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isclat", "#P_simplbi" ]
+}

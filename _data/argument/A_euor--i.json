@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euor on Metamath](http://us.metamath.org/mpegif/euor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | euor.1 | |- ( ph -> A. x ph ) |\n| 2 | 1 | #P_hbn | |- ( -. ph -> A. x -. ph ) |\n| 3 |  | #P_biorf | |- ( -. ph -> ( ps <-> ( ph \\/ ps ) ) ) |\n| 4 | 2, 3 | #P_eubidh | |- ( -. ph -> ( E! x ps <-> E! x ( ph \\/ ps ) ) ) |\n| 5 | 4 | #P_biimpa | |- ( ( -. ph /\\ E! x ps ) -> E! x ( ph \\/ ps ) ) |\n\\\n Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM, 21-Oct-2005.) ",
+  "conclusion" : "#P_euor--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wb", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wa", "#T_weu", "#T_vx", "#T_wps", "#T_wi", "#T_weu", "#T_vx", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_biorf", "#P_eubidh", "#P_hbn" ]
+}

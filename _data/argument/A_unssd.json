@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unssd on Metamath](http://us.metamath.org/mpegif/unssd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unssd.1 | |- ( ph -> A C_ C ) |\n| 2 |  | unssd.2 | |- ( ph -> B C_ C ) |\n| 3 |  | #P_unss | |- ( ( A C_ C /\\ B C_ C ) <-> ( A u. B ) C_ C ) |\n| 4 | 3 | #P_biimpi | |- ( ( A C_ C /\\ B C_ C ) -> ( A u. B ) C_ C ) |\n| 5 | 1, 2, 4 | #P_syl2anc | |- ( ph -> ( A u. B ) C_ C ) |",
+  "conclusion" : "#P_unssd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cun", "#T_cB", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unss", "#P_syl2anc", "#P_biimpi" ]
+}

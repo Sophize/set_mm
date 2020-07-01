@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovmpt2dv2 on Metamath](http://us.metamath.org/mpegif/ovmpt2dv2.html)"
+  } ],
+  "names" : [ "ovmpt2dv2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cC", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cD", "#T_cmpt2--4", "#T_cR", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cS", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Alternate deduction version of ~ ovmpt2 , suitable for iteration. (Contributed by Mario Carneiro, 7-Jan-2017.) ",
+  "statement" : "ovmpt2dv2.1 $e |- ( ph -> A e. C ) $.\novmpt2dv2.2 $e |- ( ( ph /\\ x = A ) -> B e. D ) $.\novmpt2dv2.3 $e |- ( ( ph /\\ ( x = A /\\ y = B ) ) -> R e. V ) $.\novmpt2dv2.4 $e |- ( ( ph /\\ ( x = A /\\ y = B ) ) -> R = S ) $.\novmpt2dv2 $p |- ( ph -> ( F = ( x e. C , y e. D |-> R ) -> ( A F B ) = S ) ) $.\n$d A x y $.\n$d B x y $.\n$d S x y $.\n$d ph x y $."
+}

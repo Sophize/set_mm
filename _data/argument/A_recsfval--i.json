@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recsfval on Metamath](http://us.metamath.org/mpegif/recsfval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfrlem.1 | |- A = { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } |\n| 2 |  | #P_df-recs | |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } |\n| 3 | 1 | #P_unieqi | |- U. A = U. { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } |\n| 4 | 2, 3 | #P_eqtr4i | |- recs ( F ) = U. A |",
+  "conclusion" : "#P_recsfval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_crecs", "#T_cF", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_aev.vf", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_aev.vf", "#T_wfn", "#T_vx.wal", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_aev.vf", "#T_cfv", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_aev.vf", "#T_cres", "#T_vy.tru", "#T_cab--3", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_aev.vf", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_aev.vf", "#T_wfn", "#T_vx.wal", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_aev.vf", "#T_cfv", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_aev.vf", "#T_cres", "#T_vy.tru", "#T_cab--3", "#T_crecs", "#T_cF", "#T_wceq", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_eqtr4i", "#P_df-recs" ]
+}

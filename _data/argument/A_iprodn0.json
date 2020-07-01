@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iprodn0 on Metamath](http://us.metamath.org/mpegif/iprodn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | zprodn0.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | zprodn0.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | zprodn0.3 | |- ( ph -> X =/= 0 ) |\n| 4 |  | zprodn0.4 | |- ( ph -> seq M ( x. , F ) ~~> X ) |\n| 5 |  | iprodn0.5 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = B ) |\n| 6 |  | iprodn0.6 | |- ( ( ph /\\ k e. Z ) -> B e. CC ) |\n| 7 |  | #P_ssid | |- Z C_ Z |\n| 8 | 7 | #P_a1i | |- ( ph -> Z C_ Z ) |\n| 9 |  | #P_iftrue | |- ( k e. Z -> if ( k e. Z , B , 1 ) = B ) |\n| 10 | 9 | #P_adantl | |- ( ( ph /\\ k e. Z ) -> if ( k e. Z , B , 1 ) = B ) |\n| 11 | 5, 10 | #P_eqtr4d | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = if ( k e. Z , B , 1 ) ) |\n| 12 | 1, 2, 3, 4, 8, 11, 6 | #P_zprodn0 | |- ( ph -> prod_ k e. Z B = X ) |",
+  "conclusion" : "#P_iprodn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cX", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cB", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cZ", "#T_wss", "#T_cZ", "#T_wph", "#T_wi", "#T_cZ", "#T_wss", "#T_cZ", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_c1", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_c1", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_c1", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cZ", "#T_cB", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssid", "#P_iftrue", "#P_adantl", "#P_a1i", "#P_eqtr4d", "#P_zprodn0" ]
+}

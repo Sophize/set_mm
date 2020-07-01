@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-eu on Metamath](http://us.metamath.org/mpegif/df-eu.html)"
+  } ],
+  "names" : [ "df-eu" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx", "#T_wph", "#T_wb", "#T_wex", "#T_vy", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_vx", "#T_wceq", "#T_vy", "#T_wph", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define existential uniqueness, i.e.  \"there exists exactly one ` x ` such that ` ph ` .\"  Definition 10.1 of [BellMachover] p. 97; also Definition *14.02 of [WhiteheadRussell] p. 175.  Other possible definitions are given by ~ eu1 , ~ eu2 , ~ eu3v , and ~ eu5 (which in some cases we show with a hypothesis ` ph -> A. y ph ` in place of a distinct variable condition on ` y ` and ` ph ` ).  Double uniqueness is tricky: ` E! x E! y ph ` does not mean \"exactly one ` x ` and one ` y ` \" (see ~ 2eu4 ).  (Contributed by NM, 12-Aug-1993.) \n\n---\n\n Define existential uniqueness, i.e.  \"there exists exactly one ` x ` such that ` ph ` .\"  Definition 10.1 of [BellMachover] p. 97; also Definition *14.02 of [WhiteheadRussell] p. 175.  Other possible definitions are given by ~ eu1 , ~ eu2 , ~ eu3 , and ~ eu5 (which in some cases we show with a hypothesis ` ph -> A. y ph ` in place of a distinct variable condition on ` y ` and ` ph ` ).  Double uniqueness is tricky: ` E! x E! y ph ` does not mean \"exactly one ` x ` and one ` y ` \" (see ~ 2eu4 ).  (Contributed by NM, 5-Aug-1993.) ",
+  "statement" : "df-eu $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $.\n$d ph y $.\n$d x y $."
+}

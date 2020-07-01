@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strle2 on Metamath](http://us.metamath.org/mpegif/strle2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strle1.i | |- I e. NN |\n| 2 |  | strle1.a | |- A = I |\n| 3 |  | strle2.j | |- I < J |\n| 4 |  | strle2.k | |- J e. NN |\n| 5 |  | strle2.b | |- B = J |\n| 6 |  | #P_df-pr | |- { <. A , X >. , <. B , Y >. } = ( { <. A , X >. } u. { <. B , Y >. } ) |\n| 7 | 1, 2 | #P_strle1 | |- { <. A , X >. } Struct <. I , I >. |\n| 8 | 4, 5 | #P_strle1 | |- { <. B , Y >. } Struct <. J , J >. |\n| 9 | 7, 8, 3 | #P_strleun | |- ( { <. A , X >. } u. { <. B , Y >. } ) Struct <. I , J >. |\n| 10 | 6, 9 | #P_eqbrtri | |- { <. A , X >. , <. B , Y >. } Struct <. I , J >. |",
+  "conclusion" : "#P_strle2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wcel", "#T_cn", "#T_cA", "#T_wceq", "#T_cI", "#T_cI", "#T_clt", "#T_cJ", "#T_cJ", "#T_wcel", "#T_cn", "#T_cB", "#T_wceq", "#T_cJ", "#T_cpr--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_cstr", "#T_cop--1", "#T_cI", "#T_cop--2", "#T_cI", "#T_cop--3", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_cstr", "#T_cop--1", "#T_cJ", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_cstr", "#T_cop--1", "#T_cI", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_cpr--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cB", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cpr--3", "#T_cstr", "#T_cop--1", "#T_cI", "#T_cop--2", "#T_cJ", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-pr", "#P_strleun", "#P_strle1", "#P_eqbrtri" ]
+}

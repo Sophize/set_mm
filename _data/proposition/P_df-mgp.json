@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mgp on Metamath](http://us.metamath.org/mpegif/df-mgp.html)"
+  } ],
+  "names" : [ "df-mgp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmgp", "#T_wceq", "#T_vw", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vw", "#T_csts", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cmulr", "#T_cfv", "#T_vw", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a structure that puts the multiplication operation of a ring in the addition slot.  Note that this will not actually be a group for the average ring, or even for a field, but it will be a monoid, and ~ unitgrp shows that we get a group if we restrict to the elements that have inverses.  This allows us to formalize such notions as \"the multiplication operation of a ring is a monoid\" ( ~ ringmgp ) or \"the multiplicative identity\" in terms of the identity of a monoid ( ~ df-1r ).  (Contributed by Mario Carneiro, 21-Dec-2014.) ",
+  "statement" : "df-mgp $p |- mulGrp = ( w e. _V |-> ( w sSet <. ( +g ` ndx ) , ( .r ` w ) >. ) ) $."
+}

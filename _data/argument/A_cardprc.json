@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardprc on Metamath](http://us.metamath.org/mpegif/cardprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( x = y -> ( card ` x ) = ( card ` y ) ) |\n| 2 |  | #P_id | |- ( x = y -> x = y ) |\n| 3 | 1, 2 | #P_eqeq12d | |- ( x = y -> ( ( card ` x ) = x <-> ( card ` y ) = y ) ) |\n| 4 | 3 | #P_cbvabv | |- { x | ( card ` x ) = x } = { y | ( card ` y ) = y } |\n| 5 | 4 | #P_cardprclem | |- -. { x | ( card ` x ) = x } e. _V |\n| 6 | 5 | #P_nelir | |- { x | ( card ` x ) = x } e/ _V |",
+  "conclusion" : "#P_cardprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_ccrd", "#T_cfv", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cab--3", "#T_wn", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx", "#T_wceq", "#T_vx", "#T_cab--3", "#T_wnel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_cbvabv", "#P_fveq2", "#P_nelir", "#P_cardprclem", "#P_id" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See issetf on Metamath](http://us.metamath.org/mpegif/issetf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | issetf.1 | |- F/_ x A |\n| 2 |  | #P_isset | |- ( A e. _V <-> E. y y = A ) |\n| 3 | 1 | #P_nfeq2 | |- F/ x y = A |\n| 4 |  | #P_nfv | |- F/ y x = A |\n| 5 |  | #P_eqeq1 | |- ( y = x -> ( y = A <-> x = A ) ) |\n| 6 | 3, 4, 5 | #P_cbvex | |- ( E. y y = A <-> E. x x = A ) |\n| 7 | 2, 6 | #P_bitri | |- ( A e. _V <-> E. x x = A ) |",
+  "conclusion" : "#P_issetf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnfc", "#T_vx", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wnf", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_cbvex", "#P_isset", "#P_nfeq2", "#P_eqeq1", "#P_bitri" ]
+}

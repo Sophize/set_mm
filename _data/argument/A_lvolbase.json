@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lvolbase on Metamath](http://us.metamath.org/mpegif/lvolbase.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lvolbase.b | |- B = ( Base ` K ) |\n| 2 |  | lvolbase.v | |- V = ( LVols ` K ) |\n| 3 |  | #P_n0i | |- ( X e. V -> -. V = (/) ) |\n| 4 | 2 | #P_eqeq1i | |- ( V = (/) <-> ( LVols ` K ) = (/) ) |\n| 5 | 3, 4 | #P_sylnib | |- ( X e. V -> -. ( LVols ` K ) = (/) ) |\n| 6 |  | #P_fvprc | |- ( -. K e. _V -> ( LVols ` K ) = (/) ) |\n| 7 | 5, 6 | #P_nsyl2 | |- ( X e. V -> K e. _V ) |\n| 8 |  | #P_eqid | |- ( <o ` K ) = ( <o ` K ) |\n| 9 |  | #P_eqid | |- ( LPlanes ` K ) = ( LPlanes ` K ) |\n| 10 | 1, 8, 9, 2 | #P_islvol | |- ( K e. _V -> ( X e. V <-> ( X e. B /\\ E. x e. ( LPlanes ` K ) x ( <o ` K ) X ) ) ) |\n| 11 | 10 | #P_simprbda | |- ( ( K e. _V /\\ X e. V ) -> X e. B ) |\n| 12 | 7, 11 | #P_mpancom | |- ( X e. V -> X e. B ) |",
+  "conclusion" : "#P_lvolbase",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cV", "#T_wceq", "#T_clvol", "#T_cfv", "#T_cK", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_wn", "#T_cV", "#T_wceq", "#T_c0", "#T_cV", "#T_wceq", "#T_c0", "#T_wb", "#T_clvol", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_wn", "#T_clvol", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_wn", "#T_cK", "#T_wcel", "#T_cvv", "#T_wi", "#T_clvol", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cK", "#T_wcel", "#T_cvv", "#T_ccvr", "#T_cfv", "#T_cK", "#T_wceq", "#T_ccvr", "#T_cfv", "#T_cK", "#T_clpl", "#T_cfv", "#T_cK", "#T_wceq", "#T_clpl", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_clpl", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cX", "#T_cK", "#T_wcel", "#T_cvv", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylnib", "#P_eqid", "#P_mpancom", "#P_fvprc", "#P_nsyl2", "#P_n0i", "#P_eqeq1i", "#P_simprbda", "#P_islvol" ]
+}

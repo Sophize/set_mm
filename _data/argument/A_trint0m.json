@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trint0m on Metamath](http://us.metamath.org/mpegif/trint0m.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_intss1 | |- ( x e. A -> |^| A C_ x ) |\n| 2 |  | #P_trss | |- ( Tr A -> ( x e. A -> x C_ A ) ) |\n| 3 | 2 | #P_com12 | |- ( x e. A -> ( Tr A -> x C_ A ) ) |\n| 4 |  | #P_sstr2 | |- ( |^| A C_ x -> ( x C_ A -> |^| A C_ A ) ) |\n| 5 | 1, 3, 4 | #P_sylsyld | |- ( x e. A -> ( Tr A -> |^| A C_ A ) ) |\n| 6 | 5 | #P_exlimiv | |- ( E. x x e. A -> ( Tr A -> |^| A C_ A ) ) |\n| 7 | 6 | #P_impcom | |- ( ( Tr A /\\ E. x x e. A ) -> |^| A C_ A ) |",
+  "conclusion" : "#P_trint0m",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wtr", "#T_cA", "#T_wa", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cint", "#T_cA", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_exlimiv", "#P_sylsyld", "#P_impcom", "#P_intss1", "#P_trss", "#P_com12" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lpirring on Metamath](http://us.metamath.org/mpegif/lpirring.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( LPIdeal ` R ) = ( LPIdeal ` R ) |\n| 2 |  | #P_eqid | |- ( LIdeal ` R ) = ( LIdeal ` R ) |\n| 3 | 1, 2 | #P_islpir | |- ( R e. LPIR <-> ( R e. Ring /\\ ( LIdeal ` R ) = ( LPIdeal ` R ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( R e. LPIR -> R e. Ring ) |",
+  "conclusion" : "#P_lpirring",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clpidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_clpir", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_clpir", "#T_wi", "#T_cR", "#T_wcel", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_islpir" ]
+}

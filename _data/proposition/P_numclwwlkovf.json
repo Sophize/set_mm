@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See numclwwlkovf on Metamath](http://us.metamath.org/mpegif/numclwwlkovf.html)"
+  } ],
+  "names" : [ "numclwwlkovf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cV", "#T_cclwwlkn", "#T_cE", "#T_cfv", "#T_vn", "#T_cF", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cV", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_cC", "#T_cfv", "#T_vn", "#T_crab--3", "#T_vw", "#T_cfv", "#T_cc0", "#T_wceq", "#T_vv", "#T_crab--4", "#T_cX", "#T_wcel", "#T_cV", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cX", "#T_cF", "#T_cN", "#T_wceq", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_cC", "#T_cfv", "#T_cN", "#T_crab--3", "#T_vw", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cX", "#T_crab--4", "#T_cC", "#T_vn", "#T_vv", "#T_vw", "#T_cC", "#T_vw", "#T_cE", "#T_vn", "#T_cN", "#T_vn", "#T_vv", "#T_vw", "#T_cN", "#T_vw", "#T_cV", "#T_vn", "#T_vv", "#T_cX", "#T_vn", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of operation ` F ` , mapping a vertex v and a nonnegative integer n to the \"(For a fixed vertex v, let f(n) be the number of) walks from v to v of length n\" according to definition 5 in [Huneke] p. 2. (Contributed by Alexander van der Vekens, 14-Sep-2018.) ",
+  "statement" : "numclwwlk.c $e |- C = ( n e. NN0 |-> ( ( V ClWWalksN E ) ` n ) ) $.\nnumclwwlk.f $e |- F = ( v e. V , n e. NN0 |-> { w e. ( C ` n ) | ( w ` 0 ) = v } ) $.\nnumclwwlkovf $p |- ( ( X e. V /\\ N e. NN0 ) -> ( X F N ) = { w e. ( C ` N ) | ( w ` 0 ) = X } ) $.\n$d C n v w $.\n$d C w $.\n$d E n $.\n$d N n v w $.\n$d N w $.\n$d V n v $.\n$d X n v w $."
+}

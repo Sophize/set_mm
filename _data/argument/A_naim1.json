@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See naim1 on Metamath](http://us.metamath.org/mpegif/naim1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_con3 | |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) |\n| 2 | 1 | #P_orim1d | |- ( ( ph -> ps ) -> ( ( -. ps \\/ -. ch ) -> ( -. ph \\/ -. ch ) ) ) |\n| 3 |  | #P_pm3.13 | |- ( -. ( ps /\\ ch ) -> ( -. ps \\/ -. ch ) ) |\n| 4 |  | #P_pm3.14 | |- ( ( -. ph \\/ -. ch ) -> -. ( ph /\\ ch ) ) |\n| 5 | 3, 4 | #P_imim12i | |- ( ( ( -. ps \\/ -. ch ) -> ( -. ph \\/ -. ch ) ) -> ( -. ( ps /\\ ch ) -> -. ( ph /\\ ch ) ) ) |\n| 6 |  | #P_df-nan | |- ( ( ps -/\\ ch ) <-> -. ( ps /\\ ch ) ) |\n| 7 |  | #P_df-nan | |- ( ( ph -/\\ ch ) <-> -. ( ph /\\ ch ) ) |\n| 8 | 5, 6, 7 | #P_3imtr4g | |- ( ( ( -. ps \\/ -. ch ) -> ( -. ph \\/ -. ch ) ) -> ( ( ps -/\\ ch ) -> ( ph -/\\ ch ) ) ) |\n| 9 | 2, 8 | #P_syl | |- ( ( ph -> ps ) -> ( ( ps -/\\ ch ) -> ( ph -/\\ ch ) ) ) |",
+  "conclusion" : "#P_naim1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wch", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wch", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wa", "#T_wch", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wa", "#T_wch", "#T_wps", "#T_wnan", "#T_wch", "#T_wb", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wph", "#T_wnan", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wch", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wch", "#T_wi", "#T_wps", "#T_wnan", "#T_wch", "#T_wi", "#T_wph", "#T_wnan", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wnan", "#T_wch", "#T_wi", "#T_wph", "#T_wnan", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm3.14", "#P_pm3.13", "#P_df-nan", "#P_con3", "#P_orim1d", "#P_syl", "#P_imim12i", "#P_3imtr4g" ]
+}

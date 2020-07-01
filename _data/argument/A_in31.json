@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See in31 on Metamath](http://us.metamath.org/mpegif/in31.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_in12 | |- ( C i^i ( A i^i B ) ) = ( A i^i ( C i^i B ) ) |\n| 2 |  | #P_incom | |- ( ( A i^i B ) i^i C ) = ( C i^i ( A i^i B ) ) |\n| 3 |  | #P_incom | |- ( ( C i^i B ) i^i A ) = ( A i^i ( C i^i B ) ) |\n| 4 | 1, 2, 3 | #P_3eqtr4i | |- ( ( A i^i B ) i^i C ) = ( ( C i^i B ) i^i A ) |",
+  "conclusion" : "#P_in31",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_cin", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cA", "#T_cin", "#T_cB", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cB", "#T_cin", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_in12", "#P_3eqtr4i", "#P_incom" ]
+}

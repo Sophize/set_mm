@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmopgt0 on Metamath](http://us.metamath.org/mpegif/nmopgt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nmopxr | |- ( T : ~H --> ~H -> ( normop ` T ) e. RR* ) |\n| 2 |  | #P_nmopge0 | |- ( T : ~H --> ~H -> 0 <_ ( normop ` T ) ) |\n| 3 |  | #P_0xr | |- 0 e. RR* |\n| 4 |  | #P_xrleltne | |- ( ( 0 e. RR* /\\ ( normop ` T ) e. RR* /\\ 0 <_ ( normop ` T ) ) -> ( 0 < ( normop ` T ) <-> ( normop ` T ) =/= 0 ) ) |\n| 5 | 3, 4 | #P_mp3an1 | |- ( ( ( normop ` T ) e. RR* /\\ 0 <_ ( normop ` T ) ) -> ( 0 < ( normop ` T ) <-> ( normop ` T ) =/= 0 ) ) |\n| 6 | 1, 2, 5 | #P_syl2anc | |- ( T : ~H --> ~H -> ( 0 < ( normop ` T ) <-> ( normop ` T ) =/= 0 ) ) |\n| 7 | 6 | #P_bicomd | |- ( T : ~H --> ~H -> ( ( normop ` T ) =/= 0 <-> 0 < ( normop ` T ) ) ) |",
+  "conclusion" : "#P_nmopgt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cxr", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cc0", "#T_cle", "#T_cnop", "#T_cfv", "#T_cT", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cc0", "#T_cle", "#T_cnop", "#T_cfv", "#T_cT", "#T_wi", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cxr", "#T_wa", "#T_cc0", "#T_cle", "#T_cnop", "#T_cfv", "#T_cT", "#T_wi", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0xr", "#P_syl2anc", "#P_bicomd", "#P_xrleltne", "#P_mp3an1", "#P_nmopge0", "#P_nmopxr" ]
+}

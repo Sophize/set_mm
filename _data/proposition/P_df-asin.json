@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-asin on Metamath](http://us.metamath.org/mpegif/df-asin.html)"
+  } ],
+  "names" : [ "df-asin" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_casin", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_cneg", "#T_ci", "#T_cmul", "#T_clog", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx", "#T_caddc", "#T_csqrt", "#T_cfv", "#T_c1", "#T_cmin", "#T_vx", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the arcsine function.  Because ` sin ` is not a one-to-one function, the literal inverse ` ``' sin ` is not a function.  Rather than attempt to find the right domain on which to restrict ` sin ` in order to get a total function, we just define it in terms of ` log ` , which we already know is total (except at ` 0 ` ).  There are branch points at ` -u 1 ` and ` 1 ` (at which the function is defined), and branch cuts along the real line not between ` -u 1 ` and ` 1 ` , which is to say ` ( -oo , -u 1 ) u. ( 1 , +oo ) ` .  (Contributed by Mario Carneiro, 31-Mar-2015.) ",
+  "statement" : "df-asin $p |- arcsin = ( x e. CC |-> ( -u _i x. ( log ` ( ( _i x. x ) + ( sqrt ` ( 1 - ( x ^ 2 ) ) ) ) ) ) ) $."
+}

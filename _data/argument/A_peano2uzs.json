@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See peano2uzs on Metamath](http://us.metamath.org/mpegif/peano2uzs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | peano2uzs.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | #P_peano2uz | |- ( N e. ( ZZ>= ` M ) -> ( N + 1 ) e. ( ZZ>= ` M ) ) |\n| 3 | 2, 1 | #P_syl6eleqr | |- ( N e. ( ZZ>= ` M ) -> ( N + 1 ) e. Z ) |\n| 4 | 3, 1 | #P_eleq2s | |- ( N e. Z -> ( N + 1 ) e. Z ) |",
+  "conclusion" : "#P_peano2uzs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cZ", "#T_cN", "#T_wcel", "#T_cZ", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_peano2uz", "#P_eleq2s", "#P_syl6eleqr" ]
+}

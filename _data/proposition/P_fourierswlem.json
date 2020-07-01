@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fourierswlem on Metamath](http://us.metamath.org/mpegif/fourierswlem.html)"
+  } ],
+  "names" : [ "fourierswlem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_c2", "#T_cmul", "#T_cpi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_cmo", "#T_cT", "#T_clt", "#T_cpi", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cneg", "#T_c1", "#T_cX", "#T_wcel", "#T_cr", "#T_cY", "#T_wceq", "#T_cif--1", "#T_cX", "#T_cmo", "#T_cpi", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cF", "#T_cfv", "#T_cX", "#T_cY", "#T_wceq", "#T_cif--1", "#T_cX", "#T_cmo", "#T_cT", "#T_wcel", "#T_cc0", "#T_cioc", "#T_cpi", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cneg", "#T_c1", "#T_caddc", "#T_cF", "#T_cfv", "#T_cX", "#T_cdiv", "#T_c2", "#T_cT", "#T_vx", "#T_cX", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Fourier series for the square wave ` F ` converges to ` Y ` , a simpler expression for this special case.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "fourierswlem.t $e |- T = ( 2 x. _pi ) $.\nfourierswlem.f $e |- F = ( x e. RR |-> if ( ( x mod T ) < _pi , 1 , -u 1 ) ) $.\nfourierswlem.x $e |- X e. RR $.\nfourierswlem.y $e |- Y = if ( ( X mod _pi ) = 0 , 0 , ( F ` X ) ) $.\nfourierswlem $p |- Y = ( ( if ( ( X mod T ) e. ( 0 (,] _pi ) , 1 , -u 1 ) + ( F ` X ) ) / 2 ) $.\n$d T x $.\n$d X x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subm0 on Metamath](http://us.metamath.org/mpegif/subm0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | submmnd.h | |- H = ( M |`s S ) |\n| 2 |  | subm0.z | |- .0. = ( 0g ` M ) |\n| 3 |  | #P_submrcl | |- ( S e. ( SubMnd ` M ) -> M e. Mnd ) |\n| 4 | 1 | #P_submmnd | |- ( S e. ( SubMnd ` M ) -> H e. Mnd ) |\n| 5 |  | #P_eqid | |- ( Base ` M ) = ( Base ` M ) |\n| 6 | 5 | #P_submss | |- ( S e. ( SubMnd ` M ) -> S C_ ( Base ` M ) ) |\n| 7 | 2 | #P_subm0cl | |- ( S e. ( SubMnd ` M ) -> .0. e. S ) |\n| 8 | 5, 2, 1 | #P_submnd0 | |- ( ( ( M e. Mnd /\\ H e. Mnd ) /\\ ( S C_ ( Base ` M ) /\\ .0. e. S ) ) -> .0. = ( 0g ` H ) ) |\n| 9 | 3, 4, 6, 7, 8 | #P_syl22anc | |- ( S e. ( SubMnd ` M ) -> .0. = ( 0g ` H ) ) |",
+  "conclusion" : "#P_subm0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_cM", "#T_cress", "#T_cS", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cM", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cmnd", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_cH", "#T_wcel", "#T_cmnd", "#T_cbs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_cS", "#T_wss", "#T_cbs", "#T_cfv", "#T_cM", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_c.0", "#T_wcel", "#T_cS", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cH", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cS", "#T_wss", "#T_cbs", "#T_cfv", "#T_cM", "#T_wa", "#T_c.0", "#T_wcel", "#T_cS", "#T_wi", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cH", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_submnd0", "#P_submrcl", "#P_syl22anc", "#P_submss", "#P_submmnd", "#P_subm0cl" ]
+}

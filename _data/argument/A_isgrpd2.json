@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isgrpd2 on Metamath](http://us.metamath.org/mpegif/isgrpd2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isgrpd2.b | |- ( ph -> B = ( Base ` G ) ) |\n| 2 |  | isgrpd2.p | |- ( ph -> .+ = ( +g ` G ) ) |\n| 3 |  | isgrpd2.z | |- ( ph -> .0. = ( 0g ` G ) ) |\n| 4 |  | isgrpd2.g | |- ( ph -> G e. Mnd ) |\n| 5 |  | isgrpd2.n | |- ( ( ph /\\ x e. B ) -> N e. B ) |\n| 6 |  | isgrpd2.j | |- ( ( ph /\\ x e. B ) -> ( N .+ x ) = .0. ) |\n| 7 |  | #P_oveq1 | |- ( y = N -> ( y .+ x ) = ( N .+ x ) ) |\n| 8 | 7 | #P_eqeq1d | |- ( y = N -> ( ( y .+ x ) = .0. <-> ( N .+ x ) = .0. ) ) |\n| 9 | 8 | #P_rspcev | |- ( ( N e. B /\\ ( N .+ x ) = .0. ) -> E. y e. B ( y .+ x ) = .0. ) |\n| 10 | 5, 6, 9 | #P_syl2anc | |- ( ( ph /\\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) |\n| 11 | 1, 2, 3, 4, 10 | #P_isgrpd2e | |- ( ph -> G e. Grp ) |",
+  "conclusion" : "#P_isgrpd2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_c.pl", "#T_vx", "#T_wceq", "#T_c.0", "#T_vy.tru", "#T_wceq", "#T_cN", "#T_wi", "#T_vy.tru", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_cN", "#T_c.pl", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cN", "#T_wi", "#T_vy.tru", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_c.0", "#T_wb", "#T_cN", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_c.0", "#T_cN", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cN", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_c.0", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vy.tru", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_c.0", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vy.tru", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_oveq1", "#P_eqeq1d", "#P_rspcev", "#P_isgrpd2e" ]
+}

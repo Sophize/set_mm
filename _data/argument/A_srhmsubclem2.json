@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srhmsubclem2 on Metamath](http://us.metamath.org/mpegif/srhmsubclem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srhmsubc.s | |- A. r e. S r e. Ring |\n| 2 |  | srhmsubc.c | |- C = ( U i^i S ) |\n| 3 | 1, 2 | #P_srhmsubclem1 | |- ( X e. C -> X e. ( U i^i Ring ) ) |\n| 4 | 3 | #P_adantl | |- ( ( U e. V /\\ X e. C ) -> X e. ( U i^i Ring ) ) |\n| 5 |  | #P_eqid | |- ( RingCat ` U ) = ( RingCat ` U ) |\n| 6 |  | #P_eqid | |- ( Base ` ( RingCat ` U ) ) = ( Base ` ( RingCat ` U ) ) |\n| 7 |  | #P_id | |- ( U e. V -> U e. V ) |\n| 8 | 5, 6, 7 | #P_ringcbas | |- ( U e. V -> ( Base ` ( RingCat ` U ) ) = ( U i^i Ring ) ) |\n| 9 | 8 | #P_adantr | |- ( ( U e. V /\\ X e. C ) -> ( Base ` ( RingCat ` U ) ) = ( U i^i Ring ) ) |\n| 10 | 4, 9 | #P_eleqtrrd | |- ( ( U e. V /\\ X e. C ) -> X e. ( Base ` ( RingCat ` U ) ) ) |",
+  "conclusion" : "#P_srhmsubclem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wral--1", "#T_vr", "#T_wral--2", "#T_cS", "#T_vr", "#T_wcel", "#T_crg", "#T_cC", "#T_wceq", "#T_cU", "#T_cin", "#T_cS", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_cin", "#T_crg", "#T_cU", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_cin", "#T_crg", "#T_cringc", "#T_cfv", "#T_cU", "#T_wceq", "#T_cringc", "#T_cfv", "#T_cU", "#T_cbs", "#T_cfv", "#T_cringc", "#T_cfv", "#T_cU", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cringc", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_cbs", "#T_cfv", "#T_cringc", "#T_cfv", "#T_cU", "#T_wceq", "#T_cU", "#T_cin", "#T_crg", "#T_cU", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cbs", "#T_cfv", "#T_cringc", "#T_cfv", "#T_cU", "#T_wceq", "#T_cU", "#T_cin", "#T_crg", "#T_cU", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cringc", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ringcbas", "#P_adantl", "#P_eleqtrrd", "#P_srhmsubclem1", "#P_id", "#P_adantr" ]
+}

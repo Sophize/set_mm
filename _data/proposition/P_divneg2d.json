@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divneg2d on Metamath](http://us.metamath.org/mpegif/divneg2d.html)"
+  } ],
+  "names" : [ "divneg2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cneg", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cneg", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Move negative sign inside of a division.  (Contributed by Mario Carneiro, 27-May-2016.) ",
+  "statement" : "div1d.1 $e |- ( ph -> A e. CC ) $.\ndivcld.2 $e |- ( ph -> B e. CC ) $.\ndivcld.3 $e |- ( ph -> B =/= 0 ) $.\ndivneg2d $p |- ( ph -> -u ( A / B ) = ( A / -u B ) ) $."
+}

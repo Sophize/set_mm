@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldlfcntref on Metamath](http://us.metamath.org/mpegif/ldlfcntref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldlfcntref.x | |- X = U. J |\n| 2 |  | #P_df-ldlf | |- Ldlf = CovHasRef { x | x ~<_ _om } |\n| 3 |  | #P_vex | |- v e. _V |\n| 4 |  | #P_breq1 | |- ( x = v -> ( x ~<_ _om <-> v ~<_ _om ) ) |\n| 5 | 3, 4 | #P_elab | |- ( v e. { x | x ~<_ _om } <-> v ~<_ _om ) |\n| 6 | 5 | #P_biimpi | |- ( v e. { x | x ~<_ _om } -> v ~<_ _om ) |\n| 7 | 1, 2, 6 | #P_crefdf | |- ( ( J e. Ldlf /\\ U C_ J /\\ X = U. U ) -> E. v e. ~P J ( v ~<_ _om /\\ v Ref U ) ) |",
+  "conclusion" : "#P_ldlfcntref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cldlf", "#T_wceq", "#T_ccref", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cdom", "#T_com", "#T_cab--3", "#T_vv", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_vv", "#T_wi", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wb", "#T_vv", "#T_cdom", "#T_com", "#T_vv", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cdom", "#T_com", "#T_cab--3", "#T_wb", "#T_vv", "#T_cdom", "#T_com", "#T_vv", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_cdom", "#T_com", "#T_cab--3", "#T_wi", "#T_vv", "#T_cdom", "#T_com", "#T_cJ", "#T_wcel", "#T_cldlf", "#T_w3a--1", "#T_cU", "#T_wss", "#T_cJ", "#T_w3a--2", "#T_cX", "#T_wceq", "#T_cuni", "#T_cU", "#T_wi", "#T_wrex--1", "#T_vv", "#T_wrex--2", "#T_cpw", "#T_cJ", "#T_vv", "#T_cdom", "#T_com", "#T_wa", "#T_vv", "#T_cref", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_elab", "#P_vex", "#P_crefdf", "#P_biimpi", "#P_df-ldlf" ]
+}

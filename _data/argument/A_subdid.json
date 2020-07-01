@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subdid on Metamath](http://us.metamath.org/mpegif/subdid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulm1d.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulnegd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | subdid.3 | |- ( ph -> C e. CC ) |\n| 4 |  | #P_subdi | |- ( ( A e. CC /\\ B e. CC /\\ C e. CC ) -> ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( A x. ( B - C ) ) = ( ( A x. B ) - ( A x. C ) ) ) |",
+  "conclusion" : "#P_subdid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cmin", "#T_cC", "#T_wceq", "#T_cA", "#T_cmul", "#T_cB", "#T_cmin", "#T_cA", "#T_cmul", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subdi", "#P_syl3anc" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itg2i1fseq3 on Metamath](http://us.metamath.org/mpegif/itg2i1fseq3.html)"
+  } ],
+  "names" : [ "itg2i1fseq3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cmbf", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wph", "#T_wi", "#T_cP", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cdm", "#T_citg1", "#T_wph", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cn", "#T_c0p", "#T_cofr", "#T_cle", "#T_cP", "#T_cfv", "#T_vn", "#T_wa", "#T_cP", "#T_cfv", "#T_vn", "#T_cofr", "#T_cle", "#T_cP", "#T_cfv", "#T_vn", "#T_caddc", "#T_c1", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cr", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cP", "#T_cfv", "#T_vn", "#T_cfv", "#T_vx", "#T_cli", "#T_cF", "#T_cfv", "#T_vx", "#T_cS", "#T_wceq", "#T_vm", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_citg1", "#T_cfv", "#T_cP", "#T_cfv", "#T_vm", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cF", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cS", "#T_cli", "#T_citg2", "#T_cfv", "#T_cF", "#T_cF", "#T_vm", "#T_vn", "#T_vx", "#T_cP", "#T_vm", "#T_vn", "#T_vx", "#T_vm", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Special case of ~ itg2i1fseq2 : if the integral of ` F ` is a real number, then the standard limit relation holds on the integrals of simple functions approaching ` F ` .  (Contributed by Mario Carneiro, 17-Aug-2014.) ",
+  "statement" : "itg2i1fseq.1 $e |- ( ph -> F e. MblFn ) $.\nitg2i1fseq.2 $e |- ( ph -> F : RR --> ( 0 [,) +oo ) ) $.\nitg2i1fseq.3 $e |- ( ph -> P : NN --> dom S.1 ) $.\nitg2i1fseq.4 $e |- ( ph -> A. n e. NN ( 0p oR <_ ( P ` n ) /\\ ( P ` n ) oR <_ ( P ` ( n + 1 ) ) ) ) $.\nitg2i1fseq.5 $e |- ( ph -> A. x e. RR ( n e. NN |-> ( ( P ` n ) ` x ) ) ~~> ( F ` x ) ) $.\nitg2i1fseq.6 $e |- S = ( m e. NN |-> ( S.1 ` ( P ` m ) ) ) $.\nitg2i1fseq3.7 $e |- ( ph -> ( S.2 ` F ) e. RR ) $.\nitg2i1fseq3 $p |- ( ph -> S ~~> ( S.2 ` F ) ) $.\n$d F m n x $.\n$d P m n x $.\n$d m ph $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvrexdva2 on Metamath](http://us.metamath.org/mpegif/cbvrexdva2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvraldva2.1 | |- ( ( ph /\\ x = y ) -> ( ps <-> ch ) ) |\n| 2 |  | cbvraldva2.2 | |- ( ( ph /\\ x = y ) -> A = B ) |\n| 3 |  | #P_simpr | |- ( ( ph /\\ x = y ) -> x = y ) |\n| 4 | 3, 2 | #P_eleq12d | |- ( ( ph /\\ x = y ) -> ( x e. A <-> y e. B ) ) |\n| 5 | 4, 1 | #P_anbi12d | |- ( ( ph /\\ x = y ) -> ( ( x e. A /\\ ps ) <-> ( y e. B /\\ ch ) ) ) |\n| 6 | 5 | #P_cbvexdva | |- ( ph -> ( E. x ( x e. A /\\ ps ) <-> E. y ( y e. B /\\ ch ) ) ) |\n| 7 |  | #P_df-rex | |- ( E. x e. A ps <-> E. x ( x e. A /\\ ps ) ) |\n| 8 |  | #P_df-rex | |- ( E. y e. B ch <-> E. y ( y e. B /\\ ch ) ) |\n| 9 | 6, 7, 8 | #P_3bitr4g | |- ( ph -> ( E. x e. A ps <-> E. y e. B ch ) ) |",
+  "conclusion" : "#P_cbvrexdva2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wch", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_wch", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cbvexdva", "#P_simpr", "#P_3bitr4g", "#P_df-rex", "#P_eleq12d", "#P_anbi12d" ]
+}

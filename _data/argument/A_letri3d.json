@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See letri3d on Metamath](http://us.metamath.org/mpegif/letri3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | ltd.2 | |- ( ph -> B e. RR ) |\n| 3 |  | #P_letri3 | |- ( ( A e. RR /\\ B e. RR ) -> ( A = B <-> ( A <_ B /\\ B <_ A ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A = B <-> ( A <_ B /\\ B <_ A ) ) ) |",
+  "conclusion" : "#P_letri3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cA", "#T_cle", "#T_cB", "#T_wa", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_letri3" ]
+}

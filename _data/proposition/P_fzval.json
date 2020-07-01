@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzval on Metamath](http://us.metamath.org/mpegif/fzval.html)"
+  } ],
+  "names" : [ "fzval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_wceq", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cM", "#T_cle", "#T_vk", "#T_wa", "#T_vk", "#T_cle", "#T_cN", "#T_crab--4", "#T_cM", "#T_vk", "#T_cN", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of a finite set of sequential integers.  E.g., ` 2 ... 5 ` means the set ` { 2 , 3 , 4 , 5 } ` .  A special case of this definition (starting at 1) appears as Definition 11-2.1 of [Gleason] p. 141, where ` NN ` _k means our ` 1 ... k ` ; he calls these sets _segments_ of the integers.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario Carneiro, 3-Nov-2013.) ",
+  "statement" : "fzval $p |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ... N ) = { k e. ZZ | ( M <_ k /\\ k <_ N ) } ) $.\n$d M k $.\n$d N k $."
+}

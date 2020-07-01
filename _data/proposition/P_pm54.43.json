@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm54.43 on Metamath](http://us.metamath.org/mpegif/pm54.43.html)"
+  } ],
+  "names" : [ "pm54.43" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_cen", "#T_c1o", "#T_wa", "#T_cB", "#T_cen", "#T_c1o", "#T_wi", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_c0", "#T_wb", "#T_cA", "#T_cun", "#T_cB", "#T_cen", "#T_c2o" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Theorem *54.43 of [WhiteheadRussell] p. 360.  \"From this proposition it will follow, when arithmetical addition has been defined, that 1+1=2.\" See ~ http://en.wikipedia.org/wiki/Principia_Mathematica#Quotations . This theorem states that two sets of cardinality 1 are disjoint iff their union has cardinality 2. Whitehead and Russell define 1 as the collection of all sets with cardinality 1 (i.e. all singletons; see ~ card1 ), so that their ` A e. 1 ` means, in our notation, ` A e. { x | ( card `` x ) = 1o } ` which is the same as ` A ~~ 1o ` by ~ pm54.43lem .  We do not have several of their earlier lemmas available (which would otherwise be unused by our different approach to arithmetic), so our proof is longer.  (It is also longer because we must show every detail.) Theorem ~ pm110.643 shows the derivation of 1+1=2 for cardinal numbers from this theorem.  (Contributed by NM, 4-Apr-2007.) ",
+  "statement" : "pm54.43 $p |- ( ( A ~~ 1o /\\ B ~~ 1o ) -> ( ( A i^i B ) = (/) <-> ( A u. B ) ~~ 2o ) ) $."
+}

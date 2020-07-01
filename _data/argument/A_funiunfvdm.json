@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funiunfvdm on Metamath](http://us.metamath.org/mpegif/funiunfvdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fniunfv | |- ( F Fn A -> U_ x e. A ( F ` x ) = U. ran F ) |\n| 2 |  | #P_imadmrn | |- ( F \" dom F ) = ran F |\n| 3 |  | #P_fndm | |- ( F Fn A -> dom F = A ) |\n| 4 | 3 | #P_imaeq2d | |- ( F Fn A -> ( F \" dom F ) = ( F \" A ) ) |\n| 5 | 2, 4 | #P_syl5eqr | |- ( F Fn A -> ran F = ( F \" A ) ) |\n| 6 | 5 | #P_unieqd | |- ( F Fn A -> U. ran F = U. ( F \" A ) ) |\n| 7 | 1, 6 | #P_eqtrd | |- ( F Fn A -> U_ x e. A ( F ` x ) = U. ( F \" A ) ) |",
+  "conclusion" : "#P_funiunfvdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cuni", "#T_crn", "#T_cF", "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wceq", "#T_crn", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_cima", "#T_cdm", "#T_cF", "#T_wceq", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_crn", "#T_cF", "#T_wceq", "#T_cuni", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA", "#T_wi", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cuni", "#T_cF", "#T_cima", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imadmrn", "#P_fniunfv", "#P_eqtrd", "#P_unieqd", "#P_imaeq2d", "#P_syl5eqr", "#P_fndm" ]
+}

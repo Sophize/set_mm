@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cshword on Metamath](http://us.metamath.org/mpegif/cshword.html)"
+  } ],
+  "names" : [ "cshword" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cW", "#T_ccsh", "#T_cN", "#T_wceq", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cN", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3", "#T_cconcat", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cN", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform a cyclical shift for a word.  (Contributed by Alexander van der Vekens, 20-May-2018.)  (Revised by AV, 17-Nov-2018.) ",
+  "statement" : "cshword $p |- ( ( W e. Word V /\\ N e. ZZ ) -> ( W cyclShift N ) = ( ( W substr <. ( N mod ( # ` W ) ) , ( # ` W ) >. ) concat ( W substr <. 0 , ( N mod ( # ` W ) ) >. ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtsq2d on Metamath](http://us.metamath.org/mpegif/sqrtsq2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqrcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | resqrcld.2 | |- ( ph -> 0 <_ A ) |\n| 3 |  | sqr11d.3 | |- ( ph -> B e. RR ) |\n| 4 |  | sqr11d.4 | |- ( ph -> 0 <_ B ) |\n| 5 |  | #P_sqrtsq2 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ ( B e. RR /\\ 0 <_ B ) ) -> ( ( sqrt ` A ) = B <-> A = ( B ^ 2 ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_syl22anc | |- ( ph -> ( ( sqrt ` A ) = B <-> A = ( B ^ 2 ) ) ) |",
+  "conclusion" : "#P_sqrtsq2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl22anc", "#P_sqrtsq2" ]
+}

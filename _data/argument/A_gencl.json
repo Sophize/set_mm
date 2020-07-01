@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gencl on Metamath](http://us.metamath.org/mpegif/gencl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gencl.1 | |- ( th <-> E. x ( ch /\\ A = B ) ) |\n| 2 |  | gencl.2 | |- ( A = B -> ( ph <-> ps ) ) |\n| 3 |  | gencl.3 | |- ( ch -> ph ) |\n| 4 | 3, 2 | #P_syl5ib | |- ( A = B -> ( ch -> ps ) ) |\n| 5 | 4 | #P_impcom | |- ( ( ch /\\ A = B ) -> ps ) |\n| 6 | 5 | #P_exlimiv | |- ( E. x ( ch /\\ A = B ) -> ps ) |\n| 7 | 1, 6 | #P_sylbi | |- ( th -> ps ) |",
+  "conclusion" : "#P_gencl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wth", "#T_wb", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_cA", "#T_wceq", "#T_cB", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wch", "#T_wi", "#T_wph", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wth", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exlimiv", "#P_syl5ib", "#P_impcom", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See retopbas on Metamath](http://us.metamath.org/mpegif/retopbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ioof | |- (,) : ( RR* X. RR* ) --> ~P RR |\n| 2 | 1 | #P_fdmi | |- dom (,) = ( RR* X. RR* ) |\n| 3 | 2 | #P_imaeq2i | |- ( (,) \" dom (,) ) = ( (,) \" ( RR* X. RR* ) ) |\n| 4 |  | #P_imadmrn | |- ( (,) \" dom (,) ) = ran (,) |\n| 5 | 3, 4 | #P_eqtr3i | |- ( (,) \" ( RR* X. RR* ) ) = ran (,) |\n| 6 |  | #P_ssid | |- RR* C_ RR* |\n| 7 | 6 | #P_qtopbaslem | |- ( (,) \" ( RR* X. RR* ) ) e. TopBases |\n| 8 | 5, 7 | #P_eqeltrri | |- ran (,) e. TopBases |",
+  "conclusion" : "#P_retopbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cioo", "#T_wf--1", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cr", "#T_cdm", "#T_cioo", "#T_wceq", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cioo", "#T_cima", "#T_cdm", "#T_cioo", "#T_wceq", "#T_cioo", "#T_cima", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cioo", "#T_cima", "#T_cdm", "#T_cioo", "#T_wceq", "#T_crn", "#T_cioo", "#T_cioo", "#T_cima", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wceq", "#T_crn", "#T_cioo", "#T_cxr", "#T_wss", "#T_cxr", "#T_cioo", "#T_cima", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wcel", "#T_ctb", "#T_crn", "#T_cioo", "#T_wcel", "#T_ctb" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imadmrn", "#P_eqtr3i", "#P_ssid", "#P_fdmi", "#P_ioof", "#P_qtopbaslem", "#P_imaeq2i", "#P_eqeltrri" ]
+}

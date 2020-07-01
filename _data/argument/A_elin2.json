@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elin2 on Metamath](http://us.metamath.org/mpegif/elin2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elin2.x | |- X = ( B i^i C ) |\n| 2 | 1 | #P_eleq2i | |- ( A e. X <-> A e. ( B i^i C ) ) |\n| 3 |  | #P_elin | |- ( A e. ( B i^i C ) <-> ( A e. B /\\ A e. C ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( A e. X <-> ( A e. B /\\ A e. C ) ) |",
+  "conclusion" : "#P_elin2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cB", "#T_cin", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA", "#T_wcel", "#T_cX", "#T_wb", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_cA", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elin", "#P_eleq2i", "#P_bitri" ]
+}

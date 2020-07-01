@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kqf on Metamath](http://us.metamath.org/mpegif/kqf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ovex | |- ( j qTop ( x e. U. j |-> { y e. j | x e. y } ) ) e. _V |\n| 2 |  | #P_df-kq | |- KQ = ( j e. Top |-> ( j qTop ( x e. U. j |-> { y e. j | x e. y } ) ) ) |\n| 3 | 1, 2 | #P_fnmpti | |- KQ Fn Top |\n| 4 |  | #P_kqt0 | |- ( x e. Top <-> ( KQ ` x ) e. Kol2 ) |\n| 5 | 4 | #P_biimpi | |- ( x e. Top -> ( KQ ` x ) e. Kol2 ) |\n| 6 | 5 | #P_rgen | |- A. x e. Top ( KQ ` x ) e. Kol2 |\n| 7 |  | #P_ffnfv | |- ( KQ : Top --> Kol2 <-> ( KQ Fn Top /\\ A. x e. Top ( KQ ` x ) e. Kol2 ) ) |\n| 8 | 3, 6, 7 | #P_mpbir2an | |- KQ : Top --> Kol2 |",
+  "conclusion" : "#P_kqf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vx", "#T_vy", "#T_vj", "#T_cqtop", "#T_vx.wal", "#T_cmpt--1", "#T_cuni", "#T_vj", "#T_cmpt--2", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_vj", "#T_crab--3", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_ckq", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_ctop", "#T_cmpt--2", "#T_vj", "#T_cqtop", "#T_vx.wal", "#T_cmpt--1", "#T_cuni", "#T_vj", "#T_cmpt--2", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_vj", "#T_crab--3", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_ckq", "#T_wfn", "#T_ctop", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wb", "#T_ckq", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ct0", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wi", "#T_ckq", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ct0", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_ctop", "#T_ckq", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ct0", "#T_ckq", "#T_wf--1", "#T_ctop", "#T_wf--2", "#T_ct0", "#T_wb", "#T_ckq", "#T_wfn", "#T_ctop", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_ctop", "#T_ckq", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ct0", "#T_ckq", "#T_wf--1", "#T_ctop", "#T_wf--2", "#T_ct0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_df-kq", "#P_mpbir2an", "#P_ffnfv", "#P_fnmpti", "#P_biimpi", "#P_rgen", "#P_kqt0" ]
+}

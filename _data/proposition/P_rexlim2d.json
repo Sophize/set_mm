@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexlim2d on Metamath](http://us.metamath.org/mpegif/rexlim2d.html)"
+  } ],
+  "names" : [ "rexlim2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_wps", "#T_wi", "#T_wch", "#T_cA", "#T_vy", "#T_wch", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Inference removing two restricted quantifiers.  Same as ~ rexlimdvv , but with bound-variable hypotheses instead of distinct variable restrictions.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "rexlim2d.x $e |- F/ x ph $.\nrexlim2d.y $e |- F/ y ph $.\nrexlim2d.3 $e |- ( ph -> ( ( x e. A /\\ y e. B ) -> ( ps -> ch ) ) ) $.\nrexlim2d $p |- ( ph -> ( E. x e. A E. y e. B ps -> ch ) ) $.\n$d A y $.\n$d ch x y $."
+}

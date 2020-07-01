@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divsqrtsumo1 on Metamath](http://us.metamath.org/mpegif/divsqrtsumo1.html)"
+  } ],
+  "names" : [ "divsqrtsumo1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_c1", "#T_cdiv", "#T_csqrt", "#T_cfv", "#T_vn", "#T_cmin", "#T_c2", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_vx", "#T_wph", "#T_wi", "#T_cF", "#T_crli", "#T_cL", "#T_wph", "#T_wi", "#T_vy", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vy", "#T_cmin", "#T_cL", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_vy", "#T_wcel", "#T_co1", "#T_cF", "#T_vy", "#T_cL", "#T_vy", "#T_vn", "#T_wph", "#T_vy", "#T_vn", "#T_vx", "#T_vn", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The sum ` sum_ n <_ x ( 1 / sqrt n ) ` has the asymptotic expansion ` 2 sqrt x + L + O ( 1 / sqrt x ) ` , for some ` L ` .  (Contributed by Mario Carneiro, 10-May-2016.) ",
+  "statement" : "divsqrtsum.2 $e |- F = ( x e. RR+ |-> ( sum_ n e. ( 1 ... ( |_ ` x ) ) ( 1 / ( sqrt ` n ) ) - ( 2 x. ( sqrt ` x ) ) ) ) $.\ndivsqrsum2.1 $e |- ( ph -> F ~~>r L ) $.\ndivsqrtsumo1 $p |- ( ph -> ( y e. RR+ |-> ( ( ( F ` y ) - L ) x. ( sqrt ` y ) ) ) e. O(1) ) $.\n$d F y $.\n$d L y $.\n$d n ph y $.\n$d n x $.\n$d n x $.\n$d x y $."
+}

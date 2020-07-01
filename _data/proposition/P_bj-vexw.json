@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-vexw on Metamath](http://us.metamath.org/mpegif/bj-vexw.html)"
+  } ],
+  "names" : [ "bj-vexw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_vy", "#T_wcel", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` ph ` is a theorem, then any set belongs to the class ` { x | ph } ` .  Therefore, ` { x | ph } ` is \"a\" universal class. This is the closest one can get to defining a universal class, or proving ~ vex , without using ~ ax-ext .  Note that this theorem has no dv condition and does not use ~ df-clel nor ~ df-cleq either: only first-order logic and ~ df-clab . Without ~ ax-ext , one cannot define \"the\" universal class, since one could not prove for instance the justification theorem ` { x | T. } = { y | T. } ` .  Indeed, in order to prove any equality of classes, one needs ~ df-cleq , which has ~ ax-ext as a hypothesis. Therefore, the classes ` { x | T. } ` , ` { y | ( ph -> ph ) } ` , ` { z | ( A. t t = t -> A. t t = t ) } ` and countless others are all universal classes whose equality one cannot prove without ~ ax-ext . See also ~ bj-issetw . A version with a dv condition between ` x ` and ` y ` and not requiring ~ ax-13 is proved as ~ bj-vexwv , while the degenerate instance is a simple consequence of ~ abid .  (Contributed by BJ, 13-Jun-2019.) (Proof modification is discouraged.)  Use ~ bj-vexwv instead when sufficient.  (New usage is discouraged.) ",
+  "statement" : "bj-vexw.1 $e |- ph $.\nbj-vexw $p |- y e. { x | ph } $."
+}

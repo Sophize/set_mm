@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfcsb on Metamath](http://us.metamath.org/mpegif/nfcsb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfcsb.1 | |- F/_ x A |\n| 2 |  | nfcsb.2 | |- F/_ x B |\n| 3 |  | #P_nftru | |- F/ y T. |\n| 4 | 1 | #P_a1i | |- ( T. -> F/_ x A ) |\n| 5 | 2 | #P_a1i | |- ( T. -> F/_ x B ) |\n| 6 | 3, 4, 5 | #P_nfcsbd | |- ( T. -> F/_ x [_ A / y ]_ B ) |\n| 7 | 6 | #P_trud | |- F/_ x [_ A / y ]_ B |",
+  "conclusion" : "#P_nfcsb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wnf", "#T_vy.tru", "#T_wtru", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vy.tru", "#T_csb--3", "#T_cB.wceq", "#T_wnfc", "#T_vx", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vy", "#T_csb--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_nfcsbd", "#P_a1i", "#P_nftru" ]
+}

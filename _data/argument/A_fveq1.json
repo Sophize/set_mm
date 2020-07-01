@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fveq1 on Metamath](http://us.metamath.org/mpegif/fveq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq | |- ( F = G -> ( A F x <-> A G x ) ) |\n| 2 | 1 | #P_iotabidv | |- ( F = G -> ( iota x A F x ) = ( iota x A G x ) ) |\n| 3 |  | #P_df-fv | |- ( F ` A ) = ( iota x A F x ) |\n| 4 |  | #P_df-fv | |- ( G ` A ) = ( iota x A G x ) |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( F = G -> ( F ` A ) = ( G ` A ) ) |",
+  "conclusion" : "#P_fveq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_cG", "#T_vx.wal", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cG", "#T_vx.wal", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cG", "#T_vx.wal", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cG", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-fv", "#P_breq", "#P_3eqtr4g", "#P_iotabidv" ]
+}

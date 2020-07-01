@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlimcnp3 on Metamath](http://us.metamath.org/mpegif/rlimcnp3.html)"
+  } ],
+  "names" : [ "rlimcnp3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_crp", "#T_wi", "#T_cS", "#T_wcel", "#T_cc", "#T_vy", "#T_wceq", "#T_c1", "#T_cdiv", "#T_vx", "#T_wi", "#T_cS", "#T_wceq", "#T_cR", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wceq", "#T_cJ", "#T_crest", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wph", "#T_wi", "#T_vy", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_cS", "#T_crli", "#T_cC", "#T_wb", "#T_vx", "#T_cmpt--1", "#T_cc0", "#T_cico", "#T_cpnf", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cR", "#T_wcel", "#T_cK", "#T_ccnp", "#T_cJ", "#T_cfv", "#T_cc0", "#T_cC", "#T_vx", "#T_vy", "#T_cR", "#T_vy", "#T_cS", "#T_vx", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Relate a limit of a real-valued sequence at infinity to the continuity of the function ` S ( y ) = R ( 1 / y ) ` at zero.  (Contributed by Mario Carneiro, 1-Mar-2015.) ",
+  "statement" : "rlimcnp3.c $e |- ( ph -> C e. CC ) $.\nrlimcnp3.r $e |- ( ( ph /\\ y e. RR+ ) -> S e. CC ) $.\nrlimcnp3.s $e |- ( y = ( 1 / x ) -> S = R ) $.\nrlimcnp3.j $e |- J = ( TopOpen ` CCfld ) $.\nrlimcnp3.k $e |- K = ( J |`t ( 0 [,) +oo ) ) $.\nrlimcnp3 $p |- ( ph -> ( ( y e. RR+ |-> S ) ~~>r C <-> ( x e. ( 0 [,) +oo ) |-> if ( x = 0 , C , R ) ) e. ( ( K CnP J ) ` 0 ) ) ) $.\n$d C x y $.\n$d R y $.\n$d S x $.\n$d ph x y $."
+}

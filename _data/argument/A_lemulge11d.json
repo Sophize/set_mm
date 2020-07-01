@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lemulge11d on Metamath](http://us.metamath.org/mpegif/lemulge11d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltp1d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | divgt0d.2 | |- ( ph -> B e. RR ) |\n| 3 |  | lemulge11d.3 | |- ( ph -> 0 <_ A ) |\n| 4 |  | lemulge11d.4 | |- ( ph -> 1 <_ B ) |\n| 5 |  | #P_lemulge11 | |- ( ( ( A e. RR /\\ B e. RR ) /\\ ( 0 <_ A /\\ 1 <_ B ) ) -> A <_ ( A x. B ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_syl22anc | |- ( ph -> A <_ ( A x. B ) ) |",
+  "conclusion" : "#P_lemulge11d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_c1", "#T_cle", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_c1", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cA", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl22anc", "#P_lemulge11" ]
+}

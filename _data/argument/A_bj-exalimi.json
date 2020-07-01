@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-exalimi on Metamath](http://us.metamath.org/mpegif/bj-exalimi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-exalimi.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | bj-exalimi.2 | |- ( E. x ph -> ( -. ch -> A. x -. ch ) ) |\n| 3 | 1 | #P_bj-exaleximi | |- ( E. x ph -> ( A. x ps -> E. x ch ) ) |\n| 4 |  | #P_eximal | |- ( ( E. x ch -> ch ) <-> ( -. ch -> A. x -. ch ) ) |\n| 5 | 2, 4 | #P_sylibr | |- ( E. x ph -> ( E. x ch -> ch ) ) |\n| 6 | 3, 5 | #P_syld | |- ( E. x ph -> ( A. x ps -> ch ) ) |",
+  "conclusion" : "#P_bj-exalimi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wch", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wch", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wch", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-exaleximi", "#P_sylibr", "#P_eximal", "#P_syld" ]
+}

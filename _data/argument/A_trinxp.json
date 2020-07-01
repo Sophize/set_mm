@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trinxp on Metamath](http://us.metamath.org/mpegif/trinxp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpidtr | |- ( ( A X. A ) o. ( A X. A ) ) C_ ( A X. A ) |\n| 2 |  | #P_trin2 | |- ( ( ( R o. R ) C_ R /\\ ( ( A X. A ) o. ( A X. A ) ) C_ ( A X. A ) ) -> ( ( R i^i ( A X. A ) ) o. ( R i^i ( A X. A ) ) ) C_ ( R i^i ( A X. A ) ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( ( R o. R ) C_ R -> ( ( R i^i ( A X. A ) ) o. ( R i^i ( A X. A ) ) ) C_ ( R i^i ( A X. A ) ) ) |",
+  "conclusion" : "#P_trinxp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cR", "#T_ccom", "#T_cR", "#T_wss", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccom", "#T_cR", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wss", "#T_cR", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cR", "#T_ccom", "#T_cR", "#T_wss", "#T_cR", "#T_wi", "#T_cR", "#T_cin", "#T_cA", "#T_cxp", "#T_cA", "#T_ccom", "#T_cR", "#T_cin", "#T_cA", "#T_cxp", "#T_cA", "#T_wss", "#T_cR", "#T_cin", "#T_cA", "#T_cxp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xpidtr", "#P_mpan2", "#P_trin2" ]
+}

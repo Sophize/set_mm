@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aspssid on Metamath](http://us.metamath.org/mpegif/aspssid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nt\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | aspval.a | |- A = ( AlgSpan ` W ) |\n| 2 |  | aspval.v | |- V = ( Base ` W ) |\n| 3 |  | #P_ssintub | |- S C_ |^| { t e. ( ( SubRing ` W ) i^i ( LSubSp ` W ) ) | S C_ t } |\n| 4 |  | #P_eqid | |- ( LSubSp ` W ) = ( LSubSp ` W ) |\n| 5 | 1, 2, 4 | #P_aspval | |- ( ( W e. AssAlg /\\ S C_ V ) -> ( A ` S ) = |^| { t e. ( ( SubRing ` W ) i^i ( LSubSp ` W ) ) | S C_ t } ) |\n| 6 | 3, 5 | #P_syl5sseqr | |- ( ( W e. AssAlg /\\ S C_ V ) -> S C_ ( A ` S ) ) |",
+  "conclusion" : "#P_aspssid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vt", "#T_cA", "#T_wceq", "#T_casp", "#T_cfv", "#T_cW", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wss", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_csubrg", "#T_cfv", "#T_cW", "#T_cin", "#T_clss", "#T_cfv", "#T_cW", "#T_crab--3", "#T_cS", "#T_wss", "#T_vt", "#T_crab--4", "#T_clss", "#T_cfv", "#T_cW", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_casa", "#T_wa", "#T_cS", "#T_wss", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_cfv", "#T_cS", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_csubrg", "#T_cfv", "#T_cW", "#T_cin", "#T_clss", "#T_cfv", "#T_cW", "#T_crab--3", "#T_cS", "#T_wss", "#T_vt", "#T_crab--4", "#T_cW", "#T_wcel", "#T_casa", "#T_wa", "#T_cS", "#T_wss", "#T_cV", "#T_wi", "#T_cS", "#T_wss", "#T_cA", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ssintub", "#P_aspval", "#P_syl5sseqr" ]
+}

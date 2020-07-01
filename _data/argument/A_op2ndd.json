@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See op2ndd on Metamath](http://us.metamath.org/mpegif/op2ndd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | op1st.1 | |- A e. _V |\n| 2 |  | op1st.2 | |- B e. _V |\n| 3 |  | #P_fveq2 | |- ( C = <. A , B >. -> ( 2nd ` C ) = ( 2nd ` <. A , B >. ) ) |\n| 4 | 1, 2 | #P_op2nd | |- ( 2nd ` <. A , B >. ) = B |\n| 5 | 3, 4 | #P_syl6eq | |- ( C = <. A , B >. -> ( 2nd ` C ) = B ) |",
+  "conclusion" : "#P_op2ndd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cC", "#T_wceq", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cC", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cB.wceq", "#T_cC", "#T_wceq", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cC", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_op2nd", "#P_fveq2", "#P_syl6eq" ]
+}

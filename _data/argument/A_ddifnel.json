@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ddifnel on Metamath](http://us.metamath.org/mpegif/ddifnel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ddifnel.1 | |- ( -. x e. ( _V \\ A ) -> x e. A ) |\n| 2 | 1 | #P_adantl | |- ( ( x e. _V /\\ -. x e. ( _V \\ A ) ) -> x e. A ) |\n| 3 |  | #P_elndif | |- ( x e. A -> -. x e. ( _V \\ A ) ) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 | 3, 4 | #P_jctil | |- ( x e. A -> ( x e. _V /\\ -. x e. ( _V \\ A ) ) ) |\n| 6 | 2, 5 | #P_impbii | |- ( ( x e. _V /\\ -. x e. ( _V \\ A ) ) <-> x e. A ) |\n| 7 | 6 | #P_difeqri | |- ( _V \\ ( _V \\ A ) ) = A |",
+  "conclusion" : "#P_ddifnel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_vx", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jctil", "#P_impbii", "#P_adantl", "#P_elndif", "#P_difeqri", "#P_vex" ]
+}

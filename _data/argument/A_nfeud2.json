@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfeud2 on Metamath](http://us.metamath.org/mpegif/nfeud2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfeud2.1 | |- F/ y ph |\n| 2 |  | nfeud2.2 | |- ( ( ph /\\ -. A. x x = y ) -> F/ x ps ) |\n| 3 |  | #P_df-eu | |- ( E! y ps <-> E. z A. y ( ps <-> y = z ) ) |\n| 4 |  | #P_nfv | |- F/ z ph |\n| 5 |  | #P_nfeqf1 | |- ( -. A. x x = y -> F/ x y = z ) |\n| 6 | 5 | #P_adantl | |- ( ( ph /\\ -. A. x x = y ) -> F/ x y = z ) |\n| 7 | 2, 6 | #P_nfbid | |- ( ( ph /\\ -. A. x x = y ) -> F/ x ( ps <-> y = z ) ) |\n| 8 | 1, 7 | #P_nfald2 | |- ( ph -> F/ x A. y ( ps <-> y = z ) ) |\n| 9 | 4, 8 | #P_nfexd | |- ( ph -> F/ x E. z A. y ( ps <-> y = z ) ) |\n| 10 | 3, 9 | #P_nfxfrd | |- ( ph -> F/ x E! y ps ) |",
+  "conclusion" : "#P_nfeud2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wa", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wnf", "#T_vx", "#T_wps", "#T_weu", "#T_vy.tru", "#T_wps", "#T_wb", "#T_wex", "#T_vz", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wnf", "#T_vz", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wa", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wa", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vz", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_weu", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-eu", "#P_nfv", "#P_nfexd", "#P_adantl", "#P_nfbid", "#P_nfxfrd", "#P_nfeqf1", "#P_nfald2" ]
+}

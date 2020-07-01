@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mriss on Metamath](http://us.metamath.org/mpegif/mriss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mriss.1 | |- I = ( mrInd ` A ) |\n| 2 |  | #P_eqid | |- ( mrCls ` A ) = ( mrCls ` A ) |\n| 3 | 2, 1 | #P_ismri | |- ( A e. ( Moore ` X ) -> ( S e. I <-> ( S C_ X /\\ A. x e. S -. x e. ( ( mrCls ` A ) ` ( S \\ { x } ) ) ) ) ) |\n| 4 | 3 | #P_simprbda | |- ( ( A e. ( Moore ` X ) /\\ S e. I ) -> S C_ X ) |",
+  "conclusion" : "#P_mriss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_cmrc", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wb", "#T_cS", "#T_wss", "#T_cX", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cmrc", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_cS", "#T_cdif", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wa", "#T_cS", "#T_wcel", "#T_cI", "#T_wi", "#T_cS", "#T_wss", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simprbda", "#P_ismri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isumclim on Metamath](http://us.metamath.org/mpegif/isumclim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isumclim.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | isumclim.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | isumclim.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) |\n| 4 |  | isumclim.4 | |- ( ( ph /\\ k e. Z ) -> A e. CC ) |\n| 5 |  | isumclim.6 | |- ( ph -> seq M ( + , F ) ~~> B ) |\n| 6 | 1, 2, 3, 4 | #P_isum | |- ( ph -> sum_ k e. Z A = ( ~~> ` seq M ( + , F ) ) ) |\n| 7 |  | #P_fclim | |- ~~> : dom ~~> --> CC |\n| 8 |  | #P_ffun | |- ( ~~> : dom ~~> --> CC -> Fun ~~> ) |\n| 9 | 7, 8 | #P_ax-mp | |- Fun ~~> |\n| 10 |  | #P_funbrfv | |- ( Fun ~~> -> ( seq M ( + , F ) ~~> B -> ( ~~> ` seq M ( + , F ) ) = B ) ) |\n| 11 | 9, 5, 10 | #P_mpsyl | |- ( ph -> ( ~~> ` seq M ( + , F ) ) = B ) |\n| 12 | 6, 11 | #P_eqtrd | |- ( ph -> sum_ k e. Z A = B ) |",
+  "conclusion" : "#P_isumclim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cB", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA.wceq", "#T_wceq", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_wf--1", "#T_cdm", "#T_cli", "#T_wf--2", "#T_cc", "#T_cli", "#T_wf--1", "#T_cdm", "#T_cli", "#T_wf--2", "#T_cc", "#T_wi", "#T_wfun", "#T_cli", "#T_wfun", "#T_cli", "#T_wfun", "#T_cli", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cB.wceq", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ffun", "#P_eqtrd", "#P_fclim", "#P_funbrfv", "#P_isum", "#P_mpsyl" ]
+}

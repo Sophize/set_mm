@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See restuni on Metamath](http://us.metamath.org/mpegif/restuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | restuni.1 | |- X = U. J |\n| 2 | 1 | #P_toptopon | |- ( J e. Top <-> J e. ( TopOn ` X ) ) |\n| 3 |  | #P_resttopon | |- ( ( J e. ( TopOn ` X ) /\\ A C_ X ) -> ( J |`t A ) e. ( TopOn ` A ) ) |\n| 4 | 2, 3 | #P_sylanb | |- ( ( J e. Top /\\ A C_ X ) -> ( J |`t A ) e. ( TopOn ` A ) ) |\n| 5 |  | #P_toponuni | |- ( ( J |`t A ) e. ( TopOn ` A ) -> A = U. ( J |`t A ) ) |\n| 6 | 4, 5 | #P_syl | |- ( ( J e. Top /\\ A C_ X ) -> A = U. ( J |`t A ) ) |",
+  "conclusion" : "#P_restuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cX", "#T_wi", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cX", "#T_wi", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA", "#T_wss", "#T_cX", "#T_wi", "#T_cA", "#T_wceq", "#T_cuni", "#T_cJ", "#T_crest", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylanb", "#P_resttopon", "#P_toponuni", "#P_syl", "#P_toptopon" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mdet on Metamath](http://us.metamath.org/mpegif/df-mdet.html)"
+  } ],
+  "names" : [ "df-mdet" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmdat", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vm", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_vn", "#T_cmat", "#T_vr", "#T_cmpt--2", "#T_vr", "#T_cgsu", "#T_vp", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_vn", "#T_cmpt--2", "#T_czrh", "#T_cfv", "#T_vr", "#T_ccom", "#T_cpsgn", "#T_cfv", "#T_vn", "#T_cfv", "#T_vp", "#T_cmulr", "#T_cfv", "#T_vr", "#T_cmgp", "#T_cfv", "#T_vr", "#T_cgsu", "#T_vx", "#T_cmpt--1", "#T_vn", "#T_cmpt--2", "#T_vp", "#T_cfv", "#T_vx", "#T_vm", "#T_vx", "#T_vm", "#T_vn", "#T_vp", "#T_vr", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Determinant of a square matrix.  This definition is based on Leibniz' Formula (see ~ mdetleib ).  The properties of the axiomatic definition of a determinant according to [Weierstrass] p. 272 are derived from this definition as theorems:  \"The determinant function is the unique multilinear, alternating and normalized function from the algebra of square matrices of the same dimension over a commutative ring to this ring\".  The functionality is shown by ~ mdetf .  Multilineary means \"linear for each row\" - the additivity is shown by ~ mdetrlin , the homogeneity by ~ mdetrsca .  Furthermore, it is shown that the determinant function is alternating (see ~ mdetralt ) and normalized (see ~ mdet1 ).  Finally, the uniqueness is shown by ~ mdetuni .  As a consequence, the \"determinant of a square matrix\" is the function value of the determinant function for this square matrix, see ~ mdetleib . (Contributed by Stefan O'Rear, 9-Sep-2015.)  (Revised by SO, 10-Jul-2018.) ",
+  "statement" : "df-mdet $p |- maDet = ( n e. _V , r e. _V |-> ( m e. ( Base ` ( n Mat r ) ) |-> ( r gsum ( p e. ( Base ` ( SymGrp ` n ) ) |-> ( ( ( ( ZRHom ` r ) o. ( pmSgn ` n ) ) ` p ) ( .r ` r ) ( ( mulGrp ` r ) gsum ( x e. n |-> ( ( p ` x ) m x ) ) ) ) ) ) ) ) $.\n$d m n p r x $."
+}

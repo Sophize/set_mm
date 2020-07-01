@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cpmat on Metamath](http://us.metamath.org/mpegif/cpmat.html)"
+  } ],
+  "names" : [ "cpmat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cS", "#T_wceq", "#T_crab--1", "#T_vm", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cn", "#T_cco1", "#T_cfv", "#T_vi", "#T_vm", "#T_vj", "#T_cfv", "#T_vk", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_crab--4", "#T_cB", "#T_vm", "#T_cN", "#T_vi", "#T_vj", "#T_vk", "#T_vm", "#T_cR", "#T_vi", "#T_vj", "#T_vk", "#T_vm" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the constructor of the set of all constant polynomial matrices, i.e. the set of all ` N ` x ` N ` matrices of polynomials over a ring ` R ` .  (Contributed by AV, 15-Nov-2019.) ",
+  "statement" : "cpmat.s $e |- S = ( N ConstPolyMat R ) $.\ncpmat.p $e |- P = ( Poly1 ` R ) $.\ncpmat.c $e |- C = ( N Mat P ) $.\ncpmat.b $e |- B = ( Base ` C ) $.\ncpmat $p |- ( ( N e. Fin /\\ R e. V ) -> S = { m e. B | A. i e. N A. j e. N A. k e. NN ( ( coe1 ` ( i m j ) ) ` k ) = ( 0g ` R ) } ) $.\n$d B m $.\n$d N i j k m $.\n$d R i j k m $."
+}

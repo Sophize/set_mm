@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgtopn on Metamath](http://us.metamath.org/mpegif/symgtopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgga.g | |- G = ( SymGrp ` X ) |\n| 2 |  | symgga.b | |- B = ( Base ` G ) |\n| 3 | 1 | #P_symgtset | |- ( X e. V -> ( Xt_ ` ( X X. { ~P X } ) ) = ( TopSet ` G ) ) |\n| 4 | 3 | #P_oveq1d | |- ( X e. V -> ( ( Xt_ ` ( X X. { ~P X } ) ) |`t B ) = ( ( TopSet ` G ) |`t B ) ) |\n| 5 |  | #P_eqid | |- ( TopSet ` G ) = ( TopSet ` G ) |\n| 6 | 2, 5 | #P_topnval | |- ( ( TopSet ` G ) |`t B ) = ( TopOpen ` G ) |\n| 7 | 4, 6 | #P_syl6eq | |- ( X e. V -> ( ( Xt_ ` ( X X. { ~P X } ) ) |`t B ) = ( TopOpen ` G ) ) |",
+  "conclusion" : "#P_symgtopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cX", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cpt", "#T_cfv", "#T_cX", "#T_cxp", "#T_csn--1", "#T_cpw", "#T_cX", "#T_csn--2", "#T_wceq", "#T_cts", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cpt", "#T_cfv", "#T_cX", "#T_cxp", "#T_csn--1", "#T_cpw", "#T_cX", "#T_csn--2", "#T_crest", "#T_cB.wceq", "#T_wceq", "#T_cts", "#T_cfv", "#T_cG", "#T_crest", "#T_cB.wceq", "#T_cts", "#T_cfv", "#T_cG", "#T_wceq", "#T_cts", "#T_cfv", "#T_cG", "#T_cts", "#T_cfv", "#T_cG", "#T_crest", "#T_cB.wceq", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cpt", "#T_cfv", "#T_cX", "#T_cxp", "#T_csn--1", "#T_cpw", "#T_cX", "#T_csn--2", "#T_crest", "#T_cB", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_topnval", "#P_symgtset", "#P_oveq1d", "#P_syl6eq" ]
+}

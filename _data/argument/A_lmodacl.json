@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodacl on Metamath](http://us.metamath.org/mpegif/lmodacl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmodacl.f | |- F = ( Scalar ` W ) |\n| 2 |  | lmodacl.k | |- K = ( Base ` F ) |\n| 3 |  | lmodacl.p | |- .+ = ( +g ` F ) |\n| 4 | 1 | #P_lmodfgrp | |- ( W e. LMod -> F e. Grp ) |\n| 5 | 2, 3 | #P_grpcl | |- ( ( F e. Grp /\\ X e. K /\\ Y e. K ) -> ( X .+ Y ) e. K ) |\n| 6 | 4, 5 | #P_syl3an1 | |- ( ( W e. LMod /\\ X e. K /\\ Y e. K ) -> ( X .+ Y ) e. K ) |",
+  "conclusion" : "#P_lmodacl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cF", "#T_wcel", "#T_cgrp", "#T_cF", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cK", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cK", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cK", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cK", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cK", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpcl", "#P_lmodfgrp", "#P_syl3an1" ]
+}

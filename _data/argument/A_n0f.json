@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See n0f on Metamath](http://us.metamath.org/mpegif/n0f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | n0f.1 | |- F/_ x A |\n| 2 |  | #P_nfcv | |- F/_ x (/) |\n| 3 | 1, 2 | #P_cleqf | |- ( A = (/) <-> A. x ( x e. A <-> x e. (/) ) ) |\n| 4 |  | #P_noel | |- -. x e. (/) |\n| 5 | 4 | #P_nbn | |- ( -. x e. A <-> ( x e. A <-> x e. (/) ) ) |\n| 6 | 5 | #P_albii | |- ( A. x -. x e. A <-> A. x ( x e. A <-> x e. (/) ) ) |\n| 7 | 3, 6 | #P_bitr4i | |- ( A = (/) <-> A. x -. x e. A ) |\n| 8 | 7 | #P_necon3abii | |- ( A =/= (/) <-> -. A. x -. x e. A ) |\n| 9 |  | #P_df-ex | |- ( E. x x e. A <-> -. A. x -. x e. A ) |\n| 10 | 8, 9 | #P_bitr4i | |- ( A =/= (/) <-> E. x x e. A ) |",
+  "conclusion" : "#P_n0f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx.wal", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cA", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_cleqf", "#P_albii", "#P_df-ex", "#P_nbn", "#P_noel", "#P_necon3abii", "#P_bitr4i" ]
+}

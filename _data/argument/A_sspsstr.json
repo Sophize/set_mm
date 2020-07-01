@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sspsstr on Metamath](http://us.metamath.org/mpegif/sspsstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sspss | |- ( A C_ B <-> ( A C. B \\/ A = B ) ) |\n| 2 |  | #P_psstr | |- ( ( A C. B /\\ B C. C ) -> A C. C ) |\n| 3 | 2 | #P_ex | |- ( A C. B -> ( B C. C -> A C. C ) ) |\n| 4 |  | #P_psseq1 | |- ( A = B -> ( A C. C <-> B C. C ) ) |\n| 5 | 4 | #P_biimprd | |- ( A = B -> ( B C. C -> A C. C ) ) |\n| 6 | 3, 5 | #P_jaoi | |- ( ( A C. B \\/ A = B ) -> ( B C. C -> A C. C ) ) |\n| 7 | 6 | #P_imp | |- ( ( ( A C. B \\/ A = B ) /\\ B C. C ) -> A C. C ) |\n| 8 | 1, 7 | #P_sylanb | |- ( ( A C_ B /\\ B C. C ) -> A C. C ) |",
+  "conclusion" : "#P_sspsstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cB", "#T_wpss", "#T_cC", "#T_wi", "#T_cA", "#T_wpss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_sylanb", "#P_psstr", "#P_psseq1", "#P_ex", "#P_imp", "#P_jaoi", "#P_sspss" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1st2ndbr on Metamath](http://us.metamath.org/mpegif/1st2ndbr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1st2nd | |- ( ( Rel B /\\ A e. B ) -> A = <. ( 1st ` A ) , ( 2nd ` A ) >. ) |\n| 2 |  | #P_simpr | |- ( ( Rel B /\\ A e. B ) -> A e. B ) |\n| 3 | 1, 2 | #P_eqeltrrd | |- ( ( Rel B /\\ A e. B ) -> <. ( 1st ` A ) , ( 2nd ` A ) >. e. B ) |\n| 4 |  | #P_df-br | |- ( ( 1st ` A ) B ( 2nd ` A ) <-> <. ( 1st ` A ) , ( 2nd ` A ) >. e. B ) |\n| 5 | 3, 4 | #P_sylibr | |- ( ( Rel B /\\ A e. B ) -> ( 1st ` A ) B ( 2nd ` A ) ) |",
+  "conclusion" : "#P_1st2ndbr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_wrel", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wrel", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_cB.wceq", "#T_c2nd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_wrel", "#T_cB", "#T_wa", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA", "#T_cB", "#T_c2nd", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_df-br", "#P_sylibr", "#P_1st2nd", "#P_simpr" ]
+}

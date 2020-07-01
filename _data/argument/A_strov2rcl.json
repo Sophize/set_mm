@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strov2rcl on Metamath](http://us.metamath.org/mpegif/strov2rcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strov2rcl.s | |- S = ( I F R ) |\n| 2 |  | strov2rcl.b | |- B = ( Base ` S ) |\n| 3 |  | strov2rcl.f | |- Rel dom F |\n| 4 | 3, 1, 2 | #P_elbasov | |- ( X e. B -> ( I e. _V /\\ R e. _V ) ) |\n| 5 | 4 | #P_simpld | |- ( X e. B -> I e. _V ) |",
+  "conclusion" : "#P_strov2rcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cI", "#T_cF", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wrel", "#T_cdm", "#T_cF", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cI", "#T_wcel", "#T_cvv", "#T_wa", "#T_cR", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cI", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elbasov", "#P_simpld" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See un23 on Metamath](http://us.metamath.org/mpegif/un23.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unass | |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) |\n| 2 |  | #P_un12 | |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) |\n| 3 |  | #P_uncom | |- ( B u. ( A u. C ) ) = ( ( A u. C ) u. B ) |\n| 4 | 1, 2, 3 | #P_3eqtri | |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) |",
+  "conclusion" : "#P_un23",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cun", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_cB.wceq", "#T_cun", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cA", "#T_cun", "#T_cB", "#T_cun", "#T_cC", "#T_wceq", "#T_cA", "#T_cun", "#T_cC", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_un12", "#P_unass", "#P_uncom", "#P_3eqtri" ]
+}

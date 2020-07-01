@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee211 on Metamath](http://us.metamath.org/mpegif/ee211.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee211.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | ee211.2 | |- ( ph -> th ) |\n| 3 |  | ee211.3 | |- ( ph -> ta ) |\n| 4 |  | ee211.4 | |- ( ch -> ( th -> ( ta -> et ) ) ) |\n| 5 | 2 | #P_a1d | |- ( ph -> ( ps -> th ) ) |\n| 6 | 3 | #P_a1d | |- ( ph -> ( ps -> ta ) ) |\n| 7 | 1, 5, 6, 4 | #P_ee222 | |- ( ph -> ( ps -> et ) ) |",
+  "conclusion" : "#P_ee211",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wta", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ee222", "#P_a1d" ]
+}

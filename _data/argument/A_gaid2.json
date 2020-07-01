@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gaid2 on Metamath](http://us.metamath.org/mpegif/gaid2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gaid2.1 | |- X = ( Base ` G ) |\n| 2 |  | gaid2.2 | |- .+ = ( +g ` G ) |\n| 3 |  | gaid2.3 | |- F = ( x e. X , y e. X |-> ( x .+ y ) ) |\n| 4 | 1 | #P_subgid | |- ( G e. Grp -> X e. ( SubGrp ` G ) ) |\n| 5 |  | #P_eqid | |- ( G |`s X ) = ( G |`s X ) |\n| 6 | 1, 2, 5, 3 | #P_subgga | |- ( X e. ( SubGrp ` G ) -> F e. ( ( G |`s X ) GrpAct X ) ) |\n| 7 | 4, 6 | #P_syl | |- ( G e. Grp -> F e. ( ( G |`s X ) GrpAct X ) ) |\n| 8 | 1 | #P_ressid | |- ( G e. Grp -> ( G |`s X ) = G ) |\n| 9 | 8 | #P_oveq1d | |- ( G e. Grp -> ( ( G |`s X ) GrpAct X ) = ( G GrpAct X ) ) |\n| 10 | 7, 9 | #P_eleqtrd | |- ( G e. Grp -> F e. ( G GrpAct X ) ) |",
+  "conclusion" : "#P_gaid2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cX", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cX", "#T_cmpt2--4", "#T_vx", "#T_c.pl", "#T_vy", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cG", "#T_cress", "#T_cX", "#T_wceq", "#T_cG", "#T_cress", "#T_cX", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cF", "#T_wcel", "#T_cG", "#T_cress", "#T_cX", "#T_cga", "#T_cX", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cF", "#T_wcel", "#T_cG", "#T_cress", "#T_cX", "#T_cga", "#T_cX", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_cress", "#T_cX", "#T_wceq", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_cress", "#T_cX", "#T_cga", "#T_cX", "#T_wceq", "#T_cG", "#T_cga", "#T_cX", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cF", "#T_wcel", "#T_cG", "#T_cga", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleqtrd", "#P_subgid", "#P_eqid", "#P_subgga", "#P_ressid", "#P_syl", "#P_oveq1d" ]
+}

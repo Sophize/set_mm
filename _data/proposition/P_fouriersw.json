@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fouriersw on Metamath](http://us.metamath.org/mpegif/fouriersw.html)"
+  } ],
+  "names" : [ "fouriersw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_c2", "#T_cmul", "#T_cpi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_cmo", "#T_cT", "#T_clt", "#T_cpi", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cneg", "#T_c1", "#T_cX", "#T_wcel", "#T_cr", "#T_cS", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csin", "#T_cfv", "#T_c2", "#T_cmul", "#T_vn", "#T_cmin", "#T_c1", "#T_cmul", "#T_cX", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vn", "#T_cmin", "#T_c1", "#T_cY", "#T_wceq", "#T_cif--1", "#T_cX", "#T_cmo", "#T_cpi", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cF", "#T_cfv", "#T_cX", "#T_c4", "#T_cdiv", "#T_cpi", "#T_cmul", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn", "#T_csin", "#T_cfv", "#T_c2", "#T_cmul", "#T_vk", "#T_cmin", "#T_c1", "#T_cmul", "#T_cX", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vk", "#T_cmin", "#T_c1", "#T_wceq", "#T_cY", "#T_wa", "#T_cseq--1", "#T_c1", "#T_caddc", "#T_cseq--2", "#T_cS", "#T_cli", "#T_cpi", "#T_cdiv", "#T_c4", "#T_cmul", "#T_cY", "#T_cF", "#T_vn", "#T_cF", "#T_vn", "#T_vx", "#T_cT", "#T_vx", "#T_cX", "#T_vk", "#T_vn", "#T_cX", "#T_vn", "#T_cX", "#T_vn", "#T_vx", "#T_cY", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Fourier series convergence, for the square wave function.  Where ` F ` is discontinuous, the series converges to ` 0 ` , the average value of the left and the right limits.  Notice that ` F ` is an odd function and its Fourier expansion has only sine terms (coefficients for cosine terms are zero).  (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "fouriersw.t $e |- T = ( 2 x. _pi ) $.\nfouriersw.f $e |- F = ( x e. RR |-> if ( ( x mod T ) < _pi , 1 , -u 1 ) ) $.\nfouriersw.x $e |- X e. RR $.\nfouriersw.z $e |- S = ( n e. NN |-> ( ( sin ` ( ( ( 2 x. n ) - 1 ) x. X ) ) / ( ( 2 x. n ) - 1 ) ) ) $.\nfouriersw.y $e |- Y = if ( ( X mod _pi ) = 0 , 0 , ( F ` X ) ) $.\nfouriersw $p |- ( ( ( 4 / _pi ) x. sum_ k e. NN ( ( sin ` ( ( ( 2 x. k ) - 1 ) x. X ) ) / ( ( 2 x. k ) - 1 ) ) ) = Y /\\ seq 1 ( + , S ) ~~> ( ( _pi / 4 ) x. Y ) ) $.\n$d F n $.\n$d F n x $.\n$d T x $.\n$d X k n $.\n$d X n $.\n$d X n x $.\n$d Y k $."
+}

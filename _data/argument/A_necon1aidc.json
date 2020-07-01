@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1aidc on Metamath](http://us.metamath.org/mpegif/necon1aidc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1aidc.1 | |- ( DECID ph -> ( -. ph -> A = B ) ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 |  | #P_con1dc | |- ( DECID ph -> ( ( -. ph -> A = B ) -> ( -. A = B -> ph ) ) ) |\n| 4 | 1, 3 | #P_mpd | |- ( DECID ph -> ( -. A = B -> ph ) ) |\n| 5 | 2, 4 | #P_syl5bi | |- ( DECID ph -> ( A =/= B -> ph ) ) |",
+  "conclusion" : "#P_necon1aidc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_con1dc", "#P_df-ne", "#P_syl5bi" ]
+}

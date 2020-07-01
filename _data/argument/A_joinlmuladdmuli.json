@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See joinlmuladdmuli on Metamath](http://us.metamath.org/mpegif/joinlmuladdmuli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | joinlmuladdmuli.1 | |- A e. CC |\n| 2 |  | joinlmuladdmuli.2 | |- B e. CC |\n| 3 |  | joinlmuladdmuli.3 | |- C e. CC |\n| 4 |  | joinlmuladdmuli.4 | |- ( ( A x. B ) + ( C x. B ) ) = D |\n| 5 | 1 | #P_a1i | |- ( T. -> A e. CC ) |\n| 6 | 2 | #P_a1i | |- ( T. -> B e. CC ) |\n| 7 | 3 | #P_a1i | |- ( T. -> C e. CC ) |\n| 8 | 4 | #P_a1i | |- ( T. -> ( ( A x. B ) + ( C x. B ) ) = D ) |\n| 9 | 5, 6, 7, 8 | #P_joinlmuladdmuld | |- ( T. -> ( ( A + C ) x. B ) = D ) |\n| 10 | 9 | #P_trud | |- ( ( A + C ) x. B ) = D |",
+  "conclusion" : "#P_joinlmuladdmuli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA", "#T_cmul", "#T_cB", "#T_caddc", "#T_cC", "#T_cmul", "#T_cB", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wtru", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wtru", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_cA", "#T_caddc", "#T_cC", "#T_cmul", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_joinlmuladdmuld", "#P_a1i" ]
+}

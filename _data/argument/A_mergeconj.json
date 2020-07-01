@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mergeconj on Metamath](http://us.metamath.org/mpegif/mergeconj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mergeconj.1 | |- ( ph <-> ( ps /\\ ch ) ) |\n| 2 | 1 | #P_anbi2i | |- ( ( et /\\ ph ) <-> ( et /\\ ( ps /\\ ch ) ) ) |\n| 3 |  | #P_anass | |- ( ( ( et /\\ ps ) /\\ ch ) <-> ( et /\\ ( ps /\\ ch ) ) ) |\n| 4 | 2, 3 | #P_bitr4i | |- ( ( et /\\ ph ) <-> ( ( et /\\ ps ) /\\ ch ) ) |",
+  "conclusion" : "#P_mergeconj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wet", "#T_wa", "#T_wph", "#T_wb", "#T_wet", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wet", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wet", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wet", "#T_wa", "#T_wph", "#T_wb", "#T_wet", "#T_wa", "#T_wps", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anass", "#P_anbi2i", "#P_bitr4i" ]
+}

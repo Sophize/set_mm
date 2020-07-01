@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsub0 on Metamath](http://us.metamath.org/mpegif/hvsub0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hv0cl | |- 0h e. ~H |\n| 2 |  | #P_hvsubval | |- ( ( A e. ~H /\\ 0h e. ~H ) -> ( A -h 0h ) = ( A +h ( -u 1 .h 0h ) ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. ~H -> ( A -h 0h ) = ( A +h ( -u 1 .h 0h ) ) ) |\n| 4 |  | #P_neg1cn | |- -u 1 e. CC |\n| 5 |  | #P_hvmul0 | |- ( -u 1 e. CC -> ( -u 1 .h 0h ) = 0h ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( -u 1 .h 0h ) = 0h |\n| 7 | 6 | #P_oveq2i | |- ( A +h ( -u 1 .h 0h ) ) = ( A +h 0h ) |\n| 8 | 3, 7 | #P_syl6eq | |- ( A e. ~H -> ( A -h 0h ) = ( A +h 0h ) ) |\n| 9 |  | #P_ax-hvaddid | |- ( A e. ~H -> ( A +h 0h ) = A ) |\n| 10 | 8, 9 | #P_eqtrd | |- ( A e. ~H -> ( A -h 0h ) = A ) |",
+  "conclusion" : "#P_hvsub0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0v", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_c0v", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_c0v", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_c1", "#T_csm", "#T_c0v", "#T_wceq", "#T_c0v", "#T_cneg", "#T_c1", "#T_csm", "#T_c0v", "#T_wceq", "#T_c0v", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_c0v", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_c0v", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cva", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cA", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ax-hv0cl", "#P_hvsubval", "#P_neg1cn", "#P_eqtrd", "#P_ax-hvaddid", "#P_mpan2", "#P_oveq2i", "#P_hvmul0", "#P_syl6eq" ]
+}

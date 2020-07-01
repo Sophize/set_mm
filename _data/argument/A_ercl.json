@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ercl on Metamath](http://us.metamath.org/mpegif/ercl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ersym.1 | |- ( ph -> R Er X ) |\n| 2 |  | ersym.2 | |- ( ph -> A R B ) |\n| 3 |  | #P_errel | |- ( R Er X -> Rel R ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> Rel R ) |\n| 5 |  | #P_releldm | |- ( ( Rel R /\\ A R B ) -> A e. dom R ) |\n| 6 | 4, 2, 5 | #P_syl2anc | |- ( ph -> A e. dom R ) |\n| 7 |  | #P_erdm | |- ( R Er X -> dom R = X ) |\n| 8 | 1, 7 | #P_syl | |- ( ph -> dom R = X ) |\n| 9 | 6, 8 | #P_eleqtrd | |- ( ph -> A e. X ) |",
+  "conclusion" : "#P_ercl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_cR", "#T_wer", "#T_cX", "#T_wi", "#T_wrel", "#T_cR", "#T_wph", "#T_wi", "#T_wrel", "#T_cR", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_cR", "#T_wer", "#T_cX", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_erdm", "#P_eleqtrd", "#P_syl2anc", "#P_errel", "#P_syl", "#P_releldm" ]
+}

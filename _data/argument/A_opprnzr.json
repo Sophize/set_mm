@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opprnzr on Metamath](http://us.metamath.org/mpegif/opprnzr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opprnzr.1 | |- O = ( oppR ` R ) |\n| 2 |  | #P_nzrring | |- ( R e. NzRing -> R e. Ring ) |\n| 3 | 1 | #P_opprring | |- ( R e. Ring -> O e. Ring ) |\n| 4 | 2, 3 | #P_syl | |- ( R e. NzRing -> O e. Ring ) |\n| 5 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 6 | 5 | #P_isnzr2 | |- ( R e. NzRing <-> ( R e. Ring /\\ 2o ~<_ ( Base ` R ) ) ) |\n| 7 | 6 | #P_simprbi | |- ( R e. NzRing -> 2o ~<_ ( Base ` R ) ) |\n| 8 | 1, 5 | #P_opprbas | |- ( Base ` R ) = ( Base ` O ) |\n| 9 | 8 | #P_isnzr2 | |- ( O e. NzRing <-> ( O e. Ring /\\ 2o ~<_ ( Base ` R ) ) ) |\n| 10 | 4, 7, 9 | #P_sylanbrc | |- ( R e. NzRing -> O e. NzRing ) |",
+  "conclusion" : "#P_opprnzr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cO", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wi", "#T_cO", "#T_wcel", "#T_crg", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_c2o", "#T_cdom", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wi", "#T_c2o", "#T_cdom", "#T_cbs", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cO", "#T_cO", "#T_wcel", "#T_cnzr", "#T_wb", "#T_cO", "#T_wcel", "#T_crg", "#T_wa", "#T_c2o", "#T_cdom", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wi", "#T_cO", "#T_wcel", "#T_cnzr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nzrring", "#P_opprring", "#P_eqid", "#P_opprbas", "#P_simprbi", "#P_isnzr2", "#P_syl", "#P_sylanbrc" ]
+}

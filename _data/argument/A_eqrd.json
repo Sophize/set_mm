@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqrd on Metamath](http://us.metamath.org/mpegif/eqrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqrd.0 | |- F/ x ph |\n| 2 |  | eqrd.1 | |- F/_ x A |\n| 3 |  | eqrd.2 | |- F/_ x B |\n| 4 |  | eqrd.3 | |- ( ph -> ( x e. A <-> x e. B ) ) |\n| 5 | 4 | #P_biimpd | |- ( ph -> ( x e. A -> x e. B ) ) |\n| 6 | 1, 2, 3, 5 | #P_ssrd | |- ( ph -> A C_ B ) |\n| 7 | 4 | #P_biimprd | |- ( ph -> ( x e. B -> x e. A ) ) |\n| 8 | 1, 3, 2, 7 | #P_ssrd | |- ( ph -> B C_ A ) |\n| 9 | 6, 8 | #P_eqssd | |- ( ph -> A = B ) |",
+  "conclusion" : "#P_eqrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wb", "#T_vx", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_ssrd", "#P_eqssd", "#P_biimpd" ]
+}

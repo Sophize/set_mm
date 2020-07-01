@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cdeqnot on Metamath](http://us.metamath.org/mpegif/cdeqnot.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cdeqnot.1 | |- CondEq ( x = y -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_cdeqri | |- ( x = y -> ( ph <-> ps ) ) |\n| 3 | 2 | #P_notbid | |- ( x = y -> ( -. ph <-> -. ps ) ) |\n| 4 | 3 | #P_cdeqi | |- CondEq ( x = y -> ( -. ph <-> -. ps ) ) |",
+  "conclusion" : "#P_cdeqnot",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cdeqi", "#P_notbid", "#P_cdeqri" ]
+}

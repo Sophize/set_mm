@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspcsbela on Metamath](http://us.metamath.org/mpegif/rspcsbela.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rspsbc | |- ( A e. B -> ( A. x e. B C e. D -> [. A / x ]. C e. D ) ) |\n| 2 |  | #P_sbcel1g | |- ( A e. B -> ( [. A / x ]. C e. D <-> [_ A / x ]_ C e. D ) ) |\n| 3 | 1, 2 | #P_sylibd | |- ( A e. B -> ( A. x e. B C e. D -> [_ A / x ]_ C e. D ) ) |\n| 4 | 3 | #P_imp | |- ( ( A e. B /\\ A. x e. B C e. D ) -> [_ A / x ]_ C e. D ) |",
+  "conclusion" : "#P_rspcsbela",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_cC", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_cC", "#T_wcel", "#T_cD", "#T_wb", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cC", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cC", "#T_wcel", "#T_cD", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cC", "#T_wcel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylibd", "#P_imp", "#P_sbcel1g", "#P_rspsbc" ]
+}

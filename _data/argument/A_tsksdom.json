@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsksdom on Metamath](http://us.metamath.org/mpegif/tsksdom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_canth2g | |- ( A e. T -> A ~< ~P A ) |\n| 2 | 1 | #P_adantl | |- ( ( T e. Tarski /\\ A e. T ) -> A ~< ~P A ) |\n| 3 |  | #P_simpl | |- ( ( T e. Tarski /\\ A e. T ) -> T e. Tarski ) |\n| 4 |  | #P_tskpwss | |- ( ( T e. Tarski /\\ A e. T ) -> ~P A C_ T ) |\n| 5 |  | #P_ssdomg | |- ( T e. Tarski -> ( ~P A C_ T -> ~P A ~<_ T ) ) |\n| 6 | 3, 4, 5 | #P_sylc | |- ( ( T e. Tarski /\\ A e. T ) -> ~P A ~<_ T ) |\n| 7 |  | #P_sdomdomtr | |- ( ( A ~< ~P A /\\ ~P A ~<_ T ) -> A ~< T ) |\n| 8 | 2, 6, 7 | #P_syl2anc | |- ( ( T e. Tarski /\\ A e. T ) -> A ~< T ) |",
+  "conclusion" : "#P_tsksdom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cT", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cT", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cT", "#T_wi", "#T_cT", "#T_wcel", "#T_ctsk", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cT", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cT", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_cdom", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cT", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_cdom", "#T_cT", "#T_cA.wceq", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_cpw", "#T_cA.wceq", "#T_cdom", "#T_cT", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cA", "#T_wcel", "#T_cT", "#T_wi", "#T_cA", "#T_csdm", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sdomdomtr", "#P_sylc", "#P_adantl", "#P_tskpwss", "#P_syl2anc", "#P_canth2g", "#P_simpl", "#P_ssdomg" ]
+}

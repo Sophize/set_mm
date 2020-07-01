@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-t0 on Metamath](http://us.metamath.org/mpegif/df-t0.html)"
+  } ],
+  "names" : [ "df-t0" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ct0", "#T_wceq", "#T_crab--1", "#T_vj", "#T_crab--2", "#T_ctop", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cuni", "#T_vj", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cuni", "#T_vj", "#T_wral--1", "#T_vo", "#T_wral--2", "#T_vj", "#T_vx", "#T_wcel", "#T_vo", "#T_wb", "#T_vy", "#T_wcel", "#T_vo", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_crab--4", "#T_vj", "#T_vo", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define T0 or Kolmogorov spaces.  A T_0 space satisfies a kind of \"topological extensionality\" principle (compare ~ ax-ext ): any two points which are members of the same open sets are equal, or in contraposition, for any two distinct points there is an open set which contains one point but not the other.  This differs from T_1 spaces (see ~ ist1-2 ) in that in a T_1 space you can choose which point will be in the open set and which outside; in a T_0 space you only know that one of the two points is in the set.  (Contributed by Jeff Hankins, 1-Feb-2010.) ",
+  "statement" : "df-t0 $p |- Kol2 = { j e. Top | A. x e. U. j A. y e. U. j ( A. o e. j ( x e. o <-> y e. o ) -> x = y ) } $.\n$d j o x y $."
+}

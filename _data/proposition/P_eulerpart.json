@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eulerpart on Metamath](http://us.metamath.org/mpegif/eulerpart.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "The Partition Theorem", "eulerpart" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cn", "#T_crab--3", "#T_ccnv", "#T_vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_wa", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn", "#T_vf", "#T_cfv", "#T_vk", "#T_cmul", "#T_vk", "#T_wceq", "#T_cN", "#T_crab--4", "#T_cO", "#T_wceq", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_ccnv", "#T_vg", "#T_cima", "#T_cn", "#T_wn", "#T_c2", "#T_cdvds", "#T_vn", "#T_crab--4", "#T_cD", "#T_wceq", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cn", "#T_vg", "#T_cfv", "#T_vn", "#T_cle", "#T_c1", "#T_crab--4", "#T_chash", "#T_cfv", "#T_cO", "#T_wceq", "#T_chash", "#T_cfv", "#T_cD", "#T_cD", "#T_vg", "#T_cN", "#T_vf", "#T_vg", "#T_vk", "#T_vn", "#T_cO", "#T_vg", "#T_vn", "#T_cP", "#T_vg", "#T_vk", "#T_vn", "#T_vf", "#T_vg", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Euler's theorem on partitions, also known as a special case of Glaisher's theorem.  Let ` P ` be the set of all partitions of ` N ` , represented as multisets of positive integers, which is to say functions from ` NN ` to ` NN0 ` where the value of the function represents the number of repetitions of an individual element, and the sum of all the elements with repetition equals ` N ` .  Then the set ` O ` of all partitions that only consist of odd numbers and the set ` D ` of all partitions which have no repeated elements have the same cardinality. This is Metamath 100 proof #45.  (Contributed by Thierry Arnoux, 14-Aug-2018.)  (Revised by Thierry Arnoux, 1-Sep-2019.) ",
+  "statement" : "eulerpart.p $e |- P = { f e. ( NN0 ^m NN ) | ( ( `' f \" NN ) e. Fin /\\ sum_ k e. NN ( ( f ` k ) x. k ) = N ) } $.\neulerpart.o $e |- O = { g e. P | A. n e. ( `' g \" NN ) -. 2 || n } $.\neulerpart.d $e |- D = { g e. P | A. n e. NN ( g ` n ) <_ 1 } $.\neulerpart $p |- ( # ` O ) = ( # ` D ) $.\n$d D g $.\n$d N f g k n $.\n$d O g n $.\n$d P g k n $.\n$d f g k n $."
+}

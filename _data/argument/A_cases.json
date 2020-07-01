@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cases on Metamath](http://us.metamath.org/mpegif/cases.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cases.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | cases.2 | |- ( -. ph -> ( ps <-> th ) ) |\n| 3 |  | #P_exmid | |- ( ph \\/ -. ph ) |\n| 4 | 3 | #P_biantrur | |- ( ps <-> ( ( ph \\/ -. ph ) /\\ ps ) ) |\n| 5 |  | #P_andir | |- ( ( ( ph \\/ -. ph ) /\\ ps ) <-> ( ( ph /\\ ps ) \\/ ( -. ph /\\ ps ) ) ) |\n| 6 | 1 | #P_pm5.32i | |- ( ( ph /\\ ps ) <-> ( ph /\\ ch ) ) |\n| 7 | 2 | #P_pm5.32i | |- ( ( -. ph /\\ ps ) <-> ( -. ph /\\ th ) ) |\n| 8 | 6, 7 | #P_orbi12i | |- ( ( ( ph /\\ ps ) \\/ ( -. ph /\\ ps ) ) <-> ( ( ph /\\ ch ) \\/ ( -. ph /\\ th ) ) ) |\n| 9 | 4, 5, 8 | #P_3bitri | |- ( ps <-> ( ( ph /\\ ch ) \\/ ( -. ph /\\ th ) ) ) |",
+  "conclusion" : "#P_cases",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wth", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orbi12i", "#P_pm5.32i", "#P_3bitri", "#P_biantrur", "#P_exmid", "#P_andir" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hof2 on Metamath](http://us.metamath.org/mpegif/hof2.html)"
+  } ],
+  "names" : [ "hof2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_chof", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_cB", "#T_c.x", "#T_wceq", "#T_cco", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cZ", "#T_cH", "#T_cX", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cY", "#T_cH", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c2nd", "#T_cfv", "#T_cM", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cW", "#T_cop--3", "#T_cG", "#T_cfv", "#T_cK", "#T_wceq", "#T_cG", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cW", "#T_cK", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_c.x", "#T_cW", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The morphism part of the Hom functor, for morphisms ` <. f , g >. : <. X , Y >. --> <. Z , W >. ` (which since the first argument is contravariant means morphisms ` f : Z --> X ` and ` g : Y --> W ` ), yields a function (a morphism of ` SetCat ` ) mapping ` h : X --> Y ` to ` g o. h o. f : Z --> W ` .  (Contributed by Mario Carneiro, 15-Jan-2017.) ",
+  "statement" : "hofval.m $e |- M = ( HomF ` C ) $.\nhofval.c $e |- ( ph -> C e. Cat ) $.\nhof1.b $e |- B = ( Base ` C ) $.\nhof1.h $e |- H = ( Hom ` C ) $.\nhof1.x $e |- ( ph -> X e. B ) $.\nhof1.y $e |- ( ph -> Y e. B ) $.\nhof2.z $e |- ( ph -> Z e. B ) $.\nhof2.w $e |- ( ph -> W e. B ) $.\nhof2.o $e |- .x. = ( comp ` C ) $.\nhof2.f $e |- ( ph -> F e. ( Z H X ) ) $.\nhof2.g $e |- ( ph -> G e. ( Y H W ) ) $.\nhof2.k $e |- ( ph -> K e. ( X H Y ) ) $.\nhof2 $p |- ( ph -> ( ( F ( <. X , Y >. ( 2nd ` M ) <. Z , W >. ) G ) ` K ) = ( ( G ( <. X , Y >. .x. W ) K ) ( <. Z , X >. .x. W ) F ) ) $."
+}

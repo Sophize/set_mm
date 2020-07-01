@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uncfcl on Metamath](http://us.metamath.org/mpegif/uncfcl.html)"
+  } ],
+  "names" : [ "uncfcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cs3--1", "#T_cC", "#T_cD", "#T_cE", "#T_cs3--2", "#T_cuncf", "#T_cG", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cE", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cD", "#T_cfuc", "#T_cE", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_cxpc", "#T_cD", "#T_cfunc", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The uncurry operation takes a functor ` F : C --> ( D --> E ) ` to a functor ` uncurryF ( F ) : C X. D --> E ` .  (Contributed by Mario Carneiro, 13-Jan-2017.) ",
+  "statement" : "uncfval.g $e |- F = ( <\" C D E \"> uncurryF G ) $.\nuncfval.c $e |- ( ph -> D e. Cat ) $.\nuncfval.d $e |- ( ph -> E e. Cat ) $.\nuncfval.f $e |- ( ph -> G e. ( C Func ( D FuncCat E ) ) ) $.\nuncfcl $p |- ( ph -> F e. ( ( C Xc. D ) Func E ) ) $."
+}

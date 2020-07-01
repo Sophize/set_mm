@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fodomnum on Metamath](http://us.metamath.org/mpegif/fodomnum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fornex | |- ( A e. dom card -> ( F : A -onto-> B -> B e. _V ) ) |\n| 2 | 1 | #P_com12 | |- ( F : A -onto-> B -> ( A e. dom card -> B e. _V ) ) |\n| 3 |  | #P_numacn | |- ( B e. _V -> ( A e. dom card -> A e. AC_ B ) ) |\n| 4 | 2, 3 | #P_syli | |- ( F : A -onto-> B -> ( A e. dom card -> A e. AC_ B ) ) |\n| 5 | 4 | #P_com12 | |- ( A e. dom card -> ( F : A -onto-> B -> A e. AC_ B ) ) |\n| 6 |  | #P_fodomacn | |- ( A e. AC_ B -> ( F : A -onto-> B -> B ~<_ A ) ) |\n| 7 | 5, 6 | #P_syli | |- ( A e. dom card -> ( F : A -onto-> B -> B ~<_ A ) ) |",
+  "conclusion" : "#P_fodomnum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wi", "#T_cB", "#T_cdom", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fornex", "#P_fodomacn", "#P_numacn", "#P_syli", "#P_com12" ]
+}

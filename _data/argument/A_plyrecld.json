@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See plyrecld on Metamath](http://us.metamath.org/mpegif/plyrecld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | plyrecld.1 | |- ( ph -> F e. ( Poly ` RR ) ) |\n| 2 |  | plyrecld.2 | |- ( ph -> X e. RR ) |\n| 3 |  | #P_fvres | |- ( X e. RR -> ( ( F |` RR ) ` X ) = ( F ` X ) ) |\n| 4 | 2, 3 | #P_syl | |- ( ph -> ( ( F |` RR ) ` X ) = ( F ` X ) ) |\n| 5 |  | #P_plyreres | |- ( F e. ( Poly ` RR ) -> ( F |` RR ) : RR --> RR ) |\n| 6 | 1, 5 | #P_syl | |- ( ph -> ( F |` RR ) : RR --> RR ) |\n| 7 | 6, 2 | #P_ffvelrnd | |- ( ph -> ( ( F |` RR ) ` X ) e. RR ) |\n| 8 | 4, 7 | #P_eqeltrrd | |- ( ph -> ( F ` X ) e. RR ) |",
+  "conclusion" : "#P_plyrecld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cr", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cr", "#T_cX", "#T_wcel", "#T_cr", "#T_wi", "#T_cF", "#T_cres", "#T_cr", "#T_cfv", "#T_cX", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cr", "#T_cfv", "#T_cX", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cr", "#T_wi", "#T_cF", "#T_cres", "#T_cr", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cr", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cr", "#T_cfv", "#T_cX", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_plyreres", "#P_eqeltrrd", "#P_fvres", "#P_ffvelrnd", "#P_syl" ]
+}

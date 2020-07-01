@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfdm3 on Metamath](http://us.metamath.org/mpegif/dfdm3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-dm | |- dom A = { x | E. y x A y } |\n| 2 |  | #P_df-br | |- ( x A y <-> <. x , y >. e. A ) |\n| 3 | 2 | #P_exbii | |- ( E. y x A y <-> E. y <. x , y >. e. A ) |\n| 4 | 3 | #P_abbii | |- { x | E. y x A y } = { x | E. y <. x , y >. e. A } |\n| 5 | 1, 4 | #P_eqtri | |- dom A = { x | E. y <. x , y >. e. A } |",
+  "conclusion" : "#P_dfdm3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_cab--3", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_cdm", "#T_cA", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wex", "#T_vy", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cA", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_eqtri", "#P_exbii", "#P_abbii", "#P_df-dm" ]
+}

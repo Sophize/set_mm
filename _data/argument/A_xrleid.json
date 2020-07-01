@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrleid on Metamath](http://us.metamath.org/mpegif/xrleid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- A = A |\n| 2 | 1 | #P_olci | |- ( A < A \\/ A = A ) |\n| 3 |  | #P_xrleloe | |- ( ( A e. RR* /\\ A e. RR* ) -> ( A <_ A <-> ( A < A \\/ A = A ) ) ) |\n| 4 | 2, 3 | #P_mpbiri | |- ( ( A e. RR* /\\ A e. RR* ) -> A <_ A ) |\n| 5 | 4 | #P_anidms | |- ( A e. RR* -> A <_ A ) |",
+  "conclusion" : "#P_xrleid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbiri", "#P_olci", "#P_anidms", "#P_xrleloe" ]
+}

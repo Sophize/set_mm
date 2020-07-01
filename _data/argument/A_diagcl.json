@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See diagcl on Metamath](http://us.metamath.org/mpegif/diagcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | diagval.l | |- L = ( C DiagFunc D ) |\n| 2 |  | diagval.c | |- ( ph -> C e. Cat ) |\n| 3 |  | diagval.d | |- ( ph -> D e. Cat ) |\n| 4 |  | diagcl.q | |- Q = ( D FuncCat C ) |\n| 5 | 1, 2, 3 | #P_diagval | |- ( ph -> L = ( <. C , D >. curryF ( C 1stF D ) ) ) |\n| 6 |  | #P_eqid | |- ( <. C , D >. curryF ( C 1stF D ) ) = ( <. C , D >. curryF ( C 1stF D ) ) |\n| 7 |  | #P_eqid | |- ( C Xc. D ) = ( C Xc. D ) |\n| 8 |  | #P_eqid | |- ( C 1stF D ) = ( C 1stF D ) |\n| 9 | 7, 2, 3, 8 | #P_1stfcl | |- ( ph -> ( C 1stF D ) e. ( ( C Xc. D ) Func C ) ) |\n| 10 | 6, 4, 2, 3, 9 | #P_curfcl | |- ( ph -> ( <. C , D >. curryF ( C 1stF D ) ) e. ( C Func Q ) ) |\n| 11 | 5, 10 | #P_eqeltrd | |- ( ph -> L e. ( C Func Q ) ) |",
+  "conclusion" : "#P_diagcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_cC", "#T_cdiag", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_cQ", "#T_wceq", "#T_cD", "#T_cfuc", "#T_cC", "#T_wph", "#T_wi", "#T_cL", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c1stf", "#T_cD", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c1stf", "#T_cD", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c1stf", "#T_cD", "#T_cC", "#T_cxpc", "#T_cD", "#T_wceq", "#T_cC", "#T_cxpc", "#T_cD", "#T_cC", "#T_c1stf", "#T_cD", "#T_wceq", "#T_cC", "#T_c1stf", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_c1stf", "#T_cD", "#T_wcel", "#T_cC", "#T_cxpc", "#T_cD", "#T_cfunc", "#T_cC", "#T_wph", "#T_wi", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c1stf", "#T_cD", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cQ", "#T_wph", "#T_wi", "#T_cL", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_diagval", "#P_eqeltrd", "#P_1stfcl", "#P_curfcl" ]
+}

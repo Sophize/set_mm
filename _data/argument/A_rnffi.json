@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rnffi on Metamath](http://us.metamath.org/mpegif/rnffi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ffi | |- ( ( F : A --> B /\\ A e. Fin ) -> F e. Fin ) |\n| 2 |  | #P_rnfi | |- ( F e. Fin -> ran F e. Fin ) |\n| 3 | 1, 2 | #P_syl | |- ( ( F : A --> B /\\ A e. Fin ) -> ran F e. Fin ) |",
+  "conclusion" : "#P_rnffi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wa", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_ffi", "#P_rnfi" ]
+}

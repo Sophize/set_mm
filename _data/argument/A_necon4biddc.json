@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon4biddc on Metamath](http://us.metamath.org/mpegif/necon4biddc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon4biddc.1 | |- ( ph -> ( DECID A = B -> ( DECID C = D -> ( A =/= B <-> C =/= D ) ) ) ) |\n| 2 |  | #P_df-ne | |- ( C =/= D <-> -. C = D ) |\n| 3 | 2 | #P_bibi2i | |- ( ( A =/= B <-> C =/= D ) <-> ( A =/= B <-> -. C = D ) ) |\n| 4 | 1, 3 | #P_syl8ib | |- ( ph -> ( DECID A = B -> ( DECID C = D -> ( A =/= B <-> -. C = D ) ) ) ) |\n| 5 | 4 | #P_necon4abiddc | |- ( ph -> ( DECID A = B -> ( DECID C = D -> ( A = B <-> C = D ) ) ) ) |",
+  "conclusion" : "#P_necon4biddc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wdc", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wb", "#T_cC", "#T_wne", "#T_cD", "#T_cC", "#T_wne", "#T_cD", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wne", "#T_cD", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wdc", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wdc", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cC", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon4abiddc", "#P_df-ne", "#P_syl8ib", "#P_bibi2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ex-po on Metamath](http://us.metamath.org/mpegif/ex-po.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ltso | |- < Or RR |\n| 2 |  | #P_sopo | |- ( < Or RR -> < Po RR ) |\n| 3 | 1, 2 | #P_ax-mp | |- < Po RR |\n| 4 |  | #P_0le0 | |- 0 <_ 0 |\n| 5 |  | #P_0re | |- 0 e. RR |\n| 6 |  | #P_poirr | |- ( ( <_ Po RR /\\ 0 e. RR ) -> -. 0 <_ 0 ) |\n| 7 | 5, 6 | #P_mpan2 | |- ( <_ Po RR -> -. 0 <_ 0 ) |\n| 8 | 4, 7 | #P_mt2 | |- -. <_ Po RR |\n| 9 | 3, 8 | #P_pm3.2i | |- ( < Po RR /\\ -. <_ Po RR ) |",
+  "conclusion" : "#P_ex-po",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clt", "#T_wor", "#T_cr", "#T_clt", "#T_wor", "#T_cr", "#T_wi", "#T_clt", "#T_wpo", "#T_cr", "#T_clt", "#T_wpo", "#T_cr", "#T_cc0", "#T_cle", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cr", "#T_cle", "#T_wpo", "#T_cr", "#T_wa", "#T_cc0", "#T_wcel", "#T_cr", "#T_wi", "#T_wn", "#T_cc0", "#T_cle", "#T_cc0", "#T_cle", "#T_wpo", "#T_cr", "#T_wi", "#T_wn", "#T_cc0", "#T_cle", "#T_cc0", "#T_wn", "#T_cle", "#T_wpo", "#T_cr", "#T_clt", "#T_wpo", "#T_cr", "#T_wa", "#T_wn", "#T_cle", "#T_wpo", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sopo", "#P_mt2", "#P_0le0", "#P_mpan2", "#P_ltso", "#P_0re", "#P_poirr", "#P_pm3.2i" ]
+}

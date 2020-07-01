@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See paddval0 on Metamath](http://us.metamath.org/mpegif/paddval0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nq\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | padd0.a | |- A = ( Atoms ` K ) |\n| 2 |  | padd0.p | |- .+ = ( +P ` K ) |\n| 3 | 1, 2 | #P_elpadd0 | |- ( ( ( K e. B /\\ X C_ A /\\ Y C_ A ) /\\ -. ( X =/= (/) /\\ Y =/= (/) ) ) -> ( q e. ( X .+ Y ) <-> ( q e. X \\/ q e. Y ) ) ) |\n| 4 |  | #P_elun | |- ( q e. ( X u. Y ) <-> ( q e. X \\/ q e. Y ) ) |\n| 5 | 3, 4 | #P_syl6bbr | |- ( ( ( K e. B /\\ X C_ A /\\ Y C_ A ) /\\ -. ( X =/= (/) /\\ Y =/= (/) ) ) -> ( q e. ( X .+ Y ) <-> q e. ( X u. Y ) ) ) |\n| 6 | 5 | #P_eqrdv | |- ( ( ( K e. B /\\ X C_ A /\\ Y C_ A ) /\\ -. ( X =/= (/) /\\ Y =/= (/) ) ) -> ( X .+ Y ) = ( X u. Y ) ) |",
+  "conclusion" : "#P_paddval0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vq", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_c.pl", "#T_wceq", "#T_cpadd", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_w3a--2", "#T_cY", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cY", "#T_wne", "#T_c0", "#T_wi", "#T_vq", "#T_wcel", "#T_cX", "#T_c.pl", "#T_cY", "#T_wb", "#T_vq", "#T_wcel", "#T_cX", "#T_wo", "#T_vq", "#T_wcel", "#T_cY", "#T_vq", "#T_wcel", "#T_cX", "#T_cun", "#T_cY", "#T_wb", "#T_vq", "#T_wcel", "#T_cX", "#T_wo", "#T_vq", "#T_wcel", "#T_cY", "#T_cK", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_w3a--2", "#T_cY", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cY", "#T_wne", "#T_c0", "#T_wi", "#T_vq", "#T_wcel", "#T_cX", "#T_c.pl", "#T_cY", "#T_wb", "#T_vq", "#T_wcel", "#T_cX", "#T_cun", "#T_cY", "#T_cK", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_cX", "#T_wss", "#T_cA", "#T_w3a--2", "#T_cY", "#T_wss", "#T_cA", "#T_wa", "#T_wn", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cY", "#T_wne", "#T_c0", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_cun", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elpadd0", "#P_elun", "#P_eqrdv", "#P_syl6bbr" ]
+}

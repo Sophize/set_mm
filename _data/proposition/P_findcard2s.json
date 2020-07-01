@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See findcard2s on Metamath](http://us.metamath.org/mpegif/findcard2s.html)"
+  } ],
+  "names" : [ "findcard2s" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_cun", "#T_csn--1", "#T_vz", "#T_csn--2", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cfn", "#T_wa", "#T_wn", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_vz", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Variation of ~ findcard2 requiring that the element added in the induction step not be a member of the original set.  (Contributed by Paul Chapman, 30-Nov-2012.) ",
+  "statement" : "findcard2s.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\nfindcard2s.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfindcard2s.3 $e |- ( x = ( y u. { z } ) -> ( ph <-> th ) ) $.\nfindcard2s.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nfindcard2s.5 $e |- ps $.\nfindcard2s.6 $e |- ( ( y e. Fin /\\ -. z e. y ) -> ( ch -> th ) ) $.\nfindcard2s $p |- ( A e. Fin -> ta ) $.\n$d A x y z $.\n$d ch x $.\n$d ph y z $.\n$d ps x $.\n$d ta x $.\n$d th x $."
+}

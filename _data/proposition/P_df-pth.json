@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-pth on Metamath](http://us.metamath.org/mpegif/df-pth.html)"
+  } ],
+  "names" : [ "df-pth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpath", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vv", "#T_ctrail", "#T_ve", "#T_vp", "#T_w3a--1", "#T_wfun", "#T_ccnv", "#T_vp", "#T_cres", "#T_c1", "#T_cfzo", "#T_chash", "#T_cfv", "#T_vf", "#T_w3a--2", "#T_vp", "#T_cima", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_chash", "#T_cfv", "#T_vf", "#T_cpr--3", "#T_cin", "#T_vp", "#T_cima", "#T_c1", "#T_cfzo", "#T_chash", "#T_cfv", "#T_vf", "#T_wceq", "#T_c0", "#T_copab--6", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Paths (in an undirected graph). According to Wikipedia (\"Path (graph theory)\", ~ https://en.wikipedia.org/wiki/Path_(graph_theory) , 3-Oct-2017):  \"A path is a trail in which all vertices (except possibly the first and last) are distinct. ... use the term simple path to refer to a path which contains no repeated vertices.\" According to Bollobas:  \"... a path is a walk with distinct vertices.\", see Notation of [Bollobas] p. 5.  (A walk with distinct vertices is actually a simple path, see ~ wlkdvspth ). Therefore, a path can be represented by an injective mapping f from { 1 , ... , n } and a mapping p from { 0 , ... , n }, which is injective restricted to the set { 1 , ... , n }, where f enumerates the (indices of the) different edges, and p enumerates the vertices.  So the path is also represented by the following sequence: p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n) (Contributed by Alexander van der Vekens and Mario Carneiro, 4-Oct-2017.) ",
+  "statement" : "df-pth $p |- Paths = ( v e. _V , e e. _V |-> { <. f , p >. | ( f ( v Trails e ) p /\\ Fun `' ( p |` ( 1 ..^ ( # ` f ) ) ) /\\ ( ( p \" { 0 , ( # ` f ) } ) i^i ( p \" ( 1 ..^ ( # ` f ) ) ) ) = (/) ) } ) $.\n$d e f p v $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eeor on Metamath](http://us.metamath.org/mpegif/eeor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eeor.1 | |- F/ y ph |\n| 2 |  | eeor.2 | |- F/ x ps |\n| 3 | 1 | #P_19.45 | |- ( E. y ( ph \\/ ps ) <-> ( ph \\/ E. y ps ) ) |\n| 4 | 3 | #P_exbii | |- ( E. x E. y ( ph \\/ ps ) <-> E. x ( ph \\/ E. y ps ) ) |\n| 5 | 2 | #P_nfex | |- F/ x E. y ps |\n| 6 | 5 | #P_19.44 | |- ( E. x ( ph \\/ E. y ps ) <-> ( E. x ph \\/ E. y ps ) ) |\n| 7 | 4, 6 | #P_bitri | |- ( E. x E. y ( ph \\/ ps ) <-> ( E. x ph \\/ E. y ps ) ) |",
+  "conclusion" : "#P_eeor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wo", "#T_wex", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_19.45", "#P_nfex", "#P_19.44", "#P_exbii", "#P_bitri" ]
+}

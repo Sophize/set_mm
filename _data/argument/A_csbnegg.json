@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbnegg on Metamath](http://us.metamath.org/mpegif/csbnegg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_csbov2g | |- ( A e. V -> [_ A / x ]_ ( 0 - B ) = ( 0 - [_ A / x ]_ B ) ) |\n| 2 |  | #P_df-neg | |- -u B = ( 0 - B ) |\n| 3 | 2 | #P_csbeq2i | |- [_ A / x ]_ -u B = [_ A / x ]_ ( 0 - B ) |\n| 4 |  | #P_df-neg | |- -u [_ A / x ]_ B = ( 0 - [_ A / x ]_ B ) |\n| 5 | 1, 3, 4 | #P_3eqtr4g | |- ( A e. V -> [_ A / x ]_ -u B = -u [_ A / x ]_ B ) |",
+  "conclusion" : "#P_csbnegg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cc0", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cmin", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cmin", "#T_cB.wceq", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cc0", "#T_cmin", "#T_cB.wceq", "#T_cneg", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cmin", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cneg", "#T_cB", "#T_wceq", "#T_cneg", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_csbov2g", "#P_csbeq2i", "#P_df-neg", "#P_3eqtr4g" ]
+}

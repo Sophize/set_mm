@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nf4 on Metamath](http://us.metamath.org/mpegif/nf4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nf2 | |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) |\n| 2 |  | #P_imor | |- ( ( E. x ph -> A. x ph ) <-> ( -. E. x ph \\/ A. x ph ) ) |\n| 3 |  | #P_orcom | |- ( ( -. E. x ph \\/ A. x ph ) <-> ( A. x ph \\/ -. E. x ph ) ) |\n| 4 |  | #P_alnex | |- ( A. x -. ph <-> -. E. x ph ) |\n| 5 | 4 | #P_orbi2i | |- ( ( A. x ph \\/ A. x -. ph ) <-> ( A. x ph \\/ -. E. x ph ) ) |\n| 6 | 3, 5 | #P_bitr4i | |- ( ( -. E. x ph \\/ A. x ph ) <-> ( A. x ph \\/ A. x -. ph ) ) |\n| 7 | 1, 2, 6 | #P_3bitri | |- ( F/ x ph <-> ( A. x ph \\/ A. x -. ph ) ) |",
+  "conclusion" : "#P_nf4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnf", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_wph", "#T_wo", "#T_wal", "#T_vx", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imor", "#P_orbi2i", "#P_nf2", "#P_orcom", "#P_alnex", "#P_3bitri", "#P_bitr4i" ]
+}

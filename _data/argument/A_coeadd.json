@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coeadd on Metamath](http://us.metamath.org/mpegif/coeadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | coefv0.1 | |- A = ( coeff ` F ) |\n| 2 |  | coeadd.2 | |- B = ( coeff ` G ) |\n| 3 |  | #P_eqid | |- ( deg ` F ) = ( deg ` F ) |\n| 4 |  | #P_eqid | |- ( deg ` G ) = ( deg ` G ) |\n| 5 | 1, 2, 3, 4 | #P_coeaddlem | |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) ) -> ( ( coeff ` ( F oF + G ) ) = ( A oF + B ) /\\ ( deg ` ( F oF + G ) ) <_ if ( ( deg ` F ) <_ ( deg ` G ) , ( deg ` G ) , ( deg ` F ) ) ) ) |\n| 6 | 5 | #P_simpld | |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) ) -> ( coeff ` ( F oF + G ) ) = ( A oF + B ) ) |",
+  "conclusion" : "#P_coeadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cB", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cG", "#T_cdgr", "#T_cfv", "#T_cF", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cdgr", "#T_cfv", "#T_cG", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cG", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_wceq", "#T_cA.wceq", "#T_cof", "#T_caddc", "#T_cB.wceq", "#T_wa", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_cle", "#T_cif--1", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cle", "#T_cdgr", "#T_cfv", "#T_cG", "#T_cif--2", "#T_cdgr", "#T_cfv", "#T_cG", "#T_cif--3", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_wceq", "#T_cA", "#T_cof", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_coeaddlem" ]
+}

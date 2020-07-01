@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2lt7 on Metamath](http://us.metamath.org/mpegif/2lt7.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2lt3 | |- 2 < 3 |\n| 2 |  | #P_3lt7 | |- 3 < 7 |\n| 3 |  | #P_2re | |- 2 e. RR |\n| 4 |  | #P_3re | |- 3 e. RR |\n| 5 |  | #P_7re | |- 7 e. RR |\n| 6 | 3, 4, 5 | #P_lttri | |- ( ( 2 < 3 /\\ 3 < 7 ) -> 2 < 7 ) |\n| 7 | 1, 2, 6 | #P_mp2an | |- 2 < 7 |",
+  "conclusion" : "#P_2lt7",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_clt", "#T_c3", "#T_c3", "#T_clt", "#T_c7", "#T_c2", "#T_wcel", "#T_cr", "#T_c3", "#T_wcel", "#T_cr", "#T_c7", "#T_wcel", "#T_cr", "#T_c2", "#T_clt", "#T_c3", "#T_wa", "#T_c3", "#T_clt", "#T_c7", "#T_wi", "#T_c2", "#T_clt", "#T_c7", "#T_c2", "#T_clt", "#T_c7" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_7re", "#P_3re", "#P_2lt3", "#P_3lt7", "#P_2re" ]
+}

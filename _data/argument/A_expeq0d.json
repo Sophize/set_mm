@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expeq0d on Metamath](http://us.metamath.org/mpegif/expeq0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | expcld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | expeq0d.2 | |- ( ph -> N e. NN ) |\n| 3 |  | expeq0d.3 | |- ( ph -> ( A ^ N ) = 0 ) |\n| 4 |  | #P_expeq0 | |- ( ( A e. CC /\\ N e. NN ) -> ( ( A ^ N ) = 0 <-> A = 0 ) ) |\n| 5 | 1, 2, 4 | #P_syl2anc | |- ( ph -> ( ( A ^ N ) = 0 <-> A = 0 ) ) |\n| 6 | 3, 5 | #P_mpbid | |- ( ph -> A = 0 ) |",
+  "conclusion" : "#P_expeq0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cA", "#T_cexp", "#T_cN", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_syl2anc", "#P_expeq0" ]
+}

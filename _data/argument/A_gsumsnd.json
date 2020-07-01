@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumsnd on Metamath](http://us.metamath.org/mpegif/gsumsnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsumsnd.b | |- B = ( Base ` G ) |\n| 2 |  | gsumsnd.g | |- ( ph -> G e. Mnd ) |\n| 3 |  | gsumsnd.m | |- ( ph -> M e. V ) |\n| 4 |  | gsumsnd.c | |- ( ph -> C e. B ) |\n| 5 |  | gsumsnd.s | |- ( ( ph /\\ k = M ) -> A = C ) |\n| 6 |  | #P_nfv | |- F/ k ph |\n| 7 |  | #P_nfcv | |- F/_ k C |\n| 8 | 1, 2, 3, 4, 5, 6, 7 | #P_gsumsnfd | |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) |",
+  "conclusion" : "#P_gsumsnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wnf", "#T_vk", "#T_wph", "#T_wnfc", "#T_vk", "#T_cC", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cmpt--2", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_gsumsnfd", "#P_nfv", "#P_nfcv" ]
+}

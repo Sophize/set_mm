@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvrel on Metamath](http://us.metamath.org/mpegif/nvrel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nvss | |- NrmCVec C_ ( CVecOLD X. _V ) |\n| 2 |  | #P_relxp | |- Rel ( CVecOLD X. _V ) |\n| 3 |  | #P_relss | |- ( NrmCVec C_ ( CVecOLD X. _V ) -> ( Rel ( CVecOLD X. _V ) -> Rel NrmCVec ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- Rel NrmCVec |",
+  "conclusion" : "#P_nvrel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cnv", "#T_wss", "#T_cvc", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cvc", "#T_cxp", "#T_cvv", "#T_cnv", "#T_wss", "#T_cvc", "#T_cxp", "#T_cvv", "#T_wi", "#T_wrel", "#T_cvc", "#T_cxp", "#T_cvv", "#T_wi", "#T_wrel", "#T_cnv", "#T_wrel", "#T_cnv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_relxp", "#P_nvss", "#P_relss" ]
+}

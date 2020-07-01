@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-selv on Metamath](http://us.metamath.org/mpegif/df-selv.html)"
+  } ],
+  "names" : [ "df-selv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cslv", "#T_wceq", "#T_vi", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vj", "#T_cmpt--1", "#T_cpw", "#T_vi", "#T_cmpt--2", "#T_vf", "#T_cmpt--1", "#T_vi", "#T_cmpl", "#T_vr", "#T_cmpt--2", "#T_csb--1", "#T_vi", "#T_cdif", "#T_vj", "#T_cmpl", "#T_vr", "#T_csb--2", "#T_vs", "#T_csb--3", "#T_csb--1", "#T_vx", "#T_cmpt--1", "#T_csca", "#T_cfv", "#T_vs", "#T_cmpt--2", "#T_vx", "#T_cvsca", "#T_cfv", "#T_vs", "#T_cur", "#T_cfv", "#T_vs", "#T_csb--2", "#T_vc", "#T_csb--3", "#T_vi", "#T_ces", "#T_vs", "#T_cfv", "#T_vc", "#T_cimas", "#T_vr", "#T_cfv", "#T_vc", "#T_ccom", "#T_vf", "#T_cfv", "#T_vx", "#T_cmpt--1", "#T_vi", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wcel", "#T_vj", "#T_cif--2", "#T_vj", "#T_cmvr", "#T_vi", "#T_cdif", "#T_vj", "#T_cmpl", "#T_vr", "#T_cfv", "#T_vx", "#T_cif--3", "#T_vc", "#T_ccom", "#T_vi", "#T_cdif", "#T_vj", "#T_cmvr", "#T_vr", "#T_cfv", "#T_vx", "#T_vc", "#T_vf", "#T_vi", "#T_vj", "#T_vr", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the \"variable selection\" function.  The function ` ( ( I selectVars R ) `` J ) ` maps elements of ` ( I mPoly R ) ` bijectively onto ` ( J mPoly ( ( I \\ J ) mPoly R ) ) ` in the natural way, for example if ` I = { x , y } ` and ` J = { y } ` it would map ` 1 + x + y + x y e. ( { x , y } mPoly ZZ ) ` to ` ( 1 + x ) + ( 1 + x ) y e. ( { y } mPoly ( { x } mPoly ZZ ) ) ` . This, for example, allows one to treat a multivariate polynomial as a univariate polynomial with coefficients in a polynomial ring with one less variable.  (Contributed by Mario Carneiro, 21-Mar-2015.) ",
+  "statement" : "df-selv $p |- selectVars = ( i e. _V , r e. _V |-> ( j e. ~P i |-> ( f e. ( i mPoly r ) |-> [_ ( ( i \\ j ) mPoly r ) / s ]_ [_ ( x e. ( Scalar ` s ) |-> ( x ( .s ` s ) ( 1r ` s ) ) ) / c ]_ ( ( ( ( i evalSub s ) ` ( c \"s r ) ) ` ( c o. f ) ) ` ( x e. i |-> if ( x e. j , ( ( j mVar ( ( i \\ j ) mPoly r ) ) ` x ) , ( c o. ( ( ( i \\ j ) mVar r ) ` x ) ) ) ) ) ) ) ) $.\n$d c f i j r s x $."
+}

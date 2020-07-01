@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unifi3 on Metamath](http://us.metamath.org/mpegif/unifi3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elssuni | |- ( x e. A -> x C_ U. A ) |\n| 2 |  | #P_ssfi | |- ( ( U. A e. Fin /\\ x C_ U. A ) -> x e. Fin ) |\n| 3 | 2 | #P_ex | |- ( U. A e. Fin -> ( x C_ U. A -> x e. Fin ) ) |\n| 4 | 1, 3 | #P_syl5 | |- ( U. A e. Fin -> ( x e. A -> x e. Fin ) ) |\n| 5 | 4 | #P_ssrdv | |- ( U. A e. Fin -> A C_ Fin ) |",
+  "conclusion" : "#P_unifi3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cuni", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA", "#T_wss", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_ex", "#P_ssfi", "#P_elssuni", "#P_syl5" ]
+}

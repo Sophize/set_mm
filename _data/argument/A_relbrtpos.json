@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relbrtpos on Metamath](http://us.metamath.org/mpegif/relbrtpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reltpos | |- Rel tpos F |\n| 2 | 1 | #P_a1i | |- ( Rel F -> Rel tpos F ) |\n| 3 |  | #P_brrelex2 | |- ( ( Rel tpos F /\\ <. A , B >. tpos F C ) -> C e. _V ) |\n| 4 | 2, 3 | #P_sylan | |- ( ( Rel F /\\ <. A , B >. tpos F C ) -> C e. _V ) |\n| 5 |  | #P_brrelex2 | |- ( ( Rel F /\\ <. B , A >. F C ) -> C e. _V ) |\n| 6 |  | #P_brtpos | |- ( C e. _V -> ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) |\n| 7 | 4, 5, 6 | #P_pm5.21nd | |- ( Rel F -> ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) |",
+  "conclusion" : "#P_relbrtpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_ctpos", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_wrel", "#T_ctpos", "#T_cF", "#T_wrel", "#T_ctpos", "#T_cF", "#T_wa", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctpos", "#T_cF", "#T_cC", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cF", "#T_wa", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctpos", "#T_cF", "#T_cC", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cF", "#T_wa", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cF", "#T_cC", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctpos", "#T_cF", "#T_cC", "#T_wb", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cF", "#T_cC", "#T_wrel", "#T_cF", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctpos", "#T_cF", "#T_cC", "#T_wb", "#T_cop--1", "#T_cB", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_cF", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reltpos", "#P_brtpos", "#P_sylan", "#P_pm5.21nd", "#P_brrelex2", "#P_a1i" ]
+}

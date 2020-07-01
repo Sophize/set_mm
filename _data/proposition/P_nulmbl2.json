@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nulmbl2 on Metamath](http://us.metamath.org/mpegif/nulmbl2.html)"
+  } ],
+  "names" : [ "nulmbl2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cdm", "#T_cvol", "#T_cA", "#T_wss", "#T_vy", "#T_wa", "#T_covol", "#T_cfv", "#T_vy", "#T_cle", "#T_vx", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_cvol", "#T_cA", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A set of outer measure zero is measurable.  The term \"outer measure zero\" here is slightly different from \"nullset/negligible set\"; a nullset has ` vol* ( A ) = 0 ` while \"outer measure zero\" means that for any ` x ` there is a ` y ` containing ` A ` with volume less than ` x ` .  Assuming AC, these notions are equivalent (because the intersection of all such ` y ` is a nullset) but in ZF this is a strictly weaker notion.  Proposition 563Gb of [Fremlin5] p. 193. (Contributed by Mario Carneiro, 19-Mar-2015.) ",
+  "statement" : "nulmbl2 $p |- ( A. x e. RR+ E. y e. dom vol ( A C_ y /\\ ( vol* ` y ) <_ x ) -> A e. dom vol ) $.\n$d A x y $.\n$d x y $."
+}

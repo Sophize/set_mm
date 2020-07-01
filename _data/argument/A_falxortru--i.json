@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See falxortru on Metamath](http://us.metamath.org/mpegif/falxortru.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor--i | |- ( ( F. \\/_ T. ) <-> ( ( F. \\/ T. ) /\\ -. ( F. /\\ T. ) ) ) |\n| 2 |  | #P_falortru | |- ( ( F. \\/ T. ) <-> T. ) |\n| 3 |  | #P_notfal | |- ( -. F. <-> T. ) |\n| 4 |  | #P_falantru | |- ( ( F. /\\ T. ) <-> F. ) |\n| 5 | 3, 4 | #P_xchnxbir | |- ( -. ( F. /\\ T. ) <-> T. ) |\n| 6 | 2, 5 | #P_anbi12i | |- ( ( ( F. \\/ T. ) /\\ -. ( F. /\\ T. ) ) <-> ( T. /\\ T. ) ) |\n| 7 |  | #P_anidm | |- ( ( T. /\\ T. ) <-> T. ) |\n| 8 | 1, 6, 7 | #P_3bitri | |- ( ( F. \\/_ T. ) <-> T. ) |",
+  "conclusion" : "#P_falxortru",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfal", "#T_wxo", "#T_wtru", "#T_wb", "#T_wfal", "#T_wo", "#T_wtru", "#T_wa", "#T_wn", "#T_wfal", "#T_wa", "#T_wtru", "#T_wfal", "#T_wo", "#T_wtru", "#T_wb", "#T_wtru", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wfal", "#T_wa", "#T_wtru", "#T_wb", "#T_wfal", "#T_wn", "#T_wfal", "#T_wa", "#T_wtru", "#T_wb", "#T_wtru", "#T_wfal", "#T_wo", "#T_wtru", "#T_wa", "#T_wn", "#T_wfal", "#T_wa", "#T_wtru", "#T_wb", "#T_wtru", "#T_wa", "#T_wtru", "#T_wtru", "#T_wa", "#T_wtru", "#T_wb", "#T_wtru", "#T_wfal", "#T_wxo", "#T_wtru", "#T_wb", "#T_wtru" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notfal", "#P_anbi12i", "#P_anidm", "#P_df-xor--i", "#P_3bitri", "#P_xchnxbir", "#P_falortru", "#P_falantru" ]
+}

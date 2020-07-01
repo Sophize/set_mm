@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See disjeq12d on Metamath](http://us.metamath.org/mpegif/disjeq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | disjeq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | disjeq12d.1 | |- ( ph -> C = D ) |\n| 3 | 1 | #P_disjeq1d | |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) |\n| 4 | 2 | #P_adantr | |- ( ( ph /\\ x e. B ) -> C = D ) |\n| 5 | 4 | #P_disjeq2dv | |- ( ph -> ( Disj_ x e. B C <-> Disj_ x e. B D ) ) |\n| 6 | 3, 5 | #P_bitrd | |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B D ) ) |",
+  "conclusion" : "#P_disjeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vx.wal", "#T_wdisj--2", "#T_cA.wceq", "#T_cC", "#T_wb", "#T_wdisj--1", "#T_vx.wal", "#T_wdisj--2", "#T_cB.wceq", "#T_cC", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vx.wal", "#T_wdisj--2", "#T_cB.wceq", "#T_cC", "#T_wb", "#T_wdisj--1", "#T_vx.wal", "#T_wdisj--2", "#T_cB.wceq", "#T_cD", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cA", "#T_cC", "#T_wb", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cB", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_disjeq2dv", "#P_bitrd", "#P_disjeq1d", "#P_adantr" ]
+}

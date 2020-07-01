@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-quot on Metamath](http://us.metamath.org/mpegif/df-quot.html)"
+  } ],
+  "names" : [ "df-quot" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cquot", "#T_wceq", "#T_vf", "#T_cmpt2--1", "#T_cply", "#T_cfv", "#T_cc", "#T_cmpt2--2", "#T_vg", "#T_cmpt2--3", "#T_cply", "#T_cfv", "#T_cc", "#T_cdif", "#T_csn--1", "#T_c0p", "#T_csn--2", "#T_cmpt2--4", "#T_crio--1", "#T_vq", "#T_crio--2", "#T_cply", "#T_cfv", "#T_cc", "#T_wsbc--1", "#T_vf", "#T_cof", "#T_cmin", "#T_vg", "#T_cof", "#T_cmul", "#T_vq", "#T_wsbc--2", "#T_vr", "#T_wsbc--3", "#T_vr", "#T_wceq", "#T_c0p", "#T_wo", "#T_cdgr", "#T_cfv", "#T_vr", "#T_clt", "#T_cdgr", "#T_cfv", "#T_vg", "#T_vf", "#T_vg", "#T_vq", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the quotient function on polynomials.  This is the ` q ` of the expression ` f = g x. q + r ` in the division algorithm.  (Contributed by Mario Carneiro, 23-Jul-2014.) ",
+  "statement" : "df-quot $p |- quot = ( f e. ( Poly ` CC ) , g e. ( ( Poly ` CC ) \\ { 0p } ) |-> ( iota_ q e. ( Poly ` CC ) [. ( f oF - ( g oF x. q ) ) / r ]. ( r = 0p \\/ ( deg ` r ) < ( deg ` g ) ) ) ) $.\n$d f g q r $."
+}

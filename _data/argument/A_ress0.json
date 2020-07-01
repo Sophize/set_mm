@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ress0 on Metamath](http://us.metamath.org/mpegif/ress0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0ss | |- (/) C_ A |\n| 2 |  | #P_0ex | |- (/) e. _V |\n| 3 |  | #P_eqid | |- ( (/) |`s A ) = ( (/) |`s A ) |\n| 4 |  | #P_base0 | |- (/) = ( Base ` (/) ) |\n| 5 | 3, 4 | #P_ressid2 | |- ( ( (/) C_ A /\\ (/) e. _V /\\ A e. _V ) -> ( (/) |`s A ) = (/) ) |\n| 6 | 1, 2, 5 | #P_mp3an12 | |- ( A e. _V -> ( (/) |`s A ) = (/) ) |\n| 7 |  | #P_reldmress | |- Rel dom |`s |\n| 8 | 7 | #P_ovprc2 | |- ( -. A e. _V -> ( (/) |`s A ) = (/) ) |\n| 9 | 6, 8 | #P_pm2.61i | |- ( (/) |`s A ) = (/) |",
+  "conclusion" : "#P_ress0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wss", "#T_cA.wceq", "#T_c0", "#T_wcel", "#T_cvv", "#T_c0", "#T_cress", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cress", "#T_cA.wceq", "#T_c0", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_c0", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_cress", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_cress", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wrel", "#T_cdm", "#T_cress", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_cress", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_c0", "#T_cress", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_0ss", "#P_mp3an12", "#P_ressid2", "#P_base0", "#P_ovprc2", "#P_0ex", "#P_reldmress", "#P_pm2.61i" ]
+}

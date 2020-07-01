@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngmulr on Metamath](http://us.metamath.org/mpegif/rngmulr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rngfn.r | |- R = { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .x. >. } |\n| 2 | 1 | #P_rngstr | |- R Struct <. 1 , 3 >. |\n| 3 |  | #P_mulrid | |- .r = Slot ( .r ` ndx ) |\n| 4 |  | #P_snsstp3 | |- { <. ( .r ` ndx ) , .x. >. } C_ { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .x. >. } |\n| 5 | 4, 1 | #P_sseqtr4i | |- { <. ( .r ` ndx ) , .x. >. } C_ R |\n| 6 | 2, 3, 5 | #P_strfv | |- ( .x. e. V -> .x. = ( .r ` R ) ) |",
+  "conclusion" : "#P_rngmulr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_ctp--4", "#T_cR", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_c3", "#T_cop--3", "#T_cmulr", "#T_wceq", "#T_cslot", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_ctp--4", "#T_csn--1", "#T_cop--1", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cR", "#T_c.x", "#T_wcel", "#T_cV", "#T_wi", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_snsstp3", "#P_mulrid", "#P_rngstr", "#P_sseqtr4i", "#P_strfv" ]
+}

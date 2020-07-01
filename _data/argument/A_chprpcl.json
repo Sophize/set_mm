@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chprpcl on Metamath](http://us.metamath.org/mpegif/chprpcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chpcl | |- ( A e. RR -> ( psi ` A ) e. RR ) |\n| 2 | 1 | #P_adantr | |- ( ( A e. RR /\\ 2 <_ A ) -> ( psi ` A ) e. RR ) |\n| 3 |  | #P_chtrpcl | |- ( ( A e. RR /\\ 2 <_ A ) -> ( theta ` A ) e. RR+ ) |\n| 4 |  | #P_chtlepsi | |- ( A e. RR -> ( theta ` A ) <_ ( psi ` A ) ) |\n| 5 | 4 | #P_adantr | |- ( ( A e. RR /\\ 2 <_ A ) -> ( theta ` A ) <_ ( psi ` A ) ) |\n| 6 | 2, 3, 5 | #P_rpgecld | |- ( ( A e. RR /\\ 2 <_ A ) -> ( psi ` A ) e. RR+ ) |",
+  "conclusion" : "#P_chprpcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cchp", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c2", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cchp", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c2", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_ccht", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ccht", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cchp", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c2", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_ccht", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cchp", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_c2", "#T_cle", "#T_cA", "#T_wi", "#T_cchp", "#T_cfv", "#T_cA", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chtrpcl", "#P_rpgecld", "#P_chtlepsi", "#P_chpcl", "#P_adantr" ]
+}

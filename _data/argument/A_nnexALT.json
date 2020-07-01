@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnexALT on Metamath](http://us.metamath.org/mpegif/nnexALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-nn | |- NN = ( rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) \" _om ) |\n| 2 |  | #P_rdgfun | |- Fun rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) |\n| 3 |  | #P_omex | |- _om e. _V |\n| 4 |  | #P_funimaexg | |- ( ( Fun rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) /\\ _om e. _V ) -> ( rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) \" _om ) e. _V ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) \" _om ) e. _V |\n| 6 | 1, 5 | #P_eqeltri | |- NN e. _V |\n\\\n Alternate proof of ~ nnex , more direct.  (Contributed by NM, 3-Oct-1999.)  (Revised by Mario Carneiro, 3-May-2014.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_nnex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cn", "#T_wceq", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_cima", "#T_com", "#T_wfun", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_com", "#T_wcel", "#T_cvv", "#T_wfun", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_wa", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_cima", "#T_com", "#T_wcel", "#T_cvv", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_cima", "#T_com", "#T_wcel", "#T_cvv", "#T_cn", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-nn", "#P_mp2an", "#P_eqeltri", "#P_funimaexg", "#P_rdgfun", "#P_omex" ]
+}

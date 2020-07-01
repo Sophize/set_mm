@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspc2va on Metamath](http://us.metamath.org/mpegif/rspc2va.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspc2v.1 | |- ( x = A -> ( ph <-> ch ) ) |\n| 2 |  | rspc2v.2 | |- ( y = B -> ( ch <-> ps ) ) |\n| 3 | 1, 2 | #P_rspc2v | |- ( ( A e. C /\\ B e. D ) -> ( A. x e. C A. y e. D ph -> ps ) ) |\n| 4 | 3 | #P_imp | |- ( ( ( A e. C /\\ B e. D ) /\\ A. x e. C A. y e. D ph ) -> ps ) |",
+  "conclusion" : "#P_rspc2va",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cC", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cD", "#T_wph", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cC", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cD", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rspc2v", "#P_imp" ]
+}

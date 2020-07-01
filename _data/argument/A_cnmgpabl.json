@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnmgpabl on Metamath](http://us.metamath.org/mpegif/cnmgpabl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnmgpabl.m | |- M = ( ( mulGrp ` CCfld ) |`s ( CC \\ { 0 } ) ) |\n| 2 |  | #P_cncrng | |- CCfld e. CRing |\n| 3 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 4 |  | #P_cnfld0 | |- 0 = ( 0g ` CCfld ) |\n| 5 |  | #P_cndrng | |- CCfld e. DivRing |\n| 6 | 3, 4, 5 | #P_drngui | |- ( CC \\ { 0 } ) = ( Unit ` CCfld ) |\n| 7 | 6, 1 | #P_unitabl | |- ( CCfld e. CRing -> M e. Abel ) |\n| 8 | 2, 7 | #P_ax-mp | |- M e. Abel |",
+  "conclusion" : "#P_cnmgpabl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cdr", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cui", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cM", "#T_wcel", "#T_cabl", "#T_cM", "#T_wcel", "#T_cabl" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cncrng", "#P_ax-mp", "#P_cndrng", "#P_cnfld0", "#P_drngui", "#P_unitabl", "#P_cnfldbas" ]
+}

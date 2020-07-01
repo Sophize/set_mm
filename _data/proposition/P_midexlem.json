@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See midexlem on Metamath](http://us.metamath.org/mpegif/midexlem.html)"
+  } ],
+  "names" : [ "midexlem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cS", "#T_wceq", "#T_cmir", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_cM", "#T_wceq", "#T_cS", "#T_cfv", "#T_vx", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_c.mi", "#T_cA", "#T_wceq", "#T_cC", "#T_c.mi", "#T_cB", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cP", "#T_cB", "#T_wceq", "#T_cM", "#T_cfv", "#T_cA", "#T_c.mi", "#T_vx", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cC", "#T_vx", "#T_cI", "#T_vx", "#T_cL", "#T_vx", "#T_cP", "#T_vx", "#T_cS", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for the existence of a middle point.  Lemma 7.25 of [Schwabhauser] p. 55.  This proof of the existence of a midpoint requires the existence of a third point ` C ` equidistant to ` A ` and ` B ` This condition will be removed later.  Because the operation notation ` ( A ( midG `` G ) B ) ` for a midpoint implies its uniqueness, it cannot be used until uniqueness is proven, and until then, an equivalent mirror point notation ` B = ( M `` A ) ` has to be used.  See ~ mideu for the existence and uniqueness of the midpoint. (Contributed by Thierry Arnoux, 25-Aug-2019.) ",
+  "statement" : "mirval.p $e |- P = ( Base ` G ) $.\nmirval.d $e |- .- = ( dist ` G ) $.\nmirval.i $e |- I = ( Itv ` G ) $.\nmirval.l $e |- L = ( LineG ` G ) $.\nmirval.s $e |- S = ( pInvG ` G ) $.\nmirval.g $e |- ( ph -> G e. TarskiG ) $.\nmidexlem.m $e |- M = ( S ` x ) $.\nmidexlem.a $e |- ( ph -> A e. P ) $.\nmidexlem.b $e |- ( ph -> B e. P ) $.\nmidexlem.c $e |- ( ph -> C e. P ) $.\nmidexlem.1 $e |- ( ph -> ( C .- A ) = ( C .- B ) ) $.\nmidexlem $p |- ( ph -> E. x e. P B = ( M ` A ) ) $.\n$d .- x $.\n$d A x $.\n$d B x $.\n$d C x $.\n$d I x $.\n$d L x $.\n$d P x $.\n$d S x $.\n$d ph x $."
+}

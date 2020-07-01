@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbral on Metamath](http://us.metamath.org/mpegif/hbral.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hbral.1 | |- ( y e. A -> A. x y e. A ) |\n| 2 |  | hbral.2 | |- ( ph -> A. x ph ) |\n| 3 |  | #P_df-ral | |- ( A. y e. A ph <-> A. y ( y e. A -> ph ) ) |\n| 4 | 1, 2 | #P_hbim | |- ( ( y e. A -> ph ) -> A. x ( y e. A -> ph ) ) |\n| 5 | 4 | #P_hbal | |- ( A. y ( y e. A -> ph ) -> A. x A. y ( y e. A -> ph ) ) |\n| 6 | 3, 5 | #P_hbxfrbi | |- ( A. y e. A ph -> A. x A. y e. A ph ) |",
+  "conclusion" : "#P_hbral",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_wal", "#T_vx", "#T_vy", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ral", "#P_hbxfrbi", "#P_hbim", "#P_hbal" ]
+}

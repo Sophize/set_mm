@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See declt on Metamath](http://us.metamath.org/mpegif/declt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | declt.1 | |- A e. NN0 |\n| 2 |  | declt.2 | |- B e. NN0 |\n| 3 |  | declt.3 | |- C e. NN |\n| 4 |  | declt.4 | |- B < C |\n| 5 |  | #P_10nn | |- 10 e. NN |\n| 6 | 5, 1, 2, 3, 4 | #P_numlt | |- ( ( 10 x. A ) + B ) < ( ( 10 x. A ) + C ) |\n| 7 |  | #P_df-dec | |- ; A B = ( ( 10 x. A ) + B ) |\n| 8 |  | #P_df-dec | |- ; A C = ( ( 10 x. A ) + C ) |\n| 9 | 6, 7, 8 | #P_3brtr4i | |- ; A B < ; A C |",
+  "conclusion" : "#P_declt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn", "#T_cB", "#T_clt", "#T_cC", "#T_c10", "#T_wcel", "#T_cn", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_clt", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_cdc", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdc", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_cdc", "#T_cA", "#T_cB", "#T_clt", "#T_cdc", "#T_cA", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_numlt", "#P_3brtr4i", "#P_df-dec", "#P_10nn" ]
+}

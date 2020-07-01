@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumcl2lem on Metamath](http://us.metamath.org/mpegif/fsumcl2lem.html)"
+  } ],
+  "names" : [ "fsumcl2lem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cc", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_caddc", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cS", "#T_cA", "#T_vk", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cS", "#T_vk", "#T_vx", "#T_vy", "#T_vk", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " - Lemma for finite sum closures.  (The \"-\" before \"Lemma\" forces the math content to be displayed in the Statement List - NM 11-Feb-2008.) (Contributed by Mario Carneiro, 3-Jun-2014.) ",
+  "statement" : "fsumcllem.1 $e |- ( ph -> S C_ CC ) $.\nfsumcllem.2 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x + y ) e. S ) $.\nfsumcllem.3 $e |- ( ph -> A e. Fin ) $.\nfsumcllem.4 $e |- ( ( ph /\\ k e. A ) -> B e. S ) $.\nfsumcl2lem.5 $e |- ( ph -> A =/= (/) ) $.\nfsumcl2lem $p |- ( ph -> sum_ k e. A B e. S ) $.\n$d A k x y $.\n$d B x y $.\n$d S k x y $.\n$d k ph x y $."
+}

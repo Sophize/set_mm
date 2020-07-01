@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsk0 on Metamath](http://us.metamath.org/mpegif/tsk0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_n0 | |- ( T =/= (/) <-> E. x x e. T ) |\n| 2 |  | #P_0ss | |- (/) C_ x |\n| 3 |  | #P_tskss | |- ( ( T e. Tarski /\\ x e. T /\\ (/) C_ x ) -> (/) e. T ) |\n| 4 | 2, 3 | #P_mp3an3 | |- ( ( T e. Tarski /\\ x e. T ) -> (/) e. T ) |\n| 5 | 4 | #P_expcom | |- ( x e. T -> ( T e. Tarski -> (/) e. T ) ) |\n| 6 | 5 | #P_exlimiv | |- ( E. x x e. T -> ( T e. Tarski -> (/) e. T ) ) |\n| 7 | 1, 6 | #P_sylbi | |- ( T =/= (/) -> ( T e. Tarski -> (/) e. T ) ) |\n| 8 | 7 | #P_impcom | |- ( ( T e. Tarski /\\ T =/= (/) ) -> (/) e. T ) |",
+  "conclusion" : "#P_tsk0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cT", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_c0", "#T_wss", "#T_vx.wal", "#T_cT", "#T_wcel", "#T_ctsk", "#T_w3a--1", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_w3a--2", "#T_c0", "#T_wss", "#T_vx.wal", "#T_wi", "#T_c0", "#T_wcel", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_c0", "#T_wcel", "#T_cT", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wi", "#T_c0", "#T_wcel", "#T_cT", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wi", "#T_c0", "#T_wcel", "#T_cT", "#T_cT", "#T_wne", "#T_c0", "#T_wi", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wi", "#T_c0", "#T_wcel", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cT", "#T_wne", "#T_c0", "#T_wi", "#T_c0", "#T_wcel", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0ss", "#P_exlimiv", "#P_mp3an3", "#P_expcom", "#P_n0", "#P_tskss", "#P_impcom", "#P_sylbi" ]
+}

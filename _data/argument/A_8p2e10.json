@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 8p2e10 on Metamath](http://us.metamath.org/mpegif/8p2e10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-2 | |- 2 = ( 1 + 1 ) |\n| 2 | 1 | #P_oveq2i | |- ( 8 + 2 ) = ( 8 + ( 1 + 1 ) ) |\n| 3 |  | #P_8cn | |- 8 e. CC |\n| 4 |  | #P_ax-1cn | |- 1 e. CC |\n| 5 | 3, 4, 4 | #P_addassi | |- ( ( 8 + 1 ) + 1 ) = ( 8 + ( 1 + 1 ) ) |\n| 6 | 2, 5 | #P_eqtr4i | |- ( 8 + 2 ) = ( ( 8 + 1 ) + 1 ) |\n| 7 |  | #P_df-9 | |- 9 = ( 8 + 1 ) |\n| 8 | 7 | #P_oveq1i | |- ( 9 + 1 ) = ( ( 8 + 1 ) + 1 ) |\n| 9 | 6, 8 | #P_eqtr4i | |- ( 8 + 2 ) = ( 9 + 1 ) |\n| 10 |  | #P_df-10 | |- 10 = ( 9 + 1 ) |\n| 11 | 9, 10 | #P_eqtr4i | |- ( 8 + 2 ) = 10 |",
+  "conclusion" : "#P_8p2e10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_wceq", "#T_c1", "#T_caddc", "#T_c1", "#T_c8", "#T_caddc", "#T_c2", "#T_wceq", "#T_c8", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_c8", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_c8", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c8", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_c8", "#T_caddc", "#T_c2", "#T_wceq", "#T_c8", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_c9", "#T_wceq", "#T_c8", "#T_caddc", "#T_c1", "#T_c9", "#T_caddc", "#T_c1", "#T_wceq", "#T_c8", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_c8", "#T_caddc", "#T_c2", "#T_wceq", "#T_c9", "#T_caddc", "#T_c1", "#T_c10", "#T_wceq", "#T_c9", "#T_caddc", "#T_c1", "#T_c8", "#T_caddc", "#T_c2", "#T_wceq", "#T_c10" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_df-10", "#P_ax-1cn", "#P_df-9", "#P_addassi", "#P_8cn", "#P_oveq1i", "#P_oveq2i", "#P_df-2" ]
+}

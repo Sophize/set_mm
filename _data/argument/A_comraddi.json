@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See comraddi on Metamath](http://us.metamath.org/mpegif/comraddi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | comraddi.1 | |- B e. CC |\n| 2 |  | comraddi.2 | |- C e. CC |\n| 3 |  | comraddi.3 | |- A = ( B + C ) |\n| 4 | 1, 2 | #P_addcomi | |- ( B + C ) = ( C + B ) |\n| 5 | 3, 4 | #P_eqtri | |- A = ( C + B ) |",
+  "conclusion" : "#P_comraddi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA", "#T_wceq", "#T_cB", "#T_caddc", "#T_cC", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_wceq", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cC", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_addcomi" ]
+}

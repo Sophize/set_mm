@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexlimdOLD on Metamath](http://us.metamath.org/mpegif/rexlimdOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rexlimd.1 | |- F/ x ph |\n| 2 |  | rexlimd.2 | |- F/ x ch |\n| 3 |  | rexlimd.3 | |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) |\n| 4 | 1, 3 | #P_ralrimi | |- ( ph -> A. x e. A ( ps -> ch ) ) |\n| 5 | 2 | #P_r19.23 | |- ( A. x e. A ( ps -> ch ) <-> ( E. x e. A ps -> ch ) ) |\n| 6 | 4, 5 | #P_sylib | |- ( ph -> ( E. x e. A ps -> ch ) ) |\n\\\n Obsolete proof of ~ rexlimd as of 14-Jan-2020.  (Contributed by NM, 27-May-1998.)  (Proof shortened by Andrew Salmon, 30-May-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_rexlimd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylib", "#P_r19.23", "#P_ralrimi" ]
+}

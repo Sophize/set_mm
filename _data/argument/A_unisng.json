@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unisng on Metamath](http://us.metamath.org/mpegif/unisng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sneq | |- ( x = A -> { x } = { A } ) |\n| 2 | 1 | #P_unieqd | |- ( x = A -> U. { x } = U. { A } ) |\n| 3 |  | #P_id | |- ( x = A -> x = A ) |\n| 4 | 2, 3 | #P_eqeq12d | |- ( x = A -> ( U. { x } = x <-> U. { A } = A ) ) |\n| 5 |  | #P_vex | |- x e. _V |\n| 6 | 5 | #P_unisn | |- U. { x } = x |\n| 7 | 4, 6 | #P_vtoclg | |- ( A e. V -> U. { A } = A ) |",
+  "conclusion" : "#P_unisng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cuni", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_vtoclg", "#P_unieqd", "#P_unisn", "#P_sneq", "#P_vex", "#P_id" ]
+}

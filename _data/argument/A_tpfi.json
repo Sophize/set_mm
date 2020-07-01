@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpfi on Metamath](http://us.metamath.org/mpegif/tpfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-tp | |- { A , B , C } = ( { A , B } u. { C } ) |\n| 2 |  | #P_prfi | |- { A , B } e. Fin |\n| 3 |  | #P_snfi | |- { C } e. Fin |\n| 4 |  | #P_unfi | |- ( ( { A , B } e. Fin /\\ { C } e. Fin ) -> ( { A , B } u. { C } ) e. Fin ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( { A , B } u. { C } ) e. Fin |\n| 6 | 1, 5 | #P_eqeltri | |- { A , B , C } e. Fin |",
+  "conclusion" : "#P_tpfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cfn", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cfn", "#T_wa", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unfi", "#P_mp2an", "#P_eqeltri", "#P_prfi", "#P_df-tp", "#P_snfi" ]
+}

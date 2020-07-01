@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2nd0 on Metamath](http://us.metamath.org/mpegif/2nd0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2ndval | |- ( 2nd ` (/) ) = U. ran { (/) } |\n| 2 |  | #P_dmsn0 | |- dom { (/) } = (/) |\n| 3 |  | #P_dm0rn0 | |- ( dom { (/) } = (/) <-> ran { (/) } = (/) ) |\n| 4 | 2, 3 | #P_mpbi | |- ran { (/) } = (/) |\n| 5 | 4 | #P_unieqi | |- U. ran { (/) } = U. (/) |\n| 6 |  | #P_uni0 | |- U. (/) = (/) |\n| 7 | 1, 5, 6 | #P_3eqtri | |- ( 2nd ` (/) ) = (/) |",
+  "conclusion" : "#P_2nd0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2nd", "#T_cfv", "#T_c0", "#T_wceq", "#T_cuni", "#T_crn", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cdm", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_c0", "#T_cdm", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_c0", "#T_wb", "#T_crn", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_c0", "#T_crn", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_c0", "#T_cuni", "#T_crn", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_c0", "#T_cuni", "#T_c0", "#T_wceq", "#T_c0", "#T_c2nd", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_2ndval", "#P_dmsn0", "#P_mpbi", "#P_dm0rn0", "#P_3eqtri", "#P_uni0" ]
+}

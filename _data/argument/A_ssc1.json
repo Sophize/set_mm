@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssc1 on Metamath](http://us.metamath.org/mpegif/ssc1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isssc.1 | |- ( ph -> H Fn ( S X. S ) ) |\n| 2 |  | isssc.2 | |- ( ph -> J Fn ( T X. T ) ) |\n| 3 |  | ssc1.3 | |- ( ph -> H C_cat J ) |\n| 4 |  | #P_sscrel | |- Rel C_cat |\n| 5 | 4 | #P_brrelex2i | |- ( H C_cat J -> J e. _V ) |\n| 6 | 3, 5 | #P_syl | |- ( ph -> J e. _V ) |\n| 7 | 2 | #P_ssclem | |- ( ph -> ( J e. _V <-> T e. _V ) ) |\n| 8 | 6, 7 | #P_mpbid | |- ( ph -> T e. _V ) |\n| 9 | 1, 2, 8 | #P_isssc | |- ( ph -> ( H C_cat J <-> ( S C_ T /\\ A. x e. S A. y e. S ( x H y ) C_ ( x J y ) ) ) ) |\n| 10 | 3, 9 | #P_mpbid | |- ( ph -> ( S C_ T /\\ A. x e. S A. y e. S ( x H y ) C_ ( x J y ) ) ) |\n| 11 | 10 | #P_simpld | |- ( ph -> S C_ T ) |",
+  "conclusion" : "#P_ssc1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wph", "#T_wi", "#T_cH", "#T_wfn", "#T_cS", "#T_cxp", "#T_cS", "#T_wph", "#T_wi", "#T_cJ", "#T_wfn", "#T_cT", "#T_cxp", "#T_cT", "#T_wph", "#T_wi", "#T_cH", "#T_cssc", "#T_cJ", "#T_wrel", "#T_cssc", "#T_cH", "#T_cssc", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_cvv", "#T_wb", "#T_cT", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cH", "#T_cssc", "#T_cJ", "#T_wb", "#T_cS", "#T_wss", "#T_cT", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_wss", "#T_vx.wal", "#T_cJ", "#T_vy.tru", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cT", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_wss", "#T_vx.wal", "#T_cJ", "#T_vy.tru", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sscrel", "#P_isssc", "#P_simpld", "#P_mpbid", "#P_syl", "#P_ssclem", "#P_brrelex2i" ]
+}

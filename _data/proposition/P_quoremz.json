@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See quoremz on Metamath](http://us.metamath.org/mpegif/quoremz.html)"
+  } ],
+  "names" : [ "quoremz" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB", "#T_cR", "#T_wceq", "#T_cA", "#T_cmin", "#T_cB", "#T_cmul", "#T_cQ", "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cn", "#T_wi", "#T_cQ", "#T_wcel", "#T_cz", "#T_wa", "#T_cR", "#T_wcel", "#T_cn0", "#T_wa", "#T_cR", "#T_clt", "#T_cB", "#T_wa", "#T_cA", "#T_wceq", "#T_cB", "#T_cmul", "#T_cQ", "#T_caddc", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Quotient and remainder of an integer divided by a positive integer.  TO DO - is this really needed for anything?  Should we use ` mod ` to simplify it?  (Contributed by NM, 14-Aug-2008.) ",
+  "statement" : "quorem.1 $e |- Q = ( |_ ` ( A / B ) ) $.\nquorem.2 $e |- R = ( A - ( B x. Q ) ) $.\nquoremz $p |- ( ( A e. ZZ /\\ B e. NN ) -> ( ( Q e. ZZ /\\ R e. NN0 ) /\\ ( R < B /\\ A = ( ( B x. Q ) + R ) ) ) ) $."
+}

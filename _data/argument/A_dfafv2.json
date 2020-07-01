@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfafv2 on Metamath](http://us.metamath.org/mpegif/dfafv2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-afv | |- ( F ''' A ) = if ( F defAt A , ( iota x A F x ) , _V ) |\n| 2 |  | #P_df-fv | |- ( F ` A ) = ( iota x A F x ) |\n| 3 | 2 | #P_eqcomi | |- ( iota x A F x ) = ( F ` A ) |\n| 4 |  | #P_ifeq1 | |- ( ( iota x A F x ) = ( F ` A ) -> if ( F defAt A , ( iota x A F x ) , _V ) = if ( F defAt A , ( F ` A ) , _V ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- if ( F defAt A , ( iota x A F x ) , _V ) = if ( F defAt A , ( F ` A ) , _V ) |\n| 6 | 1, 5 | #P_eqtri | |- ( F ''' A ) = if ( F defAt A , ( F ` A ) , _V ) |",
+  "conclusion" : "#P_dfafv2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cif--3", "#T_cvv", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cif--3", "#T_cvv", "#T_wceq", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cif--3", "#T_cvv", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cif--3", "#T_cvv", "#T_wceq", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cif--3", "#T_cvv", "#T_cF", "#T_cafv", "#T_cA", "#T_wceq", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA", "#T_cif--2", "#T_cF", "#T_cfv", "#T_cA", "#T_cif--3", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-fv", "#P_ax-mp", "#P_eqtri", "#P_df-afv", "#P_ifeq1", "#P_eqcomi" ]
+}

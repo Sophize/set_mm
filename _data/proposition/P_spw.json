@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spw on Metamath](http://us.metamath.org/mpegif/spw.html)"
+  } ],
+  "names" : [ "spw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Weak version of the specialization scheme ~ sp .  Lemma 9 of [KalishMontague] p. 87.  While it appears that ~ sp in its general form does not follow from Tarski's FOL axiom schemes, from this theorem we can prove any _instance_ of ~ sp having mutually distinct setvar variables and no wff metavariables (see ~ ax12wdemo for an example of the procedure to eliminate the hypothesis).  Other approximations of ~ sp are ~ spfw (minimal distinct variable requirements), ~ spnfw (when ` x ` is not free in ` -. ph ` ), ~ spvw (when ` x ` does not appear in ` ph ` ), ~ sptruw (when ` ph ` is true), and ~ spfalw (when ` ph ` is false).  (Contributed by NM, 9-Apr-2017.)  (Proof shortened by Wolf Lammen, 27-Feb-2018.) ",
+  "statement" : "spw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.\nspw $p |- ( A. x ph -> ph ) $.\n$d ph y $.\n$d ps x $.\n$d x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sneqrg on Metamath](http://us.metamath.org/mpegif/sneqrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sneq | |- ( x = A -> { x } = { A } ) |\n| 2 | 1 | #P_eqeq1d | |- ( x = A -> ( { x } = { B } <-> { A } = { B } ) ) |\n| 3 |  | #P_eqeq1 | |- ( x = A -> ( x = B <-> A = B ) ) |\n| 4 | 2, 3 | #P_imbi12d | |- ( x = A -> ( ( { x } = { B } -> x = B ) <-> ( { A } = { B } -> A = B ) ) ) |\n| 5 |  | #P_vex | |- x e. _V |\n| 6 | 5 | #P_sneqr | |- ( { x } = { B } -> x = B ) |\n| 7 | 4, 6 | #P_vtoclg | |- ( A e. V -> ( { A } = { B } -> A = B ) ) |",
+  "conclusion" : "#P_sneqrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vtoclg", "#P_imbi12d", "#P_sneq", "#P_eqeq1d", "#P_sneqr", "#P_vex", "#P_eqeq1" ]
+}

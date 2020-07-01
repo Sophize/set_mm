@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cntzcmnf on Metamath](http://us.metamath.org/mpegif/cntzcmnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cntzcmnf.b | |- B = ( Base ` G ) |\n| 2 |  | cntzcmnf.z | |- Z = ( Cntz ` G ) |\n| 3 |  | cntzcmnf.g | |- ( ph -> G e. CMnd ) |\n| 4 |  | cntzcmnf.f | |- ( ph -> F : A --> B ) |\n| 5 |  | #P_frn | |- ( F : A --> B -> ran F C_ B ) |\n| 6 | 4, 5 | #P_syl | |- ( ph -> ran F C_ B ) |\n| 7 | 1, 2 | #P_cntzcmn | |- ( ( G e. CMnd /\\ ran F C_ B ) -> ( Z ` ran F ) = B ) |\n| 8 | 3, 6, 7 | #P_syl2anc | |- ( ph -> ( Z ` ran F ) = B ) |\n| 9 | 6, 8 | #P_sseqtr4d | |- ( ph -> ran F C_ ( Z ` ran F ) ) |",
+  "conclusion" : "#P_cntzcmnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cZ", "#T_wceq", "#T_ccntz", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cZ", "#T_cfv", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cZ", "#T_cfv", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cZ", "#T_cfv", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_sseqtr4d", "#P_cntzcmn", "#P_syl", "#P_frn" ]
+}

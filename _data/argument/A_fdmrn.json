@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fdmrn on Metamath](http://us.metamath.org/mpegif/fdmrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssid | |- ran F C_ ran F |\n| 2 |  | #P_df-f | |- ( F : dom F --> ran F <-> ( F Fn dom F /\\ ran F C_ ran F ) ) |\n| 3 | 1, 2 | #P_mpbiran2 | |- ( F : dom F --> ran F <-> F Fn dom F ) |\n| 4 |  | #P_eqid | |- dom F = dom F |\n| 5 |  | #P_df-fn | |- ( F Fn dom F <-> ( Fun F /\\ dom F = dom F ) ) |\n| 6 | 4, 5 | #P_mpbiran2 | |- ( F Fn dom F <-> Fun F ) |\n| 7 | 3, 6 | #P_bitr2i | |- ( Fun F <-> F : dom F --> ran F ) |",
+  "conclusion" : "#P_fdmrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crn", "#T_cF", "#T_wss", "#T_crn", "#T_cF", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_crn", "#T_cF", "#T_wb", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_crn", "#T_cF", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_crn", "#T_cF", "#T_wb", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_cdm", "#T_cF", "#T_wceq", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cdm", "#T_cF", "#T_wb", "#T_wfun", "#T_cF", "#T_wfun", "#T_cF", "#T_wb", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiran2", "#P_eqid", "#P_ssid", "#P_df-fn", "#P_df-f", "#P_bitr2i" ]
+}

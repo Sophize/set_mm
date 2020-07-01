@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrhmeo on Metamath](http://us.metamath.org/mpegif/xrhmeo.html)"
+  } ],
+  "names" : [ "xrhmeo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc0", "#T_cicc", "#T_c1", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_c1", "#T_cif--2", "#T_cpnf", "#T_cif--3", "#T_vx", "#T_cdiv", "#T_c1", "#T_cmin", "#T_vx", "#T_cG", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cneg", "#T_c1", "#T_cicc", "#T_c1", "#T_cmpt--2", "#T_cif--1", "#T_cc0", "#T_cle", "#T_vy", "#T_cif--2", "#T_cF", "#T_cfv", "#T_vy", "#T_cif--3", "#T_cxne", "#T_cF", "#T_cfv", "#T_cneg", "#T_vy", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wceq", "#T_cordt", "#T_cfv", "#T_cle", "#T_cG", "#T_wiso--1", "#T_clt", "#T_wiso--2", "#T_clt", "#T_cneg", "#T_c1", "#T_cicc", "#T_c1", "#T_wiso--3", "#T_cxr", "#T_wa", "#T_cG", "#T_wcel", "#T_cJ", "#T_crest", "#T_cneg", "#T_c1", "#T_cicc", "#T_c1", "#T_chmeo", "#T_cordt", "#T_cfv", "#T_cle", "#T_cF", "#T_vy", "#T_cJ", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The bijection from ` [ -u 1 , 1 ] ` to the extended reals is an order isomorphism and a homeomorphism.  (Contributed by Mario Carneiro, 9-Sep-2015.) ",
+  "statement" : "xrhmeo.f $e |- F = ( x e. ( 0 [,] 1 ) |-> if ( x = 1 , +oo , ( x / ( 1 - x ) ) ) ) $.\nxrhmeo.g $e |- G = ( y e. ( -u 1 [,] 1 ) |-> if ( 0 <_ y , ( F ` y ) , -e ( F ` -u y ) ) ) $.\nxrhmeo.j $e |- J = ( TopOpen ` CCfld ) $.\nxrhmeo.k $e |- K = ( ordTop ` <_ ) $.\nxrhmeo $p |- ( G Isom < , < ( ( -u 1 [,] 1 ) , RR* ) /\\ G e. ( ( J |`t ( -u 1 [,] 1 ) ) Homeo ( ordTop ` <_ ) ) ) $.\n$d F y $.\n$d J x y $.\n$d x y $.\n$d x y $."
+}

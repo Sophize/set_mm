@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2ralbida on Metamath](http://us.metamath.org/mpegif/2ralbida.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 2ralbida.1 | |- F/ x ph |\n| 2 |  | 2ralbida.2 | |- F/ y ph |\n| 3 |  | 2ralbida.3 | |- ( ( ph /\\ ( x e. A /\\ y e. B ) ) -> ( ps <-> ch ) ) |\n| 4 |  | #P_nfv | |- F/ y x e. A |\n| 5 | 2, 4 | #P_nfan | |- F/ y ( ph /\\ x e. A ) |\n| 6 | 3 | #P_anassrs | |- ( ( ( ph /\\ x e. A ) /\\ y e. B ) -> ( ps <-> ch ) ) |\n| 7 | 5, 6 | #P_ralbida | |- ( ( ph /\\ x e. A ) -> ( A. y e. B ps <-> A. y e. B ch ) ) |\n| 8 | 1, 7 | #P_ralbida | |- ( ph -> ( A. x e. A A. y e. B ps <-> A. x e. A A. y e. B ch ) ) |",
+  "conclusion" : "#P_2ralbida",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wnf", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wps", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_wps", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_ralbida", "#P_anassrs", "#P_nfan" ]
+}

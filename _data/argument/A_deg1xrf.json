@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See deg1xrf on Metamath](http://us.metamath.org/mpegif/deg1xrf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | deg1xrf.d | |- D = ( deg1 ` R ) |\n| 2 |  | deg1xrf.p | |- P = ( Poly1 ` R ) |\n| 3 |  | deg1xrf.b | |- B = ( Base ` P ) |\n| 4 | 1 | #P_deg1fval | |- D = ( 1o mDeg R ) |\n| 5 |  | #P_eqid | |- ( 1o mPoly R ) = ( 1o mPoly R ) |\n| 6 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 7 | 2, 6, 3 | #P_ply1bas | |- B = ( Base ` ( 1o mPoly R ) ) |\n| 8 | 4, 5, 7 | #P_mdegxrf | |- D : B --> RR* |",
+  "conclusion" : "#P_deg1xrf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cD", "#T_wceq", "#T_c1o", "#T_cmdg", "#T_cR", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cD", "#T_wf--1", "#T_cB", "#T_wf--2", "#T_cxr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_deg1fval", "#P_mdegxrf", "#P_ply1bas" ]
+}

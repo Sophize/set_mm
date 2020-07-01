@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iprc on Metamath](http://us.metamath.org/mpegif/iprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vprc | |- -. _V e. _V |\n| 2 |  | #P_dmi | |- dom _I = _V |\n| 3 | 2 | #P_eleq1i | |- ( dom _I e. _V <-> _V e. _V ) |\n| 4 | 1, 3 | #P_mtbir | |- -. dom _I e. _V |\n| 5 |  | #P_dmexg | |- ( _I e. _V -> dom _I e. _V ) |\n| 6 | 4, 5 | #P_mto | |- -. _I e. _V |",
+  "conclusion" : "#P_iprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_cvv", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cid", "#T_wceq", "#T_cvv", "#T_cdm", "#T_cid", "#T_wcel", "#T_cvv", "#T_wb", "#T_cvv", "#T_wcel", "#T_cvv", "#T_wn", "#T_cdm", "#T_cid", "#T_wcel", "#T_cvv", "#T_cid", "#T_wcel", "#T_cvv", "#T_wi", "#T_cdm", "#T_cid", "#T_wcel", "#T_cvv", "#T_wn", "#T_cid", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vprc", "#P_dmi", "#P_dmexg", "#P_eleq1i", "#P_mto", "#P_mtbir" ]
+}

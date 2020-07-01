@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elsb3 on Metamath](http://us.metamath.org/mpegif/elsb3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfv | |- F/ y w e. z |\n| 2 | 1 | #P_sbco2 | |- ( [ x / y ] [ y / w ] w e. z <-> [ x / w ] w e. z ) |\n| 3 |  | #P_nfv | |- F/ w y e. z |\n| 4 |  | #P_elequ1 | |- ( w = y -> ( w e. z <-> y e. z ) ) |\n| 5 | 3, 4 | #P_sbie | |- ( [ y / w ] w e. z <-> y e. z ) |\n| 6 | 5 | #P_sbbii | |- ( [ x / y ] [ y / w ] w e. z <-> [ x / y ] y e. z ) |\n| 7 |  | #P_nfv | |- F/ w x e. z |\n| 8 |  | #P_elequ1 | |- ( w = x -> ( w e. z <-> x e. z ) ) |\n| 9 | 7, 8 | #P_sbie | |- ( [ x / w ] w e. z <-> x e. z ) |\n| 10 | 2, 6, 9 | #P_3bitr3i | |- ( [ x / y ] y e. z <-> x e. z ) |",
+  "conclusion" : "#P_elsb3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wnf", "#T_vy.tru", "#T_vw", "#T_wcel", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wcel", "#T_vz", "#T_wnf", "#T_vw", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_vw", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wnf", "#T_vw", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_vw", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wcel", "#T_vz", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_wsb--1", "#T_vx", "#T_wsb--2", "#T_vy", "#T_wsb--3", "#T_vy", "#T_wcel", "#T_vz", "#T_wb", "#T_vx", "#T_wcel", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_sbie", "#P_elequ1", "#P_sbbii", "#P_sbco2", "#P_3bitr3i" ]
+}

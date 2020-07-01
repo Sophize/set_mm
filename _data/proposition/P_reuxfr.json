@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuxfr on Metamath](http://us.metamath.org/mpegif/reuxfr.html)"
+  } ],
+  "names" : [ "reuxfr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cB", "#T_wph", "#T_wb", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cB", "#T_wps", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_wph", "#T_vy", "#T_wps", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfer existential uniqueness from a variable ` x ` to another variable ` y ` contained in expression ` A ` .  Use ~ reuhyp to eliminate the second hypothesis.  (Contributed by NM, 14-Nov-2004.) ",
+  "statement" : "reuxfr.1 $e |- ( y e. B -> A e. B ) $.\nreuxfr.2 $e |- ( x e. B -> E! y e. B x = A ) $.\nreuxfr.3 $e |- ( x = A -> ( ph <-> ps ) ) $.\nreuxfr $p |- ( E! x e. B ph <-> E! y e. B ps ) $.\n$d A x $.\n$d B x y $.\n$d ph y $.\n$d ps x $."
+}

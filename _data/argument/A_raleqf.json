@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See raleqf on Metamath](http://us.metamath.org/mpegif/raleqf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | raleq1f.1 | |- F/_ x A |\n| 2 |  | raleq1f.2 | |- F/_ x B |\n| 3 | 1, 2 | #P_nfeq | |- F/ x A = B |\n| 4 |  | #P_eleq2 | |- ( A = B -> ( x e. A <-> x e. B ) ) |\n| 5 | 4 | #P_imbi1d | |- ( A = B -> ( ( x e. A -> ph ) <-> ( x e. B -> ph ) ) ) |\n| 6 | 3, 5 | #P_albid | |- ( A = B -> ( A. x ( x e. A -> ph ) <-> A. x ( x e. B -> ph ) ) ) |\n| 7 |  | #P_df-ral | |- ( A. x e. A ph <-> A. x ( x e. A -> ph ) ) |\n| 8 |  | #P_df-ral | |- ( A. x e. B ph <-> A. x ( x e. B -> ph ) ) |\n| 9 | 6, 7, 8 | #P_3bitr4g | |- ( A = B -> ( A. x e. A ph <-> A. x e. B ph ) ) |",
+  "conclusion" : "#P_raleqf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albid", "#P_eleq2", "#P_imbi1d", "#P_df-ral", "#P_nfeq", "#P_3bitr4g" ]
+}

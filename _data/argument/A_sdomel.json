@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sdomel on Metamath](http://us.metamath.org/mpegif/sdomel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssdomg | |- ( A e. On -> ( B C_ A -> B ~<_ A ) ) |\n| 2 | 1 | #P_adantl | |- ( ( B e. On /\\ A e. On ) -> ( B C_ A -> B ~<_ A ) ) |\n| 3 |  | #P_ontri1 | |- ( ( B e. On /\\ A e. On ) -> ( B C_ A <-> -. A e. B ) ) |\n| 4 |  | #P_domtriord | |- ( ( B e. On /\\ A e. On ) -> ( B ~<_ A <-> -. A ~< B ) ) |\n| 5 | 2, 3, 4 | #P_3imtr3d | |- ( ( B e. On /\\ A e. On ) -> ( -. A e. B -> -. A ~< B ) ) |\n| 6 | 5 | #P_con4d | |- ( ( B e. On /\\ A e. On ) -> ( A ~< B -> A e. B ) ) |\n| 7 | 6 | #P_ancoms | |- ( ( A e. On /\\ B e. On ) -> ( A ~< B -> A e. B ) ) |",
+  "conclusion" : "#P_sdomel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_csdm", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ontri1", "#P_adantl", "#P_domtriord", "#P_3imtr3d", "#P_ssdomg", "#P_ancoms", "#P_con4d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj90 on Metamath](http://us.metamath.org/mpegif/bnj90.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj90.1 | |- Y e. _V |\n| 2 |  | #P_fneq2 | |- ( x = y -> ( z Fn x <-> z Fn y ) ) |\n| 3 |  | #P_fneq2 | |- ( y = Y -> ( z Fn y <-> z Fn Y ) ) |\n| 4 | 2, 3 | #P_sbcie2g | |- ( Y e. _V -> ( [. Y / x ]. z Fn x <-> z Fn Y ) ) |\n| 5 | 1, 4 | #P_ax-mp | |- ( [. Y / x ]. z Fn x <-> z Fn Y ) |",
+  "conclusion" : "#P_bnj90",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cY", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wfn", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wfn", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vz", "#T_wfn", "#T_vy.tru", "#T_wb", "#T_vz", "#T_wfn", "#T_cY", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_cY", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vz", "#T_wfn", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wfn", "#T_cY", "#T_wsbc--1", "#T_cY", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_vz", "#T_wfn", "#T_vx", "#T_wb", "#T_vz", "#T_wfn", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_fneq2", "#P_sbcie2g" ]
+}

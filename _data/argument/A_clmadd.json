@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmadd on Metamath](http://us.metamath.org/mpegif/clmadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clm0.f | |- F = ( Scalar ` W ) |\n| 2 |  | #P_eqid | |- ( Base ` F ) = ( Base ` F ) |\n| 3 | 1, 2 | #P_clmsca | |- ( W e. CMod -> F = ( CCfld |`s ( Base ` F ) ) ) |\n| 4 | 3 | #P_fveq2d | |- ( W e. CMod -> ( +g ` F ) = ( +g ` ( CCfld |`s ( Base ` F ) ) ) ) |\n| 5 |  | #P_fvex | |- ( Base ` F ) e. _V |\n| 6 |  | #P_eqid | |- ( CCfld |`s ( Base ` F ) ) = ( CCfld |`s ( Base ` F ) ) |\n| 7 |  | #P_cnfldadd | |- + = ( +g ` CCfld ) |\n| 8 | 6, 7 | #P_ressplusg | |- ( ( Base ` F ) e. _V -> + = ( +g ` ( CCfld |`s ( Base ` F ) ) ) ) |\n| 9 | 5, 8 | #P_ax-mp | |- + = ( +g ` ( CCfld |`s ( Base ` F ) ) ) |\n| 10 | 4, 9 | #P_syl6reqr | |- ( W e. CMod -> + = ( +g ` F ) ) |",
+  "conclusion" : "#P_clmadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cF", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cplusg", "#T_cfv", "#T_cF", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cbs", "#T_cfv", "#T_cF", "#T_wcel", "#T_cvv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_cbs", "#T_cfv", "#T_cF", "#T_wcel", "#T_cvv", "#T_wi", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_clmsca", "#P_ressplusg", "#P_ax-mp", "#P_fveq2d", "#P_syl6reqr", "#P_fvex", "#P_cnfldadd" ]
+}

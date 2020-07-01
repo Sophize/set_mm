@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mptexg on Metamath](http://us.metamath.org/mpegif/mptexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funmpt | |- Fun ( x e. A |-> B ) |\n| 2 |  | #P_eqid | |- ( x e. A |-> B ) = ( x e. A |-> B ) |\n| 3 | 2 | #P_dmmptss | |- dom ( x e. A |-> B ) C_ A |\n| 4 |  | #P_ssexg | |- ( ( dom ( x e. A |-> B ) C_ A /\\ A e. V ) -> dom ( x e. A |-> B ) e. _V ) |\n| 5 | 3, 4 | #P_mpan | |- ( A e. V -> dom ( x e. A |-> B ) e. _V ) |\n| 6 |  | #P_funex | |- ( ( Fun ( x e. A |-> B ) /\\ dom ( x e. A |-> B ) e. _V ) -> ( x e. A |-> B ) e. _V ) |\n| 7 | 1, 5, 6 | #P_sylancr | |- ( A e. V -> ( x e. A |-> B ) e. _V ) |",
+  "conclusion" : "#P_mptexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_cdm", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cdm", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cdm", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wfun", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wa", "#T_cdm", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssexg", "#P_eqid", "#P_sylancr", "#P_dmmptss", "#P_mpan", "#P_funex", "#P_funmpt" ]
+}

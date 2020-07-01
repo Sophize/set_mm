@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sseq0 on Metamath](http://us.metamath.org/mpegif/sseq0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sseq2 | |- ( B = (/) -> ( A C_ B <-> A C_ (/) ) ) |\n| 2 |  | #P_ss0 | |- ( A C_ (/) -> A = (/) ) |\n| 3 | 1, 2 | #P_syl6bi | |- ( B = (/) -> ( A C_ B -> A = (/) ) ) |\n| 4 | 3 | #P_impcom | |- ( ( A C_ B /\\ B = (/) ) -> A = (/) ) |",
+  "conclusion" : "#P_sseq0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_c0", "#T_cA.wceq", "#T_wss", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cB", "#T_wceq", "#T_c0", "#T_wi", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ss0", "#P_sseq2", "#P_syl6bi", "#P_impcom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wlkc on Metamath](http://us.metamath.org/mpegif/wlkc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_wlkcpr | |- ( W e. ( V Walks E ) <-> ( 1st ` W ) ( V Walks E ) ( 2nd ` W ) ) |\n| 2 |  | #P_fvex | |- ( 1st ` W ) e. _V |\n| 3 |  | #P_fvex | |- ( 2nd ` W ) e. _V |\n| 4 |  | #P_breq12 | |- ( ( f = ( 1st ` W ) /\\ p = ( 2nd ` W ) ) -> ( f ( V Walks E ) p <-> ( 1st ` W ) ( V Walks E ) ( 2nd ` W ) ) ) |\n| 5 | 2, 3, 4 | #P_spc2ev | |- ( ( 1st ` W ) ( V Walks E ) ( 2nd ` W ) -> E. f E. p f ( V Walks E ) p ) |\n| 6 | 1, 5 | #P_sylbi | |- ( W e. ( V Walks E ) -> E. f E. p f ( V Walks E ) p ) |",
+  "conclusion" : "#P_wlkc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cV", "#T_cwalk", "#T_cE", "#T_wb", "#T_c1st", "#T_cfv", "#T_cW", "#T_cV", "#T_cwalk", "#T_cE", "#T_c2nd", "#T_cfv", "#T_cW", "#T_c1st", "#T_cfv", "#T_cW", "#T_wcel", "#T_cvv", "#T_c2nd", "#T_cfv", "#T_cW", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cW", "#T_wa", "#T_vp", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cW", "#T_wi", "#T_cbvex4v.vf", "#T_cV", "#T_cwalk", "#T_cE", "#T_vp", "#T_wb", "#T_c1st", "#T_cfv", "#T_cW", "#T_cV", "#T_cwalk", "#T_cE", "#T_c2nd", "#T_cfv", "#T_cW", "#T_c1st", "#T_cfv", "#T_cW", "#T_cV", "#T_cwalk", "#T_cE", "#T_c2nd", "#T_cfv", "#T_cW", "#T_wi", "#T_wex", "#T_cbvex4v.vf", "#T_wex", "#T_vp", "#T_cbvex4v.vf", "#T_cV", "#T_cwalk", "#T_cE", "#T_vp", "#T_cW", "#T_wcel", "#T_cV", "#T_cwalk", "#T_cE", "#T_wi", "#T_wex", "#T_vf", "#T_wex", "#T_vp", "#T_vf", "#T_cV", "#T_cwalk", "#T_cE", "#T_vp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_spc2ev", "#P_breq12", "#P_wlkcpr", "#P_fvex", "#P_sylbi" ]
+}

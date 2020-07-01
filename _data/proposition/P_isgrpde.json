@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isgrpde on Metamath](http://us.metamath.org/mpegif/isgrpde.html)"
+  } ],
+  "names" : [ "isgrpde" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_w3a--1", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_c.pl", "#T_vz", "#T_wceq", "#T_vx", "#T_c.pl", "#T_vy", "#T_c.pl", "#T_vz", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_c.0", "#T_c.pl", "#T_vx", "#T_wceq", "#T_vx", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_vy", "#T_c.pl", "#T_vx", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_c.pl", "#T_vx", "#T_vy", "#T_vz", "#T_c.0", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vx", "#T_vy", "#T_vz", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Deduce a group from its properties.  In this version of ~ isgrpd , we don't assume there is an expression for the inverse of ` x ` . (Contributed by NM, 6-Jan-2015.) ",
+  "statement" : "isgrpd.b $e |- ( ph -> B = ( Base ` G ) ) $.\nisgrpd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.\nisgrpd.c $e |- ( ( ph /\\ x e. B /\\ y e. B ) -> ( x .+ y ) e. B ) $.\nisgrpd.a $e |- ( ( ph /\\ ( x e. B /\\ y e. B /\\ z e. B ) ) -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.\nisgrpd.z $e |- ( ph -> .0. e. B ) $.\nisgrpd.i $e |- ( ( ph /\\ x e. B ) -> ( .0. .+ x ) = x ) $.\nisgrpde.n $e |- ( ( ph /\\ x e. B ) -> E. y e. B ( y .+ x ) = .0. ) $.\nisgrpde $p |- ( ph -> G e. Grp ) $.\n$d .+ x y z $.\n$d .0. x y z $.\n$d B x y z $.\n$d G x y z $.\n$d ph x y z $."
+}

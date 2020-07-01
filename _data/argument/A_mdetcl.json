@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mdetcl on Metamath](http://us.metamath.org/mpegif/mdetcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mdetf.d | |- D = ( N maDet R ) |\n| 2 |  | mdetf.a | |- A = ( N Mat R ) |\n| 3 |  | mdetf.b | |- B = ( Base ` A ) |\n| 4 |  | mdetf.k | |- K = ( Base ` R ) |\n| 5 | 1, 2, 3, 4 | #P_mdetf | |- ( R e. CRing -> D : B --> K ) |\n| 6 | 5 | #P_ffvelrnda | |- ( ( R e. CRing /\\ M e. B ) -> ( D ` M ) e. K ) |",
+  "conclusion" : "#P_mdetcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cN", "#T_cmdat", "#T_cR", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cD", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cK", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cM", "#T_wcel", "#T_cB", "#T_wi", "#T_cD", "#T_cfv", "#T_cM", "#T_wcel", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mdetf", "#P_ffvelrnda" ]
+}

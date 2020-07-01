@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlathil on Metamath](http://us.metamath.org/mpegif/hlathil.html)"
+  } ],
+  "names" : [ "hlathil" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_chlh", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_chs" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Construction of a Hilbert space ( ~ df-hil ) ` U ` from a Hilbert lattice ( ~ df-hlat ) ` K ` , where ` W ` is a fixed but arbitrary hyperplane (co-atom) in ` K ` . The Hilbert space ` U ` is identical to the vector space ` ( ( DVecH `` K ) `` W ) ` (see ~ dvhlvec ) except that it is extended with involution and inner product components.  The construction of these two components is provided by Theorem 3.6 in [Holland95] p. 13, whose proof we follow loosely. An example of involution is the complex conjugate when the division ring is the field of complex numbers.  The nature of the division ring we constructed is indeterminate, however, until we specialize the initial Hilbert lattice with additional conditions found by Maria Sol&egrave;r in 1995 and refined by Ren&eacute; Mayet in 1998 that result in a division ring isomorphic to ` CC ` .  See additional discussion at ~ http://us.metamath.org/qlegif/mmql.html#what . ` W ` corresponds to the w in the proof of Theorem 13.4 of [Crawley] p. 111.  Such a ` W ` always exists since ` HL ` has lattice rank of at least 4 by ~ df-hil .  It can be eliminated if we just want to show the existence of a Hilbert space, as is done in the literature. (Contributed by NM, 23-Jun-2015.) ",
+  "statement" : "hlhilphl.h $e |- H = ( LHyp ` K ) $.\nhlhilphllem.u $e |- U = ( ( HLHil ` K ) ` W ) $.\nhlhilphl.k $e |- ( ph -> ( K e. HL /\\ W e. H ) ) $.\nhlathil $p |- ( ph -> U e. Hil ) $."
+}

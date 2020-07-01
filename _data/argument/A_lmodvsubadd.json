@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodvsubadd on Metamath](http://us.metamath.org/mpegif/lmodvsubadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmod4.v | |- V = ( Base ` W ) |\n| 2 |  | lmod4.p | |- .+ = ( +g ` W ) |\n| 3 |  | lmodvaddsub4.m | |- .- = ( -g ` W ) |\n| 4 |  | #P_lmodabl | |- ( W e. LMod -> W e. Abel ) |\n| 5 | 1, 2, 3 | #P_ablsubadd | |- ( ( W e. Abel /\\ ( A e. V /\\ B e. V /\\ C e. V ) ) -> ( ( A .- B ) = C <-> ( B .+ C ) = A ) ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( W e. LMod /\\ ( A e. V /\\ B e. V /\\ C e. V ) ) -> ( ( A .- B ) = C <-> ( B .+ C ) = A ) ) |",
+  "conclusion" : "#P_lmodvsubadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_cabl", "#T_cW", "#T_wcel", "#T_cabl", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_c.mi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_c.pl", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cA", "#T_wcel", "#T_cV", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_c.mi", "#T_cB", "#T_wceq", "#T_cC", "#T_wb", "#T_cB", "#T_c.pl", "#T_cC", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_lmodabl", "#P_ablsubadd" ]
+}

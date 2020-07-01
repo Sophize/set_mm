@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See entri2 on Metamath](http://us.metamath.org/mpegif/entri2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_entric | |- ( ( A e. V /\\ B e. W ) -> ( A ~< B \\/ A ~~ B \\/ B ~< A ) ) |\n| 2 |  | #P_brdom2 | |- ( A ~<_ B <-> ( A ~< B \\/ A ~~ B ) ) |\n| 3 | 2 | #P_orbi1i | |- ( ( A ~<_ B \\/ B ~< A ) <-> ( ( A ~< B \\/ A ~~ B ) \\/ B ~< A ) ) |\n| 4 |  | #P_df-3or | |- ( ( A ~< B \\/ A ~~ B \\/ B ~< A ) <-> ( ( A ~< B \\/ A ~~ B ) \\/ B ~< A ) ) |\n| 5 | 3, 4 | #P_bitr4i | |- ( ( A ~<_ B \\/ B ~< A ) <-> ( A ~< B \\/ A ~~ B \\/ B ~< A ) ) |\n| 6 | 1, 5 | #P_sylibr | |- ( ( A e. V /\\ B e. W ) -> ( A ~<_ B \\/ B ~< A ) ) |",
+  "conclusion" : "#P_entri2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_w3o--1", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_w3o--2", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_w3o--1", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_w3o--2", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_w3o--1", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_w3o--2", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cdom", "#T_cB", "#T_wo", "#T_cB", "#T_csdm", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orbi1i", "#P_entric", "#P_sylibr", "#P_brdom2", "#P_df-3or", "#P_bitr4i" ]
+}

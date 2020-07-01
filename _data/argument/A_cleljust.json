@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cleljust on Metamath](http://us.metamath.org/mpegif/cleljust.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-5 | |- ( x e. y -> A. z x e. y ) |\n| 2 |  | #P_elequ1 | |- ( z = x -> ( z e. y <-> x e. y ) ) |\n| 3 | 1, 2 | #P_equsexh | |- ( E. z ( z = x /\\ z e. y ) <-> x e. y ) |\n| 4 | 3 | #P_bicomi | |- ( x e. y <-> E. z ( z = x /\\ z e. y ) ) |",
+  "conclusion" : "#P_cleljust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vz", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elequ1", "#P_equsexh", "#P_ax-5", "#P_bicomi" ]
+}

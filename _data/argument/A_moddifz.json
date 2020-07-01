@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See moddifz on Metamath](http://us.metamath.org/mpegif/moddifz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_moddiffl | |- ( ( A e. RR /\\ B e. RR+ ) -> ( ( A - ( A mod B ) ) / B ) = ( |_ ` ( A / B ) ) ) |\n| 2 |  | #P_rerpdivcl | |- ( ( A e. RR /\\ B e. RR+ ) -> ( A / B ) e. RR ) |\n| 3 | 2 | #P_flcld | |- ( ( A e. RR /\\ B e. RR+ ) -> ( |_ ` ( A / B ) ) e. ZZ ) |\n| 4 | 1, 3 | #P_eqeltrd | |- ( ( A e. RR /\\ B e. RR+ ) -> ( ( A - ( A mod B ) ) / B ) e. ZZ ) |",
+  "conclusion" : "#P_moddifz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cA.wceq", "#T_cmo", "#T_cB.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_crp", "#T_wi", "#T_cA", "#T_cmin", "#T_cA", "#T_cmo", "#T_cB", "#T_cdiv", "#T_cB", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_moddiffl", "#P_eqeltrd", "#P_flcld", "#P_rerpdivcl" ]
+}

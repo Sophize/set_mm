@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See feq123d on Metamath](http://us.metamath.org/mpegif/feq123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | feq12d.1 | |- ( ph -> F = G ) |\n| 2 |  | feq12d.2 | |- ( ph -> A = B ) |\n| 3 |  | feq123d.3 | |- ( ph -> C = D ) |\n| 4 | 1, 2 | #P_feq12d | |- ( ph -> ( F : A --> C <-> G : B --> C ) ) |\n| 5 |  | #P_feq3 | |- ( C = D -> ( G : B --> C <-> G : B --> D ) ) |\n| 6 | 3, 5 | #P_syl | |- ( ph -> ( G : B --> C <-> G : B --> D ) ) |\n| 7 | 4, 6 | #P_bitrd | |- ( ph -> ( F : A --> C <-> G : B --> D ) ) |",
+  "conclusion" : "#P_feq123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_cG", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_wb", "#T_cG", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cC", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cG", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cC", "#T_wb", "#T_cG", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cD", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cC", "#T_wb", "#T_cG", "#T_wf--1", "#T_cB.wceq", "#T_wf--2", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cC", "#T_wb", "#T_cG", "#T_wf--1", "#T_cB", "#T_wf--2", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_feq12d", "#P_syl", "#P_feq3" ]
+}

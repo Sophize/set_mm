@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isum1p on Metamath](http://us.metamath.org/mpegif/isum1p.html)"
+  } ],
+  "names" : [ "isum1p" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wceq", "#T_cF", "#T_cfv", "#T_cM", "#T_caddc", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_caddc", "#T_c1", "#T_cA", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_cZ", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The infinite sum of a converging infinite series equals the first term plus the infinite sum of the rest of it.  (Contributed by NM, 2-Jan-2006.)  (Revised by Mario Carneiro, 24-Apr-2014.) ",
+  "statement" : "isum1p.1 $e |- Z = ( ZZ>= ` M ) $.\nisum1p.3 $e |- ( ph -> M e. ZZ ) $.\nisum1p.4 $e |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) $.\nisum1p.5 $e |- ( ( ph /\\ k e. Z ) -> A e. CC ) $.\nisum1p.6 $e |- ( ph -> seq M ( + , F ) e. dom ~~> ) $.\nisum1p $p |- ( ph -> sum_ k e. Z A = ( ( F ` M ) + sum_ k e. ( ZZ>= ` ( M + 1 ) ) A ) ) $.\n$d F k $.\n$d M k $.\n$d Z k $.\n$d k ph $."
+}

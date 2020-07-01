@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rehaus on Metamath](http://us.metamath.org/mpegif/rehaus.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( ( abs o. - ) |` ( RR X. RR ) ) = ( ( abs o. - ) |` ( RR X. RR ) ) |\n| 2 | 1 | #P_rexmet | |- ( ( abs o. - ) |` ( RR X. RR ) ) e. ( *Met ` RR ) |\n| 3 |  | #P_eqid | |- ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) = ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) |\n| 4 | 1, 3 | #P_tgioo | |- ( topGen ` ran (,) ) = ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) |\n| 5 | 4 | #P_methaus | |- ( ( ( abs o. - ) |` ( RR X. RR ) ) e. ( *Met ` RR ) -> ( topGen ` ran (,) ) e. Haus ) |\n| 6 | 2, 5 | #P_ax-mp | |- ( topGen ` ran (,) ) e. Haus |",
+  "conclusion" : "#P_rehaus",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cr", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cr", "#T_wi", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_cha", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_cha" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rexmet", "#P_eqid", "#P_methaus", "#P_ax-mp", "#P_tgioo" ]
+}

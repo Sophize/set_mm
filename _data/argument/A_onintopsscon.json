@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onintopsscon on Metamath](http://us.metamath.org/mpegif/onintopsscon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elin | |- ( x e. ( On i^i Top ) <-> ( x e. On /\\ x e. Top ) ) |\n| 2 |  | #P_eloni | |- ( x e. On -> Ord x ) |\n| 3 |  | #P_ordtopcon | |- ( Ord x -> ( x e. Top <-> x e. Con ) ) |\n| 4 | 2, 3 | #P_syl | |- ( x e. On -> ( x e. Top <-> x e. Con ) ) |\n| 5 | 4 | #P_biimpa | |- ( ( x e. On /\\ x e. Top ) -> x e. Con ) |\n| 6 | 1, 5 | #P_sylbi | |- ( x e. ( On i^i Top ) -> x e. Con ) |\n| 7 | 6 | #P_ssriv | |- ( On i^i Top ) C_ Con |",
+  "conclusion" : "#P_onintopsscon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_cin", "#T_ctop", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_vx.wal", "#T_word", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_ccon", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_ccon", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ccon", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_cin", "#T_ctop", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ccon", "#T_con0", "#T_cin", "#T_ctop", "#T_wss", "#T_ccon" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_elin", "#P_syl", "#P_ordtopcon", "#P_eloni", "#P_sylbi", "#P_ssriv" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See honpncani on Metamath](http://us.metamath.org/mpegif/honpncani.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | honpncan.1 | |- R : ~H --> ~H |\n| 2 |  | honpncan.2 | |- S : ~H --> ~H |\n| 3 |  | honpncan.3 | |- T : ~H --> ~H |\n| 4 | 1, 2 | #P_hosubcli | |- ( R -op S ) : ~H --> ~H |\n| 5 | 4, 2, 3 | #P_hoaddsubassi | |- ( ( ( R -op S ) +op S ) -op T ) = ( ( R -op S ) +op ( S -op T ) ) |\n| 6 | 1, 2 | #P_honpcani | |- ( ( R -op S ) +op S ) = R |\n| 7 | 6 | #P_oveq1i | |- ( ( ( R -op S ) +op S ) -op T ) = ( R -op T ) |\n| 8 | 5, 7 | #P_eqtr3i | |- ( ( R -op S ) +op ( S -op T ) ) = ( R -op T ) |",
+  "conclusion" : "#P_honpncani",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cR", "#T_chod", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cR", "#T_chod", "#T_cS", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_cR", "#T_chod", "#T_cS", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_cR", "#T_chod", "#T_cS", "#T_chos", "#T_cS", "#T_wceq", "#T_cR", "#T_cR", "#T_chod", "#T_cS", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_cR", "#T_chod", "#T_cT", "#T_cR", "#T_chod", "#T_cS", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_cR", "#T_chod", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr3i", "#P_honpcani", "#P_oveq1i", "#P_hoaddsubassi", "#P_hosubcli" ]
+}

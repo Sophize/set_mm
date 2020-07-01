@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itg2seq on Metamath](http://us.metamath.org/mpegif/itg2seq.html)"
+  } ],
+  "names" : [ "itg2seq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_wi", "#T_wex", "#T_vg", "#T_vg", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cdm", "#T_citg1", "#T_w3a--1", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cn", "#T_vg", "#T_cfv", "#T_vn", "#T_cofr", "#T_cle", "#T_cF", "#T_w3a--2", "#T_citg2", "#T_cfv", "#T_cF", "#T_wceq", "#T_csup--1", "#T_crn", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_citg1", "#T_cfv", "#T_vg", "#T_cfv", "#T_vn", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_cF", "#T_vg", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definitional property of the ` S.2 ` integral: for any function ` F ` there is a countable sequence ` g ` of simple functions less than ` F ` whose integrals converge to the integral of ` F ` .  (This theorem is for the most part unnecessary in lieu of ~ itg2i1fseq , but unlike that theorem this one doesn't require ` F ` to be measurable.)  (Contributed by Mario Carneiro, 14-Aug-2014.) ",
+  "statement" : "itg2seq $p |- ( F : RR --> ( 0 [,] +oo ) -> E. g ( g : NN --> dom S.1 /\\ A. n e. NN ( g ` n ) oR <_ F /\\ ( S.2 ` F ) = sup ( ran ( n e. NN |-> ( S.1 ` ( g ` n ) ) ) , RR* , < ) ) ) $.\n$d F g n $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tposeq on Metamath](http://us.metamath.org/mpegif/tposeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqimss | |- ( F = G -> F C_ G ) |\n| 2 |  | #P_tposss | |- ( F C_ G -> tpos F C_ tpos G ) |\n| 3 | 1, 2 | #P_syl | |- ( F = G -> tpos F C_ tpos G ) |\n| 4 |  | #P_eqimss2 | |- ( F = G -> G C_ F ) |\n| 5 |  | #P_tposss | |- ( G C_ F -> tpos G C_ tpos F ) |\n| 6 | 4, 5 | #P_syl | |- ( F = G -> tpos G C_ tpos F ) |\n| 7 | 3, 6 | #P_eqssd | |- ( F = G -> tpos F = tpos G ) |",
+  "conclusion" : "#P_tposeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cF", "#T_wss", "#T_cG", "#T_cF", "#T_wss", "#T_cG", "#T_wi", "#T_ctpos", "#T_cF", "#T_wss", "#T_ctpos", "#T_cG", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_ctpos", "#T_cF", "#T_wss", "#T_ctpos", "#T_cG", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cG", "#T_wss", "#T_cF", "#T_cG", "#T_wss", "#T_cF", "#T_wi", "#T_ctpos", "#T_cG", "#T_wss", "#T_ctpos", "#T_cF", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_ctpos", "#T_cG", "#T_wss", "#T_ctpos", "#T_cF", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_ctpos", "#T_cF", "#T_wceq", "#T_ctpos", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqimss2", "#P_syl", "#P_eqssd", "#P_tposss", "#P_eqimss" ]
+}

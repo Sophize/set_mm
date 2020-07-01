@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnssi2 on Metamath](http://us.metamath.org/mpegif/nnssi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nnssi2.1 | |- NN C_ D |\n| 2 |  | nnssi2.2 | |- ( B e. NN -> ph ) |\n| 3 |  | nnssi2.3 | |- ( ( A e. D /\\ B e. D /\\ ph ) -> ps ) |\n| 4 | 1 | #P_sseli | |- ( A e. NN -> A e. D ) |\n| 5 | 1 | #P_sseli | |- ( B e. NN -> B e. D ) |\n| 6 | 4, 5, 2 | #P_3anim123i | |- ( ( A e. NN /\\ B e. NN /\\ B e. NN ) -> ( A e. D /\\ B e. D /\\ ph ) ) |\n| 7 | 6 | #P_3anidm23 | |- ( ( A e. NN /\\ B e. NN ) -> ( A e. D /\\ B e. D /\\ ph ) ) |\n| 8 | 7, 3 | #P_syl | |- ( ( A e. NN /\\ B e. NN ) -> ps ) |",
+  "conclusion" : "#P_nnssi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cn", "#T_wss", "#T_cD", "#T_cB", "#T_wcel", "#T_cn", "#T_wi", "#T_wph", "#T_cA", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_wph", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_wph", "#T_cA", "#T_wcel", "#T_cn", "#T_wa", "#T_cB", "#T_wcel", "#T_cn", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseli", "#P_3anidm23", "#P_syl", "#P_3anim123i" ]
+}

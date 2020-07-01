@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1d on Metamath](http://us.metamath.org/mpegif/necon1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1d.1 | |- ( ph -> ( A =/= B -> C = D ) ) |\n| 2 |  | #P_nne | |- ( -. C =/= D <-> C = D ) |\n| 3 | 1, 2 | #P_syl6ibr | |- ( ph -> ( A =/= B -> -. C =/= D ) ) |\n| 4 | 3 | #P_necon4ad | |- ( ph -> ( C =/= D -> A = B ) ) |",
+  "conclusion" : "#P_necon1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wn", "#T_cC", "#T_wne", "#T_cD", "#T_wb", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cC", "#T_wne", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6ibr", "#P_necon4ad", "#P_nne" ]
+}

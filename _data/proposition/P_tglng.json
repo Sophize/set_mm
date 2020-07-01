@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tglng on Metamath](http://us.metamath.org/mpegif/tglng.html)"
+  } ],
+  "names" : [ "tglng" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wi", "#T_cL", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cP", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cP", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cmpt2--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vz", "#T_wcel", "#T_vx", "#T_cI", "#T_vy", "#T_w3o--1", "#T_vx", "#T_wcel", "#T_vz", "#T_cI", "#T_vy", "#T_w3o--2", "#T_vy", "#T_wcel", "#T_vx", "#T_cI", "#T_vz", "#T_crab--4", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_cI", "#T_vx", "#T_vy", "#T_vz", "#T_cP", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lines of a Tarski Geometry.  This relates to both Definition 4.10 of [Schwabhauser] p. 36. and Definition 6.14 of [Schwabhauser] p. 45. (Contributed by Thierry Arnoux, 28-Mar-2019.) ",
+  "statement" : "tglng.p $e |- P = ( Base ` G ) $.\ntglng.l $e |- L = ( LineG ` G ) $.\ntglng.i $e |- I = ( Itv ` G ) $.\ntglng $p |- ( G e. TarskiG -> L = ( x e. P , y e. ( P \\ { x } ) |-> { z e. P | ( z e. ( x I y ) \\/ x e. ( z I y ) \\/ y e. ( x I z ) ) } ) ) $.\n$d G x y z $.\n$d I x y z $.\n$d P x y z $."
+}

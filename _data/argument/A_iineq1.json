@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iineq1 on Metamath](http://us.metamath.org/mpegif/iineq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_raleq | |- ( A = B -> ( A. x e. A y e. C <-> A. x e. B y e. C ) ) |\n| 2 | 1 | #P_abbidv | |- ( A = B -> { y | A. x e. A y e. C } = { y | A. x e. B y e. C } ) |\n| 3 |  | #P_df-iin | |- |^|_ x e. A C = { y | A. x e. A y e. C } |\n| 4 |  | #P_df-iin | |- |^|_ x e. B C = { y | A. x e. B y e. C } |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> |^|_ x e. A C = |^|_ x e. B C ) |",
+  "conclusion" : "#P_iineq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cB.wceq", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_ciin--1", "#T_vx", "#T_ciin--2", "#T_cA", "#T_cC", "#T_wceq", "#T_ciin--1", "#T_vx", "#T_ciin--2", "#T_cB", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-iin", "#P_raleq", "#P_3eqtr4g", "#P_abbidv" ]
+}

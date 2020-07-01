@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stoweidlem24 on Metamath](http://us.metamath.org/mpegif/stoweidlem24.html)"
+  } ],
+  "names" : [ "stoweidlem24" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cT", "#T_crab--3", "#T_cP", "#T_cfv", "#T_vt", "#T_clt", "#T_cD", "#T_cdiv", "#T_c2", "#T_crab--4", "#T_cQ", "#T_wceq", "#T_vt", "#T_cmpt--1", "#T_cT", "#T_cmpt--2", "#T_c1", "#T_cmin", "#T_cP", "#T_cfv", "#T_vt", "#T_cexp", "#T_cN", "#T_cexp", "#T_cK", "#T_cexp", "#T_cN", "#T_wph", "#T_wi", "#T_cP", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cE", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_c1", "#T_cmin", "#T_cE", "#T_clt", "#T_c1", "#T_cmin", "#T_cK", "#T_cmul", "#T_cD", "#T_cdiv", "#T_c2", "#T_cexp", "#T_cN", "#T_wph", "#T_wi", "#T_wral--1", "#T_vt", "#T_wral--2", "#T_cT", "#T_cc0", "#T_cle", "#T_cP", "#T_cfv", "#T_vt", "#T_wa", "#T_cP", "#T_cfv", "#T_vt", "#T_cle", "#T_c1", "#T_wph", "#T_wa", "#T_vt", "#T_wcel", "#T_cV", "#T_wi", "#T_c1", "#T_cmin", "#T_cE", "#T_clt", "#T_cQ", "#T_cfv", "#T_vt", "#T_cT", "#T_vt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This lemma proves that for ` n ` sufficiently large, q_n( t ) > ( 1 - epsilon ), for all ` t ` in ` V ` : see Lemma 1 [BrosowskiDeutsh] p. 90, (at the bottom of page 90). ` Q ` is used to represent q_n in the paper, ` N ` to represent ` n ` in the paper, ` K ` to represent ` k ` , ` D ` to represent &delta;, and ` E ` to represent &epsilon;.  (Contributed by Glauco Siliprandi, 20-Apr-2017.) ",
+  "statement" : "stoweidlem24.1 $e |- V = { t e. T | ( P ` t ) < ( D / 2 ) } $.\nstoweidlem24.2 $e |- Q = ( t e. T |-> ( ( 1 - ( ( P ` t ) ^ N ) ) ^ ( K ^ N ) ) ) $.\nstoweidlem24.3 $e |- ( ph -> P : T --> RR ) $.\nstoweidlem24.4 $e |- ( ph -> N e. NN0 ) $.\nstoweidlem24.5 $e |- ( ph -> K e. NN0 ) $.\nstoweidlem24.6 $e |- ( ph -> D e. RR+ ) $.\nstoweidlem24.8 $e |- ( ph -> E e. RR+ ) $.\nstoweidlem24.9 $e |- ( ph -> ( 1 - E ) < ( 1 - ( ( ( K x. D ) / 2 ) ^ N ) ) ) $.\nstoweidlem24.10 $e |- ( ph -> A. t e. T ( 0 <_ ( P ` t ) /\\ ( P ` t ) <_ 1 ) ) $.\nstoweidlem24 $p |- ( ( ph /\\ t e. V ) -> ( 1 - E ) < ( Q ` t ) ) $.\n$d T t $."
+}

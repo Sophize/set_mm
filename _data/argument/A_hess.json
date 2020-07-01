@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hess on Metamath](http://us.metamath.org/mpegif/hess.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_imass1 | |- ( S C_ R -> ( S \" A ) C_ ( R \" A ) ) |\n| 2 |  | #P_sstr2 | |- ( ( S \" A ) C_ ( R \" A ) -> ( ( R \" A ) C_ A -> ( S \" A ) C_ A ) ) |\n| 3 | 1, 2 | #P_syl | |- ( S C_ R -> ( ( R \" A ) C_ A -> ( S \" A ) C_ A ) ) |\n| 4 |  | #P_df-he | |- ( R hereditary A <-> ( R \" A ) C_ A ) |\n| 5 |  | #P_df-he | |- ( S hereditary A <-> ( S \" A ) C_ A ) |\n| 6 | 3, 4, 5 | #P_3imtr4g | |- ( S C_ R -> ( R hereditary A -> S hereditary A ) ) |",
+  "conclusion" : "#P_hess",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wss", "#T_cR", "#T_wi", "#T_cS", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_cS", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cS", "#T_wss", "#T_cR", "#T_wi", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cR", "#T_whe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cS", "#T_whe", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cS", "#T_wss", "#T_cR", "#T_wi", "#T_cR", "#T_whe", "#T_cA", "#T_wi", "#T_cS", "#T_whe", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_imass1", "#P_syl", "#P_3imtr4g", "#P_df-he" ]
+}

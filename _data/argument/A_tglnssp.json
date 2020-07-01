@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tglnssp on Metamath](http://us.metamath.org/mpegif/tglnssp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tglngval.p | |- P = ( Base ` G ) |\n| 2 |  | tglngval.l | |- L = ( LineG ` G ) |\n| 3 |  | tglngval.i | |- I = ( Itv ` G ) |\n| 4 |  | tglngval.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tglngval.x | |- ( ph -> X e. P ) |\n| 6 |  | tglngval.y | |- ( ph -> Y e. P ) |\n| 7 |  | tglngval.z | |- ( ph -> X =/= Y ) |\n| 8 | 1, 2, 3, 4, 5, 6, 7 | #P_tglngval | |- ( ph -> ( X L Y ) = { z e. P | ( z e. ( X I Y ) \\/ X e. ( z I Y ) \\/ Y e. ( X I z ) ) } ) |\n| 9 |  | #P_ssrab2 | |- { z e. P | ( z e. ( X I Y ) \\/ X e. ( z I Y ) \\/ Y e. ( X I z ) ) } C_ P |\n| 10 | 8, 9 | #P_syl6eqss | |- ( ph -> ( X L Y ) C_ P ) |",
+  "conclusion" : "#P_tglnssp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_cL", "#T_cY", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vz", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_w3o--1", "#T_cX", "#T_wcel", "#T_vz", "#T_cI", "#T_cY", "#T_w3o--2", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_vz", "#T_crab--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vz", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_w3o--1", "#T_cX", "#T_wcel", "#T_vz", "#T_cI", "#T_cY", "#T_w3o--2", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_vz", "#T_crab--4", "#T_wss", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_cL", "#T_cY", "#T_wss", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tglngval", "#P_ssrab2", "#P_syl6eqss" ]
+}

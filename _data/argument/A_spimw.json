@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spimw on Metamath](http://us.metamath.org/mpegif/spimw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spimw.1 | |- ( -. ps -> A. x -. ps ) |\n| 2 |  | spimw.2 | |- ( x = y -> ( ph -> ps ) ) |\n| 3 |  | #P_ax6v | |- -. A. x -. x = y |\n| 4 | 1, 2 | #P_spimfw | |- ( -. A. x -. x = y -> ( A. x ph -> ps ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( A. x ph -> ps ) |",
+  "conclusion" : "#P_spimw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_spimfw", "#P_ax6v" ]
+}

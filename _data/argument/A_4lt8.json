@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 4lt8 on Metamath](http://us.metamath.org/mpegif/4lt8.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_4lt5 | |- 4 < 5 |\n| 2 |  | #P_5lt8 | |- 5 < 8 |\n| 3 |  | #P_4re | |- 4 e. RR |\n| 4 |  | #P_5re | |- 5 e. RR |\n| 5 |  | #P_8re | |- 8 e. RR |\n| 6 | 3, 4, 5 | #P_lttri | |- ( ( 4 < 5 /\\ 5 < 8 ) -> 4 < 8 ) |\n| 7 | 1, 2, 6 | #P_mp2an | |- 4 < 8 |",
+  "conclusion" : "#P_4lt8",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c4", "#T_clt", "#T_c5", "#T_c5", "#T_clt", "#T_c8", "#T_c4", "#T_wcel", "#T_cr", "#T_c5", "#T_wcel", "#T_cr", "#T_c8", "#T_wcel", "#T_cr", "#T_c4", "#T_clt", "#T_c5", "#T_wa", "#T_c5", "#T_clt", "#T_c8", "#T_wi", "#T_c4", "#T_clt", "#T_c8", "#T_c4", "#T_clt", "#T_c8" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_8re", "#P_4re", "#P_4lt5", "#P_5re", "#P_5lt8" ]
+}

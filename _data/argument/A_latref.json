@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latref on Metamath](http://us.metamath.org/mpegif/latref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | latref.b | |- B = ( Base ` K ) |\n| 2 |  | latref.l | |- .<_ = ( le ` K ) |\n| 3 |  | #P_latpos | |- ( K e. Lat -> K e. Poset ) |\n| 4 | 1, 2 | #P_posref | |- ( ( K e. Poset /\\ X e. B ) -> X .<_ X ) |\n| 5 | 3, 4 | #P_sylan | |- ( ( K e. Lat /\\ X e. B ) -> X .<_ X ) |",
+  "conclusion" : "#P_latref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wi", "#T_cK", "#T_wcel", "#T_cpo", "#T_cK", "#T_wcel", "#T_cpo", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cX", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.le", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_latpos", "#P_posref" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See suble on Metamath](http://us.metamath.org/mpegif/suble.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_lesubadd | |- ( ( A e. RR /\\ B e. RR /\\ C e. RR ) -> ( ( A - B ) <_ C <-> A <_ ( C + B ) ) ) |\n| 2 |  | #P_lesubadd2 | |- ( ( A e. RR /\\ C e. RR /\\ B e. RR ) -> ( ( A - C ) <_ B <-> A <_ ( C + B ) ) ) |\n| 3 | 2 | #P_3com23 | |- ( ( A e. RR /\\ B e. RR /\\ C e. RR ) -> ( ( A - C ) <_ B <-> A <_ ( C + B ) ) ) |\n| 4 | 1, 3 | #P_bitr4d | |- ( ( A e. RR /\\ B e. RR /\\ C e. RR ) -> ( ( A - B ) <_ C <-> ( A - C ) <_ B ) ) |",
+  "conclusion" : "#P_suble",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cC", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_cle", "#T_cC", "#T_wb", "#T_cA", "#T_cmin", "#T_cC", "#T_cle", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lesubadd", "#P_bitr4d", "#P_3com23", "#P_lesubadd2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gte-lte on Metamath](http://us.metamath.org/mpegif/gte-lte.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-gte | |- >_ = `' <_ |\n| 2 | 1 | #P_breqi | |- ( A >_ B <-> A `' <_ B ) |\n| 3 |  | #P_brcnvg | |- ( ( A e. _V /\\ B e. _V ) -> ( A `' <_ B <-> B <_ A ) ) |\n| 4 | 2, 3 | #P_syl5bb | |- ( ( A e. _V /\\ B e. _V ) -> ( A >_ B <-> B <_ A ) ) |",
+  "conclusion" : "#P_gte-lte",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cge-real", "#T_wceq", "#T_ccnv", "#T_cle", "#T_cA.wceq", "#T_cge-real", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_ccnv", "#T_cle", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_ccnv", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA", "#T_cge-real", "#T_cB", "#T_wb", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_brcnvg", "#P_breqi", "#P_df-gte" ]
+}

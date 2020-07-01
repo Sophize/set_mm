@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuxfr2d on Metamath](http://us.metamath.org/mpegif/reuxfr2d.html)"
+  } ],
+  "names" : [ "reuxfr2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wrmo--1", "#T_vy", "#T_wrmo--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA", "#T_wph", "#T_wi", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cB", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_wps", "#T_wb", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cB", "#T_wps", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_wps", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfer existential uniqueness from a variable ` x ` to another variable ` y ` contained in expression ` A ` .  (Contributed by NM, 16-Jan-2012.)  (Revised by NM, 16-Jun-2017.) ",
+  "statement" : "reuxfr2d.1 $e |- ( ( ph /\\ y e. B ) -> A e. B ) $.\nreuxfr2d.2 $e |- ( ( ph /\\ x e. B ) -> E* y e. B x = A ) $.\nreuxfr2d $p |- ( ph -> ( E! x e. B E. y e. B ( x = A /\\ ps ) <-> E! y e. B ps ) ) $.\n$d A x $.\n$d B x y $.\n$d ph x y $.\n$d ps x $."
+}

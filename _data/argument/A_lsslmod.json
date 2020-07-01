@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsslmod on Metamath](http://us.metamath.org/mpegif/lsslmod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lsslss.x | |- X = ( W |`s U ) |\n| 2 |  | lsslss.s | |- S = ( LSubSp ` W ) |\n| 3 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 4 | 1, 3, 2 | #P_islss3 | |- ( W e. LMod -> ( U e. S <-> ( U C_ ( Base ` W ) /\\ X e. LMod ) ) ) |\n| 5 | 4 | #P_simplbda | |- ( ( W e. LMod /\\ U e. S ) -> X e. LMod ) |",
+  "conclusion" : "#P_lsslmod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cW", "#T_cress", "#T_cU", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cU", "#T_wcel", "#T_cS", "#T_wb", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cW", "#T_wa", "#T_cX", "#T_wcel", "#T_clmod", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbda", "#P_islss3" ]
+}

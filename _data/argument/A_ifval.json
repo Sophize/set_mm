@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifval on Metamath](http://us.metamath.org/mpegif/ifval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqif | |- ( A = if ( ph , B , C ) <-> ( ( ph /\\ A = B ) \\/ ( -. ph /\\ A = C ) ) ) |\n| 2 |  | #P_cases2 | |- ( ( ( ph /\\ A = B ) \\/ ( -. ph /\\ A = C ) ) <-> ( ( ph -> A = B ) /\\ ( -. ph -> A = C ) ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( A = if ( ph , B , C ) <-> ( ( ph -> A = B ) /\\ ( -. ph -> A = C ) ) ) |",
+  "conclusion" : "#P_ifval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cC", "#T_wb", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cA", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cC", "#T_wb", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqif", "#P_cases2", "#P_bitri" ]
+}

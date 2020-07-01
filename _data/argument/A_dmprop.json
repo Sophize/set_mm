@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmprop on Metamath](http://us.metamath.org/mpegif/dmprop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dmsnop.1 | |- B e. _V |\n| 2 |  | dmprop.1 | |- D e. _V |\n| 3 |  | #P_dmpropg | |- ( ( B e. _V /\\ D e. _V ) -> dom { <. A , B >. , <. C , D >. } = { A , C } ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- dom { <. A , B >. , <. C , D >. } = { A , C } |",
+  "conclusion" : "#P_dmprop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cvv", "#T_cD", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cD", "#T_wcel", "#T_cvv", "#T_wi", "#T_cdm", "#T_cpr--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_cdm", "#T_cpr--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cC", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_dmpropg" ]
+}

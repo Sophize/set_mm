@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-uslgra on Metamath](http://us.metamath.org/mpegif/df-uslgra.html)"
+  } ],
+  "names" : [ "df-uslgra" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuslg", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vv", "#T_copab--3", "#T_ve", "#T_copab--4", "#T_copab--5", "#T_ve", "#T_wf1--1", "#T_cdm", "#T_ve", "#T_wf1--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cpw", "#T_vv", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx", "#T_cle", "#T_c2", "#T_crab--4", "#T_copab--6", "#T_ve", "#T_vv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all undirected simple graphs with loops.  An undirected simple graph with loops is a special undirected multigraph ` <. V , E >. ` where ` E ` is an injective (one-to-one) function into subsets of ` V ` of cardinality one or two, representing the two vertices incident to the edge, or the one vertex if the edge is a loop. In contrast to a multigraph, there is at most one edge between two vertices.  (Contributed by Alexander van der Vekens, 10-Aug-2017.) ",
+  "statement" : "df-uslgra $p |- USLGrph = { <. v , e >. | e : dom e -1-1-> { x e. ( ~P v \\ { (/) } ) | ( # ` x ) <_ 2 } } $.\n$d e v x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See finnum on Metamath](http://us.metamath.org/mpegif/finnum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfi | |- ( A e. Fin <-> E. x e. _om A ~~ x ) |\n| 2 |  | #P_nnon | |- ( x e. _om -> x e. On ) |\n| 3 |  | #P_ensym | |- ( A ~~ x -> x ~~ A ) |\n| 4 |  | #P_isnumi | |- ( ( x e. On /\\ x ~~ A ) -> A e. dom card ) |\n| 5 | 2, 3, 4 | #P_syl2an | |- ( ( x e. _om /\\ A ~~ x ) -> A e. dom card ) |\n| 6 | 5 | #P_rexlimiva | |- ( E. x e. _om A ~~ x -> A e. dom card ) |\n| 7 | 1, 6 | #P_sylbi | |- ( A e. Fin -> A e. dom card ) |",
+  "conclusion" : "#P_finnum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wa", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isnumi", "#P_rexlimiva", "#P_isfi", "#P_ensym", "#P_syl2an", "#P_nnon", "#P_sylbi" ]
+}

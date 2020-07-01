@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbied on Metamath](http://us.metamath.org/mpegif/csbied.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | csbied.1 | |- ( ph -> A e. V ) |\n| 2 |  | csbied.2 | |- ( ( ph /\\ x = A ) -> B = C ) |\n| 3 |  | #P_nfv | |- F/ x ph |\n| 4 |  | #P_nfcvd | |- ( ph -> F/_ x C ) |\n| 5 | 3, 4, 1, 2 | #P_csbiedf | |- ( ph -> [_ A / x ]_ B = C ) |",
+  "conclusion" : "#P_csbied",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cC", "#T_wph", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_nfcvd", "#P_csbiedf" ]
+}

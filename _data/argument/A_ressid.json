@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ressid on Metamath](http://us.metamath.org/mpegif/ressid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ressid.1 | |- B = ( Base ` W ) |\n| 2 |  | #P_ssid | |- B C_ B |\n| 3 |  | #P_fvex | |- ( Base ` W ) e. _V |\n| 4 | 1, 3 | #P_eqeltri | |- B e. _V |\n| 5 |  | #P_eqid | |- ( W |`s B ) = ( W |`s B ) |\n| 6 | 5, 1 | #P_ressid2 | |- ( ( B C_ B /\\ W e. X /\\ B e. _V ) -> ( W |`s B ) = W ) |\n| 7 | 2, 4, 6 | #P_mp3an13 | |- ( W e. X -> ( W |`s B ) = W ) |",
+  "conclusion" : "#P_ressid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cW", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cW", "#T_cress", "#T_cB.wceq", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cW", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cW", "#T_cW", "#T_wcel", "#T_cX", "#T_wi", "#T_cW", "#T_cress", "#T_cB", "#T_wceq", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_eqid", "#P_mp3an13", "#P_ssid", "#P_ressid2", "#P_fvex" ]
+}

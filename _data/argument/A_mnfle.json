@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mnfle on Metamath](http://us.metamath.org/mpegif/mnfle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nltmnf | |- ( A e. RR* -> -. A < -oo ) |\n| 2 |  | #P_mnfxr | |- -oo e. RR* |\n| 3 |  | #P_xrlenlt | |- ( ( -oo e. RR* /\\ A e. RR* ) -> ( -oo <_ A <-> -. A < -oo ) ) |\n| 4 | 2, 3 | #P_mpan | |- ( A e. RR* -> ( -oo <_ A <-> -. A < -oo ) ) |\n| 5 | 1, 4 | #P_mpbird | |- ( A e. RR* -> -oo <_ A ) |",
+  "conclusion" : "#P_mnfle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cmnf", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cmnf", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cmnf", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cmnf", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cmnf", "#T_cA", "#T_wcel", "#T_cxr", "#T_wi", "#T_cmnf", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xrlenlt", "#P_mnfxr", "#P_nltmnf", "#P_mpan", "#P_mpbird" ]
+}

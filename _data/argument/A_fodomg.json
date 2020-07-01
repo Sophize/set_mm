@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fodomg on Metamath](http://us.metamath.org/mpegif/fodomg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_foeq2 | |- ( x = A -> ( F : x -onto-> B <-> F : A -onto-> B ) ) |\n| 2 |  | #P_breq2 | |- ( x = A -> ( B ~<_ x <-> B ~<_ A ) ) |\n| 3 | 1, 2 | #P_imbi12d | |- ( x = A -> ( ( F : x -onto-> B -> B ~<_ x ) <-> ( F : A -onto-> B -> B ~<_ A ) ) ) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 | 4 | #P_fodom | |- ( F : x -onto-> B -> B ~<_ x ) |\n| 6 | 3, 5 | #P_vtoclg | |- ( A e. C -> ( F : A -onto-> B -> B ~<_ A ) ) |",
+  "conclusion" : "#P_fodomg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_vx.wal", "#T_wfo--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_vx.wal", "#T_wb", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_vx.wal", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_vx.wal", "#T_wb", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfo--1", "#T_vx.wal", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wi", "#T_cB", "#T_cdom", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_foeq2", "#P_vtoclg", "#P_breq2", "#P_imbi12d", "#P_vex", "#P_fodom" ]
+}

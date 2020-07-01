@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunop on Metamath](http://us.metamath.org/mpegif/wunop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wun0.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wunop.2 | |- ( ph -> A e. U ) |\n| 3 |  | wunop.3 | |- ( ph -> B e. U ) |\n| 4 |  | #P_dfopg | |- ( ( A e. U /\\ B e. U ) -> <. A , B >. = { { A } , { A , B } } ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( ph -> <. A , B >. = { { A } , { A , B } } ) |\n| 6 | 1, 2 | #P_wunsn | |- ( ph -> { A } e. U ) |\n| 7 | 1, 2, 3 | #P_wunpr | |- ( ph -> { A , B } e. U ) |\n| 8 | 1, 6, 7 | #P_wunpr | |- ( ph -> { { A } , { A , B } } e. U ) |\n| 9 | 5, 8 | #P_eqeltrd | |- ( ph -> <. A , B >. e. U ) |",
+  "conclusion" : "#P_wunop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cU", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_wph", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunsn", "#P_syl2anc", "#P_eqeltrd", "#P_dfopg", "#P_wunpr" ]
+}

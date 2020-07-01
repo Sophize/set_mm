@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3sstr3d on Metamath](http://us.metamath.org/mpegif/3sstr3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3sstr3d.1 | |- ( ph -> A C_ B ) |\n| 2 |  | 3sstr3d.2 | |- ( ph -> A = C ) |\n| 3 |  | 3sstr3d.3 | |- ( ph -> B = D ) |\n| 4 | 2, 3 | #P_sseq12d | |- ( ph -> ( A C_ B <-> C C_ D ) ) |\n| 5 | 1, 4 | #P_mpbid | |- ( ph -> C C_ D ) |",
+  "conclusion" : "#P_3sstr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wss", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wss", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_sseq12d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordelssne on Metamath](http://us.metamath.org/mpegif/ordelssne.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordtr | |- ( Ord A -> Tr A ) |\n| 2 |  | #P_tz7.7 | |- ( ( Ord B /\\ Tr A ) -> ( A e. B <-> ( A C_ B /\\ A =/= B ) ) ) |\n| 3 | 1, 2 | #P_sylan2 | |- ( ( Ord B /\\ Ord A ) -> ( A e. B <-> ( A C_ B /\\ A =/= B ) ) ) |\n| 4 | 3 | #P_ancoms | |- ( ( Ord A /\\ Ord B ) -> ( A e. B <-> ( A C_ B /\\ A =/= B ) ) ) |",
+  "conclusion" : "#P_ordelssne",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_word", "#T_cB.wceq", "#T_wa", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_word", "#T_cB.wceq", "#T_wa", "#T_word", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_word", "#T_cA", "#T_wa", "#T_word", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_ordtr", "#P_tz7.7", "#P_ancoms" ]
+}

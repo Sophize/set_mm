@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uncfval on Metamath](http://us.metamath.org/mpegif/uncfval.html)"
+  } ],
+  "names" : [ "uncfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cs3--1", "#T_cC", "#T_cD", "#T_cE", "#T_cs3--2", "#T_cuncf", "#T_cG", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cE", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cC", "#T_cfunc", "#T_cD", "#T_cfuc", "#T_cE", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_cD", "#T_cevlf", "#T_cE", "#T_ccofu", "#T_cG", "#T_ccofu", "#T_cC", "#T_c1stf", "#T_cD", "#T_cprf", "#T_cC", "#T_c2ndf", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the uncurry functor, which is the reverse of the curry functor, taking ` G : C --> ( D --> E ) ` to ` uncurryF ( G ) : C X. D --> E ` . (Contributed by Mario Carneiro, 13-Jan-2017.) ",
+  "statement" : "uncfval.g $e |- F = ( <\" C D E \"> uncurryF G ) $.\nuncfval.c $e |- ( ph -> D e. Cat ) $.\nuncfval.d $e |- ( ph -> E e. Cat ) $.\nuncfval.f $e |- ( ph -> G e. ( C Func ( D FuncCat E ) ) ) $.\nuncfval $p |- ( ph -> F = ( ( D evalF E ) o.func ( ( G o.func ( C 1stF D ) ) pairF ( C 2ndF D ) ) ) ) $."
+}

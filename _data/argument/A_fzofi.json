@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzofi on Metamath](http://us.metamath.org/mpegif/fzofi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fzoval | |- ( N e. ZZ -> ( M ..^ N ) = ( M ... ( N - 1 ) ) ) |\n| 2 | 1 | #P_adantl | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) = ( M ... ( N - 1 ) ) ) |\n| 3 |  | #P_fzfi | |- ( M ... ( N - 1 ) ) e. Fin |\n| 4 | 2, 3 | #P_syl6eqel | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) e. Fin ) |\n| 5 |  | #P_fzof | |- ..^ : ( ZZ X. ZZ ) --> ~P ZZ |\n| 6 | 5 | #P_fdmi | |- dom ..^ = ( ZZ X. ZZ ) |\n| 7 | 6 | #P_ndmov | |- ( -. ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) = (/) ) |\n| 8 |  | #P_0fin | |- (/) e. Fin |\n| 9 | 7, 8 | #P_syl6eqel | |- ( -. ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) e. Fin ) |\n| 10 | 4, 9 | #P_pm2.61i | |- ( M ..^ N ) e. Fin |",
+  "conclusion" : "#P_fzofi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cfn", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wcel", "#T_cfn", "#T_cfzo", "#T_wf--1", "#T_cz", "#T_cxp", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_cdm", "#T_cfzo", "#T_wceq", "#T_cz", "#T_cxp", "#T_cz", "#T_wn", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wceq", "#T_c0", "#T_c0", "#T_wcel", "#T_cfn", "#T_wn", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wcel", "#T_cfn", "#T_cM", "#T_cfzo", "#T_cN", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fzfi", "#P_0fin", "#P_adantl", "#P_fdmi", "#P_fzof", "#P_ndmov", "#P_fzoval", "#P_pm2.61i", "#P_syl6eqel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exmid2 on Metamath](http://us.metamath.org/mpegif/exmid2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | exmid2.1 | |- ( ( ps /\\ ph ) -> ch ) |\n| 2 |  | exmid2.2 | |- ( ( -. ps /\\ et ) -> ch ) |\n| 3 |  | #P_simpl | |- ( ( ph /\\ et ) -> ph ) |\n| 4 | 3 | #P_anim2i | |- ( ( ps /\\ ( ph /\\ et ) ) -> ( ps /\\ ph ) ) |\n| 5 | 4 | #P_ancoms | |- ( ( ( ph /\\ et ) /\\ ps ) -> ( ps /\\ ph ) ) |\n| 6 | 5, 1 | #P_syl | |- ( ( ( ph /\\ et ) /\\ ps ) -> ch ) |\n| 7 |  | #P_simpr | |- ( ( ph /\\ et ) -> et ) |\n| 8 | 7 | #P_anim2i | |- ( ( -. ps /\\ ( ph /\\ et ) ) -> ( -. ps /\\ et ) ) |\n| 9 | 8 | #P_ancoms | |- ( ( ( ph /\\ et ) /\\ -. ps ) -> ( -. ps /\\ et ) ) |\n| 10 | 9, 2 | #P_syl | |- ( ( ( ph /\\ et ) /\\ -. ps ) -> ch ) |\n| 11 | 6, 10 | #P_pm2.61dan | |- ( ( ph /\\ et ) -> ch ) |",
+  "conclusion" : "#P_exmid2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wps", "#T_wa", "#T_wet", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wph", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wa", "#T_wet", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wa", "#T_wet", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wet", "#T_wn", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wn", "#T_wps", "#T_wa", "#T_wet", "#T_wph", "#T_wa", "#T_wet", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wa", "#T_wet", "#T_wph", "#T_wa", "#T_wet", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.61dan", "#P_anim2i", "#P_syl", "#P_simpr", "#P_simpl", "#P_ancoms" ]
+}

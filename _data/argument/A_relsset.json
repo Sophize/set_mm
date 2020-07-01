@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relsset on Metamath](http://us.metamath.org/mpegif/relsset.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-sset | |- SSet = ( ( _V X. _V ) \\ ran ( _E (x) ( _V \\ _E ) ) ) |\n| 2 |  | #P_difss | |- ( ( _V X. _V ) \\ ran ( _E (x) ( _V \\ _E ) ) ) C_ ( _V X. _V ) |\n| 3 | 1, 2 | #P_eqsstri | |- SSet C_ ( _V X. _V ) |\n| 4 |  | #P_df-rel | |- ( Rel SSet <-> SSet C_ ( _V X. _V ) ) |\n| 5 | 3, 4 | #P_mpbir | |- Rel SSet |",
+  "conclusion" : "#P_relsset",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csset", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cep", "#T_ctxp", "#T_cvv", "#T_cdif", "#T_cep", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cep", "#T_ctxp", "#T_cvv", "#T_cdif", "#T_cep", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_csset", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_csset", "#T_wb", "#T_csset", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_csset" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-rel", "#P_df-sset", "#P_difss", "#P_mpbir", "#P_eqsstri" ]
+}

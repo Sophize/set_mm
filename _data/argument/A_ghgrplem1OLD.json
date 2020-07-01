@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghgrplem1OLD on Metamath](http://us.metamath.org/mpegif/ghgrplem1OLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghgrpOLD.1 | |- ( ph -> F : X -onto-> Y ) |\n| 2 |  | ghgrplem1OLD.2 | |- ( ( ph /\\ w e. X ) -> ps ) |\n| 3 |  | ghgrplem1OLD.3 | |- ( C = ( F ` w ) -> ( ch <-> ps ) ) |\n| 4 |  | #P_foelrn | |- ( ( F : X -onto-> Y /\\ C e. Y ) -> E. w e. X C = ( F ` w ) ) |\n| 5 | 1, 4 | #P_sylan | |- ( ( ph /\\ C e. Y ) -> E. w e. X C = ( F ` w ) ) |\n| 6 | 2, 3 | #P_syl5ibrcom | |- ( ( ph /\\ w e. X ) -> ( C = ( F ` w ) -> ch ) ) |\n| 7 | 6 | #P_rexlimdva | |- ( ph -> ( E. w e. X C = ( F ` w ) -> ch ) ) |\n| 8 | 7 | #P_imp | |- ( ( ph /\\ E. w e. X C = ( F ` w ) ) -> ch ) |\n| 9 | 5, 8 | #P_syldan | |- ( ( ph /\\ C e. Y ) -> ch ) |",
+  "conclusion" : "#P_ghgrplem1OLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_wph", "#T_wa", "#T_vw", "#T_wcel", "#T_cX", "#T_wi", "#T_wps", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_wa", "#T_cC", "#T_wcel", "#T_cY", "#T_wi", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cX", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wph", "#T_wa", "#T_cC", "#T_wcel", "#T_cY", "#T_wi", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cX", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wph", "#T_wa", "#T_vw", "#T_wcel", "#T_cX", "#T_wi", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cX", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cX", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_vw", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_cC", "#T_wcel", "#T_cY", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_rexlimdva", "#P_imp", "#P_syl5ibrcom", "#P_foelrn", "#P_syldan" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trubifal on Metamath](http://us.metamath.org/mpegif/trubifal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfbi2 | |- ( ( T. <-> F. ) <-> ( ( T. -> F. ) /\\ ( F. -> T. ) ) ) |\n| 2 |  | #P_truimfal | |- ( ( T. -> F. ) <-> F. ) |\n| 3 |  | #P_falimtru | |- ( ( F. -> T. ) <-> T. ) |\n| 4 | 2, 3 | #P_anbi12i | |- ( ( ( T. -> F. ) /\\ ( F. -> T. ) ) <-> ( F. /\\ T. ) ) |\n| 5 |  | #P_falantru | |- ( ( F. /\\ T. ) <-> F. ) |\n| 6 | 1, 4, 5 | #P_3bitri | |- ( ( T. <-> F. ) <-> F. ) |",
+  "conclusion" : "#P_trubifal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wb", "#T_wfal", "#T_wb", "#T_wtru", "#T_wi", "#T_wfal", "#T_wa", "#T_wfal", "#T_wi", "#T_wtru", "#T_wtru", "#T_wi", "#T_wfal", "#T_wb", "#T_wfal", "#T_wfal", "#T_wi", "#T_wtru", "#T_wb", "#T_wtru", "#T_wtru", "#T_wi", "#T_wfal", "#T_wa", "#T_wfal", "#T_wi", "#T_wtru", "#T_wb", "#T_wfal", "#T_wa", "#T_wtru", "#T_wfal", "#T_wa", "#T_wtru", "#T_wb", "#T_wfal", "#T_wtru", "#T_wb", "#T_wfal", "#T_wb", "#T_wfal" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_falimtru", "#P_truimfal", "#P_3bitri", "#P_falantru", "#P_dfbi2" ]
+}

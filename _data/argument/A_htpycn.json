@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See htpycn on Metamath](http://us.metamath.org/mpegif/htpycn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nh s\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ishtpy.1 | |- ( ph -> J e. ( TopOn ` X ) ) |\n| 2 |  | ishtpy.3 | |- ( ph -> F e. ( J Cn K ) ) |\n| 3 |  | ishtpy.4 | |- ( ph -> G e. ( J Cn K ) ) |\n| 4 | 1, 2, 3 | #P_ishtpy | |- ( ph -> ( h e. ( F ( J Htpy K ) G ) <-> ( h e. ( ( J tX II ) Cn K ) /\\ A. s e. X ( ( s h 0 ) = ( F ` s ) /\\ ( s h 1 ) = ( G ` s ) ) ) ) ) |\n| 5 |  | #P_simpl | |- ( ( h e. ( ( J tX II ) Cn K ) /\\ A. s e. X ( ( s h 0 ) = ( F ` s ) /\\ ( s h 1 ) = ( G ` s ) ) ) -> h e. ( ( J tX II ) Cn K ) ) |\n| 6 | 4, 5 | #P_syl6bi | |- ( ph -> ( h e. ( F ( J Htpy K ) G ) -> h e. ( ( J tX II ) Cn K ) ) ) |\n| 7 | 6 | #P_ssrdv | |- ( ph -> ( F ( J Htpy K ) G ) C_ ( ( J tX II ) Cn K ) ) |",
+  "conclusion" : "#P_htpycn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vh", "#T_vs", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wph", "#T_wi", "#T_vh", "#T_wcel", "#T_cF", "#T_cJ", "#T_chtpy", "#T_cK", "#T_cG", "#T_wb", "#T_vh", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cii", "#T_ccn", "#T_cK", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cX", "#T_vs", "#T_vh", "#T_cc0", "#T_wceq", "#T_cF", "#T_cfv", "#T_vs", "#T_wa", "#T_vs", "#T_vh", "#T_c1", "#T_wceq", "#T_cG", "#T_cfv", "#T_vs", "#T_vh", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cii", "#T_ccn", "#T_cK", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cX", "#T_vs", "#T_vh", "#T_cc0", "#T_wceq", "#T_cF", "#T_cfv", "#T_vs", "#T_wa", "#T_vs", "#T_vh", "#T_c1", "#T_wceq", "#T_cG", "#T_cfv", "#T_vs", "#T_wi", "#T_vh", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cii", "#T_ccn", "#T_cK", "#T_wph", "#T_wi", "#T_vh", "#T_wcel", "#T_cF", "#T_cJ", "#T_chtpy", "#T_cK", "#T_cG", "#T_wi", "#T_vh", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cii", "#T_ccn", "#T_cK", "#T_wph", "#T_wi", "#T_cF", "#T_cJ", "#T_chtpy", "#T_cK", "#T_cG", "#T_wss", "#T_cJ", "#T_ctx", "#T_cii", "#T_ccn", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_syl6bi", "#P_ishtpy", "#P_simpl" ]
+}

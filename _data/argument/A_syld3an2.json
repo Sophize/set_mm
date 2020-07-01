@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syld3an2 on Metamath](http://us.metamath.org/mpegif/syld3an2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syld3an2.1 | |- ( ( ph /\\ ch /\\ th ) -> ps ) |\n| 2 |  | syld3an2.2 | |- ( ( ph /\\ ps /\\ th ) -> ta ) |\n| 3 | 1 | #P_3com23 | |- ( ( ph /\\ th /\\ ch ) -> ps ) |\n| 4 | 2 | #P_3com23 | |- ( ( ph /\\ th /\\ ps ) -> ta ) |\n| 5 | 3, 4 | #P_syld3an3 | |- ( ( ph /\\ th /\\ ch ) -> ta ) |\n| 6 | 5 | #P_3com23 | |- ( ( ph /\\ ch /\\ th ) -> ta ) |",
+  "conclusion" : "#P_syld3an2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wps", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3com23", "#P_syld3an3" ]
+}

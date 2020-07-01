@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvopabv on Metamath](http://us.metamath.org/mpegif/cbvopabv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvopabv.1 | |- ( ( x = z /\\ y = w ) -> ( ph <-> ps ) ) |\n| 2 |  | #P_nfv | |- F/ z ph |\n| 3 |  | #P_nfv | |- F/ w ph |\n| 4 |  | #P_nfv | |- F/ x ps |\n| 5 |  | #P_nfv | |- F/ y ps |\n| 6 | 2, 3, 4, 5, 1 | #P_cbvopab | |- { <. x , y >. | ph } = { <. z , w >. | ps } |",
+  "conclusion" : "#P_cbvopabv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_vy", "#T_wceq", "#T_vw", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vz", "#T_wph", "#T_wnf", "#T_vw", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vy.tru", "#T_wps", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vz", "#T_copab--3", "#T_vw", "#T_copab--4", "#T_copab--5", "#T_wps", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_cbvopab" ]
+}

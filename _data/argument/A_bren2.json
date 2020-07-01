@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bren2 on Metamath](http://us.metamath.org/mpegif/bren2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_endom | |- ( A ~~ B -> A ~<_ B ) |\n| 2 |  | #P_sdomnen | |- ( A ~< B -> -. A ~~ B ) |\n| 3 | 2 | #P_con2i | |- ( A ~~ B -> -. A ~< B ) |\n| 4 | 1, 3 | #P_jca | |- ( A ~~ B -> ( A ~<_ B /\\ -. A ~< B ) ) |\n| 5 |  | #P_brdom2 | |- ( A ~<_ B <-> ( A ~< B \\/ A ~~ B ) ) |\n| 6 | 5 | #P_biimpi | |- ( A ~<_ B -> ( A ~< B \\/ A ~~ B ) ) |\n| 7 | 6 | #P_orcanai | |- ( ( A ~<_ B /\\ -. A ~< B ) -> A ~~ B ) |\n| 8 | 4, 7 | #P_impbii | |- ( A ~~ B <-> ( A ~<_ B /\\ -. A ~< B ) ) |",
+  "conclusion" : "#P_bren2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA", "#T_cen", "#T_cB", "#T_wb", "#T_cA", "#T_cdom", "#T_cB", "#T_wa", "#T_wn", "#T_cA", "#T_csdm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_con2i", "#P_orcanai", "#P_sdomnen", "#P_jca", "#P_brdom2", "#P_biimpi", "#P_endom" ]
+}

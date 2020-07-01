@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difeq12i on Metamath](http://us.metamath.org/mpegif/difeq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | difeq1i.1 | |- A = B |\n| 2 |  | difeq12i.2 | |- C = D |\n| 3 | 1 | #P_difeq1i | |- ( A \\ C ) = ( B \\ C ) |\n| 4 | 2 | #P_difeq2i | |- ( B \\ C ) = ( B \\ D ) |\n| 5 | 3, 4 | #P_eqtri | |- ( A \\ C ) = ( B \\ D ) |",
+  "conclusion" : "#P_difeq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_cD", "#T_cA", "#T_cdif", "#T_cC", "#T_wceq", "#T_cB", "#T_cdif", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_difeq1i", "#P_difeq2i" ]
+}

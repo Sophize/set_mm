@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strfvnd on Metamath](http://us.metamath.org/mpegif/strfvnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strfvnd.c | |- E = Slot N |\n| 2 |  | strfvnd.f | |- ( ph -> S e. V ) |\n| 3 |  | #P_elex | |- ( S e. V -> S e. _V ) |\n| 4 |  | #P_fveq1 | |- ( x = S -> ( x ` N ) = ( S ` N ) ) |\n| 5 |  | #P_df-slot | |- Slot N = ( x e. _V |-> ( x ` N ) ) |\n| 6 | 1, 5 | #P_eqtri | |- E = ( x e. _V |-> ( x ` N ) ) |\n| 7 |  | #P_fvex | |- ( S ` N ) e. _V |\n| 8 | 4, 6, 7 | #P_fvmpt | |- ( S e. _V -> ( E ` S ) = ( S ` N ) ) |\n| 9 | 2, 3, 8 | #P_3syl | |- ( ph -> ( E ` S ) = ( S ` N ) ) |",
+  "conclusion" : "#P_strfvnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cE", "#T_wceq", "#T_cslot", "#T_cN", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cV", "#T_cS", "#T_wcel", "#T_cV", "#T_wi", "#T_cS", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cS", "#T_wi", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_wceq", "#T_cS", "#T_cfv", "#T_cN", "#T_cslot", "#T_cN", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_cE", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_cS", "#T_cfv", "#T_cN", "#T_wcel", "#T_cvv", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cfv", "#T_cN", "#T_wph", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cfv", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_fvmpt", "#P_elex", "#P_3syl", "#P_df-slot", "#P_fvex", "#P_fveq1" ]
+}

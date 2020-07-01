@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ne3anior on Metamath](http://us.metamath.org/mpegif/ne3anior.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_3anor | |- ( ( A =/= B /\\ C =/= D /\\ E =/= F ) <-> -. ( -. A =/= B \\/ -. C =/= D \\/ -. E =/= F ) ) |\n| 2 |  | #P_nne | |- ( -. A =/= B <-> A = B ) |\n| 3 |  | #P_nne | |- ( -. C =/= D <-> C = D ) |\n| 4 |  | #P_nne | |- ( -. E =/= F <-> E = F ) |\n| 5 | 2, 3, 4 | #P_3orbi123i | |- ( ( -. A =/= B \\/ -. C =/= D \\/ -. E =/= F ) <-> ( A = B \\/ C = D \\/ E = F ) ) |\n| 6 | 1, 5 | #P_xchbinx | |- ( ( A =/= B /\\ C =/= D /\\ E =/= F ) <-> -. ( A = B \\/ C = D \\/ E = F ) ) |",
+  "conclusion" : "#P_ne3anior",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_w3a--1", "#T_cC", "#T_wne", "#T_cD", "#T_w3a--2", "#T_cE", "#T_wne", "#T_cF", "#T_wb", "#T_wn", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_w3o--1", "#T_wn", "#T_cC", "#T_wne", "#T_cD", "#T_w3o--2", "#T_wn", "#T_cE", "#T_wne", "#T_cF", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_cC", "#T_wne", "#T_cD", "#T_wb", "#T_cC", "#T_wceq", "#T_cD", "#T_wn", "#T_cE", "#T_wne", "#T_cF", "#T_wb", "#T_cE", "#T_wceq", "#T_cF", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_w3o--1", "#T_wn", "#T_cC", "#T_wne", "#T_cD", "#T_w3o--2", "#T_wn", "#T_cE", "#T_wne", "#T_cF", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_w3o--1", "#T_cC", "#T_wceq", "#T_cD", "#T_w3o--2", "#T_cE", "#T_wceq", "#T_cF", "#T_cA", "#T_wne", "#T_cB", "#T_w3a--1", "#T_cC", "#T_wne", "#T_cD", "#T_w3a--2", "#T_cE", "#T_wne", "#T_cF", "#T_wb", "#T_wn", "#T_cA", "#T_wceq", "#T_cB", "#T_w3o--1", "#T_cC", "#T_wceq", "#T_cD", "#T_w3o--2", "#T_cE", "#T_wceq", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3anor", "#P_3orbi123i", "#P_xchbinx", "#P_nne" ]
+}

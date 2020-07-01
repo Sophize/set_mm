@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovmpt2a on Metamath](http://us.metamath.org/mpegif/ovmpt2a.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ovmpt2ga.1 | |- ( ( x = A /\\ y = B ) -> R = S ) |\n| 2 |  | ovmpt2ga.2 | |- F = ( x e. C , y e. D |-> R ) |\n| 3 |  | ovmpt2a.4 | |- S e. _V |\n| 4 | 1, 2 | #P_ovmpt2ga | |- ( ( A e. C /\\ B e. D /\\ S e. _V ) -> ( A F B ) = S ) |\n| 5 | 3, 4 | #P_mp3an3 | |- ( ( A e. C /\\ B e. D ) -> ( A F B ) = S ) |",
+  "conclusion" : "#P_ovmpt2a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cC", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cD", "#T_cmpt2--4", "#T_cR", "#T_cS", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cS", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an3", "#P_ovmpt2ga" ]
+}

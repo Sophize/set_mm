@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rnxpm on Metamath](http://us.metamath.org/mpegif/rnxpm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rn | |- ran ( A X. B ) = dom `' ( A X. B ) |\n| 2 |  | #P_cnvxp | |- `' ( A X. B ) = ( B X. A ) |\n| 3 | 2 | #P_dmeqi | |- dom `' ( A X. B ) = dom ( B X. A ) |\n| 4 | 1, 3 | #P_eqtri | |- ran ( A X. B ) = dom ( B X. A ) |\n| 5 |  | #P_dmxpm | |- ( E. x x e. A -> dom ( B X. A ) = B ) |\n| 6 | 4, 5 | #P_syl5eq | |- ( E. x x e. A -> ran ( A X. B ) = B ) |",
+  "conclusion" : "#P_rnxpm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crn", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_crn", "#T_cA", "#T_cxp", "#T_cB", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_dmxpm", "#P_syl5eq", "#P_df-rn", "#P_dmeqi", "#P_cnvxp" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neisspw on Metamath](http://us.metamath.org/mpegif/neisspw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nv\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neifval.1 | |- X = U. J |\n| 2 | 1 | #P_neii1 | |- ( ( J e. Top /\\ v e. ( ( nei ` J ) ` S ) ) -> v C_ X ) |\n| 3 |  | #P_selpw | |- ( v e. ~P X <-> v C_ X ) |\n| 4 | 2, 3 | #P_sylibr | |- ( ( J e. Top /\\ v e. ( ( nei ` J ) ` S ) ) -> v e. ~P X ) |\n| 5 | 4 | #P_ex | |- ( J e. Top -> ( v e. ( ( nei ` J ) ` S ) -> v e. ~P X ) ) |\n| 6 | 5 | #P_ssrdv | |- ( J e. Top -> ( ( nei ` J ) ` S ) C_ ~P X ) |",
+  "conclusion" : "#P_neisspw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vv", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_vv", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_vv", "#T_wss", "#T_cX", "#T_vv", "#T_wcel", "#T_cpw", "#T_cX", "#T_wb", "#T_vv", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_vv", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_vv", "#T_wcel", "#T_cpw", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_vv", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_vv", "#T_wcel", "#T_cpw", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wss", "#T_cpw", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_selpw", "#P_ex", "#P_sylibr", "#P_neii1" ]
+}

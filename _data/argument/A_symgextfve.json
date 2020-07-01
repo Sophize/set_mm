@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgextfve on Metamath](http://us.metamath.org/mpegif/symgextfve.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgext.s | |- S = ( Base ` ( SymGrp ` ( N \\ { K } ) ) ) |\n| 2 |  | symgext.e | |- E = ( x e. N |-> if ( x = K , K , ( Z ` x ) ) ) |\n| 3 |  | #P_fveq2 | |- ( X = K -> ( E ` X ) = ( E ` K ) ) |\n| 4 |  | #P_iftrue | |- ( x = K -> if ( x = K , K , ( Z ` x ) ) = K ) |\n| 5 | 4, 2 | #P_fvmptg | |- ( ( K e. N /\\ K e. N ) -> ( E ` K ) = K ) |\n| 6 | 5 | #P_anidms | |- ( K e. N -> ( E ` K ) = K ) |\n| 7 | 3, 6 | #P_sylan9eqr | |- ( ( K e. N /\\ X = K ) -> ( E ` X ) = K ) |\n| 8 | 7 | #P_ex | |- ( K e. N -> ( X = K -> ( E ` X ) = K ) ) |",
+  "conclusion" : "#P_symgextfve",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cE", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cK", "#T_cif--2", "#T_cK", "#T_cif--3", "#T_cZ", "#T_cfv", "#T_vx", "#T_cX", "#T_wceq", "#T_cK", "#T_wi", "#T_cE", "#T_cfv", "#T_cX", "#T_wceq", "#T_cE", "#T_cfv", "#T_cK", "#T_vx.wal", "#T_wceq", "#T_cK", "#T_wi", "#T_cif--1", "#T_vx.wal", "#T_wceq", "#T_cK", "#T_cif--2", "#T_cK", "#T_cif--3", "#T_cZ", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cE", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cE", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cX", "#T_wceq", "#T_cK", "#T_wi", "#T_cE", "#T_cfv", "#T_cX", "#T_wceq", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cX", "#T_wceq", "#T_cK", "#T_wi", "#T_cE", "#T_cfv", "#T_cX", "#T_wceq", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmptg", "#P_sylan9eqr", "#P_iftrue", "#P_ex", "#P_fveq2", "#P_anidms" ]
+}

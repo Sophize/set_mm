@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssrecnpr on Metamath](http://us.metamath.org/mpegif/ssrecnpr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elpri | |- ( S e. { RR , CC } -> ( S = RR \\/ S = CC ) ) |\n| 2 |  | #P_eqimss2 | |- ( S = RR -> RR C_ S ) |\n| 3 |  | #P_ax-resscn | |- RR C_ CC |\n| 4 |  | #P_sseq2 | |- ( S = CC -> ( RR C_ S <-> RR C_ CC ) ) |\n| 5 | 3, 4 | #P_mpbiri | |- ( S = CC -> RR C_ S ) |\n| 6 | 2, 5 | #P_jaoi | |- ( ( S = RR \\/ S = CC ) -> RR C_ S ) |\n| 7 | 1, 6 | #P_syl | |- ( S e. { RR , CC } -> RR C_ S ) |",
+  "conclusion" : "#P_ssrecnpr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_cS", "#T_wceq", "#T_cr", "#T_wo", "#T_cS", "#T_wceq", "#T_cc", "#T_cS", "#T_wceq", "#T_cr", "#T_wi", "#T_cr", "#T_wss", "#T_cS", "#T_cr", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cc", "#T_wi", "#T_cr", "#T_wss", "#T_cS", "#T_wb", "#T_cr", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cc", "#T_wi", "#T_cr", "#T_wss", "#T_cS", "#T_cS", "#T_wceq", "#T_cr", "#T_wo", "#T_cS", "#T_wceq", "#T_cc", "#T_wi", "#T_cr", "#T_wss", "#T_cS", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_cr", "#T_wss", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqimss2", "#P_ax-resscn", "#P_mpbiri", "#P_elpri", "#P_sseq2", "#P_jaoi", "#P_syl" ]
+}

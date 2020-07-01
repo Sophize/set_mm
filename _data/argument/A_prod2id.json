@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prod2id on Metamath](http://us.metamath.org/mpegif/prod2id.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_prodeq2ii | |- ( A. k e. A ( _I ` B ) = ( _I ` ( _I ` B ) ) -> prod_ k e. A B = prod_ k e. A ( _I ` B ) ) |\n| 2 |  | #P_fvex | |- ( _I ` B ) e. _V |\n| 3 |  | #P_fvi | |- ( ( _I ` B ) e. _V -> ( _I ` ( _I ` B ) ) = ( _I ` B ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( _I ` ( _I ` B ) ) = ( _I ` B ) |\n| 5 | 4 | #P_eqcomi | |- ( _I ` B ) = ( _I ` ( _I ` B ) ) |\n| 6 | 5 | #P_a1i | |- ( k e. A -> ( _I ` B ) = ( _I ` ( _I ` B ) ) ) |\n| 7 | 1, 6 | #P_mprg | |- prod_ k e. A B = prod_ k e. A ( _I ` B ) |",
+  "conclusion" : "#P_prod2id",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_vk", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cid", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mprg", "#P_prodeq2ii", "#P_fvi", "#P_a1i", "#P_fvex", "#P_eqcomi" ]
+}

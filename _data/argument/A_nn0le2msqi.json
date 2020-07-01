@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0le2msqi on Metamath](http://us.metamath.org/mpegif/nn0le2msqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nn0le2msqi.1 | |- A e. NN0 |\n| 2 |  | nn0le2msqi.2 | |- B e. NN0 |\n| 3 | 1 | #P_nn0ge0i | |- 0 <_ A |\n| 4 | 2 | #P_nn0ge0i | |- 0 <_ B |\n| 5 | 1 | #P_nn0rei | |- A e. RR |\n| 6 | 2 | #P_nn0rei | |- B e. RR |\n| 7 | 5, 6 | #P_le2sqi | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( A <_ B <-> ( A ^ 2 ) <_ ( B ^ 2 ) ) ) |\n| 8 | 3, 4, 7 | #P_mp2an | |- ( A <_ B <-> ( A ^ 2 ) <_ ( B ^ 2 ) ) |\n| 9 | 1 | #P_nn0cni | |- A e. CC |\n| 10 | 9 | #P_sqvali | |- ( A ^ 2 ) = ( A x. A ) |\n| 11 | 2 | #P_nn0cni | |- B e. CC |\n| 12 | 11 | #P_sqvali | |- ( B ^ 2 ) = ( B x. B ) |\n| 13 | 10, 12 | #P_breq12i | |- ( ( A ^ 2 ) <_ ( B ^ 2 ) <-> ( A x. A ) <_ ( B x. B ) ) |\n| 14 | 8, 13 | #P_bitri | |- ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) |",
+  "conclusion" : "#P_nn0le2msqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cle", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cle", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cle", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wb", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cA", "#T_cmul", "#T_cA", "#T_cle", "#T_cB", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0ge0i", "#P_mp2an", "#P_breq12i", "#P_nn0cni", "#P_le2sqi", "#P_nn0rei", "#P_bitri", "#P_sqvali" ]
+}

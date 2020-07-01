@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See norm0 on Metamath](http://us.metamath.org/mpegif/norm0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hv0cl | |- 0h e. ~H |\n| 2 |  | #P_normval | |- ( 0h e. ~H -> ( normh ` 0h ) = ( sqrt ` ( 0h .ih 0h ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( normh ` 0h ) = ( sqrt ` ( 0h .ih 0h ) ) |\n| 4 |  | #P_hi01 | |- ( 0h e. ~H -> ( 0h .ih 0h ) = 0 ) |\n| 5 | 4 | #P_fveq2d | |- ( 0h e. ~H -> ( sqrt ` ( 0h .ih 0h ) ) = ( sqrt ` 0 ) ) |\n| 6 | 1, 5 | #P_ax-mp | |- ( sqrt ` ( 0h .ih 0h ) ) = ( sqrt ` 0 ) |\n| 7 |  | #P_sqrt0 | |- ( sqrt ` 0 ) = 0 |\n| 8 | 3, 6, 7 | #P_3eqtri | |- ( normh ` 0h ) = 0 |",
+  "conclusion" : "#P_norm0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0v", "#T_wcel", "#T_chil", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_c0v", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_c0v", "#T_csp", "#T_c0v", "#T_cno", "#T_cfv", "#T_c0v", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_c0v", "#T_csp", "#T_c0v", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_c0v", "#T_csp", "#T_c0v", "#T_wceq", "#T_cc0", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_csqrt", "#T_cfv", "#T_c0v", "#T_csp", "#T_c0v", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cc0", "#T_csqrt", "#T_cfv", "#T_c0v", "#T_csp", "#T_c0v", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cc0", "#T_csqrt", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cno", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ax-hv0cl", "#P_fveq2d", "#P_3eqtri", "#P_hi01", "#P_normval", "#P_sqrt0" ]
+}

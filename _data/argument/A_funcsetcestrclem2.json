@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funcsetcestrclem2 on Metamath](http://us.metamath.org/mpegif/funcsetcestrclem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | funcsetcestrc.s | |- S = ( SetCat ` U ) |\n| 2 |  | funcsetcestrc.c | |- C = ( Base ` S ) |\n| 3 |  | funcsetcestrc.f | |- ( ph -> F = ( x e. C |-> { <. ( Base ` ndx ) , x >. } ) ) |\n| 4 |  | funcsetcestrc.u | |- ( ph -> U e. WUni ) |\n| 5 |  | funcsetcestrc.o | |- ( ph -> _om e. U ) |\n| 6 | 1, 2, 3 | #P_funcsetcestrclem1 | |- ( ( ph /\\ X e. C ) -> ( F ` X ) = { <. ( Base ` ndx ) , X >. } ) |\n| 7 | 1, 2, 4, 5 | #P_setc1strwun | |- ( ( ph /\\ X e. C ) -> { <. ( Base ` ndx ) , X >. } e. U ) |\n| 8 | 6, 7 | #P_eqeltrd | |- ( ( ph /\\ X e. C ) -> ( F ` X ) e. U ) |",
+  "conclusion" : "#P_funcsetcestrclem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_com", "#T_wcel", "#T_cU", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funcsetcestrclem1", "#P_eqeltrd", "#P_setc1strwun" ]
+}

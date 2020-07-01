@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isumsplit on Metamath](http://us.metamath.org/mpegif/isumsplit.html)"
+  } ],
+  "names" : [ "isumsplit" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cW", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cN", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cZ", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cA", "#T_caddc", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cW", "#T_cA", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_cW", "#T_vk", "#T_cZ", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Split off the first ` N ` terms of an infinite sum.  (Contributed by Paul Chapman, 9-Feb-2008.)  (Revised by Mario Carneiro, 24-Apr-2014.) ",
+  "statement" : "isumsplit.1 $e |- Z = ( ZZ>= ` M ) $.\nisumsplit.2 $e |- W = ( ZZ>= ` N ) $.\nisumsplit.3 $e |- ( ph -> N e. Z ) $.\nisumsplit.4 $e |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) $.\nisumsplit.5 $e |- ( ( ph /\\ k e. Z ) -> A e. CC ) $.\nisumsplit.6 $e |- ( ph -> seq M ( + , F ) e. dom ~~> ) $.\nisumsplit $p |- ( ph -> sum_ k e. Z A = ( sum_ k e. ( M ... ( N - 1 ) ) A + sum_ k e. W A ) ) $.\n$d F k $.\n$d M k $.\n$d N k $.\n$d W k $.\n$d Z k $.\n$d k ph $."
+}

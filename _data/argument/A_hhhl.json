@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hhhl on Metamath](http://us.metamath.org/mpegif/hhhl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhhl.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 | 1 | #P_hhnv | |- U e. NrmCVec |\n| 3 |  | #P_eqid | |- ( IndMet ` U ) = ( IndMet ` U ) |\n| 4 | 1, 3 | #P_hhcms | |- ( IndMet ` U ) e. ( CMet ` ~H ) |\n| 5 | 1 | #P_hhba | |- ~H = ( BaseSet ` U ) |\n| 6 | 5, 3 | #P_iscbn | |- ( U e. CBan <-> ( U e. NrmCVec /\\ ( IndMet ` U ) e. ( CMet ` ~H ) ) ) |\n| 7 | 2, 4, 6 | #P_mpbir2an | |- U e. CBan |\n| 8 | 1 | #P_hhph | |- U e. CPreHilOLD |\n| 9 |  | #P_ishlo | |- ( U e. CHilOLD <-> ( U e. CBan /\\ U e. CPreHilOLD ) ) |\n| 10 | 7, 8, 9 | #P_mpbir2an | |- U e. CHilOLD |",
+  "conclusion" : "#P_hhhl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cU", "#T_wcel", "#T_cnv", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cims", "#T_cfv", "#T_cU", "#T_wcel", "#T_cms", "#T_cfv", "#T_chil", "#T_chil", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wb", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cims", "#T_cfv", "#T_cU", "#T_wcel", "#T_cms", "#T_cfv", "#T_chil", "#T_cU", "#T_wcel", "#T_ccbn", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_chlo", "#T_wb", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wa", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_chlo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_hhnv", "#P_hhph", "#P_hhcms", "#P_iscbn", "#P_mpbir2an", "#P_hhba", "#P_ishlo" ]
+}

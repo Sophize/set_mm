@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sgnrrp on Metamath](http://us.metamath.org/mpegif/sgnrrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rpxr | |- ( A e. RR+ -> A e. RR* ) |\n| 2 |  | #P_rpgt0 | |- ( A e. RR+ -> 0 < A ) |\n| 3 |  | #P_sgnp | |- ( ( A e. RR* /\\ 0 < A ) -> ( sgn ` A ) = 1 ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( A e. RR+ -> ( sgn ` A ) = 1 ) |",
+  "conclusion" : "#P_sgnrrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_csgn", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cA", "#T_wcel", "#T_crp", "#T_wi", "#T_csgn", "#T_cfv", "#T_cA", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rpgt0", "#P_rpxr", "#P_syl2anc", "#P_sgnp" ]
+}

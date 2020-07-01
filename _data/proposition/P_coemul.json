@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coemul on Metamath](http://us.metamath.org/mpegif/coemul.html)"
+  } ],
+  "names" : [ "coemul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cB", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cG", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_cmul", "#T_cG", "#T_cfv", "#T_cN", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cA", "#T_cfv", "#T_vk", "#T_cmul", "#T_cB", "#T_cfv", "#T_cN", "#T_cmin", "#T_vk", "#T_cA", "#T_vk", "#T_cB", "#T_vk", "#T_cF", "#T_vk", "#T_cG", "#T_vk", "#T_cN", "#T_vk", "#T_cS", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A coefficient of a product of polynomials.  (Contributed by Mario Carneiro, 24-Jul-2014.) ",
+  "statement" : "coefv0.1 $e |- A = ( coeff ` F ) $.\ncoeadd.2 $e |- B = ( coeff ` G ) $.\ncoemul $p |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) /\\ N e. NN0 ) -> ( ( coeff ` ( F oF x. G ) ) ` N ) = sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( B ` ( N - k ) ) ) ) $.\n$d A k $.\n$d B k $.\n$d F k $.\n$d G k $.\n$d N k $.\n$d S k $."
+}

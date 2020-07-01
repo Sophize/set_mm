@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mbfposb on Metamath](http://us.metamath.org/mpegif/mbfposb.html)"
+  } ],
+  "names" : [ "mbfposb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wcel", "#T_cmbf", "#T_wb", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cB", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cc0", "#T_wcel", "#T_cmbf", "#T_wa", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cif--1", "#T_cc0", "#T_cle", "#T_cneg", "#T_cB", "#T_cif--2", "#T_cneg", "#T_cB", "#T_cif--3", "#T_cc0", "#T_wcel", "#T_cmbf", "#T_cA", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A function is measurable iff its positive and negative parts are measurable.  (Contributed by Mario Carneiro, 11-Aug-2014.) ",
+  "statement" : "mbfpos.1 $e |- ( ( ph /\\ x e. A ) -> B e. RR ) $.\nmbfposb $p |- ( ph -> ( ( x e. A |-> B ) e. MblFn <-> ( ( x e. A |-> if ( 0 <_ B , B , 0 ) ) e. MblFn /\\ ( x e. A |-> if ( 0 <_ -u B , -u B , 0 ) ) e. MblFn ) ) ) $.\n$d A x $.\n$d ph x $."
+}

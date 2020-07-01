@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-comf on Metamath](http://us.metamath.org/mpegif/df-comf.html)"
+  } ],
+  "names" : [ "df-comf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccomf", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_cxp", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--4", "#T_vg", "#T_cmpt2--1", "#T_c2nd", "#T_cfv", "#T_vx", "#T_chom", "#T_cfv", "#T_vc", "#T_vy", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_chom", "#T_cfv", "#T_vc", "#T_cfv", "#T_vx", "#T_cmpt2--4", "#T_vg", "#T_vx", "#T_cco", "#T_cfv", "#T_vc", "#T_vy", "#T_vf", "#T_vc", "#T_vf", "#T_vg", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the functionalized composition operator, which is exactly like ` comp ` but is guaranteed to be a function of the proper type. (Contributed by Mario Carneiro, 4-Jan-2017.) ",
+  "statement" : "df-comf $p |- comf = ( c e. _V |-> ( x e. ( ( Base ` c ) X. ( Base ` c ) ) , y e. ( Base ` c ) |-> ( g e. ( ( 2nd ` x ) ( Hom ` c ) y ) , f e. ( ( Hom ` c ) ` x ) |-> ( g ( x ( comp ` c ) y ) f ) ) ) ) $.\n$d c f g x y $."
+}

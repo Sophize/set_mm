@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ilim on Metamath](http://us.metamath.org/mpegif/df-ilim.html)"
+  } ],
+  "names" : [ "df-ilim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wlim", "#T_cA", "#T_wb", "#T_word", "#T_cA", "#T_w3a--1", "#T_c0", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cA", "#T_wceq", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the limit ordinal predicate, which is true for an ordinal that has the empty set as an element and is not a successor (i.e. that is the union of itself).  Our definition combines the definition of Lim of [BellMachover] p. 471 and Exercise 1 of [TakeutiZaring] p. 42, and then changes ` A =/= (/) ` to ` (/) e. A ` (which would be equivalent given the law of the excluded middle, but which is not for us).  (Contributed by Jim Kingdon, 11-Nov-2018.)  Use its alias ~ dflim2 instead for naming consistency with set.mm.  (New usage is discouraged.) ",
+  "statement" : "df-ilim $p |- ( Lim A <-> ( Ord A /\\ (/) e. A /\\ A = U. A ) ) $."
+}

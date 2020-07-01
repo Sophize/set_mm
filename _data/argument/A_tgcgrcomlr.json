@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgcgrcomlr on Metamath](http://us.metamath.org/mpegif/tgcgrcomlr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tkgeom.p | |- P = ( Base ` G ) |\n| 2 |  | tkgeom.d | |- .- = ( dist ` G ) |\n| 3 |  | tkgeom.i | |- I = ( Itv ` G ) |\n| 4 |  | tkgeom.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tgcgrcomlr.a | |- ( ph -> A e. P ) |\n| 6 |  | tgcgrcomlr.b | |- ( ph -> B e. P ) |\n| 7 |  | tgcgrcomlr.c | |- ( ph -> C e. P ) |\n| 8 |  | tgcgrcomlr.d | |- ( ph -> D e. P ) |\n| 9 |  | tgcgrcomlr.6 | |- ( ph -> ( A .- B ) = ( C .- D ) ) |\n| 10 | 1, 2, 3, 4, 5, 6 | #P_axtgcgrrflx | |- ( ph -> ( A .- B ) = ( B .- A ) ) |\n| 11 | 1, 2, 3, 4, 7, 8 | #P_axtgcgrrflx | |- ( ph -> ( C .- D ) = ( D .- C ) ) |\n| 12 | 9, 10, 11 | #P_3eqtr3d | |- ( ph -> ( B .- A ) = ( D .- C ) ) |",
+  "conclusion" : "#P_tgcgrcomlr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_c.mi", "#T_cB", "#T_wceq", "#T_cC", "#T_c.mi", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_c.mi", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_c.mi", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_c.mi", "#T_cD", "#T_wceq", "#T_cD", "#T_c.mi", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_c.mi", "#T_cA", "#T_wceq", "#T_cD", "#T_c.mi", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_axtgcgrrflx", "#P_3eqtr3d" ]
+}

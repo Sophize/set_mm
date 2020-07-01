@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oninhaus on Metamath](http://us.metamath.org/mpegif/oninhaus.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_haust1 | |- ( x e. Haus -> x e. Fre ) |\n| 2 | 1 | #P_ssriv | |- Haus C_ Fre |\n| 3 |  | #P_sslin | |- ( Haus C_ Fre -> ( On i^i Haus ) C_ ( On i^i Fre ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( On i^i Haus ) C_ ( On i^i Fre ) |\n| 5 |  | #P_onint1 | |- ( On i^i Fre ) = { 1o , 2o } |\n| 6 | 4, 5 | #P_sseqtri | |- ( On i^i Haus ) C_ { 1o , 2o } |\n| 7 |  | #P_ssoninhaus | |- { 1o , 2o } C_ ( On i^i Haus ) |\n| 8 | 6, 7 | #P_eqssi | |- ( On i^i Haus ) = { 1o , 2o } |",
+  "conclusion" : "#P_oninhaus",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cha", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_ct1", "#T_cha", "#T_wss", "#T_ct1", "#T_cha", "#T_wss", "#T_ct1", "#T_wi", "#T_con0", "#T_cin", "#T_cha", "#T_wss", "#T_con0", "#T_cin", "#T_ct1", "#T_con0", "#T_cin", "#T_cha", "#T_wss", "#T_con0", "#T_cin", "#T_ct1", "#T_con0", "#T_cin", "#T_ct1", "#T_wceq", "#T_cpr--1", "#T_c1o", "#T_cpr--2", "#T_c2o", "#T_cpr--3", "#T_con0", "#T_cin", "#T_cha", "#T_wss", "#T_cpr--1", "#T_c1o", "#T_cpr--2", "#T_c2o", "#T_cpr--3", "#T_cpr--1", "#T_c1o", "#T_cpr--2", "#T_c2o", "#T_cpr--3", "#T_wss", "#T_con0", "#T_cin", "#T_cha", "#T_con0", "#T_cin", "#T_cha", "#T_wceq", "#T_cpr--1", "#T_c1o", "#T_cpr--2", "#T_c2o", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_onint1", "#P_sseqtri", "#P_eqssi", "#P_haust1", "#P_sslin", "#P_ssoninhaus", "#P_ssriv" ]
+}

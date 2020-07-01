@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fviss on Metamath](http://us.metamath.org/mpegif/fviss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( x e. ( _I ` A ) -> x e. ( _I ` A ) ) |\n| 2 |  | #P_elfvex | |- ( x e. ( _I ` A ) -> A e. _V ) |\n| 3 |  | #P_fvi | |- ( A e. _V -> ( _I ` A ) = A ) |\n| 4 | 2, 3 | #P_syl | |- ( x e. ( _I ` A ) -> ( _I ` A ) = A ) |\n| 5 | 1, 4 | #P_eleqtrd | |- ( x e. ( _I ` A ) -> x e. A ) |\n| 6 | 5 | #P_ssriv | |- ( _I ` A ) C_ A |",
+  "conclusion" : "#P_fviss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cA", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleqtrd", "#P_elfvex", "#P_syl", "#P_fvi", "#P_id", "#P_ssriv" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sb6f on Metamath](http://us.metamath.org/mpegif/sb6f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | equs45f.1 | |- ( ph -> A. y ph ) |\n| 2 | 1 | #P_sbimi | |- ( [ y / x ] ph -> [ y / x ] A. y ph ) |\n| 3 |  | #P_sb4a | |- ( [ y / x ] A. y ph -> A. x ( x = y -> ph ) ) |\n| 4 | 2, 3 | #P_syl | |- ( [ y / x ] ph -> A. x ( x = y -> ph ) ) |\n| 5 |  | #P_sb2 | |- ( A. x ( x = y -> ph ) -> [ y / x ] ph ) |\n| 6 | 4, 5 | #P_impbii | |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) |\n\\\n Equivalence for substitution when ` y ` is not free in ` ph ` . (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 30-Apr-2008.) ",
+  "conclusion" : "#P_sb6f--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sb4a", "#P_impbii", "#P_syl", "#P_sb2", "#P_sbimi" ]
+}

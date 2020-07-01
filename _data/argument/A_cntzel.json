@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cntzel on Metamath](http://us.metamath.org/mpegif/cntzel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cntzfval.b | |- B = ( Base ` M ) |\n| 2 |  | cntzfval.p | |- .+ = ( +g ` M ) |\n| 3 |  | cntzfval.z | |- Z = ( Cntz ` M ) |\n| 4 | 1, 2, 3 | #P_elcntz | |- ( S C_ B -> ( X e. ( Z ` S ) <-> ( X e. B /\\ A. y e. S ( X .+ y ) = ( y .+ X ) ) ) ) |\n| 5 | 4 | #P_baibd | |- ( ( S C_ B /\\ X e. B ) -> ( X e. ( Z ` S ) <-> A. y e. S ( X .+ y ) = ( y .+ X ) ) ) |",
+  "conclusion" : "#P_cntzel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_cZ", "#T_wceq", "#T_ccntz", "#T_cfv", "#T_cM", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cZ", "#T_cfv", "#T_cS", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_cX", "#T_c.pl", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_c.pl", "#T_cX", "#T_cS", "#T_wss", "#T_cB", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wcel", "#T_cZ", "#T_cfv", "#T_cS", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_cX", "#T_c.pl", "#T_vy", "#T_wceq", "#T_vy", "#T_c.pl", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baibd", "#P_elcntz" ]
+}

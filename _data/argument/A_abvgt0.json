@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abvgt0 on Metamath](http://us.metamath.org/mpegif/abvgt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abvf.a | |- A = ( AbsVal ` R ) |\n| 2 |  | abvf.b | |- B = ( Base ` R ) |\n| 3 |  | abveq0.z | |- .0. = ( 0g ` R ) |\n| 4 | 1, 2 | #P_abvcl | |- ( ( F e. A /\\ X e. B ) -> ( F ` X ) e. RR ) |\n| 5 | 4 | #P_3adant3 | |- ( ( F e. A /\\ X e. B /\\ X =/= .0. ) -> ( F ` X ) e. RR ) |\n| 6 | 1, 2 | #P_abvge0 | |- ( ( F e. A /\\ X e. B ) -> 0 <_ ( F ` X ) ) |\n| 7 | 6 | #P_3adant3 | |- ( ( F e. A /\\ X e. B /\\ X =/= .0. ) -> 0 <_ ( F ` X ) ) |\n| 8 | 1, 2, 3 | #P_abvne0 | |- ( ( F e. A /\\ X e. B /\\ X =/= .0. ) -> ( F ` X ) =/= 0 ) |\n| 9 | 5, 7, 8 | #P_ne0gt0d | |- ( ( F e. A /\\ X e. B /\\ X =/= .0. ) -> 0 < ( F ` X ) ) |",
+  "conclusion" : "#P_abvgt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wcel", "#T_cr", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cX", "#T_wne", "#T_c.0", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wcel", "#T_cr", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_cle", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cX", "#T_wne", "#T_c.0", "#T_wi", "#T_cc0", "#T_cle", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cX", "#T_wne", "#T_c.0", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wne", "#T_cc0", "#T_cF", "#T_wcel", "#T_cA", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cX", "#T_wne", "#T_c.0", "#T_wi", "#T_cc0", "#T_clt", "#T_cF", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ne0gt0d", "#P_abvcl", "#P_abvge0", "#P_abvne0", "#P_3adant3" ]
+}

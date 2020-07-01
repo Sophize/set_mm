@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbrne2 on Metamath](http://us.metamath.org/mpegif/nbrne2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq1 | |- ( A = B -> ( A R C <-> B R C ) ) |\n| 2 | 1 | #P_biimpcd | |- ( A R C -> ( A = B -> B R C ) ) |\n| 3 | 2 | #P_necon3bd | |- ( A R C -> ( -. B R C -> A =/= B ) ) |\n| 4 | 3 | #P_imp | |- ( ( A R C /\\ -. B R C ) -> A =/= B ) |",
+  "conclusion" : "#P_nbrne2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_cA", "#T_cR", "#T_cC", "#T_wa", "#T_wn", "#T_cB", "#T_cR", "#T_cC", "#T_wi", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_biimpcd", "#P_imp", "#P_necon3bd" ]
+}

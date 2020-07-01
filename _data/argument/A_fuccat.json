@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fuccat on Metamath](http://us.metamath.org/mpegif/fuccat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fuccat.q | |- Q = ( C FuncCat D ) |\n| 2 |  | fuccat.r | |- ( ph -> C e. Cat ) |\n| 3 |  | fuccat.s | |- ( ph -> D e. Cat ) |\n| 4 |  | #P_eqid | |- ( Id ` D ) = ( Id ` D ) |\n| 5 | 1, 2, 3, 4 | #P_fuccatid | |- ( ph -> ( Q e. Cat /\\ ( Id ` Q ) = ( f e. ( C Func D ) |-> ( ( Id ` D ) o. ( 1st ` f ) ) ) ) ) |\n| 6 | 5 | #P_simpld | |- ( ph -> Q e. Cat ) |",
+  "conclusion" : "#P_fuccat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cQ", "#T_wceq", "#T_cC", "#T_cfuc", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_ccid", "#T_cfv", "#T_cD", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cQ", "#T_wcel", "#T_ccat", "#T_wa", "#T_ccid", "#T_cfv", "#T_cQ", "#T_wceq", "#T_cbvex4v.vf", "#T_cmpt--1", "#T_cC", "#T_cfunc", "#T_cD", "#T_cmpt--2", "#T_ccid", "#T_cfv", "#T_cD", "#T_ccom", "#T_c1st", "#T_cfv", "#T_cbvex4v.vf", "#T_wph", "#T_wi", "#T_cQ", "#T_wcel", "#T_ccat" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_fuccatid", "#P_simpld" ]
+}

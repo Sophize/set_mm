@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alnex on Metamath](http://us.metamath.org/mpegif/alnex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fal | |- -. F. |\n| 2 | 1 | #P_pm2.21i | |- ( F. -> A. x F. ) |\n| 3 | 2 | #P_19.23h | |- ( A. x ( ph -> F. ) <-> ( E. x ph -> F. ) ) |\n| 4 |  | #P_dfnot | |- ( -. ph <-> ( ph -> F. ) ) |\n| 5 | 4 | #P_albii | |- ( A. x -. ph <-> A. x ( ph -> F. ) ) |\n| 6 |  | #P_dfnot | |- ( -. E. x ph <-> ( E. x ph -> F. ) ) |\n| 7 | 3, 5, 6 | #P_3bitr4i | |- ( A. x -. ph <-> -. E. x ph ) |",
+  "conclusion" : "#P_alnex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wfal", "#T_wfal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wfal", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wfal", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wi", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wfal", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wfal", "#T_wal", "#T_vx", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fal", "#P_pm2.21i", "#P_albii", "#P_dfnot", "#P_3bitr4i", "#P_19.23h" ]
+}

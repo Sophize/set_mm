@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcpw on Metamath](http://us.metamath.org/mpegif/bdcpw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdcpw.1 | |- Bdd_ A |\n| 2 | 1 | #P_bdss | |- Bdd x C_ A |\n| 3 | 2 | #P_bdcab | |- Bdd_ { x | x C_ A } |\n| 4 |  | #P_df-pw | |- ~P A = { x | x C_ A } |\n| 5 | 3, 4 | #P_bdceqir | |- Bdd_ ~P A |",
+  "conclusion" : "#P_bdcpw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wbdc", "#T_cA", "#T_wbd", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wbdc", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_wbdc", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdss", "#P_bdceqir", "#P_df-pw", "#P_bdcab" ]
+}

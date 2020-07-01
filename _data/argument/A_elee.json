@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elee on Metamath](http://us.metamath.org/mpegif/elee.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq2 | |- ( n = N -> ( 1 ... n ) = ( 1 ... N ) ) |\n| 2 | 1 | #P_oveq2d | |- ( n = N -> ( RR ^m ( 1 ... n ) ) = ( RR ^m ( 1 ... N ) ) ) |\n| 3 |  | #P_df-ee | |- EE = ( n e. NN |-> ( RR ^m ( 1 ... n ) ) ) |\n| 4 |  | #P_ovex | |- ( RR ^m ( 1 ... N ) ) e. _V |\n| 5 | 2, 3, 4 | #P_fvmpt | |- ( N e. NN -> ( EE ` N ) = ( RR ^m ( 1 ... N ) ) ) |\n| 6 | 5 | #P_eleq2d | |- ( N e. NN -> ( A e. ( EE ` N ) <-> A e. ( RR ^m ( 1 ... N ) ) ) ) |\n| 7 |  | #P_reex | |- RR e. _V |\n| 8 |  | #P_ovex | |- ( 1 ... N ) e. _V |\n| 9 | 7, 8 | #P_elmap | |- ( A e. ( RR ^m ( 1 ... N ) ) <-> A : ( 1 ... N ) --> RR ) |\n| 10 | 6, 9 | #P_syl6bb | |- ( N e. NN -> ( A e. ( EE ` N ) <-> A : ( 1 ... N ) --> RR ) ) |",
+  "conclusion" : "#P_elee",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cfz", "#T_vn", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_vn", "#T_wceq", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_cN", "#T_cee", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_vn", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_cN", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cee", "#T_cfv", "#T_cN", "#T_wceq", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_cN", "#T_cr", "#T_wcel", "#T_cvv", "#T_c1", "#T_cfz", "#T_cN", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cmap", "#T_c1", "#T_cfz", "#T_cN", "#T_wb", "#T_cA.wceq", "#T_wf--1", "#T_c1", "#T_cfz", "#T_cN", "#T_wf--2", "#T_cr", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cA", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wb", "#T_cA", "#T_wf--1", "#T_c1", "#T_cfz", "#T_cN", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_df-ee", "#P_fvmpt", "#P_eleq2d", "#P_syl6bb", "#P_reex", "#P_oveq2", "#P_oveq2d", "#P_elmap" ]
+}

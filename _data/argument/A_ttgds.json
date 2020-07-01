@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ttgds on Metamath](http://us.metamath.org/mpegif/ttgds.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ttgval.n | |- G = ( toTG ` H ) |\n| 2 |  | ttgds.1 | |- D = ( dist ` H ) |\n| 3 |  | #P_df-ds | |- dist = Slot ; 1 2 |\n| 4 |  | #P_1nn0 | |- 1 e. NN0 |\n| 5 |  | #P_2nn | |- 2 e. NN |\n| 6 | 4, 5 | #P_decnncl | |- ; 1 2 e. NN |\n| 7 |  | #P_2nn0 | |- 2 e. NN0 |\n| 8 |  | #P_6nn | |- 6 e. NN |\n| 9 |  | #P_2lt6 | |- 2 < 6 |\n| 10 | 4, 7, 8, 9 | #P_declt | |- ; 1 2 < ; 1 6 |\n| 11 | 1, 3, 6, 10 | #P_ttglem | |- ( dist ` H ) = ( dist ` G ) |\n| 12 | 2, 11 | #P_eqtri | |- D = ( dist ` G ) |",
+  "conclusion" : "#P_ttgds",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cttg", "#T_cfv", "#T_cH", "#T_cD", "#T_wceq", "#T_cds", "#T_cfv", "#T_cH", "#T_cds", "#T_wceq", "#T_cslot", "#T_cdc", "#T_c1", "#T_c2", "#T_c1", "#T_wcel", "#T_cn0", "#T_c2", "#T_wcel", "#T_cn", "#T_cdc", "#T_c1", "#T_c2", "#T_wcel", "#T_cn", "#T_c2", "#T_wcel", "#T_cn0", "#T_c6", "#T_wcel", "#T_cn", "#T_c2", "#T_clt", "#T_c6", "#T_cdc", "#T_c1", "#T_c2", "#T_clt", "#T_cdc", "#T_c1", "#T_c6", "#T_cds", "#T_cfv", "#T_cH", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cD", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ds", "#P_2nn0", "#P_declt", "#P_1nn0", "#P_ttglem", "#P_eqtri", "#P_decnncl", "#P_6nn", "#P_2nn", "#P_2lt6" ]
+}

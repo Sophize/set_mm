@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See domeng on Metamath](http://us.metamath.org/mpegif/domeng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( y = B -> ( A ~<_ y <-> A ~<_ B ) ) |\n| 2 |  | #P_sseq2 | |- ( y = B -> ( x C_ y <-> x C_ B ) ) |\n| 3 | 2 | #P_anbi2d | |- ( y = B -> ( ( A ~~ x /\\ x C_ y ) <-> ( A ~~ x /\\ x C_ B ) ) ) |\n| 4 | 3 | #P_exbidv | |- ( y = B -> ( E. x ( A ~~ x /\\ x C_ y ) <-> E. x ( A ~~ x /\\ x C_ B ) ) ) |\n| 5 |  | #P_vex | |- y e. _V |\n| 6 | 5 | #P_domen | |- ( A ~<_ y <-> E. x ( A ~~ x /\\ x C_ y ) ) |\n| 7 | 1, 4, 6 | #P_vtoclbg | |- ( B e. C -> ( A ~<_ B <-> E. x ( A ~~ x /\\ x C_ B ) ) ) |",
+  "conclusion" : "#P_domeng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_vy.tru", "#T_wb", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_wb", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cdom", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_cdom", "#T_cB", "#T_wb", "#T_wex", "#T_vx", "#T_cA", "#T_cen", "#T_vx", "#T_wa", "#T_vx", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi2d", "#P_domen", "#P_vtoclbg", "#P_exbidv", "#P_breq2", "#P_sseq2", "#P_vex" ]
+}

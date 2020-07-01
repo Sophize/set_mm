@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgov on Metamath](http://us.metamath.org/mpegif/symgov.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf g\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgplusg.1 | |- G = ( SymGrp ` A ) |\n| 2 |  | symgplusg.2 | |- B = ( Base ` G ) |\n| 3 |  | symgplusg.3 | |- .+ = ( +g ` G ) |\n| 4 |  | #P_coexg | |- ( ( X e. B /\\ Y e. B ) -> ( X o. Y ) e. _V ) |\n| 5 |  | #P_coeq1 | |- ( f = X -> ( f o. g ) = ( X o. g ) ) |\n| 6 |  | #P_coeq2 | |- ( g = Y -> ( X o. g ) = ( X o. Y ) ) |\n| 7 | 1, 2, 3 | #P_symgplusg | |- .+ = ( f e. B , g e. B |-> ( f o. g ) ) |\n| 8 | 5, 6, 7 | #P_ovmpt2g | |- ( ( X e. B /\\ Y e. B /\\ ( X o. Y ) e. _V ) -> ( X .+ Y ) = ( X o. Y ) ) |\n| 9 | 4, 8 | #P_mpd3an3 | |- ( ( X e. B /\\ Y e. B ) -> ( X .+ Y ) = ( X o. Y ) ) |",
+  "conclusion" : "#P_symgov",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_vg", "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cA", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_ccom", "#T_cY", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wceq", "#T_cX", "#T_wi", "#T_cbvex4v.vf", "#T_ccom", "#T_cbvex4v.vg", "#T_wceq", "#T_cX", "#T_ccom", "#T_cbvex4v.vg", "#T_cbvex4v.vg", "#T_wceq", "#T_cY", "#T_wi", "#T_cX", "#T_ccom", "#T_cbvex4v.vg", "#T_wceq", "#T_cX", "#T_ccom", "#T_cY", "#T_c.pl", "#T_wceq", "#T_cbvex4v.vf", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_cbvex4v.vg", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_cbvex4v.vf", "#T_ccom", "#T_cbvex4v.vg", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cX", "#T_ccom", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_ccom", "#T_cY", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_ccom", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_coeq2", "#P_coeq1", "#P_coexg", "#P_symgplusg", "#P_ovmpt2g", "#P_mpd3an3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvin on Metamath](http://us.metamath.org/mpegif/cnvin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvdif | |- `' ( A \\ ( A \\ B ) ) = ( `' A \\ `' ( A \\ B ) ) |\n| 2 |  | #P_cnvdif | |- `' ( A \\ B ) = ( `' A \\ `' B ) |\n| 3 | 2 | #P_difeq2i | |- ( `' A \\ `' ( A \\ B ) ) = ( `' A \\ ( `' A \\ `' B ) ) |\n| 4 | 1, 3 | #P_eqtri | |- `' ( A \\ ( A \\ B ) ) = ( `' A \\ ( `' A \\ `' B ) ) |\n| 5 |  | #P_dfin4 | |- ( A i^i B ) = ( A \\ ( A \\ B ) ) |\n| 6 | 5 | #P_cnveqi | |- `' ( A i^i B ) = `' ( A \\ ( A \\ B ) ) |\n| 7 |  | #P_dfin4 | |- ( `' A i^i `' B ) = ( `' A \\ ( `' A \\ `' B ) ) |\n| 8 | 4, 6, 7 | #P_3eqtr4i | |- `' ( A i^i B ) = ( `' A i^i `' B ) |",
+  "conclusion" : "#P_cnvin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cin", "#T_ccnv", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cB.wceq", "#T_ccnv", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_ccnv", "#T_cA", "#T_cin", "#T_ccnv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_dfin4", "#P_3eqtr4i", "#P_cnvdif", "#P_difeq2i", "#P_cnveqi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-kb on Metamath](http://us.metamath.org/mpegif/df-kb.html)"
+  } ],
+  "names" : [ "df-kb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ck", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_chil", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_chil", "#T_cmpt2--4", "#T_vz", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vz", "#T_csp", "#T_vy", "#T_csm", "#T_vx", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a commuted bra and ket juxtaposition used by Dirac notation.  In Dirac notation, ` | A >. ` ` <. B | ` is an operator known as the outer product of ` A ` and ` B ` , which we represent by ` ( A ketbra B ) ` . Based on Equation 8.1 of [Prugovecki] p. 376.  This definition, combined with definition ~ df-bra , allows any legal juxtaposition of bras and kets to make sense formally and also to obey the associative law when mapped back to Dirac notation.  (Contributed by NM, 15-May-2006.) (New usage is discouraged.) ",
+  "statement" : "df-kb $p |- ketbra = ( x e. ~H , y e. ~H |-> ( z e. ~H |-> ( ( z .ih y ) .h x ) ) ) $.\n$d x y z $."
+}

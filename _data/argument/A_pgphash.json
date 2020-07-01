@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pgphash on Metamath](http://us.metamath.org/mpegif/pgphash.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pgpfi.1 | |- X = ( Base ` G ) |\n| 2 |  | #P_simpl | |- ( ( P pGrp G /\\ X e. Fin ) -> P pGrp G ) |\n| 3 |  | #P_pgpgrp | |- ( P pGrp G -> G e. Grp ) |\n| 4 | 1 | #P_pgpfi2 | |- ( ( G e. Grp /\\ X e. Fin ) -> ( P pGrp G <-> ( P e. Prime /\\ ( # ` X ) = ( P ^ ( P pCnt ( # ` X ) ) ) ) ) ) |\n| 5 | 3, 4 | #P_sylan | |- ( ( P pGrp G /\\ X e. Fin ) -> ( P pGrp G <-> ( P e. Prime /\\ ( # ` X ) = ( P ^ ( P pCnt ( # ` X ) ) ) ) ) ) |\n| 6 | 2, 5 | #P_mpbid | |- ( ( P pGrp G /\\ X e. Fin ) -> ( P e. Prime /\\ ( # ` X ) = ( P ^ ( P pCnt ( # ` X ) ) ) ) ) |\n| 7 | 6 | #P_simprd | |- ( ( P pGrp G /\\ X e. Fin ) -> ( # ` X ) = ( P ^ ( P pCnt ( # ` X ) ) ) ) |",
+  "conclusion" : "#P_pgphash",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cP", "#T_cpgp", "#T_cG", "#T_wa", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cP", "#T_cpgp", "#T_cG", "#T_cP", "#T_cpgp", "#T_cG", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cP", "#T_cpgp", "#T_cG", "#T_wb", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_chash", "#T_cfv", "#T_cX", "#T_wceq", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_chash", "#T_cfv", "#T_cX", "#T_cP", "#T_cpgp", "#T_cG", "#T_wa", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cP", "#T_cpgp", "#T_cG", "#T_wb", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_chash", "#T_cfv", "#T_cX", "#T_wceq", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_chash", "#T_cfv", "#T_cX", "#T_cP", "#T_cpgp", "#T_cG", "#T_wa", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_chash", "#T_cfv", "#T_cX", "#T_wceq", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_chash", "#T_cfv", "#T_cX", "#T_cP", "#T_cpgp", "#T_cG", "#T_wa", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_chash", "#T_cfv", "#T_cX", "#T_wceq", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_chash", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_mpbid", "#P_pgpgrp", "#P_simpl", "#P_simprd", "#P_pgpfi2" ]
+}

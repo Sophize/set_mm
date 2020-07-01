@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fcoi2 on Metamath](http://us.metamath.org/mpegif/fcoi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-f | |- ( F : A --> B <-> ( F Fn A /\\ ran F C_ B ) ) |\n| 2 |  | #P_cores | |- ( ran F C_ B -> ( ( _I |` B ) o. F ) = ( _I o. F ) ) |\n| 3 |  | #P_fnrel | |- ( F Fn A -> Rel F ) |\n| 4 |  | #P_coi2 | |- ( Rel F -> ( _I o. F ) = F ) |\n| 5 | 3, 4 | #P_syl | |- ( F Fn A -> ( _I o. F ) = F ) |\n| 6 | 2, 5 | #P_sylan9eqr | |- ( ( F Fn A /\\ ran F C_ B ) -> ( ( _I |` B ) o. F ) = F ) |\n| 7 | 1, 6 | #P_sylbi | |- ( F : A --> B -> ( ( _I |` B ) o. F ) = F ) |",
+  "conclusion" : "#P_fcoi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_ccom", "#T_cF", "#T_wceq", "#T_cid", "#T_ccom", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_wrel", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_cid", "#T_ccom", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cid", "#T_ccom", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_ccom", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wi", "#T_cid", "#T_cres", "#T_cB", "#T_ccom", "#T_cF", "#T_wceq", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_coi2", "#P_sylan9eqr", "#P_fnrel", "#P_syl", "#P_df-f", "#P_cores", "#P_sylbi" ]
+}

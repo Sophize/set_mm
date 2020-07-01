@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prlem1 on Metamath](http://us.metamath.org/mpegif/prlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prlem1.1 | |- ( ph -> ( et <-> ch ) ) |\n| 2 |  | prlem1.2 | |- ( ps -> -. th ) |\n| 3 | 1 | #P_biimprd | |- ( ph -> ( ch -> et ) ) |\n| 4 | 3 | #P_adantld | |- ( ph -> ( ( ps /\\ ch ) -> et ) ) |\n| 5 | 2 | #P_pm2.21d | |- ( ps -> ( th -> et ) ) |\n| 6 | 5 | #P_adantrd | |- ( ps -> ( ( th /\\ ta ) -> et ) ) |\n| 7 | 4, 6 | #P_jaao | |- ( ( ph /\\ ps ) -> ( ( ( ps /\\ ch ) \\/ ( th /\\ ta ) ) -> et ) ) |\n| 8 | 7 | #P_ex | |- ( ph -> ( ps -> ( ( ( ps /\\ ch ) \\/ ( th /\\ ta ) ) -> et ) ) ) |",
+  "conclusion" : "#P_prlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wet", "#T_wb", "#T_wch", "#T_wps", "#T_wi", "#T_wn", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wet", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wet", "#T_wps", "#T_wi", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wo", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wo", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_adantld", "#P_ex", "#P_pm2.21d", "#P_adantrd", "#P_jaao" ]
+}

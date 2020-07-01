@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idahom on Metamath](http://us.metamath.org/mpegif/idahom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idafval.i | |- I = ( IdA ` C ) |\n| 2 |  | idafval.b | |- B = ( Base ` C ) |\n| 3 |  | idafval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | idahom.x | |- ( ph -> X e. B ) |\n| 5 |  | idahom.h | |- H = ( HomA ` C ) |\n| 6 |  | #P_eqid | |- ( Id ` C ) = ( Id ` C ) |\n| 7 | 1, 2, 3, 6, 4 | #P_idaval | |- ( ph -> ( I ` X ) = <. X , X , ( ( Id ` C ) ` X ) >. ) |\n| 8 |  | #P_eqid | |- ( Hom ` C ) = ( Hom ` C ) |\n| 9 | 2, 8, 6, 3, 4 | #P_catidcl | |- ( ph -> ( ( Id ` C ) ` X ) e. ( X ( Hom ` C ) X ) ) |\n| 10 | 5, 2, 3, 8, 4, 4, 9 | #P_elhomai2 | |- ( ph -> <. X , X , ( ( Id ` C ) ` X ) >. e. ( X H X ) ) |\n| 11 | 7, 10 | #P_eqeltrd | |- ( ph -> ( I ` X ) e. ( X H X ) ) |",
+  "conclusion" : "#P_idahom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cida", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_cH", "#T_wceq", "#T_choma", "#T_cfv", "#T_cC", "#T_ccid", "#T_cfv", "#T_cC", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cotp--1", "#T_cX", "#T_cotp--2", "#T_cX", "#T_cotp--3", "#T_ccid", "#T_cfv", "#T_cC", "#T_cfv", "#T_cX", "#T_cotp--4", "#T_chom", "#T_cfv", "#T_cC", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_ccid", "#T_cfv", "#T_cC", "#T_cfv", "#T_cX", "#T_wcel", "#T_cX", "#T_chom", "#T_cfv", "#T_cC", "#T_cX", "#T_wph", "#T_wi", "#T_cotp--1", "#T_cX", "#T_cotp--2", "#T_cX", "#T_cotp--3", "#T_ccid", "#T_cfv", "#T_cC", "#T_cfv", "#T_cX", "#T_cotp--4", "#T_wcel", "#T_cX", "#T_cH", "#T_cX", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cX", "#T_cH", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_elhomai2", "#P_eqeltrd", "#P_catidcl", "#P_idaval" ]
+}

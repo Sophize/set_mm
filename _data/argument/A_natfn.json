@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See natfn on Metamath](http://us.metamath.org/mpegif/natfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | natrcl.1 | |- N = ( C Nat D ) |\n| 2 |  | natixp.2 | |- ( ph -> A e. ( <. F , G >. N <. K , L >. ) ) |\n| 3 |  | natixp.b | |- B = ( Base ` C ) |\n| 4 |  | #P_eqid | |- ( Hom ` D ) = ( Hom ` D ) |\n| 5 | 1, 2, 3, 4 | #P_natixp | |- ( ph -> A e. X_ x e. B ( ( F ` x ) ( Hom ` D ) ( K ` x ) ) ) |\n| 6 |  | #P_ixpfn | |- ( A e. X_ x e. B ( ( F ` x ) ( Hom ` D ) ( K ` x ) ) -> A Fn B ) |\n| 7 | 5, 6 | #P_syl | |- ( ph -> A Fn B ) |",
+  "conclusion" : "#P_natfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cN", "#T_wceq", "#T_cC", "#T_cnat", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cop--1", "#T_cF", "#T_cop--2", "#T_cG", "#T_cop--3", "#T_cN", "#T_cop--1", "#T_cK", "#T_cop--2", "#T_cL", "#T_cop--3", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_chom", "#T_cfv", "#T_cD", "#T_wceq", "#T_chom", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cB.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cD", "#T_cK", "#T_cfv", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cB.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cD", "#T_cK", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wfn", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wfn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ixpfn", "#P_eqid", "#P_natixp", "#P_syl" ]
+}

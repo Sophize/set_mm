@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumser on Metamath](http://us.metamath.org/mpegif/fsumser.html)"
+  } ],
+  "names" : [ "fsumser" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cA", "#T_wceq", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A finite sum expressed in terms of a partial sum of an infinite series. The recursive definition of follows as ~ fsum1 and ~ fsump1i , which should make our notation clear and from which, along with closure ~ fsumcl , we will derive the basic properties of finite sums. (Contributed by NM, 11-Dec-2005.)  (Revised by Mario Carneiro, 21-Apr-2014.) ",
+  "statement" : "fsumser.1 $e |- ( ( ph /\\ k e. ( M ... N ) ) -> ( F ` k ) = A ) $.\nfsumser.2 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nfsumser.3 $e |- ( ( ph /\\ k e. ( M ... N ) ) -> A e. CC ) $.\nfsumser $p |- ( ph -> sum_ k e. ( M ... N ) A = ( seq M ( + , F ) ` N ) ) $.\n$d F k $.\n$d M k $.\n$d N k $.\n$d k ph $."
+}

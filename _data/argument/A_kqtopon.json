@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kqtopon on Metamath](http://us.metamath.org/mpegif/kqtopon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | kqval.2 | |- F = ( x e. X |-> { y e. J | x e. y } ) |\n| 2 | 1 | #P_kqval | |- ( J e. ( TopOn ` X ) -> ( KQ ` J ) = ( J qTop F ) ) |\n| 3 | 1 | #P_kqffn | |- ( J e. ( TopOn ` X ) -> F Fn X ) |\n| 4 |  | #P_dffn4 | |- ( F Fn X <-> F : X -onto-> ran F ) |\n| 5 | 3, 4 | #P_sylib | |- ( J e. ( TopOn ` X ) -> F : X -onto-> ran F ) |\n| 6 |  | #P_qtoptopon | |- ( ( J e. ( TopOn ` X ) /\\ F : X -onto-> ran F ) -> ( J qTop F ) e. ( TopOn ` ran F ) ) |\n| 7 | 5, 6 | #P_mpdan | |- ( J e. ( TopOn ` X ) -> ( J qTop F ) e. ( TopOn ` ran F ) ) |\n| 8 | 2, 7 | #P_eqeltrd | |- ( J e. ( TopOn ` X ) -> ( KQ ` J ) e. ( TopOn ` ran F ) ) |",
+  "conclusion" : "#P_kqtopon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_vx", "#T_wcel", "#T_vy", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wfn", "#T_cX", "#T_cF", "#T_wfn", "#T_cX", "#T_wb", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_crn", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_crn", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_crn", "#T_cF", "#T_wi", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_crn", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_crn", "#T_cF", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_dffn4", "#P_kqffn", "#P_eqeltrd", "#P_qtoptopon", "#P_kqval", "#P_sylib" ]
+}

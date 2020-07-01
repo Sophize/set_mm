@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subgoov on Metamath](http://us.metamath.org/mpegif/subgoov.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subgores.1 | |- W = ran H |\n| 2 | 1 | #P_subgores | |- ( H e. ( SubGrpOp ` G ) -> H = ( G |` ( W X. W ) ) ) |\n| 3 | 2 | #P_oveqd | |- ( H e. ( SubGrpOp ` G ) -> ( A H B ) = ( A ( G |` ( W X. W ) ) B ) ) |\n| 4 |  | #P_ovres | |- ( ( A e. W /\\ B e. W ) -> ( A ( G |` ( W X. W ) ) B ) = ( A G B ) ) |\n| 5 | 3, 4 | #P_sylan9eq | |- ( ( H e. ( SubGrpOp ` G ) /\\ ( A e. W /\\ B e. W ) ) -> ( A H B ) = ( A G B ) ) |",
+  "conclusion" : "#P_subgoov",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_crn", "#T_cH", "#T_cH", "#T_wcel", "#T_csubgo", "#T_cfv", "#T_cG", "#T_wi", "#T_cH", "#T_wceq", "#T_cG", "#T_cres", "#T_cW", "#T_cxp", "#T_cW", "#T_cH", "#T_wcel", "#T_csubgo", "#T_cfv", "#T_cG", "#T_wi", "#T_cA.wceq", "#T_cH", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cres", "#T_cW", "#T_cxp", "#T_cW", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cW", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cres", "#T_cW", "#T_cxp", "#T_cW", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cH", "#T_wcel", "#T_csubgo", "#T_cfv", "#T_cG", "#T_wa", "#T_cA", "#T_wcel", "#T_cW", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cH", "#T_cB", "#T_wceq", "#T_cA", "#T_cG", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveqd", "#P_ovres", "#P_subgores", "#P_sylan9eq" ]
+}

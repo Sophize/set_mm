@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cxp1 on Metamath](http://us.metamath.org/mpegif/cxp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1nn0 | |- 1 e. NN0 |\n| 2 |  | #P_cxpexp | |- ( ( A e. CC /\\ 1 e. NN0 ) -> ( A ^c 1 ) = ( A ^ 1 ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. CC -> ( A ^c 1 ) = ( A ^ 1 ) ) |\n| 4 |  | #P_exp1 | |- ( A e. CC -> ( A ^ 1 ) = A ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A e. CC -> ( A ^c 1 ) = A ) |",
+  "conclusion" : "#P_cxp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cn0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_c1", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_ccxp", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_ccxp", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_ccxp", "#T_c1", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1nn0", "#P_eqtrd", "#P_cxpexp", "#P_mpan2", "#P_exp1" ]
+}

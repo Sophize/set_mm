@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See evl1fval1 on Metamath](http://us.metamath.org/mpegif/evl1fval1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | evl1fval1.q | |- Q = ( eval1 ` R ) |\n| 2 |  | evl1fval1.b | |- B = ( Base ` R ) |\n| 3 | 1, 2 | #P_evl1fval1lem | |- ( R e. _V -> Q = ( R evalSub1 B ) ) |\n| 4 |  | #P_fvprc | |- ( -. R e. _V -> ( eval1 ` R ) = (/) ) |\n| 5 | 1, 4 | #P_syl5eq | |- ( -. R e. _V -> Q = (/) ) |\n| 6 |  | #P_reldmevls1 | |- Rel dom evalSub1 |\n| 7 | 6 | #P_ovprc1 | |- ( -. R e. _V -> ( R evalSub1 B ) = (/) ) |\n| 8 | 5, 7 | #P_eqtr4d | |- ( -. R e. _V -> Q = ( R evalSub1 B ) ) |\n| 9 | 3, 8 | #P_pm2.61i | |- Q = ( R evalSub1 B ) |",
+  "conclusion" : "#P_evl1fval1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_ce1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_cQ", "#T_wceq", "#T_cR", "#T_ces1", "#T_cB.wceq", "#T_wn", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_ce1", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0", "#T_wn", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_cQ", "#T_wceq", "#T_c0", "#T_wrel", "#T_cdm", "#T_ces1", "#T_wn", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_ces1", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_cQ", "#T_wceq", "#T_cR", "#T_ces1", "#T_cB.wceq", "#T_cQ", "#T_wceq", "#T_cR", "#T_ces1", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvprc", "#P_evl1fval1lem", "#P_syl5eq", "#P_reldmevls1", "#P_eqtr4d", "#P_pm2.61i", "#P_ovprc1" ]
+}

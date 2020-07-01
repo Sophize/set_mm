@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See refld on Metamath](http://us.metamath.org/mpegif/refld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resubdrg | |- ( RR e. ( SubRing ` CCfld ) /\\ RRfld e. DivRing ) |\n| 2 | 1 | #P_simpri | |- RRfld e. DivRing |\n| 3 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 4 |  | #P_cncrng | |- CCfld e. CRing |\n| 5 | 1 | #P_simpli | |- RR e. ( SubRing ` CCfld ) |\n| 6 |  | #P_eqid | |- ( CCfld |`s RR ) = ( CCfld |`s RR ) |\n| 7 | 6 | #P_subrgcrng | |- ( ( CCfld e. CRing /\\ RR e. ( SubRing ` CCfld ) ) -> ( CCfld |`s RR ) e. CRing ) |\n| 8 | 4, 5, 7 | #P_mp2an | |- ( CCfld |`s RR ) e. CRing |\n| 9 | 3, 8 | #P_eqeltri | |- RRfld e. CRing |\n| 10 |  | #P_isfld | |- ( RRfld e. Field <-> ( RRfld e. DivRing /\\ RRfld e. CRing ) ) |\n| 11 | 2, 9, 10 | #P_mpbir2an | |- RRfld e. Field |",
+  "conclusion" : "#P_refld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_crefld", "#T_wcel", "#T_cdr", "#T_crefld", "#T_wcel", "#T_cdr", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_cress", "#T_cr", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_ccnfld", "#T_cress", "#T_cr", "#T_wcel", "#T_ccrg", "#T_ccnfld", "#T_cress", "#T_cr", "#T_wcel", "#T_ccrg", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_crefld", "#T_wcel", "#T_cfield", "#T_wb", "#T_crefld", "#T_wcel", "#T_cdr", "#T_wa", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_crefld", "#T_wcel", "#T_cfield" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cncrng", "#P_eqid", "#P_mp2an", "#P_eqeltri", "#P_simpri", "#P_subrgcrng", "#P_isfld", "#P_mpbir2an", "#P_simpli", "#P_resubdrg", "#P_df-refld" ]
+}

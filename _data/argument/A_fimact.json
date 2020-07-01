@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fimact on Metamath](http://us.metamath.org/mpegif/fimact.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ctex | |- ( A ~<_ _om -> A e. _V ) |\n| 2 |  | #P_imadomg | |- ( A e. _V -> ( Fun F -> ( F \" A ) ~<_ A ) ) |\n| 3 | 2 | #P_imp | |- ( ( A e. _V /\\ Fun F ) -> ( F \" A ) ~<_ A ) |\n| 4 | 1, 3 | #P_sylan | |- ( ( A ~<_ _om /\\ Fun F ) -> ( F \" A ) ~<_ A ) |\n| 5 |  | #P_simpl | |- ( ( A ~<_ _om /\\ Fun F ) -> A ~<_ _om ) |\n| 6 |  | #P_domtr | |- ( ( ( F \" A ) ~<_ A /\\ A ~<_ _om ) -> ( F \" A ) ~<_ _om ) |\n| 7 | 4, 5, 6 | #P_syl2anc | |- ( ( A ~<_ _om /\\ Fun F ) -> ( F \" A ) ~<_ _om ) |",
+  "conclusion" : "#P_fimact",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_wa", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_wa", "#T_wfun", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_cA", "#T_cdom", "#T_com", "#T_wa", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_cima", "#T_cA", "#T_cdom", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ctex", "#P_imadomg", "#P_domtr", "#P_sylan", "#P_syl2anc", "#P_imp", "#P_simpl" ]
+}

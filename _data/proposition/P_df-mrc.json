@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mrc on Metamath](http://us.metamath.org/mpegif/df-mrc.html)"
+  } ],
+  "names" : [ "df-mrc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmrc", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_cuni", "#T_crn", "#T_cmre", "#T_cmpt--2", "#T_vx", "#T_cmpt--1", "#T_cpw", "#T_cuni", "#T_vc", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_vc", "#T_crab--3", "#T_vx", "#T_wss", "#T_vs", "#T_crab--4", "#T_vc", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the _Moore closure_ of a generating set, which is the smallest closed set containing all generating elements.  Definition of Moore closure in [Schechter] p. 79.  This generalizes topological closure ( ~ mrccls ) and linear span ( ~ mrclsp ). A Moore closure operation ` N ` is (1) extensive, i.e., ` x C_ ( N `` x ) ` for all subsets ` x ` of the base set ( ~ mrcssid ), (2) isotone, i.e., ` x C_ y ` implies that ` ( N `` x ) C_ ( N `` y ) ` for all subsets ` x ` and ` y ` of the base set ( ~ mrcss ), and (3) idempotent, i.e., ` ( N `` ( N `` x ) ) = ( N `` x ) ` for all subsets ` x ` of the base set ( ~ mrcidm .)  Operators satisfying these three properties are in bijective correspondence with Moore collections, so these properties may be used to give an alternate characterization of a Moore collection by providing a closure operation ` N ` on the set of subsets of a given base set which satisfies (1), (2), and (3); the closed sets can be recovered as those sets which equal their closures (Section 4.5 in [Schechter] p. 82.)  (Contributed by Stefan O'Rear, 31-Jan-2015.)  (Revised by David Moews, 1-May-2017.) ",
+  "statement" : "df-mrc $p |- mrCls = ( c e. U. ran Moore |-> ( x e. ~P U. c |-> |^| { s e. c | x C_ s } ) ) $.\n$d c s x $."
+}

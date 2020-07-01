@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumclOLD on Metamath](http://us.metamath.org/mpegif/gsumclOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsumclOLD.b | |- B = ( Base ` G ) |\n| 2 |  | gsumclOLD.z | |- .0. = ( 0g ` G ) |\n| 3 |  | gsumclOLD.g | |- ( ph -> G e. CMnd ) |\n| 4 |  | gsumclOLD.a | |- ( ph -> A e. V ) |\n| 5 |  | gsumclOLD.f | |- ( ph -> F : A --> B ) |\n| 6 |  | gsumclOLD.w | |- ( ph -> ( `' F \" ( _V \\ { .0. } ) ) e. Fin ) |\n| 7 |  | #P_eqid | |- ( Cntz ` G ) = ( Cntz ` G ) |\n| 8 |  | #P_cmnmnd | |- ( G e. CMnd -> G e. Mnd ) |\n| 9 | 3, 8 | #P_syl | |- ( ph -> G e. Mnd ) |\n| 10 | 1, 7, 3, 5 | #P_cntzcmnf | |- ( ph -> ran F C_ ( ( Cntz ` G ) ` ran F ) ) |\n| 11 | 1, 2, 7, 9, 4, 5, 10, 6 | #P_gsumzclOLD | |- ( ph -> ( G gsum F ) e. B ) |",
+  "conclusion" : "#P_gsumclOLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cvv", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_ccntz", "#T_cfv", "#T_cG", "#T_wceq", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cfv", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_gsumzclOLD", "#P_cntzcmnf", "#P_syl", "#P_cmnmnd" ]
+}

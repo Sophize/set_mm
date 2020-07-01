@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnrfrlm on Metamath](http://us.metamath.org/mpegif/lnrfrlm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lnrfrlm.y | |- Y = ( R freeLMod I ) |\n| 2 | 1 | #P_frlmpwsfi | |- ( ( R e. LNoeR /\\ I e. Fin ) -> Y = ( ( ringLMod ` R ) ^s I ) ) |\n| 3 |  | #P_lnrlnm | |- ( R e. LNoeR -> ( ringLMod ` R ) e. LNoeM ) |\n| 4 |  | #P_eqid | |- ( ( ringLMod ` R ) ^s I ) = ( ( ringLMod ` R ) ^s I ) |\n| 5 | 4 | #P_pwslnm | |- ( ( ( ringLMod ` R ) e. LNoeM /\\ I e. Fin ) -> ( ( ringLMod ` R ) ^s I ) e. LNoeM ) |\n| 6 | 3, 5 | #P_sylan | |- ( ( R e. LNoeR /\\ I e. Fin ) -> ( ( ringLMod ` R ) ^s I ) e. LNoeM ) |\n| 7 | 2, 6 | #P_eqeltrd | |- ( ( R e. LNoeR /\\ I e. Fin ) -> Y e. LNoeM ) |",
+  "conclusion" : "#P_lnrfrlm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_cR", "#T_cfrlm", "#T_cI", "#T_cR", "#T_wcel", "#T_clnr", "#T_wa", "#T_cI", "#T_wcel", "#T_cfn", "#T_wi", "#T_cY", "#T_wceq", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cpws", "#T_cI", "#T_cR", "#T_wcel", "#T_clnr", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clnm", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cpws", "#T_cI", "#T_wceq", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cpws", "#T_cI", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clnm", "#T_wa", "#T_cI", "#T_wcel", "#T_cfn", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cpws", "#T_cI", "#T_wcel", "#T_clnm", "#T_cR", "#T_wcel", "#T_clnr", "#T_wa", "#T_cI", "#T_wcel", "#T_cfn", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cpws", "#T_cI", "#T_wcel", "#T_clnm", "#T_cR", "#T_wcel", "#T_clnr", "#T_wa", "#T_cI", "#T_wcel", "#T_cfn", "#T_wi", "#T_cY", "#T_wcel", "#T_clnm" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frlmpwsfi", "#P_eqid", "#P_sylan", "#P_lnrlnm", "#P_eqeltrd", "#P_pwslnm" ]
+}

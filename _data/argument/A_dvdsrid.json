@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvdsrid on Metamath](http://us.metamath.org/mpegif/dvdsrid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvdsr.1 | |- B = ( Base ` R ) |\n| 2 |  | dvdsr.2 | |- .|| = ( ||r ` R ) |\n| 3 |  | #P_id | |- ( X e. B -> X e. B ) |\n| 4 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 5 | 1, 4 | #P_ringidcl | |- ( R e. Ring -> ( 1r ` R ) e. B ) |\n| 6 |  | #P_eqid | |- ( .r ` R ) = ( .r ` R ) |\n| 7 | 1, 2, 6 | #P_dvdsrmul | |- ( ( X e. B /\\ ( 1r ` R ) e. B ) -> X .|| ( ( 1r ` R ) ( .r ` R ) X ) ) |\n| 8 | 3, 5, 7 | #P_syl2anr | |- ( ( R e. Ring /\\ X e. B ) -> X .|| ( ( 1r ` R ) ( .r ` R ) X ) ) |\n| 9 | 1, 6, 4 | #P_ringlidm | |- ( ( R e. Ring /\\ X e. B ) -> ( ( 1r ` R ) ( .r ` R ) X ) = X ) |\n| 10 | 8, 9 | #P_breqtrd | |- ( ( R e. Ring /\\ X e. B ) -> X .|| X ) |",
+  "conclusion" : "#P_dvdsrid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.pa", "#T_wceq", "#T_cdsr", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cB.wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pa", "#T_cur", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pa", "#T_cur", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cur", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_cX", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pa", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_breqtrd", "#P_ringidcl", "#P_dvdsrmul", "#P_syl2anr", "#P_ringlidm", "#P_id" ]
+}

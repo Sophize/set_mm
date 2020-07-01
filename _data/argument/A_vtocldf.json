@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtocldf on Metamath](http://us.metamath.org/mpegif/vtocldf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vtocld.1 | |- ( ph -> A e. V ) |\n| 2 |  | vtocld.2 | |- ( ( ph /\\ x = A ) -> ( ps <-> ch ) ) |\n| 3 |  | vtocld.3 | |- ( ph -> ps ) |\n| 4 |  | vtocldf.4 | |- F/ x ph |\n| 5 |  | vtocldf.5 | |- ( ph -> F/_ x A ) |\n| 6 |  | vtocldf.6 | |- ( ph -> F/ x ch ) |\n| 7 | 2 | #P_ex | |- ( ph -> ( x = A -> ( ps <-> ch ) ) ) |\n| 8 | 4, 7 | #P_alrimi | |- ( ph -> A. x ( x = A -> ( ps <-> ch ) ) ) |\n| 9 | 4, 3 | #P_alrimi | |- ( ph -> A. x ps ) |\n| 10 |  | #P_vtoclgft | |- ( ( ( F/_ x A /\\ F/ x ch ) /\\ ( A. x ( x = A -> ( ps <-> ch ) ) /\\ A. x ps ) /\\ A e. V ) -> ch ) |\n| 11 | 5, 6, 8, 9, 1, 10 | #P_syl221anc | |- ( ph -> ch ) |",
+  "conclusion" : "#P_vtocldf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wa", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_w3a--1", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wa", "#T_wal", "#T_vx.wal", "#T_wps", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl221anc", "#P_ex", "#P_alrimi", "#P_vtoclgft" ]
+}

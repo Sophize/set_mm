@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3xpfi on Metamath](http://us.metamath.org/mpegif/3xpfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpfi | |- ( ( V e. Fin /\\ V e. Fin ) -> ( V X. V ) e. Fin ) |\n| 2 | 1 | #P_anidms | |- ( V e. Fin -> ( V X. V ) e. Fin ) |\n| 3 |  | #P_xpfi | |- ( ( ( V X. V ) e. Fin /\\ V e. Fin ) -> ( ( V X. V ) X. V ) e. Fin ) |\n| 4 | 2, 3 | #P_mpancom | |- ( V e. Fin -> ( ( V X. V ) X. V ) e. Fin ) |",
+  "conclusion" : "#P_3xpfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wcel", "#T_cfn", "#T_wa", "#T_cV", "#T_wcel", "#T_cfn", "#T_wi", "#T_cV", "#T_cxp", "#T_cV", "#T_wcel", "#T_cfn", "#T_cV", "#T_wcel", "#T_cfn", "#T_wi", "#T_cV", "#T_cxp", "#T_cV", "#T_wcel", "#T_cfn", "#T_cV", "#T_cxp", "#T_cV", "#T_wcel", "#T_cfn", "#T_wa", "#T_cV", "#T_wcel", "#T_cfn", "#T_wi", "#T_cV", "#T_cxp", "#T_cV", "#T_cxp", "#T_cV", "#T_wcel", "#T_cfn", "#T_cV", "#T_wcel", "#T_cfn", "#T_wi", "#T_cV", "#T_cxp", "#T_cV", "#T_cxp", "#T_cV", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpancom", "#P_xpfi", "#P_anidms" ]
+}

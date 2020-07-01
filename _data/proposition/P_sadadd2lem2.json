@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sadadd2lem2 on Metamath](http://us.metamath.org/mpegif/sadadd2lem2.html)"
+  } ],
+  "names" : [ "sadadd2lem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cif--1", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cc0", "#T_caddc", "#T_cif--1", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_cif--2", "#T_c2", "#T_cmul", "#T_cA", "#T_cif--3", "#T_cc0", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cc0", "#T_caddc", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cc0", "#T_caddc", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The core of the proof of ~ sadadd2 .  The intuitive justification for this is that ` cadd ` is true if at least two arguments are true, and ` hadd ` is true if an odd number of arguments are true, so altogether the result is ` n x. A ` where ` n ` is the number of true arguments, which is equivalently obtained by adding together one ` A ` for each true argument, on the right side.  (Contributed by Mario Carneiro, 8-Sep-2016.) ",
+  "statement" : "sadadd2lem2 $p |- ( A e. CC -> ( if ( hadd ( ph , ps , ch ) , A , 0 ) + if ( cadd ( ph , ps , ch ) , ( 2 x. A ) , 0 ) ) = ( ( if ( ph , A , 0 ) + if ( ps , A , 0 ) ) + if ( ch , A , 0 ) ) ) $."
+}

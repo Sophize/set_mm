@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ply1sca on Metamath](http://us.metamath.org/mpegif/ply1sca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ply1lmod.p | |- P = ( Poly1 ` R ) |\n| 2 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 3 | 2 | #P_psr1sca | |- ( R e. V -> R = ( Scalar ` ( PwSer1 ` R ) ) ) |\n| 4 |  | #P_fvex | |- ( Base ` ( 1o mPoly R ) ) e. _V |\n| 5 | 1, 2 | #P_ply1val | |- P = ( ( PwSer1 ` R ) |`s ( Base ` ( 1o mPoly R ) ) ) |\n| 6 |  | #P_eqid | |- ( Scalar ` ( PwSer1 ` R ) ) = ( Scalar ` ( PwSer1 ` R ) ) |\n| 7 | 5, 6 | #P_resssca | |- ( ( Base ` ( 1o mPoly R ) ) e. _V -> ( Scalar ` ( PwSer1 ` R ) ) = ( Scalar ` P ) ) |\n| 8 | 4, 7 | #P_ax-mp | |- ( Scalar ` ( PwSer1 ` R ) ) = ( Scalar ` P ) |\n| 9 | 3, 8 | #P_syl6eq | |- ( R e. V -> R = ( Scalar ` P ) ) |",
+  "conclusion" : "#P_ply1sca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wcel", "#T_cvv", "#T_cP", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cress", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_csca", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wcel", "#T_cvv", "#T_wi", "#T_csca", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cP", "#T_csca", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cP", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_ply1val", "#P_resssca", "#P_fvex", "#P_psr1sca", "#P_syl6eq" ]
+}

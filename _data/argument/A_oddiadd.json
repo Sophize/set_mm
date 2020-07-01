@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oddiadd on Metamath](http://us.metamath.org/mpegif/oddiadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oddinmgm.e | |- O = { z e. ZZ | E. x e. ZZ z = ( ( 2 x. x ) + 1 ) } |\n| 2 |  | oddinmgm.r | |- M = ( CCfld |`s O ) |\n| 3 |  | #P_zex | |- ZZ e. _V |\n| 4 | 1, 3 | #P_rabex2 | |- O e. _V |\n| 5 | 2 | #P_cnfldsrngadd | |- ( O e. _V -> + = ( +g ` M ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- + = ( +g ` M ) |",
+  "conclusion" : "#P_oddiadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_vz", "#T_wceq", "#T_c2", "#T_cmul", "#T_vx", "#T_caddc", "#T_c1", "#T_crab--4", "#T_cM", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cO", "#T_cz", "#T_wcel", "#T_cvv", "#T_cO", "#T_wcel", "#T_cvv", "#T_cO", "#T_wcel", "#T_cvv", "#T_wi", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_zex", "#P_rabex2", "#P_cnfldsrngadd" ]
+}

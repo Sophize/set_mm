@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elpwuni on Metamath](http://us.metamath.org/mpegif/elpwuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sspwuni | |- ( A C_ ~P B <-> U. A C_ B ) |\n| 2 |  | #P_unissel | |- ( ( U. A C_ B /\\ B e. A ) -> U. A = B ) |\n| 3 | 2 | #P_expcom | |- ( B e. A -> ( U. A C_ B -> U. A = B ) ) |\n| 4 |  | #P_eqimss | |- ( U. A = B -> U. A C_ B ) |\n| 5 | 3, 4 | #P_impbid1 | |- ( B e. A -> ( U. A C_ B <-> U. A = B ) ) |\n| 6 | 1, 5 | #P_syl5bb | |- ( B e. A -> ( A C_ ~P B <-> U. A = B ) ) |",
+  "conclusion" : "#P_elpwuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_cA", "#T_wss", "#T_cpw", "#T_cB", "#T_wb", "#T_cuni", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_expcom", "#P_unissel", "#P_impbid1", "#P_eqimss", "#P_sspwuni" ]
+}

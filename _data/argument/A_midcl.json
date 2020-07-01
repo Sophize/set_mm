@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See midcl on Metamath](http://us.metamath.org/mpegif/midcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismid.p | |- P = ( Base ` G ) |\n| 2 |  | ismid.d | |- .- = ( dist ` G ) |\n| 3 |  | ismid.i | |- I = ( Itv ` G ) |\n| 4 |  | ismid.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | ismid.1 | |- ( ph -> G TarskiGDim>= 2 ) |\n| 6 |  | midcl.1 | |- ( ph -> A e. P ) |\n| 7 |  | midcl.2 | |- ( ph -> B e. P ) |\n| 8 | 1, 2, 3, 4, 5 | #P_midf | |- ( ph -> ( midG ` G ) : ( P X. P ) --> P ) |\n| 9 | 8, 6, 7 | #P_fovrnd | |- ( ph -> ( A ( midG ` G ) B ) e. P ) |",
+  "conclusion" : "#P_midcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cG", "#T_cstrkgld", "#T_c2", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cmid", "#T_cfv", "#T_cG", "#T_wf--1", "#T_cP", "#T_cxp", "#T_cP", "#T_wf--2", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_cmid", "#T_cfv", "#T_cG", "#T_cB", "#T_wcel", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fovrnd", "#P_midf" ]
+}

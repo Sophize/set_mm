@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sets on Metamath](http://us.metamath.org/mpegif/df-sets.html)"
+  } ],
+  "names" : [ "df-sets" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csts", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vs", "#T_cres", "#T_cvv", "#T_cdif", "#T_cdm", "#T_csn--1", "#T_ve", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_ve", "#T_csn--2", "#T_ve", "#T_vs" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Set one or more components of a structure.  This function is useful for taking an existing structure and \"overriding\" one of its components. For example, ~ df-ress adjusts the base set to match its second argument, which has the effect of making subgroups, subspaces, subrings etc. from the original structures.  Or ~ df-mgp , which takes a ring and overrides its addition operation with the multiplicative operation, so that we can consider the \"multiplicative group\" using group and monoid theorems, which expect the operation to be in the ` +g ` slot instead of the ` .r ` slot.  (Contributed by Mario Carneiro, 1-Dec-2014.) ",
+  "statement" : "df-sets $p |- sSet = ( s e. _V , e e. _V |-> ( ( s |` ( _V \\ dom { e } ) ) u. { e } ) ) $.\n$d e s $."
+}

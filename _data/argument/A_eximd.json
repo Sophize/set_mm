@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eximd on Metamath](http://us.metamath.org/mpegif/eximd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eximd.1 | |- F/ x ph |\n| 2 |  | eximd.2 | |- ( ph -> ( ps -> ch ) ) |\n| 3 | 1 | #P_nfri | |- ( ph -> A. x ph ) |\n| 4 | 3, 2 | #P_eximdh | |- ( ph -> ( E. x ps -> E. x ch ) ) |",
+  "conclusion" : "#P_eximd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eximdh", "#P_nfri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovmpt2d on Metamath](http://us.metamath.org/mpegif/ovmpt2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ovmpt2d.1 | |- ( ph -> F = ( x e. C , y e. D |-> R ) ) |\n| 2 |  | ovmpt2d.2 | |- ( ( ph /\\ ( x = A /\\ y = B ) ) -> R = S ) |\n| 3 |  | ovmpt2d.3 | |- ( ph -> A e. C ) |\n| 4 |  | ovmpt2d.4 | |- ( ph -> B e. D ) |\n| 5 |  | ovmpt2d.5 | |- ( ph -> S e. X ) |\n| 6 |  | #P_eqidd | |- ( ( ph /\\ x = A ) -> D = D ) |\n| 7 | 1, 2, 6, 3, 4, 5 | #P_ovmpt2dx | |- ( ph -> ( A F B ) = S ) |",
+  "conclusion" : "#P_ovmpt2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cC", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cD", "#T_cmpt2--4", "#T_cR", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cX", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cD", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovmpt2dx", "#P_eqidd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decsplit1 on Metamath](http://us.metamath.org/mpegif/decsplit1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decsplit0.1 | |- A e. NN0 |\n| 2 |  | #P_10nn0 | |- 10 e. NN0 |\n| 3 | 2 | #P_numexp1 | |- ( 10 ^ 1 ) = 10 |\n| 4 | 3 | #P_oveq2i | |- ( A x. ( 10 ^ 1 ) ) = ( A x. 10 ) |\n| 5 | 2 | #P_nn0cni | |- 10 e. CC |\n| 6 | 1 | #P_nn0cni | |- A e. CC |\n| 7 | 5, 6 | #P_mulcomi | |- ( 10 x. A ) = ( A x. 10 ) |\n| 8 | 4, 7 | #P_eqtr4i | |- ( A x. ( 10 ^ 1 ) ) = ( 10 x. A ) |\n| 9 | 8 | #P_oveq1i | |- ( ( A x. ( 10 ^ 1 ) ) + B ) = ( ( 10 x. A ) + B ) |\n| 10 |  | #P_df-dec | |- ; A B = ( ( 10 x. A ) + B ) |\n| 11 | 9, 10 | #P_eqtr4i | |- ( ( A x. ( 10 ^ 1 ) ) + B ) = ; A B |",
+  "conclusion" : "#P_decsplit1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_c10", "#T_wcel", "#T_cn0", "#T_c10", "#T_cexp", "#T_c1", "#T_wceq", "#T_c10", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cexp", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_c10", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cexp", "#T_c1", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cexp", "#T_c1", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdc", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cA", "#T_cmul", "#T_c10", "#T_cexp", "#T_c1", "#T_caddc", "#T_cB", "#T_wceq", "#T_cdc", "#T_cA", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_mulcomi", "#P_nn0cni", "#P_df-dec", "#P_numexp1", "#P_oveq1i", "#P_10nn0", "#P_oveq2i" ]
+}

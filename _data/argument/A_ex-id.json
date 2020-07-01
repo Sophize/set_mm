@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ex-id on Metamath](http://us.metamath.org/mpegif/ex-id.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- 5 = 5 |\n| 2 |  | #P_5re | |- 5 e. RR |\n| 3 | 2 | #P_elexi | |- 5 e. _V |\n| 4 | 3 | #P_ideq | |- ( 5 _I 5 <-> 5 = 5 ) |\n| 5 | 1, 4 | #P_mpbir | |- 5 _I 5 |\n| 6 |  | #P_4re | |- 4 e. RR |\n| 7 |  | #P_4lt5 | |- 4 < 5 |\n| 8 | 6, 7 | #P_ltneii | |- 4 =/= 5 |\n| 9 | 3 | #P_ideq | |- ( 4 _I 5 <-> 4 = 5 ) |\n| 10 | 8, 9 | #P_nemtbir | |- -. 4 _I 5 |\n| 11 | 5, 10 | #P_pm3.2i | |- ( 5 _I 5 /\\ -. 4 _I 5 ) |",
+  "conclusion" : "#P_ex-id",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c5", "#T_wceq", "#T_c5", "#T_c5", "#T_wcel", "#T_cr", "#T_c5", "#T_wcel", "#T_cvv", "#T_c5", "#T_cid", "#T_c5", "#T_wb", "#T_c5", "#T_wceq", "#T_c5", "#T_c5", "#T_cid", "#T_c5", "#T_c4", "#T_wcel", "#T_cr", "#T_c4", "#T_clt", "#T_c5", "#T_c4", "#T_wne", "#T_c5", "#T_c4", "#T_cid", "#T_c5", "#T_wb", "#T_c4", "#T_wceq", "#T_c5", "#T_wn", "#T_c4", "#T_cid", "#T_c5", "#T_c5", "#T_cid", "#T_c5", "#T_wa", "#T_wn", "#T_c4", "#T_cid", "#T_c5" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ideq", "#P_eqid", "#P_nemtbir", "#P_elexi", "#P_4re", "#P_5re", "#P_mpbir", "#P_4lt5", "#P_ltneii", "#P_pm3.2i" ]
+}

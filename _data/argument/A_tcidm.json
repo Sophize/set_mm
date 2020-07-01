@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tcidm on Metamath](http://us.metamath.org/mpegif/tcidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssid | |- ( TC ` A ) C_ ( TC ` A ) |\n| 2 |  | #P_tctr | |- Tr ( TC ` A ) |\n| 3 |  | #P_fvex | |- ( TC ` A ) e. _V |\n| 4 |  | #P_tcmin | |- ( ( TC ` A ) e. _V -> ( ( ( TC ` A ) C_ ( TC ` A ) /\\ Tr ( TC ` A ) ) -> ( TC ` ( TC ` A ) ) C_ ( TC ` A ) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ( ( TC ` A ) C_ ( TC ` A ) /\\ Tr ( TC ` A ) ) -> ( TC ` ( TC ` A ) ) C_ ( TC ` A ) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( TC ` ( TC ` A ) ) C_ ( TC ` A ) |\n| 7 |  | #P_tcid | |- ( ( TC ` A ) e. _V -> ( TC ` A ) C_ ( TC ` ( TC ` A ) ) ) |\n| 8 | 3, 7 | #P_ax-mp | |- ( TC ` A ) C_ ( TC ` ( TC ` A ) ) |\n| 9 | 6, 8 | #P_eqssi | |- ( TC ` ( TC ` A ) ) = ( TC ` A ) |",
+  "conclusion" : "#P_tcidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wtr", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_wtr", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_wtr", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA.wceq", "#T_ctc", "#T_cfv", "#T_ctc", "#T_cfv", "#T_cA", "#T_wceq", "#T_ctc", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tctr", "#P_ax-mp", "#P_mp2an", "#P_tcid", "#P_ssid", "#P_eqssi", "#P_tcmin", "#P_fvex" ]
+}

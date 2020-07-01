@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nancomOLD on Metamath](http://us.metamath.org/mpegif/nancomOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ancom | |- ( ( ph /\\ ps ) <-> ( ps /\\ ph ) ) |\n| 2 | 1 | #P_notbii | |- ( -. ( ph /\\ ps ) <-> -. ( ps /\\ ph ) ) |\n| 3 |  | #P_df-nan | |- ( ( ph -/\\ ps ) <-> -. ( ph /\\ ps ) ) |\n| 4 |  | #P_df-nan | |- ( ( ps -/\\ ph ) <-> -. ( ps /\\ ph ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( ( ph -/\\ ps ) <-> ( ps -/\\ ph ) ) |\n\\\n Obsolete proof of ~ nancom as of 7-Mar-2020.  (Contributed by Mario Carneiro, 9-May-2015.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_nancom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wnan", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wps", "#T_wnan", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wnan", "#T_wps", "#T_wb", "#T_wps", "#T_wnan", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_notbii", "#P_df-nan", "#P_3bitr4i" ]
+}

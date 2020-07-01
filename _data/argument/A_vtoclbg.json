@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtoclbg on Metamath](http://us.metamath.org/mpegif/vtoclbg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vtoclbg.1 | |- ( x = A -> ( ph <-> ch ) ) |\n| 2 |  | vtoclbg.2 | |- ( x = A -> ( ps <-> th ) ) |\n| 3 |  | vtoclbg.3 | |- ( ph <-> ps ) |\n| 4 | 1, 2 | #P_bibi12d | |- ( x = A -> ( ( ph <-> ps ) <-> ( ch <-> th ) ) ) |\n| 5 | 4, 3 | #P_vtoclg | |- ( A e. V -> ( ch <-> th ) ) |",
+  "conclusion" : "#P_vtoclbg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wth", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wch", "#T_wb", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bibi12d", "#P_vtoclg" ]
+}

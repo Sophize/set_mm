@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idiso on Metamath](http://us.metamath.org/mpegif/idiso.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | invid.b | |- B = ( Base ` C ) |\n| 2 |  | invid.i | |- I = ( Id ` C ) |\n| 3 |  | invid.c | |- ( ph -> C e. Cat ) |\n| 4 |  | invid.x | |- ( ph -> X e. B ) |\n| 5 |  | #P_eqid | |- ( Inv ` C ) = ( Inv ` C ) |\n| 6 |  | #P_eqid | |- ( Iso ` C ) = ( Iso ` C ) |\n| 7 | 1, 2, 3, 4 | #P_invid | |- ( ph -> ( I ` X ) ( X ( Inv ` C ) X ) ( I ` X ) ) |\n| 8 | 1, 5, 3, 4, 4, 6, 7 | #P_inviso1 | |- ( ph -> ( I ` X ) e. ( X ( Iso ` C ) X ) ) |",
+  "conclusion" : "#P_idiso",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cI", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_cinv", "#T_cfv", "#T_cC", "#T_wceq", "#T_cinv", "#T_cfv", "#T_cC", "#T_ciso", "#T_cfv", "#T_cC", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_cI", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cX", "#T_ciso", "#T_cfv", "#T_cC", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_invid", "#P_inviso1" ]
+}

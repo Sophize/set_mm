@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlimf on Metamath](http://us.metamath.org/mpegif/rlimf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rlimpm | |- ( F ~~>r A -> F e. ( CC ^pm RR ) ) |\n| 2 |  | #P_cnex | |- CC e. _V |\n| 3 |  | #P_reex | |- RR e. _V |\n| 4 | 2, 3 | #P_elpm2 | |- ( F e. ( CC ^pm RR ) <-> ( F : dom F --> CC /\\ dom F C_ RR ) ) |\n| 5 | 4 | #P_simplbi | |- ( F e. ( CC ^pm RR ) -> F : dom F --> CC ) |\n| 6 | 1, 5 | #P_syl | |- ( F ~~>r A -> F : dom F --> CC ) |",
+  "conclusion" : "#P_rlimf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_crli", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_cc", "#T_wcel", "#T_cvv", "#T_cr", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_wb", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc", "#T_wa", "#T_cdm", "#T_cF", "#T_wss", "#T_cr", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc", "#T_cF", "#T_crli", "#T_cA", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplbi", "#P_reex", "#P_elpm2", "#P_cnex", "#P_rlimpm", "#P_syl" ]
+}

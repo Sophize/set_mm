@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sslin on Metamath](http://us.metamath.org/mpegif/sslin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssrin | |- ( A C_ B -> ( A i^i C ) C_ ( B i^i C ) ) |\n| 2 |  | #P_incom | |- ( C i^i A ) = ( A i^i C ) |\n| 3 |  | #P_incom | |- ( C i^i B ) = ( B i^i C ) |\n| 4 | 1, 2, 3 | #P_3sstr4g | |- ( A C_ B -> ( C i^i A ) C_ ( C i^i B ) ) |",
+  "conclusion" : "#P_sslin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cC", "#T_cin", "#T_cA", "#T_wss", "#T_cC", "#T_cin", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3sstr4g", "#P_ssrin", "#P_incom" ]
+}

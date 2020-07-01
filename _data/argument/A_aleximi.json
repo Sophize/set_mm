@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aleximi on Metamath](http://us.metamath.org/mpegif/aleximi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | aleximi.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 | 1 | #P_con3d | |- ( ph -> ( -. ch -> -. ps ) ) |\n| 3 | 2 | #P_al2imi | |- ( A. x ph -> ( A. x -. ch -> A. x -. ps ) ) |\n| 4 |  | #P_alnex | |- ( A. x -. ch <-> -. E. x ch ) |\n| 5 |  | #P_alnex | |- ( A. x -. ps <-> -. E. x ps ) |\n| 6 | 3, 4, 5 | #P_3imtr3g | |- ( A. x ph -> ( -. E. x ch -> -. E. x ps ) ) |\n| 7 | 6 | #P_con4d | |- ( A. x ph -> ( E. x ps -> E. x ch ) ) |",
+  "conclusion" : "#P_aleximi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wch", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alnex", "#P_al2imi", "#P_3imtr3g", "#P_con3d", "#P_con4d" ]
+}

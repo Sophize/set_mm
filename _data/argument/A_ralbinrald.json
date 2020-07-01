@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ralbinrald on Metamath](http://us.metamath.org/mpegif/ralbinrald.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralbinrald.1 | |- ( ph -> X e. A ) |\n| 2 |  | ralbinrald.2 | |- ( x e. A -> x = X ) |\n| 3 |  | ralbinrald.3 | |- ( x = X -> ( ps <-> th ) ) |\n| 4 | 3 | #P_adantl | |- ( ( ph /\\ x = X ) -> ( ps <-> th ) ) |\n| 5 | 1, 4 | #P_rspcdv | |- ( ph -> ( A. x e. A ps -> th ) ) |\n| 6 | 3 | #P_bicomd | |- ( x = X -> ( th <-> ps ) ) |\n| 7 | 2, 6 | #P_syl | |- ( x e. A -> ( th <-> ps ) ) |\n| 8 | 7 | #P_adantl | |- ( ( ph /\\ x e. A ) -> ( th <-> ps ) ) |\n| 9 | 8 | #P_biimpd | |- ( ( ph /\\ x e. A ) -> ( th -> ps ) ) |\n| 10 | 9 | #P_ralrimdva | |- ( ph -> ( th -> A. x e. A ps ) ) |\n| 11 | 5, 10 | #P_impbid | |- ( ph -> ( A. x e. A ps <-> th ) ) |",
+  "conclusion" : "#P_ralbinrald",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cA", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_vx", "#T_wceq", "#T_cX", "#T_vx", "#T_wceq", "#T_cX", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wth", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wps", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wps", "#T_wb", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rspcdv", "#P_adantl", "#P_bicomd", "#P_ralrimdva", "#P_syl", "#P_impbid", "#P_biimpd" ]
+}

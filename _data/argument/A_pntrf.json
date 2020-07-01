@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pntrf on Metamath](http://us.metamath.org/mpegif/pntrf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pntrval.r | |- R = ( a e. RR+ |-> ( ( psi ` a ) - a ) ) |\n| 2 |  | #P_rpre | |- ( a e. RR+ -> a e. RR ) |\n| 3 |  | #P_chpcl | |- ( a e. RR -> ( psi ` a ) e. RR ) |\n| 4 | 2, 3 | #P_syl | |- ( a e. RR+ -> ( psi ` a ) e. RR ) |\n| 5 | 4, 2 | #P_resubcld | |- ( a e. RR+ -> ( ( psi ` a ) - a ) e. RR ) |\n| 6 | 1, 5 | #P_fmpti | |- R : RR+ --> RR |",
+  "conclusion" : "#P_pntrf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_cchp", "#T_cfv", "#T_va", "#T_cmin", "#T_va", "#T_va", "#T_wcel", "#T_crp", "#T_wi", "#T_va", "#T_wcel", "#T_cr", "#T_va", "#T_wcel", "#T_cr", "#T_wi", "#T_cchp", "#T_cfv", "#T_va", "#T_wcel", "#T_cr", "#T_va", "#T_wcel", "#T_crp", "#T_wi", "#T_cchp", "#T_cfv", "#T_va", "#T_wcel", "#T_cr", "#T_va", "#T_wcel", "#T_crp", "#T_wi", "#T_cchp", "#T_cfv", "#T_va", "#T_cmin", "#T_va", "#T_wcel", "#T_cr", "#T_cR", "#T_wf--1", "#T_crp", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resubcld", "#P_fmpti", "#P_syl", "#P_rpre", "#P_chpcl" ]
+}

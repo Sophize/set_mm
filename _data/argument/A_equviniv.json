@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equviniv on Metamath](http://us.metamath.org/mpegif/equviniv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax6ev | |- E. z z = y |\n| 2 |  | #P_equcomi | |- ( z = y -> y = z ) |\n| 3 |  | #P_equtr | |- ( x = y -> ( y = z -> x = z ) ) |\n| 4 | 3 | #P_ancrd | |- ( x = y -> ( y = z -> ( x = z /\\ y = z ) ) ) |\n| 5 | 2, 4 | #P_syl5 | |- ( x = y -> ( z = y -> ( x = z /\\ y = z ) ) ) |\n| 6 | 5 | #P_eximdv | |- ( x = y -> ( E. z z = y -> E. z ( x = z /\\ y = z ) ) ) |\n| 7 | 1, 6 | #P_mpi | |- ( x = y -> E. z ( x = z /\\ y = z ) ) |",
+  "conclusion" : "#P_equviniv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wex", "#T_vz", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_vy", "#T_wceq", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancrd", "#P_eximdv", "#P_ax6ev", "#P_equtr", "#P_mpi", "#P_equcomi", "#P_syl5" ]
+}

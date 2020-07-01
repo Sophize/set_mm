@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifsb on Metamath](http://us.metamath.org/mpegif/ifsb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ifsb.1 | |- ( if ( ph , A , B ) = A -> C = D ) |\n| 2 |  | ifsb.2 | |- ( if ( ph , A , B ) = B -> C = E ) |\n| 3 |  | #P_iftrue | |- ( ph -> if ( ph , A , B ) = A ) |\n| 4 | 3, 1 | #P_syl | |- ( ph -> C = D ) |\n| 5 |  | #P_iftrue | |- ( ph -> if ( ph , D , E ) = D ) |\n| 6 | 4, 5 | #P_eqtr4d | |- ( ph -> C = if ( ph , D , E ) ) |\n| 7 |  | #P_iffalse | |- ( -. ph -> if ( ph , A , B ) = B ) |\n| 8 | 7, 2 | #P_syl | |- ( -. ph -> C = E ) |\n| 9 |  | #P_iffalse | |- ( -. ph -> if ( ph , D , E ) = E ) |\n| 10 | 8, 9 | #P_eqtr4d | |- ( -. ph -> C = if ( ph , D , E ) ) |\n| 11 | 6, 10 | #P_pm2.61i | |- C = if ( ph , D , E ) |",
+  "conclusion" : "#P_ifsb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cA", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cE", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cE", "#T_wn", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_wn", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cE", "#T_wceq", "#T_cE", "#T_wn", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cE", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iffalse", "#P_iftrue", "#P_syl", "#P_eqtr4d", "#P_pm2.61i" ]
+}

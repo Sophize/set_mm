@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See max2 on Metamath](http://us.metamath.org/mpegif/max2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rexr | |- ( A e. RR -> A e. RR* ) |\n| 2 |  | #P_rexr | |- ( B e. RR -> B e. RR* ) |\n| 3 |  | #P_xrmax2 | |- ( ( A e. RR* /\\ B e. RR* ) -> B <_ if ( A <_ B , B , A ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. RR /\\ B e. RR ) -> B <_ if ( A <_ B , B , A ) ) |",
+  "conclusion" : "#P_max2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cif--1", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cB", "#T_cle", "#T_cif--1", "#T_cA", "#T_cle", "#T_cB", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rexr", "#P_xrmax2", "#P_syl2an" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uniintsnr on Metamath](http://us.metamath.org/mpegif/uniintsnr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_unisn | |- U. { x } = x |\n| 3 |  | #P_unieq | |- ( A = { x } -> U. A = U. { x } ) |\n| 4 |  | #P_inteq | |- ( A = { x } -> |^| A = |^| { x } ) |\n| 5 | 1 | #P_intsn | |- |^| { x } = x |\n| 6 | 4, 5 | #P_syl6eq | |- ( A = { x } -> |^| A = x ) |\n| 7 | 2, 3, 6 | #P_3eqtr4a | |- ( A = { x } -> U. A = |^| A ) |\n| 8 | 7 | #P_exlimiv | |- ( E. x A = { x } -> U. A = |^| A ) |",
+  "conclusion" : "#P_uniintsnr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cuni", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cint", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_cA.wceq", "#T_wex", "#T_vx", "#T_cA", "#T_wceq", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wi", "#T_cuni", "#T_cA", "#T_wceq", "#T_cint", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exlimiv", "#P_unisn", "#P_unieq", "#P_vex", "#P_inteq", "#P_3eqtr4a", "#P_intsn", "#P_syl6eq" ]
+}

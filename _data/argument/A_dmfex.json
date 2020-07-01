@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmfex on Metamath](http://us.metamath.org/mpegif/dmfex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fdm | |- ( F : A --> B -> dom F = A ) |\n| 2 |  | #P_dmexg | |- ( F e. C -> dom F e. _V ) |\n| 3 |  | #P_eleq1 | |- ( dom F = A -> ( dom F e. _V <-> A e. _V ) ) |\n| 4 | 2, 3 | #P_syl5ib | |- ( dom F = A -> ( F e. C -> A e. _V ) ) |\n| 5 | 1, 4 | #P_syl | |- ( F : A --> B -> ( F e. C -> A e. _V ) ) |\n| 6 | 5 | #P_impcom | |- ( ( F e. C /\\ F : A --> B ) -> A e. _V ) |",
+  "conclusion" : "#P_dmfex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wcel", "#T_cC", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cC", "#T_wa", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdm", "#P_dmexg", "#P_eleq1", "#P_syl", "#P_syl5ib", "#P_impcom" ]
+}

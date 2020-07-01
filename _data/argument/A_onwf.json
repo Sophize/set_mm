@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onwf on Metamath](http://us.metamath.org/mpegif/onwf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r1fnon | |- R1 Fn On |\n| 2 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 3 | 1, 2 | #P_ax-mp | |- dom R1 = On |\n| 4 |  | #P_rankonidlem | |- ( x e. dom R1 -> ( x e. U. ( R1 \" On ) /\\ ( rank ` x ) = x ) ) |\n| 5 | 4 | #P_simpld | |- ( x e. dom R1 -> x e. U. ( R1 \" On ) ) |\n| 6 | 5 | #P_ssriv | |- dom R1 C_ U. ( R1 \" On ) |\n| 7 | 3, 6 | #P_eqsstr3i | |- On C_ U. ( R1 \" On ) |",
+  "conclusion" : "#P_onwf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wa", "#T_crnk", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_cdm", "#T_cr1", "#T_wss", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_con0", "#T_wss", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_simpld", "#P_fndm", "#P_r1fnon", "#P_rankonidlem", "#P_eqsstr3i", "#P_ssriv" ]
+}

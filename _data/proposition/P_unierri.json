@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unierri on Metamath](http://us.metamath.org/mpegif/unierri.html)"
+  } ],
+  "names" : [ "unierri" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cuo", "#T_cG", "#T_wcel", "#T_cuo", "#T_cS", "#T_wcel", "#T_cuo", "#T_cT", "#T_wcel", "#T_cuo", "#T_cnop", "#T_cfv", "#T_cF", "#T_ccom", "#T_cG", "#T_chod", "#T_cS", "#T_ccom", "#T_cT", "#T_cle", "#T_cnop", "#T_cfv", "#T_cF", "#T_chod", "#T_cS", "#T_caddc", "#T_cnop", "#T_cfv", "#T_cG", "#T_chod", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If we approximate a chain of unitary transformations (quantum computer gates) ` F ` , ` G ` by other unitary transformations ` S ` , ` T ` , the error increases at most additively.  Equation 4.73 of [NielsenChuang] p. 195.  (Contributed by NM, 10-Mar-2006.) (New usage is discouraged.) ",
+  "statement" : "unierr.1 $e |- F e. UniOp $.\nunierr.2 $e |- G e. UniOp $.\nunierr.3 $e |- S e. UniOp $.\nunierr.4 $e |- T e. UniOp $.\nunierri $p |- ( normop ` ( ( F o. G ) -op ( S o. T ) ) ) <_ ( ( normop ` ( F -op S ) ) + ( normop ` ( G -op T ) ) ) $."
+}

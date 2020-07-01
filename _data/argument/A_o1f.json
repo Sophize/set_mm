@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See o1f on Metamath](http://us.metamath.org/mpegif/o1f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nm x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elo1 | |- ( F e. O(1) <-> ( F e. ( CC ^pm RR ) /\\ E. x e. RR E. m e. RR A. y e. ( dom F i^i ( x [,) +oo ) ) ( abs ` ( F ` y ) ) <_ m ) ) |\n| 2 | 1 | #P_simplbi | |- ( F e. O(1) -> F e. ( CC ^pm RR ) ) |\n| 3 |  | #P_cnex | |- CC e. _V |\n| 4 |  | #P_reex | |- RR e. _V |\n| 5 | 3, 4 | #P_elpm2 | |- ( F e. ( CC ^pm RR ) <-> ( F : dom F --> CC /\\ dom F C_ RR ) ) |\n| 6 | 5 | #P_simplbi | |- ( F e. ( CC ^pm RR ) -> F : dom F --> CC ) |\n| 7 | 2, 6 | #P_syl | |- ( F e. O(1) -> F : dom F --> CC ) |",
+  "conclusion" : "#P_o1f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vm", "#T_vx", "#T_vy", "#T_cF", "#T_wcel", "#T_co1", "#T_wb", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_wa", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cr", "#T_wrex--1", "#T_vm", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cdm", "#T_cF", "#T_cin", "#T_vx.wal", "#T_cico", "#T_cpnf", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cle", "#T_vm", "#T_cF", "#T_wcel", "#T_co1", "#T_wi", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_cc", "#T_wcel", "#T_cvv", "#T_cr", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_wb", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc", "#T_wa", "#T_cdm", "#T_cF", "#T_wss", "#T_cr", "#T_cF", "#T_wcel", "#T_cc", "#T_cpm", "#T_cr", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc", "#T_cF", "#T_wcel", "#T_co1", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplbi", "#P_elo1", "#P_reex", "#P_elpm2", "#P_cnex", "#P_syl" ]
+}

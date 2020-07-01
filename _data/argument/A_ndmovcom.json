@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ndmovcom on Metamath](http://us.metamath.org/mpegif/ndmovcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ndmov.1 | |- dom F = ( S X. S ) |\n| 2 | 1 | #P_ndmov | |- ( -. ( A e. S /\\ B e. S ) -> ( A F B ) = (/) ) |\n| 3 |  | #P_ancom | |- ( ( A e. S /\\ B e. S ) <-> ( B e. S /\\ A e. S ) ) |\n| 4 | 1 | #P_ndmov | |- ( -. ( B e. S /\\ A e. S ) -> ( B F A ) = (/) ) |\n| 5 | 3, 4 | #P_sylnbi | |- ( -. ( A e. S /\\ B e. S ) -> ( B F A ) = (/) ) |\n| 6 | 2, 5 | #P_eqtr4d | |- ( -. ( A e. S /\\ B e. S ) -> ( A F B ) = ( B F A ) ) |",
+  "conclusion" : "#P_ndmovcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cF", "#T_wceq", "#T_cS", "#T_cxp", "#T_cS", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cB.wceq", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cB.wceq", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cA", "#T_wcel", "#T_cS", "#T_wa", "#T_cB", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cB", "#T_cF", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_sylnbi", "#P_ndmov", "#P_eqtr4d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xor on Metamath](http://us.metamath.org/mpegif/xor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iman | |- ( ( ph -> ps ) <-> -. ( ph /\\ -. ps ) ) |\n| 2 |  | #P_iman | |- ( ( ps -> ph ) <-> -. ( ps /\\ -. ph ) ) |\n| 3 | 1, 2 | #P_anbi12i | |- ( ( ( ph -> ps ) /\\ ( ps -> ph ) ) <-> ( -. ( ph /\\ -. ps ) /\\ -. ( ps /\\ -. ph ) ) ) |\n| 4 |  | #P_dfbi2 | |- ( ( ph <-> ps ) <-> ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) |\n| 5 |  | #P_ioran | |- ( -. ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) <-> ( -. ( ph /\\ -. ps ) /\\ -. ( ps /\\ -. ph ) ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4ri | |- ( -. ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) <-> ( ph <-> ps ) ) |\n| 7 | 6 | #P_con1bii | |- ( -. ( ph <-> ps ) <-> ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) ) |",
+  "conclusion" : "#P_xor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_ioran", "#P_con1bii", "#P_iman", "#P_3bitr4ri", "#P_dfbi2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oppgplus on Metamath](http://us.metamath.org/mpegif/oppgplus.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oppgval.2 | |- .+ = ( +g ` R ) |\n| 2 |  | oppgval.3 | |- O = ( oppG ` R ) |\n| 3 |  | oppgplusfval.4 | |- .+b = ( +g ` O ) |\n| 4 | 1, 2, 3 | #P_oppgplusfval | |- .+b = tpos .+ |\n| 5 | 4 | #P_oveqi | |- ( X .+b Y ) = ( X tpos .+ Y ) |\n| 6 |  | #P_ovtpos | |- ( X tpos .+ Y ) = ( Y .+ X ) |\n| 7 | 5, 6 | #P_eqtri | |- ( X .+b Y ) = ( Y .+ X ) |",
+  "conclusion" : "#P_oppgplus",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cR", "#T_cO", "#T_wceq", "#T_coppg", "#T_cfv", "#T_cR", "#T_c.pb", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cO", "#T_c.pb", "#T_wceq", "#T_ctpos", "#T_c.pl", "#T_cX", "#T_c.pb", "#T_cY", "#T_wceq", "#T_cX", "#T_ctpos", "#T_c.pl", "#T_cY", "#T_cX", "#T_ctpos", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cY", "#T_c.pl", "#T_cX", "#T_cX", "#T_c.pb", "#T_cY", "#T_wceq", "#T_cY", "#T_c.pl", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovtpos", "#P_eqtri", "#P_oppgplusfval", "#P_oveqi" ]
+}

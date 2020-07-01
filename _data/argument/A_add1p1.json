@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See add1p1 on Metamath](http://us.metamath.org/mpegif/add1p1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( N e. CC -> N e. CC ) |\n| 2 |  | #P_1cnd | |- ( N e. CC -> 1 e. CC ) |\n| 3 | 1, 2, 2 | #P_addassd | |- ( N e. CC -> ( ( N + 1 ) + 1 ) = ( N + ( 1 + 1 ) ) ) |\n| 4 |  | #P_1p1e2 | |- ( 1 + 1 ) = 2 |\n| 5 | 4 | #P_a1i | |- ( N e. CC -> ( 1 + 1 ) = 2 ) |\n| 6 | 5 | #P_oveq2d | |- ( N e. CC -> ( N + ( 1 + 1 ) ) = ( N + 2 ) ) |\n| 7 | 3, 6 | #P_eqtrd | |- ( N e. CC -> ( ( N + 1 ) + 1 ) = ( N + 2 ) ) |",
+  "conclusion" : "#P_add1p1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_cN", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_cN", "#T_caddc", "#T_c2", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_cN", "#T_caddc", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1p1e2", "#P_eqtrd", "#P_oveq2d", "#P_1cnd", "#P_a1i", "#P_id", "#P_addassd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-pr1val on Metamath](http://us.metamath.org/mpegif/bj-pr1val.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-pr1 | |- pr1 ( { A } X. tag B ) = ( (/) Proj ( { A } X. tag B ) ) |\n| 2 |  | #P_0ex | |- (/) e. _V |\n| 3 |  | #P_bj-projval | |- ( (/) e. _V -> ( (/) Proj ( { A } X. tag B ) ) = if ( A = (/) , B , (/) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( (/) Proj ( { A } X. tag B ) ) = if ( A = (/) , B , (/) ) |\n| 5 | 1, 4 | #P_eqtri | |- pr1 ( { A } X. tag B ) = if ( A = (/) , B , (/) ) |",
+  "conclusion" : "#P_bj-pr1val",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_bj-cpr1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_bj-cproj", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cB.wceq", "#T_c0", "#T_wcel", "#T_cvv", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_bj-cproj", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_c0", "#T_c0", "#T_bj-cproj", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_c0", "#T_bj-cpr1", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cB", "#T_wceq", "#T_cif--1", "#T_cA", "#T_wceq", "#T_c0", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_bj-projval", "#P_df-bj-pr1", "#P_0ex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See normf on Metamath](http://us.metamath.org/mpegif/normf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfhnorm2 | |- normh = ( x e. ~H |-> ( sqrt ` ( x .ih x ) ) ) |\n| 2 |  | #P_hiidrcl | |- ( x e. ~H -> ( x .ih x ) e. RR ) |\n| 3 |  | #P_hiidge0 | |- ( x e. ~H -> 0 <_ ( x .ih x ) ) |\n| 4 | 2, 3 | #P_resqrtcld | |- ( x e. ~H -> ( sqrt ` ( x .ih x ) ) e. RR ) |\n| 5 | 1, 4 | #P_fmpti | |- normh : ~H --> RR |",
+  "conclusion" : "#P_normf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cno", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_cc0", "#T_cle", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_cno", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fmpti", "#P_hiidrcl", "#P_resqrtcld", "#P_dfhnorm2", "#P_hiidge0" ]
+}

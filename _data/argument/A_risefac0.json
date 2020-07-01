@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See risefac0 on Metamath](http://us.metamath.org/mpegif/risefac0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0nn0 | |- 0 e. NN0 |\n| 2 |  | #P_risefacval | |- ( ( A e. CC /\\ 0 e. NN0 ) -> ( A RiseFac 0 ) = prod_ k e. ( 0 ... ( 0 - 1 ) ) ( A + k ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. CC -> ( A RiseFac 0 ) = prod_ k e. ( 0 ... ( 0 - 1 ) ) ( A + k ) ) |\n| 4 |  | #P_risefall0lem | |- ( 0 ... ( 0 - 1 ) ) = (/) |\n| 5 | 4 | #P_prodeq1i | |- prod_ k e. ( 0 ... ( 0 - 1 ) ) ( A + k ) = prod_ k e. (/) ( A + k ) |\n| 6 |  | #P_prod0 | |- prod_ k e. (/) ( A + k ) = 1 |\n| 7 | 5, 6 | #P_eqtri | |- prod_ k e. ( 0 ... ( 0 - 1 ) ) ( A + k ) = 1 |\n| 8 | 3, 7 | #P_syl6eq | |- ( A e. CC -> ( A RiseFac 0 ) = 1 ) |",
+  "conclusion" : "#P_risefac0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_cc0", "#T_wcel", "#T_cn0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cc0", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_crisefac", "#T_cc0", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_crisefac", "#T_cc0", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_wceq", "#T_c0", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_c0", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_c0", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_wceq", "#T_c1", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cc0", "#T_cfz", "#T_cc0", "#T_cmin", "#T_c1", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_wceq", "#T_c1", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_crisefac", "#T_cc0", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_prod0", "#P_eqtri", "#P_0nn0", "#P_risefacval", "#P_risefall0lem", "#P_mpan2", "#P_prodeq1i", "#P_syl6eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephprc on Metamath](http://us.metamath.org/mpegif/alephprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cardprc | |- { x | ( card ` x ) = x } e/ _V |\n| 2 | 1 | #P_neli | |- -. { x | ( card ` x ) = x } e. _V |\n| 3 |  | #P_cardnum | |- { x | ( card ` x ) = x } = ( _om u. ran aleph ) |\n| 4 | 3 | #P_eleq1i | |- ( { x | ( card ` x ) = x } e. _V <-> ( _om u. ran aleph ) e. _V ) |\n| 5 | 2, 4 | #P_mtbi | |- -. ( _om u. ran aleph ) e. _V |\n| 6 |  | #P_omex | |- _om e. _V |\n| 7 |  | #P_unexg | |- ( ( _om e. _V /\\ ran aleph e. _V ) -> ( _om u. ran aleph ) e. _V ) |\n| 8 | 6, 7 | #P_mpan | |- ( ran aleph e. _V -> ( _om u. ran aleph ) e. _V ) |\n| 9 | 5, 8 | #P_mto | |- -. ran aleph e. _V |",
+  "conclusion" : "#P_alephprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wnel", "#T_cvv", "#T_wn", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wceq", "#T_com", "#T_cun", "#T_crn", "#T_cale", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_wb", "#T_com", "#T_cun", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_wn", "#T_com", "#T_cun", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wa", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_wi", "#T_com", "#T_cun", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_wi", "#T_com", "#T_cun", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv", "#T_wn", "#T_crn", "#T_cale", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cardnum", "#P_unexg", "#P_eleq1i", "#P_mpan", "#P_neli", "#P_mtbi", "#P_mto", "#P_cardprc", "#P_omex" ]
+}

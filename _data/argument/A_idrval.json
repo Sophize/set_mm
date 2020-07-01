@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idrval on Metamath](http://us.metamath.org/mpegif/idrval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idrval.1 | |- X = ran G |\n| 2 |  | idrval.2 | |- U = ( GId ` G ) |\n| 3 | 1 | #P_gidval | |- ( G e. A -> ( GId ` G ) = ( iota_ u e. X A. x e. X ( ( u G x ) = x /\\ ( x G u ) = x ) ) ) |\n| 4 | 2, 3 | #P_syl5eq | |- ( G e. A -> U = ( iota_ u e. X A. x e. X ( ( u G x ) = x /\\ ( x G u ) = x ) ) ) |",
+  "conclusion" : "#P_idrval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cgi", "#T_cfv", "#T_cG", "#T_wceq", "#T_crio--1", "#T_vu", "#T_crio--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cG", "#T_vu", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cA", "#T_wi", "#T_cU", "#T_wceq", "#T_crio--1", "#T_vu", "#T_crio--2", "#T_cX", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_vu", "#T_cG", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_vx", "#T_cG", "#T_vu", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_gidval", "#P_syl5eq" ]
+}

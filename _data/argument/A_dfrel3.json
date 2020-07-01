@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfrel3 on Metamath](http://us.metamath.org/mpegif/dfrel3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfrel2 | |- ( Rel R <-> `' `' R = R ) |\n| 2 |  | #P_cnvcnv2 | |- `' `' R = ( R |` _V ) |\n| 3 | 2 | #P_eqeq1i | |- ( `' `' R = R <-> ( R |` _V ) = R ) |\n| 4 | 1, 3 | #P_bitri | |- ( Rel R <-> ( R |` _V ) = R ) |",
+  "conclusion" : "#P_dfrel3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_cres", "#T_cvv", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wb", "#T_cR", "#T_cres", "#T_cvv", "#T_wceq", "#T_cR", "#T_wrel", "#T_cR", "#T_wb", "#T_cR", "#T_cres", "#T_cvv", "#T_wceq", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvcnv2", "#P_eqeq1i", "#P_bitri", "#P_dfrel2" ]
+}

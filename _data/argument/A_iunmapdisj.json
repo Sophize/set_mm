@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iunmapdisj on Metamath](http://us.metamath.org/mpegif/iunmapdisj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_moeq | |- E* n n = dom B |\n| 2 |  | #P_elmapi | |- ( B e. ( A ^m n ) -> B : n --> A ) |\n| 3 |  | #P_fdm | |- ( B : n --> A -> dom B = n ) |\n| 4 | 3 | #P_eqcomd | |- ( B : n --> A -> n = dom B ) |\n| 5 | 2, 4 | #P_syl | |- ( B e. ( A ^m n ) -> n = dom B ) |\n| 6 | 5 | #P_moimi | |- ( E* n n = dom B -> E* n B e. ( A ^m n ) ) |\n| 7 | 1, 6 | #P_ax-mp | |- E* n B e. ( A ^m n ) |\n| 8 | 7 | #P_moani | |- E* n ( n e. C /\\ B e. ( A ^m n ) ) |\n| 9 |  | #P_df-rmo | |- ( E* n e. C B e. ( A ^m n ) <-> E* n ( n e. C /\\ B e. ( A ^m n ) ) ) |\n| 10 | 8, 9 | #P_mpbir | |- E* n e. C B e. ( A ^m n ) |",
+  "conclusion" : "#P_iunmapdisj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wmo", "#T_vn", "#T_vn", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wi", "#T_cB.wceq", "#T_wf--1", "#T_vn", "#T_wf--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wf--1", "#T_vn", "#T_wf--2", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cB.wceq", "#T_wceq", "#T_vn", "#T_cB.wceq", "#T_wf--1", "#T_vn", "#T_wf--2", "#T_cA.wceq", "#T_wi", "#T_vn", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wi", "#T_vn", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_wmo", "#T_vn", "#T_vn", "#T_wceq", "#T_cdm", "#T_cB.wceq", "#T_wi", "#T_wmo", "#T_vn", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wmo", "#T_vn", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wmo", "#T_vn", "#T_vn", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wrmo--1", "#T_vn", "#T_wrmo--2", "#T_cC", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wb", "#T_wmo", "#T_vn", "#T_vn", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cmap", "#T_vn", "#T_wrmo--1", "#T_vn", "#T_wrmo--2", "#T_cC", "#T_cB", "#T_wcel", "#T_cA", "#T_cmap", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdm", "#P_elmapi", "#P_ax-mp", "#P_moani", "#P_eqcomd", "#P_syl", "#P_df-rmo", "#P_mpbir", "#P_moeq", "#P_moimi" ]
+}

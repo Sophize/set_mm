@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See invrcn on Metamath](http://us.metamath.org/mpegif/invrcn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulrcn.j | |- J = ( TopOpen ` R ) |\n| 2 |  | invrcn.i | |- I = ( invr ` R ) |\n| 3 |  | invrcn.u | |- U = ( Unit ` R ) |\n| 4 |  | #P_tdrgtps | |- ( R e. TopDRing -> R e. TopSp ) |\n| 5 | 1 | #P_tpstop | |- ( R e. TopSp -> J e. Top ) |\n| 6 |  | #P_cnrest2r | |- ( J e. Top -> ( ( J |`t U ) Cn ( J |`t U ) ) C_ ( ( J |`t U ) Cn J ) ) |\n| 7 | 4, 5, 6 | #P_3syl | |- ( R e. TopDRing -> ( ( J |`t U ) Cn ( J |`t U ) ) C_ ( ( J |`t U ) Cn J ) ) |\n| 8 | 1, 2, 3 | #P_invrcn2 | |- ( R e. TopDRing -> I e. ( ( J |`t U ) Cn ( J |`t U ) ) ) |\n| 9 | 7, 8 | #P_sseldd | |- ( R e. TopDRing -> I e. ( ( J |`t U ) Cn J ) ) |",
+  "conclusion" : "#P_invrcn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cI", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cR", "#T_wcel", "#T_ctps", "#T_cR", "#T_wcel", "#T_ctps", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_crest", "#T_cU", "#T_wss", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_crest", "#T_cU", "#T_wss", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_crest", "#T_cU", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_invrcn2", "#P_sseldd", "#P_3syl", "#P_tdrgtps", "#P_tpstop", "#P_cnrest2r" ]
+}

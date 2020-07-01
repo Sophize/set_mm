@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iinconst on Metamath](http://us.metamath.org/mpegif/iinconst.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r19.3rzv | |- ( A =/= (/) -> ( y e. B <-> A. x e. A y e. B ) ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_eliin | |- ( y e. _V -> ( y e. |^|_ x e. A B <-> A. x e. A y e. B ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( y e. |^|_ x e. A B <-> A. x e. A y e. B ) |\n| 5 | 1, 4 | #P_syl6rbbr | |- ( A =/= (/) -> ( y e. |^|_ x e. A B <-> y e. B ) ) |\n| 6 | 5 | #P_eqrdv | |- ( A =/= (/) -> |^|_ x e. A B = B ) |",
+  "conclusion" : "#P_iinconst",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_vy.tru", "#T_wcel", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wne", "#T_c0", "#T_wi", "#T_ciin--1", "#T_vx", "#T_ciin--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_r19.3rzv", "#P_vex", "#P_eqrdv", "#P_eliin", "#P_syl6rbbr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psubatN on Metamath](http://us.metamath.org/mpegif/psubatN.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | atpsub.a | |- A = ( Atoms ` K ) |\n| 2 |  | atpsub.s | |- S = ( PSubSp ` K ) |\n| 3 | 1, 2 | #P_psubssat | |- ( ( K e. B /\\ X e. S ) -> X C_ A ) |\n| 4 | 3 | #P_sseld | |- ( ( K e. B /\\ X e. S ) -> ( Y e. X -> Y e. A ) ) |\n| 5 | 4 | #P_3impia | |- ( ( K e. B /\\ X e. S /\\ Y e. X ) -> Y e. A ) |",
+  "conclusion" : "#P_psubatN",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cS", "#T_wceq", "#T_cpsubsp", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_cK", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cY", "#T_wcel", "#T_cX", "#T_wi", "#T_cY", "#T_wcel", "#T_cA.wceq", "#T_cK", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cX", "#T_wi", "#T_cY", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3impia", "#P_sseld", "#P_psubssat" ]
+}

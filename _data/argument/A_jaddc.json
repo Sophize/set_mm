@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jaddc on Metamath](http://us.metamath.org/mpegif/jaddc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jaddc.1 | |- ( ph -> ( DECID ps -> ( -. ps -> th ) ) ) |\n| 2 |  | jaddc.2 | |- ( ph -> ( ch -> th ) ) |\n| 3 | 2 | #P_imim2d | |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) |\n| 4 |  | #P_pm2.6dc | |- ( DECID ps -> ( ( -. ps -> th ) -> ( ( ps -> th ) -> th ) ) ) |\n| 5 | 1, 4 | #P_sylcom | |- ( ph -> ( DECID ps -> ( ( ps -> th ) -> th ) ) ) |\n| 6 | 3, 5 | #P_syl5d | |- ( ph -> ( DECID ps -> ( ( ps -> ch ) -> th ) ) ) |",
+  "conclusion" : "#P_jaddc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5d", "#P_pm2.6dc", "#P_imim2d", "#P_sylcom" ]
+}

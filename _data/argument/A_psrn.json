@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psrn on Metamath](http://us.metamath.org/mpegif/psrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psref.1 | |- X = dom R |\n| 2 |  | #P_psdmrn | |- ( R e. PosetRel -> ( dom R = U. U. R /\\ ran R = U. U. R ) ) |\n| 3 |  | #P_eqtr3 | |- ( ( dom R = U. U. R /\\ ran R = U. U. R ) -> dom R = ran R ) |\n| 4 | 2, 3 | #P_syl | |- ( R e. PosetRel -> dom R = ran R ) |\n| 5 | 1, 4 | #P_syl5eq | |- ( R e. PosetRel -> X = ran R ) |",
+  "conclusion" : "#P_psrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cdm", "#T_cR", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cuni", "#T_cuni", "#T_cR", "#T_wa", "#T_crn", "#T_cR", "#T_wceq", "#T_cuni", "#T_cuni", "#T_cR", "#T_cdm", "#T_cR", "#T_wceq", "#T_cuni", "#T_cuni", "#T_cR", "#T_wa", "#T_crn", "#T_cR", "#T_wceq", "#T_cuni", "#T_cuni", "#T_cR", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_crn", "#T_cR", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_crn", "#T_cR", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cX", "#T_wceq", "#T_crn", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_psdmrn", "#P_syl", "#P_eqtr3", "#P_syl5eq" ]
+}

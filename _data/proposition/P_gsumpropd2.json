@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumpropd2 on Metamath](http://us.metamath.org/mpegif/gsumpropd2.html)"
+  } ],
+  "names" : [ "gsumpropd2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cH", "#T_wph", "#T_wa", "#T_vs", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wa", "#T_vt", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_vs", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vt", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wa", "#T_vs", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wa", "#T_vt", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_vs", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vt", "#T_wceq", "#T_vs", "#T_cplusg", "#T_cfv", "#T_cH", "#T_vt", "#T_wph", "#T_wi", "#T_wfun", "#T_cF", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wceq", "#T_cH", "#T_cgsu", "#T_cF", "#T_cF", "#T_vs", "#T_vt", "#T_cG", "#T_vs", "#T_vt", "#T_cH", "#T_vs", "#T_vt", "#T_wph", "#T_vs", "#T_vt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A stronger version of ~ gsumpropd , working for magma, where only the closure of the addition operation on a common base is required, see ~ gsummgmpropd .  (Contributed by Thierry Arnoux, 28-Jun-2017.) ",
+  "statement" : "gsumpropd2.f $e |- ( ph -> F e. V ) $.\ngsumpropd2.g $e |- ( ph -> G e. W ) $.\ngsumpropd2.h $e |- ( ph -> H e. X ) $.\ngsumpropd2.b $e |- ( ph -> ( Base ` G ) = ( Base ` H ) ) $.\ngsumpropd2.c $e |- ( ( ph /\\ ( s e. ( Base ` G ) /\\ t e. ( Base ` G ) ) ) -> ( s ( +g ` G ) t ) e. ( Base ` G ) ) $.\ngsumpropd2.e $e |- ( ( ph /\\ ( s e. ( Base ` G ) /\\ t e. ( Base ` G ) ) ) -> ( s ( +g ` G ) t ) = ( s ( +g ` H ) t ) ) $.\ngsumpropd2.n $e |- ( ph -> Fun F ) $.\ngsumpropd2.r $e |- ( ph -> ran F C_ ( Base ` G ) ) $.\ngsumpropd2 $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $.\n$d F s t $.\n$d G s t $.\n$d H s t $.\n$d ph s t $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elmrsubrn on Metamath](http://us.metamath.org/mpegif/elmrsubrn.html)"
+  } ],
+  "names" : [ "elmrsubrn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cmrsub", "#T_cfv", "#T_cT", "#T_cR", "#T_wceq", "#T_cmrex", "#T_cfv", "#T_cT", "#T_cV", "#T_wceq", "#T_cmvar", "#T_cfv", "#T_cT", "#T_cC", "#T_wceq", "#T_cmcn", "#T_cfv", "#T_cT", "#T_cT", "#T_wcel", "#T_cW", "#T_wi", "#T_cF", "#T_wcel", "#T_crn", "#T_cS", "#T_wb", "#T_cF", "#T_wf--1", "#T_cR", "#T_wf--2", "#T_cR", "#T_w3a--1", "#T_wral--1", "#T_vc", "#T_wral--2", "#T_cC", "#T_cdif", "#T_cV", "#T_cF", "#T_cfv", "#T_cs1--1", "#T_vc", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_vc", "#T_cs1--2", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cR", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cR", "#T_cF", "#T_cfv", "#T_vx", "#T_cconcat", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_cconcat", "#T_cF", "#T_cfv", "#T_vy", "#T_cC", "#T_vc", "#T_vx", "#T_vy", "#T_cF", "#T_vc", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vc", "#T_vx", "#T_vy", "#T_cT", "#T_vx", "#T_vy", "#T_cV", "#T_vc", "#T_vx", "#T_vy", "#T_cW", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Characterization of the substitutions as functions from expressions to expressions that distribute under concatenation and map constants to themselves.  (The constant part uses ` ( C \\ V ) ` because we don't know that ` C ` and ` V ` are disjoint until we get to ~ ismfs .) (Contributed by Mario Carneiro, 18-Jul-2016.) ",
+  "statement" : "mrsubccat.s $e |- S = ( mRSubst ` T ) $.\nmrsubccat.r $e |- R = ( mREx ` T ) $.\nmrsubcn.v $e |- V = ( mVR ` T ) $.\nmrsubcn.c $e |- C = ( mCN ` T ) $.\nelmrsubrn $p |- ( T e. W -> ( F e. ran S <-> ( F : R --> R /\\ A. c e. ( C \\ V ) ( F ` <\" c \"> ) = <\" c \"> /\\ A. x e. R A. y e. R ( F ` ( x concat y ) ) = ( ( F ` x ) concat ( F ` y ) ) ) ) ) $.\n$d C c x y $.\n$d F c x y $.\n$d R x y $.\n$d S c x y $.\n$d T x y $.\n$d V c x y $.\n$d W x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prednn0 on Metamath](http://us.metamath.org/mpegif/prednn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0uz | |- NN0 = ( ZZ>= ` 0 ) |\n| 2 |  | #P_predeq2 | |- ( NN0 = ( ZZ>= ` 0 ) -> Pred ( < , NN0 , N ) = Pred ( < , ( ZZ>= ` 0 ) , N ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- Pred ( < , NN0 , N ) = Pred ( < , ( ZZ>= ` 0 ) , N ) |\n| 4 |  | #P_preduz | |- ( N e. ( ZZ>= ` 0 ) -> Pred ( < , ( ZZ>= ` 0 ) , N ) = ( 0 ... ( N - 1 ) ) ) |\n| 5 | 3, 4 | #P_syl5eq | |- ( N e. ( ZZ>= ` 0 ) -> Pred ( < , NN0 , N ) = ( 0 ... ( N - 1 ) ) ) |\n| 6 | 5, 1 | #P_eleq2s | |- ( N e. NN0 -> Pred ( < , NN0 , N ) = ( 0 ... ( N - 1 ) ) ) |",
+  "conclusion" : "#P_prednn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cn0", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cc0", "#T_cn0", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cc0", "#T_wi", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cn0", "#T_cpred--3", "#T_cN", "#T_wceq", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cuz", "#T_cfv", "#T_cc0", "#T_cpred--3", "#T_cN", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cn0", "#T_cpred--3", "#T_cN", "#T_wceq", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cuz", "#T_cfv", "#T_cc0", "#T_cpred--3", "#T_cN", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_wi", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cuz", "#T_cfv", "#T_cc0", "#T_cpred--3", "#T_cN", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_wi", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cn0", "#T_cpred--3", "#T_cN", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cpred--1", "#T_clt", "#T_cpred--2", "#T_cn0", "#T_cpred--3", "#T_cN", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eleq2s", "#P_preduz", "#P_nn0uz", "#P_syl5eq", "#P_predeq2" ]
+}

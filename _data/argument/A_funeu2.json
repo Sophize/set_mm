@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funeu2 on Metamath](http://us.metamath.org/mpegif/funeu2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-br | |- ( A F B <-> <. A , B >. e. F ) |\n| 2 |  | #P_funeu | |- ( ( Fun F /\\ A F B ) -> E! y A F y ) |\n| 3 |  | #P_df-br | |- ( A F y <-> <. A , y >. e. F ) |\n| 4 | 3 | #P_eubii | |- ( E! y A F y <-> E! y <. A , y >. e. F ) |\n| 5 | 2, 4 | #P_sylib | |- ( ( Fun F /\\ A F B ) -> E! y <. A , y >. e. F ) |\n| 6 | 1, 5 | #P_sylan2br | |- ( ( Fun F /\\ <. A , B >. e. F ) -> E! y <. A , y >. e. F ) |",
+  "conclusion" : "#P_funeu2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wfun", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cF", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wb", "#T_weu", "#T_vy.tru", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wfun", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_weu", "#T_vy.tru", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wfun", "#T_cF", "#T_wa", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wi", "#T_weu", "#T_vy", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_funeu", "#P_sylib", "#P_sylan2br", "#P_eubii" ]
+}

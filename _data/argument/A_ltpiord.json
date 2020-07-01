@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltpiord on Metamath](http://us.metamath.org/mpegif/ltpiord.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-lti | |- <N = ( _E i^i ( N. X. N. ) ) |\n| 2 | 1 | #P_breqi | |- ( A <N B <-> A ( _E i^i ( N. X. N. ) ) B ) |\n| 3 |  | #P_brinxp | |- ( ( A e. N. /\\ B e. N. ) -> ( A _E B <-> A ( _E i^i ( N. X. N. ) ) B ) ) |\n| 4 |  | #P_epelg | |- ( B e. N. -> ( A _E B <-> A e. B ) ) |\n| 5 | 4 | #P_adantl | |- ( ( A e. N. /\\ B e. N. ) -> ( A _E B <-> A e. B ) ) |\n| 6 | 3, 5 | #P_bitr3d | |- ( ( A e. N. /\\ B e. N. ) -> ( A ( _E i^i ( N. X. N. ) ) B <-> A e. B ) ) |\n| 7 | 2, 6 | #P_syl5bb | |- ( ( A e. N. /\\ B e. N. ) -> ( A <N B <-> A e. B ) ) |",
+  "conclusion" : "#P_ltpiord",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clti", "#T_wceq", "#T_cep", "#T_cin", "#T_cnpi", "#T_cxp", "#T_cnpi", "#T_cA.wceq", "#T_clti", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cep", "#T_cin", "#T_cnpi", "#T_cxp", "#T_cnpi", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cep", "#T_cin", "#T_cnpi", "#T_cxp", "#T_cnpi", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cin", "#T_cnpi", "#T_cxp", "#T_cnpi", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA", "#T_clti", "#T_cB", "#T_wb", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_brinxp", "#P_adantl", "#P_epelg", "#P_df-lti", "#P_breqi", "#P_bitr3d" ]
+}

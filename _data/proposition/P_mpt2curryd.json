@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpt2curryd on Metamath](http://us.metamath.org/mpegif/mpt2curryd.html)"
+  } ],
+  "names" : [ "mpt2curryd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cX", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cY", "#T_cmpt2--4", "#T_cC", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cY", "#T_cC", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_ccur", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_vy", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_cC", "#T_cF", "#T_vx", "#T_vy", "#T_cV", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The currying of an operation given in maps-to notation, splitting the operation (function of two arguments) into a function of the first argument, producing a function over the second argument.  (Contributed by AV, 27-Oct-2019.) ",
+  "statement" : "mpt2curryd.f $e |- F = ( x e. X , y e. Y |-> C ) $.\nmpt2curryd.c $e |- ( ph -> A. x e. X A. y e. Y C e. V ) $.\nmpt2curryd.n $e |- ( ph -> Y =/= (/) ) $.\nmpt2curryd $p |- ( ph -> curry F = ( x e. X |-> ( y e. Y |-> C ) ) ) $.\n$d F x y $.\n$d V x y $.\n$d X x y $.\n$d X x y $.\n$d Y x y $.\n$d Y x y $.\n$d ph x y $.\n$d ph x y $."
+}

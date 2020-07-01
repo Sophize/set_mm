@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dveel2ALT on Metamath](http://us.metamath.org/mpegif/dveel2ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax5el | |- ( z e. w -> A. x z e. w ) |\n| 2 |  | #P_ax5el | |- ( z e. y -> A. w z e. y ) |\n| 3 |  | #P_elequ2 | |- ( w = y -> ( z e. w <-> z e. y ) ) |\n| 4 | 1, 2, 3 | #P_dvelimh | |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) |\n\\\n Alternate proof of ~ dveel2 using ~ ax-c16 instead of ~ ax-5 . (Contributed by NM, 10-May-2008.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_dveel2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vz", "#T_wcel", "#T_vw", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_vw", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vw", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_vw", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_wal", "#T_vx", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dvelimh", "#P_ax5el", "#P_elequ2" ]
+}

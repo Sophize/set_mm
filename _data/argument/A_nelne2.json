@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nelne2 on Metamath](http://us.metamath.org/mpegif/nelne2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1 | |- ( A = B -> ( A e. C <-> B e. C ) ) |\n| 2 | 1 | #P_biimpcd | |- ( A e. C -> ( A = B -> B e. C ) ) |\n| 3 | 2 | #P_necon3bd | |- ( A e. C -> ( -. B e. C -> A =/= B ) ) |\n| 4 | 3 | #P_imp | |- ( ( A e. C /\\ -. B e. C ) -> A =/= B ) |",
+  "conclusion" : "#P_nelne2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_wn", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpcd", "#P_eleq1", "#P_imp", "#P_necon3bd" ]
+}

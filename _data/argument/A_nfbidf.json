@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfbidf on Metamath](http://us.metamath.org/mpegif/nfbidf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfbidf.1 | |- F/ x ph |\n| 2 |  | nfbidf.2 | |- ( ph -> ( ps <-> ch ) ) |\n| 3 | 1, 2 | #P_albid | |- ( ph -> ( A. x ps <-> A. x ch ) ) |\n| 4 | 2, 3 | #P_imbi12d | |- ( ph -> ( ( ps -> A. x ps ) <-> ( ch -> A. x ch ) ) ) |\n| 5 | 1, 4 | #P_albid | |- ( ph -> ( A. x ( ps -> A. x ps ) <-> A. x ( ch -> A. x ch ) ) ) |\n| 6 |  | #P_df-nf | |- ( F/ x ps <-> A. x ( ps -> A. x ps ) ) |\n| 7 |  | #P_df-nf | |- ( F/ x ch <-> A. x ( ch -> A. x ch ) ) |\n| 8 | 5, 6, 7 | #P_3bitr4g | |- ( ph -> ( F/ x ps <-> F/ x ch ) ) |",
+  "conclusion" : "#P_nfbidf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wps", "#T_wb", "#T_wnf", "#T_vx", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albid", "#P_imbi12d", "#P_df-nf", "#P_3bitr4g" ]
+}

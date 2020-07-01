@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem14 on Metamath](http://us.metamath.org/mpegif/tfrlem14.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfrlem.1 | |- A = { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } |\n| 2 | 1 | #P_tfrlem13 | |- -. recs ( F ) e. _V |\n| 3 | 1 | #P_tfrlem7 | |- Fun recs ( F ) |\n| 4 |  | #P_funex | |- ( ( Fun recs ( F ) /\\ dom recs ( F ) e. On ) -> recs ( F ) e. _V ) |\n| 5 | 3, 4 | #P_mpan | |- ( dom recs ( F ) e. On -> recs ( F ) e. _V ) |\n| 6 | 2, 5 | #P_mto | |- -. dom recs ( F ) e. On |\n| 7 | 1 | #P_tfrlem8 | |- Ord dom recs ( F ) |\n| 8 |  | #P_ordeleqon | |- ( Ord dom recs ( F ) <-> ( dom recs ( F ) e. On \\/ dom recs ( F ) = On ) ) |\n| 9 | 7, 8 | #P_mpbi | |- ( dom recs ( F ) e. On \\/ dom recs ( F ) = On ) |\n| 10 | 6, 9 | #P_mtpor | |- dom recs ( F ) = On |",
+  "conclusion" : "#P_tfrlem14",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_wn", "#T_crecs", "#T_cF", "#T_wcel", "#T_cvv", "#T_wfun", "#T_crecs", "#T_cF", "#T_wfun", "#T_crecs", "#T_cF", "#T_wa", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_wi", "#T_crecs", "#T_cF", "#T_wcel", "#T_cvv", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_wi", "#T_crecs", "#T_cF", "#T_wcel", "#T_cvv", "#T_wn", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_word", "#T_cdm", "#T_crecs", "#T_cF", "#T_word", "#T_cdm", "#T_crecs", "#T_cF", "#T_wb", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_wo", "#T_cdm", "#T_crecs", "#T_cF", "#T_wceq", "#T_con0", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_wo", "#T_cdm", "#T_crecs", "#T_cF", "#T_wceq", "#T_con0", "#T_cdm", "#T_crecs", "#T_cF", "#T_wceq", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tfrlem13", "#P_mtpor", "#P_tfrlem8", "#P_tfrlem7", "#P_mpbi", "#P_mpan", "#P_mto", "#P_funex", "#P_ordeleqon" ]
+}

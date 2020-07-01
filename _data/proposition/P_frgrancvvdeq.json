@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frgrancvvdeq on Metamath](http://us.metamath.org/mpegif/frgrancvvdeq.html)"
+  } ],
+  "names" : [ "frgrancvvdeq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cfrgra", "#T_cE", "#T_wa", "#T_cE", "#T_wcel", "#T_cfn", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cV", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cV", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_vy", "#T_wnel", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_vx", "#T_wi", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_vx", "#T_wceq", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_vy", "#T_cE", "#T_vx", "#T_vy", "#T_cV", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a finite friendship graph, two vertices which are not connected by an edge have the same degree.  This corresponds to claim 1 in [Huneke] p. 1:  \"If x,y are elements of (the friendship graph) G and are not adjacent, then they have the same degree (i.e., the same number of adjacent vertices).\".  (Contributed by Alexander van der Vekens, 19-Dec-2017.) ",
+  "statement" : "frgrancvvdeq $p |- ( ( V FriendGrph E /\\ E e. Fin ) -> A. x e. V A. y e. ( V \\ { x } ) ( y e/ ( <. V , E >. Neighbors x ) -> ( ( V VDeg E ) ` x ) = ( ( V VDeg E ) ` y ) ) ) $.\n$d E x y $.\n$d V x y $."
+}

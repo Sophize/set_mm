@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See altopeq12 on Metamath](http://us.metamath.org/mpegif/altopeq12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sneq | |- ( A = B -> { A } = { B } ) |\n| 2 |  | #P_sneq | |- ( C = D -> { C } = { D } ) |\n| 3 | 1, 2 | #P_anim12i | |- ( ( A = B /\\ C = D ) -> ( { A } = { B } /\\ { C } = { D } ) ) |\n| 4 |  | #P_altopthsn | |- ( << A , C >> = << B , D >> <-> ( { A } = { B } /\\ { C } = { D } ) ) |\n| 5 | 3, 4 | #P_sylibr | |- ( ( A = B /\\ C = D ) -> << A , C >> = << B , D >> ) |",
+  "conclusion" : "#P_altopeq12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cD", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wa", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cD", "#T_csn--2", "#T_caltop--1", "#T_cA.wceq", "#T_caltop--2", "#T_cC", "#T_caltop--3", "#T_wceq", "#T_caltop--1", "#T_cB.wceq", "#T_caltop--2", "#T_cD", "#T_caltop--3", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wa", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cD", "#T_csn--2", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_caltop--1", "#T_cA", "#T_caltop--2", "#T_cC", "#T_caltop--3", "#T_wceq", "#T_caltop--1", "#T_cB", "#T_caltop--2", "#T_cD", "#T_caltop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sneq", "#P_sylibr", "#P_altopthsn", "#P_anim12i" ]
+}

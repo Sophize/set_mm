@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-inv on Metamath](http://us.metamath.org/mpegif/df-inv.html)"
+  } ],
+  "names" : [ "df-inv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cinv", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_vx", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vc", "#T_cmpt2--4", "#T_vx", "#T_csect", "#T_cfv", "#T_vc", "#T_vy", "#T_cin", "#T_ccnv", "#T_vy", "#T_csect", "#T_cfv", "#T_vc", "#T_vx", "#T_vc", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The inverse relation in a category.  Given arrows ` f : X --> Y ` and ` g : Y --> X ` , we say ` g Inv f ` , that is, ` g ` is an inverse of ` f ` , if ` g ` is a section of ` f ` and ` f ` is a section of ` g ` .  Definition 3.8 of [Adamek] p. 28.  (Contributed by FL, 22-Dec-2008.)  (Revised by Mario Carneiro, 2-Jan-2017.) ",
+  "statement" : "df-inv $p |- Inv = ( c e. Cat |-> ( x e. ( Base ` c ) , y e. ( Base ` c ) |-> ( ( x ( Sect ` c ) y ) i^i `' ( y ( Sect ` c ) x ) ) ) ) $.\n$d c x y $."
+}

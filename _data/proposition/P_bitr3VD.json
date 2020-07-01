@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bitr3VD on Metamath](http://us.metamath.org/mpegif/bitr3VD.html)"
+  } ],
+  "names" : [ "bitr3VD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_wi", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ bitr3 .  The following user's proof is completed by invoking mmj2's unify command and using mmj2's StepSelector to pick all remaining steps of the Metamath proof. <HTML> <TABLE> <TR> <TD> 1::           <TD> ` |- (. ( ph <-> ps ) ->. ( ph ` ` <-> ps ) ). ` <TR> <TD> 2:1,?: ~ e1a     <TD> ` |- (. ( ph <-> ps ) ->. ( ps ` ` <-> ph ) ). ` <TR> <TD> 3::           <TD> ` |- (. ( ph <-> ps ) ,. ( ph <-> ch ) ` ` ->. ( ph <-> ch ) ). ` <TR> <TD> 4:3,?: ~ e2      <TD> ` |- (. ( ph <-> ps ) ,. ( ph <-> ch ) ` ` ->. ( ch <-> ph ) ). ` <TR> <TD> 5:2,4,?: ~ e12   <TD> ` |- (. ( ph <-> ps ) ,. ( ph <-> ch ) ` ` ->. ( ps <-> ch ) ). ` <TR> <TD> 6:5:          <TD> ` |- (. ( ph <-> ps ) ->. ( ( ph ` ` <-> ch ) -> ( ps <-> ch ) ) ). ` <TR> <TD> qed:6:        <TD> ` |- ( ( ph <-> ps ) -> ( ( ph <-> ch ) ` ` -> ( ps <-> ch ) ) ) ` </TABLE> </HTML> (Contributed by Alan Sare, 31-Dec-2011.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "bitr3VD $p |- ( ( ph <-> ps ) -> ( ( ph <-> ch ) -> ( ps <-> ch ) ) ) $."
+}

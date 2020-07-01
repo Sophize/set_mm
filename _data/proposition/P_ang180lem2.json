@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ang180lem2 on Metamath](http://us.metamath.org/mpegif/ang180lem2.html)"
+  } ],
+  "names" : [ "ang180lem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vx", "#T_cT", "#T_wceq", "#T_clog", "#T_cfv", "#T_c1", "#T_cdiv", "#T_c1", "#T_cmin", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_cA", "#T_cmin", "#T_c1", "#T_cdiv", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_cA", "#T_cN", "#T_wceq", "#T_cT", "#T_cdiv", "#T_ci", "#T_cdiv", "#T_c2", "#T_cmul", "#T_cpi", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_cA", "#T_wne", "#T_c1", "#T_wi", "#T_cneg", "#T_c2", "#T_clt", "#T_cN", "#T_wa", "#T_cN", "#T_clt", "#T_c1", "#T_cA", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ ang180 .  Show that the revolution number ` N ` is strictly between ` -u 2 ` and ` 1 ` .  Both bounds are established by iterating using the bounds on the imaginary part of the logarithm, ~ logimcl , but the resulting bound gives only ` N <_ 1 ` for the upper bound.  The case ` N = 1 ` is not ruled out here, but it is in some sense an \"edge case\" that can only happen under very specific conditions; in particular we show that all the angle arguments ` A , 1 / ( 1 - A ) , ( A - 1 ) / A ` must lie on the negative real axis, which is a contradiction because clearly if ` A ` is negative then the other two are positive real.  (Contributed by Mario Carneiro, 23-Sep-2014.) ",
+  "statement" : "ang.1 $e |- F = ( x e. ( CC \\ { 0 } ) , y e. ( CC \\ { 0 } ) |-> ( Im ` ( log ` ( y / x ) ) ) ) $.\nang180lem1.2 $e |- T = ( ( ( log ` ( 1 / ( 1 - A ) ) ) + ( log ` ( ( A - 1 ) / A ) ) ) + ( log ` A ) ) $.\nang180lem1.3 $e |- N = ( ( ( T / _i ) / ( 2 x. _pi ) ) - ( 1 / 2 ) ) $.\nang180lem2 $p |- ( ( A e. CC /\\ A =/= 0 /\\ A =/= 1 ) -> ( -u 2 < N /\\ N < 1 ) ) $.\n$d A x y $.\n$d x y $.\n$d x y $."
+}

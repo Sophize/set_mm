@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pellfundrp on Metamath](http://us.metamath.org/mpegif/pellfundrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pellfundre | |- ( D e. ( NN \\ []NN ) -> ( PellFund ` D ) e. RR ) |\n| 2 |  | #P_0red | |- ( D e. ( NN \\ []NN ) -> 0 e. RR ) |\n| 3 |  | #P_1red | |- ( D e. ( NN \\ []NN ) -> 1 e. RR ) |\n| 4 |  | #P_0lt1 | |- 0 < 1 |\n| 5 | 4 | #P_a1i | |- ( D e. ( NN \\ []NN ) -> 0 < 1 ) |\n| 6 |  | #P_pellfundgt1 | |- ( D e. ( NN \\ []NN ) -> 1 < ( PellFund ` D ) ) |\n| 7 | 2, 3, 1, 5, 6 | #P_lttrd | |- ( D e. ( NN \\ []NN ) -> 0 < ( PellFund ` D ) ) |\n| 8 | 1, 7 | #P_elrpd | |- ( D e. ( NN \\ []NN ) -> ( PellFund ` D ) e. RR+ ) |",
+  "conclusion" : "#P_pellfundrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_cpellfund", "#T_cfv", "#T_cD", "#T_wcel", "#T_cr", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_cc0", "#T_clt", "#T_c1", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_c1", "#T_clt", "#T_cpellfund", "#T_cfv", "#T_cD", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_cc0", "#T_clt", "#T_cpellfund", "#T_cfv", "#T_cD", "#T_cD", "#T_wcel", "#T_cn", "#T_cdif", "#T_csquarenn", "#T_wi", "#T_cpellfund", "#T_cfv", "#T_cD", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pellfundre", "#P_1red", "#P_0red", "#P_0lt1", "#P_elrpd", "#P_a1i", "#P_lttrd", "#P_pellfundgt1" ]
+}

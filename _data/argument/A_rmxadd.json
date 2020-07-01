@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rmxadd on Metamath](http://us.metamath.org/mpegif/rmxadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rmxyadd | |- ( ( A e. ( ZZ>= ` 2 ) /\\ M e. ZZ /\\ N e. ZZ ) -> ( ( A rmX ( M + N ) ) = ( ( ( A rmX M ) x. ( A rmX N ) ) + ( ( ( A ^ 2 ) - 1 ) x. ( ( A rmY M ) x. ( A rmY N ) ) ) ) /\\ ( A rmY ( M + N ) ) = ( ( ( A rmY M ) x. ( A rmX N ) ) + ( ( A rmX M ) x. ( A rmY N ) ) ) ) ) |\n| 2 | 1 | #P_simpld | |- ( ( A e. ( ZZ>= ` 2 ) /\\ M e. ZZ /\\ N e. ZZ ) -> ( A rmX ( M + N ) ) = ( ( ( A rmX M ) x. ( A rmX N ) ) + ( ( ( A ^ 2 ) - 1 ) x. ( ( A rmY M ) x. ( A rmY N ) ) ) ) ) |",
+  "conclusion" : "#P_rmxadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_crmx", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cA.wceq", "#T_crmx", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_crmx", "#T_cN", "#T_caddc", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cmin", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_crmy", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_crmy", "#T_cN", "#T_wa", "#T_cA.wceq", "#T_crmy", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cA.wceq", "#T_crmy", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_crmx", "#T_cN", "#T_caddc", "#T_cA.wceq", "#T_crmx", "#T_cM", "#T_cmul", "#T_cA.wceq", "#T_crmy", "#T_cN", "#T_cA", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_crmx", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cA", "#T_crmx", "#T_cM", "#T_cmul", "#T_cA", "#T_crmx", "#T_cN", "#T_caddc", "#T_cA", "#T_cexp", "#T_c2", "#T_cmin", "#T_c1", "#T_cmul", "#T_cA", "#T_crmy", "#T_cM", "#T_cmul", "#T_cA", "#T_crmy", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_rmxyadd" ]
+}

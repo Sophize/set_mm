@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3jcad on Metamath](http://us.metamath.org/mpegif/3jcad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3jcad.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | 3jcad.2 | |- ( ph -> ( ps -> th ) ) |\n| 3 |  | 3jcad.3 | |- ( ph -> ( ps -> ta ) ) |\n| 4 | 1 | #P_imp | |- ( ( ph /\\ ps ) -> ch ) |\n| 5 | 2 | #P_imp | |- ( ( ph /\\ ps ) -> th ) |\n| 6 | 3 | #P_imp | |- ( ( ph /\\ ps ) -> ta ) |\n| 7 | 4, 5, 6 | #P_3jca | |- ( ( ph /\\ ps ) -> ( ch /\\ th /\\ ta ) ) |\n| 8 | 7 | #P_ex | |- ( ph -> ( ps -> ( ch /\\ th /\\ ta ) ) ) |",
+  "conclusion" : "#P_3jcad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3jca", "#P_ex", "#P_imp" ]
+}

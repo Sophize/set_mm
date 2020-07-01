@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfima on Metamath](http://us.metamath.org/mpegif/nfima.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfima.1 | |- F/_ x A |\n| 2 |  | nfima.2 | |- F/_ x B |\n| 3 |  | #P_df-ima | |- ( A \" B ) = ran ( A |` B ) |\n| 4 | 1, 2 | #P_nfres | |- F/_ x ( A |` B ) |\n| 5 | 4 | #P_nfrn | |- F/_ x ran ( A |` B ) |\n| 6 | 3, 5 | #P_nfcxfr | |- F/_ x ( A \" B ) |",
+  "conclusion" : "#P_nfima",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wnfc", "#T_vx", "#T_cA", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfres", "#P_nfcxfr", "#P_df-ima", "#P_nfrn" ]
+}

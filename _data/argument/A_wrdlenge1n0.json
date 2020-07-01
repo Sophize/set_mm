@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wrdlenge1n0 on Metamath](http://us.metamath.org/mpegif/wrdlenge1n0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hashneq0 | |- ( W e. Word V -> ( 0 < ( # ` W ) <-> W =/= (/) ) ) |\n| 2 |  | #P_lencl | |- ( W e. Word V -> ( # ` W ) e. NN0 ) |\n| 3 | 2 | #P_nn0zd | |- ( W e. Word V -> ( # ` W ) e. ZZ ) |\n| 4 |  | #P_zgt0ge1 | |- ( ( # ` W ) e. ZZ -> ( 0 < ( # ` W ) <-> 1 <_ ( # ` W ) ) ) |\n| 5 | 3, 4 | #P_syl | |- ( W e. Word V -> ( 0 < ( # ` W ) <-> 1 <_ ( # ` W ) ) ) |\n| 6 | 1, 5 | #P_bitr3d | |- ( W e. Word V -> ( W =/= (/) <-> 1 <_ ( # ` W ) ) ) |",
+  "conclusion" : "#P_wrdlenge1n0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_cc0", "#T_clt", "#T_chash", "#T_cfv", "#T_cW", "#T_wb", "#T_cW", "#T_wne", "#T_c0", "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_chash", "#T_cfv", "#T_cW", "#T_wcel", "#T_cn0", "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_chash", "#T_cfv", "#T_cW", "#T_wcel", "#T_cz", "#T_chash", "#T_cfv", "#T_cW", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_clt", "#T_chash", "#T_cfv", "#T_cW", "#T_wb", "#T_c1", "#T_cle", "#T_chash", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_cc0", "#T_clt", "#T_chash", "#T_cfv", "#T_cW", "#T_wb", "#T_c1", "#T_cle", "#T_chash", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wi", "#T_cW", "#T_wne", "#T_c0", "#T_wb", "#T_c1", "#T_cle", "#T_chash", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0zd", "#P_lencl", "#P_hashneq0", "#P_syl", "#P_zgt0ge1", "#P_bitr3d" ]
+}

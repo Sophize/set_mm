@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ismbl on Metamath](http://us.metamath.org/mpegif/ismbl.html)"
+  } ],
+  "names" : [ "ismbl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wb", "#T_cA", "#T_wss", "#T_cr", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cpw", "#T_cr", "#T_covol", "#T_cfv", "#T_vx", "#T_wcel", "#T_cr", "#T_wi", "#T_covol", "#T_cfv", "#T_vx", "#T_wceq", "#T_covol", "#T_cfv", "#T_vx", "#T_cin", "#T_cA", "#T_caddc", "#T_covol", "#T_cfv", "#T_vx", "#T_cdif", "#T_cA", "#T_cA", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \" ` A ` is Lebesgue-measurable\".  A set is measurable if it splits every other set ` x ` in a \"nice\" way, that is, if the measure of the pieces ` x i^i A ` and ` x \\ A ` sum up to the measure of ` x ` (assuming that the measure of ` x ` is a real number, so that this addition makes sense).  (Contributed by Mario Carneiro, 17-Mar-2014.) ",
+  "statement" : "ismbl $p |- ( A e. dom vol <-> ( A C_ RR /\\ A. x e. ~P RR ( ( vol* ` x ) e. RR -> ( vol* ` x ) = ( ( vol* ` ( x i^i A ) ) + ( vol* ` ( x \\ A ) ) ) ) ) ) $.\n$d A x $."
+}

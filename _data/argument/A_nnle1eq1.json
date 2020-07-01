@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnle1eq1 on Metamath](http://us.metamath.org/mpegif/nnle1eq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnge1 | |- ( A e. NN -> 1 <_ A ) |\n| 2 | 1 | #P_biantrud | |- ( A e. NN -> ( A <_ 1 <-> ( A <_ 1 /\\ 1 <_ A ) ) ) |\n| 3 |  | #P_nnre | |- ( A e. NN -> A e. RR ) |\n| 4 |  | #P_1re | |- 1 e. RR |\n| 5 |  | #P_letri3 | |- ( ( A e. RR /\\ 1 e. RR ) -> ( A = 1 <-> ( A <_ 1 /\\ 1 <_ A ) ) ) |\n| 6 | 3, 4, 5 | #P_sylancl | |- ( A e. NN -> ( A = 1 <-> ( A <_ 1 /\\ 1 <_ A ) ) ) |\n| 7 | 2, 6 | #P_bitr4d | |- ( A e. NN -> ( A <_ 1 <-> A = 1 ) ) |",
+  "conclusion" : "#P_nnle1eq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_wa", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_wa", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_wa", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cn", "#T_wi", "#T_cA", "#T_cle", "#T_c1", "#T_wb", "#T_cA", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitr4d", "#P_nnge1", "#P_nnre", "#P_letri3", "#P_sylancl", "#P_biantrud", "#P_1re" ]
+}

@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See geoser on Metamath](http://us.metamath.org/mpegif/geoser.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "Sum of a Geometric Series", "geoser" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_c1", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cA", "#T_cexp", "#T_vk", "#T_wceq", "#T_c1", "#T_cmin", "#T_cA", "#T_cexp", "#T_cN", "#T_cdiv", "#T_c1", "#T_cmin", "#T_cA", "#T_cA", "#T_vk", "#T_cN", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the finite geometric series ` 1 + A ^ 1 + A ^ 2 + ` ... ` + A ^ ( N - 1 ) ` .  This is Metamath 100 proof #66.  (Contributed by NM, 12-May-2006.)  (Proof shortened by Mario Carneiro, 15-Jun-2014.) ",
+  "statement" : "geoser.1 $e |- ( ph -> A e. CC ) $.\ngeoser.2 $e |- ( ph -> A =/= 1 ) $.\ngeoser.3 $e |- ( ph -> N e. NN0 ) $.\ngeoser $p |- ( ph -> sum_ k e. ( 0 ... ( N - 1 ) ) ( A ^ k ) = ( ( 1 - ( A ^ N ) ) / ( 1 - A ) ) ) $.\n$d A k $.\n$d N k $.\n$d k ph $."
+}

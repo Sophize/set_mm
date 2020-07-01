@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r1ord on Metamath](http://us.metamath.org/mpegif/r1ord.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r1fnon | |- R1 Fn On |\n| 2 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 3 | 1, 2 | #P_ax-mp | |- dom R1 = On |\n| 4 | 3 | #P_eleq2i | |- ( B e. dom R1 <-> B e. On ) |\n| 5 |  | #P_r1ordg | |- ( B e. dom R1 -> ( A e. B -> ( R1 ` A ) e. ( R1 ` B ) ) ) |\n| 6 | 4, 5 | #P_sylbir | |- ( B e. On -> ( A e. B -> ( R1 ` A ) e. ( R1 ` B ) ) ) |",
+  "conclusion" : "#P_r1ord",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cr1", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cr1", "#T_cfv", "#T_cA", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sylbir", "#P_eleq2i", "#P_fndm", "#P_r1fnon", "#P_r1ordg" ]
+}

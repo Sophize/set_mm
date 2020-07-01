@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See maxprmfct on Metamath](http://us.metamath.org/mpegif/maxprmfct.html)"
+  } ],
+  "names" : [ "maxprmfct" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cprime", "#T_crab--3", "#T_vz", "#T_cdvds", "#T_cN", "#T_crab--4", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_cS", "#T_wss", "#T_cz", "#T_w3a--1", "#T_cS", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_cle", "#T_vx", "#T_wa", "#T_csup--1", "#T_cS", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wcel", "#T_cS", "#T_cN", "#T_vx", "#T_vy", "#T_cN", "#T_vy", "#T_vz", "#T_cS", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The set of prime factors of an integer greater than or equal to 2 satisfies the conditions to have a supremum, and that supremum is a member of the set.  (Contributed by Paul Chapman, 17-Nov-2012.) ",
+  "statement" : "maxprmfct.1 $e |- S = { z e. Prime | z || N } $.\nmaxprmfct $p |- ( N e. ( ZZ>= ` 2 ) -> ( ( S C_ ZZ /\\ S =/= (/) /\\ E. x e. ZZ A. y e. S y <_ x ) /\\ sup ( S , RR , < ) e. S ) ) $.\n$d N x y $.\n$d N y z $.\n$d S x y $."
+}

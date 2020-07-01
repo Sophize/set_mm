@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-prf on Metamath](http://us.metamath.org/mpegif/df-prf.html)"
+  } ],
+  "names" : [ "df-prf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cprf", "#T_wceq", "#T_vf", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vg", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_csb--1", "#T_cdm", "#T_c1st", "#T_cfv", "#T_vf", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_cop--1", "#T_vx", "#T_cmpt--1", "#T_vb", "#T_cmpt--2", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_vf", "#T_cfv", "#T_vx", "#T_cop--2", "#T_c1st", "#T_cfv", "#T_vg", "#T_cfv", "#T_vx", "#T_cop--3", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_vb", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_vb", "#T_cmpt2--4", "#T_vh", "#T_cmpt--1", "#T_cdm", "#T_vx", "#T_c2nd", "#T_cfv", "#T_vf", "#T_vy", "#T_cmpt--2", "#T_cop--1", "#T_vx", "#T_c2nd", "#T_cfv", "#T_vf", "#T_vy", "#T_cfv", "#T_vh", "#T_cop--2", "#T_vx", "#T_c2nd", "#T_cfv", "#T_vg", "#T_vy", "#T_cfv", "#T_vh", "#T_cop--3", "#T_cop--3", "#T_vb", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the pairing operation for functors (which takes two functors ` F : C --> D ` and ` G : C --> E ` and produces ` ( F pairF G ) : C --> ( D Xc. E ) ` ).  (Contributed by Mario Carneiro, 11-Jan-2017.) ",
+  "statement" : "df-prf $p |- pairF = ( f e. _V , g e. _V |-> [_ dom ( 1st ` f ) / b ]_ <. ( x e. b |-> <. ( ( 1st ` f ) ` x ) , ( ( 1st ` g ) ` x ) >. ) , ( x e. b , y e. b |-> ( h e. dom ( x ( 2nd ` f ) y ) |-> <. ( ( x ( 2nd ` f ) y ) ` h ) , ( ( x ( 2nd ` g ) y ) ` h ) >. ) ) >. ) $.\n$d b f g h x y $."
+}

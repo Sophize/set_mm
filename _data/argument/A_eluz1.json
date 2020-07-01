@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eluz1 on Metamath](http://us.metamath.org/mpegif/eluz1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uzval | |- ( M e. ZZ -> ( ZZ>= ` M ) = { k e. ZZ | M <_ k } ) |\n| 2 | 1 | #P_eleq2d | |- ( M e. ZZ -> ( N e. ( ZZ>= ` M ) <-> N e. { k e. ZZ | M <_ k } ) ) |\n| 3 |  | #P_breq2 | |- ( k = N -> ( M <_ k <-> M <_ N ) ) |\n| 4 | 3 | #P_elrab | |- ( N e. { k e. ZZ | M <_ k } <-> ( N e. ZZ /\\ M <_ N ) ) |\n| 5 | 2, 4 | #P_syl6bb | |- ( M e. ZZ -> ( N e. ( ZZ>= ` M ) <-> ( N e. ZZ /\\ M <_ N ) ) ) |",
+  "conclusion" : "#P_eluz1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cuz", "#T_cfv", "#T_cM", "#T_wceq", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cM", "#T_cle", "#T_vk", "#T_crab--4", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_cN", "#T_wcel", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cM", "#T_cle", "#T_vk", "#T_crab--4", "#T_vk", "#T_wceq", "#T_cN", "#T_wi", "#T_cM", "#T_cle", "#T_vk", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cM", "#T_cle", "#T_vk", "#T_crab--4", "#T_wb", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_eleq2d", "#P_syl6bb", "#P_breq2", "#P_uzval" ]
+}

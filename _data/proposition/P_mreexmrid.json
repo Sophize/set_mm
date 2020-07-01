@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mreexmrid on Metamath](http://us.metamath.org/mpegif/mreexmrid.html)"
+  } ],
+  "names" : [ "mreexmrid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cN", "#T_cfv", "#T_vs", "#T_cun", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_cdif", "#T_cN", "#T_cfv", "#T_vs", "#T_vy", "#T_wcel", "#T_cN", "#T_cfv", "#T_vs", "#T_cun", "#T_csn--1", "#T_vz", "#T_csn--2", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_wn", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cS", "#T_cun", "#T_csn--1", "#T_cY", "#T_csn--2", "#T_wcel", "#T_cI", "#T_cN", "#T_vs", "#T_vy", "#T_vz", "#T_cS", "#T_vs", "#T_vy", "#T_vz", "#T_cX", "#T_vs", "#T_vy", "#T_cY", "#T_vs", "#T_vy", "#T_vz", "#T_wph", "#T_vs", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a Moore system whose closure operator has the exchange property, if a set is independent and an element is not in its closure, then adding the element to the set gives another independent set.  Lemma 4.1.5 in [FaureFrolicher] p. 84.  (Contributed by David Moews, 1-May-2017.) ",
+  "statement" : "mreexmrid.1 $e |- ( ph -> A e. ( Moore ` X ) ) $.\nmreexmrid.2 $e |- N = ( mrCls ` A ) $.\nmreexmrid.3 $e |- I = ( mrInd ` A ) $.\nmreexmrid.4 $e |- ( ph -> A. s e. ~P X A. y e. X A. z e. ( ( N ` ( s u. { y } ) ) \\ ( N ` s ) ) y e. ( N ` ( s u. { z } ) ) ) $.\nmreexmrid.5 $e |- ( ph -> S e. I ) $.\nmreexmrid.6 $e |- ( ph -> Y e. X ) $.\nmreexmrid.7 $e |- ( ph -> -. Y e. ( N ` S ) ) $.\nmreexmrid $p |- ( ph -> ( S u. { Y } ) e. I ) $.\n$d N s y z $.\n$d S s y z $.\n$d X s y $.\n$d Y s y z $.\n$d ph s y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprod2d on Metamath](http://us.metamath.org/mpegif/fprod2d.html)"
+  } ],
+  "names" : [ "fprod2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_cop--1", "#T_vj", "#T_cop--2", "#T_vk", "#T_cop--3", "#T_wi", "#T_cD", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vj", "#T_cprod--2", "#T_cA", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vz", "#T_cprod--2", "#T_ciun--1", "#T_vj", "#T_ciun--2", "#T_cA", "#T_csn--1", "#T_vj", "#T_csn--2", "#T_cxp", "#T_cB", "#T_cD", "#T_cA", "#T_vj", "#T_vk", "#T_vz", "#T_cB", "#T_vk", "#T_vz", "#T_cC", "#T_vz", "#T_cD", "#T_vj", "#T_vk", "#T_vj", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Write a double product as a product over a two-dimensional region. Compare ~ fsum2d .  (Contributed by Scott Fenton, 30-Jan-2018.) ",
+  "statement" : "fprod2d.1 $e |- ( z = <. j , k >. -> D = C ) $.\nfprod2d.2 $e |- ( ph -> A e. Fin ) $.\nfprod2d.3 $e |- ( ( ph /\\ j e. A ) -> B e. Fin ) $.\nfprod2d.4 $e |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> C e. CC ) $.\nfprod2d $p |- ( ph -> prod_ j e. A prod_ k e. B C = prod_ z e. U_ j e. A ( { j } X. B ) D ) $.\n$d A j k z $.\n$d B k z $.\n$d C z $.\n$d D j k $.\n$d j k ph z $."
+}

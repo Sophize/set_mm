@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absrpcld on Metamath](http://us.metamath.org/mpegif/absrpcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abscld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | absne0d.2 | |- ( ph -> A =/= 0 ) |\n| 3 |  | #P_absrpcl | |- ( ( A e. CC /\\ A =/= 0 ) -> ( abs ` A ) e. RR+ ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( abs ` A ) e. RR+ ) |",
+  "conclusion" : "#P_absrpcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_absrpcl" ]
+}

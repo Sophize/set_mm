@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvrald on Metamath](http://us.metamath.org/mpegif/cbvrald.html)"
+  } ],
+  "names" : [ "cbvrald" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vy", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wps", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_wch", "#T_cA", "#T_vx", "#T_cA", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule used to change bound variables, using implicit substitution. (Contributed by BJ, 22-Nov-2019.) ",
+  "statement" : "cbvrald.nf0 $e |- F/ x ph $.\ncbvrald.nf1 $e |- F/ y ph $.\ncbvrald.nf2 $e |- ( ph -> F/ y ps ) $.\ncbvrald.nf3 $e |- ( ph -> F/ x ch ) $.\ncbvrald.is $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.\ncbvrald $p |- ( ph -> ( A. x e. A ps <-> A. y e. A ch ) ) $.\n$d A x $.\n$d A y $."
+}

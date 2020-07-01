@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qsqcl on Metamath](http://us.metamath.org/mpegif/qsqcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_qcn | |- ( A e. QQ -> A e. CC ) |\n| 2 |  | #P_sqval | |- ( A e. CC -> ( A ^ 2 ) = ( A x. A ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. QQ -> ( A ^ 2 ) = ( A x. A ) ) |\n| 4 |  | #P_qmulcl | |- ( ( A e. QQ /\\ A e. QQ ) -> ( A x. A ) e. QQ ) |\n| 5 | 4 | #P_anidms | |- ( A e. QQ -> ( A x. A ) e. QQ ) |\n| 6 | 3, 5 | #P_eqeltrd | |- ( A e. QQ -> ( A ^ 2 ) e. QQ ) |",
+  "conclusion" : "#P_qsqcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_cA", "#T_wcel", "#T_cq", "#T_wi", "#T_cA", "#T_cexp", "#T_c2", "#T_wcel", "#T_cq" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqval", "#P_eqeltrd", "#P_qcn", "#P_syl", "#P_qmulcl", "#P_anidms" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mgpsca on Metamath](http://us.metamath.org/mpegif/mgpsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mgpbas.1 | |- M = ( mulGrp ` R ) |\n| 2 |  | mgpsca.s | |- S = ( Scalar ` R ) |\n| 3 |  | #P_df-sca | |- Scalar = Slot 5 |\n| 4 |  | #P_5nn | |- 5 e. NN |\n| 5 |  | #P_2re | |- 2 e. RR |\n| 6 |  | #P_2lt5 | |- 2 < 5 |\n| 7 | 5, 6 | #P_gtneii | |- 5 =/= 2 |\n| 8 | 1, 3, 4, 7 | #P_mgplem | |- ( Scalar ` R ) = ( Scalar ` M ) |\n| 9 | 2, 8 | #P_eqtri | |- S = ( Scalar ` M ) |",
+  "conclusion" : "#P_mgpsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cS", "#T_wceq", "#T_csca", "#T_cfv", "#T_cR", "#T_csca", "#T_wceq", "#T_cslot", "#T_c5", "#T_c5", "#T_wcel", "#T_cn", "#T_c2", "#T_wcel", "#T_cr", "#T_c2", "#T_clt", "#T_c5", "#T_c5", "#T_wne", "#T_c2", "#T_csca", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cM", "#T_cS", "#T_wceq", "#T_csca", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_gtneii", "#P_df-sca", "#P_mgplem", "#P_2lt5", "#P_5nn", "#P_2re" ]
+}

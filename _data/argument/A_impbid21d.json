@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See impbid21d on Metamath](http://us.metamath.org/mpegif/impbid21d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | impbid21d.1 | |- ( ps -> ( ch -> th ) ) |\n| 2 |  | impbid21d.2 | |- ( ph -> ( th -> ch ) ) |\n| 3 | 1 | #P_a1i | |- ( ph -> ( ps -> ( ch -> th ) ) ) |\n| 4 | 2 | #P_a1d | |- ( ph -> ( ps -> ( th -> ch ) ) ) |\n| 5 | 3, 4 | #P_impbidd | |- ( ph -> ( ps -> ( ch <-> th ) ) ) |",
+  "conclusion" : "#P_impbid21d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbidd", "#P_a1i", "#P_a1d" ]
+}

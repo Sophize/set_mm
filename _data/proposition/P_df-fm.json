@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-fm on Metamath](http://us.metamath.org/mpegif/df-fm.html)"
+  } ],
+  "names" : [ "df-fm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cfm", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vy", "#T_cmpt--1", "#T_cfbas", "#T_cfv", "#T_cdm", "#T_vf", "#T_cmpt--2", "#T_vx", "#T_cfg", "#T_crn", "#T_vt", "#T_cmpt--1", "#T_vy", "#T_cmpt--2", "#T_vf", "#T_cima", "#T_vt", "#T_vf", "#T_vt", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function that takes a filter to a neighborhood filter of the range.  (Since we now allow filter bases to have support smaller than the base set, the function has to come first to ensure that curryings are sets.)  (Contributed by Jeff Hankins, 5-Sep-2009.)  (Revised by Stefan O'Rear, 20-Jul-2015.) ",
+  "statement" : "df-fm $p |- FilMap = ( x e. _V , f e. _V |-> ( y e. ( fBas ` dom f ) |-> ( x filGen ran ( t e. y |-> ( f \" t ) ) ) ) ) $.\n$d f t x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lcomf on Metamath](http://us.metamath.org/mpegif/lcomf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lcomf.f | |- F = ( Scalar ` W ) |\n| 2 |  | lcomf.k | |- K = ( Base ` F ) |\n| 3 |  | lcomf.s | |- .x. = ( .s ` W ) |\n| 4 |  | lcomf.b | |- B = ( Base ` W ) |\n| 5 |  | lcomf.w | |- ( ph -> W e. LMod ) |\n| 6 |  | lcomf.g | |- ( ph -> G : I --> K ) |\n| 7 |  | lcomf.h | |- ( ph -> H : I --> B ) |\n| 8 |  | lcomf.i | |- ( ph -> I e. V ) |\n| 9 | 4, 1, 3, 2 | #P_lmodvscl | |- ( ( W e. LMod /\\ x e. K /\\ y e. B ) -> ( x .x. y ) e. B ) |\n| 10 | 9 | #P_3expb | |- ( ( W e. LMod /\\ ( x e. K /\\ y e. B ) ) -> ( x .x. y ) e. B ) |\n| 11 | 5, 10 | #P_sylan | |- ( ( ph /\\ ( x e. K /\\ y e. B ) ) -> ( x .x. y ) e. B ) |\n| 12 |  | #P_inidm | |- ( I i^i I ) = I |\n| 13 | 11, 6, 7, 8, 8, 12 | #P_off | |- ( ph -> ( G oF .x. H ) : I --> B ) |",
+  "conclusion" : "#P_lcomf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cK", "#T_wph", "#T_wi", "#T_cH", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cV", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_vx.wal", "#T_wcel", "#T_cK", "#T_w3a--2", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cK", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cK", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cI", "#T_cin", "#T_cI", "#T_wceq", "#T_cI", "#T_wph", "#T_wi", "#T_cG", "#T_cof", "#T_c.x", "#T_cH", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3expb", "#P_off", "#P_sylan", "#P_inidm", "#P_lmodvscl" ]
+}

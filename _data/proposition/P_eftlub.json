@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eftlub on Metamath](http://us.metamath.org/mpegif/eftlub.html)"
+  } ],
+  "names" : [ "eftlub" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cabs", "#T_cfv", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_cH", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cabs", "#T_cfv", "#T_cA", "#T_cexp", "#T_cM", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cM", "#T_cmul", "#T_c1", "#T_cdiv", "#T_cM", "#T_caddc", "#T_c1", "#T_cexp", "#T_vn", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_cle", "#T_c1", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_cF", "#T_cfv", "#T_vk", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA", "#T_cexp", "#T_cM", "#T_cmul", "#T_cM", "#T_caddc", "#T_c1", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cM", "#T_cmul", "#T_cM", "#T_cA", "#T_vk", "#T_vn", "#T_cF", "#T_vk", "#T_cG", "#T_vk", "#T_cM", "#T_vk", "#T_vn", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An upper bound on the absolute value of the infinite tail of the series expansion of the exponential function on the closed unit disk. (Contributed by Paul Chapman, 19-Jan-2008.)  (Proof shortened by Mario Carneiro, 29-Apr-2014.) ",
+  "statement" : "eftl.1 $e |- F = ( n e. NN0 |-> ( ( A ^ n ) / ( ! ` n ) ) ) $.\neftl.2 $e |- G = ( n e. NN0 |-> ( ( ( abs ` A ) ^ n ) / ( ! ` n ) ) ) $.\neftl.3 $e |- H = ( n e. NN0 |-> ( ( ( ( abs ` A ) ^ M ) / ( ! ` M ) ) x. ( ( 1 / ( M + 1 ) ) ^ n ) ) ) $.\neftl.4 $e |- ( ph -> M e. NN ) $.\neftl.5 $e |- ( ph -> A e. CC ) $.\neftl.6 $e |- ( ph -> ( abs ` A ) <_ 1 ) $.\neftlub $p |- ( ph -> ( abs ` sum_ k e. ( ZZ>= ` M ) ( F ` k ) ) <_ ( ( ( abs ` A ) ^ M ) x. ( ( M + 1 ) / ( ( ! ` M ) x. M ) ) ) ) $.\n$d A k n $.\n$d F k $.\n$d G k $.\n$d M k n $.\n$d k ph $."
+}

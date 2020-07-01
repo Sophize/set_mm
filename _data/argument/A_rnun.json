@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rnun on Metamath](http://us.metamath.org/mpegif/rnun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvun | |- `' ( A u. B ) = ( `' A u. `' B ) |\n| 2 | 1 | #P_dmeqi | |- dom `' ( A u. B ) = dom ( `' A u. `' B ) |\n| 3 |  | #P_dmun | |- dom ( `' A u. `' B ) = ( dom `' A u. dom `' B ) |\n| 4 | 2, 3 | #P_eqtri | |- dom `' ( A u. B ) = ( dom `' A u. dom `' B ) |\n| 5 |  | #P_df-rn | |- ran ( A u. B ) = dom `' ( A u. B ) |\n| 6 |  | #P_df-rn | |- ran A = dom `' A |\n| 7 |  | #P_df-rn | |- ran B = dom `' B |\n| 8 | 6, 7 | #P_uneq12i | |- ( ran A u. ran B ) = ( dom `' A u. dom `' B ) |\n| 9 | 4, 5, 8 | #P_3eqtr4i | |- ran ( A u. B ) = ( ran A u. ran B ) |",
+  "conclusion" : "#P_rnun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_ccnv", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_crn", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cun", "#T_cdm", "#T_ccnv", "#T_cB.wceq", "#T_crn", "#T_cA", "#T_cun", "#T_cB", "#T_wceq", "#T_crn", "#T_cA", "#T_cun", "#T_crn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_3eqtr4i", "#P_dmun", "#P_cnvun", "#P_df-rn", "#P_dmeqi", "#P_uneq12i" ]
+}

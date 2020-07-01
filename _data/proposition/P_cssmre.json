@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cssmre on Metamath](http://us.metamath.org/mpegif/cssmre.html)"
+  } ],
+  "names" : [ "cssmre" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cC", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cphl", "#T_wi", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The closed subspaces of a pre-Hilbert space are a Moore system.  Unlike many of our other examples of closure systems, this one is _not_ usually an algebraic closure system ~ df-acs : consider the Hilbert space of sequences ` NN --> RR ` with convergent sum; the subspace of all sequences with finite support is the classic example of a non-closed subspace, but for every finite set of sequences of finite support, there is a finite-dimensional (and hence closed) subspace containing all of the sequences, so if closed subspaces were an algebraic closure system this would violate ~ acsfiel .  (Contributed by Mario Carneiro, 13-Oct-2015.) ",
+  "statement" : "cssmre.v $e |- V = ( Base ` W ) $.\ncssmre.c $e |- C = ( CSubSp ` W ) $.\ncssmre $p |- ( W e. PreHil -> C e. ( Moore ` V ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See meetcl on Metamath](http://us.metamath.org/mpegif/meetcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | meetcl.b | |- B = ( Base ` K ) |\n| 2 |  | meetcl.m | |- ./\\ = ( meet ` K ) |\n| 3 |  | meetcl.k | |- ( ph -> K e. V ) |\n| 4 |  | meetcl.x | |- ( ph -> X e. B ) |\n| 5 |  | meetcl.y | |- ( ph -> Y e. B ) |\n| 6 |  | meetcl.e | |- ( ph -> <. X , Y >. e. dom ./\\ ) |\n| 7 |  | #P_eqid | |- ( glb ` K ) = ( glb ` K ) |\n| 8 | 7, 2, 3, 4, 5 | #P_meetval | |- ( ph -> ( X ./\\ Y ) = ( ( glb ` K ) ` { X , Y } ) ) |\n| 9 | 7, 2, 3, 4, 5 | #P_meetdef | |- ( ph -> ( <. X , Y >. e. dom ./\\ <-> { X , Y } e. dom ( glb ` K ) ) ) |\n| 10 | 6, 9 | #P_mpbid | |- ( ph -> { X , Y } e. dom ( glb ` K ) ) |\n| 11 | 1, 7, 3, 10 | #P_glbcl | |- ( ph -> ( ( glb ` K ) ` { X , Y } ) e. B ) |\n| 12 | 8, 11 | #P_eqeltrd | |- ( ph -> ( X ./\\ Y ) e. B ) |",
+  "conclusion" : "#P_meetcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.an", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.an", "#T_cglb", "#T_cfv", "#T_cK", "#T_wceq", "#T_cglb", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_wceq", "#T_cglb", "#T_cfv", "#T_cK", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.an", "#T_wb", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wcel", "#T_cdm", "#T_cglb", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wcel", "#T_cdm", "#T_cglb", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cglb", "#T_cfv", "#T_cK", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_glbcl", "#P_mpbid", "#P_eqeltrd", "#P_meetval", "#P_meetdef" ]
+}

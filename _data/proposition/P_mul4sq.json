@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mul4sq on Metamath](http://us.metamath.org/mpegif/mul4sq.html)"
+  } ],
+  "names" : [ "mul4sq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cab--1", "#T_vn", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cz", "#T_vn", "#T_wceq", "#T_vx", "#T_cexp", "#T_c2", "#T_caddc", "#T_vy", "#T_cexp", "#T_c2", "#T_caddc", "#T_vz", "#T_cexp", "#T_c2", "#T_caddc", "#T_vw", "#T_cexp", "#T_c2", "#T_cab--3", "#T_cA", "#T_wcel", "#T_cS", "#T_wa", "#T_cB", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_wcel", "#T_cS", "#T_cA", "#T_vn", "#T_cB", "#T_vn", "#T_cS", "#T_vn", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Euler's four-square identity:  The product of two sums of four squares is also a sum of four squares.  This is usually quoted as an explicit formula involving eight real variables; we save some time by working with complex numbers (gaussian integers) instead, so that we only have to work with four variables, and also hiding the actual formula for the product in the proof of ~ mul4sqlem .  (For the curious, the explicit formula that is used is ` ( | a | ^ 2 + | b | ^ 2 ) ( | c | ^ 2 + | d | ^ 2 ) = ` ` | a * x. c + b x. d * | ^ 2 + | a * x. d - b x. c * | ^ 2 ` .) (Contributed by Mario Carneiro, 14-Jul-2014.) ",
+  "statement" : "4sq.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.\nmul4sq $p |- ( ( A e. S /\\ B e. S ) -> ( A x. B ) e. S ) $.\n$d A n $.\n$d B n $.\n$d S n $.\n$d n w x y z $."
+}

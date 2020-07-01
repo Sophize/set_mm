@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cid on Metamath](http://us.metamath.org/mpegif/df-cid.html)"
+  } ],
+  "names" : [ "df-cid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccid", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_csb--1", "#T_chom", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vh", "#T_csb--3", "#T_csb--1", "#T_cco", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vo", "#T_csb--3", "#T_vx", "#T_cmpt--1", "#T_vb", "#T_cmpt--2", "#T_crio--1", "#T_vg", "#T_crio--2", "#T_vx", "#T_vh", "#T_vx", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_vy", "#T_vh", "#T_vx", "#T_vg", "#T_cop--1", "#T_vy", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_vo", "#T_vx", "#T_vf", "#T_wceq", "#T_vf", "#T_wa", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_vx", "#T_vh", "#T_vy", "#T_vf", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_vo", "#T_vy", "#T_vg", "#T_wceq", "#T_vf", "#T_vb", "#T_vc", "#T_vf", "#T_vg", "#T_vh", "#T_vo", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the category identity arrow.  Since it is uniquely defined when it exists, we do not need to add it to the data of the category, and instead extract it by uniqueness.  (Contributed by Mario Carneiro, 3-Jan-2017.) ",
+  "statement" : "df-cid $p |- Id = ( c e. Cat |-> [_ ( Base ` c ) / b ]_ [_ ( Hom ` c ) / h ]_ [_ ( comp ` c ) / o ]_ ( x e. b |-> ( iota_ g e. ( x h x ) A. y e. b ( A. f e. ( y h x ) ( g ( <. y , x >. o x ) f ) = f /\\ A. f e. ( x h y ) ( f ( <. x , x >. o y ) g ) = f ) ) ) ) $.\n$d b c f g h o x y $."
+}

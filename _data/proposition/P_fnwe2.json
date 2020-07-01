@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnwe2 on Metamath](http://us.metamath.org/mpegif/fnwe2.html)"
+  } ],
+  "names" : [ "fnwe2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_wi", "#T_cS", "#T_wceq", "#T_cU", "#T_cT", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_cF", "#T_cfv", "#T_vx", "#T_cR", "#T_cF", "#T_cfv", "#T_vy", "#T_wo", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_vy", "#T_wa", "#T_vx", "#T_cU", "#T_vy", "#T_copab--6", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cU", "#T_wwe", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_cF", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_crab--4", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cA", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cR", "#T_wwe", "#T_cB", "#T_wph", "#T_wi", "#T_cT", "#T_wwe", "#T_cA", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_vz", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cU", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A well-ordering can be constructed on a partitioned set by patching together well-orderings on each partition using a well-ordering on the partitions themselves.  Similar to ~ fnwe but does not require the within-partition ordering to be globally well.  (Contributed by Stefan O'Rear, 19-Jan-2015.) ",
+  "statement" : "fnwe2.su $e |- ( z = ( F ` x ) -> S = U ) $.\nfnwe2.t $e |- T = { <. x , y >. | ( ( F ` x ) R ( F ` y ) \\/ ( ( F ` x ) = ( F ` y ) /\\ x U y ) ) } $.\nfnwe2.s $e |- ( ( ph /\\ x e. A ) -> U We { y e. A | ( F ` y ) = ( F ` x ) } ) $.\nfnwe2.f $e |- ( ph -> ( F |` A ) : A --> B ) $.\nfnwe2.r $e |- ( ph -> R We B ) $.\nfnwe2 $p |- ( ph -> T We A ) $.\n$d A x y z $.\n$d F x y z $.\n$d R x y $.\n$d S x y $.\n$d U y z $.\n$d ph x y z $."
+}

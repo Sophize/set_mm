@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isum on Metamath](http://us.metamath.org/mpegif/isum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | zsum.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | zsum.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | isum.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = B ) |\n| 4 |  | isum.4 | |- ( ( ph /\\ k e. Z ) -> B e. CC ) |\n| 5 |  | #P_ssid | |- Z C_ Z |\n| 6 | 5 | #P_a1i | |- ( ph -> Z C_ Z ) |\n| 7 |  | #P_iftrue | |- ( k e. Z -> if ( k e. Z , B , 0 ) = B ) |\n| 8 | 7 | #P_adantl | |- ( ( ph /\\ k e. Z ) -> if ( k e. Z , B , 0 ) = B ) |\n| 9 | 3, 8 | #P_eqtr4d | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = if ( k e. Z , B , 0 ) ) |\n| 10 | 1, 2, 6, 9, 4 | #P_zsum | |- ( ph -> sum_ k e. Z B = ( ~~> ` seq M ( + , F ) ) ) |",
+  "conclusion" : "#P_isum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cB", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cZ", "#T_wss", "#T_cZ", "#T_wph", "#T_wi", "#T_cZ", "#T_wss", "#T_cZ", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cc0", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cc0", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cZ", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cc0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cB", "#T_wceq", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_zsum", "#P_ssid", "#P_iftrue", "#P_adantl", "#P_a1i", "#P_eqtr4d" ]
+}

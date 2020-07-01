@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cjne0d on Metamath](http://us.metamath.org/mpegif/cjne0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | cjne0d.2 | |- ( ph -> A =/= 0 ) |\n| 3 |  | #P_cjne0 | |- ( A e. CC -> ( A =/= 0 <-> ( * ` A ) =/= 0 ) ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> ( A =/= 0 <-> ( * ` A ) =/= 0 ) ) |\n| 5 | 2, 4 | #P_mpbid | |- ( ph -> ( * ` A ) =/= 0 ) |",
+  "conclusion" : "#P_cjne0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_ccj", "#T_cfv", "#T_cA", "#T_wne", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_syl", "#P_cjne0" ]
+}

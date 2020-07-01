@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See thlleval on Metamath](http://us.metamath.org/mpegif/thlleval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | thlval.k | |- K = ( toHL ` W ) |\n| 2 |  | thlbas.c | |- C = ( CSubSp ` W ) |\n| 3 |  | thlleval.l | |- .<_ = ( le ` K ) |\n| 4 |  | #P_fvex | |- ( CSubSp ` W ) e. _V |\n| 5 | 2, 4 | #P_eqeltri | |- C e. _V |\n| 6 |  | #P_eqid | |- ( toInc ` C ) = ( toInc ` C ) |\n| 7 |  | #P_eqid | |- ( le ` ( toInc ` C ) ) = ( le ` ( toInc ` C ) ) |\n| 8 | 1, 2, 6, 7 | #P_thlle | |- ( le ` ( toInc ` C ) ) = ( le ` K ) |\n| 9 | 3, 8 | #P_eqtr4i | |- .<_ = ( le ` ( toInc ` C ) ) |\n| 10 | 6, 9 | #P_ipole | |- ( ( C e. _V /\\ S e. C /\\ T e. C ) -> ( S .<_ T <-> S C_ T ) ) |\n| 11 | 5, 10 | #P_mp3an1 | |- ( ( S e. C /\\ T e. C ) -> ( S .<_ T <-> S C_ T ) ) |",
+  "conclusion" : "#P_thlleval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_cthl", "#T_cfv", "#T_cW", "#T_cC", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cW", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_ccss", "#T_cfv", "#T_cW", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_cipo", "#T_cfv", "#T_cC", "#T_wceq", "#T_cipo", "#T_cfv", "#T_cC", "#T_cple", "#T_cfv", "#T_cipo", "#T_cfv", "#T_cC", "#T_wceq", "#T_cple", "#T_cfv", "#T_cipo", "#T_cfv", "#T_cC", "#T_cple", "#T_cfv", "#T_cipo", "#T_cfv", "#T_cC", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cipo", "#T_cfv", "#T_cC", "#T_cC", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cS", "#T_wcel", "#T_cC", "#T_w3a--2", "#T_cT", "#T_wcel", "#T_cC", "#T_wi", "#T_cS", "#T_c.le", "#T_cT", "#T_wb", "#T_cS", "#T_wss", "#T_cT", "#T_cS", "#T_wcel", "#T_cC", "#T_wa", "#T_cT", "#T_wcel", "#T_cC", "#T_wi", "#T_cS", "#T_c.le", "#T_cT", "#T_wb", "#T_cS", "#T_wss", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqeltri", "#P_eqid", "#P_thlle", "#P_mp3an1", "#P_ipole", "#P_fvex" ]
+}

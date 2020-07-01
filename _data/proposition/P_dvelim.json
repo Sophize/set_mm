@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvelim on Metamath](http://us.metamath.org/mpegif/dvelim.html)"
+  } ],
+  "names" : [ "dvelim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wps", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This theorem can be used to eliminate a distinct variable restriction on ` x ` and ` z ` and replace it with the \"distinctor\" ` -. A. x x = y ` as an antecedent. ` ph ` normally has ` z ` free and can be read ` ph ( z ) ` , and ` ps ` substitutes ` y ` for ` z ` and can be read ` ph ( y ) ` .  We do not require that ` x ` and ` y ` be distinct: if they are not, the distinctor will become false (in multiple-element domains of discourse) and \"protect\" the consequent. To obtain a closed-theorem form of this inference, prefix the hypotheses with ` A. x A. z ` , conjoin them, and apply ~ dvelimdf . Other variants of this theorem are ~ dvelimh (with no distinct variable restrictions) and ~ dvelimhw (that avoids ~ ax-13 ).  (Contributed by NM, 23-Nov-1994.) \n\n---\n\n This theorem can be used to eliminate a distinct variable restriction on ` x ` and ` z ` and replace it with the \"distinctor\" ` -. A. x x = y ` as an antecedent. ` ph ` normally has ` z ` free and can be read ` ph ( z ) ` , and ` ps ` substitutes ` y ` for ` z ` and can be read ` ph ( y ) ` .  We don't require that ` x ` and ` y ` be distinct: if they aren't, the distinctor will become false (in multiple-element domains of discourse) and \"protect\" the consequent. To obtain a closed-theorem form of this inference, prefix the hypotheses with ` A. x A. z ` , conjoin them, and apply ~ dvelimdf . Other variants of this theorem are ~ dvelimf (with no distinct variable restrictions) and ~ dvelimALT (that avoids ~ ax-10 ).  (Contributed by NM, 23-Nov-1994.) ",
+  "statement" : "dvelim.1 $e |- ( ph -> A. x ph ) $.\ndvelim.2 $e |- ( z = y -> ( ph <-> ps ) ) $.\ndvelim $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $.\n$d ps z $."
+}

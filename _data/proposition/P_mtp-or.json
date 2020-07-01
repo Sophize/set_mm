@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mtp-or on Metamath](http://us.metamath.org/mpegif/mtp-or.html)"
+  } ],
+  "names" : [ "mtp-or" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Modus tollendo ponens (inclusive-or version), aka disjunctive syllogism.  This is similar to ~ mtp-xor , one of the five original \"indemonstrables\" in Stoic logic.  However, in Stoic logic this rule used exclusive-or, while the name modus tollendo ponens often refers to a variant of the rule that uses inclusive-or instead.  The rule says, \"if ` ph ` is not true, and ` ph ` or ` ps ` (or both) are true, then ` ps ` must be true.\"  An alternative phrasing is, \"Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth.\" -- Sherlock Holmes (Sir Arthur Conan Doyle, 1890:  The Sign of the Four, ch. 6).  (Contributed by David A. Wheeler, 3-Jul-2016.) (Proof shortened by Wolf Lammen, 11-Nov-2017.) ",
+  "statement" : "mtp-or.1 $e |- -. ph $.\nmtp-or.2 $e |- ( ph \\/ ps ) $.\nmtp-or $p |- ps $."
+}

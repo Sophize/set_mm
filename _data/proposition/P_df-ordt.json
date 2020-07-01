@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ordt on Metamath](http://us.metamath.org/mpegif/df-ordt.html)"
+  } ],
+  "names" : [ "df-ordt" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cordt", "#T_wceq", "#T_vr", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_ctg", "#T_cfv", "#T_cfi", "#T_cfv", "#T_csn--1", "#T_cdm", "#T_vr", "#T_csn--2", "#T_cun", "#T_crn", "#T_vx", "#T_cmpt--1", "#T_cdm", "#T_vr", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cdm", "#T_vr", "#T_crab--3", "#T_wn", "#T_vy", "#T_vr", "#T_vx", "#T_crab--4", "#T_cun", "#T_vx", "#T_cmpt--1", "#T_cdm", "#T_vr", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cdm", "#T_vr", "#T_crab--3", "#T_wn", "#T_vx", "#T_vr", "#T_vy", "#T_crab--4", "#T_vr", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the order topology, given an order ` <_ ` , written as ` r ` below.  A closed subbasis for the order topology is given by the closed rays ` [ y , +oo ) = { z e. X | y <_ z } ` and ` ( -oo , y ] = { z e. X | z <_ y } ` , along with ` ( -oo , +oo ) = X ` itself.  (Contributed by Mario Carneiro, 3-Sep-2015.) ",
+  "statement" : "df-ordt $p |- ordTop = ( r e. _V |-> ( topGen ` ( fi ` ( { dom r } u. ran ( ( x e. dom r |-> { y e. dom r | -. y r x } ) u. ( x e. dom r |-> { y e. dom r | -. x r y } ) ) ) ) ) ) $.\n$d r x y $."
+}

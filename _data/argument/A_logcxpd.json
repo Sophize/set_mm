@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logcxpd on Metamath](http://us.metamath.org/mpegif/logcxpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rpcxpcld.1 | |- ( ph -> A e. RR+ ) |\n| 2 |  | rpcxpcld.2 | |- ( ph -> B e. RR ) |\n| 3 |  | #P_logcxp | |- ( ( A e. RR+ /\\ B e. RR ) -> ( log ` ( A ^c B ) ) = ( B x. ( log ` A ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( log ` ( A ^c B ) ) = ( B x. ( log ` A ) ) ) |",
+  "conclusion" : "#P_logcxpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_ccxp", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_clog", "#T_cfv", "#T_cA", "#T_ccxp", "#T_cB", "#T_wceq", "#T_cB", "#T_cmul", "#T_clog", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_logcxp" ]
+}

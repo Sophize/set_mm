@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrxval on Metamath](http://us.metamath.org/mpegif/rrxval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ni\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rrxval.r | |- H = ( RR^ ` I ) |\n| 2 |  | #P_elex | |- ( I e. V -> I e. _V ) |\n| 3 |  | #P_oveq2 | |- ( i = I -> ( RRfld freeLMod i ) = ( RRfld freeLMod I ) ) |\n| 4 | 3 | #P_fveq2d | |- ( i = I -> ( toCHil ` ( RRfld freeLMod i ) ) = ( toCHil ` ( RRfld freeLMod I ) ) ) |\n| 5 |  | #P_df-rrx | |- RR^ = ( i e. _V |-> ( toCHil ` ( RRfld freeLMod i ) ) ) |\n| 6 |  | #P_fvex | |- ( toCHil ` ( RRfld freeLMod I ) ) e. _V |\n| 7 | 4, 5, 6 | #P_fvmpt | |- ( I e. _V -> ( RR^ ` I ) = ( toCHil ` ( RRfld freeLMod I ) ) ) |\n| 8 | 2, 7 | #P_syl | |- ( I e. V -> ( RR^ ` I ) = ( toCHil ` ( RRfld freeLMod I ) ) ) |\n| 9 | 1, 8 | #P_syl5eq | |- ( I e. V -> H = ( toCHil ` ( RRfld freeLMod I ) ) ) |",
+  "conclusion" : "#P_rrxval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vi", "#T_cH", "#T_wceq", "#T_crrx", "#T_cfv", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cI", "#T_wcel", "#T_cvv", "#T_vi", "#T_wceq", "#T_cI", "#T_wi", "#T_crefld", "#T_cfrlm", "#T_vi", "#T_wceq", "#T_crefld", "#T_cfrlm", "#T_cI", "#T_vi", "#T_wceq", "#T_cI", "#T_wi", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_vi", "#T_wceq", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_cI", "#T_crrx", "#T_wceq", "#T_vi", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_vi", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_cI", "#T_wcel", "#T_cvv", "#T_cI", "#T_wcel", "#T_cvv", "#T_wi", "#T_crrx", "#T_cfv", "#T_cI", "#T_wceq", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_crrx", "#T_cfv", "#T_cI", "#T_wceq", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cH", "#T_wceq", "#T_ctch", "#T_cfv", "#T_crefld", "#T_cfrlm", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_elex", "#P_fveq2d", "#P_oveq2", "#P_syl", "#P_syl5eq", "#P_fvex", "#P_df-rrx" ]
+}

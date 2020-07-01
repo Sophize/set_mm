@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tendo02 on Metamath](http://us.metamath.org/mpegif/tendo02.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ng\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tendo0cbv.o | |- O = ( f e. T |-> ( _I |` B ) ) |\n| 2 |  | tendo02.b | |- B = ( Base ` K ) |\n| 3 |  | #P_eqidd | |- ( g = F -> ( _I |` B ) = ( _I |` B ) ) |\n| 4 | 1 | #P_tendo0cbv | |- O = ( g e. T |-> ( _I |` B ) ) |\n| 5 |  | #P_funi | |- Fun _I |\n| 6 |  | #P_fvex | |- ( Base ` K ) e. _V |\n| 7 | 2, 6 | #P_eqeltri | |- B e. _V |\n| 8 |  | #P_resfunexg | |- ( ( Fun _I /\\ B e. _V ) -> ( _I |` B ) e. _V ) |\n| 9 | 5, 7, 8 | #P_mp2an | |- ( _I |` B ) e. _V |\n| 10 | 3, 4, 9 | #P_fvmpt | |- ( F e. T -> ( O ` F ) = ( _I |` B ) ) |",
+  "conclusion" : "#P_tendo02",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vg", "#T_cO", "#T_wceq", "#T_vf", "#T_cmpt--1", "#T_cT", "#T_cmpt--2", "#T_cid", "#T_cres", "#T_cB", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cbvex4v.vg", "#T_wceq", "#T_cF", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_cO", "#T_wceq", "#T_cbvex4v.vg", "#T_cmpt--1", "#T_cT", "#T_cmpt--2", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wfun", "#T_cid", "#T_cbs", "#T_cfv", "#T_cK", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wfun", "#T_cid", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cT", "#T_wi", "#T_cO", "#T_cfv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_mp2an", "#P_resfunexg", "#P_fvmpt", "#P_funi", "#P_eqidd", "#P_tendo0cbv", "#P_fvex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmmul on Metamath](http://us.metamath.org/mpegif/nmmul.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nmmul.x | |- X = ( Base ` R ) |\n| 2 |  | nmmul.n | |- N = ( norm ` R ) |\n| 3 |  | nmmul.t | |- .x. = ( .r ` R ) |\n| 4 |  | #P_eqid | |- ( AbsVal ` R ) = ( AbsVal ` R ) |\n| 5 | 2, 4 | #P_nrgabv | |- ( R e. NrmRing -> N e. ( AbsVal ` R ) ) |\n| 6 | 4, 1, 3 | #P_abvmul | |- ( ( N e. ( AbsVal ` R ) /\\ A e. X /\\ B e. X ) -> ( N ` ( A .x. B ) ) = ( ( N ` A ) x. ( N ` B ) ) ) |\n| 7 | 5, 6 | #P_syl3an1 | |- ( ( R e. NrmRing /\\ A e. X /\\ B e. X ) -> ( N ` ( A .x. B ) ) = ( ( N ` A ) x. ( N ` B ) ) ) |",
+  "conclusion" : "#P_nmmul",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cN", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cabv", "#T_cfv", "#T_cR", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cN", "#T_wcel", "#T_cabv", "#T_cfv", "#T_cR", "#T_cN", "#T_wcel", "#T_cabv", "#T_cfv", "#T_cR", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_c.x", "#T_cB.wceq", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cN", "#T_cfv", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_cnrg", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA", "#T_c.x", "#T_cB", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA", "#T_cmul", "#T_cN", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_nrgabv", "#P_abvmul", "#P_syl3an1" ]
+}

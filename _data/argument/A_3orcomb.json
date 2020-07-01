@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3orcomb on Metamath](http://us.metamath.org/mpegif/3orcomb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orcom | |- ( ( ps \\/ ch ) <-> ( ch \\/ ps ) ) |\n| 2 | 1 | #P_orbi2i | |- ( ( ph \\/ ( ps \\/ ch ) ) <-> ( ph \\/ ( ch \\/ ps ) ) ) |\n| 3 |  | #P_3orass | |- ( ( ph \\/ ps \\/ ch ) <-> ( ph \\/ ( ps \\/ ch ) ) ) |\n| 4 |  | #P_3orass | |- ( ( ph \\/ ch \\/ ps ) <-> ( ph \\/ ( ch \\/ ps ) ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( ( ph \\/ ps \\/ ch ) <-> ( ph \\/ ch \\/ ps ) ) |",
+  "conclusion" : "#P_3orcomb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wch", "#T_wo", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wo", "#T_wps", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_w3o--1", "#T_wch", "#T_w3o--2", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wo", "#T_wps", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wph", "#T_w3o--1", "#T_wch", "#T_w3o--2", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orbi2i", "#P_orcom", "#P_3bitr4i", "#P_3orass" ]
+}

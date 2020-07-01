@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hodseqi on Metamath](http://us.metamath.org/mpegif/hodseqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hodseq.2 | |- S : ~H --> ~H |\n| 2 |  | hodseq.3 | |- T : ~H --> ~H |\n| 3 |  | #P_eqid | |- ( T -op S ) = ( T -op S ) |\n| 4 | 2, 1 | #P_hosubcli | |- ( T -op S ) : ~H --> ~H |\n| 5 | 2, 1, 4 | #P_hodsi | |- ( ( T -op S ) = ( T -op S ) <-> ( S +op ( T -op S ) ) = T ) |\n| 6 | 3, 5 | #P_mpbi | |- ( S +op ( T -op S ) ) = T |",
+  "conclusion" : "#P_hodseqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_chod", "#T_cS", "#T_wceq", "#T_cT", "#T_chod", "#T_cS", "#T_cT", "#T_chod", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_chod", "#T_cS", "#T_wceq", "#T_cT", "#T_chod", "#T_cS", "#T_wb", "#T_cS", "#T_chos", "#T_cT", "#T_chod", "#T_cS", "#T_wceq", "#T_cT", "#T_cS", "#T_chos", "#T_cT", "#T_chod", "#T_cS", "#T_wceq", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_hodsi", "#P_mpbi", "#P_hosubcli" ]
+}

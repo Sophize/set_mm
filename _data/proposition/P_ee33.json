@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee33 on Metamath](http://us.metamath.org/mpegif/ee33.html)"
+  } ],
+  "names" : [ "ee33" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Non-virtual deduction form of ~ e33 . (Contributed by Alan Sare, 18-Mar-2012.)  (Proof modification is discouraged.) (New usage is discouraged.) The following User's Proof is a Virtual Deduction proof completed automatically by the tools program completeusersproof.cmd, which invokes Mel L. O'Cat's mmj2 and Norm Megill's Metamath Proof Assistant.  The completed Virtual Deduction Proof (not shown) was minimized.  The minimized proof is shown. <HTML> <TABLE> <TR> <TD> h1::   <TD> ` |- ( ph -> ( ps -> ( ch -> th ) ) )  ` <TR> <TD> h2::   <TD> ` |- ( ph -> ( ps -> ( ch -> ta ) ) )  ` <TR> <TD> h3::   <TD> ` |- ( th -> ( ta -> et ) ) ` <TR> <TD> 4:1,3: <TD> ` |- ( ph -> ( ps -> ( ch -> ( ta -> et ) ) ) ) ` <TR> <TD> 5:4:   <TD> ` |- ( ta -> ( ph -> ( ps -> ( ch -> et ) ) ) ) ` <TR> <TD> 6:2,5: <TD> ` |- ( ph -> ( ps -> ( ch -> ( ph -> ( ps -> ` ` ( ch -> et ) ) ) ) ) ) ` <TR> <TD> 7:6:   <TD> ` |- ( ps -> ( ch -> ( ph -> ( ps -> ( ch -> ` ` et ) ) ) ) ) ` <TR> <TD> 8:7:   <TD> ` |- ( ch -> ( ph -> ( ps -> ( ch -> et ) ) ) ) ` <TR> <TD> qed:8: <TD> ` |- ( ph -> ( ps -> ( ch -> et ) ) ) ` </TABLE> </HTML> ",
+  "statement" : "ee33.1 $e |- ( ph -> ( ps -> ( ch -> th ) ) ) $.\nee33.2 $e |- ( ph -> ( ps -> ( ch -> ta ) ) ) $.\nee33.3 $e |- ( th -> ( ta -> et ) ) $.\nee33 $p |- ( ph -> ( ps -> ( ch -> et ) ) ) $."
+}

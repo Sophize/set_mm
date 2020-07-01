@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqeq2OLD on Metamath](http://us.metamath.org/mpegif/eqeq2OLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq1 | |- ( A = B -> ( A = C <-> B = C ) ) |\n| 2 |  | #P_eqcom | |- ( C = A <-> A = C ) |\n| 3 |  | #P_eqcom | |- ( C = B <-> B = C ) |\n| 4 | 1, 2, 3 | #P_3bitr4g | |- ( A = B -> ( C = A <-> C = B ) ) |\n\\\n Obsolete proof of ~ eqeq2 as of 19-Nov-2019.  (Contributed by NM, 26-May-1993.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_eqeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cA", "#T_wb", "#T_cC", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3bitr4g", "#P_eqeq1", "#P_eqcom" ]
+}

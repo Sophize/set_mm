@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl10 on Metamath](http://us.metamath.org/mpegif/syl10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl10.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | syl10.2 | |- ( ph -> ( ps -> ( th -> ta ) ) ) |\n| 3 |  | syl10.3 | |- ( ch -> ( ta -> et ) ) |\n| 4 | 1, 3 | #P_syl6 | |- ( ph -> ( ps -> ( ta -> et ) ) ) |\n| 5 | 2, 4 | #P_syldd | |- ( ph -> ( ps -> ( th -> et ) ) ) |",
+  "conclusion" : "#P_syl10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wch", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syldd", "#P_syl6" ]
+}

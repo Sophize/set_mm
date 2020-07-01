@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpinvfn on Metamath](http://us.metamath.org/mpegif/grpinvfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpinvfn.b | |- B = ( Base ` G ) |\n| 2 |  | grpinvfn.n | |- N = ( invg ` G ) |\n| 3 |  | #P_riotaex | |- ( iota_ y e. B ( y ( +g ` G ) x ) = ( 0g ` G ) ) e. _V |\n| 4 |  | #P_eqid | |- ( +g ` G ) = ( +g ` G ) |\n| 5 |  | #P_eqid | |- ( 0g ` G ) = ( 0g ` G ) |\n| 6 | 1, 4, 5, 2 | #P_grpinvfval | |- N = ( x e. B |-> ( iota_ y e. B ( y ( +g ` G ) x ) = ( 0g ` G ) ) ) |\n| 7 | 3, 6 | #P_fnmpti | |- N Fn B |",
+  "conclusion" : "#P_grpinvfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cB.wceq", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c0g", "#T_cfv", "#T_cG", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cB.wceq", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cN", "#T_wfn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_riotaex", "#P_fnmpti", "#P_grpinvfval" ]
+}

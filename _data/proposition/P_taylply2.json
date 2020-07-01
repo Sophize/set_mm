@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See taylply2 on Metamath](http://us.metamath.org/mpegif/taylply2.html)"
+  } ],
+  "names" : [ "taylply2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cdm", "#T_cS", "#T_cdvn", "#T_cF", "#T_cfv", "#T_cN", "#T_cT", "#T_wceq", "#T_cN", "#T_cS", "#T_ctayl", "#T_cF", "#T_cB", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cS", "#T_cdvn", "#T_cF", "#T_cfv", "#T_vk", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cply", "#T_cfv", "#T_cD", "#T_wa", "#T_cdgr", "#T_cfv", "#T_cT", "#T_cle", "#T_cN", "#T_cB", "#T_vk", "#T_cD", "#T_vk", "#T_cF", "#T_vk", "#T_cN", "#T_vk", "#T_cS", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Taylor polynomial is a polynomial of degree (at most) ` N ` . This version of ~ taylply shows that the coefficients of ` T ` are in a subring of the complex numbers.  (Contributed by Mario Carneiro, 1-Jan-2017.) ",
+  "statement" : "taylpfval.s $e |- ( ph -> S e. { RR , CC } ) $.\ntaylpfval.f $e |- ( ph -> F : A --> CC ) $.\ntaylpfval.a $e |- ( ph -> A C_ S ) $.\ntaylpfval.n $e |- ( ph -> N e. NN0 ) $.\ntaylpfval.b $e |- ( ph -> B e. dom ( ( S Dn F ) ` N ) ) $.\ntaylpfval.t $e |- T = ( N ( S Tayl F ) B ) $.\ntaylply2.1 $e |- ( ph -> D e. ( SubRing ` CCfld ) ) $.\ntaylply2.2 $e |- ( ph -> B e. D ) $.\ntaylply2.3 $e |- ( ( ph /\\ k e. ( 0 ... N ) ) -> ( ( ( ( S Dn F ) ` k ) ` B ) / ( ! ` k ) ) e. D ) $.\ntaylply2 $p |- ( ph -> ( T e. ( Poly ` D ) /\\ ( deg ` T ) <_ N ) ) $.\n$d B k $.\n$d D k $.\n$d F k $.\n$d N k $.\n$d S k $.\n$d k ph $."
+}

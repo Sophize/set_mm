@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See setc1strwun on Metamath](http://us.metamath.org/mpegif/setc1strwun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | setc1strwun.s | |- S = ( SetCat ` U ) |\n| 2 |  | setc1strwun.c | |- C = ( Base ` S ) |\n| 3 |  | setc1strwun.u | |- ( ph -> U e. WUni ) |\n| 4 |  | setc1strwun.o | |- ( ph -> _om e. U ) |\n| 5 | 1, 3 | #P_setcbas | |- ( ph -> U = ( Base ` S ) ) |\n| 6 | 5, 2 | #P_syl6reqr | |- ( ph -> C = U ) |\n| 7 | 6 | #P_eleq2d | |- ( ph -> ( X e. C <-> X e. U ) ) |\n| 8 | 7 | #P_biimpa | |- ( ( ph /\\ X e. C ) -> X e. U ) |\n| 9 |  | #P_eqid | |- { <. ( Base ` ndx ) , X >. } = { <. ( Base ` ndx ) , X >. } |\n| 10 | 9, 3, 4 | #P_1strwun | |- ( ( ph /\\ X e. U ) -> { <. ( Base ` ndx ) , X >. } e. U ) |\n| 11 | 8, 10 | #P_syldan | |- ( ( ph /\\ X e. C ) -> { <. ( Base ` ndx ) , X >. } e. U ) |",
+  "conclusion" : "#P_setc1strwun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_com", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cU", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cC", "#T_wb", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_csn--2", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eleq2d", "#P_biimpa", "#P_setcbas", "#P_syl6reqr", "#P_1strwun", "#P_syldan" ]
+}

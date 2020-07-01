@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See breq1 on Metamath](http://us.metamath.org/mpegif/breq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opeq1 | |- ( A = B -> <. A , C >. = <. B , C >. ) |\n| 2 | 1 | #P_eleq1d | |- ( A = B -> ( <. A , C >. e. R <-> <. B , C >. e. R ) ) |\n| 3 |  | #P_df-br | |- ( A R C <-> <. A , C >. e. R ) |\n| 4 |  | #P_df-br | |- ( B R C <-> <. B , C >. e. R ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A = B -> ( A R C <-> B R C ) ) |",
+  "conclusion" : "#P_breq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wb", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wb", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cA", "#T_cR", "#T_cC", "#T_wb", "#T_cB", "#T_cR", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_opeq1", "#P_3bitr4g", "#P_eleq1d" ]
+}

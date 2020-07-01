@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uunT12p2 on Metamath](http://us.metamath.org/mpegif/uunT12p2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uunT12p2.1 | |- ( ( ph /\\ T. /\\ ps ) -> ch ) |\n| 2 |  | #P_3anrot | |- ( ( ph /\\ T. /\\ ps ) <-> ( T. /\\ ps /\\ ph ) ) |\n| 3 |  | #P_3anass | |- ( ( T. /\\ ps /\\ ph ) <-> ( T. /\\ ( ps /\\ ph ) ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( ( ph /\\ T. /\\ ps ) <-> ( T. /\\ ( ps /\\ ph ) ) ) |\n| 5 |  | #P_truan | |- ( ( T. /\\ ( ps /\\ ph ) ) <-> ( ps /\\ ph ) ) |\n| 6 | 4, 5 | #P_bitri | |- ( ( ph /\\ T. /\\ ps ) <-> ( ps /\\ ph ) ) |\n| 7 |  | #P_ancom | |- ( ( ph /\\ ps ) <-> ( ps /\\ ph ) ) |\n| 8 | 6, 7 | #P_bitr4i | |- ( ( ph /\\ T. /\\ ps ) <-> ( ph /\\ ps ) ) |\n| 9 | 8, 1 | #P_sylbir | |- ( ( ph /\\ ps ) -> ch ) |",
+  "conclusion" : "#P_uunT12p2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wps", "#T_wb", "#T_wtru", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wph", "#T_wtru", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wph", "#T_wb", "#T_wtru", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wps", "#T_wb", "#T_wtru", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wtru", "#T_wa", "#T_wps", "#T_wa", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wtru", "#T_w3a--2", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_truan", "#P_3anrot", "#P_sylbir", "#P_3anass", "#P_bitri", "#P_bitr4i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbmo1 on Metamath](http://us.metamath.org/mpegif/hbmo1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-mo | |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) |\n| 2 |  | #P_hbe1 | |- ( E. x ph -> A. x E. x ph ) |\n| 3 |  | #P_hbeu1 | |- ( E! x ph -> A. x E! x ph ) |\n| 4 | 2, 3 | #P_hbim | |- ( ( E. x ph -> E! x ph ) -> A. x ( E. x ph -> E! x ph ) ) |\n| 5 | 1, 4 | #P_hbxfrbi | |- ( E* x ph -> A. x E* x ph ) |",
+  "conclusion" : "#P_hbmo1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wmo", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hbe1", "#P_df-mo", "#P_hbxfrbi", "#P_hbim", "#P_hbeu1" ]
+}

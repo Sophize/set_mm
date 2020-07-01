@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvcnv3 on Metamath](http://us.metamath.org/mpegif/cnvcnv3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-cnv | |- `' `' R = { <. x , y >. | y `' R x } |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 2, 3 | #P_brcnv | |- ( y `' R x <-> x R y ) |\n| 5 | 4 | #P_opabbii | |- { <. x , y >. | y `' R x } = { <. x , y >. | x R y } |\n| 6 | 1, 5 | #P_eqtri | |- `' `' R = { <. x , y >. | x R y } |",
+  "conclusion" : "#P_cnvcnv3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_ccnv", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_ccnv", "#T_cR", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_ccnv", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vx.wal", "#T_cR", "#T_vy.tru", "#T_copab--6", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_vx", "#T_cR", "#T_vy", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_df-cnv", "#P_vex", "#P_opabbii", "#P_brcnv" ]
+}

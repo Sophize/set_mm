@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rev0 on Metamath](http://us.metamath.org/mpegif/rev0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_wrd0 | |- (/) e. Word _V |\n| 2 |  | #P_revlen | |- ( (/) e. Word _V -> ( # ` ( reverse ` (/) ) ) = ( # ` (/) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( # ` ( reverse ` (/) ) ) = ( # ` (/) ) |\n| 4 |  | #P_hash0 | |- ( # ` (/) ) = 0 |\n| 5 | 3, 4 | #P_eqtri | |- ( # ` ( reverse ` (/) ) ) = 0 |\n| 6 |  | #P_fvex | |- ( reverse ` (/) ) e. _V |\n| 7 |  | #P_hasheq0 | |- ( ( reverse ` (/) ) e. _V -> ( ( # ` ( reverse ` (/) ) ) = 0 <-> ( reverse ` (/) ) = (/) ) ) |\n| 8 | 6, 7 | #P_ax-mp | |- ( ( # ` ( reverse ` (/) ) ) = 0 <-> ( reverse ` (/) ) = (/) ) |\n| 9 | 5, 8 | #P_mpbi | |- ( reverse ` (/) ) = (/) |",
+  "conclusion" : "#P_rev0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wcel", "#T_cword", "#T_cvv", "#T_c0", "#T_wcel", "#T_cword", "#T_cvv", "#T_wi", "#T_chash", "#T_cfv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_chash", "#T_cfv", "#T_c0", "#T_chash", "#T_cfv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_chash", "#T_cfv", "#T_c0", "#T_chash", "#T_cfv", "#T_c0", "#T_wceq", "#T_cc0", "#T_chash", "#T_cfv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_cc0", "#T_creverse", "#T_cfv", "#T_c0", "#T_wcel", "#T_cvv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_chash", "#T_cfv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_cc0", "#T_wb", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_chash", "#T_cfv", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_cc0", "#T_wb", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_creverse", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_hasheq0", "#P_mpbi", "#P_wrd0", "#P_revlen", "#P_fvex", "#P_hash0" ]
+}

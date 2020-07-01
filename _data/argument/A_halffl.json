@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See halffl on Metamath](http://us.metamath.org/mpegif/halffl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0re | |- 0 e. RR |\n| 2 |  | #P_halfre | |- ( 1 / 2 ) e. RR |\n| 3 |  | #P_halfgt0 | |- 0 < ( 1 / 2 ) |\n| 4 | 1, 2, 3 | #P_ltleii | |- 0 <_ ( 1 / 2 ) |\n| 5 |  | #P_halflt1 | |- ( 1 / 2 ) < 1 |\n| 6 |  | #P_1e0p1 | |- 1 = ( 0 + 1 ) |\n| 7 | 5, 6 | #P_breqtri | |- ( 1 / 2 ) < ( 0 + 1 ) |\n| 8 |  | #P_0z | |- 0 e. ZZ |\n| 9 |  | #P_flbi | |- ( ( ( 1 / 2 ) e. RR /\\ 0 e. ZZ ) -> ( ( |_ ` ( 1 / 2 ) ) = 0 <-> ( 0 <_ ( 1 / 2 ) /\\ ( 1 / 2 ) < ( 0 + 1 ) ) ) ) |\n| 10 | 2, 8, 9 | #P_mp2an | |- ( ( |_ ` ( 1 / 2 ) ) = 0 <-> ( 0 <_ ( 1 / 2 ) /\\ ( 1 / 2 ) < ( 0 + 1 ) ) ) |\n| 11 | 4, 7, 10 | #P_mpbir2an | |- ( |_ ` ( 1 / 2 ) ) = 0 |",
+  "conclusion" : "#P_halffl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cr", "#T_c1", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_cdiv", "#T_c2", "#T_cc0", "#T_cle", "#T_c1", "#T_cdiv", "#T_c2", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_c1", "#T_c1", "#T_wceq", "#T_cc0", "#T_caddc", "#T_c1", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_cc0", "#T_caddc", "#T_c1", "#T_cc0", "#T_wcel", "#T_cz", "#T_c1", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_wcel", "#T_cz", "#T_wi", "#T_cfl", "#T_cfv", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_cc0", "#T_wb", "#T_cc0", "#T_cle", "#T_c1", "#T_cdiv", "#T_c2", "#T_wa", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_cc0", "#T_caddc", "#T_c1", "#T_cfl", "#T_cfv", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_cc0", "#T_wb", "#T_cc0", "#T_cle", "#T_c1", "#T_cdiv", "#T_c2", "#T_wa", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_cc0", "#T_caddc", "#T_c1", "#T_cfl", "#T_cfv", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breqtri", "#P_mp2an", "#P_halfre", "#P_halfgt0", "#P_1e0p1", "#P_flbi", "#P_mpbir2an", "#P_halflt1", "#P_ltleii", "#P_0re", "#P_0z" ]
+}

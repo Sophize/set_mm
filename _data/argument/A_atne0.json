@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See atne0 on Metamath](http://us.metamath.org/mpegif/atne0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elat2 | |- ( A e. HAtoms <-> ( A e. CH /\\ ( A =/= 0H /\\ A. x e. CH ( x C_ A -> ( x = A \\/ x = 0H ) ) ) ) ) |\n| 2 |  | #P_simprl | |- ( ( A e. CH /\\ ( A =/= 0H /\\ A. x e. CH ( x C_ A -> ( x = A \\/ x = 0H ) ) ) ) -> A =/= 0H ) |\n| 3 | 1, 2 | #P_sylbi | |- ( A e. HAtoms -> A =/= 0H ) |",
+  "conclusion" : "#P_atne0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cat", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_c0h", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cch", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wo", "#T_vx.wal", "#T_wceq", "#T_c0h", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_c0h", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cch", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wo", "#T_vx.wal", "#T_wceq", "#T_c0h", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_c0h", "#T_cA", "#T_wcel", "#T_cat", "#T_wi", "#T_cA", "#T_wne", "#T_c0h" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprl", "#P_sylbi", "#P_elat2" ]
+}

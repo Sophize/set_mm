@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elsetchom on Metamath](http://us.metamath.org/mpegif/elsetchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | setcbas.c | |- C = ( SetCat ` U ) |\n| 2 |  | setcbas.u | |- ( ph -> U e. V ) |\n| 3 |  | setchomfval.h | |- H = ( Hom ` C ) |\n| 4 |  | setchom.x | |- ( ph -> X e. U ) |\n| 5 |  | setchom.y | |- ( ph -> Y e. U ) |\n| 6 | 1, 2, 3, 4, 5 | #P_setchom | |- ( ph -> ( X H Y ) = ( Y ^m X ) ) |\n| 7 | 6 | #P_eleq2d | |- ( ph -> ( F e. ( X H Y ) <-> F e. ( Y ^m X ) ) ) |\n| 8 | 5, 4 | #P_elmapd | |- ( ph -> ( F e. ( Y ^m X ) <-> F : X --> Y ) ) |\n| 9 | 7, 8 | #P_bitrd | |- ( ph -> ( F e. ( X H Y ) <-> F : X --> Y ) ) |",
+  "conclusion" : "#P_elsetchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cY", "#T_cmap", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wb", "#T_cF", "#T_wcel", "#T_cY", "#T_cmap", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cY", "#T_cmap", "#T_cX", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_bitrd", "#P_elmapd", "#P_setchom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lplnri2N on Metamath](http://us.metamath.org/mpegif/lplnri2N.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lplnri1.j | |- .\\/ = ( join ` K ) |\n| 2 |  | lplnri1.a | |- A = ( Atoms ` K ) |\n| 3 |  | lplnri1.p | |- P = ( LPlanes ` K ) |\n| 4 |  | lplnri1.y | |- Y = ( ( Q .\\/ R ) .\\/ S ) |\n| 5 |  | #P_eqid | |- ( le ` K ) = ( le ` K ) |\n| 6 | 5, 1, 2, 3, 4 | #P_lplnriaN | |- ( ( K e. HL /\\ ( Q e. A /\\ R e. A /\\ S e. A ) /\\ Y e. P ) -> -. Q ( le ` K ) ( R .\\/ S ) ) |\n| 7 | 5, 1, 2 | #P_atnlej2 | |- ( ( K e. HL /\\ ( Q e. A /\\ R e. A /\\ S e. A ) /\\ -. Q ( le ` K ) ( R .\\/ S ) ) -> Q =/= S ) |\n| 8 | 6, 7 | #P_syld3an3 | |- ( ( K e. HL /\\ ( Q e. A /\\ R e. A /\\ S e. A ) /\\ Y e. P ) -> Q =/= S ) |",
+  "conclusion" : "#P_lplnri2N",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cP", "#T_wceq", "#T_clpl", "#T_cfv", "#T_cK", "#T_cY", "#T_wceq", "#T_cQ", "#T_c.or", "#T_cR", "#T_c.or", "#T_cS", "#T_cple", "#T_cfv", "#T_cK", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cQ", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_cS", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cP", "#T_wi", "#T_wn", "#T_cQ", "#T_cple", "#T_cfv", "#T_cK", "#T_cR", "#T_c.or", "#T_cS", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cQ", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_cS", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_wn", "#T_cQ", "#T_cple", "#T_cfv", "#T_cK", "#T_cR", "#T_c.or", "#T_cS", "#T_wi", "#T_cQ", "#T_wne", "#T_cS", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cQ", "#T_wcel", "#T_cA", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cS", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cP", "#T_wi", "#T_cQ", "#T_wne", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_atnlej2", "#P_lplnriaN", "#P_syld3an3" ]
+}

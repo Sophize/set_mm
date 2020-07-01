@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ana on Metamath](http://us.metamath.org/mpegif/df-ana.html)"
+  } ],
+  "names" : [ "df-ana" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cana", "#T_wceq", "#T_vs", "#T_cmpt--1", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_cmpt--2", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cc", "#T_cpm", "#T_vs", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cdm", "#T_vf", "#T_vx", "#T_wcel", "#T_cnt", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_vs", "#T_cfv", "#T_cdm", "#T_vf", "#T_cin", "#T_cpnf", "#T_vs", "#T_ctayl", "#T_vf", "#T_vx", "#T_crab--4", "#T_vf", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of analytic functions, which are functions such that the Taylor series of the function at each point converges to the function in some neighborhood of the point.  (Contributed by Mario Carneiro, 31-Dec-2016.) ",
+  "statement" : "df-ana $p |- Ana = ( s e. { RR , CC } |-> { f e. ( CC ^pm s ) | A. x e. dom f x e. ( ( int ` ( ( TopOpen ` CCfld ) |`t s ) ) ` dom ( f i^i ( +oo ( s Tayl f ) x ) ) ) } ) $.\n$d f s x $."
+}

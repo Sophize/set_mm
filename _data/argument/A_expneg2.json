@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expneg2 on Metamath](http://us.metamath.org/mpegif/expneg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_negneg | |- ( N e. CC -> -u -u N = N ) |\n| 2 | 1 | #P_3ad2ant2 | |- ( ( A e. CC /\\ N e. CC /\\ -u N e. NN0 ) -> -u -u N = N ) |\n| 3 | 2 | #P_oveq2d | |- ( ( A e. CC /\\ N e. CC /\\ -u N e. NN0 ) -> ( A ^ -u -u N ) = ( A ^ N ) ) |\n| 4 |  | #P_expneg | |- ( ( A e. CC /\\ -u N e. NN0 ) -> ( A ^ -u -u N ) = ( 1 / ( A ^ -u N ) ) ) |\n| 5 | 4 | #P_3adant2 | |- ( ( A e. CC /\\ N e. CC /\\ -u N e. NN0 ) -> ( A ^ -u -u N ) = ( 1 / ( A ^ -u N ) ) ) |\n| 6 | 3, 5 | #P_eqtr3d | |- ( ( A e. CC /\\ N e. CC /\\ -u N e. NN0 ) -> ( A ^ N ) = ( 1 / ( A ^ -u N ) ) ) |",
+  "conclusion" : "#P_expneg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_cexp", "#T_cneg", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cA.wceq", "#T_cexp", "#T_cneg", "#T_cN", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_cexp", "#T_cN", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cA", "#T_cexp", "#T_cneg", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3adant2", "#P_3ad2ant2", "#P_oveq2d", "#P_expneg", "#P_negneg", "#P_eqtr3d" ]
+}

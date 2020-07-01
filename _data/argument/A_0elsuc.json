@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0elsuc on Metamath](http://us.metamath.org/mpegif/0elsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordsuc | |- ( Ord A <-> Ord suc A ) |\n| 2 |  | #P_nsuceq0 | |- suc A =/= (/) |\n| 3 |  | #P_ord0eln0 | |- ( Ord suc A -> ( (/) e. suc A <-> suc A =/= (/) ) ) |\n| 4 | 2, 3 | #P_mpbiri | |- ( Ord suc A -> (/) e. suc A ) |\n| 5 | 1, 4 | #P_sylbi | |- ( Ord A -> (/) e. suc A ) |",
+  "conclusion" : "#P_0elsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cA.wceq", "#T_wb", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_csuc", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_wcel", "#T_csuc", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_wcel", "#T_csuc", "#T_cA.wceq", "#T_word", "#T_cA", "#T_wi", "#T_c0", "#T_wcel", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_ord0eln0", "#P_nsuceq0", "#P_ordsuc", "#P_sylbi" ]
+}

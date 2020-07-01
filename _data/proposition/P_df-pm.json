@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-pm on Metamath](http://us.metamath.org/mpegif/df-pm.html)"
+  } ],
+  "names" : [ "df-pm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpm", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cpw", "#T_vy", "#T_cxp", "#T_vx", "#T_crab--3", "#T_wfun", "#T_vf", "#T_crab--4", "#T_vf", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the partial mapping operation.  A partial function from ` B ` to ` A ` is a function from a subset of ` B ` to ` A ` .  The set of all partial functions from ` B ` to ` A ` is written ` ( A ^pm B ) ` (see ~ pmvalg ).  A notation for this operation apparently does not appear in the literature.  We use ` ^pm ` to distinguish it from the less general set exponentiation operation ` ^m ` ( ~ df-map ) .  See ~ mapsspm for its relationship to set exponentiation.  (Contributed by NM, 15-Nov-2007.) ",
+  "statement" : "df-pm $p |- ^pm = ( x e. _V , y e. _V |-> { f e. ~P ( y X. x ) | Fun f } ) $.\n$d f x y $."
+}

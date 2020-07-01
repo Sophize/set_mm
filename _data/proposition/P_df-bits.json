@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-bits on Metamath](http://us.metamath.org/mpegif/df-bits.html)"
+  } ],
+  "names" : [ "df-bits" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbits", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_crab--1", "#T_vm", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_wn", "#T_c2", "#T_cdvds", "#T_cfl", "#T_cfv", "#T_vn", "#T_cdiv", "#T_c2", "#T_cexp", "#T_vm", "#T_crab--4", "#T_vm", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the binary bits of an integer.  The expression ` M e. ( bits `` N ) ` means that the ` M ` -th bit of ` N ` is 1 (and its negation means the bit is 0).  (Contributed by Mario Carneiro, 4-Sep-2016.) ",
+  "statement" : "df-bits $p |- bits = ( n e. ZZ |-> { m e. NN0 | -. 2 || ( |_ ` ( n / ( 2 ^ m ) ) ) } ) $.\n$d m n $."
+}

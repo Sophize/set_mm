@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-srng on Metamath](http://us.metamath.org/mpegif/df-srng.html)"
+  } ],
+  "names" : [ "df-srng" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csr", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wsbc--1", "#T_cstf", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vi", "#T_wsbc--3", "#T_vi", "#T_wcel", "#T_vf", "#T_crh", "#T_coppr", "#T_cfv", "#T_vf", "#T_wa", "#T_vi", "#T_wceq", "#T_ccnv", "#T_vi", "#T_cab--3", "#T_vf", "#T_vi" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define class of all star rings.  A star ring is a ring with an involution (conjugation) function.  Involution (unlike say the ring zero) is not unique and therefore must be added as a new component to the ring.  For example, two possible involutions for complex numbers are the identity function and complex conjugation.  Definition of involution in [Holland95] p. 204.  (Contributed by NM, 22-Sep-2011.)  (Revised by Mario Carneiro, 6-Oct-2015.) ",
+  "statement" : "df-srng $p |- *Ring = { f | [. ( *rf ` f ) / i ]. ( i e. ( f RingHom ( oppR ` f ) ) /\\ i = `' i ) } $.\n$d f i $."
+}

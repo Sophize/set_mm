@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodcvg on Metamath](http://us.metamath.org/mpegif/fprodcvg.html)"
+  } ],
+  "names" : [ "fprodcvg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cA", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_c1", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cM", "#T_cfz", "#T_cN", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_cA", "#T_vk", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The sequence of partial products of a finite product converges to the whole product.  (Contributed by Scott Fenton, 4-Dec-2017.) ",
+  "statement" : "prodmo.1 $e |- F = ( k e. ZZ |-> if ( k e. A , B , 1 ) ) $.\nprodmo.2 $e |- ( ( ph /\\ k e. A ) -> B e. CC ) $.\nprodrb.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nfprodcvg.4 $e |- ( ph -> A C_ ( M ... N ) ) $.\nfprodcvg $p |- ( ph -> seq M ( x. , F ) ~~> ( seq M ( x. , F ) ` N ) ) $.\n$d A k $.\n$d F k $.\n$d M k $.\n$d N k $.\n$d k ph $."
+}

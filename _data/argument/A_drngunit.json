@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See drngunit on Metamath](http://us.metamath.org/mpegif/drngunit.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isdrng.b | |- B = ( Base ` R ) |\n| 2 |  | isdrng.u | |- U = ( Unit ` R ) |\n| 3 |  | isdrng.z | |- .0. = ( 0g ` R ) |\n| 4 | 1, 2, 3 | #P_isdrng | |- ( R e. DivRing <-> ( R e. Ring /\\ U = ( B \\ { .0. } ) ) ) |\n| 5 | 4 | #P_simprbi | |- ( R e. DivRing -> U = ( B \\ { .0. } ) ) |\n| 6 | 5 | #P_eleq2d | |- ( R e. DivRing -> ( X e. U <-> X e. ( B \\ { .0. } ) ) ) |\n| 7 |  | #P_eldifsn | |- ( X e. ( B \\ { .0. } ) <-> ( X e. B /\\ X =/= .0. ) ) |\n| 8 | 6, 7 | #P_syl6bb | |- ( R e. DivRing -> ( X e. U <-> ( X e. B /\\ X =/= .0. ) ) ) |",
+  "conclusion" : "#P_drngunit",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cdr", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cU", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_wne", "#T_c.0", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wb", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cX", "#T_wne", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_eldifsn", "#P_syl6bb", "#P_simprbi", "#P_isdrng" ]
+}

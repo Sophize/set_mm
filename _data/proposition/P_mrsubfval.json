@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrsubfval on Metamath](http://us.metamath.org/mpegif/mrsubfval.html)"
+  } ],
+  "names" : [ "mrsubfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cmcn", "#T_cfv", "#T_cT", "#T_cV", "#T_wceq", "#T_cmvar", "#T_cfv", "#T_cT", "#T_cR", "#T_wceq", "#T_cmrex", "#T_cfv", "#T_cT", "#T_cS", "#T_wceq", "#T_cmrsub", "#T_cfv", "#T_cT", "#T_cG", "#T_wceq", "#T_cfrmd", "#T_cfv", "#T_cC", "#T_cun", "#T_cV", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cR", "#T_wa", "#T_cA", "#T_wss", "#T_cV", "#T_wi", "#T_cS", "#T_cfv", "#T_cF", "#T_wceq", "#T_ve", "#T_cmpt--1", "#T_cR", "#T_cmpt--2", "#T_cG", "#T_cgsu", "#T_vv", "#T_cmpt--1", "#T_cC", "#T_cun", "#T_cV", "#T_cmpt--2", "#T_cif--1", "#T_vv", "#T_wcel", "#T_cA", "#T_cif--2", "#T_cF", "#T_cfv", "#T_vv", "#T_cif--3", "#T_cs1--1", "#T_vv", "#T_cs1--2", "#T_ccom", "#T_ve", "#T_cA", "#T_ve", "#T_vv", "#T_cC", "#T_ve", "#T_vv", "#T_cF", "#T_ve", "#T_vv", "#T_cG", "#T_ve", "#T_cR", "#T_ve", "#T_vv", "#T_cT", "#T_ve", "#T_vv", "#T_cV", "#T_ve", "#T_vv", "#T_ve", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The substitution of some variables for expressions in a raw expression.  (Contributed by Mario Carneiro, 18-Jul-2016.) ",
+  "statement" : "mrsubffval.c $e |- C = ( mCN ` T ) $.\nmrsubffval.v $e |- V = ( mVR ` T ) $.\nmrsubffval.r $e |- R = ( mREx ` T ) $.\nmrsubffval.s $e |- S = ( mRSubst ` T ) $.\nmrsubffval.g $e |- G = ( freeMnd ` ( C u. V ) ) $.\nmrsubfval $p |- ( ( F : A --> R /\\ A C_ V ) -> ( S ` F ) = ( e e. R |-> ( G gsum ( ( v e. ( C u. V ) |-> if ( v e. A , ( F ` v ) , <\" v \"> ) ) o. e ) ) ) ) $.\n$d A e v $.\n$d C e v $.\n$d F e v $.\n$d G e $.\n$d R e v $.\n$d T e v $.\n$d V e v $.\n$d e v $."
+}

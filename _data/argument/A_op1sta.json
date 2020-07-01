@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See op1sta on Metamath](http://us.metamath.org/mpegif/op1sta.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnvsn.1 | |- A e. _V |\n| 2 |  | cnvsn.2 | |- B e. _V |\n| 3 | 2 | #P_dmsnop | |- dom { <. A , B >. } = { A } |\n| 4 | 3 | #P_unieqi | |- U. dom { <. A , B >. } = U. { A } |\n| 5 | 1 | #P_unisn | |- U. { A } = A |\n| 6 | 4, 5 | #P_eqtri | |- U. dom { <. A , B >. } = A |",
+  "conclusion" : "#P_op1sta",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cuni", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cA.wceq", "#T_cuni", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_eqtri", "#P_dmsnop", "#P_unisn" ]
+}

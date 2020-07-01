@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm13.14 on Metamath](http://us.metamath.org/mpegif/pm13.14.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sbceq1a | |- ( x = A -> ( ph <-> [. A / x ]. ph ) ) |\n| 2 | 1 | #P_biimprcd | |- ( [. A / x ]. ph -> ( x = A -> ph ) ) |\n| 3 | 2 | #P_necon3bd | |- ( [. A / x ]. ph -> ( -. ph -> x =/= A ) ) |\n| 4 | 3 | #P_imp | |- ( ( [. A / x ]. ph /\\ -. ph ) -> x =/= A ) |",
+  "conclusion" : "#P_pm13.14",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wne", "#T_cA.wceq", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_vx", "#T_wne", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imp", "#P_sbceq1a", "#P_necon3bd", "#P_biimprcd" ]
+}

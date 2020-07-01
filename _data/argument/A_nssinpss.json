@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nssinpss on Metamath](http://us.metamath.org/mpegif/nssinpss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inss1 | |- ( A i^i B ) C_ A |\n| 2 | 1 | #P_biantrur | |- ( ( A i^i B ) =/= A <-> ( ( A i^i B ) C_ A /\\ ( A i^i B ) =/= A ) ) |\n| 3 |  | #P_df-ss | |- ( A C_ B <-> ( A i^i B ) = A ) |\n| 4 | 3 | #P_necon3bbii | |- ( -. A C_ B <-> ( A i^i B ) =/= A ) |\n| 5 |  | #P_df-pss | |- ( ( A i^i B ) C. A <-> ( ( A i^i B ) C_ A /\\ ( A i^i B ) =/= A ) ) |\n| 6 | 2, 4, 5 | #P_3bitr4i | |- ( -. A C_ B <-> ( A i^i B ) C. A ) |",
+  "conclusion" : "#P_nssinpss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wn", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wpss", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_wn", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_cin", "#T_cB", "#T_wpss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ss", "#P_df-pss", "#P_biantrur", "#P_3bitr4i", "#P_inss1", "#P_necon3bbii" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm13.18 on Metamath](http://us.metamath.org/mpegif/pm13.18.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq1 | |- ( A = B -> ( A = C <-> B = C ) ) |\n| 2 | 1 | #P_biimprd | |- ( A = B -> ( B = C -> A = C ) ) |\n| 3 | 2 | #P_necon3d | |- ( A = B -> ( A =/= C -> B =/= C ) ) |\n| 4 | 3 | #P_imp | |- ( ( A = B /\\ A =/= C ) -> B =/= C ) |",
+  "conclusion" : "#P_pm13.18",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cA", "#T_wne", "#T_cC", "#T_wi", "#T_cB", "#T_wne", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3d", "#P_biimprd", "#P_imp", "#P_eqeq1" ]
+}

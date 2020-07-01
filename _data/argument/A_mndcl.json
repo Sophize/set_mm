@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mndcl on Metamath](http://us.metamath.org/mpegif/mndcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mndcl.b | |- B = ( Base ` G ) |\n| 2 |  | mndcl.p | |- .+ = ( +g ` G ) |\n| 3 |  | #P_mndmgm | |- ( G e. Mnd -> G e. Mgm ) |\n| 4 | 1, 2 | #P_mgmcl | |- ( ( G e. Mgm /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) e. B ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( G e. Mnd /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) e. B ) |",
+  "conclusion" : "#P_mndcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cG", "#T_wcel", "#T_cmgm", "#T_cG", "#T_wcel", "#T_cmgm", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cmnd", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mgmcl", "#P_mndmgm", "#P_syl3an1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bibi2d on Metamath](http://us.metamath.org/mpegif/bibi2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | imbid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 | 1 | #P_pm5.74i | |- ( ( ph -> ps ) <-> ( ph -> ch ) ) |\n| 3 | 2 | #P_bibi2i | |- ( ( ( ph -> th ) <-> ( ph -> ps ) ) <-> ( ( ph -> th ) <-> ( ph -> ch ) ) ) |\n| 4 |  | #P_pm5.74 | |- ( ( ph -> ( th <-> ps ) ) <-> ( ( ph -> th ) <-> ( ph -> ps ) ) ) |\n| 5 |  | #P_pm5.74 | |- ( ( ph -> ( th <-> ch ) ) <-> ( ( ph -> th ) <-> ( ph -> ch ) ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4i | |- ( ( ph -> ( th <-> ps ) ) <-> ( ph -> ( th <-> ch ) ) ) |\n| 7 | 6 | #P_pm5.74ri | |- ( ph -> ( ( th <-> ps ) <-> ( th <-> ch ) ) ) |",
+  "conclusion" : "#P_bibi2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wps", "#T_wb", "#T_wth", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.74i", "#P_pm5.74", "#P_pm5.74ri", "#P_3bitr4i", "#P_bibi2i" ]
+}

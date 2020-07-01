@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-lub on Metamath](http://us.metamath.org/mpegif/df-lub.html)"
+  } ],
+  "names" : [ "df-lub" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_club", "#T_wceq", "#T_vp", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vs", "#T_cmpt--1", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vp", "#T_cmpt--2", "#T_crio--1", "#T_vx", "#T_crio--2", "#T_cbs", "#T_cfv", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vs", "#T_vy", "#T_cple", "#T_cfv", "#T_vp", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vs", "#T_vy", "#T_cple", "#T_cfv", "#T_vp", "#T_vz", "#T_wi", "#T_vx", "#T_cple", "#T_cfv", "#T_vp", "#T_vz", "#T_cres", "#T_cab--1", "#T_vs", "#T_cab--2", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cbs", "#T_cfv", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vs", "#T_vy", "#T_cple", "#T_cfv", "#T_vp", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vs", "#T_vy", "#T_cple", "#T_cfv", "#T_vp", "#T_vz", "#T_wi", "#T_vx", "#T_cple", "#T_cfv", "#T_vp", "#T_vz", "#T_cab--3", "#T_vp", "#T_vs", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the least upper bound (LUB) of a set of (poset) elements.  The domain is restricted to exclude sets ` s ` for which the LUB doesn't exist uniquely.  (Contributed by NM, 12-Sep-2011.)  (Revised by NM, 6-Sep-2018.) ",
+  "statement" : "df-lub $p |- lub = ( p e. _V |-> ( ( s e. ~P ( Base ` p ) |-> ( iota_ x e. ( Base ` p ) ( A. y e. s y ( le ` p ) x /\\ A. z e. ( Base ` p ) ( A. y e. s y ( le ` p ) z -> x ( le ` p ) z ) ) ) ) |` { s | E! x e. ( Base ` p ) ( A. y e. s y ( le ` p ) x /\\ A. z e. ( Base ` p ) ( A. y e. s y ( le ` p ) z -> x ( le ` p ) z ) ) } ) ) $.\n$d p s x y z $."
+}

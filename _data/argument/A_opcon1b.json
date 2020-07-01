@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opcon1b on Metamath](http://us.metamath.org/mpegif/opcon1b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opoccl.b | |- B = ( Base ` K ) |\n| 2 |  | opoccl.o | |- ._|_ = ( oc ` K ) |\n| 3 | 1, 2 | #P_opcon2b | |- ( ( K e. OP /\\ X e. B /\\ Y e. B ) -> ( X = ( ._|_ ` Y ) <-> Y = ( ._|_ ` X ) ) ) |\n| 4 |  | #P_eqcom | |- ( ( ._|_ ` Y ) = X <-> X = ( ._|_ ` Y ) ) |\n| 5 |  | #P_eqcom | |- ( ( ._|_ ` X ) = Y <-> Y = ( ._|_ ` X ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( ( K e. OP /\\ X e. B /\\ Y e. B ) -> ( ( ._|_ ` Y ) = X <-> ( ._|_ ` X ) = Y ) ) |\n| 7 | 6 | #P_bicomd | |- ( ( K e. OP /\\ X e. B /\\ Y e. B ) -> ( ( ._|_ ` X ) = Y <-> ( ._|_ ` Y ) = X ) ) |",
+  "conclusion" : "#P_opcon1b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.pe", "#T_wceq", "#T_coc", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cops", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_cY", "#T_wb", "#T_cY", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_cX", "#T_c.pe", "#T_cfv", "#T_cY", "#T_wceq", "#T_cX", "#T_wb", "#T_cX", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_cY", "#T_c.pe", "#T_cfv", "#T_cX", "#T_wceq", "#T_cY", "#T_wb", "#T_cY", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_cX", "#T_cK", "#T_wcel", "#T_cops", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c.pe", "#T_cfv", "#T_cY", "#T_wceq", "#T_cX", "#T_wb", "#T_c.pe", "#T_cfv", "#T_cX", "#T_wceq", "#T_cY", "#T_cK", "#T_wcel", "#T_cops", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_c.pe", "#T_cfv", "#T_cX", "#T_wceq", "#T_cY", "#T_wb", "#T_c.pe", "#T_cfv", "#T_cY", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bicomd", "#P_opcon2b", "#P_3bitr4g", "#P_eqcom" ]
+}

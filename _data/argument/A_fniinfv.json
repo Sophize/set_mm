@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fniinfv on Metamath](http://us.metamath.org/mpegif/fniinfv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fnrnfv | |- ( F Fn A -> ran F = { y | E. x e. A y = ( F ` x ) } ) |\n| 2 | 1 | #P_inteqd | |- ( F Fn A -> |^| ran F = |^| { y | E. x e. A y = ( F ` x ) } ) |\n| 3 |  | #P_fvex | |- ( F ` x ) e. _V |\n| 4 | 3 | #P_dfiin2 | |- |^|_ x e. A ( F ` x ) = |^| { y | E. x e. A y = ( F ` x ) } |\n| 5 | 2, 4 | #P_syl6reqr | |- ( F Fn A -> |^|_ x e. A ( F ` x ) = |^| ran F ) |",
+  "conclusion" : "#P_fniinfv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cab--3", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_crn", "#T_cF", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cab--3", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cab--3", "#T_cF", "#T_wfn", "#T_cA", "#T_wi", "#T_ciin--1", "#T_vx", "#T_ciin--2", "#T_cA", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cint", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_inteqd", "#P_dfiin2", "#P_syl6reqr", "#P_fnrnfv", "#P_fvex" ]
+}

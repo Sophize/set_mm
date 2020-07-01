@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oppcco on Metamath](http://us.metamath.org/mpegif/oppcco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oppcco.b | |- B = ( Base ` C ) |\n| 2 |  | oppcco.c | |- .x. = ( comp ` C ) |\n| 3 |  | oppcco.o | |- O = ( oppCat ` C ) |\n| 4 |  | oppcco.x | |- ( ph -> X e. B ) |\n| 5 |  | oppcco.y | |- ( ph -> Y e. B ) |\n| 6 |  | oppcco.z | |- ( ph -> Z e. B ) |\n| 7 | 1, 2, 3, 4, 5, 6 | #P_oppccofval | |- ( ph -> ( <. X , Y >. ( comp ` O ) Z ) = tpos ( <. Z , Y >. .x. X ) ) |\n| 8 | 7 | #P_oveqd | |- ( ph -> ( G ( <. X , Y >. ( comp ` O ) Z ) F ) = ( G tpos ( <. Z , Y >. .x. X ) F ) ) |\n| 9 |  | #P_ovtpos | |- ( G tpos ( <. Z , Y >. .x. X ) F ) = ( F ( <. Z , Y >. .x. X ) G ) |\n| 10 | 8, 9 | #P_syl6eq | |- ( ph -> ( G ( <. X , Y >. ( comp ` O ) Z ) F ) = ( F ( <. Z , Y >. .x. X ) G ) ) |",
+  "conclusion" : "#P_oppcco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_c.x", "#T_wceq", "#T_cco", "#T_cfv", "#T_cC", "#T_cO", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cco", "#T_cfv", "#T_cO", "#T_cZ", "#T_wceq", "#T_ctpos", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_wph", "#T_wi", "#T_cG", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cco", "#T_cfv", "#T_cO", "#T_cZ", "#T_cF", "#T_wceq", "#T_cG", "#T_ctpos", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_cF", "#T_cG", "#T_ctpos", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_cF", "#T_wceq", "#T_cF", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cco", "#T_cfv", "#T_cO", "#T_cZ", "#T_cF", "#T_wceq", "#T_cF", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oppccofval", "#P_ovtpos", "#P_oveqd", "#P_syl6eq" ]
+}

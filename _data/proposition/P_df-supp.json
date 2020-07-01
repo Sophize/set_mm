@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-supp on Metamath](http://us.metamath.org/mpegif/df-supp.html)"
+  } ],
+  "names" : [ "df-supp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csupp", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vz", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_crab--1", "#T_vi", "#T_crab--2", "#T_cdm", "#T_vx", "#T_crab--3", "#T_vx", "#T_cima", "#T_csn--1", "#T_vi", "#T_csn--2", "#T_wne", "#T_csn--1", "#T_vz", "#T_csn--2", "#T_crab--4", "#T_vi", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the support of a function against a \"zero\" value.  According to Wikipedia (\"Support (mathematics)\", 31-Mar-2019, ~ https://en.wikipedia.org/wiki/Support_(mathematics) ) \"In mathematics, the support of a real-valued function f is the subset of the domain containing those elements which are not mapped to zero.\" and \"The notion of support also extends in a natural way to functions taking values in more general sets than R [the real numbers] and to other objects.\".  The following definition allows for such extensions, being applicable for any sets (which usually are functions) and any element (even not necessarily from the range of the function) regarded as \"zero\". (Contributed by AV, 31-Mar-2019.)  (Revised by AV, 6-Apr-2019.) ",
+  "statement" : "df-supp $p |- supp = ( x e. _V , z e. _V |-> { i e. dom x | ( x \" { i } ) =/= { z } } ) $.\n$d i x z $."
+}

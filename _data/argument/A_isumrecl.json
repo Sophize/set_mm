@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isumrecl on Metamath](http://us.metamath.org/mpegif/isumrecl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isumrecl.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | isumrecl.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | isumrecl.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) |\n| 4 |  | isumrecl.4 | |- ( ( ph /\\ k e. Z ) -> A e. RR ) |\n| 5 |  | isumrecl.5 | |- ( ph -> seq M ( + , F ) e. dom ~~> ) |\n| 6 | 4 | #P_recnd | |- ( ( ph /\\ k e. Z ) -> A e. CC ) |\n| 7 | 1, 2, 3, 6, 5 | #P_isumclim2 | |- ( ph -> seq M ( + , F ) ~~> sum_ k e. Z A ) |\n| 8 | 3, 4 | #P_eqeltrd | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) e. RR ) |\n| 9 | 1, 2, 8 | #P_serfre | |- ( ph -> seq M ( + , F ) : Z --> RR ) |\n| 10 | 9 | #P_ffvelrnda | |- ( ( ph /\\ j e. Z ) -> ( seq M ( + , F ) ` j ) e. RR ) |\n| 11 | 1, 2, 7, 10 | #P_climrecl | |- ( ph -> sum_ k e. Z A e. RR ) |",
+  "conclusion" : "#P_isumrecl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA.wceq", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cr", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cZ", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_vj", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_serfre", "#P_eqeltrd", "#P_recnd", "#P_ffvelrnda", "#P_isumclim2", "#P_climrecl" ]
+}

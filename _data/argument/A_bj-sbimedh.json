@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sbimedh on Metamath](http://us.metamath.org/mpegif/bj-sbimedh.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-sbimedh.1 | |- ( ph -> A. x ph ) |\n| 2 |  | bj-sbimedh.2 | |- ( ph -> ( ch -> A. x ch ) ) |\n| 3 |  | bj-sbimedh.3 | |- ( ph -> ( x = y -> ( ps -> ch ) ) ) |\n| 4 |  | #P_sb1 | |- ( [ y / x ] ps -> E. x ( x = y /\\ ps ) ) |\n| 5 | 3 | #P_impd | |- ( ph -> ( ( x = y /\\ ps ) -> ch ) ) |\n| 6 | 1, 5 | #P_eximdh | |- ( ph -> ( E. x ( x = y /\\ ps ) -> E. x ch ) ) |\n| 7 | 4, 6 | #P_syl5 | |- ( ph -> ( [ y / x ] ps -> E. x ch ) ) |\n| 8 | 1, 2 | #P_19.9hd | |- ( ph -> ( E. x ch -> ch ) ) |\n| 9 | 7, 8 | #P_syld | |- ( ph -> ( [ y / x ] ps -> ch ) ) |",
+  "conclusion" : "#P_bj-sbimedh",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wal", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eximdh", "#P_impd", "#P_sb1", "#P_19.9hd", "#P_syld", "#P_syl5" ]
+}

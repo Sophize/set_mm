@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofldtos on Metamath](http://us.metamath.org/mpegif/ofldtos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isofld | |- ( F e. oField <-> ( F e. Field /\\ F e. oRing ) ) |\n| 2 | 1 | #P_simprbi | |- ( F e. oField -> F e. oRing ) |\n| 3 |  | #P_orngogrp | |- ( F e. oRing -> F e. oGrp ) |\n| 4 |  | #P_isogrp | |- ( F e. oGrp <-> ( F e. Grp /\\ F e. oMnd ) ) |\n| 5 | 4 | #P_simprbi | |- ( F e. oGrp -> F e. oMnd ) |\n| 6 | 2, 3, 5 | #P_3syl | |- ( F e. oField -> F e. oMnd ) |\n| 7 |  | #P_omndtos | |- ( F e. oMnd -> F e. Toset ) |\n| 8 | 6, 7 | #P_syl | |- ( F e. oField -> F e. Toset ) |",
+  "conclusion" : "#P_ofldtos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cofld", "#T_wb", "#T_cF", "#T_wcel", "#T_cfield", "#T_wa", "#T_cF", "#T_wcel", "#T_corng", "#T_cF", "#T_wcel", "#T_cofld", "#T_wi", "#T_cF", "#T_wcel", "#T_corng", "#T_cF", "#T_wcel", "#T_corng", "#T_wi", "#T_cF", "#T_wcel", "#T_cogrp", "#T_cF", "#T_wcel", "#T_cogrp", "#T_wb", "#T_cF", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cF", "#T_wcel", "#T_comnd", "#T_cF", "#T_wcel", "#T_cogrp", "#T_wi", "#T_cF", "#T_wcel", "#T_comnd", "#T_cF", "#T_wcel", "#T_cofld", "#T_wi", "#T_cF", "#T_wcel", "#T_comnd", "#T_cF", "#T_wcel", "#T_comnd", "#T_wi", "#T_cF", "#T_wcel", "#T_ctos", "#T_cF", "#T_wcel", "#T_cofld", "#T_wi", "#T_cF", "#T_wcel", "#T_ctos" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprbi", "#P_3syl", "#P_isofld", "#P_syl", "#P_isogrp", "#P_omndtos", "#P_orngogrp" ]
+}

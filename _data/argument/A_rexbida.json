@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexbida on Metamath](http://us.metamath.org/mpegif/rexbida.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rexbida.1 | |- F/ x ph |\n| 2 |  | rexbida.2 | |- ( ( ph /\\ x e. A ) -> ( ps <-> ch ) ) |\n| 3 | 2 | #P_pm5.32da | |- ( ph -> ( ( x e. A /\\ ps ) <-> ( x e. A /\\ ch ) ) ) |\n| 4 | 1, 3 | #P_exbid | |- ( ph -> ( E. x ( x e. A /\\ ps ) <-> E. x ( x e. A /\\ ch ) ) ) |\n| 5 |  | #P_df-rex | |- ( E. x e. A ps <-> E. x ( x e. A /\\ ps ) ) |\n| 6 |  | #P_df-rex | |- ( E. x e. A ch <-> E. x ( x e. A /\\ ch ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( ph -> ( E. x e. A ps <-> E. x e. A ch ) ) |",
+  "conclusion" : "#P_rexbida",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wch", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wch", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbid", "#P_3bitr4g", "#P_pm5.32da", "#P_df-rex" ]
+}

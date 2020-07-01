@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See atdmd2 on Metamath](http://us.metamath.org/mpegif/atdmd2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_atdmd | |- ( ( B e. HAtoms /\\ A e. CH ) -> B MH* A ) |\n| 2 | 1 | #P_ancoms | |- ( ( A e. CH /\\ B e. HAtoms ) -> B MH* A ) |\n| 3 |  | #P_atelch | |- ( B e. HAtoms -> B e. CH ) |\n| 4 |  | #P_dmdsym | |- ( ( A e. CH /\\ B e. CH ) -> ( A MH* B <-> B MH* A ) ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( A e. CH /\\ B e. HAtoms ) -> ( A MH* B <-> B MH* A ) ) |\n| 6 | 2, 5 | #P_mpbird | |- ( ( A e. CH /\\ B e. HAtoms ) -> A MH* B ) |",
+  "conclusion" : "#P_atdmd2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cat", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_cdmd", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cat", "#T_wi", "#T_cB.wceq", "#T_cdmd", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cat", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_cdmd", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_cdmd", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cat", "#T_wi", "#T_cA.wceq", "#T_cdmd", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_cdmd", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_wa", "#T_cB", "#T_wcel", "#T_cat", "#T_wi", "#T_cA", "#T_cdmd", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_atelch", "#P_atdmd", "#P_dmdsym", "#P_sylan2", "#P_ancoms", "#P_mpbird" ]
+}

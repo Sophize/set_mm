@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlimge0 on Metamath](http://us.metamath.org/mpegif/rlimge0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rlimcld2.1 | |- ( ph -> sup ( A , RR* , < ) = +oo ) |\n| 2 |  | rlimcld2.2 | |- ( ph -> ( x e. A |-> B ) ~~>r C ) |\n| 3 |  | rlimrecl.3 | |- ( ( ph /\\ x e. A ) -> B e. RR ) |\n| 4 |  | rlimge0.4 | |- ( ( ph /\\ x e. A ) -> 0 <_ B ) |\n| 5 | 3 | #P_recnd | |- ( ( ph /\\ x e. A ) -> B e. CC ) |\n| 6 | 3 | #P_rered | |- ( ( ph /\\ x e. A ) -> ( Re ` B ) = B ) |\n| 7 | 4, 6 | #P_breqtrrd | |- ( ( ph /\\ x e. A ) -> 0 <_ ( Re ` B ) ) |\n| 8 | 1, 2, 5, 7 | #P_rlimrege0 | |- ( ph -> 0 <_ ( Re ` C ) ) |\n| 9 | 1, 2, 3 | #P_rlimrecl | |- ( ph -> C e. RR ) |\n| 10 | 9 | #P_rered | |- ( ph -> ( Re ` C ) = C ) |\n| 11 | 8, 10 | #P_breqtrd | |- ( ph -> 0 <_ C ) |",
+  "conclusion" : "#P_rlimge0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_cpnf", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_crli", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cc0", "#T_cle", "#T_cB", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cre", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_cle", "#T_cre", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cre", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cre", "#T_cfv", "#T_cC", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breqtrrd", "#P_rlimrege0", "#P_rered", "#P_breqtrd", "#P_recnd", "#P_rlimrecl" ]
+}

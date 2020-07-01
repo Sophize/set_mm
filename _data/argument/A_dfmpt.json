@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfmpt on Metamath](http://us.metamath.org/mpegif/dfmpt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dfmpt.1 | |- B e. _V |\n| 2 |  | #P_dfmpt3 | |- ( x e. A |-> B ) = U_ x e. A ( { x } X. { B } ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3, 1 | #P_xpsn | |- ( { x } X. { B } ) = { <. x , B >. } |\n| 5 | 4 | #P_a1i | |- ( x e. A -> ( { x } X. { B } ) = { <. x , B >. } ) |\n| 6 | 5 | #P_iuneq2i | |- U_ x e. A ( { x } X. { B } ) = U_ x e. A { <. x , B >. } |\n| 7 | 2, 6 | #P_eqtri | |- ( x e. A |-> B ) = U_ x e. A { <. x , B >. } |",
+  "conclusion" : "#P_dfmpt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_csn--1", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_csn--1", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_xpsn", "#P_dfmpt3", "#P_vex", "#P_a1i", "#P_iuneq2i" ]
+}

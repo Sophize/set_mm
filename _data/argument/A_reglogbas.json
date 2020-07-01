@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reglogbas on Metamath](http://us.metamath.org/mpegif/reglogbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relogcl | |- ( C e. RR+ -> ( log ` C ) e. RR ) |\n| 2 | 1 | #P_recnd | |- ( C e. RR+ -> ( log ` C ) e. CC ) |\n| 3 | 2 | #P_adantr | |- ( ( C e. RR+ /\\ C =/= 1 ) -> ( log ` C ) e. CC ) |\n| 4 |  | #P_logne0 | |- ( ( C e. RR+ /\\ C =/= 1 ) -> ( log ` C ) =/= 0 ) |\n| 5 | 3, 4 | #P_dividd | |- ( ( C e. RR+ /\\ C =/= 1 ) -> ( ( log ` C ) / ( log ` C ) ) = 1 ) |",
+  "conclusion" : "#P_reglogbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wcel", "#T_crp", "#T_wi", "#T_clog", "#T_cfv", "#T_cC", "#T_wcel", "#T_cr", "#T_cC", "#T_wcel", "#T_crp", "#T_wi", "#T_clog", "#T_cfv", "#T_cC", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_crp", "#T_wa", "#T_cC", "#T_wne", "#T_c1", "#T_wi", "#T_clog", "#T_cfv", "#T_cC", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_crp", "#T_wa", "#T_cC", "#T_wne", "#T_c1", "#T_wi", "#T_clog", "#T_cfv", "#T_cC", "#T_wne", "#T_cc0", "#T_cC", "#T_wcel", "#T_crp", "#T_wa", "#T_cC", "#T_wne", "#T_c1", "#T_wi", "#T_clog", "#T_cfv", "#T_cC", "#T_cdiv", "#T_clog", "#T_cfv", "#T_cC", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_logne0", "#P_dividd", "#P_recnd", "#P_relogcl", "#P_adantr" ]
+}

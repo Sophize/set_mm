@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulg2 on Metamath](http://us.metamath.org/mpegif/mulg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulg1.b | |- B = ( Base ` G ) |\n| 2 |  | mulg1.m | |- .x. = ( .g ` G ) |\n| 3 |  | mulgnnp1.p | |- .+ = ( +g ` G ) |\n| 4 |  | #P_df-2 | |- 2 = ( 1 + 1 ) |\n| 5 | 4 | #P_oveq1i | |- ( 2 .x. X ) = ( ( 1 + 1 ) .x. X ) |\n| 6 |  | #P_1nn | |- 1 e. NN |\n| 7 | 1, 2, 3 | #P_mulgnnp1 | |- ( ( 1 e. NN /\\ X e. B ) -> ( ( 1 + 1 ) .x. X ) = ( ( 1 .x. X ) .+ X ) ) |\n| 8 | 6, 7 | #P_mpan | |- ( X e. B -> ( ( 1 + 1 ) .x. X ) = ( ( 1 .x. X ) .+ X ) ) |\n| 9 | 5, 8 | #P_syl5eq | |- ( X e. B -> ( 2 .x. X ) = ( ( 1 .x. X ) .+ X ) ) |\n| 10 | 1, 2 | #P_mulg1 | |- ( X e. B -> ( 1 .x. X ) = X ) |\n| 11 | 10 | #P_oveq1d | |- ( X e. B -> ( ( 1 .x. X ) .+ X ) = ( X .+ X ) ) |\n| 12 | 9, 11 | #P_eqtrd | |- ( X e. B -> ( 2 .x. X ) = ( X .+ X ) ) |",
+  "conclusion" : "#P_mulg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.x", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c2", "#T_wceq", "#T_c1", "#T_caddc", "#T_c1", "#T_c2", "#T_c.x", "#T_cX", "#T_wceq", "#T_c1", "#T_caddc", "#T_c1", "#T_c.x", "#T_cX", "#T_c1", "#T_wcel", "#T_cn", "#T_c1", "#T_wcel", "#T_cn", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_c.x", "#T_cX", "#T_wceq", "#T_c1", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cX", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_c.x", "#T_cX", "#T_wceq", "#T_c1", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cX", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c2", "#T_c.x", "#T_cX", "#T_wceq", "#T_c1", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cX", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c1", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c1", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cX", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cX", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_c2", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulg1", "#P_1nn", "#P_eqtrd", "#P_mulgnnp1", "#P_mpan", "#P_oveq1d", "#P_oveq1i", "#P_syl5eq", "#P_df-2" ]
+}

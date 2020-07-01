@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuind on Metamath](http://us.metamath.org/mpegif/reuind.html)"
+  } ],
+  "names" : [ "reuind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_wph", "#T_wa", "#T_cB", "#T_wcel", "#T_cC", "#T_wa", "#T_wps", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_wex", "#T_vx", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_wph", "#T_wi", "#T_wreu--1", "#T_vz", "#T_wreu--2", "#T_cC", "#T_wal", "#T_vx", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_wph", "#T_wi", "#T_vz", "#T_wceq", "#T_cA", "#T_cA", "#T_vy", "#T_vz", "#T_cB", "#T_vx", "#T_vz", "#T_cC", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vy", "#T_vz", "#T_wps", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Existential uniqueness via an indirect equality.  (Contributed by NM, 16-Oct-2010.) ",
+  "statement" : "reuind.1 $e |- ( x = y -> ( ph <-> ps ) ) $.\nreuind.2 $e |- ( x = y -> A = B ) $.\nreuind $p |- ( ( A. x A. y ( ( ( A e. C /\\ ph ) /\\ ( B e. C /\\ ps ) ) -> A = B ) /\\ E. x ( A e. C /\\ ph ) ) -> E! z e. C A. x ( ( A e. C /\\ ph ) -> z = A ) ) $.\n$d A y z $.\n$d B x z $.\n$d C x y z $.\n$d ph y z $.\n$d ps x z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmdcanapd on Metamath](http://us.metamath.org/mpegif/dmdcanapd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divcld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | divcld.2 | |- ( ph -> B e. CC ) |\n| 3 |  | divmuld.3 | |- ( ph -> C e. CC ) |\n| 4 |  | divmulapd.4 | |- ( ph -> B # 0 ) |\n| 5 |  | divdiv23apd.5 | |- ( ph -> C # 0 ) |\n| 6 |  | #P_dmdcanap | |- ( ( ( B e. CC /\\ B # 0 ) /\\ ( C e. CC /\\ C # 0 ) /\\ A e. CC ) -> ( ( B / C ) x. ( A / B ) ) = ( A / C ) ) |\n| 7 | 2, 4, 3, 5, 1, 6 | #P_syl221anc | |- ( ph -> ( ( B / C ) x. ( A / B ) ) = ( A / C ) ) |",
+  "conclusion" : "#P_dmdcanapd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cC", "#T_cap", "#T_cc0", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_w3a--1", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_cdiv", "#T_cC", "#T_cmul", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl221anc", "#P_dmdcanap" ]
+}

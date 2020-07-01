@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsmsfbas on Metamath](http://us.metamath.org/mpegif/tsmsfbas.html)"
+  } ],
+  "names" : [ "tsmsfbas" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cpw", "#T_cA", "#T_cin", "#T_cfn", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cS", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vz", "#T_wss", "#T_vy", "#T_crab--4", "#T_cL", "#T_wceq", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cL", "#T_wcel", "#T_cfbas", "#T_cfv", "#T_cS", "#T_cA", "#T_vz", "#T_cS", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The collection of all sets of the form ` F ( z ) = { y e. S | z C_ y } ` , which can be read as the set of all finite subsets of ` A ` which contain ` z ` as a subset, for each finite subset ` z ` of ` A ` , form a filter base.  (Contributed by Mario Carneiro, 2-Sep-2015.) ",
+  "statement" : "tsmsfbas.s $e |- S = ( ~P A i^i Fin ) $.\ntsmsfbas.f $e |- F = ( z e. S |-> { y e. S | z C_ y } ) $.\ntsmsfbas.l $e |- L = ran F $.\ntsmsfbas.a $e |- ( ph -> A e. W ) $.\ntsmsfbas $p |- ( ph -> L e. ( fBas ` S ) ) $.\n$d A z $.\n$d S y z $."
+}

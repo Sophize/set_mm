@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cicfval on Metamath](http://us.metamath.org/mpegif/cicfval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nc\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-cic | |- ~=c = ( c e. Cat |-> ( ( Iso ` c ) supp (/) ) ) |\n| 2 | 1 | #P_a1i | |- ( C e. Cat -> ~=c = ( c e. Cat |-> ( ( Iso ` c ) supp (/) ) ) ) |\n| 3 |  | #P_fveq2 | |- ( c = C -> ( Iso ` c ) = ( Iso ` C ) ) |\n| 4 | 3 | #P_oveq1d | |- ( c = C -> ( ( Iso ` c ) supp (/) ) = ( ( Iso ` C ) supp (/) ) ) |\n| 5 | 4 | #P_adantl | |- ( ( C e. Cat /\\ c = C ) -> ( ( Iso ` c ) supp (/) ) = ( ( Iso ` C ) supp (/) ) ) |\n| 6 |  | #P_id | |- ( C e. Cat -> C e. Cat ) |\n| 7 |  | #P_ovex | |- ( ( Iso ` C ) supp (/) ) e. _V |\n| 8 | 7 | #P_a1i | |- ( C e. Cat -> ( ( Iso ` C ) supp (/) ) e. _V ) |\n| 9 | 2, 5, 6, 8 | #P_fvmptd | |- ( C e. Cat -> ( ~=c ` C ) = ( ( Iso ` C ) supp (/) ) ) |",
+  "conclusion" : "#P_cicfval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vc", "#T_ccic", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_ciso", "#T_cfv", "#T_vc", "#T_csupp", "#T_c0", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_ccic", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_ciso", "#T_cfv", "#T_vc", "#T_csupp", "#T_c0", "#T_vc", "#T_wceq", "#T_cC", "#T_wi", "#T_ciso", "#T_cfv", "#T_vc", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_vc", "#T_wceq", "#T_cC", "#T_wi", "#T_ciso", "#T_cfv", "#T_vc", "#T_csupp", "#T_c0", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_csupp", "#T_c0", "#T_cC", "#T_wcel", "#T_ccat", "#T_wa", "#T_vc", "#T_wceq", "#T_cC", "#T_wi", "#T_ciso", "#T_cfv", "#T_vc", "#T_csupp", "#T_c0", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_csupp", "#T_c0", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_ciso", "#T_cfv", "#T_cC", "#T_csupp", "#T_c0", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_ciso", "#T_cfv", "#T_cC", "#T_csupp", "#T_c0", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_ccic", "#T_cfv", "#T_cC", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_csupp", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_adantl", "#P_df-cic", "#P_fveq2", "#P_oveq1d", "#P_a1i", "#P_fvmptd", "#P_id" ]
+}

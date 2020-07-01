@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decaddci on Metamath](http://us.metamath.org/mpegif/decaddci.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decaddi.1 | |- A e. NN0 |\n| 2 |  | decaddi.2 | |- B e. NN0 |\n| 3 |  | decaddi.3 | |- N e. NN0 |\n| 4 |  | decaddi.4 | |- M = ; A B |\n| 5 |  | decaddci.5 | |- ( A + 1 ) = D |\n| 6 |  | decaddci.6 | |- C e. NN0 |\n| 7 |  | decaddci.7 | |- ( B + N ) = ; 1 C |\n| 8 |  | #P_0nn0 | |- 0 e. NN0 |\n| 9 | 3 | #P_dec0h | |- N = ; 0 N |\n| 10 | 1 | #P_nn0cni | |- A e. CC |\n| 11 | 10 | #P_addid1i | |- ( A + 0 ) = A |\n| 12 | 11 | #P_oveq1i | |- ( ( A + 0 ) + 1 ) = ( A + 1 ) |\n| 13 | 12, 5 | #P_eqtri | |- ( ( A + 0 ) + 1 ) = D |\n| 14 | 1, 2, 8, 3, 4, 9, 13, 6, 7 | #P_decaddc | |- ( M + N ) = ; D C |",
+  "conclusion" : "#P_decaddci",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cN", "#T_wcel", "#T_cn0", "#T_cM", "#T_wceq", "#T_cdc", "#T_cA", "#T_cB", "#T_cA", "#T_caddc", "#T_c1", "#T_wceq", "#T_cD", "#T_cC", "#T_wcel", "#T_cn0", "#T_cB", "#T_caddc", "#T_cN", "#T_wceq", "#T_cdc", "#T_c1", "#T_cC", "#T_cc0", "#T_wcel", "#T_cn0", "#T_cN", "#T_wceq", "#T_cdc", "#T_cc0", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_caddc", "#T_c1", "#T_wceq", "#T_cD", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cdc", "#T_cD", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dec0h", "#P_eqtri", "#P_0nn0", "#P_addid1i", "#P_nn0cni", "#P_decaddc", "#P_oveq1i" ]
+}

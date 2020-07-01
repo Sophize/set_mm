@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifbid on Metamath](http://us.metamath.org/mpegif/ifbid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ifbid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | #P_ifbi | |- ( ( ps <-> ch ) -> if ( ps , A , B ) = if ( ch , A , B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> if ( ps , A , B ) = if ( ch , A , B ) ) |",
+  "conclusion" : "#P_ifbid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_ifbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvelimh on Metamath](http://us.metamath.org/mpegif/dvelimh.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvelimh.1 | |- ( ph -> A. x ph ) |\n| 2 |  | dvelimh.2 | |- ( ps -> A. z ps ) |\n| 3 |  | dvelimh.3 | |- ( z = y -> ( ph <-> ps ) ) |\n| 4 | 1 | #P_nfi | |- F/ x ph |\n| 5 | 2 | #P_nfi | |- F/ z ps |\n| 6 | 4, 5, 3 | #P_dvelimf | |- ( -. A. x x = y -> F/ x ps ) |\n| 7 | 6 | #P_nfrd | |- ( -. A. x x = y -> ( ps -> A. x ps ) ) |",
+  "conclusion" : "#P_dvelimh",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vz", "#T_wps", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vz", "#T_wps", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfrd", "#P_nfi", "#P_dvelimf" ]
+}

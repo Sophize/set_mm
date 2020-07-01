@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See braval on Metamath](http://us.metamath.org/mpegif/braval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_brafval | |- ( A e. ~H -> ( bra ` A ) = ( x e. ~H |-> ( x .ih A ) ) ) |\n| 2 | 1 | #P_fveq1d | |- ( A e. ~H -> ( ( bra ` A ) ` B ) = ( ( x e. ~H |-> ( x .ih A ) ) ` B ) ) |\n| 3 |  | #P_oveq1 | |- ( x = B -> ( x .ih A ) = ( B .ih A ) ) |\n| 4 |  | #P_eqid | |- ( x e. ~H |-> ( x .ih A ) ) = ( x e. ~H |-> ( x .ih A ) ) |\n| 5 |  | #P_ovex | |- ( B .ih A ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( B e. ~H -> ( ( x e. ~H |-> ( x .ih A ) ) ` B ) = ( B .ih A ) ) |\n| 7 | 2, 6 | #P_sylan9eq | |- ( ( A e. ~H /\\ B e. ~H ) -> ( ( bra ` A ) ` B ) = ( B .ih A ) ) |",
+  "conclusion" : "#P_braval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA.wceq", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cfv", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_cA.wceq", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_chil", "#T_wa", "#T_cB", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_cA", "#T_cfv", "#T_cB", "#T_wceq", "#T_cB", "#T_csp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_eqid", "#P_fvmpt", "#P_fveq1d", "#P_brafval", "#P_oveq1", "#P_sylan9eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See normsub0i on Metamath](http://us.metamath.org/mpegif/normsub0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | normsub0.1 | |- A e. ~H |\n| 2 |  | normsub0.2 | |- B e. ~H |\n| 3 | 1, 2 | #P_hvsubcli | |- ( A -h B ) e. ~H |\n| 4 | 3 | #P_norm-i-i | |- ( ( normh ` ( A -h B ) ) = 0 <-> ( A -h B ) = 0h ) |\n| 5 | 1, 2 | #P_hvsubeq0i | |- ( ( A -h B ) = 0h <-> A = B ) |\n| 6 | 4, 5 | #P_bitri | |- ( ( normh ` ( A -h B ) ) = 0 <-> A = B ) |",
+  "conclusion" : "#P_normsub0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wceq", "#T_c0v", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wceq", "#T_c0v", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cno", "#T_cfv", "#T_cA", "#T_cmv", "#T_cB", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hvsubcli", "#P_norm-i-i", "#P_hvsubeq0i", "#P_bitri" ]
+}

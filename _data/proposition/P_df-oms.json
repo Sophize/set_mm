@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-oms on Metamath](http://us.metamath.org/mpegif/df-oms.html)"
+  } ],
+  "names" : [ "df-oms" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_coms", "#T_wceq", "#T_vr", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_va", "#T_cmpt--1", "#T_cpw", "#T_cuni", "#T_cdm", "#T_vr", "#T_cmpt--2", "#T_csup--1", "#T_crn", "#T_vx", "#T_cmpt--1", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cpw", "#T_cpw", "#T_cuni", "#T_cdm", "#T_vr", "#T_crab--3", "#T_va", "#T_wss", "#T_cuni", "#T_vz", "#T_wa", "#T_vz", "#T_cdom", "#T_com", "#T_crab--4", "#T_cmpt--2", "#T_cesum--1", "#T_vy", "#T_cesum--2", "#T_vx", "#T_vr", "#T_cfv", "#T_vy", "#T_csup--2", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_va", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function constructing an outer measure.  See ~ omsval for its value.  (Contributed by Thierry Arnoux, 15-Sep-2019.) ",
+  "statement" : "df-oms $p |- toOMeas = ( r e. _V |-> ( a e. ~P U. dom r |-> sup ( ran ( x e. { z e. ~P ~P U. dom r | ( a C_ U. z /\\ z ~<_ _om ) } |-> sum* y e. x ( r ` y ) ) , ( 0 [,] +oo ) , `' < ) ) ) $.\n$d a r x y z $."
+}

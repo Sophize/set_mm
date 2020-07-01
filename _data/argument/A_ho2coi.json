@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ho2coi on Metamath](http://us.metamath.org/mpegif/ho2coi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hods.1 | |- R : ~H --> ~H |\n| 2 |  | hods.2 | |- S : ~H --> ~H |\n| 3 |  | hods.3 | |- T : ~H --> ~H |\n| 4 | 1, 2 | #P_hocofi | |- ( R o. S ) : ~H --> ~H |\n| 5 | 4, 3 | #P_hocoi | |- ( A e. ~H -> ( ( ( R o. S ) o. T ) ` A ) = ( ( R o. S ) ` ( T ` A ) ) ) |\n| 6 | 3 | #P_ffvelrni | |- ( A e. ~H -> ( T ` A ) e. ~H ) |\n| 7 | 1, 2 | #P_hocoi | |- ( ( T ` A ) e. ~H -> ( ( R o. S ) ` ( T ` A ) ) = ( R ` ( S ` ( T ` A ) ) ) ) |\n| 8 | 6, 7 | #P_syl | |- ( A e. ~H -> ( ( R o. S ) ` ( T ` A ) ) = ( R ` ( S ` ( T ` A ) ) ) ) |\n| 9 | 5, 8 | #P_eqtrd | |- ( A e. ~H -> ( ( ( R o. S ) o. T ) ` A ) = ( R ` ( S ` ( T ` A ) ) ) ) |",
+  "conclusion" : "#P_ho2coi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cR", "#T_ccom", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cR", "#T_ccom", "#T_cS", "#T_ccom", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cR", "#T_ccom", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cR", "#T_ccom", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cR", "#T_cfv", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cR", "#T_ccom", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cR", "#T_cfv", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cR", "#T_ccom", "#T_cS", "#T_ccom", "#T_cT", "#T_cfv", "#T_cA", "#T_wceq", "#T_cR", "#T_cfv", "#T_cS", "#T_cfv", "#T_cT", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hocoi", "#P_hocofi", "#P_eqtrd", "#P_syl", "#P_ffvelrni" ]
+}

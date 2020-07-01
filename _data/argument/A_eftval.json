@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eftval on Metamath](http://us.metamath.org/mpegif/eftval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eftval.1 | |- F = ( n e. NN0 |-> ( ( A ^ n ) / ( ! ` n ) ) ) |\n| 2 |  | #P_oveq2 | |- ( n = N -> ( A ^ n ) = ( A ^ N ) ) |\n| 3 |  | #P_fveq2 | |- ( n = N -> ( ! ` n ) = ( ! ` N ) ) |\n| 4 | 2, 3 | #P_oveq12d | |- ( n = N -> ( ( A ^ n ) / ( ! ` n ) ) = ( ( A ^ N ) / ( ! ` N ) ) ) |\n| 5 |  | #P_ovex | |- ( ( A ^ N ) / ( ! ` N ) ) e. _V |\n| 6 | 4, 1, 5 | #P_fvmpt | |- ( N e. NN0 -> ( F ` N ) = ( ( A ^ N ) / ( ! ` N ) ) ) |",
+  "conclusion" : "#P_eftval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_vn", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_cfa", "#T_cfv", "#T_vn", "#T_wceq", "#T_cfa", "#T_cfv", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cN", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cN", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cF", "#T_cfv", "#T_cN", "#T_wceq", "#T_cA", "#T_cexp", "#T_cN", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_oveq12d", "#P_fvmpt", "#P_oveq2", "#P_fveq2" ]
+}

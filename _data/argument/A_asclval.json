@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See asclval on Metamath](http://us.metamath.org/mpegif/asclval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | asclfval.a | |- A = ( algSc ` W ) |\n| 2 |  | asclfval.f | |- F = ( Scalar ` W ) |\n| 3 |  | asclfval.k | |- K = ( Base ` F ) |\n| 4 |  | asclfval.s | |- .x. = ( .s ` W ) |\n| 5 |  | asclfval.o | |- .1. = ( 1r ` W ) |\n| 6 |  | #P_oveq1 | |- ( x = X -> ( x .x. .1. ) = ( X .x. .1. ) ) |\n| 7 | 1, 2, 3, 4, 5 | #P_asclfval | |- A = ( x e. K |-> ( x .x. .1. ) ) |\n| 8 |  | #P_ovex | |- ( X .x. .1. ) e. _V |\n| 9 | 6, 7, 8 | #P_fvmpt | |- ( X e. K -> ( A ` X ) = ( X .x. .1. ) ) |",
+  "conclusion" : "#P_asclval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_c.1", "#T_wceq", "#T_cX", "#T_c.x", "#T_c.1", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cK", "#T_cmpt--2", "#T_vx.wal", "#T_c.x", "#T_c.1", "#T_cX", "#T_c.x", "#T_c.1", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cK", "#T_wi", "#T_cA", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_c.x", "#T_c.1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_fvmpt", "#P_asclfval", "#P_oveq1" ]
+}

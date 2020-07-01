@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divdirapi on Metamath](http://us.metamath.org/mpegif/divdirapi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | divassap.4 | |- C # 0 |\n| 5 | 3, 4 | #P_pm3.2i | |- ( C e. CC /\\ C # 0 ) |\n| 6 |  | #P_divdirap | |- ( ( A e. CC /\\ B e. CC /\\ ( C e. CC /\\ C # 0 ) ) -> ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) |\n| 7 | 1, 2, 5, 6 | #P_mp3an | |- ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) |",
+  "conclusion" : "#P_divdirapi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cC", "#T_cap", "#T_cc0", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_cA", "#T_caddc", "#T_cB", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC", "#T_caddc", "#T_cB", "#T_cdiv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_divdirap", "#P_pm3.2i" ]
+}

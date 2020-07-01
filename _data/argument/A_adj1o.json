@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See adj1o on Metamath](http://us.metamath.org/mpegif/adj1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funadj | |- Fun adjh |\n| 2 |  | #P_funfn | |- ( Fun adjh <-> adjh Fn dom adjh ) |\n| 3 | 1, 2 | #P_mpbi | |- adjh Fn dom adjh |\n| 4 |  | #P_funcnvadj | |- Fun `' adjh |\n| 5 |  | #P_df-rn | |- ran adjh = dom `' adjh |\n| 6 |  | #P_cnvadj | |- `' adjh = adjh |\n| 7 | 6 | #P_dmeqi | |- dom `' adjh = dom adjh |\n| 8 | 5, 7 | #P_eqtri | |- ran adjh = dom adjh |\n| 9 |  | #P_dff1o2 | |- ( adjh : dom adjh -1-1-onto-> dom adjh <-> ( adjh Fn dom adjh /\\ Fun `' adjh /\\ ran adjh = dom adjh ) ) |\n| 10 | 3, 4, 8, 9 | #P_mpbir3an | |- adjh : dom adjh -1-1-onto-> dom adjh |",
+  "conclusion" : "#P_adj1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cado", "#T_wfun", "#T_cado", "#T_wb", "#T_cado", "#T_wfn", "#T_cdm", "#T_cado", "#T_cado", "#T_wfn", "#T_cdm", "#T_cado", "#T_wfun", "#T_ccnv", "#T_cado", "#T_crn", "#T_cado", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cado", "#T_ccnv", "#T_cado", "#T_wceq", "#T_cado", "#T_cdm", "#T_ccnv", "#T_cado", "#T_wceq", "#T_cdm", "#T_cado", "#T_crn", "#T_cado", "#T_wceq", "#T_cdm", "#T_cado", "#T_cado", "#T_wf1o--1", "#T_cdm", "#T_cado", "#T_wf1o--2", "#T_cdm", "#T_cado", "#T_wb", "#T_cado", "#T_wfn", "#T_cdm", "#T_cado", "#T_w3a--1", "#T_wfun", "#T_ccnv", "#T_cado", "#T_w3a--2", "#T_crn", "#T_cado", "#T_wceq", "#T_cdm", "#T_cado", "#T_cado", "#T_wf1o--1", "#T_cdm", "#T_cado", "#T_wf1o--2", "#T_cdm", "#T_cado" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvadj", "#P_funadj", "#P_eqtri", "#P_mpbir3an", "#P_mpbi", "#P_dff1o2", "#P_funfn", "#P_funcnvadj", "#P_df-rn", "#P_dmeqi" ]
+}

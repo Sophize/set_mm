@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqnegad on Metamath](http://us.metamath.org/mpegif/eqnegad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqnegad.1 | |- ( ph -> A e. CC ) |\n| 2 |  | eqnegad.2 | |- ( ph -> A = -u A ) |\n| 3 | 1 | #P_eqnegd | |- ( ph -> ( A = -u A <-> A = 0 ) ) |\n| 4 | 2, 3 | #P_mpbid | |- ( ph -> A = 0 ) |",
+  "conclusion" : "#P_eqnegad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cneg", "#T_cA", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_eqnegd" ]
+}

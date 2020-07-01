@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iooretop on Metamath](http://us.metamath.org/mpegif/iooretop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_retopbas | |- ran (,) e. TopBases |\n| 2 |  | #P_bastg | |- ( ran (,) e. TopBases -> ran (,) C_ ( topGen ` ran (,) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ran (,) C_ ( topGen ` ran (,) ) |\n| 4 |  | #P_ioorebas | |- ( A (,) B ) e. ran (,) |\n| 5 | 3, 4 | #P_sselii | |- ( A (,) B ) e. ( topGen ` ran (,) ) |",
+  "conclusion" : "#P_iooretop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crn", "#T_cioo", "#T_wcel", "#T_ctb", "#T_crn", "#T_cioo", "#T_wcel", "#T_ctb", "#T_wi", "#T_crn", "#T_cioo", "#T_wss", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_crn", "#T_cioo", "#T_wss", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_cioo", "#T_cA", "#T_cioo", "#T_cB", "#T_wcel", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ioorebas", "#P_sselii", "#P_retopbas", "#P_bastg" ]
+}

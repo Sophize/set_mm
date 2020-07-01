@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrab on Metamath](http://us.metamath.org/mpegif/elrab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elrab.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | #P_nfcv | |- F/_ x A |\n| 3 |  | #P_nfcv | |- F/_ x B |\n| 4 |  | #P_nfv | |- F/ x ps |\n| 5 | 2, 3, 4, 1 | #P_elrabf | |- ( A e. { x e. B | ph } <-> ( A e. B /\\ ps ) ) |",
+  "conclusion" : "#P_elrab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_cA", "#T_wcel", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wb", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfv", "#P_elrabf" ]
+}

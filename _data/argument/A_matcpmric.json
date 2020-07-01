@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See matcpmric on Metamath](http://us.metamath.org/mpegif/matcpmric.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | matcpmric.a | |- A = ( N Mat R ) |\n| 2 |  | matcpmric.p | |- P = ( Poly1 ` R ) |\n| 3 |  | matcpmric.c | |- C = ( N Mat P ) |\n| 4 |  | matcpmric.s | |- S = ( N ConstPolyMat R ) |\n| 5 |  | matcpmric.u | |- U = ( C |`s S ) |\n| 6 |  | #P_eqid | |- ( N matToPolyMat R ) = ( N matToPolyMat R ) |\n| 7 |  | #P_eqid | |- ( Base ` A ) = ( Base ` A ) |\n| 8 | 4, 6, 1, 7, 2, 3, 5 | #P_m2cpmrngiso | |- ( ( N e. Fin /\\ R e. CRing ) -> ( N matToPolyMat R ) e. ( A RingIso U ) ) |\n| 9 |  | #P_ne0i | |- ( ( N matToPolyMat R ) e. ( A RingIso U ) -> ( A RingIso U ) =/= (/) ) |\n| 10 | 8, 9 | #P_syl | |- ( ( N e. Fin /\\ R e. CRing ) -> ( A RingIso U ) =/= (/) ) |\n| 11 |  | #P_brric | |- ( A ~=r U <-> ( A RingIso U ) =/= (/) ) |\n| 12 | 10, 11 | #P_sylibr | |- ( ( N e. Fin /\\ R e. CRing ) -> A ~=r U ) |",
+  "conclusion" : "#P_matcpmric",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cU", "#T_wceq", "#T_cC", "#T_cress", "#T_cS", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_wceq", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_crs", "#T_cU", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_crs", "#T_cU", "#T_wi", "#T_cA.wceq", "#T_crs", "#T_cU", "#T_wne", "#T_c0", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cA.wceq", "#T_crs", "#T_cU", "#T_wne", "#T_c0", "#T_cA.wceq", "#T_cric", "#T_cU", "#T_wb", "#T_cA.wceq", "#T_crs", "#T_cU", "#T_wne", "#T_c0", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cA", "#T_cric", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_m2cpmrngiso", "#P_sylibr", "#P_brric", "#P_syl", "#P_ne0i" ]
+}

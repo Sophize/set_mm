@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uniqs2 on Metamath](http://us.metamath.org/mpegif/uniqs2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qsss.1 | |- ( ph -> R Er A ) |\n| 2 |  | qsss.2 | |- ( ph -> R e. V ) |\n| 3 |  | #P_uniqs | |- ( R e. V -> U. ( A /. R ) = ( R \" A ) ) |\n| 4 | 2, 3 | #P_syl | |- ( ph -> U. ( A /. R ) = ( R \" A ) ) |\n| 5 |  | #P_erdm | |- ( R Er A -> dom R = A ) |\n| 6 | 1, 5 | #P_syl | |- ( ph -> dom R = A ) |\n| 7 | 6 | #P_imaeq2d | |- ( ph -> ( R \" dom R ) = ( R \" A ) ) |\n| 8 | 4, 7 | #P_eqtr4d | |- ( ph -> U. ( A /. R ) = ( R \" dom R ) ) |\n| 9 |  | #P_imadmrn | |- ( R \" dom R ) = ran R |\n| 10 | 8, 9 | #P_syl6eq | |- ( ph -> U. ( A /. R ) = ran R ) |\n| 11 |  | #P_errn | |- ( R Er A -> ran R = A ) |\n| 12 | 1, 11 | #P_syl | |- ( ph -> ran R = A ) |\n| 13 | 10, 12 | #P_eqtrd | |- ( ph -> U. ( A /. R ) = A ) |",
+  "conclusion" : "#P_uniqs2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cA", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cV", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cR", "#T_cima", "#T_cdm", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_cdm", "#T_cR", "#T_cR", "#T_cima", "#T_cdm", "#T_cR", "#T_wceq", "#T_crn", "#T_cR", "#T_wph", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wceq", "#T_crn", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cuni", "#T_cA", "#T_cqs", "#T_cR", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_erdm", "#P_imadmrn", "#P_errn", "#P_eqtrd", "#P_imaeq2d", "#P_syl", "#P_uniqs", "#P_eqtr4d", "#P_syl6eq" ]
+}

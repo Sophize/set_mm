@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See findcard2 on Metamath](http://us.metamath.org/mpegif/findcard2.html)"
+  } ],
+  "names" : [ "findcard2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_cun", "#T_csn--1", "#T_vz", "#T_csn--2", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cfn", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_vz", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Schema for induction on the cardinality of a finite set.  The inductive step shows that the result is true if one more element is added to the set.  The result is then proven to be true for all finite sets. (Contributed by Jeff Madsen, 8-Jul-2010.) ",
+  "statement" : "findcard2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\nfindcard2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfindcard2.3 $e |- ( x = ( y u. { z } ) -> ( ph <-> th ) ) $.\nfindcard2.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nfindcard2.5 $e |- ps $.\nfindcard2.6 $e |- ( y e. Fin -> ( ch -> th ) ) $.\nfindcard2 $p |- ( A e. Fin -> ta ) $.\n$d A x y z $.\n$d ch x $.\n$d ph y z $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y z $."
+}

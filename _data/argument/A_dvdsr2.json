@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvdsr2 on Metamath](http://us.metamath.org/mpegif/dvdsr2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvdsr.1 | |- B = ( Base ` R ) |\n| 2 |  | dvdsr.2 | |- .|| = ( ||r ` R ) |\n| 3 |  | dvdsr.3 | |- .x. = ( .r ` R ) |\n| 4 | 1, 2, 3 | #P_dvdsr | |- ( X .|| Y <-> ( X e. B /\\ E. z e. B ( z .x. X ) = Y ) ) |\n| 5 | 4 | #P_baib | |- ( X e. B -> ( X .|| Y <-> E. z e. B ( z .x. X ) = Y ) ) |",
+  "conclusion" : "#P_dvdsr2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.pa", "#T_wceq", "#T_cdsr", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_c.pa", "#T_cY", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB.wceq", "#T_vz", "#T_c.x", "#T_cX", "#T_wceq", "#T_cY", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pa", "#T_cY", "#T_wb", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB", "#T_vz", "#T_c.x", "#T_cX", "#T_wceq", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baib", "#P_dvdsr" ]
+}

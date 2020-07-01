@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ffdm on Metamath](http://us.metamath.org/mpegif/ffdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fdm | |- ( F : A --> B -> dom F = A ) |\n| 2 | 1 | #P_feq2d | |- ( F : A --> B -> ( F : dom F --> B <-> F : A --> B ) ) |\n| 3 | 2 | #P_ibir | |- ( F : A --> B -> F : dom F --> B ) |\n| 4 |  | #P_eqimss | |- ( dom F = A -> dom F C_ A ) |\n| 5 | 1, 4 | #P_syl | |- ( F : A --> B -> dom F C_ A ) |\n| 6 | 3, 5 | #P_jca | |- ( F : A --> B -> ( F : dom F --> B /\\ dom F C_ A ) ) |",
+  "conclusion" : "#P_ffdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cB.wceq", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wss", "#T_cA.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wss", "#T_cA.wceq", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wi", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cF", "#T_wf--2", "#T_cB", "#T_wa", "#T_cdm", "#T_cF", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fdm", "#P_feq2d", "#P_syl", "#P_jca", "#P_ibir", "#P_eqimss" ]
+}

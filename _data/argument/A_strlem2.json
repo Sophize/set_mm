@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strlem2 on Metamath](http://us.metamath.org/mpegif/strlem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strlem2.1 | |- S = ( x e. CH |-> ( ( normh ` ( ( projh ` x ) ` u ) ) ^ 2 ) ) |\n| 2 |  | #P_fveq2 | |- ( x = C -> ( projh ` x ) = ( projh ` C ) ) |\n| 3 | 2 | #P_fveq1d | |- ( x = C -> ( ( projh ` x ) ` u ) = ( ( projh ` C ) ` u ) ) |\n| 4 | 3 | #P_fveq2d | |- ( x = C -> ( normh ` ( ( projh ` x ) ` u ) ) = ( normh ` ( ( projh ` C ) ` u ) ) ) |\n| 5 | 4 | #P_oveq1d | |- ( x = C -> ( ( normh ` ( ( projh ` x ) ` u ) ) ^ 2 ) = ( ( normh ` ( ( projh ` C ) ` u ) ) ^ 2 ) ) |\n| 6 |  | #P_ovex | |- ( ( normh ` ( ( projh ` C ) ` u ) ) ^ 2 ) e. _V |\n| 7 | 5, 1, 6 | #P_fvmpt | |- ( C e. CH -> ( S ` C ) = ( ( normh ` ( ( projh ` C ) ` u ) ) ^ 2 ) ) |",
+  "conclusion" : "#P_strlem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cch", "#T_cmpt--2", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_vx", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_cpjh", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_cpjh", "#T_cfv", "#T_vx.wal", "#T_cfv", "#T_vu", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cC", "#T_cfv", "#T_vu", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_vx.wal", "#T_cfv", "#T_vu", "#T_wceq", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cC", "#T_cfv", "#T_vu", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_vx.wal", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_wceq", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cC", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cC", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cch", "#T_wi", "#T_cS", "#T_cfv", "#T_cC", "#T_wceq", "#T_cno", "#T_cfv", "#T_cpjh", "#T_cfv", "#T_cC", "#T_cfv", "#T_vu", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_fvmpt", "#P_fveq1d", "#P_fveq2d", "#P_fveq2", "#P_oveq1d" ]
+}

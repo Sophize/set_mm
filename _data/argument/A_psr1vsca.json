@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psr1vsca on Metamath](http://us.metamath.org/mpegif/psr1vsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psr1plusg.y | |- Y = ( PwSer1 ` R ) |\n| 2 |  | psr1plusg.s | |- S = ( 1o mPwSer R ) |\n| 3 |  | psr1vscafval.n | |- .x. = ( .s ` Y ) |\n| 4 | 1 | #P_psr1val | |- Y = ( ( 1o ordPwSer R ) ` (/) ) |\n| 5 |  | #P_0ss | |- (/) C_ ( 1o X. 1o ) |\n| 6 | 5 | #P_a1i | |- ( T. -> (/) C_ ( 1o X. 1o ) ) |\n| 7 | 2, 4, 6 | #P_opsrvsca | |- ( T. -> ( .s ` S ) = ( .s ` Y ) ) |\n| 8 | 7 | #P_trud | |- ( .s ` S ) = ( .s ` Y ) |\n| 9 | 3, 8 | #P_eqtr4i | |- .x. = ( .s ` S ) |",
+  "conclusion" : "#P_psr1vsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cS", "#T_wceq", "#T_c1o", "#T_cmps", "#T_cR", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cY", "#T_cY", "#T_wceq", "#T_c1o", "#T_copws", "#T_cR", "#T_cfv", "#T_c0", "#T_c0", "#T_wss", "#T_c1o", "#T_cxp", "#T_c1o", "#T_wtru", "#T_wi", "#T_c0", "#T_wss", "#T_c1o", "#T_cxp", "#T_c1o", "#T_wtru", "#T_wi", "#T_cvsca", "#T_cfv", "#T_cS", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cY", "#T_cvsca", "#T_cfv", "#T_cS", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cY", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_trud", "#P_0ss", "#P_opsrvsca", "#P_a1i", "#P_psr1val" ]
+}

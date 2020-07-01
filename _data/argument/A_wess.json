@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wess on Metamath](http://us.metamath.org/mpegif/wess.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_frss | |- ( A C_ B -> ( R Fr B -> R Fr A ) ) |\n| 2 |  | #P_soss | |- ( A C_ B -> ( R Or B -> R Or A ) ) |\n| 3 | 1, 2 | #P_anim12d | |- ( A C_ B -> ( ( R Fr B /\\ R Or B ) -> ( R Fr A /\\ R Or A ) ) ) |\n| 4 |  | #P_df-we | |- ( R We B <-> ( R Fr B /\\ R Or B ) ) |\n| 5 |  | #P_df-we | |- ( R We A <-> ( R Fr A /\\ R Or A ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4g | |- ( A C_ B -> ( R We B -> R We A ) ) |",
+  "conclusion" : "#P_wess",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cR", "#T_wwe", "#T_cB.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cB.wceq", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cR", "#T_wwe", "#T_cB", "#T_wi", "#T_cR", "#T_wwe", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_soss", "#P_frss", "#P_anim12d", "#P_3imtr4g", "#P_df-we" ]
+}

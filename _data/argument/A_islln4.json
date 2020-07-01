@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islln4 on Metamath](http://us.metamath.org/mpegif/islln4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | llnset.b | |- B = ( Base ` K ) |\n| 2 |  | llnset.c | |- C = ( <o ` K ) |\n| 3 |  | llnset.a | |- A = ( Atoms ` K ) |\n| 4 |  | llnset.n | |- N = ( LLines ` K ) |\n| 5 | 1, 2, 3, 4 | #P_islln | |- ( K e. D -> ( X e. N <-> ( X e. B /\\ E. p e. A p C X ) ) ) |\n| 6 | 5 | #P_baibd | |- ( ( K e. D /\\ X e. B ) -> ( X e. N <-> E. p e. A p C X ) ) |",
+  "conclusion" : "#P_islln4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cC", "#T_wceq", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cN", "#T_wceq", "#T_clln", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cD", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vp", "#T_wrex--2", "#T_cA.wceq", "#T_vp", "#T_cC", "#T_cX", "#T_cK", "#T_wcel", "#T_cD", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_wb", "#T_wrex--1", "#T_vp", "#T_wrex--2", "#T_cA", "#T_vp", "#T_cC", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baibd", "#P_islln" ]
+}

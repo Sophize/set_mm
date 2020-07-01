@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subsq0i on Metamath](http://us.metamath.org/mpegif/subsq0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | binom2.1 | |- A e. CC |\n| 2 |  | binom2.2 | |- B e. CC |\n| 3 | 1 | #P_sqcli | |- ( A ^ 2 ) e. CC |\n| 4 | 2 | #P_sqcli | |- ( B ^ 2 ) e. CC |\n| 5 | 3, 4 | #P_subeq0i | |- ( ( ( A ^ 2 ) - ( B ^ 2 ) ) = 0 <-> ( A ^ 2 ) = ( B ^ 2 ) ) |\n| 6 | 1, 2 | #P_sqeqori | |- ( ( A ^ 2 ) = ( B ^ 2 ) <-> ( A = B \\/ A = -u B ) ) |\n| 7 | 5, 6 | #P_bitri | |- ( ( ( A ^ 2 ) - ( B ^ 2 ) ) = 0 <-> ( A = B \\/ A = -u B ) ) |",
+  "conclusion" : "#P_subsq0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_cA", "#T_cexp", "#T_c2", "#T_cmin", "#T_cB", "#T_cexp", "#T_c2", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA", "#T_wceq", "#T_cB", "#T_wo", "#T_cA", "#T_wceq", "#T_cneg", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqcli", "#P_subeq0i", "#P_sqeqori", "#P_bitri" ]
+}

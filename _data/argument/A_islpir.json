@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islpir on Metamath](http://us.metamath.org/mpegif/islpir.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nr\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lpival.p | |- P = ( LPIdeal ` R ) |\n| 2 |  | lpiss.u | |- U = ( LIdeal ` R ) |\n| 3 |  | #P_fveq2 | |- ( r = R -> ( LIdeal ` r ) = ( LIdeal ` R ) ) |\n| 4 |  | #P_fveq2 | |- ( r = R -> ( LPIdeal ` r ) = ( LPIdeal ` R ) ) |\n| 5 | 3, 4 | #P_eqeq12d | |- ( r = R -> ( ( LIdeal ` r ) = ( LPIdeal ` r ) <-> ( LIdeal ` R ) = ( LPIdeal ` R ) ) ) |\n| 6 | 2, 1 | #P_eqeq12i | |- ( U = P <-> ( LIdeal ` R ) = ( LPIdeal ` R ) ) |\n| 7 | 5, 6 | #P_syl6bbr | |- ( r = R -> ( ( LIdeal ` r ) = ( LPIdeal ` r ) <-> U = P ) ) |\n| 8 |  | #P_df-lpir | |- LPIR = { r e. Ring | ( LIdeal ` r ) = ( LPIdeal ` r ) } |\n| 9 | 7, 8 | #P_elrab2 | |- ( R e. LPIR <-> ( R e. Ring /\\ U = P ) ) |",
+  "conclusion" : "#P_islpir",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vr", "#T_cP", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_clidl", "#T_cfv", "#T_vr", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_clpidl", "#T_cfv", "#T_vr", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_clidl", "#T_cfv", "#T_vr", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_vr", "#T_wb", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cP", "#T_wb", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_clidl", "#T_cfv", "#T_vr", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_vr", "#T_wb", "#T_cU", "#T_wceq", "#T_cP", "#T_clpir", "#T_wceq", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_crg", "#T_crab--3", "#T_clidl", "#T_cfv", "#T_vr", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_vr", "#T_crab--4", "#T_cR", "#T_wcel", "#T_clpir", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wceq", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_df-lpir", "#P_elrab2", "#P_eqeq12i", "#P_fveq2", "#P_syl6bbr" ]
+}

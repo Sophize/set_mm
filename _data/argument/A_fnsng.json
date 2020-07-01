@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnsng on Metamath](http://us.metamath.org/mpegif/fnsng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funsng | |- ( ( A e. V /\\ B e. W ) -> Fun { <. A , B >. } ) |\n| 2 |  | #P_dmsnopg | |- ( B e. W -> dom { <. A , B >. } = { A } ) |\n| 3 | 2 | #P_adantl | |- ( ( A e. V /\\ B e. W ) -> dom { <. A , B >. } = { A } ) |\n| 4 |  | #P_df-fn | |- ( { <. A , B >. } Fn { A } <-> ( Fun { <. A , B >. } /\\ dom { <. A , B >. } = { A } ) ) |\n| 5 | 1, 3, 4 | #P_sylanbrc | |- ( ( A e. V /\\ B e. W ) -> { <. A , B >. } Fn { A } ) |",
+  "conclusion" : "#P_fnsng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_wfun", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wfn", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_wfun", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wa", "#T_cdm", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2", "#T_wfn", "#T_csn--1", "#T_cA", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funsng", "#P_dmsnopg", "#P_adantl", "#P_df-fn", "#P_sylanbrc" ]
+}

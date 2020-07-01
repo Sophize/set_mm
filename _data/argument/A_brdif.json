@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brdif on Metamath](http://us.metamath.org/mpegif/brdif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eldif | |- ( <. A , B >. e. ( R \\ S ) <-> ( <. A , B >. e. R /\\ -. <. A , B >. e. S ) ) |\n| 2 |  | #P_df-br | |- ( A ( R \\ S ) B <-> <. A , B >. e. ( R \\ S ) ) |\n| 3 |  | #P_df-br | |- ( A R B <-> <. A , B >. e. R ) |\n| 4 |  | #P_df-br | |- ( A S B <-> <. A , B >. e. S ) |\n| 5 | 4 | #P_notbii | |- ( -. A S B <-> -. <. A , B >. e. S ) |\n| 6 | 3, 5 | #P_anbi12i | |- ( ( A R B /\\ -. A S B ) <-> ( <. A , B >. e. R /\\ -. <. A , B >. e. S ) ) |\n| 7 | 1, 2, 6 | #P_3bitr4i | |- ( A ( R \\ S ) B <-> ( A R B /\\ -. A S B ) ) |",
+  "conclusion" : "#P_brdif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cdif", "#T_cS", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wa", "#T_wn", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cdif", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cdif", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_wn", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wa", "#T_wn", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cS", "#T_cA", "#T_cR", "#T_cdif", "#T_cS", "#T_cB", "#T_wb", "#T_cA", "#T_cR", "#T_cB", "#T_wa", "#T_wn", "#T_cA", "#T_cS", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_df-br", "#P_notbii", "#P_anbi12i", "#P_3bitr4i" ]
+}

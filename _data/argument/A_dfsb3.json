@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfsb3 on Metamath](http://us.metamath.org/mpegif/dfsb3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-or | |- ( ( ( x = y /\\ ph ) \\/ A. x ( x = y -> ph ) ) <-> ( -. ( x = y /\\ ph ) -> A. x ( x = y -> ph ) ) ) |\n| 2 |  | #P_dfsb2 | |- ( [ y / x ] ph <-> ( ( x = y /\\ ph ) \\/ A. x ( x = y -> ph ) ) ) |\n| 3 |  | #P_imnan | |- ( ( x = y -> -. ph ) <-> -. ( x = y /\\ ph ) ) |\n| 4 | 3 | #P_imbi1i | |- ( ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) <-> ( -. ( x = y /\\ ph ) -> A. x ( x = y -> ph ) ) ) |\n| 5 | 1, 2, 4 | #P_3bitr4i | |- ( [ y / x ] ph <-> ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) |",
+  "conclusion" : "#P_dfsb3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wb", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_df-or", "#P_dfsb2", "#P_imnan", "#P_3bitr4i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shex on Metamath](http://us.metamath.org/mpegif/shex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hilex | |- ~H e. _V |\n| 2 | 1 | #P_pwex | |- ~P ~H e. _V |\n| 3 |  | #P_shss | |- ( x e. SH -> x C_ ~H ) |\n| 4 |  | #P_selpw | |- ( x e. ~P ~H <-> x C_ ~H ) |\n| 5 | 3, 4 | #P_sylibr | |- ( x e. SH -> x e. ~P ~H ) |\n| 6 | 5 | #P_ssriv | |- SH C_ ~P ~H |\n| 7 | 2, 6 | #P_ssexi | |- SH e. _V |",
+  "conclusion" : "#P_shex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_chil", "#T_wcel", "#T_cvv", "#T_cpw", "#T_chil", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_csh", "#T_wi", "#T_vx.wal", "#T_wss", "#T_chil", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_chil", "#T_wb", "#T_vx.wal", "#T_wss", "#T_chil", "#T_vx.wal", "#T_wcel", "#T_csh", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_chil", "#T_csh", "#T_wss", "#T_cpw", "#T_chil", "#T_csh", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_selpw", "#P_ax-hilex", "#P_ssexi", "#P_sylibr", "#P_shss", "#P_ssriv" ]
+}

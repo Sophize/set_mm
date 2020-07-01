@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbief on Metamath](http://us.metamath.org/mpegif/csbief.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | csbief.1 | |- A e. _V |\n| 2 |  | csbief.2 | |- F/_ x C |\n| 3 |  | csbief.3 | |- ( x = A -> B = C ) |\n| 4 | 2 | #P_a1i | |- ( A e. _V -> F/_ x C ) |\n| 5 | 4, 3 | #P_csbiegf | |- ( A e. _V -> [_ A / x ]_ B = C ) |\n| 6 | 1, 5 | #P_ax-mp | |- [_ A / x ]_ B = C |",
+  "conclusion" : "#P_csbief",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_wnfc", "#T_vx", "#T_cC", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_csbiegf", "#P_a1i" ]
+}

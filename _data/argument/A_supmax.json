@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supmax on Metamath](http://us.metamath.org/mpegif/supmax.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | supmax.1 | |- ( ph -> R Or A ) |\n| 2 |  | supmax.2 | |- ( ph -> C e. A ) |\n| 3 |  | supmax.3 | |- ( ph -> C e. B ) |\n| 4 |  | supmax.4 | |- ( ( ph /\\ y e. B ) -> -. C R y ) |\n| 5 | 3 | #P_adantr | |- ( ( ph /\\ ( y e. A /\\ y R C ) ) -> C e. B ) |\n| 6 |  | #P_simprr | |- ( ( ph /\\ ( y e. A /\\ y R C ) ) -> y R C ) |\n| 7 |  | #P_breq2 | |- ( z = C -> ( y R z <-> y R C ) ) |\n| 8 | 7 | #P_rspcev | |- ( ( C e. B /\\ y R C ) -> E. z e. B y R z ) |\n| 9 | 5, 6, 8 | #P_syl2anc | |- ( ( ph /\\ ( y e. A /\\ y R C ) ) -> E. z e. B y R z ) |\n| 10 | 1, 2, 4, 9 | #P_eqsupd | |- ( ph -> sup ( B , A , R ) = C ) |",
+  "conclusion" : "#P_supmax",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wph", "#T_wi", "#T_cR", "#T_wor", "#T_cA", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_wn", "#T_cC", "#T_cR", "#T_vy", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_cR", "#T_cC", "#T_wi", "#T_cC", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_cR", "#T_cC", "#T_wi", "#T_vy.tru", "#T_cR", "#T_cC", "#T_vz", "#T_wceq", "#T_cC", "#T_wi", "#T_vy.tru", "#T_cR", "#T_vz", "#T_wb", "#T_vy.tru", "#T_cR", "#T_cC", "#T_cC", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vy.tru", "#T_cR", "#T_cC", "#T_wi", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB.wceq", "#T_vy.tru", "#T_cR", "#T_vz", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_cR", "#T_cC", "#T_wi", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB.wceq", "#T_vy.tru", "#T_cR", "#T_vz", "#T_wph", "#T_wi", "#T_csup--1", "#T_cB", "#T_csup--2", "#T_cA", "#T_csup--3", "#T_cR", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_eqsupd", "#P_breq2", "#P_simprr", "#P_rspcev", "#P_adantr" ]
+}

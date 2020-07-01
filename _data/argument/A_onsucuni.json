@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onsucuni on Metamath](http://us.metamath.org/mpegif/onsucuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssorduni | |- ( A C_ On -> Ord U. A ) |\n| 2 |  | #P_ssid | |- U. A C_ U. A |\n| 3 |  | #P_ordunisssuc | |- ( ( A C_ On /\\ Ord U. A ) -> ( U. A C_ U. A <-> A C_ suc U. A ) ) |\n| 4 | 2, 3 | #P_mpbii | |- ( ( A C_ On /\\ Ord U. A ) -> A C_ suc U. A ) |\n| 5 | 1, 4 | #P_mpdan | |- ( A C_ On -> A C_ suc U. A ) |",
+  "conclusion" : "#P_onsucuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_con0", "#T_wi", "#T_word", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_con0", "#T_wa", "#T_word", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_csuc", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_con0", "#T_wa", "#T_word", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csuc", "#T_cuni", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_con0", "#T_wi", "#T_cA", "#T_wss", "#T_csuc", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_ssorduni", "#P_mpbii", "#P_ssid", "#P_ordunisssuc" ]
+}

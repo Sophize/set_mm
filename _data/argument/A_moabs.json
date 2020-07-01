@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See moabs on Metamath](http://us.metamath.org/mpegif/moabs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm5.4 | |- ( ( E. x ph -> ( E. x ph -> E! x ph ) ) <-> ( E. x ph -> E! x ph ) ) |\n| 2 |  | #P_df-mo | |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) |\n| 3 | 2 | #P_imbi2i | |- ( ( E. x ph -> E* x ph ) <-> ( E. x ph -> ( E. x ph -> E! x ph ) ) ) |\n| 4 | 1, 3, 2 | #P_3bitr4ri | |- ( E* x ph <-> ( E. x ph -> E* x ph ) ) |",
+  "conclusion" : "#P_moabs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vx", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wmo", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi2i", "#P_df-mo", "#P_pm5.4", "#P_3bitr4ri" ]
+}

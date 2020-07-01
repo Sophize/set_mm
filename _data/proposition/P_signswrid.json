@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See signswrid on Metamath](http://us.metamath.org/mpegif/signswrid.html)"
+  } ],
+  "names" : [ "signswrid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.pd", "#T_wceq", "#T_va", "#T_cmpt2--1", "#T_ctp--1", "#T_cneg", "#T_c1", "#T_ctp--2", "#T_cc0", "#T_ctp--3", "#T_c1", "#T_ctp--4", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_ctp--1", "#T_cneg", "#T_c1", "#T_ctp--2", "#T_cc0", "#T_ctp--3", "#T_c1", "#T_ctp--4", "#T_cmpt2--4", "#T_cif--1", "#T_vb", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_va", "#T_cif--3", "#T_vb", "#T_cW", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_ctp--1", "#T_cneg", "#T_c1", "#T_ctp--2", "#T_cc0", "#T_ctp--3", "#T_c1", "#T_ctp--4", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pd", "#T_cop--3", "#T_cpr--3", "#T_cX", "#T_wcel", "#T_ctp--1", "#T_cneg", "#T_c1", "#T_ctp--2", "#T_cc0", "#T_ctp--3", "#T_c1", "#T_ctp--4", "#T_wi", "#T_cX", "#T_c.pd", "#T_cc0", "#T_wceq", "#T_cX", "#T_cX", "#T_va", "#T_vb" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The zero-skipping operation propagages non-zeros.  (Contributed by Thierry Arnoux, 11-Oct-2018.) ",
+  "statement" : "signsw.p $e |- .+^ = ( a e. { -u 1 , 0 , 1 } , b e. { -u 1 , 0 , 1 } |-> if ( b = 0 , a , b ) ) $.\nsignsw.w $e |- W = { <. ( Base ` ndx ) , { -u 1 , 0 , 1 } >. , <. ( +g ` ndx ) , .+^ >. } $.\nsignswrid $p |- ( X e. { -u 1 , 0 , 1 } -> ( X .+^ 0 ) = X ) $.\n$d X a b $."
+}

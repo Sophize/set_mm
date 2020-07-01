@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rankfu on Metamath](http://us.metamath.org/mpegif/rankfu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rankxpl.1 | |- A e. _V |\n| 2 |  | rankxpl.2 | |- B e. _V |\n| 3 |  | #P_fssxp | |- ( F : A --> B -> F C_ ( A X. B ) ) |\n| 4 | 1, 2 | #P_xpex | |- ( A X. B ) e. _V |\n| 5 | 4 | #P_rankss | |- ( F C_ ( A X. B ) -> ( rank ` F ) C_ ( rank ` ( A X. B ) ) ) |\n| 6 | 1, 2 | #P_rankxpu | |- ( rank ` ( A X. B ) ) C_ suc suc ( rank ` ( A u. B ) ) |\n| 7 | 5, 6 | #P_syl6ss | |- ( F C_ ( A X. B ) -> ( rank ` F ) C_ suc suc ( rank ` ( A u. B ) ) ) |\n| 8 | 3, 7 | #P_syl | |- ( F : A --> B -> ( rank ` F ) C_ suc suc ( rank ` ( A u. B ) ) ) |",
+  "conclusion" : "#P_rankfu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wi", "#T_crnk", "#T_cfv", "#T_cF", "#T_wss", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_csuc", "#T_csuc", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cF", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wi", "#T_crnk", "#T_cfv", "#T_cF", "#T_wss", "#T_csuc", "#T_csuc", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wi", "#T_crnk", "#T_cfv", "#T_cF", "#T_wss", "#T_csuc", "#T_csuc", "#T_crnk", "#T_cfv", "#T_cA", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rankss", "#P_syl6ss", "#P_rankxpu", "#P_fssxp", "#P_syl", "#P_xpex" ]
+}

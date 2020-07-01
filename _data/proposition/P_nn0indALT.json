@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0indALT on Metamath](http://us.metamath.org/mpegif/nn0indALT.html)"
+  } ],
+  "names" : [ "nn0indALT" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cn0", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_vx", "#T_wceq", "#T_cc0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cA", "#T_wcel", "#T_cn0", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Mathematical Induction (inference schema) on nonnegative integers.  The last four hypotheses give us the substitution instances we need; the first two are the basis and the induction step.  Either ~ nn0ind or ~ nn0indALT may be used; see comment for ~ nnind . (Contributed by NM, 28-Nov-2005.)  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "statement" : "nn0indALT.6 $e |- ( y e. NN0 -> ( ch -> th ) ) $.\nnn0indALT.5 $e |- ps $.\nnn0indALT.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.\nnn0indALT.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nnn0indALT.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nnn0indALT.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nnn0indALT $p |- ( A e. NN0 -> ta ) $.\n$d A x $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y $."
+}

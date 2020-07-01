@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isnvc2 on Metamath](http://us.metamath.org/mpegif/isnvc2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isnvc2.1 | |- F = ( Scalar ` W ) |\n| 2 |  | #P_isnvc | |- ( W e. NrmVec <-> ( W e. NrmMod /\\ W e. LVec ) ) |\n| 3 |  | #P_nlmlmod | |- ( W e. NrmMod -> W e. LMod ) |\n| 4 | 1 | #P_islvec | |- ( W e. LVec <-> ( W e. LMod /\\ F e. DivRing ) ) |\n| 5 | 4 | #P_baib | |- ( W e. LMod -> ( W e. LVec <-> F e. DivRing ) ) |\n| 6 | 3, 5 | #P_syl | |- ( W e. NrmMod -> ( W e. LVec <-> F e. DivRing ) ) |\n| 7 | 6 | #P_pm5.32i | |- ( ( W e. NrmMod /\\ W e. LVec ) <-> ( W e. NrmMod /\\ F e. DivRing ) ) |\n| 8 | 2, 7 | #P_bitri | |- ( W e. NrmVec <-> ( W e. NrmMod /\\ F e. DivRing ) ) |",
+  "conclusion" : "#P_isnvc2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cnvc", "#T_wb", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wa", "#T_cW", "#T_wcel", "#T_clvec", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_cW", "#T_wcel", "#T_clvec", "#T_wb", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wb", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wb", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wa", "#T_cW", "#T_wcel", "#T_clvec", "#T_wb", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wa", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_cnvc", "#T_wb", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wa", "#T_cF", "#T_wcel", "#T_cdr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.32i", "#P_islvec", "#P_syl", "#P_isnvc", "#P_nlmlmod", "#P_baib", "#P_bitri" ]
+}

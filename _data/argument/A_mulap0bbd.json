@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulap0bbd on Metamath](http://us.metamath.org/mpegif/mulap0bbd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulap0bad.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulap0bad.2 | |- ( ph -> B e. CC ) |\n| 3 |  | mulap0bad.3 | |- ( ph -> ( A x. B ) # 0 ) |\n| 4 | 1, 2 | #P_mulap0bd | |- ( ph -> ( ( A # 0 /\\ B # 0 ) <-> ( A x. B ) # 0 ) ) |\n| 5 | 3, 4 | #P_mpbird | |- ( ph -> ( A # 0 /\\ B # 0 ) ) |\n| 6 | 5 | #P_simprd | |- ( ph -> B # 0 ) |",
+  "conclusion" : "#P_mulap0bbd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cB", "#T_cap", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprd", "#P_mulap0bd", "#P_mpbird" ]
+}

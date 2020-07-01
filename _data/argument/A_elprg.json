@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elprg on Metamath](http://us.metamath.org/mpegif/elprg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq1 | |- ( x = A -> ( x = B <-> A = B ) ) |\n| 2 |  | #P_eqeq1 | |- ( x = A -> ( x = C <-> A = C ) ) |\n| 3 | 1, 2 | #P_orbi12d | |- ( x = A -> ( ( x = B \\/ x = C ) <-> ( A = B \\/ A = C ) ) ) |\n| 4 |  | #P_dfpr2 | |- { B , C } = { x | ( x = B \\/ x = C ) } |\n| 5 | 3, 4 | #P_elab2g | |- ( A e. V -> ( A e. { B , C } <-> ( A = B \\/ A = C ) ) ) |",
+  "conclusion" : "#P_elprg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wo", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_cab--3", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cpr--1", "#T_cB", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wb", "#T_cA", "#T_wceq", "#T_cB", "#T_wo", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfpr2", "#P_orbi12d", "#P_eqeq1", "#P_elab2g" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rmyluc on Metamath](http://us.metamath.org/mpegif/rmyluc.html)"
+  } ],
+  "names" : [ "rmyluc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_crmy", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cmul", "#T_cA", "#T_crmy", "#T_cN", "#T_cmul", "#T_cA", "#T_cmin", "#T_cA", "#T_crmy", "#T_cN", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Y sequence is a Lucas sequence, definable via this second-order recurrence with ~ rmy0 and ~ rmy1 .  Part 3 of equation 2.12 of [JonesMatijasevic] p. 695.  JonesMatijasevic uses this theorem to redefine the X and Y sequences to have domain ` ( ZZ X. ZZ ) ` , which simplifies some later theorems.  It may shorten the derivation to use this as our initial definition.  Incidentally, the X sequence satisfies the exact same recurrence.  (Contributed by Stefan O'Rear, 1-Oct-2014.) ",
+  "statement" : "rmyluc $p |- ( ( A e. ( ZZ>= ` 2 ) /\\ N e. ZZ ) -> ( A rmY ( N + 1 ) ) = ( ( 2 x. ( ( A rmY N ) x. A ) ) - ( A rmY ( N - 1 ) ) ) ) $."
+}

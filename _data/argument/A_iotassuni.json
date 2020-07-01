@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iotassuni on Metamath](http://us.metamath.org/mpegif/iotassuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iotauni | |- ( E! x ph -> ( iota x ph ) = U. { x | ph } ) |\n| 2 |  | #P_eqimss | |- ( ( iota x ph ) = U. { x | ph } -> ( iota x ph ) C_ U. { x | ph } ) |\n| 3 | 1, 2 | #P_syl | |- ( E! x ph -> ( iota x ph ) C_ U. { x | ph } ) |\n| 4 |  | #P_iotanul | |- ( -. E! x ph -> ( iota x ph ) = (/) ) |\n| 5 |  | #P_0ss | |- (/) C_ U. { x | ph } |\n| 6 | 4, 5 | #P_syl6eqss | |- ( -. E! x ph -> ( iota x ph ) C_ U. { x | ph } ) |\n| 7 | 3, 6 | #P_pm2.61i | |- ( iota x ph ) C_ U. { x | ph } |",
+  "conclusion" : "#P_iotassuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wss", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wss", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wn", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wn", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wss", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_cio", "#T_vx", "#T_wph", "#T_wss", "#T_cuni", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0ss", "#P_syl6eqss", "#P_iotanul", "#P_syl", "#P_iotauni", "#P_eqimss", "#P_pm2.61i" ]
+}

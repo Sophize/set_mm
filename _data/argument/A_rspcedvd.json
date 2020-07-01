@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspcedvd on Metamath](http://us.metamath.org/mpegif/rspcedvd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspcedvd.1 | |- ( ph -> A e. B ) |\n| 2 |  | rspcedvd.2 | |- ( ( ph /\\ x = A ) -> ( ps <-> ch ) ) |\n| 3 |  | rspcedvd.3 | |- ( ph -> ch ) |\n| 4 | 1, 2 | #P_rspcedv | |- ( ph -> ( ch -> E. x e. B ps ) ) |\n| 5 | 3, 4 | #P_mpd | |- ( ph -> E. x e. B ps ) |",
+  "conclusion" : "#P_rspcedvd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_wps", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_rspcedv" ]
+}

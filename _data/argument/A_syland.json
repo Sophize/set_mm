@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syland on Metamath](http://us.metamath.org/mpegif/syland.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syland.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | syland.2 | |- ( ph -> ( ( ch /\\ th ) -> ta ) ) |\n| 3 | 2 | #P_expd | |- ( ph -> ( ch -> ( th -> ta ) ) ) |\n| 4 | 1, 3 | #P_syld | |- ( ph -> ( ps -> ( th -> ta ) ) ) |\n| 5 | 4 | #P_impd | |- ( ph -> ( ( ps /\\ th ) -> ta ) ) |",
+  "conclusion" : "#P_syland",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_expd", "#P_impd", "#P_syld" ]
+}

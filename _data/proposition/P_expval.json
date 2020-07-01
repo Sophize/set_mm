@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expval on Metamath](http://us.metamath.org/mpegif/expval.html)"
+  } ],
+  "names" : [ "expval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_cexp", "#T_cN", "#T_wceq", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cif--1", "#T_cc0", "#T_clt", "#T_cN", "#T_cif--2", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cn", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cfv", "#T_cN", "#T_cif--3", "#T_c1", "#T_cdiv", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cn", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cfv", "#T_cneg", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of exponentiation to integer powers.  (Contributed by NM, 20-May-2004.)  (Revised by Mario Carneiro, 4-Jun-2014.) ",
+  "statement" : "expval $p |- ( ( A e. CC /\\ N e. ZZ ) -> ( A ^ N ) = if ( N = 0 , 1 , if ( 0 < N , ( seq 1 ( x. , ( NN X. { A } ) ) ` N ) , ( 1 / ( seq 1 ( x. , ( NN X. { A } ) ) ` -u N ) ) ) ) ) $."
+}

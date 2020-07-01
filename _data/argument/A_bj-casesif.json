@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-casesif on Metamath](http://us.metamath.org/mpegif/bj-casesif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-casesif.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | bj-casesif.2 | |- ( -. ph -> ( ps <-> th ) ) |\n| 3 | 1, 2 | #P_cases | |- ( ps <-> ( ( ph /\\ ch ) \\/ ( -. ph /\\ th ) ) ) |\n| 4 |  | #P_bj-dfif5 | |- ( if- ( ph , ch , th ) <-> ( ( ph /\\ ch ) \\/ ( -. ph /\\ th ) ) ) |\n| 5 | 3, 4 | #P_bitr4i | |- ( ps <-> if- ( ph , ch , th ) ) |",
+  "conclusion" : "#P_bj-casesif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wth", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wch", "#T_wif--3", "#T_wth", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wth", "#T_wps", "#T_wb", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wch", "#T_wif--3", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cases", "#P_bj-dfif5", "#P_bitr4i" ]
+}

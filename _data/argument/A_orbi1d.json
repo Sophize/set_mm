@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See orbi1d on Metamath](http://us.metamath.org/mpegif/orbi1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 | 1 | #P_orbi2d | |- ( ph -> ( ( th \\/ ps ) <-> ( th \\/ ch ) ) ) |\n| 3 |  | #P_orcom | |- ( ( ps \\/ th ) <-> ( th \\/ ps ) ) |\n| 4 |  | #P_orcom | |- ( ( ch \\/ th ) <-> ( th \\/ ch ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( ph -> ( ( ps \\/ th ) <-> ( ch \\/ th ) ) ) |",
+  "conclusion" : "#P_orbi1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wo", "#T_wps", "#T_wb", "#T_wth", "#T_wo", "#T_wch", "#T_wps", "#T_wo", "#T_wth", "#T_wb", "#T_wth", "#T_wo", "#T_wps", "#T_wch", "#T_wo", "#T_wth", "#T_wb", "#T_wth", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wb", "#T_wch", "#T_wo", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orcom", "#P_orbi2d", "#P_3bitr4g" ]
+}

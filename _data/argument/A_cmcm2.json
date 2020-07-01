@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cmcm2 on Metamath](http://us.metamath.org/mpegif/cmcm2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cmcm3 | |- ( ( B e. CH /\\ A e. CH ) -> ( B C_H A <-> ( _|_ ` B ) C_H A ) ) |\n| 2 | 1 | #P_ancoms | |- ( ( A e. CH /\\ B e. CH ) -> ( B C_H A <-> ( _|_ ` B ) C_H A ) ) |\n| 3 |  | #P_cmcm | |- ( ( A e. CH /\\ B e. CH ) -> ( A C_H B <-> B C_H A ) ) |\n| 4 |  | #P_choccl | |- ( B e. CH -> ( _|_ ` B ) e. CH ) |\n| 5 |  | #P_cmcm | |- ( ( A e. CH /\\ ( _|_ ` B ) e. CH ) -> ( A C_H ( _|_ ` B ) <-> ( _|_ ` B ) C_H A ) ) |\n| 6 | 4, 5 | #P_sylan2 | |- ( ( A e. CH /\\ B e. CH ) -> ( A C_H ( _|_ ` B ) <-> ( _|_ ` B ) C_H A ) ) |\n| 7 | 2, 3, 6 | #P_3bitr4d | |- ( ( A e. CH /\\ B e. CH ) -> ( A C_H B <-> A C_H ( _|_ ` B ) ) ) |",
+  "conclusion" : "#P_cmcm2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_ccm", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_ccm", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_wa", "#T_cB", "#T_wcel", "#T_cch", "#T_wi", "#T_cA", "#T_ccm", "#T_cB", "#T_wb", "#T_cA", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cmcm", "#P_choccl", "#P_cmcm3", "#P_sylan2", "#P_3bitr4d", "#P_ancoms" ]
+}

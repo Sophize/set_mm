@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fun2cnv on Metamath](http://us.metamath.org/mpegif/fun2cnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funcnv2 | |- ( Fun `' `' A <-> A. x E* y y `' A x ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 2, 3 | #P_brcnv | |- ( y `' A x <-> x A y ) |\n| 5 | 4 | #P_mobii | |- ( E* y y `' A x <-> E* y x A y ) |\n| 6 | 5 | #P_albii | |- ( A. x E* y y `' A x <-> A. x E* y x A y ) |\n| 7 | 1, 6 | #P_bitri | |- ( Fun `' `' A <-> A. x E* y x A y ) |",
+  "conclusion" : "#P_fun2cnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wmo", "#T_vy.tru", "#T_vy.tru", "#T_ccnv", "#T_cA.wceq", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_ccnv", "#T_cA.wceq", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_wmo", "#T_vy.tru", "#T_vy.tru", "#T_ccnv", "#T_cA.wceq", "#T_vx.wal", "#T_wb", "#T_wmo", "#T_vy.tru", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wmo", "#T_vy.tru", "#T_vy.tru", "#T_ccnv", "#T_cA.wceq", "#T_vx.wal", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wmo", "#T_vy.tru", "#T_vx.wal", "#T_cA.wceq", "#T_vy.tru", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cA", "#T_wb", "#T_wal", "#T_vx", "#T_wmo", "#T_vy", "#T_vx", "#T_cA", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albii", "#P_mobii", "#P_funcnv2", "#P_vex", "#P_brcnv", "#P_bitri" ]
+}

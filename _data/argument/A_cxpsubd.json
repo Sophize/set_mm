@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cxpsubd on Metamath](http://us.metamath.org/mpegif/cxpsubd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cxp0d.1 | |- ( ph -> A e. CC ) |\n| 2 |  | cxpefd.2 | |- ( ph -> A =/= 0 ) |\n| 3 |  | cxpefd.3 | |- ( ph -> B e. CC ) |\n| 4 |  | cxpaddd.4 | |- ( ph -> C e. CC ) |\n| 5 |  | #P_cxpsub | |- ( ( ( A e. CC /\\ A =/= 0 ) /\\ B e. CC /\\ C e. CC ) -> ( A ^c ( B - C ) ) = ( ( A ^c B ) / ( A ^c C ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_syl211anc | |- ( ph -> ( A ^c ( B - C ) ) = ( ( A ^c B ) / ( A ^c C ) ) ) |",
+  "conclusion" : "#P_cxpsubd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_ccxp", "#T_cB.wceq", "#T_cmin", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_ccxp", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_ccxp", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_ccxp", "#T_cB", "#T_cmin", "#T_cC", "#T_wceq", "#T_cA", "#T_ccxp", "#T_cB", "#T_cdiv", "#T_cA", "#T_ccxp", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl211anc", "#P_cxpsub" ]
+}

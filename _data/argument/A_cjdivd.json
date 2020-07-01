@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cjdivd on Metamath](http://us.metamath.org/mpegif/cjdivd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | readdd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | cjdivd.2 | |- ( ph -> B =/= 0 ) |\n| 4 |  | #P_cjdiv | |- ( ( A e. CC /\\ B e. CC /\\ B =/= 0 ) -> ( * ` ( A / B ) ) = ( ( * ` A ) / ( * ` B ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( * ` ( A / B ) ) = ( ( * ` A ) / ( * ` B ) ) ) |",
+  "conclusion" : "#P_cjdivd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_ccj", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_ccj", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_ccj", "#T_cfv", "#T_cA", "#T_cdiv", "#T_ccj", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cjdiv", "#P_syl3anc" ]
+}

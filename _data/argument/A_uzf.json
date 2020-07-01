@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzf on Metamath](http://us.metamath.org/mpegif/uzf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj k\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssrab2 | |- { k e. ZZ | j <_ k } C_ ZZ |\n| 2 |  | #P_zex | |- ZZ e. _V |\n| 3 | 2 | #P_elpw2 | |- ( { k e. ZZ | j <_ k } e. ~P ZZ <-> { k e. ZZ | j <_ k } C_ ZZ ) |\n| 4 | 1, 3 | #P_mpbir | |- { k e. ZZ | j <_ k } e. ~P ZZ |\n| 5 | 4 | #P_rgenw | |- A. j e. ZZ { k e. ZZ | j <_ k } e. ~P ZZ |\n| 6 |  | #P_df-uz | |- ZZ>= = ( j e. ZZ |-> { k e. ZZ | j <_ k } ) |\n| 7 | 6 | #P_fmpt | |- ( A. j e. ZZ { k e. ZZ | j <_ k } e. ~P ZZ <-> ZZ>= : ZZ --> ~P ZZ ) |\n| 8 | 5, 7 | #P_mpbi | |- ZZ>= : ZZ --> ~P ZZ |",
+  "conclusion" : "#P_uzf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vk", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wss", "#T_cz", "#T_cz", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wcel", "#T_cpw", "#T_cz", "#T_wb", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wss", "#T_cz", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wcel", "#T_cpw", "#T_cz", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cz", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wcel", "#T_cpw", "#T_cz", "#T_cuz", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cz", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wcel", "#T_cpw", "#T_cz", "#T_wb", "#T_cuz", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_cuz", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrab2", "#P_fmpt", "#P_zex", "#P_df-uz", "#P_mpbi", "#P_elpw2", "#P_rgenw", "#P_mpbir" ]
+}

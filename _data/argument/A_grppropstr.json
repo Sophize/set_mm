@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grppropstr on Metamath](http://us.metamath.org/mpegif/grppropstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grppropstr.b | |- ( Base ` K ) = B |\n| 2 |  | grppropstr.p | |- ( +g ` K ) = .+ |\n| 3 |  | grppropstr.l | |- L = { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. } |\n| 4 |  | #P_fvex | |- ( Base ` K ) e. _V |\n| 5 | 1, 4 | #P_eqeltrri | |- B e. _V |\n| 6 | 3 | #P_grpbase | |- ( B e. _V -> B = ( Base ` L ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- B = ( Base ` L ) |\n| 8 | 1, 7 | #P_eqtri | |- ( Base ` K ) = ( Base ` L ) |\n| 9 |  | #P_fvex | |- ( +g ` K ) e. _V |\n| 10 | 2, 9 | #P_eqeltrri | |- .+ e. _V |\n| 11 | 3 | #P_grpplusg | |- ( .+ e. _V -> .+ = ( +g ` L ) ) |\n| 12 | 10, 11 | #P_ax-mp | |- .+ = ( +g ` L ) |\n| 13 | 2, 12 | #P_eqtri | |- ( +g ` K ) = ( +g ` L ) |\n| 14 | 8, 13 | #P_grpprop | |- ( K e. Grp <-> L e. Grp ) |",
+  "conclusion" : "#P_grppropstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cB", "#T_cplusg", "#T_cfv", "#T_cK", "#T_wceq", "#T_c.pl", "#T_cL", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_cpr--3", "#T_cbs", "#T_cfv", "#T_cK", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_cplusg", "#T_cfv", "#T_cK", "#T_wcel", "#T_cvv", "#T_c.pl", "#T_wcel", "#T_cvv", "#T_c.pl", "#T_wcel", "#T_cvv", "#T_wi", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cL", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cL", "#T_cplusg", "#T_cfv", "#T_cK", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cL", "#T_cK", "#T_wcel", "#T_cgrp", "#T_wb", "#T_cL", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpprop", "#P_ax-mp", "#P_eqtri", "#P_grpplusg", "#P_grpbase", "#P_fvex", "#P_eqeltrri" ]
+}

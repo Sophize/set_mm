@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See drsbn0 on Metamath](http://us.metamath.org/mpegif/drsbn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | drsbn0.b | |- B = ( Base ` K ) |\n| 2 |  | #P_eqid | |- ( le ` K ) = ( le ` K ) |\n| 3 | 1, 2 | #P_isdrs | |- ( K e. Dirset <-> ( K e. Preset /\\ B =/= (/) /\\ A. x e. B A. y e. B E. z e. B ( x ( le ` K ) z /\\ y ( le ` K ) z ) ) ) |\n| 4 | 3 | #P_simp2bi | |- ( K e. Dirset -> B =/= (/) ) |",
+  "conclusion" : "#P_drsbn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cple", "#T_cfv", "#T_cK", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cdrs", "#T_wb", "#T_cK", "#T_wcel", "#T_cpreset", "#T_w3a--1", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_cple", "#T_cfv", "#T_cK", "#T_vz", "#T_wa", "#T_vy.tru", "#T_cple", "#T_cfv", "#T_cK", "#T_vz", "#T_cK", "#T_wcel", "#T_cdrs", "#T_wi", "#T_cB", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp2bi", "#P_isdrs" ]
+}

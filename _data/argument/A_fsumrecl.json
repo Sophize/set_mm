@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumrecl on Metamath](http://us.metamath.org/mpegif/fsumrecl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fsumcl.1 | |- ( ph -> A e. Fin ) |\n| 2 |  | fsumrecl.2 | |- ( ( ph /\\ k e. A ) -> B e. RR ) |\n| 3 |  | #P_ax-resscn | |- RR C_ CC |\n| 4 | 3 | #P_a1i | |- ( ph -> RR C_ CC ) |\n| 5 |  | #P_readdcl | |- ( ( x e. RR /\\ y e. RR ) -> ( x + y ) e. RR ) |\n| 6 | 5 | #P_adantl | |- ( ( ph /\\ ( x e. RR /\\ y e. RR ) ) -> ( x + y ) e. RR ) |\n| 7 |  | #P_0red | |- ( ph -> 0 e. RR ) |\n| 8 | 4, 6, 1, 2, 7 | #P_fsumcllem | |- ( ph -> sum_ k e. A B e. RR ) |",
+  "conclusion" : "#P_fsumrecl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_cr", "#T_wss", "#T_cc", "#T_wph", "#T_wi", "#T_cr", "#T_wss", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-resscn", "#P_0red", "#P_adantl", "#P_readdcl", "#P_fsumcllem", "#P_a1i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See msqsqrtd on Metamath](http://us.metamath.org/mpegif/msqsqrtd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abscld.1 | |- ( ph -> A e. CC ) |\n| 2 | 1 | #P_sqrtcld | |- ( ph -> ( sqrt ` A ) e. CC ) |\n| 3 | 2 | #P_sqvald | |- ( ph -> ( ( sqrt ` A ) ^ 2 ) = ( ( sqrt ` A ) x. ( sqrt ` A ) ) ) |\n| 4 | 1 | #P_sqsqrtd | |- ( ph -> ( ( sqrt ` A ) ^ 2 ) = A ) |\n| 5 | 3, 4 | #P_eqtr3d | |- ( ph -> ( ( sqrt ` A ) x. ( sqrt ` A ) ) = A ) |",
+  "conclusion" : "#P_msqsqrtd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqrtcld", "#P_sqsqrtd", "#P_sqvald", "#P_eqtr3d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cshw1repsw on Metamath](http://us.metamath.org/mpegif/cshw1repsw.html)"
+  } ],
+  "names" : [ "cshw1repsw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cW", "#T_ccsh", "#T_c1", "#T_wceq", "#T_cW", "#T_wi", "#T_cW", "#T_wceq", "#T_cW", "#T_cfv", "#T_cc0", "#T_creps", "#T_chash", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If cyclically shifting a word by 1 position results in the word itself, the word is a \"repeated symbol word\".  Remark: also \"valid\" for an empty word!  (Contributed by AV, 8-Nov-2018.)  (Proof shortened by AV, 10-Nov-2018.) ",
+  "statement" : "cshw1repsw $p |- ( ( W e. Word V /\\ ( W cyclShift 1 ) = W ) -> W = ( ( W ` 0 ) repeatS ( # ` W ) ) ) $."
+}

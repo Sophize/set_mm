@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prrngorngo on Metamath](http://us.metamath.org/mpegif/prrngorngo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( 1st ` R ) = ( 1st ` R ) |\n| 2 |  | #P_eqid | |- ( GId ` ( 1st ` R ) ) = ( GId ` ( 1st ` R ) ) |\n| 3 | 1, 2 | #P_isprrngo | |- ( R e. PrRing <-> ( R e. RingOps /\\ { ( GId ` ( 1st ` R ) ) } e. ( PrIdl ` R ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( R e. PrRing -> R e. RingOps ) |",
+  "conclusion" : "#P_prrngorngo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1st", "#T_cfv", "#T_cR", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cgi", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cR", "#T_wceq", "#T_cgi", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wb", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_csn--1", "#T_cgi", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cR", "#T_csn--2", "#T_wcel", "#T_cpridl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wi", "#T_cR", "#T_wcel", "#T_crngo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isprrngo" ]
+}

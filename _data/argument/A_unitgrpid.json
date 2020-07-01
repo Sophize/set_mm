@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unitgrpid on Metamath](http://us.metamath.org/mpegif/unitgrpid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unitmulcl.1 | |- U = ( Unit ` R ) |\n| 2 |  | unitgrp.2 | |- G = ( ( mulGrp ` R ) |`s U ) |\n| 3 |  | unitgrp.3 | |- .1. = ( 1r ` R ) |\n| 4 | 1, 3 | #P_1unit | |- ( R e. Ring -> .1. e. U ) |\n| 5 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 6 | 5, 1 | #P_unitss | |- U C_ ( Base ` R ) |\n| 7 | 2, 5, 3 | #P_ringidss | |- ( ( R e. Ring /\\ U C_ ( Base ` R ) /\\ .1. e. U ) -> .1. = ( 0g ` G ) ) |\n| 8 | 6, 7 | #P_mp3an2 | |- ( ( R e. Ring /\\ .1. e. U ) -> .1. = ( 0g ` G ) ) |\n| 9 | 4, 8 | #P_mpdan | |- ( R e. Ring -> .1. = ( 0g ` G ) ) |",
+  "conclusion" : "#P_unitgrpid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c.1", "#T_wcel", "#T_cU", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_w3a--2", "#T_c.1", "#T_wcel", "#T_cU", "#T_wi", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_c.1", "#T_wcel", "#T_cU", "#T_wi", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_eqid", "#P_1unit", "#P_unitss", "#P_mp3an2", "#P_ringidss" ]
+}

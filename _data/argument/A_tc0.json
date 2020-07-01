@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tc0 on Metamath](http://us.metamath.org/mpegif/tc0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssid | |- (/) C_ (/) |\n| 2 |  | #P_tr0 | |- Tr (/) |\n| 3 |  | #P_0ex | |- (/) e. _V |\n| 4 |  | #P_tcmin | |- ( (/) e. _V -> ( ( (/) C_ (/) /\\ Tr (/) ) -> ( TC ` (/) ) C_ (/) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ( (/) C_ (/) /\\ Tr (/) ) -> ( TC ` (/) ) C_ (/) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( TC ` (/) ) C_ (/) |\n| 7 |  | #P_0ss | |- (/) C_ ( TC ` (/) ) |\n| 8 | 6, 7 | #P_eqssi | |- ( TC ` (/) ) = (/) |",
+  "conclusion" : "#P_tc0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wss", "#T_c0", "#T_wtr", "#T_c0", "#T_c0", "#T_wcel", "#T_cvv", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_wss", "#T_c0", "#T_wa", "#T_wtr", "#T_c0", "#T_wi", "#T_ctc", "#T_cfv", "#T_c0", "#T_wss", "#T_c0", "#T_c0", "#T_wss", "#T_c0", "#T_wa", "#T_wtr", "#T_c0", "#T_wi", "#T_ctc", "#T_cfv", "#T_c0", "#T_wss", "#T_c0", "#T_ctc", "#T_cfv", "#T_c0", "#T_wss", "#T_c0", "#T_c0", "#T_wss", "#T_ctc", "#T_cfv", "#T_c0", "#T_ctc", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_0ss", "#P_ssid", "#P_eqssi", "#P_tcmin", "#P_tr0", "#P_0ex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sqrt on Metamath](http://us.metamath.org/mpegif/df-sqrt.html)"
+  } ],
+  "names" : [ "df-sqrt" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csqrt", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_crio--1", "#T_vy", "#T_crio--2", "#T_cc", "#T_vy", "#T_cexp", "#T_c2", "#T_wceq", "#T_vx", "#T_w3a--1", "#T_cc0", "#T_cle", "#T_cre", "#T_cfv", "#T_vy", "#T_w3a--2", "#T_ci", "#T_cmul", "#T_vy", "#T_wnel", "#T_crp", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function whose value is the square root of a complex number. Since ` ( y ^ 2 ) = x ` iff ` ( -u y ^ 2 ) = x ` , we ensure uniqueness by restricting the range to numbers with positive real part, or numbers with 0 real part and nonnegative imaginary part.  A description can be found under \"Principal square root of a complex number\" at ~ http://en.wikipedia.org/wiki/Square_root .  The square root symbol was introduced in 1525 by Christoff Rudolff. See ~ sqrtcl for its closure, ~ sqrtval for its value, ~ sqrtth and ~ sqsqrti for its relationship to squares, and ~ sqrt11i for uniqueness.  (Contributed by NM, 27-Jul-1999.)  (Revised by Mario Carneiro, 8-Jul-2013.) ",
+  "statement" : "df-sqrt $p |- sqrt = ( x e. CC |-> ( iota_ y e. CC ( ( y ^ 2 ) = x /\\ 0 <_ ( Re ` y ) /\\ ( _i x. y ) e/ RR+ ) ) ) $.\n$d x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtxval on Metamath](http://us.metamath.org/mpegif/vtxval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ng\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-vtx | |- Vtx = ( g e. _V |-> ( 1st ` g ) ) |\n| 2 | 1 | #P_a1i | |- ( G e. V -> Vtx = ( g e. _V |-> ( 1st ` g ) ) ) |\n| 3 |  | #P_fveq2 | |- ( g = G -> ( 1st ` g ) = ( 1st ` G ) ) |\n| 4 | 3 | #P_adantl | |- ( ( G e. V /\\ g = G ) -> ( 1st ` g ) = ( 1st ` G ) ) |\n| 5 |  | #P_elex | |- ( G e. V -> G e. _V ) |\n| 6 |  | #P_fvex | |- ( 1st ` G ) e. _V |\n| 7 | 6 | #P_a1i | |- ( G e. V -> ( 1st ` G ) e. _V ) |\n| 8 | 2, 4, 5, 7 | #P_fvmptd | |- ( G e. V -> ( Vtx ` G ) = ( 1st ` G ) ) |",
+  "conclusion" : "#P_vtxval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vg", "#T_cvtx", "#T_wceq", "#T_cbvex4v.vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_c1st", "#T_cfv", "#T_cbvex4v.vg", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cvtx", "#T_wceq", "#T_cbvex4v.vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_c1st", "#T_cfv", "#T_cbvex4v.vg", "#T_cbvex4v.vg", "#T_wceq", "#T_cG", "#T_wi", "#T_c1st", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cV", "#T_wa", "#T_cbvex4v.vg", "#T_wceq", "#T_cG", "#T_wi", "#T_c1st", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cG", "#T_wcel", "#T_cvv", "#T_c1st", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_c1st", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cvtx", "#T_cfv", "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-vtx", "#P_adantl", "#P_elex", "#P_fveq2", "#P_a1i", "#P_fvmptd", "#P_fvex" ]
+}

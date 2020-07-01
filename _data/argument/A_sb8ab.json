@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sb8ab on Metamath](http://us.metamath.org/mpegif/sb8ab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sb8ab.1 | |- F/ y ph |\n| 2 | 1 | #P_sbco2 | |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] ph ) |\n| 3 |  | #P_df-clab | |- ( z e. { y | [ y / x ] ph } <-> [ z / y ] [ y / x ] ph ) |\n| 4 |  | #P_df-clab | |- ( z e. { x | ph } <-> [ z / x ] ph ) |\n| 5 | 2, 3, 4 | #P_3bitr4ri | |- ( z e. { x | ph } <-> z e. { y | [ y / x ] ph } ) |\n| 6 | 5 | #P_eqriv | |- { x | ph } = { y | [ y / x ] ph } |",
+  "conclusion" : "#P_sb8ab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnf", "#T_vy", "#T_wph", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wb", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_cab--3", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-clab", "#P_3bitr4ri", "#P_eqriv", "#P_sbco2" ]
+}

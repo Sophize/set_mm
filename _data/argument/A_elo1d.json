@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elo1d on Metamath](http://us.metamath.org/mpegif/elo1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elo1mpt.1 | |- ( ph -> A C_ RR ) |\n| 2 |  | elo1mpt.2 | |- ( ( ph /\\ x e. A ) -> B e. CC ) |\n| 3 |  | elo1d.3 | |- ( ph -> C e. RR ) |\n| 4 |  | elo1d.4 | |- ( ph -> M e. RR ) |\n| 5 |  | elo1d.5 | |- ( ( ph /\\ ( x e. A /\\ C <_ x ) ) -> ( abs ` B ) <_ M ) |\n| 6 | 2 | #P_abscld | |- ( ( ph /\\ x e. A ) -> ( abs ` B ) e. RR ) |\n| 7 | 1, 6, 3, 4, 5 | #P_ello1d | |- ( ph -> ( x e. A |-> ( abs ` B ) ) e. <_O(1) ) |\n| 8 | 2 | #P_lo1o12 | |- ( ph -> ( ( x e. A |-> B ) e. O(1) <-> ( x e. A |-> ( abs ` B ) ) e. <_O(1) ) ) |\n| 9 | 7, 8 | #P_mpbird | |- ( ph -> ( x e. A |-> B ) e. O(1) ) |",
+  "conclusion" : "#P_elo1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_cC", "#T_cle", "#T_vx", "#T_wi", "#T_cabs", "#T_cfv", "#T_cB", "#T_cle", "#T_cM", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_clo1", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_co1", "#T_wb", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_clo1", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wcel", "#T_co1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abscld", "#P_ello1d", "#P_lo1o12", "#P_mpbird" ]
+}

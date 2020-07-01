@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chjjdiri on Metamath](http://us.metamath.org/mpegif/chjjdiri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | chj12.1 | |- A e. CH |\n| 2 |  | chj12.2 | |- B e. CH |\n| 3 |  | chj12.3 | |- C e. CH |\n| 4 | 3 | #P_chjidmi | |- ( C vH C ) = C |\n| 5 | 4 | #P_oveq2i | |- ( ( A vH B ) vH ( C vH C ) ) = ( ( A vH B ) vH C ) |\n| 6 | 1, 2, 3, 3 | #P_chj4i | |- ( ( A vH B ) vH ( C vH C ) ) = ( ( A vH C ) vH ( B vH C ) ) |\n| 7 | 5, 6 | #P_eqtr3i | |- ( ( A vH B ) vH C ) = ( ( A vH C ) vH ( B vH C ) ) |",
+  "conclusion" : "#P_chjjdiri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cC", "#T_wcel", "#T_cch", "#T_cC", "#T_chj", "#T_cC", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_cA", "#T_chj", "#T_cB", "#T_chj", "#T_cC", "#T_wceq", "#T_cA", "#T_chj", "#T_cC", "#T_chj", "#T_cB", "#T_chj", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chj4i", "#P_eqtr3i", "#P_oveq2i", "#P_chjidmi" ]
+}

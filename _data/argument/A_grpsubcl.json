@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpsubcl on Metamath](http://us.metamath.org/mpegif/grpsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpsubcl.b | |- B = ( Base ` G ) |\n| 2 |  | grpsubcl.m | |- .- = ( -g ` G ) |\n| 3 | 1, 2 | #P_grpsubf | |- ( G e. Grp -> .- : ( B X. B ) --> B ) |\n| 4 |  | #P_fovrn | |- ( ( .- : ( B X. B ) --> B /\\ X e. B /\\ Y e. B ) -> ( X .- Y ) e. B ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( G e. Grp /\\ X e. B /\\ Y e. B ) -> ( X .- Y ) e. B ) |",
+  "conclusion" : "#P_grpsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_c.mi", "#T_wf--1", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cB.wceq", "#T_c.mi", "#T_wf--1", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cB.wceq", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3an1", "#P_grpsubf", "#P_fovrn" ]
+}

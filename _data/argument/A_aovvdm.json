@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aovvdm on Metamath](http://us.metamath.org/mpegif/aovvdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-aov | |- (( A F B )) = ( F ''' <. A , B >. ) |\n| 2 | 1 | #P_eleq1i | |- ( (( A F B )) e. C <-> ( F ''' <. A , B >. ) e. C ) |\n| 3 |  | #P_afvvdm | |- ( ( F ''' <. A , B >. ) e. C -> <. A , B >. e. dom F ) |\n| 4 | 2, 3 | #P_sylbi | |- ( (( A F B )) e. C -> <. A , B >. e. dom F ) |",
+  "conclusion" : "#P_aovvdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_caov--1", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_caov--2", "#T_wceq", "#T_cF", "#T_cafv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_caov--1", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_caov--2", "#T_wcel", "#T_cC", "#T_wb", "#T_cF", "#T_cafv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cF", "#T_cafv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_cF", "#T_caov--1", "#T_cA", "#T_cF", "#T_cB", "#T_caov--2", "#T_wcel", "#T_cC", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_afvvdm", "#P_eleq1i", "#P_df-aov", "#P_sylbi" ]
+}

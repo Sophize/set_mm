@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mbfm on Metamath](http://us.metamath.org/mpegif/df-mbfm.html)"
+  } ],
+  "names" : [ "df-mbfm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmbfm", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cuni", "#T_crn", "#T_csiga", "#T_cmpt2--2", "#T_vt", "#T_cmpt2--3", "#T_cuni", "#T_crn", "#T_csiga", "#T_cmpt2--4", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cuni", "#T_vt", "#T_cmap", "#T_cuni", "#T_vs", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vt", "#T_ccnv", "#T_vf", "#T_cima", "#T_vx", "#T_wcel", "#T_vs", "#T_crab--4", "#T_vf", "#T_vs", "#T_vt", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the measurable function builder, which generates the set of measurable functions from a measurable space to another one.  Here, the measurable spaces are given using their sigma algebra ` s ` and ` t ` , and the spaces themselves are recovered by ` U. s ` and ` U. t ` . Note the similarities between the definition of measurable functions in measure theory, and of continuous functions in topology. This is the definition for the generic measure theory.  For the specific case of functions from ` RR ` to ` CC ` , see ~ df-mbf (Contributed by Thierry Arnoux, 23-Jan-2017.) ",
+  "statement" : "df-mbfm $p |- MblFnM = ( s e. U. ran sigAlgebra , t e. U. ran sigAlgebra |-> { f e. ( U. t ^m U. s ) | A. x e. t ( `' f \" x ) e. s } ) $.\n$d f s t x $."
+}

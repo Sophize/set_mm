@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neii1 on Metamath](http://us.metamath.org/mpegif/neii1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ng\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neifval.1 | |- X = U. J |\n| 2 | 1 | #P_neiss2 | |- ( ( J e. Top /\\ N e. ( ( nei ` J ) ` S ) ) -> S C_ X ) |\n| 3 | 1 | #P_isnei | |- ( ( J e. Top /\\ S C_ X ) -> ( N e. ( ( nei ` J ) ` S ) <-> ( N C_ X /\\ E. g e. J ( S C_ g /\\ g C_ N ) ) ) ) |\n| 4 |  | #P_simpl | |- ( ( N C_ X /\\ E. g e. J ( S C_ g /\\ g C_ N ) ) -> N C_ X ) |\n| 5 | 3, 4 | #P_syl6bi | |- ( ( J e. Top /\\ S C_ X ) -> ( N e. ( ( nei ` J ) ` S ) -> N C_ X ) ) |\n| 6 | 5 | #P_impancom | |- ( ( J e. Top /\\ N e. ( ( nei ` J ) ` S ) ) -> ( S C_ X -> N C_ X ) ) |\n| 7 | 2, 6 | #P_mpd | |- ( ( J e. Top /\\ N e. ( ( nei ` J ) ` S ) ) -> N C_ X ) |",
+  "conclusion" : "#P_neii1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vg", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cN", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cN", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wb", "#T_cN", "#T_wss", "#T_cX", "#T_wa", "#T_wrex--1", "#T_cbvex4v.vg", "#T_wrex--2", "#T_cJ", "#T_cS", "#T_wss", "#T_cbvex4v.vg", "#T_wa", "#T_cbvex4v.vg", "#T_wss", "#T_cN", "#T_cN", "#T_wss", "#T_cX", "#T_wa", "#T_wrex--1", "#T_cbvex4v.vg", "#T_wrex--2", "#T_cJ", "#T_cS", "#T_wss", "#T_cbvex4v.vg", "#T_wa", "#T_cbvex4v.vg", "#T_wss", "#T_cN", "#T_wi", "#T_cN", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cN", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cN", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cN", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cN", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cN", "#T_wcel", "#T_cnei", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wi", "#T_cN", "#T_wss", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impancom", "#P_mpd", "#P_isnei", "#P_syl6bi", "#P_simpl", "#P_neiss2" ]
+}

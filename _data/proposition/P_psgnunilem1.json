@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psgnunilem1 on Metamath](http://us.metamath.org/mpegif/psgnunilem1.html)"
+  } ],
+  "names" : [ "psgnunilem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cT", "#T_wph", "#T_wi", "#T_cQ", "#T_wcel", "#T_cT", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_cP", "#T_cdif", "#T_cid", "#T_wph", "#T_wi", "#T_cP", "#T_ccom", "#T_cQ", "#T_wceq", "#T_cid", "#T_cres", "#T_cD", "#T_wo", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cT", "#T_wrex--1", "#T_vs", "#T_wrex--2", "#T_cT", "#T_cP", "#T_ccom", "#T_cQ", "#T_wceq", "#T_vr", "#T_ccom", "#T_vs", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cdm", "#T_vs", "#T_cdif", "#T_cid", "#T_w3a--2", "#T_wn", "#T_cA", "#T_wcel", "#T_cdm", "#T_vr", "#T_cdif", "#T_cid", "#T_cA", "#T_vr", "#T_vs", "#T_cP", "#T_vr", "#T_vs", "#T_cQ", "#T_vr", "#T_vs", "#T_cT", "#T_vr", "#T_vs" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ psgnuni .  Given two consequtive transpositions in a representation of a permutation, either they are equal and therefore equivalent to the identity, or they are not and it is possible to commute them such that a chosen point in the left transposition is preserved in the right.  By repeating this process, a point can be removed from a representation of the identity.  (Contributed by Stefan O'Rear, 22-Aug-2015.) ",
+  "statement" : "psgnunilem1.t $e |- T = ran ( pmTrsp ` D ) $.\npsgnunilem1.d $e |- ( ph -> D e. V ) $.\npsgnunilem1.p $e |- ( ph -> P e. T ) $.\npsgnunilem1.q $e |- ( ph -> Q e. T ) $.\npsgnunilem1.a $e |- ( ph -> A e. dom ( P \\ _I ) ) $.\npsgnunilem1 $p |- ( ph -> ( ( P o. Q ) = ( _I |` D ) \\/ E. r e. T E. s e. T ( ( P o. Q ) = ( r o. s ) /\\ A e. dom ( s \\ _I ) /\\ -. A e. dom ( r \\ _I ) ) ) ) $.\n$d A r s $.\n$d P r s $.\n$d Q r s $.\n$d T r s $."
+}

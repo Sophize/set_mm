@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See swrdrn on Metamath](http://us.metamath.org/mpegif/swrdrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_swrdf | |- ( ( W e. Word V /\\ M e. ( 0 ... N ) /\\ N e. ( 0 ... ( # ` W ) ) ) -> ( W substr <. M , N >. ) : ( 0 ..^ ( N - M ) ) --> V ) |\n| 2 |  | #P_frn | |- ( ( W substr <. M , N >. ) : ( 0 ..^ ( N - M ) ) --> V -> ran ( W substr <. M , N >. ) C_ V ) |\n| 3 | 1, 2 | #P_syl | |- ( ( W e. Word V /\\ M e. ( 0 ... N ) /\\ N e. ( 0 ... ( # ` W ) ) ) -> ran ( W substr <. M , N >. ) C_ V ) |",
+  "conclusion" : "#P_swrdrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cW", "#T_wi", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_cM", "#T_wf--2", "#T_cV", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_cM", "#T_wf--2", "#T_cV", "#T_wi", "#T_crn", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wss", "#T_cV", "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cW", "#T_wi", "#T_crn", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wss", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_swrdf", "#P_frn" ]
+}

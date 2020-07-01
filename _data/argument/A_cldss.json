@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cldss on Metamath](http://us.metamath.org/mpegif/cldss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iscld.1 | |- X = U. J |\n| 2 |  | #P_cldrcl | |- ( S e. ( Clsd ` J ) -> J e. Top ) |\n| 3 | 1 | #P_iscld | |- ( J e. Top -> ( S e. ( Clsd ` J ) <-> ( S C_ X /\\ ( X \\ S ) e. J ) ) ) |\n| 4 | 3 | #P_simprbda | |- ( ( J e. Top /\\ S e. ( Clsd ` J ) ) -> S C_ X ) |\n| 5 | 2, 4 | #P_mpancom | |- ( S e. ( Clsd ` J ) -> S C_ X ) |",
+  "conclusion" : "#P_cldss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wb", "#T_cS", "#T_wss", "#T_cX", "#T_wa", "#T_cX", "#T_cdif", "#T_cS", "#T_wcel", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cS", "#T_wss", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpancom", "#P_cldrcl", "#P_iscld", "#P_simprbda" ]
+}

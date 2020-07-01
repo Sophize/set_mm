@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmcn on Metamath](http://us.metamath.org/mpegif/lmcn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmcnp.3 | |- ( ph -> F ( ~~>t ` J ) P ) |\n| 2 |  | lmcn.4 | |- ( ph -> G e. ( J Cn K ) ) |\n| 3 |  | #P_cntop1 | |- ( G e. ( J Cn K ) -> J e. Top ) |\n| 4 | 2, 3 | #P_syl | |- ( ph -> J e. Top ) |\n| 5 |  | #P_eqid | |- U. J = U. J |\n| 6 | 5 | #P_toptopon | |- ( J e. Top <-> J e. ( TopOn ` U. J ) ) |\n| 7 | 4, 6 | #P_sylib | |- ( ph -> J e. ( TopOn ` U. J ) ) |\n| 8 |  | #P_lmcl | |- ( ( J e. ( TopOn ` U. J ) /\\ F ( ~~>t ` J ) P ) -> P e. U. J ) |\n| 9 | 7, 1, 8 | #P_syl2anc | |- ( ph -> P e. U. J ) |\n| 10 | 5 | #P_cncnpi | |- ( ( G e. ( J Cn K ) /\\ P e. U. J ) -> G e. ( ( J CnP K ) ` P ) ) |\n| 11 | 2, 9, 10 | #P_syl2anc | |- ( ph -> G e. ( ( J CnP K ) ` P ) ) |\n| 12 | 1, 11 | #P_lmcnp | |- ( ph -> ( G o. F ) ( ~~>t ` K ) ( G ` P ) ) |",
+  "conclusion" : "#P_lmcn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_clm", "#T_cfv", "#T_cJ", "#T_cP", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wa", "#T_cF", "#T_clm", "#T_cfv", "#T_cJ", "#T_cP", "#T_wi", "#T_cP", "#T_wcel", "#T_cuni", "#T_cJ", "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cuni", "#T_cJ", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wa", "#T_cP", "#T_wcel", "#T_cuni", "#T_cJ", "#T_wi", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccnp", "#T_cK", "#T_cfv", "#T_cP", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cJ", "#T_ccnp", "#T_cK", "#T_cfv", "#T_cP", "#T_wph", "#T_wi", "#T_cG", "#T_ccom", "#T_cF", "#T_clm", "#T_cfv", "#T_cK", "#T_cG", "#T_cfv", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_cntop1", "#P_cncnpi", "#P_syl2anc", "#P_lmcl", "#P_sylib", "#P_syl", "#P_toptopon", "#P_lmcnp" ]
+}

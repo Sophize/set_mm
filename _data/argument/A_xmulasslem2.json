@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xmulasslem2 on Metamath](http://us.metamath.org/mpegif/xmulasslem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( A = -oo -> ( 0 < A <-> 0 < -oo ) ) |\n| 2 |  | #P_0xr | |- 0 e. RR* |\n| 3 |  | #P_nltmnf | |- ( 0 e. RR* -> -. 0 < -oo ) |\n| 4 | 2, 3 | #P_ax-mp | |- -. 0 < -oo |\n| 5 | 4 | #P_pm2.21i | |- ( 0 < -oo -> ph ) |\n| 6 | 1, 5 | #P_syl6bi | |- ( A = -oo -> ( 0 < A -> ph ) ) |\n| 7 | 6 | #P_impcom | |- ( ( 0 < A /\\ A = -oo ) -> ph ) |",
+  "conclusion" : "#P_xmulasslem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cmnf", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_clt", "#T_cmnf", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cc0", "#T_clt", "#T_cmnf", "#T_wn", "#T_cc0", "#T_clt", "#T_cmnf", "#T_cc0", "#T_clt", "#T_cmnf", "#T_wi", "#T_wph", "#T_cA.wceq", "#T_wceq", "#T_cmnf", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_cc0", "#T_clt", "#T_cA", "#T_wa", "#T_cA", "#T_wceq", "#T_cmnf", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_pm2.21i", "#P_0xr", "#P_breq2", "#P_nltmnf", "#P_syl6bi", "#P_impcom" ]
+}

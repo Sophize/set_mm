@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nrexdv on Metamath](http://us.metamath.org/mpegif/nrexdv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nrexdv.1 | |- ( ( ph /\\ x e. A ) -> -. ps ) |\n| 2 | 1 | #P_ralrimiva | |- ( ph -> A. x e. A -. ps ) |\n| 3 |  | #P_ralnex | |- ( A. x e. A -. ps <-> -. E. x e. A ps ) |\n| 4 | 2, 3 | #P_sylib | |- ( ph -> -. E. x e. A ps ) |",
+  "conclusion" : "#P_nrexdv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wps", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylib", "#P_ralrimiva", "#P_ralnex" ]
+}

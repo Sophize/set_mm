@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eupick on Metamath](http://us.metamath.org/mpegif/eupick.html)"
+  } ],
+  "names" : [ "eupick" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx", "#T_wph", "#T_wa", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Existential uniqueness \"picks\" a variable value for which another wff is true.  If there is only one thing ` x ` such that ` ph ` is true, and there is also an ` x ` (actually the same one) such that ` ph ` and ` ps ` are both true, then ` ph ` implies ` ps ` regardless of ` x ` .  This theorem can be useful for eliminating existential quantifiers in a hypothesis.  Compare Theorem *14.26 in [WhiteheadRussell] p. 192. (Contributed by NM, 10-Jul-1994.) ",
+  "statement" : "eupick $p |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) $."
+}

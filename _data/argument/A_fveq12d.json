@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fveq12d on Metamath](http://us.metamath.org/mpegif/fveq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fveq12d.1 | |- ( ph -> F = G ) |\n| 2 |  | fveq12d.2 | |- ( ph -> A = B ) |\n| 3 | 1 | #P_fveq1d | |- ( ph -> ( F ` A ) = ( G ` A ) ) |\n| 4 | 2 | #P_fveq2d | |- ( ph -> ( G ` A ) = ( G ` B ) ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( ph -> ( F ` A ) = ( G ` B ) ) |",
+  "conclusion" : "#P_fveq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_cG", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cG", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq1d", "#P_eqtrd", "#P_fveq2d" ]
+}

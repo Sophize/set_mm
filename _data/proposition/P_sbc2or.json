@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbc2or on Metamath](http://us.metamath.org/mpegif/sbc2or.html)"
+  } ],
+  "names" : [ "sbc2or" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_wph", "#T_wo", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_cA", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The disjunction of two equivalences for class substitution does not require a class existence hypothesis.  This theorem tells us that there are only 2 possibilities for ` [ A / x ] ph ` behavior at proper classes, matching the ~ sbc5 (false) and ~ sbc6 (true) conclusions. This is interesting since ~ dfsbcq and ~ dfsbcq2 (from which it is derived) do not appear to say anything obvious about proper class behavior.  Note that this theorem doesn't tell us that it is always one or the other at proper classes; it could \"flip\" between false (the first disjunct) and true (the second disjunct) as a function of some other variable ` y ` that ` ph ` or ` A ` may contain.  (Contributed by NM, 11-Oct-2004.)  (Proof modification is discouraged.) ",
+  "statement" : "sbc2or $p |- ( ( [. A / x ]. ph <-> E. x ( x = A /\\ ph ) ) \\/ ( [. A / x ]. ph <-> A. x ( x = A -> ph ) ) ) $.\n$d A x $."
+}

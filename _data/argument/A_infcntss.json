@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infcntss on Metamath](http://us.metamath.org/mpegif/infcntss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | infcntss.1 | |- A e. _V |\n| 2 | 1 | #P_domen | |- ( _om ~<_ A <-> E. x ( _om ~~ x /\\ x C_ A ) ) |\n| 3 |  | #P_ensym | |- ( _om ~~ x -> x ~~ _om ) |\n| 4 | 3 | #P_anim2i | |- ( ( x C_ A /\\ _om ~~ x ) -> ( x C_ A /\\ x ~~ _om ) ) |\n| 5 | 4 | #P_ancoms | |- ( ( _om ~~ x /\\ x C_ A ) -> ( x C_ A /\\ x ~~ _om ) ) |\n| 6 | 5 | #P_eximi | |- ( E. x ( _om ~~ x /\\ x C_ A ) -> E. x ( x C_ A /\\ x ~~ _om ) ) |\n| 7 | 2, 6 | #P_sylbi | |- ( _om ~<_ A -> E. x ( x C_ A /\\ x ~~ _om ) ) |",
+  "conclusion" : "#P_infcntss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_com", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_com", "#T_cen", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_cen", "#T_com", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_com", "#T_cen", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_com", "#T_com", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_com", "#T_wex", "#T_vx.wal", "#T_com", "#T_cen", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_com", "#T_com", "#T_cdom", "#T_cA", "#T_wi", "#T_wex", "#T_vx", "#T_vx", "#T_wss", "#T_cA", "#T_wa", "#T_vx", "#T_cen", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_domen", "#P_anim2i", "#P_ensym", "#P_ancoms", "#P_sylbi", "#P_eximi" ]
+}

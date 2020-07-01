@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srhmsubcOLDlem1 on Metamath](http://us.metamath.org/mpegif/srhmsubcOLDlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srhmsubc.s | |- A. r e. S r e. Ring |\n| 2 |  | srhmsubc.c | |- C = ( U i^i S ) |\n| 3 |  | #P_eleq1 | |- ( r = X -> ( r e. Ring <-> X e. Ring ) ) |\n| 4 | 3, 1 | #P_vtoclri | |- ( X e. S -> X e. Ring ) |\n| 5 | 4 | #P_anim2i | |- ( ( X e. U /\\ X e. S ) -> ( X e. U /\\ X e. Ring ) ) |\n| 6 | 2 | #P_elin2 | |- ( X e. C <-> ( X e. U /\\ X e. S ) ) |\n| 7 |  | #P_elin | |- ( X e. ( U i^i Ring ) <-> ( X e. U /\\ X e. Ring ) ) |\n| 8 | 5, 6, 7 | #P_3imtr4i | |- ( X e. C -> X e. ( U i^i Ring ) ) |\n\\\n Lemma 1 for ~ srhmsubcOLD .  (Contributed by AV, 19-Feb-2020.) (New usage is discouraged.) ",
+  "conclusion" : "#P_srhmsubclem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wral--1", "#T_vr", "#T_wral--2", "#T_cS", "#T_vr", "#T_wcel", "#T_crg", "#T_cC", "#T_wceq", "#T_cU", "#T_cin", "#T_cS", "#T_vr", "#T_wceq", "#T_cX", "#T_wi", "#T_vr", "#T_wcel", "#T_crg", "#T_wb", "#T_cX", "#T_wcel", "#T_crg", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_wcel", "#T_crg", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cX", "#T_wcel", "#T_crg", "#T_cX", "#T_wcel", "#T_cC", "#T_wb", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cX", "#T_wcel", "#T_cS", "#T_cX", "#T_wcel", "#T_cU", "#T_cin", "#T_crg", "#T_wb", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cX", "#T_wcel", "#T_crg", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_cin", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anim2i", "#P_eleq1", "#P_3imtr4i", "#P_vtoclri", "#P_elin", "#P_elin2" ]
+}

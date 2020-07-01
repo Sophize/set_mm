@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnwe on Metamath](http://us.metamath.org/mpegif/fnwe.html)"
+  } ],
+  "names" : [ "fnwe" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cA", "#T_wa", "#T_cF", "#T_cfv", "#T_vx", "#T_cR", "#T_cF", "#T_cfv", "#T_vy", "#T_wo", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_vy", "#T_wa", "#T_vx", "#T_cS", "#T_vy", "#T_copab--6", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cR", "#T_wwe", "#T_cB", "#T_wph", "#T_wi", "#T_cS", "#T_wwe", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_cima", "#T_vw", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cT", "#T_wwe", "#T_cA", "#T_cA", "#T_vw", "#T_vx", "#T_vy", "#T_cB", "#T_vw", "#T_vx", "#T_vy", "#T_cF", "#T_vw", "#T_vx", "#T_vy", "#T_cR", "#T_vw", "#T_vx", "#T_vy", "#T_cS", "#T_vw", "#T_vx", "#T_vy", "#T_cT", "#T_vw", "#T_wph", "#T_vw", "#T_vx", "#T_vw", "#T_vx", "#T_vy", "#T_vw", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A variant on lexicographic order, which sorts first by some function of the base set, and then by a \"backup\" well-ordering when the function value is equal on both elements.  (Contributed by Mario Carneiro, 10-Mar-2013.)  (Revised by Mario Carneiro, 18-Nov-2014.) ",
+  "statement" : "fnwe.1 $e |- T = { <. x , y >. | ( ( x e. A /\\ y e. A ) /\\ ( ( F ` x ) R ( F ` y ) \\/ ( ( F ` x ) = ( F ` y ) /\\ x S y ) ) ) } $.\nfnwe.2 $e |- ( ph -> F : A --> B ) $.\nfnwe.3 $e |- ( ph -> R We B ) $.\nfnwe.4 $e |- ( ph -> S We A ) $.\nfnwe.5 $e |- ( ph -> ( F \" w ) e. _V ) $.\nfnwe $p |- ( ph -> T We A ) $.\n$d A w x y $.\n$d B w x y $.\n$d F w x y $.\n$d R w x y $.\n$d S w x y $.\n$d T w $.\n$d ph w x $.\n$d w x y $.\n$d w x y $."
+}

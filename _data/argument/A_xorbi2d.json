@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xorbi2d on Metamath](http://us.metamath.org/mpegif/xorbi2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xorbid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 | 1 | #P_orbi2d | |- ( ph -> ( ( th \\/ ps ) <-> ( th \\/ ch ) ) ) |\n| 3 | 1 | #P_anbi2d | |- ( ph -> ( ( th /\\ ps ) <-> ( th /\\ ch ) ) ) |\n| 4 | 3 | #P_notbid | |- ( ph -> ( -. ( th /\\ ps ) <-> -. ( th /\\ ch ) ) ) |\n| 5 | 2, 4 | #P_anbi12d | |- ( ph -> ( ( ( th \\/ ps ) /\\ -. ( th /\\ ps ) ) <-> ( ( th \\/ ch ) /\\ -. ( th /\\ ch ) ) ) ) |\n| 6 |  | #P_df-xor--i | |- ( ( th \\/_ ps ) <-> ( ( th \\/ ps ) /\\ -. ( th /\\ ps ) ) ) |\n| 7 |  | #P_df-xor--i | |- ( ( th \\/_ ch ) <-> ( ( th \\/ ch ) /\\ -. ( th /\\ ch ) ) ) |\n| 8 | 5, 6, 7 | #P_3bitr4g | |- ( ph -> ( ( th \\/_ ps ) <-> ( th \\/_ ch ) ) ) |",
+  "conclusion" : "#P_xorbi2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wo", "#T_wps", "#T_wb", "#T_wth", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wa", "#T_wps", "#T_wb", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wth", "#T_wa", "#T_wps", "#T_wb", "#T_wth", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wth", "#T_wa", "#T_wch", "#T_wth", "#T_wxo", "#T_wps", "#T_wb", "#T_wth", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wth", "#T_wa", "#T_wps", "#T_wth", "#T_wxo", "#T_wch", "#T_wb", "#T_wth", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wxo", "#T_wps", "#T_wb", "#T_wth", "#T_wxo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi2d", "#P_df-xor--i", "#P_orbi2d", "#P_3bitr4g", "#P_notbid", "#P_anbi12d" ]
+}

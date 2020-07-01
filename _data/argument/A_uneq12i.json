@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uneq12i on Metamath](http://us.metamath.org/mpegif/uneq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uneq1i.1 | |- A = B |\n| 2 |  | uneq12i.2 | |- C = D |\n| 3 |  | #P_uneq12 | |- ( ( A = B /\\ C = D ) -> ( A u. C ) = ( B u. D ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A u. C ) = ( B u. D ) |",
+  "conclusion" : "#P_uneq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cun", "#T_cD", "#T_cA", "#T_cun", "#T_cC", "#T_wceq", "#T_cB", "#T_cun", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_uneq12" ]
+}

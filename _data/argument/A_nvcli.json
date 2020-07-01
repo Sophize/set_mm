@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvcli on Metamath](http://us.metamath.org/mpegif/nvcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvf.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvf.6 | |- N = ( normCV ` U ) |\n| 3 |  | nvcli.9 | |- U e. NrmCVec |\n| 4 |  | nvcli.7 | |- A e. X |\n| 5 | 1, 2 | #P_nvcl | |- ( ( U e. NrmCVec /\\ A e. X ) -> ( N ` A ) e. RR ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- ( N ` A ) e. RR |",
+  "conclusion" : "#P_nvcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cN", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_cA", "#T_wcel", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cN", "#T_cfv", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_nvcl" ]
+}

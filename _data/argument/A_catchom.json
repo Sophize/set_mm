@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See catchom on Metamath](http://us.metamath.org/mpegif/catchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | catcbas.c | |- C = ( CatCat ` U ) |\n| 2 |  | catcbas.b | |- B = ( Base ` C ) |\n| 3 |  | catcbas.u | |- ( ph -> U e. V ) |\n| 4 |  | catchomfval.h | |- H = ( Hom ` C ) |\n| 5 |  | catchom.x | |- ( ph -> X e. B ) |\n| 6 |  | catchom.y | |- ( ph -> Y e. B ) |\n| 7 | 1, 2, 3, 4 | #P_catchomfval | |- ( ph -> H = ( x e. B , y e. B |-> ( x Func y ) ) ) |\n| 8 |  | #P_oveq12 | |- ( ( x = X /\\ y = Y ) -> ( x Func y ) = ( X Func Y ) ) |\n| 9 | 8 | #P_adantl | |- ( ( ph /\\ ( x = X /\\ y = Y ) ) -> ( x Func y ) = ( X Func Y ) ) |\n| 10 |  | #P_ovex | |- ( X Func Y ) e. _V |\n| 11 | 10 | #P_a1i | |- ( ph -> ( X Func Y ) e. _V ) |\n| 12 | 7, 9, 5, 6, 11 | #P_ovmpt2d | |- ( ph -> ( X H Y ) = ( X Func Y ) ) |",
+  "conclusion" : "#P_catchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cC", "#T_wceq", "#T_ccatc", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cH", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_cfunc", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vx.wal", "#T_cfunc", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_cfunc", "#T_cY", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vx.wal", "#T_cfunc", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_cfunc", "#T_cY", "#T_cX", "#T_cfunc", "#T_cY", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cX", "#T_cfunc", "#T_cY", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cX", "#T_cfunc", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_adantl", "#P_oveq12", "#P_a1i", "#P_ovmpt2d", "#P_catchomfval" ]
+}

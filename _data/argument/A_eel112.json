@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eel112 on Metamath](http://us.metamath.org/mpegif/eel112.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eel112.1 | |- ( ph -> ps ) |\n| 2 |  | eel112.2 | |- ( ph -> ch ) |\n| 3 |  | eel112.3 | |- ( th -> ta ) |\n| 4 |  | eel112.4 | |- ( ( ps /\\ ch /\\ ta ) -> et ) |\n| 5 | 1, 2, 3, 4 | #P_syl3an | |- ( ( ph /\\ ph /\\ th ) -> et ) |\n| 6 | 5 | #P_3anidm12 | |- ( ( ph /\\ th ) -> et ) |",
+  "conclusion" : "#P_eel112",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wta", "#T_wps", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3anidm12", "#P_syl3an" ]
+}

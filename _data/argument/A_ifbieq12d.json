@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifbieq12d on Metamath](http://us.metamath.org/mpegif/ifbieq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ifbieq12d.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | ifbieq12d.2 | |- ( ph -> A = C ) |\n| 3 |  | ifbieq12d.3 | |- ( ph -> B = D ) |\n| 4 | 1 | #P_ifbid | |- ( ph -> if ( ps , A , B ) = if ( ch , A , B ) ) |\n| 5 | 2, 3 | #P_ifeq12d | |- ( ph -> if ( ch , A , B ) = if ( ch , C , D ) ) |\n| 6 | 4, 5 | #P_eqtrd | |- ( ph -> if ( ps , A , B ) = if ( ch , C , D ) ) |",
+  "conclusion" : "#P_ifbieq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cD", "#T_wph", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ifbid", "#P_ifeq12d", "#P_eqtrd" ]
+}

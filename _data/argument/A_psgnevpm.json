@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psgnevpm on Metamath](http://us.metamath.org/mpegif/psgnevpm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | evpmss.s | |- S = ( SymGrp ` D ) |\n| 2 |  | evpmss.p | |- P = ( Base ` S ) |\n| 3 |  | psgnevpmb.n | |- N = ( pmSgn ` D ) |\n| 4 | 1, 2, 3 | #P_psgnevpmb | |- ( D e. Fin -> ( F e. ( pmEven ` D ) <-> ( F e. P /\\ ( N ` F ) = 1 ) ) ) |\n| 5 | 4 | #P_simplbda | |- ( ( D e. Fin /\\ F e. ( pmEven ` D ) ) -> ( N ` F ) = 1 ) |",
+  "conclusion" : "#P_psgnevpm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cD", "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cN", "#T_wceq", "#T_cpsgn", "#T_cfv", "#T_cD", "#T_cD", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cevpm", "#T_cfv", "#T_cD", "#T_wb", "#T_cF", "#T_wcel", "#T_cP", "#T_wa", "#T_cN", "#T_cfv", "#T_cF", "#T_wceq", "#T_c1", "#T_cD", "#T_wcel", "#T_cfn", "#T_wa", "#T_cF", "#T_wcel", "#T_cevpm", "#T_cfv", "#T_cD", "#T_wi", "#T_cN", "#T_cfv", "#T_cF", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplbda", "#P_psgnevpmb" ]
+}

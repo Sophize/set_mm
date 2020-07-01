@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imp5p on Metamath](http://us.metamath.org/mpegif/imp5p.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3imp5.1 | |- ( ph -> ( ps -> ( ch -> ( th -> ( ta -> et ) ) ) ) ) |\n| 2 | 1 | #P_com52l | |- ( ch -> ( th -> ( ta -> ( ph -> ( ps -> et ) ) ) ) ) |\n| 3 | 2 | #P_3imp | |- ( ( ch /\\ th /\\ ta ) -> ( ph -> ( ps -> et ) ) ) |\n| 4 | 3 | #P_com3l | |- ( ph -> ( ps -> ( ( ch /\\ th /\\ ta ) -> et ) ) ) |",
+  "conclusion" : "#P_imp5p",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wet", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_com52l", "#P_com3l", "#P_3imp" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lvecindp on Metamath](http://us.metamath.org/mpegif/lvecindp.html)"
+  } ],
+  "names" : [ "lvecindp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cK", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cK", "#T_wph", "#T_wi", "#T_cA", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cB", "#T_c.x", "#T_cX", "#T_c.pl", "#T_cZ", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cY", "#T_wceq", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Compute the ` X ` coefficient in a sum with an independent vector ` X ` (first conjunct), which can then be removed to continue with the remaining vectors summed in expressions ` Y ` and ` Z ` (second conjunct).  Typically, ` U ` is the span of the remaining vectors. (Contributed by NM, 5-Apr-2015.)  (Revised by Mario Carneiro, 21-Apr-2016.) ",
+  "statement" : "lvecindp.v $e |- V = ( Base ` W ) $.\nlvecindp.p $e |- .+ = ( +g ` W ) $.\nlvecindp.f $e |- F = ( Scalar ` W ) $.\nlvecindp.k $e |- K = ( Base ` F ) $.\nlvecindp.t $e |- .x. = ( .s ` W ) $.\nlvecindp.s $e |- S = ( LSubSp ` W ) $.\nlvecindp.w $e |- ( ph -> W e. LVec ) $.\nlvecindp.u $e |- ( ph -> U e. S ) $.\nlvecindp.x $e |- ( ph -> X e. V ) $.\nlvecindp.n $e |- ( ph -> -. X e. U ) $.\nlvecindp.y $e |- ( ph -> Y e. U ) $.\nlvecindp.z $e |- ( ph -> Z e. U ) $.\nlvecindp.a $e |- ( ph -> A e. K ) $.\nlvecindp.b $e |- ( ph -> B e. K ) $.\nlvecindp.e $e |- ( ph -> ( ( A .x. X ) .+ Y ) = ( ( B .x. X ) .+ Z ) ) $.\nlvecindp $p |- ( ph -> ( A = B /\\ Y = Z ) ) $."
+}

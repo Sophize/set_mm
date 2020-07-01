@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpdom2g on Metamath](http://us.metamath.org/mpegif/xpdom2g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpeq1 | |- ( x = C -> ( x X. A ) = ( C X. A ) ) |\n| 2 |  | #P_xpeq1 | |- ( x = C -> ( x X. B ) = ( C X. B ) ) |\n| 3 | 1, 2 | #P_breq12d | |- ( x = C -> ( ( x X. A ) ~<_ ( x X. B ) <-> ( C X. A ) ~<_ ( C X. B ) ) ) |\n| 4 | 3 | #P_imbi2d | |- ( x = C -> ( ( A ~<_ B -> ( x X. A ) ~<_ ( x X. B ) ) <-> ( A ~<_ B -> ( C X. A ) ~<_ ( C X. B ) ) ) ) |\n| 5 |  | #P_vex | |- x e. _V |\n| 6 | 5 | #P_xpdom2 | |- ( A ~<_ B -> ( x X. A ) ~<_ ( x X. B ) ) |\n| 7 | 4, 6 | #P_vtoclg | |- ( C e. V -> ( A ~<_ B -> ( C X. A ) ~<_ ( C X. B ) ) ) |\n| 8 | 7 | #P_imp | |- ( ( C e. V /\\ A ~<_ B ) -> ( C X. A ) ~<_ ( C X. B ) ) |",
+  "conclusion" : "#P_xpdom2g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_vx.wal", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cxp", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_vx.wal", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cxp", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_vx.wal", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_vx.wal", "#T_cxp", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_cC", "#T_cxp", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_vx.wal", "#T_cxp", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_cC", "#T_cxp", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_vx.wal", "#T_cxp", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cxp", "#T_cA.wceq", "#T_cdom", "#T_cC", "#T_cxp", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cV", "#T_wa", "#T_cA", "#T_cdom", "#T_cB", "#T_wi", "#T_cC", "#T_cxp", "#T_cA", "#T_cdom", "#T_cC", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xpdom2", "#P_vtoclg", "#P_imp", "#P_vex", "#P_imbi2d", "#P_xpeq1", "#P_breq12d" ]
+}

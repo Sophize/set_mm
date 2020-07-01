@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-recs on Metamath](http://us.metamath.org/mpegif/df-recs.html)"
+  } ],
+  "names" : [ "df-recs" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crecs", "#T_cF", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_cF", "#T_vf", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function ` recs ( F ) ` on ` On ` , the class of ordinal numbers, by transfinite recursion given a rule ` F ` which sets the next value given all values so far.  See ~ df-rdg for more details on why this definition is desirable.  Unlike ~ df-rdg which restricts the update rule to use only the previous value, this version allows the update rule to use _all_ previous values, which is why it is described as \"strong\", although it is actually more primitive.  See ~ recsfnon and ~ recsval for the primary contract of this definition. _EDITORIAL_: there are several existing versions of this construction without the definition, notably in ~ ordtype , ~ zorn2 , and ~ dfac8alem .  (Contributed by Stefan O'Rear, 18-Jan-2015.) (New usage is discouraged.) \n\n---\n\n Define a function ` recs ( F ) ` on ` On ` , the class of ordinal numbers, by transfinite recursion given a rule ` F ` which sets the next value given all values so far.  See ~ df-irdg for more details on why this definition is desirable.  Unlike ~ df-irdg which restricts the update rule to use only the previous value, this version allows the update rule to use _all_ previous values, which is why it is described as \"strong\", although it is actually more primitive.  See ~ tfri1d and ~ tfri2d for the primary contract of this definition. (Contributed by Stefan O'Rear, 18-Jan-2015.) ",
+  "statement" : "df-recs $p |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.\n$d F f x y $."
+}

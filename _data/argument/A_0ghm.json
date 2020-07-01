@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0ghm on Metamath](http://us.metamath.org/mpegif/0ghm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 0ghm.z | |- .0. = ( 0g ` N ) |\n| 2 |  | 0ghm.b | |- B = ( Base ` M ) |\n| 3 |  | #P_grpmnd | |- ( M e. Grp -> M e. Mnd ) |\n| 4 |  | #P_grpmnd | |- ( N e. Grp -> N e. Mnd ) |\n| 5 | 1, 2 | #P_0mhm | |- ( ( M e. Mnd /\\ N e. Mnd ) -> ( B X. { .0. } ) e. ( M MndHom N ) ) |\n| 6 | 3, 4, 5 | #P_syl2an | |- ( ( M e. Grp /\\ N e. Grp ) -> ( B X. { .0. } ) e. ( M MndHom N ) ) |\n| 7 |  | #P_ghmmhmb | |- ( ( M e. Grp /\\ N e. Grp ) -> ( M GrpHom N ) = ( M MndHom N ) ) |\n| 8 | 6, 7 | #P_eleqtrrd | |- ( ( M e. Grp /\\ N e. Grp ) -> ( B X. { .0. } ) e. ( M GrpHom N ) ) |",
+  "conclusion" : "#P_0ghm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cN", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cM", "#T_wcel", "#T_cmnd", "#T_cN", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cN", "#T_wcel", "#T_cmnd", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cN", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cB.wceq", "#T_cxp", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cM", "#T_cmhm", "#T_cN", "#T_cM", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cN", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cB.wceq", "#T_cxp", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cM", "#T_cmhm", "#T_cN", "#T_cM", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cN", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cM", "#T_cghm", "#T_cN", "#T_wceq", "#T_cM", "#T_cmhm", "#T_cN", "#T_cM", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cN", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cB", "#T_cxp", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cM", "#T_cghm", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ghmmhmb", "#P_grpmnd", "#P_eleqtrrd", "#P_syl2an", "#P_0mhm" ]
+}

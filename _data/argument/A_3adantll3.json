@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3adantll3 on Metamath](http://us.metamath.org/mpegif/3adantll3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3adantll3.1 | |- ( ( ( ( ph /\\ ps ) /\\ ch ) /\\ th ) -> ta ) |\n| 2 |  | #P_simpll1 | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> ph ) |\n| 3 |  | #P_simpll2 | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> ps ) |\n| 4 | 2, 3 | #P_jca | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> ( ph /\\ ps ) ) |\n| 5 |  | #P_simplr | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> ch ) |\n| 6 |  | #P_simpr | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> th ) |\n| 7 | 4, 5, 6, 1 | #P_syl21anc | |- ( ( ( ( ph /\\ ps /\\ et ) /\\ ch ) /\\ th ) -> ta ) |",
+  "conclusion" : "#P_3adantll3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wps", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wth", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wet", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simplr", "#P_simpr", "#P_syl21anc", "#P_jca", "#P_simpll1", "#P_simpll2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See anxordi on Metamath](http://us.metamath.org/mpegif/anxordi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xordi | |- ( ( ph /\\ -. ( ps <-> ch ) ) <-> -. ( ( ph /\\ ps ) <-> ( ph /\\ ch ) ) ) |\n| 2 |  | #P_df-xor | |- ( ( ps \\/_ ch ) <-> -. ( ps <-> ch ) ) |\n| 3 | 2 | #P_anbi2i | |- ( ( ph /\\ ( ps \\/_ ch ) ) <-> ( ph /\\ -. ( ps <-> ch ) ) ) |\n| 4 |  | #P_df-xor | |- ( ( ( ph /\\ ps ) \\/_ ( ph /\\ ch ) ) <-> -. ( ( ph /\\ ps ) <-> ( ph /\\ ch ) ) ) |\n| 5 | 1, 3, 4 | #P_3bitr4i | |- ( ( ph /\\ ( ps \\/_ ch ) ) <-> ( ( ph /\\ ps ) \\/_ ( ph /\\ ch ) ) ) |",
+  "conclusion" : "#P_anxordi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wa", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-xor", "#P_anbi2i", "#P_3bitr4i", "#P_xordi" ]
+}

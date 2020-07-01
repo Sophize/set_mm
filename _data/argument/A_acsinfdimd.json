@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acsinfdimd on Metamath](http://us.metamath.org/mpegif/acsinfdimd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | acsinfdimd.1 | |- ( ph -> A e. ( ACS ` X ) ) |\n| 2 |  | acsinfdimd.2 | |- N = ( mrCls ` A ) |\n| 3 |  | acsinfdimd.3 | |- I = ( mrInd ` A ) |\n| 4 |  | acsinfdimd.4 | |- ( ph -> S e. I ) |\n| 5 |  | acsinfdimd.5 | |- ( ph -> T e. I ) |\n| 6 |  | acsinfdimd.6 | |- ( ph -> ( N ` S ) = ( N ` T ) ) |\n| 7 |  | acsinfdimd.7 | |- ( ph -> -. S e. Fin ) |\n| 8 | 1 | #P_acsmred | |- ( ph -> A e. ( Moore ` X ) ) |\n| 9 | 3, 8, 5 | #P_mrissd | |- ( ph -> T C_ X ) |\n| 10 | 1, 2, 3, 4, 9, 6, 7 | #P_acsdomd | |- ( ph -> S ~<_ T ) |\n| 11 | 3, 8, 4 | #P_mrissd | |- ( ph -> S C_ X ) |\n| 12 | 6 | #P_eqcomd | |- ( ph -> ( N ` T ) = ( N ` S ) ) |\n| 13 | 1, 2, 3, 4, 9, 6, 7 | #P_acsinfd | |- ( ph -> -. T e. Fin ) |\n| 14 | 1, 2, 3, 5, 11, 12, 13 | #P_acsdomd | |- ( ph -> T ~<_ S ) |\n| 15 |  | #P_sbth | |- ( ( S ~<_ T /\\ T ~<_ S ) -> S ~~ T ) |\n| 16 | 10, 14, 15 | #P_syl2anc | |- ( ph -> S ~~ T ) |",
+  "conclusion" : "#P_acsinfdimd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cacs", "#T_cfv", "#T_cX", "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cI", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cS", "#T_wceq", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_wn", "#T_cS", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cT", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_cdom", "#T_cT", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cT", "#T_wceq", "#T_cN", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_wn", "#T_cT", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cT", "#T_cdom", "#T_cS", "#T_cS", "#T_cdom", "#T_cT", "#T_wa", "#T_cT", "#T_cdom", "#T_cS", "#T_wi", "#T_cS", "#T_cen", "#T_cT", "#T_wph", "#T_wi", "#T_cS", "#T_cen", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_acsmred", "#P_mrissd", "#P_syl2anc", "#P_eqcomd", "#P_sbth", "#P_acsinfd", "#P_acsdomd" ]
+}

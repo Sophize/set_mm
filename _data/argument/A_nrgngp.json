@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nrgngp on Metamath](http://us.metamath.org/mpegif/nrgngp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( norm ` R ) = ( norm ` R ) |\n| 2 |  | #P_eqid | |- ( AbsVal ` R ) = ( AbsVal ` R ) |\n| 3 | 1, 2 | #P_isnrg | |- ( R e. NrmRing <-> ( R e. NrmGrp /\\ ( norm ` R ) e. ( AbsVal ` R ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( R e. NrmRing -> R e. NrmGrp ) |",
+  "conclusion" : "#P_nrgngp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cnm", "#T_cfv", "#T_cR", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cR", "#T_cabv", "#T_cfv", "#T_cR", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wb", "#T_cR", "#T_wcel", "#T_cngp", "#T_wa", "#T_cnm", "#T_cfv", "#T_cR", "#T_wcel", "#T_cabv", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_cngp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isnrg", "#P_simplbi" ]
+}

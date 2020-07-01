@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-co on Metamath](http://us.metamath.org/mpegif/df-co.html)"
+  } ],
+  "names" : [ "df-co" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_ccom", "#T_cB", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wex", "#T_vz", "#T_vx", "#T_cB", "#T_vz", "#T_wa", "#T_vz", "#T_cA", "#T_vy", "#T_copab--6", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the composition of two classes.  Definition 6.6(3) of [TakeutiZaring] p. 24.  For example, ` ( ( exp o. cos ) `` 0 ) = _e ` ( ~ ex-co ) because ` ( cos `` 0 ) = 1 ` (see ~ cos0 ) and ` ( exp `` 1 ) = _e ` (see ~ df-e ).  Note that Definition 7 of [Suppes] p. 63 reverses ` A ` and ` B ` , uses ` /. ` instead of ` o. ` , and calls the operation \"relative product.\"  (Contributed by NM, 4-Jul-1994.) \n\n---\n\n Define the composition of two classes.  Definition 6.6(3) of [TakeutiZaring] p. 24.  Note that Definition 7 of [Suppes] p. 63 reverses ` A ` and ` B ` , uses a slash instead of ` o. ` , and calls the operation \"relative product.\"  (Contributed by NM, 4-Jul-1994.) ",
+  "statement" : "df-co $p |- ( A o. B ) = { <. x , y >. | E. z ( x B z /\\ z A y ) } $.\n$d A x y z $.\n$d B x y z $."
+}

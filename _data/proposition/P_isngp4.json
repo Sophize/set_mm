@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isngp4 on Metamath](http://us.metamath.org/mpegif/isngp4.html)"
+  } ],
+  "names" : [ "isngp4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cD", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_cmt", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cX", "#T_vx", "#T_c.pl", "#T_vz", "#T_cD", "#T_vy", "#T_c.pl", "#T_vz", "#T_wceq", "#T_vx", "#T_cD", "#T_vy", "#T_c.pl", "#T_vz", "#T_cD", "#T_vx", "#T_vy", "#T_vz", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express the property of being a normed group purely in terms of right-translation invariance of the metric instead of using the definition of norm (which itself uses the metric).  (Contributed by Mario Carneiro, 29-Oct-2015.) ",
+  "statement" : "ngprcan.x $e |- X = ( Base ` G ) $.\nngprcan.p $e |- .+ = ( +g ` G ) $.\nngprcan.d $e |- D = ( dist ` G ) $.\nisngp4 $p |- ( G e. NrmGrp <-> ( G e. Grp /\\ G e. MetSp /\\ A. x e. X A. y e. X A. z e. X ( ( x .+ z ) D ( y .+ z ) ) = ( x D y ) ) ) $.\n$d .+ z $.\n$d D x y z $.\n$d G x y z $.\n$d X x y z $."
+}

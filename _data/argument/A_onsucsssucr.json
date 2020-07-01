@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onsucsssucr on Metamath](http://us.metamath.org/mpegif/onsucsssucr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordsucim | |- ( Ord B -> Ord suc B ) |\n| 2 |  | #P_ordelsuc | |- ( ( A e. On /\\ Ord suc B ) -> ( A e. suc B <-> suc A C_ suc B ) ) |\n| 3 | 1, 2 | #P_sylan2 | |- ( ( A e. On /\\ Ord B ) -> ( A e. suc B <-> suc A C_ suc B ) ) |\n| 4 |  | #P_ordtr | |- ( Ord B -> Tr B ) |\n| 5 |  | #P_trsucss | |- ( Tr B -> ( A e. suc B -> A C_ B ) ) |\n| 6 | 4, 5 | #P_syl | |- ( Ord B -> ( A e. suc B -> A C_ B ) ) |\n| 7 | 6 | #P_adantl | |- ( ( A e. On /\\ Ord B ) -> ( A e. suc B -> A C_ B ) ) |\n| 8 | 3, 7 | #P_sylbird | |- ( ( A e. On /\\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) |",
+  "conclusion" : "#P_onsucsssucr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cB.wceq", "#T_wi", "#T_word", "#T_csuc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_csuc", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_csuc", "#T_cA.wceq", "#T_wss", "#T_csuc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_csuc", "#T_cA.wceq", "#T_wss", "#T_csuc", "#T_cB.wceq", "#T_word", "#T_cB.wceq", "#T_wi", "#T_wtr", "#T_cB.wceq", "#T_wtr", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB", "#T_wi", "#T_csuc", "#T_cA", "#T_wss", "#T_csuc", "#T_cB", "#T_wi", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trsucss", "#P_ordsucim", "#P_sylan2", "#P_ordtr", "#P_adantl", "#P_ordelsuc", "#P_syl", "#P_sylbird" ]
+}

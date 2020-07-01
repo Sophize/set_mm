@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fisseneq on Metamath](http://us.metamath.org/mpegif/fisseneq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-pss | |- ( A C. B <-> ( A C_ B /\\ A =/= B ) ) |\n| 2 |  | #P_pssinf | |- ( ( A C. B /\\ A ~~ B ) -> -. B e. Fin ) |\n| 3 | 2 | #P_expcom | |- ( A ~~ B -> ( A C. B -> -. B e. Fin ) ) |\n| 4 | 1, 3 | #P_syl5bir | |- ( A ~~ B -> ( ( A C_ B /\\ A =/= B ) -> -. B e. Fin ) ) |\n| 5 | 4 | #P_expdimp | |- ( ( A ~~ B /\\ A C_ B ) -> ( A =/= B -> -. B e. Fin ) ) |\n| 6 | 5 | #P_necon4ad | |- ( ( A ~~ B /\\ A C_ B ) -> ( B e. Fin -> A = B ) ) |\n| 7 | 6 | #P_3impia | |- ( ( A ~~ B /\\ A C_ B /\\ B e. Fin ) -> A = B ) |\n| 8 | 7 | #P_3com13 | |- ( ( B e. Fin /\\ A C_ B /\\ A ~~ B ) -> A = B ) |",
+  "conclusion" : "#P_fisseneq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_w3a--1", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_cfn", "#T_w3a--1", "#T_cA", "#T_wss", "#T_cB", "#T_w3a--2", "#T_cA", "#T_cen", "#T_cB", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pssinf", "#P_expdimp", "#P_expcom", "#P_syl5bir", "#P_3com13", "#P_df-pss", "#P_3impia", "#P_necon4ad" ]
+}

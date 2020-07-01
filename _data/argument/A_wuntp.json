@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wuntp on Metamath](http://us.metamath.org/mpegif/wuntp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wununi.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wununi.2 | |- ( ph -> A e. U ) |\n| 3 |  | wunpr.3 | |- ( ph -> B e. U ) |\n| 4 |  | wuntp.3 | |- ( ph -> C e. U ) |\n| 5 |  | #P_tpass | |- { A , B , C } = ( { A } u. { B , C } ) |\n| 6 |  | #P_dfsn2 | |- { A } = { A , A } |\n| 7 | 1, 2, 2 | #P_wunpr | |- ( ph -> { A , A } e. U ) |\n| 8 | 6, 7 | #P_syl5eqel | |- ( ph -> { A } e. U ) |\n| 9 | 1, 3, 4 | #P_wunpr | |- ( ph -> { B , C } e. U ) |\n| 10 | 1, 8, 9 | #P_wunun | |- ( ph -> ( { A } u. { B , C } ) e. U ) |\n| 11 | 5, 10 | #P_syl5eqel | |- ( ph -> { A , B , C } e. U ) |",
+  "conclusion" : "#P_wuntp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cU", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqel", "#P_dfsn2", "#P_wunpr", "#P_tpass", "#P_wunun" ]
+}

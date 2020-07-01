@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wsucex on Metamath](http://us.metamath.org/mpegif/wsucex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wsucex.1 | |- ( ph -> R Or A ) |\n| 2 |  | #P_df-wsuc | |- wsuc ( R , A , X ) = sup ( Pred ( `' R , A , X ) , A , `' R ) |\n| 3 |  | #P_socnv | |- ( R Or A -> `' R Or A ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> `' R Or A ) |\n| 5 | 4 | #P_supexd | |- ( ph -> sup ( Pred ( `' R , A , X ) , A , `' R ) e. _V ) |\n| 6 | 2, 5 | #P_syl5eqel | |- ( ph -> wsuc ( R , A , X ) e. _V ) |",
+  "conclusion" : "#P_wsucex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wor", "#T_cA", "#T_cwsuc--1", "#T_cR", "#T_cwsuc--2", "#T_cA.wceq", "#T_cwsuc--3", "#T_cX", "#T_wceq", "#T_csup--1", "#T_cpred--1", "#T_ccnv", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_csup--2", "#T_cA.wceq", "#T_csup--3", "#T_ccnv", "#T_cR", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_ccnv", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_csup--1", "#T_cpred--1", "#T_ccnv", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_csup--2", "#T_cA.wceq", "#T_csup--3", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cwsuc--1", "#T_cR", "#T_cwsuc--2", "#T_cA", "#T_cwsuc--3", "#T_cX", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqel", "#P_syl", "#P_socnv", "#P_supexd", "#P_df-wsuc" ]
+}

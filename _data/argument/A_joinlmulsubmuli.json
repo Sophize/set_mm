@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See joinlmulsubmuli on Metamath](http://us.metamath.org/mpegif/joinlmulsubmuli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | joinlmulsubmuli.1 | |- A e. CC |\n| 2 |  | joinlmulsubmuli.2 | |- B e. CC |\n| 3 |  | joinlmulsubmuli.3 | |- C e. CC |\n| 4 |  | joinlmulsubmuli.4 | |- ( ( A x. B ) - ( C x. B ) ) = D |\n| 5 | 1, 3, 2 | #P_subdiri | |- ( ( A - C ) x. B ) = ( ( A x. B ) - ( C x. B ) ) |\n| 6 | 5, 4 | #P_eqtri | |- ( ( A - C ) x. B ) = D |",
+  "conclusion" : "#P_joinlmulsubmuli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA", "#T_cmul", "#T_cB", "#T_cmin", "#T_cC", "#T_cmul", "#T_cB", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_cA", "#T_cmin", "#T_cC", "#T_cmul", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_subdiri" ]
+}

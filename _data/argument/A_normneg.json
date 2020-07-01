@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See normneg on Metamath](http://us.metamath.org/mpegif/normneg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hv0cl | |- 0h e. ~H |\n| 2 |  | #P_normsub | |- ( ( 0h e. ~H /\\ A e. ~H ) -> ( normh ` ( 0h -h A ) ) = ( normh ` ( A -h 0h ) ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. ~H -> ( normh ` ( 0h -h A ) ) = ( normh ` ( A -h 0h ) ) ) |\n| 4 |  | #P_hv2neg | |- ( A e. ~H -> ( 0h -h A ) = ( -u 1 .h A ) ) |\n| 5 | 4 | #P_fveq2d | |- ( A e. ~H -> ( normh ` ( 0h -h A ) ) = ( normh ` ( -u 1 .h A ) ) ) |\n| 6 |  | #P_hvsub0 | |- ( A e. ~H -> ( A -h 0h ) = A ) |\n| 7 | 6 | #P_fveq2d | |- ( A e. ~H -> ( normh ` ( A -h 0h ) ) = ( normh ` A ) ) |\n| 8 | 3, 5, 7 | #P_3eqtr3d | |- ( A e. ~H -> ( normh ` ( -u 1 .h A ) ) = ( normh ` A ) ) |",
+  "conclusion" : "#P_normneg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0v", "#T_wcel", "#T_chil", "#T_c0v", "#T_wcel", "#T_chil", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_c0v", "#T_cmv", "#T_cA.wceq", "#T_wceq", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_c0v", "#T_cmv", "#T_cA.wceq", "#T_wceq", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_c0v", "#T_cmv", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_c1", "#T_csm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_c0v", "#T_cmv", "#T_cA.wceq", "#T_wceq", "#T_cno", "#T_cfv", "#T_cneg", "#T_c1", "#T_csm", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cmv", "#T_c0v", "#T_wceq", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_cneg", "#T_c1", "#T_csm", "#T_cA", "#T_wceq", "#T_cno", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-hv0cl", "#P_fveq2d", "#P_hv2neg", "#P_hvsub0", "#P_mpan", "#P_3eqtr3d", "#P_normsub" ]
+}

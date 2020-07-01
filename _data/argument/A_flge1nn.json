@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See flge1nn on Metamath](http://us.metamath.org/mpegif/flge1nn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_flcl | |- ( A e. RR -> ( |_ ` A ) e. ZZ ) |\n| 2 | 1 | #P_adantr | |- ( ( A e. RR /\\ 1 <_ A ) -> ( |_ ` A ) e. ZZ ) |\n| 3 |  | #P_1z | |- 1 e. ZZ |\n| 4 |  | #P_flge | |- ( ( A e. RR /\\ 1 e. ZZ ) -> ( 1 <_ A <-> 1 <_ ( |_ ` A ) ) ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( A e. RR -> ( 1 <_ A <-> 1 <_ ( |_ ` A ) ) ) |\n| 6 | 5 | #P_biimpa | |- ( ( A e. RR /\\ 1 <_ A ) -> 1 <_ ( |_ ` A ) ) |\n| 7 |  | #P_elnnz1 | |- ( ( |_ ` A ) e. NN <-> ( ( |_ ` A ) e. ZZ /\\ 1 <_ ( |_ ` A ) ) ) |\n| 8 | 2, 6, 7 | #P_sylanbrc | |- ( ( A e. RR /\\ 1 <_ A ) -> ( |_ ` A ) e. NN ) |",
+  "conclusion" : "#P_flge1nn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_c1", "#T_cle", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_c1", "#T_cle", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_c1", "#T_cle", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wb", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_c1", "#T_cle", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_cle", "#T_cA", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA", "#T_wcel", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_elnnz1", "#P_flcl", "#P_1z", "#P_sylanbrc", "#P_mpan2", "#P_adantr", "#P_flge" ]
+}

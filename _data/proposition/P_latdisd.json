@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latdisd on Metamath](http://us.metamath.org/mpegif/latdisd.html)"
+  } ],
+  "names" : [ "latdisd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_c.an", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_vx", "#T_c.or", "#T_vy", "#T_c.an", "#T_vz", "#T_wceq", "#T_vx", "#T_c.or", "#T_vy", "#T_c.an", "#T_vx", "#T_c.or", "#T_vz", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_vx", "#T_c.an", "#T_vy", "#T_c.or", "#T_vz", "#T_wceq", "#T_vx", "#T_c.an", "#T_vy", "#T_c.or", "#T_vx", "#T_c.an", "#T_vz", "#T_c.an", "#T_vx", "#T_vy", "#T_vz", "#T_c.or", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vx", "#T_vy", "#T_vz", "#T_cK", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a lattice, joins distribute over meets if and only if meets distribute over joins; the distributive property is self-dual. (Contributed by Stefan O'Rear, 29-Jan-2015.) ",
+  "statement" : "latdisd.b $e |- B = ( Base ` K ) $.\nlatdisd.j $e |- .\\/ = ( join ` K ) $.\nlatdisd.m $e |- ./\\ = ( meet ` K ) $.\nlatdisd $p |- ( K e. Lat -> ( A. x e. B A. y e. B A. z e. B ( x .\\/ ( y ./\\ z ) ) = ( ( x .\\/ y ) ./\\ ( x .\\/ z ) ) <-> A. x e. B A. y e. B A. z e. B ( x ./\\ ( y .\\/ z ) ) = ( ( x ./\\ y ) .\\/ ( x ./\\ z ) ) ) ) $.\n$d ./\\ x y z $.\n$d .\\/ x y z $.\n$d B x y z $.\n$d K x y z $."
+}

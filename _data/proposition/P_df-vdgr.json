@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-vdgr on Metamath](http://us.metamath.org/mpegif/df-vdgr.html)"
+  } ],
+  "names" : [ "df-vdgr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cvdg", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vu", "#T_cmpt--1", "#T_vv", "#T_cmpt--2", "#T_chash", "#T_cfv", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cdm", "#T_ve", "#T_crab--3", "#T_vu", "#T_wcel", "#T_ve", "#T_cfv", "#T_vx", "#T_crab--4", "#T_cxad", "#T_chash", "#T_cfv", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cdm", "#T_ve", "#T_crab--3", "#T_ve", "#T_cfv", "#T_vx", "#T_wceq", "#T_csn--1", "#T_vu", "#T_csn--2", "#T_crab--4", "#T_ve", "#T_vu", "#T_vv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the vertex degree function (for an undirected multigraph).  To be appropriate for multigraphs, we have to double-count those edges that contain ` u ` \"twice\" (i.e. self-loops), this being represented as a singleton as the edge's value.  Since the degree of a vertex can be (positive) infinity (if the graph containing the vertex is not of finite size), the extended addition ` +e ` is used for the summation of the number of \"ordinary\" edges\" and the number of \"loops\".  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Alexander van der Vekens, 20-Dec-2017.) ",
+  "statement" : "df-vdgr $p |- VDeg = ( v e. _V , e e. _V |-> ( u e. v |-> ( ( # ` { x e. dom e | u e. ( e ` x ) } ) +e ( # ` { x e. dom e | ( e ` x ) = { u } } ) ) ) ) $.\n$d e u v x $."
+}

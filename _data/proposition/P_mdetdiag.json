@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mdetdiag on Metamath](http://us.metamath.org/mpegif/mdetdiag.html)"
+  } ],
+  "names" : [ "mdetdiag" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cN", "#T_cmdat", "#T_cR", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cM", "#T_wcel", "#T_cB", "#T_wi", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cN", "#T_vi", "#T_wne", "#T_vj", "#T_wi", "#T_vi", "#T_cM", "#T_vj", "#T_wceq", "#T_c.0", "#T_wi", "#T_cD", "#T_cfv", "#T_cM", "#T_wceq", "#T_cG", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_vk", "#T_cM", "#T_vk", "#T_c.0", "#T_vi", "#T_vj", "#T_vk", "#T_cB", "#T_vk", "#T_cG", "#T_vk", "#T_cM", "#T_vi", "#T_vj", "#T_vk", "#T_cN", "#T_vi", "#T_vj", "#T_vk", "#T_cR", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The determinant of a diagonal matrix is the product of the entries in the diagonal.  (Contributed by AV, 17-Aug-2019.) ",
+  "statement" : "mdetdiag.d $e |- D = ( N maDet R ) $.\nmdetdiag.a $e |- A = ( N Mat R ) $.\nmdetdiag.b $e |- B = ( Base ` A ) $.\nmdetdiag.g $e |- G = ( mulGrp ` R ) $.\nmdetdiag.0 $e |- .0. = ( 0g ` R ) $.\nmdetdiag $p |- ( ( R e. CRing /\\ N e. Fin /\\ M e. B ) -> ( A. i e. N A. j e. N ( i =/= j -> ( i M j ) = .0. ) -> ( D ` M ) = ( G gsum ( k e. N |-> ( k M k ) ) ) ) ) $.\n$d .0. i j k $.\n$d B k $.\n$d G k $.\n$d M i j k $.\n$d N i j k $.\n$d R k $."
+}

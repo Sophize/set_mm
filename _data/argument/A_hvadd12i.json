@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvadd12i on Metamath](http://us.metamath.org/mpegif/hvadd12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvass.1 | |- A e. ~H |\n| 2 |  | hvass.2 | |- B e. ~H |\n| 3 |  | hvass.3 | |- C e. ~H |\n| 4 | 1, 2 | #P_hvcomi | |- ( A +h B ) = ( B +h A ) |\n| 5 | 4 | #P_oveq1i | |- ( ( A +h B ) +h C ) = ( ( B +h A ) +h C ) |\n| 6 | 1, 2, 3 | #P_hvassi | |- ( ( A +h B ) +h C ) = ( A +h ( B +h C ) ) |\n| 7 | 2, 1, 3 | #P_hvassi | |- ( ( B +h A ) +h C ) = ( B +h ( A +h C ) ) |\n| 8 | 5, 6, 7 | #P_3eqtr3i | |- ( A +h ( B +h C ) ) = ( B +h ( A +h C ) ) |",
+  "conclusion" : "#P_hvadd12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cC", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_cva", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cva", "#T_cA.wceq", "#T_cA.wceq", "#T_cva", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cva", "#T_cA.wceq", "#T_cva", "#T_cC", "#T_cA.wceq", "#T_cva", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_cB.wceq", "#T_cva", "#T_cA.wceq", "#T_cva", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cva", "#T_cA.wceq", "#T_cva", "#T_cC", "#T_cA", "#T_cva", "#T_cB", "#T_cva", "#T_cC", "#T_wceq", "#T_cB", "#T_cva", "#T_cA", "#T_cva", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr3i", "#P_hvassi", "#P_hvcomi", "#P_oveq1i" ]
+}

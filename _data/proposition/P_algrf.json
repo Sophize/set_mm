@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See algrf on Metamath](http://us.metamath.org/mpegif/algrf.html)"
+  } ],
+  "names" : [ "algrf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cR", "#T_wceq", "#T_cseq--1", "#T_cM", "#T_cF", "#T_ccom", "#T_c1st", "#T_cseq--2", "#T_cZ", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cS", "#T_wph", "#T_wi", "#T_cR", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An algorithm is step a function ` F : S --> S ` on a state space ` S ` .  An algorithm acts on an initial state ` A e. S ` by iteratively applying ` F ` to give ` A ` , ` ( F `` A ) ` , ` ( F `` ( F `` A ) ) ` and so on.  An algorithm is said to halt if a fixed point of ` F ` is reached after a finite number of iterations. The algorithm iterator ` R : NN0 --> S ` \"runs\" the algorithm ` F ` so that ` ( R `` k ) ` is the state after ` k ` iterations of ` F ` on the initial state ` A ` . Domain and codomain of the algorithm iterator ` R ` .  (Contributed by Paul Chapman, 31-Mar-2011.)  (Revised by Mario Carneiro, 28-May-2014.) ",
+  "statement" : "algrf.1 $e |- Z = ( ZZ>= ` M ) $.\nalgrf.2 $e |- R = seq M ( ( F o. 1st ) , ( Z X. { A } ) ) $.\nalgrf.3 $e |- ( ph -> M e. ZZ ) $.\nalgrf.4 $e |- ( ph -> A e. S ) $.\nalgrf.5 $e |- ( ph -> F : S --> S ) $.\nalgrf $p |- ( ph -> R : Z --> S ) $."
+}

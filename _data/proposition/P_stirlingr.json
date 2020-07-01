@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stirlingr on Metamath](http://us.metamath.org/mpegif/stirlingr.html)"
+  } ],
+  "names" : [ "stirlingr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_c2", "#T_cmul", "#T_cpi", "#T_cmul", "#T_vn", "#T_cmul", "#T_vn", "#T_cdiv", "#T_ceu", "#T_cexp", "#T_vn", "#T_cR", "#T_wceq", "#T_clm", "#T_cfv", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cfa", "#T_cfv", "#T_vn", "#T_cdiv", "#T_cS", "#T_cfv", "#T_vn", "#T_cR", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Stirling's approximation formula for ` n ` factorial: here convergence is expressed with respect to the standard topology on the reals.  The main theorem ~ stirling is proven for convergence in the topology of complex numbers.  The variable ` R ` is used to denote convergence with respect to the standard topology on the reals.  (Contributed by Glauco Siliprandi, 29-Jun-2017.) ",
+  "statement" : "stirlingr.1 $e |- S = ( n e. NN0 |-> ( ( sqrt ` ( ( 2 x. _pi ) x. n ) ) x. ( ( n / _e ) ^ n ) ) ) $.\nstirlingr.2 $e |- R = ( ~~>t ` ( topGen ` ran (,) ) ) $.\nstirlingr $p |- ( n e. NN |-> ( ( ! ` n ) / ( S ` n ) ) ) R 1 $."
+}

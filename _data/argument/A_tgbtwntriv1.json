@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgbtwntriv1 on Metamath](http://us.metamath.org/mpegif/tgbtwntriv1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tkgeom.p | |- P = ( Base ` G ) |\n| 2 |  | tkgeom.d | |- .- = ( dist ` G ) |\n| 3 |  | tkgeom.i | |- I = ( Itv ` G ) |\n| 4 |  | tkgeom.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tgbtwntriv2.1 | |- ( ph -> A e. P ) |\n| 6 |  | tgbtwntriv2.2 | |- ( ph -> B e. P ) |\n| 7 | 1, 2, 3, 4, 6, 5 | #P_tgbtwntriv2 | |- ( ph -> A e. ( B I A ) ) |\n| 8 | 1, 2, 3, 4, 6, 5, 5, 7 | #P_tgbtwncom | |- ( ph -> A e. ( A I B ) ) |",
+  "conclusion" : "#P_tgbtwntriv1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cI", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cA", "#T_cI", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgbtwncom", "#P_tgbtwntriv2" ]
+}

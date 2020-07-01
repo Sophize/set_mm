@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ndxid on Metamath](http://us.metamath.org/mpegif/ndxid.html)"
+  } ],
+  "names" : [ "ndxid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cE", "#T_wceq", "#T_cslot", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_cE", "#T_wceq", "#T_cslot", "#T_cE", "#T_cfv", "#T_cnx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A structure component extractor is defined by its own index.  This theorem, together with ~ strfv below, is useful for avoiding direct reference to the hard-coded numeric index in component extractor definitions, such as the ` 1 ` in ~ df-base and the ` 10 ` in ~ df-ple , making it easier to change should the need arise.  For example, we can refer to a specific poset with base set ` B ` and order relation ` L ` using ` { <. ( Base `` ndx ) , B >. , <. ( le `` ndx ) , L >. } ` rather than ` { <. 1 , B >. , <. 10 , L >. } ` .  The latter, while shorter to state, requires revision if we later change ` 10 ` to some other number, and it may also be harder to remember.  (Contributed by NM, 19-Oct-2012.)  (Revised by Mario Carneiro, 6-Oct-2013.) ",
+  "statement" : "ndxarg.1 $e |- E = Slot N $.\nndxarg.2 $e |- N e. NN $.\nndxid $p |- E = Slot ( E ` ndx ) $."
+}

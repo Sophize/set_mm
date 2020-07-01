@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eftcl on Metamath](http://us.metamath.org/mpegif/eftcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_expcl | |- ( ( A e. CC /\\ K e. NN0 ) -> ( A ^ K ) e. CC ) |\n| 2 |  | #P_faccl | |- ( K e. NN0 -> ( ! ` K ) e. NN ) |\n| 3 | 2 | #P_nncnd | |- ( K e. NN0 -> ( ! ` K ) e. CC ) |\n| 4 | 3 | #P_adantl | |- ( ( A e. CC /\\ K e. NN0 ) -> ( ! ` K ) e. CC ) |\n| 5 |  | #P_facne0 | |- ( K e. NN0 -> ( ! ` K ) =/= 0 ) |\n| 6 | 5 | #P_adantl | |- ( ( A e. CC /\\ K e. NN0 ) -> ( ! ` K ) =/= 0 ) |\n| 7 | 1, 4, 6 | #P_divcld | |- ( ( A e. CC /\\ K e. NN0 ) -> ( ( A ^ K ) / ( ! ` K ) ) e. CC ) |",
+  "conclusion" : "#P_eftcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cK", "#T_wcel", "#T_cc", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_cK", "#T_wcel", "#T_cn", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_cK", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_cK", "#T_wcel", "#T_cc", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_cK", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_cK", "#T_wne", "#T_cc0", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_cexp", "#T_cK", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cK", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_divcld", "#P_adantl", "#P_expcl", "#P_faccl", "#P_nncnd", "#P_facne0" ]
+}

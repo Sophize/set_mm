@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See weth on Metamath](http://us.metamath.org/mpegif/weth.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_weeq2 | |- ( y = A -> ( x We y <-> x We A ) ) |\n| 2 | 1 | #P_exbidv | |- ( y = A -> ( E. x x We y <-> E. x x We A ) ) |\n| 3 |  | #P_dfac8 | |- ( CHOICE <-> A. y E. x x We y ) |\n| 4 | 3 | #P_axaci | |- E. x x We y |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> E. x x We A ) |",
+  "conclusion" : "#P_weth",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wwe", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wwe", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wwe", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wwe", "#T_cA.wceq", "#T_wac", "#T_wb", "#T_wal", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wwe", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wwe", "#T_vy.tru", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wex", "#T_vx", "#T_vx", "#T_wwe", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_weeq2", "#P_vtoclg", "#P_exbidv", "#P_axaci", "#P_dfac8" ]
+}

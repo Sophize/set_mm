@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See indstr2 on Metamath](http://us.metamath.org/mpegif/indstr2.html)"
+  } ],
+  "names" : [ "indstr2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wch", "#T_vx", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cn", "#T_vy", "#T_clt", "#T_vx", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_vx", "#T_wcel", "#T_cn", "#T_wi", "#T_wph", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Strong Mathematical Induction for positive integers (inference schema). The first two hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  (Contributed by Paul Chapman, 21-Nov-2012.) ",
+  "statement" : "indstr2.1 $e |- ( x = 1 -> ( ph <-> ch ) ) $.\nindstr2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.\nindstr2.3 $e |- ch $.\nindstr2.4 $e |- ( x e. ( ZZ>= ` 2 ) -> ( A. y e. NN ( y < x -> ps ) -> ph ) ) $.\nindstr2 $p |- ( x e. NN -> ph ) $.\n$d ph y $.\n$d ps x $.\n$d x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See climcl on Metamath](http://us.metamath.org/mpegif/climcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj k x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_climrel | |- Rel ~~> |\n| 2 | 1 | #P_brrelexi | |- ( F ~~> A -> F e. _V ) |\n| 3 |  | #P_eqidd | |- ( ( F ~~> A /\\ k e. ZZ ) -> ( F ` k ) = ( F ` k ) ) |\n| 4 | 2, 3 | #P_clim | |- ( F ~~> A -> ( F ~~> A <-> ( A e. CC /\\ A. x e. RR+ E. j e. ZZ A. k e. ( ZZ>= ` j ) ( ( F ` k ) e. CC /\\ ( abs ` ( ( F ` k ) - A ) ) < x ) ) ) ) |\n| 5 | 4 | #P_ibi | |- ( F ~~> A -> ( A e. CC /\\ A. x e. RR+ E. j e. ZZ A. k e. ( ZZ>= ` j ) ( ( F ` k ) e. CC /\\ ( abs ` ( ( F ` k ) - A ) ) < x ) ) ) |\n| 6 | 5 | #P_simpld | |- ( F ~~> A -> A e. CC ) |",
+  "conclusion" : "#P_climcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vk", "#T_vx", "#T_wrel", "#T_cli", "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wa", "#T_vk", "#T_wcel", "#T_cz", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cF", "#T_cfv", "#T_vk", "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vj", "#T_wrex--2", "#T_cz", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_vj", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_cmin", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vj", "#T_wrex--2", "#T_cz", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_vj", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_cmin", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_cF", "#T_cli", "#T_cA", "#T_wi", "#T_cA", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_ibi", "#P_climrel", "#P_eqidd", "#P_clim", "#P_brrelexi" ]
+}

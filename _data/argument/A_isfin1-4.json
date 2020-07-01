@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfin1-4 on Metamath](http://us.metamath.org/mpegif/isfin1-4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfin1-3 | |- ( A e. V -> ( A e. Fin <-> `' [C.] Fr ~P A ) ) |\n| 2 |  | #P_eqid | |- ( x e. ~P A |-> ( A \\ x ) ) = ( x e. ~P A |-> ( A \\ x ) ) |\n| 3 | 2 | #P_compssiso | |- ( A e. V -> ( x e. ~P A |-> ( A \\ x ) ) Isom [C.] , `' [C.] ( ~P A , ~P A ) ) |\n| 4 |  | #P_isofr | |- ( ( x e. ~P A |-> ( A \\ x ) ) Isom [C.] , `' [C.] ( ~P A , ~P A ) -> ( [C.] Fr ~P A <-> `' [C.] Fr ~P A ) ) |\n| 5 | 3, 4 | #P_syl | |- ( A e. V -> ( [C.] Fr ~P A <-> `' [C.] Fr ~P A ) ) |\n| 6 | 1, 5 | #P_bitr4d | |- ( A e. V -> ( A e. Fin <-> [C.] Fr ~P A ) ) |",
+  "conclusion" : "#P_isfin1-4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_ccnv", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wiso--1", "#T_crpss", "#T_wiso--2", "#T_ccnv", "#T_crpss", "#T_cpw", "#T_cA.wceq", "#T_wiso--3", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cA.wceq", "#T_cmpt--2", "#T_cA.wceq", "#T_cdif", "#T_vx.wal", "#T_wiso--1", "#T_crpss", "#T_wiso--2", "#T_ccnv", "#T_crpss", "#T_cpw", "#T_cA.wceq", "#T_wiso--3", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_ccnv", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_ccnv", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wb", "#T_crpss", "#T_wfr", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isfin1-3", "#P_bitr4d", "#P_compssiso", "#P_syl", "#P_isofr" ]
+}

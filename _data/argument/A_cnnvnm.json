@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnnvnm on Metamath](http://us.metamath.org/mpegif/cnnvnm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnnvnm.6 | |- U = <. <. + , x. >. , abs >. |\n| 2 |  | #P_eqid | |- ( normCV ` U ) = ( normCV ` U ) |\n| 3 | 2 | #P_nmcvfval | |- ( normCV ` U ) = ( 2nd ` U ) |\n| 4 | 1 | #P_fveq2i | |- ( 2nd ` U ) = ( 2nd ` <. <. + , x. >. , abs >. ) |\n| 5 |  | #P_opex | |- <. + , x. >. e. _V |\n| 6 |  | #P_absf | |- abs : CC --> RR |\n| 7 |  | #P_cnex | |- CC e. _V |\n| 8 |  | #P_fex | |- ( ( abs : CC --> RR /\\ CC e. _V ) -> abs e. _V ) |\n| 9 | 6, 7, 8 | #P_mp2an | |- abs e. _V |\n| 10 | 5, 9 | #P_op2nd | |- ( 2nd ` <. <. + , x. >. , abs >. ) = abs |\n| 11 | 3, 4, 10 | #P_3eqtrri | |- abs = ( normCV ` U ) |",
+  "conclusion" : "#P_cnnvnm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_cop--2", "#T_cabs", "#T_cop--3", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cU", "#T_c2nd", "#T_cfv", "#T_cU", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_cop--2", "#T_cabs", "#T_cop--3", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr", "#T_cc", "#T_wcel", "#T_cvv", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr", "#T_wa", "#T_cc", "#T_wcel", "#T_cvv", "#T_wi", "#T_cabs", "#T_wcel", "#T_cvv", "#T_cabs", "#T_wcel", "#T_cvv", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_cop--2", "#T_cabs", "#T_cop--3", "#T_wceq", "#T_cabs", "#T_cabs", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_absf", "#P_3eqtrri", "#P_eqid", "#P_mp2an", "#P_op2nd", "#P_cnex", "#P_opex", "#P_fex", "#P_nmcvfval" ]
+}

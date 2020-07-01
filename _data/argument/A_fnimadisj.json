@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnimadisj on Metamath](http://us.metamath.org/mpegif/fnimadisj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fndm | |- ( F Fn A -> dom F = A ) |\n| 2 | 1 | #P_ineq1d | |- ( F Fn A -> ( dom F i^i C ) = ( A i^i C ) ) |\n| 3 | 2 | #P_eqeq1d | |- ( F Fn A -> ( ( dom F i^i C ) = (/) <-> ( A i^i C ) = (/) ) ) |\n| 4 | 3 | #P_biimpar | |- ( ( F Fn A /\\ ( A i^i C ) = (/) ) -> ( dom F i^i C ) = (/) ) |\n| 5 |  | #P_imadisj | |- ( ( F \" C ) = (/) <-> ( dom F i^i C ) = (/) ) |\n| 6 | 4, 5 | #P_sylibr | |- ( ( F Fn A /\\ ( A i^i C ) = (/) ) -> ( F \" C ) = (/) ) |",
+  "conclusion" : "#P_fnimadisj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_cin", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cF", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cF", "#T_cima", "#T_cC", "#T_wceq", "#T_c0", "#T_wb", "#T_cdm", "#T_cF", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cF", "#T_wfn", "#T_cA", "#T_wa", "#T_cA", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_cima", "#T_cC", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpar", "#P_ineq1d", "#P_imadisj", "#P_eqeq1d", "#P_sylibr", "#P_fndm" ]
+}

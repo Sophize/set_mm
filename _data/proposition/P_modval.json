@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See modval on Metamath](http://us.metamath.org/mpegif/modval.html)"
+  } ],
+  "names" : [ "modval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_crp", "#T_wi", "#T_cA", "#T_cmo", "#T_cB", "#T_wceq", "#T_cA", "#T_cmin", "#T_cB", "#T_cmul", "#T_cfl", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the modulo operation.  The modulo congruence notation of number theory, ` J == K ( ` modulo ` N ) ` , can be expressed in our notation as ` ( J mod N ) = ( K mod N ) ` .  Definition 1 in Knuth, _The Art of Computer Programming_, Vol.  I (1972), p. 38.  Knuth uses \"mod\" for the operation and \"modulo\" for the congruence.  Unlike Knuth, we restrict the second argument to positive reals to simplify certain theorems.  (This also gives us future flexibility to extend it to any one of several different conventions for a zero or negative second argument, should there be an advantage in doing so.)  (Contributed by NM, 10-Nov-2008.)  (Revised by Mario Carneiro, 3-Nov-2013.) ",
+  "statement" : "modval $p |- ( ( A e. RR /\\ B e. RR+ ) -> ( A mod B ) = ( A - ( B x. ( |_ ` ( A / B ) ) ) ) ) $."
+}

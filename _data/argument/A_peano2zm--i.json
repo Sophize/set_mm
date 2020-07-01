@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See peano2zm on Metamath](http://us.metamath.org/mpegif/peano2zm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zcn | |- ( N e. ZZ -> N e. CC ) |\n| 2 |  | #P_1cnd | |- ( N e. ZZ -> 1 e. CC ) |\n| 3 | 1, 2 | #P_negsubdid | |- ( N e. ZZ -> -u ( N - 1 ) = ( -u N + 1 ) ) |\n| 4 |  | #P_znegcl | |- ( N e. ZZ -> -u N e. ZZ ) |\n| 5 |  | #P_peano2z | |- ( -u N e. ZZ -> ( -u N + 1 ) e. ZZ ) |\n| 6 | 4, 5 | #P_syl | |- ( N e. ZZ -> ( -u N + 1 ) e. ZZ ) |\n| 7 | 3, 6 | #P_eqeltrd | |- ( N e. ZZ -> -u ( N - 1 ) e. ZZ ) |\n| 8 | 1, 2 | #P_subcld | |- ( N e. ZZ -> ( N - 1 ) e. CC ) |\n| 9 |  | #P_znegclb | |- ( ( N - 1 ) e. CC -> ( ( N - 1 ) e. ZZ <-> -u ( N - 1 ) e. ZZ ) ) |\n| 10 | 8, 9 | #P_syl | |- ( N e. ZZ -> ( ( N - 1 ) e. ZZ <-> -u ( N - 1 ) e. ZZ ) ) |\n| 11 | 7, 10 | #P_mpbird | |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) |",
+  "conclusion" : "#P_peano2zm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_cmin", "#T_c1", "#T_wceq", "#T_cneg", "#T_cN", "#T_caddc", "#T_c1", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cc", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_wb", "#T_cneg", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_wb", "#T_cneg", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_negsubdid", "#P_znegcl", "#P_eqeltrd", "#P_subcld", "#P_znegclb", "#P_peano2z", "#P_syl", "#P_1cnd", "#P_zcn", "#P_mpbird" ]
+}

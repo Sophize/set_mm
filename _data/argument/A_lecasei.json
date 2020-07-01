@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lecasei on Metamath](http://us.metamath.org/mpegif/lecasei.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lecase.1 | |- ( ph -> A e. RR ) |\n| 2 |  | lecase.2 | |- ( ph -> B e. RR ) |\n| 3 |  | lecase.3 | |- ( ( ph /\\ A <_ B ) -> ps ) |\n| 4 |  | lecase.4 | |- ( ( ph /\\ B <_ A ) -> ps ) |\n| 5 |  | #P_letric | |- ( ( A e. RR /\\ B e. RR ) -> ( A <_ B \\/ B <_ A ) ) |\n| 6 | 1, 2, 5 | #P_syl2anc | |- ( ph -> ( A <_ B \\/ B <_ A ) ) |\n| 7 | 3, 4, 6 | #P_mpjaodan | |- ( ph -> ps ) |",
+  "conclusion" : "#P_lecasei",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_cA", "#T_cle", "#T_cB", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cB", "#T_cle", "#T_cA", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_letric", "#P_mpjaodan" ]
+}

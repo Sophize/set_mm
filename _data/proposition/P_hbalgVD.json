@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbalgVD on Metamath](http://us.metamath.org/mpegif/hbalgVD.html)"
+  } ],
+  "names" : [ "hbalgVD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ hbalg . The following User's Proof is a Virtual Deduction proof completed automatically by the tools program completeusersproof.cmd, which invokes Mel L. O'Cat's mmj2 and Norm Megill's Metamath Proof Assistant.  ~ hbalg is ~ hbalgVD without virtual deductions and was automatically derived from ~ hbalgVD . (Contributed by Alan Sare, 8-Feb-2014.) (Proof modification is discouraged.)  (New usage is discouraged.) <HTML> <TABLE> <TR> <TD> 1::        <TD> ` |- (. A. y ( ph -> A. x ph ) ->. A. y ( ph ` ` -> A. x ph ) ). ` <TR> <TD> 2:1:       <TD> ` |- (. A. y ( ph -> A. x ph ) ->. ( A. y ph ` ` -> A. y A. x ph ) ). ` <TR> <TD> 3::        <TD> ` |- ( A. y A. x ph -> A. x A. y ph ) ` <TR> <TD> 4:2,3:     <TD> ` |- (. A. y ( ph -> A. x ph ) ->. ( A. y ph ` ` -> A. x A. y ph ) ). ` <TR> <TD> 5::        <TD> ` |- ( A. y ( ph -> A. x ph ) -> A. y A. y ( ` ` ph -> A. x ph ) ) ` <TR> <TD> 6:5,4:     <TD> ` |- (. A. y ( ph -> A. x ph ) ->. A. y ( A. ` ` y ph -> A. x A. y ph ) ). ` <TR> <TD> qed:6:     <TD> ` |- ( A. y ( ph -> A. x ph ) -> A. y ( A. y ` ` ph -> A. x A. y ph ) ) ` </TABLE> </HTML> ",
+  "statement" : "hbalgVD $p |- ( A. y ( ph -> A. x ph ) -> A. y ( A. y ph -> A. x A. y ph ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmsca on Metamath](http://us.metamath.org/mpegif/clmsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isclm.f | |- F = ( Scalar ` W ) |\n| 2 |  | isclm.k | |- K = ( Base ` F ) |\n| 3 | 1, 2 | #P_isclm | |- ( W e. CMod <-> ( W e. LMod /\\ F = ( CCfld |`s K ) /\\ K e. ( SubRing ` CCfld ) ) ) |\n| 4 | 3 | #P_simp2bi | |- ( W e. CMod -> F = ( CCfld |`s K ) ) |",
+  "conclusion" : "#P_clmsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wb", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simp2bi", "#P_isclm" ]
+}

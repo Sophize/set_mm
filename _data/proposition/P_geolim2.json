@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See geolim2 on Metamath](http://us.metamath.org/mpegif/geolim2.html)"
+  } ],
+  "names" : [ "geolim2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_clt", "#T_c1", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cn0", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cA", "#T_cexp", "#T_cM", "#T_cdiv", "#T_c1", "#T_cmin", "#T_cA", "#T_cA", "#T_vk", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The partial sums in the geometric series ` A ^ M + A ^ ( M + 1 ) ` ... converge to ` ( ( A ^ M ) / ( 1 - A ) ) ` .  (Contributed by NM, 6-Jun-2006.)  (Revised by Mario Carneiro, 26-Apr-2014.) ",
+  "statement" : "geolim.1 $e |- ( ph -> A e. CC ) $.\ngeolim.2 $e |- ( ph -> ( abs ` A ) < 1 ) $.\ngeolim2.3 $e |- ( ph -> M e. NN0 ) $.\ngeolim2.4 $e |- ( ( ph /\\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) = ( A ^ k ) ) $.\ngeolim2 $p |- ( ph -> seq M ( + , F ) ~~> ( ( A ^ M ) / ( 1 - A ) ) ) $.\n$d A k $.\n$d F k $.\n$d M k $.\n$d k ph $."
+}

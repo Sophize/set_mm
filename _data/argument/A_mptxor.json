@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mptxor on Metamath](http://us.metamath.org/mpegif/mptxor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mptxor.min | |- ph |\n| 2 |  | mptxor.maj | |- ( ph \\/_ ps ) |\n| 3 |  | #P_xornan | |- ( ( ph \\/_ ps ) -> -. ( ph /\\ ps ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- -. ( ph /\\ ps ) |\n| 5 | 1, 4 | #P_mptnan | |- -. ps |",
+  "conclusion" : "#P_mptxor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_xornan", "#P_mptnan" ]
+}

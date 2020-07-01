@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ontgsucval on Metamath](http://us.metamath.org/mpegif/ontgsucval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_suceloni | |- ( A e. On -> suc A e. On ) |\n| 2 |  | #P_ontgval | |- ( suc A e. On -> ( topGen ` suc A ) = suc U. suc A ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. On -> ( topGen ` suc A ) = suc U. suc A ) |\n| 4 |  | #P_eloni | |- ( A e. On -> Ord A ) |\n| 5 |  | #P_ordunisuc | |- ( Ord A -> U. suc A = A ) |\n| 6 | 4, 5 | #P_syl | |- ( A e. On -> U. suc A = A ) |\n| 7 |  | #P_suceq | |- ( U. suc A = A -> suc U. suc A = suc A ) |\n| 8 | 6, 7 | #P_syl | |- ( A e. On -> suc U. suc A = suc A ) |\n| 9 | 3, 8 | #P_eqtrd | |- ( A e. On -> ( topGen ` suc A ) = suc A ) |",
+  "conclusion" : "#P_ontgsucval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ctg", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ctg", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_word", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cuni", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_ctg", "#T_cfv", "#T_csuc", "#T_cA", "#T_wceq", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_ontgval", "#P_suceq", "#P_syl", "#P_ordunisuc", "#P_suceloni", "#P_eloni" ]
+}

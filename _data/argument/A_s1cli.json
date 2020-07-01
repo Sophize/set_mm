@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s1cli on Metamath](http://us.metamath.org/mpegif/s1cli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ids1 | |- <\" A \"> = <\" ( _I ` A ) \"> |\n| 2 |  | #P_fvex | |- ( _I ` A ) e. _V |\n| 3 |  | #P_s1cl | |- ( ( _I ` A ) e. _V -> <\" ( _I ` A ) \"> e. Word _V ) |\n| 4 | 2, 3 | #P_ax-mp | |- <\" ( _I ` A ) \"> e. Word _V |\n| 5 | 1, 4 | #P_eqeltri | |- <\" A \"> e. Word _V |",
+  "conclusion" : "#P_s1cli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cs1--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cs1--1", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs1--1", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqeltri", "#P_ids1", "#P_s1cl", "#P_fvex" ]
+}

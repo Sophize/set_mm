@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dibdiadm on Metamath](http://us.metamath.org/mpegif/dibdiadm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dibfna.h | |- H = ( LHyp ` K ) |\n| 2 |  | dibfna.j | |- J = ( ( DIsoA ` K ) ` W ) |\n| 3 |  | dibfna.i | |- I = ( ( DIsoB ` K ) ` W ) |\n| 4 | 1, 2, 3 | #P_dibfna | |- ( ( K e. V /\\ W e. H ) -> I Fn dom J ) |\n| 5 |  | #P_fndm | |- ( I Fn dom J -> dom I = dom J ) |\n| 6 | 4, 5 | #P_syl | |- ( ( K e. V /\\ W e. H ) -> dom I = dom J ) |",
+  "conclusion" : "#P_dibdiadm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cJ", "#T_wceq", "#T_cdia", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cI", "#T_wceq", "#T_cdib", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cI", "#T_wfn", "#T_cdm", "#T_cJ", "#T_cI", "#T_wfn", "#T_cdm", "#T_cJ", "#T_wi", "#T_cdm", "#T_cI", "#T_wceq", "#T_cdm", "#T_cJ", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cdm", "#T_cI", "#T_wceq", "#T_cdm", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_fndm", "#P_dibfna" ]
+}

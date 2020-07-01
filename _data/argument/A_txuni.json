@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See txuni on Metamath](http://us.metamath.org/mpegif/txuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | txuni.1 | |- X = U. R |\n| 2 |  | txuni.2 | |- Y = U. S |\n| 3 | 1 | #P_toptopon | |- ( R e. Top <-> R e. ( TopOn ` X ) ) |\n| 4 | 2 | #P_toptopon | |- ( S e. Top <-> S e. ( TopOn ` Y ) ) |\n| 5 |  | #P_txtopon | |- ( ( R e. ( TopOn ` X ) /\\ S e. ( TopOn ` Y ) ) -> ( R tX S ) e. ( TopOn ` ( X X. Y ) ) ) |\n| 6 | 3, 4, 5 | #P_syl2anb | |- ( ( R e. Top /\\ S e. Top ) -> ( R tX S ) e. ( TopOn ` ( X X. Y ) ) ) |\n| 7 |  | #P_toponuni | |- ( ( R tX S ) e. ( TopOn ` ( X X. Y ) ) -> ( X X. Y ) = U. ( R tX S ) ) |\n| 8 | 6, 7 | #P_syl | |- ( ( R e. Top /\\ S e. Top ) -> ( X X. Y ) = U. ( R tX S ) ) |",
+  "conclusion" : "#P_txuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cR", "#T_cY", "#T_wceq", "#T_cuni", "#T_cS", "#T_cR", "#T_wcel", "#T_ctop", "#T_wb", "#T_cR", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cS", "#T_wcel", "#T_ctop", "#T_wb", "#T_cS", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cY", "#T_cR", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cS", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cY", "#T_wi", "#T_cR", "#T_ctx", "#T_cS", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cxp", "#T_cY", "#T_cR", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_ctop", "#T_wi", "#T_cR", "#T_ctx", "#T_cS", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cxp", "#T_cY", "#T_cR", "#T_ctx", "#T_cS", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cxp", "#T_cY", "#T_wi", "#T_cX", "#T_cxp", "#T_cY", "#T_wceq", "#T_cuni", "#T_cR", "#T_ctx", "#T_cS", "#T_cR", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_cxp", "#T_cY", "#T_wceq", "#T_cuni", "#T_cR", "#T_ctx", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_txtopon", "#P_toponuni", "#P_syl", "#P_syl2anb", "#P_toptopon" ]
+}

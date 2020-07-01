@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See filinn0 on Metamath](http://us.metamath.org/mpegif/filinn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simp1 | |- ( ( F e. ( Fil ` X ) /\\ A e. F /\\ B e. F ) -> F e. ( Fil ` X ) ) |\n| 2 |  | #P_filin | |- ( ( F e. ( Fil ` X ) /\\ A e. F /\\ B e. F ) -> ( A i^i B ) e. F ) |\n| 3 |  | #P_fileln0 | |- ( ( F e. ( Fil ` X ) /\\ ( A i^i B ) e. F ) -> ( A i^i B ) =/= (/) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ( F e. ( Fil ` X ) /\\ A e. F /\\ B e. F ) -> ( A i^i B ) =/= (/) ) |",
+  "conclusion" : "#P_filinn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cF", "#T_wi", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cF", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cF", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cF", "#T_wi", "#T_cA", "#T_cin", "#T_cB", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_fileln0", "#P_filin", "#P_simp1" ]
+}

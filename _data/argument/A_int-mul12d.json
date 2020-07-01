@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See int-mul12d on Metamath](http://us.metamath.org/mpegif/int-mul12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | int-mul12d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | int-mul12d.2 | |- ( ph -> A = B ) |\n| 3 | 1 | #P_recnd | |- ( ph -> A e. CC ) |\n| 4 | 3 | #P_mulid2d | |- ( ph -> ( 1 x. A ) = A ) |\n| 5 | 4, 2 | #P_eqtrd | |- ( ph -> ( 1 x. A ) = B ) |",
+  "conclusion" : "#P_int-mul12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_c1", "#T_cmul", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulid2d", "#P_eqtrd", "#P_recnd" ]
+}

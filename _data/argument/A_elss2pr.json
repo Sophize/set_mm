@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elss2pr on Metamath](http://us.metamath.org/mpegif/elss2pr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( z = P -> ( # ` z ) = ( # ` P ) ) |\n| 2 | 1 | #P_eqeq1d | |- ( z = P -> ( ( # ` z ) = 2 <-> ( # ` P ) = 2 ) ) |\n| 3 | 2 | #P_elrab | |- ( P e. { z e. ~P V | ( # ` z ) = 2 } <-> ( P e. ~P V /\\ ( # ` P ) = 2 ) ) |\n| 4 |  | #P_hash2sspr | |- ( ( P e. ~P V /\\ ( # ` P ) = 2 ) -> E. x e. V E. y e. V P = { x , y } ) |\n| 5 | 3, 4 | #P_sylbi | |- ( P e. { z e. ~P V | ( # ` z ) = 2 } -> E. x e. V E. y e. V P = { x , y } ) |",
+  "conclusion" : "#P_elss2pr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_cP", "#T_wi", "#T_chash", "#T_cfv", "#T_vz", "#T_wceq", "#T_chash", "#T_cfv", "#T_cP", "#T_vz", "#T_wceq", "#T_cP", "#T_wi", "#T_chash", "#T_cfv", "#T_vz", "#T_wceq", "#T_c2", "#T_wb", "#T_chash", "#T_cfv", "#T_cP", "#T_wceq", "#T_c2", "#T_cP", "#T_wcel", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cpw", "#T_cV", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vz", "#T_wceq", "#T_c2", "#T_crab--4", "#T_wb", "#T_cP", "#T_wcel", "#T_cpw", "#T_cV", "#T_wa", "#T_chash", "#T_cfv", "#T_cP", "#T_wceq", "#T_c2", "#T_cP", "#T_wcel", "#T_cpw", "#T_cV", "#T_wa", "#T_chash", "#T_cfv", "#T_cP", "#T_wceq", "#T_c2", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cV", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cV", "#T_cP", "#T_wceq", "#T_cpr--1", "#T_vx.wal", "#T_cpr--2", "#T_vy.tru", "#T_cpr--3", "#T_cP", "#T_wcel", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cpw", "#T_cV", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vz", "#T_wceq", "#T_c2", "#T_crab--4", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cV", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cV", "#T_cP", "#T_wceq", "#T_cpr--1", "#T_vx", "#T_cpr--2", "#T_vy", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_eqeq1d", "#P_fveq2", "#P_hash2sspr", "#P_sylbi" ]
+}

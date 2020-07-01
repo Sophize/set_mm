@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subrgss on Metamath](http://us.metamath.org/mpegif/subrgss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subrgss.1 | |- B = ( Base ` R ) |\n| 2 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 3 | 1, 2 | #P_issubrg | |- ( A e. ( SubRing ` R ) <-> ( ( R e. Ring /\\ ( R |`s A ) e. Ring ) /\\ ( A C_ B /\\ ( 1r ` R ) e. A ) ) ) |\n| 4 | 3 | #P_simprbi | |- ( A e. ( SubRing ` R ) -> ( A C_ B /\\ ( 1r ` R ) e. A ) ) |\n| 5 | 4 | #P_simpld | |- ( A e. ( SubRing ` R ) -> A C_ B ) |",
+  "conclusion" : "#P_subrgss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cA.wceq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cR", "#T_cress", "#T_cA.wceq", "#T_wcel", "#T_crg", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_wi", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_simprbi", "#P_issubrg" ]
+}

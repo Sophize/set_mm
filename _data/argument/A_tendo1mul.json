@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tendo1mul on Metamath](http://us.metamath.org/mpegif/tendo1mul.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tendof.h | |- H = ( LHyp ` K ) |\n| 2 |  | tendof.t | |- T = ( ( LTrn ` K ) ` W ) |\n| 3 |  | tendof.e | |- E = ( ( TEndo ` K ) ` W ) |\n| 4 | 1, 2, 3 | #P_tendof | |- ( ( ( K e. HL /\\ W e. H ) /\\ U e. E ) -> U : T --> T ) |\n| 5 |  | #P_fcoi2 | |- ( U : T --> T -> ( ( _I |` T ) o. U ) = U ) |\n| 6 | 4, 5 | #P_syl | |- ( ( ( K e. HL /\\ W e. H ) /\\ U e. E ) -> ( ( _I |` T ) o. U ) = U ) |",
+  "conclusion" : "#P_tendo1mul",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cT", "#T_wceq", "#T_cltrn", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cE", "#T_wceq", "#T_ctendo", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cU", "#T_wcel", "#T_cE", "#T_wi", "#T_cU", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cT", "#T_cU", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cT", "#T_wi", "#T_cid", "#T_cres", "#T_cT", "#T_ccom", "#T_cU", "#T_wceq", "#T_cU", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cU", "#T_wcel", "#T_cE", "#T_wi", "#T_cid", "#T_cres", "#T_cT", "#T_ccom", "#T_cU", "#T_wceq", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_fcoi2", "#P_tendof" ]
+}

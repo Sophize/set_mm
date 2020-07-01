@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sgrp2nmnd on Metamath](http://us.metamath.org/mpegif/sgrp2nmnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mgm2nsgrp.s | |- S = { A , B } |\n| 2 |  | mgm2nsgrp.b | |- ( Base ` M ) = S |\n| 3 |  | sgrp2nmnd.o | |- ( +g ` M ) = ( x e. S , y e. S |-> if ( x = A , A , B ) ) |\n| 4 | 1, 2, 3 | #P_sgrp2nmndlem4 | |- ( ( # ` S ) = 2 -> M e. SGrp ) |\n| 5 | 1, 2, 3 | #P_sgrp2nmndlem5 | |- ( ( # ` S ) = 2 -> M e/ Mnd ) |\n| 6 | 4, 5 | #P_jca | |- ( ( # ` S ) = 2 -> ( M e. SGrp /\\ M e/ Mnd ) ) |",
+  "conclusion" : "#P_sgrp2nmnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_cbs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cS", "#T_cplusg", "#T_cfv", "#T_cM", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cS", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cS", "#T_cmpt2--4", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cA", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_chash", "#T_cfv", "#T_cS", "#T_wceq", "#T_c2", "#T_wi", "#T_cM", "#T_wcel", "#T_csgrp", "#T_chash", "#T_cfv", "#T_cS", "#T_wceq", "#T_c2", "#T_wi", "#T_cM", "#T_wnel", "#T_cmnd", "#T_chash", "#T_cfv", "#T_cS", "#T_wceq", "#T_c2", "#T_wi", "#T_cM", "#T_wcel", "#T_csgrp", "#T_wa", "#T_cM", "#T_wnel", "#T_cmnd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sgrp2nmndlem5", "#P_jca", "#P_sgrp2nmndlem4" ]
+}

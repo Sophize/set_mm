@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See simplbi2VD on Metamath](http://us.metamath.org/mpegif/simplbi2VD.html)"
+  } ],
+  "names" : [ "simplbi2VD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ simplbi2 .  The following user's proof is completed by invoking mmj2's unify command and using mmj2's StepSelector to pick all remaining steps of the Metamath proof. <HTML> <TABLE> <TR> <TD> h1::        <TD> ` |- ( ph <-> ( ps /\\ ch ) ) ` <TR> <TD> 3:1,?: ~ e0a   <TD> ` |- ( ( ps /\\ ch ) -> ph )  ` <TR> <TD> qed:3,?: ~ e0a <TD> ` |- ( ps -> ( ch -> ph ) ) ` </TABLE> </HTML> The proof of ~ simplbi2 was automatically derived from it. (Contributed by Alan Sare, 31-Dec-2011.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "pm3.26bi2VD.1 $e |- ( ph <-> ( ps /\\ ch ) ) $.\nsimplbi2VD $p |- ( ps -> ( ch -> ph ) ) $."
+}

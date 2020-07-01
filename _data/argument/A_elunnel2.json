@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elunnel2 on Metamath](http://us.metamath.org/mpegif/elunnel2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elun | |- ( A e. ( B u. C ) <-> ( A e. B \\/ A e. C ) ) |\n| 2 | 1 | #P_biimpi | |- ( A e. ( B u. C ) -> ( A e. B \\/ A e. C ) ) |\n| 3 | 2 | #P_orcomd | |- ( A e. ( B u. C ) -> ( A e. C \\/ A e. B ) ) |\n| 4 | 3 | #P_orcanai | |- ( ( A e. ( B u. C ) /\\ -. A e. C ) -> A e. B ) |",
+  "conclusion" : "#P_elunnel2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_cun", "#T_cC", "#T_wa", "#T_wn", "#T_cA", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orcomd", "#P_elun", "#P_orcanai", "#P_biimpi" ]
+}

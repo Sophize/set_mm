@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divdiv32apd on Metamath](http://us.metamath.org/mpegif/divdiv32apd.html)"
+  } ],
+  "names" : [ "divdiv32apd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cC", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_cdiv", "#T_cB", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Swap denominators in a division.  (Contributed by Jim Kingdon, 8-Mar-2020.) ",
+  "statement" : "divcld.1 $e |- ( ph -> A e. CC ) $.\ndivcld.2 $e |- ( ph -> B e. CC ) $.\ndivmuld.3 $e |- ( ph -> C e. CC ) $.\ndivmulapd.4 $e |- ( ph -> B # 0 ) $.\ndivdiv23apd.5 $e |- ( ph -> C # 0 ) $.\ndivdiv32apd $p |- ( ph -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpexg on Metamath](http://us.metamath.org/mpegif/xpexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpsspw | |- ( A X. B ) C_ ~P ~P ( A u. B ) |\n| 2 |  | #P_unexg | |- ( ( A e. V /\\ B e. W ) -> ( A u. B ) e. _V ) |\n| 3 |  | #P_pwexg | |- ( ( A u. B ) e. _V -> ~P ( A u. B ) e. _V ) |\n| 4 |  | #P_pwexg | |- ( ~P ( A u. B ) e. _V -> ~P ~P ( A u. B ) e. _V ) |\n| 5 | 2, 3, 4 | #P_3syl | |- ( ( A e. V /\\ B e. W ) -> ~P ~P ( A u. B ) e. _V ) |\n| 6 |  | #P_ssexg | |- ( ( ( A X. B ) C_ ~P ~P ( A u. B ) /\\ ~P ~P ( A u. B ) e. _V ) -> ( A X. B ) e. _V ) |\n| 7 | 1, 5, 6 | #P_sylancr | |- ( ( A e. V /\\ B e. W ) -> ( A X. B ) e. _V ) |",
+  "conclusion" : "#P_xpexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wa", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cxp", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssexg", "#P_pwexg", "#P_sylancr", "#P_3syl", "#P_unexg", "#P_xpsspw" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eliniseg2 on Metamath](http://us.metamath.org/mpegif/eliniseg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relcnv | |- Rel `' A |\n| 2 |  | #P_elrelimasn | |- ( Rel `' A -> ( C e. ( `' A \" { B } ) <-> B `' A C ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( C e. ( `' A \" { B } ) <-> B `' A C ) |\n| 4 |  | #P_relbrcnvg | |- ( Rel A -> ( B `' A C <-> C A B ) ) |\n| 5 | 3, 4 | #P_syl5bb | |- ( Rel A -> ( C e. ( `' A \" { B } ) <-> C A B ) ) |",
+  "conclusion" : "#P_eliniseg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_ccnv", "#T_cA.wceq", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cC", "#T_cC", "#T_wcel", "#T_ccnv", "#T_cA.wceq", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cC", "#T_wrel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cC", "#T_wb", "#T_cC", "#T_cA.wceq", "#T_cB.wceq", "#T_wrel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_ccnv", "#T_cA", "#T_cima", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wb", "#T_cC", "#T_cA", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_relbrcnvg", "#P_syl5bb", "#P_ax-mp", "#P_relcnv", "#P_elrelimasn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvresid on Metamath](http://us.metamath.org/mpegif/cnvresid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvi | |- `' _I = _I |\n| 2 | 1 | #P_eqcomi | |- _I = `' _I |\n| 3 |  | #P_funi | |- Fun _I |\n| 4 |  | #P_funeq | |- ( _I = `' _I -> ( Fun _I <-> Fun `' _I ) ) |\n| 5 | 3, 4 | #P_mpbii | |- ( _I = `' _I -> Fun `' _I ) |\n| 6 |  | #P_funcnvres | |- ( Fun `' _I -> `' ( _I |` A ) = ( `' _I |` ( _I \" A ) ) ) |\n| 7 |  | #P_imai | |- ( _I \" A ) = A |\n| 8 | 1, 7 | #P_reseq12i | |- ( `' _I |` ( _I \" A ) ) = ( _I |` A ) |\n| 9 | 6, 8 | #P_syl6eq | |- ( Fun `' _I -> `' ( _I |` A ) = ( _I |` A ) ) |\n| 10 | 2, 5, 9 | #P_mp2b | |- `' ( _I |` A ) = ( _I |` A ) |",
+  "conclusion" : "#P_cnvresid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cid", "#T_wceq", "#T_cid", "#T_cid", "#T_wceq", "#T_ccnv", "#T_cid", "#T_wfun", "#T_cid", "#T_cid", "#T_wceq", "#T_ccnv", "#T_cid", "#T_wi", "#T_wfun", "#T_cid", "#T_wb", "#T_wfun", "#T_ccnv", "#T_cid", "#T_cid", "#T_wceq", "#T_ccnv", "#T_cid", "#T_wi", "#T_wfun", "#T_ccnv", "#T_cid", "#T_wfun", "#T_ccnv", "#T_cid", "#T_wi", "#T_ccnv", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_ccnv", "#T_cid", "#T_cres", "#T_cid", "#T_cima", "#T_cA.wceq", "#T_cid", "#T_cima", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccnv", "#T_cid", "#T_cres", "#T_cid", "#T_cima", "#T_cA.wceq", "#T_wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wfun", "#T_ccnv", "#T_cid", "#T_wi", "#T_ccnv", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_ccnv", "#T_cid", "#T_cres", "#T_cA", "#T_wceq", "#T_cid", "#T_cres", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funcnvres", "#P_mpbii", "#P_funi", "#P_funeq", "#P_cnvi", "#P_imai", "#P_reseq12i", "#P_mp2b", "#P_eqcomi", "#P_syl6eq" ]
+}

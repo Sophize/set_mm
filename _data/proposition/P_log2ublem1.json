@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See log2ublem1 on Metamath](http://us.metamath.org/mpegif/log2ublem1.html)"
+  } ],
+  "names" : [ "log2ublem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c3", "#T_cexp", "#T_c7", "#T_cmul", "#T_c5", "#T_cmul", "#T_c7", "#T_cmul", "#T_cA", "#T_cle", "#T_cB", "#T_cA", "#T_wcel", "#T_cr", "#T_cD", "#T_wcel", "#T_cn0", "#T_cE", "#T_wcel", "#T_cn", "#T_cB", "#T_wcel", "#T_cn0", "#T_cF", "#T_wcel", "#T_cn0", "#T_cC", "#T_wceq", "#T_cA", "#T_caddc", "#T_cD", "#T_cdiv", "#T_cE", "#T_cB", "#T_caddc", "#T_cF", "#T_wceq", "#T_cG", "#T_c3", "#T_cexp", "#T_c7", "#T_cmul", "#T_c5", "#T_cmul", "#T_c7", "#T_cmul", "#T_cD", "#T_cle", "#T_cE", "#T_cmul", "#T_cF", "#T_c3", "#T_cexp", "#T_c7", "#T_cmul", "#T_c5", "#T_cmul", "#T_c7", "#T_cmul", "#T_cC", "#T_cle", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ log2ub .  The proof of ~ log2ub , which is simply the evaluation of ~ log2tlbnd for ` N = 4 ` , takes the form of the addition of five fractions and showing this is less than another fraction.  We could just perform exact arithmetic on these fractions, get a large rational number, and just multiply everything to verify the claim, but as anyone who uses decimal numbers for this task knows, it is often better to pick a common denominator ` d ` (usually a large power of ` 10 ` ) and work with the closest approximations of the form ` n / d ` for some integer ` n ` instead.  It turns out that for our purposes it is sufficient to take ` d = ( 3 ^ 7 ) x. 5 x. 7 ` , which is also nice because it shares many factors in common with the fractions in question.  (Contributed by Mario Carneiro, 17-Apr-2015.) ",
+  "statement" : "log2ublem1.1 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. A ) <_ B $.\nlog2ublem1.2 $e |- A e. RR $.\nlog2ublem1.3 $e |- D e. NN0 $.\nlog2ublem1.4 $e |- E e. NN $.\nlog2ublem1.5 $e |- B e. NN0 $.\nlog2ublem1.6 $e |- F e. NN0 $.\nlog2ublem1.7 $e |- C = ( A + ( D / E ) ) $.\nlog2ublem1.8 $e |- ( B + F ) = G $.\nlog2ublem1.9 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. D ) <_ ( E x. F ) $.\nlog2ublem1 $p |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. C ) <_ G $."
+}

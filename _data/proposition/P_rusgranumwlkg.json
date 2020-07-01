@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rusgranumwlkg on Metamath](http://us.metamath.org/mpegif/rusgranumwlkg.html)"
+  } ],
+  "names" : [ "rusgranumwlkg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_crusgra", "#T_cK", "#T_wa", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--1", "#T_cP", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_chash", "#T_cfv", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_cV", "#T_cwalk", "#T_cE", "#T_crab--3", "#T_chash", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vw", "#T_wceq", "#T_cN", "#T_wa", "#T_c2nd", "#T_cfv", "#T_vw", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cP", "#T_crab--4", "#T_wceq", "#T_cK", "#T_cexp", "#T_cN", "#T_cE", "#T_vw", "#T_cK", "#T_vw", "#T_cN", "#T_vw", "#T_cP", "#T_vw", "#T_cV", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a k-regular graph, the number of walks of a fixed length n from a fixed vertex is k to the power of n.  This theorem corresponds to statement 11 in [Huneke] p. 2:  \"The total number of walks v(0) v(1) ... v(n-2) from a fixed vertex v = v(0) is k^(n-2) as G is k-regular.\". This theorem even holds for n=0: then the walk consists only of one vertex v(0), so the number of walks of length n=0 starting with v=v(0) is 1=k^0.  Closed form of ~ rusgranumwlk .  (Contributed by Alexander van der Vekens, 24-Aug-2018.) ",
+  "statement" : "rusgranumwlkg $p |- ( ( <. V , E >. RegUSGrph K /\\ ( V e. Fin /\\ P e. V /\\ N e. NN0 ) ) -> ( # ` { w e. ( V Walks E ) | ( ( # ` ( 1st ` w ) ) = N /\\ ( ( 2nd ` w ) ` 0 ) = P ) } ) = ( K ^ N ) ) $.\n$d E w $.\n$d K w $.\n$d N w $.\n$d P w $.\n$d V w $."
+}

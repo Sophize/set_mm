@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbcimi on Metamath](http://us.metamath.org/mpegif/sbcimi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbcimi.1 | |- A e. _V |\n| 2 |  | sbcimi.2 | |- ( [. A / x ]. ph <-> ch ) |\n| 3 |  | sbcimi.3 | |- ( [. A / x ]. ps <-> et ) |\n| 4 |  | #P_sbcimg | |- ( A e. _V -> ( [. A / x ]. ( ph -> ps ) <-> ( [. A / x ]. ph -> [. A / x ]. ps ) ) ) |\n| 5 | 1, 4 | #P_ax-mp | |- ( [. A / x ]. ( ph -> ps ) <-> ( [. A / x ]. ph -> [. A / x ]. ps ) ) |\n| 6 | 2, 3 | #P_imbi12i | |- ( ( [. A / x ]. ph -> [. A / x ]. ps ) <-> ( ch -> et ) ) |\n| 7 | 5, 6 | #P_bitri | |- ( [. A / x ]. ( ph -> ps ) <-> ( ch -> et ) ) |",
+  "conclusion" : "#P_sbcimi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wch", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wet", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wps", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wps", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_wet", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sbcimg", "#P_imbi12i", "#P_bitri" ]
+}

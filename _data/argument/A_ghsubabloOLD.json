@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghsubabloOLD on Metamath](http://us.metamath.org/mpegif/ghsubabloOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghsubgoOLD.1 | |- ( ph -> S e. ( SubGrpOp ` G ) ) |\n| 2 |  | ghsubgoOLD.2 | |- X = ran G |\n| 3 |  | ghsubgoOLD.3 | |- ( ph -> F : X --> Y ) |\n| 4 |  | ghsubgoOLD.4 | |- ( ph -> Y C_ A ) |\n| 5 |  | ghsubgoOLD.5 | |- ( ph -> O Fn ( A X. A ) ) |\n| 6 |  | ghsubgoOLD.6 | |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( F ` ( x G y ) ) = ( ( F ` x ) O ( F ` y ) ) ) |\n| 7 |  | ghsubgoOLD.7 | |- Z = ran S |\n| 8 |  | ghsubgoOLD.8 | |- W = ( F \" Z ) |\n| 9 |  | ghsubgoOLD.9 | |- H = ( O |` ( W X. W ) ) |\n| 10 |  | ghsubabloOLD.10 | |- ( ph -> S e. AbelOp ) |\n| 11 | 1, 2, 3, 4, 5, 6, 7, 8, 9 | #P_ghsubgolemOLD | |- ( ph -> ( H e. GrpOp /\\ ( S e. AbelOp -> H e. AbelOp ) ) ) |\n| 12 | 11 | #P_simprd | |- ( ph -> ( S e. AbelOp -> H e. AbelOp ) ) |\n| 13 | 10, 12 | #P_mpd | |- ( ph -> H e. AbelOp ) |",
+  "conclusion" : "#P_ghsubabloOLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_csubgo", "#T_cfv", "#T_cG", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wph", "#T_wi", "#T_cY", "#T_wss", "#T_cA", "#T_wph", "#T_wi", "#T_cO", "#T_wfn", "#T_cA", "#T_cxp", "#T_cA", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_cG", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_cO", "#T_cF", "#T_cfv", "#T_vy", "#T_cZ", "#T_wceq", "#T_crn", "#T_cS", "#T_cW", "#T_wceq", "#T_cF", "#T_cima", "#T_cZ", "#T_cH", "#T_wceq", "#T_cO", "#T_cres", "#T_cW", "#T_cxp", "#T_cW", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cablo", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cgr", "#T_wa", "#T_cS", "#T_wcel", "#T_cablo", "#T_wi", "#T_cH", "#T_wcel", "#T_cablo", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cablo", "#T_wi", "#T_cH", "#T_wcel", "#T_cablo", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cablo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_ghsubgolemOLD", "#P_simprd" ]
+}

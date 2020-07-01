@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isabloi on Metamath](http://us.metamath.org/mpegif/isabloi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isabli.1 | |- G e. GrpOp |\n| 2 |  | isabli.2 | |- dom G = ( X X. X ) |\n| 3 |  | isabli.3 | |- ( ( x e. X /\\ y e. X ) -> ( x G y ) = ( y G x ) ) |\n| 4 | 3 | #P_rgen2a | |- A. x e. X A. y e. X ( x G y ) = ( y G x ) |\n| 5 | 1, 2 | #P_grporn | |- X = ran G |\n| 6 | 5 | #P_isablo | |- ( G e. AbelOp <-> ( G e. GrpOp /\\ A. x e. X A. y e. X ( x G y ) = ( y G x ) ) ) |\n| 7 | 1, 4, 6 | #P_mpbir2an | |- G e. AbelOp |",
+  "conclusion" : "#P_isabloi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cgr", "#T_cdm", "#T_cG", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cG", "#T_vy", "#T_wceq", "#T_vy", "#T_cG", "#T_vx", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cG", "#T_vx.wal", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cG", "#T_wcel", "#T_cablo", "#T_wb", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cG", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cablo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rgen2a", "#P_mpbir2an", "#P_isablo", "#P_grporn" ]
+}

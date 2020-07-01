@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax10 on Metamath](http://us.metamath.org/mpegif/ax10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-10o | |- ( A. x x = y -> ( A. x x = y -> A. y x = y ) ) |\n| 2 | 1 | #P_pm2.43i | |- ( A. x x = y -> A. y x = y ) |\n| 3 |  | #P_equcomi | |- ( x = y -> y = x ) |\n| 4 | 3 | #P_alimi | |- ( A. y x = y -> A. y y = x ) |\n| 5 | 2, 4 | #P_syl | |- ( A. x x = y -> A. y y = x ) |\n\\\n Rederivation of ~ ax-10 from original version ~ ax-10o .  See theorem ~ ax10o for the derivation of ~ ax-10o from ~ ax-10 . This theorem should not be referenced in any proof.  Instead, use ~ ax-10 above so that uses of ~ ax-10 can be more easily identified.  (Contributed by NM, 16-May-2008.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_ax10--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vy", "#T_vy", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_ax-10o", "#P_alimi", "#P_syl", "#P_equcomi" ]
+}

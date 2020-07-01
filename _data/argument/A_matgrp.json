@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See matgrp on Metamath](http://us.metamath.org/mpegif/matgrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | matlmod.a | |- A = ( N Mat R ) |\n| 2 | 1 | #P_matlmod | |- ( ( N e. Fin /\\ R e. Ring ) -> A e. LMod ) |\n| 3 |  | #P_lmodgrp | |- ( A e. LMod -> A e. Grp ) |\n| 4 | 2, 3 | #P_syl | |- ( ( N e. Fin /\\ R e. Ring ) -> A e. Grp ) |",
+  "conclusion" : "#P_matgrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_clmod", "#T_cA.wceq", "#T_wcel", "#T_clmod", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cgrp", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cA", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lmodgrp", "#P_syl", "#P_matlmod" ]
+}

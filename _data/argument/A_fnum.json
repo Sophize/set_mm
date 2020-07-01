@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnum on Metamath](http://us.metamath.org/mpegif/fnum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-numer | |- numer = ( a e. QQ |-> ( 1st ` ( iota_ b e. ( ZZ X. NN ) ( ( ( 1st ` b ) gcd ( 2nd ` b ) ) = 1 /\\ a = ( ( 1st ` b ) / ( 2nd ` b ) ) ) ) ) ) |\n| 2 |  | #P_qnumval | |- ( a e. QQ -> ( numer ` a ) = ( 1st ` ( iota_ b e. ( ZZ X. NN ) ( ( ( 1st ` b ) gcd ( 2nd ` b ) ) = 1 /\\ a = ( ( 1st ` b ) / ( 2nd ` b ) ) ) ) ) ) |\n| 3 |  | #P_qnumcl | |- ( a e. QQ -> ( numer ` a ) e. ZZ ) |\n| 4 | 2, 3 | #P_eqeltrrd | |- ( a e. QQ -> ( 1st ` ( iota_ b e. ( ZZ X. NN ) ( ( ( 1st ` b ) gcd ( 2nd ` b ) ) = 1 /\\ a = ( ( 1st ` b ) / ( 2nd ` b ) ) ) ) ) e. ZZ ) |\n| 5 | 1, 4 | #P_fmpti | |- numer : QQ --> ZZ |",
+  "conclusion" : "#P_fnum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_cnumer", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cq", "#T_cmpt--2", "#T_c1st", "#T_cfv", "#T_crio--1", "#T_vb", "#T_crio--2", "#T_cz", "#T_cxp", "#T_cn", "#T_c1st", "#T_cfv", "#T_vb", "#T_cgcd", "#T_c2nd", "#T_cfv", "#T_vb", "#T_wceq", "#T_c1", "#T_wa", "#T_va", "#T_wceq", "#T_c1st", "#T_cfv", "#T_vb", "#T_cdiv", "#T_c2nd", "#T_cfv", "#T_vb", "#T_va", "#T_wcel", "#T_cq", "#T_wi", "#T_cnumer", "#T_cfv", "#T_va", "#T_wceq", "#T_c1st", "#T_cfv", "#T_crio--1", "#T_vb", "#T_crio--2", "#T_cz", "#T_cxp", "#T_cn", "#T_c1st", "#T_cfv", "#T_vb", "#T_cgcd", "#T_c2nd", "#T_cfv", "#T_vb", "#T_wceq", "#T_c1", "#T_wa", "#T_va", "#T_wceq", "#T_c1st", "#T_cfv", "#T_vb", "#T_cdiv", "#T_c2nd", "#T_cfv", "#T_vb", "#T_va", "#T_wcel", "#T_cq", "#T_wi", "#T_cnumer", "#T_cfv", "#T_va", "#T_wcel", "#T_cz", "#T_va", "#T_wcel", "#T_cq", "#T_wi", "#T_c1st", "#T_cfv", "#T_crio--1", "#T_vb", "#T_crio--2", "#T_cz", "#T_cxp", "#T_cn", "#T_c1st", "#T_cfv", "#T_vb", "#T_cgcd", "#T_c2nd", "#T_cfv", "#T_vb", "#T_wceq", "#T_c1", "#T_wa", "#T_va", "#T_wceq", "#T_c1st", "#T_cfv", "#T_vb", "#T_cdiv", "#T_c2nd", "#T_cfv", "#T_vb", "#T_wcel", "#T_cz", "#T_cnumer", "#T_wf--1", "#T_cq", "#T_wf--2", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_qnumcl", "#P_fmpti", "#P_df-numer", "#P_qnumval" ]
+}

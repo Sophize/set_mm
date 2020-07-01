@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-xor on Metamath](http://us.metamath.org/mpegif/df-xor.html)"
+  } ],
+  "names" : [ "df-xor" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define exclusive disjunction (logical 'xor').  Return true if either the left or right, but not both, are true.  After we define the constant true ` T. ` ( ~ df-tru ) and the constant false ` F. ` ( ~ df-fal ), we will be able to prove these truth table values: ` ( ( T. \\/_ T. ) <-> F. ) ` ( ~ truxortru ), ` ( ( T. \\/_ F. ) <-> T. ) ` ( ~ truxorfal ), ` ( ( F. \\/_ T. ) <-> T. ) ` ( ~ falxortru ), and ` ( ( F. \\/_ F. ) <-> F. ) ` ( ~ falxorfal ).  Contrast with ` /\\ ` ( ~ df-an ), ` \\/ ` ( ~ df-or ), ` -> ` ( ~ wi ), and ` -/\\ ` ( ~ df-nan ) .  (Contributed by FL, 22-Nov-2010.) ",
+  "statement" : "df-xor $p |- ( ( ph \\/_ ps ) <-> -. ( ph <-> ps ) ) $."
+}

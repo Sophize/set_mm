@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sbeqALT on Metamath](http://us.metamath.org/mpegif/bj-sbeqALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfcsb1v | |- F/_ x [_ y / x ]_ A |\n| 2 |  | #P_nfcsb1v | |- F/_ x [_ y / x ]_ B |\n| 3 | 1, 2 | #P_nfeq | |- F/ x [_ y / x ]_ A = [_ y / x ]_ B |\n| 4 |  | #P_csbeq1a | |- ( x = y -> A = [_ y / x ]_ A ) |\n| 5 |  | #P_csbeq1a | |- ( x = y -> B = [_ y / x ]_ B ) |\n| 6 | 4, 5 | #P_eqeq12d | |- ( x = y -> ( A = B <-> [_ y / x ]_ A = [_ y / x ]_ B ) ) |\n| 7 | 3, 6 | #P_sbie | |- ( [ y / x ] A = B <-> [_ y / x ]_ A = [_ y / x ]_ B ) |",
+  "conclusion" : "#P_bj-sbeqALT",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx.wal", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_csb--1", "#T_vy", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cA", "#T_wceq", "#T_csb--1", "#T_vy", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_sbie", "#P_nfeq", "#P_csbeq1a", "#P_nfcsb1v" ]
+}

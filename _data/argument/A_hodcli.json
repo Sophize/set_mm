@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hodcli on Metamath](http://us.metamath.org/mpegif/hodcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hoeq.1 | |- S : ~H --> ~H |\n| 2 |  | hoeq.2 | |- T : ~H --> ~H |\n| 3 |  | #P_hodcl | |- ( ( ( S : ~H --> ~H /\\ T : ~H --> ~H ) /\\ A e. ~H ) -> ( ( S -op T ) ` A ) e. ~H ) |\n| 4 | 1, 2, 3 | #P_mpanl12 | |- ( A e. ~H -> ( ( S -op T ) ` A ) e. ~H ) |",
+  "conclusion" : "#P_hodcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cS", "#T_chod", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_cA", "#T_wcel", "#T_chil", "#T_wi", "#T_cS", "#T_chod", "#T_cT", "#T_cfv", "#T_cA", "#T_wcel", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hodcl", "#P_mpanl12" ]
+}

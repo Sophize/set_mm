@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghmker on Metamath](http://us.metamath.org/mpegif/ghmker.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghmker.1 | |- .0. = ( 0g ` T ) |\n| 2 |  | #P_ghmgrp2 | |- ( F e. ( S GrpHom T ) -> T e. Grp ) |\n| 3 | 1 | #P_0nsg | |- ( T e. Grp -> { .0. } e. ( NrmSGrp ` T ) ) |\n| 4 | 2, 3 | #P_syl | |- ( F e. ( S GrpHom T ) -> { .0. } e. ( NrmSGrp ` T ) ) |\n| 5 |  | #P_ghmnsgpreima | |- ( ( F e. ( S GrpHom T ) /\\ { .0. } e. ( NrmSGrp ` T ) ) -> ( `' F \" { .0. } ) e. ( NrmSGrp ` S ) ) |\n| 6 | 4, 5 | #P_mpdan | |- ( F e. ( S GrpHom T ) -> ( `' F \" { .0. } ) e. ( NrmSGrp ` S ) ) |",
+  "conclusion" : "#P_ghmker",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_cT", "#T_wcel", "#T_cgrp", "#T_cT", "#T_wcel", "#T_cgrp", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wa", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cT", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cS", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ghmgrp2", "#P_mpdan", "#P_0nsg", "#P_ghmnsgpreima", "#P_syl" ]
+}

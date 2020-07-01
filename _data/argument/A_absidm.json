@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absidm on Metamath](http://us.metamath.org/mpegif/absidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_abscl | |- ( A e. CC -> ( abs ` A ) e. RR ) |\n| 2 |  | #P_absge0 | |- ( A e. CC -> 0 <_ ( abs ` A ) ) |\n| 3 |  | #P_absid | |- ( ( ( abs ` A ) e. RR /\\ 0 <_ ( abs ` A ) ) -> ( abs ` ( abs ` A ) ) = ( abs ` A ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( A e. CC -> ( abs ` ( abs ` A ) ) = ( abs ` A ) ) |",
+  "conclusion" : "#P_absidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cabs", "#T_cfv", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cabs", "#T_cfv", "#T_cA", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abscl", "#P_syl2anc", "#P_absid", "#P_absge0" ]
+}

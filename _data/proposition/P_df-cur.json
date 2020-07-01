@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cur on Metamath](http://us.metamath.org/mpegif/df-cur.html)"
+  } ],
+  "names" : [ "df-cur" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccur", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cdm", "#T_cdm", "#T_cF", "#T_cmpt--2", "#T_copab--1", "#T_copab--2", "#T_vy", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_cF", "#T_vz", "#T_copab--6", "#T_cF", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the currying of ` F ` , which splits a function of two arguments into a function of the first argument, producing a function over the second argument.  (Contributed by Mario Carneiro, 7-Jan-2017.) ",
+  "statement" : "df-cur $p |- curry F = ( x e. dom dom F |-> { <. y , z >. | <. x , y >. F z } ) $.\n$d F x y z $."
+}

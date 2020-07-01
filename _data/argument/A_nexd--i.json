@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nexd on Metamath](http://us.metamath.org/mpegif/nexd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nexd.1 | |- ( ph -> A. x ph ) |\n| 2 |  | nexd.2 | |- ( ph -> -. ps ) |\n| 3 | 1, 2 | #P_alrimih | |- ( ph -> A. x -. ps ) |\n| 4 |  | #P_alnex | |- ( A. x -. ps <-> -. E. x ps ) |\n| 5 | 3, 4 | #P_sylib | |- ( ph -> -. E. x ps ) |\n\\\n Deduction for generalization rule for negated wff.  (Contributed by NM, 2-Jan-2002.) ",
+  "conclusion" : "#P_nexd--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alrimih", "#P_alnex", "#P_sylib" ]
+}

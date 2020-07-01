@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfac10c on Metamath](http://us.metamath.org/mpegif/dfac10c.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfac10 | |- ( CHOICE <-> dom card = _V ) |\n| 2 |  | #P_eqv | |- ( dom card = _V <-> A. x x e. dom card ) |\n| 3 |  | #P_isnum2 | |- ( x e. dom card <-> E. y e. On y ~~ x ) |\n| 4 | 3 | #P_albii | |- ( A. x x e. dom card <-> A. x E. y e. On y ~~ x ) |\n| 5 | 1, 2, 4 | #P_3bitri | |- ( CHOICE <-> A. x E. y e. On y ~~ x ) |",
+  "conclusion" : "#P_dfac10c",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wac", "#T_wb", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wac", "#T_wb", "#T_wal", "#T_vx", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_con0", "#T_vy", "#T_cen", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albii", "#P_eqv", "#P_3bitri", "#P_isnum2", "#P_dfac10" ]
+}

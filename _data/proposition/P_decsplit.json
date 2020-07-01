@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decsplit on Metamath](http://us.metamath.org/mpegif/decsplit.html)"
+  } ],
+  "names" : [ "decsplit" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cM", "#T_wcel", "#T_cn0", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cN", "#T_cA", "#T_cmul", "#T_c10", "#T_cexp", "#T_cM", "#T_caddc", "#T_cB", "#T_wceq", "#T_cC", "#T_cA", "#T_cmul", "#T_c10", "#T_cexp", "#T_cN", "#T_caddc", "#T_cdc", "#T_cB", "#T_cD", "#T_wceq", "#T_cdc", "#T_cC", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Split a decimal number into two parts.  Inductive step.  (Contributed by Mario Carneiro, 16-Jul-2015.) ",
+  "statement" : "decsplit0.1 $e |- A e. NN0 $.\ndecsplit.2 $e |- B e. NN0 $.\ndecsplit.3 $e |- D e. NN0 $.\ndecsplit.4 $e |- M e. NN0 $.\ndecsplit.5 $e |- ( M + 1 ) = N $.\ndecsplit.6 $e |- ( ( A x. ( 10 ^ M ) ) + B ) = C $.\ndecsplit $p |- ( ( A x. ( 10 ^ N ) ) + ; B D ) = ; C D $."
+}

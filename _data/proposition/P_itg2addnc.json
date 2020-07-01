@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itg2addnc on Metamath](http://us.metamath.org/mpegif/itg2addnc.html)"
+  } ],
+  "names" : [ "itg2addnc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cmbf", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cF", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cc0", "#T_cico", "#T_cpnf", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cG", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_wceq", "#T_citg2", "#T_cfv", "#T_cF", "#T_caddc", "#T_citg2", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Alternate proof of ~ itg2add using the \"buffer zone\" definition from the first lemma, in which every simple function in the set is divided into to by dividing its buffer by a third and finding the largest allowable function locked to a grid laid out in increments of the new, smaller buffer up to the original simple function.  The measurability of this function follows from that of the augend, and subtracting it from the original simple function yields another simple function by ~ i1fsub , which is allowable by the fact that the grid must have a mark between one third and two thirds the original buffer.  This has two advantages over the current approach: first, eliminating ~ ax-cc , and second, weakening the measurability hypothesis to only the augend.  (Contributed by Brendan Leahy, 31-Oct-2017.)  (Revised by Brendan Leahy, 13-Mar-2018.) ",
+  "statement" : "itg2addnc.f1 $e |- ( ph -> F e. MblFn ) $.\nitg2addnc.f2 $e |- ( ph -> F : RR --> ( 0 [,) +oo ) ) $.\nitg2addnc.f3 $e |- ( ph -> ( S.2 ` F ) e. RR ) $.\nitg2addnc.g2 $e |- ( ph -> G : RR --> ( 0 [,) +oo ) ) $.\nitg2addnc.g3 $e |- ( ph -> ( S.2 ` G ) e. RR ) $.\nitg2addnc $p |- ( ph -> ( S.2 ` ( F oF + G ) ) = ( ( S.2 ` F ) + ( S.2 ` G ) ) ) $."
+}

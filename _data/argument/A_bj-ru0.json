@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-ru0 on Metamath](http://us.metamath.org/mpegif/bj-ru0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm5.19 | |- -. ( y e. y <-> -. y e. y ) |\n| 2 |  | #P_elequ1 | |- ( x = y -> ( x e. y <-> y e. y ) ) |\n| 3 |  | #P_bj-elequ12 | |- ( ( x = y /\\ x = y ) -> ( x e. x <-> y e. y ) ) |\n| 4 | 3 | #P_anidms | |- ( x = y -> ( x e. x <-> y e. y ) ) |\n| 5 | 4 | #P_notbid | |- ( x = y -> ( -. x e. x <-> -. y e. y ) ) |\n| 6 | 2, 5 | #P_bibi12d | |- ( x = y -> ( ( x e. y <-> -. x e. x ) <-> ( y e. y <-> -. y e. y ) ) ) |\n| 7 | 6 | #P_bj-spvv | |- ( A. x ( x e. y <-> -. x e. x ) -> ( y e. y <-> -. y e. y ) ) |\n| 8 | 1, 7 | #P_mto | |- -. A. x ( x e. y <-> -. x e. x ) |",
+  "conclusion" : "#P_bj-ru0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wn", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_wn", "#T_vx", "#T_wcel", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.19", "#P_bj-spvv", "#P_bibi12d", "#P_elequ1", "#P_bj-elequ12", "#P_mto", "#P_notbid", "#P_anidms" ]
+}

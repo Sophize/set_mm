@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xorbin on Metamath](http://us.metamath.org/mpegif/xorbin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor--i | |- ( ( ph \\/_ ps ) <-> ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) ) |\n| 2 |  | #P_imnan | |- ( ( ph -> -. ps ) <-> -. ( ph /\\ ps ) ) |\n| 3 | 2 | #P_biimpri | |- ( -. ( ph /\\ ps ) -> ( ph -> -. ps ) ) |\n| 4 | 3 | #P_adantl | |- ( ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) -> ( ph -> -. ps ) ) |\n| 5 | 1, 4 | #P_sylbi | |- ( ( ph \\/_ ps ) -> ( ph -> -. ps ) ) |\n| 6 |  | #P_pm2.53 | |- ( ( ps \\/ ph ) -> ( -. ps -> ph ) ) |\n| 7 | 6 | #P_orcoms | |- ( ( ph \\/ ps ) -> ( -. ps -> ph ) ) |\n| 8 | 7 | #P_adantr | |- ( ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) -> ( -. ps -> ph ) ) |\n| 9 | 1, 8 | #P_sylbi | |- ( ( ph \\/_ ps ) -> ( -. ps -> ph ) ) |\n| 10 | 5, 9 | #P_impbid | |- ( ( ph \\/_ ps ) -> ( ph <-> -. ps ) ) |",
+  "conclusion" : "#P_xorbin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-xor--i", "#P_adantl", "#P_pm2.53", "#P_imnan", "#P_impbid", "#P_biimpri", "#P_sylbi", "#P_adantr", "#P_orcoms" ]
+}

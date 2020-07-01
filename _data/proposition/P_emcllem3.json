@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See emcllem3 on Metamath](http://us.metamath.org/mpegif/emcllem3.html)"
+  } ],
+  "names" : [ "emcllem3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csu--1", "#T_vm", "#T_csu--2", "#T_c1", "#T_cfz", "#T_vn", "#T_c1", "#T_cdiv", "#T_vm", "#T_cmin", "#T_clog", "#T_cfv", "#T_vn", "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csu--1", "#T_vm", "#T_csu--2", "#T_c1", "#T_cfz", "#T_vn", "#T_c1", "#T_cdiv", "#T_vm", "#T_cmin", "#T_clog", "#T_cfv", "#T_vn", "#T_caddc", "#T_c1", "#T_cH", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_clog", "#T_cfv", "#T_c1", "#T_caddc", "#T_c1", "#T_cdiv", "#T_vn", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cH", "#T_cfv", "#T_cN", "#T_wceq", "#T_cF", "#T_cfv", "#T_cN", "#T_cmin", "#T_cG", "#T_cfv", "#T_cN", "#T_cH", "#T_vm", "#T_cN", "#T_vm", "#T_vn", "#T_vm", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ emcl .  The function ` H ` is the difference between ` F ` and ` G ` .  (Contributed by Mario Carneiro, 11-Jul-2014.) ",
+  "statement" : "emcl.1 $e |- F = ( n e. NN |-> ( sum_ m e. ( 1 ... n ) ( 1 / m ) - ( log ` n ) ) ) $.\nemcl.2 $e |- G = ( n e. NN |-> ( sum_ m e. ( 1 ... n ) ( 1 / m ) - ( log ` ( n + 1 ) ) ) ) $.\nemcl.3 $e |- H = ( n e. NN |-> ( log ` ( 1 + ( 1 / n ) ) ) ) $.\nemcllem3 $p |- ( N e. NN -> ( H ` N ) = ( ( F ` N ) - ( G ` N ) ) ) $.\n$d H m $.\n$d N m n $.\n$d m n $."
+}

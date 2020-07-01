@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oplem1 on Metamath](http://us.metamath.org/mpegif/oplem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oplem1.1 | |- ( ph -> ( ps \\/ ch ) ) |\n| 2 |  | oplem1.2 | |- ( ph -> ( th \\/ ta ) ) |\n| 3 |  | oplem1.3 | |- ( ps <-> th ) |\n| 4 |  | oplem1.4 | |- ( ch -> ( th <-> ta ) ) |\n| 5 | 3 | #P_notbii | |- ( -. ps <-> -. th ) |\n| 6 | 1 | #P_ord | |- ( ph -> ( -. ps -> ch ) ) |\n| 7 | 5, 6 | #P_syl5bir | |- ( ph -> ( -. th -> ch ) ) |\n| 8 | 2 | #P_ord | |- ( ph -> ( -. th -> ta ) ) |\n| 9 | 7, 8 | #P_jcad | |- ( ph -> ( -. th -> ( ch /\\ ta ) ) ) |\n| 10 | 4 | #P_biimpar | |- ( ( ch /\\ ta ) -> th ) |\n| 11 | 9, 10 | #P_syl6 | |- ( ph -> ( -. th -> th ) ) |\n| 12 | 11 | #P_pm2.18d | |- ( ph -> th ) |\n| 13 | 12, 3 | #P_sylibr | |- ( ph -> ps ) |",
+  "conclusion" : "#P_oplem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wo", "#T_wta", "#T_wps", "#T_wb", "#T_wth", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wta", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wth", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wch", "#T_wa", "#T_wta", "#T_wch", "#T_wa", "#T_wta", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_ord", "#P_biimpar", "#P_jcad", "#P_syl5bir", "#P_sylibr", "#P_syl6", "#P_pm2.18d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdreu on Metamath](http://us.metamath.org/mpegif/bdreu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdreu.1 | |- Bdd ph |\n| 2 | 1 | #P_ax-bdex | |- Bdd E. x e. y ph |\n| 3 |  | #P_ax-bdeq | |- Bdd x = z |\n| 4 | 1, 3 | #P_ax-bdim | |- Bdd ( ph -> x = z ) |\n| 5 | 4 | #P_ax-bdal | |- Bdd A. x e. y ( ph -> x = z ) |\n| 6 | 5 | #P_ax-bdex | |- Bdd E. z e. y A. x e. y ( ph -> x = z ) |\n| 7 | 2, 6 | #P_ax-bdan | |- Bdd ( E. x e. y ph /\\ E. z e. y A. x e. y ( ph -> x = z ) ) |\n| 8 |  | #P_reu3 | |- ( E! x e. y ph <-> ( E. x e. y ph /\\ E. z e. y A. x e. y ( ph -> x = z ) ) ) |\n| 9 | 7, 8 | #P_bd0r | |- Bdd E! x e. y ph |",
+  "conclusion" : "#P_bdreu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wbd", "#T_wph", "#T_wbd", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_vy.tru", "#T_wph", "#T_wbd", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wbd", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wbd", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wbd", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wbd", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_vy.tru", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_vy.tru", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wbd", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bd0r", "#P_ax-bdeq", "#P_ax-bdan", "#P_ax-bdal", "#P_ax-bdim", "#P_reu3", "#P_ax-bdex" ]
+}

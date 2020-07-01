@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fpar on Metamath](http://us.metamath.org/mpegif/fpar.html)"
+  } ],
+  "names" : [ "fpar" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_ccnv", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cF", "#T_ccom", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cin", "#T_ccnv", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cG", "#T_ccom", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cF", "#T_wfn", "#T_cA", "#T_wa", "#T_cG", "#T_wfn", "#T_cB", "#T_wi", "#T_cH", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cop--1", "#T_cF", "#T_cfv", "#T_vx", "#T_cop--2", "#T_cG", "#T_cfv", "#T_vy", "#T_cop--3", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cG", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Merge two functions in parallel.  Use as the second argument of a composition with a (2-place) operation to build compound operations such as ` z = ( ( sqrt `` x ) + ( abs `` y ) ) ` .  (Contributed by NM, 17-Sep-2007.)  (Proof shortened by Mario Carneiro, 28-Apr-2015.) ",
+  "statement" : "fpar.1 $e |- H = ( ( `' ( 1st |` ( _V X. _V ) ) o. ( F o. ( 1st |` ( _V X. _V ) ) ) ) i^i ( `' ( 2nd |` ( _V X. _V ) ) o. ( G o. ( 2nd |` ( _V X. _V ) ) ) ) ) $.\nfpar $p |- ( ( F Fn A /\\ G Fn B ) -> H = ( x e. A , y e. B |-> <. ( F ` x ) , ( G ` y ) >. ) ) $.\n$d A x y $.\n$d B x y $.\n$d F x y $.\n$d G x y $."
+}

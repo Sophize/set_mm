@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islmhm3 on Metamath](http://us.metamath.org/mpegif/islmhm3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | islmhm.k | |- K = ( Scalar ` S ) |\n| 2 |  | islmhm.l | |- L = ( Scalar ` T ) |\n| 3 |  | islmhm.b | |- B = ( Base ` K ) |\n| 4 |  | islmhm.e | |- E = ( Base ` S ) |\n| 5 |  | islmhm.m | |- .x. = ( .s ` S ) |\n| 6 |  | islmhm.n | |- .X. = ( .s ` T ) |\n| 7 | 1, 2, 3, 4, 5, 6 | #P_islmhm | |- ( F e. ( S LMHom T ) <-> ( ( S e. LMod /\\ T e. LMod ) /\\ ( F e. ( S GrpHom T ) /\\ L = K /\\ A. x e. B A. y e. E ( F ` ( x .x. y ) ) = ( x .X. ( F ` y ) ) ) ) ) |\n| 8 | 7 | #P_baib | |- ( ( S e. LMod /\\ T e. LMod ) -> ( F e. ( S LMHom T ) <-> ( F e. ( S GrpHom T ) /\\ L = K /\\ A. x e. B A. y e. E ( F ` ( x .x. y ) ) = ( x .X. ( F ` y ) ) ) ) ) |",
+  "conclusion" : "#P_islmhm3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_csca", "#T_cfv", "#T_cS", "#T_cL", "#T_wceq", "#T_csca", "#T_cfv", "#T_cT", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cE", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cS", "#T_c.xp", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_clmhm", "#T_cT", "#T_wb", "#T_cS", "#T_wcel", "#T_clmod", "#T_wa", "#T_cT", "#T_wcel", "#T_clmod", "#T_wa", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_w3a--1", "#T_cL", "#T_wceq", "#T_cK", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cE", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_c.x", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_c.xp", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cS", "#T_wcel", "#T_clmod", "#T_wa", "#T_cT", "#T_wcel", "#T_clmod", "#T_wi", "#T_cF", "#T_wcel", "#T_cS", "#T_clmhm", "#T_cT", "#T_wb", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_w3a--1", "#T_cL", "#T_wceq", "#T_cK", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cE", "#T_cF", "#T_cfv", "#T_vx", "#T_c.x", "#T_vy", "#T_wceq", "#T_vx", "#T_c.xp", "#T_cF", "#T_cfv", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baib", "#P_islmhm" ]
+}

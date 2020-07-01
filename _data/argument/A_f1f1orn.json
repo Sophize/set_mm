@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1f1orn on Metamath](http://us.metamath.org/mpegif/f1f1orn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1fn | |- ( F : A -1-1-> B -> F Fn A ) |\n| 2 |  | #P_df-f1 | |- ( F : A -1-1-> B <-> ( F : A --> B /\\ Fun `' F ) ) |\n| 3 | 2 | #P_simprbi | |- ( F : A -1-1-> B -> Fun `' F ) |\n| 4 |  | #P_f1orn | |- ( F : A -1-1-onto-> ran F <-> ( F Fn A /\\ Fun `' F ) ) |\n| 5 | 1, 3, 4 | #P_sylanbrc | |- ( F : A -1-1-> B -> F : A -1-1-onto-> ran F ) |",
+  "conclusion" : "#P_f1f1orn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_wfun", "#T_ccnv", "#T_cF", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wi", "#T_wfun", "#T_ccnv", "#T_cF", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_crn", "#T_cF", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_wfun", "#T_ccnv", "#T_cF", "#T_cF", "#T_wf1--1", "#T_cA", "#T_wf1--2", "#T_cB", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1fn", "#P_f1orn", "#P_simprbi", "#P_sylanbrc", "#P_df-f1" ]
+}

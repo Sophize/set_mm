@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nffun on Metamath](http://us.metamath.org/mpegif/nffun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nffun.1 | |- F/_ x F |\n| 2 |  | #P_df-fun | |- ( Fun F <-> ( Rel F /\\ ( F o. `' F ) C_ _I ) ) |\n| 3 | 1 | #P_nfrel | |- F/ x Rel F |\n| 4 | 1 | #P_nfcnv | |- F/_ x `' F |\n| 5 | 1, 4 | #P_nfco | |- F/_ x ( F o. `' F ) |\n| 6 |  | #P_nfcv | |- F/_ x _I |\n| 7 | 5, 6 | #P_nfss | |- F/ x ( F o. `' F ) C_ _I |\n| 8 | 3, 7 | #P_nfan | |- F/ x ( Rel F /\\ ( F o. `' F ) C_ _I ) |\n| 9 | 2, 8 | #P_nfxfr | |- F/ x Fun F |",
+  "conclusion" : "#P_nffun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cF", "#T_wfun", "#T_cF", "#T_wb", "#T_wrel", "#T_cF", "#T_wa", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wss", "#T_cid", "#T_wnf", "#T_vx.wal", "#T_wrel", "#T_cF", "#T_wnfc", "#T_vx.wal", "#T_ccnv", "#T_cF", "#T_wnfc", "#T_vx.wal", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wnfc", "#T_vx.wal", "#T_cid", "#T_wnf", "#T_vx.wal", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wss", "#T_cid", "#T_wnf", "#T_vx.wal", "#T_wrel", "#T_cF", "#T_wa", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wss", "#T_cid", "#T_wnf", "#T_vx", "#T_wfun", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfss", "#P_df-fun", "#P_nfcnv", "#P_nfrel", "#P_nfco", "#P_nfan", "#P_nfxfr" ]
+}

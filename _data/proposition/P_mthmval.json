@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mthmval on Metamath](http://us.metamath.org/mpegif/mthmval.html)"
+  } ],
+  "names" : [ "mthmval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cJ", "#T_wceq", "#T_cmpps", "#T_cfv", "#T_cT", "#T_cU", "#T_wceq", "#T_cmthm", "#T_cfv", "#T_cT", "#T_cU", "#T_wceq", "#T_ccnv", "#T_cR", "#T_cima", "#T_cR", "#T_cima", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A theorem is a pre-statement, whose reduct is also the reduct of a provable pre-statement.  Unlike the difference between pre-statement and statement, this application of the reduct is not necessarily trivial: there are theorems that are not themselves provable but are provable once enough \"dummy variables\" are introduced.  (Contributed by Mario Carneiro, 18-Jul-2016.) ",
+  "statement" : "mthmval.r $e |- R = ( mStRed ` T ) $.\nmthmval.j $e |- J = ( mPPSt ` T ) $.\nmthmval.u $e |- U = ( mThm ` T ) $.\nmthmval $p |- U = ( `' R \" ( R \" J ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subadd2d on Metamath](http://us.metamath.org/mpegif/subadd2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | pncand.2 | |- ( ph -> B e. CC ) |\n| 3 |  | subaddd.3 | |- ( ph -> C e. CC ) |\n| 4 |  | #P_subadd2 | |- ( ( A e. CC /\\ B e. CC /\\ C e. CC ) -> ( ( A - B ) = C <-> ( C + B ) = A ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( ( A - B ) = C <-> ( C + B ) = A ) ) |",
+  "conclusion" : "#P_subadd2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cC", "#T_wb", "#T_cC", "#T_caddc", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3anc", "#P_subadd2" ]
+}

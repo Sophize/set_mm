@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.61da3ne on Metamath](http://us.metamath.org/mpegif/pm2.61da3ne.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm2.61da3ne.1 | |- ( ( ph /\\ A = B ) -> ps ) |\n| 2 |  | pm2.61da3ne.2 | |- ( ( ph /\\ C = D ) -> ps ) |\n| 3 |  | pm2.61da3ne.3 | |- ( ( ph /\\ E = F ) -> ps ) |\n| 4 |  | pm2.61da3ne.4 | |- ( ( ph /\\ ( A =/= B /\\ C =/= D /\\ E =/= F ) ) -> ps ) |\n| 5 | 1 | #P_a1d | |- ( ( ph /\\ A = B ) -> ( ( C =/= D /\\ E =/= F ) -> ps ) ) |\n| 6 | 4 | #P_3exp2 | |- ( ph -> ( A =/= B -> ( C =/= D -> ( E =/= F -> ps ) ) ) ) |\n| 7 | 6 | #P_imp4b | |- ( ( ph /\\ A =/= B ) -> ( ( C =/= D /\\ E =/= F ) -> ps ) ) |\n| 8 | 5, 7 | #P_pm2.61dane | |- ( ph -> ( ( C =/= D /\\ E =/= F ) -> ps ) ) |\n| 9 | 8 | #P_imp | |- ( ( ph /\\ ( C =/= D /\\ E =/= F ) ) -> ps ) |\n| 10 | 2, 3, 9 | #P_pm2.61da2ne | |- ( ph -> ps ) |",
+  "conclusion" : "#P_pm2.61da3ne",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cE", "#T_wceq", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cA", "#T_wne", "#T_cB", "#T_w3a--1", "#T_cC", "#T_wne", "#T_cD", "#T_w3a--2", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wa", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wi", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wa", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cD", "#T_wa", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_cC", "#T_wne", "#T_cD", "#T_wa", "#T_cE", "#T_wne", "#T_cF", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3exp2", "#P_pm2.61da2ne", "#P_imp", "#P_imp4b", "#P_pm2.61dane", "#P_a1d" ]
+}

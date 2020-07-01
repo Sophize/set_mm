@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbgraisvtx on Metamath](http://us.metamath.org/mpegif/nbgraisvtx.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nbgraeledg | |- ( V USGrph E -> ( N e. ( <. V , E >. Neighbors K ) <-> { N , K } e. ran E ) ) |\n| 2 |  | #P_usgraedgrnv | |- ( ( V USGrph E /\\ { N , K } e. ran E ) -> ( N e. V /\\ K e. V ) ) |\n| 3 | 2 | #P_simpld | |- ( ( V USGrph E /\\ { N , K } e. ran E ) -> N e. V ) |\n| 4 | 3 | #P_ex | |- ( V USGrph E -> ( { N , K } e. ran E -> N e. V ) ) |\n| 5 | 1, 4 | #P_sylbid | |- ( V USGrph E -> ( N e. ( <. V , E >. Neighbors K ) -> N e. V ) ) |",
+  "conclusion" : "#P_nbgraisvtx",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cusg", "#T_cE", "#T_wi", "#T_cN", "#T_wcel", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cK", "#T_wb", "#T_cpr--1", "#T_cN", "#T_cpr--2", "#T_cK", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_cV", "#T_cusg", "#T_cE", "#T_wa", "#T_cpr--1", "#T_cN", "#T_cpr--2", "#T_cK", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_wi", "#T_cN", "#T_wcel", "#T_cV", "#T_wa", "#T_cK", "#T_wcel", "#T_cV", "#T_cV", "#T_cusg", "#T_cE", "#T_wa", "#T_cpr--1", "#T_cN", "#T_cpr--2", "#T_cK", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_wi", "#T_cN", "#T_wcel", "#T_cV", "#T_cV", "#T_cusg", "#T_cE", "#T_wi", "#T_cpr--1", "#T_cN", "#T_cpr--2", "#T_cK", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_wi", "#T_cN", "#T_wcel", "#T_cV", "#T_cV", "#T_cusg", "#T_cE", "#T_wi", "#T_cN", "#T_wcel", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cK", "#T_wi", "#T_cN", "#T_wcel", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_usgraedgrnv", "#P_simpld", "#P_nbgraeledg", "#P_ex", "#P_sylbid" ]
+}

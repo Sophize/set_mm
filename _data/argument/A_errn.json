@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See errn on Metamath](http://us.metamath.org/mpegif/errn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rn | |- ran R = dom `' R |\n| 2 |  | #P_ercnv | |- ( R Er A -> `' R = R ) |\n| 3 | 2 | #P_dmeqd | |- ( R Er A -> dom `' R = dom R ) |\n| 4 |  | #P_erdm | |- ( R Er A -> dom R = A ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( R Er A -> dom `' R = A ) |\n| 6 | 1, 5 | #P_syl5eq | |- ( R Er A -> ran R = A ) |",
+  "conclusion" : "#P_errn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crn", "#T_cR", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cdm", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ercnv", "#P_erdm", "#P_dmeqd", "#P_eqtrd", "#P_syl5eq", "#P_df-rn" ]
+}

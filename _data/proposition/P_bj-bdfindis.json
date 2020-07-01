@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-bdfindis on Metamath](http://us.metamath.org/mpegif/bj-bdfindis.html)"
+  } ],
+  "names" : [ "bj-bdfindis" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbd", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_wnf", "#T_vx", "#T_wch", "#T_wnf", "#T_vx", "#T_wth", "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wps", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_com", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_com", "#T_wph", "#T_wph", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Bounded induction (principle of induction for bounded formulas), using implicit substitutions (the biconditional versions of the hypotheses are implicit substitutions, and we have weakened them to implications). Constructive proof (from CZF).  See ~ finds for a proof of full induction in IZF. From this version, it is easy to prove bounded versions of ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 21-Nov-2019.)  (Proof modification is discouraged.) ",
+  "statement" : "bj-bdfindis.bd $e |- Bdd ph $.\nbj-bdfindis.nf0 $e |- F/ x ps $.\nbj-bdfindis.nf1 $e |- F/ x ch $.\nbj-bdfindis.nfsuc $e |- F/ x th $.\nbj-bdfindis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.\nbj-bdfindis.1 $e |- ( x = y -> ( ph -> ch ) ) $.\nbj-bdfindis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.\nbj-bdfindis $p |- ( ( ps /\\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $.\n$d ph y $.\n$d x y $."
+}

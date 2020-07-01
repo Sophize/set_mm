@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qgt0numnn on Metamath](http://us.metamath.org/mpegif/qgt0numnn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_qnumcl | |- ( A e. QQ -> ( numer ` A ) e. ZZ ) |\n| 2 | 1 | #P_adantr | |- ( ( A e. QQ /\\ 0 < A ) -> ( numer ` A ) e. ZZ ) |\n| 3 |  | #P_qnumgt0 | |- ( A e. QQ -> ( 0 < A <-> 0 < ( numer ` A ) ) ) |\n| 4 | 3 | #P_biimpa | |- ( ( A e. QQ /\\ 0 < A ) -> 0 < ( numer ` A ) ) |\n| 5 |  | #P_elnnz | |- ( ( numer ` A ) e. NN <-> ( ( numer ` A ) e. ZZ /\\ 0 < ( numer ` A ) ) ) |\n| 6 | 2, 4, 5 | #P_sylanbrc | |- ( ( A e. QQ /\\ 0 < A ) -> ( numer ` A ) e. NN ) |",
+  "conclusion" : "#P_qgt0numnn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_clt", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wb", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cc0", "#T_clt", "#T_cnumer", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cq", "#T_wa", "#T_cc0", "#T_clt", "#T_cA", "#T_wi", "#T_cnumer", "#T_cfv", "#T_cA", "#T_wcel", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_qnumcl", "#P_biimpa", "#P_qnumgt0", "#P_sylanbrc", "#P_elnnz", "#P_adantr" ]
+}

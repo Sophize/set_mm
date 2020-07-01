@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See snelpw on Metamath](http://us.metamath.org/mpegif/snelpw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | snelpw.1 | |- A e. _V |\n| 2 | 1 | #P_snss | |- ( A e. B <-> { A } C_ B ) |\n| 3 |  | #P_snexgOLD | |- ( A e. _V -> { A } e. _V ) |\n| 4 | 1, 3 | #P_ax-mp | |- { A } e. _V |\n| 5 | 4 | #P_elpw | |- ( { A } e. ~P B <-> { A } C_ B ) |\n| 6 | 2, 5 | #P_bitr4i | |- ( A e. B <-> { A } e. ~P B ) |",
+  "conclusion" : "#P_snelpw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wcel", "#T_cpw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_snss", "#P_snexgOLD", "#P_elpw", "#P_bitr4i" ]
+}

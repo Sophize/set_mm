@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cvrnle on Metamath](http://us.metamath.org/mpegif/cvrnle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cvrle.b | |- B = ( Base ` K ) |\n| 2 |  | cvrle.l | |- .<_ = ( le ` K ) |\n| 3 |  | cvrle.c | |- C = ( <o ` K ) |\n| 4 |  | #P_eqid | |- ( lt ` K ) = ( lt ` K ) |\n| 5 | 1, 4, 3 | #P_cvrlt | |- ( ( ( K e. Poset /\\ X e. B /\\ Y e. B ) /\\ X C Y ) -> X ( lt ` K ) Y ) |\n| 6 | 1, 2, 4 | #P_pltnle | |- ( ( ( K e. Poset /\\ X e. B /\\ Y e. B ) /\\ X ( lt ` K ) Y ) -> -. Y .<_ X ) |\n| 7 | 5, 6 | #P_syldan | |- ( ( ( K e. Poset /\\ X e. B /\\ Y e. B ) /\\ X C Y ) -> -. Y .<_ X ) |",
+  "conclusion" : "#P_cvrnle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cC", "#T_wceq", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cplt", "#T_cfv", "#T_cK", "#T_wceq", "#T_cplt", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_cC", "#T_cY", "#T_wi", "#T_cX", "#T_cplt", "#T_cfv", "#T_cK", "#T_cY", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cX", "#T_cplt", "#T_cfv", "#T_cK", "#T_cY", "#T_wi", "#T_wn", "#T_cY", "#T_c.le", "#T_cX", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wa", "#T_cX", "#T_cC", "#T_cY", "#T_wi", "#T_wn", "#T_cY", "#T_c.le", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_pltnle", "#P_cvrlt", "#P_syldan" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mapdordlem1 on Metamath](http://us.metamath.org/mpegif/mapdordlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mapdordlem1.t | |- T = { g e. F | ( O ` ( O ` ( L ` g ) ) ) e. Y } |\n| 2 |  | #P_fveq2 | |- ( g = J -> ( L ` g ) = ( L ` J ) ) |\n| 3 | 2 | #P_fveq2d | |- ( g = J -> ( O ` ( L ` g ) ) = ( O ` ( L ` J ) ) ) |\n| 4 | 3 | #P_fveq2d | |- ( g = J -> ( O ` ( O ` ( L ` g ) ) ) = ( O ` ( O ` ( L ` J ) ) ) ) |\n| 5 | 4 | #P_eleq1d | |- ( g = J -> ( ( O ` ( O ` ( L ` g ) ) ) e. Y <-> ( O ` ( O ` ( L ` J ) ) ) e. Y ) ) |\n| 6 | 5, 1 | #P_elrab2 | |- ( J e. T <-> ( J e. F /\\ ( O ` ( O ` ( L ` J ) ) ) e. Y ) ) |",
+  "conclusion" : "#P_mapdordlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_cF", "#T_crab--3", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_vg", "#T_wcel", "#T_cY", "#T_crab--4", "#T_cbvex4v.vg", "#T_wceq", "#T_cJ", "#T_wi", "#T_cL", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_cL", "#T_cfv", "#T_cJ", "#T_cbvex4v.vg", "#T_wceq", "#T_cJ", "#T_wi", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cJ", "#T_cbvex4v.vg", "#T_wceq", "#T_cJ", "#T_wi", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cJ", "#T_cbvex4v.vg", "#T_wceq", "#T_cJ", "#T_wi", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cY", "#T_wb", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cY", "#T_cJ", "#T_wcel", "#T_cT", "#T_wb", "#T_cJ", "#T_wcel", "#T_cF", "#T_wa", "#T_cO", "#T_cfv", "#T_cO", "#T_cfv", "#T_cL", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_fveq2d", "#P_fveq2", "#P_eleq1d" ]
+}

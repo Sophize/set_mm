@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abidnf on Metamath](http://us.metamath.org/mpegif/abidnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sp | |- ( A. x z e. A -> z e. A ) |\n| 2 |  | #P_nfcr | |- ( F/_ x A -> F/ x z e. A ) |\n| 3 | 2 | #P_nfrd | |- ( F/_ x A -> ( z e. A -> A. x z e. A ) ) |\n| 4 | 1, 3 | #P_impbid2 | |- ( F/_ x A -> ( A. x z e. A <-> z e. A ) ) |\n| 5 | 4 | #P_abbi1dv | |- ( F/_ x A -> { z | A. x z e. A } = A ) |",
+  "conclusion" : "#P_abidnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wi", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vz", "#T_wcel", "#T_cA.wceq", "#T_wnfc", "#T_vx", "#T_cA", "#T_wi", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wal", "#T_vx", "#T_vz", "#T_wcel", "#T_cA", "#T_cab--3", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfrd", "#P_abbi1dv", "#P_nfcr", "#P_sp", "#P_impbid2" ]
+}

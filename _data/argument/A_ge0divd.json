@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ge0divd on Metamath](http://us.metamath.org/mpegif/ge0divd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rpgecld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | rpgecld.2 | |- ( ph -> B e. RR+ ) |\n| 3 | 2 | #P_rpred | |- ( ph -> B e. RR ) |\n| 4 | 2 | #P_rpgt0d | |- ( ph -> 0 < B ) |\n| 5 |  | #P_ge0div | |- ( ( A e. RR /\\ B e. RR /\\ 0 < B ) -> ( 0 <_ A <-> 0 <_ ( A / B ) ) ) |\n| 6 | 1, 3, 4, 5 | #P_syl3anc | |- ( ph -> ( 0 <_ A <-> 0 <_ ( A / B ) ) ) |",
+  "conclusion" : "#P_ge0divd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wb", "#T_cc0", "#T_cle", "#T_cA", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rpred", "#P_ge0div", "#P_syl3anc", "#P_rpgt0d" ]
+}

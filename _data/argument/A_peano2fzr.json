@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See peano2fzr on Metamath](http://us.metamath.org/mpegif/peano2fzr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpl | |- ( ( K e. ( ZZ>= ` M ) /\\ ( K + 1 ) e. ( M ... N ) ) -> K e. ( ZZ>= ` M ) ) |\n| 2 |  | #P_eluzelz | |- ( K e. ( ZZ>= ` M ) -> K e. ZZ ) |\n| 3 |  | #P_elfzuz3 | |- ( ( K + 1 ) e. ( M ... N ) -> N e. ( ZZ>= ` ( K + 1 ) ) ) |\n| 4 |  | #P_peano2uzr | |- ( ( K e. ZZ /\\ N e. ( ZZ>= ` ( K + 1 ) ) ) -> N e. ( ZZ>= ` K ) ) |\n| 5 | 2, 3, 4 | #P_syl2an | |- ( ( K e. ( ZZ>= ` M ) /\\ ( K + 1 ) e. ( M ... N ) ) -> N e. ( ZZ>= ` K ) ) |\n| 6 |  | #P_elfzuzb | |- ( K e. ( M ... N ) <-> ( K e. ( ZZ>= ` M ) /\\ N e. ( ZZ>= ` K ) ) ) |\n| 7 | 1, 5, 6 | #P_sylanbrc | |- ( ( K e. ( ZZ>= ` M ) /\\ ( K + 1 ) e. ( M ... N ) ) -> K e. ( M ... N ) ) |",
+  "conclusion" : "#P_peano2fzr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cK", "#T_wcel", "#T_cz", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_caddc", "#T_c1", "#T_cK", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_caddc", "#T_c1", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wb", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eluzelz", "#P_elfzuzb", "#P_elfzuz3", "#P_peano2uzr", "#P_sylanbrc", "#P_syl2an", "#P_simpl" ]
+}

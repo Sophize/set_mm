@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rabbiia on Metamath](http://us.metamath.org/mpegif/rabbiia.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rabbiia.1 | |- ( x e. A -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_pm5.32i | |- ( ( x e. A /\\ ph ) <-> ( x e. A /\\ ps ) ) |\n| 3 | 2 | #P_abbii | |- { x | ( x e. A /\\ ph ) } = { x | ( x e. A /\\ ps ) } |\n| 4 |  | #P_df-rab | |- { x e. A | ph } = { x | ( x e. A /\\ ph ) } |\n| 5 |  | #P_df-rab | |- { x e. A | ps } = { x | ( x e. A /\\ ps ) } |\n| 6 | 3, 4, 5 | #P_3eqtr4i | |- { x e. A | ph } = { x e. A | ps } |",
+  "conclusion" : "#P_rabbiia",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_cab--3", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cab--3", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_cab--3", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wps", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_abbii", "#P_pm5.32i", "#P_df-rab" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rabeqbidv on Metamath](http://us.metamath.org/mpegif/rabeqbidv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rabeqbidv.1 | |- ( ph -> A = B ) |\n| 2 |  | rabeqbidv.2 | |- ( ph -> ( ps <-> ch ) ) |\n| 3 |  | #P_rabeq | |- ( A = B -> { x e. A | ps } = { x e. B | ps } ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> { x e. A | ps } = { x e. B | ps } ) |\n| 5 | 2 | #P_rabbidv | |- ( ph -> { x e. B | ps } = { x e. B | ch } ) |\n| 6 | 4, 5 | #P_eqtrd | |- ( ph -> { x e. A | ps } = { x e. B | ch } ) |",
+  "conclusion" : "#P_rabeqbidv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wph", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wph", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wch", "#T_crab--4", "#T_wph", "#T_wi", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wps", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wch", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rabeq", "#P_eqtrd", "#P_rabbidv", "#P_syl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee13an on Metamath](http://us.metamath.org/mpegif/ee13an.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee13an.1 | |- ( ph -> ps ) |\n| 2 |  | ee13an.2 | |- ( ph -> ( ch -> ( th -> ta ) ) ) |\n| 3 |  | ee13an.3 | |- ( ( ps /\\ ta ) -> et ) |\n| 4 | 3 | #P_ex | |- ( ps -> ( ta -> et ) ) |\n| 5 | 1, 2, 4 | #P_ee13 | |- ( ph -> ( ch -> ( th -> et ) ) ) |",
+  "conclusion" : "#P_ee13an",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wps", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wps", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ee13", "#P_ex" ]
+}

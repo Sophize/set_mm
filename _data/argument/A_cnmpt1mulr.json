@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnmpt1mulr on Metamath](http://us.metamath.org/mpegif/cnmpt1mulr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulrcn.j | |- J = ( TopOpen ` R ) |\n| 2 |  | cnmpt1mulr.t | |- .x. = ( .r ` R ) |\n| 3 |  | cnmpt1mulr.r | |- ( ph -> R e. TopRing ) |\n| 4 |  | cnmpt1mulr.k | |- ( ph -> K e. ( TopOn ` X ) ) |\n| 5 |  | cnmpt1mulr.a | |- ( ph -> ( x e. X |-> A ) e. ( K Cn J ) ) |\n| 6 |  | cnmpt1mulr.b | |- ( ph -> ( x e. X |-> B ) e. ( K Cn J ) ) |\n| 7 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 8 | 7, 1 | #P_mgptopn | |- J = ( TopOpen ` ( mulGrp ` R ) ) |\n| 9 | 7, 2 | #P_mgpplusg | |- .x. = ( +g ` ( mulGrp ` R ) ) |\n| 10 | 7 | #P_trgtmd | |- ( R e. TopRing -> ( mulGrp ` R ) e. TopMnd ) |\n| 11 | 3, 10 | #P_syl | |- ( ph -> ( mulGrp ` R ) e. TopMnd ) |\n| 12 | 8, 9, 11, 4, 5, 6 | #P_cnmpt1plusg | |- ( ph -> ( x e. X |-> ( A .x. B ) ) e. ( K Cn J ) ) |",
+  "conclusion" : "#P_cnmpt1mulr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_ctrg", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_wcel", "#T_cK", "#T_ccn", "#T_cJ", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cB", "#T_wcel", "#T_cK", "#T_ccn", "#T_cJ", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ctrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ctmd", "#T_wph", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ctmd", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_c.x", "#T_cB", "#T_wcel", "#T_cK", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mgpplusg", "#P_cnmpt1plusg", "#P_trgtmd", "#P_syl", "#P_mgptopn" ]
+}

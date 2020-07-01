@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sseq12i on Metamath](http://us.metamath.org/mpegif/sseq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sseq1i.1 | |- A = B |\n| 2 |  | sseq12i.2 | |- C = D |\n| 3 |  | #P_sseq12 | |- ( ( A = B /\\ C = D ) -> ( A C_ C <-> B C_ D ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A C_ C <-> B C_ D ) |",
+  "conclusion" : "#P_sseq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cD", "#T_cA", "#T_wss", "#T_cC", "#T_wb", "#T_cB", "#T_wss", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_sseq12" ]
+}

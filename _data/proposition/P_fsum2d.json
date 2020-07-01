@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsum2d on Metamath](http://us.metamath.org/mpegif/fsum2d.html)"
+  } ],
+  "names" : [ "fsum2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_cop--1", "#T_vj", "#T_cop--2", "#T_vk", "#T_cop--3", "#T_wi", "#T_cD", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vz", "#T_csu--2", "#T_ciun--1", "#T_vj", "#T_ciun--2", "#T_cA", "#T_csn--1", "#T_vj", "#T_csn--2", "#T_cxp", "#T_cB", "#T_cD", "#T_cA", "#T_vj", "#T_vk", "#T_vz", "#T_cB", "#T_vk", "#T_vz", "#T_cC", "#T_vz", "#T_cD", "#T_vj", "#T_vk", "#T_vj", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Write a double sum as a sum over a two-dimensional region.  Note that ` B ( j ) ` is a function of ` j ` .  (Contributed by Mario Carneiro, 27-Apr-2014.) ",
+  "statement" : "fsum2d.1 $e |- ( z = <. j , k >. -> D = C ) $.\nfsum2d.2 $e |- ( ph -> A e. Fin ) $.\nfsum2d.3 $e |- ( ( ph /\\ j e. A ) -> B e. Fin ) $.\nfsum2d.4 $e |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> C e. CC ) $.\nfsum2d $p |- ( ph -> sum_ j e. A sum_ k e. B C = sum_ z e. U_ j e. A ( { j } X. B ) D ) $.\n$d A j k z $.\n$d B k z $.\n$d C z $.\n$d D j k $.\n$d j k ph z $."
+}

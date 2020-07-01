@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See undif on Metamath](http://us.metamath.org/mpegif/undif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssequn1 | |- ( A C_ B <-> ( A u. B ) = B ) |\n| 2 |  | #P_undif2 | |- ( A u. ( B \\ A ) ) = ( A u. B ) |\n| 3 | 2 | #P_eqeq1i | |- ( ( A u. ( B \\ A ) ) = B <-> ( A u. B ) = B ) |\n| 4 | 1, 3 | #P_bitr4i | |- ( A C_ B <-> ( A u. ( B \\ A ) ) = B ) |",
+  "conclusion" : "#P_undif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_cun", "#T_cB", "#T_cdif", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssequn1", "#P_undif2", "#P_eqeq1i", "#P_bitr4i" ]
+}

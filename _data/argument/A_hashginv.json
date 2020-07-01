@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hashginv on Metamath](http://us.metamath.org/mpegif/hashginv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hashgval.1 | |- G = ( rec ( ( x e. _V |-> ( x + 1 ) ) , 0 ) |` _om ) |\n| 2 |  | #P_ficardom | |- ( A e. Fin -> ( card ` A ) e. _om ) |\n| 3 | 1 | #P_hashgval | |- ( A e. Fin -> ( G ` ( card ` A ) ) = ( # ` A ) ) |\n| 4 | 1 | #P_hashgf1o | |- G : _om -1-1-onto-> NN0 |\n| 5 |  | #P_f1ocnvfv | |- ( ( G : _om -1-1-onto-> NN0 /\\ ( card ` A ) e. _om ) -> ( ( G ` ( card ` A ) ) = ( # ` A ) -> ( `' G ` ( # ` A ) ) = ( card ` A ) ) ) |\n| 6 | 4, 5 | #P_mpan | |- ( ( card ` A ) e. _om -> ( ( G ` ( card ` A ) ) = ( # ` A ) -> ( `' G ` ( # ` A ) ) = ( card ` A ) ) ) |\n| 7 | 2, 3, 6 | #P_sylc | |- ( A e. Fin -> ( `' G ` ( # ` A ) ) = ( card ` A ) ) |",
+  "conclusion" : "#P_hashginv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_cc0", "#T_cres", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cG", "#T_cfv", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_cG", "#T_wf1o--1", "#T_com", "#T_wf1o--2", "#T_cn0", "#T_cG", "#T_wf1o--1", "#T_com", "#T_wf1o--2", "#T_cn0", "#T_wa", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cG", "#T_cfv", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cG", "#T_cfv", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cG", "#T_cfv", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cG", "#T_cfv", "#T_chash", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccnv", "#T_cG", "#T_cfv", "#T_chash", "#T_cfv", "#T_cA", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hashgval", "#P_sylc", "#P_hashgf1o", "#P_mpan", "#P_ficardom", "#P_f1ocnvfv" ]
+}

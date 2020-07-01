@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm11.11 on Metamath](http://us.metamath.org/mpegif/pm11.11.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm11.11.1 | |- ph |\n| 2 |  | #P_2stdpc4 | |- ( A. x A. y ph -> [ z / x ] [ w / y ] ph ) |\n| 3 | 1 | #P_ax-gen | |- A. y ph |\n| 4 | 2, 3 | #P_mpg | |- [ z / x ] [ w / y ] ph |\n| 5 | 4 | #P_gen2 | |- A. z A. w [ z / x ] [ w / y ] ph |",
+  "conclusion" : "#P_pm11.11",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vz", "#T_wal", "#T_vw", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-gen", "#P_gen2", "#P_2stdpc4", "#P_mpg" ]
+}

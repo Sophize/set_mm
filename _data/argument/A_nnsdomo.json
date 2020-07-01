@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnsdomo on Metamath](http://us.metamath.org/mpegif/nnsdomo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nndomo | |- ( ( A e. _om /\\ B e. _om ) -> ( A ~<_ B <-> A C_ B ) ) |\n| 2 |  | #P_nneneq | |- ( ( A e. _om /\\ B e. _om ) -> ( A ~~ B <-> A = B ) ) |\n| 3 | 2 | #P_notbid | |- ( ( A e. _om /\\ B e. _om ) -> ( -. A ~~ B <-> -. A = B ) ) |\n| 4 | 1, 3 | #P_anbi12d | |- ( ( A e. _om /\\ B e. _om ) -> ( ( A ~<_ B /\\ -. A ~~ B ) <-> ( A C_ B /\\ -. A = B ) ) ) |\n| 5 |  | #P_brsdom | |- ( A ~< B <-> ( A ~<_ B /\\ -. A ~~ B ) ) |\n| 6 |  | #P_dfpss2 | |- ( A C. B <-> ( A C_ B /\\ -. A = B ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( ( A e. _om /\\ B e. _om ) -> ( A ~< B <-> A C. B ) ) |",
+  "conclusion" : "#P_nnsdomo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wcel", "#T_com", "#T_wi", "#T_cA", "#T_csdm", "#T_cB", "#T_wb", "#T_cA", "#T_wpss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_brsdom", "#P_nndomo", "#P_dfpss2", "#P_3bitr4g", "#P_nneneq", "#P_notbid", "#P_anbi12d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iscld3 on Metamath](http://us.metamath.org/mpegif/iscld3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clscld.1 | |- X = U. J |\n| 2 |  | #P_cldcls | |- ( S e. ( Clsd ` J ) -> ( ( cls ` J ) ` S ) = S ) |\n| 3 | 1 | #P_clscld | |- ( ( J e. Top /\\ S C_ X ) -> ( ( cls ` J ) ` S ) e. ( Clsd ` J ) ) |\n| 4 |  | #P_eleq1 | |- ( ( ( cls ` J ) ` S ) = S -> ( ( ( cls ` J ) ` S ) e. ( Clsd ` J ) <-> S e. ( Clsd ` J ) ) ) |\n| 5 | 3, 4 | #P_syl5ibcom | |- ( ( J e. Top /\\ S C_ X ) -> ( ( ( cls ` J ) ` S ) = S -> S e. ( Clsd ` J ) ) ) |\n| 6 | 2, 5 | #P_impbid2 | |- ( ( J e. Top /\\ S C_ X ) -> ( S e. ( Clsd ` J ) <-> ( ( cls ` J ) ` S ) = S ) ) |",
+  "conclusion" : "#P_iscld3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wb", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_wi", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cS", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wb", "#T_ccl", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5ibcom", "#P_clscld", "#P_eleq1", "#P_cldcls", "#P_impbid2" ]
+}

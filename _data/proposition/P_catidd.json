@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See catidd on Metamath](http://us.metamath.org/mpegif/catidd.html)"
+  } ],
+  "names" : [ "catidd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_c.x", "#T_wceq", "#T_cco", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_c.1", "#T_wcel", "#T_vx", "#T_cH", "#T_vx", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_vf", "#T_wcel", "#T_vy", "#T_cH", "#T_vx", "#T_wi", "#T_c.1", "#T_cop--1", "#T_vy", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_c.x", "#T_vx", "#T_vf", "#T_wceq", "#T_vf", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_vf", "#T_wcel", "#T_vx", "#T_cH", "#T_vy", "#T_wi", "#T_vf", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_c.x", "#T_vy", "#T_c.1", "#T_wceq", "#T_vf", "#T_wph", "#T_wi", "#T_ccid", "#T_cfv", "#T_cC", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_c.1", "#T_c.1", "#T_vf", "#T_vy", "#T_cB", "#T_vx", "#T_cC", "#T_vf", "#T_vx", "#T_vy", "#T_vf", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Deduce the identity arrow in a category.  (Contributed by Mario Carneiro, 3-Jan-2017.) ",
+  "statement" : "catidd.b $e |- ( ph -> B = ( Base ` C ) ) $.\ncatidd.h $e |- ( ph -> H = ( Hom ` C ) ) $.\ncatidd.o $e |- ( ph -> .x. = ( comp ` C ) ) $.\ncatidd.c $e |- ( ph -> C e. Cat ) $.\ncatidd.1 $e |- ( ( ph /\\ x e. B ) -> .1. e. ( x H x ) ) $.\ncatidd.2 $e |- ( ( ph /\\ ( x e. B /\\ y e. B /\\ f e. ( y H x ) ) ) -> ( .1. ( <. y , x >. .x. x ) f ) = f ) $.\ncatidd.3 $e |- ( ( ph /\\ ( x e. B /\\ y e. B /\\ f e. ( x H y ) ) ) -> ( f ( <. x , x >. .x. y ) .1. ) = f ) $.\ncatidd $p |- ( ph -> ( Id ` C ) = ( x e. B |-> .1. ) ) $.\n$d .1. f y $.\n$d B x $.\n$d C f x y $.\n$d f ph x y $."
+}

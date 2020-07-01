@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isghm3 on Metamath](http://us.metamath.org/mpegif/isghm3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isghm.w | |- X = ( Base ` S ) |\n| 2 |  | isghm.x | |- Y = ( Base ` T ) |\n| 3 |  | isghm.a | |- .+ = ( +g ` S ) |\n| 4 |  | isghm.b | |- .+^ = ( +g ` T ) |\n| 5 | 1, 2, 3, 4 | #P_isghm | |- ( F e. ( S GrpHom T ) <-> ( ( S e. Grp /\\ T e. Grp ) /\\ ( F : X --> Y /\\ A. u e. X A. v e. X ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) |\n| 6 | 5 | #P_baib | |- ( ( S e. Grp /\\ T e. Grp ) -> ( F e. ( S GrpHom T ) <-> ( F : X --> Y /\\ A. u e. X A. v e. X ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) |",
+  "conclusion" : "#P_isghm3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cT", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cS", "#T_c.pd", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wb", "#T_cS", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cT", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vu", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vv", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vu", "#T_c.pl", "#T_vv", "#T_wceq", "#T_cF", "#T_cfv", "#T_vu", "#T_c.pd", "#T_cF", "#T_cfv", "#T_vv", "#T_cS", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cT", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vu", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vv", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vu", "#T_c.pl", "#T_vv", "#T_wceq", "#T_cF", "#T_cfv", "#T_vu", "#T_c.pd", "#T_cF", "#T_cfv", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isghm", "#P_baib" ]
+}

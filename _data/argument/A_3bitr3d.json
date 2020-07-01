@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3bitr3d on Metamath](http://us.metamath.org/mpegif/3bitr3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3bitr3d.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | 3bitr3d.2 | |- ( ph -> ( ps <-> th ) ) |\n| 3 |  | 3bitr3d.3 | |- ( ph -> ( ch <-> ta ) ) |\n| 4 | 2, 1 | #P_bitr3d | |- ( ph -> ( th <-> ch ) ) |\n| 5 | 4, 3 | #P_bitrd | |- ( ph -> ( th <-> ta ) ) |",
+  "conclusion" : "#P_3bitr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wta", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_bitr3d" ]
+}

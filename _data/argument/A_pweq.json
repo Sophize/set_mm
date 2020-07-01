@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pweq on Metamath](http://us.metamath.org/mpegif/pweq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sseq2 | |- ( A = B -> ( x C_ A <-> x C_ B ) ) |\n| 2 | 1 | #P_abbidv | |- ( A = B -> { x | x C_ A } = { x | x C_ B } ) |\n| 3 |  | #P_df-pw | |- ~P A = { x | x C_ A } |\n| 4 |  | #P_df-pw | |- ~P B = { x | x C_ B } |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> ~P A = ~P B ) |",
+  "conclusion" : "#P_pweq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cab--3", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_cpw", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cab--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cpw", "#T_cA", "#T_wceq", "#T_cpw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq2", "#P_df-pw", "#P_3eqtr4g", "#P_abbidv" ]
+}

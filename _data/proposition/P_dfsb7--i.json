@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfsb7 on Metamath](http://us.metamath.org/mpegif/dfsb7.html)"
+  } ],
+  "names" : [ "dfsb7" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy", "#T_wa", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_wph", "#T_wph", "#T_vz", "#T_vx", "#T_vz", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An alternate definition of proper substitution ~ df-sb .  By introducing a dummy variable ` z ` in the definiens, we are able to eliminate any distinct variable restrictions among the variables ` x ` , ` y ` , and ` ph ` of the definiendum.  No distinct variable conflicts arise because ` z ` effectively insulates ` x ` from ` y ` .  To achieve this, we use a chain of two substitutions in the form of ~ sb5 , first ` z ` for ` x ` then ` y ` for ` z ` .  Compare Definition 2.1'' of [Quine] p. 17.  Theorem ~ sb7f provides a version where ` ph ` and ` z ` don't have to be distinct.  (Contributed by NM, 28-Jan-2004.) ",
+  "statement" : "dfsb7 $p |- ( [ y / x ] ph <-> E. z ( z = y /\\ E. x ( x = z /\\ ph ) ) ) $.\n$d ph z $.\n$d x z $.\n$d y z $."
+}

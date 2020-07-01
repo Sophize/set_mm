@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrnmpt1s on Metamath](http://us.metamath.org/mpegif/elrnmpt1s.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rnmpt.1 | |- F = ( x e. A |-> B ) |\n| 2 |  | elrnmpt1s.1 | |- ( x = D -> B = C ) |\n| 3 |  | #P_eqid | |- C = C |\n| 4 | 2 | #P_eqeq2d | |- ( x = D -> ( C = B <-> C = C ) ) |\n| 5 | 4 | #P_rspcev | |- ( ( D e. A /\\ C = C ) -> E. x e. A C = B ) |\n| 6 | 3, 5 | #P_mpan2 | |- ( D e. A -> E. x e. A C = B ) |\n| 7 | 1 | #P_elrnmpt | |- ( C e. V -> ( C e. ran F <-> E. x e. A C = B ) ) |\n| 8 | 7 | #P_biimparc | |- ( ( E. x e. A C = B /\\ C e. V ) -> C e. ran F ) |\n| 9 | 6, 8 | #P_sylan | |- ( ( D e. A /\\ C e. V ) -> C e. ran F ) |",
+  "conclusion" : "#P_elrnmpt1s",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cD", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_cC", "#T_wceq", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cD", "#T_wi", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wceq", "#T_cC", "#T_cD", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cC", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cD", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cC", "#T_wcel", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cC", "#T_wcel", "#T_crn", "#T_cF", "#T_cD", "#T_wcel", "#T_cA", "#T_wa", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cC", "#T_wcel", "#T_crn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimparc", "#P_eqid", "#P_sylan", "#P_eqeq2d", "#P_elrnmpt", "#P_mpan2", "#P_rspcev" ]
+}

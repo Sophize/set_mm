@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inviso2 on Metamath](http://us.metamath.org/mpegif/inviso2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | invfval.b | |- B = ( Base ` C ) |\n| 2 |  | invfval.n | |- N = ( Inv ` C ) |\n| 3 |  | invfval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | invfval.x | |- ( ph -> X e. B ) |\n| 5 |  | invfval.y | |- ( ph -> Y e. B ) |\n| 6 |  | isoval.n | |- I = ( Iso ` C ) |\n| 7 |  | inviso1.1 | |- ( ph -> F ( X N Y ) G ) |\n| 8 | 1, 2, 3, 4, 5 | #P_invsym | |- ( ph -> ( F ( X N Y ) G <-> G ( Y N X ) F ) ) |\n| 9 | 7, 8 | #P_mpbid | |- ( ph -> G ( Y N X ) F ) |\n| 10 | 1, 2, 3, 5, 4, 6, 9 | #P_inviso1 | |- ( ph -> G e. ( Y I X ) ) |",
+  "conclusion" : "#P_inviso2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cN", "#T_wceq", "#T_cinv", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_cI", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_cX", "#T_cN", "#T_cY", "#T_cG", "#T_wph", "#T_wi", "#T_cF", "#T_cX", "#T_cN", "#T_cY", "#T_cG", "#T_wb", "#T_cG", "#T_cY", "#T_cN", "#T_cX", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_cY", "#T_cN", "#T_cX", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cY", "#T_cI", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_invsym", "#P_mpbid", "#P_inviso1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r19.9rzv on Metamath](http://us.metamath.org/mpegif/r19.9rzv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r19.3rzv | |- ( A =/= (/) -> ( -. ph <-> A. x e. A -. ph ) ) |\n| 2 | 1 | #P_bicomd | |- ( A =/= (/) -> ( A. x e. A -. ph <-> -. ph ) ) |\n| 3 | 2 | #P_con2bid | |- ( A =/= (/) -> ( ph <-> -. A. x e. A -. ph ) ) |\n| 4 |  | #P_dfrex2 | |- ( E. x e. A ph <-> -. A. x e. A -. ph ) |\n| 5 | 3, 4 | #P_syl6bbr | |- ( A =/= (/) -> ( ph <-> E. x e. A ph ) ) |",
+  "conclusion" : "#P_r19.9rzv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_cA", "#T_wne", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfrex2", "#P_bicomd", "#P_r19.3rzv", "#P_con2bid", "#P_syl6bbr" ]
+}

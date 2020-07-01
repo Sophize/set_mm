@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngolidm on Metamath](http://us.metamath.org/mpegif/rngolidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uridm.1 | |- H = ( 2nd ` R ) |\n| 2 |  | uridm.2 | |- X = ran ( 1st ` R ) |\n| 3 |  | uridm.3 | |- U = ( GId ` H ) |\n| 4 | 1, 2, 3 | #P_rngoidmlem | |- ( ( R e. RingOps /\\ A e. X ) -> ( ( U H A ) = A /\\ ( A H U ) = A ) ) |\n| 5 | 4 | #P_simpld | |- ( ( R e. RingOps /\\ A e. X ) -> ( U H A ) = A ) |",
+  "conclusion" : "#P_rngolidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_c1st", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cH", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cU", "#T_cH", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cH", "#T_cU", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cU", "#T_cH", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_rngoidmlem" ]
+}

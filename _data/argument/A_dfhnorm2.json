@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfhnorm2 on Metamath](http://us.metamath.org/mpegif/dfhnorm2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-hnorm | |- normh = ( x e. dom dom .ih |-> ( sqrt ` ( x .ih x ) ) ) |\n| 2 |  | #P_ax-hfi | |- .ih : ( ~H X. ~H ) --> CC |\n| 3 | 2 | #P_fdmi | |- dom .ih = ( ~H X. ~H ) |\n| 4 | 3 | #P_dmeqi | |- dom dom .ih = dom ( ~H X. ~H ) |\n| 5 |  | #P_dmxpid | |- dom ( ~H X. ~H ) = ~H |\n| 6 | 4, 5 | #P_eqtr2i | |- ~H = dom dom .ih |\n| 7 |  | #P_eqid | |- ( sqrt ` ( x .ih x ) ) = ( sqrt ` ( x .ih x ) ) |\n| 8 | 6, 7 | #P_mpteq12i | |- ( x e. ~H |-> ( sqrt ` ( x .ih x ) ) ) = ( x e. dom dom .ih |-> ( sqrt ` ( x .ih x ) ) ) |\n| 9 | 1, 8 | #P_eqtr4i | |- normh = ( x e. ~H |-> ( sqrt ` ( x .ih x ) ) ) |",
+  "conclusion" : "#P_dfhnorm2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cno", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cdm", "#T_cdm", "#T_csp", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_csp", "#T_wf--1", "#T_chil", "#T_cxp", "#T_chil", "#T_wf--2", "#T_cc", "#T_cdm", "#T_csp", "#T_wceq", "#T_chil", "#T_cxp", "#T_chil", "#T_cdm", "#T_cdm", "#T_csp", "#T_wceq", "#T_cdm", "#T_chil", "#T_cxp", "#T_chil", "#T_cdm", "#T_chil", "#T_cxp", "#T_chil", "#T_wceq", "#T_chil", "#T_chil", "#T_wceq", "#T_cdm", "#T_cdm", "#T_csp", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cdm", "#T_cdm", "#T_csp", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_cno", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx", "#T_csp", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_mpteq12i", "#P_eqtr2i", "#P_fdmi", "#P_ax-hfi", "#P_dmxpid", "#P_df-hnorm", "#P_dmeqi" ]
+}

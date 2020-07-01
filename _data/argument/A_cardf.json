@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardf on Metamath](http://us.metamath.org/mpegif/cardf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cardf2 | |- card : { x | E. y e. On y ~~ x } --> On |\n| 2 | 1 | #P_fdmi | |- dom card = { x | E. y e. On y ~~ x } |\n| 3 |  | #P_cardeqv | |- dom card = _V |\n| 4 | 2, 3 | #P_eqtr3i | |- { x | E. y e. On y ~~ x } = _V |\n| 5 | 4 | #P_feq2i | |- ( card : { x | E. y e. On y ~~ x } --> On <-> card : _V --> On ) |\n| 6 | 1, 5 | #P_mpbi | |- card : _V --> On |",
+  "conclusion" : "#P_cardf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_ccrd", "#T_wf--1", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_wf--2", "#T_con0", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_wceq", "#T_cvv", "#T_ccrd", "#T_wf--1", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cab--3", "#T_wf--2", "#T_con0", "#T_wb", "#T_ccrd", "#T_wf--1", "#T_cvv", "#T_wf--2", "#T_con0", "#T_ccrd", "#T_wf--1", "#T_cvv", "#T_wf--2", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr3i", "#P_feq2i", "#P_fdmi", "#P_mpbi", "#P_cardeqv", "#P_cardf2" ]
+}

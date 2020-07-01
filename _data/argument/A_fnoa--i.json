@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnoa on Metamath](http://us.metamath.org/mpegif/fnoa.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-oadd | |- +o = ( x e. On , y e. On |-> ( rec ( ( z e. _V |-> suc z ) , x ) ` y ) ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 |  | #P_oafnex | |- ( z e. _V |-> suc z ) Fn _V |\n| 5 | 3, 4 | #P_rdgexg | |- ( y e. _V -> ( rec ( ( z e. _V |-> suc z ) , x ) ` y ) e. _V ) |\n| 6 | 2, 5 | #P_ax-mp | |- ( rec ( ( z e. _V |-> suc z ) , x ) ` y ) e. _V |\n| 7 | 1, 6 | #P_fnmpt2i | |- +o Fn ( On X. On ) |",
+  "conclusion" : "#P_fnoa",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_coa", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_con0", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_con0", "#T_cmpt2--4", "#T_crdg--1", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csuc", "#T_vz", "#T_crdg--2", "#T_vx.wal", "#T_cfv", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csuc", "#T_vz", "#T_wfn", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wi", "#T_crdg--1", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csuc", "#T_vz", "#T_crdg--2", "#T_vx.wal", "#T_cfv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_crdg--1", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csuc", "#T_vz", "#T_crdg--2", "#T_vx.wal", "#T_cfv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_coa", "#T_wfn", "#T_con0", "#T_cxp", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_rdgexg", "#P_df-oadd", "#P_oafnex", "#P_vex", "#P_fnmpt2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfin7 on Metamath](http://us.metamath.org/mpegif/isfin7.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq1 | |- ( x = A -> ( x ~~ y <-> A ~~ y ) ) |\n| 2 | 1 | #P_rexbidv | |- ( x = A -> ( E. y e. ( On \\ _om ) x ~~ y <-> E. y e. ( On \\ _om ) A ~~ y ) ) |\n| 3 | 2 | #P_notbid | |- ( x = A -> ( -. E. y e. ( On \\ _om ) x ~~ y <-> -. E. y e. ( On \\ _om ) A ~~ y ) ) |\n| 4 |  | #P_df-fin7 | |- Fin7 = { x | -. E. y e. ( On \\ _om ) x ~~ y } |\n| 5 | 3, 4 | #P_elab2g | |- ( A e. V -> ( A e. Fin7 <-> -. E. y e. ( On \\ _om ) A ~~ y ) ) |",
+  "conclusion" : "#P_isfin7",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_cA.wceq", "#T_cen", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vy.tru", "#T_cfin7", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wn", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_cab--3", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cfin7", "#T_wb", "#T_wn", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_con0", "#T_cdif", "#T_com", "#T_cA", "#T_cen", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_df-fin7", "#P_rexbidv", "#P_notbid", "#P_elab2g" ]
+}

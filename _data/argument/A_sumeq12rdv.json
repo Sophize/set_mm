@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sumeq12rdv on Metamath](http://us.metamath.org/mpegif/sumeq12rdv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sumeq12rdv.1 | |- ( ph -> A = B ) |\n| 2 |  | sumeq12rdv.2 | |- ( ( ph /\\ k e. B ) -> C = D ) |\n| 3 | 1 | #P_sumeq1d | |- ( ph -> sum_ k e. A C = sum_ k e. B C ) |\n| 4 | 2 | #P_sumeq2dv | |- ( ph -> sum_ k e. B C = sum_ k e. B D ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( ph -> sum_ k e. A C = sum_ k e. B D ) |",
+  "conclusion" : "#P_sumeq12rdv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB.wceq", "#T_cC", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB.wceq", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB.wceq", "#T_cD", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_sumeq1d", "#P_sumeq2dv" ]
+}

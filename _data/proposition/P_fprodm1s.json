@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodm1s on Metamath](http://us.metamath.org/mpegif/fprodm1s.html)"
+  } ],
+  "names" : [ "fprodm1s" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cA", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cA", "#T_cmul", "#T_csb--1", "#T_cN", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Separate out the last term in a finite product.  (Contributed by Scott Fenton, 27-Dec-2017.) ",
+  "statement" : "fprodm1s.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nfprodm1s.2 $e |- ( ( ph /\\ k e. ( M ... N ) ) -> A e. CC ) $.\nfprodm1s $p |- ( ph -> prod_ k e. ( M ... N ) A = ( prod_ k e. ( M ... ( N - 1 ) ) A x. [_ N / k ]_ A ) ) $.\n$d M k $.\n$d N k $.\n$d k ph $."
+}

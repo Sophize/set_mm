@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sssnr on Metamath](http://us.metamath.org/mpegif/sssnr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0ss | |- (/) C_ { B } |\n| 2 |  | #P_sseq1 | |- ( A = (/) -> ( A C_ { B } <-> (/) C_ { B } ) ) |\n| 3 | 1, 2 | #P_mpbiri | |- ( A = (/) -> A C_ { B } ) |\n| 4 |  | #P_eqimss | |- ( A = { B } -> A C_ { B } ) |\n| 5 | 3, 4 | #P_jaoi | |- ( ( A = (/) \\/ A = { B } ) -> A C_ { B } ) |",
+  "conclusion" : "#P_sssnr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_c0", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA", "#T_wceq", "#T_c0", "#T_wo", "#T_cA", "#T_wceq", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wi", "#T_cA", "#T_wss", "#T_csn--1", "#T_cB", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq1", "#P_0ss", "#P_mpbiri", "#P_jaoi", "#P_eqimss" ]
+}

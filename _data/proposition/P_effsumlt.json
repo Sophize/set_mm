@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See effsumlt on Metamath](http://us.metamath.org/mpegif/effsumlt.html)"
+  } ],
+  "names" : [ "effsumlt" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_clt", "#T_ce", "#T_cfv", "#T_cA", "#T_cA", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The partial sums of the series expansion of the exponential function of a positive real number are bounded by the value of the function. (Contributed by Paul Chapman, 21-Aug-2007.)  (Revised by Mario Carneiro, 29-Apr-2014.) ",
+  "statement" : "effsumlt.1 $e |- F = ( n e. NN0 |-> ( ( A ^ n ) / ( ! ` n ) ) ) $.\neffsumlt.2 $e |- ( ph -> A e. RR+ ) $.\neffsumlt.3 $e |- ( ph -> N e. NN0 ) $.\neffsumlt $p |- ( ph -> ( seq 0 ( + , F ) ` N ) < ( exp ` A ) ) $.\n$d A n $."
+}

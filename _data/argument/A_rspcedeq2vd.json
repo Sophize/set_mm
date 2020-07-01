@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspcedeq2vd on Metamath](http://us.metamath.org/mpegif/rspcedeq2vd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspcedeqvd.1 | |- ( ph -> A e. B ) |\n| 2 |  | rspcedeqvd.2 | |- ( ( ph /\\ x = A ) -> C = D ) |\n| 3 | 2 | #P_eqcomd | |- ( ( ph /\\ x = A ) -> D = C ) |\n| 4 | 3 | #P_eqeq2d | |- ( ( ph /\\ x = A ) -> ( C = D <-> C = C ) ) |\n| 5 |  | #P_eqidd | |- ( ph -> C = C ) |\n| 6 | 1, 4, 5 | #P_rspcedvd | |- ( ph -> E. x e. B C = D ) |",
+  "conclusion" : "#P_rspcedeq2vd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cD", "#T_wceq", "#T_cC", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wb", "#T_cC", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_cC", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rspcedvd", "#P_eqeq2d", "#P_eqidd", "#P_eqcomd" ]
+}

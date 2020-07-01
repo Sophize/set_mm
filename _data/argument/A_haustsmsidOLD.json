@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See haustsmsidOLD on Metamath](http://us.metamath.org/mpegif/haustsmsidOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tsmsidOLD.b | |- B = ( Base ` G ) |\n| 2 |  | tsmsidOLD.z | |- .0. = ( 0g ` G ) |\n| 3 |  | tsmsidOLD.1 | |- ( ph -> G e. CMnd ) |\n| 4 |  | tsmsidOLD.2 | |- ( ph -> G e. TopSp ) |\n| 5 |  | tsmsidOLD.a | |- ( ph -> A e. V ) |\n| 6 |  | tsmsidOLD.f | |- ( ph -> F : A --> B ) |\n| 7 |  | tsmsidOLD.w | |- ( ph -> ( `' F \" ( _V \\ { .0. } ) ) e. Fin ) |\n| 8 |  | haustsmsidOLD.j | |- J = ( TopOpen ` G ) |\n| 9 |  | haustsmsidOLD.h | |- ( ph -> J e. Haus ) |\n| 10 | 1, 2, 3, 4, 5, 6, 7 | #P_tsmsidOLD | |- ( ph -> ( G gsum F ) e. ( G tsums F ) ) |\n| 11 | 1, 3, 4, 5, 6, 8, 9 | #P_haustsms2 | |- ( ph -> ( ( G gsum F ) e. ( G tsums F ) -> ( G tsums F ) = { ( G gsum F ) } ) ) |\n| 12 | 10, 11 | #P_mpd | |- ( ph -> ( G tsums F ) = { ( G gsum F ) } ) |",
+  "conclusion" : "#P_haustsmsidOLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ctps", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cvv", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wcel", "#T_cG", "#T_ctsu", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cF", "#T_wcel", "#T_cG", "#T_ctsu", "#T_cF", "#T_wi", "#T_cG", "#T_ctsu", "#T_cF", "#T_wceq", "#T_csn--1", "#T_cG", "#T_cgsu", "#T_cF", "#T_csn--2", "#T_wph", "#T_wi", "#T_cG", "#T_ctsu", "#T_cF", "#T_wceq", "#T_csn--1", "#T_cG", "#T_cgsu", "#T_cF", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_tsmsidOLD", "#P_haustsms2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qliftlem on Metamath](http://us.metamath.org/mpegif/qliftlem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qlift.1 | |- F = ran ( x e. X |-> <. [ x ] R , A >. ) |\n| 2 |  | qlift.2 | |- ( ( ph /\\ x e. X ) -> A e. Y ) |\n| 3 |  | qlift.3 | |- ( ph -> R Er X ) |\n| 4 |  | qlift.4 | |- ( ph -> X e. _V ) |\n| 5 |  | #P_erex | |- ( R Er X -> ( X e. _V -> R e. _V ) ) |\n| 6 | 3, 4, 5 | #P_sylc | |- ( ph -> R e. _V ) |\n| 7 |  | #P_ecelqsg | |- ( ( R e. _V /\\ x e. X ) -> [ x ] R e. ( X /. R ) ) |\n| 8 | 6, 7 | #P_sylan | |- ( ( ph /\\ x e. X ) -> [ x ] R e. ( X /. R ) ) |",
+  "conclusion" : "#P_qliftlem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crn", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cop--1", "#T_cec--1", "#T_vx", "#T_cec--2", "#T_cR", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_wcel", "#T_cY", "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_cR", "#T_wer", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cX", "#T_wi", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cX", "#T_cqs", "#T_cR", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wi", "#T_cec--1", "#T_vx", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cX", "#T_cqs", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylc", "#P_sylan", "#P_erex", "#P_ecelqsg" ]
+}

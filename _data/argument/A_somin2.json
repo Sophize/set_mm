@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See somin2 on Metamath](http://us.metamath.org/mpegif/somin2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_somincom | |- ( ( R Or X /\\ ( A e. X /\\ B e. X ) ) -> if ( A R B , A , B ) = if ( B R A , B , A ) ) |\n| 2 |  | #P_somin1 | |- ( ( R Or X /\\ ( B e. X /\\ A e. X ) ) -> if ( B R A , B , A ) ( R u. _I ) B ) |\n| 3 | 2 | #P_ancom2s | |- ( ( R Or X /\\ ( A e. X /\\ B e. X ) ) -> if ( B R A , B , A ) ( R u. _I ) B ) |\n| 4 | 1, 3 | #P_eqbrtrd | |- ( ( R Or X /\\ ( A e. X /\\ B e. X ) ) -> if ( A R B , A , B ) ( R u. _I ) B ) |",
+  "conclusion" : "#P_somin2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wor", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cif--1", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cA.wceq", "#T_cR", "#T_wor", "#T_cX", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cif--1", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cA.wceq", "#T_cR", "#T_cun", "#T_cid", "#T_cB.wceq", "#T_cR", "#T_wor", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cif--1", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cA.wceq", "#T_cR", "#T_cun", "#T_cid", "#T_cB.wceq", "#T_cR", "#T_wor", "#T_cX", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wa", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cif--1", "#T_cA", "#T_cR", "#T_cB", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_cR", "#T_cun", "#T_cid", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom2s", "#P_somin1", "#P_eqbrtrd", "#P_somincom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfrexOLD on Metamath](http://us.metamath.org/mpegif/nfrexOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfrex.1 | |- F/_ x A |\n| 2 |  | nfrex.2 | |- F/ x ph |\n| 3 |  | #P_dfrex2 | |- ( E. y e. A ph <-> -. A. y e. A -. ph ) |\n| 4 | 2 | #P_nfn | |- F/ x -. ph |\n| 5 | 1, 4 | #P_nfral | |- F/ x A. y e. A -. ph |\n| 6 | 5 | #P_nfn | |- F/ x -. A. y e. A -. ph |\n| 7 | 3, 6 | #P_nfxfr | |- F/ x E. y e. A ph |\n\\\n Obsolete proof of ~ nfrex as of 30-Dec-2019.  (Contributed by NM, 1-Sep-1999.)  (Revised by Mario Carneiro, 7-Oct-2016.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_nfrex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnf", "#T_vx", "#T_wph", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wnf", "#T_vx", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfrex2", "#P_nfral", "#P_nfn", "#P_nfxfr" ]
+}

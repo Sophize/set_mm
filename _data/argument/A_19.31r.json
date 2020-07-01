@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.31r on Metamath](http://us.metamath.org/mpegif/19.31r.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 19.31r.1 | |- F/ x ps |\n| 2 | 1 | #P_19.32r | |- ( ( ps \\/ A. x ph ) -> A. x ( ps \\/ ph ) ) |\n| 3 |  | #P_orcom | |- ( ( A. x ph \\/ ps ) <-> ( ps \\/ A. x ph ) ) |\n| 4 |  | #P_orcom | |- ( ( ph \\/ ps ) <-> ( ps \\/ ph ) ) |\n| 5 | 4 | #P_albii | |- ( A. x ( ph \\/ ps ) <-> A. x ( ps \\/ ph ) ) |\n| 6 | 2, 3, 5 | #P_3imtr4i | |- ( ( A. x ph \\/ ps ) -> A. x ( ph \\/ ps ) ) |",
+  "conclusion" : "#P_19.31r",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_wps", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wo", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wo", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_19.32r", "#P_albii", "#P_orcom", "#P_3imtr4i" ]
+}

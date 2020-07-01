@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gxm1 on Metamath](http://us.metamath.org/mpegif/gxm1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gxneg.1 | |- X = ran G |\n| 2 |  | gxneg.2 | |- N = ( inv ` G ) |\n| 3 |  | gxneg.3 | |- P = ( ^g ` G ) |\n| 4 |  | #P_1z | |- 1 e. ZZ |\n| 5 | 1, 2, 3 | #P_gxneg | |- ( ( G e. GrpOp /\\ A e. X /\\ 1 e. ZZ ) -> ( A P -u 1 ) = ( N ` ( A P 1 ) ) ) |\n| 6 | 4, 5 | #P_mp3an3 | |- ( ( G e. GrpOp /\\ A e. X ) -> ( A P -u 1 ) = ( N ` ( A P 1 ) ) ) |\n| 7 | 1, 3 | #P_gx1 | |- ( ( G e. GrpOp /\\ A e. X ) -> ( A P 1 ) = A ) |\n| 8 | 7 | #P_fveq2d | |- ( ( G e. GrpOp /\\ A e. X ) -> ( N ` ( A P 1 ) ) = ( N ` A ) ) |\n| 9 | 6, 8 | #P_eqtrd | |- ( ( G e. GrpOp /\\ A e. X ) -> ( A P -u 1 ) = ( N ` A ) ) |",
+  "conclusion" : "#P_gxm1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cN", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cG", "#T_cP", "#T_wceq", "#T_cgx", "#T_cfv", "#T_cG", "#T_c1", "#T_wcel", "#T_cz", "#T_cG", "#T_wcel", "#T_cgr", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_cP", "#T_cneg", "#T_c1", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cP", "#T_c1", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cP", "#T_cneg", "#T_c1", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cP", "#T_c1", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cP", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cP", "#T_c1", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cP", "#T_cneg", "#T_c1", "#T_wceq", "#T_cN", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_gx1", "#P_mp3an3", "#P_eqtrd", "#P_fveq2d", "#P_gxneg", "#P_1z" ]
+}

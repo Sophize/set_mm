@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-gch on Metamath](http://us.metamath.org/mpegif/df-gch.html)"
+  } ],
+  "names" : [ "df-gch" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cgch", "#T_wceq", "#T_cfn", "#T_cun", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wal", "#T_vy", "#T_wn", "#T_vx", "#T_csdm", "#T_vy", "#T_wa", "#T_vy", "#T_csdm", "#T_cpw", "#T_vx", "#T_cab--3", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the collection of \"GCH-sets\", or sets for which the generalized continuum hypothesis holds.  In this language the generalized continuum hypothesis can be expressed as ` GCH = _V ` .  A set ` x ` satisfies the generalized continuum hypothesis if it is finite or there is no set ` y ` strictly between ` x ` and its powerset in cardinality.  The continuum hypothesis is equivalent to ` _om e. GCH ` .  (Contributed by Mario Carneiro, 15-May-2015.) ",
+  "statement" : "df-gch $p |- GCH = ( Fin u. { x | A. y -. ( x ~< y /\\ y ~< ~P x ) } ) $.\n$d x y $."
+}

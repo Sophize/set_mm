@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zrh1 on Metamath](http://us.metamath.org/mpegif/zrh1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | zrh1.l | |- L = ( ZRHom ` R ) |\n| 2 |  | zrh1.o | |- .1. = ( 1r ` R ) |\n| 3 | 1 | #P_zrhrhm | |- ( R e. Ring -> L e. ( ZZring RingHom R ) ) |\n| 4 |  | #P_zring1 | |- 1 = ( 1r ` ZZring ) |\n| 5 | 4, 2 | #P_rhm1 | |- ( L e. ( ZZring RingHom R ) -> ( L ` 1 ) = .1. ) |\n| 6 | 3, 5 | #P_syl | |- ( R e. Ring -> ( L ` 1 ) = .1. ) |",
+  "conclusion" : "#P_zrh1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_czrh", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cL", "#T_wcel", "#T_zring", "#T_crh", "#T_cR", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_zring", "#T_cL", "#T_wcel", "#T_zring", "#T_crh", "#T_cR", "#T_wi", "#T_cL", "#T_cfv", "#T_c1", "#T_wceq", "#T_c.1", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cL", "#T_cfv", "#T_c1", "#T_wceq", "#T_c.1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rhm1", "#P_zrhrhm", "#P_zring1", "#P_syl" ]
+}

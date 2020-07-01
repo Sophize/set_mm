@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj1241 on Metamath](http://us.metamath.org/mpegif/bnj1241.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj1241.1 | |- ( ph -> A C_ B ) |\n| 2 |  | bnj1241.2 | |- ( ps -> C = A ) |\n| 3 | 2 | #P_eqcomd | |- ( ps -> A = C ) |\n| 4 | 3 | #P_adantl | |- ( ( ph /\\ ps ) -> A = C ) |\n| 5 | 1 | #P_adantr | |- ( ( ph /\\ ps ) -> A C_ B ) |\n| 6 | 4, 5 | #P_eqsstr3d | |- ( ( ph /\\ ps ) -> C C_ B ) |",
+  "conclusion" : "#P_bnj1241",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wps", "#T_wi", "#T_cC", "#T_wceq", "#T_cA", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cC", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqsstr3d", "#P_adantl", "#P_eqcomd", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See istendod on Metamath](http://us.metamath.org/mpegif/istendod.html)"
+  } ],
+  "names" : [ "istendod" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cT", "#T_wceq", "#T_cltrn", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cR", "#T_wceq", "#T_ctrl", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cE", "#T_wceq", "#T_ctendo", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cS", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cT", "#T_wph", "#T_w3a--1", "#T_vf", "#T_wcel", "#T_cT", "#T_w3a--2", "#T_vg", "#T_wcel", "#T_cT", "#T_wi", "#T_cS", "#T_cfv", "#T_vf", "#T_ccom", "#T_vg", "#T_wceq", "#T_cS", "#T_cfv", "#T_vf", "#T_ccom", "#T_cS", "#T_cfv", "#T_vg", "#T_wph", "#T_wa", "#T_vf", "#T_wcel", "#T_cT", "#T_wi", "#T_cR", "#T_cfv", "#T_cS", "#T_cfv", "#T_vf", "#T_c.le", "#T_cR", "#T_cfv", "#T_vf", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cE", "#T_c.le", "#T_vf", "#T_cK", "#T_vf", "#T_vg", "#T_cR", "#T_vf", "#T_cS", "#T_vf", "#T_vg", "#T_cT", "#T_vf", "#T_vg", "#T_cW", "#T_vf", "#T_vg", "#T_vf", "#T_vg", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Deduce the predicate \"is a trace-preserving endomorphism\".  (Contributed by NM, 9-Jun-2013.) ",
+  "statement" : "tendoset.l $e |- .<_ = ( le ` K ) $.\ntendoset.h $e |- H = ( LHyp ` K ) $.\ntendoset.t $e |- T = ( ( LTrn ` K ) ` W ) $.\ntendoset.r $e |- R = ( ( trL ` K ) ` W ) $.\ntendoset.e $e |- E = ( ( TEndo ` K ) ` W ) $.\nistendod.1 $e |- ( ph -> ( K e. V /\\ W e. H ) ) $.\nistendod.2 $e |- ( ph -> S : T --> T ) $.\nistendod.3 $e |- ( ( ph /\\ f e. T /\\ g e. T ) -> ( S ` ( f o. g ) ) = ( ( S ` f ) o. ( S ` g ) ) ) $.\nistendod.4 $e |- ( ( ph /\\ f e. T ) -> ( R ` ( S ` f ) ) .<_ ( R ` f ) ) $.\nistendod $p |- ( ph -> S e. E ) $.\n$d .<_ f $.\n$d K f g $.\n$d R f $.\n$d S f g $.\n$d T f g $.\n$d W f g $.\n$d f g ph $."
+}

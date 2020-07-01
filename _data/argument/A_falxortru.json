@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See falxortru on Metamath](http://us.metamath.org/mpegif/falxortru.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor | |- ( ( F. \\/_ T. ) <-> -. ( F. <-> T. ) ) |\n| 2 |  | #P_falbitru | |- ( ( F. <-> T. ) <-> F. ) |\n| 3 | 2 | #P_notbii | |- ( -. ( F. <-> T. ) <-> -. F. ) |\n| 4 |  | #P_notfal | |- ( -. F. <-> T. ) |\n| 5 | 1, 3, 4 | #P_3bitri | |- ( ( F. \\/_ T. ) <-> T. ) |",
+  "conclusion" : "#P_falxortru",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfal", "#T_wxo", "#T_wtru", "#T_wb", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wfal", "#T_wb", "#T_wtru", "#T_wb", "#T_wfal", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wb", "#T_wn", "#T_wfal", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wfal", "#T_wxo", "#T_wtru", "#T_wb", "#T_wtru" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notfal", "#P_notbii", "#P_falbitru", "#P_df-xor", "#P_3bitri" ]
+}

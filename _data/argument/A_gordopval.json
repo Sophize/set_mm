@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gordopval on Metamath](http://us.metamath.org/mpegif/gordopval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opex | |- <. V , E >. e. _V |\n| 2 |  | #P_gordval | |- ( <. V , E >. e. _V -> ( GrOrder ` <. V , E >. ) = ( # ` ( 1st ` <. V , E >. ) ) ) |\n| 3 | 1, 2 | #P_mp1i | |- ( ( V e. W /\\ E e. X ) -> ( GrOrder ` <. V , E >. ) = ( # ` ( 1st ` <. V , E >. ) ) ) |\n| 4 |  | #P_op1stg | |- ( ( V e. W /\\ E e. X ) -> ( 1st ` <. V , E >. ) = V ) |\n| 5 | 4 | #P_fveq2d | |- ( ( V e. W /\\ E e. X ) -> ( # ` ( 1st ` <. V , E >. ) ) = ( # ` V ) ) |\n| 6 | 3, 5 | #P_eqtrd | |- ( ( V e. W /\\ E e. X ) -> ( GrOrder ` <. V , E >. ) = ( # ` V ) ) |",
+  "conclusion" : "#P_gordopval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wi", "#T_cgord", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wceq", "#T_chash", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cV", "#T_wcel", "#T_cW", "#T_wa", "#T_cE", "#T_wcel", "#T_cX", "#T_wi", "#T_cgord", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wceq", "#T_chash", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cV", "#T_wcel", "#T_cW", "#T_wa", "#T_cE", "#T_wcel", "#T_cX", "#T_wi", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wceq", "#T_cV", "#T_cV", "#T_wcel", "#T_cW", "#T_wa", "#T_cE", "#T_wcel", "#T_cX", "#T_wi", "#T_chash", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wceq", "#T_chash", "#T_cfv", "#T_cV", "#T_cV", "#T_wcel", "#T_cW", "#T_wa", "#T_cE", "#T_wcel", "#T_cX", "#T_wi", "#T_cgord", "#T_cfv", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wceq", "#T_chash", "#T_cfv", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_fveq2d", "#P_mp1i", "#P_opex", "#P_gordval", "#P_op1stg" ]
+}

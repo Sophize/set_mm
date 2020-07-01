@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem6 on Metamath](http://us.metamath.org/mpegif/tfrlem6.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ng\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfrlem.1 | |- A = { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } |\n| 2 |  | #P_reluni | |- ( Rel U. A <-> A. g e. A Rel g ) |\n| 3 | 1 | #P_tfrlem4 | |- ( g e. A -> Fun g ) |\n| 4 |  | #P_funrel | |- ( Fun g -> Rel g ) |\n| 5 | 3, 4 | #P_syl | |- ( g e. A -> Rel g ) |\n| 6 | 2, 5 | #P_mprgbir | |- Rel U. A |\n| 7 | 1 | #P_recsfval | |- recs ( F ) = U. A |\n| 8 | 7 | #P_releqi | |- ( Rel recs ( F ) <-> Rel U. A ) |\n| 9 | 6, 8 | #P_mpbir | |- Rel recs ( F ) |",
+  "conclusion" : "#P_tfrlem6",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vg", "#T_cA", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_wrel", "#T_cuni", "#T_cA.wceq", "#T_wb", "#T_wral--1", "#T_cbvex4v.vg", "#T_wral--2", "#T_cA.wceq", "#T_wrel", "#T_cbvex4v.vg", "#T_cbvex4v.vg", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wfun", "#T_cbvex4v.vg", "#T_wfun", "#T_cbvex4v.vg", "#T_wi", "#T_wrel", "#T_cbvex4v.vg", "#T_cbvex4v.vg", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wrel", "#T_cbvex4v.vg", "#T_wrel", "#T_cuni", "#T_cA.wceq", "#T_crecs", "#T_cF", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_wrel", "#T_crecs", "#T_cF", "#T_wb", "#T_wrel", "#T_cuni", "#T_cA.wceq", "#T_wrel", "#T_crecs", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_releqi", "#P_funrel", "#P_mprgbir", "#P_tfrlem4", "#P_syl", "#P_reluni", "#P_mpbir", "#P_recsfval" ]
+}

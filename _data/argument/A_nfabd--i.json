@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfabd on Metamath](http://us.metamath.org/mpegif/nfabd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfabd.1 | |- F/ y ph |\n| 2 |  | nfabd.2 | |- ( ph -> F/ x ps ) |\n| 3 |  | #P_nfv | |- F/ z ph |\n| 4 |  | #P_df-clab | |- ( z e. { y | ps } <-> [ z / y ] ps ) |\n| 5 | 1, 2 | #P_nfsbd | |- ( ph -> F/ x [ z / y ] ps ) |\n| 6 | 4, 5 | #P_nfxfrd | |- ( ph -> F/ x z e. { y | ps } ) |\n| 7 | 3, 6 | #P_nfcd | |- ( ph -> F/_ x { y | ps } ) |",
+  "conclusion" : "#P_nfabd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wps", "#T_wnf", "#T_vz", "#T_wph", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_wps", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-clab", "#P_nfv", "#P_nfcd", "#P_nfxfrd", "#P_nfsbd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grplactf1o on Metamath](http://us.metamath.org/mpegif/grplactf1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grplact.1 | |- F = ( g e. X |-> ( a e. X |-> ( g .+ a ) ) ) |\n| 2 |  | grplact.2 | |- X = ( Base ` G ) |\n| 3 |  | grplact.3 | |- .+ = ( +g ` G ) |\n| 4 |  | #P_eqid | |- ( invg ` G ) = ( invg ` G ) |\n| 5 | 1, 2, 3, 4 | #P_grplactcnv | |- ( ( G e. Grp /\\ A e. X ) -> ( ( F ` A ) : X -1-1-onto-> X /\\ `' ( F ` A ) = ( F ` ( ( invg ` G ) ` A ) ) ) ) |\n| 6 | 5 | #P_simpld | |- ( ( G e. Grp /\\ A e. X ) -> ( F ` A ) : X -1-1-onto-> X ) |",
+  "conclusion" : "#P_grplactf1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vg", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_va", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_vg", "#T_c.pl", "#T_va", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cminusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cX", "#T_wa", "#T_ccnv", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_grplactcnv" ]
+}

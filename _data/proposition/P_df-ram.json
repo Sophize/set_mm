@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ram on Metamath](http://us.metamath.org/mpegif/df-ram.html)"
+  } ],
+  "names" : [ "df-ram" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cram", "#T_wceq", "#T_vm", "#T_cmpt2--1", "#T_cn0", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_csup--1", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_wal", "#T_vs", "#T_vn", "#T_cle", "#T_chash", "#T_cfv", "#T_vs", "#T_wi", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_cdm", "#T_vr", "#T_cmap", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cpw", "#T_vs", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vy", "#T_wceq", "#T_vm", "#T_crab--4", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cdm", "#T_vr", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cpw", "#T_vs", "#T_vr", "#T_cfv", "#T_vc", "#T_cle", "#T_chash", "#T_cfv", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpw", "#T_vx", "#T_chash", "#T_cfv", "#T_vy", "#T_wceq", "#T_vm", "#T_wi", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_vc", "#T_crab--4", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_vc", "#T_vf", "#T_vm", "#T_vn", "#T_vr", "#T_vs", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Ramsey number function.  The input is a number ` m ` for the size of the edges of the hypergraph, and a tuple ` r ` from the finite color set to lower bounds for each color.  The Ramsey number ` ( M Ramsey R ) ` is the smallest number such that for any set ` S ` with ` ( M Ramsey R ) <_ # S ` and any coloring ` F ` of the set of ` M ` -element subsets of ` S ` (with color set ` dom R ` ), there is a color ` c e. dom R ` and a subset ` x C_ S ` such that ` R ( c ) <_ # x ` and all the hyperedges of ` x ` (that is, subsets of ` x ` of size ` M ` ) have color ` c ` .  (Contributed by Mario Carneiro, 20-Apr-2015.) ",
+  "statement" : "df-ram $p |- Ramsey = ( m e. NN0 , r e. _V |-> sup ( { n e. NN0 | A. s ( n <_ ( # ` s ) -> A. f e. ( dom r ^m { y e. ~P s | ( # ` y ) = m } ) E. c e. dom r E. x e. ~P s ( ( r ` c ) <_ ( # ` x ) /\\ A. y e. ~P x ( ( # ` y ) = m -> ( f ` y ) = c ) ) ) } , RR* , `' < ) ) $.\n$d c f m n r s x y $."
+}

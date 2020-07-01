@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-fae on Metamath](http://us.metamath.org/mpegif/df-fae.html)"
+  } ],
+  "names" : [ "df-fae" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cfae", "#T_wceq", "#T_vr", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vm", "#T_cmpt2--3", "#T_cuni", "#T_crn", "#T_cmeas", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vg", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_wcel", "#T_cdm", "#T_vr", "#T_cmap", "#T_cuni", "#T_cdm", "#T_vm", "#T_wa", "#T_vg", "#T_wcel", "#T_cdm", "#T_vr", "#T_cmap", "#T_cuni", "#T_cdm", "#T_vm", "#T_wa", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cuni", "#T_cdm", "#T_vm", "#T_crab--3", "#T_vf", "#T_cfv", "#T_vx", "#T_vr", "#T_vg", "#T_cfv", "#T_vx", "#T_crab--4", "#T_cae", "#T_vm", "#T_copab--6", "#T_vf", "#T_vg", "#T_vm", "#T_vr", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a builder for an 'almost everywhere' relation between functions, from relations between function values.  In this definition, the range of ` f ` and ` g ` is enforced in order to ensure the resulting relation is a set.  (Contributed by Thierry Arnoux, 22-Oct-2017.) ",
+  "statement" : "df-fae $p |- ~ae = ( r e. _V , m e. U. ran measures |-> { <. f , g >. | ( ( f e. ( dom r ^m U. dom m ) /\\ g e. ( dom r ^m U. dom m ) ) /\\ { x e. U. dom m | ( f ` x ) r ( g ` x ) } ae m ) } ) $.\n$d f g m r x $."
+}

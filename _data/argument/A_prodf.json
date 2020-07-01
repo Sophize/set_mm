@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prodf on Metamath](http://us.metamath.org/mpegif/prodf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prodf.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | prodf.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | prodf.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) e. CC ) |\n| 4 |  | #P_mulcl | |- ( ( k e. CC /\\ x e. CC ) -> ( k x. x ) e. CC ) |\n| 5 | 4 | #P_adantl | |- ( ( ph /\\ ( k e. CC /\\ x e. CC ) ) -> ( k x. x ) e. CC ) |\n| 6 | 1, 2, 3, 5 | #P_seqf | |- ( ph -> seq M ( x. , F ) : Z --> CC ) |",
+  "conclusion" : "#P_prodf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cc", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_vk", "#T_cmul", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_vk", "#T_cmul", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_mulcl", "#P_seqf" ]
+}

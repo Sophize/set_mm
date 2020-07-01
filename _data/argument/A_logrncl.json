@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logrncl on Metamath](http://us.metamath.org/mpegif/logrncl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eldifsn | |- ( A e. ( CC \\ { 0 } ) <-> ( A e. CC /\\ A =/= 0 ) ) |\n| 2 |  | #P_logf1o | |- log : ( CC \\ { 0 } ) -1-1-onto-> ran log |\n| 3 |  | #P_f1of | |- ( log : ( CC \\ { 0 } ) -1-1-onto-> ran log -> log : ( CC \\ { 0 } ) --> ran log ) |\n| 4 | 2, 3 | #P_ax-mp | |- log : ( CC \\ { 0 } ) --> ran log |\n| 5 | 4 | #P_ffvelrni | |- ( A e. ( CC \\ { 0 } ) -> ( log ` A ) e. ran log ) |\n| 6 | 1, 5 | #P_sylbir | |- ( ( A e. CC /\\ A =/= 0 ) -> ( log ` A ) e. ran log ) |",
+  "conclusion" : "#P_logrncl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_clog", "#T_wf1o--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wf1o--2", "#T_crn", "#T_clog", "#T_clog", "#T_wf1o--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wf1o--2", "#T_crn", "#T_clog", "#T_wi", "#T_clog", "#T_wf--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wf--2", "#T_crn", "#T_clog", "#T_clog", "#T_wf--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wf--2", "#T_crn", "#T_clog", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_clog", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cA", "#T_wne", "#T_cc0", "#T_wi", "#T_clog", "#T_cfv", "#T_cA", "#T_wcel", "#T_crn", "#T_clog" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eldifsn", "#P_logf1o", "#P_f1of", "#P_sylbir", "#P_ffvelrni" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 00lss on Metamath](http://us.metamath.org/mpegif/00lss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_noel | |- -. a e. (/) |\n| 2 |  | #P_base0 | |- (/) = ( Base ` (/) ) |\n| 3 |  | #P_eqid | |- ( LSubSp ` (/) ) = ( LSubSp ` (/) ) |\n| 4 | 2, 3 | #P_lssss | |- ( a e. ( LSubSp ` (/) ) -> a C_ (/) ) |\n| 5 |  | #P_ss0 | |- ( a C_ (/) -> a = (/) ) |\n| 6 | 4, 5 | #P_syl | |- ( a e. ( LSubSp ` (/) ) -> a = (/) ) |\n| 7 | 3 | #P_lssn0 | |- ( a e. ( LSubSp ` (/) ) -> a =/= (/) ) |\n| 8 | 7 | #P_neneqd | |- ( a e. ( LSubSp ` (/) ) -> -. a = (/) ) |\n| 9 | 6, 8 | #P_pm2.65i | |- -. a e. ( LSubSp ` (/) ) |\n| 10 | 1, 9 | #P_2false | |- ( a e. (/) <-> a e. ( LSubSp ` (/) ) ) |\n| 11 | 10 | #P_eqriv | |- (/) = ( LSubSp ` (/) ) |",
+  "conclusion" : "#P_00lss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_wn", "#T_va", "#T_wcel", "#T_c0", "#T_c0", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_clss", "#T_cfv", "#T_c0", "#T_wceq", "#T_clss", "#T_cfv", "#T_c0", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_wi", "#T_va", "#T_wss", "#T_c0", "#T_va", "#T_wss", "#T_c0", "#T_wi", "#T_va", "#T_wceq", "#T_c0", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_wi", "#T_va", "#T_wceq", "#T_c0", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_wi", "#T_va", "#T_wne", "#T_c0", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_wi", "#T_wn", "#T_va", "#T_wceq", "#T_c0", "#T_wn", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_va", "#T_wcel", "#T_c0", "#T_wb", "#T_va", "#T_wcel", "#T_clss", "#T_cfv", "#T_c0", "#T_c0", "#T_wceq", "#T_clss", "#T_cfv", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_neneqd", "#P_pm2.65i", "#P_ss0", "#P_lssn0", "#P_lssss", "#P_2false", "#P_noel", "#P_base0", "#P_syl", "#P_eqriv" ]
+}

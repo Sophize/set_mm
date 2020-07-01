@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supmul1 on Metamath](http://us.metamath.org/mpegif/supmul1.html)"
+  } ],
+  "names" : [ "supmul1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wrex--1", "#T_vv", "#T_wrex--2", "#T_cB", "#T_vz", "#T_wceq", "#T_cA", "#T_cmul", "#T_vv", "#T_cab--3", "#T_wph", "#T_wb", "#T_cA", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cc0", "#T_cle", "#T_cA", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_cc0", "#T_cle", "#T_vx", "#T_wa", "#T_cB", "#T_wss", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_vy", "#T_cle", "#T_vx", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_csup--1", "#T_cB", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_csup--1", "#T_cC", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cA", "#T_vv", "#T_vx", "#T_vz", "#T_cB", "#T_vv", "#T_vx", "#T_vy", "#T_vz", "#T_cC", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The supremum function distributes over multiplication, in the sense that ` A x. ( sup B ) = sup ( A x. B ) ` , where ` A x. B ` is shorthand for ` { A x. b | b e. B } ` and is defined as ` C ` below.  This is the simple version, with only one set argument; see ~ supmul for the more general case with two set arguments.  (Contributed by Mario Carneiro, 5-Jul-2013.) ",
+  "statement" : "supmul1.1 $e |- C = { z | E. v e. B z = ( A x. v ) } $.\nsupmul1.2 $e |- ( ph <-> ( ( A e. RR /\\ 0 <_ A /\\ A. x e. B 0 <_ x ) /\\ ( B C_ RR /\\ B =/= (/) /\\ E. x e. RR A. y e. B y <_ x ) ) ) $.\nsupmul1 $p |- ( ph -> ( A x. sup ( B , RR , < ) ) = sup ( C , RR , < ) ) $.\n$d A v x z $.\n$d B v x y z $.\n$d C x $."
+}

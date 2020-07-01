@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjval on Metamath](http://us.metamath.org/mpegif/pjval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjfval2.o | |- ._|_ = ( ocv ` W ) |\n| 2 |  | pjfval2.p | |- P = ( proj1 ` W ) |\n| 3 |  | pjfval2.k | |- K = ( proj ` W ) |\n| 4 |  | #P_id | |- ( x = T -> x = T ) |\n| 5 |  | #P_fveq2 | |- ( x = T -> ( ._|_ ` x ) = ( ._|_ ` T ) ) |\n| 6 | 4, 5 | #P_oveq12d | |- ( x = T -> ( x P ( ._|_ ` x ) ) = ( T P ( ._|_ ` T ) ) ) |\n| 7 | 1, 2, 3 | #P_pjfval2 | |- K = ( x e. dom K |-> ( x P ( ._|_ ` x ) ) ) |\n| 8 |  | #P_ovex | |- ( T P ( ._|_ ` T ) ) e. _V |\n| 9 | 6, 7, 8 | #P_fvmpt | |- ( T e. dom K -> ( K ` T ) = ( T P ( ._|_ ` T ) ) ) |",
+  "conclusion" : "#P_pjval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_c.pe", "#T_wceq", "#T_cocv", "#T_cfv", "#T_cW", "#T_cP", "#T_wceq", "#T_cpj1", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cpj", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wceq", "#T_cT", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cT", "#T_vx.wal", "#T_wceq", "#T_cT", "#T_wi", "#T_c.pe", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_cT", "#T_vx.wal", "#T_wceq", "#T_cT", "#T_wi", "#T_vx.wal", "#T_cP", "#T_c.pe", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cT", "#T_cP", "#T_c.pe", "#T_cfv", "#T_cT", "#T_cK", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cdm", "#T_cK", "#T_cmpt--2", "#T_vx.wal", "#T_cP", "#T_c.pe", "#T_cfv", "#T_vx.wal", "#T_cT", "#T_cP", "#T_c.pe", "#T_cfv", "#T_cT", "#T_wcel", "#T_cvv", "#T_cT", "#T_wcel", "#T_cdm", "#T_cK", "#T_wi", "#T_cK", "#T_cfv", "#T_cT", "#T_wceq", "#T_cT", "#T_cP", "#T_c.pe", "#T_cfv", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_oveq12d", "#P_fvmpt", "#P_pjfval2", "#P_fveq2", "#P_id" ]
+}

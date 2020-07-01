@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jad on Metamath](http://us.metamath.org/mpegif/jad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jad.1 | |- ( ph -> ( -. ps -> th ) ) |\n| 2 |  | jad.2 | |- ( ph -> ( ch -> th ) ) |\n| 3 | 1 | #P_com12 | |- ( -. ps -> ( ph -> th ) ) |\n| 4 | 2 | #P_com12 | |- ( ch -> ( ph -> th ) ) |\n| 5 | 3, 4 | #P_ja | |- ( ( ps -> ch ) -> ( ph -> th ) ) |\n| 6 | 5 | #P_com12 | |- ( ph -> ( ( ps -> ch ) -> th ) ) |",
+  "conclusion" : "#P_jad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ja", "#P_com12" ]
+}

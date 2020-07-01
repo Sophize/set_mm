@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See snelpwi on Metamath](http://us.metamath.org/mpegif/snelpwi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_snssi | |- ( A e. B -> { A } C_ B ) |\n| 2 |  | #P_elex | |- ( A e. B -> A e. _V ) |\n| 3 |  | #P_snexgOLD | |- ( A e. _V -> { A } e. _V ) |\n| 4 |  | #P_elpwg | |- ( { A } e. _V -> ( { A } e. ~P B <-> { A } C_ B ) ) |\n| 5 | 2, 3, 4 | #P_3syl | |- ( A e. B -> ( { A } e. ~P B <-> { A } C_ B ) ) |\n| 6 | 1, 5 | #P_mpbird | |- ( A e. B -> { A } e. ~P B ) |",
+  "conclusion" : "#P_snelpwi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wcel", "#T_cpw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elex", "#P_3syl", "#P_snexgOLD", "#P_snssi", "#P_elpwg", "#P_mpbird" ]
+}

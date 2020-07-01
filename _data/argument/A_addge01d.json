@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See addge01d on Metamath](http://us.metamath.org/mpegif/addge01d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | leidd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | ltnegd.2 | |- ( ph -> B e. RR ) |\n| 3 |  | #P_addge01 | |- ( ( A e. RR /\\ B e. RR ) -> ( 0 <_ B <-> A <_ ( A + B ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( 0 <_ B <-> A <_ ( A + B ) ) ) |",
+  "conclusion" : "#P_addge01d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cB", "#T_wb", "#T_cA", "#T_cle", "#T_cA", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addge01", "#P_syl2anc" ]
+}

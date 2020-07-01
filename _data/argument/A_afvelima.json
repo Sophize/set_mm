@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See afvelima on Metamath](http://us.metamath.org/mpegif/afvelima.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elimag | |- ( A e. ( F \" B ) -> ( A e. ( F \" B ) <-> E. x e. B x F A ) ) |\n| 2 | 1 | #P_ibi | |- ( A e. ( F \" B ) -> E. x e. B x F A ) |\n| 3 |  | #P_funbrafv | |- ( Fun F -> ( x F A -> ( F ''' x ) = A ) ) |\n| 4 | 3 | #P_reximdv | |- ( Fun F -> ( E. x e. B x F A -> E. x e. B ( F ''' x ) = A ) ) |\n| 5 | 2, 4 | #P_syl5 | |- ( Fun F -> ( A e. ( F \" B ) -> E. x e. B ( F ''' x ) = A ) ) |\n| 6 | 5 | #P_imp | |- ( ( Fun F /\\ A e. ( F \" B ) ) -> E. x e. B ( F ''' x ) = A ) |",
+  "conclusion" : "#P_afvelima",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cima", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cima", "#T_cB.wceq", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_cF", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cima", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_cF", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wi", "#T_vx.wal", "#T_cF", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_cafv", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_cF", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_cF", "#T_cafv", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cima", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_cF", "#T_cafv", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wa", "#T_cA", "#T_wcel", "#T_cF", "#T_cima", "#T_cB", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_cF", "#T_cafv", "#T_vx", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reximdv", "#P_ibi", "#P_elimag", "#P_imp", "#P_funbrafv", "#P_syl5" ]
+}

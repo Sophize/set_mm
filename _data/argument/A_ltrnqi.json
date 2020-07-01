@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltrnqi on Metamath](http://us.metamath.org/mpegif/ltrnqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ltrelnq | |- <Q C_ ( Q. X. Q. ) |\n| 2 | 1 | #P_brel | |- ( A <Q B -> ( A e. Q. /\\ B e. Q. ) ) |\n| 3 |  | #P_ltrnqg | |- ( ( A e. Q. /\\ B e. Q. ) -> ( A <Q B <-> ( *Q ` B ) <Q ( *Q ` A ) ) ) |\n| 4 | 2, 3 | #P_syl | |- ( A <Q B -> ( A <Q B <-> ( *Q ` B ) <Q ( *Q ` A ) ) ) |\n| 5 | 4 | #P_ibi | |- ( A <Q B -> ( *Q ` B ) <Q ( *Q ` A ) ) |",
+  "conclusion" : "#P_ltrnqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cltq", "#T_wss", "#T_cnq", "#T_cxp", "#T_cnq", "#T_cA.wceq", "#T_cltq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cnq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnq", "#T_cA.wceq", "#T_wcel", "#T_cnq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnq", "#T_wi", "#T_cA.wceq", "#T_cltq", "#T_cB.wceq", "#T_wb", "#T_crq", "#T_cfv", "#T_cB.wceq", "#T_cltq", "#T_crq", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_cltq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cltq", "#T_cB.wceq", "#T_wb", "#T_crq", "#T_cfv", "#T_cB.wceq", "#T_cltq", "#T_crq", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_cltq", "#T_cB", "#T_wi", "#T_crq", "#T_cfv", "#T_cB", "#T_cltq", "#T_crq", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ltrnqg", "#P_ibi", "#P_ltrelnq", "#P_syl", "#P_brel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elcnv on Metamath](http://us.metamath.org/mpegif/elcnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-cnv | |- `' R = { <. x , y >. | y R x } |\n| 2 | 1 | #P_eleq2i | |- ( A e. `' R <-> A e. { <. x , y >. | y R x } ) |\n| 3 |  | #P_elopab | |- ( A e. { <. x , y >. | y R x } <-> E. x E. y ( A = <. x , y >. /\\ y R x ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( A e. `' R <-> E. x E. y ( A = <. x , y >. /\\ y R x ) ) |",
+  "conclusion" : "#P_elcnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_cA.wceq", "#T_wcel", "#T_ccnv", "#T_cR", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_cA.wceq", "#T_wcel", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_ccnv", "#T_cR", "#T_wb", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_cA", "#T_wceq", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wa", "#T_vy", "#T_cR", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-cnv", "#P_elopab", "#P_eleq2i", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpn0 on Metamath](http://us.metamath.org/mpegif/grpn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 2 | 1 | #P_grpbn0 | |- ( G e. Grp -> ( Base ` G ) =/= (/) ) |\n| 3 |  | #P_fveq2 | |- ( G = (/) -> ( Base ` G ) = ( Base ` (/) ) ) |\n| 4 |  | #P_base0 | |- (/) = ( Base ` (/) ) |\n| 5 | 3, 4 | #P_syl6eqr | |- ( G = (/) -> ( Base ` G ) = (/) ) |\n| 6 | 5 | #P_necon3i | |- ( ( Base ` G ) =/= (/) -> G =/= (/) ) |\n| 7 | 2, 6 | #P_syl | |- ( G e. Grp -> G =/= (/) ) |",
+  "conclusion" : "#P_grpn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wne", "#T_c0", "#T_cG", "#T_wceq", "#T_c0", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_c0", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c0", "#T_cG", "#T_wceq", "#T_c0", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_c0", "#T_cbs", "#T_cfv", "#T_cG", "#T_wne", "#T_c0", "#T_wi", "#T_cG", "#T_wne", "#T_c0", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_necon3i", "#P_grpbn0", "#P_base0", "#P_fveq2", "#P_syl", "#P_syl6eqr" ]
+}

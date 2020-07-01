@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-uncf on Metamath](http://us.metamath.org/mpegif/df-uncf.html)"
+  } ],
+  "names" : [ "df-uncf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuncf", "#T_wceq", "#T_vc", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vc", "#T_cfv", "#T_c1", "#T_cevlf", "#T_vc", "#T_cfv", "#T_c2", "#T_ccofu", "#T_vf", "#T_ccofu", "#T_vc", "#T_cfv", "#T_cc0", "#T_c1stf", "#T_vc", "#T_cfv", "#T_c1", "#T_cprf", "#T_vc", "#T_cfv", "#T_cc0", "#T_c2ndf", "#T_vc", "#T_cfv", "#T_c1", "#T_vc", "#T_vf" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the uncurry functor, which can be defined equationally using ` evalF ` .  Strictly speaking, the third category argument is not needed, since the resulting functor is extensionally equal regardless, but it is used in the equational definition and is too much work to remove.  (Contributed by Mario Carneiro, 13-Jan-2017.) ",
+  "statement" : "df-uncf $p |- uncurryF = ( c e. _V , f e. _V |-> ( ( ( c ` 1 ) evalF ( c ` 2 ) ) o.func ( ( f o.func ( ( c ` 0 ) 1stF ( c ` 1 ) ) ) pairF ( ( c ` 0 ) 2ndF ( c ` 1 ) ) ) ) ) $.\n$d c f $."
+}

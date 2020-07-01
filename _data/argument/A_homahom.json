@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See homahom on Metamath](http://us.metamath.org/mpegif/homahom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | homahom.h | |- H = ( HomA ` C ) |\n| 2 |  | homahom.j | |- J = ( Hom ` C ) |\n| 3 | 1 | #P_homarel | |- Rel ( X H Y ) |\n| 4 |  | #P_1st2ndbr | |- ( ( Rel ( X H Y ) /\\ F e. ( X H Y ) ) -> ( 1st ` F ) ( X H Y ) ( 2nd ` F ) ) |\n| 5 | 3, 4 | #P_mpan | |- ( F e. ( X H Y ) -> ( 1st ` F ) ( X H Y ) ( 2nd ` F ) ) |\n| 6 | 1, 2 | #P_homahom2 | |- ( ( 1st ` F ) ( X H Y ) ( 2nd ` F ) -> ( 2nd ` F ) e. ( X J Y ) ) |\n| 7 | 5, 6 | #P_syl | |- ( F e. ( X H Y ) -> ( 2nd ` F ) e. ( X J Y ) ) |",
+  "conclusion" : "#P_homahom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_choma", "#T_cfv", "#T_cC", "#T_cJ", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wrel", "#T_cX", "#T_cH", "#T_cY", "#T_wrel", "#T_cX", "#T_cH", "#T_cY", "#T_wa", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wi", "#T_c1st", "#T_cfv", "#T_cF", "#T_cX", "#T_cH", "#T_cY", "#T_c2nd", "#T_cfv", "#T_cF", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wi", "#T_c1st", "#T_cfv", "#T_cF", "#T_cX", "#T_cH", "#T_cY", "#T_c2nd", "#T_cfv", "#T_cF", "#T_c1st", "#T_cfv", "#T_cF", "#T_cX", "#T_cH", "#T_cY", "#T_c2nd", "#T_cfv", "#T_cF", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cF", "#T_wcel", "#T_cX", "#T_cJ", "#T_cY", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cF", "#T_wcel", "#T_cX", "#T_cJ", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_homarel", "#P_1st2ndbr", "#P_mpan", "#P_syl", "#P_homahom2" ]
+}

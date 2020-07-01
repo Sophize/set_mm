@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See omex on Metamath](http://us.metamath.org/mpegif/omex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zfinf2 | |- E. y ( (/) e. y /\\ A. x e. y suc x e. y ) |\n| 2 |  | #P_intexabim | |- ( E. y ( (/) e. y /\\ A. x e. y suc x e. y ) -> |^| { y | ( (/) e. y /\\ A. x e. y suc x e. y ) } e. _V ) |\n| 3 | 1, 2 | #P_ax-mp | |- |^| { y | ( (/) e. y /\\ A. x e. y suc x e. y ) } e. _V |\n| 4 |  | #P_dfom3 | |- _om = |^| { y | ( (/) e. y /\\ A. x e. y suc x e. y ) } |\n| 5 | 4 | #P_eleq1i | |- ( _om e. _V <-> |^| { y | ( (/) e. y /\\ A. x e. y suc x e. y ) } e. _V ) |\n| 6 | 3, 5 | #P_mpbir | |- _om e. _V |",
+  "conclusion" : "#P_omex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wex", "#T_vy.tru", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy.tru", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_com", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_com", "#T_wcel", "#T_cvv", "#T_wb", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_c0", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vy.tru", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_zfinf2", "#P_dfom3", "#P_eleq1i", "#P_mpbir", "#P_intexabim" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imor on Metamath](http://us.metamath.org/mpegif/imor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_notnot | |- ( ph <-> -. -. ph ) |\n| 2 | 1 | #P_imbi1i | |- ( ( ph -> ps ) <-> ( -. -. ph -> ps ) ) |\n| 3 |  | #P_df-or | |- ( ( -. ph \\/ ps ) <-> ( -. -. ph -> ps ) ) |\n| 4 | 2, 3 | #P_bitr4i | |- ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) |",
+  "conclusion" : "#P_imor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_notnot", "#P_df-or", "#P_bitr4i" ]
+}

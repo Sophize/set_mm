@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon3adOLD on Metamath](http://us.metamath.org/mpegif/necon3adOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon3ad.1 | |- ( ph -> ( ps -> A = B ) ) |\n| 2 |  | #P_nne | |- ( -. A =/= B <-> A = B ) |\n| 3 | 1, 2 | #P_syl6ibr | |- ( ph -> ( ps -> -. A =/= B ) ) |\n| 4 | 3 | #P_con2d | |- ( ph -> ( A =/= B -> -. ps ) ) |\n\\\n Obsolete proof of ~ necon3ad as of 23-Nov-2019.  (Contributed by NM, 2-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_necon3ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6ibr", "#P_con2d", "#P_nne" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psubclssatN on Metamath](http://us.metamath.org/mpegif/psubclssatN.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psubclssat.a | |- A = ( Atoms ` K ) |\n| 2 |  | psubclssat.c | |- C = ( PSubCl ` K ) |\n| 3 |  | #P_eqid | |- ( _|_P ` K ) = ( _|_P ` K ) |\n| 4 | 1, 3, 2 | #P_psubcliN | |- ( ( K e. D /\\ X e. C ) -> ( X C_ A /\\ ( ( _|_P ` K ) ` ( ( _|_P ` K ) ` X ) ) = X ) ) |\n| 5 | 4 | #P_simpld | |- ( ( K e. D /\\ X e. C ) -> X C_ A ) |",
+  "conclusion" : "#P_psubclssatN",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cC", "#T_wceq", "#T_cpscN", "#T_cfv", "#T_cK", "#T_cpolN", "#T_cfv", "#T_cK", "#T_wceq", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cD", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cpolN", "#T_cfv", "#T_cK", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cK", "#T_wcel", "#T_cD", "#T_wa", "#T_cX", "#T_wcel", "#T_cC", "#T_wi", "#T_cX", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_psubcliN" ]
+}

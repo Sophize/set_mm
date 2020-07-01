@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See snjust on Metamath](http://us.metamath.org/mpegif/snjust.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq1 | |- ( x = z -> ( x = A <-> z = A ) ) |\n| 2 | 1 | #P_cbvabv | |- { x | x = A } = { z | z = A } |\n| 3 |  | #P_eqeq1 | |- ( z = y -> ( z = A <-> y = A ) ) |\n| 4 | 3 | #P_cbvabv | |- { z | z = A } = { y | y = A } |\n| 5 | 2, 4 | #P_eqtri | |- { x | x = A } = { y | y = A } |",
+  "conclusion" : "#P_snjust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_cab--3", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_cab--3", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_wceq", "#T_cA", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_vy", "#T_wceq", "#T_cA", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_cbvabv", "#P_eqeq1" ]
+}

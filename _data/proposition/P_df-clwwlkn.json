@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-clwwlkn on Metamath](http://us.metamath.org/mpegif/df-clwwlkn.html)"
+  } ],
+  "names" : [ "df-clwwlkn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cclwwlkn", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vv", "#T_cclwwlk", "#T_ve", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vw", "#T_wceq", "#T_vn", "#T_crab--4", "#T_ve", "#T_vn", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Closed Walks (in an undirected graph) of a fixed length n as words over the set of vertices.  Such a word corresponds to the sequence p(0) p(1) ... p(n-1) of the vertices in a closed walk p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) as defined in ~ df-clwlk .  (Contributed by Alexander van der Vekens, 20-Mar-2018.) ",
+  "statement" : "df-clwwlkn $p |- ClWWalksN = ( v e. _V , e e. _V |-> ( n e. NN0 |-> { w e. ( v ClWWalks e ) | ( # ` w ) = n } ) ) $.\n$d e n v w $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elpwg on Metamath](http://us.metamath.org/mpegif/elpwg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1 | |- ( x = A -> ( x e. ~P B <-> A e. ~P B ) ) |\n| 2 |  | #P_sseq1 | |- ( x = A -> ( x C_ B <-> A C_ B ) ) |\n| 3 |  | #P_selpw | |- ( x e. ~P B <-> x C_ B ) |\n| 4 | 1, 2, 3 | #P_vtoclbg | |- ( A e. V -> ( A e. ~P B <-> A C_ B ) ) |",
+  "conclusion" : "#P_elpwg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cpw", "#T_cB", "#T_wb", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq1", "#P_selpw", "#P_vtoclbg", "#P_eleq1" ]
+}

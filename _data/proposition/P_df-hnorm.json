@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-hnorm on Metamath](http://us.metamath.org/mpegif/df-hnorm.html)"
+  } ],
+  "names" : [ "df-hnorm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cno", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cdm", "#T_cdm", "#T_csp", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx", "#T_csp", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the function for the norm of a vector of Hilbert space.  See ~ normval for its value and ~ normcl for its closure.  Theorems ~ norm-i-i , ~ norm-ii-i , and ~ norm-iii-i show it has the expected properties of a norm.  In the literature, the norm of ` A ` is usually written \"|| ` A ` ||\", but we use function notation to take advantage of our existing theorems about functions.  Definition of norm in [Beran] p. 96.  (Contributed by NM, 6-Jun-2008.)  (New usage is discouraged.) ",
+  "statement" : "df-hnorm $p |- normh = ( x e. dom dom .ih |-> ( sqrt ` ( x .ih x ) ) ) $."
+}

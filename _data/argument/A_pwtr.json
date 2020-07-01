@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pwtr on Metamath](http://us.metamath.org/mpegif/pwtr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unipw | |- U. ~P A = A |\n| 2 | 1 | #P_sseq1i | |- ( U. ~P A C_ ~P A <-> A C_ ~P A ) |\n| 3 |  | #P_df-tr | |- ( Tr ~P A <-> U. ~P A C_ ~P A ) |\n| 4 |  | #P_dftr4 | |- ( Tr A <-> A C_ ~P A ) |\n| 5 | 2, 3, 4 | #P_3bitr4ri | |- ( Tr A <-> Tr ~P A ) |",
+  "conclusion" : "#P_pwtr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wtr", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wtr", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wtr", "#T_cA", "#T_wb", "#T_wtr", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unipw", "#P_3bitr4ri", "#P_dftr4", "#P_sseq1i", "#P_df-tr" ]
+}

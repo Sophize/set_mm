@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lenlt on Metamath](http://us.metamath.org/mpegif/lenlt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rexr | |- ( A e. RR -> A e. RR* ) |\n| 2 |  | #P_rexr | |- ( B e. RR -> B e. RR* ) |\n| 3 |  | #P_xrlenlt | |- ( ( A e. RR* /\\ B e. RR* ) -> ( A <_ B <-> -. B < A ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. RR /\\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) |",
+  "conclusion" : "#P_lenlt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_wn", "#T_cB", "#T_clt", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rexr", "#P_xrlenlt", "#P_syl2an" ]
+}

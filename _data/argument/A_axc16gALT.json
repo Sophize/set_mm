@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axc16gALT on Metamath](http://us.metamath.org/mpegif/axc16gALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_aev | |- ( A. x x = y -> A. z z = x ) |\n| 2 |  | #P_axc16 | |- ( A. x x = y -> ( ph -> A. x ph ) ) |\n| 3 |  | #P_biidd | |- ( A. z z = x -> ( ph <-> ph ) ) |\n| 4 | 3 | #P_dral1 | |- ( A. z z = x -> ( A. z ph <-> A. x ph ) ) |\n| 5 | 4 | #P_biimprd | |- ( A. z z = x -> ( A. x ph -> A. z ph ) ) |\n| 6 | 1, 2, 5 | #P_sylsyld | |- ( A. x x = y -> ( ph -> A. z ph ) ) |\n\\\n Alternate proof of ~ axc16g that uses ~ df-sb .  (Contributed by NM, 15-May-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_axc16g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wb", "#T_wph", "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_dral1", "#P_axc16", "#P_sylsyld", "#P_aev", "#P_biidd" ]
+}

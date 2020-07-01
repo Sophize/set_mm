@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.43 on Metamath](http://us.metamath.org/mpegif/19.43.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-or | |- ( ( ph \\/ ps ) <-> ( -. ph -> ps ) ) |\n| 2 | 1 | #P_exbii | |- ( E. x ( ph \\/ ps ) <-> E. x ( -. ph -> ps ) ) |\n| 3 |  | #P_19.35 | |- ( E. x ( -. ph -> ps ) <-> ( A. x -. ph -> E. x ps ) ) |\n| 4 |  | #P_alnex | |- ( A. x -. ph <-> -. E. x ph ) |\n| 5 | 4 | #P_imbi1i | |- ( ( A. x -. ph -> E. x ps ) <-> ( -. E. x ph -> E. x ps ) ) |\n| 6 | 2, 3, 5 | #P_3bitri | |- ( E. x ( ph \\/ ps ) <-> ( -. E. x ph -> E. x ps ) ) |\n| 7 |  | #P_df-or | |- ( ( E. x ph \\/ E. x ps ) <-> ( -. E. x ph -> E. x ps ) ) |\n| 8 | 6, 7 | #P_bitr4i | |- ( E. x ( ph \\/ ps ) <-> ( E. x ph \\/ E. x ps ) ) |",
+  "conclusion" : "#P_19.43",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wo", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_exbii", "#P_19.35", "#P_df-or", "#P_alnex", "#P_3bitri", "#P_bitr4i" ]
+}

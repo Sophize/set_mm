@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acsmap2d on Metamath](http://us.metamath.org/mpegif/acsmap2d.html)"
+  } ],
+  "names" : [ "acsmap2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cacs", "#T_cfv", "#T_cX", "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wph", "#T_wi", "#T_cT", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cS", "#T_wceq", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_wex", "#T_vf", "#T_vf", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cpw", "#T_cS", "#T_cin", "#T_cfn", "#T_wa", "#T_cS", "#T_wceq", "#T_cuni", "#T_crn", "#T_vf", "#T_cN", "#T_vf", "#T_cS", "#T_vf", "#T_cT", "#T_vf", "#T_vf", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In an algebraic closure system, if ` S ` and ` T ` have the same closure and ` S ` is independent, then there is a map ` f ` from ` T ` into the set of finite subsets of ` S ` such that ` S ` equals the union of ` ran f ` .  This is proven by taking the map ` f ` from ~ acsmapd and observing that, since ` S ` and ` T ` have the same closure, the closure of ` U. ran f ` must contain ` S ` .  Since ` S ` is independent, by ~ mrissmrcd , ` U. ran f ` must equal ` S ` .  See Section II.5 in [Cohn] p. 81 to 82.  (Contributed by David Moews, 1-May-2017.) ",
+  "statement" : "acsmap2d.1 $e |- ( ph -> A e. ( ACS ` X ) ) $.\nacsmap2d.2 $e |- N = ( mrCls ` A ) $.\nacsmap2d.3 $e |- I = ( mrInd ` A ) $.\nacsmap2d.4 $e |- ( ph -> S e. I ) $.\nacsmap2d.5 $e |- ( ph -> T C_ X ) $.\nacsmap2d.6 $e |- ( ph -> ( N ` S ) = ( N ` T ) ) $.\nacsmap2d $p |- ( ph -> E. f ( f : T --> ( ~P S i^i Fin ) /\\ S = U. ran f ) ) $.\n$d N f $.\n$d S f $.\n$d T f $.\n$d f ph $."
+}

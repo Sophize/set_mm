@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpima1 on Metamath](http://us.metamath.org/mpegif/xpima1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpima | |- ( ( A X. B ) \" C ) = if ( ( A i^i C ) = (/) , (/) , B ) |\n| 2 |  | #P_iftrue | |- ( ( A i^i C ) = (/) -> if ( ( A i^i C ) = (/) , (/) , B ) = (/) ) |\n| 3 | 1, 2 | #P_syl5eq | |- ( ( A i^i C ) = (/) -> ( ( A X. B ) \" C ) = (/) ) |",
+  "conclusion" : "#P_xpima1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cima", "#T_cC", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wi", "#T_cif--1", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_cin", "#T_cC", "#T_wceq", "#T_c0", "#T_wi", "#T_cA", "#T_cxp", "#T_cB", "#T_cima", "#T_cC", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xpima", "#P_iftrue", "#P_syl5eq" ]
+}

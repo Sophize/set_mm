@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See emre on Metamath](http://us.metamath.org/mpegif/emre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_2rp | |- 2 e. RR+ |\n| 3 |  | #P_relogcl | |- ( 2 e. RR+ -> ( log ` 2 ) e. RR ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( log ` 2 ) e. RR |\n| 5 | 1, 4 | #P_resubcli | |- ( 1 - ( log ` 2 ) ) e. RR |\n| 6 |  | #P_iccssre | |- ( ( ( 1 - ( log ` 2 ) ) e. RR /\\ 1 e. RR ) -> ( ( 1 - ( log ` 2 ) ) [,] 1 ) C_ RR ) |\n| 7 | 5, 1, 6 | #P_mp2an | |- ( ( 1 - ( log ` 2 ) ) [,] 1 ) C_ RR |\n| 8 |  | #P_emcl | |- gamma e. ( ( 1 - ( log ` 2 ) ) [,] 1 ) |\n| 9 | 7, 8 | #P_sselii | |- gamma e. RR |",
+  "conclusion" : "#P_emre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_c2", "#T_wcel", "#T_crp", "#T_c2", "#T_wcel", "#T_crp", "#T_wi", "#T_clog", "#T_cfv", "#T_c2", "#T_wcel", "#T_cr", "#T_clog", "#T_cfv", "#T_c2", "#T_wcel", "#T_cr", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_c2", "#T_wcel", "#T_cr", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_c2", "#T_wcel", "#T_cr", "#T_wa", "#T_c1", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_c2", "#T_cicc", "#T_c1", "#T_wss", "#T_cr", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_c2", "#T_cicc", "#T_c1", "#T_wss", "#T_cr", "#T_cem", "#T_wcel", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_c2", "#T_cicc", "#T_c1", "#T_cem", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_resubcli", "#P_mp2an", "#P_2rp", "#P_sselii", "#P_iccssre", "#P_relogcl", "#P_emcl", "#P_1re" ]
+}

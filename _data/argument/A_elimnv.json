@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimnv on Metamath](http://us.metamath.org/mpegif/elimnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elimnv.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | elimnv.5 | |- Z = ( 0vec ` U ) |\n| 3 |  | elimnv.9 | |- U e. NrmCVec |\n| 4 | 1, 2 | #P_nvzcl | |- ( U e. NrmCVec -> Z e. X ) |\n| 5 | 3, 4 | #P_ax-mp | |- Z e. X |\n| 6 | 5 | #P_elimel | |- if ( A e. X , A , Z ) e. X |",
+  "conclusion" : "#P_elimnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cZ", "#T_wceq", "#T_cn0v", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cZ", "#T_wcel", "#T_cX", "#T_cif--1", "#T_cA", "#T_wcel", "#T_cX", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cZ", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_elimel", "#P_nvzcl" ]
+}

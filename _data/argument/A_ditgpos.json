@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ditgpos on Metamath](http://us.metamath.org/mpegif/ditgpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ditgpos.1 | |- ( ph -> A <_ B ) |\n| 2 |  | #P_df-ditg | |- S_ [ A -> B ] C _d x = if ( A <_ B , S. ( A (,) B ) C _d x , -u S. ( B (,) A ) C _d x ) |\n| 3 | 1 | #P_iftrued | |- ( ph -> if ( A <_ B , S. ( A (,) B ) C _d x , -u S. ( B (,) A ) C _d x ) = S. ( A (,) B ) C _d x ) |\n| 4 | 2, 3 | #P_syl5eq | |- ( ph -> S_ [ A -> B ] C _d x = S. ( A (,) B ) C _d x ) |",
+  "conclusion" : "#P_ditgpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_cdit--1", "#T_cdit--2", "#T_cA.wceq", "#T_cdit--3", "#T_cB.wceq", "#T_cdit--4", "#T_cC", "#T_cdit--5", "#T_vx.wal", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cif--2", "#T_citg--1", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_cC", "#T_citg--2", "#T_vx.wal", "#T_cif--3", "#T_cneg", "#T_citg--1", "#T_cB.wceq", "#T_cioo", "#T_cA.wceq", "#T_cC", "#T_citg--2", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cif--1", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cif--2", "#T_citg--1", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_cC", "#T_citg--2", "#T_vx.wal", "#T_cif--3", "#T_cneg", "#T_citg--1", "#T_cB.wceq", "#T_cioo", "#T_cA.wceq", "#T_cC", "#T_citg--2", "#T_vx.wal", "#T_wceq", "#T_citg--1", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_cC", "#T_citg--2", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cdit--1", "#T_cdit--2", "#T_cA", "#T_cdit--3", "#T_cB", "#T_cdit--4", "#T_cC", "#T_cdit--5", "#T_vx", "#T_wceq", "#T_citg--1", "#T_cA", "#T_cioo", "#T_cB", "#T_cC", "#T_citg--2", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ditg", "#P_iftrued", "#P_syl5eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mat1f on Metamath](http://us.metamath.org/mpegif/mat1f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mat1rhmval.k | |- K = ( Base ` R ) |\n| 2 |  | mat1rhmval.a | |- A = ( { E } Mat R ) |\n| 3 |  | mat1rhmval.b | |- B = ( Base ` A ) |\n| 4 |  | mat1rhmval.o | |- O = <. E , E >. |\n| 5 |  | mat1rhmval.f | |- F = ( x e. K |-> { <. O , x >. } ) |\n| 6 | 1, 2, 3, 4, 5 | #P_mat1f1o | |- ( ( R e. Ring /\\ E e. V ) -> F : K -1-1-onto-> B ) |\n| 7 |  | #P_f1of | |- ( F : K -1-1-onto-> B -> F : K --> B ) |\n| 8 | 6, 7 | #P_syl | |- ( ( R e. Ring /\\ E e. V ) -> F : K --> B ) |",
+  "conclusion" : "#P_mat1f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_csn--1", "#T_cE", "#T_csn--2", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cO", "#T_wceq", "#T_cop--1", "#T_cE", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cK", "#T_cmpt--2", "#T_csn--1", "#T_cop--1", "#T_cO", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_csn--2", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cE", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cK", "#T_wf1o--2", "#T_cB.wceq", "#T_cF", "#T_wf1o--1", "#T_cK", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cK", "#T_wf--2", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cE", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wf--1", "#T_cK", "#T_wf--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1of", "#P_mat1f1o", "#P_syl" ]
+}

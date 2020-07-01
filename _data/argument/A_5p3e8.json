@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 5p3e8 on Metamath](http://us.metamath.org/mpegif/5p3e8.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-3 | |- 3 = ( 2 + 1 ) |\n| 2 | 1 | #P_oveq2i | |- ( 5 + 3 ) = ( 5 + ( 2 + 1 ) ) |\n| 3 |  | #P_5cn | |- 5 e. CC |\n| 4 |  | #P_2cn | |- 2 e. CC |\n| 5 |  | #P_ax-1cn | |- 1 e. CC |\n| 6 | 3, 4, 5 | #P_addassi | |- ( ( 5 + 2 ) + 1 ) = ( 5 + ( 2 + 1 ) ) |\n| 7 | 2, 6 | #P_eqtr4i | |- ( 5 + 3 ) = ( ( 5 + 2 ) + 1 ) |\n| 8 |  | #P_df-8 | |- 8 = ( 7 + 1 ) |\n| 9 |  | #P_5p2e7 | |- ( 5 + 2 ) = 7 |\n| 10 | 9 | #P_oveq1i | |- ( ( 5 + 2 ) + 1 ) = ( 7 + 1 ) |\n| 11 | 8, 10 | #P_eqtr4i | |- 8 = ( ( 5 + 2 ) + 1 ) |\n| 12 | 7, 11 | #P_eqtr4i | |- ( 5 + 3 ) = 8 |",
+  "conclusion" : "#P_5p3e8",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c3", "#T_wceq", "#T_c2", "#T_caddc", "#T_c1", "#T_c5", "#T_caddc", "#T_c3", "#T_wceq", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_c5", "#T_wcel", "#T_cc", "#T_c2", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_wceq", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_c5", "#T_caddc", "#T_c3", "#T_wceq", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_c8", "#T_wceq", "#T_c7", "#T_caddc", "#T_c1", "#T_c5", "#T_caddc", "#T_c2", "#T_wceq", "#T_c7", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_wceq", "#T_c7", "#T_caddc", "#T_c1", "#T_c8", "#T_wceq", "#T_c5", "#T_caddc", "#T_c2", "#T_caddc", "#T_c1", "#T_c5", "#T_caddc", "#T_c3", "#T_wceq", "#T_c8" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_5p2e7", "#P_5cn", "#P_2cn", "#P_ax-1cn", "#P_df-8", "#P_addassi", "#P_oveq1i", "#P_df-3", "#P_oveq2i" ]
+}

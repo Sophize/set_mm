@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fldivnn0 on Metamath](http://us.metamath.org/mpegif/fldivnn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0nndivcl | |- ( ( K e. NN0 /\\ L e. NN ) -> ( K / L ) e. RR ) |\n| 2 |  | #P_nn0ge0div | |- ( ( K e. NN0 /\\ L e. NN ) -> 0 <_ ( K / L ) ) |\n| 3 |  | #P_flge0nn0 | |- ( ( ( K / L ) e. RR /\\ 0 <_ ( K / L ) ) -> ( |_ ` ( K / L ) ) e. NN0 ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ( K e. NN0 /\\ L e. NN ) -> ( |_ ` ( K / L ) ) e. NN0 ) |",
+  "conclusion" : "#P_fldivnn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cr", "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cK", "#T_cdiv", "#T_cL", "#T_wi", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cn0", "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cfl", "#T_cfv", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0nndivcl", "#P_syl2anc", "#P_flge0nn0", "#P_nn0ge0div" ]
+}

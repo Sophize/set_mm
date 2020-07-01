@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opncldf2 on Metamath](http://us.metamath.org/mpegif/opncldf2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opncldf.1 | |- X = U. J |\n| 2 |  | opncldf.2 | |- F = ( u e. J |-> ( X \\ u ) ) |\n| 3 |  | #P_simpr | |- ( ( J e. Top /\\ A e. J ) -> A e. J ) |\n| 4 | 1 | #P_opncld | |- ( ( J e. Top /\\ A e. J ) -> ( X \\ A ) e. ( Clsd ` J ) ) |\n| 5 |  | #P_difeq2 | |- ( u = A -> ( X \\ u ) = ( X \\ A ) ) |\n| 6 | 5, 2 | #P_fvmptg | |- ( ( A e. J /\\ ( X \\ A ) e. ( Clsd ` J ) ) -> ( F ` A ) = ( X \\ A ) ) |\n| 7 | 3, 4, 6 | #P_syl2anc | |- ( ( J e. Top /\\ A e. J ) -> ( F ` A ) = ( X \\ A ) ) |",
+  "conclusion" : "#P_opncldf2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cF", "#T_wceq", "#T_vu", "#T_cmpt--1", "#T_cJ", "#T_cmpt--2", "#T_cX", "#T_cdif", "#T_vu", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_wi", "#T_cX", "#T_cdif", "#T_cA.wceq", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_vu", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cX", "#T_cdif", "#T_vu", "#T_wceq", "#T_cX", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_wa", "#T_cX", "#T_cdif", "#T_cA.wceq", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cX", "#T_cdif", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA", "#T_wcel", "#T_cJ", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cX", "#T_cdif", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opncld", "#P_fvmptg", "#P_difeq2", "#P_syl2anc", "#P_simpr" ]
+}

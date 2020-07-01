@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See msrfo on Metamath](http://us.metamath.org/mpegif/msrfo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mstaval.r | |- R = ( mStRed ` T ) |\n| 2 |  | mstaval.s | |- S = ( mStat ` T ) |\n| 3 |  | msrfo.p | |- P = ( mPreSt ` T ) |\n| 4 | 3, 1 | #P_msrf | |- R : P --> P |\n| 5 |  | #P_ffn | |- ( R : P --> P -> R Fn P ) |\n| 6 | 4, 5 | #P_ax-mp | |- R Fn P |\n| 7 |  | #P_dffn4 | |- ( R Fn P <-> R : P -onto-> ran R ) |\n| 8 | 6, 7 | #P_mpbi | |- R : P -onto-> ran R |\n| 9 | 1, 2 | #P_mstaval | |- S = ran R |\n| 10 |  | #P_foeq3 | |- ( S = ran R -> ( R : P -onto-> S <-> R : P -onto-> ran R ) ) |\n| 11 | 9, 10 | #P_ax-mp | |- ( R : P -onto-> S <-> R : P -onto-> ran R ) |\n| 12 | 8, 11 | #P_mpbir | |- R : P -onto-> S |",
+  "conclusion" : "#P_msrfo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cS", "#T_wceq", "#T_cmsta", "#T_cfv", "#T_cT", "#T_cP", "#T_wceq", "#T_cmpst", "#T_cfv", "#T_cT", "#T_cR", "#T_wf--1", "#T_cP", "#T_wf--2", "#T_cP", "#T_cR", "#T_wf--1", "#T_cP", "#T_wf--2", "#T_cP", "#T_wi", "#T_cR", "#T_wfn", "#T_cP", "#T_cR", "#T_wfn", "#T_cP", "#T_cR", "#T_wfn", "#T_cP", "#T_wb", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_crn", "#T_cR", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_crn", "#T_cR", "#T_cS", "#T_wceq", "#T_crn", "#T_cR", "#T_cS", "#T_wceq", "#T_crn", "#T_cR", "#T_wi", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_cS", "#T_wb", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_crn", "#T_cR", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_cS", "#T_wb", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_crn", "#T_cR", "#T_cR", "#T_wfo--1", "#T_cP", "#T_wfo--2", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_ax-mp", "#P_dffn4", "#P_foeq3", "#P_msrf", "#P_mpbi", "#P_mpbir", "#P_mstaval" ]
+}

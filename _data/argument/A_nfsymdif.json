@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfsymdif on Metamath](http://us.metamath.org/mpegif/nfsymdif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfsymdif.1 | |- F/_ x A |\n| 2 |  | nfsymdif.2 | |- F/_ x B |\n| 3 |  | #P_df-symdif | |- ( A (++) B ) = ( ( A \\ B ) u. ( B \\ A ) ) |\n| 4 | 1, 2 | #P_nfdif | |- F/_ x ( A \\ B ) |\n| 5 | 2, 1 | #P_nfdif | |- F/_ x ( B \\ A ) |\n| 6 | 4, 5 | #P_nfun | |- F/_ x ( ( A \\ B ) u. ( B \\ A ) ) |\n| 7 | 3, 6 | #P_nfcxfr | |- F/_ x ( A (++) B ) |",
+  "conclusion" : "#P_nfsymdif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_csymdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wnfc", "#T_vx", "#T_cA", "#T_csymdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfdif", "#P_nfcxfr", "#P_df-symdif", "#P_nfun" ]
+}

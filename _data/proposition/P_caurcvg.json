@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See caurcvg on Metamath](http://us.metamath.org/mpegif/caurcvg.html)"
+  } ],
+  "names" : [ "caurcvg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cr", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vm", "#T_wrex--2", "#T_cZ", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_vm", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_cmin", "#T_cF", "#T_cfv", "#T_vm", "#T_clt", "#T_vx", "#T_wph", "#T_wi", "#T_cF", "#T_cli", "#T_clsp", "#T_cfv", "#T_cF", "#T_cF", "#T_vk", "#T_vm", "#T_vx", "#T_cM", "#T_vm", "#T_vx", "#T_cZ", "#T_vk", "#T_vm", "#T_vx", "#T_vk", "#T_vm", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A Cauchy sequence of real numbers converges to its limit supremum.  The fourth hypothesis specifies that ` F ` is a Cauchy sequence. (Contributed by NM, 4-Apr-2005.)  (Revised by Mario Carneiro, 8-May-2016.) ",
+  "statement" : "caurcvg.1 $e |- Z = ( ZZ>= ` M ) $.\ncaurcvg.3 $e |- ( ph -> F : Z --> RR ) $.\ncaurcvg.4 $e |- ( ph -> A. x e. RR+ E. m e. Z A. k e. ( ZZ>= ` m ) ( abs ` ( ( F ` k ) - ( F ` m ) ) ) < x ) $.\ncaurcvg $p |- ( ph -> F ~~> ( limsup ` F ) ) $.\n$d F k m x $.\n$d M m x $.\n$d Z k m x $.\n$d k m ph x $."
+}

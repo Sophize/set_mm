@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rellycmp on Metamath](http://us.metamath.org/mpegif/rellycmp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_tgioo2 | |- ( topGen ` ran (,) ) = ( ( TopOpen ` CCfld ) |`t RR ) |\n| 3 | 1 | #P_cnllycmp | |- ( TopOpen ` CCfld ) e. N-Locally Comp |\n| 4 | 1 | #P_recld2 | |- RR e. ( Clsd ` ( TopOpen ` CCfld ) ) |\n| 5 |  | #P_cldllycmp | |- ( ( ( TopOpen ` CCfld ) e. N-Locally Comp /\\ RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) -> ( ( TopOpen ` CCfld ) |`t RR ) e. N-Locally Comp ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- ( ( TopOpen ` CCfld ) |`t RR ) e. N-Locally Comp |\n| 7 | 2, 6 | #P_eqeltri | |- ( topGen ` ran (,) ) e. N-Locally Comp |",
+  "conclusion" : "#P_rellycmp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_cr", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wcel", "#T_cnlly", "#T_ccmp", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wcel", "#T_cnlly", "#T_ccmp", "#T_wa", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_cr", "#T_wcel", "#T_cnlly", "#T_ccmp", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_cr", "#T_wcel", "#T_cnlly", "#T_ccmp", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_cnlly", "#T_ccmp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mp2an", "#P_eqeltri", "#P_recld2", "#P_tgioo2", "#P_cldllycmp", "#P_cnllycmp" ]
+}

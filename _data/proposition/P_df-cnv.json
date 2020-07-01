@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cnv on Metamath](http://us.metamath.org/mpegif/df-cnv.html)"
+  } ],
+  "names" : [ "df-cnv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cA", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_vy", "#T_cA", "#T_vx", "#T_copab--6", "#T_cA", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the converse of a class.  Definition 9.12 of [Quine] p. 64.  The converse of a binary relation swaps its arguments, i.e., if ` A e. _V ` and ` B e. _V ` then ` ( A ``' R B <-> B R A ) ` , as proven in ~ brcnv (see ~ df-br and ~ df-rel for more on relations).  For example, ` ``' { <. 2 , 6 >. , <. 3 , 9 >. } = { <. 6 , 2 >. , <. 9 , 3 >. } ` ( ~ ex-cnv ).  We use Quine's breve accent (smile) notation.  Like Quine, we use it as a prefix, which eliminates the need for parentheses.  Many authors use the postfix superscript \"to the minus one.\"  \"Converse\" is Quine's terminology; some authors call it \"inverse,\" especially when the argument is a function.  (Contributed by NM, 4-Jul-1994.) \n\n---\n\n Define the converse of a class.  Definition 9.12 of [Quine] p. 64.  The converse of a binary relation swaps its arguments, i.e., if ` A e. _V ` and ` B e. _V ` then ` ( A ``' R B <-> B R A ) ` , as proven in ~ brcnv (see ~ df-br and ~ df-rel for more on relations).  For example, ` ``' ` { ` <. ` 2 , 6 ` >. ` , ` <. ` 3 , 9 ` >. ` } = { ` <. ` 6 , 2 ` >. ` , ` <. ` 9 , 3 ` >. ` } .  We use Quine's breve accent (smile) notation. Like Quine, we use it as a prefix, which eliminates the need for parentheses.  Many authors use the postfix superscript \"to the minus one.\"  \"Converse\" is Quine's terminology; some authors call it \"inverse,\" especially when the argument is a function.  (Contributed by NM, 4-Jul-1994.) ",
+  "statement" : "df-cnv $p |- `' A = { <. x , y >. | y A x } $.\n$d A x y $."
+}

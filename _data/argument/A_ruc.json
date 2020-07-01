@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ruc on Metamath](http://us.metamath.org/mpegif/ruc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reex | |- RR e. _V |\n| 2 |  | #P_nnssre | |- NN C_ RR |\n| 3 |  | #P_ssdomg | |- ( RR e. _V -> ( NN C_ RR -> NN ~<_ RR ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- NN ~<_ RR |\n| 5 |  | #P_ruclem13 | |- -. f : NN -onto-> RR |\n| 6 |  | #P_f1ofo | |- ( f : NN -1-1-onto-> RR -> f : NN -onto-> RR ) |\n| 7 | 5, 6 | #P_mto | |- -. f : NN -1-1-onto-> RR |\n| 8 | 7 | #P_nex | |- -. E. f f : NN -1-1-onto-> RR |\n| 9 |  | #P_bren | |- ( NN ~~ RR <-> E. f f : NN -1-1-onto-> RR ) |\n| 10 | 8, 9 | #P_mtbir | |- -. NN ~~ RR |\n| 11 |  | #P_brsdom | |- ( NN ~< RR <-> ( NN ~<_ RR /\\ -. NN ~~ RR ) ) |\n| 12 | 4, 10, 11 | #P_mpbir2an | |- NN ~< RR |",
+  "conclusion" : "#P_ruc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cr", "#T_wcel", "#T_cvv", "#T_cn", "#T_wss", "#T_cr", "#T_cr", "#T_wcel", "#T_cvv", "#T_wi", "#T_cn", "#T_wss", "#T_cr", "#T_wi", "#T_cn", "#T_cdom", "#T_cr", "#T_cn", "#T_cdom", "#T_cr", "#T_wn", "#T_cbvex4v.vf", "#T_wfo--1", "#T_cn", "#T_wfo--2", "#T_cr", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cn", "#T_wf1o--2", "#T_cr", "#T_wi", "#T_cbvex4v.vf", "#T_wfo--1", "#T_cn", "#T_wfo--2", "#T_cr", "#T_wn", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cn", "#T_wf1o--2", "#T_cr", "#T_wn", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cn", "#T_wf1o--2", "#T_cr", "#T_cn", "#T_cen", "#T_cr", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wf1o--1", "#T_cn", "#T_wf1o--2", "#T_cr", "#T_wn", "#T_cn", "#T_cen", "#T_cr", "#T_cn", "#T_csdm", "#T_cr", "#T_wb", "#T_cn", "#T_cdom", "#T_cr", "#T_wa", "#T_wn", "#T_cn", "#T_cen", "#T_cr", "#T_cn", "#T_csdm", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_brsdom", "#P_nex", "#P_reex", "#P_ruclem13", "#P_f1ofo", "#P_nnssre", "#P_mpbir2an", "#P_mto", "#P_mtbir", "#P_ssdomg", "#P_bren" ]
+}

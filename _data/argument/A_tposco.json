@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tposco on Metamath](http://us.metamath.org/mpegif/tposco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_coass | |- ( ( F o. G ) o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) = ( F o. ( G o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) ) |\n| 2 |  | #P_dftpos4 | |- tpos ( F o. G ) = ( ( F o. G ) o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) |\n| 3 |  | #P_dftpos4 | |- tpos G = ( G o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) |\n| 4 | 3 | #P_coeq2i | |- ( F o. tpos G ) = ( F o. ( G o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) ) |\n| 5 | 1, 2, 4 | #P_3eqtr4i | |- tpos ( F o. G ) = ( F o. tpos G ) |",
+  "conclusion" : "#P_tposco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmpt--2", "#T_cuni", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmpt--2", "#T_cuni", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ctpos", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmpt--2", "#T_cuni", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ctpos", "#T_cG", "#T_wceq", "#T_cG", "#T_ccom", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmpt--2", "#T_cuni", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cF", "#T_ccom", "#T_ctpos", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmpt--2", "#T_cuni", "#T_ccnv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ctpos", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_ctpos", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dftpos4", "#P_3eqtr4i", "#P_coeq2i", "#P_coass" ]
+}

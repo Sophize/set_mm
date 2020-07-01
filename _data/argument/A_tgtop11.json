@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgtop11 on Metamath](http://us.metamath.org/mpegif/tgtop11.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tgtop | |- ( J e. Top -> ( topGen ` J ) = J ) |\n| 2 |  | #P_tgtop | |- ( K e. Top -> ( topGen ` K ) = K ) |\n| 3 | 1, 2 | #P_eqeqan12d | |- ( ( J e. Top /\\ K e. Top ) -> ( ( topGen ` J ) = ( topGen ` K ) <-> J = K ) ) |\n| 4 | 3 | #P_biimp3a | |- ( ( J e. Top /\\ K e. Top /\\ ( topGen ` J ) = ( topGen ` K ) ) -> J = K ) |",
+  "conclusion" : "#P_tgtop11",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cJ", "#T_cK", "#T_wcel", "#T_ctop", "#T_wi", "#T_ctg", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cK", "#T_wcel", "#T_ctop", "#T_wi", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wceq", "#T_ctg", "#T_cfv", "#T_cK", "#T_wb", "#T_cJ", "#T_wceq", "#T_cK", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_cK", "#T_wcel", "#T_ctop", "#T_w3a--2", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wceq", "#T_ctg", "#T_cfv", "#T_cK", "#T_wi", "#T_cJ", "#T_wceq", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeqan12d", "#P_biimp3a", "#P_tgtop" ]
+}

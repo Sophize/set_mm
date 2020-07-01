@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See le2addi on Metamath](http://us.metamath.org/mpegif/le2addi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt_2.1 | |- A e. RR |\n| 2 |  | lt_2.2 | |- B e. RR |\n| 3 |  | lt_2.3 | |- C e. RR |\n| 4 |  | lt.4 | |- D e. RR |\n| 5 |  | #P_le2add | |- ( ( ( A e. RR /\\ B e. RR ) /\\ ( C e. RR /\\ D e. RR ) ) -> ( ( A <_ C /\\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_mp4an | |- ( ( A <_ C /\\ B <_ D ) -> ( A + B ) <_ ( C + D ) ) |",
+  "conclusion" : "#P_le2addi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cC", "#T_wcel", "#T_cr", "#T_cD", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cC", "#T_wcel", "#T_cr", "#T_wa", "#T_cD", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_caddc", "#T_cD", "#T_cA", "#T_cle", "#T_cC", "#T_wa", "#T_cB", "#T_cle", "#T_cD", "#T_wi", "#T_cA", "#T_caddc", "#T_cB", "#T_cle", "#T_cC", "#T_caddc", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_le2add", "#P_mp4an" ]
+}

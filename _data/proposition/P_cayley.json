@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cayley on Metamath](http://us.metamath.org/mpegif/cayley.html)"
+  } ],
+  "names" : [ "cayley" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cH", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cX", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cF", "#T_wceq", "#T_vg", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_va", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_vg", "#T_c.pl", "#T_va", "#T_cS", "#T_wceq", "#T_crn", "#T_cF", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cH", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cG", "#T_cghm", "#T_cH", "#T_cress", "#T_cS", "#T_w3a--2", "#T_cF", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cS", "#T_c.pl", "#T_va", "#T_vg", "#T_cG", "#T_va", "#T_vg", "#T_cH", "#T_vg", "#T_cX", "#T_va", "#T_vg" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Cayley's Theorem (constructive version): given group ` G ` , ` F ` is an isomorphism between ` G ` and the subgroup ` S ` of the symmetric group ` H ` on the underlying set ` X ` of ` G ` .  See also Theorem 3.15 in [Rotman] p. 42.  (Contributed by Paul Chapman, 3-Mar-2008.) (Proof shortened by Mario Carneiro, 13-Jan-2015.) ",
+  "statement" : "cayley.x $e |- X = ( Base ` G ) $.\ncayley.h $e |- H = ( SymGrp ` X ) $.\ncayley.p $e |- .+ = ( +g ` G ) $.\ncayley.f $e |- F = ( g e. X |-> ( a e. X |-> ( g .+ a ) ) ) $.\ncayley.s $e |- S = ran F $.\ncayley $p |- ( G e. Grp -> ( S e. ( SubGrp ` H ) /\\ F e. ( G GrpHom ( H |`s S ) ) /\\ F : X -1-1-onto-> S ) ) $.\n$d .+ a g $.\n$d G a g $.\n$d H g $.\n$d X a g $."
+}

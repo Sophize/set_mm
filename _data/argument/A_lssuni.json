@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lssuni on Metamath](http://us.metamath.org/mpegif/lssuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lssss.v | |- V = ( Base ` W ) |\n| 2 |  | lssss.s | |- S = ( LSubSp ` W ) |\n| 3 |  | lssuni.w | |- ( ph -> W e. LMod ) |\n| 4 |  | #P_rabid2 | |- ( S = { x e. S | x C_ V } <-> A. x e. S x C_ V ) |\n| 5 | 1, 2 | #P_lssss | |- ( x e. S -> x C_ V ) |\n| 6 | 4, 5 | #P_mprgbir | |- S = { x e. S | x C_ V } |\n| 7 | 6 | #P_unieqi | |- U. S = U. { x e. S | x C_ V } |\n| 8 | 1, 2 | #P_lss1 | |- ( W e. LMod -> V e. S ) |\n| 9 |  | #P_unimax | |- ( V e. S -> U. { x e. S | x C_ V } = V ) |\n| 10 | 3, 8, 9 | #P_3syl | |- ( ph -> U. { x e. S | x C_ V } = V ) |\n| 11 | 7, 10 | #P_syl5eq | |- ( ph -> U. S = V ) |",
+  "conclusion" : "#P_lssuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_cS", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_cV", "#T_crab--4", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_vx.wal", "#T_wss", "#T_cV", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cV", "#T_cS", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_cV", "#T_crab--4", "#T_cuni", "#T_cS", "#T_wceq", "#T_cuni", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_cV", "#T_crab--4", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cV", "#T_wcel", "#T_cS", "#T_cV", "#T_wcel", "#T_cS", "#T_wi", "#T_cuni", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_cV", "#T_crab--4", "#T_wceq", "#T_cV", "#T_wph", "#T_wi", "#T_cuni", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_vx.wal", "#T_wss", "#T_cV", "#T_crab--4", "#T_wceq", "#T_cV", "#T_wph", "#T_wi", "#T_cuni", "#T_cS", "#T_wceq", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rabid2", "#P_unieqi", "#P_3syl", "#P_lssss", "#P_mprgbir", "#P_unimax", "#P_lss1", "#P_syl5eq" ]
+}

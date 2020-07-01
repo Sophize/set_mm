@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvply1 on Metamath](http://us.metamath.org/mpegif/dvply1.html)"
+  } ],
+  "names" : [ "dvply1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cA", "#T_cfv", "#T_vk", "#T_cmul", "#T_vz", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cG", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cB", "#T_cfv", "#T_vk", "#T_cmul", "#T_vz", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_cB", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_vk", "#T_caddc", "#T_c1", "#T_cmul", "#T_cA", "#T_cfv", "#T_vk", "#T_caddc", "#T_c1", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cc", "#T_cdv", "#T_cF", "#T_wceq", "#T_cG", "#T_cA", "#T_vk", "#T_vz", "#T_cB", "#T_vz", "#T_cN", "#T_vk", "#T_vz", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Derivative of a polynomial, explicit sum version.  (Contributed by Stefan O'Rear, 13-Nov-2014.)  (Revised by Mario Carneiro, 11-Feb-2015.) ",
+  "statement" : "dvply1.f $e |- ( ph -> F = ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.\ndvply1.g $e |- ( ph -> G = ( z e. CC |-> sum_ k e. ( 0 ... ( N - 1 ) ) ( ( B ` k ) x. ( z ^ k ) ) ) ) $.\ndvply1.a $e |- ( ph -> A : NN0 --> CC ) $.\ndvply1.b $e |- B = ( k e. NN0 |-> ( ( k + 1 ) x. ( A ` ( k + 1 ) ) ) ) $.\ndvply1.n $e |- ( ph -> N e. NN0 ) $.\ndvply1 $p |- ( ph -> ( CC _D F ) = G ) $.\n$d A k z $.\n$d B z $.\n$d N k z $.\n$d k ph z $."
+}

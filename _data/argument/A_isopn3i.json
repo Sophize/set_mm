@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isopn3i on Metamath](http://us.metamath.org/mpegif/isopn3i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( J e. Top /\\ S e. J ) -> S e. J ) |\n| 2 |  | #P_elssuni | |- ( S e. J -> S C_ U. J ) |\n| 3 |  | #P_eqid | |- U. J = U. J |\n| 4 | 3 | #P_isopn3 | |- ( ( J e. Top /\\ S C_ U. J ) -> ( S e. J <-> ( ( int ` J ) ` S ) = S ) ) |\n| 5 | 2, 4 | #P_sylan2 | |- ( ( J e. Top /\\ S e. J ) -> ( S e. J <-> ( ( int ` J ) ` S ) = S ) ) |\n| 6 | 1, 5 | #P_mpbid | |- ( ( J e. Top /\\ S e. J ) -> ( ( int ` J ) ` S ) = S ) |",
+  "conclusion" : "#P_isopn3i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_cJ", "#T_wi", "#T_cS", "#T_wcel", "#T_cJ", "#T_cS", "#T_wcel", "#T_cJ", "#T_wi", "#T_cS", "#T_wss", "#T_cuni", "#T_cJ", "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cuni", "#T_cJ", "#T_wi", "#T_cS", "#T_wcel", "#T_cJ", "#T_wb", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_cJ", "#T_wi", "#T_cS", "#T_wcel", "#T_cJ", "#T_wb", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wcel", "#T_cJ", "#T_wi", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sylan2", "#P_mpbid", "#P_simpr", "#P_isopn3", "#P_elssuni" ]
+}

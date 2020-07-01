@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See monmatcollpw on Metamath](http://us.metamath.org/mpegif/monmatcollpw.html)"
+  } ],
+  "names" : [ "monmatcollpw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cA", "#T_c.ex", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cP", "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cC", "#T_cT", "#T_wceq", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cM", "#T_wcel", "#T_cK", "#T_w3a--1", "#T_cL", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cI", "#T_wcel", "#T_cn0", "#T_wi", "#T_cL", "#T_c.ex", "#T_cX", "#T_c.x", "#T_cT", "#T_cfv", "#T_cM", "#T_cdecpmat", "#T_cI", "#T_wceq", "#T_cif--1", "#T_cI", "#T_wceq", "#T_cL", "#T_cif--2", "#T_cM", "#T_cif--3", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The matrix consisting of the coefficients in the polynomial entries of a polynomial matrix having scaled monomials with the same power as entries is the matrix of the coefficients of the monomials or a zero matrix. Generalization of ~ decpmatid (but requires ` R ` to be commutative!). (Contributed by AV, 11-Nov-2019.)  (Revised by AV, 4-Dec-2019.) ",
+  "statement" : "monmatcollpw.p $e |- P = ( Poly1 ` R ) $.\nmonmatcollpw.c $e |- C = ( N Mat P ) $.\nmonmatcollpw.a $e |- A = ( N Mat R ) $.\nmonmatcollpw.k $e |- K = ( Base ` A ) $.\nmonmatcollpw.0 $e |- .0. = ( 0g ` A ) $.\nmonmatcollpw.e $e |- .^ = ( .g ` ( mulGrp ` P ) ) $.\nmonmatcollpw.x $e |- X = ( var1 ` R ) $.\nmonmatcollpw.m $e |- .x. = ( .s ` C ) $.\nmonmatcollpw.t $e |- T = ( N matToPolyMat R ) $.\nmonmatcollpw $p |- ( ( ( N e. Fin /\\ R e. CRing ) /\\ ( M e. K /\\ L e. NN0 /\\ I e. NN0 ) ) -> ( ( ( L .^ X ) .x. ( T ` M ) ) decompPMat I ) = if ( I = L , M , .0. ) ) $."
+}

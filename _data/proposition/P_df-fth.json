@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-fth on Metamath](http://us.metamath.org/mpegif/df-fth.html)"
+  } ],
+  "names" : [ "df-fth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cfth", "#T_wceq", "#T_vc", "#T_cmpt2--1", "#T_ccat", "#T_cmpt2--2", "#T_vd", "#T_cmpt2--3", "#T_ccat", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vg", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vc", "#T_cfunc", "#T_vd", "#T_vg", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vc", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vc", "#T_wfun", "#T_ccnv", "#T_vx", "#T_vg", "#T_vy", "#T_copab--6", "#T_vc", "#T_vd", "#T_vf", "#T_vg", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function returning all the faithful functors from a category ` C ` to a category ` D ` .  A full functor is a functor in which all the morphism maps ` G ( X , Y ) ` between objects ` X , Y e. C ` are injections. Definition 3.27(2) in [Adamek] p. 34.  (Contributed by Mario Carneiro, 26-Jan-2017.) ",
+  "statement" : "df-fth $p |- Faith = ( c e. Cat , d e. Cat |-> { <. f , g >. | ( f ( c Func d ) g /\\ A. x e. ( Base ` c ) A. y e. ( Base ` c ) Fun `' ( x g y ) ) } ) $.\n$d c d f g x y $."
+}

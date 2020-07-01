@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0nnaddcl on Metamath](http://us.metamath.org/mpegif/nn0nnaddcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nncn | |- ( N e. NN -> N e. CC ) |\n| 2 |  | #P_nn0cn | |- ( M e. NN0 -> M e. CC ) |\n| 3 |  | #P_addcom | |- ( ( N e. CC /\\ M e. CC ) -> ( N + M ) = ( M + N ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( N e. NN /\\ M e. NN0 ) -> ( N + M ) = ( M + N ) ) |\n| 5 |  | #P_nnnn0addcl | |- ( ( N e. NN /\\ M e. NN0 ) -> ( N + M ) e. NN ) |\n| 6 | 4, 5 | #P_eqeltrrd | |- ( ( N e. NN /\\ M e. NN0 ) -> ( M + N ) e. NN ) |\n| 7 | 6 | #P_ancoms | |- ( ( M e. NN0 /\\ N e. NN ) -> ( M + N ) e. NN ) |",
+  "conclusion" : "#P_nn0nnaddcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cM", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cc", "#T_wa", "#T_cM", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_caddc", "#T_cM", "#T_wceq", "#T_cM", "#T_caddc", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wa", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_caddc", "#T_cM", "#T_wceq", "#T_cM", "#T_caddc", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wa", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_caddc", "#T_cM", "#T_wcel", "#T_cn", "#T_cN", "#T_wcel", "#T_cn", "#T_wa", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cM", "#T_caddc", "#T_cN", "#T_wcel", "#T_cn", "#T_cM", "#T_wcel", "#T_cn0", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cM", "#T_caddc", "#T_cN", "#T_wcel", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_nncn", "#P_nn0cn", "#P_nnnn0addcl", "#P_syl2an", "#P_addcom", "#P_ancoms" ]
+}

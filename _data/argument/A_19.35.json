@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.35 on Metamath](http://us.metamath.org/mpegif/19.35.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.27 | |- ( ph -> ( ( ph -> ps ) -> ps ) ) |\n| 2 | 1 | #P_aleximi | |- ( A. x ph -> ( E. x ( ph -> ps ) -> E. x ps ) ) |\n| 3 | 2 | #P_com12 | |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) |\n| 4 |  | #P_exnal | |- ( E. x -. ph <-> -. A. x ph ) |\n| 5 |  | #P_pm2.21 | |- ( -. ph -> ( ph -> ps ) ) |\n| 6 | 5 | #P_eximi | |- ( E. x -. ph -> E. x ( ph -> ps ) ) |\n| 7 | 4, 6 | #P_sylbir | |- ( -. A. x ph -> E. x ( ph -> ps ) ) |\n| 8 |  | #P_exa1 | |- ( E. x ps -> E. x ( ph -> ps ) ) |\n| 9 | 7, 8 | #P_ja | |- ( ( A. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) |\n| 10 | 3, 9 | #P_impbii | |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) |",
+  "conclusion" : "#P_19.35",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_pm2.21", "#P_sylbir", "#P_aleximi", "#P_ja", "#P_exnal", "#P_exa1", "#P_pm2.27", "#P_com12", "#P_eximi" ]
+}

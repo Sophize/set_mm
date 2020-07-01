@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvaliw on Metamath](http://us.metamath.org/mpegif/cbvaliw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvaliw.1 | |- ( A. x ph -> A. y A. x ph ) |\n| 2 |  | cbvaliw.2 | |- ( -. ps -> A. x -. ps ) |\n| 3 |  | cbvaliw.3 | |- ( x = y -> ( ph -> ps ) ) |\n| 4 | 2, 3 | #P_spimw | |- ( A. x ph -> ps ) |\n| 5 | 1, 4 | #P_alrimih | |- ( A. x ph -> A. y ps ) |",
+  "conclusion" : "#P_cbvaliw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wal", "#T_vx", "#T_wph", "#T_wn", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alrimih", "#P_spimw" ]
+}

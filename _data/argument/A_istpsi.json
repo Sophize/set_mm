@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See istpsi on Metamath](http://us.metamath.org/mpegif/istpsi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | istpsi.b | |- ( Base ` K ) = A |\n| 2 |  | istpsi.j | |- ( TopOpen ` K ) = J |\n| 3 |  | istpsi.1 | |- A = U. J |\n| 4 |  | istpsi.2 | |- J e. Top |\n| 5 | 1 | #P_eqcomi | |- A = ( Base ` K ) |\n| 6 | 2 | #P_eqcomi | |- J = ( TopOpen ` K ) |\n| 7 | 5, 6 | #P_istps2 | |- ( K e. TopSp <-> ( J e. Top /\\ A = U. J ) ) |\n| 8 | 4, 3, 7 | #P_mpbir2an | |- K e. TopSp |",
+  "conclusion" : "#P_istpsi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cA", "#T_ctopn", "#T_cfv", "#T_cK", "#T_wceq", "#T_cJ", "#T_cA", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cA.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ctps", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cK", "#T_wcel", "#T_ctps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_istps2", "#P_mpbir2an", "#P_eqcomi" ]
+}

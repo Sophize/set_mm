@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isgrpd2 on Metamath](http://us.metamath.org/mpegif/isgrpd2.html)"
+  } ],
+  "names" : [ "isgrpd2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_c.pl", "#T_vx", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_c.pl", "#T_vx", "#T_cB", "#T_vx", "#T_cG", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Deduce a group from its properties. ` N ` (negative) is normally dependent on ` x ` i.e. read it as ` N ( x ) ` .  Note: normally we don't use a ` ph ` antecedent on hypotheses that name structure components, since they can be eliminated with ~ eqid , but we make an exception for theorems such as ~ isgrpd2 , ~ ismndd , and ~ islmodd since theorems using them often rewrite the structure components. (Contributed by NM, 10-Aug-2013.) ",
+  "statement" : "isgrpd2.b $e |- ( ph -> B = ( Base ` G ) ) $.\nisgrpd2.p $e |- ( ph -> .+ = ( +g ` G ) ) $.\nisgrpd2.z $e |- ( ph -> .0. = ( 0g ` G ) ) $.\nisgrpd2.g $e |- ( ph -> G e. Mnd ) $.\nisgrpd2.n $e |- ( ( ph /\\ x e. B ) -> N e. B ) $.\nisgrpd2.j $e |- ( ( ph /\\ x e. B ) -> ( N .+ x ) = .0. ) $.\nisgrpd2 $p |- ( ph -> G e. Grp ) $.\n$d .+ x $.\n$d B x $.\n$d G x $.\n$d ph x $."
+}

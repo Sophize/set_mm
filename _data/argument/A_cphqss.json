@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cphqss on Metamath](http://us.metamath.org/mpegif/cphqss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cphsca.f | |- F = ( Scalar ` W ) |\n| 2 |  | cphsca.k | |- K = ( Base ` F ) |\n| 3 | 1, 2 | #P_cphsubrg | |- ( W e. CPreHil -> K e. ( SubRing ` CCfld ) ) |\n| 4 | 1, 2 | #P_cphsca | |- ( W e. CPreHil -> F = ( CCfld |`s K ) ) |\n| 5 |  | #P_cphlvec | |- ( W e. CPreHil -> W e. LVec ) |\n| 6 | 1 | #P_lvecdrng | |- ( W e. LVec -> F e. DivRing ) |\n| 7 | 5, 6 | #P_syl | |- ( W e. CPreHil -> F e. DivRing ) |\n| 8 | 4, 7 | #P_eqeltrrd | |- ( W e. CPreHil -> ( CCfld |`s K ) e. DivRing ) |\n| 9 |  | #P_qsssubdrg | |- ( ( K e. ( SubRing ` CCfld ) /\\ ( CCfld |`s K ) e. DivRing ) -> QQ C_ K ) |\n| 10 | 3, 8, 9 | #P_syl2anc | |- ( W e. CPreHil -> QQ C_ K ) |",
+  "conclusion" : "#P_cphqss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_cW", "#T_wcel", "#T_clvec", "#T_wi", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cF", "#T_wcel", "#T_cdr", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_ccnfld", "#T_cress", "#T_cK", "#T_wcel", "#T_cdr", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_ccnfld", "#T_cress", "#T_cK", "#T_wcel", "#T_cdr", "#T_wi", "#T_cq", "#T_wss", "#T_cK", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cq", "#T_wss", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_cphlvec", "#P_cphsubrg", "#P_syl2anc", "#P_lvecdrng", "#P_syl", "#P_cphsca", "#P_qsssubdrg" ]
+}

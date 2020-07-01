@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abelthlem9 on Metamath](http://us.metamath.org/mpegif/abelthlem9.html)"
+  } ],
+  "names" : [ "abelthlem9" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cA", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cM", "#T_cS", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cc", "#T_crab--3", "#T_cabs", "#T_cfv", "#T_c1", "#T_cmin", "#T_vz", "#T_cle", "#T_cM", "#T_cmul", "#T_c1", "#T_cmin", "#T_cabs", "#T_cfv", "#T_vz", "#T_crab--4", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cS", "#T_cmpt--2", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_cn0", "#T_cA", "#T_cfv", "#T_vn", "#T_cmul", "#T_vx", "#T_cexp", "#T_vn", "#T_wph", "#T_wa", "#T_cR", "#T_wcel", "#T_crp", "#T_wi", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_crp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_cabs", "#T_cfv", "#T_c1", "#T_cmin", "#T_vy", "#T_clt", "#T_vw", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_c1", "#T_cmin", "#T_cF", "#T_cfv", "#T_vy", "#T_clt", "#T_cR", "#T_cA", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vw", "#T_vy", "#T_cM", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cR", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cS", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vn", "#T_wph", "#T_vw", "#T_vx", "#T_vy", "#T_vn", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ abelth .  By adjusting the constant term, we can assume that the entire series converges to ` 0 ` .  (Contributed by Mario Carneiro, 1-Apr-2015.) ",
+  "statement" : "abelth.1 $e |- ( ph -> A : NN0 --> CC ) $.\nabelth.2 $e |- ( ph -> seq 0 ( + , A ) e. dom ~~> ) $.\nabelth.3 $e |- ( ph -> M e. RR ) $.\nabelth.4 $e |- ( ph -> 0 <_ M ) $.\nabelth.5 $e |- S = { z e. CC | ( abs ` ( 1 - z ) ) <_ ( M x. ( 1 - ( abs ` z ) ) ) } $.\nabelth.6 $e |- F = ( x e. S |-> sum_ n e. NN0 ( ( A ` n ) x. ( x ^ n ) ) ) $.\nabelthlem9 $p |- ( ( ph /\\ R e. RR+ ) -> E. w e. RR+ A. y e. S ( ( abs ` ( 1 - y ) ) < w -> ( abs ` ( ( F ` 1 ) - ( F ` y ) ) ) < R ) ) $.\n$d A n w x y z $.\n$d F w y $.\n$d M n w x y z $.\n$d R n w x y z $.\n$d S n w x y $.\n$d n ph w x y $.\n$d n x z $."
+}

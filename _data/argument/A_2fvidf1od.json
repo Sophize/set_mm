@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2fvidf1od on Metamath](http://us.metamath.org/mpegif/2fvidf1od.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 2fvcoidd.f | |- ( ph -> F : A --> B ) |\n| 2 |  | 2fvcoidd.g | |- ( ph -> G : B --> A ) |\n| 3 |  | 2fvcoidd.i | |- ( ph -> A. a e. A ( G ` ( F ` a ) ) = a ) |\n| 4 |  | 2fvidf1od.i | |- ( ph -> A. b e. B ( F ` ( G ` b ) ) = b ) |\n| 5 | 1, 2, 3 | #P_2fvcoidd | |- ( ph -> ( G o. F ) = ( _I |` A ) ) |\n| 6 | 2, 1, 4 | #P_2fvcoidd | |- ( ph -> ( F o. G ) = ( _I |` B ) ) |\n| 7 | 1, 2, 5, 6 | #P_fcof1od | |- ( ph -> F : A -1-1-onto-> B ) |",
+  "conclusion" : "#P_2fvidf1od",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cB", "#T_wf--2", "#T_cA", "#T_wph", "#T_wi", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cA", "#T_cG", "#T_cfv", "#T_cF", "#T_cfv", "#T_va", "#T_wceq", "#T_va", "#T_wph", "#T_wi", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cB", "#T_cF", "#T_cfv", "#T_cG", "#T_cfv", "#T_vb", "#T_wceq", "#T_vb", "#T_wph", "#T_wi", "#T_cG", "#T_ccom", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fcof1od", "#P_2fvcoidd" ]
+}

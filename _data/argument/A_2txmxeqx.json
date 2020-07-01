@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2txmxeqx on Metamath](http://us.metamath.org/mpegif/2txmxeqx.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2times | |- ( X e. CC -> ( 2 x. X ) = ( X + X ) ) |\n| 2 | 1 | #P_oveq1d | |- ( X e. CC -> ( ( 2 x. X ) - X ) = ( ( X + X ) - X ) ) |\n| 3 |  | #P_id | |- ( X e. CC -> X e. CC ) |\n| 4 | 3, 3 | #P_pncan2d | |- ( X e. CC -> ( ( X + X ) - X ) = X ) |\n| 5 | 2, 4 | #P_eqtrd | |- ( X e. CC -> ( ( 2 x. X ) - X ) = X ) |",
+  "conclusion" : "#P_2txmxeqx",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cc", "#T_wi", "#T_c2", "#T_cmul", "#T_cX", "#T_wceq", "#T_cX", "#T_caddc", "#T_cX", "#T_cX", "#T_wcel", "#T_cc", "#T_wi", "#T_c2", "#T_cmul", "#T_cX", "#T_cmin", "#T_cX", "#T_wceq", "#T_cX", "#T_caddc", "#T_cX", "#T_cmin", "#T_cX", "#T_cX", "#T_wcel", "#T_cc", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_cX", "#T_wcel", "#T_cc", "#T_wi", "#T_cX", "#T_caddc", "#T_cX", "#T_cmin", "#T_cX", "#T_wceq", "#T_cX", "#T_cX", "#T_wcel", "#T_cc", "#T_wi", "#T_c2", "#T_cmul", "#T_cX", "#T_cmin", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_2times", "#P_oveq1d", "#P_id", "#P_pncan2d" ]
+}

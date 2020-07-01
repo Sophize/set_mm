@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wfrlem4 on Metamath](http://us.metamath.org/mpegif/wfrlem4.html)"
+  } ],
+  "names" : [ "wfrlem4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wwe", "#T_cA", "#T_cB", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wex", "#T_vx", "#T_vf", "#T_wfn", "#T_vx", "#T_w3a--1", "#T_vx", "#T_wss", "#T_cA", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wss", "#T_vx", "#T_w3a--2", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_cab--3", "#T_vg", "#T_wcel", "#T_cB", "#T_wa", "#T_vh", "#T_wcel", "#T_cB", "#T_wi", "#T_vg", "#T_cres", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_wfn", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_wa", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_vg", "#T_cres", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_cfv", "#T_va", "#T_wceq", "#T_cF", "#T_cfv", "#T_vg", "#T_cres", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_cres", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cdm", "#T_vg", "#T_cin", "#T_cdm", "#T_vh", "#T_cpred--3", "#T_va", "#T_cA", "#T_va", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy", "#T_cB", "#T_va", "#T_cF", "#T_va", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy", "#T_cR", "#T_va", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for well-founded recursion.  Properties of the restriction of an acceptable function to the domain of another one.  (Contributed by Scott Fenton, 21-Apr-2011.) ",
+  "statement" : "wfrlem4.1 $e |- R We A $.\nwfrlem4.2 $e |- B = { f | E. x ( f Fn x /\\ ( x C_ A /\\ A. y e. x Pred ( R , A , y ) C_ x ) /\\ A. y e. x ( f ` y ) = ( F ` ( f |` Pred ( R , A , y ) ) ) ) } $.\nwfrlem4 $p |- ( ( g e. B /\\ h e. B ) -> ( ( g |` ( dom g i^i dom h ) ) Fn ( dom g i^i dom h ) /\\ A. a e. ( dom g i^i dom h ) ( ( g |` ( dom g i^i dom h ) ) ` a ) = ( F ` ( ( g |` ( dom g i^i dom h ) ) |` Pred ( R , ( dom g i^i dom h ) , a ) ) ) ) ) $.\n$d A a f g h x y $.\n$d B a $.\n$d F a f g h x y $.\n$d R a f g h x y $."
+}

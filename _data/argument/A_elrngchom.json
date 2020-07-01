@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrngchom on Metamath](http://us.metamath.org/mpegif/elrngchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rngcbas.c | |- C = ( RngCat ` U ) |\n| 2 |  | rngcbas.b | |- B = ( Base ` C ) |\n| 3 |  | rngcbas.u | |- ( ph -> U e. V ) |\n| 4 |  | rngchomfval.h | |- H = ( Hom ` C ) |\n| 5 |  | rngchom.x | |- ( ph -> X e. B ) |\n| 6 |  | rngchom.y | |- ( ph -> Y e. B ) |\n| 7 | 1, 2, 3, 4, 5, 6 | #P_rngchom | |- ( ph -> ( X H Y ) = ( X RngHomo Y ) ) |\n| 8 | 7 | #P_eleq2d | |- ( ph -> ( F e. ( X H Y ) <-> F e. ( X RngHomo Y ) ) ) |\n| 9 |  | #P_eqid | |- ( Base ` X ) = ( Base ` X ) |\n| 10 |  | #P_eqid | |- ( Base ` Y ) = ( Base ` Y ) |\n| 11 | 9, 10 | #P_rnghmf | |- ( F e. ( X RngHomo Y ) -> F : ( Base ` X ) --> ( Base ` Y ) ) |\n| 12 | 8, 11 | #P_syl6bi | |- ( ph -> ( F e. ( X H Y ) -> F : ( Base ` X ) --> ( Base ` Y ) ) ) |",
+  "conclusion" : "#P_elrngchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_crngc", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cX", "#T_crngh", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wb", "#T_cF", "#T_wcel", "#T_cX", "#T_crngh", "#T_cY", "#T_cbs", "#T_cfv", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cX", "#T_cbs", "#T_cfv", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_cF", "#T_wcel", "#T_cX", "#T_crngh", "#T_cY", "#T_wi", "#T_cF", "#T_wf--1", "#T_cbs", "#T_cfv", "#T_cX", "#T_wf--2", "#T_cbs", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wi", "#T_cF", "#T_wf--1", "#T_cbs", "#T_cfv", "#T_cX", "#T_wf--2", "#T_cbs", "#T_cfv", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eleq2d", "#P_rnghmf", "#P_syl6bi", "#P_rngchom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uslgraf on Metamath](http://us.metamath.org/mpegif/uslgraf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reluslgra | |- Rel USLGrph |\n| 2 | 1 | #P_brrelexi | |- ( V USLGrph E -> V e. _V ) |\n| 3 | 1 | #P_brrelex2i | |- ( V USLGrph E -> E e. _V ) |\n| 4 |  | #P_isuslgra | |- ( ( V e. _V /\\ E e. _V ) -> ( V USLGrph E <-> E : dom E -1-1-> { x e. ( ~P V \\ { (/) } ) | ( # ` x ) <_ 2 } ) ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( V USLGrph E -> ( V USLGrph E <-> E : dom E -1-1-> { x e. ( ~P V \\ { (/) } ) | ( # ` x ) <_ 2 } ) ) |\n| 6 | 5 | #P_ibi | |- ( V USLGrph E -> E : dom E -1-1-> { x e. ( ~P V \\ { (/) } ) | ( # ` x ) <_ 2 } ) |",
+  "conclusion" : "#P_uslgraf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cuslg", "#T_cV", "#T_cuslg", "#T_cE", "#T_wi", "#T_cV", "#T_wcel", "#T_cvv", "#T_cV", "#T_cuslg", "#T_cE", "#T_wi", "#T_cE", "#T_wcel", "#T_cvv", "#T_cV", "#T_wcel", "#T_cvv", "#T_wa", "#T_cE", "#T_wcel", "#T_cvv", "#T_wi", "#T_cV", "#T_cuslg", "#T_cE", "#T_wb", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c2", "#T_crab--4", "#T_cV", "#T_cuslg", "#T_cE", "#T_wi", "#T_cV", "#T_cuslg", "#T_cE", "#T_wb", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_cle", "#T_c2", "#T_crab--4", "#T_cV", "#T_cuslg", "#T_cE", "#T_wi", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx", "#T_cle", "#T_c2", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibi", "#P_syl2anc", "#P_isuslgra", "#P_brrelex2i", "#P_reluslgra", "#P_brrelexi" ]
+}

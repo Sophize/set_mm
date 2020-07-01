@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See impt on Metamath](http://us.metamath.org/mpegif/impt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simprim | |- ( -. ( ph -> -. ps ) -> ps ) |\n| 2 |  | #P_simplim | |- ( -. ( ph -> -. ps ) -> ph ) |\n| 3 | 2 | #P_imim1i | |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ( ps -> ch ) ) ) |\n| 4 | 1, 3 | #P_mpdi | |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) |",
+  "conclusion" : "#P_impt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprim", "#P_mpdi", "#P_imim1i", "#P_simplim" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See normsqi on Metamath](http://us.metamath.org/mpegif/normsqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | normcl.1 | |- A e. ~H |\n| 2 |  | #P_normval | |- ( A e. ~H -> ( normh ` A ) = ( sqrt ` ( A .ih A ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( normh ` A ) = ( sqrt ` ( A .ih A ) ) |\n| 4 | 3 | #P_oveq1i | |- ( ( normh ` A ) ^ 2 ) = ( ( sqrt ` ( A .ih A ) ) ^ 2 ) |\n| 5 |  | #P_hiidge0 | |- ( A e. ~H -> 0 <_ ( A .ih A ) ) |\n| 6 | 1, 5 | #P_ax-mp | |- 0 <_ ( A .ih A ) |\n| 7 |  | #P_hiidrcl | |- ( A e. ~H -> ( A .ih A ) e. RR ) |\n| 8 | 1, 7 | #P_ax-mp | |- ( A .ih A ) e. RR |\n| 9 | 8 | #P_sqsqrti | |- ( 0 <_ ( A .ih A ) -> ( ( sqrt ` ( A .ih A ) ) ^ 2 ) = ( A .ih A ) ) |\n| 10 | 6, 9 | #P_ax-mp | |- ( ( sqrt ` ( A .ih A ) ) ^ 2 ) = ( A .ih A ) |\n| 11 | 4, 10 | #P_eqtri | |- ( ( normh ` A ) ^ 2 ) = ( A .ih A ) |",
+  "conclusion" : "#P_normsqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_csp", "#T_cA.wceq", "#T_cno", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA", "#T_csp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_hiidrcl", "#P_oveq1i", "#P_hiidge0", "#P_normval", "#P_sqsqrti" ]
+}

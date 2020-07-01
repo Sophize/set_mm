@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvpncan on Metamath](http://us.metamath.org/mpegif/nvpncan.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvsubadd.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvsubadd.2 | |- G = ( +v ` U ) |\n| 3 |  | nvsubadd.3 | |- M = ( -v ` U ) |\n| 4 | 1, 2 | #P_nvcom | |- ( ( U e. NrmCVec /\\ B e. X /\\ A e. X ) -> ( B G A ) = ( A G B ) ) |\n| 5 | 4 | #P_oveq1d | |- ( ( U e. NrmCVec /\\ B e. X /\\ A e. X ) -> ( ( B G A ) M B ) = ( ( A G B ) M B ) ) |\n| 6 | 1, 2, 3 | #P_nvpncan2 | |- ( ( U e. NrmCVec /\\ B e. X /\\ A e. X ) -> ( ( B G A ) M B ) = A ) |\n| 7 | 5, 6 | #P_eqtr3d | |- ( ( U e. NrmCVec /\\ B e. X /\\ A e. X ) -> ( ( A G B ) M B ) = A ) |\n| 8 | 7 | #P_3com23 | |- ( ( U e. NrmCVec /\\ A e. X /\\ B e. X ) -> ( ( A G B ) M B ) = A ) |",
+  "conclusion" : "#P_nvpncan",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cM", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_cG", "#T_cA.wceq", "#T_cM", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cM", "#T_cB.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_cG", "#T_cA.wceq", "#T_cM", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cM", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_cM", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nvpncan2", "#P_3com23", "#P_oveq1d", "#P_nvcom", "#P_eqtr3d" ]
+}

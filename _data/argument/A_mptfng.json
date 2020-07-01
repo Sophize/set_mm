@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mptfng on Metamath](http://us.metamath.org/mpegif/mptfng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mptfng.1 | |- F = ( x e. A |-> B ) |\n| 2 |  | #P_eueq | |- ( B e. _V <-> E! y y = B ) |\n| 3 | 2 | #P_ralbii | |- ( A. x e. A B e. _V <-> A. x e. A E! y y = B ) |\n| 4 |  | #P_df-mpt | |- ( x e. A |-> B ) = { <. x , y >. | ( x e. A /\\ y = B ) } |\n| 5 | 1, 4 | #P_eqtri | |- F = { <. x , y >. | ( x e. A /\\ y = B ) } |\n| 6 | 5 | #P_fnopabg | |- ( A. x e. A E! y y = B <-> F Fn A ) |\n| 7 | 3, 6 | #P_bitri | |- ( A. x e. A B e. _V <-> F Fn A ) |",
+  "conclusion" : "#P_mptfng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_weu", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_weu", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_copab--6", "#T_cF", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_copab--6", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_weu", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cvv", "#T_wb", "#T_cF", "#T_wfn", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_fnopabg", "#P_eueq", "#P_df-mpt", "#P_ralbii", "#P_bitri" ]
+}

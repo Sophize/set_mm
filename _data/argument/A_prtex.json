@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prtex on Metamath](http://us.metamath.org/mpegif/prtex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prtlem18.1 | |- .~ = { <. x , y >. | E. u e. A ( x e. u /\\ y e. u ) } |\n| 2 | 1 | #P_prter1 | |- ( Prt A -> .~ Er U. A ) |\n| 3 |  | #P_erexb | |- ( .~ Er U. A -> ( .~ e. _V <-> U. A e. _V ) ) |\n| 4 | 2, 3 | #P_syl | |- ( Prt A -> ( .~ e. _V <-> U. A e. _V ) ) |\n| 5 |  | #P_uniexb | |- ( A e. _V <-> U. A e. _V ) |\n| 6 | 4, 5 | #P_syl6bbr | |- ( Prt A -> ( .~ e. _V <-> A e. _V ) ) |",
+  "conclusion" : "#P_prtex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.sm", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cA", "#T_vx", "#T_wcel", "#T_vu", "#T_wa", "#T_vy", "#T_wcel", "#T_vu", "#T_copab--6", "#T_wprt", "#T_cA.wceq", "#T_wi", "#T_c.sm", "#T_wer", "#T_cuni", "#T_cA.wceq", "#T_c.sm", "#T_wer", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_c.sm", "#T_wcel", "#T_cvv", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wprt", "#T_cA.wceq", "#T_wi", "#T_c.sm", "#T_wcel", "#T_cvv", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wprt", "#T_cA", "#T_wi", "#T_c.sm", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_prter1", "#P_syl", "#P_erexb", "#P_uniexb", "#P_syl6bbr" ]
+}

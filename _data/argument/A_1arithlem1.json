@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1arithlem1 on Metamath](http://us.metamath.org/mpegif/1arithlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 1arith.1 | |- M = ( n e. NN |-> ( p e. Prime |-> ( p pCnt n ) ) ) |\n| 2 |  | #P_oveq2 | |- ( n = N -> ( p pCnt n ) = ( p pCnt N ) ) |\n| 3 | 2 | #P_mpteq2dv | |- ( n = N -> ( p e. Prime |-> ( p pCnt n ) ) = ( p e. Prime |-> ( p pCnt N ) ) ) |\n| 4 |  | #P_zex | |- ZZ e. _V |\n| 5 |  | #P_prmz | |- ( n e. Prime -> n e. ZZ ) |\n| 6 | 5 | #P_ssriv | |- Prime C_ ZZ |\n| 7 | 4, 6 | #P_ssexi | |- Prime e. _V |\n| 8 | 7 | #P_mptex | |- ( p e. Prime |-> ( p pCnt N ) ) e. _V |\n| 9 | 3, 1, 8 | #P_fvmpt | |- ( N e. NN -> ( M ` N ) = ( p e. Prime |-> ( p pCnt N ) ) ) |",
+  "conclusion" : "#P_1arithlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_vn", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_vp", "#T_cpc", "#T_vn", "#T_wceq", "#T_vp", "#T_cpc", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_vn", "#T_wceq", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_cN", "#T_cz", "#T_wcel", "#T_cvv", "#T_vn", "#T_wcel", "#T_cprime", "#T_wi", "#T_vn", "#T_wcel", "#T_cz", "#T_cprime", "#T_wss", "#T_cz", "#T_cprime", "#T_wcel", "#T_cvv", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_cN", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cM", "#T_cfv", "#T_cN", "#T_wceq", "#T_vp", "#T_cmpt--1", "#T_cprime", "#T_cmpt--2", "#T_vp", "#T_cpc", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_mpteq2dv", "#P_oveq2", "#P_zex", "#P_ssexi", "#P_prmz", "#P_mptex", "#P_ssriv" ]
+}

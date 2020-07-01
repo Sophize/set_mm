@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dffo2 on Metamath](http://us.metamath.org/mpegif/dffo2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fof | |- ( F : A -onto-> B -> F : A --> B ) |\n| 2 |  | #P_forn | |- ( F : A -onto-> B -> ran F = B ) |\n| 3 | 1, 2 | #P_jca | |- ( F : A -onto-> B -> ( F : A --> B /\\ ran F = B ) ) |\n| 4 |  | #P_ffn | |- ( F : A --> B -> F Fn A ) |\n| 5 |  | #P_df-fo | |- ( F : A -onto-> B <-> ( F Fn A /\\ ran F = B ) ) |\n| 6 | 5 | #P_biimpri | |- ( ( F Fn A /\\ ran F = B ) -> F : A -onto-> B ) |\n| 7 | 4, 6 | #P_sylan | |- ( ( F : A --> B /\\ ran F = B ) -> F : A -onto-> B ) |\n| 8 | 3, 7 | #P_impbii | |- ( F : A -onto-> B <-> ( F : A --> B /\\ ran F = B ) ) |",
+  "conclusion" : "#P_dffo2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wb", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wa", "#T_crn", "#T_cF", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_impbii", "#P_sylan", "#P_fof", "#P_df-fo", "#P_jca", "#P_biimpri", "#P_forn" ]
+}

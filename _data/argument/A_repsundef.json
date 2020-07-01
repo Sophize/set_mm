@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See repsundef on Metamath](http://us.metamath.org/mpegif/repsundef.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn s x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-reps | |- repeatS = ( s e. _V , n e. NN0 |-> ( x e. ( 0 ..^ n ) |-> s ) ) |\n| 2 |  | #P_ovex | |- ( 0 ..^ n ) e. _V |\n| 3 | 2 | #P_mptex | |- ( x e. ( 0 ..^ n ) |-> s ) e. _V |\n| 4 | 1, 3 | #P_dmmpt2 | |- dom repeatS = ( _V X. NN0 ) |\n| 5 |  | #P_df-nel | |- ( N e/ NN0 <-> -. N e. NN0 ) |\n| 6 | 5 | #P_biimpi | |- ( N e/ NN0 -> -. N e. NN0 ) |\n| 7 | 6 | #P_intnand | |- ( N e/ NN0 -> -. ( S e. _V /\\ N e. NN0 ) ) |\n| 8 |  | #P_ndmovg | |- ( ( dom repeatS = ( _V X. NN0 ) /\\ -. ( S e. _V /\\ N e. NN0 ) ) -> ( S repeatS N ) = (/) ) |\n| 9 | 4, 7, 8 | #P_sylancr | |- ( N e/ NN0 -> ( S repeatS N ) = (/) ) |",
+  "conclusion" : "#P_repsundef",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vs", "#T_vx", "#T_creps", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_vx.wal", "#T_cmpt--1", "#T_cc0", "#T_cfzo", "#T_vn", "#T_cmpt--2", "#T_vs", "#T_cc0", "#T_cfzo", "#T_vn", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cmpt--1", "#T_cc0", "#T_cfzo", "#T_vn", "#T_cmpt--2", "#T_vs", "#T_wcel", "#T_cvv", "#T_cdm", "#T_creps", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cn0", "#T_cN", "#T_wnel", "#T_cn0", "#T_wb", "#T_wn", "#T_cN", "#T_wcel", "#T_cn0", "#T_cN", "#T_wnel", "#T_cn0", "#T_wi", "#T_wn", "#T_cN", "#T_wcel", "#T_cn0", "#T_cN", "#T_wnel", "#T_cn0", "#T_wi", "#T_wn", "#T_cS", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_cdm", "#T_creps", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cn0", "#T_wa", "#T_wn", "#T_cS", "#T_wcel", "#T_cvv", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cS", "#T_creps", "#T_cN", "#T_wceq", "#T_c0", "#T_cN", "#T_wnel", "#T_cn0", "#T_wi", "#T_cS", "#T_creps", "#T_cN", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_intnand", "#P_sylancr", "#P_df-reps", "#P_ndmovg", "#P_biimpi", "#P_dmmpt2", "#P_df-nel", "#P_mptex" ]
+}

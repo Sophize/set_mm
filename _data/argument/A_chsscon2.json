@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chsscon2 on Metamath](http://us.metamath.org/mpegif/chsscon2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chss | |- ( A e. CH -> A C_ ~H ) |\n| 2 |  | #P_chss | |- ( B e. CH -> B C_ ~H ) |\n| 3 |  | #P_occon3 | |- ( ( A C_ ~H /\\ B C_ ~H ) -> ( A C_ ( _|_ ` B ) <-> B C_ ( _|_ ` A ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. CH /\\ B e. CH ) -> ( A C_ ( _|_ ` B ) <-> B C_ ( _|_ ` A ) ) ) |",
+  "conclusion" : "#P_chsscon2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_wa", "#T_cB", "#T_wcel", "#T_cch", "#T_wi", "#T_cA", "#T_wss", "#T_cort", "#T_cfv", "#T_cB", "#T_wb", "#T_cB", "#T_wss", "#T_cort", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chss", "#P_occon3", "#P_syl2an" ]
+}

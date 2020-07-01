@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmf on Metamath](http://us.metamath.org/mpegif/nmf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nmf.x | |- X = ( Base ` G ) |\n| 2 |  | nmf.n | |- N = ( norm ` G ) |\n| 3 |  | #P_ngpgrp | |- ( G e. NrmGrp -> G e. Grp ) |\n| 4 |  | #P_ngpms | |- ( G e. NrmGrp -> G e. MetSp ) |\n| 5 |  | #P_eqid | |- ( ( dist ` G ) |` ( X X. X ) ) = ( ( dist ` G ) |` ( X X. X ) ) |\n| 6 | 1, 5 | #P_msmet | |- ( G e. MetSp -> ( ( dist ` G ) |` ( X X. X ) ) e. ( Met ` X ) ) |\n| 7 | 4, 6 | #P_syl | |- ( G e. NrmGrp -> ( ( dist ` G ) |` ( X X. X ) ) e. ( Met ` X ) ) |\n| 8 |  | #P_eqid | |- ( dist ` G ) = ( dist ` G ) |\n| 9 | 2, 1, 8, 5 | #P_nmf2 | |- ( ( G e. Grp /\\ ( ( dist ` G ) |` ( X X. X ) ) e. ( Met ` X ) ) -> N : X --> RR ) |\n| 10 | 3, 7, 9 | #P_syl2anc | |- ( G e. NrmGrp -> N : X --> RR ) |",
+  "conclusion" : "#P_nmf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cG", "#T_wcel", "#T_cmt", "#T_cds", "#T_cfv", "#T_cG", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_cG", "#T_wcel", "#T_cmt", "#T_wi", "#T_cds", "#T_cfv", "#T_cG", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cds", "#T_cfv", "#T_cG", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_cds", "#T_cfv", "#T_cG", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cds", "#T_cfv", "#T_cG", "#T_cres", "#T_cX", "#T_cxp", "#T_cX", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wi", "#T_cN", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cr", "#T_cG", "#T_wcel", "#T_cngp", "#T_wi", "#T_cN", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_nmf2", "#P_syl2anc", "#P_msmet", "#P_syl", "#P_ngpms", "#P_ngpgrp" ]
+}

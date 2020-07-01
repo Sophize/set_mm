@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hmeocnvb on Metamath](http://us.metamath.org/mpegif/hmeocnvb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hmeocnv | |- ( `' F e. ( J Homeo K ) -> `' `' F e. ( K Homeo J ) ) |\n| 2 |  | #P_dfrel2 | |- ( Rel F <-> `' `' F = F ) |\n| 3 |  | #P_eleq1 | |- ( `' `' F = F -> ( `' `' F e. ( K Homeo J ) <-> F e. ( K Homeo J ) ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( Rel F -> ( `' `' F e. ( K Homeo J ) <-> F e. ( K Homeo J ) ) ) |\n| 5 | 1, 4 | #P_syl5ib | |- ( Rel F -> ( `' F e. ( J Homeo K ) -> F e. ( K Homeo J ) ) ) |\n| 6 |  | #P_hmeocnv | |- ( F e. ( K Homeo J ) -> `' F e. ( J Homeo K ) ) |\n| 7 | 5, 6 | #P_impbid1 | |- ( Rel F -> ( `' F e. ( J Homeo K ) <-> F e. ( K Homeo J ) ) ) |",
+  "conclusion" : "#P_hmeocnvb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_cF", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wrel", "#T_cF", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wb", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wrel", "#T_cF", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wb", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wrel", "#T_cF", "#T_wi", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wi", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wi", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wrel", "#T_cF", "#T_wi", "#T_ccnv", "#T_cF", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wb", "#T_cF", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hmeocnv", "#P_eleq1", "#P_syl5ib", "#P_dfrel2", "#P_impbid1", "#P_sylbi" ]
+}

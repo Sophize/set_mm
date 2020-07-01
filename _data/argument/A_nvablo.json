@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvablo on Metamath](http://us.metamath.org/mpegif/nvablo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvabl.1 | |- G = ( +v ` U ) |\n| 2 |  | #P_eqid | |- ( 1st ` U ) = ( 1st ` U ) |\n| 3 | 2 | #P_nvvc | |- ( U e. NrmCVec -> ( 1st ` U ) e. CVecOLD ) |\n| 4 | 1 | #P_vafval | |- G = ( 1st ` ( 1st ` U ) ) |\n| 5 | 4 | #P_vcablo | |- ( ( 1st ` U ) e. CVecOLD -> G e. AbelOp ) |\n| 6 | 3, 5 | #P_syl | |- ( U e. NrmCVec -> G e. AbelOp ) |",
+  "conclusion" : "#P_nvablo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_c1st", "#T_cfv", "#T_cU", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_c1st", "#T_cfv", "#T_cU", "#T_wcel", "#T_cvc", "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cU", "#T_c1st", "#T_cfv", "#T_cU", "#T_wcel", "#T_cvc", "#T_wi", "#T_cG", "#T_wcel", "#T_cablo", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cG", "#T_wcel", "#T_cablo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_vafval", "#P_vcablo", "#P_syl", "#P_nvvc" ]
+}

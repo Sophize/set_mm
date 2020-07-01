@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjoc2i on Metamath](http://us.metamath.org/mpegif/pjoc2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjoc2.1 | |- H e. CH |\n| 2 |  | pjoc2.2 | |- A e. ~H |\n| 3 | 1 | #P_choccli | |- ( _|_ ` H ) e. CH |\n| 4 | 3, 2 | #P_pjoc1i | |- ( A e. ( _|_ ` H ) <-> ( ( projh ` ( _|_ ` ( _|_ ` H ) ) ) ` A ) = 0h ) |\n| 5 | 1 | #P_pjococi | |- ( _|_ ` ( _|_ ` H ) ) = H |\n| 6 | 5 | #P_fveq2i | |- ( projh ` ( _|_ ` ( _|_ ` H ) ) ) = ( projh ` H ) |\n| 7 | 6 | #P_fveq1i | |- ( ( projh ` ( _|_ ` ( _|_ ` H ) ) ) ` A ) = ( ( projh ` H ) ` A ) |\n| 8 | 7 | #P_eqeq1i | |- ( ( ( projh ` ( _|_ ` ( _|_ ` H ) ) ) ` A ) = 0h <-> ( ( projh ` H ) ` A ) = 0h ) |\n| 9 | 4, 8 | #P_bitri | |- ( A e. ( _|_ ` H ) <-> ( ( projh ` H ) ` A ) = 0h ) |",
+  "conclusion" : "#P_pjoc2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wcel", "#T_cch", "#T_cA", "#T_wcel", "#T_chil", "#T_cort", "#T_cfv", "#T_cH", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_cort", "#T_cfv", "#T_cH", "#T_wb", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0v", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wceq", "#T_cH", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0v", "#T_wb", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0v", "#T_cA", "#T_wcel", "#T_cort", "#T_cfv", "#T_cH", "#T_wb", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_cA", "#T_wceq", "#T_c0v" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_fveq1i", "#P_pjococi", "#P_eqeq1i", "#P_pjoc1i", "#P_bitri", "#P_choccli" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fz1n on Metamath](http://us.metamath.org/mpegif/fz1n.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1z | |- 1 e. ZZ |\n| 2 |  | #P_nn0z | |- ( N e. NN0 -> N e. ZZ ) |\n| 3 |  | #P_fzn | |- ( ( 1 e. ZZ /\\ N e. ZZ ) -> ( N < 1 <-> ( 1 ... N ) = (/) ) ) |\n| 4 | 1, 2, 3 | #P_sylancr | |- ( N e. NN0 -> ( N < 1 <-> ( 1 ... N ) = (/) ) ) |\n| 5 |  | #P_nn0lt10b | |- ( N e. NN0 -> ( N < 1 <-> N = 0 ) ) |\n| 6 | 4, 5 | #P_bitr3d | |- ( N e. NN0 -> ( ( 1 ... N ) = (/) <-> N = 0 ) ) |",
+  "conclusion" : "#P_fz1n",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_clt", "#T_c1", "#T_wb", "#T_c1", "#T_cfz", "#T_cN", "#T_wceq", "#T_c0", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_clt", "#T_c1", "#T_wb", "#T_c1", "#T_cfz", "#T_cN", "#T_wceq", "#T_c0", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_clt", "#T_c1", "#T_wb", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_c1", "#T_cfz", "#T_cN", "#T_wceq", "#T_c0", "#T_wb", "#T_cN", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0z", "#P_sylancr", "#P_fzn", "#P_nn0lt10b", "#P_1z", "#P_bitr3d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunss on Metamath](http://us.metamath.org/mpegif/wunss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wununi.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wununi.2 | |- ( ph -> A e. U ) |\n| 3 |  | wunss.3 | |- ( ph -> B C_ A ) |\n| 4 | 1, 2 | #P_wunpw | |- ( ph -> ~P A e. U ) |\n| 5 | 1, 4 | #P_wunelss | |- ( ph -> ~P A C_ U ) |\n| 6 |  | #P_elpw2g | |- ( A e. U -> ( B e. ~P A <-> B C_ A ) ) |\n| 7 | 2, 6 | #P_syl | |- ( ph -> ( B e. ~P A <-> B C_ A ) ) |\n| 8 | 3, 7 | #P_mpbird | |- ( ph -> B e. ~P A ) |\n| 9 | 5, 8 | #P_sseldd | |- ( ph -> B e. U ) |",
+  "conclusion" : "#P_wunss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cA", "#T_wph", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunelss", "#P_sseldd", "#P_syl", "#P_elpw2g", "#P_wunpw", "#P_mpbird" ]
+}

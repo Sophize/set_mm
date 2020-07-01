@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cvslvec on Metamath](http://us.metamath.org/mpegif/cvslvec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cvslvec.1 | |- ( ph -> W e. CVec ) |\n| 2 |  | #P_df-cvs | |- CVec = ( CMod i^i LVec ) |\n| 3 | 2 | #P_elin2 | |- ( W e. CVec <-> ( W e. CMod /\\ W e. LVec ) ) |\n| 4 | 3 | #P_simprbi | |- ( W e. CVec -> W e. LVec ) |\n| 5 | 1, 4 | #P_syl | |- ( ph -> W e. LVec ) |",
+  "conclusion" : "#P_cvslvec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_ccvs", "#T_ccvs", "#T_wceq", "#T_cclm", "#T_cin", "#T_clvec", "#T_cW", "#T_wcel", "#T_ccvs", "#T_wb", "#T_cW", "#T_wcel", "#T_cclm", "#T_wa", "#T_cW", "#T_wcel", "#T_clvec", "#T_cW", "#T_wcel", "#T_ccvs", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprbi", "#P_df-cvs", "#P_syl", "#P_elin2" ]
+}

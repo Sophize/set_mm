@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnbr on Metamath](http://us.metamath.org/mpegif/fnbr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fnrel | |- ( F Fn A -> Rel F ) |\n| 2 |  | #P_releldm | |- ( ( Rel F /\\ B F C ) -> B e. dom F ) |\n| 3 | 1, 2 | #P_sylan | |- ( ( F Fn A /\\ B F C ) -> B e. dom F ) |\n| 4 |  | #P_fndm | |- ( F Fn A -> dom F = A ) |\n| 5 | 4 | #P_eleq2d | |- ( F Fn A -> ( B e. dom F <-> B e. A ) ) |\n| 6 | 5 | #P_biimpa | |- ( ( F Fn A /\\ B e. dom F ) -> B e. A ) |\n| 7 | 3, 6 | #P_syldan | |- ( ( F Fn A /\\ B F C ) -> B e. A ) |",
+  "conclusion" : "#P_fnbr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_wrel", "#T_cF", "#T_wrel", "#T_cF", "#T_wa", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA", "#T_wa", "#T_cB", "#T_cF", "#T_cC", "#T_wi", "#T_cB", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_biimpa", "#P_sylan", "#P_fnrel", "#P_releldm", "#P_fndm", "#P_syldan" ]
+}

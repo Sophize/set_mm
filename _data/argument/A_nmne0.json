@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmne0 on Metamath](http://us.metamath.org/mpegif/nmne0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nmf.x | |- X = ( Base ` G ) |\n| 2 |  | nmf.n | |- N = ( norm ` G ) |\n| 3 |  | nmeq0.z | |- .0. = ( 0g ` G ) |\n| 4 | 1, 2, 3 | #P_nmeq0 | |- ( ( G e. NrmGrp /\\ A e. X ) -> ( ( N ` A ) = 0 <-> A = .0. ) ) |\n| 5 | 4 | #P_necon3bid | |- ( ( G e. NrmGrp /\\ A e. X ) -> ( ( N ` A ) =/= 0 <-> A =/= .0. ) ) |\n| 6 | 5 | #P_biimp3ar | |- ( ( G e. NrmGrp /\\ A e. X /\\ A =/= .0. ) -> ( N ` A ) =/= 0 ) |",
+  "conclusion" : "#P_nmne0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cN", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cngp", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_c.0", "#T_cG", "#T_wcel", "#T_cngp", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cN", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c.0", "#T_cG", "#T_wcel", "#T_cngp", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cA", "#T_wne", "#T_c.0", "#T_wi", "#T_cN", "#T_cfv", "#T_cA", "#T_wne", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3bid", "#P_nmeq0", "#P_biimp3ar" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See halflt1 on Metamath](http://us.metamath.org/mpegif/halflt1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1div1e1 | |- ( 1 / 1 ) = 1 |\n| 2 |  | #P_1lt2 | |- 1 < 2 |\n| 3 | 1, 2 | #P_eqbrtri | |- ( 1 / 1 ) < 2 |\n| 4 |  | #P_1re | |- 1 e. RR |\n| 5 |  | #P_2re | |- 2 e. RR |\n| 6 |  | #P_0lt1 | |- 0 < 1 |\n| 7 |  | #P_2pos | |- 0 < 2 |\n| 8 | 4, 4, 5, 6, 7 | #P_ltdiv23ii | |- ( ( 1 / 1 ) < 2 <-> ( 1 / 2 ) < 1 ) |\n| 9 | 3, 8 | #P_mpbi | |- ( 1 / 2 ) < 1 |",
+  "conclusion" : "#P_halflt1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_cdiv", "#T_c1", "#T_wceq", "#T_c1", "#T_c1", "#T_clt", "#T_c2", "#T_c1", "#T_cdiv", "#T_c1", "#T_clt", "#T_c2", "#T_c1", "#T_wcel", "#T_cr", "#T_c2", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_cc0", "#T_clt", "#T_c2", "#T_c1", "#T_cdiv", "#T_c1", "#T_clt", "#T_c2", "#T_wb", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_c1", "#T_c1", "#T_cdiv", "#T_c2", "#T_clt", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ltdiv23ii", "#P_0lt1", "#P_2pos", "#P_mpbi", "#P_1div1e1", "#P_1lt2", "#P_eqbrtri", "#P_1re", "#P_2re" ]
+}

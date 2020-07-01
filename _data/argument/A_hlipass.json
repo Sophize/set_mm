@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlipass on Metamath](http://us.metamath.org/mpegif/hlipass.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlipass.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | hlipass.4 | |- S = ( .sOLD ` U ) |\n| 3 |  | hlipass.7 | |- P = ( .iOLD ` U ) |\n| 4 |  | #P_hlph | |- ( U e. CHilOLD -> U e. CPreHilOLD ) |\n| 5 | 1, 2, 3 | #P_dipass | |- ( ( U e. CPreHilOLD /\\ ( A e. CC /\\ B e. X /\\ C e. X ) ) -> ( ( A S B ) P C ) = ( A x. ( B P C ) ) ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( U e. CHilOLD /\\ ( A e. CC /\\ B e. X /\\ C e. X ) ) -> ( ( A S B ) P C ) = ( A x. ( B P C ) ) ) |",
+  "conclusion" : "#P_hlipass",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cS", "#T_wceq", "#T_cns", "#T_cfv", "#T_cU", "#T_cP", "#T_wceq", "#T_cdip", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_chlo", "#T_wi", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_cP", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cP", "#T_cC", "#T_cU", "#T_wcel", "#T_chlo", "#T_wa", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cS", "#T_cB", "#T_cP", "#T_cC", "#T_wceq", "#T_cA", "#T_cmul", "#T_cB", "#T_cP", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dipass", "#P_sylan", "#P_hlph" ]
+}

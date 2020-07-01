@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvdsmul2 on Metamath](http://us.metamath.org/mpegif/dvdsmul2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zmulcl | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M x. N ) e. ZZ ) |\n| 2 |  | #P_eqid | |- ( M x. N ) = ( M x. N ) |\n| 3 |  | #P_dvds0lem | |- ( ( ( M e. ZZ /\\ N e. ZZ /\\ ( M x. N ) e. ZZ ) /\\ ( M x. N ) = ( M x. N ) ) -> N || ( M x. N ) ) |\n| 4 | 2, 3 | #P_mpan2 | |- ( ( M e. ZZ /\\ N e. ZZ /\\ ( M x. N ) e. ZZ ) -> N || ( M x. N ) ) |\n| 5 | 1, 4 | #P_mpd3an3 | |- ( ( M e. ZZ /\\ N e. ZZ ) -> N || ( M x. N ) ) |",
+  "conclusion" : "#P_dvdsmul2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cmul", "#T_cN", "#T_wcel", "#T_cz", "#T_cM", "#T_cmul", "#T_cN", "#T_wceq", "#T_cM", "#T_cmul", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_cmul", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cmul", "#T_cN", "#T_wceq", "#T_cM", "#T_cmul", "#T_cN", "#T_wi", "#T_cN", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_cmul", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cdvds", "#T_cM", "#T_cmul", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_dvds0lem", "#P_zmulcl", "#P_mpan2", "#P_mpd3an3" ]
+}

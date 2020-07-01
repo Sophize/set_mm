@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.61iii on Metamath](http://us.metamath.org/mpegif/pm2.61iii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm2.61iii.1 | |- ( -. ph -> ( -. ps -> ( -. ch -> th ) ) ) |\n| 2 |  | pm2.61iii.2 | |- ( ph -> th ) |\n| 3 |  | pm2.61iii.3 | |- ( ps -> th ) |\n| 4 |  | pm2.61iii.4 | |- ( ch -> th ) |\n| 5 | 2 | #P_a1d | |- ( ph -> ( -. ch -> th ) ) |\n| 6 | 3 | #P_a1d | |- ( ps -> ( -. ch -> th ) ) |\n| 7 | 1, 5, 6 | #P_pm2.61ii | |- ( -. ch -> th ) |\n| 8 | 4, 7 | #P_pm2.61i | |- th |",
+  "conclusion" : "#P_pm2.61iii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.61ii", "#P_pm2.61i", "#P_a1d" ]
+}

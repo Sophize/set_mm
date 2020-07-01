@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbco on Metamath](http://us.metamath.org/mpegif/sbco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_equsb2 | |- [ y / x ] y = x |\n| 2 |  | #P_sbequ12 | |- ( y = x -> ( ph <-> [ x / y ] ph ) ) |\n| 3 | 2 | #P_bicomd | |- ( y = x -> ( [ x / y ] ph <-> ph ) ) |\n| 4 | 3 | #P_sbimi | |- ( [ y / x ] y = x -> [ y / x ] ( [ x / y ] ph <-> ph ) ) |\n| 5 | 1, 4 | #P_ax-mp | |- [ y / x ] ( [ x / y ] ph <-> ph ) |\n| 6 |  | #P_sbbi | |- ( [ y / x ] ( [ x / y ] ph <-> ph ) <-> ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) ) |\n| 7 | 5, 6 | #P_mpbi | |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) |",
+  "conclusion" : "#P_sbco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wsb--1", "#T_vx", "#T_wsb--2", "#T_vy", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbequ12", "#P_ax-mp", "#P_bicomd", "#P_sbbi", "#P_mpbi", "#P_equsb2", "#P_sbimi" ]
+}

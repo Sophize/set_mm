@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvth on Metamath](http://us.metamath.org/mpegif/mvth.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "The Mean Value Theorem", "mvth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_ccncf", "#T_cr", "#T_wph", "#T_wi", "#T_cdm", "#T_cr", "#T_cdv", "#T_cF", "#T_wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_cioo", "#T_cB", "#T_cr", "#T_cdv", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_cmin", "#T_cF", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB", "#T_cmin", "#T_cA", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cF", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Mean Value Theorem.  If ` F ` is a real continuous function on ` [ A , B ] ` which is differentiable on ` ( A , B ) ` , then there is some ` x e. ( A , B ) ` such that ` ( RR _D F ) `` x ` is equal to the average slope over ` [ A , B ] ` .  This is Metamath 100 proof #75. (Contributed by Mario Carneiro, 1-Sep-2014.)  (Proof shortened by Mario Carneiro, 29-Dec-2016.) ",
+  "statement" : "mvth.a $e |- ( ph -> A e. RR ) $.\nmvth.b $e |- ( ph -> B e. RR ) $.\nmvth.lt $e |- ( ph -> A < B ) $.\nmvth.f $e |- ( ph -> F e. ( ( A [,] B ) -cn-> RR ) ) $.\nmvth.d $e |- ( ph -> dom ( RR _D F ) = ( A (,) B ) ) $.\nmvth $p |- ( ph -> E. x e. ( A (,) B ) ( ( RR _D F ) ` x ) = ( ( ( F ` B ) - ( F ` A ) ) / ( B - A ) ) ) $.\n$d A x $.\n$d B x $.\n$d F x $.\n$d ph x $."
+}

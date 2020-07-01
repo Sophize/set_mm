@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfco on Metamath](http://us.metamath.org/mpegif/nfco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfco.1 | |- F/_ x A |\n| 2 |  | nfco.2 | |- F/_ x B |\n| 3 |  | #P_df-co | |- ( A o. B ) = { <. y , z >. | E. w ( y B w /\\ w A z ) } |\n| 4 |  | #P_nfcv | |- F/_ x y |\n| 5 |  | #P_nfcv | |- F/_ x w |\n| 6 | 4, 2, 5 | #P_nfbr | |- F/ x y B w |\n| 7 |  | #P_nfcv | |- F/_ x z |\n| 8 | 5, 1, 7 | #P_nfbr | |- F/ x w A z |\n| 9 | 6, 8 | #P_nfan | |- F/ x ( y B w /\\ w A z ) |\n| 10 | 9 | #P_nfex | |- F/ x E. w ( y B w /\\ w A z ) |\n| 11 | 10 | #P_nfopab | |- F/_ x { <. y , z >. | E. w ( y B w /\\ w A z ) } |\n| 12 | 3, 11 | #P_nfcxfr | |- F/_ x ( A o. B ) |",
+  "conclusion" : "#P_nfco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vy", "#T_vz", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_ccom", "#T_cB.wceq", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vy.tru", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_wex", "#T_vw", "#T_vy.tru", "#T_cB.wceq", "#T_vw", "#T_wa", "#T_vw", "#T_cA.wceq", "#T_vz", "#T_copab--6", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wnfc", "#T_vx.wal", "#T_vw", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_cB.wceq", "#T_vw", "#T_wnfc", "#T_vx.wal", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_vw", "#T_cA.wceq", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_cB.wceq", "#T_vw", "#T_wa", "#T_vw", "#T_cA.wceq", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vw", "#T_vy.tru", "#T_cB.wceq", "#T_vw", "#T_wa", "#T_vw", "#T_cA.wceq", "#T_vz", "#T_wnfc", "#T_vx.wal", "#T_copab--1", "#T_copab--2", "#T_vy.tru", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_wex", "#T_vw", "#T_vy.tru", "#T_cB.wceq", "#T_vw", "#T_wa", "#T_vw", "#T_cA.wceq", "#T_vz", "#T_copab--6", "#T_wnfc", "#T_vx", "#T_cA", "#T_ccom", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfex", "#P_nfcxfr", "#P_nfopab", "#P_nfbr", "#P_nfan", "#P_df-co" ]
+}

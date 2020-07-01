@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alcomiw on Metamath](http://us.metamath.org/mpegif/alcomiw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | alcomiw.1 | |- ( y = z -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_biimpd | |- ( y = z -> ( ph -> ps ) ) |\n| 3 | 2 | #P_cbvalivw | |- ( A. y ph -> A. z ps ) |\n| 4 | 3 | #P_alimi | |- ( A. x A. y ph -> A. x A. z ps ) |\n| 5 |  | #P_ax-5 | |- ( A. x A. z ps -> A. y A. x A. z ps ) |\n| 6 | 1 | #P_biimprd | |- ( y = z -> ( ps -> ph ) ) |\n| 7 | 6 | #P_equcoms | |- ( z = y -> ( ps -> ph ) ) |\n| 8 | 7 | #P_spimvw | |- ( A. z ps -> ph ) |\n| 9 | 8 | #P_alimi | |- ( A. x A. z ps -> A. x ph ) |\n| 10 | 9 | #P_alimi | |- ( A. y A. x A. z ps -> A. y A. x ph ) |\n| 11 | 4, 5, 10 | #P_3syl | |- ( A. x A. y ph -> A. y A. x ph ) |",
+  "conclusion" : "#P_alcomiw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vz", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vz", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vz", "#T_wps", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wal", "#T_vz", "#T_wps", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vz", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vz", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wal", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimprd", "#P_cbvalivw", "#P_3syl", "#P_spimvw", "#P_ax-5", "#P_alimi", "#P_biimpd", "#P_equcoms" ]
+}

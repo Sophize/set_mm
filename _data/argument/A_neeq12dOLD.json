@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neeq12dOLD on Metamath](http://us.metamath.org/mpegif/neeq12dOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neeq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | neeq12d.2 | |- ( ph -> C = D ) |\n| 3 | 1 | #P_neeq1d | |- ( ph -> ( A =/= C <-> B =/= C ) ) |\n| 4 | 2 | #P_neeq2d | |- ( ph -> ( B =/= C <-> B =/= D ) ) |\n| 5 | 3, 4 | #P_bitrd | |- ( ph -> ( A =/= C <-> B =/= D ) ) |\n\\\n Obsolete proof of ~ neeq12d as of 25-Nov-2019.  (Contributed by NM, 24-Jul-2012.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_neeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cC", "#T_wb", "#T_cB", "#T_wne", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_neeq1d", "#P_neeq2d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hof1 on Metamath](http://us.metamath.org/mpegif/hof1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hofval.m | |- M = ( HomF ` C ) |\n| 2 |  | hofval.c | |- ( ph -> C e. Cat ) |\n| 3 |  | hof1.b | |- B = ( Base ` C ) |\n| 4 |  | hof1.h | |- H = ( Hom ` C ) |\n| 5 |  | hof1.x | |- ( ph -> X e. B ) |\n| 6 |  | hof1.y | |- ( ph -> Y e. B ) |\n| 7 | 1, 2 | #P_hof1fval | |- ( ph -> ( 1st ` M ) = ( Homf ` C ) ) |\n| 8 | 7 | #P_oveqd | |- ( ph -> ( X ( 1st ` M ) Y ) = ( X ( Homf ` C ) Y ) ) |\n| 9 |  | #P_eqid | |- ( Homf ` C ) = ( Homf ` C ) |\n| 10 | 9, 3, 4, 5, 6 | #P_homfval | |- ( ph -> ( X ( Homf ` C ) Y ) = ( X H Y ) ) |\n| 11 | 8, 10 | #P_eqtrd | |- ( ph -> ( X ( 1st ` M ) Y ) = ( X H Y ) ) |",
+  "conclusion" : "#P_hof1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_chof", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_c1st", "#T_cfv", "#T_cM", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_c1st", "#T_cfv", "#T_cM", "#T_cY", "#T_wceq", "#T_cX", "#T_chomf", "#T_cfv", "#T_cC", "#T_cY", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_chomf", "#T_cfv", "#T_cC", "#T_cY", "#T_wceq", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c1st", "#T_cfv", "#T_cM", "#T_cY", "#T_wceq", "#T_cX", "#T_cH", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_homfval", "#P_hof1fval", "#P_oveqd", "#P_eqtrd" ]
+}

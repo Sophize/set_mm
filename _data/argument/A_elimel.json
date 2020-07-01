@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimel on Metamath](http://us.metamath.org/mpegif/elimel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elimel.1 | |- B e. C |\n| 2 |  | #P_eleq1 | |- ( A = if ( A e. C , A , B ) -> ( A e. C <-> if ( A e. C , A , B ) e. C ) ) |\n| 3 |  | #P_eleq1 | |- ( B = if ( A e. C , A , B ) -> ( B e. C <-> if ( A e. C , A , B ) e. C ) ) |\n| 4 | 2, 3, 1 | #P_elimhyp | |- if ( A e. C , A , B ) e. C |",
+  "conclusion" : "#P_elimel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cif--1", "#T_cA", "#T_wcel", "#T_cC", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq1", "#P_elimhyp" ]
+}

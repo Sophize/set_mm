@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovn0dmfun on Metamath](http://us.metamath.org/mpegif/ovn0dmfun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ov | |- ( A F B ) = ( F ` <. A , B >. ) |\n| 2 | 1 | #P_neeq1i | |- ( ( A F B ) =/= (/) <-> ( F ` <. A , B >. ) =/= (/) ) |\n| 3 |  | #P_fvfundmfvn0 | |- ( ( F ` <. A , B >. ) =/= (/) -> ( <. A , B >. e. dom F /\\ Fun ( F |` { <. A , B >. } ) ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( ( A F B ) =/= (/) -> ( <. A , B >. e. dom F /\\ Fun ( F |` { <. A , B >. } ) ) ) |",
+  "conclusion" : "#P_ovn0dmfun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wne", "#T_c0", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wne", "#T_c0", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_cF", "#T_wa", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cA", "#T_cF", "#T_cB", "#T_wne", "#T_c0", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_cF", "#T_wa", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neeq1i", "#P_fvfundmfvn0", "#P_df-ov", "#P_sylbi" ]
+}

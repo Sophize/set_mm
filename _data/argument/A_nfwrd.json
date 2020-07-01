@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfwrd on Metamath](http://us.metamath.org/mpegif/nfwrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nl w\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfwrd.1 | |- F/_ x S |\n| 2 |  | #P_df-word | |- Word S = { w | E. l e. NN0 w : ( 0 ..^ l ) --> S } |\n| 3 |  | #P_nfcv | |- F/_ x NN0 |\n| 4 |  | #P_nfcv | |- F/_ x w |\n| 5 |  | #P_nfcv | |- F/_ x ( 0 ..^ l ) |\n| 6 | 4, 5, 1 | #P_nff | |- F/ x w : ( 0 ..^ l ) --> S |\n| 7 | 3, 6 | #P_nfrex | |- F/ x E. l e. NN0 w : ( 0 ..^ l ) --> S |\n| 8 | 7 | #P_nfab | |- F/_ x { w | E. l e. NN0 w : ( 0 ..^ l ) --> S } |\n| 9 | 2, 8 | #P_nfcxfr | |- F/_ x Word S |",
+  "conclusion" : "#P_nfwrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vl", "#T_vw", "#T_wnfc", "#T_vx", "#T_cS", "#T_cword", "#T_cS", "#T_wceq", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_wrex--1", "#T_vl", "#T_wrex--2", "#T_cn0", "#T_vw", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_vl", "#T_wf--2", "#T_cS", "#T_cab--3", "#T_wnfc", "#T_vx.wal", "#T_cn0", "#T_wnfc", "#T_vx.wal", "#T_vw", "#T_wnfc", "#T_vx.wal", "#T_cc0", "#T_cfzo", "#T_vl", "#T_wnf", "#T_vx.wal", "#T_vw", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_vl", "#T_wf--2", "#T_cS", "#T_wnf", "#T_vx.wal", "#T_wrex--1", "#T_vl", "#T_wrex--2", "#T_cn0", "#T_vw", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_vl", "#T_wf--2", "#T_cS", "#T_wnfc", "#T_vx.wal", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_wrex--1", "#T_vl", "#T_wrex--2", "#T_cn0", "#T_vw", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_vl", "#T_wf--2", "#T_cS", "#T_cab--3", "#T_wnfc", "#T_vx", "#T_cword", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nff", "#P_nfcxfr", "#P_nfab", "#P_nfrex", "#P_df-word" ]
+}

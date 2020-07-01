@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dchr2sum on Metamath](http://us.metamath.org/mpegif/dchr2sum.html)"
+  } ],
+  "names" : [ "dchr2sum" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cdchr", "#T_cfv", "#T_cN", "#T_cZ", "#T_wceq", "#T_czn", "#T_cfv", "#T_cN", "#T_cD", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cZ", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_csu--1", "#T_va", "#T_csu--2", "#T_cB", "#T_cX", "#T_cfv", "#T_va", "#T_cmul", "#T_ccj", "#T_cfv", "#T_cY", "#T_cfv", "#T_va", "#T_wceq", "#T_cif--1", "#T_cX", "#T_wceq", "#T_cY", "#T_cif--2", "#T_cphi", "#T_cfv", "#T_cN", "#T_cif--3", "#T_cc0", "#T_cB", "#T_va", "#T_cG", "#T_va", "#T_cX", "#T_va", "#T_cY", "#T_va", "#T_cZ", "#T_va", "#T_va", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An orthogonality relation for Dirichlet characters: the sum of ` X ( a ) x. * Y ( a ) ` over all ` a ` is nonzero only when ` X = Y ` .  Part of Theorem 6.5.2 of [Shapiro] p. 232.  (Contributed by Mario Carneiro, 28-Apr-2016.) ",
+  "statement" : "dchr2sum.g $e |- G = ( DChr ` N ) $.\ndchr2sum.z $e |- Z = ( Z/nZ ` N ) $.\ndchr2sum.d $e |- D = ( Base ` G ) $.\ndchr2sum.b $e |- B = ( Base ` Z ) $.\ndchr2sum.x $e |- ( ph -> X e. D ) $.\ndchr2sum.y $e |- ( ph -> Y e. D ) $.\ndchr2sum $p |- ( ph -> sum_ a e. B ( ( X ` a ) x. ( * ` ( Y ` a ) ) ) = if ( X = Y , ( phi ` N ) , 0 ) ) $.\n$d B a $.\n$d G a $.\n$d X a $.\n$d Y a $.\n$d Z a $.\n$d a ph $."
+}

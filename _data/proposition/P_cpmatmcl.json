@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cpmatmcl on Metamath](http://us.metamath.org/mpegif/cpmatmcl.html)"
+  } ],
+  "names" : [ "cpmatmcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cS", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vx", "#T_cmulr", "#T_cfv", "#T_cC", "#T_vy", "#T_wcel", "#T_cS", "#T_cN", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The set of all constant polynomial matrices over a ring ` R ` is closed under multiplication.  (Contributed by AV, 18-Nov-2019.) ",
+  "statement" : "cpmatsrngpmat.s $e |- S = ( N ConstPolyMat R ) $.\ncpmatsrngpmat.p $e |- P = ( Poly1 ` R ) $.\ncpmatsrngpmat.c $e |- C = ( N Mat P ) $.\ncpmatmcl $p |- ( ( N e. Fin /\\ R e. Ring ) -> A. x e. S A. y e. S ( x ( .r ` C ) y ) e. S ) $.\n$d N x y $.\n$d N x y $.\n$d R x y $.\n$d R x y $.\n$d S y $."
+}

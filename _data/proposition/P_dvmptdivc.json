@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvmptdivc on Metamath](http://us.metamath.org/mpegif/dvmptdivc.html)"
+  } ],
+  "names" : [ "dvmptdivc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wi", "#T_cB", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cS", "#T_cdv", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cS", "#T_cdv", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_cdiv", "#T_cC", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cB", "#T_cdiv", "#T_cC", "#T_cC", "#T_vx", "#T_cS", "#T_vx", "#T_cV", "#T_vx", "#T_cX", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function-builder for derivative, division rule for constant divisor. (Contributed by Mario Carneiro, 18-May-2016.) ",
+  "statement" : "dvmptadd.s $e |- ( ph -> S e. { RR , CC } ) $.\ndvmptadd.a $e |- ( ( ph /\\ x e. X ) -> A e. CC ) $.\ndvmptadd.b $e |- ( ( ph /\\ x e. X ) -> B e. V ) $.\ndvmptadd.da $e |- ( ph -> ( S _D ( x e. X |-> A ) ) = ( x e. X |-> B ) ) $.\ndvmptcmul.c $e |- ( ph -> C e. CC ) $.\ndvmptdivc.0 $e |- ( ph -> C =/= 0 ) $.\ndvmptdivc $p |- ( ph -> ( S _D ( x e. X |-> ( A / C ) ) ) = ( x e. X |-> ( B / C ) ) ) $.\n$d C x $.\n$d S x $.\n$d V x $.\n$d X x $.\n$d ph x $."
+}

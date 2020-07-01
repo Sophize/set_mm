@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spcgf on Metamath](http://us.metamath.org/mpegif/spcgf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spcgf.1 | |- F/_ x A |\n| 2 |  | spcgf.2 | |- F/ x ps |\n| 3 |  | spcgf.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 | 2, 1 | #P_spcgft | |- ( A. x ( x = A -> ( ph <-> ps ) ) -> ( A e. V -> ( A. x ph -> ps ) ) ) |\n| 5 | 4, 3 | #P_mpg | |- ( A e. V -> ( A. x ph -> ps ) ) |",
+  "conclusion" : "#P_spcgf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_spcgft", "#P_mpg" ]
+}

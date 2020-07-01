@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmptdv on Metamath](http://us.metamath.org/mpegif/fvmptdv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvmptdf.1 | |- ( ph -> A e. D ) |\n| 2 |  | fvmptdf.2 | |- ( ( ph /\\ x = A ) -> B e. V ) |\n| 3 |  | fvmptdf.3 | |- ( ( ph /\\ x = A ) -> ( ( F ` A ) = B -> ps ) ) |\n| 4 |  | #P_nfcv | |- F/_ x F |\n| 5 |  | #P_nfv | |- F/ x ps |\n| 6 | 1, 2, 3, 4, 5 | #P_fvmptdf | |- ( ph -> ( F = ( x e. D |-> B ) -> ps ) ) |",
+  "conclusion" : "#P_fvmptdv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wnfc", "#T_vx.wal", "#T_cF", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cD", "#T_cmpt--2", "#T_cB", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfv", "#P_fvmptdf" ]
+}

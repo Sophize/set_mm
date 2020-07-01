@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-taginv on Metamath](http://us.metamath.org/mpegif/bj-taginv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-snglinv | |- A = { x | { x } e. sngl A } |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 |  | #P_bj-sngltag | |- ( x e. _V -> ( { x } e. sngl A <-> { x } e. tag A ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( { x } e. sngl A <-> { x } e. tag A ) |\n| 5 | 4 | #P_abbii | |- { x | { x } e. sngl A } = { x | { x } e. tag A } |\n| 6 | 1, 5 | #P_eqtri | |- A = { x | { x } e. tag A } |",
+  "conclusion" : "#P_bj-taginv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_cab--3", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_wb", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-ctag", "#T_cA.wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_wb", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-ctag", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_bj-ctag", "#T_cA.wceq", "#T_cab--3", "#T_cA", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wcel", "#T_bj-ctag", "#T_cA", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_bj-sngltag", "#P_abbii", "#P_vex", "#P_bj-snglinv" ]
+}

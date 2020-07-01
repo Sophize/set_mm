@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-estrc on Metamath](http://us.metamath.org/mpegif/df-estrc.html)"
+  } ],
+  "names" : [ "df-estrc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cestrc", "#T_wceq", "#T_vu", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vu", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_chom", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_vu", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_vu", "#T_cmpt2--4", "#T_cbs", "#T_cfv", "#T_vy", "#T_cmap", "#T_cbs", "#T_cfv", "#T_vx", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cco", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vv", "#T_cmpt2--1", "#T_vu", "#T_cxp", "#T_vu", "#T_cmpt2--2", "#T_vz", "#T_cmpt2--3", "#T_vu", "#T_cmpt2--4", "#T_vg", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vz", "#T_cmap", "#T_cbs", "#T_cfv", "#T_c2nd", "#T_cfv", "#T_vv", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_c2nd", "#T_cfv", "#T_vv", "#T_cmap", "#T_cbs", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vv", "#T_cmpt2--4", "#T_vg", "#T_ccom", "#T_vf", "#T_cop--3", "#T_ctp--4", "#T_vf", "#T_vg", "#T_vu", "#T_vv", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definition of the category ExtStr of extensible structures.  This is the category whose objects are all sets in a universe ` u ` regarded as extensible structures and whose morphisms are the functions between their base sets.  If a set is not a real extensible structure, it is regarded as extensible structure with an empty base set.  Because of ~ bascnvimaeqv we do not need to restrict the universe to sets which \"have a base\".  Generally, we will take ` u ` to be a weak universe or Grothendieck universe, because these sets have closure properties as good as the real thing.  (Proposed by Mario Carneiro, 5-Mar-2020.) (Contributed by AV, 7-Mar-2020.) ",
+  "statement" : "df-estrc $p |- ExtStrCat = ( u e. _V |-> { <. ( Base ` ndx ) , u >. , <. ( Hom ` ndx ) , ( x e. u , y e. u |-> ( ( Base ` y ) ^m ( Base ` x ) ) ) >. , <. ( comp ` ndx ) , ( v e. ( u X. u ) , z e. u |-> ( g e. ( ( Base ` z ) ^m ( Base ` ( 2nd ` v ) ) ) , f e. ( ( Base ` ( 2nd ` v ) ) ^m ( Base ` ( 1st ` v ) ) ) |-> ( g o. f ) ) ) >. } ) $.\n$d f g u v x y z $."
+}

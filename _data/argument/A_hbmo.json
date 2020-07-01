@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbmo on Metamath](http://us.metamath.org/mpegif/hbmo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hbmo.1 | |- ( ph -> A. x ph ) |\n| 2 |  | #P_df-mo | |- ( E* y ph <-> ( E. y ph -> E! y ph ) ) |\n| 3 | 1 | #P_hbex | |- ( E. y ph -> A. x E. y ph ) |\n| 4 | 1 | #P_hbeu | |- ( E! y ph -> A. x E! y ph ) |\n| 5 | 3, 4 | #P_hbim | |- ( ( E. y ph -> E! y ph ) -> A. x ( E. y ph -> E! y ph ) ) |\n| 6 | 2, 5 | #P_hbxfrbi | |- ( E* y ph -> A. x E* y ph ) |",
+  "conclusion" : "#P_hbmo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wmo", "#T_vy.tru", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_weu", "#T_vy.tru", "#T_wph", "#T_wmo", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wmo", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-mo", "#P_hbeu", "#P_hbxfrbi", "#P_hbex", "#P_hbim" ]
+}

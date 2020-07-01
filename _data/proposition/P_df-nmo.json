@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-nmo on Metamath](http://us.metamath.org/mpegif/df-nmo.html)"
+  } ],
+  "names" : [ "df-nmo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cnmo", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cngp", "#T_cmpt2--2", "#T_vt", "#T_cmpt2--3", "#T_cngp", "#T_cmpt2--4", "#T_vf", "#T_cmpt--1", "#T_vs", "#T_cghm", "#T_vt", "#T_cmpt--2", "#T_csup--1", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cc0", "#T_cico", "#T_cpnf", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vs", "#T_cnm", "#T_cfv", "#T_vt", "#T_cfv", "#T_vf", "#T_cfv", "#T_vx", "#T_cle", "#T_vr", "#T_cmul", "#T_cnm", "#T_cfv", "#T_vs", "#T_cfv", "#T_vx", "#T_crab--4", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_vf", "#T_vr", "#T_vs", "#T_vt", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the norm of an operator between two normed groups (usually vector spaces).  This definition produces an operator norm function for each pair of groups ` <. s , t >. ` .  Equivalent to the definition of linear operator norm in [AkhiezerGlazman] p. 39.  (Contributed by Mario Carneiro, 18-Oct-2015.) ",
+  "statement" : "df-nmo $p |- normOp = ( s e. NrmGrp , t e. NrmGrp |-> ( f e. ( s GrpHom t ) |-> sup ( { r e. ( 0 [,) +oo ) | A. x e. ( Base ` s ) ( ( norm ` t ) ` ( f ` x ) ) <_ ( r x. ( ( norm ` s ) ` x ) ) } , RR* , `' < ) ) ) $.\n$d f r s t x $."
+}

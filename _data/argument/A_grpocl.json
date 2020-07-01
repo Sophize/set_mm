@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpocl on Metamath](http://us.metamath.org/mpegif/grpocl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpfo.1 | |- X = ran G |\n| 2 | 1 | #P_grpofo | |- ( G e. GrpOp -> G : ( X X. X ) -onto-> X ) |\n| 3 |  | #P_fof | |- ( G : ( X X. X ) -onto-> X -> G : ( X X. X ) --> X ) |\n| 4 | 2, 3 | #P_syl | |- ( G e. GrpOp -> G : ( X X. X ) --> X ) |\n| 5 |  | #P_fovrn | |- ( ( G : ( X X. X ) --> X /\\ A e. X /\\ B e. X ) -> ( A G B ) e. X ) |\n| 6 | 4, 5 | #P_syl3an1 | |- ( ( G e. GrpOp /\\ A e. X /\\ B e. X ) -> ( A G B ) e. X ) |",
+  "conclusion" : "#P_grpocl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wfo--2", "#T_cX", "#T_cG", "#T_wfo--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wfo--2", "#T_cX", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cG", "#T_wcel", "#T_cgr", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpofo", "#P_fof", "#P_syl", "#P_syl3an1", "#P_fovrn" ]
+}

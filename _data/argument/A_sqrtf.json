@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtf on Metamath](http://us.metamath.org/mpegif/sqrtf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_riotaex | |- ( iota_ y e. CC ( ( y ^ 2 ) = x /\\ 0 <_ ( Re ` y ) /\\ ( _i x. y ) e/ RR+ ) ) e. _V |\n| 2 |  | #P_df-sqrt | |- sqrt = ( x e. CC |-> ( iota_ y e. CC ( ( y ^ 2 ) = x /\\ 0 <_ ( Re ` y ) /\\ ( _i x. y ) e/ RR+ ) ) ) |\n| 3 | 1, 2 | #P_fnmpti | |- sqrt Fn CC |\n| 4 |  | #P_sqrtcl | |- ( x e. CC -> ( sqrt ` x ) e. CC ) |\n| 5 | 4 | #P_rgen | |- A. x e. CC ( sqrt ` x ) e. CC |\n| 6 |  | #P_ffnfv | |- ( sqrt : CC --> CC <-> ( sqrt Fn CC /\\ A. x e. CC ( sqrt ` x ) e. CC ) ) |\n| 7 | 3, 5, 6 | #P_mpbir2an | |- sqrt : CC --> CC |",
+  "conclusion" : "#P_sqrtf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cc", "#T_vy.tru", "#T_cexp", "#T_c2", "#T_wceq", "#T_vx.wal", "#T_w3a--1", "#T_cc0", "#T_cle", "#T_cre", "#T_cfv", "#T_vy.tru", "#T_w3a--2", "#T_ci", "#T_cmul", "#T_vy.tru", "#T_wnel", "#T_crp", "#T_wcel", "#T_cvv", "#T_csqrt", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cc", "#T_vy.tru", "#T_cexp", "#T_c2", "#T_wceq", "#T_vx.wal", "#T_w3a--1", "#T_cc0", "#T_cle", "#T_cre", "#T_cfv", "#T_vy.tru", "#T_w3a--2", "#T_ci", "#T_cmul", "#T_vy.tru", "#T_wnel", "#T_crp", "#T_csqrt", "#T_wfn", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cc", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_csqrt", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_wb", "#T_csqrt", "#T_wfn", "#T_cc", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cc", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_csqrt", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-sqrt", "#P_riotaex", "#P_mpbir2an", "#P_ffnfv", "#P_fnmpti", "#P_rgen", "#P_sqrtcl" ]
+}

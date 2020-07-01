@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cji on Metamath](http://us.metamath.org/mpegif/cji.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rei | |- ( Re ` _i ) = 0 |\n| 2 |  | #P_imi | |- ( Im ` _i ) = 1 |\n| 3 | 2 | #P_oveq2i | |- ( _i x. ( Im ` _i ) ) = ( _i x. 1 ) |\n| 4 |  | #P_ax-icn | |- _i e. CC |\n| 5 | 4 | #P_mulid1i | |- ( _i x. 1 ) = _i |\n| 6 | 3, 5 | #P_eqtri | |- ( _i x. ( Im ` _i ) ) = _i |\n| 7 | 1, 6 | #P_oveq12i | |- ( ( Re ` _i ) - ( _i x. ( Im ` _i ) ) ) = ( 0 - _i ) |\n| 8 |  | #P_remim | |- ( _i e. CC -> ( * ` _i ) = ( ( Re ` _i ) - ( _i x. ( Im ` _i ) ) ) ) |\n| 9 | 4, 8 | #P_ax-mp | |- ( * ` _i ) = ( ( Re ` _i ) - ( _i x. ( Im ` _i ) ) ) |\n| 10 |  | #P_df-neg | |- -u _i = ( 0 - _i ) |\n| 11 | 7, 9, 10 | #P_3eqtr4i | |- ( * ` _i ) = -u _i |",
+  "conclusion" : "#P_cji",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cre", "#T_cfv", "#T_ci", "#T_wceq", "#T_cc0", "#T_cim", "#T_cfv", "#T_ci", "#T_wceq", "#T_c1", "#T_ci", "#T_cmul", "#T_cim", "#T_cfv", "#T_ci", "#T_wceq", "#T_ci", "#T_cmul", "#T_c1", "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_c1", "#T_wceq", "#T_ci", "#T_ci", "#T_cmul", "#T_cim", "#T_cfv", "#T_ci", "#T_wceq", "#T_ci", "#T_cre", "#T_cfv", "#T_ci", "#T_cmin", "#T_ci", "#T_cmul", "#T_cim", "#T_cfv", "#T_ci", "#T_wceq", "#T_cc0", "#T_cmin", "#T_ci", "#T_ci", "#T_wcel", "#T_cc", "#T_wi", "#T_ccj", "#T_cfv", "#T_ci", "#T_wceq", "#T_cre", "#T_cfv", "#T_ci", "#T_cmin", "#T_ci", "#T_cmul", "#T_cim", "#T_cfv", "#T_ci", "#T_ccj", "#T_cfv", "#T_ci", "#T_wceq", "#T_cre", "#T_cfv", "#T_ci", "#T_cmin", "#T_ci", "#T_cmul", "#T_cim", "#T_cfv", "#T_ci", "#T_cneg", "#T_ci", "#T_wceq", "#T_cc0", "#T_cmin", "#T_ci", "#T_ccj", "#T_cfv", "#T_ci", "#T_wceq", "#T_cneg", "#T_ci" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_eqtri", "#P_ax-mp", "#P_remim", "#P_3eqtr4i", "#P_df-neg", "#P_rei", "#P_mulid1i", "#P_oveq12i", "#P_oveq2i", "#P_imi" ]
+}

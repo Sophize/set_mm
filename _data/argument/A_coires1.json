@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coires1 on Metamath](http://us.metamath.org/mpegif/coires1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cocnvcnv1 | |- ( `' `' A o. _I ) = ( A o. _I ) |\n| 2 |  | #P_relcnv | |- Rel `' `' A |\n| 3 |  | #P_coi1 | |- ( Rel `' `' A -> ( `' `' A o. _I ) = `' `' A ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( `' `' A o. _I ) = `' `' A |\n| 5 | 1, 4 | #P_eqtr3i | |- ( A o. _I ) = `' `' A |\n| 6 | 5 | #P_reseq1i | |- ( ( A o. _I ) |` B ) = ( `' `' A |` B ) |\n| 7 |  | #P_resco | |- ( ( A o. _I ) |` B ) = ( A o. ( _I |` B ) ) |\n| 8 | 6, 7 | #P_eqtr3i | |- ( `' `' A |` B ) = ( A o. ( _I |` B ) ) |\n| 9 |  | #P_rescnvcnv | |- ( `' `' A |` B ) = ( A |` B ) |\n| 10 | 8, 9 | #P_eqtr3i | |- ( A o. ( _I |` B ) ) = ( A |` B ) |",
+  "conclusion" : "#P_coires1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_wrel", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wrel", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccom", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA", "#T_ccom", "#T_cid", "#T_cres", "#T_cB", "#T_wceq", "#T_cA", "#T_cres", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_coi1", "#P_ax-mp", "#P_reseq1i", "#P_eqtr3i", "#P_cocnvcnv1", "#P_resco", "#P_relcnv", "#P_rescnvcnv" ]
+}

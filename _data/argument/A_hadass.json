@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hadass on Metamath](http://us.metamath.org/mpegif/hadass.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-had | |- ( hadd ( ph , ps , ch ) <-> ( ( ph \\/_ ps ) \\/_ ch ) ) |\n| 2 |  | #P_xorass | |- ( ( ( ph \\/_ ps ) \\/_ ch ) <-> ( ph \\/_ ( ps \\/_ ch ) ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( hadd ( ph , ps , ch ) <-> ( ph \\/_ ( ps \\/_ ch ) ) ) |",
+  "conclusion" : "#P_hadass",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-had", "#P_xorass", "#P_bitri" ]
+}

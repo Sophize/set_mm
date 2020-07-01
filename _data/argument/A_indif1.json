@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See indif1 on Metamath](http://us.metamath.org/mpegif/indif1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_indif2 | |- ( B i^i ( A \\ C ) ) = ( ( B i^i A ) \\ C ) |\n| 2 |  | #P_incom | |- ( B i^i ( A \\ C ) ) = ( ( A \\ C ) i^i B ) |\n| 3 |  | #P_incom | |- ( B i^i A ) = ( A i^i B ) |\n| 4 | 3 | #P_difeq1i | |- ( ( B i^i A ) \\ C ) = ( ( A i^i B ) \\ C ) |\n| 5 | 1, 2, 4 | #P_3eqtr3i | |- ( ( A \\ C ) i^i B ) = ( ( A i^i B ) \\ C ) |",
+  "conclusion" : "#P_indif1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cA", "#T_cdif", "#T_cC", "#T_cin", "#T_cB", "#T_wceq", "#T_cA", "#T_cin", "#T_cB", "#T_cdif", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr3i", "#P_difeq1i", "#P_incom", "#P_indif2" ]
+}

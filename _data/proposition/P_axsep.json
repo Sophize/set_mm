@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axsep on Metamath](http://us.metamath.org/mpegif/axsep.html)"
+  } ],
+  "names" : [ "axsep" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_vx", "#T_wcel", "#T_vz", "#T_wa", "#T_wph", "#T_wph", "#T_vy", "#T_vz", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Separation Scheme, which is an axiom scheme of Zermelo's original theory.  Scheme Sep of [BellMachover] p. 463.  As we show here, it is redundant if we assume Replacement in the form of ~ ax-rep .  Some textbooks present Separation as a separate axiom scheme in order to show that much of set theory can be derived without the stronger Replacement.  The Separation Scheme is a weak form of Frege's Axiom of Comprehension, conditioning it (with ` x e. z ` ) so that it asserts the existence of a collection only if it is smaller than some other collection ` z ` that already exists.  This prevents Russell's paradox ~ ru .  In some texts, this scheme is called \"Aussonderung\" or the Subset Axiom. The variable ` x ` can appear free in the wff ` ph ` , which in textbooks is often written ` ph ( x ) ` .  To specify this in the Metamath language, we _omit_ the distinct variable requirement ($d) that ` x ` not appear in ` ph ` . For a version using a class variable, see ~ zfauscl , which requires the Axiom of Extensionality as well as Separation for its derivation. If we omit the requirement that ` y ` not occur in ` ph ` , we can derive a contradiction, as ~ notzfaus shows (contradicting ~ zfauscl ). However, as ~ axsep2 shows, we can eliminate the restriction that ` z ` not occur in ` ph ` . Note: the distinct variable restriction that ` z ` not occur in ` ph ` is actually redundant in this particular proof, but we keep it since its purpose is to demonstrate the derivation of the exact ~ ax-sep from ~ ax-rep . This theorem should not be referenced by any proof.  Instead, use ~ ax-sep below so that the uses of the Axiom of Separation can be more easily identified.  (Contributed by NM, 11-Sep-2006.) (New usage is discouraged.) ",
+  "statement" : "axsep $p |- E. y A. x ( x e. y <-> ( x e. z /\\ ph ) ) $.\n$d ph y z $.\n$d x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eximdh on Metamath](http://us.metamath.org/mpegif/eximdh.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eximdh.1 | |- ( ph -> A. x ph ) |\n| 2 |  | eximdh.2 | |- ( ph -> ( ps -> ch ) ) |\n| 3 | 1, 2 | #P_alrimih | |- ( ph -> A. x ( ps -> ch ) ) |\n| 4 |  | #P_exim | |- ( A. x ( ps -> ch ) -> ( E. x ps -> E. x ch ) ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> ( E. x ps -> E. x ch ) ) |",
+  "conclusion" : "#P_eximdh",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wch", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exim", "#P_alrimih", "#P_syl" ]
+}

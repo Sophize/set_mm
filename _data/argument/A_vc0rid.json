@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vc0rid on Metamath](http://us.metamath.org/mpegif/vc0rid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vczcl.1 | |- G = ( 1st ` W ) |\n| 2 |  | vczcl.2 | |- X = ran G |\n| 3 |  | vczcl.3 | |- Z = ( GId ` G ) |\n| 4 | 1 | #P_vcgrp | |- ( W e. CVecOLD -> G e. GrpOp ) |\n| 5 | 2, 3 | #P_grporid | |- ( ( G e. GrpOp /\\ A e. X ) -> ( A G Z ) = A ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( W e. CVecOLD /\\ A e. X ) -> ( A G Z ) = A ) |",
+  "conclusion" : "#P_vc0rid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cW", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cZ", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cW", "#T_wcel", "#T_cvc", "#T_wi", "#T_cG", "#T_wcel", "#T_cgr", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cZ", "#T_wceq", "#T_cA.wceq", "#T_cW", "#T_wcel", "#T_cvc", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cZ", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vcgrp", "#P_grporid", "#P_sylan" ]
+}

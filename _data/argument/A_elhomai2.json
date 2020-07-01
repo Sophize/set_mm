@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elhomai2 on Metamath](http://us.metamath.org/mpegif/elhomai2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | homarcl.h | |- H = ( HomA ` C ) |\n| 2 |  | homafval.b | |- B = ( Base ` C ) |\n| 3 |  | homafval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | homaval.j | |- J = ( Hom ` C ) |\n| 5 |  | homaval.x | |- ( ph -> X e. B ) |\n| 6 |  | homaval.y | |- ( ph -> Y e. B ) |\n| 7 |  | elhomai.f | |- ( ph -> F e. ( X J Y ) ) |\n| 8 |  | #P_df-ot | |- <. X , Y , F >. = <. <. X , Y >. , F >. |\n| 9 | 1, 2, 3, 4, 5, 6, 7 | #P_elhomai | |- ( ph -> <. X , Y >. ( X H Y ) F ) |\n| 10 |  | #P_df-br | |- ( <. X , Y >. ( X H Y ) F <-> <. <. X , Y >. , F >. e. ( X H Y ) ) |\n| 11 | 9, 10 | #P_sylib | |- ( ph -> <. <. X , Y >. , F >. e. ( X H Y ) ) |\n| 12 | 8, 11 | #P_syl5eqel | |- ( ph -> <. X , Y , F >. e. ( X H Y ) ) |",
+  "conclusion" : "#P_elhomai2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_choma", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_cJ", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cJ", "#T_cY", "#T_cotp--1", "#T_cX", "#T_cotp--2", "#T_cY", "#T_cotp--3", "#T_cF", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cX", "#T_cH", "#T_cY", "#T_cF", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cX", "#T_cH", "#T_cY", "#T_cF", "#T_wb", "#T_cop--1", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cop--1", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cotp--1", "#T_cX", "#T_cotp--2", "#T_cY", "#T_cotp--3", "#T_cF", "#T_cotp--4", "#T_wcel", "#T_cX", "#T_cH", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_df-ot", "#P_sylib", "#P_syl5eqel", "#P_elhomai" ]
+}

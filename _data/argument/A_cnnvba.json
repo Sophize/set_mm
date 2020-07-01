@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnnvba on Metamath](http://us.metamath.org/mpegif/cnnvba.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnnvba.6 | |- U = <. <. + , x. >. , abs >. |\n| 2 | 1 | #P_cnnvg | |- + = ( +v ` U ) |\n| 3 | 2 | #P_rneqi | |- ran + = ran ( +v ` U ) |\n| 4 |  | #P_cnaddablo | |- + e. AbelOp |\n| 5 |  | #P_ablogrpo | |- ( + e. AbelOp -> + e. GrpOp ) |\n| 6 | 4, 5 | #P_ax-mp | |- + e. GrpOp |\n| 7 |  | #P_ax-addf | |- + : ( CC X. CC ) --> CC |\n| 8 | 7 | #P_fdmi | |- dom + = ( CC X. CC ) |\n| 9 | 6, 8 | #P_grporn | |- CC = ran + |\n| 10 |  | #P_eqid | |- ( BaseSet ` U ) = ( BaseSet ` U ) |\n| 11 |  | #P_eqid | |- ( +v ` U ) = ( +v ` U ) |\n| 12 | 10, 11 | #P_bafval | |- ( BaseSet ` U ) = ran ( +v ` U ) |\n| 13 | 3, 9, 12 | #P_3eqtr4i | |- CC = ( BaseSet ` U ) |",
+  "conclusion" : "#P_cnnvba",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_cop--2", "#T_cabs", "#T_cop--3", "#T_caddc", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_crn", "#T_caddc", "#T_wceq", "#T_crn", "#T_cpv", "#T_cfv", "#T_cU", "#T_caddc", "#T_wcel", "#T_cablo", "#T_caddc", "#T_wcel", "#T_cablo", "#T_wi", "#T_caddc", "#T_wcel", "#T_cgr", "#T_caddc", "#T_wcel", "#T_cgr", "#T_caddc", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wf--2", "#T_cc", "#T_cdm", "#T_caddc", "#T_wceq", "#T_cc", "#T_cxp", "#T_cc", "#T_cc", "#T_wceq", "#T_crn", "#T_caddc", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cpv", "#T_cfv", "#T_cU", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_crn", "#T_cpv", "#T_cfv", "#T_cU", "#T_cc", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqid", "#P_cnaddablo", "#P_3eqtr4i", "#P_fdmi", "#P_bafval", "#P_ablogrpo", "#P_cnnvg", "#P_rneqi", "#P_ax-addf", "#P_grporn" ]
+}

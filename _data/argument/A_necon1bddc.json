@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1bddc on Metamath](http://us.metamath.org/mpegif/necon1bddc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1bddc.1 | |- ( ph -> ( DECID A = B -> ( A =/= B -> ps ) ) ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 2 | #P_imbi1i | |- ( ( A =/= B -> ps ) <-> ( -. A = B -> ps ) ) |\n| 4 | 1, 3 | #P_syl6ib | |- ( ph -> ( DECID A = B -> ( -. A = B -> ps ) ) ) |\n| 5 |  | #P_con1dc | |- ( DECID A = B -> ( ( -. A = B -> ps ) -> ( -. ps -> A = B ) ) ) |\n| 6 | 4, 5 | #P_sylcom | |- ( ph -> ( DECID A = B -> ( -. ps -> A = B ) ) ) |",
+  "conclusion" : "#P_necon1bddc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_con1dc", "#P_df-ne", "#P_syl6ib", "#P_sylcom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psgnfval on Metamath](http://us.metamath.org/mpegif/psgnfval.html)"
+  } ],
+  "names" : [ "psgnfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cD", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cF", "#T_wceq", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_cdm", "#T_vp", "#T_cdif", "#T_cid", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cT", "#T_wceq", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_cN", "#T_wceq", "#T_cpsgn", "#T_cfv", "#T_cD", "#T_cN", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cF", "#T_cmpt--2", "#T_cio", "#T_vs", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cword", "#T_cT", "#T_vx", "#T_wceq", "#T_cG", "#T_cgsu", "#T_vw", "#T_wa", "#T_vs", "#T_wceq", "#T_cneg", "#T_c1", "#T_cexp", "#T_chash", "#T_cfv", "#T_vw", "#T_cB", "#T_vp", "#T_cD", "#T_vs", "#T_vw", "#T_vx", "#T_cF", "#T_vx", "#T_cT", "#T_vw", "#T_vp", "#T_vs", "#T_vw", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function definition of the permutation sign function.  (Contributed by Stefan O'Rear, 28-Aug-2015.) ",
+  "statement" : "psgnfval.g $e |- G = ( SymGrp ` D ) $.\npsgnfval.b $e |- B = ( Base ` G ) $.\npsgnfval.f $e |- F = { p e. B | dom ( p \\ _I ) e. Fin } $.\npsgnfval.t $e |- T = ran ( pmTrsp ` D ) $.\npsgnfval.n $e |- N = ( pmSgn ` D ) $.\npsgnfval $p |- N = ( x e. F |-> ( iota s E. w e. Word T ( x = ( G gsum w ) /\\ s = ( -u 1 ^ ( # ` w ) ) ) ) ) $.\n$d B p $.\n$d D s w x $.\n$d F x $.\n$d T w $.\n$d p s w x $."
+}

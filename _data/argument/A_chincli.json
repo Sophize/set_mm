@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chincli on Metamath](http://us.metamath.org/mpegif/chincli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ch0le.1 | |- A e. CH |\n| 2 |  | chjcl.2 | |- B e. CH |\n| 3 | 1 | #P_elexi | |- A e. _V |\n| 4 | 2 | #P_elexi | |- B e. _V |\n| 5 | 3, 4 | #P_intpr | |- |^| { A , B } = ( A i^i B ) |\n| 6 | 1, 2 | #P_pm3.2i | |- ( A e. CH /\\ B e. CH ) |\n| 7 | 3, 4 | #P_prss | |- ( ( A e. CH /\\ B e. CH ) <-> { A , B } C_ CH ) |\n| 8 | 6, 7 | #P_mpbi | |- { A , B } C_ CH |\n| 9 | 3 | #P_prnz | |- { A , B } =/= (/) |\n| 10 | 8, 9 | #P_pm3.2i | |- ( { A , B } C_ CH /\\ { A , B } =/= (/) ) |\n| 11 | 10 | #P_chintcli | |- |^| { A , B } e. CH |\n| 12 | 5, 11 | #P_eqeltrri | |- ( A i^i B ) e. CH |",
+  "conclusion" : "#P_chincli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cint", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wb", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cch", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cch", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wne", "#T_c0", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cch", "#T_wa", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wne", "#T_c0", "#T_cint", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cch", "#T_cA", "#T_cin", "#T_cB", "#T_wcel", "#T_cch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chintcli", "#P_elexi", "#P_mpbi", "#P_prss", "#P_intpr", "#P_prnz", "#P_pm3.2i", "#P_eqeltrri" ]
+}

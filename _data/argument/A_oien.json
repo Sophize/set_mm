@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oien on Metamath](http://us.metamath.org/mpegif/oien.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oicl.1 | |- F = OrdIso ( R , A ) |\n| 2 | 1 | #P_oiexg | |- ( A e. V -> F e. _V ) |\n| 3 | 2 | #P_adantr | |- ( ( A e. V /\\ R We A ) -> F e. _V ) |\n| 4 | 1 | #P_oiiso | |- ( ( A e. V /\\ R We A ) -> F Isom _E , R ( dom F , A ) ) |\n| 5 |  | #P_isof1o | |- ( F Isom _E , R ( dom F , A ) -> F : dom F -1-1-onto-> A ) |\n| 6 | 4, 5 | #P_syl | |- ( ( A e. V /\\ R We A ) -> F : dom F -1-1-onto-> A ) |\n| 7 |  | #P_f1oen3g | |- ( ( F e. _V /\\ F : dom F -1-1-onto-> A ) -> dom F ~~ A ) |\n| 8 | 3, 6, 7 | #P_syl2anc | |- ( ( A e. V /\\ R We A ) -> dom F ~~ A ) |",
+  "conclusion" : "#P_oien",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_coi--1", "#T_cR", "#T_coi--2", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wiso--1", "#T_cep", "#T_wiso--2", "#T_cR", "#T_cdm", "#T_cF", "#T_wiso--3", "#T_cA.wceq", "#T_cF", "#T_wiso--1", "#T_cep", "#T_wiso--2", "#T_cR", "#T_cdm", "#T_cF", "#T_wiso--3", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cdm", "#T_cF", "#T_wf1o--2", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cdm", "#T_cF", "#T_wf1o--2", "#T_cA.wceq", "#T_cF", "#T_wcel", "#T_cvv", "#T_wa", "#T_cF", "#T_wf1o--1", "#T_cdm", "#T_cF", "#T_wf1o--2", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_cen", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cR", "#T_wwe", "#T_cA", "#T_wi", "#T_cdm", "#T_cF", "#T_cen", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_syl", "#P_oiiso", "#P_oiexg", "#P_adantr", "#P_f1oen3g", "#P_isof1o" ]
+}

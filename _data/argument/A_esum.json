@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See esum on Metamath](http://us.metamath.org/mpegif/esum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-e | |- _e = ( exp ` 1 ) |\n| 2 |  | #P_ax-1cn | |- 1 e. CC |\n| 3 |  | #P_efval | |- ( 1 e. CC -> ( exp ` 1 ) = sum_ k e. NN0 ( ( 1 ^ k ) / ( ! ` k ) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( exp ` 1 ) = sum_ k e. NN0 ( ( 1 ^ k ) / ( ! ` k ) ) |\n| 5 |  | #P_nn0z | |- ( k e. NN0 -> k e. ZZ ) |\n| 6 |  | #P_1exp | |- ( k e. ZZ -> ( 1 ^ k ) = 1 ) |\n| 7 | 5, 6 | #P_syl | |- ( k e. NN0 -> ( 1 ^ k ) = 1 ) |\n| 8 | 7 | #P_oveq1d | |- ( k e. NN0 -> ( ( 1 ^ k ) / ( ! ` k ) ) = ( 1 / ( ! ` k ) ) ) |\n| 9 | 8 | #P_sumeq2i | |- sum_ k e. NN0 ( ( 1 ^ k ) / ( ! ` k ) ) = sum_ k e. NN0 ( 1 / ( ! ` k ) ) |\n| 10 | 1, 4, 9 | #P_3eqtri | |- _e = sum_ k e. NN0 ( 1 / ( ! ` k ) ) |",
+  "conclusion" : "#P_esum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ceu", "#T_wceq", "#T_ce", "#T_cfv", "#T_c1", "#T_c1", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_c1", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_c1", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_ce", "#T_cfv", "#T_c1", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_c1", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_vk", "#T_wcel", "#T_cz", "#T_vk", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cexp", "#T_vk", "#T_wceq", "#T_c1", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_c1", "#T_cexp", "#T_vk", "#T_wceq", "#T_c1", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_c1", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_wceq", "#T_c1", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_c1", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_c1", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_ceu", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cn0", "#T_c1", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0z", "#P_ax-mp", "#P_ax-1cn", "#P_efval", "#P_syl", "#P_oveq1d", "#P_3eqtri", "#P_df-e", "#P_sumeq2i", "#P_1exp" ]
+}

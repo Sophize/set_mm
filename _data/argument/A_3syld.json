@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3syld on Metamath](http://us.metamath.org/mpegif/3syld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3syld.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | 3syld.2 | |- ( ph -> ( ch -> th ) ) |\n| 3 |  | 3syld.3 | |- ( ph -> ( th -> ta ) ) |\n| 4 | 1, 2 | #P_syld | |- ( ph -> ( ps -> th ) ) |\n| 5 | 4, 3 | #P_syld | |- ( ph -> ( ps -> ta ) ) |",
+  "conclusion" : "#P_3syld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syld" ]
+}

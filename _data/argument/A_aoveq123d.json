@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aoveq123d on Metamath](http://us.metamath.org/mpegif/aoveq123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | aoveq123d.1 | |- ( ph -> F = G ) |\n| 2 |  | aoveq123d.2 | |- ( ph -> A = B ) |\n| 3 |  | aoveq123d.3 | |- ( ph -> C = D ) |\n| 4 | 2, 3 | #P_opeq12d | |- ( ph -> <. A , C >. = <. B , D >. ) |\n| 5 | 1, 4 | #P_afveq12d | |- ( ph -> ( F ''' <. A , C >. ) = ( G ''' <. B , D >. ) ) |\n| 6 |  | #P_df-aov | |- (( A F C )) = ( F ''' <. A , C >. ) |\n| 7 |  | #P_df-aov | |- (( B G D )) = ( G ''' <. B , D >. ) |\n| 8 | 5, 6, 7 | #P_3eqtr4g | |- ( ph -> (( A F C )) = (( B G D )) ) |",
+  "conclusion" : "#P_aoveq123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_cG", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wph", "#T_wi", "#T_cF", "#T_cafv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cG", "#T_cafv", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_caov--1", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_caov--2", "#T_wceq", "#T_cF", "#T_cafv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_caov--1", "#T_cB.wceq", "#T_cG", "#T_cD", "#T_caov--2", "#T_wceq", "#T_cG", "#T_cafv", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wph", "#T_wi", "#T_caov--1", "#T_cA", "#T_cF", "#T_cC", "#T_caov--2", "#T_wceq", "#T_caov--1", "#T_cB", "#T_cG", "#T_cD", "#T_caov--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_afveq12d", "#P_opeq12d", "#P_3eqtr4g", "#P_df-aov" ]
+}

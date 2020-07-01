@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lenegi on Metamath](http://us.metamath.org/mpegif/lenegi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt_2.1 | |- A e. RR |\n| 2 |  | lt_2.2 | |- B e. RR |\n| 3 |  | #P_leneg | |- ( ( A e. RR /\\ B e. RR ) -> ( A <_ B <-> -u B <_ -u A ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A <_ B <-> -u B <_ -u A ) |",
+  "conclusion" : "#P_lenegi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cneg", "#T_cA.wceq", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cneg", "#T_cB", "#T_cle", "#T_cneg", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_leneg" ]
+}

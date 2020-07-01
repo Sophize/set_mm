@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlm0 on Metamath](http://us.metamath.org/mpegif/rlm0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rlmval | |- ( ringLMod ` R ) = ( ( subringAlg ` R ) ` ( Base ` R ) ) |\n| 2 | 1 | #P_a1i | |- ( T. -> ( ringLMod ` R ) = ( ( subringAlg ` R ) ` ( Base ` R ) ) ) |\n| 3 |  | #P_eqidd | |- ( T. -> ( 0g ` R ) = ( 0g ` R ) ) |\n| 4 |  | #P_ssid | |- ( Base ` R ) C_ ( Base ` R ) |\n| 5 | 4 | #P_a1i | |- ( T. -> ( Base ` R ) C_ ( Base ` R ) ) |\n| 6 | 2, 3, 5 | #P_sralmod0 | |- ( T. -> ( 0g ` R ) = ( 0g ` ( ringLMod ` R ) ) ) |\n| 7 | 6 | #P_trud | |- ( 0g ` R ) = ( 0g ` ( ringLMod ` R ) ) |",
+  "conclusion" : "#P_rlm0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_csra", "#T_cfv", "#T_cR", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cR", "#T_wtru", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_csra", "#T_cfv", "#T_cR", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cR", "#T_wtru", "#T_wi", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_wtru", "#T_wi", "#T_cbs", "#T_cfv", "#T_cR", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_wtru", "#T_wi", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_ssid", "#P_rlmval", "#P_eqidd", "#P_a1i", "#P_sralmod0" ]
+}

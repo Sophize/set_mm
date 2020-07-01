@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl6an on Metamath](http://us.metamath.org/mpegif/syl6an.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl6an.1 | |- ( ph -> ps ) |\n| 2 |  | syl6an.2 | |- ( ph -> ( ch -> th ) ) |\n| 3 |  | syl6an.3 | |- ( ( ps /\\ th ) -> ta ) |\n| 4 | 2, 1 | #P_jctild | |- ( ph -> ( ch -> ( ps /\\ th ) ) ) |\n| 5 | 4, 3 | #P_syl6 | |- ( ph -> ( ch -> ta ) ) |",
+  "conclusion" : "#P_syl6an",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wa", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jctild", "#P_syl6" ]
+}

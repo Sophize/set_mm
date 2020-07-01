@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xmulass on Metamath](http://us.metamath.org/mpegif/xmulass.html)"
+  } ],
+  "names" : [ "xmulass" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA", "#T_cxmu", "#T_cB", "#T_cxmu", "#T_cC", "#T_wceq", "#T_cA", "#T_cxmu", "#T_cB", "#T_cxmu", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Associativity of the extended real multiplication operation. Surprisingly, there are no restrictions on the values, unlike ~ xaddass which has to avoid the \"undefined\" combinations ` +oo +e -oo ` and ` -oo +e +oo ` .  The equivalent \"undefined\" expression here would be ` 0 *e +oo ` , but since this is defined to equal ` 0 ` any zeroes in the expression make the whole thing evaluate to zero (on both sides), thus establishing the identity in this case.  (Contributed by Mario Carneiro, 20-Aug-2015.) ",
+  "statement" : "xmulass $p |- ( ( A e. RR* /\\ B e. RR* /\\ C e. RR* ) -> ( ( A *e B ) *e C ) = ( A *e ( B *e C ) ) ) $."
+}

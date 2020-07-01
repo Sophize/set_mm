@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coemullem on Metamath](http://us.metamath.org/mpegif/coemullem.html)"
+  } ],
+  "names" : [ "coemullem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cB", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cG", "#T_cM", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cN", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cG", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_cmul", "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_vn", "#T_cA", "#T_cfv", "#T_vk", "#T_cmul", "#T_cB", "#T_cfv", "#T_vn", "#T_cmin", "#T_vk", "#T_wa", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cof", "#T_cmul", "#T_cG", "#T_cle", "#T_cM", "#T_caddc", "#T_cN", "#T_cA", "#T_vk", "#T_vn", "#T_cB", "#T_vk", "#T_vn", "#T_cF", "#T_vk", "#T_vn", "#T_cG", "#T_vk", "#T_vn", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_vn", "#T_cS", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ coemul and ~ dgrmul .  (Contributed by Mario Carneiro, 24-Jul-2014.) ",
+  "statement" : "coefv0.1 $e |- A = ( coeff ` F ) $.\ncoeadd.2 $e |- B = ( coeff ` G ) $.\ncoeadd.3 $e |- M = ( deg ` F ) $.\ncoeadd.4 $e |- N = ( deg ` G ) $.\ncoemullem $p |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) ) -> ( ( coeff ` ( F oF x. G ) ) = ( n e. NN0 |-> sum_ k e. ( 0 ... n ) ( ( A ` k ) x. ( B ` ( n - k ) ) ) ) /\\ ( deg ` ( F oF x. G ) ) <_ ( M + N ) ) ) $.\n$d A k n $.\n$d B k n $.\n$d F k n $.\n$d G k n $.\n$d M k $.\n$d N k n $.\n$d S k n $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efsep on Metamath](http://us.metamath.org/mpegif/efsep.html)"
+  } ],
+  "names" : [ "efsep" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cexp", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_cN", "#T_wceq", "#T_cM", "#T_caddc", "#T_c1", "#T_cM", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_ce", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_caddc", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_cF", "#T_cfv", "#T_vk", "#T_wph", "#T_wi", "#T_cB", "#T_caddc", "#T_cA", "#T_cexp", "#T_cM", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cM", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_ce", "#T_cfv", "#T_cA", "#T_wceq", "#T_cD", "#T_caddc", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cuz", "#T_cfv", "#T_cN", "#T_cF", "#T_cfv", "#T_vk", "#T_cA", "#T_vk", "#T_vn", "#T_cF", "#T_vk", "#T_cM", "#T_vk", "#T_vn", "#T_cN", "#T_vk", "#T_vn", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Separate out the next term of the power series expansion of the exponential function.  The last hypothesis allows the separated terms to be rearranged as desired.  (Contributed by Paul Chapman, 23-Nov-2007.) (Revised by Mario Carneiro, 29-Apr-2014.) ",
+  "statement" : "efsep.1 $e |- F = ( n e. NN0 |-> ( ( A ^ n ) / ( ! ` n ) ) ) $.\nefsep.2 $e |- N = ( M + 1 ) $.\nefsep.3 $e |- M e. NN0 $.\nefsep.4 $e |- ( ph -> A e. CC ) $.\nefsep.5 $e |- ( ph -> B e. CC ) $.\nefsep.6 $e |- ( ph -> ( exp ` A ) = ( B + sum_ k e. ( ZZ>= ` M ) ( F ` k ) ) ) $.\nefsep.7 $e |- ( ph -> ( B + ( ( A ^ M ) / ( ! ` M ) ) ) = D ) $.\nefsep $p |- ( ph -> ( exp ` A ) = ( D + sum_ k e. ( ZZ>= ` N ) ( F ` k ) ) ) $.\n$d A k n $.\n$d F k $.\n$d M k n $.\n$d N k n $.\n$d k ph $."
+}

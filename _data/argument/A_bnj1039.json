@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj1039 on Metamath](http://us.metamath.org/mpegif/bnj1039.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj1039.1 | |- ( ps <-> A. i e. _om ( suc i e. n -> ( f ` suc i ) = U_ y e. ( f ` i ) _pred ( y , A , R ) ) ) |\n| 2 |  | bnj1039.2 | |- ( ps' <-> [. j / i ]. ps ) |\n| 3 |  | #P_vex | |- j e. _V |\n| 4 |  | #P_nfra1 | |- F/ i A. i e. _om ( suc i e. n -> ( f ` suc i ) = U_ y e. ( f ` i ) _pred ( y , A , R ) ) |\n| 5 | 1, 4 | #P_nfxfr | |- F/ i ps |\n| 6 | 5 | #P_sbcgf | |- ( j e. _V -> ( [. j / i ]. ps <-> ps ) ) |\n| 7 | 3, 6 | #P_ax-mp | |- ( [. j / i ]. ps <-> ps ) |\n| 8 | 2, 7, 1 | #P_3bitri | |- ( ps' <-> A. i e. _om ( suc i e. n -> ( f ` suc i ) = U_ y e. ( f ` i ) _pred ( y , A , R ) ) ) |",
+  "conclusion" : "#P_bnj1039",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wb", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_com", "#T_csuc", "#T_vi", "#T_wcel", "#T_vn", "#T_wi", "#T_vf", "#T_cfv", "#T_csuc", "#T_vi", "#T_wceq", "#T_ciun--1", "#T_vy", "#T_ciun--2", "#T_vf", "#T_cfv", "#T_vi", "#T_c-bnj14--1", "#T_vy", "#T_c-bnj14--2", "#T_cA", "#T_c-bnj14--3", "#T_cR", "#T_bnjwpsm", "#T_wb", "#T_wsbc--1", "#T_vj", "#T_wsbc--2", "#T_vi", "#T_wsbc--3", "#T_wps", "#T_vj", "#T_wcel", "#T_cvv", "#T_wnf", "#T_vi", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_com", "#T_csuc", "#T_vi", "#T_wcel", "#T_vn", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_csuc", "#T_vi", "#T_wceq", "#T_ciun--1", "#T_vy.tru", "#T_ciun--2", "#T_cbvex4v.vf", "#T_cfv", "#T_vi", "#T_c-bnj14--1", "#T_vy.tru", "#T_c-bnj14--2", "#T_cA.wceq", "#T_c-bnj14--3", "#T_cR", "#T_wnf", "#T_vi", "#T_wps", "#T_vj", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_vj", "#T_wsbc--2", "#T_vi", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wps", "#T_wsbc--1", "#T_vj", "#T_wsbc--2", "#T_vi", "#T_wsbc--3", "#T_wps", "#T_wb", "#T_wps", "#T_bnjwpsm", "#T_wb", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_com", "#T_csuc", "#T_vi", "#T_wcel", "#T_vn", "#T_wi", "#T_vf", "#T_cfv", "#T_csuc", "#T_vi", "#T_wceq", "#T_ciun--1", "#T_vy", "#T_ciun--2", "#T_vf", "#T_cfv", "#T_vi", "#T_c-bnj14--1", "#T_vy", "#T_c-bnj14--2", "#T_cA", "#T_c-bnj14--3", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_3bitri", "#P_vex", "#P_sbcgf", "#P_nfxfr", "#P_nfra1" ]
+}

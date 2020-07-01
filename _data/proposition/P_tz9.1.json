@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tz9.1 on Metamath](http://us.metamath.org/mpegif/tz9.1.html)"
+  } ],
+  "names" : [ "tz9.1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_wex", "#T_vx", "#T_cA", "#T_wss", "#T_vx", "#T_w3a--1", "#T_wtr", "#T_vx", "#T_w3a--2", "#T_wal", "#T_vy", "#T_cA", "#T_wss", "#T_vy", "#T_wa", "#T_wtr", "#T_vy", "#T_wi", "#T_vx", "#T_wss", "#T_vy", "#T_cA", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Every set has a transitive closure (the smallest transitive extension). Theorem 9.1 of [TakeutiZaring] p. 73.  See ~ trcl for an explicit expression for the transitive closure.  Apparently open problems are whether this theorem can be proved without the Axiom of Infinity; if not, then whether it implies Infinity; and if not, what is the \"property\" that Infinity has that the other axioms don't have that is weaker than Infinity itself? (Added 22-Mar-2011) The following article seems to answer the first question, that it can't be proved without Infinity, in the affirmative: Mancini, Antonella and Zambella, Domenico (2001).  \"A note on recursive models of set theories.\" _Notre Dame Journal of Formal Logic_, 42(2):109-115.  (Thanks to Scott Fenton.)  (Contributed by NM, 15-Sep-2003.) ",
+  "statement" : "tz9.1.1 $e |- A e. _V $.\ntz9.1 $p |- E. x ( A C_ x /\\ Tr x /\\ A. y ( ( A C_ y /\\ Tr y ) -> x C_ y ) ) $.\n$d A x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsuppimp on Metamath](http://us.metamath.org/mpegif/fsuppimp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relfsupp | |- Rel finSupp |\n| 2 | 1 | #P_brrelexi | |- ( R finSupp Z -> R e. _V ) |\n| 3 | 1 | #P_brrelex2i | |- ( R finSupp Z -> Z e. _V ) |\n| 4 | 2, 3 | #P_jca | |- ( R finSupp Z -> ( R e. _V /\\ Z e. _V ) ) |\n| 5 |  | #P_isfsupp | |- ( ( R e. _V /\\ Z e. _V ) -> ( R finSupp Z <-> ( Fun R /\\ ( R supp Z ) e. Fin ) ) ) |\n| 6 | 5 | #P_biimpd | |- ( ( R e. _V /\\ Z e. _V ) -> ( R finSupp Z -> ( Fun R /\\ ( R supp Z ) e. Fin ) ) ) |\n| 7 | 4, 6 | #P_mpcom | |- ( R finSupp Z -> ( Fun R /\\ ( R supp Z ) e. Fin ) ) |",
+  "conclusion" : "#P_fsuppimp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cfsupp", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_cZ", "#T_wcel", "#T_cvv", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_cZ", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_cZ", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_cZ", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cR", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_wfun", "#T_cR", "#T_wa", "#T_cR", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_relfsupp", "#P_isfsupp", "#P_jca", "#P_biimpd", "#P_brrelex2i", "#P_brrelexi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tposconst on Metamath](http://us.metamath.org/mpegif/tposconst.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fconstmpt2 | |- ( ( A X. B ) X. { C } ) = ( x e. A , y e. B |-> C ) |\n| 2 | 1 | #P_tposmpt2 | |- tpos ( ( A X. B ) X. { C } ) = ( y e. B , x e. A |-> C ) |\n| 3 |  | #P_fconstmpt2 | |- ( ( B X. A ) X. { C } ) = ( y e. B , x e. A |-> C ) |\n| 4 | 2, 3 | #P_eqtr4i | |- tpos ( ( A X. B ) X. { C } ) = ( ( B X. A ) X. { C } ) |",
+  "conclusion" : "#P_tposconst",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cxp", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cA.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_cC", "#T_ctpos", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cxp", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_vy.tru", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vx.wal", "#T_cmpt2--3", "#T_cA.wceq", "#T_cmpt2--4", "#T_cC", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_vy.tru", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vx.wal", "#T_cmpt2--3", "#T_cA.wceq", "#T_cmpt2--4", "#T_cC", "#T_ctpos", "#T_cA", "#T_cxp", "#T_cB", "#T_cxp", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_cB", "#T_cxp", "#T_cA", "#T_cxp", "#T_csn--1", "#T_cC", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_tposmpt2", "#P_fconstmpt2" ]
+}

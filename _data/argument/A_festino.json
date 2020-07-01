@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See festino on Metamath](http://us.metamath.org/mpegif/festino.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | festino.maj | |- A. x ( ph -> -. ps ) |\n| 2 |  | festino.min | |- E. x ( ch /\\ ps ) |\n| 3 | 1 | #P_spi | |- ( ph -> -. ps ) |\n| 4 | 3 | #P_con2i | |- ( ps -> -. ph ) |\n| 5 | 4 | #P_anim2i | |- ( ( ch /\\ ps ) -> ( ch /\\ -. ph ) ) |\n| 6 | 2, 5 | #P_eximii | |- E. x ( ch /\\ -. ph ) |",
+  "conclusion" : "#P_festino",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anim2i", "#P_eximii", "#P_spi", "#P_con2i" ]
+}

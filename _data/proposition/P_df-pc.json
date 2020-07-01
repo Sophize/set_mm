@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-pc on Metamath](http://us.metamath.org/mpegif/df-pc.html)"
+  } ],
+  "names" : [ "df-pc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpc", "#T_wceq", "#T_vp", "#T_cmpt2--1", "#T_cprime", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cq", "#T_cmpt2--4", "#T_cif--1", "#T_vr", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cpnf", "#T_cif--3", "#T_cio", "#T_vz", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cn", "#T_vr", "#T_wceq", "#T_vx", "#T_cdiv", "#T_vy", "#T_wa", "#T_vz", "#T_wceq", "#T_csup--1", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_vp", "#T_cexp", "#T_vn", "#T_cdvds", "#T_vx", "#T_crab--4", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cmin", "#T_csup--1", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_vp", "#T_cexp", "#T_vn", "#T_cdvds", "#T_vy", "#T_crab--4", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_vn", "#T_vp", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the prime count function, which returns the largest exponent of a given prime (or other positive integer) that divides the number.  For rational numbers, it returns negative values according to the power of a prime in the denominator.  (Contributed by Mario Carneiro, 23-Feb-2014.) ",
+  "statement" : "df-pc $p |- pCnt = ( p e. Prime , r e. QQ |-> if ( r = 0 , +oo , ( iota z E. x e. ZZ E. y e. NN ( r = ( x / y ) /\\ z = ( sup ( { n e. NN0 | ( p ^ n ) || x } , RR , < ) - sup ( { n e. NN0 | ( p ^ n ) || y } , RR , < ) ) ) ) ) ) $.\n$d n p r x y z $."
+}

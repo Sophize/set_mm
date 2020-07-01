@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj1138 on Metamath](http://us.metamath.org/mpegif/bnj1138.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj1138.1 | |- A = ( B u. C ) |\n| 2 | 1 | #P_eleq2i | |- ( X e. A <-> X e. ( B u. C ) ) |\n| 3 |  | #P_elun | |- ( X e. ( B u. C ) <-> ( X e. B \\/ X e. C ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( X e. A <-> ( X e. B \\/ X e. C ) ) |",
+  "conclusion" : "#P_bnj1138",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cun", "#T_cC", "#T_cX", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cX", "#T_wcel", "#T_cC", "#T_cX", "#T_wcel", "#T_cA", "#T_wb", "#T_cX", "#T_wcel", "#T_cB", "#T_wo", "#T_cX", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2i", "#P_elun", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvlladdi on Metamath](http://us.metamath.org/mpegif/mvlladdi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mvlladdi.1 | |- A e. CC |\n| 2 |  | mvlladdi.2 | |- B e. CC |\n| 3 |  | mvlladdi.3 | |- ( A + B ) = C |\n| 4 | 2, 1 | #P_pncan3oi | |- ( ( B + A ) - A ) = B |\n| 5 | 1, 2, 3 | #P_addcomli | |- ( B + A ) = C |\n| 6 | 5 | #P_oveq1i | |- ( ( B + A ) - A ) = ( C - A ) |\n| 7 | 4, 6 | #P_eqtr3i | |- B = ( C - A ) |",
+  "conclusion" : "#P_mvlladdi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA", "#T_caddc", "#T_cB", "#T_wceq", "#T_cC", "#T_cB.wceq", "#T_caddc", "#T_cA.wceq", "#T_cmin", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB.wceq", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cB.wceq", "#T_caddc", "#T_cA.wceq", "#T_cmin", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cmin", "#T_cA.wceq", "#T_cB", "#T_wceq", "#T_cC", "#T_cmin", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr3i", "#P_addcomli", "#P_pncan3oi", "#P_oveq1i" ]
+}

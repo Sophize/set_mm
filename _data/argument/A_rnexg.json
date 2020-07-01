@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rnexg on Metamath](http://us.metamath.org/mpegif/rnexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uniexg | |- ( A e. V -> U. A e. _V ) |\n| 2 |  | #P_uniexg | |- ( U. A e. _V -> U. U. A e. _V ) |\n| 3 |  | #P_ssun2 | |- ran A C_ ( dom A u. ran A ) |\n| 4 |  | #P_dmrnssfld | |- ( dom A u. ran A ) C_ U. U. A |\n| 5 | 3, 4 | #P_sstri | |- ran A C_ U. U. A |\n| 6 |  | #P_ssexg | |- ( ( ran A C_ U. U. A /\\ U. U. A e. _V ) -> ran A e. _V ) |\n| 7 | 5, 6 | #P_mpan | |- ( U. U. A e. _V -> ran A e. _V ) |\n| 8 | 1, 2, 7 | #P_3syl | |- ( A e. V -> ran A e. _V ) |",
+  "conclusion" : "#P_rnexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_crn", "#T_cA.wceq", "#T_wss", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_cA.wceq", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_crn", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_wa", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_crn", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssexg", "#P_dmrnssfld", "#P_3syl", "#P_ssun2", "#P_uniexg", "#P_mpan", "#P_sstri" ]
+}

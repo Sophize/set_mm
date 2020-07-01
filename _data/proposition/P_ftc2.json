@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ftc2 on Metamath](http://us.metamath.org/mpegif/ftc2.html)"
+  } ],
+  "names" : [ "ftc2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wph", "#T_wi", "#T_cr", "#T_cdv", "#T_cF", "#T_wcel", "#T_cA", "#T_cioo", "#T_cB", "#T_ccncf", "#T_cc", "#T_wph", "#T_wi", "#T_cr", "#T_cdv", "#T_cF", "#T_wcel", "#T_cibl", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_ccncf", "#T_cc", "#T_wph", "#T_wi", "#T_citg--1", "#T_cA", "#T_cioo", "#T_cB", "#T_cr", "#T_cdv", "#T_cF", "#T_cfv", "#T_vt", "#T_citg--2", "#T_vt", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_cmin", "#T_cF", "#T_cfv", "#T_cA", "#T_cA", "#T_vt", "#T_cB", "#T_vt", "#T_cF", "#T_vt", "#T_wph", "#T_vt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Fundamental Theorem of Calculus, part two.  If ` F ` is a function continuous on ` [ A , B ] ` and continuously differentiable on ` ( A , B ) ` , then the integral of the derivative of ` F ` is equal to ` F ( B ) - F ( A ) ` .  This is part of Metamath 100 proof #15. (Contributed by Mario Carneiro, 2-Sep-2014.) ",
+  "statement" : "ftc2.a $e |- ( ph -> A e. RR ) $.\nftc2.b $e |- ( ph -> B e. RR ) $.\nftc2.le $e |- ( ph -> A <_ B ) $.\nftc2.c $e |- ( ph -> ( RR _D F ) e. ( ( A (,) B ) -cn-> CC ) ) $.\nftc2.i $e |- ( ph -> ( RR _D F ) e. L^1 ) $.\nftc2.f $e |- ( ph -> F e. ( ( A [,] B ) -cn-> CC ) ) $.\nftc2 $p |- ( ph -> S. ( A (,) B ) ( ( RR _D F ) ` t ) _d t = ( ( F ` B ) - ( F ` A ) ) ) $.\n$d A t $.\n$d B t $.\n$d F t $.\n$d ph t $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See canth2g on Metamath](http://us.metamath.org/mpegif/canth2g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pweq | |- ( x = A -> ~P x = ~P A ) |\n| 2 |  | #P_breq12 | |- ( ( x = A /\\ ~P x = ~P A ) -> ( x ~< ~P x <-> A ~< ~P A ) ) |\n| 3 | 1, 2 | #P_mpdan | |- ( x = A -> ( x ~< ~P x <-> A ~< ~P A ) ) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 | 4 | #P_canth2 | |- x ~< ~P x |\n| 6 | 3, 5 | #P_vtoclg | |- ( A e. V -> A ~< ~P A ) |",
+  "conclusion" : "#P_canth2g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cpw", "#T_vx.wal", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_csdm", "#T_cpw", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_csdm", "#T_cpw", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_csdm", "#T_cpw", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_csdm", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_canth2", "#P_vtoclg", "#P_breq12", "#P_pweq", "#P_vex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-goeq on Metamath](http://us.metamath.org/mpegif/df-goeq.html)"
+  } ],
+  "names" : [ "df-goeq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cgoq", "#T_wceq", "#T_vu", "#T_cmpt2--1", "#T_com", "#T_cmpt2--2", "#T_vv", "#T_cmpt2--3", "#T_com", "#T_cmpt2--4", "#T_csb--1", "#T_csuc", "#T_vu", "#T_cun", "#T_vv", "#T_csb--2", "#T_vw", "#T_csb--3", "#T_cgol", "#T_vw", "#T_vw", "#T_cgoe", "#T_vu", "#T_cgob", "#T_vw", "#T_cgoe", "#T_vv", "#T_vu", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Godel-set of equality.  Here the arguments ` x = <. N , P >. ` correspond to v_N and v_P , so ` ( (/) =g 1o ) ` actually means v_0 ` = ` v_1 , not ` 0 = 1 ` .  Here we use the trick mentioned in ~ ax-ext to introduce equality as a defined notion in terms of ` e.g ` .  The expression ` suc ( u u. v ) = ` max ` ( u , v ) + 1 ` here is a convenient way of getting a dummy variable distinct from ` u ` and ` v ` .  (Contributed by Mario Carneiro, 14-Jul-2013.) ",
+  "statement" : "df-goeq $p |- =g = ( u e. _om , v e. _om |-> [_ suc ( u u. v ) / w ]_ A.g w ( ( w e.g u ) <->g ( w e.g v ) ) ) $.\n$d u v w $."
+}

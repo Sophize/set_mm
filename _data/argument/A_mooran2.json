@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mooran2 on Metamath](http://us.metamath.org/mpegif/mooran2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_moor | |- ( E* x ( ph \\/ ps ) -> E* x ph ) |\n| 2 |  | #P_olc | |- ( ps -> ( ph \\/ ps ) ) |\n| 3 | 2 | #P_moimi | |- ( E* x ( ph \\/ ps ) -> E* x ps ) |\n| 4 | 1, 3 | #P_jca | |- ( E* x ( ph \\/ ps ) -> ( E* x ph /\\ E* x ps ) ) |",
+  "conclusion" : "#P_mooran2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wmo", "#T_vx.wal", "#T_wps", "#T_wmo", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wmo", "#T_vx", "#T_wph", "#T_wa", "#T_wmo", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_olc", "#P_jca", "#P_moor", "#P_moimi" ]
+}

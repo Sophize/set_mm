@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prhash2ex on Metamath](http://us.metamath.org/mpegif/prhash2ex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0ne1 | |- 0 =/= 1 |\n| 2 |  | #P_c0ex | |- 0 e. _V |\n| 3 |  | #P_1ex | |- 1 e. _V |\n| 4 |  | #P_hashprg | |- ( ( 0 e. _V /\\ 1 e. _V ) -> ( 0 =/= 1 <-> ( # ` { 0 , 1 } ) = 2 ) ) |\n| 5 | 4 | #P_bicomd | |- ( ( 0 e. _V /\\ 1 e. _V ) -> ( ( # ` { 0 , 1 } ) = 2 <-> 0 =/= 1 ) ) |\n| 6 | 2, 3, 5 | #P_mp2an | |- ( ( # ` { 0 , 1 } ) = 2 <-> 0 =/= 1 ) |\n| 7 | 1, 6 | #P_mpbir | |- ( # ` { 0 , 1 } ) = 2 |",
+  "conclusion" : "#P_prhash2ex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wne", "#T_c1", "#T_cc0", "#T_wcel", "#T_cvv", "#T_c1", "#T_wcel", "#T_cvv", "#T_cc0", "#T_wcel", "#T_cvv", "#T_wa", "#T_c1", "#T_wcel", "#T_cvv", "#T_wi", "#T_cc0", "#T_wne", "#T_c1", "#T_wb", "#T_chash", "#T_cfv", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_c2", "#T_cc0", "#T_wcel", "#T_cvv", "#T_wa", "#T_c1", "#T_wcel", "#T_cvv", "#T_wi", "#T_chash", "#T_cfv", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_c2", "#T_wb", "#T_cc0", "#T_wne", "#T_c1", "#T_chash", "#T_cfv", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_c2", "#T_wb", "#T_cc0", "#T_wne", "#T_c1", "#T_chash", "#T_cfv", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_0ne1", "#P_c0ex", "#P_hashprg", "#P_bicomd", "#P_mpbir", "#P_1ex" ]
+}

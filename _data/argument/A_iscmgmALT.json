@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iscmgmALT on Metamath](http://us.metamath.org/mpegif/iscmgmALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nm\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismgmALT.b | |- B = ( Base ` M ) |\n| 2 |  | ismgmALT.o | |- .o. = ( +g ` M ) |\n| 3 |  | #P_fveq2 | |- ( m = M -> ( +g ` m ) = ( +g ` M ) ) |\n| 4 |  | #P_fveq2 | |- ( m = M -> ( Base ` m ) = ( Base ` M ) ) |\n| 5 | 3, 4 | #P_breq12d | |- ( m = M -> ( ( +g ` m ) comLaw ( Base ` m ) <-> ( +g ` M ) comLaw ( Base ` M ) ) ) |\n| 6 | 2, 1 | #P_breq12i | |- ( .o. comLaw B <-> ( +g ` M ) comLaw ( Base ` M ) ) |\n| 7 | 5, 6 | #P_syl6bbr | |- ( m = M -> ( ( +g ` m ) comLaw ( Base ` m ) <-> .o. comLaw B ) ) |\n| 8 |  | #P_df-cmgm2 | |- CMgmALT = { m e. MgmALT | ( +g ` m ) comLaw ( Base ` m ) } |\n| 9 | 7, 8 | #P_elrab2 | |- ( M e. CMgmALT <-> ( M e. MgmALT /\\ .o. comLaw B ) ) |",
+  "conclusion" : "#P_iscmgmALT",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vm", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_c.op", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_vm", "#T_wceq", "#T_cM", "#T_wi", "#T_cplusg", "#T_cfv", "#T_vm", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_vm", "#T_wceq", "#T_cM", "#T_wi", "#T_cbs", "#T_cfv", "#T_vm", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_vm", "#T_wceq", "#T_cM", "#T_wi", "#T_cplusg", "#T_cfv", "#T_vm", "#T_ccomlaw", "#T_cbs", "#T_cfv", "#T_vm", "#T_wb", "#T_cplusg", "#T_cfv", "#T_cM", "#T_ccomlaw", "#T_cbs", "#T_cfv", "#T_cM", "#T_c.op", "#T_ccomlaw", "#T_cB.wceq", "#T_wb", "#T_cplusg", "#T_cfv", "#T_cM", "#T_ccomlaw", "#T_cbs", "#T_cfv", "#T_cM", "#T_vm", "#T_wceq", "#T_cM", "#T_wi", "#T_cplusg", "#T_cfv", "#T_vm", "#T_ccomlaw", "#T_cbs", "#T_cfv", "#T_vm", "#T_wb", "#T_c.op", "#T_ccomlaw", "#T_cB.wceq", "#T_ccmgm2", "#T_wceq", "#T_crab--1", "#T_vm", "#T_crab--2", "#T_cmgm2", "#T_crab--3", "#T_cplusg", "#T_cfv", "#T_vm", "#T_ccomlaw", "#T_cbs", "#T_cfv", "#T_vm", "#T_crab--4", "#T_cM", "#T_wcel", "#T_ccmgm2", "#T_wb", "#T_cM", "#T_wcel", "#T_cmgm2", "#T_wa", "#T_c.op", "#T_ccomlaw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq12i", "#P_elrab2", "#P_df-cmgm2", "#P_fveq2", "#P_breq12d", "#P_syl6bbr" ]
+}

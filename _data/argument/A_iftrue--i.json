@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iftrue on Metamath](http://us.metamath.org/mpegif/iftrue.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dedlema | |- ( ph -> ( x e. A <-> ( ( x e. A /\\ ph ) \\/ ( x e. B /\\ -. ph ) ) ) ) |\n| 2 | 1 | #P_abbi2dv | |- ( ph -> A = { x | ( ( x e. A /\\ ph ) \\/ ( x e. B /\\ -. ph ) ) } ) |\n| 3 |  | #P_df-if | |- if ( ph , A , B ) = { x | ( ( x e. A /\\ ph ) \\/ ( x e. B /\\ -. ph ) ) } |\n| 4 | 2, 3 | #P_syl6reqr | |- ( ph -> if ( ph , A , B ) = A ) |",
+  "conclusion" : "#P_iftrue",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wo", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wo", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_cab--3", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wo", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_cab--3", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abbi2dv", "#P_dedlema", "#P_syl6reqr", "#P_df-if" ]
+}

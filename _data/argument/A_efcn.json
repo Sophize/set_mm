@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efcn on Metamath](http://us.metamath.org/mpegif/efcn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssid | |- CC C_ CC |\n| 2 |  | #P_eff | |- exp : CC --> CC |\n| 3 |  | #P_dvef | |- ( CC _D exp ) = exp |\n| 4 | 3 | #P_feq1i | |- ( ( CC _D exp ) : CC --> CC <-> exp : CC --> CC ) |\n| 5 | 2, 4 | #P_mpbir | |- ( CC _D exp ) : CC --> CC |\n| 6 | 5 | #P_fdmi | |- dom ( CC _D exp ) = CC |\n| 7 |  | #P_dvcn | |- ( ( ( CC C_ CC /\\ exp : CC --> CC /\\ CC C_ CC ) /\\ dom ( CC _D exp ) = CC ) -> exp e. ( CC -cn-> CC ) ) |\n| 8 | 6, 7 | #P_mpan2 | |- ( ( CC C_ CC /\\ exp : CC --> CC /\\ CC C_ CC ) -> exp e. ( CC -cn-> CC ) ) |\n| 9 | 1, 2, 1, 8 | #P_mp3an | |- exp e. ( CC -cn-> CC ) |",
+  "conclusion" : "#P_efcn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc", "#T_wss", "#T_cc", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_cc", "#T_cdv", "#T_ce", "#T_wceq", "#T_ce", "#T_cc", "#T_cdv", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_wb", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_cc", "#T_cdv", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_cdm", "#T_cc", "#T_cdv", "#T_ce", "#T_wceq", "#T_cc", "#T_cc", "#T_wss", "#T_cc", "#T_w3a--1", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_w3a--2", "#T_cc", "#T_wss", "#T_cc", "#T_wa", "#T_cdm", "#T_cc", "#T_cdv", "#T_ce", "#T_wceq", "#T_cc", "#T_wi", "#T_ce", "#T_wcel", "#T_cc", "#T_ccncf", "#T_cc", "#T_cc", "#T_wss", "#T_cc", "#T_w3a--1", "#T_ce", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_w3a--2", "#T_cc", "#T_wss", "#T_cc", "#T_wi", "#T_ce", "#T_wcel", "#T_cc", "#T_ccncf", "#T_cc", "#T_ce", "#T_wcel", "#T_cc", "#T_ccncf", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_dvef", "#P_ssid", "#P_fdmi", "#P_dvcn", "#P_mpbir", "#P_feq1i", "#P_mpan2", "#P_eff" ]
+}

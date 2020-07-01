@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See indistps2 on Metamath](http://us.metamath.org/mpegif/indistps2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | indistps2.a | |- ( Base ` K ) = A |\n| 2 |  | indistps2.j | |- ( TopOpen ` K ) = { (/) , A } |\n| 3 |  | #P_0ex | |- (/) e. _V |\n| 4 |  | #P_fvex | |- ( Base ` K ) e. _V |\n| 5 | 1, 4 | #P_eqeltrri | |- A e. _V |\n| 6 | 3, 5 | #P_unipr | |- U. { (/) , A } = ( (/) u. A ) |\n| 7 |  | #P_uncom | |- ( (/) u. A ) = ( A u. (/) ) |\n| 8 |  | #P_un0 | |- ( A u. (/) ) = A |\n| 9 | 6, 7, 8 | #P_3eqtrri | |- A = U. { (/) , A } |\n| 10 |  | #P_indistop | |- { (/) , A } e. Top |\n| 11 | 1, 2, 9, 10 | #P_istpsi | |- K e. TopSp |",
+  "conclusion" : "#P_indistps2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cA", "#T_ctopn", "#T_cfv", "#T_cK", "#T_wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA", "#T_cpr--3", "#T_c0", "#T_wcel", "#T_cvv", "#T_cbs", "#T_cfv", "#T_cK", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wceq", "#T_c0", "#T_cun", "#T_cA.wceq", "#T_c0", "#T_cun", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_c0", "#T_cA.wceq", "#T_cun", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctop", "#T_cK", "#T_wcel", "#T_ctps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtrri", "#P_indistop", "#P_un0", "#P_uncom", "#P_unipr", "#P_0ex", "#P_fvex", "#P_eqeltrri", "#P_istpsi" ]
+}

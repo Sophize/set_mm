@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absmulrposd on Metamath](http://us.metamath.org/mpegif/absmulrposd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | absmulrposd.1 | |- ( ph -> 0 <_ A ) |\n| 2 |  | absmulrposd.2 | |- ( ph -> A e. RR ) |\n| 3 |  | absmulrposd.3 | |- ( ph -> B e. RR ) |\n| 4 | 2 | #P_recnd | |- ( ph -> A e. CC ) |\n| 5 | 3 | #P_recnd | |- ( ph -> B e. CC ) |\n| 6 | 4, 5 | #P_absmuld | |- ( ph -> ( abs ` ( A x. B ) ) = ( ( abs ` A ) x. ( abs ` B ) ) ) |\n| 7 | 2, 1 | #P_absidd | |- ( ph -> ( abs ` A ) = A ) |\n| 8 | 7 | #P_oveq1d | |- ( ph -> ( ( abs ` A ) x. ( abs ` B ) ) = ( A x. ( abs ` B ) ) ) |\n| 9 | 6, 8 | #P_eqtrd | |- ( ph -> ( abs ` ( A x. B ) ) = ( A x. ( abs ` B ) ) ) |",
+  "conclusion" : "#P_absmulrposd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_cmul", "#T_cB", "#T_wceq", "#T_cA", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_absidd", "#P_eqtrd", "#P_recnd", "#P_oveq1d", "#P_absmuld" ]
+}

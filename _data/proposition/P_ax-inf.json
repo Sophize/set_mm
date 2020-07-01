@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-inf on Metamath](http://us.metamath.org/mpegif/ax-inf.html)"
+  } ],
+  "names" : [ "ax-inf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy", "#T_vx", "#T_wcel", "#T_vy", "#T_wa", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_wex", "#T_vw", "#T_vz", "#T_wcel", "#T_vw", "#T_wa", "#T_vw", "#T_wcel", "#T_vy", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of Infinity.  An axiom of Zermelo-Fraenkel set theory.  This axiom is the gateway to \"Cantor's paradise\" (an expression coined by Hilbert).  It asserts that given a starting set ` x ` , an infinite set ` y ` built from it exists.  Although our version is apparently not given in the literature, it is similar to, but slightly shorter than, the Axiom of Infinity in [FreydScedrov] p. 283 (see ~ inf1 and ~ inf2 ).  More standard versions, which essentially state that there exists a set containing all the natural numbers, are shown as ~ zfinf2 and ~ omex and are based on the (nontrivial) proof of ~ inf3 .  This version has the advantage that when expanded to primitives, it has fewer symbols than the standard version ~ ax-inf2 .  Theorem ~ inf0 shows the reverse derivation of our axiom from a standard one.  Theorem ~ inf5 shows a very short way to state this axiom. The standard version of Infinity ~ ax-inf2 requires this axiom along with Regularity ~ ax-reg for its derivation (as theorem ~ axinf2 below).  In order to more easily identify the normal uses of Regularity, we will usually reference ~ ax-inf2 instead of this one.  The derivation of this axiom from ~ ax-inf2 is shown by theorem ~ axinf . Proofs should normally use the standard version ~ ax-inf2 instead of this axiom.  (New usage is discouraged.)  (Contributed by NM, 16-Aug-1993.) ",
+  "statement" : "ax-inf $p |- E. y ( x e. y /\\ A. z ( z e. y -> E. w ( z e. w /\\ w e. y ) ) ) $.\n$d w x y z $."
+}

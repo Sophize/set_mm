@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zntos on Metamath](http://us.metamath.org/mpegif/zntos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | zntos.y | |- Y = ( Z/nZ ` N ) |\n| 2 |  | #P_eqid | |- ( ( ZRHom ` Y ) |` if ( N = 0 , ZZ , ( 0 ..^ N ) ) ) = ( ( ZRHom ` Y ) |` if ( N = 0 , ZZ , ( 0 ..^ N ) ) ) |\n| 3 |  | #P_eqid | |- if ( N = 0 , ZZ , ( 0 ..^ N ) ) = if ( N = 0 , ZZ , ( 0 ..^ N ) ) |\n| 4 |  | #P_eqid | |- ( le ` Y ) = ( le ` Y ) |\n| 5 |  | #P_eqid | |- ( Base ` Y ) = ( Base ` Y ) |\n| 6 | 1, 2, 3, 4, 5 | #P_zntoslem | |- ( N e. NN0 -> Y e. Toset ) |",
+  "conclusion" : "#P_zntos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_czn", "#T_cfv", "#T_cN", "#T_czrh", "#T_cfv", "#T_cY", "#T_cres", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cz", "#T_cif--3", "#T_cc0", "#T_cfzo", "#T_cN", "#T_wceq", "#T_czrh", "#T_cfv", "#T_cY", "#T_cres", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cz", "#T_cif--3", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cz", "#T_cif--3", "#T_cc0", "#T_cfzo", "#T_cN", "#T_wceq", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cz", "#T_cif--3", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cple", "#T_cfv", "#T_cY", "#T_wceq", "#T_cple", "#T_cfv", "#T_cY", "#T_cbs", "#T_cfv", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cY", "#T_wcel", "#T_ctos" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_zntoslem" ]
+}

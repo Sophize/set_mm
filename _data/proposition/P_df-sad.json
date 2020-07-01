@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sad on Metamath](http://us.metamath.org/mpegif/df-sad.html)"
+  } ],
+  "names" : [ "df-sad" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csad", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cpw", "#T_cn0", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cpw", "#T_cn0", "#T_cmpt2--4", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_whad--1", "#T_vk", "#T_wcel", "#T_vx", "#T_whad--2", "#T_vk", "#T_wcel", "#T_vy", "#T_whad--3", "#T_c0", "#T_wcel", "#T_cseq--1", "#T_cc0", "#T_vc", "#T_cmpt2--1", "#T_c2o", "#T_cmpt2--2", "#T_vm", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_cif--1", "#T_wcad--1", "#T_vm", "#T_wcel", "#T_vx", "#T_wcad--2", "#T_vm", "#T_wcel", "#T_vy", "#T_wcad--3", "#T_c0", "#T_wcel", "#T_vc", "#T_cif--2", "#T_c1o", "#T_cif--3", "#T_c0", "#T_cseq--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_vn", "#T_cmin", "#T_c1", "#T_cfv", "#T_vk", "#T_crab--4", "#T_vc", "#T_vk", "#T_vm", "#T_vn", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the addition of two bit sequences, using ~ df-had and ~ df-cad bit operations.  (Contributed by Mario Carneiro, 5-Sep-2016.) ",
+  "statement" : "df-sad $p |- sadd = ( x e. ~P NN0 , y e. ~P NN0 |-> { k e. NN0 | hadd ( k e. x , k e. y , (/) e. ( seq 0 ( ( c e. 2o , m e. NN0 |-> if ( cadd ( m e. x , m e. y , (/) e. c ) , 1o , (/) ) ) , ( n e. NN0 |-> if ( n = 0 , (/) , ( n - 1 ) ) ) ) ` k ) ) } ) $.\n$d c k m n x y $."
+}

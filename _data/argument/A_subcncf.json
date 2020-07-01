@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subcncf on Metamath](http://us.metamath.org/mpegif/subcncf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subcncf.a | |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) |\n| 2 |  | subcncf.b | |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> CC ) ) |\n| 3 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 4 | 3 | #P_subcn | |- - e. ( ( ( TopOpen ` CCfld ) tX ( TopOpen ` CCfld ) ) Cn ( TopOpen ` CCfld ) ) |\n| 5 | 4 | #P_a1i | |- ( ph -> - e. ( ( ( TopOpen ` CCfld ) tX ( TopOpen ` CCfld ) ) Cn ( TopOpen ` CCfld ) ) ) |\n| 6 | 3, 5, 1, 2 | #P_cncfmpt2f | |- ( ph -> ( x e. X |-> ( A - B ) ) e. ( X -cn-> CC ) ) |",
+  "conclusion" : "#P_subcncf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_wcel", "#T_cX", "#T_ccncf", "#T_cc", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cB", "#T_wcel", "#T_cX", "#T_ccncf", "#T_cc", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cmin", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wph", "#T_wi", "#T_cmin", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_cA", "#T_cmin", "#T_cB", "#T_wcel", "#T_cX", "#T_ccncf", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_cncfmpt2f", "#P_subcn", "#P_a1i" ]
+}

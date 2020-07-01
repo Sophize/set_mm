@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See om1opn on Metamath](http://us.metamath.org/mpegif/om1opn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | om1bas.o | |- O = ( J Om1 Y ) |\n| 2 |  | om1bas.j | |- ( ph -> J e. ( TopOn ` X ) ) |\n| 3 |  | om1bas.y | |- ( ph -> Y e. X ) |\n| 4 |  | om1opn.k | |- K = ( TopOpen ` O ) |\n| 5 |  | om1opn.b | |- ( ph -> B = ( Base ` O ) ) |\n| 6 | 1, 2, 3 | #P_om1tset | |- ( ph -> ( J ^ko II ) = ( TopSet ` O ) ) |\n| 7 | 6, 5 | #P_oveq12d | |- ( ph -> ( ( J ^ko II ) |`t B ) = ( ( TopSet ` O ) |`t ( Base ` O ) ) ) |\n| 8 |  | #P_eqid | |- ( Base ` O ) = ( Base ` O ) |\n| 9 |  | #P_eqid | |- ( TopSet ` O ) = ( TopSet ` O ) |\n| 10 | 8, 9 | #P_topnval | |- ( ( TopSet ` O ) |`t ( Base ` O ) ) = ( TopOpen ` O ) |\n| 11 | 4, 10 | #P_eqtr4i | |- K = ( ( TopSet ` O ) |`t ( Base ` O ) ) |\n| 12 | 7, 11 | #P_syl6reqr | |- ( ph -> K = ( ( J ^ko II ) |`t B ) ) |",
+  "conclusion" : "#P_om1opn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_cJ", "#T_comi", "#T_cY", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cX", "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cO", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cO", "#T_wph", "#T_wi", "#T_cJ", "#T_cxko", "#T_cii", "#T_wceq", "#T_cts", "#T_cfv", "#T_cO", "#T_wph", "#T_wi", "#T_cJ", "#T_cxko", "#T_cii", "#T_crest", "#T_cB.wceq", "#T_wceq", "#T_cts", "#T_cfv", "#T_cO", "#T_crest", "#T_cbs", "#T_cfv", "#T_cO", "#T_cbs", "#T_cfv", "#T_cO", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cO", "#T_cts", "#T_cfv", "#T_cO", "#T_wceq", "#T_cts", "#T_cfv", "#T_cO", "#T_cts", "#T_cfv", "#T_cO", "#T_crest", "#T_cbs", "#T_cfv", "#T_cO", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cO", "#T_cK", "#T_wceq", "#T_cts", "#T_cfv", "#T_cO", "#T_crest", "#T_cbs", "#T_cfv", "#T_cO", "#T_wph", "#T_wi", "#T_cK", "#T_wceq", "#T_cJ", "#T_cxko", "#T_cii", "#T_crest", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_oveq12d", "#P_eqid", "#P_topnval", "#P_om1tset", "#P_syl6reqr" ]
+}

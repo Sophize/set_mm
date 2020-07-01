@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lidlabl on Metamath](http://us.metamath.org/mpegif/lidlabl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lidlabl.l | |- L = ( LIdeal ` R ) |\n| 2 |  | lidlabl.i | |- I = ( R |`s U ) |\n| 3 |  | #P_ringabl | |- ( R e. Ring -> R e. Abel ) |\n| 4 | 3 | #P_adantr | |- ( ( R e. Ring /\\ U e. L ) -> R e. Abel ) |\n| 5 | 1 | #P_lidlsubg | |- ( ( R e. Ring /\\ U e. L ) -> U e. ( SubGrp ` R ) ) |\n| 6 | 2 | #P_subgabl | |- ( ( R e. Abel /\\ U e. ( SubGrp ` R ) ) -> I e. Abel ) |\n| 7 | 4, 5, 6 | #P_syl2anc | |- ( ( R e. Ring /\\ U e. L ) -> I e. Abel ) |",
+  "conclusion" : "#P_lidlabl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_cI", "#T_wceq", "#T_cR", "#T_cress", "#T_cU", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_cabl", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wcel", "#T_cL", "#T_wi", "#T_cR", "#T_wcel", "#T_cabl", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wcel", "#T_cL", "#T_wi", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cabl", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cR", "#T_wi", "#T_cI", "#T_wcel", "#T_cabl", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wcel", "#T_cL", "#T_wi", "#T_cI", "#T_wcel", "#T_cabl" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ringabl", "#P_subgabl", "#P_lidlsubg", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relogdiv on Metamath](http://us.metamath.org/mpegif/relogdiv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_efsub | |- ( ( ( log ` A ) e. CC /\\ ( log ` B ) e. CC ) -> ( exp ` ( ( log ` A ) - ( log ` B ) ) ) = ( ( exp ` ( log ` A ) ) / ( exp ` ( log ` B ) ) ) ) |\n| 2 |  | #P_resubcl | |- ( ( ( log ` A ) e. RR /\\ ( log ` B ) e. RR ) -> ( ( log ` A ) - ( log ` B ) ) e. RR ) |\n| 3 | 1, 2 | #P_relogoprlem | |- ( ( A e. RR+ /\\ B e. RR+ ) -> ( log ` ( A / B ) ) = ( ( log ` A ) - ( log ` B ) ) ) |",
+  "conclusion" : "#P_relogdiv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_cmin", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_cmin", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_crp", "#T_wa", "#T_cB", "#T_wcel", "#T_crp", "#T_wi", "#T_clog", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_clog", "#T_cfv", "#T_cA", "#T_cmin", "#T_clog", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resubcl", "#P_efsub", "#P_relogoprlem" ]
+}

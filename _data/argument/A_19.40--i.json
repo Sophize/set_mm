@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.40 on Metamath](http://us.metamath.org/mpegif/19.40.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exsimpl | |- ( E. x ( ph /\\ ps ) -> E. x ph ) |\n| 2 |  | #P_simpr | |- ( ( ph /\\ ps ) -> ps ) |\n| 3 | 2 | #P_eximi | |- ( E. x ( ph /\\ ps ) -> E. x ps ) |\n| 4 | 1, 3 | #P_jca | |- ( E. x ( ph /\\ ps ) -> ( E. x ph /\\ E. x ps ) ) |",
+  "conclusion" : "#P_19.40",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exsimpl", "#P_simpr", "#P_jca", "#P_eximi" ]
+}

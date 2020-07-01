@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abssdv on Metamath](http://us.metamath.org/mpegif/abssdv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abssdv.1 | |- ( ph -> ( ps -> x e. A ) ) |\n| 2 | 1 | #P_alrimiv | |- ( ph -> A. x ( ps -> x e. A ) ) |\n| 3 |  | #P_abss | |- ( { x | ps } C_ A <-> A. x ( ps -> x e. A ) ) |\n| 4 | 2, 3 | #P_sylibr | |- ( ph -> { x | ps } C_ A ) |",
+  "conclusion" : "#P_abssdv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_abss", "#P_sylibr", "#P_alrimiv" ]
+}

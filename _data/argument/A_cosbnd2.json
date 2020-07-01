@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cosbnd2 on Metamath](http://us.metamath.org/mpegif/cosbnd2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recoscl | |- ( A e. RR -> ( cos ` A ) e. RR ) |\n| 2 |  | #P_cosbnd | |- ( A e. RR -> ( -u 1 <_ ( cos ` A ) /\\ ( cos ` A ) <_ 1 ) ) |\n| 3 | 2 | #P_simpld | |- ( A e. RR -> -u 1 <_ ( cos ` A ) ) |\n| 4 | 2 | #P_simprd | |- ( A e. RR -> ( cos ` A ) <_ 1 ) |\n| 5 |  | #P_neg1rr | |- -u 1 e. RR |\n| 6 |  | #P_1re | |- 1 e. RR |\n| 7 | 5, 6 | #P_elicc2i | |- ( ( cos ` A ) e. ( -u 1 [,] 1 ) <-> ( ( cos ` A ) e. RR /\\ -u 1 <_ ( cos ` A ) /\\ ( cos ` A ) <_ 1 ) ) |\n| 8 | 1, 3, 4, 7 | #P_syl3anbrc | |- ( A e. RR -> ( cos ` A ) e. ( -u 1 [,] 1 ) ) |",
+  "conclusion" : "#P_cosbnd2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_cle", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_cle", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_cneg", "#T_c1", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cneg", "#T_c1", "#T_cicc", "#T_c1", "#T_wb", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cneg", "#T_c1", "#T_cle", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_w3a--2", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA", "#T_wcel", "#T_cneg", "#T_c1", "#T_cicc", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_elicc2i", "#P_syl3anbrc", "#P_recoscl", "#P_cosbnd", "#P_simprd", "#P_neg1rr", "#P_1re" ]
+}

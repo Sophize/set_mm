@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghmf on Metamath](http://us.metamath.org/mpegif/ghmf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghmf.x | |- X = ( Base ` S ) |\n| 2 |  | ghmf.y | |- Y = ( Base ` T ) |\n| 3 |  | #P_eqid | |- ( +g ` S ) = ( +g ` S ) |\n| 4 |  | #P_eqid | |- ( +g ` T ) = ( +g ` T ) |\n| 5 | 1, 2, 3, 4 | #P_isghm | |- ( F e. ( S GrpHom T ) <-> ( ( S e. Grp /\\ T e. Grp ) /\\ ( F : X --> Y /\\ A. y e. X A. x e. X ( F ` ( y ( +g ` S ) x ) ) = ( ( F ` y ) ( +g ` T ) ( F ` x ) ) ) ) ) |\n| 6 | 5 | #P_simprbi | |- ( F e. ( S GrpHom T ) -> ( F : X --> Y /\\ A. y e. X A. x e. X ( F ` ( y ( +g ` S ) x ) ) = ( ( F ` y ) ( +g ` T ) ( F ` x ) ) ) ) |\n| 7 | 6 | #P_simpld | |- ( F e. ( S GrpHom T ) -> F : X --> Y ) |",
+  "conclusion" : "#P_ghmf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cT", "#T_cplusg", "#T_cfv", "#T_cS", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cS", "#T_cplusg", "#T_cfv", "#T_cT", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wb", "#T_cS", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cT", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cS", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cT", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cS", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cT", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_simprbi", "#P_isghm" ]
+}

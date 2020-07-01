@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfri2 on Metamath](http://us.metamath.org/mpegif/tfri2.html)"
+  } ],
+  "names" : [ "tfri2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crecs", "#T_cG", "#T_wfun", "#T_cG", "#T_wa", "#T_cG", "#T_cfv", "#T_vx", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cG", "#T_cfv", "#T_cF", "#T_cres", "#T_cA", "#T_cG", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of [TakeutiZaring] p. 47, with an additional condition on the recursion rule ` G ` ( as described at ~ tfri1 ).  Here we show that the function ` F ` has the property that for any function ` G ` satisfying that condition, the \"next\" value of ` F ` is ` G ` recursively applied to all \"previous\" values of ` F ` .  (Contributed by Jim Kingdon, 4-May-2019.) ",
+  "statement" : "tfri1.1 $e |- F = recs ( G ) $.\ntfri1.2 $e |- ( Fun G /\\ ( G ` x ) e. _V ) $.\ntfri2 $p |- ( A e. On -> ( F ` A ) = ( G ` ( F |` A ) ) ) $.\n$d G x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvimamptfin on Metamath](http://us.metamath.org/mpegif/cnvimamptfin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnvimamptfin.n | |- ( ph -> N e. Fin ) |\n| 2 |  | #P_cnvimass | |- ( `' ( p e. N |-> X ) \" Y ) C_ dom ( p e. N |-> X ) |\n| 3 |  | #P_eqid | |- ( p e. N |-> X ) = ( p e. N |-> X ) |\n| 4 | 3 | #P_dmmptss | |- dom ( p e. N |-> X ) C_ N |\n| 5 | 2, 4 | #P_sstri | |- ( `' ( p e. N |-> X ) \" Y ) C_ N |\n| 6 |  | #P_ssfi | |- ( ( N e. Fin /\\ ( `' ( p e. N |-> X ) \" Y ) C_ N ) -> ( `' ( p e. N |-> X ) \" Y ) e. Fin ) |\n| 7 | 1, 5, 6 | #P_sylancl | |- ( ph -> ( `' ( p e. N |-> X ) \" Y ) e. Fin ) |",
+  "conclusion" : "#P_cnvimamptfin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cfn", "#T_ccnv", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cima", "#T_cY", "#T_wss", "#T_cdm", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_wceq", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cdm", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_wss", "#T_cN", "#T_ccnv", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cima", "#T_cY", "#T_wss", "#T_cN", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_ccnv", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cima", "#T_cY", "#T_wss", "#T_cN", "#T_wi", "#T_ccnv", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cima", "#T_cY", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_ccnv", "#T_vp", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cX", "#T_cima", "#T_cY", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvimass", "#P_eqid", "#P_dmmptss", "#P_sylancl", "#P_sstri", "#P_ssfi" ]
+}

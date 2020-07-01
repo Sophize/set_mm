@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isumsup on Metamath](http://us.metamath.org/mpegif/isumsup.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isumsup.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | isumsup.2 | |- G = seq M ( + , F ) |\n| 3 |  | isumsup.3 | |- ( ph -> M e. ZZ ) |\n| 4 |  | isumsup.4 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) |\n| 5 |  | isumsup.5 | |- ( ( ph /\\ k e. Z ) -> A e. RR ) |\n| 6 |  | isumsup.6 | |- ( ( ph /\\ k e. Z ) -> 0 <_ A ) |\n| 7 |  | isumsup.7 | |- ( ph -> E. x e. RR A. j e. Z ( G ` j ) <_ x ) |\n| 8 | 5 | #P_recnd | |- ( ( ph /\\ k e. Z ) -> A e. CC ) |\n| 9 | 1, 2, 3, 4, 5, 6, 7 | #P_isumsup2 | |- ( ph -> G ~~> sup ( ran G , RR , < ) ) |\n| 10 | 2, 9 | #P_syl5eqbrr | |- ( ph -> seq M ( + , F ) ~~> sup ( ran G , RR , < ) ) |\n| 11 | 1, 3, 4, 8, 10 | #P_isumclim | |- ( ph -> sum_ k e. Z A = sup ( ran G , RR , < ) ) |",
+  "conclusion" : "#P_isumsup",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cG", "#T_wceq", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cZ", "#T_cG", "#T_cfv", "#T_vj", "#T_cle", "#T_vx", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cG", "#T_cli", "#T_csup--1", "#T_crn", "#T_cG", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_csup--1", "#T_crn", "#T_cG", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wceq", "#T_csup--1", "#T_crn", "#T_cG", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqbrr", "#P_recnd", "#P_isumsup2", "#P_isumclim" ]
+}

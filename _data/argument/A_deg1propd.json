@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See deg1propd on Metamath](http://us.metamath.org/mpegif/deg1propd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | deg1propd.b1 | |- ( ph -> B = ( Base ` R ) ) |\n| 2 |  | deg1propd.b2 | |- ( ph -> B = ( Base ` S ) ) |\n| 3 |  | deg1propd.p | |- ( ( ph /\\ ( x e. B /\\ y e. B ) ) -> ( x ( +g ` R ) y ) = ( x ( +g ` S ) y ) ) |\n| 4 | 1, 2, 3 | #P_mdegpropd | |- ( ph -> ( 1o mDeg R ) = ( 1o mDeg S ) ) |\n| 5 |  | #P_eqid | |- ( deg1 ` R ) = ( deg1 ` R ) |\n| 6 | 5 | #P_deg1fval | |- ( deg1 ` R ) = ( 1o mDeg R ) |\n| 7 |  | #P_eqid | |- ( deg1 ` S ) = ( deg1 ` S ) |\n| 8 | 7 | #P_deg1fval | |- ( deg1 ` S ) = ( 1o mDeg S ) |\n| 9 | 4, 6, 8 | #P_3eqtr4g | |- ( ph -> ( deg1 ` R ) = ( deg1 ` S ) ) |",
+  "conclusion" : "#P_deg1propd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_cplusg", "#T_cfv", "#T_cR", "#T_vy", "#T_wceq", "#T_vx", "#T_cplusg", "#T_cfv", "#T_cS", "#T_vy", "#T_wph", "#T_wi", "#T_c1o", "#T_cmdg", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmdg", "#T_cS", "#T_cdg1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cdg1", "#T_cfv", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmdg", "#T_cR", "#T_cdg1", "#T_cfv", "#T_cS", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cS", "#T_cdg1", "#T_cfv", "#T_cS", "#T_wceq", "#T_c1o", "#T_cmdg", "#T_cS", "#T_wph", "#T_wi", "#T_cdg1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mdegpropd", "#P_deg1fval", "#P_3eqtr4g" ]
+}

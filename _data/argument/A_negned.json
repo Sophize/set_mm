@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negned on Metamath](http://us.metamath.org/mpegif/negned.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | negned.2 | |- ( ph -> B e. CC ) |\n| 3 |  | negned.3 | |- ( ph -> A =/= B ) |\n| 4 | 1, 2 | #P_neg11ad | |- ( ph -> ( -u A = -u B <-> A = B ) ) |\n| 5 | 4 | #P_necon3bid | |- ( ph -> ( -u A =/= -u B <-> A =/= B ) ) |\n| 6 | 3, 5 | #P_mpbird | |- ( ph -> -u A =/= -u B ) |",
+  "conclusion" : "#P_negned",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wph", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wne", "#T_cneg", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cneg", "#T_cA", "#T_wne", "#T_cneg", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neg11ad", "#P_necon3bid", "#P_mpbird" ]
+}

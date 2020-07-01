@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bibi1i on Metamath](http://us.metamath.org/mpegif/bibi1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bibi2i.1 | |- ( ph <-> ps ) |\n| 2 |  | #P_bicom | |- ( ( ph <-> ch ) <-> ( ch <-> ph ) ) |\n| 3 | 1 | #P_bibi2i | |- ( ( ch <-> ph ) <-> ( ch <-> ps ) ) |\n| 4 |  | #P_bicom | |- ( ( ch <-> ps ) <-> ( ps <-> ch ) ) |\n| 5 | 2, 3, 4 | #P_3bitri | |- ( ( ph <-> ch ) <-> ( ps <-> ch ) ) |",
+  "conclusion" : "#P_bibi1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wch", "#T_wb", "#T_wch", "#T_wb", "#T_wph", "#T_wch", "#T_wb", "#T_wph", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3bitri", "#P_bicom", "#P_bibi2i" ]
+}

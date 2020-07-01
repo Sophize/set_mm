@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumwcl on Metamath](http://us.metamath.org/mpegif/gsumwcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsumwcl.b | |- B = ( Base ` G ) |\n| 2 | 1 | #P_submid | |- ( G e. Mnd -> B e. ( SubMnd ` G ) ) |\n| 3 |  | #P_gsumwsubmcl | |- ( ( B e. ( SubMnd ` G ) /\\ W e. Word B ) -> ( G gsum W ) e. B ) |\n| 4 | 2, 3 | #P_sylan | |- ( ( G e. Mnd /\\ W e. Word B ) -> ( G gsum W ) e. B ) |",
+  "conclusion" : "#P_gsumwcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_cB.wceq", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wa", "#T_cW", "#T_wcel", "#T_cword", "#T_cB.wceq", "#T_wi", "#T_cG", "#T_cgsu", "#T_cW", "#T_wcel", "#T_cB.wceq", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cW", "#T_wcel", "#T_cword", "#T_cB", "#T_wi", "#T_cG", "#T_cgsu", "#T_cW", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_gsumwsubmcl", "#P_submid" ]
+}

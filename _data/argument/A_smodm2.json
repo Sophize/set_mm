@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See smodm2 on Metamath](http://us.metamath.org/mpegif/smodm2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_smodm | |- ( Smo F -> Ord dom F ) |\n| 2 |  | #P_fndm | |- ( F Fn A -> dom F = A ) |\n| 3 |  | #P_ordeq | |- ( dom F = A -> ( Ord dom F <-> Ord A ) ) |\n| 4 | 2, 3 | #P_syl | |- ( F Fn A -> ( Ord dom F <-> Ord A ) ) |\n| 5 | 4 | #P_biimpa | |- ( ( F Fn A /\\ Ord dom F ) -> Ord A ) |\n| 6 | 1, 5 | #P_sylan2 | |- ( ( F Fn A /\\ Smo F ) -> Ord A ) |",
+  "conclusion" : "#P_smodm2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsmo", "#T_cF", "#T_wi", "#T_word", "#T_cdm", "#T_cF", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_word", "#T_cdm", "#T_cF", "#T_wb", "#T_word", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_word", "#T_cdm", "#T_cF", "#T_wb", "#T_word", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_word", "#T_cdm", "#T_cF", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA", "#T_wa", "#T_wsmo", "#T_cF", "#T_wi", "#T_word", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordeq", "#P_smodm", "#P_biimpa", "#P_sylan2", "#P_syl", "#P_fndm" ]
+}

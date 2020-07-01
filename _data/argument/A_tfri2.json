@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfri2 on Metamath](http://us.metamath.org/mpegif/tfri2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfri1.1 | |- F = recs ( G ) |\n| 2 |  | tfri1.2 | |- ( Fun G /\\ ( G ` x ) e. _V ) |\n| 3 | 1, 2 | #P_tfri1 | |- F Fn On |\n| 4 |  | #P_fndm | |- ( F Fn On -> dom F = On ) |\n| 5 | 3, 4 | #P_ax-mp | |- dom F = On |\n| 6 | 5 | #P_eleq2i | |- ( A e. dom F <-> A e. On ) |\n| 7 | 1 | #P_tfr2a | |- ( A e. dom F -> ( F ` A ) = ( G ` ( F |` A ) ) ) |\n| 8 | 6, 7 | #P_sylbir | |- ( A e. On -> ( F ` A ) = ( G ` ( F |` A ) ) ) |",
+  "conclusion" : "#P_tfri2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crecs", "#T_cG", "#T_wfun", "#T_cG", "#T_wa", "#T_cG", "#T_cfv", "#T_vx", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfn", "#T_con0", "#T_cF", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_con0", "#T_cdm", "#T_cF", "#T_wceq", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cfv", "#T_cF", "#T_cres", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cG", "#T_cfv", "#T_cF", "#T_cres", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sylbir", "#P_tfr2a", "#P_eleq2i", "#P_fndm", "#P_tfri1" ]
+}

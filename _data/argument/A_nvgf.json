@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvgf on Metamath](http://us.metamath.org/mpegif/nvgf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvgf.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvgf.2 | |- G = ( +v ` U ) |\n| 3 | 2 | #P_nvgrp | |- ( U e. NrmCVec -> G e. GrpOp ) |\n| 4 | 1, 2 | #P_bafval | |- X = ran G |\n| 5 | 4 | #P_grpofo | |- ( G e. GrpOp -> G : ( X X. X ) -onto-> X ) |\n| 6 |  | #P_fof | |- ( G : ( X X. X ) -onto-> X -> G : ( X X. X ) --> X ) |\n| 7 | 3, 5, 6 | #P_3syl | |- ( U e. NrmCVec -> G : ( X X. X ) --> X ) |",
+  "conclusion" : "#P_nvgf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cG", "#T_wcel", "#T_cgr", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wfo--2", "#T_cX", "#T_cG", "#T_wfo--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wfo--2", "#T_cX", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpofo", "#P_3syl", "#P_nvgrp", "#P_fof", "#P_bafval" ]
+}

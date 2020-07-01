@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neeq12d on Metamath](http://us.metamath.org/mpegif/neeq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neeq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | neeq12d.2 | |- ( ph -> C = D ) |\n| 3 | 1, 2 | #P_eqeq12d | |- ( ph -> ( A = C <-> B = D ) ) |\n| 4 | 3 | #P_necon3bid | |- ( ph -> ( A =/= C <-> B =/= D ) ) |",
+  "conclusion" : "#P_neeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cC", "#T_wb", "#T_cB", "#T_wne", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_necon3bid" ]
+}

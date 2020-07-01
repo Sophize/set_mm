@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqf2 on Metamath](http://us.metamath.org/mpegif/seqf2.html)"
+  } ],
+  "names" : [ "seqf2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cM", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cC", "#T_wa", "#T_vy", "#T_wcel", "#T_cD", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cC", "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_caddc", "#T_c1", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cC", "#T_c.pl", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Range of the recursive sequence builder.  (Contributed by Mario Carneiro, 24-Jun-2013.)  (Revised by Mario Carneiro, 27-May-2014.) ",
+  "statement" : "seqcl2.1 $e |- ( ph -> ( F ` M ) e. C ) $.\nseqcl2.2 $e |- ( ( ph /\\ ( x e. C /\\ y e. D ) ) -> ( x .+ y ) e. C ) $.\nseqf2.3 $e |- Z = ( ZZ>= ` M ) $.\nseqf2.4 $e |- ( ph -> M e. ZZ ) $.\nseqf2.5 $e |- ( ( ph /\\ x e. ( ZZ>= ` ( M + 1 ) ) ) -> ( F ` x ) e. D ) $.\nseqf2 $p |- ( ph -> seq M ( .+ , F ) : Z --> C ) $.\n$d .+ x y $.\n$d C x y $.\n$d D x y $.\n$d F x y $.\n$d M x y $.\n$d ph x y $."
+}

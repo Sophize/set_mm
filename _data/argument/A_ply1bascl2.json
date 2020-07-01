@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ply1bascl2 on Metamath](http://us.metamath.org/mpegif/ply1bascl2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ply1bascl.p | |- P = ( Poly1 ` R ) |\n| 2 |  | ply1bascl.b | |- B = ( Base ` P ) |\n| 3 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 4 | 1, 3, 2 | #P_ply1bas | |- B = ( Base ` ( 1o mPoly R ) ) |\n| 5 | 4 | #P_eleq2i | |- ( F e. B <-> F e. ( Base ` ( 1o mPoly R ) ) ) |\n| 6 | 5 | #P_biimpi | |- ( F e. B -> F e. ( Base ` ( 1o mPoly R ) ) ) |",
+  "conclusion" : "#P_ply1bascl2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wcel", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cF", "#T_wcel", "#T_cB", "#T_wi", "#T_cF", "#T_wcel", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eleq2i", "#P_biimpi", "#P_ply1bas" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssext on Metamath](http://us.metamath.org/mpegif/ssext.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssextss | |- ( A C_ B <-> A. x ( x C_ A -> x C_ B ) ) |\n| 2 |  | #P_ssextss | |- ( B C_ A <-> A. x ( x C_ B -> x C_ A ) ) |\n| 3 | 1, 2 | #P_anbi12i | |- ( ( A C_ B /\\ B C_ A ) <-> ( A. x ( x C_ A -> x C_ B ) /\\ A. x ( x C_ B -> x C_ A ) ) ) |\n| 4 |  | #P_eqss | |- ( A = B <-> ( A C_ B /\\ B C_ A ) ) |\n| 5 |  | #P_albiim | |- ( A. x ( x C_ A <-> x C_ B ) <-> ( A. x ( x C_ A -> x C_ B ) /\\ A. x ( x C_ B -> x C_ A ) ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4i | |- ( A = B <-> A. x ( x C_ A <-> x C_ B ) ) |",
+  "conclusion" : "#P_ssext",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wss", "#T_cA", "#T_wb", "#T_vx", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssextss", "#P_anbi12i", "#P_eqss", "#P_albiim", "#P_3bitr4i" ]
+}

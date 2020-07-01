@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xnegpnf on Metamath](http://us.metamath.org/mpegif/xnegpnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xneg | |- -e +oo = if ( +oo = +oo , -oo , if ( +oo = -oo , +oo , -u +oo ) ) |\n| 2 |  | #P_eqid | |- +oo = +oo |\n| 3 | 2 | #P_iftruei | |- if ( +oo = +oo , -oo , if ( +oo = -oo , +oo , -u +oo ) ) = -oo |\n| 4 | 1, 3 | #P_eqtri | |- -e +oo = -oo |",
+  "conclusion" : "#P_xnegpnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cxne", "#T_cpnf", "#T_wceq", "#T_cif--1", "#T_cpnf", "#T_wceq", "#T_cpnf", "#T_cif--2", "#T_cmnf", "#T_cif--3", "#T_cif--1", "#T_cpnf", "#T_wceq", "#T_cmnf", "#T_cif--2", "#T_cpnf", "#T_cif--3", "#T_cneg", "#T_cpnf", "#T_cpnf", "#T_wceq", "#T_cpnf", "#T_cif--1", "#T_cpnf", "#T_wceq", "#T_cpnf", "#T_cif--2", "#T_cmnf", "#T_cif--3", "#T_cif--1", "#T_cpnf", "#T_wceq", "#T_cmnf", "#T_cif--2", "#T_cpnf", "#T_cif--3", "#T_cneg", "#T_cpnf", "#T_wceq", "#T_cmnf", "#T_cxne", "#T_cpnf", "#T_wceq", "#T_cmnf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eqtri", "#P_df-xneg", "#P_iftruei" ]
+}

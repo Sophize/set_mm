@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqcom on Metamath](http://us.metamath.org/mpegif/eqcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bicom | |- ( ( x e. A <-> x e. B ) <-> ( x e. B <-> x e. A ) ) |\n| 2 | 1 | #P_albii | |- ( A. x ( x e. A <-> x e. B ) <-> A. x ( x e. B <-> x e. A ) ) |\n| 3 |  | #P_dfcleq | |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) |\n| 4 |  | #P_dfcleq | |- ( B = A <-> A. x ( x e. B <-> x e. A ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( A = B <-> B = A ) |",
+  "conclusion" : "#P_eqcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfcleq", "#P_albii", "#P_bicom", "#P_3bitr4i" ]
+}

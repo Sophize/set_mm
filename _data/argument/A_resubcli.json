@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resubcli on Metamath](http://us.metamath.org/mpegif/resubcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | renegcl.1 | |- A e. RR |\n| 2 |  | resubcl.2 | |- B e. RR |\n| 3 | 1 | #P_recni | |- A e. CC |\n| 4 | 2 | #P_recni | |- B e. CC |\n| 5 |  | #P_negsub | |- ( ( A e. CC /\\ B e. CC ) -> ( A + -u B ) = ( A - B ) ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- ( A + -u B ) = ( A - B ) |\n| 7 | 2 | #P_renegcli | |- -u B e. RR |\n| 8 | 1, 7 | #P_readdcli | |- ( A + -u B ) e. RR |\n| 9 | 6, 8 | #P_eqeltrri | |- ( A - B ) e. RR |",
+  "conclusion" : "#P_resubcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cA", "#T_cmin", "#T_cB", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_recni", "#P_renegcli", "#P_readdcli", "#P_negsub", "#P_eqeltrri" ]
+}

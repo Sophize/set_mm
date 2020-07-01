@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See flcl on Metamath](http://us.metamath.org/mpegif/flcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_flval | |- ( A e. RR -> ( |_ ` A ) = ( iota_ x e. ZZ ( x <_ A /\\ A < ( x + 1 ) ) ) ) |\n| 2 |  | #P_rebtwnz | |- ( A e. RR -> E! x e. ZZ ( x <_ A /\\ A < ( x + 1 ) ) ) |\n| 3 |  | #P_riotacl | |- ( E! x e. ZZ ( x <_ A /\\ A < ( x + 1 ) ) -> ( iota_ x e. ZZ ( x <_ A /\\ A < ( x + 1 ) ) ) e. ZZ ) |\n| 4 | 2, 3 | #P_syl | |- ( A e. RR -> ( iota_ x e. ZZ ( x <_ A /\\ A < ( x + 1 ) ) ) e. ZZ ) |\n| 5 | 1, 4 | #P_eqeltrd | |- ( A e. RR -> ( |_ ` A ) e. ZZ ) |",
+  "conclusion" : "#P_flcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cz", "#T_vx.wal", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cz", "#T_vx.wal", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cz", "#T_vx.wal", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cz", "#T_vx.wal", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cz", "#T_vx.wal", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_wcel", "#T_cz", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_flval", "#P_rebtwnz", "#P_eqeltrd", "#P_syl", "#P_riotacl" ]
+}

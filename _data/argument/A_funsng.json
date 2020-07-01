@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funsng on Metamath](http://us.metamath.org/mpegif/funsng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funcnvsn | |- Fun `' { <. B , A >. } |\n| 2 |  | #P_cnvsng | |- ( ( B e. W /\\ A e. V ) -> `' { <. B , A >. } = { <. A , B >. } ) |\n| 3 | 2 | #P_ancoms | |- ( ( A e. V /\\ B e. W ) -> `' { <. B , A >. } = { <. A , B >. } ) |\n| 4 | 3 | #P_funeqd | |- ( ( A e. V /\\ B e. W ) -> ( Fun `' { <. B , A >. } <-> Fun { <. A , B >. } ) ) |\n| 5 | 1, 4 | #P_mpbii | |- ( ( A e. V /\\ B e. W ) -> Fun { <. A , B >. } ) |",
+  "conclusion" : "#P_funsng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_ccnv", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_ccnv", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_ccnv", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_wfun", "#T_ccnv", "#T_csn--1", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wb", "#T_wfun", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_wfun", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funcnvsn", "#P_funeqd", "#P_mpbii", "#P_cnvsng", "#P_ancoms" ]
+}

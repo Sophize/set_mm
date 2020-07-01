@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-nf3 on Metamath](http://us.metamath.org/mpegif/bj-nf3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-nf2 | |- ( FF/ x ph <-> ( A. x ph \\/ -. E. x ph ) ) |\n| 2 |  | #P_alnex | |- ( A. x -. ph <-> -. E. x ph ) |\n| 3 | 2 | #P_bicomi | |- ( -. E. x ph <-> A. x -. ph ) |\n| 4 | 3 | #P_orbi2i | |- ( ( A. x ph \\/ -. E. x ph ) <-> ( A. x ph \\/ A. x -. ph ) ) |\n| 5 | 1, 4 | #P_bitri | |- ( FF/ x ph <-> ( A. x ph \\/ A. x -. ph ) ) |",
+  "conclusion" : "#P_bj-nf3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnff", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnff", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_wph", "#T_wo", "#T_wal", "#T_vx", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orbi2i", "#P_alnex", "#P_bj-nf2", "#P_bicomi", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssct on Metamath](http://us.metamath.org/mpegif/ssct.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ctex | |- ( B ~<_ _om -> B e. _V ) |\n| 2 |  | #P_ssdomg | |- ( B e. _V -> ( A C_ B -> A ~<_ B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( B ~<_ _om -> ( A C_ B -> A ~<_ B ) ) |\n| 4 | 3 | #P_impcom | |- ( ( A C_ B /\\ B ~<_ _om ) -> A ~<_ B ) |\n| 5 |  | #P_domtr | |- ( ( A ~<_ B /\\ B ~<_ _om ) -> A ~<_ _om ) |\n| 6 | 4, 5 | #P_sylancom | |- ( ( A C_ B /\\ B ~<_ _om ) -> A ~<_ _om ) |",
+  "conclusion" : "#P_ssct",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cB.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cdom", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_com", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cB", "#T_cdom", "#T_com", "#T_wi", "#T_cA", "#T_cdom", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ctex", "#P_domtr", "#P_syl", "#P_sylancom", "#P_ssdomg", "#P_impcom" ]
+}

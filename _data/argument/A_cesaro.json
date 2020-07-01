@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cesaro on Metamath](http://us.metamath.org/mpegif/cesaro.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cesaro.maj | |- A. x ( ph -> -. ps ) |\n| 2 |  | cesaro.min | |- A. x ( ch -> ps ) |\n| 3 |  | cesaro.e | |- E. x ch |\n| 4 | 1 | #P_spi | |- ( ph -> -. ps ) |\n| 5 | 2 | #P_spi | |- ( ch -> ps ) |\n| 6 | 4, 5 | #P_nsyl3 | |- ( ch -> -. ph ) |\n| 7 | 6 | #P_ancli | |- ( ch -> ( ch /\\ -. ph ) ) |\n| 8 | 3, 7 | #P_eximii | |- E. x ( ch /\\ -. ph ) |",
+  "conclusion" : "#P_cesaro",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wps", "#T_wex", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wch", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancli", "#P_nsyl3", "#P_eximii", "#P_spi" ]
+}

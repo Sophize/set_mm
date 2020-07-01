@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itgfsum on Metamath](http://us.metamath.org/mpegif/itgfsum.html)"
+  } ],
+  "names" : [ "itgfsum" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cC", "#T_wcel", "#T_cibl", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_wcel", "#T_cibl", "#T_wa", "#T_citg--1", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_citg--2", "#T_vx", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_citg--1", "#T_cA", "#T_cC", "#T_citg--2", "#T_vx", "#T_cA", "#T_vk", "#T_vx", "#T_cB", "#T_vk", "#T_vx", "#T_vk", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Take a finite sum of integrals over the same domain.  (Contributed by Mario Carneiro, 24-Aug-2014.) ",
+  "statement" : "itgfsum.1 $e |- ( ph -> A e. dom vol ) $.\nitgfsum.2 $e |- ( ph -> B e. Fin ) $.\nitgfsum.3 $e |- ( ( ph /\\ ( x e. A /\\ k e. B ) ) -> C e. V ) $.\nitgfsum.4 $e |- ( ( ph /\\ k e. B ) -> ( x e. A |-> C ) e. L^1 ) $.\nitgfsum $p |- ( ph -> ( ( x e. A |-> sum_ k e. B C ) e. L^1 /\\ S. A sum_ k e. B C _d x = sum_ k e. B S. A C _d x ) ) $.\n$d A k x $.\n$d B k x $.\n$d k ph x $."
+}

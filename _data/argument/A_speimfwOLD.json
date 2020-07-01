@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See speimfwOLD on Metamath](http://us.metamath.org/mpegif/speimfwOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | speimfw.2 | |- ( x = y -> ( ph -> ps ) ) |\n| 2 | 1 | #P_eximi | |- ( E. x x = y -> E. x ( ph -> ps ) ) |\n| 3 |  | #P_df-ex | |- ( E. x x = y <-> -. A. x -. x = y ) |\n| 4 |  | #P_19.35 | |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) |\n| 5 | 2, 3, 4 | #P_3imtr3i | |- ( -. A. x -. x = y -> ( A. x ph -> E. x ps ) ) |\n\\\n Obsolete proof of ~ speimfw as of 5-Dec-2019.  (Contributed by NM, 23-Apr-2017.)  (Proof shortened by Wolf Lammen, 5-Aug-2017.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_speimfw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_wn", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_19.35", "#P_df-ex", "#P_3imtr3i", "#P_eximi" ]
+}

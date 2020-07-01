@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See plydivlem1 on Metamath](http://us.metamath.org/mpegif/plydivlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | plydiv.pl | |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x + y ) e. S ) |\n| 2 |  | plydiv.tm | |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x x. y ) e. S ) |\n| 3 |  | plydiv.rc | |- ( ( ph /\\ ( x e. S /\\ x =/= 0 ) ) -> ( 1 / x ) e. S ) |\n| 4 |  | plydiv.m1 | |- ( ph -> -u 1 e. S ) |\n| 5 |  | #P_1pneg1e0 | |- ( 1 + -u 1 ) = 0 |\n| 6 |  | #P_neg1mulneg1e1 | |- ( -u 1 x. -u 1 ) = 1 |\n| 7 | 2, 4, 4 | #P_caovcld | |- ( ph -> ( -u 1 x. -u 1 ) e. S ) |\n| 8 | 6, 7 | #P_syl5eqelr | |- ( ph -> 1 e. S ) |\n| 9 | 1, 8, 4 | #P_caovcld | |- ( ph -> ( 1 + -u 1 ) e. S ) |\n| 10 | 5, 9 | #P_syl5eqelr | |- ( ph -> 0 e. S ) |",
+  "conclusion" : "#P_plydivlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_caddc", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_cmul", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vx", "#T_wne", "#T_cc0", "#T_wi", "#T_c1", "#T_cdiv", "#T_vx", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cneg", "#T_c1", "#T_wcel", "#T_cS", "#T_c1", "#T_caddc", "#T_cneg", "#T_c1", "#T_wceq", "#T_cc0", "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_wceq", "#T_c1", "#T_wph", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cneg", "#T_c1", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_c1", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_c1", "#T_caddc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cc0", "#T_wcel", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1pneg1e0", "#P_neg1mulneg1e1", "#P_syl5eqelr", "#P_caovcld" ]
+}

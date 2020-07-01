@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See slmdvacl on Metamath](http://us.metamath.org/mpegif/slmdvacl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | slmdvacl.v | |- V = ( Base ` W ) |\n| 2 |  | slmdvacl.a | |- .+ = ( +g ` W ) |\n| 3 |  | #P_slmdmnd | |- ( W e. SLMod -> W e. Mnd ) |\n| 4 | 1, 2 | #P_mndcl | |- ( ( W e. Mnd /\\ X e. V /\\ Y e. V ) -> ( X .+ Y ) e. V ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( W e. SLMod /\\ X e. V /\\ Y e. V ) -> ( X .+ Y ) e. V ) |",
+  "conclusion" : "#P_slmdvacl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cslmd", "#T_wi", "#T_cW", "#T_wcel", "#T_cmnd", "#T_cW", "#T_wcel", "#T_cmnd", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cV", "#T_cW", "#T_wcel", "#T_cslmd", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wcel", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mndcl", "#P_slmdmnd", "#P_syl3an1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcpr on Metamath](http://us.metamath.org/mpegif/bdcpr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bdcsn | |- Bdd_ { x } |\n| 2 |  | #P_bdcsn | |- Bdd_ { y } |\n| 3 | 1, 2 | #P_bdcun | |- Bdd_ ( { x } u. { y } ) |\n| 4 |  | #P_df-pr | |- { x , y } = ( { x } u. { y } ) |\n| 5 | 3, 4 | #P_bdceqir | |- Bdd_ { x , y } |",
+  "conclusion" : "#P_bdcpr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbdc", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wbdc", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wbdc", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cpr--1", "#T_vx.wal", "#T_cpr--2", "#T_vy.tru", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wbdc", "#T_cpr--1", "#T_vx", "#T_cpr--2", "#T_vy", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdceqir", "#P_df-pr", "#P_bdcun", "#P_bdcsn" ]
+}

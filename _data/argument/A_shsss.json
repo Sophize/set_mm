@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shsss on Metamath](http://us.metamath.org/mpegif/shsss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_shsval | |- ( ( A e. SH /\\ B e. SH ) -> ( A +H B ) = ( +h \" ( A X. B ) ) ) |\n| 2 |  | #P_imassrn | |- ( +h \" ( A X. B ) ) C_ ran +h |\n| 3 |  | #P_ax-hfvadd | |- +h : ( ~H X. ~H ) --> ~H |\n| 4 |  | #P_frn | |- ( +h : ( ~H X. ~H ) --> ~H -> ran +h C_ ~H ) |\n| 5 | 3, 4 | #P_ax-mp | |- ran +h C_ ~H |\n| 6 | 2, 5 | #P_sstri | |- ( +h \" ( A X. B ) ) C_ ~H |\n| 7 | 1, 6 | #P_syl6eqss | |- ( ( A e. SH /\\ B e. SH ) -> ( A +H B ) C_ ~H ) |",
+  "conclusion" : "#P_shsss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_wi", "#T_cA.wceq", "#T_cph", "#T_cB.wceq", "#T_wceq", "#T_cva", "#T_cima", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cva", "#T_cima", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_crn", "#T_cva", "#T_cva", "#T_wf--1", "#T_chil", "#T_cxp", "#T_chil", "#T_wf--2", "#T_chil", "#T_cva", "#T_wf--1", "#T_chil", "#T_cxp", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_crn", "#T_cva", "#T_wss", "#T_chil", "#T_crn", "#T_cva", "#T_wss", "#T_chil", "#T_cva", "#T_cima", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA", "#T_wcel", "#T_csh", "#T_wa", "#T_cB", "#T_wcel", "#T_csh", "#T_wi", "#T_cA", "#T_cph", "#T_cB", "#T_wss", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_shsval", "#P_syl6eqss", "#P_sstri", "#P_frn", "#P_imassrn", "#P_ax-hfvadd" ]
+}

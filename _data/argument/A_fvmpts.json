@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmpts on Metamath](http://us.metamath.org/mpegif/fvmpts.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvmpts.1 | |- F = ( x e. C |-> B ) |\n| 2 |  | #P_csbeq1 | |- ( y = A -> [_ y / x ]_ B = [_ A / x ]_ B ) |\n| 3 |  | #P_nfcv | |- F/_ y B |\n| 4 |  | #P_nfcsb1v | |- F/_ x [_ y / x ]_ B |\n| 5 |  | #P_csbeq1a | |- ( x = y -> B = [_ y / x ]_ B ) |\n| 6 | 3, 4, 5 | #P_cbvmpt | |- ( x e. C |-> B ) = ( y e. C |-> [_ y / x ]_ B ) |\n| 7 | 1, 6 | #P_eqtri | |- F = ( y e. C |-> [_ y / x ]_ B ) |\n| 8 | 2, 7 | #P_fvmptg | |- ( ( A e. C /\\ [_ A / x ]_ B e. V ) -> ( F ` A ) = [_ A / x ]_ B ) |",
+  "conclusion" : "#P_fvmpts",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cB", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wnfc", "#T_vy.tru", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_cF", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_csb--1", "#T_vy.tru", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_eqtri", "#P_fvmptg", "#P_cbvmpt", "#P_csbeq1a", "#P_nfcsb1v", "#P_csbeq1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvds2subd on Metamath](http://us.metamath.org/mpegif/dvds2subd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvds2subd.1 | |- ( ph -> K e. ZZ ) |\n| 2 |  | dvds2subd.2 | |- ( ph -> K || M ) |\n| 3 |  | dvds2subd.3 | |- ( ph -> K || N ) |\n| 4 |  | dvds2subd.4 | |- ( ph -> M e. ZZ ) |\n| 5 |  | dvds2subd.5 | |- ( ph -> N e. ZZ ) |\n| 6 |  | #P_dvds2sub | |- ( ( K e. ZZ /\\ M e. ZZ /\\ N e. ZZ ) -> ( ( K || M /\\ K || N ) -> K || ( M - N ) ) ) |\n| 7 | 1, 4, 5, 6 | #P_syl3anc | |- ( ph -> ( ( K || M /\\ K || N ) -> K || ( M - N ) ) ) |\n| 8 | 2, 3, 7 | #P_mp2and | |- ( ph -> K || ( M - N ) ) |",
+  "conclusion" : "#P_dvds2subd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cN", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cK", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_wa", "#T_cK", "#T_cdvds", "#T_cN", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmin", "#T_cN", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_wa", "#T_cK", "#T_cdvds", "#T_cN", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmin", "#T_cN", "#T_wph", "#T_wi", "#T_cK", "#T_cdvds", "#T_cM", "#T_cmin", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2and", "#P_dvds2sub", "#P_syl3anc" ]
+}

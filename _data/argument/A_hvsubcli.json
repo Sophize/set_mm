@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubcli on Metamath](http://us.metamath.org/mpegif/hvsubcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvaddcl.1 | |- A e. ~H |\n| 2 |  | hvaddcl.2 | |- B e. ~H |\n| 3 |  | #P_hvsubcl | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A -h B ) e. ~H ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A -h B ) e. ~H |",
+  "conclusion" : "#P_hvsubcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cA", "#T_cmv", "#T_cB", "#T_wcel", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_hvsubcl" ]
+}

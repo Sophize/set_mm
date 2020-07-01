@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnetg on Metamath](http://us.metamath.org/mpegif/fnetg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- U. A = U. A |\n| 2 |  | #P_eqid | |- U. B = U. B |\n| 3 | 1, 2 | #P_isfne4 | |- ( A Fne B <-> ( U. A = U. B /\\ A C_ ( topGen ` B ) ) ) |\n| 4 | 3 | #P_simprbi | |- ( A Fne B -> A C_ ( topGen ` B ) ) |",
+  "conclusion" : "#P_fnetg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_cB.wceq", "#T_cA.wceq", "#T_cfne", "#T_cB.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_cA", "#T_cfne", "#T_cB", "#T_wi", "#T_cA", "#T_wss", "#T_ctg", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simprbi", "#P_isfne4" ]
+}

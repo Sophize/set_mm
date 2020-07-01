@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnnrg on Metamath](http://us.metamath.org/mpegif/cnnrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnngp | |- CCfld e. NrmGrp |\n| 2 |  | #P_absabv | |- abs e. ( AbsVal ` CCfld ) |\n| 3 |  | #P_cnfldnm | |- abs = ( norm ` CCfld ) |\n| 4 |  | #P_eqid | |- ( AbsVal ` CCfld ) = ( AbsVal ` CCfld ) |\n| 5 | 3, 4 | #P_isnrg | |- ( CCfld e. NrmRing <-> ( CCfld e. NrmGrp /\\ abs e. ( AbsVal ` CCfld ) ) ) |\n| 6 | 1, 2, 5 | #P_mpbir2an | |- CCfld e. NrmRing |",
+  "conclusion" : "#P_cnnrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_cngp", "#T_cabs", "#T_wcel", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_wceq", "#T_cnm", "#T_cfv", "#T_ccnfld", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cnrg", "#T_wb", "#T_ccnfld", "#T_wcel", "#T_cngp", "#T_wa", "#T_cabs", "#T_wcel", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cnrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isnrg", "#P_cnngp", "#P_mpbir2an", "#P_cnfldnm", "#P_absabv" ]
+}

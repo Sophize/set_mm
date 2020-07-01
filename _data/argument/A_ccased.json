@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ccased on Metamath](http://us.metamath.org/mpegif/ccased.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ccased.1 | |- ( ph -> ( ( ps /\\ ch ) -> et ) ) |\n| 2 |  | ccased.2 | |- ( ph -> ( ( th /\\ ch ) -> et ) ) |\n| 3 |  | ccased.3 | |- ( ph -> ( ( ps /\\ ta ) -> et ) ) |\n| 4 |  | ccased.4 | |- ( ph -> ( ( th /\\ ta ) -> et ) ) |\n| 5 | 1 | #P_com12 | |- ( ( ps /\\ ch ) -> ( ph -> et ) ) |\n| 6 | 2 | #P_com12 | |- ( ( th /\\ ch ) -> ( ph -> et ) ) |\n| 7 | 3 | #P_com12 | |- ( ( ps /\\ ta ) -> ( ph -> et ) ) |\n| 8 | 4 | #P_com12 | |- ( ( th /\\ ta ) -> ( ph -> et ) ) |\n| 9 | 5, 6, 7, 8 | #P_ccase | |- ( ( ( ps \\/ th ) /\\ ( ch \\/ ta ) ) -> ( ph -> et ) ) |\n| 10 | 9 | #P_com12 | |- ( ph -> ( ( ( ps \\/ th ) /\\ ( ch \\/ ta ) ) -> et ) ) |",
+  "conclusion" : "#P_ccased",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wth", "#T_wa", "#T_wch", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wth", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wps", "#T_wa", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wps", "#T_wo", "#T_wth", "#T_wa", "#T_wch", "#T_wo", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wa", "#T_wch", "#T_wo", "#T_wta", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ccase", "#P_com12" ]
+}

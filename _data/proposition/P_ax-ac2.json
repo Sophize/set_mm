@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-ac2 on Metamath](http://us.metamath.org/mpegif/ax-ac2.html)"
+  } ],
+  "names" : [ "ax-ac2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy", "#T_wal", "#T_vz", "#T_wex", "#T_vv", "#T_wal", "#T_vu", "#T_vy", "#T_wcel", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_vv", "#T_wcel", "#T_vx", "#T_wa", "#T_wn", "#T_vy", "#T_wceq", "#T_vv", "#T_wa", "#T_vz", "#T_wcel", "#T_vv", "#T_wo", "#T_wn", "#T_vy", "#T_wcel", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vx", "#T_wi", "#T_vv", "#T_wcel", "#T_vz", "#T_wa", "#T_vv", "#T_wcel", "#T_vy", "#T_wa", "#T_vu", "#T_wcel", "#T_vz", "#T_wa", "#T_vu", "#T_wcel", "#T_vy", "#T_wi", "#T_vu", "#T_wceq", "#T_vv", "#T_vu", "#T_vv", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In order to avoid uses of ~ ax-reg for derivation of AC equivalents, we provide ~ ax-ac2 , which is equivalent to the standard AC of textbooks. This appears to be the shortest known equivalent to the standard AC when expressed in terms of set theory primitives.  It was found by Kurt Maes as theorem ~ ackm .  We removed the leading quantifier to make it slightly shorter, since we have ~ ax-gen available.  The derivation of ~ ax-ac2 from ~ ax-ac is shown by theorem ~ axac2 , and the reverse derivation by ~ axac .  Note that we use ~ ax-reg to derive ~ ax-ac from ~ ax-ac2 , but not to derive ~ ax-ac2 from ~ ax-ac .  (Contributed by NM, 19-Dec-2016.) ",
+  "statement" : "ax-ac2 $p |- E. y A. z E. v A. u ( ( y e. x /\\ ( z e. y -> ( ( v e. x /\\ -. y = v ) /\\ z e. v ) ) ) \\/ ( -. y e. x /\\ ( z e. x -> ( ( v e. z /\\ v e. y ) /\\ ( ( u e. z /\\ u e. y ) -> u = v ) ) ) ) ) $.\n$d u v x y z $."
+}

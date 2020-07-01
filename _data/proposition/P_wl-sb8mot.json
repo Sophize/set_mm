@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wl-sb8mot on Metamath](http://us.metamath.org/mpegif/wl-sb8mot.html)"
+  } ],
+  "names" : [ "wl-sb8mot" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wnf", "#T_vy", "#T_wph", "#T_wi", "#T_wmo", "#T_vx", "#T_wph", "#T_wb", "#T_wmo", "#T_vy", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Substitution of variable in universal quantifier.  Closed form of ~ sb8mo . This theorem relates to ~ wl-mo3t , since replacing ` ph ` with ` [ y / x ] ph ` in the latter yields subexpressions like ` [ x / y ] [ y / x ] ph ` , which can be reduced to ` ph ` via ~ sbft and ~ sbco .  So ` E* x ph <-> E* y [ y / x ] ph ` is provable from ~ wl-mo3t in a simple fashion, unfortunately only if ` x ` and ` y ` are known to be distinct.  To avoid any hassle with distinctors, we prefer to derive this theorem independently, ignoring the close connection between both theorems.  From an educational standpoint, one would assume ~ wl-mo3t to be more fundamental, as it hints how the \"at most one\" objects on both sides of the biconditional correlate (they are the same), if they exist at all, and then prove this theorem from it. (Contributed by Wolf Lammen, 11-Aug-2019.) ",
+  "statement" : "wl-sb8mot $p |- ( A. x F/ y ph -> ( E* x ph <-> E* y [ y / x ] ph ) ) $."
+}

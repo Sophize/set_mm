@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infxpidm on Metamath](http://us.metamath.org/mpegif/infxpidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reldom | |- Rel ~<_ |\n| 2 | 1 | #P_brrelex2i | |- ( _om ~<_ A -> A e. _V ) |\n| 3 |  | #P_numth3 | |- ( A e. _V -> A e. dom card ) |\n| 4 | 2, 3 | #P_syl | |- ( _om ~<_ A -> A e. dom card ) |\n| 5 |  | #P_infxpidm2 | |- ( ( A e. dom card /\\ _om ~<_ A ) -> ( A X. A ) ~~ A ) |\n| 6 | 4, 5 | #P_mpancom | |- ( _om ~<_ A -> ( A X. A ) ~~ A ) |",
+  "conclusion" : "#P_infxpidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cdom", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_com", "#T_cdom", "#T_cA", "#T_wi", "#T_cA", "#T_cxp", "#T_cA", "#T_cen", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpancom", "#P_infxpidm2", "#P_reldom", "#P_numth3", "#P_syl", "#P_brrelex2i" ]
+}

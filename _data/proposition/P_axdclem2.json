@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axdclem2 on Metamath](http://us.metamath.org/mpegif/axdclem2.html)"
+  } ],
+  "names" : [ "axdclem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vy", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vg", "#T_cfv", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_vy", "#T_vx", "#T_vz", "#T_cab--3", "#T_crdg--2", "#T_vs", "#T_cres", "#T_com", "#T_wex", "#T_vz", "#T_vs", "#T_vx", "#T_vz", "#T_wi", "#T_crn", "#T_vx", "#T_wss", "#T_cdm", "#T_vx", "#T_wi", "#T_wex", "#T_vf", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_com", "#T_vf", "#T_cfv", "#T_vn", "#T_vx", "#T_vf", "#T_cfv", "#T_csuc", "#T_vn", "#T_cF", "#T_vf", "#T_vn", "#T_cF", "#T_vn", "#T_vy", "#T_vz", "#T_vf", "#T_vg", "#T_vn", "#T_vx", "#T_vg", "#T_vn", "#T_vs", "#T_vy", "#T_vg", "#T_vn", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ axdc .  Using the full Axiom of Choice, we can construct a choice function ` g ` on ` ~P dom x ` .  From this, we can build a sequence ` F ` starting at any value ` s e. dom x ` by repeatedly applying ` g ` to the set ` ( F `` x ) ` (where ` x ` is the value from the previous iteration).  (Contributed by Mario Carneiro, 25-Jan-2013.) ",
+  "statement" : "axdclem2.1 $e |- F = ( rec ( ( y e. _V |-> ( g ` { z | y x z } ) ) , s ) |` _om ) $.\naxdclem2 $p |- ( E. z s x z -> ( ran x C_ dom x -> E. f A. n e. _om ( f ` n ) x ( f ` suc n ) ) ) $.\n$d F f n $.\n$d F n y z $.\n$d f g n x $.\n$d g n s y $.\n$d g n x y z $."
+}

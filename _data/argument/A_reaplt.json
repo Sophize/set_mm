@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reaplt on Metamath](http://us.metamath.org/mpegif/reaplt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_apreap | |- ( ( A e. RR /\\ B e. RR ) -> ( A # B <-> A #RR B ) ) |\n| 2 |  | #P_reapval | |- ( ( A e. RR /\\ B e. RR ) -> ( A #RR B <-> ( A < B \\/ B < A ) ) ) |\n| 3 | 1, 2 | #P_bitrd | |- ( ( A e. RR /\\ B e. RR ) -> ( A # B <-> ( A < B \\/ B < A ) ) ) |",
+  "conclusion" : "#P_reaplt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cap", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_creap", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_creap", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cap", "#T_cB", "#T_wb", "#T_cA", "#T_clt", "#T_cB", "#T_wo", "#T_cB", "#T_clt", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_reapval", "#P_apreap" ]
+}

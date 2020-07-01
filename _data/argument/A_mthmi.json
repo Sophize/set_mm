@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mthmi on Metamath](http://us.metamath.org/mpegif/mthmi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mthmval.r | |- R = ( mStRed ` T ) |\n| 2 |  | mthmval.j | |- J = ( mPPSt ` T ) |\n| 3 |  | mthmval.u | |- U = ( mThm ` T ) |\n| 4 |  | #P_fveq2 | |- ( x = X -> ( R ` x ) = ( R ` X ) ) |\n| 5 | 4 | #P_eqeq1d | |- ( x = X -> ( ( R ` x ) = ( R ` Y ) <-> ( R ` X ) = ( R ` Y ) ) ) |\n| 6 | 5 | #P_rspcev | |- ( ( X e. J /\\ ( R ` X ) = ( R ` Y ) ) -> E. x e. J ( R ` x ) = ( R ` Y ) ) |\n| 7 | 1, 2, 3 | #P_elmthm | |- ( Y e. U <-> E. x e. J ( R ` x ) = ( R ` Y ) ) |\n| 8 | 6, 7 | #P_sylibr | |- ( ( X e. J /\\ ( R ` X ) = ( R ` Y ) ) -> Y e. U ) |",
+  "conclusion" : "#P_mthmi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cR", "#T_wceq", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cJ", "#T_wceq", "#T_cmpps", "#T_cfv", "#T_cT", "#T_cU", "#T_wceq", "#T_cmthm", "#T_cfv", "#T_cT", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cR", "#T_cfv", "#T_cX", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_wb", "#T_cR", "#T_cfv", "#T_cX", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_cX", "#T_wcel", "#T_cJ", "#T_wa", "#T_cR", "#T_cfv", "#T_cX", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cJ", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_cY", "#T_wcel", "#T_cU", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cJ", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_cX", "#T_wcel", "#T_cJ", "#T_wa", "#T_cR", "#T_cfv", "#T_cX", "#T_wceq", "#T_cR", "#T_cfv", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elmthm", "#P_eqeq1d", "#P_sylibr", "#P_fveq2", "#P_rspcev" ]
+}

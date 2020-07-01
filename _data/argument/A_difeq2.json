@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difeq2 on Metamath](http://us.metamath.org/mpegif/difeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq2 | |- ( A = B -> ( x e. A <-> x e. B ) ) |\n| 2 | 1 | #P_notbid | |- ( A = B -> ( -. x e. A <-> -. x e. B ) ) |\n| 3 | 2 | #P_rabbidv | |- ( A = B -> { x e. C | -. x e. A } = { x e. C | -. x e. B } ) |\n| 4 |  | #P_dfdif2 | |- ( C \\ A ) = { x e. C | -. x e. A } |\n| 5 |  | #P_dfdif2 | |- ( C \\ B ) = { x e. C | -. x e. B } |\n| 6 | 3, 4, 5 | #P_3eqtr4g | |- ( A = B -> ( C \\ A ) = ( C \\ B ) ) |",
+  "conclusion" : "#P_difeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_crab--4", "#T_cC", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_crab--4", "#T_cC", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cC", "#T_crab--3", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_crab--4", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cC", "#T_cdif", "#T_cA", "#T_wceq", "#T_cC", "#T_cdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2", "#P_rabbidv", "#P_notbid", "#P_3eqtr4g", "#P_dfdif2" ]
+}

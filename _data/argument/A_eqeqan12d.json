@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqeqan12d on Metamath](http://us.metamath.org/mpegif/eqeqan12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqeqan12d.1 | |- ( ph -> A = B ) |\n| 2 |  | eqeqan12d.2 | |- ( ps -> C = D ) |\n| 3 | 1 | #P_adantr | |- ( ( ph /\\ ps ) -> A = B ) |\n| 4 | 2 | #P_adantl | |- ( ( ph /\\ ps ) -> C = D ) |\n| 5 | 3, 4 | #P_eqeq12d | |- ( ( ph /\\ ps ) -> ( A = C <-> B = D ) ) |",
+  "conclusion" : "#P_eqeqan12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wps", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wb", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_adantl", "#P_adantr" ]
+}

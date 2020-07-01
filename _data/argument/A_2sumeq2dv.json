@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2sumeq2dv on Metamath](http://us.metamath.org/mpegif/2sumeq2dv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 2sumeq2dv.1 | |- ( ( ph /\\ j e. A /\\ k e. B ) -> C = D ) |\n| 2 | 1 | #P_3expa | |- ( ( ( ph /\\ j e. A ) /\\ k e. B ) -> C = D ) |\n| 3 | 2 | #P_sumeq2dv | |- ( ( ph /\\ j e. A ) -> sum_ k e. B C = sum_ k e. B D ) |\n| 4 | 3 | #P_sumeq2dv | |- ( ph -> sum_ j e. A sum_ k e. B C = sum_ j e. A sum_ k e. B D ) |",
+  "conclusion" : "#P_2sumeq2dv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_vj", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vk", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB.wceq", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB.wceq", "#T_cD", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3expa", "#P_sumeq2dv" ]
+}

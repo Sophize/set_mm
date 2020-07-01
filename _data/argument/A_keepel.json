@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See keepel on Metamath](http://us.metamath.org/mpegif/keepel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | keepel.1 | |- A e. C |\n| 2 |  | keepel.2 | |- B e. C |\n| 3 |  | #P_eleq1 | |- ( A = if ( ph , A , B ) -> ( A e. C <-> if ( ph , A , B ) e. C ) ) |\n| 4 |  | #P_eleq1 | |- ( B = if ( ph , A , B ) -> ( B e. C <-> if ( ph , A , B ) e. C ) ) |\n| 5 | 3, 4, 1, 2 | #P_keephyp | |- if ( ph , A , B ) e. C |",
+  "conclusion" : "#P_keepel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cC", "#T_cB", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq1", "#P_keephyp" ]
+}

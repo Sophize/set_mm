@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supcvg on Metamath](http://us.metamath.org/mpegif/supcvg.html)"
+  } ],
+  "names" : [ "supcvg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cvv", "#T_cS", "#T_wceq", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cR", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cS", "#T_cmin", "#T_c1", "#T_cdiv", "#T_vn", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_vy", "#T_cle", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vf", "#T_vf", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cX", "#T_wa", "#T_cF", "#T_ccom", "#T_vf", "#T_cli", "#T_cS", "#T_cA", "#T_vx", "#T_vy", "#T_cF", "#T_vf", "#T_vx", "#T_cR", "#T_vf", "#T_vx", "#T_cS", "#T_vn", "#T_cX", "#T_vf", "#T_vx", "#T_vf", "#T_vn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Extract a sequence ` f ` in ` X ` such that the image of the points in the bounded set ` A ` converges to the supremum ` S ` of the set. Similar to Equation 4 of [Kreyszig] p. 144.  The proof uses countable choice ~ ax-cc .  (Contributed by Mario Carneiro, 15-Feb-2013.)  (Proof shortened by Mario Carneiro, 26-Apr-2014.) ",
+  "statement" : "supcvg.1 $e |- X e. _V $.\nsupcvg.2 $e |- S = sup ( A , RR , < ) $.\nsupcvg.3 $e |- R = ( n e. NN |-> ( S - ( 1 / n ) ) ) $.\nsupcvg.4 $e |- ( ph -> X =/= (/) ) $.\nsupcvg.5 $e |- ( ph -> F : X -onto-> A ) $.\nsupcvg.6 $e |- ( ph -> A C_ RR ) $.\nsupcvg.7 $e |- ( ph -> E. x e. RR A. y e. A y <_ x ) $.\nsupcvg $p |- ( ph -> E. f ( f : NN --> X /\\ ( F o. f ) ~~> S ) ) $.\n$d A x y $.\n$d F f x $.\n$d R f x $.\n$d S n $.\n$d X f x $.\n$d f n ph $."
+}

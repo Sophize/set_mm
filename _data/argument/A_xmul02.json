@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xmul02 on Metamath](http://us.metamath.org/mpegif/xmul02.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0xr | |- 0 e. RR* |\n| 2 |  | #P_xmulcom | |- ( ( 0 e. RR* /\\ A e. RR* ) -> ( 0 *e A ) = ( A *e 0 ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. RR* -> ( 0 *e A ) = ( A *e 0 ) ) |\n| 4 |  | #P_xmul01 | |- ( A e. RR* -> ( A *e 0 ) = 0 ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A e. RR* -> ( 0 *e A ) = 0 ) |",
+  "conclusion" : "#P_xmul02",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cc0", "#T_cxmu", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxmu", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cc0", "#T_cxmu", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxmu", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cxmu", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cxr", "#T_wi", "#T_cc0", "#T_cxmu", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0xr", "#P_eqtrd", "#P_mpan", "#P_xmul01", "#P_xmulcom" ]
+}

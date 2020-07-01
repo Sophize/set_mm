@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idressubgsymg on Metamath](http://us.metamath.org/mpegif/idressubgsymg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idresperm.g | |- G = ( SymGrp ` A ) |\n| 2 | 1 | #P_symgid | |- ( A e. V -> ( _I |` A ) = ( 0g ` G ) ) |\n| 3 | 2 | #P_sneqd | |- ( A e. V -> { ( _I |` A ) } = { ( 0g ` G ) } ) |\n| 4 | 1 | #P_symggrp | |- ( A e. V -> G e. Grp ) |\n| 5 |  | #P_eqid | |- ( 0g ` G ) = ( 0g ` G ) |\n| 6 | 5 | #P_0subg | |- ( G e. Grp -> { ( 0g ` G ) } e. ( SubGrp ` G ) ) |\n| 7 | 4, 6 | #P_syl | |- ( A e. V -> { ( 0g ` G ) } e. ( SubGrp ` G ) ) |\n| 8 | 3, 7 | #P_eqeltrd | |- ( A e. V -> { ( _I |` A ) } e. ( SubGrp ` G ) ) |",
+  "conclusion" : "#P_idressubgsymg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_cG", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_c0g", "#T_cfv", "#T_cG", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_cG", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_cG", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cid", "#T_cres", "#T_cA", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eqeltrd", "#P_symggrp", "#P_0subg", "#P_syl", "#P_sneqd", "#P_symgid" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See scmatmat on Metamath](http://us.metamath.org/mpegif/scmatmat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nc\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | scmatmat.a | |- A = ( N Mat R ) |\n| 2 |  | scmatmat.b | |- B = ( Base ` A ) |\n| 3 |  | scmatmat.s | |- S = ( N ScMat R ) |\n| 4 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 5 |  | #P_eqid | |- ( 1r ` A ) = ( 1r ` A ) |\n| 6 |  | #P_eqid | |- ( .s ` A ) = ( .s ` A ) |\n| 7 | 4, 1, 2, 5, 6, 3 | #P_scmatel | |- ( ( N e. Fin /\\ R e. V ) -> ( M e. S <-> ( M e. B /\\ E. c e. ( Base ` R ) M = ( c ( .s ` A ) ( 1r ` A ) ) ) ) ) |\n| 8 |  | #P_simpl | |- ( ( M e. B /\\ E. c e. ( Base ` R ) M = ( c ( .s ` A ) ( 1r ` A ) ) ) -> M e. B ) |\n| 9 | 7, 8 | #P_syl6bi | |- ( ( N e. Fin /\\ R e. V ) -> ( M e. S -> M e. B ) ) |",
+  "conclusion" : "#P_scmatmat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vc", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cS", "#T_wceq", "#T_cN", "#T_cscmat", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cur", "#T_cfv", "#T_cA.wceq", "#T_cvsca", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cA.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cS", "#T_wb", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_cM", "#T_wceq", "#T_vc", "#T_cvsca", "#T_cfv", "#T_cA.wceq", "#T_cur", "#T_cfv", "#T_cA.wceq", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_cM", "#T_wceq", "#T_vc", "#T_cvsca", "#T_cfv", "#T_cA.wceq", "#T_cur", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cS", "#T_wi", "#T_cM", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_scmatel", "#P_syl6bi", "#P_simpl" ]
+}

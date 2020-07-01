@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See epos on Metamath](http://us.metamath.org/mpegif/epos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2pos | |- 0 < 2 |\n| 2 |  | #P_egt2lt3 | |- ( 2 < _e /\\ _e < 3 ) |\n| 3 | 2 | #P_simpli | |- 2 < _e |\n| 4 |  | #P_0re | |- 0 e. RR |\n| 5 |  | #P_2re | |- 2 e. RR |\n| 6 |  | #P_ere | |- _e e. RR |\n| 7 | 4, 5, 6 | #P_lttri | |- ( ( 0 < 2 /\\ 2 < _e ) -> 0 < _e ) |\n| 8 | 1, 3, 7 | #P_mp2an | |- 0 < _e |",
+  "conclusion" : "#P_epos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_clt", "#T_c2", "#T_c2", "#T_clt", "#T_ceu", "#T_wa", "#T_ceu", "#T_clt", "#T_c3", "#T_c2", "#T_clt", "#T_ceu", "#T_cc0", "#T_wcel", "#T_cr", "#T_c2", "#T_wcel", "#T_cr", "#T_ceu", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c2", "#T_wa", "#T_c2", "#T_clt", "#T_ceu", "#T_wi", "#T_cc0", "#T_clt", "#T_ceu", "#T_cc0", "#T_clt", "#T_ceu" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_2pos", "#P_egt2lt3", "#P_simpli", "#P_ere", "#P_0re", "#P_2re" ]
+}

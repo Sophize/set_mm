@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsm01 on Metamath](http://us.metamath.org/mpegif/lsm01.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lsm01.z | |- .0. = ( 0g ` G ) |\n| 2 |  | lsm01.p | |- .(+) = ( LSSum ` G ) |\n| 3 |  | #P_subgrcl | |- ( X e. ( SubGrp ` G ) -> G e. Grp ) |\n| 4 | 1 | #P_0subg | |- ( G e. Grp -> { .0. } e. ( SubGrp ` G ) ) |\n| 5 | 3, 4 | #P_syl | |- ( X e. ( SubGrp ` G ) -> { .0. } e. ( SubGrp ` G ) ) |\n| 6 | 1 | #P_subg0cl | |- ( X e. ( SubGrp ` G ) -> .0. e. X ) |\n| 7 | 6 | #P_snssd | |- ( X e. ( SubGrp ` G ) -> { .0. } C_ X ) |\n| 8 | 2 | #P_lsmss2 | |- ( ( X e. ( SubGrp ` G ) /\\ { .0. } e. ( SubGrp ` G ) /\\ { .0. } C_ X ) -> ( X .(+) { .0. } ) = X ) |\n| 9 | 5, 7, 8 | #P_mpd3an23 | |- ( X e. ( SubGrp ` G ) -> ( X .(+) { .0. } ) = X ) |",
+  "conclusion" : "#P_lsm01",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.po", "#T_wceq", "#T_clsm", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_c.0", "#T_wcel", "#T_cX", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wss", "#T_cX", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--1", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--2", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wss", "#T_cX", "#T_wi", "#T_cX", "#T_c.po", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wceq", "#T_cX", "#T_cX", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cX", "#T_c.po", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lsmss2", "#P_subg0cl", "#P_subgrcl", "#P_0subg", "#P_snssd", "#P_syl", "#P_mpd3an23" ]
+}

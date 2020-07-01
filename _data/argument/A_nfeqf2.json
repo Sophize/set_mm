@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfeqf2 on Metamath](http://us.metamath.org/mpegif/nfeqf2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exnal | |- ( E. x -. x = y <-> -. A. x x = y ) |\n| 2 |  | #P_nfnf1 | |- F/ x F/ x z = y |\n| 3 |  | #P_axc9lem2 | |- ( -. x = y -> ( E. x z = y -> z = y ) ) |\n| 4 |  | #P_axc9lem1 | |- ( -. x = y -> ( z = y -> A. x z = y ) ) |\n| 5 | 3, 4 | #P_syld | |- ( -. x = y -> ( E. x z = y -> A. x z = y ) ) |\n| 6 |  | #P_nf2 | |- ( F/ x z = y <-> ( E. x z = y -> A. x z = y ) ) |\n| 7 | 5, 6 | #P_sylibr | |- ( -. x = y -> F/ x z = y ) |\n| 8 | 2, 7 | #P_exlimi | |- ( E. x -. x = y -> F/ x z = y ) |\n| 9 | 1, 8 | #P_sylbir | |- ( -. A. x x = y -> F/ x z = y ) |",
+  "conclusion" : "#P_nfeqf2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wnf", "#T_vx", "#T_vz", "#T_wceq", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nf2", "#P_sylbir", "#P_sylibr", "#P_nfnf1", "#P_exnal", "#P_axc9lem1", "#P_axc9lem2", "#P_syld", "#P_exlimi" ]
+}

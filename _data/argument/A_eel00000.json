@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eel00000 on Metamath](http://us.metamath.org/mpegif/eel00000.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eel00000.1 | |- ph |\n| 2 |  | eel00000.2 | |- ps |\n| 3 |  | eel00000.3 | |- ch |\n| 4 |  | eel00000.4 | |- th |\n| 5 |  | eel00000.5 | |- ta |\n| 6 |  | eel00000.6 | |- ( ( ( ( ( ph /\\ ps ) /\\ ch ) /\\ th ) /\\ ta ) -> et ) |\n| 7 | 6 | #P_exp41 | |- ( ( ph /\\ ps ) -> ( ch -> ( th -> ( ta -> et ) ) ) ) |\n| 8 | 1, 7 | #P_mpan | |- ( ps -> ( ch -> ( th -> ( ta -> et ) ) ) ) |\n| 9 | 2, 3, 8 | #P_mp2 | |- ( th -> ( ta -> et ) ) |\n| 10 | 4, 5, 9 | #P_mp2 | |- et |",
+  "conclusion" : "#P_eel00000",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wch", "#T_wth", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_exp41", "#P_mpan" ]
+}

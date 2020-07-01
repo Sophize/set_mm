@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lssn0 on Metamath](http://us.metamath.org/mpegif/lssn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lssn0.s | |- S = ( LSubSp ` W ) |\n| 2 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 3 |  | #P_eqid | |- ( Base ` ( Scalar ` W ) ) = ( Base ` ( Scalar ` W ) ) |\n| 4 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 5 |  | #P_eqid | |- ( +g ` W ) = ( +g ` W ) |\n| 6 |  | #P_eqid | |- ( .s ` W ) = ( .s ` W ) |\n| 7 | 2, 3, 4, 5, 6, 1 | #P_islss | |- ( U e. S <-> ( U C_ ( Base ` W ) /\\ U =/= (/) /\\ A. x e. ( Base ` ( Scalar ` W ) ) A. a e. U A. b e. U ( ( x ( .s ` W ) a ) ( +g ` W ) b ) e. U ) ) |\n| 8 | 7 | #P_simp2bi | |- ( U e. S -> U =/= (/) ) |",
+  "conclusion" : "#P_lssn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_vx", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cplusg", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cvsca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_cU", "#T_wcel", "#T_cS", "#T_wb", "#T_cU", "#T_wss", "#T_cbs", "#T_cfv", "#T_cW", "#T_w3a--1", "#T_cU", "#T_wne", "#T_c0", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cU", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cU", "#T_vx.wal", "#T_cvsca", "#T_cfv", "#T_cW", "#T_va", "#T_cplusg", "#T_cfv", "#T_cW", "#T_vb", "#T_wcel", "#T_cU", "#T_cU", "#T_wcel", "#T_cS", "#T_wi", "#T_cU", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_islss", "#P_simp2bi" ]
+}

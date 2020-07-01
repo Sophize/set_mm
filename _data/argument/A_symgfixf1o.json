@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgfixf1o on Metamath](http://us.metamath.org/mpegif/symgfixf1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgfixf.p | |- P = ( Base ` ( SymGrp ` N ) ) |\n| 2 |  | symgfixf.q | |- Q = { q e. P | ( q ` K ) = K } |\n| 3 |  | symgfixf.s | |- S = ( Base ` ( SymGrp ` ( N \\ { K } ) ) ) |\n| 4 |  | symgfixf.h | |- H = ( q e. Q |-> ( q |` ( N \\ { K } ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_symgfixf1 | |- ( K e. N -> H : Q -1-1-> S ) |\n| 6 | 5 | #P_adantl | |- ( ( N e. V /\\ K e. N ) -> H : Q -1-1-> S ) |\n| 7 | 1, 2, 3, 4 | #P_symgfixfo | |- ( ( N e. V /\\ K e. N ) -> H : Q -onto-> S ) |\n| 8 |  | #P_df-f1o | |- ( H : Q -1-1-onto-> S <-> ( H : Q -1-1-> S /\\ H : Q -onto-> S ) ) |\n| 9 | 6, 7, 8 | #P_sylanbrc | |- ( ( N e. V /\\ K e. N ) -> H : Q -1-1-onto-> S ) |",
+  "conclusion" : "#P_symgfixf1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wceq", "#T_crab--1", "#T_vq", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vq", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_crab--4", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cH", "#T_wceq", "#T_vq", "#T_cmpt--1", "#T_cQ", "#T_cmpt--2", "#T_vq", "#T_cres", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cH", "#T_wf1--1", "#T_cQ", "#T_wf1--2", "#T_cS", "#T_cN", "#T_wcel", "#T_cV", "#T_wa", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cH", "#T_wf1--1", "#T_cQ", "#T_wf1--2", "#T_cS", "#T_cN", "#T_wcel", "#T_cV", "#T_wa", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cH", "#T_wfo--1", "#T_cQ", "#T_wfo--2", "#T_cS", "#T_cH", "#T_wf1o--1", "#T_cQ", "#T_wf1o--2", "#T_cS", "#T_wb", "#T_cH", "#T_wf1--1", "#T_cQ", "#T_wf1--2", "#T_cS", "#T_wa", "#T_cH", "#T_wfo--1", "#T_cQ", "#T_wfo--2", "#T_cS", "#T_cN", "#T_wcel", "#T_cV", "#T_wa", "#T_cK", "#T_wcel", "#T_cN", "#T_wi", "#T_cH", "#T_wf1o--1", "#T_cQ", "#T_wf1o--2", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_symgfixf1", "#P_sylanbrc", "#P_df-f1o", "#P_symgfixfo" ]
+}

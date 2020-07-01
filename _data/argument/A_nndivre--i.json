@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nndivre on Metamath](http://us.metamath.org/mpegif/nndivre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnre | |- ( N e. NN -> N e. RR ) |\n| 2 |  | #P_nnap0 | |- ( N e. NN -> N # 0 ) |\n| 3 | 1, 2 | #P_jca | |- ( N e. NN -> ( N e. RR /\\ N # 0 ) ) |\n| 4 |  | #P_redivclap | |- ( ( A e. RR /\\ N e. RR /\\ N # 0 ) -> ( A / N ) e. RR ) |\n| 5 | 4 | #P_3expb | |- ( ( A e. RR /\\ ( N e. RR /\\ N # 0 ) ) -> ( A / N ) e. RR ) |\n| 6 | 3, 5 | #P_sylan2 | |- ( ( A e. RR /\\ N e. NN ) -> ( A / N ) e. RR ) |",
+  "conclusion" : "#P_nndivre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_cap", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_cap", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cN", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cA", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3expb", "#P_sylan2", "#P_nnap0", "#P_redivclap", "#P_nnre", "#P_jca" ]
+}

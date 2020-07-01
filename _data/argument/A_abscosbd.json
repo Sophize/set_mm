@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abscosbd on Metamath](http://us.metamath.org/mpegif/abscosbd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cosbnd | |- ( A e. RR -> ( -u 1 <_ ( cos ` A ) /\\ ( cos ` A ) <_ 1 ) ) |\n| 2 |  | #P_recoscl | |- ( A e. RR -> ( cos ` A ) e. RR ) |\n| 3 |  | #P_1red | |- ( A e. RR -> 1 e. RR ) |\n| 4 | 2, 3 | #P_absled | |- ( A e. RR -> ( ( abs ` ( cos ` A ) ) <_ 1 <-> ( -u 1 <_ ( cos ` A ) /\\ ( cos ` A ) <_ 1 ) ) ) |\n| 5 | 1, 4 | #P_mpbird | |- ( A e. RR -> ( abs ` ( cos ` A ) ) <_ 1 ) |",
+  "conclusion" : "#P_abscosbd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_cle", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cabs", "#T_cfv", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_wb", "#T_cneg", "#T_c1", "#T_cle", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_ccos", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cabs", "#T_cfv", "#T_ccos", "#T_cfv", "#T_cA", "#T_cle", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_absled", "#P_1red", "#P_recoscl", "#P_cosbnd", "#P_mpbird" ]
+}

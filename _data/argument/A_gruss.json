@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gruss on Metamath](http://us.metamath.org/mpegif/gruss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elpw2g | |- ( A e. U -> ( B e. ~P A <-> B C_ A ) ) |\n| 2 | 1 | #P_adantl | |- ( ( U e. Univ /\\ A e. U ) -> ( B e. ~P A <-> B C_ A ) ) |\n| 3 |  | #P_grupw | |- ( ( U e. Univ /\\ A e. U ) -> ~P A e. U ) |\n| 4 |  | #P_gruelss | |- ( ( U e. Univ /\\ ~P A e. U ) -> ~P A C_ U ) |\n| 5 | 3, 4 | #P_syldan | |- ( ( U e. Univ /\\ A e. U ) -> ~P A C_ U ) |\n| 6 | 5 | #P_sseld | |- ( ( U e. Univ /\\ A e. U ) -> ( B e. ~P A -> B e. U ) ) |\n| 7 | 2, 6 | #P_sylbird | |- ( ( U e. Univ /\\ A e. U ) -> ( B C_ A -> B e. U ) ) |\n| 8 | 7 | #P_3impia | |- ( ( U e. Univ /\\ A e. U /\\ B C_ A ) -> B e. U ) |",
+  "conclusion" : "#P_gruss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cpw", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cU", "#T_cU", "#T_wcel", "#T_cgru", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cU", "#T_cU", "#T_wcel", "#T_cgru", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cU", "#T_w3a--2", "#T_cB", "#T_wss", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_grupw", "#P_gruelss", "#P_3impia", "#P_sseld", "#P_elpw2g", "#P_sylbird", "#P_syldan" ]
+}

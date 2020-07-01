@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unicls on Metamath](http://us.metamath.org/mpegif/unicls.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unicls.1 | |- J e. Top |\n| 2 |  | unicls.2 | |- X = U. J |\n| 3 | 2 | #P_cldss2 | |- ( Clsd ` J ) C_ ~P X |\n| 4 |  | #P_sspwuni | |- ( ( Clsd ` J ) C_ ~P X <-> U. ( Clsd ` J ) C_ X ) |\n| 5 | 3, 4 | #P_mpbi | |- U. ( Clsd ` J ) C_ X |\n| 6 | 2 | #P_topcld | |- ( J e. Top -> X e. ( Clsd ` J ) ) |\n| 7 | 1, 6 | #P_ax-mp | |- X e. ( Clsd ` J ) |\n| 8 |  | #P_unissel | |- ( ( U. ( Clsd ` J ) C_ X /\\ X e. ( Clsd ` J ) ) -> U. ( Clsd ` J ) = X ) |\n| 9 | 5, 7, 8 | #P_mp2an | |- U. ( Clsd ` J ) = X |",
+  "conclusion" : "#P_unicls",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_wb", "#T_cuni", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cX", "#T_cuni", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cX", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cuni", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cX", "#T_wa", "#T_cX", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cuni", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cX", "#T_cuni", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_cldss2", "#P_topcld", "#P_mpbi", "#P_unissel", "#P_sspwuni" ]
+}

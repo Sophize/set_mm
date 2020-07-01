@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpt2fvexi on Metamath](http://us.metamath.org/mpegif/mpt2fvexi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fmpt2.1 | |- F = ( x e. A , y e. B |-> C ) |\n| 2 |  | fnmpt2i.2 | |- C e. _V |\n| 3 |  | mpt2fvexi.3 | |- R e. _V |\n| 4 |  | mpt2fvexi.4 | |- S e. _V |\n| 5 | 2 | #P_gen2 | |- A. x A. y C e. _V |\n| 6 | 1 | #P_mpt2fvex | |- ( ( A. x A. y C e. _V /\\ R e. _V /\\ S e. _V ) -> ( R F S ) e. _V ) |\n| 7 | 5, 3, 4, 6 | #P_mp3an | |- ( R F S ) e. _V |",
+  "conclusion" : "#P_mpt2fvexi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_cC", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cvv", "#T_cS", "#T_wcel", "#T_cvv", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cC", "#T_wcel", "#T_cvv", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cC", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_cF", "#T_cS", "#T_wcel", "#T_cvv", "#T_cR", "#T_cF", "#T_cS", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_gen2", "#P_mpt2fvex" ]
+}

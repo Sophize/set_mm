@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2ndctop on Metamath](http://us.metamath.org/mpegif/2ndctop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_is2ndc | |- ( J e. 2ndc <-> E. x e. TopBases ( x ~<_ _om /\\ ( topGen ` x ) = J ) ) |\n| 2 |  | #P_simprr | |- ( ( x e. TopBases /\\ ( x ~<_ _om /\\ ( topGen ` x ) = J ) ) -> ( topGen ` x ) = J ) |\n| 3 |  | #P_tgcl | |- ( x e. TopBases -> ( topGen ` x ) e. Top ) |\n| 4 | 3 | #P_adantr | |- ( ( x e. TopBases /\\ ( x ~<_ _om /\\ ( topGen ` x ) = J ) ) -> ( topGen ` x ) e. Top ) |\n| 5 | 2, 4 | #P_eqeltrrd | |- ( ( x e. TopBases /\\ ( x ~<_ _om /\\ ( topGen ` x ) = J ) ) -> J e. Top ) |\n| 6 | 5 | #P_rexlimiva | |- ( E. x e. TopBases ( x ~<_ _om /\\ ( topGen ` x ) = J ) -> J e. Top ) |\n| 7 | 1, 6 | #P_sylbi | |- ( J e. 2ndc -> J e. Top ) |",
+  "conclusion" : "#P_2ndctop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cJ", "#T_wcel", "#T_c2ndc", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_ctb", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wa", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_vx.wal", "#T_wcel", "#T_ctb", "#T_wa", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wa", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_wi", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_vx.wal", "#T_wcel", "#T_ctb", "#T_wi", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_vx.wal", "#T_wcel", "#T_ctb", "#T_wa", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wa", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_wi", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_vx.wal", "#T_wcel", "#T_ctb", "#T_wa", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wa", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_ctb", "#T_vx.wal", "#T_cdom", "#T_com", "#T_wa", "#T_ctg", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_c2ndc", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgcl", "#P_eqeltrrd", "#P_rexlimiva", "#P_is2ndc", "#P_simprr", "#P_adantr", "#P_sylbi" ]
+}

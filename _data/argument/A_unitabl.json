@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unitabl on Metamath](http://us.metamath.org/mpegif/unitabl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unitmulcl.1 | |- U = ( Unit ` R ) |\n| 2 |  | unitgrp.2 | |- G = ( ( mulGrp ` R ) |`s U ) |\n| 3 |  | #P_crngring | |- ( R e. CRing -> R e. Ring ) |\n| 4 | 1, 2 | #P_unitgrp | |- ( R e. Ring -> G e. Grp ) |\n| 5 | 3, 4 | #P_syl | |- ( R e. CRing -> G e. Grp ) |\n| 6 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 7 | 6 | #P_crngmgp | |- ( R e. CRing -> ( mulGrp ` R ) e. CMnd ) |\n| 8 |  | #P_grpmnd | |- ( G e. Grp -> G e. Mnd ) |\n| 9 | 5, 8 | #P_syl | |- ( R e. CRing -> G e. Mnd ) |\n| 10 | 2 | #P_subcmn | |- ( ( ( mulGrp ` R ) e. CMnd /\\ G e. Mnd ) -> G e. CMnd ) |\n| 11 | 7, 9, 10 | #P_syl2anc | |- ( R e. CRing -> G e. CMnd ) |\n| 12 |  | #P_isabl | |- ( G e. Abel <-> ( G e. Grp /\\ G e. CMnd ) ) |\n| 13 | 5, 11, 12 | #P_sylanbrc | |- ( R e. CRing -> G e. Abel ) |",
+  "conclusion" : "#P_unitabl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ccmn", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ccmn", "#T_wa", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_cG", "#T_wcel", "#T_cabl", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cG", "#T_wcel", "#T_ccmn", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cG", "#T_wcel", "#T_cabl" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_crngmgp", "#P_eqid", "#P_subcmn", "#P_syl2anc", "#P_crngring", "#P_unitgrp", "#P_grpmnd", "#P_syl", "#P_sylanbrc", "#P_isabl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lgs1 on Metamath](http://us.metamath.org/mpegif/lgs1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sq1 | |- ( 1 ^ 2 ) = 1 |\n| 2 | 1 | #P_oveq2i | |- ( A /L ( 1 ^ 2 ) ) = ( A /L 1 ) |\n| 3 |  | #P_gcd1 | |- ( A e. ZZ -> ( A gcd 1 ) = 1 ) |\n| 4 |  | #P_1nn | |- 1 e. NN |\n| 5 |  | #P_lgssq2 | |- ( ( A e. ZZ /\\ 1 e. NN /\\ ( A gcd 1 ) = 1 ) -> ( A /L ( 1 ^ 2 ) ) = 1 ) |\n| 6 | 4, 5 | #P_mp3an2 | |- ( ( A e. ZZ /\\ ( A gcd 1 ) = 1 ) -> ( A /L ( 1 ^ 2 ) ) = 1 ) |\n| 7 | 3, 6 | #P_mpdan | |- ( A e. ZZ -> ( A /L ( 1 ^ 2 ) ) = 1 ) |\n| 8 | 2, 7 | #P_syl5eqr | |- ( A e. ZZ -> ( A /L 1 ) = 1 ) |",
+  "conclusion" : "#P_lgs1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_clgs", "#T_c1", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_clgs", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_cgcd", "#T_c1", "#T_wceq", "#T_c1", "#T_c1", "#T_wcel", "#T_cn", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_c1", "#T_wcel", "#T_cn", "#T_w3a--2", "#T_cA.wceq", "#T_cgcd", "#T_c1", "#T_wceq", "#T_c1", "#T_wi", "#T_cA.wceq", "#T_clgs", "#T_c1", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cA.wceq", "#T_cgcd", "#T_c1", "#T_wceq", "#T_c1", "#T_wi", "#T_cA.wceq", "#T_clgs", "#T_c1", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_clgs", "#T_c1", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cA", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_clgs", "#T_c1", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_gcd1", "#P_1nn", "#P_lgssq2", "#P_syl5eqr", "#P_mp3an2", "#P_sq1", "#P_oveq2i" ]
+}

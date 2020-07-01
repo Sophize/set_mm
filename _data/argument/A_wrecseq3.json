@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wrecseq3 on Metamath](http://us.metamath.org/mpegif/wrecseq3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- R = R |\n| 2 |  | #P_eqid | |- A = A |\n| 3 |  | #P_wrecseq123 | |- ( ( R = R /\\ A = A /\\ F = G ) -> wrecs ( R , A , F ) = wrecs ( R , A , G ) ) |\n| 4 | 1, 2, 3 | #P_mp3an12 | |- ( F = G -> wrecs ( R , A , F ) = wrecs ( R , A , G ) ) |",
+  "conclusion" : "#P_wrecseq3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_cR", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wceq", "#T_cR", "#T_w3a--1", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_w3a--2", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cwrecs--1", "#T_cR", "#T_cwrecs--2", "#T_cA.wceq", "#T_cwrecs--3", "#T_cF", "#T_wceq", "#T_cwrecs--1", "#T_cR", "#T_cwrecs--2", "#T_cA.wceq", "#T_cwrecs--3", "#T_cG", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cwrecs--1", "#T_cR", "#T_cwrecs--2", "#T_cA", "#T_cwrecs--3", "#T_cF", "#T_wceq", "#T_cwrecs--1", "#T_cR", "#T_cwrecs--2", "#T_cA", "#T_cwrecs--3", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mp3an12", "#P_wrecseq123" ]
+}

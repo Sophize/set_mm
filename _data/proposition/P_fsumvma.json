@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumvma on Metamath](http://us.metamath.org/mpegif/fsumvma.html)"
+  } ],
+  "names" : [ "fsumvma" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vp", "#T_cexp", "#T_vk", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cn", "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_vp", "#T_wcel", "#T_cP", "#T_wa", "#T_vk", "#T_wcel", "#T_cK", "#T_wb", "#T_vp", "#T_wcel", "#T_cprime", "#T_wa", "#T_vk", "#T_wcel", "#T_cn", "#T_wa", "#T_vp", "#T_cexp", "#T_vk", "#T_wcel", "#T_cA", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_cvma", "#T_cfv", "#T_vx", "#T_wceq", "#T_cc0", "#T_wi", "#T_cB", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vx", "#T_csu--2", "#T_cA", "#T_cB", "#T_wceq", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cP", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cK", "#T_cC", "#T_cA", "#T_vk", "#T_vp", "#T_vx", "#T_cB", "#T_vk", "#T_vp", "#T_cC", "#T_vx", "#T_cK", "#T_vk", "#T_vx", "#T_cP", "#T_vk", "#T_vp", "#T_vx", "#T_vk", "#T_vp", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rewrite a sum over the von Mangoldt function as a sum over prime powers.  (Contributed by Mario Carneiro, 15-Apr-2016.) ",
+  "statement" : "fsumvma.1 $e |- ( x = ( p ^ k ) -> B = C ) $.\nfsumvma.2 $e |- ( ph -> A e. Fin ) $.\nfsumvma.3 $e |- ( ph -> A C_ NN ) $.\nfsumvma.4 $e |- ( ph -> P e. Fin ) $.\nfsumvma.5 $e |- ( ph -> ( ( p e. P /\\ k e. K ) <-> ( ( p e. Prime /\\ k e. NN ) /\\ ( p ^ k ) e. A ) ) ) $.\nfsumvma.6 $e |- ( ( ph /\\ x e. A ) -> B e. CC ) $.\nfsumvma.7 $e |- ( ( ph /\\ ( x e. A /\\ ( Lam ` x ) = 0 ) ) -> B = 0 ) $.\nfsumvma $p |- ( ph -> sum_ x e. A B = sum_ p e. P sum_ k e. K C ) $.\n$d A k p x $.\n$d B k p $.\n$d C x $.\n$d K k x $.\n$d P k p x $.\n$d k p ph x $."
+}

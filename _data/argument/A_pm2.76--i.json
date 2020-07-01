@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.76 on Metamath](http://us.metamath.org/mpegif/pm2.76.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orc | |- ( ph -> ( ph \\/ ch ) ) |\n| 2 | 1 | #P_a1d | |- ( ph -> ( ( ph \\/ ps ) -> ( ph \\/ ch ) ) ) |\n| 3 |  | #P_orim2 | |- ( ( ps -> ch ) -> ( ( ph \\/ ps ) -> ( ph \\/ ch ) ) ) |\n| 4 | 2, 3 | #P_jaoi | |- ( ( ph \\/ ( ps -> ch ) ) -> ( ( ph \\/ ps ) -> ( ph \\/ ch ) ) ) |",
+  "conclusion" : "#P_pm2.76",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orim2", "#P_orc", "#P_jaoi", "#P_a1d" ]
+}

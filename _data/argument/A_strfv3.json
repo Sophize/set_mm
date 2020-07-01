@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strfv3 on Metamath](http://us.metamath.org/mpegif/strfv3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strfv3.u | |- ( ph -> U = S ) |\n| 2 |  | strfv3.s | |- S Struct X |\n| 3 |  | strfv3.e | |- E = Slot ( E ` ndx ) |\n| 4 |  | strfv3.n | |- { <. ( E ` ndx ) , C >. } C_ S |\n| 5 |  | strfv3.c | |- ( ph -> C e. V ) |\n| 6 |  | strfv3.a | |- A = ( E ` U ) |\n| 7 | 2, 3, 4 | #P_strfv | |- ( C e. V -> C = ( E ` S ) ) |\n| 8 | 5, 7 | #P_syl | |- ( ph -> C = ( E ` S ) ) |\n| 9 | 1 | #P_fveq2d | |- ( ph -> ( E ` U ) = ( E ` S ) ) |\n| 10 | 8, 9 | #P_eqtr4d | |- ( ph -> C = ( E ` U ) ) |\n| 11 | 10, 6 | #P_syl6reqr | |- ( ph -> A = C ) |",
+  "conclusion" : "#P_strfv3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_cS", "#T_cS", "#T_cstr", "#T_cX", "#T_cE", "#T_wceq", "#T_cslot", "#T_cE", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cE", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cV", "#T_cA", "#T_wceq", "#T_cE", "#T_cfv", "#T_cU", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cE", "#T_cfv", "#T_cU", "#T_wceq", "#T_cE", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2d", "#P_syl", "#P_syl6reqr", "#P_strfv", "#P_eqtr4d" ]
+}

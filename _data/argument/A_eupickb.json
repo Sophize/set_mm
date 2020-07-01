@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eupickb on Metamath](http://us.metamath.org/mpegif/eupickb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eupick | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) |\n| 2 | 1 | #P_3adant2 | |- ( ( E! x ph /\\ E! x ps /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) |\n| 3 |  | #P_exancom | |- ( E. x ( ph /\\ ps ) <-> E. x ( ps /\\ ph ) ) |\n| 4 |  | #P_eupick | |- ( ( E! x ps /\\ E. x ( ps /\\ ph ) ) -> ( ps -> ph ) ) |\n| 5 | 3, 4 | #P_sylan2b | |- ( ( E! x ps /\\ E. x ( ph /\\ ps ) ) -> ( ps -> ph ) ) |\n| 6 | 5 | #P_3adant1 | |- ( ( E! x ph /\\ E! x ps /\\ E. x ( ph /\\ ps ) ) -> ( ps -> ph ) ) |\n| 7 | 2, 6 | #P_impbid | |- ( ( E! x ph /\\ E! x ps /\\ E. x ( ph /\\ ps ) ) -> ( ph <-> ps ) ) |",
+  "conclusion" : "#P_eupickb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_w3a--1", "#T_weu", "#T_vx.wal", "#T_wps", "#T_w3a--2", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wa", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wps", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_w3a--1", "#T_weu", "#T_vx.wal", "#T_wps", "#T_w3a--2", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_weu", "#T_vx", "#T_wph", "#T_w3a--1", "#T_weu", "#T_vx", "#T_wps", "#T_w3a--2", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3adant2", "#P_3adant1", "#P_sylan2b", "#P_eupick", "#P_impbid", "#P_exancom" ]
+}

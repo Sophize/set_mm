@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ldgis on Metamath](http://us.metamath.org/mpegif/df-ldgis.html)"
+  } ],
+  "names" : [ "df-ldgis" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cldgis", "#T_wceq", "#T_vr", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vi", "#T_cmpt--1", "#T_clidl", "#T_cfv", "#T_cpl1", "#T_cfv", "#T_vr", "#T_cmpt--2", "#T_vx", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cab--1", "#T_vj", "#T_cab--2", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_vi", "#T_cdg1", "#T_cfv", "#T_vr", "#T_cfv", "#T_vk", "#T_cle", "#T_vx", "#T_wa", "#T_vj", "#T_wceq", "#T_cco1", "#T_cfv", "#T_vk", "#T_cfv", "#T_vx", "#T_cab--3", "#T_vi", "#T_vj", "#T_vk", "#T_vr", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function which carries polynomial ideals to the sequence of coefficient ideals of leading coefficients of degree- ` x ` elements in the polynomial ideal.  The proof that this map is strictly monotone is the core of the Hilbert Basis Theorem ~ hbt .  (Contributed by Stefan O'Rear, 31-Mar-2015.) ",
+  "statement" : "df-ldgis $p |- ldgIdlSeq = ( r e. _V |-> ( i e. ( LIdeal ` ( Poly1 ` r ) ) |-> ( x e. NN0 |-> { j | E. k e. i ( ( ( deg1 ` r ) ` k ) <_ x /\\ j = ( ( coe1 ` k ) ` x ) ) } ) ) ) $.\n$d i j k r x $."
+}

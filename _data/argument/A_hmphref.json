@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hmphref on Metamath](http://us.metamath.org/mpegif/hmphref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- U. J = U. J |\n| 2 | 1 | #P_toptopon | |- ( J e. Top <-> J e. ( TopOn ` U. J ) ) |\n| 3 |  | #P_idhmeo | |- ( J e. ( TopOn ` U. J ) -> ( _I |` U. J ) e. ( J Homeo J ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( J e. Top -> ( _I |` U. J ) e. ( J Homeo J ) ) |\n| 5 |  | #P_hmphi | |- ( ( _I |` U. J ) e. ( J Homeo J ) -> J ~= J ) |\n| 6 | 4, 5 | #P_syl | |- ( J e. Top -> J ~= J ) |",
+  "conclusion" : "#P_hmphref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wi", "#T_cid", "#T_cres", "#T_cuni", "#T_cJ", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cid", "#T_cres", "#T_cuni", "#T_cJ", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cJ", "#T_cid", "#T_cres", "#T_cuni", "#T_cJ", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cJ", "#T_wi", "#T_cJ", "#T_chmph", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_chmph", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_idhmeo", "#P_syl", "#P_sylbi", "#P_hmphi", "#P_toptopon" ]
+}

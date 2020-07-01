@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lenegcon1 on Metamath](http://us.metamath.org/mpegif/lenegcon1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_renegcl | |- ( A e. RR -> -u A e. RR ) |\n| 2 |  | #P_leneg | |- ( ( -u A e. RR /\\ B e. RR ) -> ( -u A <_ B <-> -u B <_ -u -u A ) ) |\n| 3 | 1, 2 | #P_sylan | |- ( ( A e. RR /\\ B e. RR ) -> ( -u A <_ B <-> -u B <_ -u -u A ) ) |\n| 4 |  | #P_recn | |- ( A e. RR -> A e. CC ) |\n| 5 | 4 | #P_negnegd | |- ( A e. RR -> -u -u A = A ) |\n| 6 | 5 | #P_breq2d | |- ( A e. RR -> ( -u B <_ -u -u A <-> -u B <_ A ) ) |\n| 7 | 6 | #P_adantr | |- ( ( A e. RR /\\ B e. RR ) -> ( -u B <_ -u -u A <-> -u B <_ A ) ) |\n| 8 | 3, 7 | #P_bitrd | |- ( ( A e. RR /\\ B e. RR ) -> ( -u A <_ B <-> -u B <_ A ) ) |",
+  "conclusion" : "#P_lenegcon1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cneg", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_negnegd", "#P_bitrd", "#P_sylan", "#P_breq2d", "#P_leneg", "#P_recn", "#P_renegcl", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfwsuc on Metamath](http://us.metamath.org/mpegif/nfwsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfwsuc.1 | |- F/_ x R |\n| 2 |  | nfwsuc.2 | |- F/_ x A |\n| 3 |  | nfwsuc.3 | |- F/_ x X |\n| 4 |  | #P_df-wsuc | |- wsuc ( R , A , X ) = sup ( Pred ( `' R , A , X ) , A , `' R ) |\n| 5 | 1 | #P_nfcnv | |- F/_ x `' R |\n| 6 | 5, 2, 3 | #P_nfpred | |- F/_ x Pred ( `' R , A , X ) |\n| 7 | 6, 2, 5 | #P_nfsup | |- F/_ x sup ( Pred ( `' R , A , X ) , A , `' R ) |\n| 8 | 4, 7 | #P_nfcxfr | |- F/_ x wsuc ( R , A , X ) |",
+  "conclusion" : "#P_nfwsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cR", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cX", "#T_cwsuc--1", "#T_cR", "#T_cwsuc--2", "#T_cA.wceq", "#T_cwsuc--3", "#T_cX", "#T_wceq", "#T_csup--1", "#T_cpred--1", "#T_ccnv", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_csup--2", "#T_cA.wceq", "#T_csup--3", "#T_ccnv", "#T_cR", "#T_wnfc", "#T_vx.wal", "#T_ccnv", "#T_cR", "#T_wnfc", "#T_vx.wal", "#T_cpred--1", "#T_ccnv", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_wnfc", "#T_vx.wal", "#T_csup--1", "#T_cpred--1", "#T_ccnv", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_csup--2", "#T_cA.wceq", "#T_csup--3", "#T_ccnv", "#T_cR", "#T_wnfc", "#T_vx", "#T_cwsuc--1", "#T_cR", "#T_cwsuc--2", "#T_cA", "#T_cwsuc--3", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcxfr", "#P_nfsup", "#P_nfcnv", "#P_nfpred", "#P_df-wsuc" ]
+}

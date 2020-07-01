@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iserd on Metamath](http://us.metamath.org/mpegif/iserd.html)"
+  } ],
+  "names" : [ "iserd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wrel", "#T_cR", "#T_wph", "#T_wa", "#T_vx", "#T_cR", "#T_vy", "#T_wi", "#T_vy", "#T_cR", "#T_vx", "#T_wph", "#T_wa", "#T_vx", "#T_cR", "#T_vy", "#T_wa", "#T_vy", "#T_cR", "#T_vz", "#T_wi", "#T_vx", "#T_cR", "#T_vz", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wb", "#T_vx", "#T_cR", "#T_vx", "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cA", "#T_cA", "#T_vx", "#T_cR", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A reflexive, symmetric, transitive relation is an equivalence relation on its domain.  (Contributed by Mario Carneiro, 9-Jul-2014.)  (Revised by Mario Carneiro, 12-Aug-2015.) ",
+  "statement" : "iserd.1 $e |- ( ph -> Rel R ) $.\niserd.2 $e |- ( ( ph /\\ x R y ) -> y R x ) $.\niserd.3 $e |- ( ( ph /\\ ( x R y /\\ y R z ) ) -> x R z ) $.\niserd.4 $e |- ( ph -> ( x e. A <-> x R x ) ) $.\niserd $p |- ( ph -> R Er A ) $.\n$d A x $.\n$d R x y z $.\n$d ph x y z $."
+}

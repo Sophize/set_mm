@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfn1dd on Metamath](http://us.metamath.org/mpegif/cnfn1dd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnfn1dd.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | cnfn1dd.2 | |- ( ph -> ( ps -> ( -. ch \\/ th ) ) ) |\n| 3 |  | #P_notnot1 | |- ( ch -> -. -. ch ) |\n| 4 | 1, 3 | #P_syl6 | |- ( ph -> ( ps -> -. -. ch ) ) |\n| 5 | 4, 2 | #P_cnf1dd | |- ( ph -> ( ps -> th ) ) |",
+  "conclusion" : "#P_cnfn1dd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wo", "#T_wth", "#T_wch", "#T_wi", "#T_wn", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot1", "#P_syl6", "#P_cnf1dd" ]
+}

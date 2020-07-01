@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See speano5 on Metamath](http://us.metamath.org/mpegif/speano5.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-omex | |- _om e. _V |\n| 2 |  | #P_bj-inex | |- ( ( _om e. _V /\\ A e. V ) -> ( _om i^i A ) e. _V ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. V -> ( _om i^i A ) e. _V ) |\n| 4 |  | #P_peano5set | |- ( ( _om i^i A ) e. _V -> ( ( (/) e. A /\\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) |\n| 5 | 3, 4 | #P_syl | |- ( A e. V -> ( ( (/) e. A /\\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) |\n| 6 | 5 | #P_3impib | |- ( ( A e. V /\\ (/) e. A /\\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) |",
+  "conclusion" : "#P_speano5",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_com", "#T_cin", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_com", "#T_cin", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_com", "#T_cin", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_com", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_com", "#T_wss", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_w3a--1", "#T_c0", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_com", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_csuc", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_com", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-inex", "#P_mpan", "#P_peano5set", "#P_syl", "#P_bj-omex", "#P_3impib" ]
+}

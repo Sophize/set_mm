@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See curf2ndf on Metamath](http://us.metamath.org/mpegif/curf2ndf.html)"
+  } ],
+  "names" : [ "curf2ndf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_cD", "#T_cfuc", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cC", "#T_c2ndf", "#T_cD", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cQ", "#T_cdiag", "#T_cC", "#T_cfv", "#T_cidfu", "#T_cfv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " As shown in ~ diagval , the currying of the first projection is the diagonal functor.  On the other hand, the currying of the second projection is ` x e. C |-> ( y e. D |-> y ) ` , which is a constant functor of the identity functor at ` D ` .  (Contributed by Mario Carneiro, 15-Jan-2017.) ",
+  "statement" : "curf2ndf.q $e |- Q = ( D FuncCat D ) $.\ncurf2ndf.c $e |- ( ph -> C e. Cat ) $.\ncurf2ndf.d $e |- ( ph -> D e. Cat ) $.\ncurf2ndf $p |- ( ph -> ( <. C , D >. curryF ( C 2ndF D ) ) = ( ( 1st ` ( Q DiagFunc C ) ) ` ( idFunc ` D ) ) ) $."
+}

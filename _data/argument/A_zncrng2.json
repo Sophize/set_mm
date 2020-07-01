@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zncrng2 on Metamath](http://us.metamath.org/mpegif/zncrng2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | znval.s | |- S = ( RSpan ` ZZring ) |\n| 2 |  | znval.u | |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) |\n| 3 |  | #P_zringcrng | |- ZZring e. CRing |\n| 4 | 1 | #P_znlidl | |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) |\n| 5 |  | #P_eqid | |- ( LIdeal ` ZZring ) = ( LIdeal ` ZZring ) |\n| 6 | 2, 5 | #P_quscrng | |- ( ( ZZring e. CRing /\\ ( S ` { N } ) e. ( LIdeal ` ZZring ) ) -> U e. CRing ) |\n| 7 | 3, 4, 6 | #P_sylancr | |- ( N e. ZZ -> U e. CRing ) |",
+  "conclusion" : "#P_zncrng2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_crsp", "#T_cfv", "#T_zring", "#T_cU", "#T_wceq", "#T_zring", "#T_cqus", "#T_zring", "#T_cqg", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_zring", "#T_wcel", "#T_ccrg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_wcel", "#T_clidl", "#T_cfv", "#T_zring", "#T_clidl", "#T_cfv", "#T_zring", "#T_wceq", "#T_clidl", "#T_cfv", "#T_zring", "#T_zring", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_wcel", "#T_clidl", "#T_cfv", "#T_zring", "#T_wi", "#T_cU", "#T_wcel", "#T_ccrg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cU", "#T_wcel", "#T_ccrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_zringcrng", "#P_znlidl", "#P_quscrng", "#P_sylancr" ]
+}

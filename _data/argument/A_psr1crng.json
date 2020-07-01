@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psr1crng on Metamath](http://us.metamath.org/mpegif/psr1crng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psr1val.1 | |- S = ( PwSer1 ` R ) |\n| 2 | 1 | #P_psr1val | |- S = ( ( 1o ordPwSer R ) ` (/) ) |\n| 3 |  | #P_1on | |- 1o e. On |\n| 4 | 3 | #P_a1i | |- ( R e. CRing -> 1o e. On ) |\n| 5 |  | #P_id | |- ( R e. CRing -> R e. CRing ) |\n| 6 |  | #P_0ss | |- (/) C_ ( 1o X. 1o ) |\n| 7 | 6 | #P_a1i | |- ( R e. CRing -> (/) C_ ( 1o X. 1o ) ) |\n| 8 | 2, 4, 5, 7 | #P_opsrcrng | |- ( R e. CRing -> S e. CRing ) |",
+  "conclusion" : "#P_psr1crng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cS", "#T_wceq", "#T_c1o", "#T_copws", "#T_cR", "#T_cfv", "#T_c0", "#T_c1o", "#T_wcel", "#T_con0", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_c1o", "#T_wcel", "#T_con0", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cR", "#T_wcel", "#T_ccrg", "#T_c0", "#T_wss", "#T_c1o", "#T_cxp", "#T_c1o", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_c0", "#T_wss", "#T_c1o", "#T_cxp", "#T_c1o", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cS", "#T_wcel", "#T_ccrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opsrcrng", "#P_1on", "#P_0ss", "#P_a1i", "#P_id", "#P_psr1val" ]
+}

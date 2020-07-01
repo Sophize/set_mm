@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulne0i on Metamath](http://us.metamath.org/mpegif/mulne0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | muln0.1 | |- A e. CC |\n| 2 |  | muln0.2 | |- B e. CC |\n| 3 |  | muln0.3 | |- A =/= 0 |\n| 4 |  | muln0.4 | |- B =/= 0 |\n| 5 |  | #P_mulne0 | |- ( ( ( A e. CC /\\ A =/= 0 ) /\\ ( B e. CC /\\ B =/= 0 ) ) -> ( A x. B ) =/= 0 ) |\n| 6 | 1, 3, 2, 4, 5 | #P_mp4an | |- ( A x. B ) =/= 0 |",
+  "conclusion" : "#P_mulne0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA", "#T_wne", "#T_cc0", "#T_cB", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_cA", "#T_cmul", "#T_cB", "#T_wne", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp4an", "#P_mulne0" ]
+}

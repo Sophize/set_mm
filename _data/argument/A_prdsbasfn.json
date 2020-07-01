@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prdsbasfn on Metamath](http://us.metamath.org/mpegif/prdsbasfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prdsbasmpt.y | |- Y = ( S Xs_ R ) |\n| 2 |  | prdsbasmpt.b | |- B = ( Base ` Y ) |\n| 3 |  | prdsbasmpt.s | |- ( ph -> S e. V ) |\n| 4 |  | prdsbasmpt.i | |- ( ph -> I e. W ) |\n| 5 |  | prdsbasmpt.r | |- ( ph -> R Fn I ) |\n| 6 |  | prdsbasmpt.t | |- ( ph -> T e. B ) |\n| 7 | 1, 2, 3, 4, 5 | #P_prdsbas2 | |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) |\n| 8 | 6, 7 | #P_eleqtrd | |- ( ph -> T e. X_ x e. I ( Base ` ( R ` x ) ) ) |\n| 9 |  | #P_ixpfn | |- ( T e. X_ x e. I ( Base ` ( R ` x ) ) -> T Fn I ) |\n| 10 | 8, 9 | #P_syl | |- ( ph -> T Fn I ) |",
+  "conclusion" : "#P_prdsbasfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cY", "#T_wceq", "#T_cS", "#T_cprds", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cR", "#T_wfn", "#T_cI", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cI", "#T_cbs", "#T_cfv", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cI", "#T_cbs", "#T_cfv", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_cT", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cI", "#T_cbs", "#T_cfv", "#T_cR", "#T_cfv", "#T_vx.wal", "#T_wi", "#T_cT", "#T_wfn", "#T_cI", "#T_wph", "#T_wi", "#T_cT", "#T_wfn", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleqtrd", "#P_ixpfn", "#P_syl", "#P_prdsbas2" ]
+}

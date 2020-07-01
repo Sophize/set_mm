@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsummptfidminv on Metamath](http://us.metamath.org/mpegif/gsummptfidminv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsuminv.b | |- B = ( Base ` G ) |\n| 2 |  | gsuminv.z | |- .0. = ( 0g ` G ) |\n| 3 |  | gsuminv.p | |- I = ( invg ` G ) |\n| 4 |  | gsuminv.g | |- ( ph -> G e. Abel ) |\n| 5 |  | gsummptfidminv.a | |- ( ph -> A e. Fin ) |\n| 6 |  | gsummptfidminv.c | |- ( ( ph /\\ x e. A ) -> C e. B ) |\n| 7 |  | gsummptfidminv.f | |- F = ( x e. A |-> C ) |\n| 8 | 6, 7 | #P_fmptd | |- ( ph -> F : A --> B ) |\n| 9 |  | #P_fvex | |- ( 0g ` G ) e. _V |\n| 10 | 2, 9 | #P_eqeltri | |- .0. e. _V |\n| 11 | 10 | #P_a1i | |- ( ph -> .0. e. _V ) |\n| 12 | 7, 5, 6, 11 | #P_fsuppmptdm | |- ( ph -> F finSupp .0. ) |\n| 13 | 1, 2, 3, 4, 5, 8, 12 | #P_gsuminv | |- ( ph -> ( G gsum ( I o. F ) ) = ( I ` ( G gsum F ) ) ) |",
+  "conclusion" : "#P_gsummptfidminv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cabl", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cB", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_c.0", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_c.0", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_cI", "#T_ccom", "#T_cF", "#T_wceq", "#T_cI", "#T_cfv", "#T_cG", "#T_cgsu", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_gsuminv", "#P_fsuppmptdm", "#P_a1i", "#P_fvex", "#P_fmptd" ]
+}

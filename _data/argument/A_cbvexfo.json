@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvexfo on Metamath](http://us.metamath.org/mpegif/cbvexfo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvfo.1 | |- ( ( F ` x ) = y -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_notbid | |- ( ( F ` x ) = y -> ( -. ph <-> -. ps ) ) |\n| 3 | 2 | #P_cbvfo | |- ( F : A -onto-> B -> ( A. x e. A -. ph <-> A. y e. B -. ps ) ) |\n| 4 | 3 | #P_notbid | |- ( F : A -onto-> B -> ( -. A. x e. A -. ph <-> -. A. y e. B -. ps ) ) |\n| 5 |  | #P_dfrex2 | |- ( E. x e. A ph <-> -. A. x e. A -. ph ) |\n| 6 |  | #P_dfrex2 | |- ( E. y e. B ps <-> -. A. y e. B -. ps ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( F : A -onto-> B -> ( E. x e. A ph <-> E. y e. B ps ) ) |",
+  "conclusion" : "#P_cbvexfo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wps", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_wps", "#T_wb", "#T_wn", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wps", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfrex2", "#P_cbvfo", "#P_3bitr4g", "#P_notbid" ]
+}

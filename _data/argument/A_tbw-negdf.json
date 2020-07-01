@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tbw-negdf on Metamath](http://us.metamath.org/mpegif/tbw-negdf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.21 | |- ( -. ph -> ( ph -> F. ) ) |\n| 2 |  | #P_ax-1 | |- ( -. ph -> ( ( ph -> F. ) -> -. ph ) ) |\n| 3 |  | #P_falim | |- ( F. -> ( ( ph -> F. ) -> -. ph ) ) |\n| 4 | 2, 3 | #P_ja | |- ( ( ph -> F. ) -> ( ( ph -> F. ) -> -. ph ) ) |\n| 5 | 4 | #P_pm2.43i | |- ( ( ph -> F. ) -> -. ph ) |\n| 6 | 1, 5 | #P_impbii | |- ( -. ph <-> ( ph -> F. ) ) |\n| 7 |  | #P_tbw-bijust | |- ( ( -. ph <-> ( ph -> F. ) ) <-> ( ( ( -. ph -> ( ph -> F. ) ) -> ( ( ( ph -> F. ) -> -. ph ) -> F. ) ) -> F. ) ) |\n| 8 | 6, 7 | #P_mpbi | |- ( ( ( -. ph -> ( ph -> F. ) ) -> ( ( ( ph -> F. ) -> -. ph ) -> F. ) ) -> F. ) |",
+  "conclusion" : "#P_tbw-negdf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wi", "#T_wfal", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wi", "#T_wfal", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wfal", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wfal" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_falim", "#P_pm2.43i", "#P_impbii", "#P_pm2.21", "#P_tbw-bijust", "#P_mpbi", "#P_ja", "#P_ax-1" ]
+}

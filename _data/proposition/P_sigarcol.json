@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sigarcol on Metamath](http://us.metamath.org/mpegif/sigarcol.html)"
+  } ],
+  "names" : [ "sigarcol" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_ccj", "#T_cfv", "#T_vx", "#T_cmul", "#T_vy", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_wn", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cC", "#T_cG", "#T_cB", "#T_cmin", "#T_cC", "#T_wceq", "#T_cc0", "#T_wb", "#T_wrex--1", "#T_vt", "#T_wrex--2", "#T_cr", "#T_cC", "#T_wceq", "#T_cB", "#T_caddc", "#T_vt", "#T_cmul", "#T_cA", "#T_cmin", "#T_cB", "#T_cA", "#T_vt", "#T_vx", "#T_vy", "#T_cB", "#T_vt", "#T_vx", "#T_vy", "#T_cC", "#T_vt", "#T_vx", "#T_vy", "#T_cG", "#T_vt", "#T_wph", "#T_vt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Given three points ` A ` , ` B ` and ` C ` such that ` -. A = B ` , the point ` C ` lies on the line going through ` A ` and ` B ` iff the corresponding signed area is zero.  That justifies the usage of signed area as a collinearity indicator.  (Contributed by Saveliy Skresanov, 22-Sep-2017.) ",
+  "statement" : "sigarcol.sigar $e |- G = ( x e. CC , y e. CC |-> ( Im ` ( ( * ` x ) x. y ) ) ) $.\nsigarcol.a $e |- ( ph -> ( A e. CC /\\ B e. CC /\\ C e. CC ) ) $.\nsigarcol.b $e |- ( ph -> -. A = B ) $.\nsigarcol $p |- ( ph -> ( ( ( A - C ) G ( B - C ) ) = 0 <-> E. t e. RR C = ( B + ( t x. ( A - B ) ) ) ) ) $.\n$d A t x y $.\n$d B t x y $.\n$d C t x y $.\n$d G t $.\n$d ph t $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ixpprc on Metamath](http://us.metamath.org/mpegif/ixpprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neq0 | |- ( -. X_ x e. A B = (/) <-> E. f f e. X_ x e. A B ) |\n| 2 |  | #P_ixpfn | |- ( f e. X_ x e. A B -> f Fn A ) |\n| 3 |  | #P_fndm | |- ( f Fn A -> dom f = A ) |\n| 4 |  | #P_vex | |- f e. _V |\n| 5 | 4 | #P_dmex | |- dom f e. _V |\n| 6 | 3, 5 | #P_syl6eqelr | |- ( f Fn A -> A e. _V ) |\n| 7 | 2, 6 | #P_syl | |- ( f e. X_ x e. A B -> A e. _V ) |\n| 8 | 7 | #P_exlimiv | |- ( E. f f e. X_ x e. A B -> A e. _V ) |\n| 9 | 1, 8 | #P_sylbi | |- ( -. X_ x e. A B = (/) -> A e. _V ) |\n| 10 | 9 | #P_con1i | |- ( -. A e. _V -> X_ x e. A B = (/) ) |",
+  "conclusion" : "#P_ixpprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_wn", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_cbvex4v.vf", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_wfn", "#T_cA.wceq", "#T_cbvex4v.vf", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cbvex4v.vf", "#T_wceq", "#T_cA.wceq", "#T_cbvex4v.vf", "#T_wcel", "#T_cvv", "#T_cdm", "#T_cbvex4v.vf", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cbvex4v.vf", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wn", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wn", "#T_cA", "#T_wcel", "#T_cvv", "#T_wi", "#T_cixp--1", "#T_vx", "#T_cixp--2", "#T_cA", "#T_cB", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ixpfn", "#P_exlimiv", "#P_neq0", "#P_syl6eqelr", "#P_con1i", "#P_dmex", "#P_syl", "#P_vex", "#P_fndm", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prodeq2 on Metamath](http://us.metamath.org/mpegif/prodeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( B = C -> ( _I ` B ) = ( _I ` C ) ) |\n| 2 | 1 | #P_ralimi | |- ( A. k e. A B = C -> A. k e. A ( _I ` B ) = ( _I ` C ) ) |\n| 3 |  | #P_prodeq2ii | |- ( A. k e. A ( _I ` B ) = ( _I ` C ) -> prod_ k e. A B = prod_ k e. A C ) |\n| 4 | 2, 3 | #P_syl | |- ( A. k e. A B = C -> prod_ k e. A B = prod_ k e. A C ) |",
+  "conclusion" : "#P_prodeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cC", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cC", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cC", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cC", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cC", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ralimi", "#P_fveq2", "#P_prodeq2ii", "#P_syl" ]
+}

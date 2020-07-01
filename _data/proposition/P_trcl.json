@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trcl on Metamath](http://us.metamath.org/mpegif/trcl.html)"
+  } ],
+  "names" : [ "trcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vz", "#T_cun", "#T_cuni", "#T_vz", "#T_crdg--2", "#T_cA", "#T_cres", "#T_com", "#T_cC", "#T_wceq", "#T_ciun--1", "#T_vy", "#T_ciun--2", "#T_com", "#T_cF", "#T_cfv", "#T_vy", "#T_cA", "#T_wss", "#T_cC", "#T_w3a--1", "#T_wtr", "#T_cC", "#T_w3a--2", "#T_wal", "#T_vx", "#T_cA", "#T_wss", "#T_vx", "#T_wa", "#T_wtr", "#T_vx", "#T_wi", "#T_cC", "#T_wss", "#T_vx", "#T_cA", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For any set ` A ` , show the properties of its transitive closure ` C ` .  Similar to Theorem 9.1 of [TakeutiZaring] p. 73 except that we show an explicit expression for the transitive closure rather than just its existence.  See ~ tz9.1 for an abbreviated version showing existence.  (Contributed by NM, 14-Sep-2003.)  (Revised by Mario Carneiro, 11-Sep-2015.) ",
+  "statement" : "trcl.1 $e |- A e. _V $.\ntrcl.2 $e |- F = ( rec ( ( z e. _V |-> ( z u. U. z ) ) , A ) |` _om ) $.\ntrcl.3 $e |- C = U_ y e. _om ( F ` y ) $.\ntrcl $p |- ( A C_ C /\\ Tr C /\\ A. x ( ( A C_ x /\\ Tr x ) -> C C_ x ) ) $.\n$d A x y $.\n$d F x y $.\n$d x z $."
+}

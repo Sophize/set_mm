@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elfz1eq on Metamath](http://us.metamath.org/mpegif/elfz1eq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elfzle2 | |- ( K e. ( N ... N ) -> K <_ N ) |\n| 2 |  | #P_elfzle1 | |- ( K e. ( N ... N ) -> N <_ K ) |\n| 3 |  | #P_elfzelz | |- ( K e. ( N ... N ) -> K e. ZZ ) |\n| 4 |  | #P_elfzel2 | |- ( K e. ( N ... N ) -> N e. ZZ ) |\n| 5 |  | #P_zre | |- ( K e. ZZ -> K e. RR ) |\n| 6 |  | #P_zre | |- ( N e. ZZ -> N e. RR ) |\n| 7 |  | #P_letri3 | |- ( ( K e. RR /\\ N e. RR ) -> ( K = N <-> ( K <_ N /\\ N <_ K ) ) ) |\n| 8 | 5, 6, 7 | #P_syl2an | |- ( ( K e. ZZ /\\ N e. ZZ ) -> ( K = N <-> ( K <_ N /\\ N <_ K ) ) ) |\n| 9 | 3, 4, 8 | #P_syl2anc | |- ( K e. ( N ... N ) -> ( K = N <-> ( K <_ N /\\ N <_ K ) ) ) |\n| 10 | 1, 2, 9 | #P_mpbir2and | |- ( K e. ( N ... N ) -> K = N ) |",
+  "conclusion" : "#P_elfz1eq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_cle", "#T_cN", "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cN", "#T_cle", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wcel", "#T_cz", "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cK", "#T_wcel", "#T_cz", "#T_wi", "#T_cK", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cK", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cK", "#T_wceq", "#T_cN", "#T_wb", "#T_cK", "#T_cle", "#T_cN", "#T_wa", "#T_cN", "#T_cle", "#T_cK", "#T_cK", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cK", "#T_wceq", "#T_cN", "#T_wb", "#T_cK", "#T_cle", "#T_cN", "#T_wa", "#T_cN", "#T_cle", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wceq", "#T_cN", "#T_wb", "#T_cK", "#T_cle", "#T_cN", "#T_wa", "#T_cN", "#T_cle", "#T_cK", "#T_cK", "#T_wcel", "#T_cN", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wceq", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elfzelz", "#P_syl2anc", "#P_zre", "#P_elfzle2", "#P_letri3", "#P_syl2an", "#P_mpbir2and", "#P_elfzel2", "#P_elfzle1" ]
+}

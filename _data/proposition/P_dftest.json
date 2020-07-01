@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dftest on Metamath](http://us.metamath.org/mpegif/dftest.html)"
+  } ],
+  "names" : [ "dftest" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A proposition is testable iff its negative or double-negative is true. See Chapter 2 [Moschovakis] p. 2. Our notation for testability is ` DECID -. ` before the formula in question.  For example, ` DECID -. x = y ` corresponds to \"x = y is testable\".  (Contributed by David A. Wheeler, 13-Aug-2018.) ",
+  "statement" : "dftest $p |- ( DECID -. ph <-> ( -. ph \\/ -. -. ph ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frindi on Metamath](http://us.metamath.org/mpegif/frindi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frind.1 | |- R Fr A |\n| 2 |  | frind.2 | |- R Se A |\n| 3 |  | #P_frind | |- ( ( ( R Fr A /\\ R Se A ) /\\ ( B C_ A /\\ A. y e. A ( Pred ( R , A , y ) C_ B -> y e. B ) ) ) -> A = B ) |\n| 4 | 1, 2, 3 | #P_mpanl12 | |- ( ( B C_ A /\\ A. y e. A ( Pred ( R , A , y ) C_ B -> y e. B ) ) -> A = B ) |",
+  "conclusion" : "#P_frindi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wfr", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_vy.tru", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB", "#T_wss", "#T_cA", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wss", "#T_cB", "#T_wi", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanl12", "#P_frind" ]
+}

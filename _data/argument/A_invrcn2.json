@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See invrcn2 on Metamath](http://us.metamath.org/mpegif/invrcn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulrcn.j | |- J = ( TopOpen ` R ) |\n| 2 |  | invrcn.i | |- I = ( invr ` R ) |\n| 3 |  | invrcn.u | |- U = ( Unit ` R ) |\n| 4 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 5 | 4, 3 | #P_tdrgunit | |- ( R e. TopDRing -> ( ( mulGrp ` R ) |`s U ) e. TopGrp ) |\n| 6 |  | #P_eqid | |- ( ( mulGrp ` R ) |`s U ) = ( ( mulGrp ` R ) |`s U ) |\n| 7 | 4, 1 | #P_mgptopn | |- J = ( TopOpen ` ( mulGrp ` R ) ) |\n| 8 | 6, 7 | #P_resstopn | |- ( J |`t U ) = ( TopOpen ` ( ( mulGrp ` R ) |`s U ) ) |\n| 9 | 3, 6, 2 | #P_invrfval | |- I = ( invg ` ( ( mulGrp ` R ) |`s U ) ) |\n| 10 | 8, 9 | #P_tgpinv | |- ( ( ( mulGrp ` R ) |`s U ) e. TopGrp -> I e. ( ( J |`t U ) Cn ( J |`t U ) ) ) |\n| 11 | 5, 10 | #P_syl | |- ( R e. TopDRing -> I e. ( ( J |`t U ) Cn ( J |`t U ) ) ) |",
+  "conclusion" : "#P_invrcn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cI", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_wcel", "#T_ctgp", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cJ", "#T_crest", "#T_cU", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_cI", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cU", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_crest", "#T_cU", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cI", "#T_wcel", "#T_cJ", "#T_crest", "#T_cU", "#T_ccn", "#T_cJ", "#T_crest", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_tdrgunit", "#P_invrfval", "#P_syl", "#P_mgptopn", "#P_tgpinv", "#P_resstopn" ]
+}

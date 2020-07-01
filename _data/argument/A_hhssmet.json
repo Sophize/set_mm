@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hhssmet on Metamath](http://us.metamath.org/mpegif/hhssmet.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhssims2.1 | |- W = <. <. ( +h |` ( H X. H ) ) , ( .h |` ( CC X. H ) ) >. , ( normh |` H ) >. |\n| 2 |  | hhssims2.3 | |- D = ( IndMet ` W ) |\n| 3 |  | hhssims2.2 | |- H e. SH |\n| 4 | 1, 3 | #P_hhssnv | |- W e. NrmCVec |\n| 5 | 1, 3 | #P_hhssba | |- H = ( BaseSet ` W ) |\n| 6 | 5, 2 | #P_imsmet | |- ( W e. NrmCVec -> D e. ( Met ` H ) ) |\n| 7 | 4, 6 | #P_ax-mp | |- D e. ( Met ` H ) |",
+  "conclusion" : "#P_hhssmet",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cres", "#T_cH", "#T_cxp", "#T_cH", "#T_cop--2", "#T_csm", "#T_cres", "#T_cc", "#T_cxp", "#T_cH", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cres", "#T_cH", "#T_cop--3", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cW", "#T_cH", "#T_wcel", "#T_csh", "#T_cW", "#T_wcel", "#T_cnv", "#T_cH", "#T_wceq", "#T_cba", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cH", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hhssba", "#P_ax-mp", "#P_imsmet", "#P_hhssnv" ]
+}

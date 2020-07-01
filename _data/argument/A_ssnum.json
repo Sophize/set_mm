@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssnum on Metamath](http://us.metamath.org/mpegif/ssnum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssdomg | |- ( A e. dom card -> ( B C_ A -> B ~<_ A ) ) |\n| 2 | 1 | #P_imp | |- ( ( A e. dom card /\\ B C_ A ) -> B ~<_ A ) |\n| 3 |  | #P_numdom | |- ( ( A e. dom card /\\ B ~<_ A ) -> B e. dom card ) |\n| 4 | 2, 3 | #P_syldan | |- ( ( A e. dom card /\\ B C_ A ) -> B e. dom card ) |",
+  "conclusion" : "#P_ssnum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB", "#T_wss", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cdm", "#T_ccrd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imp", "#P_numdom", "#P_ssdomg", "#P_syldan" ]
+}

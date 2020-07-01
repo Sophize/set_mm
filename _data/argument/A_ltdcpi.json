@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltdcpi on Metamath](http://us.metamath.org/mpegif/ltdcpi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pinn | |- ( A e. N. -> A e. _om ) |\n| 2 |  | #P_pinn | |- ( B e. N. -> B e. _om ) |\n| 3 |  | #P_nndcel | |- ( ( A e. _om /\\ B e. _om ) -> DECID A e. B ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. N. /\\ B e. N. ) -> DECID A e. B ) |\n| 5 |  | #P_ltpiord | |- ( ( A e. N. /\\ B e. N. ) -> ( A <N B <-> A e. B ) ) |\n| 6 | 5 | #P_dcbid | |- ( ( A e. N. /\\ B e. N. ) -> ( DECID A <N B <-> DECID A e. B ) ) |\n| 7 | 4, 6 | #P_mpbird | |- ( ( A e. N. /\\ B e. N. ) -> DECID A <N B ) |",
+  "conclusion" : "#P_ltdcpi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_clti", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_wdc", "#T_cA.wceq", "#T_clti", "#T_cB.wceq", "#T_wb", "#T_wdc", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB", "#T_wcel", "#T_cnpi", "#T_wi", "#T_wdc", "#T_cA", "#T_clti", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nndcel", "#P_ltpiord", "#P_pinn", "#P_syl2an", "#P_dcbid", "#P_mpbird" ]
+}

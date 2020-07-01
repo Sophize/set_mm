@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnsscmcl on Metamath](http://us.metamath.org/mpegif/bnsscmcl.html)"
+  } ],
+  "names" : [ "bnsscmcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cH", "#T_wceq", "#T_css", "#T_cfv", "#T_cU", "#T_cY", "#T_wceq", "#T_cba", "#T_cfv", "#T_cW", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cW", "#T_wcel", "#T_ccbn", "#T_wb", "#T_cY", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A subspace of a Banach space is a Banach space iff it is closed in the norm-induced metric of the parent space.  (Contributed by NM, 1-Feb-2008.)  (New usage is discouraged.) ",
+  "statement" : "bnsscmcl.x $e |- X = ( BaseSet ` U ) $.\nbnsscmcl.d $e |- D = ( IndMet ` U ) $.\nbnsscmcl.j $e |- J = ( MetOpen ` D ) $.\nbnsscmcl.h $e |- H = ( SubSp ` U ) $.\nbnsscmcl.y $e |- Y = ( BaseSet ` W ) $.\nbnsscmcl $p |- ( ( U e. CBan /\\ W e. H ) -> ( W e. CBan <-> Y e. ( Clsd ` J ) ) ) $."
+}

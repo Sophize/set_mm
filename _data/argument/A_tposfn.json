@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tposfn on Metamath](http://us.metamath.org/mpegif/tposfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tposf | |- ( F : ( A X. B ) --> _V -> tpos F : ( B X. A ) --> _V ) |\n| 2 |  | #P_dffn2 | |- ( F Fn ( A X. B ) <-> F : ( A X. B ) --> _V ) |\n| 3 |  | #P_dffn2 | |- ( tpos F Fn ( B X. A ) <-> tpos F : ( B X. A ) --> _V ) |\n| 4 | 1, 2, 3 | #P_3imtr4i | |- ( F Fn ( A X. B ) -> tpos F Fn ( B X. A ) ) |",
+  "conclusion" : "#P_tposfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cvv", "#T_wi", "#T_ctpos", "#T_cF", "#T_wf--1", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wf--2", "#T_cvv", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cvv", "#T_ctpos", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wb", "#T_ctpos", "#T_cF", "#T_wf--1", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wf--2", "#T_cvv", "#T_cF", "#T_wfn", "#T_cA", "#T_cxp", "#T_cB", "#T_wi", "#T_ctpos", "#T_cF", "#T_wfn", "#T_cB", "#T_cxp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3imtr4i", "#P_tposf", "#P_dffn2" ]
+}

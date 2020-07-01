@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1ovi on Metamath](http://us.metamath.org/mpegif/f1ovi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1oi | |- ( _I |` _V ) : _V -1-1-onto-> _V |\n| 2 |  | #P_reli | |- Rel _I |\n| 3 |  | #P_dfrel3 | |- ( Rel _I <-> ( _I |` _V ) = _I ) |\n| 4 | 2, 3 | #P_mpbi | |- ( _I |` _V ) = _I |\n| 5 |  | #P_f1oeq1 | |- ( ( _I |` _V ) = _I -> ( ( _I |` _V ) : _V -1-1-onto-> _V <-> _I : _V -1-1-onto-> _V ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( ( _I |` _V ) : _V -1-1-onto-> _V <-> _I : _V -1-1-onto-> _V ) |\n| 7 | 1, 6 | #P_mpbi | |- _I : _V -1-1-onto-> _V |",
+  "conclusion" : "#P_f1ovi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cid", "#T_cres", "#T_cvv", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_wrel", "#T_cid", "#T_wrel", "#T_cid", "#T_wb", "#T_cid", "#T_cres", "#T_cvv", "#T_wceq", "#T_cid", "#T_cid", "#T_cres", "#T_cvv", "#T_wceq", "#T_cid", "#T_cid", "#T_cres", "#T_cvv", "#T_wceq", "#T_cid", "#T_wi", "#T_cid", "#T_cres", "#T_cvv", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_wb", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_cid", "#T_cres", "#T_cvv", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_wb", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv", "#T_cid", "#T_wf1o--1", "#T_cvv", "#T_wf1o--2", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1oi", "#P_ax-mp", "#P_mpbi", "#P_dfrel3", "#P_f1oeq1", "#P_reli" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See omelon2 on Metamath](http://us.metamath.org/mpegif/omelon2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_omon | |- ( _om e. On \\/ _om = On ) |\n| 2 | 1 | #P_ori | |- ( -. _om e. On -> _om = On ) |\n| 3 |  | #P_onprc | |- -. On e. _V |\n| 4 |  | #P_eleq1 | |- ( _om = On -> ( _om e. _V <-> On e. _V ) ) |\n| 5 | 3, 4 | #P_mtbiri | |- ( _om = On -> -. _om e. _V ) |\n| 6 | 2, 5 | #P_syl | |- ( -. _om e. On -> -. _om e. _V ) |\n| 7 | 6 | #P_con4i | |- ( _om e. _V -> _om e. On ) |",
+  "conclusion" : "#P_omelon2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_com", "#T_wcel", "#T_con0", "#T_wo", "#T_com", "#T_wceq", "#T_con0", "#T_wn", "#T_com", "#T_wcel", "#T_con0", "#T_wi", "#T_com", "#T_wceq", "#T_con0", "#T_wn", "#T_con0", "#T_wcel", "#T_cvv", "#T_com", "#T_wceq", "#T_con0", "#T_wi", "#T_com", "#T_wcel", "#T_cvv", "#T_wb", "#T_con0", "#T_wcel", "#T_cvv", "#T_com", "#T_wceq", "#T_con0", "#T_wi", "#T_wn", "#T_com", "#T_wcel", "#T_cvv", "#T_wn", "#T_com", "#T_wcel", "#T_con0", "#T_wi", "#T_wn", "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_com", "#T_wcel", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_omon", "#P_eleq1", "#P_onprc", "#P_ori", "#P_syl", "#P_con4i", "#P_mtbiri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See plpv on Metamath](http://us.metamath.org/mpegif/plpv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf g h u v\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-plp | |- +P. = ( u e. P. , v e. P. |-> { f | E. g e. u E. h e. v f = ( g +Q h ) } ) |\n| 2 |  | #P_addclnq | |- ( ( g e. Q. /\\ h e. Q. ) -> ( g +Q h ) e. Q. ) |\n| 3 | 1, 2 | #P_genpv | |- ( ( A e. P. /\\ B e. P. ) -> ( A +P. B ) = { x | E. y e. A E. z e. B x = ( y +Q z ) } ) |",
+  "conclusion" : "#P_plpv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_vg", "#T_vh", "#T_vu", "#T_vv", "#T_cpp", "#T_wceq", "#T_vu", "#T_cmpt2--1", "#T_cnp", "#T_cmpt2--2", "#T_vv", "#T_cmpt2--3", "#T_cnp", "#T_cmpt2--4", "#T_cab--1", "#T_cbvex4v.vf", "#T_cab--2", "#T_wrex--1", "#T_cbvex4v.vg", "#T_wrex--2", "#T_vu", "#T_wrex--1", "#T_vh", "#T_wrex--2", "#T_vv", "#T_cbvex4v.vf", "#T_wceq", "#T_cbvex4v.vg", "#T_cplq", "#T_vh", "#T_cab--3", "#T_cbvex4v.vg", "#T_wcel", "#T_cnq", "#T_wa", "#T_vh", "#T_wcel", "#T_cnq", "#T_wi", "#T_cbvex4v.vg", "#T_cplq", "#T_vh", "#T_wcel", "#T_cnq", "#T_cA", "#T_wcel", "#T_cnp", "#T_wa", "#T_cB", "#T_wcel", "#T_cnp", "#T_wi", "#T_cA", "#T_cpp", "#T_cB", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cA", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cB", "#T_vx", "#T_wceq", "#T_vy", "#T_cplq", "#T_vz", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addclnq", "#P_genpv", "#P_df-plp" ]
+}

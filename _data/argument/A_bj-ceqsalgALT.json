@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-ceqsalgALT on Metamath](http://us.metamath.org/mpegif/bj-ceqsalgALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ceqsalg.1 | |- F/ x ps |\n| 2 |  | ceqsalg.2 | |- ( x = A -> ( ph <-> ps ) ) |\n| 3 | 2 | #P_ax-gen | |- A. x ( x = A -> ( ph <-> ps ) ) |\n| 4 |  | #P_bj-ceqsalt | |- ( ( F/ x ps /\\ A. x ( x = A -> ( ph <-> ps ) ) /\\ A e. V ) -> ( A. x ( x = A -> ph ) <-> ps ) ) |\n| 5 | 1, 3, 4 | #P_mp3an12 | |- ( A e. V -> ( A. x ( x = A -> ph ) <-> ps ) ) |\n\\\n Alternate proof of ~ bj-ceqsalg .  (Contributed by BJ, 12-Oct-2019.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_ceqsalg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_w3a--1", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an12", "#P_bj-ceqsalt", "#P_ax-gen" ]
+}

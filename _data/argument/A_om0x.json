@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See om0x on Metamath](http://us.metamath.org/mpegif/om0x.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_om0 | |- ( A e. On -> ( A .o (/) ) = (/) ) |\n| 2 | 1 | #P_adantr | |- ( ( A e. On /\\ (/) e. On ) -> ( A .o (/) ) = (/) ) |\n| 3 |  | #P_fnom | |- .o Fn ( On X. On ) |\n| 4 |  | #P_fndm | |- ( .o Fn ( On X. On ) -> dom .o = ( On X. On ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- dom .o = ( On X. On ) |\n| 6 | 5 | #P_ndmov | |- ( -. ( A e. On /\\ (/) e. On ) -> ( A .o (/) ) = (/) ) |\n| 7 | 2, 6 | #P_pm2.61i | |- ( A .o (/) ) = (/) |",
+  "conclusion" : "#P_om0x",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_c0", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_wceq", "#T_c0", "#T_comu", "#T_wfn", "#T_con0", "#T_cxp", "#T_con0", "#T_comu", "#T_wfn", "#T_con0", "#T_cxp", "#T_con0", "#T_wi", "#T_cdm", "#T_comu", "#T_wceq", "#T_con0", "#T_cxp", "#T_con0", "#T_cdm", "#T_comu", "#T_wceq", "#T_con0", "#T_cxp", "#T_con0", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_c0", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_wceq", "#T_c0", "#T_cA", "#T_comu", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fnom", "#P_ax-mp", "#P_ndmov", "#P_fndm", "#P_om0", "#P_adantr", "#P_pm2.61i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-umgra on Metamath](http://us.metamath.org/mpegif/df-umgra.html)"
+  } ],
+  "names" : [ "df-umgra" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cumg", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vv", "#T_copab--3", "#T_ve", "#T_copab--4", "#T_copab--5", "#T_ve", "#T_wf--1", "#T_cdm", "#T_ve", "#T_wf--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cpw", "#T_vv", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx", "#T_cle", "#T_c2", "#T_crab--4", "#T_copab--6", "#T_ve", "#T_vv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all undirected multigraphs.  A multigraph is a pair ` <. V , E >. ` where ` E ` is a function into subsets of ` V ` of cardinality one or two, representing the two vertices incident to the edge, or the one vertex if the edge is a loop.  (Contributed by Mario Carneiro, 11-Mar-2015.) ",
+  "statement" : "df-umgra $p |- UMGrph = { <. v , e >. | e : dom e --> { x e. ( ~P v \\ { (/) } ) | ( # ` x ) <_ 2 } } $.\n$d e v x $."
+}

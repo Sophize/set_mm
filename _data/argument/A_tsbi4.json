@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsbi4 on Metamath](http://us.metamath.org/mpegif/tsbi4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tsbi3 | |- ( th -> ( ( ps \\/ -. ph ) \\/ -. ( ps <-> ph ) ) ) |\n| 2 |  | #P_orcom | |- ( ( ps \\/ -. ph ) <-> ( -. ph \\/ ps ) ) |\n| 3 |  | #P_bicom | |- ( ( ps <-> ph ) <-> ( ph <-> ps ) ) |\n| 4 | 3 | #P_notbii | |- ( -. ( ps <-> ph ) <-> -. ( ph <-> ps ) ) |\n| 5 | 2, 4 | #P_orbi12i | |- ( ( ( ps \\/ -. ph ) \\/ -. ( ps <-> ph ) ) <-> ( ( -. ph \\/ ps ) \\/ -. ( ph <-> ps ) ) ) |\n| 6 | 1, 5 | #P_sylib | |- ( th -> ( ( -. ph \\/ ps ) \\/ -. ( ph <-> ps ) ) ) |",
+  "conclusion" : "#P_tsbi4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wth", "#T_wi", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wth", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_orbi12i", "#P_orcom", "#P_bicom", "#P_sylib", "#P_tsbi3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfis2f on Metamath](http://us.metamath.org/mpegif/tfis2f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfis2f.1 | |- F/ x ps |\n| 2 |  | tfis2f.2 | |- ( x = y -> ( ph <-> ps ) ) |\n| 3 |  | tfis2f.3 | |- ( x e. On -> ( A. y e. x ps -> ph ) ) |\n| 4 | 1, 2 | #P_sbie | |- ( [ y / x ] ph <-> ps ) |\n| 5 | 4 | #P_ralbii | |- ( A. y e. x [ y / x ] ph <-> A. y e. x ps ) |\n| 6 | 5, 3 | #P_syl5bi | |- ( x e. On -> ( A. y e. x [ y / x ] ph -> ph ) ) |\n| 7 | 6 | #P_tfis | |- ( x e. On -> ph ) |",
+  "conclusion" : "#P_tfis2f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_wps", "#T_wi", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_wps", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wph", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tfis", "#P_sbie", "#P_syl5bi", "#P_ralbii" ]
+}

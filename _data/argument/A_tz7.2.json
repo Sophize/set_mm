@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tz7.2 on Metamath](http://us.metamath.org/mpegif/tz7.2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_trss | |- ( Tr A -> ( B e. A -> B C_ A ) ) |\n| 2 |  | #P_efrirr | |- ( _E Fr A -> -. A e. A ) |\n| 3 |  | #P_eleq1 | |- ( B = A -> ( B e. A <-> A e. A ) ) |\n| 4 | 3 | #P_notbid | |- ( B = A -> ( -. B e. A <-> -. A e. A ) ) |\n| 5 | 2, 4 | #P_syl5ibrcom | |- ( _E Fr A -> ( B = A -> -. B e. A ) ) |\n| 6 | 5 | #P_necon2ad | |- ( _E Fr A -> ( B e. A -> B =/= A ) ) |\n| 7 | 1, 6 | #P_anim12ii | |- ( ( Tr A /\\ _E Fr A ) -> ( B e. A -> ( B C_ A /\\ B =/= A ) ) ) |\n| 8 | 7 | #P_3impia | |- ( ( Tr A /\\ _E Fr A /\\ B e. A ) -> ( B C_ A /\\ B =/= A ) ) |",
+  "conclusion" : "#P_tz7.2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_wtr", "#T_cA.wceq", "#T_wa", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_wtr", "#T_cA", "#T_w3a--1", "#T_cep", "#T_wfr", "#T_cA", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wss", "#T_cA", "#T_wa", "#T_cB", "#T_wne", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anim12ii", "#P_eleq1", "#P_3impia", "#P_syl5ibrcom", "#P_notbid", "#P_trss", "#P_necon2ad", "#P_efrirr" ]
+}

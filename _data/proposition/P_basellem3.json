@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See basellem3 on Metamath](http://us.metamath.org/mpegif/basellem3.html)"
+  } ],
+  "names" : [ "basellem3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wceq", "#T_c2", "#T_cmul", "#T_cM", "#T_caddc", "#T_c1", "#T_cP", "#T_wceq", "#T_vt", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cM", "#T_cN", "#T_cbc", "#T_c2", "#T_cmul", "#T_vj", "#T_cmul", "#T_cneg", "#T_c1", "#T_cexp", "#T_cM", "#T_cmin", "#T_vj", "#T_cmul", "#T_vt", "#T_cexp", "#T_vj", "#T_cM", "#T_wcel", "#T_cn", "#T_wa", "#T_cA", "#T_wcel", "#T_cc0", "#T_cioo", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wi", "#T_cP", "#T_cfv", "#T_ctan", "#T_cfv", "#T_cA", "#T_cexp", "#T_cneg", "#T_c2", "#T_wceq", "#T_csin", "#T_cfv", "#T_cN", "#T_cmul", "#T_cA", "#T_cdiv", "#T_csin", "#T_cfv", "#T_cA", "#T_cexp", "#T_cN", "#T_cA", "#T_vj", "#T_vt", "#T_cM", "#T_vj", "#T_vt", "#T_cN", "#T_vj", "#T_vt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ basel .  Using the binomial theorem and de Moivre's formula, we have the identity ` _e ^ _i N x / ( sin x ) ^ n = ` ` sum_ m e. ( 0 ... N ) ( N _C m ) ( _i ^ m ) ( cot x ) ^ ( N - m ) ` , so taking imaginary parts yields ` sin ( N x ) / ( sin x ) ^ N = ` ` sum_ j e. ( 0 ... M ) ( N _C 2 j ) ( -u 1 ) ^ ( M - j ) ` ` ( cot x ) ^ ( -u 2 j ) = P ( ( cot x ) ^ 2 ) ` , where ` N = 2 M + 1 ` .  (Contributed by Mario Carneiro, 30-Jul-2014.) ",
+  "statement" : "basel.n $e |- N = ( ( 2 x. M ) + 1 ) $.\nbasel.p $e |- P = ( t e. CC |-> sum_ j e. ( 0 ... M ) ( ( ( N _C ( 2 x. j ) ) x. ( -u 1 ^ ( M - j ) ) ) x. ( t ^ j ) ) ) $.\nbasellem3 $p |- ( ( M e. NN /\\ A e. ( 0 (,) ( _pi / 2 ) ) ) -> ( P ` ( ( tan ` A ) ^ -u 2 ) ) = ( ( sin ` ( N x. A ) ) / ( ( sin ` A ) ^ N ) ) ) $.\n$d A j t $.\n$d M j t $.\n$d N j t $."
+}

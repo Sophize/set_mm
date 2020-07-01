@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgtopon on Metamath](http://us.metamath.org/mpegif/tgtopon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tgcl | |- ( B e. TopBases -> ( topGen ` B ) e. Top ) |\n| 2 |  | #P_unitg | |- ( B e. TopBases -> U. ( topGen ` B ) = U. B ) |\n| 3 | 2 | #P_eqcomd | |- ( B e. TopBases -> U. B = U. ( topGen ` B ) ) |\n| 4 |  | #P_istopon | |- ( ( topGen ` B ) e. ( TopOn ` U. B ) <-> ( ( topGen ` B ) e. Top /\\ U. B = U. ( topGen ` B ) ) ) |\n| 5 | 1, 3, 4 | #P_sylanbrc | |- ( B e. TopBases -> ( topGen ` B ) e. ( TopOn ` U. B ) ) |",
+  "conclusion" : "#P_tgtopon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_ctb", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_cB.wceq", "#T_wcel", "#T_ctb", "#T_wi", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_ctb", "#T_wi", "#T_cuni", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cB.wceq", "#T_wb", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_ctop", "#T_wa", "#T_cuni", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_ctg", "#T_cfv", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_ctb", "#T_wi", "#T_ctg", "#T_cfv", "#T_cB", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgcl", "#P_istopon", "#P_eqcomd", "#P_sylanbrc", "#P_unitg" ]
+}

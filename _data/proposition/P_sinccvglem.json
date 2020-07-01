@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sinccvglem on Metamath](http://us.metamath.org/mpegif/sinccvglem.html)"
+  } ],
+  "names" : [ "sinccvglem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cr", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wph", "#T_wi", "#T_cF", "#T_cli", "#T_cc0", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt--2", "#T_csin", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vx", "#T_cH", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_c1", "#T_cmin", "#T_vx", "#T_cexp", "#T_c2", "#T_cdiv", "#T_c3", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_clt", "#T_c1", "#T_wph", "#T_wi", "#T_cG", "#T_ccom", "#T_cF", "#T_cli", "#T_c1", "#T_cF", "#T_vk", "#T_vx", "#T_cG", "#T_vk", "#T_cH", "#T_vk", "#T_cM", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " ` ( ( sin `` x ) / x ) ~~> 1 ` as (real) ` x ~~> 0 ` .  (Contributed by Paul Chapman, 10-Nov-2012.)  (Revised by Mario Carneiro, 21-May-2014.) ",
+  "statement" : "sinccvg.1 $e |- ( ph -> F : NN --> ( RR \\ { 0 } ) ) $.\nsinccvg.2 $e |- ( ph -> F ~~> 0 ) $.\nsinccvg.3 $e |- G = ( x e. ( RR \\ { 0 } ) |-> ( ( sin ` x ) / x ) ) $.\nsinccvg.4 $e |- H = ( x e. CC |-> ( 1 - ( ( x ^ 2 ) / 3 ) ) ) $.\nsinccvg.5 $e |- ( ph -> M e. NN ) $.\nsinccvg.6 $e |- ( ( ph /\\ k e. ( ZZ>= ` M ) ) -> ( abs ` ( F ` k ) ) < 1 ) $.\nsinccvglem $p |- ( ph -> ( G o. F ) ~~> 1 ) $.\n$d F k x $.\n$d G k $.\n$d H k $.\n$d M k $.\n$d k ph $."
+}

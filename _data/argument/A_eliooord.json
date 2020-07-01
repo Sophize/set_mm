@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eliooord on Metamath](http://us.metamath.org/mpegif/eliooord.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eliooxr | |- ( A e. ( B (,) C ) -> ( B e. RR* /\\ C e. RR* ) ) |\n| 2 |  | #P_elioo2 | |- ( ( B e. RR* /\\ C e. RR* ) -> ( A e. ( B (,) C ) <-> ( A e. RR /\\ B < A /\\ A < C ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. ( B (,) C ) -> ( A e. ( B (,) C ) <-> ( A e. RR /\\ B < A /\\ A < C ) ) ) |\n| 4 | 3 | #P_ibi | |- ( A e. ( B (,) C ) -> ( A e. RR /\\ B < A /\\ A < C ) ) |\n| 5 |  | #P_3simpc | |- ( ( A e. RR /\\ B < A /\\ A < C ) -> ( B < A /\\ A < C ) ) |\n| 6 | 4, 5 | #P_syl | |- ( A e. ( B (,) C ) -> ( B < A /\\ A < C ) ) |",
+  "conclusion" : "#P_eliooord",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cC", "#T_wcel", "#T_cxr", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cC", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cA", "#T_wcel", "#T_cB", "#T_cioo", "#T_cC", "#T_wi", "#T_cB", "#T_clt", "#T_cA", "#T_wa", "#T_cA", "#T_clt", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eliooxr", "#P_ibi", "#P_elioo2", "#P_syl", "#P_3simpc" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-ifid3g on Metamath](http://us.metamath.org/mpegif/bj-ifid3g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_olc | |- ( ch -> ( ph \\/ ch ) ) |\n| 2 | 1, 1 | #P_pm3.2i | |- ( ( ch -> ( ph \\/ ch ) ) /\\ ( ch -> ( ph \\/ ch ) ) ) |\n| 3 |  | #P_bj-ifidg | |- ( ( ch <-> if- ( ph , ps , ch ) ) <-> ( ( ( ( ph /\\ ps ) -> ch ) /\\ ( ( ph /\\ ch ) -> ps ) ) /\\ ( ( ch -> ( ph \\/ ch ) ) /\\ ( ch -> ( ph \\/ ch ) ) ) ) ) |\n| 4 | 2, 3 | #P_mpbiran2 | |- ( ( ch <-> if- ( ph , ps , ch ) ) <-> ( ( ( ph /\\ ps ) -> ch ) /\\ ( ( ph /\\ ch ) -> ps ) ) ) |",
+  "conclusion" : "#P_bj-ifid3g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wch", "#T_wb", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wph", "#T_wa", "#T_wch", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wch", "#T_wb", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wph", "#T_wa", "#T_wch", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiran2", "#P_olc", "#P_bj-ifidg", "#P_pm3.2i" ]
+}

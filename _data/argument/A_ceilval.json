@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ceilval on Metamath](http://us.metamath.org/mpegif/ceilval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_negeq | |- ( x = A -> -u x = -u A ) |\n| 2 | 1 | #P_fveq2d | |- ( x = A -> ( |_ ` -u x ) = ( |_ ` -u A ) ) |\n| 3 | 2 | #P_negeqd | |- ( x = A -> -u ( |_ ` -u x ) = -u ( |_ ` -u A ) ) |\n| 4 |  | #P_df-ceil | |- |^ = ( x e. RR |-> -u ( |_ ` -u x ) ) |\n| 5 |  | #P_negex | |- -u ( |_ ` -u A ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( A e. RR -> ( |^ ` A ) = -u ( |_ ` -u A ) ) |",
+  "conclusion" : "#P_ceilval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cneg", "#T_vx.wal", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cfl", "#T_cfv", "#T_cneg", "#T_vx.wal", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_vx.wal", "#T_wceq", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_cceil", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_vx.wal", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cceil", "#T_cfv", "#T_cA", "#T_wceq", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_negex", "#P_fveq2d", "#P_negeqd", "#P_df-ceil", "#P_negeq" ]
+}

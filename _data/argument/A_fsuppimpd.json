@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsuppimpd on Metamath](http://us.metamath.org/mpegif/fsuppimpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fsuppimpd.f | |- ( ph -> F finSupp Z ) |\n| 2 |  | #P_fsuppimp | |- ( F finSupp Z -> ( Fun F /\\ ( F supp Z ) e. Fin ) ) |\n| 3 | 2 | #P_simprd | |- ( F finSupp Z -> ( F supp Z ) e. Fin ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> ( F supp Z ) e. Fin ) |",
+  "conclusion" : "#P_fsuppimpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wi", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fsuppimp", "#P_syl", "#P_simprd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnophdi on Metamath](http://us.metamath.org/mpegif/lnophdi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lnopco.1 | |- S e. LinOp |\n| 2 |  | lnopco.2 | |- T e. LinOp |\n| 3 | 1 | #P_lnopfi | |- S : ~H --> ~H |\n| 4 | 2 | #P_lnopfi | |- T : ~H --> ~H |\n| 5 | 3, 4 | #P_honegsubi | |- ( S +op ( -u 1 .op T ) ) = ( S -op T ) |\n| 6 |  | #P_neg1cn | |- -u 1 e. CC |\n| 7 | 2 | #P_lnopmi | |- ( -u 1 e. CC -> ( -u 1 .op T ) e. LinOp ) |\n| 8 | 6, 7 | #P_ax-mp | |- ( -u 1 .op T ) e. LinOp |\n| 9 | 1, 8 | #P_lnophsi | |- ( S +op ( -u 1 .op T ) ) e. LinOp |\n| 10 | 5, 9 | #P_eqeltrri | |- ( S -op T ) e. LinOp |",
+  "conclusion" : "#P_lnophdi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_clo", "#T_cT", "#T_wcel", "#T_clo", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_chos", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wceq", "#T_cS", "#T_chod", "#T_cT", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wcel", "#T_clo", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wcel", "#T_clo", "#T_cS", "#T_chos", "#T_cneg", "#T_c1", "#T_chot", "#T_cT", "#T_wcel", "#T_clo", "#T_cS", "#T_chod", "#T_cT", "#T_wcel", "#T_clo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_neg1cn", "#P_lnopmi", "#P_honegsubi", "#P_lnophsi", "#P_lnopfi", "#P_eqeltrri" ]
+}

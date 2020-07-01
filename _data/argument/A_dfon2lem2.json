@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfon2lem2 on Metamath](http://us.metamath.org/mpegif/dfon2lem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simp1 | |- ( ( x C_ A /\\ ph /\\ ps ) -> x C_ A ) |\n| 2 | 1 | #P_ss2abi | |- { x | ( x C_ A /\\ ph /\\ ps ) } C_ { x | x C_ A } |\n| 3 |  | #P_df-pw | |- ~P A = { x | x C_ A } |\n| 4 | 2, 3 | #P_sseqtr4i | |- { x | ( x C_ A /\\ ph /\\ ps ) } C_ ~P A |\n| 5 |  | #P_sspwuni | |- ( { x | ( x C_ A /\\ ph /\\ ps ) } C_ ~P A <-> U. { x | ( x C_ A /\\ ph /\\ ps ) } C_ A ) |\n| 6 | 4, 5 | #P_mpbi | |- U. { x | ( x C_ A /\\ ph /\\ ps ) } C_ A |",
+  "conclusion" : "#P_dfon2lem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_cpw", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cab--3", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cA.wceq", "#T_cuni", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_wss", "#T_cA", "#T_w3a--1", "#T_wph", "#T_w3a--2", "#T_wps", "#T_cab--3", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbi", "#P_df-pw", "#P_sseqtr4i", "#P_simp1", "#P_ss2abi", "#P_sspwuni" ]
+}

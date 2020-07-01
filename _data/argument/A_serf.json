@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See serf on Metamath](http://us.metamath.org/mpegif/serf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | serf.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | serf.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | serf.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) e. CC ) |\n| 4 |  | #P_addcl | |- ( ( k e. CC /\\ x e. CC ) -> ( k + x ) e. CC ) |\n| 5 | 4 | #P_adantl | |- ( ( ph /\\ ( k e. CC /\\ x e. CC ) ) -> ( k + x ) e. CC ) |\n| 6 | 1, 2, 3, 5 | #P_seqf | |- ( ph -> seq M ( + , F ) : Z --> CC ) |",
+  "conclusion" : "#P_serf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cc", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_vk", "#T_caddc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_vk", "#T_caddc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_addcl", "#P_seqf" ]
+}

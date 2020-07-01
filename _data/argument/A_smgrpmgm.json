@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See smgrpmgm on Metamath](http://us.metamath.org/mpegif/smgrpmgm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | smgrpmgm.1 | |- X = dom dom G |\n| 2 | 1 | #P_issmgrpOLD | |- ( G e. SemiGrp -> ( G e. SemiGrp <-> ( G : ( X X. X ) --> X /\\ A. x e. X A. y e. X A. z e. X ( ( x G y ) G z ) = ( x G ( y G z ) ) ) ) ) |\n| 3 |  | #P_simpl | |- ( ( G : ( X X. X ) --> X /\\ A. x e. X A. y e. X A. z e. X ( ( x G y ) G z ) = ( x G ( y G z ) ) ) -> G : ( X X. X ) --> X ) |\n| 4 | 2, 3 | #P_syl6bi | |- ( G e. SemiGrp -> ( G e. SemiGrp -> G : ( X X. X ) --> X ) ) |\n| 5 | 4 | #P_pm2.43i | |- ( G e. SemiGrp -> G : ( X X. X ) --> X ) |",
+  "conclusion" : "#P_smgrpmgm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cG", "#T_cG", "#T_wcel", "#T_csem", "#T_wi", "#T_cG", "#T_wcel", "#T_csem", "#T_wb", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_cG", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_cG", "#T_vz", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_cG", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_cG", "#T_vz", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cG", "#T_wcel", "#T_csem", "#T_wi", "#T_cG", "#T_wcel", "#T_csem", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cG", "#T_wcel", "#T_csem", "#T_wi", "#T_cG", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_syl6bi", "#P_simpl", "#P_issmgrpOLD" ]
+}

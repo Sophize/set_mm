@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wwlkextprop on Metamath](http://us.metamath.org/mpegif/wwlkextprop.html)"
+  } ],
+  "names" : [ "wwlkextprop" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cV", "#T_cwwlkn", "#T_cE", "#T_cfv", "#T_cN", "#T_caddc", "#T_c1", "#T_cY", "#T_wceq", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_cV", "#T_cwwlkn", "#T_cE", "#T_cfv", "#T_cN", "#T_crab--3", "#T_vw", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cP", "#T_crab--4", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cX", "#T_crab--3", "#T_vx", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cP", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cX", "#T_crab--3", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cY", "#T_vx", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cN", "#T_caddc", "#T_c1", "#T_cop--3", "#T_wceq", "#T_vy", "#T_w3a--1", "#T_vy", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cP", "#T_w3a--2", "#T_cpr--1", "#T_clsw", "#T_cfv", "#T_vy", "#T_cpr--2", "#T_clsw", "#T_cfv", "#T_vx", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_crab--4", "#T_cE", "#T_vw", "#T_vy", "#T_cN", "#T_vw", "#T_vx", "#T_vy", "#T_cP", "#T_vw", "#T_vy", "#T_cV", "#T_vw", "#T_cX", "#T_vy", "#T_cY", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Adding additional properties to the set of walks (as words) of a fixed length starting at a fixed vertex.  (Contributed by Alexander van der Vekens, 1-Aug-2018.) ",
+  "statement" : "wwlkextprop.x $e |- X = ( ( V WWalksN E ) ` ( N + 1 ) ) $.\nwwlkextprop.y $e |- Y = { w e. ( ( V WWalksN E ) ` N ) | ( w ` 0 ) = P } $.\nwwlkextprop $p |- ( N e. NN0 -> { x e. X | ( x ` 0 ) = P } = { x e. X | E. y e. Y ( ( x substr <. 0 , ( N + 1 ) >. ) = y /\\ ( y ` 0 ) = P /\\ { ( lastS ` y ) , ( lastS ` x ) } e. ran E ) } ) $.\n$d E w y $.\n$d N w x y $.\n$d P w y $.\n$d V w $.\n$d X y $.\n$d Y y $."
+}

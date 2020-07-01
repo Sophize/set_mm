@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordsson on Metamath](http://us.metamath.org/mpegif/ordsson.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordon | |- Ord On |\n| 2 |  | #P_ordeleqon | |- ( Ord A <-> ( A e. On \\/ A = On ) ) |\n| 3 | 2 | #P_biimpi | |- ( Ord A -> ( A e. On \\/ A = On ) ) |\n| 4 | 3 | #P_adantr | |- ( ( Ord A /\\ Ord On ) -> ( A e. On \\/ A = On ) ) |\n| 5 |  | #P_ordsseleq | |- ( ( Ord A /\\ Ord On ) -> ( A C_ On <-> ( A e. On \\/ A = On ) ) ) |\n| 6 | 4, 5 | #P_mpbird | |- ( ( Ord A /\\ Ord On ) -> A C_ On ) |\n| 7 | 1, 6 | #P_mpan2 | |- ( Ord A -> A C_ On ) |",
+  "conclusion" : "#P_ordsson",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_con0", "#T_word", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_word", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_con0", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_con0", "#T_word", "#T_cA", "#T_wi", "#T_cA", "#T_wss", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordon", "#P_ordsseleq", "#P_biimpi", "#P_mpan2", "#P_adantr", "#P_ordeleqon", "#P_mpbird" ]
+}

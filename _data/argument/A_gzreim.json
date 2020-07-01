@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gzreim on Metamath](http://us.metamath.org/mpegif/gzreim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zgz | |- ( A e. ZZ -> A e. Z[i] ) |\n| 2 |  | #P_igz | |- _i e. Z[i] |\n| 3 |  | #P_zgz | |- ( B e. ZZ -> B e. Z[i] ) |\n| 4 |  | #P_gzmulcl | |- ( ( _i e. Z[i] /\\ B e. Z[i] ) -> ( _i x. B ) e. Z[i] ) |\n| 5 | 2, 3, 4 | #P_sylancr | |- ( B e. ZZ -> ( _i x. B ) e. Z[i] ) |\n| 6 |  | #P_gzaddcl | |- ( ( A e. Z[i] /\\ ( _i x. B ) e. Z[i] ) -> ( A + ( _i x. B ) ) e. Z[i] ) |\n| 7 | 1, 5, 6 | #P_syl2an | |- ( ( A e. ZZ /\\ B e. ZZ ) -> ( A + ( _i x. B ) ) e. Z[i] ) |",
+  "conclusion" : "#P_gzreim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_ci", "#T_wcel", "#T_cgz", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_ci", "#T_wcel", "#T_cgz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_ci", "#T_cmul", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_ci", "#T_cmul", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cA.wceq", "#T_wcel", "#T_cgz", "#T_wa", "#T_ci", "#T_cmul", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_ci", "#T_cmul", "#T_cB.wceq", "#T_wcel", "#T_cgz", "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_caddc", "#T_ci", "#T_cmul", "#T_cB", "#T_wcel", "#T_cgz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylancr", "#P_zgz", "#P_gzaddcl", "#P_igz", "#P_syl2an", "#P_gzmulcl" ]
+}

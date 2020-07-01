@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqwvfoura on Metamath](http://us.metamath.org/mpegif/sqwvfoura.html)"
+  } ],
+  "names" : [ "sqwvfoura" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_c2", "#T_cmul", "#T_cpi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_cmo", "#T_cT", "#T_clt", "#T_cpi", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cneg", "#T_c1", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_citg--1", "#T_cneg", "#T_cpi", "#T_cioo", "#T_cpi", "#T_cF", "#T_cfv", "#T_vx", "#T_cmul", "#T_ccos", "#T_cfv", "#T_cN", "#T_cmul", "#T_vx", "#T_citg--2", "#T_vx", "#T_cdiv", "#T_cpi", "#T_wceq", "#T_cc0", "#T_cN", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Fourier coefficients for the square wave function.  Since the square function is an odd function, there is no contribution from the ` A ` coefficients.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "sqwvfoura.t $e |- T = ( 2 x. _pi ) $.\nsqwvfoura.f $e |- F = ( x e. RR |-> if ( ( x mod T ) < _pi , 1 , -u 1 ) ) $.\nsqwvfoura.n $e |- ( ph -> N e. NN0 ) $.\nsqwvfoura $p |- ( ph -> ( S. ( -u _pi (,) _pi ) ( ( F ` x ) x. ( cos ` ( N x. x ) ) ) _d x / _pi ) = 0 ) $.\n$d N x $.\n$d ph x $."
+}

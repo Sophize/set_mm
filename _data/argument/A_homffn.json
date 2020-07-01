@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See homffn on Metamath](http://us.metamath.org/mpegif/homffn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | homffn.f | |- F = ( Homf ` C ) |\n| 2 |  | homffn.b | |- B = ( Base ` C ) |\n| 3 |  | #P_eqid | |- ( Hom ` C ) = ( Hom ` C ) |\n| 4 | 1, 2, 3 | #P_homffval | |- F = ( x e. B , y e. B |-> ( x ( Hom ` C ) y ) ) |\n| 5 |  | #P_ovex | |- ( x ( Hom ` C ) y ) e. _V |\n| 6 | 4, 5 | #P_fnmpt2i | |- F Fn ( B X. B ) |",
+  "conclusion" : "#P_homffn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cF", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_chom", "#T_cfv", "#T_cC", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_cF", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cC", "#T_vy.tru", "#T_vx.wal", "#T_chom", "#T_cfv", "#T_cC", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfn", "#T_cB", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_eqid", "#P_homffval", "#P_fnmpt2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prnzg on Metamath](http://us.metamath.org/mpegif/prnzg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_preq1 | |- ( x = A -> { x , B } = { A , B } ) |\n| 2 | 1 | #P_neeq1d | |- ( x = A -> ( { x , B } =/= (/) <-> { A , B } =/= (/) ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_prnz | |- { x , B } =/= (/) |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> { A , B } =/= (/) ) |",
+  "conclusion" : "#P_prnzg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpr--1", "#T_vx.wal", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpr--1", "#T_vx.wal", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wne", "#T_c0", "#T_wb", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wne", "#T_c0", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpr--1", "#T_vx.wal", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wne", "#T_c0", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vtoclg", "#P_neeq1d", "#P_preq1", "#P_vex", "#P_prnz" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See curry1 on Metamath](http://us.metamath.org/mpegif/curry1.html)"
+  } ],
+  "names" : [ "curry1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_ccnv", "#T_c2nd", "#T_cres", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cxp", "#T_cvv", "#T_cF", "#T_wfn", "#T_cA", "#T_cxp", "#T_cB", "#T_wa", "#T_cC", "#T_wcel", "#T_cA", "#T_wi", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cC", "#T_cF", "#T_vx", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cC", "#T_vx", "#T_cF", "#T_vx", "#T_cG", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Composition with ` ``' ( 2nd |`` ( { C } X. _V ) ) ` turns any binary operation ` F ` with a constant first operand into a function ` G ` of the second operand only.  This transformation is called \"currying.\" (Contributed by NM, 28-Mar-2008.)  (Revised by Mario Carneiro, 26-Dec-2014.) ",
+  "statement" : "curry1.1 $e |- G = ( F o. `' ( 2nd |` ( { C } X. _V ) ) ) $.\ncurry1 $p |- ( ( F Fn ( A X. B ) /\\ C e. A ) -> G = ( x e. B |-> ( C F x ) ) ) $.\n$d A x $.\n$d B x $.\n$d C x $.\n$d F x $.\n$d G x $."
+}

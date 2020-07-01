@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See diveq1bd on Metamath](http://us.metamath.org/mpegif/diveq1bd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | diveq1bd.1 | |- ( ph -> B e. CC ) |\n| 2 |  | diveq1bd.2 | |- ( ph -> B =/= 0 ) |\n| 3 |  | diveq1bd.3 | |- ( ph -> A = B ) |\n| 4 | 3, 1 | #P_eqeltrd | |- ( ph -> A e. CC ) |\n| 5 | 4, 1, 2 | #P_diveq1ad | |- ( ph -> ( ( A / B ) = 1 <-> A = B ) ) |\n| 6 | 3, 5 | #P_mpbird | |- ( ph -> ( A / B ) = 1 ) |",
+  "conclusion" : "#P_diveq1bd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrd", "#P_diveq1ad", "#P_mpbird" ]
+}

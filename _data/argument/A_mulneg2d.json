@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulneg2d on Metamath](http://us.metamath.org/mpegif/mulneg2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulm1d.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulnegd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | #P_mulneg2 | |- ( ( A e. CC /\\ B e. CC ) -> ( A x. -u B ) = -u ( A x. B ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A x. -u B ) = -u ( A x. B ) ) |",
+  "conclusion" : "#P_mulneg2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cneg", "#T_cB", "#T_wceq", "#T_cneg", "#T_cA", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulneg2", "#P_syl2anc" ]
+}

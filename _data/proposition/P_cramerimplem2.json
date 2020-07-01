@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cramerimplem2 on Metamath](http://us.metamath.org/mpegif/cramerimplem2.html)"
+  } ],
+  "names" : [ "cramerimplem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cmap", "#T_cN", "#T_cE", "#T_wceq", "#T_cur", "#T_cfv", "#T_cA", "#T_cN", "#T_cmatrepV", "#T_cR", "#T_cZ", "#T_cfv", "#T_cI", "#T_cH", "#T_wceq", "#T_cX", "#T_cN", "#T_cmatrepV", "#T_cR", "#T_cY", "#T_cfv", "#T_cI", "#T_c.x", "#T_wceq", "#T_cR", "#T_cmvmul", "#T_cop--1", "#T_cN", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_c.xp", "#T_wceq", "#T_cR", "#T_cmmul", "#T_cotp--1", "#T_cN", "#T_cotp--2", "#T_cN", "#T_cotp--3", "#T_cN", "#T_cotp--4", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cI", "#T_wcel", "#T_cN", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cY", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_c.x", "#T_cZ", "#T_wceq", "#T_cY", "#T_wi", "#T_cX", "#T_c.xp", "#T_cE", "#T_wceq", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma 2 for ~ cramerimp :  The matrix of a system of linear equations multiplied with the identity matrix with the ith column replaced by the solution vector of the system of linear equations equals the matrix of the system of linear equations with the ith column replaced by the right-hand side vector of the system of linear equations. (Contributed by AV, 19-Feb-2019.)  (Revised by AV, 1-Mar-2019.) ",
+  "statement" : "cramerimp.a $e |- A = ( N Mat R ) $.\ncramerimp.b $e |- B = ( Base ` A ) $.\ncramerimp.v $e |- V = ( ( Base ` R ) ^m N ) $.\ncramerimp.e $e |- E = ( ( ( 1r ` A ) ( N matRepV R ) Z ) ` I ) $.\ncramerimp.h $e |- H = ( ( X ( N matRepV R ) Y ) ` I ) $.\ncramerimp.x $e |- .x. = ( R maVecMul <. N , N >. ) $.\ncramerimp.m $e |- .X. = ( R maMul <. N , N , N >. ) $.\ncramerimplem2 $p |- ( ( ( R e. CRing /\\ I e. N ) /\\ ( X e. B /\\ Y e. V ) /\\ ( X .x. Z ) = Y ) -> ( X .X. E ) = H ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See taylpfval on Metamath](http://us.metamath.org/mpegif/taylpfval.html)"
+  } ],
+  "names" : [ "taylpfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cdm", "#T_cS", "#T_cdvn", "#T_cF", "#T_cfv", "#T_cN", "#T_cT", "#T_wceq", "#T_cN", "#T_cS", "#T_ctayl", "#T_cF", "#T_cB", "#T_wph", "#T_wi", "#T_cT", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cS", "#T_cdvn", "#T_cF", "#T_cfv", "#T_vk", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_cmul", "#T_vx", "#T_cmin", "#T_cB", "#T_cexp", "#T_vk", "#T_cB", "#T_vk", "#T_vx", "#T_cF", "#T_vk", "#T_vx", "#T_cN", "#T_vk", "#T_vx", "#T_cS", "#T_vk", "#T_vx", "#T_cT", "#T_vx", "#T_vk", "#T_wph", "#T_vx", "#T_vk", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Taylor polynomial of a function.  The constant ` Tayl ` is a function of five arguments: ` S ` is the base set with respect to evaluate the derivatives (generally ` RR ` or ` CC ` ), ` F ` is the function we are approximating, at point ` B ` , to order ` N ` .  The result is a polynomial function of ` x ` .  (Contributed by Mario Carneiro, 31-Dec-2016.) ",
+  "statement" : "taylpfval.s $e |- ( ph -> S e. { RR , CC } ) $.\ntaylpfval.f $e |- ( ph -> F : A --> CC ) $.\ntaylpfval.a $e |- ( ph -> A C_ S ) $.\ntaylpfval.n $e |- ( ph -> N e. NN0 ) $.\ntaylpfval.b $e |- ( ph -> B e. dom ( ( S Dn F ) ` N ) ) $.\ntaylpfval.t $e |- T = ( N ( S Tayl F ) B ) $.\ntaylpfval $p |- ( ph -> T = ( x e. CC |-> sum_ k e. ( 0 ... N ) ( ( ( ( ( S Dn F ) ` k ) ` B ) / ( ! ` k ) ) x. ( ( x - B ) ^ k ) ) ) ) $.\n$d B k x $.\n$d F k x $.\n$d N k x $.\n$d S k x $.\n$d T x $.\n$d k ph x $.\n$d k x $."
+}

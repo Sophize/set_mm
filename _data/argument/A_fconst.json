@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fconst on Metamath](http://us.metamath.org/mpegif/fconst.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fconst.1 | |- B e. _V |\n| 2 |  | #P_fconstmpt | |- ( A X. { B } ) = ( x e. A |-> B ) |\n| 3 | 1, 2 | #P_fnmpti | |- ( A X. { B } ) Fn A |\n| 4 |  | #P_rnxpss | |- ran ( A X. { B } ) C_ { B } |\n| 5 |  | #P_df-f | |- ( ( A X. { B } ) : A --> { B } <-> ( ( A X. { B } ) Fn A /\\ ran ( A X. { B } ) C_ { B } ) ) |\n| 6 | 3, 4, 5 | #P_mpbir2an | |- ( A X. { B } ) : A --> { B } |",
+  "conclusion" : "#P_fconst",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wfn", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA", "#T_cxp", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_csn--1", "#T_cB", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rnxpss", "#P_mpbir2an", "#P_fnmpti", "#P_df-f", "#P_fconstmpt" ]
+}

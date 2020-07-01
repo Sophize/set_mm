@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frsucmpt2 on Metamath](http://us.metamath.org/mpegif/frsucmpt2.html)"
+  } ],
+  "names" : [ "frsucmpt2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cC", "#T_crdg--2", "#T_cA", "#T_cres", "#T_com", "#T_vy", "#T_wceq", "#T_vx", "#T_wi", "#T_cE", "#T_wceq", "#T_cC", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_wi", "#T_cE", "#T_wceq", "#T_cD", "#T_cB", "#T_wcel", "#T_com", "#T_wa", "#T_cD", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfv", "#T_csuc", "#T_cB", "#T_wceq", "#T_cD", "#T_cA", "#T_vy", "#T_cB", "#T_vy", "#T_cC", "#T_vy", "#T_cD", "#T_vy", "#T_cE", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The successor value resulting from finite recursive definition generation (special case where the generation function is expressed in maps-to notation), using double-substitution instead of a bound variable condition.  (Contributed by Mario Carneiro, 11-Sep-2015.) ",
+  "statement" : "frsucmpt2.1 $e |- F = ( rec ( ( x e. _V |-> C ) , A ) |` _om ) $.\nfrsucmpt2.2 $e |- ( y = x -> E = C ) $.\nfrsucmpt2.3 $e |- ( y = ( F ` B ) -> E = D ) $.\nfrsucmpt2 $p |- ( ( B e. _om /\\ D e. V ) -> ( F ` suc B ) = D ) $.\n$d A y $.\n$d B y $.\n$d C y $.\n$d D y $.\n$d E x $."
+}

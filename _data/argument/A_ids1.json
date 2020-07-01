@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ids1 on Metamath](http://us.metamath.org/mpegif/ids1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fvex | |- ( _I ` A ) e. _V |\n| 2 |  | #P_fvi | |- ( ( _I ` A ) e. _V -> ( _I ` ( _I ` A ) ) = ( _I ` A ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( _I ` ( _I ` A ) ) = ( _I ` A ) |\n| 4 | 3 | #P_opeq2i | |- <. 0 , ( _I ` ( _I ` A ) ) >. = <. 0 , ( _I ` A ) >. |\n| 5 | 4 | #P_sneqi | |- { <. 0 , ( _I ` ( _I ` A ) ) >. } = { <. 0 , ( _I ` A ) >. } |\n| 6 |  | #P_df-s1 | |- <\" ( _I ` A ) \"> = { <. 0 , ( _I ` ( _I ` A ) ) >. } |\n| 7 |  | #P_df-s1 | |- <\" A \"> = { <. 0 , ( _I ` A ) >. } |\n| 8 | 5, 6, 7 | #P_3eqtr4ri | |- <\" A \"> = <\" ( _I ` A ) \"> |",
+  "conclusion" : "#P_ids1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cs1--1", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cid", "#T_cfv", "#T_cA", "#T_cs1--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sneqi", "#P_ax-mp", "#P_3eqtr4ri", "#P_fvi", "#P_opeq2i", "#P_fvex", "#P_df-s1" ]
+}

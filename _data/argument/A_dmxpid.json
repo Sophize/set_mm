@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmxpid on Metamath](http://us.metamath.org/mpegif/dmxpid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dm0 | |- dom (/) = (/) |\n| 2 |  | #P_xpeq1 | |- ( A = (/) -> ( A X. A ) = ( (/) X. A ) ) |\n| 3 |  | #P_0xp | |- ( (/) X. A ) = (/) |\n| 4 | 2, 3 | #P_syl6eq | |- ( A = (/) -> ( A X. A ) = (/) ) |\n| 5 | 4 | #P_dmeqd | |- ( A = (/) -> dom ( A X. A ) = dom (/) ) |\n| 6 |  | #P_id | |- ( A = (/) -> A = (/) ) |\n| 7 | 1, 5, 6 | #P_3eqtr4a | |- ( A = (/) -> dom ( A X. A ) = A ) |\n| 8 |  | #P_dmxp | |- ( A =/= (/) -> dom ( A X. A ) = A ) |\n| 9 | 7, 8 | #P_pm2.61ine | |- dom ( A X. A ) = A |",
+  "conclusion" : "#P_dmxpid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdm", "#T_cA", "#T_cxp", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.61ine", "#P_dmeqd", "#P_dmxp", "#P_dm0", "#P_0xp", "#P_3eqtr4a", "#P_xpeq1", "#P_id", "#P_syl6eq" ]
+}

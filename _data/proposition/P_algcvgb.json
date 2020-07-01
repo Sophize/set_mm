@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See algcvgb on Metamath](http://us.metamath.org/mpegif/algcvgb.html)"
+  } ],
+  "names" : [ "algcvgb" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cS", "#T_cC", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cn0", "#T_cX", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_cX", "#T_wne", "#T_cc0", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_cX", "#T_clt", "#T_cC", "#T_cfv", "#T_cX", "#T_wb", "#T_cC", "#T_cfv", "#T_cX", "#T_wne", "#T_cc0", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_cX", "#T_clt", "#T_cC", "#T_cfv", "#T_cX", "#T_wa", "#T_cC", "#T_cfv", "#T_cX", "#T_wceq", "#T_cc0", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Two ways of expressing that ` C ` is a countdown function for algorithm ` F ` .  The first is used in these theorems.  The second states the condition more intuitively as a conjunction: if the countdown function's value is currently non-zero, it must decrease at the next step; if it has reached zero, it must remain zero at the next step.  (Contributed by Paul Chapman, 31-Mar-2011.) ",
+  "statement" : "algcvgb.1 $e |- F : S --> S $.\nalgcvgb.2 $e |- C : S --> NN0 $.\nalgcvgb $p |- ( X e. S -> ( ( ( C ` ( F ` X ) ) =/= 0 -> ( C ` ( F ` X ) ) < ( C ` X ) ) <-> ( ( ( C ` X ) =/= 0 -> ( C ` ( F ` X ) ) < ( C ` X ) ) /\\ ( ( C ` X ) = 0 -> ( C ` ( F ` X ) ) = 0 ) ) ) ) $."
+}

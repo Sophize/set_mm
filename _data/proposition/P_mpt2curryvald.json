@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpt2curryvald on Metamath](http://us.metamath.org/mpegif/mpt2curryvald.html)"
+  } ],
+  "names" : [ "mpt2curryvald" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cX", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cY", "#T_cmpt2--4", "#T_cC", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cY", "#T_cC", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_ccur", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cC", "#T_cA", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cV", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of a curried operation given in maps-to notation is a function over the second argument of the original operation.  (Contributed by AV, 27-Oct-2019.) ",
+  "statement" : "mpt2curryd.f $e |- F = ( x e. X , y e. Y |-> C ) $.\nmpt2curryd.c $e |- ( ph -> A. x e. X A. y e. Y C e. V ) $.\nmpt2curryd.n $e |- ( ph -> Y =/= (/) ) $.\nmpt2curryvald.y $e |- ( ph -> Y e. W ) $.\nmpt2curryvald.a $e |- ( ph -> A e. X ) $.\nmpt2curryvald $p |- ( ph -> ( curry F ` A ) = ( y e. Y |-> [_ A / x ]_ C ) ) $.\n$d A x y $.\n$d F x y $.\n$d V x y $.\n$d X x y $.\n$d X x y $.\n$d Y x y $.\n$d Y x y $.\n$d ph x y $.\n$d ph x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbeq1 on Metamath](http://us.metamath.org/mpegif/csbeq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfsbcq | |- ( A = B -> ( [. A / x ]. y e. C <-> [. B / x ]. y e. C ) ) |\n| 2 | 1 | #P_abbidv | |- ( A = B -> { y | [. A / x ]. y e. C } = { y | [. B / x ]. y e. C } ) |\n| 3 |  | #P_df-csb | |- [_ A / x ]_ C = { y | [. A / x ]. y e. C } |\n| 4 |  | #P_df-csb | |- [_ B / x ]_ C = { y | [. B / x ]. y e. C } |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> [_ A / x ]_ C = [_ B / x ]_ C ) |",
+  "conclusion" : "#P_csbeq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_wb", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_csb--1", "#T_cB.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cab--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cC", "#T_wceq", "#T_csb--1", "#T_cB", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfsbcq", "#P_df-csb", "#P_3eqtr4g", "#P_abbidv" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See repsw0 on Metamath](http://us.metamath.org/mpegif/repsw0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0nn0 | |- 0 e. NN0 |\n| 2 |  | #P_repswlen | |- ( ( S e. V /\\ 0 e. NN0 ) -> ( # ` ( S repeatS 0 ) ) = 0 ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( S e. V -> ( # ` ( S repeatS 0 ) ) = 0 ) |\n| 4 |  | #P_ovex | |- ( S repeatS 0 ) e. _V |\n| 5 |  | #P_hasheq0 | |- ( ( S repeatS 0 ) e. _V -> ( ( # ` ( S repeatS 0 ) ) = 0 <-> ( S repeatS 0 ) = (/) ) ) |\n| 6 | 4, 5 | #P_mp1i | |- ( S e. V -> ( ( # ` ( S repeatS 0 ) ) = 0 <-> ( S repeatS 0 ) = (/) ) ) |\n| 7 | 3, 6 | #P_mpbid | |- ( S e. V -> ( S repeatS 0 ) = (/) ) |",
+  "conclusion" : "#P_repsw0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cn0", "#T_cS", "#T_wcel", "#T_cV", "#T_wa", "#T_cc0", "#T_wcel", "#T_cn0", "#T_wi", "#T_chash", "#T_cfv", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cS", "#T_wcel", "#T_cV", "#T_wi", "#T_chash", "#T_cfv", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cS", "#T_creps", "#T_cc0", "#T_wcel", "#T_cvv", "#T_cS", "#T_creps", "#T_cc0", "#T_wcel", "#T_cvv", "#T_wi", "#T_chash", "#T_cfv", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_cc0", "#T_wb", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_c0", "#T_cS", "#T_wcel", "#T_cV", "#T_wi", "#T_chash", "#T_cfv", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_cc0", "#T_wb", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_c0", "#T_cS", "#T_wcel", "#T_cV", "#T_wi", "#T_cS", "#T_creps", "#T_cc0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_0nn0", "#P_hasheq0", "#P_mpbid", "#P_repswlen", "#P_mp1i", "#P_mpan2" ]
+}

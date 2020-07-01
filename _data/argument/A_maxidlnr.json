@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See maxidlnr on Metamath](http://us.metamath.org/mpegif/maxidlnr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | maxidlnr.1 | |- G = ( 1st ` R ) |\n| 2 |  | maxidlnr.2 | |- X = ran G |\n| 3 | 1, 2 | #P_ismaxidl | |- ( R e. RingOps -> ( M e. ( MaxIdl ` R ) <-> ( M e. ( Idl ` R ) /\\ M =/= X /\\ A. j e. ( Idl ` R ) ( M C_ j -> ( j = M \\/ j = X ) ) ) ) ) |\n| 4 | 3 | #P_biimpa | |- ( ( R e. RingOps /\\ M e. ( MaxIdl ` R ) ) -> ( M e. ( Idl ` R ) /\\ M =/= X /\\ A. j e. ( Idl ` R ) ( M C_ j -> ( j = M \\/ j = X ) ) ) ) |\n| 5 | 4 | #P_simp2d | |- ( ( R e. RingOps /\\ M e. ( MaxIdl ` R ) ) -> M =/= X ) |",
+  "conclusion" : "#P_maxidlnr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cM", "#T_wcel", "#T_cmaxidl", "#T_cfv", "#T_cR", "#T_wb", "#T_cM", "#T_wcel", "#T_cidl", "#T_cfv", "#T_cR", "#T_w3a--1", "#T_cM", "#T_wne", "#T_cX", "#T_w3a--2", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cidl", "#T_cfv", "#T_cR", "#T_cM", "#T_wss", "#T_vj", "#T_wi", "#T_vj", "#T_wceq", "#T_cM", "#T_wo", "#T_vj", "#T_wceq", "#T_cX", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cM", "#T_wcel", "#T_cmaxidl", "#T_cfv", "#T_cR", "#T_wi", "#T_cM", "#T_wcel", "#T_cidl", "#T_cfv", "#T_cR", "#T_w3a--1", "#T_cM", "#T_wne", "#T_cX", "#T_w3a--2", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cidl", "#T_cfv", "#T_cR", "#T_cM", "#T_wss", "#T_vj", "#T_wi", "#T_vj", "#T_wceq", "#T_cM", "#T_wo", "#T_vj", "#T_wceq", "#T_cX", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cM", "#T_wcel", "#T_cmaxidl", "#T_cfv", "#T_cR", "#T_wi", "#T_cM", "#T_wne", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_simp2d", "#P_ismaxidl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmxpss on Metamath](http://us.metamath.org/mpegif/dmxpss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpeq2 | |- ( B = (/) -> ( A X. B ) = ( A X. (/) ) ) |\n| 2 |  | #P_xp0 | |- ( A X. (/) ) = (/) |\n| 3 | 1, 2 | #P_syl6eq | |- ( B = (/) -> ( A X. B ) = (/) ) |\n| 4 | 3 | #P_dmeqd | |- ( B = (/) -> dom ( A X. B ) = dom (/) ) |\n| 5 |  | #P_dm0 | |- dom (/) = (/) |\n| 6 | 4, 5 | #P_syl6eq | |- ( B = (/) -> dom ( A X. B ) = (/) ) |\n| 7 |  | #P_0ss | |- (/) C_ A |\n| 8 | 6, 7 | #P_syl6eqss | |- ( B = (/) -> dom ( A X. B ) C_ A ) |\n| 9 |  | #P_dmxp | |- ( B =/= (/) -> dom ( A X. B ) = A ) |\n| 10 |  | #P_eqimss | |- ( dom ( A X. B ) = A -> dom ( A X. B ) C_ A ) |\n| 11 | 9, 10 | #P_syl | |- ( B =/= (/) -> dom ( A X. B ) C_ A ) |\n| 12 | 8, 11 | #P_pm2.61ine | |- dom ( A X. B ) C_ A |",
+  "conclusion" : "#P_dmxpss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_c0", "#T_cA.wceq", "#T_cxp", "#T_c0", "#T_wceq", "#T_c0", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_c0", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cdm", "#T_cA", "#T_cxp", "#T_cB", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.61ine", "#P_dmeqd", "#P_0ss", "#P_syl6eqss", "#P_dmxp", "#P_dm0", "#P_syl", "#P_xpeq2", "#P_xp0", "#P_eqimss", "#P_syl6eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbv3hv on Metamath](http://us.metamath.org/mpegif/cbv3hv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbv3hv.1 | |- ( ph -> A. y ph ) |\n| 2 |  | cbv3hv.2 | |- ( ps -> A. x ps ) |\n| 3 |  | cbv3hv.3 | |- ( x = y -> ( ph -> ps ) ) |\n| 4 | 1 | #P_alimi | |- ( A. x ph -> A. x A. y ph ) |\n| 5 |  | #P_ax6ev | |- E. x x = y |\n| 6 | 5, 3 | #P_eximii | |- E. x ( ph -> ps ) |\n| 7 | 6 | #P_19.35i | |- ( A. x ph -> E. x ps ) |\n| 8 | 2 | #P_19.9h | |- ( E. x ps <-> ps ) |\n| 9 | 7, 8 | #P_sylib | |- ( A. x ph -> ps ) |\n| 10 | 9 | #P_alimi | |- ( A. y A. x ph -> A. y ps ) |\n| 11 | 10 | #P_alcoms | |- ( A. x A. y ph -> A. y ps ) |\n| 12 | 4, 11 | #P_syl | |- ( A. x ph -> A. y ps ) |",
+  "conclusion" : "#P_cbv3hv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alcoms", "#P_eximii", "#P_19.9h", "#P_ax6ev", "#P_sylib", "#P_alimi", "#P_syl", "#P_19.35i" ]
+}

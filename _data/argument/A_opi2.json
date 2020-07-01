@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opi2 on Metamath](http://us.metamath.org/mpegif/opi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opi1.1 | |- A e. _V |\n| 2 |  | opi1.2 | |- B e. _V |\n| 3 |  | #P_prex | |- { A , B } e. _V |\n| 4 | 3 | #P_prid2 | |- { A , B } e. { { A } , { A , B } } |\n| 5 | 1, 2 | #P_dfop | |- <. A , B >. = { { A } , { A , B } } |\n| 6 | 4, 5 | #P_eleqtrri | |- { A , B } e. <. A , B >. |",
+  "conclusion" : "#P_opi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cvv", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wcel", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wcel", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfop", "#P_prid2", "#P_eleqtrri", "#P_prex" ]
+}

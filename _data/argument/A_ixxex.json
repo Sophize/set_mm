@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ixxex on Metamath](http://us.metamath.org/mpegif/ixxex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ixx.1 | |- O = ( x e. RR* , y e. RR* |-> { z e. RR* | ( x R z /\\ z S y ) } ) |\n| 2 |  | #P_xrex | |- RR* e. _V |\n| 3 | 2, 2 | #P_xpex | |- ( RR* X. RR* ) e. _V |\n| 4 | 2 | #P_pwex | |- ~P RR* e. _V |\n| 5 | 3, 4 | #P_xpex | |- ( ( RR* X. RR* ) X. ~P RR* ) e. _V |\n| 6 | 1 | #P_ixxf | |- O : ( RR* X. RR* ) --> ~P RR* |\n| 7 |  | #P_fssxp | |- ( O : ( RR* X. RR* ) --> ~P RR* -> O C_ ( ( RR* X. RR* ) X. ~P RR* ) ) |\n| 8 | 6, 7 | #P_ax-mp | |- O C_ ( ( RR* X. RR* ) X. ~P RR* ) |\n| 9 | 5, 8 | #P_ssexi | |- O e. _V |",
+  "conclusion" : "#P_ixxex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_vx", "#T_cR", "#T_vz", "#T_wa", "#T_vz", "#T_cS", "#T_vy", "#T_crab--4", "#T_cxr", "#T_wcel", "#T_cvv", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cxr", "#T_wcel", "#T_cvv", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cxp", "#T_cpw", "#T_cxr", "#T_wcel", "#T_cvv", "#T_cO", "#T_wf--1", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cxr", "#T_cO", "#T_wf--1", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cxr", "#T_wi", "#T_cO", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cxp", "#T_cpw", "#T_cxr", "#T_cO", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cxp", "#T_cpw", "#T_cxr", "#T_cO", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_ax-mp", "#P_ixxf", "#P_ssexi", "#P_fssxp", "#P_xpex", "#P_xrex" ]
+}

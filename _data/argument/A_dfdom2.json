@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfdom2 on Metamath](http://us.metamath.org/mpegif/dfdom2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-sdom | |- ~< = ( ~<_ \\ ~~ ) |\n| 2 | 1 | #P_uneq2i | |- ( ~~ u. ~< ) = ( ~~ u. ( ~<_ \\ ~~ ) ) |\n| 3 |  | #P_uncom | |- ( ~~ u. ~< ) = ( ~< u. ~~ ) |\n| 4 |  | #P_enssdom | |- ~~ C_ ~<_ |\n| 5 |  | #P_undif | |- ( ~~ C_ ~<_ <-> ( ~~ u. ( ~<_ \\ ~~ ) ) = ~<_ ) |\n| 6 | 4, 5 | #P_mpbi | |- ( ~~ u. ( ~<_ \\ ~~ ) ) = ~<_ |\n| 7 | 2, 3, 6 | #P_3eqtr3ri | |- ~<_ = ( ~< u. ~~ ) |",
+  "conclusion" : "#P_dfdom2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csdm", "#T_wceq", "#T_cdom", "#T_cdif", "#T_cen", "#T_cen", "#T_cun", "#T_csdm", "#T_wceq", "#T_cen", "#T_cun", "#T_cdom", "#T_cdif", "#T_cen", "#T_cen", "#T_cun", "#T_csdm", "#T_wceq", "#T_csdm", "#T_cun", "#T_cen", "#T_cen", "#T_wss", "#T_cdom", "#T_cen", "#T_wss", "#T_cdom", "#T_wb", "#T_cen", "#T_cun", "#T_cdom", "#T_cdif", "#T_cen", "#T_wceq", "#T_cdom", "#T_cen", "#T_cun", "#T_cdom", "#T_cdif", "#T_cen", "#T_wceq", "#T_cdom", "#T_cdom", "#T_wceq", "#T_csdm", "#T_cun", "#T_cen" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-sdom", "#P_uneq2i", "#P_enssdom", "#P_3eqtr3ri", "#P_mpbi", "#P_uncom", "#P_undif" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqdistr on Metamath](http://us.metamath.org/mpegif/seqdistr.html)"
+  } ],
+  "names" : [ "seqdistr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_cT", "#T_vx", "#T_c.pl", "#T_vy", "#T_wceq", "#T_cC", "#T_cT", "#T_vx", "#T_c.pl", "#T_cC", "#T_cT", "#T_vy", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cG", "#T_cfv", "#T_vx", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cC", "#T_cT", "#T_cG", "#T_cfv", "#T_vx", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_wceq", "#T_cC", "#T_cT", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_cN", "#T_c.pl", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_cG", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cT", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The distributive property for series.  (Contributed by Mario Carneiro, 28-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) ",
+  "statement" : "seqdistr.1 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x .+ y ) e. S ) $.\nseqdistr.2 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( C T ( x .+ y ) ) = ( ( C T x ) .+ ( C T y ) ) ) $.\nseqdistr.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nseqdistr.4 $e |- ( ( ph /\\ x e. ( M ... N ) ) -> ( G ` x ) e. S ) $.\nseqdistr.5 $e |- ( ( ph /\\ x e. ( M ... N ) ) -> ( F ` x ) = ( C T ( G ` x ) ) ) $.\nseqdistr $p |- ( ph -> ( seq M ( .+ , F ) ` N ) = ( C T ( seq M ( .+ , G ) ` N ) ) ) $.\n$d .+ x y $.\n$d C x y $.\n$d F x $.\n$d G x y $.\n$d M x y $.\n$d N x y $.\n$d S x y $.\n$d T x y $.\n$d ph x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtocl4ga on Metamath](http://us.metamath.org/mpegif/vtocl4ga.html)"
+  } ],
+  "names" : [ "vtocl4ga" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vz", "#T_wceq", "#T_cC", "#T_wi", "#T_wch", "#T_wb", "#T_wrh", "#T_vw", "#T_wceq", "#T_cD", "#T_wi", "#T_wrh", "#T_wb", "#T_wth", "#T_vx", "#T_wcel", "#T_cQ", "#T_wa", "#T_vy", "#T_wcel", "#T_cR", "#T_wa", "#T_vz", "#T_wcel", "#T_cS", "#T_wa", "#T_vw", "#T_wcel", "#T_cT", "#T_wi", "#T_wph", "#T_cA", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB", "#T_wcel", "#T_cR", "#T_wa", "#T_cC", "#T_wcel", "#T_cS", "#T_wa", "#T_cD", "#T_wcel", "#T_cT", "#T_wi", "#T_wth", "#T_cA", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vw", "#T_vy", "#T_vz", "#T_cC", "#T_vw", "#T_vz", "#T_cD", "#T_vw", "#T_cQ", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cR", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cS", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cT", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_wch", "#T_vy", "#T_wps", "#T_vx", "#T_wrh", "#T_vz", "#T_wth", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Implicit substitution of 4 classes for 4 setvar variables.  (Contributed by AV, 22-Jan-2019.) ",
+  "statement" : "vtocl4ga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.\nvtocl4ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.\nvtocl4ga.3 $e |- ( z = C -> ( ch <-> rh ) ) $.\nvtocl4ga.4 $e |- ( w = D -> ( rh <-> th ) ) $.\nvtocl4ga.5 $e |- ( ( ( x e. Q /\\ y e. R ) /\\ ( z e. S /\\ w e. T ) ) -> ph ) $.\nvtocl4ga $p |- ( ( ( A e. Q /\\ B e. R ) /\\ ( C e. S /\\ D e. T ) ) -> th ) $.\n$d A w x y z $.\n$d B w y z $.\n$d C w z $.\n$d D w $.\n$d Q w x y z $.\n$d R w x y z $.\n$d S w x y z $.\n$d T w x y z $.\n$d ch y $.\n$d ps x $.\n$d rh z $.\n$d th w $."
+}

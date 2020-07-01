@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee4anv on Metamath](http://us.metamath.org/mpegif/ee4anv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_excom | |- ( E. y E. z E. w ( ph /\\ ps ) <-> E. z E. y E. w ( ph /\\ ps ) ) |\n| 2 | 1 | #P_exbii | |- ( E. x E. y E. z E. w ( ph /\\ ps ) <-> E. x E. z E. y E. w ( ph /\\ ps ) ) |\n| 3 |  | #P_eeanv | |- ( E. y E. w ( ph /\\ ps ) <-> ( E. y ph /\\ E. w ps ) ) |\n| 4 | 3 | #P_2exbii | |- ( E. x E. z E. y E. w ( ph /\\ ps ) <-> E. x E. z ( E. y ph /\\ E. w ps ) ) |\n| 5 |  | #P_eeanv | |- ( E. x E. z ( E. y ph /\\ E. w ps ) <-> ( E. x E. y ph /\\ E. z E. w ps ) ) |\n| 6 | 2, 4, 5 | #P_3bitri | |- ( E. x E. y E. z E. w ( ph /\\ ps ) <-> ( E. x E. y ph /\\ E. z E. w ps ) ) |",
+  "conclusion" : "#P_ee4anv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy.tru", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wex", "#T_vw", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wex", "#T_vw", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vz", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wex", "#T_vw", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wps", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wph", "#T_wa", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eeanv", "#P_exbii", "#P_excom", "#P_3bitri", "#P_2exbii" ]
+}

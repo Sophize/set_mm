@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunsn on Metamath](http://us.metamath.org/mpegif/wunsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wununi.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wununi.2 | |- ( ph -> A e. U ) |\n| 3 |  | #P_dfsn2 | |- { A } = { A , A } |\n| 4 | 1, 2, 2 | #P_wunpr | |- ( ph -> { A , A } e. U ) |\n| 5 | 3, 4 | #P_syl5eqel | |- ( ph -> { A } e. U ) |",
+  "conclusion" : "#P_wunsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqel", "#P_dfsn2", "#P_wunpr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlimi on Metamath](http://us.metamath.org/mpegif/hlimi.html)"
+  } ],
+  "names" : [ "hlimi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cF", "#T_chli", "#T_cA", "#T_wb", "#T_cF", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_chil", "#T_wa", "#T_cA", "#T_wcel", "#T_chil", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_crp", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cn", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_vy", "#T_cno", "#T_cfv", "#T_cF", "#T_cfv", "#T_vz", "#T_cmv", "#T_cA", "#T_clt", "#T_vx", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_vz", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express the predicate:  The limit of vector sequence ` F ` in a Hilbert space is ` A ` , i.e. ` F ` converges to ` A ` .  This means that for any real ` x ` , no matter how small, there always exists an integer ` y ` such that the norm of any later vector in the sequence minus the limit is less than ` x ` .  Definition of converge in [Beran] p. 96. (Contributed by NM, 16-Aug-1999.)  (Revised by Mario Carneiro, 14-May-2014.)  (New usage is discouraged.) ",
+  "statement" : "hlim.1 $e |- A e. _V $.\nhlimi $p |- ( F ~~>v A <-> ( ( F : NN --> ~H /\\ A e. ~H ) /\\ A. x e. RR+ E. y e. NN A. z e. ( ZZ>= ` y ) ( normh ` ( ( F ` z ) -h A ) ) < x ) ) $.\n$d A x y z $.\n$d F x y z $.\n$d x y z $."
+}

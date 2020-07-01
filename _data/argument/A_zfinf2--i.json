@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zfinf2 on Metamath](http://us.metamath.org/mpegif/zfinf2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-iinf | |- E. x ( (/) e. x /\\ A. y ( y e. x -> suc y e. x ) ) |\n| 2 |  | #P_df-ral | |- ( A. y e. x suc y e. x <-> A. y ( y e. x -> suc y e. x ) ) |\n| 3 | 2 | #P_anbi2i | |- ( ( (/) e. x /\\ A. y e. x suc y e. x ) <-> ( (/) e. x /\\ A. y ( y e. x -> suc y e. x ) ) ) |\n| 4 | 3 | #P_exbii | |- ( E. x ( (/) e. x /\\ A. y e. x suc y e. x ) <-> E. x ( (/) e. x /\\ A. y ( y e. x -> suc y e. x ) ) ) |\n| 5 | 1, 4 | #P_mpbir | |- E. x ( (/) e. x /\\ A. y e. x suc y e. x ) |",
+  "conclusion" : "#P_zfinf2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vx.wal", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wex", "#T_vx.wal", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_csuc", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wex", "#T_vx", "#T_c0", "#T_wcel", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_csuc", "#T_vy", "#T_wcel", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_df-ral", "#P_ax-iinf", "#P_anbi2i", "#P_mpbir" ]
+}

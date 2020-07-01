@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cshweqrep on Metamath](http://us.metamath.org/mpegif/cshweqrep.html)"
+  } ],
+  "names" : [ "cshweqrep" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cL", "#T_wcel", "#T_cz", "#T_wi", "#T_cW", "#T_ccsh", "#T_cL", "#T_wceq", "#T_cW", "#T_wa", "#T_cI", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_chash", "#T_cfv", "#T_cW", "#T_wi", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cn0", "#T_cW", "#T_cfv", "#T_cI", "#T_wceq", "#T_cW", "#T_cfv", "#T_cI", "#T_caddc", "#T_vj", "#T_cmul", "#T_cL", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_cI", "#T_vj", "#T_cL", "#T_vj", "#T_cV", "#T_vj", "#T_cW", "#T_vj" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If cyclically shifting a word by L position results in the word itself, the symbol at any position is repeated at multiples of L (modulo the length of the word) positions in the word.  (Contributed by AV, 13-May-2018.)  (Revised by AV, 7-Jun-2018.)  (Revised by AV, 1-Nov-2018.) ",
+  "statement" : "cshweqrep $p |- ( ( W e. Word V /\\ L e. ZZ ) -> ( ( ( W cyclShift L ) = W /\\ I e. ( 0 ..^ ( # ` W ) ) ) -> A. j e. NN0 ( W ` I ) = ( W ` ( ( I + ( j x. L ) ) mod ( # ` W ) ) ) ) ) $.\n$d I j $.\n$d L j $.\n$d V j $.\n$d W j $."
+}

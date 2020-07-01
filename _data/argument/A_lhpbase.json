@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lhpbase on Metamath](http://us.metamath.org/mpegif/lhpbase.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lhpbase.b | |- B = ( Base ` K ) |\n| 2 |  | lhpbase.h | |- H = ( LHyp ` K ) |\n| 3 |  | #P_n0i | |- ( W e. H -> -. H = (/) ) |\n| 4 | 2 | #P_eqeq1i | |- ( H = (/) <-> ( LHyp ` K ) = (/) ) |\n| 5 | 3, 4 | #P_sylnib | |- ( W e. H -> -. ( LHyp ` K ) = (/) ) |\n| 6 |  | #P_fvprc | |- ( -. K e. _V -> ( LHyp ` K ) = (/) ) |\n| 7 | 5, 6 | #P_nsyl2 | |- ( W e. H -> K e. _V ) |\n| 8 |  | #P_eqid | |- ( 1. ` K ) = ( 1. ` K ) |\n| 9 |  | #P_eqid | |- ( <o ` K ) = ( <o ` K ) |\n| 10 | 1, 8, 9, 2 | #P_islhp | |- ( K e. _V -> ( W e. H <-> ( W e. B /\\ W ( <o ` K ) ( 1. ` K ) ) ) ) |\n| 11 | 10 | #P_simprbda | |- ( ( K e. _V /\\ W e. H ) -> W e. B ) |\n| 12 | 7, 11 | #P_mpancom | |- ( W e. H -> W e. B ) |",
+  "conclusion" : "#P_lhpbase",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_wn", "#T_cH", "#T_wceq", "#T_c0", "#T_cH", "#T_wceq", "#T_c0", "#T_wb", "#T_clh", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_wn", "#T_clh", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_wn", "#T_cK", "#T_wcel", "#T_cvv", "#T_wi", "#T_clh", "#T_cfv", "#T_cK", "#T_wceq", "#T_c0", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cK", "#T_wcel", "#T_cvv", "#T_cp1", "#T_cfv", "#T_cK", "#T_wceq", "#T_cp1", "#T_cfv", "#T_cK", "#T_ccvr", "#T_cfv", "#T_cK", "#T_wceq", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cvv", "#T_wi", "#T_cW", "#T_wcel", "#T_cH", "#T_wb", "#T_cW", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cW", "#T_ccvr", "#T_cfv", "#T_cK", "#T_cp1", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cvv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cW", "#T_wcel", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cW", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylnib", "#P_eqid", "#P_mpancom", "#P_fvprc", "#P_nsyl2", "#P_n0i", "#P_eqeq1i", "#P_simprbda", "#P_islhp" ]
+}

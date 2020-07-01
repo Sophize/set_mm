@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dtrucor2 on Metamath](http://us.metamath.org/mpegif/dtrucor2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dtrucor2.1 | |- ( x = y -> x =/= y ) |\n| 2 |  | #P_ax6e | |- E. x x = y |\n| 3 | 1 | #P_necon2bi | |- ( x = y -> -. x = y ) |\n| 4 |  | #P_pm2.01 | |- ( ( x = y -> -. x = y ) -> -. x = y ) |\n| 5 | 3, 4 | #P_ax-mp | |- -. x = y |\n| 6 | 5 | #P_nex | |- -. E. x x = y |\n| 7 | 2, 6 | #P_pm2.24ii | |- ( ph /\\ -. ph ) |",
+  "conclusion" : "#P_dtrucor2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vx", "#T_wne", "#T_vy", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wph", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_necon2bi", "#P_nex", "#P_pm2.01", "#P_pm2.24ii", "#P_ax6e" ]
+}

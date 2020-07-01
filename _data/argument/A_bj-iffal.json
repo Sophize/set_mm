@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-iffal on Metamath](http://us.metamath.org/mpegif/bj-iffal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-if | |- ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) ) |\n| 2 |  | #P_simpr | |- ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) -> ( -. ph -> ch ) ) |\n| 3 | 2 | #P_com12 | |- ( -. ph -> ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) -> ch ) ) |\n| 4 |  | #P_ax-1 | |- ( ch -> ( -. ph -> ch ) ) |\n| 5 | 4 | #P_a1i | |- ( -. ph -> ( ch -> ( -. ph -> ch ) ) ) |\n| 6 |  | #P_pm2.21 | |- ( -. ph -> ( ph -> ps ) ) |\n| 7 | 5, 6 | #P_jctild | |- ( -. ph -> ( ch -> ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) ) ) |\n| 8 | 3, 7 | #P_impbid | |- ( -. ph -> ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) <-> ch ) ) |\n| 9 | 1, 8 | #P_syl5bb | |- ( -. ph -> ( if- ( ph , ps , ch ) <-> ch ) ) |",
+  "conclusion" : "#P_bj-iffal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wch", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_pm2.21", "#P_df-bj-if", "#P_impbid", "#P_simpr", "#P_a1i", "#P_ax-1", "#P_jctild", "#P_com12" ]
+}

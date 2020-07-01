@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See erthi on Metamath](http://us.metamath.org/mpegif/erthi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | erthi.1 | |- ( ph -> R Er X ) |\n| 2 |  | erthi.2 | |- ( ph -> A R B ) |\n| 3 | 1, 2 | #P_ercl | |- ( ph -> A e. X ) |\n| 4 | 1, 3 | #P_erth | |- ( ph -> ( A R B <-> [ A ] R = [ B ] R ) ) |\n| 5 | 2, 4 | #P_mpbid | |- ( ph -> [ A ] R = [ B ] R ) |",
+  "conclusion" : "#P_erthi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cec--1", "#T_cA.wceq", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wph", "#T_wi", "#T_cec--1", "#T_cA", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cec--1", "#T_cB", "#T_cec--2", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ercl", "#P_mpbid", "#P_erth" ]
+}

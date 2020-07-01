@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqz on Metamath](http://us.metamath.org/mpegif/seqz.html)"
+  } ],
+  "names" : [ "seqz" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wi", "#T_cZ", "#T_c.pl", "#T_vx", "#T_wceq", "#T_cZ", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_c.pl", "#T_cZ", "#T_wceq", "#T_cZ", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cK", "#T_wceq", "#T_cZ", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_wceq", "#T_cZ", "#T_c.pl", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cK", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cZ", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the operation ` .+ ` has an absorbing element ` Z ` (a.k.a. zero element), then any sequence containing a ` Z ` evaluates to ` Z ` . (Contributed by Mario Carneiro, 27-May-2014.) ",
+  "statement" : "seqhomo.1 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x .+ y ) e. S ) $.\nseqhomo.2 $e |- ( ( ph /\\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.\nseqz.3 $e |- ( ( ph /\\ x e. S ) -> ( Z .+ x ) = Z ) $.\nseqz.4 $e |- ( ( ph /\\ x e. S ) -> ( x .+ Z ) = Z ) $.\nseqz.5 $e |- ( ph -> K e. ( M ... N ) ) $.\nseqz.6 $e |- ( ph -> N e. V ) $.\nseqz.7 $e |- ( ph -> ( F ` K ) = Z ) $.\nseqz $p |- ( ph -> ( seq M ( .+ , F ) ` N ) = Z ) $.\n$d .+ x y $.\n$d F x y $.\n$d K x y $.\n$d M x y $.\n$d N x y $.\n$d S x y $.\n$d Z x y $.\n$d ph x y $.\n$d x y $.\n$d x y $."
+}

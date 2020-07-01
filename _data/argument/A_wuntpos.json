@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wuntpos on Metamath](http://us.metamath.org/mpegif/wuntpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wun0.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wunop.2 | |- ( ph -> A e. U ) |\n| 3 | 1, 2 | #P_wundm | |- ( ph -> dom A e. U ) |\n| 4 | 1, 3 | #P_wuncnv | |- ( ph -> `' dom A e. U ) |\n| 5 | 1 | #P_wun0 | |- ( ph -> (/) e. U ) |\n| 6 | 1, 5 | #P_wunsn | |- ( ph -> { (/) } e. U ) |\n| 7 | 1, 4, 6 | #P_wunun | |- ( ph -> ( `' dom A u. { (/) } ) e. U ) |\n| 8 | 1, 2 | #P_wunrn | |- ( ph -> ran A e. U ) |\n| 9 | 1, 7, 8 | #P_wunxp | |- ( ph -> ( ( `' dom A u. { (/) } ) X. ran A ) e. U ) |\n| 10 |  | #P_tposssxp | |- tpos A C_ ( ( `' dom A u. { (/) } ) X. ran A ) |\n| 11 | 10 | #P_a1i | |- ( ph -> tpos A C_ ( ( `' dom A u. { (/) } ) X. ran A ) ) |\n| 12 | 1, 9, 11 | #P_wunss | |- ( ph -> tpos A e. U ) |",
+  "conclusion" : "#P_wuntpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cdm", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_ccnv", "#T_cdm", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_c0", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_ccnv", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_ccnv", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_ctpos", "#T_cA.wceq", "#T_wss", "#T_ccnv", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_ctpos", "#T_cA.wceq", "#T_wss", "#T_ccnv", "#T_cdm", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_ctpos", "#T_cA", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunrn", "#P_wun0", "#P_wunsn", "#P_wuncnv", "#P_wunss", "#P_tposssxp", "#P_a1i", "#P_wundm", "#P_wunun", "#P_wunxp" ]
+}

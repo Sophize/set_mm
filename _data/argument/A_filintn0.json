@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See filintn0 on Metamath](http://us.metamath.org/mpegif/filintn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elfir | |- ( ( F e. ( Fil ` X ) /\\ ( A C_ F /\\ A =/= (/) /\\ A e. Fin ) ) -> |^| A e. ( fi ` F ) ) |\n| 2 |  | #P_filfi | |- ( F e. ( Fil ` X ) -> ( fi ` F ) = F ) |\n| 3 | 2 | #P_adantr | |- ( ( F e. ( Fil ` X ) /\\ ( A C_ F /\\ A =/= (/) /\\ A e. Fin ) ) -> ( fi ` F ) = F ) |\n| 4 | 1, 3 | #P_eleqtrd | |- ( ( F e. ( Fil ` X ) /\\ ( A C_ F /\\ A =/= (/) /\\ A e. Fin ) ) -> |^| A e. F ) |\n| 5 |  | #P_fileln0 | |- ( ( F e. ( Fil ` X ) /\\ |^| A e. F ) -> |^| A =/= (/) ) |\n| 6 | 4, 5 | #P_syldan | |- ( ( F e. ( Fil ` X ) /\\ ( A C_ F /\\ A =/= (/) /\\ A e. Fin ) ) -> |^| A =/= (/) ) |",
+  "conclusion" : "#P_filintn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cF", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cfi", "#T_cfv", "#T_cF", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cfi", "#T_cfv", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cF", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cfi", "#T_cfv", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cF", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wa", "#T_cA", "#T_wss", "#T_cF", "#T_w3a--1", "#T_cA", "#T_wne", "#T_c0", "#T_w3a--2", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_cint", "#T_cA", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleqtrd", "#P_fileln0", "#P_filfi", "#P_adantr", "#P_elfir", "#P_syldan" ]
+}

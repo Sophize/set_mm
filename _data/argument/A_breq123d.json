@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See breq123d on Metamath](http://us.metamath.org/mpegif/breq123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | breq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | breq123d.2 | |- ( ph -> R = S ) |\n| 3 |  | breq123d.3 | |- ( ph -> C = D ) |\n| 4 | 1, 3 | #P_breq12d | |- ( ph -> ( A R C <-> B R D ) ) |\n| 5 | 2 | #P_breqd | |- ( ph -> ( B R D <-> B S D ) ) |\n| 6 | 4, 5 | #P_bitrd | |- ( ph -> ( A R C <-> B S D ) ) |",
+  "conclusion" : "#P_breq123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_cR", "#T_cD", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cR", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_cS", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cC", "#T_wb", "#T_cB", "#T_cS", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_breqd", "#P_breq12d" ]
+}

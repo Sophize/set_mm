@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbgraf1o on Metamath](http://us.metamath.org/mpegif/nbgraf1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( <. V , E >. Neighbors U ) = ( <. V , E >. Neighbors U ) |\n| 2 |  | #P_fveq2 | |- ( i = j -> ( E ` i ) = ( E ` j ) ) |\n| 3 | 2 | #P_eleq2d | |- ( i = j -> ( U e. ( E ` i ) <-> U e. ( E ` j ) ) ) |\n| 4 | 3 | #P_cbvrabv | |- { i e. dom E | U e. ( E ` i ) } = { j e. dom E | U e. ( E ` j ) } |\n| 5 | 1, 4 | #P_nbgraf1o0 | |- ( ( V USGrph E /\\ U e. V ) -> E. f f : ( <. V , E >. Neighbors U ) -1-1-onto-> { i e. dom E | U e. ( E ` i ) } ) |",
+  "conclusion" : "#P_nbgraf1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cU", "#T_wceq", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cU", "#T_vi", "#T_wceq", "#T_vj", "#T_wi", "#T_cE", "#T_cfv", "#T_vi", "#T_wceq", "#T_cE", "#T_cfv", "#T_vj", "#T_vi", "#T_wceq", "#T_vj", "#T_wi", "#T_cU", "#T_wcel", "#T_cE", "#T_cfv", "#T_vi", "#T_wb", "#T_cU", "#T_wcel", "#T_cE", "#T_cfv", "#T_vj", "#T_crab--1", "#T_vi", "#T_crab--2", "#T_cdm", "#T_cE", "#T_crab--3", "#T_cU", "#T_wcel", "#T_cE", "#T_cfv", "#T_vi", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vj", "#T_crab--2", "#T_cdm", "#T_cE", "#T_crab--3", "#T_cU", "#T_wcel", "#T_cE", "#T_cfv", "#T_vj", "#T_crab--4", "#T_cV", "#T_cusg", "#T_cE", "#T_wa", "#T_cU", "#T_wcel", "#T_cV", "#T_wi", "#T_wex", "#T_vf", "#T_vf", "#T_wf1o--1", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cnbgra", "#T_cU", "#T_wf1o--2", "#T_crab--1", "#T_vi", "#T_crab--2", "#T_cdm", "#T_cE", "#T_crab--3", "#T_cU", "#T_wcel", "#T_cE", "#T_cfv", "#T_vi", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_nbgraf1o0", "#P_eleq2d", "#P_fveq2", "#P_cbvrabv" ]
+}

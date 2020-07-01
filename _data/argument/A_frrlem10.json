@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frrlem10 on Metamath](http://us.metamath.org/mpegif/frrlem10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frrlem10.1 | |- R Fr A |\n| 2 |  | frrlem10.2 | |- R Se A |\n| 3 |  | frrlem10.3 | |- B = { f | E. x ( f Fn x /\\ ( x C_ A /\\ A. y e. x Pred ( R , A , y ) C_ x /\\ A. y e. x ( f ` y ) = ( y G ( f |` Pred ( R , A , y ) ) ) ) ) } |\n| 4 |  | frrlem10.4 | |- F = U. B |\n| 5 |  | #P_ssid | |- B C_ B |\n| 6 | 1, 2, 3 | #P_frrlem5c | |- ( B C_ B -> Fun U. B ) |\n| 7 | 5, 6 | #P_ax-mp | |- Fun U. B |\n| 8 | 4 | #P_funeqi | |- ( Fun F <-> Fun U. B ) |\n| 9 | 7, 8 | #P_mpbir | |- Fun F |",
+  "conclusion" : "#P_frrlem10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wfr", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_cB", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wex", "#T_vx", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_vx", "#T_wss", "#T_cA", "#T_w3a--1", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wss", "#T_vx", "#T_w3a--2", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_vy", "#T_cG", "#T_vf", "#T_cres", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_cab--3", "#T_cF", "#T_wceq", "#T_cuni", "#T_cB", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wfun", "#T_cuni", "#T_cB.wceq", "#T_wfun", "#T_cuni", "#T_cB.wceq", "#T_wfun", "#T_cF", "#T_wb", "#T_wfun", "#T_cuni", "#T_cB.wceq", "#T_wfun", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ssid", "#P_mpbir", "#P_frrlem5c", "#P_funeqi" ]
+}

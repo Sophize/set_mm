@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zncrng2OLD on Metamath](http://us.metamath.org/mpegif/zncrng2OLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | znvalOLD.z | |- Z = ( CCfld |`s ZZ ) |\n| 2 |  | znvalOLD.s | |- S = ( RSpan ` Z ) |\n| 3 |  | znvalOLD.u | |- U = ( Z /s ( Z ~QG ( S ` { N } ) ) ) |\n| 4 |  | #P_cncrng | |- CCfld e. CRing |\n| 5 |  | #P_zsubrg | |- ZZ e. ( SubRing ` CCfld ) |\n| 6 | 1 | #P_subrgcrng | |- ( ( CCfld e. CRing /\\ ZZ e. ( SubRing ` CCfld ) ) -> Z e. CRing ) |\n| 7 | 4, 5, 6 | #P_mp2an | |- Z e. CRing |\n| 8 | 1, 2 | #P_znlidlOLD | |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` Z ) ) |\n| 9 |  | #P_eqid | |- ( LIdeal ` Z ) = ( LIdeal ` Z ) |\n| 10 | 3, 9 | #P_quscrng | |- ( ( Z e. CRing /\\ ( S ` { N } ) e. ( LIdeal ` Z ) ) -> U e. CRing ) |\n| 11 | 7, 8, 10 | #P_sylancr | |- ( N e. ZZ -> U e. CRing ) |",
+  "conclusion" : "#P_zncrng2OLD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cz", "#T_cS", "#T_wceq", "#T_crsp", "#T_cfv", "#T_cZ", "#T_cU", "#T_wceq", "#T_cZ", "#T_cqus", "#T_cZ", "#T_cqg", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_cz", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cz", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cZ", "#T_wcel", "#T_ccrg", "#T_cZ", "#T_wcel", "#T_ccrg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_wcel", "#T_clidl", "#T_cfv", "#T_cZ", "#T_clidl", "#T_cfv", "#T_cZ", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cZ", "#T_cZ", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cS", "#T_cfv", "#T_csn--1", "#T_cN", "#T_csn--2", "#T_wcel", "#T_clidl", "#T_cfv", "#T_cZ", "#T_wi", "#T_cU", "#T_wcel", "#T_ccrg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cU", "#T_wcel", "#T_ccrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cncrng", "#P_mp2an", "#P_eqid", "#P_quscrng", "#P_sylancr", "#P_subrgcrng", "#P_znlidlOLD", "#P_zsubrg" ]
+}

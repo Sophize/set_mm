@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ge0gtmnf on Metamath](http://us.metamath.org/mpegif/ge0gtmnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_mnflt0 | |- -oo < 0 |\n| 2 |  | #P_mnfxr | |- -oo e. RR* |\n| 3 |  | #P_0xr | |- 0 e. RR* |\n| 4 |  | #P_xrltletr | |- ( ( -oo e. RR* /\\ 0 e. RR* /\\ A e. RR* ) -> ( ( -oo < 0 /\\ 0 <_ A ) -> -oo < A ) ) |\n| 5 | 2, 3, 4 | #P_mp3an12 | |- ( A e. RR* -> ( ( -oo < 0 /\\ 0 <_ A ) -> -oo < A ) ) |\n| 6 | 5 | #P_imp | |- ( ( A e. RR* /\\ ( -oo < 0 /\\ 0 <_ A ) ) -> -oo < A ) |\n| 7 | 1, 6 | #P_mpanr1 | |- ( ( A e. RR* /\\ 0 <_ A ) -> -oo < A ) |",
+  "conclusion" : "#P_ge0gtmnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmnf", "#T_clt", "#T_cc0", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cc0", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cmnf", "#T_clt", "#T_cc0", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cmnf", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cmnf", "#T_clt", "#T_cc0", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cmnf", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cmnf", "#T_clt", "#T_cc0", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cmnf", "#T_clt", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cxr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA", "#T_wi", "#T_cmnf", "#T_clt", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_mnflt0", "#P_mp3an12", "#P_0xr", "#P_mnfxr", "#P_imp", "#P_xrltletr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sngleq on Metamath](http://us.metamath.org/mpegif/bj-sngleq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rexeq | |- ( A = B -> ( E. y e. A x = { y } <-> E. y e. B x = { y } ) ) |\n| 2 | 1 | #P_abbidv | |- ( A = B -> { x | E. y e. A x = { y } } = { x | E. y e. B x = { y } } ) |\n| 3 |  | #P_df-bj-sngl | |- sngl A = { x | E. y e. A x = { y } } |\n| 4 |  | #P_df-bj-sngl | |- sngl B = { x | E. y e. B x = { y } } |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> sngl A = sngl B ) |",
+  "conclusion" : "#P_bj-sngleq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cab--3", "#T_bj-csngl", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cab--3", "#T_bj-csngl", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_cab--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_bj-csngl", "#T_cA", "#T_wceq", "#T_bj-csngl", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rexeq", "#P_df-bj-sngl", "#P_3eqtr4g", "#P_abbidv" ]
+}

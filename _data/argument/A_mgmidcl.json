@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mgmidcl on Metamath](http://us.metamath.org/mpegif/mgmidcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismgmid.b | |- B = ( Base ` G ) |\n| 2 |  | ismgmid.o | |- .0. = ( 0g ` G ) |\n| 3 |  | ismgmid.p | |- .+ = ( +g ` G ) |\n| 4 |  | mgmidcl.e | |- ( ph -> E. e e. B A. x e. B ( ( e .+ x ) = x /\\ ( x .+ e ) = x ) ) |\n| 5 |  | #P_eqid | |- .0. = .0. |\n| 6 | 1, 2, 3, 4 | #P_ismgmid | |- ( ph -> ( ( .0. e. B /\\ A. x e. B ( ( .0. .+ x ) = x /\\ ( x .+ .0. ) = x ) ) <-> .0. = .0. ) ) |\n| 7 | 5, 6 | #P_mpbiri | |- ( ph -> ( .0. e. B /\\ A. x e. B ( ( .0. .+ x ) = x /\\ ( x .+ .0. ) = x ) ) ) |\n| 8 | 7 | #P_simpld | |- ( ph -> .0. e. B ) |",
+  "conclusion" : "#P_mgmidcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_wrex--1", "#T_ve", "#T_wrex--2", "#T_cB", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_ve", "#T_c.pl", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_vx", "#T_c.pl", "#T_ve", "#T_wceq", "#T_vx", "#T_c.0", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_c.0", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_c.pl", "#T_c.0", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_c.0", "#T_wceq", "#T_c.0", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_c.0", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_c.pl", "#T_c.0", "#T_wceq", "#T_vx.wal", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbiri", "#P_simpld", "#P_ismgmid" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sylancl3 on Metamath](http://us.metamath.org/mpegif/sylancl3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sylancl3.1 | |- ( ph -> ps ) |\n| 2 |  | sylancl3.2 | |- ch |\n| 3 |  | sylancl3.3 | |- ( th <-> ( ps /\\ ch ) ) |\n| 4 | 3 | #P_biimpri | |- ( ( ps /\\ ch ) -> th ) |\n| 5 | 1, 2, 4 | #P_sylancl | |- ( ph -> th ) |",
+  "conclusion" : "#P_sylancl3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wch", "#T_wth", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylancl", "#P_biimpri" ]
+}

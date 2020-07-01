@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expcand on Metamath](http://us.metamath.org/mpegif/expcand.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | ltexp2d.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | ltexp2d.3 | |- ( ph -> N e. ZZ ) |\n| 4 |  | ltexp2d.4 | |- ( ph -> 1 < A ) |\n| 5 |  | expcand.5 | |- ( ph -> ( A ^ M ) = ( A ^ N ) ) |\n| 6 |  | #P_expcan | |- ( ( ( A e. RR /\\ M e. ZZ /\\ N e. ZZ ) /\\ 1 < A ) -> ( ( A ^ M ) = ( A ^ N ) <-> M = N ) ) |\n| 7 | 1, 2, 3, 4, 6 | #P_syl31anc | |- ( ph -> ( ( A ^ M ) = ( A ^ N ) <-> M = N ) ) |\n| 8 | 5, 7 | #P_mpbid | |- ( ph -> M = N ) |",
+  "conclusion" : "#P_expcand",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_c1", "#T_clt", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_cexp", "#T_cM", "#T_wceq", "#T_cA", "#T_cexp", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_c1", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wb", "#T_cM", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_wceq", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wb", "#T_cM", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_cM", "#T_wceq", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl31anc", "#P_mpbid", "#P_expcan" ]
+}

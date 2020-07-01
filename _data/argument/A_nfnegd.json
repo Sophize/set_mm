@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfnegd on Metamath](http://us.metamath.org/mpegif/nfnegd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfnegd.1 | |- ( ph -> F/_ x A ) |\n| 2 |  | #P_df-neg | |- -u A = ( 0 - A ) |\n| 3 |  | #P_nfcvd | |- ( ph -> F/_ x 0 ) |\n| 4 |  | #P_nfcvd | |- ( ph -> F/_ x - ) |\n| 5 | 3, 4, 1 | #P_nfovd | |- ( ph -> F/_ x ( 0 - A ) ) |\n| 6 | 2, 5 | #P_nfcxfrd | |- ( ph -> F/_ x -u A ) |",
+  "conclusion" : "#P_nfnegd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cc0", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cmin", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cneg", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcvd", "#P_nfovd", "#P_df-neg", "#P_nfcxfrd" ]
+}

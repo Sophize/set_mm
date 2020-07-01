@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See letrii on Metamath](http://us.metamath.org/mpegif/letrii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt.1 | |- A e. RR |\n| 2 |  | lt.2 | |- B e. RR |\n| 3 | 2, 1 | #P_ltnlei | |- ( B < A <-> -. A <_ B ) |\n| 4 | 2, 1 | #P_ltlei | |- ( B < A -> B <_ A ) |\n| 5 | 3, 4 | #P_sylbir | |- ( -. A <_ B -> B <_ A ) |\n| 6 | 5 | #P_orri | |- ( A <_ B \\/ B <_ A ) |",
+  "conclusion" : "#P_letrii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wn", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cA", "#T_cle", "#T_cB", "#T_wo", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orri", "#P_sylbir", "#P_ltnlei", "#P_ltlei" ]
+}

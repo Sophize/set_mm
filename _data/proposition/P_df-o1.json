@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-o1 on Metamath](http://us.metamath.org/mpegif/df-o1.html)"
+  } ],
+  "names" : [ "df-o1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_co1", "#T_wceq", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_cc", "#T_cpm", "#T_cr", "#T_crab--3", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wrex--1", "#T_vm", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cdm", "#T_vf", "#T_cin", "#T_vx", "#T_cico", "#T_cpnf", "#T_cabs", "#T_cfv", "#T_vf", "#T_cfv", "#T_vy", "#T_cle", "#T_vm", "#T_crab--4", "#T_vf", "#T_vm", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of eventually bounded functions.  We don't bother to build the full conception of big-O notation, because we can represent any big-O in terms of ` O(1) ` and division, and any little-O in terms of a limit and division.  We could also use limsup for this, but it only works on integer sequences, while this will work for real sequences or integer sequences.  (Contributed by Mario Carneiro, 15-Sep-2014.) ",
+  "statement" : "df-o1 $p |- O(1) = { f e. ( CC ^pm RR ) | E. x e. RR E. m e. RR A. y e. ( dom f i^i ( x [,) +oo ) ) ( abs ` ( f ` y ) ) <_ m } $.\n$d f m x y $."
+}

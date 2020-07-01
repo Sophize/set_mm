@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hmphsym on Metamath](http://us.metamath.org/mpegif/hmphsym.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hmph | |- ( J ~= K <-> ( J Homeo K ) =/= (/) ) |\n| 2 |  | #P_n0 | |- ( ( J Homeo K ) =/= (/) <-> E. f f e. ( J Homeo K ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( J ~= K <-> E. f f e. ( J Homeo K ) ) |\n| 4 |  | #P_hmeocnv | |- ( f e. ( J Homeo K ) -> `' f e. ( K Homeo J ) ) |\n| 5 |  | #P_hmphi | |- ( `' f e. ( K Homeo J ) -> K ~= J ) |\n| 6 | 4, 5 | #P_syl | |- ( f e. ( J Homeo K ) -> K ~= J ) |\n| 7 | 6 | #P_exlimiv | |- ( E. f f e. ( J Homeo K ) -> K ~= J ) |\n| 8 | 3, 7 | #P_sylbi | |- ( J ~= K -> K ~= J ) |",
+  "conclusion" : "#P_hmphsym",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cJ", "#T_chmph", "#T_cK", "#T_wb", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wne", "#T_c0", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_cJ", "#T_chmph", "#T_cK", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_cbvex4v.vf", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wi", "#T_ccnv", "#T_cbvex4v.vf", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_ccnv", "#T_cbvex4v.vf", "#T_wcel", "#T_cK", "#T_chmeo", "#T_cJ", "#T_wi", "#T_cK", "#T_chmph", "#T_cJ", "#T_cbvex4v.vf", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wi", "#T_cK", "#T_chmph", "#T_cJ", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cJ", "#T_chmeo", "#T_cK", "#T_wi", "#T_cK", "#T_chmph", "#T_cJ", "#T_cJ", "#T_chmph", "#T_cK", "#T_wi", "#T_cK", "#T_chmph", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hmeocnv", "#P_exlimiv", "#P_hmph", "#P_n0", "#P_syl", "#P_bitri", "#P_hmphi", "#P_sylbi" ]
+}

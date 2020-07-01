@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elqsn0m on Metamath](http://us.metamath.org/mpegif/elqsn0m.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( A /. R ) = ( A /. R ) |\n| 2 |  | #P_eleq2 | |- ( [ y ] R = B -> ( x e. [ y ] R <-> x e. B ) ) |\n| 3 | 2 | #P_exbidv | |- ( [ y ] R = B -> ( E. x x e. [ y ] R <-> E. x x e. B ) ) |\n| 4 |  | #P_eleq2 | |- ( dom R = A -> ( y e. dom R <-> y e. A ) ) |\n| 5 | 4 | #P_biimpar | |- ( ( dom R = A /\\ y e. A ) -> y e. dom R ) |\n| 6 |  | #P_ecdmn0m | |- ( y e. dom R <-> E. x x e. [ y ] R ) |\n| 7 | 5, 6 | #P_sylib | |- ( ( dom R = A /\\ y e. A ) -> E. x x e. [ y ] R ) |\n| 8 | 1, 3, 7 | #P_ectocld | |- ( ( dom R = A /\\ B e. ( A /. R ) ) -> E. x x e. B ) |",
+  "conclusion" : "#P_elqsn0m",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cdm", "#T_cR", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cdm", "#T_cR", "#T_vy.tru", "#T_wcel", "#T_cdm", "#T_cR", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cec--1", "#T_vy.tru", "#T_cec--2", "#T_cR", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA", "#T_wa", "#T_cB", "#T_wcel", "#T_cA", "#T_cqs", "#T_cR", "#T_wi", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_biimpar", "#P_eleq2", "#P_ecdmn0m", "#P_exbidv", "#P_sylib", "#P_ectocld" ]
+}

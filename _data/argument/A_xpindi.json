@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpindi on Metamath](http://us.metamath.org/mpegif/xpindi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inxp | |- ( ( A X. B ) i^i ( A X. C ) ) = ( ( A i^i A ) X. ( B i^i C ) ) |\n| 2 |  | #P_inidm | |- ( A i^i A ) = A |\n| 3 | 2 | #P_xpeq1i | |- ( ( A i^i A ) X. ( B i^i C ) ) = ( A X. ( B i^i C ) ) |\n| 4 | 1, 3 | #P_eqtr2i | |- ( A X. ( B i^i C ) ) = ( ( A X. B ) i^i ( A X. C ) ) |",
+  "conclusion" : "#P_xpindi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA", "#T_cxp", "#T_cB", "#T_cin", "#T_cC", "#T_wceq", "#T_cA", "#T_cxp", "#T_cB", "#T_cin", "#T_cA", "#T_cxp", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr2i", "#P_inxp", "#P_xpeq1i", "#P_inidm" ]
+}

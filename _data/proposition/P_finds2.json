@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See finds2 on Metamath](http://us.metamath.org/mpegif/finds2.html)"
+  } ],
+  "names" : [ "finds2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_wta", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_com", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_vx", "#T_wcel", "#T_com", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_vy", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Finite Induction (inference schema), using implicit substitutions.  The first three hypotheses establish the substitutions we need.  The last two are the basis and the induction step.  Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM, 29-Nov-2002.) ",
+  "statement" : "finds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\nfinds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfinds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\nfinds2.4 $e |- ( ta -> ps ) $.\nfinds2.5 $e |- ( y e. _om -> ( ta -> ( ch -> th ) ) ) $.\nfinds2 $p |- ( x e. _om -> ( ta -> ph ) ) $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x y $.\n$d th x $."
+}

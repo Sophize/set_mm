@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See topgrpstr on Metamath](http://us.metamath.org/mpegif/topgrpstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | topgrpfn.w | |- W = { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( TopSet ` ndx ) , J >. } |\n| 2 |  | #P_1nn | |- 1 e. NN |\n| 3 |  | #P_basendx | |- ( Base ` ndx ) = 1 |\n| 4 |  | #P_1lt2 | |- 1 < 2 |\n| 5 |  | #P_2nn | |- 2 e. NN |\n| 6 |  | #P_plusgndx | |- ( +g ` ndx ) = 2 |\n| 7 |  | #P_2lt9 | |- 2 < 9 |\n| 8 |  | #P_9nn | |- 9 e. NN |\n| 9 |  | #P_tsetndx | |- ( TopSet ` ndx ) = 9 |\n| 10 | 2, 3, 4, 5, 6, 7, 8, 9 | #P_strle3 | |- { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( TopSet ` ndx ) , J >. } Struct <. 1 , 9 >. |\n| 11 | 1, 10 | #P_eqbrtri | |- W Struct <. 1 , 9 >. |",
+  "conclusion" : "#P_topgrpstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_ctp--4", "#T_c1", "#T_wcel", "#T_cn", "#T_cbs", "#T_cfv", "#T_cnx", "#T_wceq", "#T_c1", "#T_c1", "#T_clt", "#T_c2", "#T_c2", "#T_wcel", "#T_cn", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_wceq", "#T_c2", "#T_c2", "#T_clt", "#T_c9", "#T_c9", "#T_wcel", "#T_cn", "#T_cts", "#T_cfv", "#T_cnx", "#T_wceq", "#T_c9", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_ctp--4", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cW", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_c9", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tsetndx", "#P_2lt9", "#P_1nn", "#P_strle3", "#P_basendx", "#P_plusgndx", "#P_9nn", "#P_1lt2", "#P_2nn", "#P_eqbrtri" ]
+}

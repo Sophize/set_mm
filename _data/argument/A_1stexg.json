@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1stexg on Metamath](http://us.metamath.org/mpegif/1stexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elex | |- ( A e. V -> A e. _V ) |\n| 2 |  | #P_fo1st | |- 1st : _V -onto-> _V |\n| 3 |  | #P_fofn | |- ( 1st : _V -onto-> _V -> 1st Fn _V ) |\n| 4 | 2, 3 | #P_ax-mp | |- 1st Fn _V |\n| 5 |  | #P_funfvex | |- ( ( Fun 1st /\\ A e. dom 1st ) -> ( 1st ` A ) e. _V ) |\n| 6 | 5 | #P_funfni | |- ( ( 1st Fn _V /\\ A e. _V ) -> ( 1st ` A ) e. _V ) |\n| 7 | 4, 6 | #P_mpan | |- ( A e. _V -> ( 1st ` A ) e. _V ) |\n| 8 | 1, 7 | #P_syl | |- ( A e. V -> ( 1st ` A ) e. _V ) |",
+  "conclusion" : "#P_1stexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_c1st", "#T_wfo--1", "#T_cvv", "#T_wfo--2", "#T_cvv", "#T_c1st", "#T_wfo--1", "#T_cvv", "#T_wfo--2", "#T_cvv", "#T_wi", "#T_c1st", "#T_wfn", "#T_cvv", "#T_c1st", "#T_wfn", "#T_cvv", "#T_wfun", "#T_c1st", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_c1st", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_c1st", "#T_wfn", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_elex", "#P_mpan", "#P_syl", "#P_fofn", "#P_funfvex", "#P_fo1st", "#P_funfni" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjoci on Metamath](http://us.metamath.org/mpegif/pjoci.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjidmco.1 | |- H e. CH |\n| 2 | 1 | #P_pjtoi | |- ( ( projh ` H ) +op ( projh ` ( _|_ ` H ) ) ) = ( projh ` ~H ) |\n| 3 |  | #P_helch | |- ~H e. CH |\n| 4 | 3 | #P_pjfi | |- ( projh ` ~H ) : ~H --> ~H |\n| 5 | 1 | #P_pjfi | |- ( projh ` H ) : ~H --> ~H |\n| 6 | 1 | #P_choccli | |- ( _|_ ` H ) e. CH |\n| 7 | 6 | #P_pjfi | |- ( projh ` ( _|_ ` H ) ) : ~H --> ~H |\n| 8 | 4, 5, 7 | #P_hodsi | |- ( ( ( projh ` ~H ) -op ( projh ` H ) ) = ( projh ` ( _|_ ` H ) ) <-> ( ( projh ` H ) +op ( projh ` ( _|_ ` H ) ) ) = ( projh ` ~H ) ) |\n| 9 | 2, 8 | #P_mpbir | |- ( ( projh ` ~H ) -op ( projh ` H ) ) = ( projh ` ( _|_ ` H ) ) |",
+  "conclusion" : "#P_pjoci",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wcel", "#T_cch", "#T_cpjh", "#T_cfv", "#T_cH", "#T_chos", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_chil", "#T_chil", "#T_wcel", "#T_cch", "#T_cpjh", "#T_cfv", "#T_chil", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cort", "#T_cfv", "#T_cH", "#T_wcel", "#T_cch", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cpjh", "#T_cfv", "#T_chil", "#T_chod", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wb", "#T_cpjh", "#T_cfv", "#T_cH", "#T_chos", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_chil", "#T_cpjh", "#T_cfv", "#T_chil", "#T_chod", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cort", "#T_cfv", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pjfi", "#P_helch", "#P_hodsi", "#P_pjtoi", "#P_mpbir", "#P_choccli" ]
+}

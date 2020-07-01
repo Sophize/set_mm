@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oppcid on Metamath](http://us.metamath.org/mpegif/oppcid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oppcbas.1 | |- O = ( oppCat ` C ) |\n| 2 |  | oppcid.2 | |- B = ( Id ` C ) |\n| 3 | 1 | #P_oppccatid | |- ( C e. Cat -> ( O e. Cat /\\ ( Id ` O ) = ( Id ` C ) ) ) |\n| 4 | 3 | #P_simprd | |- ( C e. Cat -> ( Id ` O ) = ( Id ` C ) ) |\n| 5 | 4, 2 | #P_syl6eqr | |- ( C e. Cat -> ( Id ` O ) = B ) |",
+  "conclusion" : "#P_oppcid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_cO", "#T_wcel", "#T_ccat", "#T_wa", "#T_ccid", "#T_cfv", "#T_cO", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_ccid", "#T_cfv", "#T_cO", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_cC", "#T_wcel", "#T_ccat", "#T_wi", "#T_ccid", "#T_cfv", "#T_cO", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oppccatid", "#P_syl6eqr", "#P_simprd" ]
+}

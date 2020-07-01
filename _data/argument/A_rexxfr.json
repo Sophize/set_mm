@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexxfr on Metamath](http://us.metamath.org/mpegif/rexxfr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralxfr.1 | |- ( y e. C -> A e. B ) |\n| 2 |  | ralxfr.2 | |- ( x e. B -> E. y e. C x = A ) |\n| 3 |  | ralxfr.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 |  | #P_dfrex2 | |- ( E. x e. B ph <-> -. A. x e. B -. ph ) |\n| 5 |  | #P_dfrex2 | |- ( E. y e. C ps <-> -. A. y e. C -. ps ) |\n| 6 | 3 | #P_notbid | |- ( x = A -> ( -. ph <-> -. ps ) ) |\n| 7 | 1, 2, 6 | #P_ralxfr | |- ( A. x e. B -. ph <-> A. y e. C -. ps ) |\n| 8 | 5, 7 | #P_xchbinxr | |- ( E. y e. C ps <-> -. A. x e. B -. ph ) |\n| 9 | 4, 8 | #P_bitr4i | |- ( E. x e. B ph <-> E. y e. C ps ) |",
+  "conclusion" : "#P_rexxfr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cC", "#T_vx", "#T_wceq", "#T_cA", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cC", "#T_wps", "#T_wb", "#T_wn", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cC", "#T_wn", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cC", "#T_wn", "#T_wps", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cC", "#T_wps", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wn", "#T_wph", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cC", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfrex2", "#P_ralxfr", "#P_xchbinxr", "#P_notbid", "#P_bitr4i" ]
+}

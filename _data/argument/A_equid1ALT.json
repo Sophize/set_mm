@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equid1ALT on Metamath](http://us.metamath.org/mpegif/equid1ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-c9 | |- ( -. A. x x = x -> ( -. A. x x = x -> ( x = x -> A. x x = x ) ) ) |\n| 2 | 1 | #P_pm2.43i | |- ( -. A. x x = x -> ( x = x -> A. x x = x ) ) |\n| 3 | 2 | #P_alimi | |- ( A. x -. A. x x = x -> A. x ( x = x -> A. x x = x ) ) |\n| 4 |  | #P_ax-c10 | |- ( A. x ( x = x -> A. x x = x ) -> x = x ) |\n| 5 | 3, 4 | #P_syl | |- ( A. x -. A. x x = x -> x = x ) |\n| 6 |  | #P_ax-c7 | |- ( -. A. x -. A. x x = x -> x = x ) |\n| 7 | 5, 6 | #P_pm2.61i | |- x = x |\n\\\n Alternate proof of ~ equid and ~ equid1 from older axioms ~ ax-c7 , ~ ax-c10 and ~ ax-c9 .  (Contributed by NM, 10-Jan-1993.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_equid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.43i", "#P_alimi", "#P_syl", "#P_ax-c9", "#P_ax-c10", "#P_ax-c7", "#P_pm2.61i" ]
+}

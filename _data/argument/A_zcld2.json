@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zcld2 on Metamath](http://us.metamath.org/mpegif/zcld2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recld2.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_recld2 | |- RR e. ( Clsd ` J ) |\n| 3 | 1 | #P_tgioo2 | |- ( topGen ` ran (,) ) = ( J |`t RR ) |\n| 4 | 3 | #P_eqcomi | |- ( J |`t RR ) = ( topGen ` ran (,) ) |\n| 5 | 4 | #P_zcld | |- ZZ e. ( Clsd ` ( J |`t RR ) ) |\n| 6 |  | #P_restcldr | |- ( ( RR e. ( Clsd ` J ) /\\ ZZ e. ( Clsd ` ( J |`t RR ) ) ) -> ZZ e. ( Clsd ` J ) ) |\n| 7 | 2, 5, 6 | #P_mp2an | |- ZZ e. ( Clsd ` J ) |",
+  "conclusion" : "#P_zcld2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_cJ", "#T_crest", "#T_cr", "#T_cJ", "#T_crest", "#T_cr", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cz", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_crest", "#T_cr", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wa", "#T_cz", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_crest", "#T_cr", "#T_wi", "#T_cz", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cz", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_zcld", "#P_recld2", "#P_tgioo2", "#P_restcldr", "#P_eqcomi" ]
+}

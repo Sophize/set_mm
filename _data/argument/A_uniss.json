@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uniss on Metamath](http://us.metamath.org/mpegif/uniss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssel | |- ( A C_ B -> ( y e. A -> y e. B ) ) |\n| 2 | 1 | #P_anim2d | |- ( A C_ B -> ( ( x e. y /\\ y e. A ) -> ( x e. y /\\ y e. B ) ) ) |\n| 3 | 2 | #P_eximdv | |- ( A C_ B -> ( E. y ( x e. y /\\ y e. A ) -> E. y ( x e. y /\\ y e. B ) ) ) |\n| 4 |  | #P_eluni | |- ( x e. U. A <-> E. y ( x e. y /\\ y e. A ) ) |\n| 5 |  | #P_eluni | |- ( x e. U. B <-> E. y ( x e. y /\\ y e. B ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4g | |- ( A C_ B -> ( x e. U. A -> x e. U. B ) ) |\n| 7 | 6 | #P_ssrdv | |- ( A C_ B -> U. A C_ U. B ) |",
+  "conclusion" : "#P_uniss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cuni", "#T_cA", "#T_wss", "#T_cuni", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_eximdv", "#P_ssel", "#P_anim2d", "#P_3imtr4g", "#P_eluni" ]
+}

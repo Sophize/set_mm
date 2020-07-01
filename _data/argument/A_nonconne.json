@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nonconne on Metamath](http://us.metamath.org/mpegif/nonconne.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fal | |- -. F. |\n| 2 |  | #P_eqneqall | |- ( A = B -> ( A =/= B -> F. ) ) |\n| 3 | 2 | #P_imp | |- ( ( A = B /\\ A =/= B ) -> F. ) |\n| 4 | 1, 3 | #P_mto | |- -. ( A = B /\\ A =/= B ) |",
+  "conclusion" : "#P_nonconne",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wfal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wfal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wfal", "#T_wn", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fal", "#P_imp", "#P_eqneqall", "#P_mto" ]
+}

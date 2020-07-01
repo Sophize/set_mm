@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fldpropd on Metamath](http://us.metamath.org/mpegif/fldpropd.html)"
+  } ],
+  "names" : [ "fldpropd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cL", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_cplusg", "#T_cfv", "#T_cK", "#T_vy", "#T_wceq", "#T_vx", "#T_cplusg", "#T_cfv", "#T_cL", "#T_vy", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_cmulr", "#T_cfv", "#T_cK", "#T_vy", "#T_wceq", "#T_vx", "#T_cmulr", "#T_cfv", "#T_cL", "#T_vy", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cfield", "#T_wb", "#T_cL", "#T_wcel", "#T_cfield", "#T_cB", "#T_vx", "#T_vy", "#T_cK", "#T_vx", "#T_vy", "#T_cL", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If two structures have the same group components (properties), one is a field iff the other one is.  (Contributed by Mario Carneiro, 8-Feb-2015.) ",
+  "statement" : "drngpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.\ndrngpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.\ndrngpropd.3 $e |- ( ( ph /\\ ( x e. B /\\ y e. B ) ) -> ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.\ndrngpropd.4 $e |- ( ( ph /\\ ( x e. B /\\ y e. B ) ) -> ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.\nfldpropd $p |- ( ph -> ( K e. Field <-> L e. Field ) ) $.\n$d B x y $.\n$d K x y $.\n$d L x y $.\n$d ph x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ply1divalg on Metamath](http://us.metamath.org/mpegif/ply1divalg.html)"
+  } ],
+  "names" : [ "ply1divalg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cD", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cP", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cP", "#T_c.xb", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cP", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_wne", "#T_c.0", "#T_wph", "#T_wi", "#T_cco1", "#T_cfv", "#T_cG", "#T_cfv", "#T_cD", "#T_cfv", "#T_cG", "#T_wcel", "#T_cU", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_wreu--1", "#T_vq", "#T_wreu--2", "#T_cB", "#T_cD", "#T_cfv", "#T_cF", "#T_c.mi", "#T_cG", "#T_c.xb", "#T_vq", "#T_clt", "#T_cD", "#T_cfv", "#T_cG", "#T_c.mi", "#T_vq", "#T_c.0", "#T_vq", "#T_c.xb", "#T_vq", "#T_cB", "#T_vq", "#T_cD", "#T_vq", "#T_cF", "#T_vq", "#T_cG", "#T_vq", "#T_cP", "#T_vq", "#T_cR", "#T_vq", "#T_wph", "#T_vq" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The division algorithm for univariate polynomials over a ring.  For polynomials ` F , G ` such that ` G =/= 0 ` and the leading coefficient of ` G ` is a unit, there are unique polynomials ` q ` and ` r = F - ( G x. q ) ` such that the degree of ` r ` is less than the degree of ` G ` .  (Contributed by Stefan O'Rear, 27-Mar-2015.) ",
+  "statement" : "ply1divalg.p $e |- P = ( Poly1 ` R ) $.\nply1divalg.d $e |- D = ( deg1 ` R ) $.\nply1divalg.b $e |- B = ( Base ` P ) $.\nply1divalg.m $e |- .- = ( -g ` P ) $.\nply1divalg.z $e |- .0. = ( 0g ` P ) $.\nply1divalg.t $e |- .xb = ( .r ` P ) $.\nply1divalg.r1 $e |- ( ph -> R e. Ring ) $.\nply1divalg.f $e |- ( ph -> F e. B ) $.\nply1divalg.g1 $e |- ( ph -> G e. B ) $.\nply1divalg.g2 $e |- ( ph -> G =/= .0. ) $.\nply1divalg.g3 $e |- ( ph -> ( ( coe1 ` G ) ` ( D ` G ) ) e. U ) $.\nply1divalg.u $e |- U = ( Unit ` R ) $.\nply1divalg $p |- ( ph -> E! q e. B ( D ` ( F .- ( G .xb q ) ) ) < ( D ` G ) ) $.\n$d .- q $.\n$d .0. q $.\n$d .xb q $.\n$d B q $.\n$d D q $.\n$d F q $.\n$d G q $.\n$d P q $.\n$d R q $.\n$d ph q $."
+}

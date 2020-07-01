@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aomclem4 on Metamath](http://us.metamath.org/mpegif/aomclem4.html)"
+  } ],
+  "names" : [ "aomclem4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_va", "#T_copab--3", "#T_vb", "#T_copab--4", "#T_copab--5", "#T_crnk", "#T_cfv", "#T_va", "#T_cep", "#T_crnk", "#T_cfv", "#T_vb", "#T_wo", "#T_crnk", "#T_cfv", "#T_va", "#T_wceq", "#T_crnk", "#T_cfv", "#T_vb", "#T_wa", "#T_va", "#T_vz", "#T_cfv", "#T_csuc", "#T_crnk", "#T_cfv", "#T_va", "#T_vb", "#T_copab--6", "#T_wph", "#T_wi", "#T_cdm", "#T_vz", "#T_wcel", "#T_con0", "#T_wph", "#T_wi", "#T_cdm", "#T_vz", "#T_wceq", "#T_cuni", "#T_cdm", "#T_vz", "#T_wph", "#T_wi", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cdm", "#T_vz", "#T_vz", "#T_cfv", "#T_va", "#T_wwe", "#T_cr1", "#T_cfv", "#T_va", "#T_wph", "#T_wi", "#T_cF", "#T_wwe", "#T_cr1", "#T_cfv", "#T_cdm", "#T_vz", "#T_va", "#T_vb", "#T_wph", "#T_va", "#T_vb", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ dfac11 .  Limit case.  Patch together well-orderings constructed so far using ~ fnwe2 to cover the limit rank.  (Contributed by Stefan O'Rear, 20-Jan-2015.) ",
+  "statement" : "aomclem4.f $e |- F = { <. a , b >. | ( ( rank ` a ) _E ( rank ` b ) \\/ ( ( rank ` a ) = ( rank ` b ) /\\ a ( z ` suc ( rank ` a ) ) b ) ) } $.\naomclem4.on $e |- ( ph -> dom z e. On ) $.\naomclem4.su $e |- ( ph -> dom z = U. dom z ) $.\naomclem4.we $e |- ( ph -> A. a e. dom z ( z ` a ) We ( R1 ` a ) ) $.\naomclem4 $p |- ( ph -> F We ( R1 ` dom z ) ) $.\n$d a b ph $.\n$d a b z $."
+}

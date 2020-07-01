@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elfrlmbasn0 on Metamath](http://us.metamath.org/mpegif/elfrlmbasn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frlmfibas.f | |- F = ( R freeLMod I ) |\n| 2 |  | frlmfibas.n | |- N = ( Base ` R ) |\n| 3 |  | elfrlmbasn0.b | |- B = ( Base ` F ) |\n| 4 | 1, 2, 3 | #P_frlmbasf | |- ( ( I e. V /\\ X e. B ) -> X : I --> N ) |\n| 5 | 4 | #P_ex | |- ( I e. V -> ( X e. B -> X : I --> N ) ) |\n| 6 |  | #P_f0dom0 | |- ( X : I --> N -> ( I = (/) <-> X = (/) ) ) |\n| 7 | 6 | #P_biimprd | |- ( X : I --> N -> ( X = (/) -> I = (/) ) ) |\n| 8 | 7 | #P_necon3d | |- ( X : I --> N -> ( I =/= (/) -> X =/= (/) ) ) |\n| 9 | 8 | #P_com12 | |- ( I =/= (/) -> ( X : I --> N -> X =/= (/) ) ) |\n| 10 | 5, 9 | #P_sylan9 | |- ( ( I e. V /\\ I =/= (/) ) -> ( X e. B -> X =/= (/) ) ) |",
+  "conclusion" : "#P_elfrlmbasn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cR", "#T_cfrlm", "#T_cI", "#T_cN", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cI", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_wi", "#T_cI", "#T_wceq", "#T_c0", "#T_wb", "#T_cX", "#T_wceq", "#T_c0", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_wi", "#T_cX", "#T_wceq", "#T_c0", "#T_wi", "#T_cI", "#T_wceq", "#T_c0", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_wi", "#T_cI", "#T_wne", "#T_c0", "#T_wi", "#T_cX", "#T_wne", "#T_c0", "#T_cI", "#T_wne", "#T_c0", "#T_wi", "#T_cX", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cN", "#T_wi", "#T_cX", "#T_wne", "#T_c0", "#T_cI", "#T_wcel", "#T_cV", "#T_wa", "#T_cI", "#T_wne", "#T_c0", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3d", "#P_f0dom0", "#P_biimprd", "#P_frlmbasf", "#P_ex", "#P_sylan9", "#P_com12" ]
+}

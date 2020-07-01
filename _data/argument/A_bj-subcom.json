@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-subcom on Metamath](http://us.metamath.org/mpegif/bj-subcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-subcom.a | |- ( ph -> A e. CC ) |\n| 2 |  | bj-subcom.b | |- ( ph -> B e. CC ) |\n| 3 | 1, 2 | #P_mulcld | |- ( ph -> ( A x. B ) e. CC ) |\n| 4 | 1, 2 | #P_mulcomd | |- ( ph -> ( A x. B ) = ( B x. A ) ) |\n| 5 | 3, 4 | #P_subeq0bd | |- ( ph -> ( ( A x. B ) - ( B x. A ) ) = 0 ) |",
+  "conclusion" : "#P_bj-subcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cmin", "#T_cB", "#T_cmul", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subeq0bd", "#P_mulcld", "#P_mulcomd" ]
+}

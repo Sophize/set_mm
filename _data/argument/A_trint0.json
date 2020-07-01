@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trint0 on Metamath](http://us.metamath.org/mpegif/trint0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_n0 | |- ( A =/= (/) <-> E. x x e. A ) |\n| 2 |  | #P_intss1 | |- ( x e. A -> |^| A C_ x ) |\n| 3 |  | #P_trss | |- ( Tr A -> ( x e. A -> x C_ A ) ) |\n| 4 | 3 | #P_com12 | |- ( x e. A -> ( Tr A -> x C_ A ) ) |\n| 5 |  | #P_sstr2 | |- ( |^| A C_ x -> ( x C_ A -> |^| A C_ A ) ) |\n| 6 | 2, 4, 5 | #P_sylsyld | |- ( x e. A -> ( Tr A -> |^| A C_ A ) ) |\n| 7 | 6 | #P_exlimiv | |- ( E. x x e. A -> ( Tr A -> |^| A C_ A ) ) |\n| 8 | 1, 7 | #P_sylbi | |- ( A =/= (/) -> ( Tr A -> |^| A C_ A ) ) |\n| 9 | 8 | #P_impcom | |- ( ( Tr A /\\ A =/= (/) ) -> |^| A C_ A ) |",
+  "conclusion" : "#P_trint0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wtr", "#T_cA", "#T_wa", "#T_cA", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_cA", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_exlimiv", "#P_n0", "#P_sylsyld", "#P_impcom", "#P_intss1", "#P_trss", "#P_sylbi", "#P_com12" ]
+}

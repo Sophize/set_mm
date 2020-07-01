@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frmdadd on Metamath](http://us.metamath.org/mpegif/frmdadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frmdbas.m | |- M = ( freeMnd ` I ) |\n| 2 |  | frmdbas.b | |- B = ( Base ` M ) |\n| 3 |  | frmdplusg.p | |- .+ = ( +g ` M ) |\n| 4 | 1, 2, 3 | #P_frmdplusg | |- .+ = ( concat |` ( B X. B ) ) |\n| 5 | 4 | #P_oveqi | |- ( X .+ Y ) = ( X ( concat |` ( B X. B ) ) Y ) |\n| 6 |  | #P_ovres | |- ( ( X e. B /\\ Y e. B ) -> ( X ( concat |` ( B X. B ) ) Y ) = ( X concat Y ) ) |\n| 7 | 5, 6 | #P_syl5eq | |- ( ( X e. B /\\ Y e. B ) -> ( X .+ Y ) = ( X concat Y ) ) |",
+  "conclusion" : "#P_frmdadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cfrmd", "#T_cfv", "#T_cI", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_c.pl", "#T_wceq", "#T_cconcat", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_cconcat", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_cconcat", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_wceq", "#T_cX", "#T_cconcat", "#T_cY", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_cconcat", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovres", "#P_syl5eq", "#P_frmdplusg", "#P_oveqi" ]
+}

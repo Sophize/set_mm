@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See homfval on Metamath](http://us.metamath.org/mpegif/homfval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | homffval.f | |- F = ( Homf ` C ) |\n| 2 |  | homffval.b | |- B = ( Base ` C ) |\n| 3 |  | homffval.h | |- H = ( Hom ` C ) |\n| 4 |  | homfval.x | |- ( ph -> X e. B ) |\n| 5 |  | homfval.y | |- ( ph -> Y e. B ) |\n| 6 | 1, 2, 3 | #P_homffval | |- F = ( x e. B , y e. B |-> ( x H y ) ) |\n| 7 | 6 | #P_a1i | |- ( ph -> F = ( x e. B , y e. B |-> ( x H y ) ) ) |\n| 8 |  | #P_oveq12 | |- ( ( x = X /\\ y = Y ) -> ( x H y ) = ( X H Y ) ) |\n| 9 | 8 | #P_adantl | |- ( ( ph /\\ ( x = X /\\ y = Y ) ) -> ( x H y ) = ( X H Y ) ) |\n| 10 |  | #P_ovex | |- ( X H Y ) e. _V |\n| 11 | 10 | #P_a1i | |- ( ph -> ( X H Y ) e. _V ) |\n| 12 | 7, 9, 4, 5, 11 | #P_ovmpt2d | |- ( ph -> ( X F Y ) = ( X H Y ) ) |",
+  "conclusion" : "#P_homfval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cF", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_cF", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cB.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vx.wal", "#T_cH", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_cH", "#T_cY", "#T_cX", "#T_cH", "#T_cY", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cX", "#T_cF", "#T_cY", "#T_wceq", "#T_cX", "#T_cH", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_adantl", "#P_homffval", "#P_oveq12", "#P_a1i", "#P_ovmpt2d" ]
+}

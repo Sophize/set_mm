@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cvgcmp on Metamath](http://us.metamath.org/mpegif/cvgcmp.html)"
+  } ],
+  "names" : [ "cvgcmp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cZ", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cG", "#T_cfv", "#T_vk", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wi", "#T_cc0", "#T_cle", "#T_cG", "#T_cfv", "#T_vk", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wi", "#T_cG", "#T_cfv", "#T_vk", "#T_cle", "#T_cF", "#T_cfv", "#T_vk", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_wcel", "#T_cdm", "#T_cli", "#T_cF", "#T_vk", "#T_cG", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_cZ", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A comparison test for convergence of a real infinite series.  Exercise 3 of [Gleason] p. 182.  (Contributed by NM, 1-May-2005.)  (Revised by Mario Carneiro, 24-Mar-2014.) ",
+  "statement" : "cvgcmp.1 $e |- Z = ( ZZ>= ` M ) $.\ncvgcmp.2 $e |- ( ph -> N e. Z ) $.\ncvgcmp.3 $e |- ( ( ph /\\ k e. Z ) -> ( F ` k ) e. RR ) $.\ncvgcmp.4 $e |- ( ( ph /\\ k e. Z ) -> ( G ` k ) e. RR ) $.\ncvgcmp.5 $e |- ( ph -> seq M ( + , F ) e. dom ~~> ) $.\ncvgcmp.6 $e |- ( ( ph /\\ k e. ( ZZ>= ` N ) ) -> 0 <_ ( G ` k ) ) $.\ncvgcmp.7 $e |- ( ( ph /\\ k e. ( ZZ>= ` N ) ) -> ( G ` k ) <_ ( F ` k ) ) $.\ncvgcmp $p |- ( ph -> seq M ( + , G ) e. dom ~~> ) $.\n$d F k $.\n$d G k $.\n$d M k $.\n$d N k $.\n$d Z k $.\n$d k ph $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfvres on Metamath](http://us.metamath.org/mpegif/nfvres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dmres | |- dom ( F |` B ) = ( B i^i dom F ) |\n| 2 |  | #P_inss1 | |- ( B i^i dom F ) C_ B |\n| 3 | 1, 2 | #P_eqsstri | |- dom ( F |` B ) C_ B |\n| 4 | 3 | #P_sseli | |- ( A e. dom ( F |` B ) -> A e. B ) |\n| 5 | 4 | #P_con3i | |- ( -. A e. B -> -. A e. dom ( F |` B ) ) |\n| 6 |  | #P_ndmfv | |- ( -. A e. dom ( F |` B ) -> ( ( F |` B ) ` A ) = (/) ) |\n| 7 | 5, 6 | #P_syl | |- ( -. A e. B -> ( ( F |` B ) ` A ) = (/) ) |",
+  "conclusion" : "#P_nfvres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cdm", "#T_cF", "#T_cB.wceq", "#T_cin", "#T_cdm", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_cdm", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cF", "#T_cres", "#T_cB", "#T_cfv", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ndmfv", "#P_sseli", "#P_dmres", "#P_inss1", "#P_con3i", "#P_syl", "#P_eqsstri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See climmo on Metamath](http://us.metamath.org/mpegif/climmo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( x = y -> ( F ~~> x <-> F ~~> y ) ) |\n| 2 | 1 | #P_cbvexv | |- ( E. x F ~~> x <-> E. y F ~~> y ) |\n| 3 |  | #P_climeu | |- ( F ~~> y -> E! x F ~~> x ) |\n| 4 | 3 | #P_exlimiv | |- ( E. y F ~~> y -> E! x F ~~> x ) |\n| 5 | 2, 4 | #P_sylbi | |- ( E. x F ~~> x -> E! x F ~~> x ) |\n| 6 |  | #P_df-mo | |- ( E* x F ~~> x <-> ( E. x F ~~> x -> E! x F ~~> x ) ) |\n| 7 | 5, 6 | #P_mpbir | |- E* x F ~~> x |",
+  "conclusion" : "#P_climmo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_cF", "#T_cli", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cF", "#T_cli", "#T_vy.tru", "#T_cF", "#T_cli", "#T_vy.tru", "#T_wi", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cF", "#T_cli", "#T_vy.tru", "#T_wi", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wi", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wmo", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wi", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wmo", "#T_vx", "#T_cF", "#T_cli", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_climeu", "#P_exlimiv", "#P_df-mo", "#P_breq2", "#P_mpbir", "#P_cbvexv", "#P_sylbi" ]
+}

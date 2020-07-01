@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nic-dfneg on Metamath](http://us.metamath.org/mpegif/nic-dfneg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nannot | |- ( -. ph <-> ( ph -/\\ ph ) ) |\n| 2 | 1 | #P_bicomi | |- ( ( ph -/\\ ph ) <-> -. ph ) |\n| 3 |  | #P_nanbi | |- ( ( ( ph -/\\ ph ) <-> -. ph ) <-> ( ( ( ph -/\\ ph ) -/\\ -. ph ) -/\\ ( ( ( ph -/\\ ph ) -/\\ ( ph -/\\ ph ) ) -/\\ ( -. ph -/\\ -. ph ) ) ) ) |\n| 4 | 2, 3 | #P_mpbi | |- ( ( ( ph -/\\ ph ) -/\\ -. ph ) -/\\ ( ( ( ph -/\\ ph ) -/\\ ( ph -/\\ ph ) ) -/\\ ( -. ph -/\\ -. ph ) ) ) |",
+  "conclusion" : "#P_nic-dfneg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wnan", "#T_wph", "#T_wph", "#T_wnan", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wph", "#T_wnan", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wn", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wn", "#T_wph", "#T_wnan", "#T_wn", "#T_wph", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wn", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wn", "#T_wph", "#T_wnan", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nannot", "#P_nanbi", "#P_mpbi", "#P_bicomi" ]
+}

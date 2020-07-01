@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elunii on Metamath](http://us.metamath.org/mpegif/elunii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq2 | |- ( x = B -> ( A e. x <-> A e. B ) ) |\n| 2 |  | #P_eleq1 | |- ( x = B -> ( x e. C <-> B e. C ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( x = B -> ( ( A e. x /\\ x e. C ) <-> ( A e. B /\\ B e. C ) ) ) |\n| 4 | 3 | #P_spcegv | |- ( B e. C -> ( ( A e. B /\\ B e. C ) -> E. x ( A e. x /\\ x e. C ) ) ) |\n| 5 | 4 | #P_anabsi7 | |- ( ( A e. B /\\ B e. C ) -> E. x ( A e. x /\\ x e. C ) ) |\n| 6 |  | #P_eluni | |- ( A e. U. C <-> E. x ( A e. x /\\ x e. C ) ) |\n| 7 | 5, 6 | #P_sylibr | |- ( ( A e. B /\\ B e. C ) -> A e. U. C ) |",
+  "conclusion" : "#P_elunii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cC", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cuni", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anabsi7", "#P_eleq2", "#P_eleq1", "#P_sylibr", "#P_eluni", "#P_anbi12d", "#P_spcegv" ]
+}

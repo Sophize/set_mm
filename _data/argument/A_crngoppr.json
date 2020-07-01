@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See crngoppr on Metamath](http://us.metamath.org/mpegif/crngoppr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opprval.1 | |- B = ( Base ` R ) |\n| 2 |  | opprval.2 | |- .x. = ( .r ` R ) |\n| 3 |  | opprval.3 | |- O = ( oppR ` R ) |\n| 4 |  | opprmulfval.4 | |- .xb = ( .r ` O ) |\n| 5 | 1, 2 | #P_crngcom | |- ( ( R e. CRing /\\ X e. B /\\ Y e. B ) -> ( X .x. Y ) = ( Y .x. X ) ) |\n| 6 | 1, 2, 3, 4 | #P_opprmul | |- ( X .xb Y ) = ( Y .x. X ) |\n| 7 | 5, 6 | #P_syl6eqr | |- ( ( R e. CRing /\\ X e. B /\\ Y e. B ) -> ( X .x. Y ) = ( X .xb Y ) ) |",
+  "conclusion" : "#P_crngoppr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cO", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_c.xb", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cO", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.x", "#T_cY", "#T_wceq", "#T_cY", "#T_c.x", "#T_cX", "#T_cX", "#T_c.xb", "#T_cY", "#T_wceq", "#T_cY", "#T_c.x", "#T_cX", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.x", "#T_cY", "#T_wceq", "#T_cX", "#T_c.xb", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opprmul", "#P_crngcom", "#P_syl6eqr" ]
+}

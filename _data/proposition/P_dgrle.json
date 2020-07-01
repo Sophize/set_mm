@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dgrle on Metamath](http://us.metamath.org/mpegif/dgrle.html)"
+  } ],
+  "names" : [ "dgrle" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cA", "#T_cmul", "#T_vz", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cle", "#T_cN", "#T_cA", "#T_vz", "#T_cN", "#T_vk", "#T_vz", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Given an explicit expression for a polynomial, the degree is at most the highest term in the sum.  (Contributed by Mario Carneiro, 24-Jul-2014.) ",
+  "statement" : "dgrle.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.\ndgrle.2 $e |- ( ph -> N e. NN0 ) $.\ndgrle.3 $e |- ( ( ph /\\ k e. ( 0 ... N ) ) -> A e. CC ) $.\ndgrle.4 $e |- ( ph -> F = ( z e. CC |-> sum_ k e. ( 0 ... N ) ( A x. ( z ^ k ) ) ) ) $.\ndgrle $p |- ( ph -> ( deg ` F ) <_ N ) $.\n$d A z $.\n$d N k z $.\n$d k ph z $."
+}

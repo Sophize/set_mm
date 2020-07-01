@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relbigcup on Metamath](http://us.metamath.org/mpegif/relbigcup.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relxp | |- Rel ( _V X. _V ) |\n| 2 |  | #P_reldif | |- ( Rel ( _V X. _V ) -> Rel ( ( _V X. _V ) \\ ran ( ( _V (x) _E ) (++) ( ( _E o. _E ) (x) _V ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- Rel ( ( _V X. _V ) \\ ran ( ( _V (x) _E ) (++) ( ( _E o. _E ) (x) _V ) ) ) |\n| 4 |  | #P_df-bigcup | |- Bigcup = ( ( _V X. _V ) \\ ran ( ( _V (x) _E ) (++) ( ( _E o. _E ) (x) _V ) ) ) |\n| 5 | 4 | #P_releqi | |- ( Rel Bigcup <-> Rel ( ( _V X. _V ) \\ ran ( ( _V (x) _E ) (++) ( ( _E o. _E ) (x) _V ) ) ) ) |\n| 6 | 3, 5 | #P_mpbir | |- Rel Bigcup |",
+  "conclusion" : "#P_relbigcup",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wi", "#T_wrel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cvv", "#T_ctxp", "#T_cep", "#T_csymdif", "#T_cep", "#T_ccom", "#T_cep", "#T_ctxp", "#T_cvv", "#T_wrel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cvv", "#T_ctxp", "#T_cep", "#T_csymdif", "#T_cep", "#T_ccom", "#T_cep", "#T_ctxp", "#T_cvv", "#T_cbigcup", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cvv", "#T_ctxp", "#T_cep", "#T_csymdif", "#T_cep", "#T_ccom", "#T_cep", "#T_ctxp", "#T_cvv", "#T_wrel", "#T_cbigcup", "#T_wb", "#T_wrel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cvv", "#T_ctxp", "#T_cep", "#T_csymdif", "#T_cep", "#T_ccom", "#T_cep", "#T_ctxp", "#T_cvv", "#T_wrel", "#T_cbigcup" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_relxp", "#P_ax-mp", "#P_releqi", "#P_df-bigcup", "#P_reldif", "#P_mpbir" ]
+}

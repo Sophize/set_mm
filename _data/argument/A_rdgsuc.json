@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rdgsuc on Metamath](http://us.metamath.org/mpegif/rdgsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rdgfnon | |- rec ( F , A ) Fn On |\n| 2 |  | #P_fndm | |- ( rec ( F , A ) Fn On -> dom rec ( F , A ) = On ) |\n| 3 | 1, 2 | #P_ax-mp | |- dom rec ( F , A ) = On |\n| 4 | 3 | #P_eleq2i | |- ( B e. dom rec ( F , A ) <-> B e. On ) |\n| 5 |  | #P_rdgsucg | |- ( B e. dom rec ( F , A ) -> ( rec ( F , A ) ` suc B ) = ( F ` ( rec ( F , A ) ` B ) ) ) |\n| 6 | 4, 5 | #P_sylbir | |- ( B e. On -> ( rec ( F , A ) ` suc B ) = ( F ` ( rec ( F , A ) ` B ) ) ) |",
+  "conclusion" : "#P_rdgsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wfn", "#T_con0", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_csuc", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA", "#T_cfv", "#T_csuc", "#T_cB", "#T_wceq", "#T_cF", "#T_cfv", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rdgsucg", "#P_ax-mp", "#P_sylbir", "#P_eleq2i", "#P_rdgfnon", "#P_fndm" ]
+}

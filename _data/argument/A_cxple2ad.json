@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cxple2ad on Metamath](http://us.metamath.org/mpegif/cxple2ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recxpcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | recxpcld.2 | |- ( ph -> 0 <_ A ) |\n| 3 |  | recxpcld.3 | |- ( ph -> B e. RR ) |\n| 4 |  | cxple2ad.4 | |- ( ph -> C e. RR ) |\n| 5 |  | cxple2ad.5 | |- ( ph -> 0 <_ C ) |\n| 6 |  | cxple2ad.6 | |- ( ph -> A <_ B ) |\n| 7 |  | #P_cxple2a | |- ( ( ( A e. RR /\\ B e. RR /\\ C e. RR ) /\\ ( 0 <_ A /\\ 0 <_ C ) /\\ A <_ B ) -> ( A ^c C ) <_ ( B ^c C ) ) |\n| 8 | 1, 3, 4, 2, 5, 6, 7 | #P_syl321anc | |- ( ph -> ( A ^c C ) <_ ( B ^c C ) ) |",
+  "conclusion" : "#P_cxple2ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cC", "#T_w3a--2", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_ccxp", "#T_cC", "#T_cle", "#T_cB.wceq", "#T_ccxp", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_ccxp", "#T_cC", "#T_cle", "#T_cB", "#T_ccxp", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl321anc", "#P_cxple2a" ]
+}

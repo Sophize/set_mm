@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-subrg on Metamath](http://us.metamath.org/mpegif/df-subrg.html)"
+  } ],
+  "names" : [ "df-subrg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csubrg", "#T_wceq", "#T_vw", "#T_cmpt--1", "#T_crg", "#T_cmpt--2", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vw", "#T_crab--3", "#T_vw", "#T_cress", "#T_vs", "#T_wcel", "#T_crg", "#T_wa", "#T_cur", "#T_cfv", "#T_vw", "#T_wcel", "#T_vs", "#T_crab--4", "#T_vs", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a subring of a ring as a set of elements that is a ring in its own right and contains the multiplicative identity. The additional constraint is necessary because the multiplicative identity of a ring, unlike the additive identity of a ring/group or the multiplicative identity of a field, cannot be identified by a local property.  Thus, it is possible for a subset of a ring to be a ring while not containing the true identity if it contains a false identity. For instance, the subset ` ( ZZ X. { 0 } ) ` of ` ( ZZ X. ZZ ) ` (where multiplication is component-wise) contains the false identity ` <. 1 , 0 >. ` which preserves every element of the subset and thus appears to be the identity of the subset, but is not the identity of the larger ring.  (Contributed by Stefan O'Rear, 27-Nov-2014.) ",
+  "statement" : "df-subrg $p |- SubRing = ( w e. Ring |-> { s e. ~P ( Base ` w ) | ( ( w |`s s ) e. Ring /\\ ( 1r ` w ) e. s ) } ) $.\n$d s w $."
+}

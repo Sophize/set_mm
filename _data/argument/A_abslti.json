@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abslti on Metamath](http://us.metamath.org/mpegif/abslti.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sqrth.1 | |- A e. RR |\n| 2 |  | sqr11.1 | |- B e. RR |\n| 3 |  | #P_abslt | |- ( ( A e. RR /\\ B e. RR ) -> ( ( abs ` A ) < B <-> ( -u B < A /\\ A < B ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( ( abs ` A ) < B <-> ( -u B < A /\\ A < B ) ) |",
+  "conclusion" : "#P_abslti",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_cabs", "#T_cfv", "#T_cA", "#T_clt", "#T_cB", "#T_wb", "#T_cneg", "#T_cB", "#T_clt", "#T_cA", "#T_wa", "#T_cA", "#T_clt", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_abslt" ]
+}

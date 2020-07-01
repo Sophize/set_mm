@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idssen on Metamath](http://us.metamath.org/mpegif/idssen.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reli | |- Rel _I |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 | 2 | #P_ideq | |- ( x _I y <-> x = y ) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 |  | #P_eqeng | |- ( x e. _V -> ( x = y -> x ~~ y ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( x = y -> x ~~ y ) |\n| 7 | 3, 6 | #P_sylbi | |- ( x _I y -> x ~~ y ) |\n| 8 |  | #P_df-br | |- ( x _I y <-> <. x , y >. e. _I ) |\n| 9 |  | #P_df-br | |- ( x ~~ y <-> <. x , y >. e. ~~ ) |\n| 10 | 7, 8, 9 | #P_3imtr3i | |- ( <. x , y >. e. _I -> <. x , y >. e. ~~ ) |\n| 11 | 1, 10 | #P_relssi | |- _I C_ ~~ |",
+  "conclusion" : "#P_idssen",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wrel", "#T_cid", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cid", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_vx.wal", "#T_cid", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_vx.wal", "#T_cid", "#T_vy.tru", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cid", "#T_vx.wal", "#T_cen", "#T_vy.tru", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cen", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cid", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cen", "#T_cid", "#T_wss", "#T_cen" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ideq", "#P_ax-mp", "#P_df-br", "#P_relssi", "#P_3imtr3i", "#P_vex", "#P_eqeng", "#P_sylbi", "#P_reli" ]
+}

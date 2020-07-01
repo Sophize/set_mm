@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mtp-xor on Metamath](http://us.metamath.org/mpegif/mtp-xor.html)"
+  } ],
+  "names" : [ "mtp-xor" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Modus tollendo ponens (original exclusive-or version), aka disjunctive syllogism, one of the five \"indemonstrables\" in Stoic logic.  The rule says, \"if ` ph ` is not true, and either ` ph ` or ` ps ` (exclusively) are true, then ` ps ` must be true.\"  Today the name \"modus tollendo ponens\" often refers to a variant, the inclusive-or version as defined in ~ mtp-or .  See rule 3 on [Lopez-Astorga] p. 12 (note that the \"or\" is the same as ~ mpto2 , that is, it is exclusive-or ~ df-xor ), rule 3 of [Sanford] p. 39 (where it is not as clearly stated which kind of \"or\" is used but it appears to be in the same sense as ~ mpto2 ), and rule A5 in [Hitchcock] p. 5 (exclusive-or is expressly used).  (Contributed by David A. Wheeler, 2-Mar-2018.) ",
+  "statement" : "mtp-xor.1 $e |- -. ph $.\nmtp-xor.2 $e |- ( ph \\/_ ps ) $.\nmtp-xor $p |- ps $."
+}

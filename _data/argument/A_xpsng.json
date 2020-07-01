@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpsng on Metamath](http://us.metamath.org/mpegif/xpsng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fconstg | |- ( B e. W -> ( { A } X. { B } ) : { A } --> { B } ) |\n| 2 | 1 | #P_adantl | |- ( ( A e. V /\\ B e. W ) -> ( { A } X. { B } ) : { A } --> { B } ) |\n| 3 |  | #P_fsng | |- ( ( A e. V /\\ B e. W ) -> ( ( { A } X. { B } ) : { A } --> { B } <-> ( { A } X. { B } ) = { <. A , B >. } ) ) |\n| 4 | 2, 3 | #P_mpbid | |- ( ( A e. V /\\ B e. W ) -> ( { A } X. { B } ) = { <. A , B >. } ) |",
+  "conclusion" : "#P_xpsng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wf--2", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wf--2", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wf--2", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cxp", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fconstg", "#P_fsng", "#P_adantl", "#P_mpbid" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srngcnv on Metamath](http://us.metamath.org/mpegif/srngcnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srngcnv.i | |- .* = ( *rf ` R ) |\n| 2 |  | #P_eqid | |- ( oppR ` R ) = ( oppR ` R ) |\n| 3 | 2, 1 | #P_issrng | |- ( R e. *Ring <-> ( .* e. ( R RingHom ( oppR ` R ) ) /\\ .* = `' .* ) ) |\n| 4 | 3 | #P_simprbi | |- ( R e. *Ring -> .* = `' .* ) |",
+  "conclusion" : "#P_srngcnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.as", "#T_wceq", "#T_cstf", "#T_cfv", "#T_cR", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_csr", "#T_wb", "#T_c.as", "#T_wcel", "#T_cR", "#T_crh", "#T_coppr", "#T_cfv", "#T_cR", "#T_wa", "#T_c.as", "#T_wceq", "#T_ccnv", "#T_c.as", "#T_cR", "#T_wcel", "#T_csr", "#T_wi", "#T_c.as", "#T_wceq", "#T_ccnv", "#T_c.as" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_issrng", "#P_simprbi" ]
+}

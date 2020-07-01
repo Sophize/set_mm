@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubdistr1i on Metamath](http://us.metamath.org/mpegif/hvsubdistr1i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvdistr1.1 | |- A e. CC |\n| 2 |  | hvdistr1.2 | |- B e. ~H |\n| 3 |  | hvdistr1.3 | |- C e. ~H |\n| 4 |  | #P_hvsubdistr1 | |- ( ( A e. CC /\\ B e. ~H /\\ C e. ~H ) -> ( A .h ( B -h C ) ) = ( ( A .h B ) -h ( A .h C ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( A .h ( B -h C ) ) = ( ( A .h B ) -h ( A .h C ) ) |",
+  "conclusion" : "#P_hvsubdistr1i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_chil", "#T_cC", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cmv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cmv", "#T_cA.wceq", "#T_csm", "#T_cC", "#T_cA", "#T_csm", "#T_cB", "#T_cmv", "#T_cC", "#T_wceq", "#T_cA", "#T_csm", "#T_cB", "#T_cmv", "#T_cA", "#T_csm", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_hvsubdistr1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fperiodmul on Metamath](http://us.metamath.org/mpegif/fperiodmul.html)"
+  } ],
+  "names" : [ "fperiodmul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cr", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_caddc", "#T_cT", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_caddc", "#T_cN", "#T_cmul", "#T_cT", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_vx", "#T_cN", "#T_vx", "#T_cT", "#T_vx", "#T_cX", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A function with period T is also periodic with period multiple of T. (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "fperiodmul.f $e |- ( ph -> F : RR --> CC ) $.\nfperiodmul.t $e |- ( ph -> T e. RR ) $.\nfperiodmul.n $e |- ( ph -> N e. ZZ ) $.\nfperiodmul.x $e |- ( ph -> X e. RR ) $.\nfperiodmul.per $e |- ( ( ph /\\ x e. RR ) -> ( F ` ( x + T ) ) = ( F ` x ) ) $.\nfperiodmul $p |- ( ph -> ( F ` ( X + ( N x. T ) ) ) = ( F ` X ) ) $.\n$d F x $.\n$d N x $.\n$d T x $.\n$d X x $.\n$d ph x $."
+}

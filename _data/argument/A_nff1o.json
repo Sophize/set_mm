@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nff1o on Metamath](http://us.metamath.org/mpegif/nff1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nff1o.1 | |- F/_ x F |\n| 2 |  | nff1o.2 | |- F/_ x A |\n| 3 |  | nff1o.3 | |- F/_ x B |\n| 4 |  | #P_df-f1o | |- ( F : A -1-1-onto-> B <-> ( F : A -1-1-> B /\\ F : A -onto-> B ) ) |\n| 5 | 1, 2, 3 | #P_nff1 | |- F/ x F : A -1-1-> B |\n| 6 | 1, 2, 3 | #P_nffo | |- F/ x F : A -onto-> B |\n| 7 | 5, 6 | #P_nfan | |- F/ x ( F : A -1-1-> B /\\ F : A -onto-> B ) |\n| 8 | 4, 7 | #P_nfxfr | |- F/ x F : A -1-1-onto-> B |",
+  "conclusion" : "#P_nff1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cF", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wnf", "#T_vx", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nff1", "#P_df-f1o", "#P_nfan", "#P_nfxfr", "#P_nffo" ]
+}

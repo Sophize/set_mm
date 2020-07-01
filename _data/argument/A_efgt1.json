@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efgt1 on Metamath](http://us.metamath.org/mpegif/efgt1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1red | |- ( A e. RR+ -> 1 e. RR ) |\n| 2 |  | #P_1re | |- 1 e. RR |\n| 3 |  | #P_rpre | |- ( A e. RR+ -> A e. RR ) |\n| 4 |  | #P_readdcl | |- ( ( 1 e. RR /\\ A e. RR ) -> ( 1 + A ) e. RR ) |\n| 5 | 2, 3, 4 | #P_sylancr | |- ( A e. RR+ -> ( 1 + A ) e. RR ) |\n| 6 | 3 | #P_reefcld | |- ( A e. RR+ -> ( exp ` A ) e. RR ) |\n| 7 |  | #P_ltaddrp | |- ( ( 1 e. RR /\\ A e. RR+ ) -> 1 < ( 1 + A ) ) |\n| 8 | 2, 7 | #P_mpan | |- ( A e. RR+ -> 1 < ( 1 + A ) ) |\n| 9 |  | #P_efgt1p | |- ( A e. RR+ -> ( 1 + A ) < ( exp ` A ) ) |\n| 10 | 1, 5, 6, 8, 9 | #P_lttrd | |- ( A e. RR+ -> 1 < ( exp ` A ) ) |",
+  "conclusion" : "#P_efgt1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_caddc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_caddc", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_clt", "#T_c1", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_clt", "#T_c1", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_caddc", "#T_cA.wceq", "#T_clt", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_clt", "#T_ce", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ltaddrp", "#P_1red", "#P_sylancr", "#P_readdcl", "#P_mpan", "#P_lttrd", "#P_rpre", "#P_1re", "#P_reefcld", "#P_efgt1p" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ismred on Metamath](http://us.metamath.org/mpegif/ismred.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismred.ss | |- ( ph -> C C_ ~P X ) |\n| 2 |  | ismred.ba | |- ( ph -> X e. C ) |\n| 3 |  | ismred.in | |- ( ( ph /\\ s C_ C /\\ s =/= (/) ) -> |^| s e. C ) |\n| 4 |  | #P_selpw | |- ( s e. ~P C <-> s C_ C ) |\n| 5 | 3 | #P_3expia | |- ( ( ph /\\ s C_ C ) -> ( s =/= (/) -> |^| s e. C ) ) |\n| 6 | 4, 5 | #P_sylan2b | |- ( ( ph /\\ s e. ~P C ) -> ( s =/= (/) -> |^| s e. C ) ) |\n| 7 | 6 | #P_ralrimiva | |- ( ph -> A. s e. ~P C ( s =/= (/) -> |^| s e. C ) ) |\n| 8 |  | #P_ismre | |- ( C e. ( Moore ` X ) <-> ( C C_ ~P X /\\ X e. C /\\ A. s e. ~P C ( s =/= (/) -> |^| s e. C ) ) ) |\n| 9 | 1, 2, 7, 8 | #P_syl3anbrc | |- ( ph -> C e. ( Moore ` X ) ) |",
+  "conclusion" : "#P_ismred",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cC", "#T_wss", "#T_cpw", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cC", "#T_wph", "#T_w3a--1", "#T_vs", "#T_wss", "#T_cC", "#T_w3a--2", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_cC", "#T_vs", "#T_wcel", "#T_cpw", "#T_cC", "#T_wb", "#T_vs", "#T_wss", "#T_cC", "#T_wph", "#T_wa", "#T_vs", "#T_wss", "#T_cC", "#T_wi", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_vs", "#T_wcel", "#T_cpw", "#T_cC", "#T_wi", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_cC", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_cC", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wb", "#T_cC", "#T_wss", "#T_cpw", "#T_cX", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cC", "#T_w3a--2", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_cC", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ismre", "#P_sylan2b", "#P_selpw", "#P_3expia", "#P_syl3anbrc", "#P_ralrimiva" ]
+}

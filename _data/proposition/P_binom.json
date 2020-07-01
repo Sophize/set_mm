@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See binom on Metamath](http://us.metamath.org/mpegif/binom.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "The Binomial Theorem", "binom" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_caddc", "#T_cB", "#T_cexp", "#T_cN", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cN", "#T_cbc", "#T_vk", "#T_cmul", "#T_cA", "#T_cexp", "#T_cN", "#T_cmin", "#T_vk", "#T_cmul", "#T_cB", "#T_cexp", "#T_vk", "#T_cA", "#T_vk", "#T_cB", "#T_vk", "#T_cN", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The binomial theorem: ` ( A + B ) ^ N ` is the sum from ` k = 0 ` to ` N ` of ` ( N _C k ) x. ( ( A ^ k ) x. ( B ^ ( N - k ) ) ` .  Theorem 15-2.8 of [Gleason] p. 296.  This part of the proof sets up the induction and does the base case, with the bulk of the work (the induction step) in ~ binomlem .  This is Metamath 100 proof #44. (Contributed by NM, 7-Dec-2005.)  (Proof shortened by Mario Carneiro, 24-Apr-2014.) ",
+  "statement" : "binom $p |- ( ( A e. CC /\\ B e. CC /\\ N e. NN0 ) -> ( ( A + B ) ^ N ) = sum_ k e. ( 0 ... N ) ( ( N _C k ) x. ( ( A ^ ( N - k ) ) x. ( B ^ k ) ) ) ) $.\n$d A k $.\n$d B k $.\n$d N k $."
+}

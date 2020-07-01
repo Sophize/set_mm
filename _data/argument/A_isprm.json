@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isprm on Metamath](http://us.metamath.org/mpegif/isprm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\np\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( p = P -> ( n || p <-> n || P ) ) |\n| 2 | 1 | #P_rabbidv | |- ( p = P -> { n e. NN | n || p } = { n e. NN | n || P } ) |\n| 3 | 2 | #P_breq1d | |- ( p = P -> ( { n e. NN | n || p } ~~ 2o <-> { n e. NN | n || P } ~~ 2o ) ) |\n| 4 |  | #P_df-prm | |- Prime = { p e. NN | { n e. NN | n || p } ~~ 2o } |\n| 5 | 3, 4 | #P_elrab2 | |- ( P e. Prime <-> ( P e. NN /\\ { n e. NN | n || P } ~~ 2o ) ) |",
+  "conclusion" : "#P_isprm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vp", "#T_vp", "#T_wceq", "#T_cP", "#T_wi", "#T_vn", "#T_cdvds", "#T_vp", "#T_wb", "#T_vn", "#T_cdvds", "#T_cP", "#T_vp", "#T_wceq", "#T_cP", "#T_wi", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_vp", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_cP", "#T_crab--4", "#T_vp", "#T_wceq", "#T_cP", "#T_wi", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_vp", "#T_crab--4", "#T_cen", "#T_c2o", "#T_wb", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_cP", "#T_crab--4", "#T_cen", "#T_c2o", "#T_cprime", "#T_wceq", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_vp", "#T_crab--4", "#T_cen", "#T_c2o", "#T_crab--4", "#T_cP", "#T_wcel", "#T_cprime", "#T_wb", "#T_cP", "#T_wcel", "#T_cn", "#T_wa", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_cP", "#T_crab--4", "#T_cen", "#T_c2o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_df-prm", "#P_breq2", "#P_rabbidv", "#P_breq1d" ]
+}

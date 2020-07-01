@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephlim on Metamath](http://us.metamath.org/mpegif/alephlim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rdglim2a | |- ( ( A e. V /\\ Lim A ) -> ( rec ( har , _om ) ` A ) = U_ x e. A ( rec ( har , _om ) ` x ) ) |\n| 2 |  | #P_df-aleph | |- aleph = rec ( har , _om ) |\n| 3 | 2 | #P_fveq1i | |- ( aleph ` A ) = ( rec ( har , _om ) ` A ) |\n| 4 | 2 | #P_fveq1i | |- ( aleph ` x ) = ( rec ( har , _om ) ` x ) |\n| 5 | 4 | #P_a1i | |- ( x e. A -> ( aleph ` x ) = ( rec ( har , _om ) ` x ) ) |\n| 6 | 5 | #P_iuneq2i | |- U_ x e. A ( aleph ` x ) = U_ x e. A ( rec ( har , _om ) ` x ) |\n| 7 | 1, 3, 6 | #P_3eqtr4g | |- ( ( A e. V /\\ Lim A ) -> ( aleph ` A ) = U_ x e. A ( aleph ` x ) ) |",
+  "conclusion" : "#P_alephlim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_vx.wal", "#T_cale", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_cA.wceq", "#T_cale", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cale", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_vx.wal", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cale", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_wlim", "#T_cA", "#T_wi", "#T_cale", "#T_cfv", "#T_cA", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cale", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq1i", "#P_rdglim2a", "#P_df-aleph", "#P_a1i", "#P_iuneq2i", "#P_3eqtr4g" ]
+}

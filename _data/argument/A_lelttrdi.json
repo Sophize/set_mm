@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lelttrdi on Metamath](http://us.metamath.org/mpegif/lelttrdi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lelttrdi.r | |- ( ph -> ( A e. RR /\\ B e. RR /\\ C e. RR ) ) |\n| 2 |  | lelttrdi.l | |- ( ph -> B <_ C ) |\n| 3 | 1 | #P_simp1d | |- ( ph -> A e. RR ) |\n| 4 | 3 | #P_adantr | |- ( ( ph /\\ A < B ) -> A e. RR ) |\n| 5 | 1 | #P_simp2d | |- ( ph -> B e. RR ) |\n| 6 | 5 | #P_adantr | |- ( ( ph /\\ A < B ) -> B e. RR ) |\n| 7 | 1 | #P_simp3d | |- ( ph -> C e. RR ) |\n| 8 | 7 | #P_adantr | |- ( ( ph /\\ A < B ) -> C e. RR ) |\n| 9 |  | #P_simpr | |- ( ( ph /\\ A < B ) -> A < B ) |\n| 10 | 2 | #P_adantr | |- ( ( ph /\\ A < B ) -> B <_ C ) |\n| 11 | 4, 6, 8, 9, 10 | #P_ltletrd | |- ( ( ph /\\ A < B ) -> A < C ) |\n| 12 | 11 | #P_ex | |- ( ph -> ( A < B -> A < C ) ) |",
+  "conclusion" : "#P_lelttrdi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wi", "#T_cA", "#T_clt", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ltletrd", "#P_ex", "#P_simpr", "#P_simp2d", "#P_simp3d", "#P_adantr", "#P_simp1d" ]
+}

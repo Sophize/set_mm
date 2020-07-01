@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmatmat on Metamath](http://us.metamath.org/mpegif/dmatmat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ni j\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dmatval.a | |- A = ( N Mat R ) |\n| 2 |  | dmatval.b | |- B = ( Base ` A ) |\n| 3 |  | dmatval.0 | |- .0. = ( 0g ` R ) |\n| 4 |  | dmatval.d | |- D = ( N DMat R ) |\n| 5 | 1, 2, 3, 4 | #P_dmatel | |- ( ( N e. Fin /\\ R e. V ) -> ( M e. D <-> ( M e. B /\\ A. i e. N A. j e. N ( i =/= j -> ( i M j ) = .0. ) ) ) ) |\n| 6 |  | #P_simpl | |- ( ( M e. B /\\ A. i e. N A. j e. N ( i =/= j -> ( i M j ) = .0. ) ) -> M e. B ) |\n| 7 | 5, 6 | #P_syl6bi | |- ( ( N e. Fin /\\ R e. V ) -> ( M e. D -> M e. B ) ) |",
+  "conclusion" : "#P_dmatmat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vi", "#T_vj", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cD", "#T_wceq", "#T_cN", "#T_cdmat", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cD", "#T_wb", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cN", "#T_vi", "#T_wne", "#T_vj", "#T_wi", "#T_vi", "#T_cM", "#T_vj", "#T_wceq", "#T_c.0", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cN", "#T_vi", "#T_wne", "#T_vj", "#T_wi", "#T_vi", "#T_cM", "#T_vj", "#T_wceq", "#T_c.0", "#T_wi", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cD", "#T_wi", "#T_cM", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6bi", "#P_simpl", "#P_dmatel" ]
+}

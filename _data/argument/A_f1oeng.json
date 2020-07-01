@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1oeng on Metamath](http://us.metamath.org/mpegif/f1oeng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1ofo | |- ( F : A -1-1-onto-> B -> F : A -onto-> B ) |\n| 2 |  | #P_fornex | |- ( A e. C -> ( F : A -onto-> B -> B e. _V ) ) |\n| 3 | 1, 2 | #P_syl5 | |- ( A e. C -> ( F : A -1-1-onto-> B -> B e. _V ) ) |\n| 4 | 3 | #P_imp | |- ( ( A e. C /\\ F : A -1-1-onto-> B ) -> B e. _V ) |\n| 5 |  | #P_f1oen2g | |- ( ( A e. C /\\ B e. _V /\\ F : A -1-1-onto-> B ) -> A ~~ B ) |\n| 6 | 5 | #P_3com23 | |- ( ( A e. C /\\ F : A -1-1-onto-> B /\\ B e. _V ) -> A ~~ B ) |\n| 7 | 4, 6 | #P_mpd3an3 | |- ( ( A e. C /\\ F : A -1-1-onto-> B ) -> A ~~ B ) |",
+  "conclusion" : "#P_f1oeng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_w3a--1", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB", "#T_wi", "#T_cA", "#T_cen", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1oen2g", "#P_fornex", "#P_f1ofo", "#P_3com23", "#P_imp", "#P_mpd3an3", "#P_syl5" ]
+}

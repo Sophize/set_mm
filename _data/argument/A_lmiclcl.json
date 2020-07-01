@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmiclcl on Metamath](http://us.metamath.org/mpegif/lmiclcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_brlmic | |- ( R ~=m S <-> ( R LMIso S ) =/= (/) ) |\n| 2 |  | #P_n0 | |- ( ( R LMIso S ) =/= (/) <-> E. f f e. ( R LMIso S ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( R ~=m S <-> E. f f e. ( R LMIso S ) ) |\n| 4 |  | #P_lmimlmhm | |- ( f e. ( R LMIso S ) -> f e. ( R LMHom S ) ) |\n| 5 |  | #P_lmhmlmod1 | |- ( f e. ( R LMHom S ) -> R e. LMod ) |\n| 6 | 4, 5 | #P_syl | |- ( f e. ( R LMIso S ) -> R e. LMod ) |\n| 7 | 6 | #P_exlimiv | |- ( E. f f e. ( R LMIso S ) -> R e. LMod ) |\n| 8 | 3, 7 | #P_sylbi | |- ( R ~=m S -> R e. LMod ) |",
+  "conclusion" : "#P_lmiclcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cR", "#T_clmic", "#T_cS", "#T_wb", "#T_cR", "#T_clmim", "#T_cS", "#T_wne", "#T_c0", "#T_cR", "#T_clmim", "#T_cS", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmim", "#T_cS", "#T_cR", "#T_clmic", "#T_cS", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmim", "#T_cS", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmim", "#T_cS", "#T_wi", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmhm", "#T_cS", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmhm", "#T_cS", "#T_wi", "#T_cR", "#T_wcel", "#T_clmod", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmim", "#T_cS", "#T_wi", "#T_cR", "#T_wcel", "#T_clmod", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cR", "#T_clmim", "#T_cS", "#T_wi", "#T_cR", "#T_wcel", "#T_clmod", "#T_cR", "#T_clmic", "#T_cS", "#T_wi", "#T_cR", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_brlmic", "#P_exlimiv", "#P_n0", "#P_syl", "#P_bitri", "#P_lmhmlmod1", "#P_sylbi", "#P_lmimlmhm" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See i2linesd on Metamath](http://us.metamath.org/mpegif/i2linesd.html)"
+  } ],
+  "names" : [ "i2linesd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_wceq", "#T_cA", "#T_cmul", "#T_cX", "#T_caddc", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wceq", "#T_cC", "#T_cmul", "#T_cX", "#T_caddc", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cC", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_cD", "#T_cmin", "#T_cB", "#T_cdiv", "#T_cA", "#T_cmin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Solve for the intersection of two lines expressed in Y = MX+B form (note that the lines cannot be vertical).  Here we use deduction form.  We just solve for X, since Y can be trivially found by using X. This is an example of how to use the algebra helpers.  Notice that because this proof uses algebra helpers, the main steps of the proof are higher level and easier to follow by a human reader.  (Contributed by David A. Wheeler, 15-Oct-2018.) ",
+  "statement" : "i2linesd.1 $e |- ( ph -> A e. CC ) $.\ni2linesd.2 $e |- ( ph -> B e. CC ) $.\ni2linesd.3 $e |- ( ph -> C e. CC ) $.\ni2linesd.4 $e |- ( ph -> D e. CC ) $.\ni2linesd.5 $e |- ( ph -> X e. CC ) $.\ni2linesd.6 $e |- ( ph -> Y = ( ( A x. X ) + B ) ) $.\ni2linesd.7 $e |- ( ph -> Y = ( ( C x. X ) + D ) ) $.\ni2linesd.8 $e |- ( ph -> ( A - C ) =/= 0 ) $.\ni2linesd $p |- ( ph -> X = ( ( D - B ) / ( A - C ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nic-dfim on Metamath](http://us.metamath.org/mpegif/nic-dfim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nanim | |- ( ( ph -> ps ) <-> ( ph -/\\ ( ps -/\\ ps ) ) ) |\n| 2 | 1 | #P_bicomi | |- ( ( ph -/\\ ( ps -/\\ ps ) ) <-> ( ph -> ps ) ) |\n| 3 |  | #P_nanbi | |- ( ( ( ph -/\\ ( ps -/\\ ps ) ) <-> ( ph -> ps ) ) <-> ( ( ( ph -/\\ ( ps -/\\ ps ) ) -/\\ ( ph -> ps ) ) -/\\ ( ( ( ph -/\\ ( ps -/\\ ps ) ) -/\\ ( ph -/\\ ( ps -/\\ ps ) ) ) -/\\ ( ( ph -> ps ) -/\\ ( ph -> ps ) ) ) ) ) |\n| 4 | 2, 3 | #P_mpbi | |- ( ( ( ph -/\\ ( ps -/\\ ps ) ) -/\\ ( ph -> ps ) ) -/\\ ( ( ( ph -/\\ ( ps -/\\ ps ) ) -/\\ ( ph -/\\ ( ps -/\\ ps ) ) ) -/\\ ( ( ph -> ps ) -/\\ ( ph -> ps ) ) ) ) |",
+  "conclusion" : "#P_nic-dfim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps", "#T_wnan", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nanbi", "#P_mpbi", "#P_bicomi", "#P_nanim" ]
+}

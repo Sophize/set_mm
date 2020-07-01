@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqof2 on Metamath](http://us.metamath.org/mpegif/seqof2.html)"
+  } ],
+  "names" : [ "seqof2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_wss", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_vz", "#T_wcel", "#T_cA", "#T_wi", "#T_cX", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_cof", "#T_c.pl", "#T_cseq--2", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_vz", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cX", "#T_cfv", "#T_cN", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cX", "#T_cfv", "#T_cN", "#T_c.pl", "#T_vz", "#T_cA", "#T_vx", "#T_vz", "#T_cB", "#T_vx", "#T_cM", "#T_vx", "#T_vz", "#T_cN", "#T_vx", "#T_vz", "#T_wph", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Distribute function operation through a sequence.  Maps-to notation version of ~ seqof .  (Contributed by Mario Carneiro, 7-Jul-2017.) ",
+  "statement" : "seqof2.1 $e |- ( ph -> A e. V ) $.\nseqof2.2 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nseqof2.3 $e |- ( ph -> ( M ... N ) C_ B ) $.\nseqof2.4 $e |- ( ( ph /\\ ( x e. B /\\ z e. A ) ) -> X e. W ) $.\nseqof2 $p |- ( ph -> ( seq M ( oF .+ , ( x e. B |-> ( z e. A |-> X ) ) ) ` N ) = ( z e. A |-> ( seq M ( .+ , ( x e. B |-> X ) ) ` N ) ) ) $.\n$d .+ z $.\n$d A x z $.\n$d B x $.\n$d M x z $.\n$d N x z $.\n$d ph x z $."
+}

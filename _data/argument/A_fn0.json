@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fn0 on Metamath](http://us.metamath.org/mpegif/fn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fnrel | |- ( F Fn (/) -> Rel F ) |\n| 2 |  | #P_fndm | |- ( F Fn (/) -> dom F = (/) ) |\n| 3 |  | #P_reldm0 | |- ( Rel F -> ( F = (/) <-> dom F = (/) ) ) |\n| 4 | 3 | #P_biimpar | |- ( ( Rel F /\\ dom F = (/) ) -> F = (/) ) |\n| 5 | 1, 2, 4 | #P_syl2anc | |- ( F Fn (/) -> F = (/) ) |\n| 6 |  | #P_fun0 | |- Fun (/) |\n| 7 |  | #P_dm0 | |- dom (/) = (/) |\n| 8 |  | #P_df-fn | |- ( (/) Fn (/) <-> ( Fun (/) /\\ dom (/) = (/) ) ) |\n| 9 | 6, 7, 8 | #P_mpbir2an | |- (/) Fn (/) |\n| 10 |  | #P_fneq1 | |- ( F = (/) -> ( F Fn (/) <-> (/) Fn (/) ) ) |\n| 11 | 9, 10 | #P_mpbiri | |- ( F = (/) -> F Fn (/) ) |\n| 12 | 5, 11 | #P_impbii | |- ( F Fn (/) <-> F = (/) ) |",
+  "conclusion" : "#P_fn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfn", "#T_c0", "#T_wi", "#T_wrel", "#T_cF", "#T_cF", "#T_wfn", "#T_c0", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_c0", "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_wceq", "#T_c0", "#T_wb", "#T_cdm", "#T_cF", "#T_wceq", "#T_c0", "#T_wrel", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_wceq", "#T_c0", "#T_cF", "#T_wfn", "#T_c0", "#T_wi", "#T_cF", "#T_wceq", "#T_c0", "#T_wfun", "#T_c0", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_wb", "#T_wfun", "#T_c0", "#T_wa", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_cF", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_wfn", "#T_c0", "#T_wb", "#T_c0", "#T_wfn", "#T_c0", "#T_cF", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_wfn", "#T_c0", "#T_cF", "#T_wfn", "#T_c0", "#T_wb", "#T_cF", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_impbii", "#P_reldm0", "#P_biimpar", "#P_fneq1", "#P_syl2anc", "#P_fnrel", "#P_mpbir2an", "#P_dm0", "#P_df-fn", "#P_fndm", "#P_fun0" ]
+}

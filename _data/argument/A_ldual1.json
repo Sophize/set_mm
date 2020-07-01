@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldual1 on Metamath](http://us.metamath.org/mpegif/ldual1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldual1.r | |- R = ( Scalar ` W ) |\n| 2 |  | ldual1.u | |- .1. = ( 1r ` R ) |\n| 3 |  | ldual1.d | |- D = ( LDual ` W ) |\n| 4 |  | ldual1.s | |- S = ( Scalar ` D ) |\n| 5 |  | ldual1.i | |- I = ( 1r ` S ) |\n| 6 |  | ldual1.w | |- ( ph -> W e. LMod ) |\n| 7 |  | #P_eqid | |- ( oppR ` R ) = ( oppR ` R ) |\n| 8 | 1, 7, 3, 4, 6 | #P_ldualsca | |- ( ph -> S = ( oppR ` R ) ) |\n| 9 | 8 | #P_fveq2d | |- ( ph -> ( 1r ` S ) = ( 1r ` ( oppR ` R ) ) ) |\n| 10 | 7, 2 | #P_oppr1 | |- .1. = ( 1r ` ( oppR ` R ) ) |\n| 11 | 9, 5, 10 | #P_3eqtr4g | |- ( ph -> I = .1. ) |",
+  "conclusion" : "#P_ldual1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cD", "#T_wceq", "#T_cld", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_csca", "#T_cfv", "#T_cD", "#T_cI", "#T_wceq", "#T_cur", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cS", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cur", "#T_cfv", "#T_cS", "#T_wceq", "#T_cur", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_cI", "#T_wceq", "#T_c.1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ldualsca", "#P_eqid", "#P_oppr1", "#P_fveq2d", "#P_3eqtr4g" ]
+}

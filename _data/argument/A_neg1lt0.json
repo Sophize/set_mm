@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neg1lt0 on Metamath](http://us.metamath.org/mpegif/neg1lt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neg0 | |- -u 0 = 0 |\n| 2 |  | #P_0lt1 | |- 0 < 1 |\n| 3 | 1, 2 | #P_eqbrtri | |- -u 0 < 1 |\n| 4 |  | #P_1re | |- 1 e. RR |\n| 5 |  | #P_0re | |- 0 e. RR |\n| 6 | 4, 5 | #P_ltnegcon1i | |- ( -u 1 < 0 <-> -u 0 < 1 ) |\n| 7 | 3, 6 | #P_mpbir | |- -u 1 < 0 |",
+  "conclusion" : "#P_neg1lt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cc0", "#T_clt", "#T_c1", "#T_cneg", "#T_cc0", "#T_clt", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_wb", "#T_cneg", "#T_cc0", "#T_clt", "#T_c1", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0lt1", "#P_mpbir", "#P_eqbrtri", "#P_0re", "#P_neg0", "#P_1re", "#P_ltnegcon1i" ]
+}

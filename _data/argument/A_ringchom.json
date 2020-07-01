@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringchom on Metamath](http://us.metamath.org/mpegif/ringchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ringcbas.c | |- C = ( RingCat ` U ) |\n| 2 |  | ringcbas.b | |- B = ( Base ` C ) |\n| 3 |  | ringcbas.u | |- ( ph -> U e. V ) |\n| 4 |  | ringchomfval.h | |- H = ( Hom ` C ) |\n| 5 |  | ringchom.x | |- ( ph -> X e. B ) |\n| 6 |  | ringchom.y | |- ( ph -> Y e. B ) |\n| 7 | 1, 2, 3, 4 | #P_ringchomfval | |- ( ph -> H = ( RingHom |` ( B X. B ) ) ) |\n| 8 | 7 | #P_oveqd | |- ( ph -> ( X H Y ) = ( X ( RingHom |` ( B X. B ) ) Y ) ) |\n| 9 | 5, 6 | #P_ovresd | |- ( ph -> ( X ( RingHom |` ( B X. B ) ) Y ) = ( X RingHom Y ) ) |\n| 10 | 8, 9 | #P_eqtrd | |- ( ph -> ( X H Y ) = ( X RingHom Y ) ) |",
+  "conclusion" : "#P_ringchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cringc", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cH", "#T_wceq", "#T_crh", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cX", "#T_crh", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_crh", "#T_cres", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_cY", "#T_wceq", "#T_cX", "#T_crh", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cX", "#T_crh", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ringchomfval", "#P_oveqd", "#P_eqtrd", "#P_ovresd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brsingle on Metamath](http://us.metamath.org/mpegif/brsingle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | brsingle.1 | |- A e. _V |\n| 2 |  | brsingle.2 | |- B e. _V |\n| 3 |  | #P_df-singleton | |- Singleton = ( ( _V X. _V ) \\ ran ( ( _V (x) _E ) (++) ( _I (x) _V ) ) ) |\n| 4 |  | #P_brxp | |- ( A ( _V X. _V ) B <-> ( A e. _V /\\ B e. _V ) ) |\n| 5 | 1, 2, 4 | #P_mpbir2an | |- A ( _V X. _V ) B |\n| 6 |  | #P_elsn | |- ( x e. { A } <-> x = A ) |\n| 7 | 1 | #P_ideq | |- ( x _I A <-> x = A ) |\n| 8 | 6, 7 | #P_bitr4i | |- ( x e. { A } <-> x _I A ) |\n| 9 | 1, 2, 3, 5, 8 | #P_brtxpsd3 | |- ( A Singleton B <-> B = { A } ) |",
+  "conclusion" : "#P_brsingle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_csingle", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdif", "#T_crn", "#T_cvv", "#T_ctxp", "#T_cep", "#T_csymdif", "#T_cid", "#T_ctxp", "#T_cvv", "#T_cA.wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_cid", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_vx.wal", "#T_cid", "#T_cA.wceq", "#T_cA", "#T_csingle", "#T_cB", "#T_wb", "#T_cB", "#T_wceq", "#T_csn--1", "#T_cA", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ideq", "#P_brtxpsd3", "#P_df-singleton", "#P_mpbir2an", "#P_brxp", "#P_elsn", "#P_bitr4i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvelimc on Metamath](http://us.metamath.org/mpegif/dvelimc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvelimc.1 | |- F/_ x A |\n| 2 |  | dvelimc.2 | |- F/_ z B |\n| 3 |  | dvelimc.3 | |- ( z = y -> A = B ) |\n| 4 |  | #P_nftru | |- F/ x T. |\n| 5 |  | #P_nftru | |- F/ z T. |\n| 6 | 1 | #P_a1i | |- ( T. -> F/_ x A ) |\n| 7 | 2 | #P_a1i | |- ( T. -> F/_ z B ) |\n| 8 | 3 | #P_a1i | |- ( T. -> ( z = y -> A = B ) ) |\n| 9 | 4, 5, 6, 7, 8 | #P_dvelimdc | |- ( T. -> ( -. A. x x = y -> F/_ x B ) ) |\n| 10 | 9 | #P_trud | |- ( -. A. x x = y -> F/_ x B ) |",
+  "conclusion" : "#P_dvelimc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vz", "#T_cB", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wnf", "#T_vx.wal", "#T_wtru", "#T_wnf", "#T_vz", "#T_wtru", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vz", "#T_cB.wceq", "#T_wtru", "#T_wi", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wtru", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wnfc", "#T_vx", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dvelimdc", "#P_trud", "#P_a1i", "#P_nftru" ]
+}

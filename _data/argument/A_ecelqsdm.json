@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ecelqsdm on Metamath](http://us.metamath.org/mpegif/ecelqsdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elqsn0 | |- ( ( dom R = A /\\ [ B ] R e. ( A /. R ) ) -> [ B ] R =/= (/) ) |\n| 2 |  | #P_ecdmn0 | |- ( B e. dom R <-> [ B ] R =/= (/) ) |\n| 3 | 1, 2 | #P_sylibr | |- ( ( dom R = A /\\ [ B ] R e. ( A /. R ) ) -> B e. dom R ) |\n| 4 |  | #P_simpl | |- ( ( dom R = A /\\ [ B ] R e. ( A /. R ) ) -> dom R = A ) |\n| 5 | 3, 4 | #P_eleqtrd | |- ( ( dom R = A /\\ [ B ] R e. ( A /. R ) ) -> B e. A ) |",
+  "conclusion" : "#P_ecelqsdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wi", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wne", "#T_c0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_wb", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wne", "#T_c0", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cA.wceq", "#T_cqs", "#T_cR", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA", "#T_wa", "#T_cec--1", "#T_cB", "#T_cec--2", "#T_cR", "#T_wcel", "#T_cA", "#T_cqs", "#T_cR", "#T_wi", "#T_cB", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleqtrd", "#P_elqsn0", "#P_sylibr", "#P_simpl", "#P_ecdmn0" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvllmuli on Metamath](http://us.metamath.org/mpegif/mvllmuli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mvllmuli.1 | |- A e. CC |\n| 2 |  | mvllmuli.2 | |- B e. CC |\n| 3 |  | mvllmuli.3 | |- A =/= 0 |\n| 4 |  | mvllmuli.4 | |- ( A x. B ) = C |\n| 5 | 2, 1, 3 | #P_divcan4i | |- ( ( B x. A ) / A ) = B |\n| 6 | 1, 2, 4 | #P_mulcomli | |- ( B x. A ) = C |\n| 7 | 6 | #P_oveq1i | |- ( ( B x. A ) / A ) = ( C / A ) |\n| 8 | 5, 7 | #P_eqtr3i | |- B = ( C / A ) |",
+  "conclusion" : "#P_mvllmuli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA", "#T_wne", "#T_cc0", "#T_cA", "#T_cmul", "#T_cB", "#T_wceq", "#T_cC", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cA.wceq", "#T_cB", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr3i", "#P_mulcomli", "#P_divcan4i", "#P_oveq1i" ]
+}

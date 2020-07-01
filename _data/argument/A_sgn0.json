@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sgn0 on Metamath](http://us.metamath.org/mpegif/sgn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0xr | |- 0 e. RR* |\n| 2 |  | #P_sgnval | |- ( 0 e. RR* -> ( sgn ` 0 ) = if ( 0 = 0 , 0 , if ( 0 < 0 , -u 1 , 1 ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( sgn ` 0 ) = if ( 0 = 0 , 0 , if ( 0 < 0 , -u 1 , 1 ) ) |\n| 4 |  | #P_eqid | |- 0 = 0 |\n| 5 | 4 | #P_iftruei | |- if ( 0 = 0 , 0 , if ( 0 < 0 , -u 1 , 1 ) ) = 0 |\n| 6 | 3, 5 | #P_eqtri | |- ( sgn ` 0 ) = 0 |",
+  "conclusion" : "#P_sgn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wi", "#T_csgn", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cif--1", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_cc0", "#T_clt", "#T_cc0", "#T_cif--2", "#T_cneg", "#T_c1", "#T_cif--3", "#T_c1", "#T_csgn", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cif--1", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_cc0", "#T_clt", "#T_cc0", "#T_cif--2", "#T_cneg", "#T_c1", "#T_cif--3", "#T_c1", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cif--1", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_cc0", "#T_clt", "#T_cc0", "#T_cif--2", "#T_cneg", "#T_c1", "#T_cif--3", "#T_c1", "#T_wceq", "#T_cc0", "#T_csgn", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqid", "#P_eqtri", "#P_0xr", "#P_sgnval", "#P_iftruei" ]
+}

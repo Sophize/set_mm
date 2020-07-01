@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfiotadxy on Metamath](http://us.metamath.org/mpegif/nfiotadxy.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfiotadxy.1 | |- F/ y ph |\n| 2 |  | nfiotadxy.2 | |- ( ph -> F/ x ps ) |\n| 3 |  | #P_dfiota2 | |- ( iota y ps ) = U. { z | A. y ( ps <-> y = z ) } |\n| 4 |  | #P_nfv | |- F/ z ph |\n| 5 |  | #P_nfcv | |- F/_ x y |\n| 6 |  | #P_nfcv | |- F/_ x z |\n| 7 | 5, 6 | #P_nfeq | |- F/ x y = z |\n| 8 | 7 | #P_a1i | |- ( ph -> F/ x y = z ) |\n| 9 | 2, 8 | #P_nfbid | |- ( ph -> F/ x ( ps <-> y = z ) ) |\n| 10 | 1, 9 | #P_nfald | |- ( ph -> F/ x A. y ( ps <-> y = z ) ) |\n| 11 | 4, 10 | #P_nfabd | |- ( ph -> F/_ x { z | A. y ( ps <-> y = z ) } ) |\n| 12 | 11 | #P_nfunid | |- ( ph -> F/_ x U. { z | A. y ( ps <-> y = z ) } ) |\n| 13 | 3, 12 | #P_nfcxfrd | |- ( ph -> F/_ x ( iota y ps ) ) |",
+  "conclusion" : "#P_nfiotadxy",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wps", "#T_cio", "#T_vy.tru", "#T_wps", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_cab--3", "#T_wnf", "#T_vz", "#T_wph", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wnfc", "#T_vx.wal", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_cab--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cuni", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_cab--3", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cio", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_nfcv", "#P_nfbid", "#P_nfeq", "#P_a1i", "#P_nfald", "#P_nfcxfrd", "#P_nfabd", "#P_nfunid", "#P_dfiota2" ]
+}

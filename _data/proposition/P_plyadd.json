@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See plyadd on Metamath](http://us.metamath.org/mpegif/plyadd.html)"
+  } ],
+  "names" : [ "plyadd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_caddc", "#T_vy", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_cF", "#T_vx", "#T_vy", "#T_cG", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The sum of two polynomials is a polynomial.  (Contributed by Mario Carneiro, 21-Jul-2014.) ",
+  "statement" : "plyadd.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.\nplyadd.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.\nplyadd.3 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x + y ) e. S ) $.\nplyadd $p |- ( ph -> ( F oF + G ) e. ( Poly ` S ) ) $.\n$d F x y $.\n$d G x y $.\n$d S x y $.\n$d ph x y $.\n$d x y $.\n$d x y $."
+}

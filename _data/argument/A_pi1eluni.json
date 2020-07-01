@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pi1eluni on Metamath](http://us.metamath.org/mpegif/pi1eluni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pi1val.g | |- G = ( J pi1 Y ) |\n| 2 |  | pi1val.1 | |- ( ph -> J e. ( TopOn ` X ) ) |\n| 3 |  | pi1val.2 | |- ( ph -> Y e. X ) |\n| 4 |  | pi1bas2.b | |- ( ph -> B = ( Base ` G ) ) |\n| 5 |  | #P_eqid | |- ( J Om1 Y ) = ( J Om1 Y ) |\n| 6 |  | #P_eqidd | |- ( ph -> ( Base ` ( J Om1 Y ) ) = ( Base ` ( J Om1 Y ) ) ) |\n| 7 | 1, 2, 3, 5, 4, 6 | #P_pi1buni | |- ( ph -> U. B = ( Base ` ( J Om1 Y ) ) ) |\n| 8 | 5, 2, 3, 7 | #P_om1elbas | |- ( ph -> ( F e. U. B <-> ( F e. ( II Cn J ) /\\ ( F ` 0 ) = Y /\\ ( F ` 1 ) = Y ) ) ) |",
+  "conclusion" : "#P_pi1eluni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cJ", "#T_cpi1", "#T_cY", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cJ", "#T_comi", "#T_cY", "#T_wceq", "#T_cJ", "#T_comi", "#T_cY", "#T_wph", "#T_wi", "#T_cbs", "#T_cfv", "#T_cJ", "#T_comi", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cJ", "#T_comi", "#T_cY", "#T_wph", "#T_wi", "#T_cuni", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cJ", "#T_comi", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cuni", "#T_cB", "#T_wb", "#T_cF", "#T_wcel", "#T_cii", "#T_ccn", "#T_cJ", "#T_w3a--1", "#T_cF", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cY", "#T_w3a--2", "#T_cF", "#T_cfv", "#T_c1", "#T_wceq", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pi1buni", "#P_eqid", "#P_eqidd", "#P_om1elbas" ]
+}

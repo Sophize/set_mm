@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cldmre on Metamath](http://us.metamath.org/mpegif/cldmre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clscld.1 | |- X = U. J |\n| 2 | 1 | #P_cldss2 | |- ( Clsd ` J ) C_ ~P X |\n| 3 | 2 | #P_a1i | |- ( J e. Top -> ( Clsd ` J ) C_ ~P X ) |\n| 4 | 1 | #P_topcld | |- ( J e. Top -> X e. ( Clsd ` J ) ) |\n| 5 |  | #P_intcld | |- ( ( x =/= (/) /\\ x C_ ( Clsd ` J ) ) -> |^| x e. ( Clsd ` J ) ) |\n| 6 | 5 | #P_ancoms | |- ( ( x C_ ( Clsd ` J ) /\\ x =/= (/) ) -> |^| x e. ( Clsd ` J ) ) |\n| 7 | 6 | #P_3adant1 | |- ( ( J e. Top /\\ x C_ ( Clsd ` J ) /\\ x =/= (/) ) -> |^| x e. ( Clsd ` J ) ) |\n| 8 | 3, 4, 7 | #P_ismred | |- ( J e. Top -> ( Clsd ` J ) e. ( Moore ` X ) ) |",
+  "conclusion" : "#P_cldmre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cX", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wa", "#T_vx.wal", "#T_wss", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wi", "#T_cint", "#T_vx.wal", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_vx.wal", "#T_wss", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wa", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vx.wal", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_w3a--1", "#T_vx.wal", "#T_wss", "#T_ccld", "#T_cfv", "#T_cJ", "#T_w3a--2", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vx.wal", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3adant1", "#P_cldss2", "#P_topcld", "#P_intcld", "#P_a1i", "#P_ancoms", "#P_ismred" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0addge2 on Metamath](http://us.metamath.org/mpegif/nn0addge2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0re | |- ( N e. NN0 -> N e. RR ) |\n| 2 |  | #P_nn0ge0 | |- ( N e. NN0 -> 0 <_ N ) |\n| 3 | 1, 2 | #P_jca | |- ( N e. NN0 -> ( N e. RR /\\ 0 <_ N ) ) |\n| 4 |  | #P_addge02 | |- ( ( A e. RR /\\ N e. RR ) -> ( 0 <_ N <-> A <_ ( N + A ) ) ) |\n| 5 | 4 | #P_biimp3a | |- ( ( A e. RR /\\ N e. RR /\\ 0 <_ N ) -> A <_ ( N + A ) ) |\n| 6 | 5 | #P_3expb | |- ( ( A e. RR /\\ ( N e. RR /\\ 0 <_ N ) ) -> A <_ ( N + A ) ) |\n| 7 | 3, 6 | #P_sylan2 | |- ( ( A e. RR /\\ N e. NN0 ) -> A <_ ( N + A ) ) |",
+  "conclusion" : "#P_nn0addge2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cN", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cN", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cc0", "#T_cle", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cN", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cN", "#T_caddc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_cle", "#T_cN", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addge02", "#P_3expb", "#P_sylan2", "#P_biimp3a", "#P_nn0ge0", "#P_nn0re", "#P_jca" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cfval on Metamath](http://us.metamath.org/mpegif/cfval.html)"
+  } ],
+  "names" : [ "cfval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wex", "#T_vy", "#T_vx", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_vy", "#T_wa", "#T_vy", "#T_wss", "#T_cA", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cA", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_vy", "#T_vz", "#T_wss", "#T_vw", "#T_cab--3", "#T_cA", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the cofinality function.  Definition B of Saharon Shelah, _Cardinal Arithmetic_ (1994), p. xxx (Roman numeral 30).  The cofinality of an ordinal number ` A ` is the cardinality (size) of the smallest unbounded subset ` y ` of the ordinal number.  Unbounded means that for every member of ` A ` , there is a member of ` y ` that is at least as large.  Cofinality is a measure of how \"reachable from below\" an ordinal is.  (Contributed by NM, 1-Apr-2004.)  (Revised by Mario Carneiro, 15-Sep-2013.) ",
+  "statement" : "cfval $p |- ( A e. On -> ( cf ` A ) = |^| { x | E. y ( x = ( card ` y ) /\\ ( y C_ A /\\ A. z e. A E. w e. y z C_ w ) ) } ) $.\n$d A w x y z $."
+}

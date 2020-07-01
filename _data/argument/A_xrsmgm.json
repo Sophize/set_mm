@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrsmgm on Metamath](http://us.metamath.org/mpegif/xrsmgm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xaddcl | |- ( ( x e. RR* /\\ y e. RR* ) -> ( x +e y ) e. RR* ) |\n| 2 | 1 | #P_rgen2a | |- A. x e. RR* A. y e. RR* ( x +e y ) e. RR* |\n| 3 |  | #P_0xr | |- 0 e. RR* |\n| 4 |  | #P_xrsbas | |- RR* = ( Base ` RR*s ) |\n| 5 |  | #P_xrsadd | |- +e = ( +g ` RR*s ) |\n| 6 | 4, 5 | #P_ismgmn0 | |- ( 0 e. RR* -> ( RR*s e. Mgm <-> A. x e. RR* A. y e. RR* ( x +e y ) e. RR* ) ) |\n| 7 | 3, 6 | #P_ax-mp | |- ( RR*s e. Mgm <-> A. x e. RR* A. y e. RR* ( x +e y ) e. RR* ) |\n| 8 | 2, 7 | #P_mpbir | |- RR*s e. Mgm |",
+  "conclusion" : "#P_xrsmgm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wcel", "#T_cxr", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_wi", "#T_vx.wal", "#T_cxad", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cxr", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cxr", "#T_vx.wal", "#T_cxad", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cxr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cxrs", "#T_cxad", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cxrs", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wi", "#T_cxrs", "#T_wcel", "#T_cmgm", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cxr", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cxr", "#T_vx.wal", "#T_cxad", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_cxrs", "#T_wcel", "#T_cmgm", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cxr", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cxr", "#T_vx.wal", "#T_cxad", "#T_vy.tru", "#T_wcel", "#T_cxr", "#T_cxrs", "#T_wcel", "#T_cmgm" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xaddcl", "#P_xrsadd", "#P_ismgmn0", "#P_ax-mp", "#P_rgen2a", "#P_0xr", "#P_xrsbas", "#P_mpbir" ]
+}

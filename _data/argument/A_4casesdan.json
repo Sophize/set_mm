@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 4casesdan on Metamath](http://us.metamath.org/mpegif/4casesdan.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 4casesdan.1 | |- ( ( ph /\\ ( ps /\\ ch ) ) -> th ) |\n| 2 |  | 4casesdan.2 | |- ( ( ph /\\ ( ps /\\ -. ch ) ) -> th ) |\n| 3 |  | 4casesdan.3 | |- ( ( ph /\\ ( -. ps /\\ ch ) ) -> th ) |\n| 4 |  | 4casesdan.4 | |- ( ( ph /\\ ( -. ps /\\ -. ch ) ) -> th ) |\n| 5 | 1 | #P_expcom | |- ( ( ps /\\ ch ) -> ( ph -> th ) ) |\n| 6 | 2 | #P_expcom | |- ( ( ps /\\ -. ch ) -> ( ph -> th ) ) |\n| 7 | 3 | #P_expcom | |- ( ( -. ps /\\ ch ) -> ( ph -> th ) ) |\n| 8 | 4 | #P_expcom | |- ( ( -. ps /\\ -. ch ) -> ( ph -> th ) ) |\n| 9 | 5, 6, 7, 8 | #P_4cases | |- ( ph -> th ) |",
+  "conclusion" : "#P_4casesdan",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wn", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_expcom", "#P_4cases" ]
+}

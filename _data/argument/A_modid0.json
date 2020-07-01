@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See modid0 on Metamath](http://us.metamath.org/mpegif/modid0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rpcn | |- ( N e. RR+ -> N e. CC ) |\n| 2 |  | #P_rpne0 | |- ( N e. RR+ -> N =/= 0 ) |\n| 3 | 1, 2 | #P_dividd | |- ( N e. RR+ -> ( N / N ) = 1 ) |\n| 4 |  | #P_1z | |- 1 e. ZZ |\n| 5 | 3, 4 | #P_syl6eqel | |- ( N e. RR+ -> ( N / N ) e. ZZ ) |\n| 6 |  | #P_rpre | |- ( N e. RR+ -> N e. RR ) |\n| 7 |  | #P_mod0 | |- ( ( N e. RR /\\ N e. RR+ ) -> ( ( N mod N ) = 0 <-> ( N / N ) e. ZZ ) ) |\n| 8 | 6, 7 | #P_mpancom | |- ( N e. RR+ -> ( ( N mod N ) = 0 <-> ( N / N ) e. ZZ ) ) |\n| 9 | 5, 8 | #P_mpbird | |- ( N e. RR+ -> ( N mod N ) = 0 ) |",
+  "conclusion" : "#P_modid0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_wne", "#T_cc0", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_cdiv", "#T_cN", "#T_wceq", "#T_c1", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_cmo", "#T_cN", "#T_wceq", "#T_cc0", "#T_wb", "#T_cN", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_cmo", "#T_cN", "#T_wceq", "#T_cc0", "#T_wb", "#T_cN", "#T_cdiv", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cN", "#T_cmo", "#T_cN", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpancom", "#P_rpcn", "#P_dividd", "#P_1z", "#P_rpne0", "#P_mod0", "#P_rpre", "#P_syl6eqel", "#P_mpbird" ]
+}

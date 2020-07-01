@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nic-mp on Metamath](http://us.metamath.org/mpegif/nic-mp.html)"
+  } ],
+  "names" : [ "nic-mp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wps", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Derive Nicod's rule of modus ponens using 'nand', from the standard one.  Although the major and minor premise together also imply ` ch ` , this form is necessary for useful derivations from ~ nic-ax .  In a pure (standalone) treatment of Nicod's axiom, this theorem would be changed to an axiom ($a statement).  (Contributed by Jeff Hoffman, 19-Nov-2007.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "statement" : "nic-jmin $e |- ph $.\nnic-jmaj $e |- ( ph -/\\ ( ch -/\\ ps ) ) $.\nnic-mp $p |- ps $."
+}

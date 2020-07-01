@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xor2dc on Metamath](http://us.metamath.org/mpegif/xor2dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xor3dc | |- ( DECID ph -> ( DECID ps -> ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) ) ) |\n| 2 | 1 | #P_imp | |- ( ( DECID ph /\\ DECID ps ) -> ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) ) |\n| 3 |  | #P_pm5.17dc | |- ( DECID ps -> ( ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) <-> ( ph <-> -. ps ) ) ) |\n| 4 | 3 | #P_adantl | |- ( ( DECID ph /\\ DECID ps ) -> ( ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) <-> ( ph <-> -. ps ) ) ) |\n| 5 | 2, 4 | #P_bitr4d | |- ( ( DECID ph /\\ DECID ps ) -> ( -. ( ph <-> ps ) <-> ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) ) ) |\n| 6 | 5 | #P_ex | |- ( DECID ph -> ( DECID ps -> ( -. ( ph <-> ps ) <-> ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) ) ) ) |",
+  "conclusion" : "#P_xor2dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_pm5.17dc", "#P_bitr4d", "#P_xor3dc", "#P_ex", "#P_imp" ]
+}

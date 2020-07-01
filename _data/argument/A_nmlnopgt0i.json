@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmlnopgt0i on Metamath](http://us.metamath.org/mpegif/nmlnopgt0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nmlnop0.1 | |- T e. LinOp |\n| 2 | 1 | #P_nmlnop0iALT | |- ( ( normop ` T ) = 0 <-> T = 0hop ) |\n| 3 | 2 | #P_necon3bii | |- ( ( normop ` T ) =/= 0 <-> T =/= 0hop ) |\n| 4 | 1 | #P_lnopfi | |- T : ~H --> ~H |\n| 5 |  | #P_nmopgt0 | |- ( T : ~H --> ~H -> ( ( normop ` T ) =/= 0 <-> 0 < ( normop ` T ) ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( ( normop ` T ) =/= 0 <-> 0 < ( normop ` T ) ) |\n| 7 | 3, 6 | #P_bitr3i | |- ( T =/= 0hop <-> 0 < ( normop ` T ) ) |",
+  "conclusion" : "#P_nmlnopgt0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_clo", "#T_cnop", "#T_cfv", "#T_cT", "#T_wceq", "#T_cc0", "#T_wb", "#T_cT", "#T_wceq", "#T_ch0o", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_wb", "#T_cT", "#T_wne", "#T_ch0o", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT", "#T_cT", "#T_wne", "#T_ch0o", "#T_wb", "#T_cc0", "#T_clt", "#T_cnop", "#T_cfv", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_necon3bii", "#P_nmopgt0", "#P_nmlnop0iALT", "#P_lnopfi", "#P_bitr3i" ]
+}

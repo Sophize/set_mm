@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hoaddsubassi on Metamath](http://us.metamath.org/mpegif/hoaddsubassi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hoaddsubass.1 | |- R : ~H --> ~H |\n| 2 |  | hoaddsubass.2 | |- S : ~H --> ~H |\n| 3 |  | hoaddsubass.3 | |- T : ~H --> ~H |\n| 4 |  | #P_hoaddsubass | |- ( ( R : ~H --> ~H /\\ S : ~H --> ~H /\\ T : ~H --> ~H ) -> ( ( R +op S ) -op T ) = ( R +op ( S -op T ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( ( R +op S ) -op T ) = ( R +op ( S -op T ) ) |",
+  "conclusion" : "#P_hoaddsubassi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cR", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_w3a--1", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_w3a--2", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cR", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_cR", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_cR", "#T_chos", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_cR", "#T_chos", "#T_cS", "#T_chod", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_hoaddsubass" ]
+}

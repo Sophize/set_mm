@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See anordc on Metamath](http://us.metamath.org/mpegif/anordc.html)"
+  } ],
+  "names" : [ "anordc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of [WhiteheadRussell] p. 120, but where the propositions are decidable.  The forward direction, ~ pm3.1 , holds for all propositions, but the equivalence only holds given decidability.  (Contributed by Jim Kingdon, 21-Apr-2018.) ",
+  "statement" : "anordc $p |- ( DECID ph -> ( DECID ps -> ( ( ph /\\ ps ) <-> -. ( -. ph \\/ -. ps ) ) ) ) $."
+}

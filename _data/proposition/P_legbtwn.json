@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See legbtwn on Metamath](http://us.metamath.org/mpegif/legbtwn.html)"
+  } ],
+  "names" : [ "legbtwn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_c.le", "#T_wceq", "#T_cleg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_cI", "#T_cB", "#T_wo", "#T_cB", "#T_wcel", "#T_cC", "#T_cI", "#T_cA", "#T_wph", "#T_wi", "#T_cC", "#T_c.mi", "#T_cA", "#T_c.le", "#T_cC", "#T_c.mi", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_cI", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Deduce betweenness from \"less than\" relation.  Corresponds loosely to Proposition 6.13 of [Schwabhauser] p. 45.  (Contributed by Thierry Arnoux, 25-Aug-2019.) ",
+  "statement" : "legval.p $e |- P = ( Base ` G ) $.\nlegval.d $e |- .- = ( dist ` G ) $.\nlegval.i $e |- I = ( Itv ` G ) $.\nlegval.l $e |- .<_ = ( leG ` G ) $.\nlegval.g $e |- ( ph -> G e. TarskiG ) $.\nlegid.a $e |- ( ph -> A e. P ) $.\nlegid.b $e |- ( ph -> B e. P ) $.\nlegtrd.c $e |- ( ph -> C e. P ) $.\nlegtrd.d $e |- ( ph -> D e. P ) $.\nlegbtwn.1 $e |- ( ph -> ( A e. ( C I B ) \\/ B e. ( C I A ) ) ) $.\nlegbtwn.2 $e |- ( ph -> ( C .- A ) .<_ ( C .- B ) ) $.\nlegbtwn $p |- ( ph -> A e. ( C I B ) ) $."
+}

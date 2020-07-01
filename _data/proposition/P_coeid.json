@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coeid on Metamath](http://us.metamath.org/mpegif/coeid.html)"
+  } ],
+  "names" : [ "coeid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cN", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cA", "#T_cfv", "#T_vk", "#T_cmul", "#T_vz", "#T_cexp", "#T_vk", "#T_cA", "#T_vk", "#T_vz", "#T_cF", "#T_vk", "#T_vz", "#T_cN", "#T_vk", "#T_vz", "#T_cS", "#T_vk", "#T_vz", "#T_vk", "#T_vz", "#T_vk", "#T_vz", "#T_vk", "#T_vz", "#T_vk", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Reconstruct a polynomial as an explicit sum of the coefficient function up to the degree of the polynomial.  (Contributed by Mario Carneiro, 22-Jul-2014.) ",
+  "statement" : "dgrub.1 $e |- A = ( coeff ` F ) $.\ndgrub.2 $e |- N = ( deg ` F ) $.\ncoeid $p |- ( F e. ( Poly ` S ) -> F = ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.\n$d A k z $.\n$d F k z $.\n$d N k z $.\n$d S k z $.\n$d k z $.\n$d k z $.\n$d k z $.\n$d k z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See joinval2lem on Metamath](http://us.metamath.org/mpegif/joinval2lem.html)"
+  } ],
+  "names" : [ "joinval2lem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_vy", "#T_c.le", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_vy", "#T_c.le", "#T_vz", "#T_wi", "#T_vx", "#T_c.le", "#T_vz", "#T_wb", "#T_cX", "#T_c.le", "#T_vx", "#T_wa", "#T_cY", "#T_c.le", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_cX", "#T_c.le", "#T_vz", "#T_wa", "#T_cY", "#T_c.le", "#T_vz", "#T_wi", "#T_vx", "#T_c.le", "#T_vz", "#T_c.le", "#T_vy", "#T_c.or", "#T_vx", "#T_vz", "#T_cB", "#T_vx", "#T_vz", "#T_cK", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vx", "#T_vy", "#T_vz", "#T_cY", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ joinval2 and ~ joineu .  (Contributed by NM, 12-Sep-2018.) TODO: combine this through joineu into joinlem? ",
+  "statement" : "joinval2.b $e |- B = ( Base ` K ) $.\njoinval2.l $e |- .<_ = ( le ` K ) $.\njoinval2.j $e |- .\\/ = ( join ` K ) $.\njoinval2.k $e |- ( ph -> K e. V ) $.\njoinval2.x $e |- ( ph -> X e. B ) $.\njoinval2.y $e |- ( ph -> Y e. B ) $.\njoinval2lem $p |- ( ( X e. B /\\ Y e. B ) -> ( ( A. y e. { X , Y } y .<_ x /\\ A. z e. B ( A. y e. { X , Y } y .<_ z -> x .<_ z ) ) <-> ( ( X .<_ x /\\ Y .<_ x ) /\\ A. z e. B ( ( X .<_ z /\\ Y .<_ z ) -> x .<_ z ) ) ) ) $.\n$d .<_ y $.\n$d .\\/ x z $.\n$d B x z $.\n$d K x y z $.\n$d X x y z $.\n$d Y x y z $."
+}

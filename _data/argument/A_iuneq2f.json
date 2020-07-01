@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iuneq2f on Metamath](http://us.metamath.org/mpegif/iuneq2f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iuneq2f.1 | |- F/_ x A |\n| 2 |  | iuneq2f.2 | |- F/_ x B |\n| 3 | 1, 2 | #P_nfeq | |- F/ x A = B |\n| 4 |  | #P_id | |- ( A = B -> A = B ) |\n| 5 |  | #P_eqidd | |- ( A = B -> C = C ) |\n| 6 | 3, 1, 2, 4, 5 | #P_iuneq12df | |- ( A = B -> U_ x e. A C = U_ x e. B C ) |",
+  "conclusion" : "#P_iuneq2f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cC", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cC", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cB", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqidd", "#P_nfeq", "#P_iuneq12df", "#P_id" ]
+}

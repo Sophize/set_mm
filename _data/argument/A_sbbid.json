@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbbid on Metamath](http://us.metamath.org/mpegif/sbbid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbbid.1 | |- F/ x ph |\n| 2 |  | sbbid.2 | |- ( ph -> ( ps <-> ch ) ) |\n| 3 | 1, 2 | #P_alrimi | |- ( ph -> A. x ( ps <-> ch ) ) |\n| 4 |  | #P_spsbbi | |- ( A. x ( ps <-> ch ) -> ( [ y / x ] ps <-> [ y / x ] ch ) ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> ( [ y / x ] ps <-> [ y / x ] ch ) ) |",
+  "conclusion" : "#P_sbbid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wch", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wch", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_spsbbi", "#P_alrimi", "#P_syl" ]
+}

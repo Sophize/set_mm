@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfdfat on Metamath](http://us.metamath.org/mpegif/nfdfat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfdfat.1 | |- F/_ x F |\n| 2 |  | nfdfat.2 | |- F/_ x A |\n| 3 |  | #P_df-dfat | |- ( F defAt A <-> ( A e. dom F /\\ Fun ( F |` { A } ) ) ) |\n| 4 | 1 | #P_nfdm | |- F/_ x dom F |\n| 5 | 2, 4 | #P_nfel | |- F/ x A e. dom F |\n| 6 | 2 | #P_nfsn | |- F/_ x { A } |\n| 7 | 1, 6 | #P_nfres | |- F/_ x ( F |` { A } ) |\n| 8 | 7 | #P_nffun | |- F/ x Fun ( F |` { A } ) |\n| 9 | 5, 8 | #P_nfan | |- F/ x ( A e. dom F /\\ Fun ( F |` { A } ) ) |\n| 10 | 3, 9 | #P_nfxfr | |- F/ x F defAt A |",
+  "conclusion" : "#P_nfdfat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cF", "#T_wnfc", "#T_vx", "#T_cA", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wa", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnfc", "#T_vx.wal", "#T_cdm", "#T_cF", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wnfc", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnfc", "#T_vx.wal", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnf", "#T_vx.wal", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wa", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnf", "#T_vx", "#T_cF", "#T_wdfat", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfres", "#P_nffun", "#P_nfsn", "#P_nfan", "#P_nfxfr", "#P_df-dfat", "#P_nfel", "#P_nfdm" ]
+}

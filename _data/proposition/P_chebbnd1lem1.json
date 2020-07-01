@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chebbnd1lem1 on Metamath](http://us.metamath.org/mpegif/chebbnd1lem1.html)"
+  } ],
+  "names" : [ "chebbnd1lem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_cif--1", "#T_c2", "#T_cmul", "#T_cN", "#T_cle", "#T_c2", "#T_cmul", "#T_cN", "#T_cbc", "#T_cN", "#T_cif--2", "#T_c2", "#T_cmul", "#T_cN", "#T_cif--3", "#T_c2", "#T_cmul", "#T_cN", "#T_cbc", "#T_cN", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c4", "#T_wi", "#T_clog", "#T_cfv", "#T_c4", "#T_cexp", "#T_cN", "#T_cdiv", "#T_cN", "#T_clt", "#T_cppi", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN", "#T_cmul", "#T_clog", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ chebbnd1 : show a lower bound on ` ppi ( x ) ` at even integers using similar techniques to those used to prove ~ bpos .  (Note that the expression ` K ` is actually equal to ` 2 x. N ` , but proving that is not necessary for the proof, and it's too much work.)  The key to the proof is ~ bposlem1 , which shows that each term in the expansion ` ( ( 2 x. N ) _C N ) = prod_ p e. Prime ` ` ( p ^ ( p pCnt ( ( 2 x. N ) _C N ) ) ) ` is at most ` 2 x. N ` , so that the sum really only has nonzero elements up to ` 2 x. N ` , and since each term is at most ` 2 x. N ` , after taking logs we get the inequality ` ppi ( 2 x. N ) x. log ( 2 x. N ) <_ ` ` log ( ( 2 x. N ) _C N ) ` , and ~ bclbnd finishes the proof. (Contributed by Mario Carneiro, 22-Sep-2014.)  (Revised by Mario Carneiro, 15-Apr-2016.) ",
+  "statement" : "chebbnd1lem1.1 $e |- K = if ( ( 2 x. N ) <_ ( ( 2 x. N ) _C N ) , ( 2 x. N ) , ( ( 2 x. N ) _C N ) ) $.\nchebbnd1lem1 $p |- ( N e. ( ZZ>= ` 4 ) -> ( log ` ( ( 4 ^ N ) / N ) ) < ( ( ppi ` ( 2 x. N ) ) x. ( log ` ( 2 x. N ) ) ) ) $."
+}

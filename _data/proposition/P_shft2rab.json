@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shft2rab on Metamath](http://us.metamath.org/mpegif/shft2rab.html)"
+  } ],
+  "names" : [ "shft2rab" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_vx", "#T_cmin", "#T_cC", "#T_wcel", "#T_cA", "#T_crab--4", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_vy", "#T_cmin", "#T_cneg", "#T_cC", "#T_wcel", "#T_cB", "#T_crab--4", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_wph", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` B ` is a shift of ` A ` by ` C ` , then ` A ` is a shift of ` B ` by ` -u C ` .  (Contributed by Mario Carneiro, 22-Mar-2014.)  (Revised by Mario Carneiro, 6-Apr-2015.) ",
+  "statement" : "ovolshft.1 $e |- ( ph -> A C_ RR ) $.\novolshft.2 $e |- ( ph -> C e. RR ) $.\novolshft.3 $e |- ( ph -> B = { x e. RR | ( x - C ) e. A } ) $.\nshft2rab $p |- ( ph -> A = { y e. RR | ( y - -u C ) e. B } ) $.\n$d A x y $.\n$d B y $.\n$d C x y $.\n$d ph y $."
+}

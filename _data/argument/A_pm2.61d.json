@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.61d on Metamath](http://us.metamath.org/mpegif/pm2.61d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm2.61d.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | pm2.61d.2 | |- ( ph -> ( -. ps -> ch ) ) |\n| 3 | 2 | #P_con1d | |- ( ph -> ( -. ch -> ps ) ) |\n| 4 | 3, 1 | #P_syld | |- ( ph -> ( -. ch -> ch ) ) |\n| 5 | 4 | #P_pm2.18d | |- ( ph -> ch ) |",
+  "conclusion" : "#P_pm2.61d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con1d", "#P_syld", "#P_pm2.18d" ]
+}

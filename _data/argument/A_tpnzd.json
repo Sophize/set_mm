@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpnzd on Metamath](http://us.metamath.org/mpegif/tpnzd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tpnzd.1 | |- ( ph -> A e. V ) |\n| 2 |  | #P_tpid3g | |- ( A e. V -> A e. { B , C , A } ) |\n| 3 |  | #P_tprot | |- { A , B , C } = { B , C , A } |\n| 4 | 2, 3 | #P_syl6eleqr | |- ( A e. V -> A e. { A , B , C } ) |\n| 5 |  | #P_ne0i | |- ( A e. { A , B , C } -> { A , B , C } =/= (/) ) |\n| 6 | 1, 4, 5 | #P_3syl | |- ( ph -> { A , B , C } =/= (/) ) |",
+  "conclusion" : "#P_tpnzd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctp--1", "#T_cB.wceq", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wceq", "#T_ctp--1", "#T_cB.wceq", "#T_ctp--2", "#T_cC", "#T_ctp--3", "#T_cA.wceq", "#T_ctp--4", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_cA.wceq", "#T_wcel", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wi", "#T_ctp--1", "#T_cA.wceq", "#T_ctp--2", "#T_cB.wceq", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3syl", "#P_tprot", "#P_syl6eleqr", "#P_tpid3g", "#P_ne0i" ]
+}

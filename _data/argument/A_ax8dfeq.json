@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax8dfeq on Metamath](http://us.metamath.org/mpegif/ax8dfeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax6e | |- E. z z = w |\n| 2 |  | #P_ax-8 | |- ( w = z -> ( w e. x -> z e. x ) ) |\n| 3 | 2 | #P_equcoms | |- ( z = w -> ( w e. x -> z e. x ) ) |\n| 4 |  | #P_ax-8 | |- ( z = w -> ( z e. y -> w e. y ) ) |\n| 5 | 3, 4 | #P_imim12d | |- ( z = w -> ( ( z e. x -> z e. y ) -> ( w e. x -> w e. y ) ) ) |\n| 6 | 1, 5 | #P_eximii | |- E. z ( ( z e. x -> z e. y ) -> ( w e. x -> w e. y ) ) |",
+  "conclusion" : "#P_ax8dfeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vw", "#T_vw", "#T_wceq", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vw", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vw", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vw", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vw", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vw", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vz", "#T_vz", "#T_wcel", "#T_vx", "#T_wi", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_vw", "#T_wcel", "#T_vx", "#T_wi", "#T_vw", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-8", "#P_eximii", "#P_equcoms", "#P_imim12d", "#P_ax6e" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See matinvg on Metamath](http://us.metamath.org/mpegif/matinvg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | matbas.a | |- A = ( N Mat R ) |\n| 2 |  | matbas.g | |- G = ( R freeLMod ( N X. N ) ) |\n| 3 |  | #P_eqidd | |- ( ( N e. Fin /\\ R e. V ) -> ( Base ` G ) = ( Base ` G ) ) |\n| 4 | 1, 2 | #P_matbas | |- ( ( N e. Fin /\\ R e. V ) -> ( Base ` G ) = ( Base ` A ) ) |\n| 5 | 1, 2 | #P_matplusg | |- ( ( N e. Fin /\\ R e. V ) -> ( +g ` G ) = ( +g ` A ) ) |\n| 6 | 5 | #P_oveqdr | |- ( ( ( N e. Fin /\\ R e. V ) /\\ ( x e. ( Base ` G ) /\\ y e. ( Base ` G ) ) ) -> ( x ( +g ` G ) y ) = ( x ( +g ` A ) y ) ) |\n| 7 | 3, 4, 6 | #P_grpinvpropd | |- ( ( N e. Fin /\\ R e. V ) -> ( invg ` G ) = ( invg ` A ) ) |",
+  "conclusion" : "#P_matinvg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cG", "#T_wceq", "#T_cR", "#T_cfrlm", "#T_cN", "#T_cxp", "#T_cN", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cA.wceq", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cA.wceq", "#T_vy.tru", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cminusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_matbas", "#P_oveqdr", "#P_eqidd", "#P_matplusg", "#P_grpinvpropd" ]
+}

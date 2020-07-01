@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mplplusg on Metamath](http://us.metamath.org/mpegif/mplplusg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mplplusg.y | |- Y = ( I mPoly R ) |\n| 2 |  | mplplusg.s | |- S = ( I mPwSer R ) |\n| 3 |  | mplplusg.p | |- .+ = ( +g ` Y ) |\n| 4 |  | #P_fvex | |- ( Base ` Y ) e. _V |\n| 5 |  | #P_eqid | |- ( Base ` Y ) = ( Base ` Y ) |\n| 6 | 1, 2, 5 | #P_mplval2 | |- Y = ( S |`s ( Base ` Y ) ) |\n| 7 |  | #P_eqid | |- ( +g ` S ) = ( +g ` S ) |\n| 8 | 6, 7 | #P_ressplusg | |- ( ( Base ` Y ) e. _V -> ( +g ` S ) = ( +g ` Y ) ) |\n| 9 | 4, 8 | #P_ax-mp | |- ( +g ` S ) = ( +g ` Y ) |\n| 10 | 3, 9 | #P_eqtr4i | |- .+ = ( +g ` S ) |",
+  "conclusion" : "#P_mplplusg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_cI", "#T_cmpl", "#T_cR", "#T_cS", "#T_wceq", "#T_cI", "#T_cmps", "#T_cR", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cY", "#T_cbs", "#T_cfv", "#T_cY", "#T_wcel", "#T_cvv", "#T_cbs", "#T_cfv", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_cY", "#T_wceq", "#T_cS", "#T_cress", "#T_cbs", "#T_cfv", "#T_cY", "#T_cplusg", "#T_cfv", "#T_cS", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cS", "#T_cbs", "#T_cfv", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cplusg", "#T_cfv", "#T_cS", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cY", "#T_cplusg", "#T_cfv", "#T_cS", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cY", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_ressplusg", "#P_ax-mp", "#P_mplval2", "#P_fvex" ]
+}

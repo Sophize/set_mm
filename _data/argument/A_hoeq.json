@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hoeq on Metamath](http://us.metamath.org/mpegif/hoeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ffn | |- ( T : ~H --> ~H -> T Fn ~H ) |\n| 2 |  | #P_ffn | |- ( U : ~H --> ~H -> U Fn ~H ) |\n| 3 |  | #P_eqfnfv | |- ( ( T Fn ~H /\\ U Fn ~H ) -> ( T = U <-> A. x e. ~H ( T ` x ) = ( U ` x ) ) ) |\n| 4 | 3 | #P_bicomd | |- ( ( T Fn ~H /\\ U Fn ~H ) -> ( A. x e. ~H ( T ` x ) = ( U ` x ) <-> T = U ) ) |\n| 5 | 1, 2, 4 | #P_syl2an | |- ( ( T : ~H --> ~H /\\ U : ~H --> ~H ) -> ( A. x e. ~H ( T ` x ) = ( U ` x ) <-> T = U ) ) |",
+  "conclusion" : "#P_hoeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cT", "#T_wfn", "#T_chil", "#T_cU", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cU", "#T_wfn", "#T_chil", "#T_cT", "#T_wfn", "#T_chil", "#T_wa", "#T_cU", "#T_wfn", "#T_chil", "#T_wi", "#T_cT", "#T_wceq", "#T_cU", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cU", "#T_cfv", "#T_vx.wal", "#T_cT", "#T_wfn", "#T_chil", "#T_wa", "#T_cU", "#T_wfn", "#T_chil", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cU", "#T_cfv", "#T_vx.wal", "#T_wb", "#T_cT", "#T_wceq", "#T_cU", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cU", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx", "#T_wceq", "#T_cU", "#T_cfv", "#T_vx", "#T_wb", "#T_cT", "#T_wceq", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_bicomd", "#P_syl2an", "#P_eqfnfv" ]
+}

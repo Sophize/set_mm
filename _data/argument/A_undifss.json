@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See undifss on Metamath](http://us.metamath.org/mpegif/undifss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_difss | |- ( B \\ A ) C_ B |\n| 2 | 1 | #P_jctr | |- ( A C_ B -> ( A C_ B /\\ ( B \\ A ) C_ B ) ) |\n| 3 |  | #P_unss | |- ( ( A C_ B /\\ ( B \\ A ) C_ B ) <-> ( A u. ( B \\ A ) ) C_ B ) |\n| 4 | 2, 3 | #P_sylib | |- ( A C_ B -> ( A u. ( B \\ A ) ) C_ B ) |\n| 5 |  | #P_ssun1 | |- A C_ ( A u. ( B \\ A ) ) |\n| 6 |  | #P_sstr | |- ( ( A C_ ( A u. ( B \\ A ) ) /\\ ( A u. ( B \\ A ) ) C_ B ) -> A C_ B ) |\n| 7 | 5, 6 | #P_mpan | |- ( ( A u. ( B \\ A ) ) C_ B -> A C_ B ) |\n| 8 | 4, 7 | #P_impbii | |- ( A C_ B <-> ( A u. ( B \\ A ) ) C_ B ) |",
+  "conclusion" : "#P_undifss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_cun", "#T_cB", "#T_cdif", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_jctr", "#P_unss", "#P_ssun1", "#P_difss", "#P_sylib", "#P_mpan", "#P_sstr" ]
+}

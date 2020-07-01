@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-nfcsym on Metamath](http://us.metamath.org/mpegif/bj-nfcsym.html)"
+  } ],
+  "names" : [ "bj-nfcsym" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_vy", "#T_wb", "#T_wnfc", "#T_vy", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The class-form not-free predicate defines a symmetric binary relation on var metavariables (irreflexivity is proved by ~ nfnid with additional axioms; see also ~ nfcv ).  This could be proved from ~ aecom and ~ nfcvb but the latter requires a domain with at least two objects (hence uses extra axioms).  (Contributed by BJ, 30-Sep-2018.)  Proof modification is discouraged to avoid use of ~ eqcomd instead of ~ bj-equcomd ; removing dependency on ~ ax-ext is possible: prove weak versions (i.e. replace classes with setvars) of ~ drnfc1 , ~ eleq2d (using ~ elequ2 ), ~ nfcvf , ~ dvelimc , ~ dvelimdc , ~ nfcvf2 . (Proof modification is discouraged.) ",
+  "statement" : "bj-nfcsym $p |- ( F/_ x y <-> F/_ y x ) $."
+}

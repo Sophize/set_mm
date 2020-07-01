@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nrgtgp on Metamath](http://us.metamath.org/mpegif/nrgtgp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nrgngp | |- ( R e. NrmRing -> R e. NrmGrp ) |\n| 2 |  | #P_nrgring | |- ( R e. NrmRing -> R e. Ring ) |\n| 3 |  | #P_ringabl | |- ( R e. Ring -> R e. Abel ) |\n| 4 | 2, 3 | #P_syl | |- ( R e. NrmRing -> R e. Abel ) |\n| 5 |  | #P_ngptgp | |- ( ( R e. NrmGrp /\\ R e. Abel ) -> R e. TopGrp ) |\n| 6 | 1, 4, 5 | #P_syl2anc | |- ( R e. NrmRing -> R e. TopGrp ) |",
+  "conclusion" : "#P_nrgtgp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_cngp", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_cabl", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_cabl", "#T_cR", "#T_wcel", "#T_cngp", "#T_wa", "#T_cR", "#T_wcel", "#T_cabl", "#T_wi", "#T_cR", "#T_wcel", "#T_ctgp", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_ctgp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nrgring", "#P_nrgngp", "#P_syl2anc", "#P_ngptgp", "#P_ringabl", "#P_syl" ]
+}

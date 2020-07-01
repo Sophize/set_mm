@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvsb on Metamath](http://us.metamath.org/mpegif/fvsb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-fv | |- ( F ` A ) = ( iota y A F y ) |\n| 2 |  | #P_dfsbcq | |- ( ( F ` A ) = ( iota y A F y ) -> ( [. ( F ` A ) / x ]. ph <-> [. ( iota y A F y ) / x ]. ph ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( [. ( F ` A ) / x ]. ph <-> [. ( iota y A F y ) / x ]. ph ) |\n| 4 |  | #P_iotasbc | |- ( E! y A F y -> ( [. ( iota y A F y ) / x ]. ph <-> E. x ( A. y ( A F y <-> y = x ) /\\ ph ) ) ) |\n| 5 | 3, 4 | #P_syl5bb | |- ( E! y A F y -> ( [. ( F ` A ) / x ]. ph <-> E. x ( A. y ( A F y <-> y = x ) /\\ ph ) ) ) |",
+  "conclusion" : "#P_fvsb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wi", "#T_wsbc--1", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wsbc--1", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wi", "#T_wsbc--1", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_wph", "#T_weu", "#T_vy", "#T_cA", "#T_cF", "#T_vy", "#T_wi", "#T_wsbc--1", "#T_cF", "#T_cfv", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wal", "#T_vy", "#T_cA", "#T_cF", "#T_vy", "#T_wb", "#T_vy", "#T_wceq", "#T_vx", "#T_wa", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_df-fv", "#P_dfsbcq", "#P_ax-mp", "#P_iotasbc" ]
+}

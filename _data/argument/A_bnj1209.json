@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj1209 on Metamath](http://us.metamath.org/mpegif/bnj1209.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj1209.1 | |- ( ch -> E. x e. B ph ) |\n| 2 |  | bnj1209.2 | |- ( th <-> ( ch /\\ x e. B /\\ ph ) ) |\n| 3 | 1 | #P_bnj1196 | |- ( ch -> E. x ( x e. B /\\ ph ) ) |\n| 4 | 3 | #P_ancli | |- ( ch -> ( ch /\\ E. x ( x e. B /\\ ph ) ) ) |\n| 5 |  | #P_19.42v | |- ( E. x ( ch /\\ ( x e. B /\\ ph ) ) <-> ( ch /\\ E. x ( x e. B /\\ ph ) ) ) |\n| 6 | 4, 5 | #P_sylibr | |- ( ch -> E. x ( ch /\\ ( x e. B /\\ ph ) ) ) |\n| 7 |  | #P_3anass | |- ( ( ch /\\ x e. B /\\ ph ) <-> ( ch /\\ ( x e. B /\\ ph ) ) ) |\n| 8 | 2, 7 | #P_bitri | |- ( th <-> ( ch /\\ ( x e. B /\\ ph ) ) ) |\n| 9 | 6, 8 | #P_bnj1198 | |- ( ch -> E. x th ) |",
+  "conclusion" : "#P_bnj1209",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_wph", "#T_wth", "#T_wb", "#T_wch", "#T_w3a--1", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_wph", "#T_wch", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wch", "#T_wi", "#T_wch", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wb", "#T_wch", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wch", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wch", "#T_w3a--1", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_wph", "#T_wb", "#T_wch", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wth", "#T_wb", "#T_wch", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wph", "#T_wch", "#T_wi", "#T_wex", "#T_vx", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancli", "#P_sylibr", "#P_bnj1196", "#P_3anass", "#P_bnj1198", "#P_19.42v", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpbir3and on Metamath](http://us.metamath.org/mpegif/mpbir3and.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpbir3and.1 | |- ( ph -> ch ) |\n| 2 |  | mpbir3and.2 | |- ( ph -> th ) |\n| 3 |  | mpbir3and.3 | |- ( ph -> ta ) |\n| 4 |  | mpbir3and.4 | |- ( ph -> ( ps <-> ( ch /\\ th /\\ ta ) ) ) |\n| 5 | 1, 2, 3 | #P_3jca | |- ( ph -> ( ch /\\ th /\\ ta ) ) |\n| 6 | 5, 4 | #P_mpbird | |- ( ph -> ps ) |",
+  "conclusion" : "#P_mpbir3and",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta", "#T_wph", "#T_wi", "#T_wch", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wta", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3jca", "#P_mpbird" ]
+}

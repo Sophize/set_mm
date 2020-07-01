@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordelss on Metamath](http://us.metamath.org/mpegif/ordelss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordtr | |- ( Ord A -> Tr A ) |\n| 2 |  | #P_trss | |- ( Tr A -> ( B e. A -> B C_ A ) ) |\n| 3 | 2 | #P_imp | |- ( ( Tr A /\\ B e. A ) -> B C_ A ) |\n| 4 | 1, 3 | #P_sylan | |- ( ( Ord A /\\ B e. A ) -> B C_ A ) |",
+  "conclusion" : "#P_ordelss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cA.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wtr", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wtr", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cA", "#T_wa", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordtr", "#P_sylan", "#P_imp", "#P_trss" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1mhlfehlf on Metamath](http://us.metamath.org/mpegif/1mhlfehlf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2cn | |- 2 e. CC |\n| 2 |  | #P_ax-1cn | |- 1 e. CC |\n| 3 |  | #P_2cnne0 | |- ( 2 e. CC /\\ 2 =/= 0 ) |\n| 4 |  | #P_divsubdir | |- ( ( 2 e. CC /\\ 1 e. CC /\\ ( 2 e. CC /\\ 2 =/= 0 ) ) -> ( ( 2 - 1 ) / 2 ) = ( ( 2 / 2 ) - ( 1 / 2 ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( ( 2 - 1 ) / 2 ) = ( ( 2 / 2 ) - ( 1 / 2 ) ) |\n| 6 |  | #P_2m1e1 | |- ( 2 - 1 ) = 1 |\n| 7 | 6 | #P_oveq1i | |- ( ( 2 - 1 ) / 2 ) = ( 1 / 2 ) |\n| 8 |  | #P_2div2e1 | |- ( 2 / 2 ) = 1 |\n| 9 | 8 | #P_oveq1i | |- ( ( 2 / 2 ) - ( 1 / 2 ) ) = ( 1 - ( 1 / 2 ) ) |\n| 10 | 5, 7, 9 | #P_3eqtr3ri | |- ( 1 - ( 1 / 2 ) ) = ( 1 / 2 ) |",
+  "conclusion" : "#P_1mhlfehlf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_c2", "#T_wcel", "#T_cc", "#T_wa", "#T_c2", "#T_wne", "#T_cc0", "#T_c2", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_c1", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_c2", "#T_wcel", "#T_cc", "#T_wa", "#T_c2", "#T_wne", "#T_cc0", "#T_wi", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c2", "#T_cdiv", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c2", "#T_cdiv", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_c2", "#T_cmin", "#T_c1", "#T_wceq", "#T_c1", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c1", "#T_cdiv", "#T_c2", "#T_c2", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c1", "#T_c2", "#T_cdiv", "#T_c2", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c1", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_c1", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_wceq", "#T_c1", "#T_cdiv", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_3eqtr3ri", "#P_2cn", "#P_ax-1cn", "#P_divsubdir", "#P_2m1e1", "#P_2div2e1", "#P_2cnne0", "#P_oveq1i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hhba on Metamath](http://us.metamath.org/mpegif/hhba.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhnv.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 |  | #P_hilablo | |- +h e. AbelOp |\n| 3 |  | #P_ablogrpo | |- ( +h e. AbelOp -> +h e. GrpOp ) |\n| 4 | 2, 3 | #P_ax-mp | |- +h e. GrpOp |\n| 5 |  | #P_ax-hfvadd | |- +h : ( ~H X. ~H ) --> ~H |\n| 6 | 5 | #P_fdmi | |- dom +h = ( ~H X. ~H ) |\n| 7 | 4, 6 | #P_grporn | |- ~H = ran +h |\n| 8 |  | #P_eqid | |- ( BaseSet ` U ) = ( BaseSet ` U ) |\n| 9 | 1 | #P_hhva | |- +h = ( +v ` U ) |\n| 10 | 8, 9 | #P_bafval | |- ( BaseSet ` U ) = ran +h |\n| 11 | 7, 10 | #P_eqtr4i | |- ~H = ( BaseSet ` U ) |",
+  "conclusion" : "#P_hhba",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cva", "#T_wcel", "#T_cablo", "#T_cva", "#T_wcel", "#T_cablo", "#T_wi", "#T_cva", "#T_wcel", "#T_cgr", "#T_cva", "#T_wcel", "#T_cgr", "#T_cva", "#T_wf--1", "#T_chil", "#T_cxp", "#T_chil", "#T_wf--2", "#T_chil", "#T_cdm", "#T_cva", "#T_wceq", "#T_chil", "#T_cxp", "#T_chil", "#T_chil", "#T_wceq", "#T_crn", "#T_cva", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cva", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_crn", "#T_cva", "#T_chil", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_ax-mp", "#P_eqid", "#P_fdmi", "#P_hhva", "#P_bafval", "#P_ablogrpo", "#P_hilablo", "#P_ax-hfvadd", "#P_grporn" ]
+}

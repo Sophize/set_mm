@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frghash2spot on Metamath](http://us.metamath.org/mpegif/frghash2spot.html)"
+  } ],
+  "names" : [ "frghash2spot" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cfrgra", "#T_cE", "#T_wa", "#T_cV", "#T_wcel", "#T_cfn", "#T_wa", "#T_cV", "#T_wne", "#T_c0", "#T_wi", "#T_chash", "#T_cfv", "#T_cV", "#T_c2spthot", "#T_cE", "#T_wceq", "#T_chash", "#T_cfv", "#T_cV", "#T_cmul", "#T_chash", "#T_cfv", "#T_cV", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The number of simple paths of length 2 is n*(n-1) in a friendship graph with ` n ` vertices.  This corresponds to the proof of claim 3 in [Huneke] p. 2:  \"... the paths of length two in G: by assumption there are ( n 2 ) such paths.\".  However, the order of vertices is not respected by Huneke, so he only counts half of the paths which are existing when respecting the order as it is the case for simple paths represented by orderes triples.  (Contributed by Alexander van der Vekens, 6-Mar-2018.) ",
+  "statement" : "frghash2spot $p |- ( ( V FriendGrph E /\\ ( V e. Fin /\\ V =/= (/) ) ) -> ( # ` ( V 2SPathsOt E ) ) = ( ( # ` V ) x. ( ( # ` V ) - 1 ) ) ) $."
+}

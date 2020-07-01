@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elex2 on Metamath](http://us.metamath.org/mpegif/elex2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1a | |- ( A e. B -> ( x = A -> x e. B ) ) |\n| 2 | 1 | #P_alrimiv | |- ( A e. B -> A. x ( x = A -> x e. B ) ) |\n| 3 |  | #P_elisset | |- ( A e. B -> E. x x = A ) |\n| 4 |  | #P_exim | |- ( A. x ( x = A -> x e. B ) -> ( E. x x = A -> E. x x e. B ) ) |\n| 5 | 2, 3, 4 | #P_sylc | |- ( A e. B -> E. x x e. B ) |",
+  "conclusion" : "#P_elex2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq1a", "#P_exim", "#P_sylc", "#P_elisset", "#P_alrimiv" ]
+}

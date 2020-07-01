@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brel on Metamath](http://us.metamath.org/mpegif/brel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | brel.1 | |- R C_ ( C X. D ) |\n| 2 | 1 | #P_ssbri | |- ( A R B -> A ( C X. D ) B ) |\n| 3 |  | #P_brxp | |- ( A ( C X. D ) B <-> ( A e. C /\\ B e. D ) ) |\n| 4 | 2, 3 | #P_sylib | |- ( A R B -> ( A e. C /\\ B e. D ) ) |",
+  "conclusion" : "#P_brel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wss", "#T_cC", "#T_cxp", "#T_cD", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cC", "#T_cxp", "#T_cD", "#T_cB.wceq", "#T_cA.wceq", "#T_cC", "#T_cxp", "#T_cD", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_cA", "#T_cR", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssbri", "#P_sylib", "#P_brxp" ]
+}

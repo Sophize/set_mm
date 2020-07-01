@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logeq0im1 on Metamath](http://us.metamath.org/mpegif/logeq0im1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eflog | |- ( ( A e. CC /\\ A =/= 0 ) -> ( exp ` ( log ` A ) ) = A ) |\n| 2 | 1 | #P_3adant3 | |- ( ( A e. CC /\\ A =/= 0 /\\ ( log ` A ) = 0 ) -> ( exp ` ( log ` A ) ) = A ) |\n| 3 |  | #P_fveq2 | |- ( ( log ` A ) = 0 -> ( exp ` ( log ` A ) ) = ( exp ` 0 ) ) |\n| 4 |  | #P_ef0 | |- ( exp ` 0 ) = 1 |\n| 5 | 3, 4 | #P_syl6eq | |- ( ( log ` A ) = 0 -> ( exp ` ( log ` A ) ) = 1 ) |\n| 6 | 5 | #P_3ad2ant3 | |- ( ( A e. CC /\\ A =/= 0 /\\ ( log ` A ) = 0 ) -> ( exp ` ( log ` A ) ) = 1 ) |\n| 7 | 2, 6 | #P_eqtr3d | |- ( ( A e. CC /\\ A =/= 0 /\\ ( log ` A ) = 0 ) -> A = 1 ) |",
+  "conclusion" : "#P_logeq0im1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ce", "#T_cfv", "#T_cc0", "#T_ce", "#T_cfv", "#T_cc0", "#T_wceq", "#T_c1", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wi", "#T_ce", "#T_cfv", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_clog", "#T_cfv", "#T_cA", "#T_wceq", "#T_cc0", "#T_wi", "#T_cA", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ef0", "#P_3ad2ant3", "#P_eflog", "#P_fveq2", "#P_eqtr3d", "#P_3adant3", "#P_syl6eq" ]
+}

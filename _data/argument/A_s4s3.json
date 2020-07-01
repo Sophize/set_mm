@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s4s3 on Metamath](http://us.metamath.org/mpegif/s4s3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-s3 | |- <\" E F G \"> = ( <\" E F \"> concat <\" G \"> ) |\n| 2 |  | #P_s4cli | |- <\" A B C D \"> e. Word _V |\n| 3 |  | #P_s2cli | |- <\" E F \"> e. Word _V |\n| 4 |  | #P_df-s7 | |- <\" A B C D E F G \"> = ( <\" A B C D E F \"> concat <\" G \"> ) |\n| 5 |  | #P_s4s2 | |- <\" A B C D E F \"> = ( <\" A B C D \"> concat <\" E F \"> ) |\n| 6 | 1, 2, 3, 4, 5 | #P_cats1cat | |- <\" A B C D E F G \"> = ( <\" A B C D \"> concat <\" E F G \"> ) |",
+  "conclusion" : "#P_s4s3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs3--1", "#T_cE", "#T_cF", "#T_cG", "#T_cs3--2", "#T_wceq", "#T_cs2--1", "#T_cE", "#T_cF", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cG", "#T_cs1--2", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs2--1", "#T_cE", "#T_cF", "#T_cs2--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs7--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cE", "#T_cF", "#T_cG", "#T_cs7--2", "#T_wceq", "#T_cs6--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cE", "#T_cF", "#T_cs6--2", "#T_cconcat", "#T_cs1--1", "#T_cG", "#T_cs1--2", "#T_cs6--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cE", "#T_cF", "#T_cs6--2", "#T_wceq", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_cconcat", "#T_cs2--1", "#T_cE", "#T_cF", "#T_cs2--2", "#T_cs7--1", "#T_cA", "#T_cB", "#T_cC", "#T_cD", "#T_cE", "#T_cF", "#T_cG", "#T_cs7--2", "#T_wceq", "#T_cs4--1", "#T_cA", "#T_cB", "#T_cC", "#T_cD", "#T_cs4--2", "#T_cconcat", "#T_cs3--1", "#T_cE", "#T_cF", "#T_cG", "#T_cs3--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-s3", "#P_df-s7", "#P_s4cli", "#P_cats1cat", "#P_s2cli", "#P_s4s2" ]
+}

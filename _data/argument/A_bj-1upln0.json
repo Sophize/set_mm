@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-1upln0 on Metamath](http://us.metamath.org/mpegif/bj-1upln0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-1upl | |- (| A |) = ( { (/) } X. tag A ) |\n| 2 |  | #P_0nep0 | |- (/) =/= { (/) } |\n| 3 | 2 | #P_necomi | |- { (/) } =/= (/) |\n| 4 |  | #P_bj-tagn0 | |- tag A =/= (/) |\n| 5 |  | #P_xpnz | |- ( ( { (/) } =/= (/) /\\ tag A =/= (/) ) <-> ( { (/) } X. tag A ) =/= (/) ) |\n| 6 | 5 | #P_biimpi | |- ( ( { (/) } =/= (/) /\\ tag A =/= (/) ) -> ( { (/) } X. tag A ) =/= (/) ) |\n| 7 | 3, 4, 6 | #P_mp2an | |- ( { (/) } X. tag A ) =/= (/) |\n| 8 | 1, 7 | #P_eqnetri | |- (| A |) =/= (/) |",
+  "conclusion" : "#P_bj-1upln0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_bj-c1upl--1", "#T_cA.wceq", "#T_bj-c1upl--2", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_c0", "#T_wne", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wne", "#T_c0", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wne", "#T_c0", "#T_wa", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wne", "#T_c0", "#T_wa", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_bj-ctag", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_bj-c1upl--1", "#T_cA", "#T_bj-c1upl--2", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_eqnetri", "#P_bj-tagn0", "#P_xpnz", "#P_df-bj-1upl", "#P_0nep0", "#P_biimpi", "#P_necomi" ]
+}

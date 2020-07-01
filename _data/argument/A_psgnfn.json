@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psgnfn on Metamath](http://us.metamath.org/mpegif/psgnfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ns w x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psgnfn.g | |- G = ( SymGrp ` D ) |\n| 2 |  | psgnfn.b | |- B = ( Base ` G ) |\n| 3 |  | psgnfn.f | |- F = { p e. B | dom ( p \\ _I ) e. Fin } |\n| 4 |  | psgnfn.n | |- N = ( pmSgn ` D ) |\n| 5 |  | #P_iotaex | |- ( iota s E. w e. Word ran ( pmTrsp ` D ) ( x = ( G gsum w ) /\\ s = ( -u 1 ^ ( # ` w ) ) ) ) e. _V |\n| 6 |  | #P_eqid | |- ran ( pmTrsp ` D ) = ran ( pmTrsp ` D ) |\n| 7 | 1, 2, 3, 6, 4 | #P_psgnfval | |- N = ( x e. F |-> ( iota s E. w e. Word ran ( pmTrsp ` D ) ( x = ( G gsum w ) /\\ s = ( -u 1 ^ ( # ` w ) ) ) ) ) |\n| 8 | 5, 7 | #P_fnmpti | |- N Fn F |",
+  "conclusion" : "#P_psgnfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vs", "#T_vw", "#T_vx", "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cD", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cF", "#T_wceq", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_cdm", "#T_vp", "#T_cdif", "#T_cid", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cN", "#T_wceq", "#T_cpsgn", "#T_cfv", "#T_cD", "#T_cio", "#T_vs", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cword", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_vx.wal", "#T_wceq", "#T_cG", "#T_cgsu", "#T_vw", "#T_wa", "#T_vs", "#T_wceq", "#T_cneg", "#T_c1", "#T_cexp", "#T_chash", "#T_cfv", "#T_vw", "#T_wcel", "#T_cvv", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_wceq", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_cN", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cF", "#T_cmpt--2", "#T_cio", "#T_vs", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cword", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_vx.wal", "#T_wceq", "#T_cG", "#T_cgsu", "#T_vw", "#T_wa", "#T_vs", "#T_wceq", "#T_cneg", "#T_c1", "#T_cexp", "#T_chash", "#T_cfv", "#T_vw", "#T_cN", "#T_wfn", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iotaex", "#P_eqid", "#P_psgnfval", "#P_fnmpti" ]
+}

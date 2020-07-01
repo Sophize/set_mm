@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isch on Metamath](http://us.metamath.org/mpegif/isch.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nh\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq1 | |- ( h = H -> ( h ^m NN ) = ( H ^m NN ) ) |\n| 2 | 1 | #P_imaeq2d | |- ( h = H -> ( ~~>v \" ( h ^m NN ) ) = ( ~~>v \" ( H ^m NN ) ) ) |\n| 3 |  | #P_id | |- ( h = H -> h = H ) |\n| 4 | 2, 3 | #P_sseq12d | |- ( h = H -> ( ( ~~>v \" ( h ^m NN ) ) C_ h <-> ( ~~>v \" ( H ^m NN ) ) C_ H ) ) |\n| 5 |  | #P_df-ch | |- CH = { h e. SH | ( ~~>v \" ( h ^m NN ) ) C_ h } |\n| 6 | 4, 5 | #P_elrab2 | |- ( H e. CH <-> ( H e. SH /\\ ( ~~>v \" ( H ^m NN ) ) C_ H ) ) |",
+  "conclusion" : "#P_isch",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vh", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_vh", "#T_cmap", "#T_cn", "#T_wceq", "#T_cH", "#T_cmap", "#T_cn", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_chli", "#T_cima", "#T_vh", "#T_cmap", "#T_cn", "#T_wceq", "#T_chli", "#T_cima", "#T_cH", "#T_cmap", "#T_cn", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_vh", "#T_wceq", "#T_cH", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_chli", "#T_cima", "#T_vh", "#T_cmap", "#T_cn", "#T_wss", "#T_vh", "#T_wb", "#T_chli", "#T_cima", "#T_cH", "#T_cmap", "#T_cn", "#T_wss", "#T_cH", "#T_cch", "#T_wceq", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_chli", "#T_cima", "#T_vh", "#T_cmap", "#T_cn", "#T_wss", "#T_vh", "#T_crab--4", "#T_cH", "#T_wcel", "#T_cch", "#T_wb", "#T_cH", "#T_wcel", "#T_csh", "#T_wa", "#T_chli", "#T_cima", "#T_cH", "#T_cmap", "#T_cn", "#T_wss", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_df-ch", "#P_oveq1", "#P_imaeq2d", "#P_id", "#P_sseq12d" ]
+}

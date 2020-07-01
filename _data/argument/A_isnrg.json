@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isnrg on Metamath](http://us.metamath.org/mpegif/isnrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nr\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isnrg.1 | |- N = ( norm ` R ) |\n| 2 |  | isnrg.2 | |- A = ( AbsVal ` R ) |\n| 3 |  | #P_fveq2 | |- ( r = R -> ( norm ` r ) = ( norm ` R ) ) |\n| 4 | 3, 1 | #P_syl6eqr | |- ( r = R -> ( norm ` r ) = N ) |\n| 5 |  | #P_fveq2 | |- ( r = R -> ( AbsVal ` r ) = ( AbsVal ` R ) ) |\n| 6 | 5, 2 | #P_syl6eqr | |- ( r = R -> ( AbsVal ` r ) = A ) |\n| 7 | 4, 6 | #P_eleq12d | |- ( r = R -> ( ( norm ` r ) e. ( AbsVal ` r ) <-> N e. A ) ) |\n| 8 |  | #P_df-nrg | |- NrmRing = { r e. NrmGrp | ( norm ` r ) e. ( AbsVal ` r ) } |\n| 9 | 7, 8 | #P_elrab2 | |- ( R e. NrmRing <-> ( R e. NrmGrp /\\ N e. A ) ) |",
+  "conclusion" : "#P_isnrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vr", "#T_cN", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cnm", "#T_cfv", "#T_vr", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cnm", "#T_cfv", "#T_vr", "#T_wceq", "#T_cN", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cabv", "#T_cfv", "#T_vr", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cabv", "#T_cfv", "#T_vr", "#T_wceq", "#T_cA.wceq", "#T_vr", "#T_wceq", "#T_cR", "#T_wi", "#T_cnm", "#T_cfv", "#T_vr", "#T_wcel", "#T_cabv", "#T_cfv", "#T_vr", "#T_wb", "#T_cN", "#T_wcel", "#T_cA.wceq", "#T_cnrg", "#T_wceq", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cngp", "#T_crab--3", "#T_cnm", "#T_cfv", "#T_vr", "#T_wcel", "#T_cabv", "#T_cfv", "#T_vr", "#T_crab--4", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wb", "#T_cR", "#T_wcel", "#T_cngp", "#T_wa", "#T_cN", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_fveq2", "#P_syl6eqr", "#P_df-nrg", "#P_eleq12d" ]
+}

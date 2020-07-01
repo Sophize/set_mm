@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-mdiv on Metamath](http://us.metamath.org/mpegif/bj-mdiv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-ldiv.a | |- ( ph -> A e. CC ) |\n| 2 |  | bj-ldiv.b | |- ( ph -> B e. CC ) |\n| 3 |  | bj-ldiv.c | |- ( ph -> C e. CC ) |\n| 4 |  | bj-mdiv.an0 | |- ( ph -> A =/= 0 ) |\n| 5 |  | bj-mdiv.bn0 | |- ( ph -> B =/= 0 ) |\n| 6 | 1, 2, 3, 5 | #P_bj-ldiv | |- ( ph -> ( ( A x. B ) = C <-> A = ( C / B ) ) ) |\n| 7 | 1, 2, 3, 4 | #P_bj-rdiv | |- ( ph -> ( ( A x. B ) = C <-> B = ( C / A ) ) ) |\n| 8 | 6, 7 | #P_bitr3d | |- ( ph -> ( A = ( C / B ) <-> B = ( C / A ) ) ) |",
+  "conclusion" : "#P_bj-mdiv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cB", "#T_wb", "#T_cB", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-rdiv", "#P_bj-ldiv", "#P_bitr3d" ]
+}

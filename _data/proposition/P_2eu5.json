@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2eu5 on Metamath](http://us.metamath.org/mpegif/2eu5.html)"
+  } ],
+  "names" : [ "2eu5" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx", "#T_weu", "#T_vy", "#T_wph", "#T_wa", "#T_wal", "#T_vx", "#T_wmo", "#T_vy", "#T_wph", "#T_wb", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wph", "#T_wa", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_vy", "#T_wceq", "#T_vw", "#T_wph", "#T_vw", "#T_vz", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An alternate definition of double existential uniqueness (see ~ 2eu4 ). A mistake sometimes made in the literature is to use ` E! x E! y ` to mean \"exactly one ` x ` and exactly one ` y ` .\"  (For example, see Proposition 7.53 of [TakeutiZaring] p. 53.)  It turns out that this is actually a weaker assertion, as can be seen by expanding out the formal definitions.  This theorem shows that the erroneous definition can be repaired by conjoining ` A. x E* y ph ` as an additional condition.  The correct definition apparently has never been published.  ( ` E* ` means \"exists at most one.\") (Contributed by NM, 26-Oct-2003.) ",
+  "statement" : "2eu5 $p |- ( ( E! x E! y ph /\\ A. x E* y ph ) <-> ( E. x E. y ph /\\ E. z E. w A. x A. y ( ph -> ( x = z /\\ y = w ) ) ) ) $.\n$d ph w z $.\n$d w x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chordthmlem3 on Metamath](http://us.metamath.org/mpegif/chordthmlem3.html)"
+  } ],
+  "names" : [ "chordthmlem3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cQ", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cM", "#T_wceq", "#T_cA", "#T_caddc", "#T_cB", "#T_cdiv", "#T_c2", "#T_wph", "#T_wi", "#T_cP", "#T_wceq", "#T_cX", "#T_cmul", "#T_cA", "#T_caddc", "#T_c1", "#T_cmin", "#T_cX", "#T_cmul", "#T_cB", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_cmin", "#T_cQ", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cB", "#T_cmin", "#T_cQ", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cP", "#T_cmin", "#T_cQ", "#T_cexp", "#T_c2", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cQ", "#T_cmin", "#T_cM", "#T_cexp", "#T_c2", "#T_caddc", "#T_cabs", "#T_cfv", "#T_cP", "#T_cmin", "#T_cM", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If M is the midpoint of AB, AQ = BQ, and P is on the line AB, then PQ<HTML><sup>2</sup></HTML> = QM<HTML><sup>2</sup></HTML> ` + ` PM<HTML><sup>2</sup></HTML>.  This follows from ~ chordthmlem2 and the Pythagorean theorem ( ~ pythag ) in the case where P and Q are unequal to M. If either P or Q equals M, the result is trivial.  (Contributed by David Moews, 28-Feb-2017.) ",
+  "statement" : "chordthmlem3.A $e |- ( ph -> A e. CC ) $.\nchordthmlem3.B $e |- ( ph -> B e. CC ) $.\nchordthmlem3.Q $e |- ( ph -> Q e. CC ) $.\nchordthmlem3.X $e |- ( ph -> X e. RR ) $.\nchordthmlem3.M $e |- ( ph -> M = ( ( A + B ) / 2 ) ) $.\nchordthmlem3.P $e |- ( ph -> P = ( ( X x. A ) + ( ( 1 - X ) x. B ) ) ) $.\nchordthmlem3.ABequidistQ $e |- ( ph -> ( abs ` ( A - Q ) ) = ( abs ` ( B - Q ) ) ) $.\nchordthmlem3 $p |- ( ph -> ( ( abs ` ( P - Q ) ) ^ 2 ) = ( ( ( abs ` ( Q - M ) ) ^ 2 ) + ( ( abs ` ( P - M ) ) ^ 2 ) ) ) $."
+}

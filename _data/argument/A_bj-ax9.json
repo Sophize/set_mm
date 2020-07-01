@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-ax9 on Metamath](http://us.metamath.org/mpegif/bj-ax9.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfcleq | |- ( x = y <-> A. z ( z e. x <-> z e. y ) ) |\n| 2 | 1 | #P_biimpi | |- ( x = y -> A. z ( z e. x <-> z e. y ) ) |\n| 3 |  | #P_sp | |- ( A. z ( z e. x <-> z e. y ) -> ( z e. x <-> z e. y ) ) |\n| 4 |  | #P_bi1 | |- ( ( z e. x <-> z e. y ) -> ( z e. x -> z e. y ) ) |\n| 5 | 3, 4 | #P_syl | |- ( A. z ( z e. x <-> z e. y ) -> ( z e. x -> z e. y ) ) |\n| 6 | 2, 5 | #P_syl | |- ( x = y -> ( z e. x -> z e. y ) ) |",
+  "conclusion" : "#P_bj-ax9",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wb", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vz", "#T_wcel", "#T_vx", "#T_wi", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfcleq", "#P_bi1", "#P_syl", "#P_biimpi", "#P_sp" ]
+}

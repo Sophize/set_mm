@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nanbi2 on Metamath](http://us.metamath.org/mpegif/nanbi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nanbi1 | |- ( ( ph <-> ps ) -> ( ( ph -/\\ ch ) <-> ( ps -/\\ ch ) ) ) |\n| 2 |  | #P_nancom | |- ( ( ch -/\\ ph ) <-> ( ph -/\\ ch ) ) |\n| 3 |  | #P_nancom | |- ( ( ch -/\\ ps ) <-> ( ps -/\\ ch ) ) |\n| 4 | 1, 2, 3 | #P_3bitr4g | |- ( ( ph <-> ps ) -> ( ( ch -/\\ ph ) <-> ( ch -/\\ ps ) ) ) |",
+  "conclusion" : "#P_nanbi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wnan", "#T_wch", "#T_wb", "#T_wps", "#T_wnan", "#T_wch", "#T_wch", "#T_wnan", "#T_wph", "#T_wb", "#T_wph", "#T_wnan", "#T_wch", "#T_wch", "#T_wnan", "#T_wps", "#T_wb", "#T_wps", "#T_wnan", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wch", "#T_wnan", "#T_wph", "#T_wb", "#T_wch", "#T_wnan", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nancom", "#P_nanbi1", "#P_3bitr4g" ]
+}

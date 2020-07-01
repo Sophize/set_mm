@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See radcnvlem3 on Metamath](http://us.metamath.org/mpegif/radcnvlem3.html)"
+  } ],
+  "names" : [ "radcnvlem3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cfv", "#T_vn", "#T_cmul", "#T_vx", "#T_cexp", "#T_vn", "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cX", "#T_clt", "#T_cabs", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_cY", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_cX", "#T_wcel", "#T_cdm", "#T_cli", "#T_cA", "#T_vn", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ radcnvlt1 , ~ radcnvle .  If ` X ` is a point closer to zero than ` Y ` and the power series converges at ` Y ` , then it converges at ` X ` .  (Contributed by Mario Carneiro, 31-Mar-2015.) ",
+  "statement" : "pser.g $e |- G = ( x e. CC |-> ( n e. NN0 |-> ( ( A ` n ) x. ( x ^ n ) ) ) ) $.\nradcnv.a $e |- ( ph -> A : NN0 --> CC ) $.\npsergf.x $e |- ( ph -> X e. CC ) $.\nradcnvlem2.y $e |- ( ph -> Y e. CC ) $.\nradcnvlem2.a $e |- ( ph -> ( abs ` X ) < ( abs ` Y ) ) $.\nradcnvlem2.c $e |- ( ph -> seq 0 ( + , ( G ` Y ) ) e. dom ~~> ) $.\nradcnvlem3 $p |- ( ph -> seq 0 ( + , ( G ` X ) ) e. dom ~~> ) $.\n$d A n x $."
+}

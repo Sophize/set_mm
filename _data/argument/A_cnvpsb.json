@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvpsb on Metamath](http://us.metamath.org/mpegif/cnvpsb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvps | |- ( R e. PosetRel -> `' R e. PosetRel ) |\n| 2 |  | #P_cnvps | |- ( `' R e. PosetRel -> `' `' R e. PosetRel ) |\n| 3 |  | #P_dfrel2 | |- ( Rel R <-> `' `' R = R ) |\n| 4 |  | #P_eleq1 | |- ( `' `' R = R -> ( `' `' R e. PosetRel <-> R e. PosetRel ) ) |\n| 5 | 4 | #P_biimpd | |- ( `' `' R = R -> ( `' `' R e. PosetRel -> R e. PosetRel ) ) |\n| 6 | 3, 5 | #P_sylbi | |- ( Rel R -> ( `' `' R e. PosetRel -> R e. PosetRel ) ) |\n| 7 | 2, 6 | #P_syl5 | |- ( Rel R -> ( `' R e. PosetRel -> R e. PosetRel ) ) |\n| 8 | 1, 7 | #P_impbid2 | |- ( Rel R -> ( R e. PosetRel <-> `' R e. PosetRel ) ) |",
+  "conclusion" : "#P_cnvpsb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wrel", "#T_cR", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wb", "#T_cR", "#T_wcel", "#T_cps", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wceq", "#T_cR", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cR", "#T_wcel", "#T_cps", "#T_wrel", "#T_cR", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cR", "#T_wcel", "#T_cps", "#T_wrel", "#T_cR", "#T_wi", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cR", "#T_wcel", "#T_cps", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wcel", "#T_cps", "#T_wb", "#T_ccnv", "#T_cR", "#T_wcel", "#T_cps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvps", "#P_eleq1", "#P_biimpd", "#P_impbid2", "#P_dfrel2", "#P_sylbi", "#P_syl5" ]
+}

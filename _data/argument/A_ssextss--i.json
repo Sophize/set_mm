@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssextss on Metamath](http://us.metamath.org/mpegif/ssextss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sspwb | |- ( A C_ B <-> ~P A C_ ~P B ) |\n| 2 |  | #P_dfss2 | |- ( ~P A C_ ~P B <-> A. x ( x e. ~P A -> x e. ~P B ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_elpw | |- ( x e. ~P A <-> x C_ A ) |\n| 5 | 3 | #P_elpw | |- ( x e. ~P B <-> x C_ B ) |\n| 6 | 4, 5 | #P_imbi12i | |- ( ( x e. ~P A -> x e. ~P B ) <-> ( x C_ A -> x C_ B ) ) |\n| 7 | 6 | #P_albii | |- ( A. x ( x e. ~P A -> x e. ~P B ) <-> A. x ( x C_ A -> x C_ B ) ) |\n| 8 | 1, 2, 7 | #P_3bitri | |- ( A C_ B <-> A. x ( x C_ A -> x C_ B ) ) |",
+  "conclusion" : "#P_ssextss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wss", "#T_cA", "#T_wi", "#T_vx", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albii", "#P_3bitri", "#P_dfss2", "#P_elpw", "#P_vex", "#P_sspwb", "#P_imbi12i" ]
+}

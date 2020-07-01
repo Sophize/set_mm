@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringlidm on Metamath](http://us.metamath.org/mpegif/ringlidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rngidm.b | |- B = ( Base ` R ) |\n| 2 |  | rngidm.t | |- .x. = ( .r ` R ) |\n| 3 |  | rngidm.u | |- .1. = ( 1r ` R ) |\n| 4 | 1, 2, 3 | #P_ringidmlem | |- ( ( R e. Ring /\\ X e. B ) -> ( ( .1. .x. X ) = X /\\ ( X .x. .1. ) = X ) ) |\n| 5 | 4 | #P_simpld | |- ( ( R e. Ring /\\ X e. B ) -> ( .1. .x. X ) = X ) |",
+  "conclusion" : "#P_ringlidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c.1", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX", "#T_wa", "#T_cX", "#T_c.x", "#T_c.1", "#T_wceq", "#T_cX", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_c.1", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ringidmlem", "#P_simpld" ]
+}

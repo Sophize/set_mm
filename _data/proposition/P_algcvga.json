@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See algcvga on Metamath](http://us.metamath.org/mpegif/algcvga.html)"
+  } ],
+  "names" : [ "algcvga" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cS", "#T_cR", "#T_wceq", "#T_cseq--1", "#T_cc0", "#T_cF", "#T_ccom", "#T_c1st", "#T_cseq--2", "#T_cn0", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cC", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cn0", "#T_vz", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_vz", "#T_wne", "#T_cc0", "#T_wi", "#T_cC", "#T_cfv", "#T_cF", "#T_cfv", "#T_vz", "#T_clt", "#T_cC", "#T_cfv", "#T_vz", "#T_cN", "#T_wceq", "#T_cC", "#T_cfv", "#T_cA", "#T_cA", "#T_wcel", "#T_cS", "#T_wi", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wi", "#T_cC", "#T_cfv", "#T_cR", "#T_cfv", "#T_cK", "#T_wceq", "#T_cc0", "#T_cC", "#T_vz", "#T_cF", "#T_vz", "#T_cR", "#T_vz", "#T_cS", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The countdown function ` C ` remains ` 0 ` after ` N ` steps. (Contributed by Paul Chapman, 22-Jun-2011.) ",
+  "statement" : "algcvga.1 $e |- F : S --> S $.\nalgcvga.2 $e |- R = seq 0 ( ( F o. 1st ) , ( NN0 X. { A } ) ) $.\nalgcvga.3 $e |- C : S --> NN0 $.\nalgcvga.4 $e |- ( z e. S -> ( ( C ` ( F ` z ) ) =/= 0 -> ( C ` ( F ` z ) ) < ( C ` z ) ) ) $.\nalgcvga.5 $e |- N = ( C ` A ) $.\nalgcvga $p |- ( A e. S -> ( K e. ( ZZ>= ` N ) -> ( C ` ( R ` K ) ) = 0 ) ) $.\n$d C z $.\n$d F z $.\n$d R z $.\n$d S z $."
+}

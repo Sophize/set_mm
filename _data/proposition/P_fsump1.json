@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsump1 on Metamath](http://us.metamath.org/mpegif/fsump1.html)"
+  } ],
+  "names" : [ "fsump1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_vk", "#T_wceq", "#T_cN", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cN", "#T_caddc", "#T_c1", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cA", "#T_caddc", "#T_cB", "#T_cB", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The addition of the next term in a finite sum of ` A ( k ) ` is the current term plus ` B ` i.e. ` A ( N + 1 ) ` .  (Contributed by NM, 4-Nov-2005.)  (Revised by Mario Carneiro, 21-Apr-2014.) ",
+  "statement" : "fsump1.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nfsump1.2 $e |- ( ( ph /\\ k e. ( M ... ( N + 1 ) ) ) -> A e. CC ) $.\nfsump1.3 $e |- ( k = ( N + 1 ) -> A = B ) $.\nfsump1 $p |- ( ph -> sum_ k e. ( M ... ( N + 1 ) ) A = ( sum_ k e. ( M ... N ) A + B ) ) $.\n$d B k $.\n$d M k $.\n$d N k $.\n$d k ph $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpto1 on Metamath](http://us.metamath.org/mpegif/mpto1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpto1.1 | |- ph |\n| 2 |  | mpto1.2 | |- -. ( ph /\\ ps ) |\n| 3 |  | #P_imnan | |- ( ( ph -> -. ps ) <-> -. ( ph /\\ ps ) ) |\n| 4 | 2, 3 | #P_mpbir | |- ( ph -> -. ps ) |\n| 5 | 1, 4 | #P_ax-mp | |- -. ps |",
+  "conclusion" : "#P_mpto1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_imnan", "#P_mpbir" ]
+}

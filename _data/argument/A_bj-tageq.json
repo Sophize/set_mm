@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-tageq on Metamath](http://us.metamath.org/mpegif/bj-tageq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-sngleq | |- ( A = B -> sngl A = sngl B ) |\n| 2 | 1 | #P_uneq1d | |- ( A = B -> ( sngl A u. { (/) } ) = ( sngl B u. { (/) } ) ) |\n| 3 |  | #P_df-bj-tag | |- tag A = ( sngl A u. { (/) } ) |\n| 4 |  | #P_df-bj-tag | |- tag B = ( sngl B u. { (/) } ) |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> tag A = tag B ) |",
+  "conclusion" : "#P_bj-tageq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_bj-csngl", "#T_cA.wceq", "#T_wceq", "#T_bj-csngl", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_bj-csngl", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wceq", "#T_bj-csngl", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_bj-ctag", "#T_cA.wceq", "#T_wceq", "#T_bj-csngl", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_bj-ctag", "#T_cB.wceq", "#T_wceq", "#T_bj-csngl", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_bj-ctag", "#T_cA", "#T_wceq", "#T_bj-ctag", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_uneq1d", "#P_bj-sngleq", "#P_df-bj-tag", "#P_3eqtr4g" ]
+}

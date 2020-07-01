@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See afvvfunressn on Metamath](http://us.metamath.org/mpegif/afvvfunressn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfunsnafv | |- ( -. Fun ( F |` { A } ) -> ( F ''' A ) = _V ) |\n| 2 |  | #P_nvelim | |- ( ( F ''' A ) = _V -> -. ( F ''' A ) e. B ) |\n| 3 | 1, 2 | #P_syl | |- ( -. Fun ( F |` { A } ) -> -. ( F ''' A ) e. B ) |\n| 4 | 3 | #P_con4i | |- ( ( F ''' A ) e. B -> Fun ( F |` { A } ) ) |",
+  "conclusion" : "#P_afvvfunressn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_wi", "#T_wn", "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wn", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_wn", "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cF", "#T_cafv", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wfun", "#T_cF", "#T_cres", "#T_csn--1", "#T_cA", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nvelim", "#P_syl", "#P_con4i", "#P_nfunsnafv" ]
+}

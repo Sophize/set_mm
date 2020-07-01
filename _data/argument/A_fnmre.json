@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnmre on Metamath](http://us.metamath.org/mpegif/fnmre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nc s x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_pwex | |- ~P x e. _V |\n| 3 | 2 | #P_pwex | |- ~P ~P x e. _V |\n| 4 | 3 | #P_rabex | |- { c e. ~P ~P x | ( x e. c /\\ A. s e. ~P c ( s =/= (/) -> |^| s e. c ) ) } e. _V |\n| 5 |  | #P_df-mre | |- Moore = ( x e. _V |-> { c e. ~P ~P x | ( x e. c /\\ A. s e. ~P c ( s =/= (/) -> |^| s e. c ) ) } ) |\n| 6 | 4, 5 | #P_fnmpti | |- Moore Fn _V |",
+  "conclusion" : "#P_fnmre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vc", "#T_vs", "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_vc", "#T_crab--2", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_crab--3", "#T_vx.wal", "#T_wcel", "#T_vc", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_vc", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_vc", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_cmre", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vc", "#T_crab--2", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_crab--3", "#T_vx.wal", "#T_wcel", "#T_vc", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_vc", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_vc", "#T_crab--4", "#T_cmre", "#T_wfn", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_df-mre", "#P_rabex", "#P_vex", "#P_fnmpti" ]
+}

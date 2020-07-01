@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnfnli on Metamath](http://us.metamath.org/mpegif/lnfnli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lnfnl.1 | |- T e. LinFn |\n| 2 |  | #P_lnfnl | |- ( ( ( T e. LinFn /\\ A e. CC ) /\\ ( B e. ~H /\\ C e. ~H ) ) -> ( T ` ( ( A .h B ) +h C ) ) = ( ( A x. ( T ` B ) ) + ( T ` C ) ) ) |\n| 3 | 1, 2 | #P_mpanl1 | |- ( ( A e. CC /\\ ( B e. ~H /\\ C e. ~H ) ) -> ( T ` ( ( A .h B ) +h C ) ) = ( ( A x. ( T ` B ) ) + ( T ` C ) ) ) |\n| 4 | 3 | #P_3impb | |- ( ( A e. CC /\\ B e. ~H /\\ C e. ~H ) -> ( T ` ( ( A .h B ) +h C ) ) = ( ( A x. ( T ` B ) ) + ( T ` C ) ) ) |",
+  "conclusion" : "#P_lnfnli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_clf", "#T_cT", "#T_wcel", "#T_clf", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cC", "#T_wcel", "#T_chil", "#T_wi", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cT", "#T_cfv", "#T_cB.wceq", "#T_caddc", "#T_cT", "#T_cfv", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cC", "#T_wcel", "#T_chil", "#T_wi", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cT", "#T_cfv", "#T_cB.wceq", "#T_caddc", "#T_cT", "#T_cfv", "#T_cC", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_chil", "#T_wi", "#T_cT", "#T_cfv", "#T_cA", "#T_csm", "#T_cB", "#T_cva", "#T_cC", "#T_wceq", "#T_cA", "#T_cmul", "#T_cT", "#T_cfv", "#T_cB", "#T_caddc", "#T_cT", "#T_cfv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanl1", "#P_lnfnl", "#P_3impb" ]
+}

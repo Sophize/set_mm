@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnunirn on Metamath](http://us.metamath.org/mpegif/fnunirn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fnfun | |- ( F Fn I -> Fun F ) |\n| 2 |  | #P_elunirn | |- ( Fun F -> ( A e. U. ran F <-> E. x e. dom F A e. ( F ` x ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( F Fn I -> ( A e. U. ran F <-> E. x e. dom F A e. ( F ` x ) ) ) |\n| 4 |  | #P_fndm | |- ( F Fn I -> dom F = I ) |\n| 5 | 4 | #P_rexeqdv | |- ( F Fn I -> ( E. x e. dom F A e. ( F ` x ) <-> E. x e. I A e. ( F ` x ) ) ) |\n| 6 | 3, 5 | #P_bitrd | |- ( F Fn I -> ( A e. U. ran F <-> E. x e. I A e. ( F ` x ) ) ) |",
+  "conclusion" : "#P_fnunirn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfn", "#T_cI", "#T_wi", "#T_wfun", "#T_cF", "#T_wfun", "#T_cF", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cF", "#T_wfn", "#T_cI", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cF", "#T_wfn", "#T_cI", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cI", "#T_cF", "#T_wfn", "#T_cI", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cdm", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cI", "#T_cA.wceq", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cF", "#T_wfn", "#T_cI", "#T_wi", "#T_cA", "#T_wcel", "#T_cuni", "#T_crn", "#T_cF", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cI", "#T_cA", "#T_wcel", "#T_cF", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elunirn", "#P_bitrd", "#P_rexeqdv", "#P_syl", "#P_fndm", "#P_fnfun" ]
+}

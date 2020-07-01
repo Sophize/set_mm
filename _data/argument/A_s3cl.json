@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s3cl on Metamath](http://us.metamath.org/mpegif/s3cl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simp1 | |- ( ( A e. X /\\ B e. X /\\ C e. X ) -> A e. X ) |\n| 2 |  | #P_simp2 | |- ( ( A e. X /\\ B e. X /\\ C e. X ) -> B e. X ) |\n| 3 |  | #P_simp3 | |- ( ( A e. X /\\ B e. X /\\ C e. X ) -> C e. X ) |\n| 4 | 1, 2, 3 | #P_s3cld | |- ( ( A e. X /\\ B e. X /\\ C e. X ) -> <\" A B C \"> e. Word X ) |",
+  "conclusion" : "#P_s3cl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cC", "#T_wcel", "#T_cX", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cs3--1", "#T_cA", "#T_cB", "#T_cC", "#T_cs3--2", "#T_wcel", "#T_cword", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simp3", "#P_simp2", "#P_simp1", "#P_s3cld" ]
+}

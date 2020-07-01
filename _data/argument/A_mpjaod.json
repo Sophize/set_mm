@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpjaod on Metamath](http://us.metamath.org/mpegif/mpjaod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jaod.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | jaod.2 | |- ( ph -> ( th -> ch ) ) |\n| 3 |  | jaod.3 | |- ( ph -> ( ps \\/ th ) ) |\n| 4 | 1, 2 | #P_jaod | |- ( ph -> ( ( ps \\/ th ) -> ch ) ) |\n| 5 | 3, 4 | #P_mpd | |- ( ph -> ch ) |",
+  "conclusion" : "#P_mpjaod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_jaod" ]
+}

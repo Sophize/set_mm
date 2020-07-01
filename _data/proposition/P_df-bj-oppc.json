@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-bj-oppc on Metamath](http://us.metamath.org/mpegif/df-bj-oppc.html)"
+  } ],
+  "names" : [ "df-bj-oppc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_coppcc", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cccbar", "#T_cun", "#T_ccchat", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cinfty", "#T_cif--2", "#T_cinfty", "#T_cif--3", "#T_cif--1", "#T_vx", "#T_wcel", "#T_cc", "#T_cif--2", "#T_cneg", "#T_vx", "#T_cif--3", "#T_cinftyexpi", "#T_cfv", "#T_cif--1", "#T_cc0", "#T_clt", "#T_c1st", "#T_cfv", "#T_vx", "#T_cif--2", "#T_c1st", "#T_cfv", "#T_vx", "#T_cmin", "#T_cpi", "#T_cif--3", "#T_c1st", "#T_cfv", "#T_vx", "#T_caddc", "#T_cpi" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the negation (operation givin the opposite) the set of extended complex numbers and the complex projective line (Riemann sphere).  One could use the ` prcpal ` function in the infinite case, but we want to use only basic functions at this point.  (Contributed by BJ, 22-Jun-2019.) ",
+  "statement" : "df-bj-oppc $p |- -cc = ( x e. ( CCbar u. CChat ) |-> if ( x = infty , infty , if ( x e. CC , -u x , ( inftyexpi ` if ( 0 < ( 1st ` x ) , ( ( 1st ` x ) - _pi ) , ( ( 1st ` x ) + _pi ) ) ) ) ) ) $."
+}

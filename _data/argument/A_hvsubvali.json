@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubvali on Metamath](http://us.metamath.org/mpegif/hvsubvali.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvaddcl.1 | |- A e. ~H |\n| 2 |  | hvaddcl.2 | |- B e. ~H |\n| 3 |  | #P_hvsubval | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A -h B ) = ( A +h ( -u 1 .h B ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A -h B ) = ( A +h ( -u 1 .h B ) ) |",
+  "conclusion" : "#P_hvsubvali",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_cA", "#T_cmv", "#T_cB", "#T_wceq", "#T_cA", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_hvsubval" ]
+}

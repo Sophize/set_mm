@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnv0 on Metamath](http://us.metamath.org/mpegif/cnv0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relcnv | |- Rel `' (/) |\n| 2 |  | #P_rel0 | |- Rel (/) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 |  | #P_vex | |- y e. _V |\n| 5 | 3, 4 | #P_opelcnv | |- ( <. x , y >. e. `' (/) <-> <. y , x >. e. (/) ) |\n| 6 |  | #P_noel | |- -. <. x , y >. e. (/) |\n| 7 |  | #P_noel | |- -. <. y , x >. e. (/) |\n| 8 | 6, 7 | #P_2false | |- ( <. x , y >. e. (/) <-> <. y , x >. e. (/) ) |\n| 9 | 5, 8 | #P_bitr4i | |- ( <. x , y >. e. `' (/) <-> <. x , y >. e. (/) ) |\n| 10 | 1, 2, 9 | #P_eqrelriiv | |- `' (/) = (/) |",
+  "conclusion" : "#P_cnv0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wrel", "#T_ccnv", "#T_c0", "#T_wrel", "#T_c0", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_c0", "#T_wb", "#T_cop--1", "#T_vy.tru", "#T_cop--2", "#T_vx.wal", "#T_cop--3", "#T_wcel", "#T_c0", "#T_wn", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_wn", "#T_cop--1", "#T_vy.tru", "#T_cop--2", "#T_vx.wal", "#T_cop--3", "#T_wcel", "#T_c0", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_wb", "#T_cop--1", "#T_vy.tru", "#T_cop--2", "#T_vx.wal", "#T_cop--3", "#T_wcel", "#T_c0", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_c0", "#T_wb", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_c0", "#T_ccnv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opelcnv", "#P_eqrelriiv", "#P_rel0", "#P_2false", "#P_noel", "#P_relcnv", "#P_vex", "#P_bitr4i" ]
+}

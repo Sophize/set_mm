@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpdisj2 on Metamath](http://us.metamath.org/mpegif/xpdisj2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inxp | |- ( ( C X. A ) i^i ( D X. B ) ) = ( ( C i^i D ) X. ( A i^i B ) ) |\n| 2 |  | #P_xpeq2 | |- ( ( A i^i B ) = (/) -> ( ( C i^i D ) X. ( A i^i B ) ) = ( ( C i^i D ) X. (/) ) ) |\n| 3 |  | #P_xp0 | |- ( ( C i^i D ) X. (/) ) = (/) |\n| 4 | 2, 3 | #P_syl6eq | |- ( ( A i^i B ) = (/) -> ( ( C i^i D ) X. ( A i^i B ) ) = (/) ) |\n| 5 | 1, 4 | #P_syl5eq | |- ( ( A i^i B ) = (/) -> ( ( C X. A ) i^i ( D X. B ) ) = (/) ) |",
+  "conclusion" : "#P_xpdisj2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_cxp", "#T_cA.wceq", "#T_cin", "#T_cD", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cin", "#T_cD", "#T_cxp", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cC", "#T_cin", "#T_cD", "#T_cxp", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cin", "#T_cD", "#T_cxp", "#T_c0", "#T_cC", "#T_cin", "#T_cD", "#T_cxp", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cC", "#T_cin", "#T_cD", "#T_cxp", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_c0", "#T_wi", "#T_cC", "#T_cxp", "#T_cA", "#T_cin", "#T_cD", "#T_cxp", "#T_cB", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_inxp", "#P_xpeq2", "#P_xp0", "#P_syl5eq", "#P_syl6eq" ]
+}

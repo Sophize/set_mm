@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tpos0 on Metamath](http://us.metamath.org/mpegif/tpos0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rel0 | |- Rel (/) |\n| 2 |  | #P_eqid | |- (/) = (/) |\n| 3 |  | #P_fn0 | |- ( (/) Fn (/) <-> (/) = (/) ) |\n| 4 | 2, 3 | #P_mpbir | |- (/) Fn (/) |\n| 5 |  | #P_tposfn2 | |- ( Rel (/) -> ( (/) Fn (/) -> tpos (/) Fn `' (/) ) ) |\n| 6 | 1, 4, 5 | #P_mp2 | |- tpos (/) Fn `' (/) |\n| 7 |  | #P_cnv0 | |- `' (/) = (/) |\n| 8 | 7 | #P_fneq2i | |- ( tpos (/) Fn `' (/) <-> tpos (/) Fn (/) ) |\n| 9 | 6, 8 | #P_mpbi | |- tpos (/) Fn (/) |\n| 10 |  | #P_fn0 | |- ( tpos (/) Fn (/) <-> tpos (/) = (/) ) |\n| 11 | 9, 10 | #P_mpbi | |- tpos (/) = (/) |",
+  "conclusion" : "#P_tpos0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_c0", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_wb", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_wrel", "#T_c0", "#T_wi", "#T_c0", "#T_wfn", "#T_c0", "#T_wi", "#T_ctpos", "#T_c0", "#T_wfn", "#T_ccnv", "#T_c0", "#T_ctpos", "#T_c0", "#T_wfn", "#T_ccnv", "#T_c0", "#T_ccnv", "#T_c0", "#T_wceq", "#T_c0", "#T_ctpos", "#T_c0", "#T_wfn", "#T_ccnv", "#T_c0", "#T_wb", "#T_ctpos", "#T_c0", "#T_wfn", "#T_c0", "#T_ctpos", "#T_c0", "#T_wfn", "#T_c0", "#T_ctpos", "#T_c0", "#T_wfn", "#T_c0", "#T_wb", "#T_ctpos", "#T_c0", "#T_wceq", "#T_c0", "#T_ctpos", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_cnv0", "#P_eqid", "#P_rel0", "#P_mpbi", "#P_tposfn2", "#P_fneq2i", "#P_mpbir", "#P_fn0" ]
+}

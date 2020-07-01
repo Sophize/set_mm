@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlexchb1 on Metamath](http://us.metamath.org/mpegif/hlexchb1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlsuprexch.b | |- B = ( Base ` K ) |\n| 2 |  | hlsuprexch.l | |- .<_ = ( le ` K ) |\n| 3 |  | hlsuprexch.j | |- .\\/ = ( join ` K ) |\n| 4 |  | hlsuprexch.a | |- A = ( Atoms ` K ) |\n| 5 |  | #P_hlcvl | |- ( K e. HL -> K e. CvLat ) |\n| 6 | 1, 2, 3, 4 | #P_cvlexchb1 | |- ( ( K e. CvLat /\\ ( P e. A /\\ Q e. A /\\ X e. B ) /\\ -. P .<_ X ) -> ( P .<_ ( X .\\/ Q ) <-> ( X .\\/ P ) = ( X .\\/ Q ) ) ) |\n| 7 | 5, 6 | #P_syl3an1 | |- ( ( K e. HL /\\ ( P e. A /\\ Q e. A /\\ X e. B ) /\\ -. P .<_ X ) -> ( P .<_ ( X .\\/ Q ) <-> ( X .\\/ P ) = ( X .\\/ Q ) ) ) |",
+  "conclusion" : "#P_hlexchb1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_wi", "#T_cK", "#T_wcel", "#T_clc", "#T_cK", "#T_wcel", "#T_clc", "#T_w3a--1", "#T_cP", "#T_wcel", "#T_cA.wceq", "#T_w3a--1", "#T_cQ", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_wn", "#T_cP", "#T_c.le", "#T_cX", "#T_wi", "#T_cP", "#T_c.le", "#T_cX", "#T_c.or", "#T_cQ", "#T_wb", "#T_cX", "#T_c.or", "#T_cP", "#T_wceq", "#T_cX", "#T_c.or", "#T_cQ", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cP", "#T_wcel", "#T_cA", "#T_w3a--1", "#T_cQ", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_wn", "#T_cP", "#T_c.le", "#T_cX", "#T_wi", "#T_cP", "#T_c.le", "#T_cX", "#T_c.or", "#T_cQ", "#T_wb", "#T_cX", "#T_c.or", "#T_cP", "#T_wceq", "#T_cX", "#T_c.or", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cvlexchb1", "#P_hlcvl", "#P_syl3an1" ]
+}

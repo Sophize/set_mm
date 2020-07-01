@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eucalgcvga on Metamath](http://us.metamath.org/mpegif/eucalgcvga.html)"
+  } ],
+  "names" : [ "eucalgcvga" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cE", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cn0", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_cif--1", "#T_vy", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_cif--3", "#T_cop--1", "#T_vy", "#T_cop--2", "#T_vx", "#T_cmo", "#T_vy", "#T_cop--3", "#T_cR", "#T_wceq", "#T_cseq--1", "#T_cc0", "#T_cE", "#T_ccom", "#T_c1st", "#T_cseq--2", "#T_cn0", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cN", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cA", "#T_cA", "#T_wcel", "#T_cn0", "#T_cxp", "#T_cn0", "#T_wi", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cR", "#T_cfv", "#T_cK", "#T_wceq", "#T_cc0", "#T_cA", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Once Euclid's Algorithm halts after ` N ` steps, the second element of the state remains 0 .  (Contributed by Paul Chapman, 22-Jun-2011.) (Revised by Mario Carneiro, 29-May-2014.) ",
+  "statement" : "eucalgval.1 $e |- E = ( x e. NN0 , y e. NN0 |-> if ( y = 0 , <. x , y >. , <. y , ( x mod y ) >. ) ) $.\neucalg.2 $e |- R = seq 0 ( ( E o. 1st ) , ( NN0 X. { A } ) ) $.\neucalgcvga.3 $e |- N = ( 2nd ` A ) $.\neucalgcvga $p |- ( A e. ( NN0 X. NN0 ) -> ( K e. ( ZZ>= ` N ) -> ( 2nd ` ( R ` K ) ) = 0 ) ) $.\n$d A x y $.\n$d N x y $.\n$d R x $.\n$d x y $.\n$d x y $."
+}

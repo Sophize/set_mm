@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brresg on Metamath](http://us.metamath.org/mpegif/brresg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opelresg | |- ( B e. V -> ( <. A , B >. e. ( C |` D ) <-> ( <. A , B >. e. C /\\ A e. D ) ) ) |\n| 2 |  | #P_df-br | |- ( A ( C |` D ) B <-> <. A , B >. e. ( C |` D ) ) |\n| 3 |  | #P_df-br | |- ( A C B <-> <. A , B >. e. C ) |\n| 4 | 3 | #P_anbi1i | |- ( ( A C B /\\ A e. D ) <-> ( <. A , B >. e. C /\\ A e. D ) ) |\n| 5 | 1, 2, 4 | #P_3bitr4g | |- ( B e. V -> ( A ( C |` D ) B <-> ( A C B /\\ A e. D ) ) ) |",
+  "conclusion" : "#P_brresg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cres", "#T_cD", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_cC", "#T_cres", "#T_cD", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cres", "#T_cD", "#T_cA.wceq", "#T_cC", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_cC", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_cB", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_cC", "#T_cres", "#T_cD", "#T_cB", "#T_wb", "#T_cA", "#T_cC", "#T_cB", "#T_wa", "#T_cA", "#T_wcel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_anbi1i", "#P_3bitr4g", "#P_opelresg" ]
+}

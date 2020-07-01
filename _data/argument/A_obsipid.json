@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See obsipid on Metamath](http://us.metamath.org/mpegif/obsipid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | obsipid.h | |- ., = ( .i ` W ) |\n| 2 |  | obsipid.f | |- F = ( Scalar ` W ) |\n| 3 |  | obsipid.u | |- .1. = ( 1r ` F ) |\n| 4 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 5 |  | #P_eqid | |- ( 0g ` F ) = ( 0g ` F ) |\n| 6 | 4, 1, 2, 3, 5 | #P_obsip | |- ( ( B e. ( OBasis ` W ) /\\ A e. B /\\ A e. B ) -> ( A ., A ) = if ( A = A , .1. , ( 0g ` F ) ) ) |\n| 7 | 6 | #P_3anidm23 | |- ( ( B e. ( OBasis ` W ) /\\ A e. B ) -> ( A ., A ) = if ( A = A , .1. , ( 0g ` F ) ) ) |\n| 8 |  | #P_eqid | |- A = A |\n| 9 | 8 | #P_iftruei | |- if ( A = A , .1. , ( 0g ` F ) ) = .1. |\n| 10 | 7, 9 | #P_syl6eq | |- ( ( B e. ( OBasis ` W ) /\\ A e. B ) -> ( A ., A ) = .1. ) |",
+  "conclusion" : "#P_obsipid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.xi", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cF", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c0g", "#T_cfv", "#T_cF", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cobs", "#T_cfv", "#T_cW", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_c.xi", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cif--2", "#T_c.1", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cobs", "#T_cfv", "#T_cW", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_c.xi", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cif--2", "#T_c.1", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cif--1", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cif--2", "#T_c.1", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_cF", "#T_wceq", "#T_c.1", "#T_cB", "#T_wcel", "#T_cobs", "#T_cfv", "#T_cW", "#T_wa", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_c.xi", "#T_cA", "#T_wceq", "#T_c.1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_3anidm23", "#P_obsip", "#P_iftruei", "#P_syl6eq" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgldim0itv on Metamath](http://us.metamath.org/mpegif/tgldim0itv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgbtwndiff.p | |- P = ( Base ` G ) |\n| 2 |  | tgbtwndiff.d | |- .- = ( dist ` G ) |\n| 3 |  | tgbtwndiff.i | |- I = ( Itv ` G ) |\n| 4 |  | tgbtwndiff.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tgbtwndiff.a | |- ( ph -> A e. P ) |\n| 6 |  | tgbtwndiff.b | |- ( ph -> B e. P ) |\n| 7 |  | tgldim0itv.c | |- ( ph -> C e. P ) |\n| 8 |  | tgldim0itv.p | |- ( ph -> ( # ` P ) = 1 ) |\n| 9 | 1, 8, 5, 6 | #P_tgldim0eq | |- ( ph -> A = B ) |\n| 10 | 1, 2, 3, 4, 6, 7 | #P_tgbtwntriv1 | |- ( ph -> B e. ( B I C ) ) |\n| 11 | 9, 10 | #P_eqeltrd | |- ( ph -> A e. ( B I C ) ) |",
+  "conclusion" : "#P_tgldim0itv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_chash", "#T_cfv", "#T_cP", "#T_wceq", "#T_c1", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cB.wceq", "#T_cI", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_cI", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgbtwntriv1", "#P_tgldim0eq", "#P_eqeltrd" ]
+}

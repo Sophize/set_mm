@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ceqsex on Metamath](http://us.metamath.org/mpegif/ceqsex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ceqsex.1 | |- F/ x ps |\n| 2 |  | ceqsex.2 | |- A e. _V |\n| 3 |  | ceqsex.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 | 3 | #P_biimpa | |- ( ( x = A /\\ ph ) -> ps ) |\n| 5 | 1, 4 | #P_exlimi | |- ( E. x ( x = A /\\ ph ) -> ps ) |\n| 6 | 3 | #P_biimprcd | |- ( ps -> ( x = A -> ph ) ) |\n| 7 | 1, 6 | #P_alrimi | |- ( ps -> A. x ( x = A -> ph ) ) |\n| 8 | 2 | #P_isseti | |- E. x x = A |\n| 9 |  | #P_exintr | |- ( A. x ( x = A -> ph ) -> ( E. x x = A -> E. x ( x = A /\\ ph ) ) ) |\n| 10 | 7, 8, 9 | #P_mpisyl | |- ( ps -> E. x ( x = A /\\ ph ) ) |\n| 11 | 5, 10 | #P_impbii | |- ( E. x ( x = A /\\ ph ) <-> ps ) |",
+  "conclusion" : "#P_ceqsex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_cA", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_biimpa", "#P_isseti", "#P_alrimi", "#P_exintr", "#P_mpisyl", "#P_exlimi", "#P_biimprcd" ]
+}

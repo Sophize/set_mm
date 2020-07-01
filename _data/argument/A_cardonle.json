@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardonle on Metamath](http://us.metamath.org/mpegif/cardonle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oncardval | |- ( A e. On -> ( card ` A ) = |^| { x e. On | x ~~ A } ) |\n| 2 |  | #P_enrefg | |- ( A e. On -> A ~~ A ) |\n| 3 |  | #P_breq1 | |- ( x = A -> ( x ~~ A <-> A ~~ A ) ) |\n| 4 | 3 | #P_intminss | |- ( ( A e. On /\\ A ~~ A ) -> |^| { x e. On | x ~~ A } C_ A ) |\n| 5 | 2, 4 | #P_mpdan | |- ( A e. On -> |^| { x e. On | x ~~ A } C_ A ) |\n| 6 | 1, 5 | #P_eqsstrd | |- ( A e. On -> ( card ` A ) C_ A ) |",
+  "conclusion" : "#P_cardonle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_crab--4", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_crab--4", "#T_wss", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_breq1", "#P_oncardval", "#P_eqsstrd", "#P_enrefg", "#P_intminss" ]
+}

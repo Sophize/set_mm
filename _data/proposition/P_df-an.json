@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-an on Metamath](http://us.metamath.org/mpegif/df-an.html)"
+  } ],
+  "names" : [ "df-an" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define conjunction (logical 'and').  Definition of [Margaris] p. 49.  When both the left and right operand are true, the result is true; when either is false, the result is false.  For example, it is true that ` ( 2 = 2 /\\ 3 = 3 ) ` .  After we define the constant true ` T. ` ( ~ df-tru ) and the constant false ` F. ` ( ~ df-fal ), we will be able to prove these truth table values: ` ( ( T. /\\ T. ) <-> T. ) ` ( ~ truantru ), ` ( ( T. /\\ F. ) <-> F. ) ` ( ~ truanfal ), ` ( ( F. /\\ T. ) <-> F. ) ` ( ~ falantru ), and ` ( ( F. /\\ F. ) <-> F. ) ` ( ~ falanfal ). Contrast with ` \\/ ` ( ~ df-or ), ` -> ` ( ~ wi ), ` -/\\ ` ( ~ df-nan ), and ` \\/_ ` ( ~ df-xor ) .  (Contributed by NM, 5-Jan-1993.) ",
+  "statement" : "df-an $p |- ( ( ph /\\ ps ) <-> -. ( ph -> -. ps ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oiiso on Metamath](http://us.metamath.org/mpegif/oiiso.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oicl.1 | |- F = OrdIso ( R , A ) |\n| 2 |  | #P_exse | |- ( A e. V -> R Se A ) |\n| 3 | 1 | #P_ordtype | |- ( ( R We A /\\ R Se A ) -> F Isom _E , R ( dom F , A ) ) |\n| 4 | 3 | #P_ancoms | |- ( ( R Se A /\\ R We A ) -> F Isom _E , R ( dom F , A ) ) |\n| 5 | 2, 4 | #P_sylan | |- ( ( A e. V /\\ R We A ) -> F Isom _E , R ( dom F , A ) ) |",
+  "conclusion" : "#P_oiiso",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_coi--1", "#T_cR", "#T_coi--2", "#T_cA", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wiso--1", "#T_cep", "#T_wiso--2", "#T_cR", "#T_cdm", "#T_cF", "#T_wiso--3", "#T_cA.wceq", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wiso--1", "#T_cep", "#T_wiso--2", "#T_cR", "#T_cdm", "#T_cF", "#T_wiso--3", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cR", "#T_wwe", "#T_cA", "#T_wi", "#T_cF", "#T_wiso--1", "#T_cep", "#T_wiso--2", "#T_cR", "#T_cdm", "#T_cF", "#T_wiso--3", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_ordtype", "#P_ancoms", "#P_exse" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See smo0 on Metamath](http://us.metamath.org/mpegif/smo0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ord0 | |- Ord (/) |\n| 2 | 1 | #P_iordsmo | |- Smo ( _I |` (/) ) |\n| 3 |  | #P_res0 | |- ( _I |` (/) ) = (/) |\n| 4 |  | #P_smoeq | |- ( ( _I |` (/) ) = (/) -> ( Smo ( _I |` (/) ) <-> Smo (/) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( Smo ( _I |` (/) ) <-> Smo (/) ) |\n| 6 | 2, 5 | #P_mpbi | |- Smo (/) |",
+  "conclusion" : "#P_smo0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_c0", "#T_wsmo", "#T_cid", "#T_cres", "#T_c0", "#T_cid", "#T_cres", "#T_c0", "#T_wceq", "#T_c0", "#T_cid", "#T_cres", "#T_c0", "#T_wceq", "#T_c0", "#T_wi", "#T_wsmo", "#T_cid", "#T_cres", "#T_c0", "#T_wb", "#T_wsmo", "#T_c0", "#T_wsmo", "#T_cid", "#T_cres", "#T_c0", "#T_wb", "#T_wsmo", "#T_c0", "#T_wsmo", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_smoeq", "#P_iordsmo", "#P_ax-mp", "#P_mpbi", "#P_ord0", "#P_res0" ]
+}

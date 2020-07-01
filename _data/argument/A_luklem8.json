@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See luklem8 on Metamath](http://us.metamath.org/mpegif/luklem8.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luk-1 | |- ( ( ch -> ph ) -> ( ( ph -> ps ) -> ( ch -> ps ) ) ) |\n| 2 |  | #P_luklem7 | |- ( ( ( ch -> ph ) -> ( ( ph -> ps ) -> ( ch -> ps ) ) ) -> ( ( ph -> ps ) -> ( ( ch -> ph ) -> ( ch -> ps ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ph -> ps ) -> ( ( ch -> ph ) -> ( ch -> ps ) ) ) |\n\\\n Used to rederive standard propositional axioms from Lukasiewicz'. (Contributed by NM, 22-Dec-2002.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_imim2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_luk-1", "#P_luklem7" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iscringd on Metamath](http://us.metamath.org/mpegif/iscringd.html)"
+  } ],
+  "names" : [ "iscringd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cablo", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_wph", "#T_wi", "#T_cH", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cH", "#T_vy", "#T_cH", "#T_vz", "#T_wceq", "#T_vx", "#T_cH", "#T_vy", "#T_cH", "#T_vz", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cH", "#T_vy", "#T_cG", "#T_vz", "#T_wceq", "#T_vx", "#T_cH", "#T_vy", "#T_cG", "#T_vx", "#T_cH", "#T_vz", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cX", "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vy", "#T_cH", "#T_cU", "#T_wceq", "#T_vy", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cH", "#T_vy", "#T_wceq", "#T_vy", "#T_cH", "#T_vx", "#T_wph", "#T_wi", "#T_cop--1", "#T_cG", "#T_cop--2", "#T_cH", "#T_cop--3", "#T_wcel", "#T_ccring", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_cH", "#T_vx", "#T_vy", "#T_vz", "#T_cU", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Conditions that determine a commutative ring.  (Contributed by Jeff Madsen, 20-Jun-2011.)  (Revised by Mario Carneiro, 23-Dec-2013.) ",
+  "statement" : "iscringd.1 $e |- ( ph -> G e. AbelOp ) $.\niscringd.2 $e |- ( ph -> X = ran G ) $.\niscringd.3 $e |- ( ph -> H : ( X X. X ) --> X ) $.\niscringd.4 $e |- ( ( ph /\\ ( x e. X /\\ y e. X /\\ z e. X ) ) -> ( ( x H y ) H z ) = ( x H ( y H z ) ) ) $.\niscringd.5 $e |- ( ( ph /\\ ( x e. X /\\ y e. X /\\ z e. X ) ) -> ( x H ( y G z ) ) = ( ( x H y ) G ( x H z ) ) ) $.\niscringd.6 $e |- ( ph -> U e. X ) $.\niscringd.7 $e |- ( ( ph /\\ y e. X ) -> ( y H U ) = y ) $.\niscringd.8 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x H y ) = ( y H x ) ) $.\niscringd $p |- ( ph -> <. G , H >. e. CRingOps ) $.\n$d G x y z $.\n$d H x y z $.\n$d U x y $.\n$d X x y z $.\n$d ph x y z $."
+}

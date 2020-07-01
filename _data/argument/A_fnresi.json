@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnresi on Metamath](http://us.metamath.org/mpegif/fnresi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funi | |- Fun _I |\n| 2 |  | #P_funres | |- ( Fun _I -> Fun ( _I |` A ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- Fun ( _I |` A ) |\n| 4 |  | #P_dmresi | |- dom ( _I |` A ) = A |\n| 5 |  | #P_df-fn | |- ( ( _I |` A ) Fn A <-> ( Fun ( _I |` A ) /\\ dom ( _I |` A ) = A ) ) |\n| 6 | 3, 4, 5 | #P_mpbir2an | |- ( _I |` A ) Fn A |",
+  "conclusion" : "#P_fnresi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cid", "#T_wfun", "#T_cid", "#T_wi", "#T_wfun", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wfun", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wfn", "#T_cA.wceq", "#T_wb", "#T_wfun", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wa", "#T_cdm", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cid", "#T_cres", "#T_cA", "#T_wfn", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_funi", "#P_dmresi", "#P_mpbir2an", "#P_funres", "#P_df-fn" ]
+}

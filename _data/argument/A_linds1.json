@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See linds1 on Metamath](http://us.metamath.org/mpegif/linds1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | islinds.b | |- B = ( Base ` W ) |\n| 2 |  | #P_elfvdm | |- ( X e. ( LIndS ` W ) -> W e. dom LIndS ) |\n| 3 | 1 | #P_islinds | |- ( W e. dom LIndS -> ( X e. ( LIndS ` W ) <-> ( X C_ B /\\ ( _I |` X ) LIndF W ) ) ) |\n| 4 | 2, 3 | #P_syl | |- ( X e. ( LIndS ` W ) -> ( X e. ( LIndS ` W ) <-> ( X C_ B /\\ ( _I |` X ) LIndF W ) ) ) |\n| 5 | 4 | #P_ibi | |- ( X e. ( LIndS ` W ) -> ( X C_ B /\\ ( _I |` X ) LIndF W ) ) |\n| 6 | 5 | #P_simpld | |- ( X e. ( LIndS ` W ) -> X C_ B ) |",
+  "conclusion" : "#P_linds1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wi", "#T_cW", "#T_wcel", "#T_cdm", "#T_clinds", "#T_cW", "#T_wcel", "#T_cdm", "#T_clinds", "#T_wi", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wb", "#T_cX", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cid", "#T_cres", "#T_cX", "#T_clindf", "#T_cW", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wi", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wb", "#T_cX", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cid", "#T_cres", "#T_cX", "#T_clindf", "#T_cW", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wi", "#T_cX", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cid", "#T_cres", "#T_cX", "#T_clindf", "#T_cW", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wi", "#T_cX", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_ibi", "#P_elfvdm", "#P_syl", "#P_islinds" ]
+}

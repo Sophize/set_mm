@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See repswswrd on Metamath](http://us.metamath.org/mpegif/repswswrd.html)"
+  } ],
+  "names" : [ "repswswrd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cV", "#T_wa", "#T_cL", "#T_wcel", "#T_cn0", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cn0", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cN", "#T_cle", "#T_cL", "#T_wi", "#T_cS", "#T_creps", "#T_cL", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wceq", "#T_cS", "#T_creps", "#T_cN", "#T_cmin", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A subword of a \"repeated symbol word\" is again a \"repeated symbol word\".  The assumption N <_ L is required, because otherwise ( L < N ): ` ( ( S repeatS L ) substr <. M , N >. ) = (/) ` , but for M < N ` ( S repeatS ( N - M ) ) ) =/= (/) ` !  The proof is relatively long because the border cases ( ` M = N ` , ` -. ( M ..^ N ) C_ ( 0 ..^ L ) ` must have been considered.  (Contributed by AV, 6-Nov-2018.) ",
+  "statement" : "repswswrd $p |- ( ( ( S e. V /\\ L e. NN0 ) /\\ ( M e. NN0 /\\ N e. NN0 ) /\\ N <_ L ) -> ( ( S repeatS L ) substr <. M , N >. ) = ( S repeatS ( N - M ) ) ) $."
+}

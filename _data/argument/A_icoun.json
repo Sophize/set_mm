@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See icoun on Metamath](http://us.metamath.org/mpegif/icoun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw x y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ico | |- [,) = ( x e. RR* , y e. RR* |-> { z e. RR* | ( x <_ z /\\ z < y ) } ) |\n| 2 |  | #P_xrlenlt | |- ( ( B e. RR* /\\ w e. RR* ) -> ( B <_ w <-> -. w < B ) ) |\n| 3 |  | #P_xrltletr | |- ( ( w e. RR* /\\ B e. RR* /\\ C e. RR* ) -> ( ( w < B /\\ B <_ C ) -> w < C ) ) |\n| 4 |  | #P_xrletr | |- ( ( A e. RR* /\\ B e. RR* /\\ w e. RR* ) -> ( ( A <_ B /\\ B <_ w ) -> A <_ w ) ) |\n| 5 | 1, 1, 2, 1, 3, 4 | #P_ixxun | |- ( ( ( A e. RR* /\\ B e. RR* /\\ C e. RR* ) /\\ ( A <_ B /\\ B <_ C ) ) -> ( ( A [,) B ) u. ( B [,) C ) ) = ( A [,) C ) ) |",
+  "conclusion" : "#P_icoun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cico", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_vx.wal", "#T_cle", "#T_vz", "#T_wa", "#T_vz", "#T_clt", "#T_vy.tru", "#T_crab--4", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_vw", "#T_wcel", "#T_cxr", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_vw", "#T_wb", "#T_wn", "#T_vw", "#T_clt", "#T_cB.wceq", "#T_vw", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wi", "#T_vw", "#T_clt", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_wi", "#T_vw", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_vw", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_vw", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_vw", "#T_cA", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wa", "#T_cA", "#T_cle", "#T_cB", "#T_wa", "#T_cB", "#T_cle", "#T_cC", "#T_wi", "#T_cA", "#T_cico", "#T_cB", "#T_cun", "#T_cB", "#T_cico", "#T_cC", "#T_wceq", "#T_cA", "#T_cico", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xrlenlt", "#P_xrletr", "#P_ixxun", "#P_xrltletr", "#P_df-ico" ]
+}

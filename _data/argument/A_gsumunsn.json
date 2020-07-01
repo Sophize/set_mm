@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumunsn on Metamath](http://us.metamath.org/mpegif/gsumunsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsumunsn.b | |- B = ( Base ` G ) |\n| 2 |  | gsumunsn.p | |- .+ = ( +g ` G ) |\n| 3 |  | gsumunsn.g | |- ( ph -> G e. CMnd ) |\n| 4 |  | gsumunsn.a | |- ( ph -> A e. Fin ) |\n| 5 |  | gsumunsn.f | |- ( ( ph /\\ k e. A ) -> X e. B ) |\n| 6 |  | gsumunsn.m | |- ( ph -> M e. V ) |\n| 7 |  | gsumunsn.d | |- ( ph -> -. M e. A ) |\n| 8 |  | gsumunsn.y | |- ( ph -> Y e. B ) |\n| 9 |  | gsumunsn.s | |- ( k = M -> X = Y ) |\n| 10 | 9 | #P_adantl | |- ( ( ph /\\ k = M ) -> X = Y ) |\n| 11 | 1, 2, 3, 4, 5, 6, 7, 8, 10 | #P_gsumunsnd | |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) = ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) |",
+  "conclusion" : "#P_gsumunsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_wn", "#T_cM", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cX", "#T_wceq", "#T_cY", "#T_wph", "#T_wa", "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cX", "#T_wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cG", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cA", "#T_cun", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cmpt--2", "#T_cX", "#T_wceq", "#T_cG", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cX", "#T_c.pl", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_gsumunsnd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedlemb on Metamath](http://us.metamath.org/mpegif/dedlemb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_olc | |- ( ( ch /\\ -. ph ) -> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) |\n| 2 | 1 | #P_expcom | |- ( -. ph -> ( ch -> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) ) |\n| 3 |  | #P_pm2.21 | |- ( -. ph -> ( ph -> ch ) ) |\n| 4 | 3 | #P_adantld | |- ( -. ph -> ( ( ps /\\ ph ) -> ch ) ) |\n| 5 |  | #P_simpl | |- ( ( ch /\\ -. ph ) -> ch ) |\n| 6 | 5 | #P_a1i | |- ( -. ph -> ( ( ch /\\ -. ph ) -> ch ) ) |\n| 7 | 4, 6 | #P_jaod | |- ( -. ph -> ( ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) -> ch ) ) |\n| 8 | 2, 7 | #P_impbid | |- ( -. ph -> ( ch <-> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) ) |",
+  "conclusion" : "#P_dedlemb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantld", "#P_expcom", "#P_jaod", "#P_pm2.21", "#P_olc", "#P_impbid", "#P_a1i", "#P_simpl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sh1dle on Metamath](http://us.metamath.org/mpegif/sh1dle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_shel | |- ( ( A e. SH /\\ B e. A ) -> B e. ~H ) |\n| 2 |  | #P_spansn | |- ( B e. ~H -> ( span ` { B } ) = ( _|_ ` ( _|_ ` { B } ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( A e. SH /\\ B e. A ) -> ( span ` { B } ) = ( _|_ ` ( _|_ ` { B } ) ) ) |\n| 4 |  | #P_spansnss | |- ( ( A e. SH /\\ B e. A ) -> ( span ` { B } ) C_ A ) |\n| 5 | 3, 4 | #P_eqsstr3d | |- ( ( A e. SH /\\ B e. A ) -> ( _|_ ` ( _|_ ` { B } ) ) C_ A ) |",
+  "conclusion" : "#P_sh1dle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cspn", "#T_cfv", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cspn", "#T_cfv", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cspn", "#T_cfv", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_csh", "#T_wa", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_shel", "#P_eqsstr3d", "#P_spansn", "#P_syl", "#P_spansnss" ]
+}

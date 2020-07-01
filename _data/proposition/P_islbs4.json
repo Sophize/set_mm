@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islbs4 on Metamath](http://us.metamath.org/mpegif/islbs4.html)"
+  } ],
+  "names" : [ "islbs4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cJ", "#T_wceq", "#T_clbs", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_cX", "#T_wcel", "#T_cJ", "#T_wb", "#T_cX", "#T_wcel", "#T_clinds", "#T_cfv", "#T_cW", "#T_wa", "#T_cK", "#T_cfv", "#T_cX", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A basis is an independent spanning set.  This could have been used as alternative definition of a basis: ` LBasis = ( w e. _V |-> { b e. ~P ( Base `` w ) | ( ( ( LSpan `` w ) ` ` `` b ) = ( Base `` w ) /\\ b e. ( LIndS `` w ) ) } ) ` .  (Contributed by Stefan O'Rear, 24-Feb-2015.) ",
+  "statement" : "islbs4.b $e |- B = ( Base ` W ) $.\nislbs4.j $e |- J = ( LBasis ` W ) $.\nislbs4.k $e |- K = ( LSpan ` W ) $.\nislbs4 $p |- ( X e. J <-> ( X e. ( LIndS ` W ) /\\ ( K ` X ) = B ) ) $."
+}

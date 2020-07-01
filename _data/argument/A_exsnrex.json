@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exsnrex on Metamath](http://us.metamath.org/mpegif/exsnrex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssnid | |- x e. { x } |\n| 2 |  | #P_eleq2 | |- ( M = { x } -> ( x e. M <-> x e. { x } ) ) |\n| 3 | 1, 2 | #P_mpbiri | |- ( M = { x } -> x e. M ) |\n| 4 | 3 | #P_pm4.71ri | |- ( M = { x } <-> ( x e. M /\\ M = { x } ) ) |\n| 5 | 4 | #P_exbii | |- ( E. x M = { x } <-> E. x ( x e. M /\\ M = { x } ) ) |\n| 6 |  | #P_df-rex | |- ( E. x e. M M = { x } <-> E. x ( x e. M /\\ M = { x } ) ) |\n| 7 | 5, 6 | #P_bitr4i | |- ( E. x M = { x } <-> E. x e. M M = { x } ) |",
+  "conclusion" : "#P_exsnrex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cM", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cM", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cM", "#T_wa", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wex", "#T_vx.wal", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cM", "#T_wa", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cM", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cM", "#T_wa", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wex", "#T_vx", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cM", "#T_cM", "#T_wceq", "#T_csn--1", "#T_vx", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_exbii", "#P_eleq2", "#P_ssnid", "#P_df-rex", "#P_bitr4i", "#P_pm4.71ri" ]
+}

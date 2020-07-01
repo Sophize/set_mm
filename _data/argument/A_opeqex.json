@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opeqex on Metamath](http://us.metamath.org/mpegif/opeqex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neeq1 | |- ( <. A , B >. = <. C , D >. -> ( <. A , B >. =/= (/) <-> <. C , D >. =/= (/) ) ) |\n| 2 |  | #P_opnz | |- ( <. A , B >. =/= (/) <-> ( A e. _V /\\ B e. _V ) ) |\n| 3 |  | #P_opnz | |- ( <. C , D >. =/= (/) <-> ( C e. _V /\\ D e. _V ) ) |\n| 4 | 1, 2, 3 | #P_3bitr3g | |- ( <. A , B >. = <. C , D >. -> ( ( A e. _V /\\ B e. _V ) <-> ( C e. _V /\\ D e. _V ) ) ) |",
+  "conclusion" : "#P_opeqex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wne", "#T_c0", "#T_wb", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wne", "#T_c0", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wne", "#T_c0", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wne", "#T_c0", "#T_wb", "#T_cC", "#T_wcel", "#T_cvv", "#T_wa", "#T_cD", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB", "#T_wcel", "#T_cvv", "#T_wb", "#T_cC", "#T_wcel", "#T_cvv", "#T_wa", "#T_cD", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_opnz", "#P_neeq1", "#P_3bitr3g" ]
+}

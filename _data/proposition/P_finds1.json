@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See finds1 on Metamath](http://us.metamath.org/mpegif/finds1.html)"
+  } ],
+  "names" : [ "finds1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_wps", "#T_vy", "#T_wcel", "#T_com", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_vx", "#T_wcel", "#T_com", "#T_wi", "#T_wph", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Finite Induction (inference schema), using implicit substitutions.  The first three hypotheses establish the substitutions we need.  The last two are the basis and the induction step.  Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM, 22-Mar-2006.) ",
+  "statement" : "finds1.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\nfinds1.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfinds1.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\nfinds1.4 $e |- ps $.\nfinds1.5 $e |- ( y e. _om -> ( ch -> th ) ) $.\nfinds1 $p |- ( x e. _om -> ph ) $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d th x $.\n$d x y $."
+}

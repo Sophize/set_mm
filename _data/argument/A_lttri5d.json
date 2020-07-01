@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lttri5d on Metamath](http://us.metamath.org/mpegif/lttri5d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lttri5d.a | |- ( ph -> A e. RR ) |\n| 2 |  | lttri5d.b | |- ( ph -> B e. RR ) |\n| 3 |  | lttri5d.aneb | |- ( ph -> A =/= B ) |\n| 4 |  | lttri5d.nlt | |- ( ph -> -. B < A ) |\n| 5 | 1 | #P_rexrd | |- ( ph -> A e. RR* ) |\n| 6 | 2 | #P_rexrd | |- ( ph -> B e. RR* ) |\n| 7 | 5, 6, 3, 4 | #P_xrlttri5d | |- ( ph -> A < B ) |",
+  "conclusion" : "#P_lttri5d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wph", "#T_wi", "#T_wn", "#T_cB", "#T_clt", "#T_cA", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xrlttri5d", "#P_rexrd" ]
+}

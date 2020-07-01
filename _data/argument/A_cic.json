@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cic on Metamath](http://us.metamath.org/mpegif/cic.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cic.i | |- I = ( Iso ` C ) |\n| 2 |  | cic.b | |- B = ( Base ` C ) |\n| 3 |  | cic.c | |- ( ph -> C e. Cat ) |\n| 4 |  | cic.x | |- ( ph -> X e. B ) |\n| 5 |  | cic.y | |- ( ph -> Y e. B ) |\n| 6 | 1, 2, 3, 4, 5 | #P_brcic | |- ( ph -> ( X ( ~=c ` C ) Y <-> ( X I Y ) =/= (/) ) ) |\n| 7 |  | #P_n0 | |- ( ( X I Y ) =/= (/) <-> E. f f e. ( X I Y ) ) |\n| 8 | 6, 7 | #P_syl6bb | |- ( ph -> ( X ( ~=c ` C ) Y <-> E. f f e. ( X I Y ) ) ) |",
+  "conclusion" : "#P_cic",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cX", "#T_ccic", "#T_cfv", "#T_cC", "#T_cY", "#T_wb", "#T_cX", "#T_cI", "#T_cY", "#T_wne", "#T_c0", "#T_cX", "#T_cI", "#T_cY", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_cbvex4v.vf", "#T_cbvex4v.vf", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_ccic", "#T_cfv", "#T_cC", "#T_cY", "#T_wb", "#T_wex", "#T_vf", "#T_vf", "#T_wcel", "#T_cX", "#T_cI", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6bb", "#P_n0", "#P_brcic" ]
+}

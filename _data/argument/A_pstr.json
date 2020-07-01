@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pstr on Metamath](http://us.metamath.org/mpegif/pstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pslem | |- ( R e. PosetRel -> ( ( ( A R B /\\ B R C ) -> A R C ) /\\ ( A e. U. U. R -> A R A ) /\\ ( ( A R B /\\ B R A ) -> A = B ) ) ) |\n| 2 | 1 | #P_simp1d | |- ( R e. PosetRel -> ( ( A R B /\\ B R C ) -> A R C ) ) |\n| 3 | 2 | #P_3impib | |- ( ( R e. PosetRel /\\ A R B /\\ B R C ) -> A R C ) |",
+  "conclusion" : "#P_pstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cuni", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_cps", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cR", "#T_wcel", "#T_cps", "#T_w3a--1", "#T_cA", "#T_cR", "#T_cB", "#T_w3a--2", "#T_cB", "#T_cR", "#T_cC", "#T_wi", "#T_cA", "#T_cR", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pslem", "#P_simp1d", "#P_3impib" ]
+}

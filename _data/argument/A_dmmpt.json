@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmmpt on Metamath](http://us.metamath.org/mpegif/dmmpt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dmmpt2.1 | |- F = ( x e. A |-> B ) |\n| 2 |  | #P_dfdm4 | |- dom F = ran `' F |\n| 3 |  | #P_dfrn4 | |- ran `' F = ( `' F \" _V ) |\n| 4 | 1 | #P_mptpreima | |- ( `' F \" _V ) = { x e. A | B e. _V } |\n| 5 | 2, 3, 4 | #P_3eqtri | |- dom F = { x e. A | B e. _V } |",
+  "conclusion" : "#P_dmmpt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_cdm", "#T_cF", "#T_wceq", "#T_crn", "#T_ccnv", "#T_cF", "#T_crn", "#T_ccnv", "#T_cF", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cima", "#T_cvv", "#T_ccnv", "#T_cF", "#T_cima", "#T_cvv", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_crab--4", "#T_cdm", "#T_cF", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_cB", "#T_wcel", "#T_cvv", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mptpreima", "#P_3eqtri", "#P_dfrn4", "#P_dfdm4" ]
+}

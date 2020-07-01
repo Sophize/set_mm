@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See aleph1 on Metamath](http://us.metamath.org/mpegif/aleph1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-1o | |- 1o = suc (/) |\n| 2 | 1 | #P_fveq2i | |- ( aleph ` 1o ) = ( aleph ` suc (/) ) |\n| 3 |  | #P_alephsucpw | |- ( aleph ` suc (/) ) ~<_ ~P ( aleph ` (/) ) |\n| 4 |  | #P_fvex | |- ( aleph ` (/) ) e. _V |\n| 5 | 4 | #P_pw2en | |- ~P ( aleph ` (/) ) ~~ ( 2o ^m ( aleph ` (/) ) ) |\n| 6 |  | #P_domen2 | |- ( ~P ( aleph ` (/) ) ~~ ( 2o ^m ( aleph ` (/) ) ) -> ( ( aleph ` suc (/) ) ~<_ ~P ( aleph ` (/) ) <-> ( aleph ` suc (/) ) ~<_ ( 2o ^m ( aleph ` (/) ) ) ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- ( ( aleph ` suc (/) ) ~<_ ~P ( aleph ` (/) ) <-> ( aleph ` suc (/) ) ~<_ ( 2o ^m ( aleph ` (/) ) ) ) |\n| 8 | 3, 7 | #P_mpbi | |- ( aleph ` suc (/) ) ~<_ ( 2o ^m ( aleph ` (/) ) ) |\n| 9 | 2, 8 | #P_eqbrtri | |- ( aleph ` 1o ) ~<_ ( 2o ^m ( aleph ` (/) ) ) |",
+  "conclusion" : "#P_aleph1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1o", "#T_wceq", "#T_csuc", "#T_c0", "#T_cale", "#T_cfv", "#T_c1o", "#T_wceq", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_cpw", "#T_cale", "#T_cfv", "#T_c0", "#T_cale", "#T_cfv", "#T_c0", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cale", "#T_cfv", "#T_c0", "#T_cen", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0", "#T_cpw", "#T_cale", "#T_cfv", "#T_c0", "#T_cen", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0", "#T_wi", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_cpw", "#T_cale", "#T_cfv", "#T_c0", "#T_wb", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_cpw", "#T_cale", "#T_cfv", "#T_c0", "#T_wb", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0", "#T_cale", "#T_cfv", "#T_csuc", "#T_c0", "#T_cdom", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0", "#T_cale", "#T_cfv", "#T_c1o", "#T_cdom", "#T_c2o", "#T_cmap", "#T_cale", "#T_cfv", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_ax-mp", "#P_domen2", "#P_mpbi", "#P_alephsucpw", "#P_pw2en", "#P_fvex", "#P_eqbrtri", "#P_df-1o" ]
+}

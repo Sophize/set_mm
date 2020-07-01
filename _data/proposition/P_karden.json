@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See karden on Metamath](http://us.metamath.org/mpegif/karden.html)"
+  } ],
+  "names" : [ "karden" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_cen", "#T_cA", "#T_wa", "#T_wal", "#T_vy", "#T_vy", "#T_cen", "#T_cA", "#T_wi", "#T_crnk", "#T_cfv", "#T_vx", "#T_wss", "#T_crnk", "#T_cfv", "#T_vy", "#T_cab--3", "#T_cD", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_cen", "#T_cB", "#T_wa", "#T_wal", "#T_vy", "#T_vy", "#T_cen", "#T_cB", "#T_wi", "#T_crnk", "#T_cfv", "#T_vx", "#T_wss", "#T_crnk", "#T_cfv", "#T_vy", "#T_cab--3", "#T_cC", "#T_wceq", "#T_cD", "#T_wb", "#T_cA", "#T_cen", "#T_cB", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If we allow the Axiom of Regularity, we can avoid the Axiom of Choice by defining the cardinal number of a set as the set of all sets equinumerous to it and having the least possible rank.  This theorem proves the equinumerosity relationship for this definition (compare ~ carden ).  The hypotheses correspond to the definition of kard of [Enderton] p. 222 (which we don't define separately since currently we do not use it elsewhere).  This theorem along with ~ kardex justify the definition of kard.  The restriction to the least rank prevents the proper class that would result from ` { x | x ~~ A } ` .  (Contributed by NM, 18-Dec-2003.) ",
+  "statement" : "karden.1 $e |- A e. _V $.\nkarden.2 $e |- B e. _V $.\nkarden.3 $e |- C = { x | ( x ~~ A /\\ A. y ( y ~~ A -> ( rank ` x ) C_ ( rank ` y ) ) ) } $.\nkarden.4 $e |- D = { x | ( x ~~ B /\\ A. y ( y ~~ B -> ( rank ` x ) C_ ( rank ` y ) ) ) } $.\nkarden $p |- ( C = D <-> A ~~ B ) $.\n$d A x y $.\n$d B x y $."
+}

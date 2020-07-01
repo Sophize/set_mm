@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oprabco on Metamath](http://us.metamath.org/mpegif/oprabco.html)"
+  } ],
+  "names" : [ "oprabco" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cD", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cH", "#T_cfv", "#T_cC", "#T_cH", "#T_wfn", "#T_cD", "#T_wi", "#T_cG", "#T_wceq", "#T_cH", "#T_ccom", "#T_cF", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cH", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Composition of a function with an operator abstraction.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro, 26-Sep-2015.) ",
+  "statement" : "oprabco.1 $e |- ( ( x e. A /\\ y e. B ) -> C e. D ) $.\noprabco.2 $e |- F = ( x e. A , y e. B |-> C ) $.\noprabco.3 $e |- G = ( x e. A , y e. B |-> ( H ` C ) ) $.\noprabco $p |- ( H Fn D -> G = ( H o. F ) ) $.\n$d A x y $.\n$d B x y $.\n$d D x y $.\n$d H x y $."
+}

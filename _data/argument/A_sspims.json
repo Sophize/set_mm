@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sspims on Metamath](http://us.metamath.org/mpegif/sspims.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sspims.y | |- Y = ( BaseSet ` W ) |\n| 2 |  | sspims.d | |- D = ( IndMet ` U ) |\n| 3 |  | sspims.c | |- C = ( IndMet ` W ) |\n| 4 |  | sspims.h | |- H = ( SubSp ` U ) |\n| 5 | 1, 2, 3, 4 | #P_sspimsval | |- ( ( ( U e. NrmCVec /\\ W e. H ) /\\ ( x e. Y /\\ y e. Y ) ) -> ( x C y ) = ( x D y ) ) |\n| 6 | 1, 3 | #P_imsdf | |- ( W e. NrmCVec -> C : ( Y X. Y ) --> RR ) |\n| 7 |  | #P_eqid | |- ( BaseSet ` U ) = ( BaseSet ` U ) |\n| 8 | 7, 2 | #P_imsdf | |- ( U e. NrmCVec -> D : ( ( BaseSet ` U ) X. ( BaseSet ` U ) ) --> RR ) |\n| 9 | 1, 4, 5, 6, 8 | #P_sspmlem | |- ( ( U e. NrmCVec /\\ W e. H ) -> C = ( D |` ( Y X. Y ) ) ) |",
+  "conclusion" : "#P_sspims",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cY", "#T_wceq", "#T_cba", "#T_cfv", "#T_cW", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cC", "#T_wceq", "#T_cims", "#T_cfv", "#T_cW", "#T_cH", "#T_wceq", "#T_css", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cY", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cY", "#T_wi", "#T_vx.wal", "#T_cC", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_cD", "#T_vy.tru", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cC", "#T_wf--1", "#T_cY", "#T_cxp", "#T_cY", "#T_wf--2", "#T_cr", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cD", "#T_wf--1", "#T_cba", "#T_cfv", "#T_cU", "#T_cxp", "#T_cba", "#T_cfv", "#T_cU", "#T_wf--2", "#T_cr", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cres", "#T_cY", "#T_cxp", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sspmlem", "#P_sspimsval", "#P_imsdf" ]
+}

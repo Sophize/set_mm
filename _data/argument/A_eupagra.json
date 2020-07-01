@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eupagra on Metamath](http://us.metamath.org/mpegif/eupagra.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk n\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- dom E = dom E |\n| 2 |  | #P_iseupa | |- ( dom E = dom E -> ( F ( V EulPaths E ) P <-> ( V UMGrph E /\\ E. n e. NN0 ( F : ( 1 ... n ) -1-1-onto-> dom E /\\ P : ( 0 ... n ) --> V /\\ A. k e. ( 1 ... n ) ( E ` ( F ` k ) ) = { ( P ` ( k - 1 ) ) , ( P ` k ) } ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( F ( V EulPaths E ) P <-> ( V UMGrph E /\\ E. n e. NN0 ( F : ( 1 ... n ) -1-1-onto-> dom E /\\ P : ( 0 ... n ) --> V /\\ A. k e. ( 1 ... n ) ( E ` ( F ` k ) ) = { ( P ` ( k - 1 ) ) , ( P ` k ) } ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( F ( V EulPaths E ) P -> V UMGrph E ) |",
+  "conclusion" : "#P_eupagra",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_vn", "#T_cdm", "#T_cE", "#T_wceq", "#T_cdm", "#T_cE", "#T_cdm", "#T_cE", "#T_wceq", "#T_cdm", "#T_cE", "#T_wi", "#T_cF", "#T_cV", "#T_ceup", "#T_cE", "#T_cP", "#T_wb", "#T_cV", "#T_cumg", "#T_cE", "#T_wa", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn0", "#T_cF", "#T_wf1o--1", "#T_c1", "#T_cfz", "#T_vn", "#T_wf1o--2", "#T_cdm", "#T_cE", "#T_w3a--1", "#T_cP", "#T_wf--1", "#T_cc0", "#T_cfz", "#T_vn", "#T_wf--2", "#T_cV", "#T_w3a--2", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_c1", "#T_cfz", "#T_vn", "#T_cE", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cpr--1", "#T_cP", "#T_cfv", "#T_vk", "#T_cmin", "#T_c1", "#T_cpr--2", "#T_cP", "#T_cfv", "#T_vk", "#T_cpr--3", "#T_cF", "#T_cV", "#T_ceup", "#T_cE", "#T_cP", "#T_wb", "#T_cV", "#T_cumg", "#T_cE", "#T_wa", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn0", "#T_cF", "#T_wf1o--1", "#T_c1", "#T_cfz", "#T_vn", "#T_wf1o--2", "#T_cdm", "#T_cE", "#T_w3a--1", "#T_cP", "#T_wf--1", "#T_cc0", "#T_cfz", "#T_vn", "#T_wf--2", "#T_cV", "#T_w3a--2", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_c1", "#T_cfz", "#T_vn", "#T_cE", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cpr--1", "#T_cP", "#T_cfv", "#T_vk", "#T_cmin", "#T_c1", "#T_cpr--2", "#T_cP", "#T_cfv", "#T_vk", "#T_cpr--3", "#T_cF", "#T_cV", "#T_ceup", "#T_cE", "#T_cP", "#T_wi", "#T_cV", "#T_cumg", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_simplbi", "#P_iseupa" ]
+}

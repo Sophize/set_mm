@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-har on Metamath](http://us.metamath.org/mpegif/df-har.html)"
+  } ],
+  "names" : [ "df-har" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_char", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy", "#T_cdom", "#T_vx", "#T_crab--4", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the _Hartogs function_ , which maps all sets to the smallest ordinal that cannot be injected into the given set.  In the important special case where ` x ` is an ordinal, this is the _cardinal successor_ operation. Traditionally, the Hartogs number of a set is written ` aleph ( X ) ` and the cardinal successor ` X + ` ; we use functional notation for this, and cannot use the aleph symbol because it is taken for the enumerating function of the infinite initial ordinals ~ df-aleph . Some authors define the Hartogs number of a set to be the least *infinite* ordinal which does not inject into it, thus causing the range to consist only of alephs.  We use the simpler definition where the value can be any successor cardinal.  (Contributed by Stefan O'Rear, 11-Feb-2015.) ",
+  "statement" : "df-har $p |- har = ( x e. _V |-> { y e. On | y ~<_ x } ) $.\n$d x y $."
+}

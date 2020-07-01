@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulgt0i on Metamath](http://us.metamath.org/mpegif/mulgt0i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt.1 | |- A e. RR |\n| 2 |  | lt.2 | |- B e. RR |\n| 3 |  | #P_axmulgt0 | |- ( ( A e. RR /\\ B e. RR ) -> ( ( 0 < A /\\ 0 < B ) -> 0 < ( A x. B ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( ( 0 < A /\\ 0 < B ) -> 0 < ( A x. B ) ) |",
+  "conclusion" : "#P_mulgt0i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cc0", "#T_clt", "#T_cA", "#T_wa", "#T_cc0", "#T_clt", "#T_cB", "#T_wi", "#T_cc0", "#T_clt", "#T_cA", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_axmulgt0" ]
+}

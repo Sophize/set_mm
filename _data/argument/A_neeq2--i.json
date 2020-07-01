@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neeq2 on Metamath](http://us.metamath.org/mpegif/neeq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq2 | |- ( A = B -> ( C = A <-> C = B ) ) |\n| 2 | 1 | #P_notbid | |- ( A = B -> ( -. C = A <-> -. C = B ) ) |\n| 3 |  | #P_df-ne | |- ( C =/= A <-> -. C = A ) |\n| 4 |  | #P_df-ne | |- ( C =/= B <-> -. C = B ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A = B -> ( C =/= A <-> C =/= B ) ) |",
+  "conclusion" : "#P_neeq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cC", "#T_wne", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cC", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cC", "#T_wne", "#T_cA", "#T_wb", "#T_cC", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq2", "#P_df-ne", "#P_3bitr4g", "#P_notbid" ]
+}

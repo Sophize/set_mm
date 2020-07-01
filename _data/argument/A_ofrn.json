@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofrn on Metamath](http://us.metamath.org/mpegif/ofrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ofrn.1 | |- ( ph -> F : A --> B ) |\n| 2 |  | ofrn.2 | |- ( ph -> G : A --> B ) |\n| 3 |  | ofrn.3 | |- ( ph -> .+ : ( B X. B ) --> C ) |\n| 4 |  | ofrn.4 | |- ( ph -> A e. V ) |\n| 5 | 3 | #P_fovrnda | |- ( ( ph /\\ ( x e. B /\\ y e. B ) ) -> ( x .+ y ) e. C ) |\n| 6 |  | #P_inidm | |- ( A i^i A ) = A |\n| 7 | 5, 1, 2, 4, 4, 6 | #P_off | |- ( ph -> ( F oF .+ G ) : A --> C ) |\n| 8 |  | #P_frn | |- ( ( F oF .+ G ) : A --> C -> ran ( F oF .+ G ) C_ C ) |\n| 9 | 7, 8 | #P_syl | |- ( ph -> ran ( F oF .+ G ) C_ C ) |",
+  "conclusion" : "#P_ofrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_c.pl", "#T_wf--1", "#T_cB", "#T_cxp", "#T_cB", "#T_wf--2", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_c.pl", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_cof", "#T_c.pl", "#T_cG", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_cF", "#T_cof", "#T_c.pl", "#T_cG", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_wi", "#T_crn", "#T_cF", "#T_cof", "#T_c.pl", "#T_cG", "#T_wss", "#T_cC", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_cof", "#T_c.pl", "#T_cG", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_off", "#P_fovrnda", "#P_inidm", "#P_syl", "#P_frn" ]
+}

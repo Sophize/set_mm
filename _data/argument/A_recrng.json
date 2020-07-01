@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recrng on Metamath](http://us.metamath.org/mpegif/recrng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rebase | |- RR = ( Base ` RRfld ) |\n| 2 |  | #P_refldcj | |- * = ( *r ` RRfld ) |\n| 3 |  | #P_refld | |- RRfld e. Field |\n| 4 |  | #P_isfld | |- ( RRfld e. Field <-> ( RRfld e. DivRing /\\ RRfld e. CRing ) ) |\n| 5 | 3, 4 | #P_mpbi | |- ( RRfld e. DivRing /\\ RRfld e. CRing ) |\n| 6 | 5 | #P_simpri | |- RRfld e. CRing |\n| 7 | 6 | #P_a1i | |- ( T. -> RRfld e. CRing ) |\n| 8 |  | #P_cjre | |- ( x e. RR -> ( * ` x ) = x ) |\n| 9 | 8 | #P_adantl | |- ( ( T. /\\ x e. RR ) -> ( * ` x ) = x ) |\n| 10 | 1, 2, 7, 9 | #P_idsrngd | |- ( T. -> RRfld e. *Ring ) |\n| 11 | 10 | #P_trud | |- RRfld e. *Ring |",
+  "conclusion" : "#P_recrng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_crefld", "#T_ccj", "#T_wceq", "#T_cstv", "#T_cfv", "#T_crefld", "#T_crefld", "#T_wcel", "#T_cfield", "#T_crefld", "#T_wcel", "#T_cfield", "#T_wb", "#T_crefld", "#T_wcel", "#T_cdr", "#T_wa", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_crefld", "#T_wcel", "#T_cdr", "#T_wa", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_wtru", "#T_wi", "#T_crefld", "#T_wcel", "#T_ccrg", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wtru", "#T_wi", "#T_crefld", "#T_wcel", "#T_csr", "#T_crefld", "#T_wcel", "#T_csr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_simpri", "#P_refld", "#P_adantl", "#P_idsrngd", "#P_isfld", "#P_mpbi", "#P_rebase", "#P_a1i", "#P_cjre", "#P_refldcj" ]
+}

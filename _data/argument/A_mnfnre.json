@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mnfnre on Metamath](http://us.metamath.org/mpegif/mnfnre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2pwuninel | |- -. ~P ~P U. CC e. CC |\n| 2 |  | #P_df-mnf | |- -oo = ~P +oo |\n| 3 |  | #P_df-pnf | |- +oo = ~P U. CC |\n| 4 | 3 | #P_pweqi | |- ~P +oo = ~P ~P U. CC |\n| 5 | 2, 4 | #P_eqtri | |- -oo = ~P ~P U. CC |\n| 6 | 5 | #P_eleq1i | |- ( -oo e. CC <-> ~P ~P U. CC e. CC ) |\n| 7 | 1, 6 | #P_mtbir | |- -. -oo e. CC |\n| 8 |  | #P_recn | |- ( -oo e. RR -> -oo e. CC ) |\n| 9 | 7, 8 | #P_mto | |- -. -oo e. RR |\n| 10 | 9 | #P_nelir | |- -oo e/ RR |",
+  "conclusion" : "#P_mnfnre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_cpw", "#T_cpw", "#T_cuni", "#T_cc", "#T_wcel", "#T_cc", "#T_cmnf", "#T_wceq", "#T_cpw", "#T_cpnf", "#T_cpnf", "#T_wceq", "#T_cpw", "#T_cuni", "#T_cc", "#T_cpw", "#T_cpnf", "#T_wceq", "#T_cpw", "#T_cpw", "#T_cuni", "#T_cc", "#T_cmnf", "#T_wceq", "#T_cpw", "#T_cpw", "#T_cuni", "#T_cc", "#T_cmnf", "#T_wcel", "#T_cc", "#T_wb", "#T_cpw", "#T_cpw", "#T_cuni", "#T_cc", "#T_wcel", "#T_cc", "#T_wn", "#T_cmnf", "#T_wcel", "#T_cc", "#T_cmnf", "#T_wcel", "#T_cr", "#T_wi", "#T_cmnf", "#T_wcel", "#T_cc", "#T_wn", "#T_cmnf", "#T_wcel", "#T_cr", "#T_cmnf", "#T_wnel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_2pwuninel", "#P_eleq1i", "#P_nelir", "#P_mto", "#P_mtbir", "#P_df-mnf", "#P_pweqi", "#P_recn", "#P_df-pnf" ]
+}

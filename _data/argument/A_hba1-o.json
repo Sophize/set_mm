@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hba1-o on Metamath](http://us.metamath.org/mpegif/hba1-o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-c5 | |- ( A. x -. A. x ph -> -. A. x ph ) |\n| 2 | 1 | #P_con2i | |- ( A. x ph -> -. A. x -. A. x ph ) |\n| 3 |  | #P_ax10 | |- ( -. A. x -. A. x ph -> A. x -. A. x -. A. x ph ) |\n| 4 |  | #P_ax10 | |- ( -. A. x ph -> A. x -. A. x ph ) |\n| 5 | 4 | #P_con1i | |- ( -. A. x -. A. x ph -> A. x ph ) |\n| 6 | 5 | #P_alimi | |- ( A. x -. A. x -. A. x ph -> A. x A. x ph ) |\n| 7 | 2, 3, 6 | #P_3syl | |- ( A. x ph -> A. x A. x ph ) |",
+  "conclusion" : "#P_hba1-o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wal", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-c5", "#P_3syl", "#P_con1i", "#P_con2i", "#P_alimi", "#P_ax10" ]
+}

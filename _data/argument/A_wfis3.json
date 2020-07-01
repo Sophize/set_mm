@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wfis3 on Metamath](http://us.metamath.org/mpegif/wfis3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wfis3.1 | |- R We A |\n| 2 |  | wfis3.2 | |- R Se A |\n| 3 |  | wfis3.3 | |- ( y = z -> ( ph <-> ps ) ) |\n| 4 |  | wfis3.4 | |- ( y = B -> ( ph <-> ch ) ) |\n| 5 |  | wfis3.5 | |- ( y e. A -> ( A. z e. Pred ( R , A , y ) ps -> ph ) ) |\n| 6 | 1, 2, 3, 5 | #P_wfis2 | |- ( y e. A -> ph ) |\n| 7 | 4, 6 | #P_vtoclga | |- ( B e. A -> ch ) |",
+  "conclusion" : "#P_wfis3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wwe", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_vy", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wps", "#T_wi", "#T_wph", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wfis2", "#P_vtoclga" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See omina on Metamath](http://us.metamath.org/mpegif/omina.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano1 | |- (/) e. _om |\n| 2 | 1 | #P_ne0ii | |- _om =/= (/) |\n| 3 |  | #P_cfom | |- ( cf ` _om ) = _om |\n| 4 |  | #P_nnfi | |- ( x e. _om -> x e. Fin ) |\n| 5 |  | #P_pwfi | |- ( x e. Fin <-> ~P x e. Fin ) |\n| 6 | 4, 5 | #P_sylib | |- ( x e. _om -> ~P x e. Fin ) |\n| 7 |  | #P_isfinite | |- ( ~P x e. Fin <-> ~P x ~< _om ) |\n| 8 | 6, 7 | #P_sylib | |- ( x e. _om -> ~P x ~< _om ) |\n| 9 | 8 | #P_rgen | |- A. x e. _om ~P x ~< _om |\n| 10 |  | #P_elina | |- ( _om e. Inacc <-> ( _om =/= (/) /\\ ( cf ` _om ) = _om /\\ A. x e. _om ~P x ~< _om ) ) |\n| 11 | 2, 3, 9, 10 | #P_mpbir3an | |- _om e. Inacc |",
+  "conclusion" : "#P_omina",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_c0", "#T_wcel", "#T_com", "#T_com", "#T_wne", "#T_c0", "#T_ccf", "#T_cfv", "#T_com", "#T_wceq", "#T_com", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_vx.wal", "#T_csdm", "#T_com", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_csdm", "#T_com", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_cpw", "#T_vx.wal", "#T_csdm", "#T_com", "#T_com", "#T_wcel", "#T_cina", "#T_wb", "#T_com", "#T_wne", "#T_c0", "#T_w3a--1", "#T_ccf", "#T_cfv", "#T_com", "#T_wceq", "#T_com", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_cpw", "#T_vx.wal", "#T_csdm", "#T_com", "#T_com", "#T_wcel", "#T_cina" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwfi", "#P_peano1", "#P_ne0ii", "#P_cfom", "#P_mpbir3an", "#P_isfinite", "#P_sylib", "#P_nnfi", "#P_elina", "#P_rgen" ]
+}

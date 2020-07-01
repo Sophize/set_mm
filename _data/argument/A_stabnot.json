@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stabnot on Metamath](http://us.metamath.org/mpegif/stabnot.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_notnotnot | |- ( -. -. -. ph <-> -. ph ) |\n| 2 | 1 | #P_biimpi | |- ( -. -. -. ph -> -. ph ) |\n| 3 |  | #P_df-stab | |- ( STAB -. ph <-> ( -. -. -. ph -> -. ph ) ) |\n| 4 | 2, 3 | #P_mpbir | |- STAB -. ph |",
+  "conclusion" : "#P_stabnot",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wstab", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wstab", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-stab", "#P_notnotnot", "#P_mpbir", "#P_biimpi" ]
+}

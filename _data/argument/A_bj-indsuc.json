@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-indsuc on Metamath](http://us.metamath.org/mpegif/bj-indsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-ind | |- ( Ind A <-> ( (/) e. A /\\ A. x e. A suc x e. A ) ) |\n| 2 | 1 | #P_simprbi | |- ( Ind A -> A. x e. A suc x e. A ) |\n| 3 |  | #P_suceq | |- ( x = B -> suc x = suc B ) |\n| 4 | 3 | #P_eleq1d | |- ( x = B -> ( suc x e. A <-> suc B e. A ) ) |\n| 5 | 4 | #P_rspcv | |- ( B e. A -> ( A. x e. A suc x e. A -> suc B e. A ) ) |\n| 6 | 2, 5 | #P_syl5com | |- ( Ind A -> ( B e. A -> suc B e. A ) ) |",
+  "conclusion" : "#P_bj-indsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wind", "#T_cA.wceq", "#T_wb", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wind", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_csuc", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wind", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cA", "#T_wi", "#T_csuc", "#T_cB", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprbi", "#P_rspcv", "#P_df-bj-ind", "#P_suceq", "#P_eleq1d", "#P_syl5com" ]
+}

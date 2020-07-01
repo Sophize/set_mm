@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hsupcl on Metamath](http://us.metamath.org/mpegif/hsupcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hsupval | |- ( A C_ ~P ~H -> ( \\/H ` A ) = ( _|_ ` ( _|_ ` U. A ) ) ) |\n| 2 |  | #P_sspwuni | |- ( A C_ ~P ~H <-> U. A C_ ~H ) |\n| 3 |  | #P_ocss | |- ( U. A C_ ~H -> ( _|_ ` U. A ) C_ ~H ) |\n| 4 |  | #P_occl | |- ( ( _|_ ` U. A ) C_ ~H -> ( _|_ ` ( _|_ ` U. A ) ) e. CH ) |\n| 5 | 3, 4 | #P_syl | |- ( U. A C_ ~H -> ( _|_ ` ( _|_ ` U. A ) ) e. CH ) |\n| 6 | 2, 5 | #P_sylbi | |- ( A C_ ~P ~H -> ( _|_ ` ( _|_ ` U. A ) ) e. CH ) |\n| 7 | 1, 6 | #P_eqeltrd | |- ( A C_ ~P ~H -> ( \\/H ` A ) e. CH ) |",
+  "conclusion" : "#P_hsupcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cA", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA", "#T_wcel", "#T_cch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_occl", "#P_eqeltrd", "#P_syl", "#P_ocss", "#P_hsupval", "#P_sylbi", "#P_sspwuni" ]
+}

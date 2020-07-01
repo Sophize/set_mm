@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frindi on Metamath](http://us.metamath.org/mpegif/frindi.html)"
+  } ],
+  "names" : [ "frindi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wfr", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_cB", "#T_wss", "#T_cA", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wss", "#T_cB", "#T_wi", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_cA", "#T_vy", "#T_cB", "#T_vy", "#T_cR", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The principle of founded induction.  Theorem 4.4 of Don Monk's notes (see ~ frmin ).  This principle states that if ` B ` is a subclass of a founded class ` A ` with the property that every element of ` B ` whose initial segment is included in ` A ` is itself equal to ` A ` . (Contributed by Scott Fenton, 6-Feb-2011.)  (Revised by Mario Carneiro, 26-Jun-2015.) ",
+  "statement" : "frind.1 $e |- R Fr A $.\nfrind.2 $e |- R Se A $.\nfrindi $p |- ( ( B C_ A /\\ A. y e. A ( Pred ( R , A , y ) C_ B -> y e. B ) ) -> A = B ) $.\n$d A y $.\n$d B y $.\n$d R y $."
+}

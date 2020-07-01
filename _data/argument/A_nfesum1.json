@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfesum1 on Metamath](http://us.metamath.org/mpegif/nfesum1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfesum1.1 | |- F/_ k A |\n| 2 |  | #P_df-esum | |- sum* k e. A B = U. ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) |\n| 3 |  | #P_nfcv | |- F/_ k ( RR*s |`s ( 0 [,] +oo ) ) |\n| 4 |  | #P_nfcv | |- F/_ k tsums |\n| 5 |  | #P_nfmpt1 | |- F/_ k ( k e. A |-> B ) |\n| 6 | 3, 4, 5 | #P_nfov | |- F/_ k ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) |\n| 7 | 6 | #P_nfuni | |- F/_ k U. ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) |\n| 8 | 2, 7 | #P_nfcxfr | |- F/_ k sum* k e. A B |",
+  "conclusion" : "#P_nfesum1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vk", "#T_cA", "#T_cesum--1", "#T_vk", "#T_cesum--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wnfc", "#T_vk", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_wnfc", "#T_vk", "#T_ctsu", "#T_wnfc", "#T_vk", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wnfc", "#T_vk", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wnfc", "#T_vk", "#T_cuni", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wnfc", "#T_vk", "#T_cesum--1", "#T_vk", "#T_cesum--2", "#T_cA", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfuni", "#P_nfcv", "#P_nfcxfr", "#P_nfmpt1", "#P_df-esum", "#P_nfov" ]
+}

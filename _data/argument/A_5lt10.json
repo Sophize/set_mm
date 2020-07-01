@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 5lt10 on Metamath](http://us.metamath.org/mpegif/5lt10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_5lt6 | |- 5 < 6 |\n| 2 |  | #P_6lt10 | |- 6 < 10 |\n| 3 |  | #P_5re | |- 5 e. RR |\n| 4 |  | #P_6re | |- 6 e. RR |\n| 5 |  | #P_10re | |- 10 e. RR |\n| 6 | 3, 4, 5 | #P_lttri | |- ( ( 5 < 6 /\\ 6 < 10 ) -> 5 < 10 ) |\n| 7 | 1, 2, 6 | #P_mp2an | |- 5 < 10 |",
+  "conclusion" : "#P_5lt10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c5", "#T_clt", "#T_c6", "#T_c6", "#T_clt", "#T_c10", "#T_c5", "#T_wcel", "#T_cr", "#T_c6", "#T_wcel", "#T_cr", "#T_c10", "#T_wcel", "#T_cr", "#T_c5", "#T_clt", "#T_c6", "#T_wa", "#T_c6", "#T_clt", "#T_c10", "#T_wi", "#T_c5", "#T_clt", "#T_c10", "#T_c5", "#T_clt", "#T_c10" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_6lt10", "#P_5lt6", "#P_5re", "#P_6re", "#P_10re" ]
+}

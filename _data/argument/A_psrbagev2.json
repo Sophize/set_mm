@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psrbagev2 on Metamath](http://us.metamath.org/mpegif/psrbagev2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psrbagev1.d | |- D = { h e. ( NN0 ^m I ) | ( `' h \" NN ) e. Fin } |\n| 2 |  | psrbagev1.c | |- C = ( Base ` T ) |\n| 3 |  | psrbagev1.x | |- .x. = ( .g ` T ) |\n| 4 |  | psrbagev1.z | |- .0. = ( 0g ` T ) |\n| 5 |  | psrbagev1.t | |- ( ph -> T e. CMnd ) |\n| 6 |  | psrbagev1.b | |- ( ph -> B e. D ) |\n| 7 |  | psrbagev1.g | |- ( ph -> G : I --> C ) |\n| 8 |  | psrbagev1.i | |- ( ph -> I e. _V ) |\n| 9 | 1, 2, 3, 4, 5, 6, 7, 8 | #P_psrbagev1 | |- ( ph -> ( ( B oF .x. G ) : I --> C /\\ ( B oF .x. G ) finSupp .0. ) ) |\n| 10 | 9 | #P_simpld | |- ( ph -> ( B oF .x. G ) : I --> C ) |\n| 11 | 9 | #P_simprd | |- ( ph -> ( B oF .x. G ) finSupp .0. ) |\n| 12 | 2, 4, 5, 8, 10, 11 | #P_gsumcl | |- ( ph -> ( T gsum ( B oF .x. G ) ) e. C ) |",
+  "conclusion" : "#P_psrbagev2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cI", "#T_crab--3", "#T_ccnv", "#T_vh", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cC", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cT", "#T_c.x", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cT", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cof", "#T_c.x", "#T_cG", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_cof", "#T_c.x", "#T_cG", "#T_cfsupp", "#T_c.0", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cof", "#T_c.x", "#T_cG", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cof", "#T_c.x", "#T_cG", "#T_cfsupp", "#T_c.0", "#T_wph", "#T_wi", "#T_cT", "#T_cgsu", "#T_cB", "#T_cof", "#T_c.x", "#T_cG", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_psrbagev1", "#P_gsumcl", "#P_simprd" ]
+}

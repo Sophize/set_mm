@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mreexd on Metamath](http://us.metamath.org/mpegif/mreexd.html)"
+  } ],
+  "names" : [ "mreexd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cN", "#T_cfv", "#T_vs", "#T_cun", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_cdif", "#T_cN", "#T_cfv", "#T_vs", "#T_vy", "#T_wcel", "#T_cN", "#T_cfv", "#T_vs", "#T_cun", "#T_csn--1", "#T_vz", "#T_csn--2", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_cun", "#T_csn--1", "#T_cY", "#T_csn--2", "#T_wph", "#T_wi", "#T_wn", "#T_cZ", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_cun", "#T_csn--1", "#T_cZ", "#T_csn--2", "#T_cN", "#T_vs", "#T_vy", "#T_vz", "#T_cS", "#T_vs", "#T_vy", "#T_vz", "#T_cX", "#T_vs", "#T_vy", "#T_cY", "#T_vs", "#T_vy", "#T_vz", "#T_cZ", "#T_vs", "#T_vy", "#T_vz", "#T_wph", "#T_vs", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a Moore system, the closure operator is said to have the _exchange property_ if, for all elements ` y ` and ` z ` of the base set and subsets ` S ` of the base set such that ` z ` is in the closure of ` ( S u. { y } ) ` but not in the closure of ` S ` , ` y ` is in the closure of ` ( S u. { z } ) ` (Definition 3.1.9 in [FaureFrolicher] p. 57 to 58.)  This theorem allows us to construct substitution instances of this definition.  (Contributed by David Moews, 1-May-2017.) ",
+  "statement" : "mreexd.1 $e |- ( ph -> X e. V ) $.\nmreexd.2 $e |- ( ph -> A. s e. ~P X A. y e. X A. z e. ( ( N ` ( s u. { y } ) ) \\ ( N ` s ) ) y e. ( N ` ( s u. { z } ) ) ) $.\nmreexd.3 $e |- ( ph -> S C_ X ) $.\nmreexd.4 $e |- ( ph -> Y e. X ) $.\nmreexd.5 $e |- ( ph -> Z e. ( N ` ( S u. { Y } ) ) ) $.\nmreexd.6 $e |- ( ph -> -. Z e. ( N ` S ) ) $.\nmreexd $p |- ( ph -> Y e. ( N ` ( S u. { Z } ) ) ) $.\n$d N s y z $.\n$d S s y z $.\n$d X s y $.\n$d Y s y z $.\n$d Z s y z $.\n$d ph s y z $."
+}

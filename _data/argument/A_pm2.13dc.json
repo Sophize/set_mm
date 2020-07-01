@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.13dc on Metamath](http://us.metamath.org/mpegif/pm2.13dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-dc | |- ( DECID ph <-> ( ph \\/ -. ph ) ) |\n| 2 |  | #P_notnot2dc | |- ( DECID ph -> ( -. -. ph -> ph ) ) |\n| 3 | 2 | #P_con3d | |- ( DECID ph -> ( -. ph -> -. -. -. ph ) ) |\n| 4 | 3 | #P_orim2d | |- ( DECID ph -> ( ( ph \\/ -. ph ) -> ( ph \\/ -. -. -. ph ) ) ) |\n| 5 | 1, 4 | #P_syl5bi | |- ( DECID ph -> ( DECID ph -> ( ph \\/ -. -. -. ph ) ) ) |\n| 6 | 5 | #P_pm2.43i | |- ( DECID ph -> ( ph \\/ -. -. -. ph ) ) |",
+  "conclusion" : "#P_pm2.13dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-dc", "#P_orim2d", "#P_pm2.43i", "#P_notnot2dc", "#P_syl5bi", "#P_con3d" ]
+}

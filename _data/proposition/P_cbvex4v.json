@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvex4v on Metamath](http://us.metamath.org/mpegif/cbvex4v.html)"
+  } ],
+  "names" : [ "cbvex4v" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vv", "#T_wa", "#T_vy", "#T_wceq", "#T_vu", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vz", "#T_wceq", "#T_cbvex4v.vf", "#T_wa", "#T_vw", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wex", "#T_vz", "#T_wex", "#T_vw", "#T_wph", "#T_wb", "#T_wex", "#T_vv", "#T_wex", "#T_vu", "#T_wex", "#T_cbvex4v.vf", "#T_wex", "#T_cbvex4v.vg", "#T_wch", "#T_wch", "#T_vw", "#T_vz", "#T_vf", "#T_vg", "#T_wps", "#T_vf", "#T_vw", "#T_vg", "#T_vz", "#T_wph", "#T_vu", "#T_vv", "#T_wps", "#T_vx", "#T_vy", "#T_vu", "#T_vv", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule used to change bound variables, using implicit substitution. (Contributed by NM, 26-Jul-1995.) \n\n---\n\n Rule used to change bound variables, using implicit substitition. (Contributed by NM, 26-Jul-1995.) ",
+  "statement" : "cbvex4v.1 $e |- ( ( x = v /\\ y = u ) -> ( ph <-> ps ) ) $.\ncbvex4v.2 $e |- ( ( z = f /\\ w = g ) -> ( ps <-> ch ) ) $.\ncbvex4v $p |- ( E. x E. y E. z E. w ph <-> E. v E. u E. f E. g ch ) $.\n$d ch w z $.\n$d f g ps $.\n$d f w $.\n$d g z $.\n$d ph u v $.\n$d ps x y $.\n$d u v w x y z $."
+}

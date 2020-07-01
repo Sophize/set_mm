@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ismnd on Metamath](http://us.metamath.org/mpegif/ismnd.html)"
+  } ],
+  "names" : [ "ismnd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wb", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cB", "#T_va", "#T_c.pl", "#T_vb", "#T_wcel", "#T_cB", "#T_wa", "#T_wral--1", "#T_vc", "#T_wral--2", "#T_cB", "#T_va", "#T_c.pl", "#T_vb", "#T_c.pl", "#T_vc", "#T_wceq", "#T_va", "#T_c.pl", "#T_vb", "#T_c.pl", "#T_vc", "#T_wa", "#T_wrex--1", "#T_ve", "#T_wrex--2", "#T_cB", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cB", "#T_ve", "#T_c.pl", "#T_va", "#T_wceq", "#T_va", "#T_wa", "#T_va", "#T_c.pl", "#T_ve", "#T_wceq", "#T_va", "#T_c.pl", "#T_va", "#T_vb", "#T_vc", "#T_c.pl", "#T_va", "#T_ve", "#T_cB", "#T_va", "#T_vb", "#T_vc", "#T_cB", "#T_va", "#T_ve", "#T_cG", "#T_va", "#T_vb", "#T_vc" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \"is a monoid\".  This is the definig theorem of a monoid by showing that a set is a monoid if and only if it is a set equipped with a closed, everywhere defined internal operation (so, a magma, see ~ mndcl ), whose operation is associative (so, a semigroup, see also ~ mndass ) and has a two-sided neutral element (see ~ mndid ). (Contributed by Mario Carneiro, 6-Jan-2015.)  (Revised by AV, 1-Feb-2020.) ",
+  "statement" : "ismnd.b $e |- B = ( Base ` G ) $.\nismnd.p $e |- .+ = ( +g ` G ) $.\nismnd $p |- ( G e. Mnd <-> ( A. a e. B A. b e. B ( ( a .+ b ) e. B /\\ A. c e. B ( ( a .+ b ) .+ c ) = ( a .+ ( b .+ c ) ) ) /\\ E. e e. B A. a e. B ( ( e .+ a ) = a /\\ ( a .+ e ) = a ) ) ) $.\n$d .+ a b c $.\n$d .+ a e $.\n$d B a b c $.\n$d B a e $.\n$d G a b c $."
+}

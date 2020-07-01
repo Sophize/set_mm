@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fin41 on Metamath](http://us.metamath.org/mpegif/fin41.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_domtriom | |- ( _om ~<_ x <-> -. x ~< _om ) |\n| 3 | 2 | #P_con2bii | |- ( x ~< _om <-> -. _om ~<_ x ) |\n| 4 |  | #P_isfinite | |- ( x e. Fin <-> x ~< _om ) |\n| 5 |  | #P_isfin4-2 | |- ( x e. _V -> ( x e. Fin4 <-> -. _om ~<_ x ) ) |\n| 6 | 1, 5 | #P_ax-mp | |- ( x e. Fin4 <-> -. _om ~<_ x ) |\n| 7 | 3, 4, 6 | #P_3bitr4ri | |- ( x e. Fin4 <-> x e. Fin ) |\n| 8 | 7 | #P_eqriv | |- Fin4 = Fin |",
+  "conclusion" : "#P_fin41",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_com", "#T_cdom", "#T_vx.wal", "#T_wb", "#T_wn", "#T_vx.wal", "#T_csdm", "#T_com", "#T_vx.wal", "#T_csdm", "#T_com", "#T_wb", "#T_wn", "#T_com", "#T_cdom", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wb", "#T_vx.wal", "#T_csdm", "#T_com", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfin4", "#T_wb", "#T_wn", "#T_com", "#T_cdom", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cfin4", "#T_wb", "#T_wn", "#T_com", "#T_cdom", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cfin4", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_cfin4", "#T_wceq", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_con2bii", "#P_isfinite", "#P_domtriom", "#P_isfin4-2", "#P_vex", "#P_3bitr4ri", "#P_eqriv" ]
+}

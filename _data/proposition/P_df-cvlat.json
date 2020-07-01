@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cvlat on Metamath](http://us.metamath.org/mpegif/df-cvlat.html)"
+  } ],
+  "names" : [ "df-cvlat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clc", "#T_wceq", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cal", "#T_crab--3", "#T_wral--1", "#T_va", "#T_wral--2", "#T_catm", "#T_cfv", "#T_vk", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_catm", "#T_cfv", "#T_vk", "#T_wral--1", "#T_vc", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vk", "#T_wn", "#T_va", "#T_cple", "#T_cfv", "#T_vk", "#T_vc", "#T_wa", "#T_va", "#T_cple", "#T_cfv", "#T_vk", "#T_vc", "#T_cjn", "#T_cfv", "#T_vk", "#T_vb", "#T_wi", "#T_vb", "#T_cple", "#T_cfv", "#T_vk", "#T_vc", "#T_cjn", "#T_cfv", "#T_vk", "#T_va", "#T_crab--4", "#T_va", "#T_vb", "#T_vc", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of atomic lattices with the covering property.  (This is actually the exchange property, but they are equivalent.  The literature usually uses the covering property terminology.) (Contributed by NM, 5-Nov-2012.) ",
+  "statement" : "df-cvlat $p |- CvLat = { k e. AtLat | A. a e. ( Atoms ` k ) A. b e. ( Atoms ` k ) A. c e. ( Base ` k ) ( ( -. a ( le ` k ) c /\\ a ( le ` k ) ( c ( join ` k ) b ) ) -> b ( le ` k ) ( c ( join ` k ) a ) ) } $.\n$d a b c k $."
+}

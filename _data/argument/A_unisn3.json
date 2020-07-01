@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unisn3 on Metamath](http://us.metamath.org/mpegif/unisn3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rabsn | |- ( A e. B -> { x e. B | x = A } = { A } ) |\n| 2 | 1 | #P_unieqd | |- ( A e. B -> U. { x e. B | x = A } = U. { A } ) |\n| 3 |  | #P_unisng | |- ( A e. B -> U. { A } = A ) |\n| 4 | 2, 3 | #P_eqtrd | |- ( A e. B -> U. { x e. B | x = A } = A ) |",
+  "conclusion" : "#P_unisn3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_crab--4", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_crab--4", "#T_wceq", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cuni", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_vx", "#T_wceq", "#T_cA", "#T_crab--4", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rabsn", "#P_unisng", "#P_eqtrd", "#P_unieqd" ]
+}

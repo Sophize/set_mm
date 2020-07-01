@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpt2snif on Metamath](http://us.metamath.org/mpegif/mpt2snif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elsni | |- ( i e. { X } -> i = X ) |\n| 2 | 1 | #P_adantr | |- ( ( i e. { X } /\\ j e. B ) -> i = X ) |\n| 3 | 2 | #P_iftrued | |- ( ( i e. { X } /\\ j e. B ) -> if ( i = X , C , D ) = C ) |\n| 4 | 3 | #P_mpt2eq3ia | |- ( i e. { X } , j e. B |-> if ( i = X , C , D ) ) = ( i e. { X } , j e. B |-> C ) |",
+  "conclusion" : "#P_mpt2snif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vi", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wi", "#T_vi", "#T_wceq", "#T_cX", "#T_vi", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wa", "#T_vj", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_vi", "#T_wceq", "#T_cX", "#T_vi", "#T_wcel", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wa", "#T_vj", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cif--1", "#T_vi", "#T_wceq", "#T_cX", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cD", "#T_wceq", "#T_cC", "#T_vi", "#T_cmpt2--1", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cif--1", "#T_vi", "#T_wceq", "#T_cX", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cD", "#T_wceq", "#T_vi", "#T_cmpt2--1", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iftrued", "#P_mpt2eq3ia", "#P_adantr", "#P_elsni" ]
+}

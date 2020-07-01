@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ceilid on Metamath](http://us.metamath.org/mpegif/ceilid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zre | |- ( A e. ZZ -> A e. RR ) |\n| 2 |  | #P_ceilval | |- ( A e. RR -> ( |^ ` A ) = -u ( |_ ` -u A ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. ZZ -> ( |^ ` A ) = -u ( |_ ` -u A ) ) |\n| 4 |  | #P_znegcl | |- ( A e. ZZ -> -u A e. ZZ ) |\n| 5 |  | #P_flid | |- ( -u A e. ZZ -> ( |_ ` -u A ) = -u A ) |\n| 6 | 4, 5 | #P_syl | |- ( A e. ZZ -> ( |_ ` -u A ) = -u A ) |\n| 7 | 6 | #P_negeqd | |- ( A e. ZZ -> -u ( |_ ` -u A ) = -u -u A ) |\n| 8 |  | #P_zcn | |- ( A e. ZZ -> A e. CC ) |\n| 9 | 8 | #P_negnegd | |- ( A e. ZZ -> -u -u A = A ) |\n| 10 | 3, 7, 9 | #P_3eqtrd | |- ( A e. ZZ -> ( |^ ` A ) = A ) |",
+  "conclusion" : "#P_ceilid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cceil", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cceil", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cfl", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cz", "#T_wi", "#T_cceil", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_negnegd", "#P_ceilval", "#P_znegcl", "#P_zre", "#P_negeqd", "#P_syl", "#P_flid", "#P_3eqtrd", "#P_zcn" ]
+}

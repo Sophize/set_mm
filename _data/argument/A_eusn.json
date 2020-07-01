@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eusn on Metamath](http://us.metamath.org/mpegif/eusn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_euabsn | |- ( E! x x e. A <-> E. x { x | x e. A } = { x } ) |\n| 2 |  | #P_abid2 | |- { x | x e. A } = A |\n| 3 | 2 | #P_eqeq1i | |- ( { x | x e. A } = { x } <-> A = { x } ) |\n| 4 | 3 | #P_exbii | |- ( E. x { x | x e. A } = { x } <-> E. x A = { x } ) |\n| 5 | 1, 4 | #P_bitri | |- ( E! x x e. A <-> E. x A = { x } ) |",
+  "conclusion" : "#P_eusn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_cA.wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wex", "#T_vx.wal", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_weu", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_wb", "#T_wex", "#T_vx", "#T_cA", "#T_wceq", "#T_csn--1", "#T_vx", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_eqeq1i", "#P_abid2", "#P_bitri", "#P_euabsn" ]
+}

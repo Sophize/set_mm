@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fz0addcom on Metamath](http://us.metamath.org/mpegif/fz0addcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elfznn0 | |- ( A e. ( 0 ... N ) -> A e. NN0 ) |\n| 2 | 1 | #P_nn0cnd | |- ( A e. ( 0 ... N ) -> A e. CC ) |\n| 3 |  | #P_elfznn0 | |- ( B e. ( 0 ... N ) -> B e. NN0 ) |\n| 4 | 3 | #P_nn0cnd | |- ( B e. ( 0 ... N ) -> B e. CC ) |\n| 5 |  | #P_addcom | |- ( ( A e. CC /\\ B e. CC ) -> ( A + B ) = ( B + A ) ) |\n| 6 | 2, 4, 5 | #P_syl2an | |- ( ( A e. ( 0 ... N ) /\\ B e. ( 0 ... N ) ) -> ( A + B ) = ( B + A ) ) |",
+  "conclusion" : "#P_fz0addcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_cA.wceq", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cn0", "#T_cB.wceq", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_caddc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wa", "#T_cB", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_cA", "#T_caddc", "#T_cB", "#T_wceq", "#T_cB", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elfznn0", "#P_nn0cnd", "#P_syl2an", "#P_addcom" ]
+}

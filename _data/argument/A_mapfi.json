@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mapfi on Metamath](http://us.metamath.org/mpegif/mapfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpfi | |- ( ( B e. Fin /\\ A e. Fin ) -> ( B X. A ) e. Fin ) |\n| 2 | 1 | #P_ancoms | |- ( ( A e. Fin /\\ B e. Fin ) -> ( B X. A ) e. Fin ) |\n| 3 |  | #P_pwfi | |- ( ( B X. A ) e. Fin <-> ~P ( B X. A ) e. Fin ) |\n| 4 | 2, 3 | #P_sylib | |- ( ( A e. Fin /\\ B e. Fin ) -> ~P ( B X. A ) e. Fin ) |\n| 5 |  | #P_mapsspw | |- ( A ^m B ) C_ ~P ( B X. A ) |\n| 6 |  | #P_ssfi | |- ( ( ~P ( B X. A ) e. Fin /\\ ( A ^m B ) C_ ~P ( B X. A ) ) -> ( A ^m B ) e. Fin ) |\n| 7 | 4, 5, 6 | #P_sylancl | |- ( ( A e. Fin /\\ B e. Fin ) -> ( A ^m B ) e. Fin ) |",
+  "conclusion" : "#P_mapfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cpw", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_cpw", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_cfn", "#T_wa", "#T_cB", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA", "#T_cmap", "#T_cB", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwfi", "#P_sylib", "#P_sylancl", "#P_mapsspw", "#P_ssfi", "#P_xpfi", "#P_ancoms" ]
+}

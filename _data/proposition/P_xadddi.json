@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xadddi on Metamath](http://us.metamath.org/mpegif/xadddi.html)"
+  } ],
+  "names" : [ "xadddi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA", "#T_cxmu", "#T_cB", "#T_cxad", "#T_cC", "#T_wceq", "#T_cA", "#T_cxmu", "#T_cB", "#T_cxad", "#T_cA", "#T_cxmu", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Distributive property for extended real addition and multiplication.  Like ~ xaddass , this has an unusual domain of correctness due to counterexamples like ` ( +oo x. ( 2 - 1 ) ) = -oo =/= ` ` ( ( +oo x. 2 ) - ( +oo x. 1 ) ) = ( +oo - +oo ) = 0 ` .  In this theorem we show that if the multiplier is real then everything works as expected. (Contributed by Mario Carneiro, 20-Aug-2015.) ",
+  "statement" : "xadddi $p |- ( ( A e. RR /\\ B e. RR* /\\ C e. RR* ) -> ( A *e ( B +e C ) ) = ( ( A *e B ) +e ( A *e C ) ) ) $."
+}

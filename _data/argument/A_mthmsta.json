@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mthmsta on Metamath](http://us.metamath.org/mpegif/mthmsta.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mthmsta.u | |- U = ( mThm ` T ) |\n| 2 |  | mthmsta.s | |- S = ( mPreSt ` T ) |\n| 3 |  | #P_eqid | |- ( mStRed ` T ) = ( mStRed ` T ) |\n| 4 |  | #P_eqid | |- ( mPPSt ` T ) = ( mPPSt ` T ) |\n| 5 | 3, 4, 1 | #P_mthmval | |- U = ( `' ( mStRed ` T ) \" ( ( mStRed ` T ) \" ( mPPSt ` T ) ) ) |\n| 6 |  | #P_cnvimass | |- ( `' ( mStRed ` T ) \" ( ( mStRed ` T ) \" ( mPPSt ` T ) ) ) C_ dom ( mStRed ` T ) |\n| 7 | 2, 3 | #P_msrf | |- ( mStRed ` T ) : S --> S |\n| 8 | 7 | #P_fdmi | |- dom ( mStRed ` T ) = S |\n| 9 | 6, 8 | #P_sseqtri | |- ( `' ( mStRed ` T ) \" ( ( mStRed ` T ) \" ( mPPSt ` T ) ) ) C_ S |\n| 10 | 5, 9 | #P_eqsstri | |- U C_ S |",
+  "conclusion" : "#P_mthmsta",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cmthm", "#T_cfv", "#T_cT", "#T_cS", "#T_wceq", "#T_cmpst", "#T_cfv", "#T_cT", "#T_cmsr", "#T_cfv", "#T_cT", "#T_wceq", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cmpps", "#T_cfv", "#T_cT", "#T_wceq", "#T_cmpps", "#T_cfv", "#T_cT", "#T_cU", "#T_wceq", "#T_ccnv", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmpps", "#T_cfv", "#T_cT", "#T_ccnv", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmpps", "#T_cfv", "#T_cT", "#T_wss", "#T_cdm", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cmsr", "#T_cfv", "#T_cT", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cS", "#T_cdm", "#T_cmsr", "#T_cfv", "#T_cT", "#T_wceq", "#T_cS", "#T_ccnv", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmsr", "#T_cfv", "#T_cT", "#T_cima", "#T_cmpps", "#T_cfv", "#T_cT", "#T_wss", "#T_cS", "#T_cU", "#T_wss", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mthmval", "#P_eqid", "#P_cnvimass", "#P_fdmi", "#P_sseqtri", "#P_msrf", "#P_eqsstri" ]
+}

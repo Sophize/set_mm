@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resisresindm on Metamath](http://us.metamath.org/mpegif/resisresindm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resdm | |- ( Rel F -> ( F |` dom F ) = F ) |\n| 2 | 1 | #P_eqcomd | |- ( Rel F -> F = ( F |` dom F ) ) |\n| 3 | 2 | #P_ineq2d | |- ( Rel F -> ( ( F |` B ) i^i F ) = ( ( F |` B ) i^i ( F |` dom F ) ) ) |\n| 4 |  | #P_resss | |- ( F |` B ) C_ F |\n| 5 |  | #P_df-ss | |- ( ( F |` B ) C_ F <-> ( ( F |` B ) i^i F ) = ( F |` B ) ) |\n| 6 | 4, 5 | #P_mpbi | |- ( ( F |` B ) i^i F ) = ( F |` B ) |\n| 7 | 6 | #P_eqcomi | |- ( F |` B ) = ( ( F |` B ) i^i F ) |\n| 8 |  | #P_resindi | |- ( F |` ( B i^i dom F ) ) = ( ( F |` B ) i^i ( F |` dom F ) ) |\n| 9 | 3, 7, 8 | #P_3eqtr4g | |- ( Rel F -> ( F |` B ) = ( F |` ( B i^i dom F ) ) ) |",
+  "conclusion" : "#P_resisresindm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_cres", "#T_cdm", "#T_cF", "#T_wceq", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_wceq", "#T_cF", "#T_cres", "#T_cdm", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_cres", "#T_cdm", "#T_cF", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wss", "#T_cF", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wss", "#T_cF", "#T_wb", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cdm", "#T_cF", "#T_wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cin", "#T_cF", "#T_cres", "#T_cdm", "#T_cF", "#T_wrel", "#T_cF", "#T_wi", "#T_cF", "#T_cres", "#T_cB", "#T_wceq", "#T_cF", "#T_cres", "#T_cB", "#T_cin", "#T_cdm", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resss", "#P_df-ss", "#P_ineq2d", "#P_mpbi", "#P_eqcomd", "#P_resdm", "#P_resindi", "#P_3eqtr4g", "#P_eqcomi" ]
+}

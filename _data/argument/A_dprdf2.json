@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dprdf2 on Metamath](http://us.metamath.org/mpegif/dprdf2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dprdcntz.1 | |- ( ph -> G dom DProd S ) |\n| 2 |  | dprdcntz.2 | |- ( ph -> dom S = I ) |\n| 3 |  | #P_dprdf | |- ( G dom DProd S -> S : dom S --> ( SubGrp ` G ) ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> S : dom S --> ( SubGrp ` G ) ) |\n| 5 | 2 | #P_feq2d | |- ( ph -> ( S : dom S --> ( SubGrp ` G ) <-> S : I --> ( SubGrp ` G ) ) ) |\n| 6 | 4, 5 | #P_mpbid | |- ( ph -> S : I --> ( SubGrp ` G ) ) |",
+  "conclusion" : "#P_dprdf2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cG", "#T_cdm", "#T_cdprd", "#T_cS", "#T_wph", "#T_wi", "#T_cdm", "#T_cS", "#T_wceq", "#T_cI", "#T_cG", "#T_cdm", "#T_cdprd", "#T_cS", "#T_wi", "#T_cS", "#T_wf--1", "#T_cdm", "#T_cS", "#T_wf--2", "#T_csubg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cS", "#T_wf--1", "#T_cdm", "#T_cS", "#T_wf--2", "#T_csubg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cS", "#T_wf--1", "#T_cdm", "#T_cS", "#T_wf--2", "#T_csubg", "#T_cfv", "#T_cG", "#T_wb", "#T_cS", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_csubg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cS", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_csubg", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_feq2d", "#P_syl", "#P_dprdf" ]
+}

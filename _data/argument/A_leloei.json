@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leloei on Metamath](http://us.metamath.org/mpegif/leloei.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt.1 | |- A e. RR |\n| 2 |  | lt.2 | |- B e. RR |\n| 3 |  | #P_leloe | |- ( ( A e. RR /\\ B e. RR ) -> ( A <_ B <-> ( A < B \\/ A = B ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A <_ B <-> ( A < B \\/ A = B ) ) |",
+  "conclusion" : "#P_leloei",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cA", "#T_clt", "#T_cB", "#T_wo", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_leloe" ]
+}

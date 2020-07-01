@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See feqmptd on Metamath](http://us.metamath.org/mpegif/feqmptd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | feqmptd.1 | |- ( ph -> F : A --> B ) |\n| 2 |  | #P_ffn | |- ( F : A --> B -> F Fn A ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> F Fn A ) |\n| 4 |  | #P_dffn5im | |- ( F Fn A -> F = ( x e. A |-> ( F ` x ) ) ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> F = ( x e. A |-> ( F ` x ) ) ) |",
+  "conclusion" : "#P_feqmptd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_dffn5im", "#P_syl" ]
+}

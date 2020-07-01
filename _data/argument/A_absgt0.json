@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absgt0 on Metamath](http://us.metamath.org/mpegif/absgt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0red | |- ( A e. CC -> 0 e. RR ) |\n| 2 |  | #P_abscl | |- ( A e. CC -> ( abs ` A ) e. RR ) |\n| 3 |  | #P_absge0 | |- ( A e. CC -> 0 <_ ( abs ` A ) ) |\n| 4 | 1, 2, 3 | #P_leltned | |- ( A e. CC -> ( 0 < ( abs ` A ) <-> ( abs ` A ) =/= 0 ) ) |\n| 5 |  | #P_abs00 | |- ( A e. CC -> ( ( abs ` A ) = 0 <-> A = 0 ) ) |\n| 6 | 5 | #P_necon3bid | |- ( A e. CC -> ( ( abs ` A ) =/= 0 <-> A =/= 0 ) ) |\n| 7 | 4, 6 | #P_bitr2d | |- ( A e. CC -> ( A =/= 0 <-> 0 < ( abs ` A ) ) ) |",
+  "conclusion" : "#P_absgt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_clt", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_wb", "#T_cc0", "#T_clt", "#T_cabs", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0red", "#P_abscl", "#P_leltned", "#P_absge0", "#P_necon3bid", "#P_bitr2d", "#P_abs00" ]
+}

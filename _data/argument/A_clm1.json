@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clm1 on Metamath](http://us.metamath.org/mpegif/clm1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clm0.f | |- F = ( Scalar ` W ) |\n| 2 |  | #P_eqid | |- ( Base ` F ) = ( Base ` F ) |\n| 3 | 1, 2 | #P_clmsubrg | |- ( W e. CMod -> ( Base ` F ) e. ( SubRing ` CCfld ) ) |\n| 4 |  | #P_eqid | |- ( CCfld |`s ( Base ` F ) ) = ( CCfld |`s ( Base ` F ) ) |\n| 5 |  | #P_cnfld1 | |- 1 = ( 1r ` CCfld ) |\n| 6 | 4, 5 | #P_subrg1 | |- ( ( Base ` F ) e. ( SubRing ` CCfld ) -> 1 = ( 1r ` ( CCfld |`s ( Base ` F ) ) ) ) |\n| 7 | 3, 6 | #P_syl | |- ( W e. CMod -> 1 = ( 1r ` ( CCfld |`s ( Base ` F ) ) ) ) |\n| 8 | 1, 2 | #P_clmsca | |- ( W e. CMod -> F = ( CCfld |`s ( Base ` F ) ) ) |\n| 9 | 8 | #P_fveq2d | |- ( W e. CMod -> ( 1r ` F ) = ( 1r ` ( CCfld |`s ( Base ` F ) ) ) ) |\n| 10 | 7, 9 | #P_eqtr4d | |- ( W e. CMod -> 1 = ( 1r ` F ) ) |",
+  "conclusion" : "#P_clm1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cF", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cbs", "#T_cfv", "#T_cF", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_ccnfld", "#T_cbs", "#T_cfv", "#T_cF", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cur", "#T_cfv", "#T_cF", "#T_wceq", "#T_cur", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_clmsca", "#P_fveq2d", "#P_cnfld1", "#P_syl", "#P_subrg1", "#P_eqtr4d", "#P_clmsubrg" ]
+}

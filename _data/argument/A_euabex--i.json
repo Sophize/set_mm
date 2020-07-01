@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euabex on Metamath](http://us.metamath.org/mpegif/euabex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_euabsn2 | |- ( E! x ph <-> E. y { x | ph } = { y } ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_snexgOLD | |- ( y e. _V -> { y } e. _V ) |\n| 4 | 2, 3 | #P_ax-mp | |- { y } e. _V |\n| 5 |  | #P_eleq1 | |- ( { x | ph } = { y } -> ( { x | ph } e. _V <-> { y } e. _V ) ) |\n| 6 | 4, 5 | #P_mpbiri | |- ( { x | ph } = { y } -> { x | ph } e. _V ) |\n| 7 | 6 | #P_exlimiv | |- ( E. y { x | ph } = { y } -> { x | ph } e. _V ) |\n| 8 | 1, 7 | #P_sylbi | |- ( E! x ph -> { x | ph } e. _V ) |",
+  "conclusion" : "#P_euabex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wi", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_wb", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_wex", "#T_vy.tru", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wceq", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wi", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cvv", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mpbiri", "#P_exlimiv", "#P_eleq1", "#P_snexgOLD", "#P_euabsn2", "#P_vex", "#P_sylbi" ]
+}

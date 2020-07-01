@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqcl2 on Metamath](http://us.metamath.org/mpegif/seqcl2.html)"
+  } ],
+  "names" : [ "seqcl2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cM", "#T_wcel", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cC", "#T_wa", "#T_vy", "#T_wcel", "#T_cD", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cM", "#T_caddc", "#T_c1", "#T_cfz", "#T_cN", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_wcel", "#T_cC", "#T_c.pl", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Closure properties of the recursive sequence builder.  (Contributed by Mario Carneiro, 2-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) ",
+  "statement" : "seqcl2.1 $e |- ( ph -> ( F ` M ) e. C ) $.\nseqcl2.2 $e |- ( ( ph /\\ ( x e. C /\\ y e. D ) ) -> ( x .+ y ) e. C ) $.\nseqcl2.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nseqcl2.4 $e |- ( ( ph /\\ x e. ( ( M + 1 ) ... N ) ) -> ( F ` x ) e. D ) $.\nseqcl2 $p |- ( ph -> ( seq M ( .+ , F ) ` N ) e. C ) $.\n$d .+ x y $.\n$d C x y $.\n$d D x y $.\n$d F x y $.\n$d M x y $.\n$d N x $.\n$d ph x y $."
+}

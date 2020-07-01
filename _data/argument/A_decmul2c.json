@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decmul2c on Metamath](http://us.metamath.org/mpegif/decmul2c.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decmul1c.1 | |- P e. NN0 |\n| 2 |  | decmul1c.2 | |- A e. NN0 |\n| 3 |  | decmul1c.3 | |- B e. NN0 |\n| 4 |  | decmul1c.4 | |- N = ; A B |\n| 5 |  | decmul1c.5 | |- D e. NN0 |\n| 6 |  | decmul1c.6 | |- E e. NN0 |\n| 7 |  | decmul2c.7 | |- ( ( P x. A ) + E ) = C |\n| 8 |  | decmul2c.8 | |- ( P x. B ) = ; E D |\n| 9 |  | #P_10nn0 | |- 10 e. NN0 |\n| 10 |  | #P_df-dec | |- ; A B = ( ( 10 x. A ) + B ) |\n| 11 | 4, 10 | #P_eqtri | |- N = ( ( 10 x. A ) + B ) |\n| 12 |  | #P_df-dec | |- ; E D = ( ( 10 x. E ) + D ) |\n| 13 | 8, 12 | #P_eqtri | |- ( P x. B ) = ( ( 10 x. E ) + D ) |\n| 14 | 9, 1, 2, 3, 11, 5, 6, 7, 13 | #P_nummul2c | |- ( P x. N ) = ( ( 10 x. C ) + D ) |\n| 15 |  | #P_df-dec | |- ; C D = ( ( 10 x. C ) + D ) |\n| 16 | 14, 15 | #P_eqtr4i | |- ( P x. N ) = ; C D |",
+  "conclusion" : "#P_decmul2c",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wcel", "#T_cn0", "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cN", "#T_wceq", "#T_cdc", "#T_cA", "#T_cB", "#T_cD", "#T_wcel", "#T_cn0", "#T_cE", "#T_wcel", "#T_cn0", "#T_cP", "#T_cmul", "#T_cA", "#T_caddc", "#T_cE", "#T_wceq", "#T_cC", "#T_cP", "#T_cmul", "#T_cB", "#T_wceq", "#T_cdc", "#T_cE", "#T_cD", "#T_c10", "#T_wcel", "#T_cn0", "#T_cdc", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cN", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdc", "#T_cE", "#T_cD", "#T_wceq", "#T_c10", "#T_cmul", "#T_cE", "#T_caddc", "#T_cD", "#T_cP", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cE", "#T_caddc", "#T_cD", "#T_cP", "#T_cmul", "#T_cN", "#T_wceq", "#T_c10", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cdc", "#T_cC", "#T_cD", "#T_wceq", "#T_c10", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cP", "#T_cmul", "#T_cN", "#T_wceq", "#T_cdc", "#T_cC", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqtri", "#P_df-dec", "#P_10nn0", "#P_nummul2c" ]
+}

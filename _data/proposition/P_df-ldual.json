@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ldual on Metamath](http://us.metamath.org/mpegif/df-ldual.html)"
+  } ],
+  "names" : [ "df-ldual" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cld", "#T_wceq", "#T_vv", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_clfn", "#T_cfv", "#T_vv", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_vv", "#T_cres", "#T_clfn", "#T_cfv", "#T_vv", "#T_cxp", "#T_clfn", "#T_cfv", "#T_vv", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_csca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_coppr", "#T_cfv", "#T_csca", "#T_cfv", "#T_vv", "#T_cop--3", "#T_ctp--4", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vk", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_vv", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_clfn", "#T_cfv", "#T_vv", "#T_cmpt2--4", "#T_vf", "#T_cof", "#T_cmulr", "#T_cfv", "#T_csca", "#T_cfv", "#T_vv", "#T_cbs", "#T_cfv", "#T_vv", "#T_cxp", "#T_csn--1", "#T_vk", "#T_csn--2", "#T_cop--3", "#T_csn--2", "#T_vf", "#T_vk", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the (left) dual of a left vector space (or module) in which the vectors are functionals.  In many texts, this is defined as a right vector space, but by reversing the multiplication we achieve a left vector space, as is done in definition of dual vector space in [Holland95] p. 218.  This allows us to reuse our existing collection of left vector space theorems.  The restriction on ` oF ( +g `` v ) ` allows it to be a set; see ~ ofmres .  Note the operation reversal in the scalar product to allow us to use the original scalar ring instead of the ` oppR ` ring, for convenience.  (Contributed by NM, 18-Oct-2014.) ",
+  "statement" : "df-ldual $p |- LDual = ( v e. _V |-> ( { <. ( Base ` ndx ) , ( LFnl ` v ) >. , <. ( +g ` ndx ) , ( oF ( +g ` ( Scalar ` v ) ) |` ( ( LFnl ` v ) X. ( LFnl ` v ) ) ) >. , <. ( Scalar ` ndx ) , ( oppR ` ( Scalar ` v ) ) >. } u. { <. ( .s ` ndx ) , ( k e. ( Base ` ( Scalar ` v ) ) , f e. ( LFnl ` v ) |-> ( f oF ( .r ` ( Scalar ` v ) ) ( ( Base ` v ) X. { k } ) ) ) >. } ) ) $.\n$d f k v $."
+}

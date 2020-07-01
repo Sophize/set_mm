@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj257 on Metamath](http://us.metamath.org/mpegif/bnj257.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ancom | |- ( ( ch /\\ th ) <-> ( th /\\ ch ) ) |\n| 2 | 1 | #P_anbi2i | |- ( ( ( ph /\\ ps ) /\\ ( ch /\\ th ) ) <-> ( ( ph /\\ ps ) /\\ ( th /\\ ch ) ) ) |\n| 3 |  | #P_bnj256 | |- ( ( ph /\\ ps /\\ ch /\\ th ) <-> ( ( ph /\\ ps ) /\\ ( ch /\\ th ) ) ) |\n| 4 |  | #P_bnj256 | |- ( ( ph /\\ ps /\\ th /\\ ch ) <-> ( ( ph /\\ ps ) /\\ ( th /\\ ch ) ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( ( ph /\\ ps /\\ ch /\\ th ) <-> ( ph /\\ ps /\\ th /\\ ch ) ) |",
+  "conclusion" : "#P_bnj257",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_w-bnj17--1", "#T_wps", "#T_w-bnj17--2", "#T_wch", "#T_w-bnj17--3", "#T_wth", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wph", "#T_w-bnj17--1", "#T_wps", "#T_w-bnj17--2", "#T_wth", "#T_w-bnj17--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wth", "#T_wa", "#T_wch", "#T_wph", "#T_w-bnj17--1", "#T_wps", "#T_w-bnj17--2", "#T_wch", "#T_w-bnj17--3", "#T_wth", "#T_wb", "#T_wph", "#T_w-bnj17--1", "#T_wps", "#T_w-bnj17--2", "#T_wth", "#T_w-bnj17--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_bnj256", "#P_anbi2i", "#P_3bitr4i" ]
+}

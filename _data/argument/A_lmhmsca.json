@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmhmsca on Metamath](http://us.metamath.org/mpegif/lmhmsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmhmlem.k | |- K = ( Scalar ` S ) |\n| 2 |  | lmhmlem.l | |- L = ( Scalar ` T ) |\n| 3 | 1, 2 | #P_lmhmlem | |- ( F e. ( S LMHom T ) -> ( ( S e. LMod /\\ T e. LMod ) /\\ ( F e. ( S GrpHom T ) /\\ L = K ) ) ) |\n| 4 | 3 | #P_simprrd | |- ( F e. ( S LMHom T ) -> L = K ) |",
+  "conclusion" : "#P_lmhmsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_csca", "#T_cfv", "#T_cS", "#T_cL", "#T_wceq", "#T_csca", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_clmhm", "#T_cT", "#T_wi", "#T_cS", "#T_wcel", "#T_clmod", "#T_wa", "#T_cT", "#T_wcel", "#T_clmod", "#T_wa", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wa", "#T_cL", "#T_wceq", "#T_cK", "#T_cF", "#T_wcel", "#T_cS", "#T_clmhm", "#T_cT", "#T_wi", "#T_cL", "#T_wceq", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simprrd", "#P_lmhmlem" ]
+}

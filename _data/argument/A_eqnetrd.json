@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqnetrd on Metamath](http://us.metamath.org/mpegif/eqnetrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqnetrd.1 | |- ( ph -> A = B ) |\n| 2 |  | eqnetrd.2 | |- ( ph -> B =/= C ) |\n| 3 | 1 | #P_neeq1d | |- ( ph -> ( A =/= C <-> B =/= C ) ) |\n| 4 | 2, 3 | #P_mpbird | |- ( ph -> A =/= C ) |",
+  "conclusion" : "#P_eqnetrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neeq1d", "#P_mpbird" ]
+}

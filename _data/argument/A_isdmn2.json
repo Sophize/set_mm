@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isdmn2 on Metamath](http://us.metamath.org/mpegif/isdmn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isdmn | |- ( R e. Dmn <-> ( R e. PrRing /\\ R e. Com2 ) ) |\n| 2 |  | #P_prrngorngo | |- ( R e. PrRing -> R e. RingOps ) |\n| 3 |  | #P_iscrngo | |- ( R e. CRingOps <-> ( R e. RingOps /\\ R e. Com2 ) ) |\n| 4 | 3 | #P_baibr | |- ( R e. RingOps -> ( R e. Com2 <-> R e. CRingOps ) ) |\n| 5 | 2, 4 | #P_syl | |- ( R e. PrRing -> ( R e. Com2 <-> R e. CRingOps ) ) |\n| 6 | 5 | #P_pm5.32i | |- ( ( R e. PrRing /\\ R e. Com2 ) <-> ( R e. PrRing /\\ R e. CRingOps ) ) |\n| 7 | 1, 6 | #P_bitri | |- ( R e. Dmn <-> ( R e. PrRing /\\ R e. CRingOps ) ) |",
+  "conclusion" : "#P_isdmn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cdmn", "#T_wb", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wa", "#T_cR", "#T_wcel", "#T_ccm2", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wi", "#T_cR", "#T_wcel", "#T_crngo", "#T_cR", "#T_wcel", "#T_ccring", "#T_wb", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cR", "#T_wcel", "#T_ccm2", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cR", "#T_wcel", "#T_ccm2", "#T_wb", "#T_cR", "#T_wcel", "#T_ccring", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wi", "#T_cR", "#T_wcel", "#T_ccm2", "#T_wb", "#T_cR", "#T_wcel", "#T_ccring", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wa", "#T_cR", "#T_wcel", "#T_ccm2", "#T_wb", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wa", "#T_cR", "#T_wcel", "#T_ccring", "#T_cR", "#T_wcel", "#T_cdmn", "#T_wb", "#T_cR", "#T_wcel", "#T_cprrng", "#T_wa", "#T_cR", "#T_wcel", "#T_ccring" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_baibr", "#P_prrngorngo", "#P_pm5.32i", "#P_syl", "#P_iscrngo", "#P_isdmn", "#P_bitri" ]
+}

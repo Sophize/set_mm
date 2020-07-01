@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvop2 on Metamath](http://us.metamath.org/mpegif/nvop2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvop2.1 | |- W = ( 1st ` U ) |\n| 2 |  | nvop2.6 | |- N = ( normCV ` U ) |\n| 3 |  | #P_nvrel | |- Rel NrmCVec |\n| 4 |  | #P_1st2nd | |- ( ( Rel NrmCVec /\\ U e. NrmCVec ) -> U = <. ( 1st ` U ) , ( 2nd ` U ) >. ) |\n| 5 | 3, 4 | #P_mpan | |- ( U e. NrmCVec -> U = <. ( 1st ` U ) , ( 2nd ` U ) >. ) |\n| 6 | 2 | #P_nmcvfval | |- N = ( 2nd ` U ) |\n| 7 | 1, 6 | #P_opeq12i | |- <. W , N >. = <. ( 1st ` U ) , ( 2nd ` U ) >. |\n| 8 | 5, 7 | #P_syl6eqr | |- ( U e. NrmCVec -> U = <. W , N >. ) |",
+  "conclusion" : "#P_nvop2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cU", "#T_cN", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_wrel", "#T_cnv", "#T_wrel", "#T_cnv", "#T_wa", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cU", "#T_wceq", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cU", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cU", "#T_cop--3", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cU", "#T_wceq", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cU", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cU", "#T_cop--3", "#T_cN", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cU", "#T_cop--1", "#T_cW", "#T_cop--2", "#T_cN", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_cU", "#T_cop--2", "#T_c2nd", "#T_cfv", "#T_cU", "#T_cop--3", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cU", "#T_wceq", "#T_cop--1", "#T_cW", "#T_cop--2", "#T_cN", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nvrel", "#P_1st2nd", "#P_mpan", "#P_nmcvfval", "#P_opeq12i", "#P_syl6eqr" ]
+}

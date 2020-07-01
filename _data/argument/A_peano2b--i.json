@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See peano2b on Metamath](http://us.metamath.org/mpegif/peano2b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano2 | |- ( A e. _om -> suc A e. _om ) |\n| 2 |  | #P_elex | |- ( suc A e. _om -> suc A e. _V ) |\n| 3 |  | #P_sucexb | |- ( A e. _V <-> suc A e. _V ) |\n| 4 | 2, 3 | #P_sylibr | |- ( suc A e. _om -> A e. _V ) |\n| 5 |  | #P_sucidg | |- ( A e. _V -> A e. suc A ) |\n| 6 | 4, 5 | #P_syl | |- ( suc A e. _om -> A e. suc A ) |\n| 7 |  | #P_elnn | |- ( ( A e. suc A /\\ suc A e. _om ) -> A e. _om ) |\n| 8 | 6, 7 | #P_mpancom | |- ( suc A e. _om -> A e. _om ) |\n| 9 | 1, 8 | #P_impbii | |- ( A e. _om <-> suc A e. _om ) |",
+  "conclusion" : "#P_peano2b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cA.wceq", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cA.wceq", "#T_wa", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_cA", "#T_wcel", "#T_com", "#T_wb", "#T_csuc", "#T_cA", "#T_wcel", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elnn", "#P_mpancom", "#P_impbii", "#P_peano2", "#P_elex", "#P_sucexb", "#P_sylibr", "#P_sucidg", "#P_syl" ]
+}

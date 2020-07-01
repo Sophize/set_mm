@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bd3or on Metamath](http://us.metamath.org/mpegif/bd3or.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bd3or.1 | |- Bdd ph |\n| 2 |  | bd3or.2 | |- Bdd ps |\n| 3 |  | bd3or.3 | |- Bdd ch |\n| 4 | 1, 2 | #P_ax-bdor | |- Bdd ( ph \\/ ps ) |\n| 5 | 4, 3 | #P_ax-bdor | |- Bdd ( ( ph \\/ ps ) \\/ ch ) |\n| 6 |  | #P_df-3or | |- ( ( ph \\/ ps \\/ ch ) <-> ( ( ph \\/ ps ) \\/ ch ) ) |\n| 7 | 5, 6 | #P_bd0r | |- Bdd ( ph \\/ ps \\/ ch ) |",
+  "conclusion" : "#P_bd3or",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbd", "#T_wph", "#T_wbd", "#T_wps", "#T_wbd", "#T_wch", "#T_wbd", "#T_wph", "#T_wo", "#T_wps", "#T_wbd", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wbd", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bd0r", "#P_df-3or", "#P_ax-bdor" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lkrcl on Metamath](http://us.metamath.org/mpegif/lkrcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lkrcl.v | |- V = ( Base ` W ) |\n| 2 |  | lkrcl.f | |- F = ( LFnl ` W ) |\n| 3 |  | lkrcl.k | |- K = ( LKer ` W ) |\n| 4 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 5 |  | #P_eqid | |- ( 0g ` ( Scalar ` W ) ) = ( 0g ` ( Scalar ` W ) ) |\n| 6 | 1, 4, 5, 2, 3 | #P_ellkr | |- ( ( W e. Y /\\ G e. F ) -> ( X e. ( K ` G ) <-> ( X e. V /\\ ( G ` X ) = ( 0g ` ( Scalar ` W ) ) ) ) ) |\n| 7 | 6 | #P_simprbda | |- ( ( ( W e. Y /\\ G e. F ) /\\ X e. ( K ` G ) ) -> X e. V ) |\n| 8 | 7 | #P_3impa | |- ( ( W e. Y /\\ G e. F /\\ X e. ( K ` G ) ) -> X e. V ) |",
+  "conclusion" : "#P_lkrcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_clfn", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_clk", "#T_cfv", "#T_cW", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_c0g", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_c0g", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cY", "#T_wa", "#T_cG", "#T_wcel", "#T_cF", "#T_wi", "#T_cX", "#T_wcel", "#T_cK", "#T_cfv", "#T_cG", "#T_wb", "#T_cX", "#T_wcel", "#T_cV", "#T_wa", "#T_cG", "#T_cfv", "#T_cX", "#T_wceq", "#T_c0g", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cY", "#T_wa", "#T_cG", "#T_wcel", "#T_cF", "#T_wa", "#T_cX", "#T_wcel", "#T_cK", "#T_cfv", "#T_cG", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_cW", "#T_wcel", "#T_cY", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_cF", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cK", "#T_cfv", "#T_cG", "#T_wi", "#T_cX", "#T_wcel", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ellkr", "#P_eqid", "#P_simprbda", "#P_3impa" ]
+}

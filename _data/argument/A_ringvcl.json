@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringvcl on Metamath](http://us.metamath.org/mpegif/ringvcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ringvcl.b | |- B = ( Base ` R ) |\n| 2 |  | ringvcl.t | |- .x. = ( .r ` R ) |\n| 3 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 4 | 3 | #P_ringmgp | |- ( R e. Ring -> ( mulGrp ` R ) e. Mnd ) |\n| 5 | 3, 1 | #P_mgpbas | |- B = ( Base ` ( mulGrp ` R ) ) |\n| 6 | 3, 2 | #P_mgpplusg | |- .x. = ( +g ` ( mulGrp ` R ) ) |\n| 7 | 5, 6 | #P_mndvcl | |- ( ( ( mulGrp ` R ) e. Mnd /\\ X e. ( B ^m I ) /\\ Y e. ( B ^m I ) ) -> ( X oF .x. Y ) e. ( B ^m I ) ) |\n| 8 | 4, 7 | #P_syl3an1 | |- ( ( R e. Ring /\\ X e. ( B ^m I ) /\\ Y e. ( B ^m I ) ) -> ( X oF .x. Y ) e. ( B ^m I ) ) |",
+  "conclusion" : "#P_ringvcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cI", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cI", "#T_wi", "#T_cX", "#T_cof", "#T_c.x", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cI", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_cmap", "#T_cI", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_cmap", "#T_cI", "#T_wi", "#T_cX", "#T_cof", "#T_c.x", "#T_cY", "#T_wcel", "#T_cB", "#T_cmap", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mgpplusg", "#P_mndvcl", "#P_mgpbas", "#P_ringmgp", "#P_syl3an1" ]
+}

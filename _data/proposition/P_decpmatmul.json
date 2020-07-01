@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decpmatmul on Metamath](http://us.metamath.org/mpegif/decpmatmul.html)"
+  } ],
+  "names" : [ "decpmatmul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cU", "#T_wcel", "#T_cB", "#T_wa", "#T_cW", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cU", "#T_cmulr", "#T_cfv", "#T_cC", "#T_cW", "#T_cdecpmat", "#T_cK", "#T_wceq", "#T_cA", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cc0", "#T_cfz", "#T_cK", "#T_cmpt--2", "#T_cU", "#T_cdecpmat", "#T_vk", "#T_cmulr", "#T_cfv", "#T_cA", "#T_cW", "#T_cdecpmat", "#T_cK", "#T_cmin", "#T_vk", "#T_cA", "#T_vk", "#T_cB", "#T_vk", "#T_cB", "#T_vk", "#T_cK", "#T_vk", "#T_cK", "#T_vk", "#T_cN", "#T_vk", "#T_cN", "#T_vk", "#T_cP", "#T_vk", "#T_cR", "#T_vk", "#T_cR", "#T_vk", "#T_cU", "#T_vk", "#T_cU", "#T_vk", "#T_cW", "#T_vk", "#T_cW", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The matrix consisting of the coefficients in the polynomial entries of the product of two polynomial matrices is a sum of products of the matrices consisting of the coefficients in the polynomial entries of the polynomial matrices for the same power (Contributed by AV, 21-Oct-2019.)  (Revised by AV, 3-Dec-2019.) ",
+  "statement" : "decpmatmul.p $e |- P = ( Poly1 ` R ) $.\ndecpmatmul.c $e |- C = ( N Mat P ) $.\ndecpmatmul.b $e |- B = ( Base ` C ) $.\ndecpmatmul.a $e |- A = ( N Mat R ) $.\ndecpmatmul $p |- ( ( R e. Ring /\\ ( U e. B /\\ W e. B ) /\\ K e. NN0 ) -> ( ( U ( .r ` C ) W ) decompPMat K ) = ( A gsum ( k e. ( 0 ... K ) |-> ( ( U decompPMat k ) ( .r ` A ) ( W decompPMat ( K - k ) ) ) ) ) ) $.\n$d A k $.\n$d B k $.\n$d B k $.\n$d K k $.\n$d K k $.\n$d N k $.\n$d N k $.\n$d P k $.\n$d R k $.\n$d R k $.\n$d U k $.\n$d U k $.\n$d W k $.\n$d W k $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gt0ap0 on Metamath](http://us.metamath.org/mpegif/gt0ap0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( A e. RR /\\ 0 < A ) -> 0 < A ) |\n| 2 | 1 | #P_olcd | |- ( ( A e. RR /\\ 0 < A ) -> ( A < 0 \\/ 0 < A ) ) |\n| 3 |  | #P_0red | |- ( ( A e. RR /\\ 0 < A ) -> 0 e. RR ) |\n| 4 |  | #P_reaplt | |- ( ( A e. RR /\\ 0 e. RR ) -> ( A # 0 <-> ( A < 0 \\/ 0 < A ) ) ) |\n| 5 | 3, 4 | #P_syldan | |- ( ( A e. RR /\\ 0 < A ) -> ( A # 0 <-> ( A < 0 \\/ 0 < A ) ) ) |\n| 6 | 2, 5 | #P_mpbird | |- ( ( A e. RR /\\ 0 < A ) -> A # 0 ) |",
+  "conclusion" : "#P_gt0ap0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wo", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wo", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cap", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wo", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA", "#T_wi", "#T_cA", "#T_cap", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reaplt", "#P_0red", "#P_simpr", "#P_olcd", "#P_syldan", "#P_mpbird" ]
+}

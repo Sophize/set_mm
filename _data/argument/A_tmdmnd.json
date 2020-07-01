@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tmdmnd on Metamath](http://us.metamath.org/mpegif/tmdmnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( +f ` G ) = ( +f ` G ) |\n| 2 |  | #P_eqid | |- ( TopOpen ` G ) = ( TopOpen ` G ) |\n| 3 | 1, 2 | #P_istmd | |- ( G e. TopMnd <-> ( G e. Mnd /\\ G e. TopSp /\\ ( +f ` G ) e. ( ( ( TopOpen ` G ) tX ( TopOpen ` G ) ) Cn ( TopOpen ` G ) ) ) ) |\n| 4 | 3 | #P_simp1bi | |- ( G e. TopMnd -> G e. Mnd ) |",
+  "conclusion" : "#P_tmdmnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cplusf", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusf", "#T_cfv", "#T_cG", "#T_ctopn", "#T_cfv", "#T_cG", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctmd", "#T_wb", "#T_cG", "#T_wcel", "#T_cmnd", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_ctps", "#T_w3a--2", "#T_cplusf", "#T_cfv", "#T_cG", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_cG", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_cG", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctmd", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp1bi", "#P_istmd" ]
+}

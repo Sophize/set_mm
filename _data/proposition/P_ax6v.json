@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax6v on Metamath](http://us.metamath.org/mpegif/ax6v.html)"
+  } ],
+  "names" : [ "ax6v" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wal", "#T_vx", "#T_wn", "#T_vx", "#T_wceq", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom B7 of [Tarski] p. 75, which requires that ` x ` and ` y ` be distinct.  This trivial proof is intended merely to weaken axiom ~ ax-6 by adding a distinct variable restriction.  From here on, ~ ax-6 should not be referenced directly by any other proof, so that theorem ~ ax6 will show that we can recover ~ ax-6 from this weaker version if it were an axiom (as it is in the case of Tarski). Note:  Introducing ` x , y ` as a distinct variable group \"out of the blue\" with no apparent justification has puzzled some people, but it is perfectly sound.  All we are doing is adding an additional redundant requirement, no different from adding a redundant logical hypothesis, that results in a weakening of the theorem.  This means that any _future_ theorem that references ~ ax6v must have a $d specified for the two variables that get substituted for ` x ` and ` y ` .  The $d does not propagate \"backwards\" i.e. it does not impose a requirement on ~ ax-6 . When possible, use of this theorem rather than ~ ax6 is preferred since its derivation is much shorter and requires fewer axioms.  (Contributed by NM, 7-Aug-2015.) ",
+  "statement" : "ax6v $p |- -. A. x -. x = y $.\n$d x y $."
+}

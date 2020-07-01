@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shlej2i on Metamath](http://us.metamath.org/mpegif/shlej2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | shincl.1 | |- A e. SH |\n| 2 |  | shincl.2 | |- B e. SH |\n| 3 |  | shless.1 | |- C e. SH |\n| 4 | 1, 2, 3 | #P_shlej1i | |- ( A C_ B -> ( A vH C ) C_ ( B vH C ) ) |\n| 5 | 3, 1 | #P_shjcomi | |- ( C vH A ) = ( A vH C ) |\n| 6 | 3, 2 | #P_shjcomi | |- ( C vH B ) = ( B vH C ) |\n| 7 | 4, 5, 6 | #P_3sstr4g | |- ( A C_ B -> ( C vH A ) C_ ( C vH B ) ) |",
+  "conclusion" : "#P_shlej2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_csh", "#T_cB", "#T_wcel", "#T_csh", "#T_cC", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_cC", "#T_chj", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_chj", "#T_cC", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cC", "#T_chj", "#T_cA", "#T_wss", "#T_cC", "#T_chj", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_shlej1i", "#P_3sstr4g", "#P_shjcomi" ]
+}

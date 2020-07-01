@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-4 on Metamath](http://us.metamath.org/mpegif/ax-4.html)"
+  } ],
+  "names" : [ "ax-4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of Specialization.  A quantified wff implies the wff without a quantifier (i.e. an instance, or special case, of the generalized wff). In other words if something is true for all ` x ` , it is true for any specific ` x ` (that would typically occur as a free variable in the wff substituted for ` ph ` ).  (A free variable is one that does not occur in the scope of a quantifier: ` x ` and ` y ` are both free in ` x = y ` , but only ` x ` is free in ` A. y x = y ` .)  Axiom scheme C5' in [Megill] p. 448 (p. 16 of the preprint).  Also appears as Axiom B5 of [Tarski] p. 67 (under his system S2, defined in the last paragraph on p. 77). Note that the converse of this axiom does not hold in general, but a weaker inference form of the converse holds and is expressed as rule ~ ax-gen .  Conditional forms of the converse are given by ~ ax-12 , ~ ax-16 , and ~ ax-17 . Unlike the more general textbook Axiom of Specialization, we cannot choose a variable different from ` x ` for the special case.  For use, that requires the assistance of equality axioms, and we deal with it later after we introduce the definition of proper substitution - see ~ stdpc4 . (Contributed by NM, 5-Aug-1993.) ",
+  "statement" : "ax-4 $p |- ( A. x ph -> ph ) $."
+}

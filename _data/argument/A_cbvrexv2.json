@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvrexv2 on Metamath](http://us.metamath.org/mpegif/cbvrexv2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvralv2.1 | |- ( x = y -> ( ps <-> ch ) ) |\n| 2 |  | cbvralv2.2 | |- ( x = y -> A = B ) |\n| 3 |  | #P_nfcv | |- F/_ y A |\n| 4 |  | #P_nfcv | |- F/_ x B |\n| 5 |  | #P_nfv | |- F/ y ps |\n| 6 |  | #P_nfv | |- F/ x ch |\n| 7 | 3, 4, 5, 6, 2, 1 | #P_cbvrexcsf | |- ( E. x e. A ps <-> E. y e. B ch ) |",
+  "conclusion" : "#P_cbvrexv2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wnfc", "#T_vy.tru", "#T_cA.wceq", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wnf", "#T_vy.tru", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wch", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cB", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfv", "#P_cbvrexcsf" ]
+}

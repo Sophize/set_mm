@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infmap on Metamath](http://us.metamath.org/mpegif/infmap.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ovex | |- ( A ^m B ) e. _V |\n| 2 |  | #P_numth3 | |- ( ( A ^m B ) e. _V -> ( A ^m B ) e. dom card ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( A ^m B ) e. dom card |\n| 4 |  | #P_infmap2 | |- ( ( _om ~<_ A /\\ B ~<_ A /\\ ( A ^m B ) e. dom card ) -> ( A ^m B ) ~~ { x | ( x C_ A /\\ x ~~ B ) } ) |\n| 5 | 3, 4 | #P_mp3an3 | |- ( ( _om ~<_ A /\\ B ~<_ A ) -> ( A ^m B ) ~~ { x | ( x C_ A /\\ x ~~ B ) } ) |",
+  "conclusion" : "#P_infmap",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_w3a--1", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_cmap", "#T_cB.wceq", "#T_cen", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cB.wceq", "#T_cab--3", "#T_com", "#T_cdom", "#T_cA", "#T_wa", "#T_cB", "#T_cdom", "#T_cA", "#T_wi", "#T_cA", "#T_cmap", "#T_cB", "#T_cen", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_wss", "#T_cA", "#T_wa", "#T_vx", "#T_cen", "#T_cB", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_ax-mp", "#P_mp3an3", "#P_infmap2", "#P_numth3" ]
+}

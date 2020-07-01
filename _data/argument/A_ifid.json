@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifid on Metamath](http://us.metamath.org/mpegif/ifid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iftrue | |- ( ph -> if ( ph , A , A ) = A ) |\n| 2 |  | #P_iffalse | |- ( -. ph -> if ( ph , A , A ) = A ) |\n| 3 | 1, 2 | #P_pm2.61i | |- if ( ph , A , A ) = A |",
+  "conclusion" : "#P_ifid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iffalse", "#P_iftrue", "#P_pm2.61i" ]
+}

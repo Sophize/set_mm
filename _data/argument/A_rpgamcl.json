@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rpgamcl on Metamath](http://us.metamath.org/mpegif/rpgamcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rpdmgm | |- ( A e. RR+ -> A e. ( CC \\ ( ZZ \\ NN ) ) ) |\n| 2 |  | #P_eflgam | |- ( A e. ( CC \\ ( ZZ \\ NN ) ) -> ( exp ` ( log_G ` A ) ) = ( _G ` A ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. RR+ -> ( exp ` ( log_G ` A ) ) = ( _G ` A ) ) |\n| 4 |  | #P_relgamcl | |- ( A e. RR+ -> ( log_G ` A ) e. RR ) |\n| 5 | 4 | #P_rpefcld | |- ( A e. RR+ -> ( exp ` ( log_G ` A ) ) e. RR+ ) |\n| 6 | 3, 5 | #P_eqeltrrd | |- ( A e. RR+ -> ( _G ` A ) e. RR+ ) |",
+  "conclusion" : "#P_rpgamcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wi", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cgam", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cgam", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_ce", "#T_cfv", "#T_clgam", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_cA", "#T_wcel", "#T_crp", "#T_wi", "#T_cgam", "#T_cfv", "#T_cA", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_rpdmgm", "#P_eflgam", "#P_syl", "#P_relgamcl", "#P_rpefcld" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mvrladdd on Metamath](http://us.metamath.org/mpegif/mvrladdd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mvrladdd.1 | |- ( ph -> B e. CC ) |\n| 2 |  | mvrladdd.2 | |- ( ph -> C e. CC ) |\n| 3 |  | mvrladdd.3 | |- ( ph -> A = ( B + C ) ) |\n| 4 | 1, 2, 3 | #P_comraddd | |- ( ph -> A = ( C + B ) ) |\n| 5 | 4 | #P_oveq1d | |- ( ph -> ( A - B ) = ( ( C + B ) - B ) ) |\n| 6 | 2, 1 | #P_pncand | |- ( ph -> ( ( C + B ) - B ) = C ) |\n| 7 | 5, 6 | #P_eqtrd | |- ( ph -> ( A - B ) = C ) |",
+  "conclusion" : "#P_mvrladdd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_caddc", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pncand", "#P_eqtrd", "#P_oveq1d", "#P_comraddd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absval2 on Metamath](http://us.metamath.org/mpegif/absval2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_absval | |- ( A e. CC -> ( abs ` A ) = ( sqrt ` ( A x. ( * ` A ) ) ) ) |\n| 2 |  | #P_cjmulval | |- ( A e. CC -> ( A x. ( * ` A ) ) = ( ( ( Re ` A ) ^ 2 ) + ( ( Im ` A ) ^ 2 ) ) ) |\n| 3 | 2 | #P_fveq2d | |- ( A e. CC -> ( sqrt ` ( A x. ( * ` A ) ) ) = ( sqrt ` ( ( ( Re ` A ) ^ 2 ) + ( ( Im ` A ) ^ 2 ) ) ) ) |\n| 4 | 1, 3 | #P_eqtrd | |- ( A e. CC -> ( abs ` A ) = ( sqrt ` ( ( ( Re ` A ) ^ 2 ) + ( ( Im ` A ) ^ 2 ) ) ) ) |",
+  "conclusion" : "#P_absval2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_caddc", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_caddc", "#T_cim", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_caddc", "#T_cim", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_fveq2d", "#P_absval", "#P_cjmulval" ]
+}

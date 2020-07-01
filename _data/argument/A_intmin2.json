@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See intmin2 on Metamath](http://us.metamath.org/mpegif/intmin2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | intmin2.1 | |- A e. _V |\n| 2 |  | #P_rabab | |- { x e. _V | A C_ x } = { x | A C_ x } |\n| 3 | 2 | #P_inteqi | |- |^| { x e. _V | A C_ x } = |^| { x | A C_ x } |\n| 4 |  | #P_intmin | |- ( A e. _V -> |^| { x e. _V | A C_ x } = A ) |\n| 5 | 1, 4 | #P_ax-mp | |- |^| { x e. _V | A C_ x } = A |\n| 6 | 3, 5 | #P_eqtr3i | |- |^| { x | A C_ x } = A |",
+  "conclusion" : "#P_intmin2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cvv", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_cab--3", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cvv", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_cab--3", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cvv", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_cA.wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cvv", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_cA.wceq", "#T_cint", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_cA", "#T_wss", "#T_vx", "#T_cab--3", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtr3i", "#P_inteqi", "#P_rabab", "#P_intmin" ]
+}

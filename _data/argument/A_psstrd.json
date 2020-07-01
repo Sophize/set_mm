@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psstrd on Metamath](http://us.metamath.org/mpegif/psstrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psstrd.1 | |- ( ph -> A C. B ) |\n| 2 |  | psstrd.2 | |- ( ph -> B C. C ) |\n| 3 |  | #P_psstr | |- ( ( A C. B /\\ B C. C ) -> A C. C ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> A C. C ) |",
+  "conclusion" : "#P_psstrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wpss", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wpss", "#T_cC", "#T_cA.wceq", "#T_wpss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wpss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_psstr", "#P_syl2anc" ]
+}

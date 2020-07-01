@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isgrpix on Metamath](http://us.metamath.org/mpegif/isgrpix.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isgrpix.a | |- B e. _V |\n| 2 |  | isgrpix.b | |- .+ e. _V |\n| 3 |  | isgrpix.g | |- G = { <. 1 , B >. , <. 2 , .+ >. } |\n| 4 |  | isgrpix.2 | |- ( ( x e. B /\\ y e. B ) -> ( x .+ y ) e. B ) |\n| 5 |  | isgrpix.3 | |- ( ( x e. B /\\ y e. B /\\ z e. B ) -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) |\n| 6 |  | isgrpix.z | |- .0. e. B |\n| 7 |  | isgrpix.5 | |- ( x e. B -> ( .0. .+ x ) = x ) |\n| 8 |  | isgrpix.6 | |- ( x e. B -> N e. B ) |\n| 9 |  | isgrpix.7 | |- ( x e. B -> ( N .+ x ) = .0. ) |\n| 10 | 1, 2, 3 | #P_grpbasex | |- B = ( Base ` G ) |\n| 11 | 1, 2, 3 | #P_grpplusgx | |- .+ = ( +g ` G ) |\n| 12 | 10, 11, 4, 5, 6, 7, 8, 9 | #P_isgrpi | |- G e. Grp |",
+  "conclusion" : "#P_isgrpix",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cvv", "#T_c.pl", "#T_wcel", "#T_cvv", "#T_cG", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_cpr--3", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_c.pl", "#T_vz", "#T_wceq", "#T_vx", "#T_c.pl", "#T_vy", "#T_c.pl", "#T_vz", "#T_c.0", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_c.0", "#T_c.pl", "#T_vx", "#T_wceq", "#T_vx", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_c.pl", "#T_vx", "#T_wceq", "#T_c.0", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpbasex", "#P_isgrpi", "#P_grpplusgx" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opex on Metamath](http://us.metamath.org/mpegif/opex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfopif | |- <. A , B >. = if ( ( A e. _V /\\ B e. _V ) , { { A } , { A , B } } , (/) ) |\n| 2 |  | #P_prex | |- { { A } , { A , B } } e. _V |\n| 3 |  | #P_0ex | |- (/) e. _V |\n| 4 | 2, 3 | #P_ifex | |- if ( ( A e. _V /\\ B e. _V ) , { { A } , { A , B } } , (/) ) e. _V |\n| 5 | 1, 4 | #P_eqeltri | |- <. A , B >. e. _V |",
+  "conclusion" : "#P_opex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cif--2", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_cif--3", "#T_c0", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_wcel", "#T_cvv", "#T_c0", "#T_wcel", "#T_cvv", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cif--2", "#T_cpr--1", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_cpr--3", "#T_cif--3", "#T_c0", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_prex", "#P_ifex", "#P_dfopif", "#P_0ex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reximdva0 on Metamath](http://us.metamath.org/mpegif/reximdva0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reximdva0.1 | |- ( ( ph /\\ x e. A ) -> ps ) |\n| 2 |  | #P_n0 | |- ( A =/= (/) <-> E. x x e. A ) |\n| 3 | 1 | #P_ex | |- ( ph -> ( x e. A -> ps ) ) |\n| 4 | 3 | #P_ancld | |- ( ph -> ( x e. A -> ( x e. A /\\ ps ) ) ) |\n| 5 | 4 | #P_eximdv | |- ( ph -> ( E. x x e. A -> E. x ( x e. A /\\ ps ) ) ) |\n| 6 | 5 | #P_imp | |- ( ( ph /\\ E. x x e. A ) -> E. x ( x e. A /\\ ps ) ) |\n| 7 | 2, 6 | #P_sylan2b | |- ( ( ph /\\ A =/= (/) ) -> E. x ( x e. A /\\ ps ) ) |\n| 8 |  | #P_df-rex | |- ( E. x e. A ps <-> E. x ( x e. A /\\ ps ) ) |\n| 9 | 7, 8 | #P_sylibr | |- ( ( ph /\\ A =/= (/) ) -> E. x e. A ps ) |",
+  "conclusion" : "#P_reximdva0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_cA", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2b", "#P_eximdv", "#P_ex", "#P_n0", "#P_imp", "#P_sylibr", "#P_df-rex", "#P_ancld" ]
+}

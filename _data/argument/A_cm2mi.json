@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cm2mi on Metamath](http://us.metamath.org/mpegif/cm2mi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fh1.1 | |- A e. CH |\n| 2 |  | fh1.2 | |- B e. CH |\n| 3 |  | fh1.3 | |- C e. CH |\n| 4 |  | fh1.4 | |- A C_H B |\n| 5 |  | fh1.5 | |- A C_H C |\n| 6 | 2 | #P_choccli | |- ( _|_ ` B ) e. CH |\n| 7 | 3 | #P_choccli | |- ( _|_ ` C ) e. CH |\n| 8 | 1, 2, 4 | #P_cmcm2ii | |- A C_H ( _|_ ` B ) |\n| 9 | 1, 3, 5 | #P_cmcm2ii | |- A C_H ( _|_ ` C ) |\n| 10 | 1, 6, 7, 8, 9 | #P_cm2ji | |- A C_H ( ( _|_ ` B ) vH ( _|_ ` C ) ) |\n| 11 | 2, 3 | #P_chdmm1i | |- ( _|_ ` ( B i^i C ) ) = ( ( _|_ ` B ) vH ( _|_ ` C ) ) |\n| 12 | 10, 11 | #P_breqtrri | |- A C_H ( _|_ ` ( B i^i C ) ) |\n| 13 | 2, 3 | #P_chincli | |- ( B i^i C ) e. CH |\n| 14 | 1, 13 | #P_cmcm2i | |- ( A C_H ( B i^i C ) <-> A C_H ( _|_ ` ( B i^i C ) ) ) |\n| 15 | 12, 14 | #P_mpbir | |- A C_H ( B i^i C ) |",
+  "conclusion" : "#P_cm2mi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cC", "#T_wcel", "#T_cch", "#T_cA", "#T_ccm", "#T_cB", "#T_cA", "#T_ccm", "#T_cC", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cort", "#T_cfv", "#T_cC", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cC", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_chj", "#T_cort", "#T_cfv", "#T_cC", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_chj", "#T_cort", "#T_cfv", "#T_cC", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_ccm", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA", "#T_ccm", "#T_cB", "#T_cin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cmcm2ii", "#P_chdmm1i", "#P_cm2ji", "#P_cmcm2i", "#P_mpbir", "#P_chincli", "#P_choccli", "#P_breqtrri" ]
+}

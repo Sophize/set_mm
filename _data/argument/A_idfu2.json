@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idfu2 on Metamath](http://us.metamath.org/mpegif/idfu2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idfuval.i | |- I = ( idFunc ` C ) |\n| 2 |  | idfuval.b | |- B = ( Base ` C ) |\n| 3 |  | idfuval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | idfuval.h | |- H = ( Hom ` C ) |\n| 5 |  | idfu2nd.x | |- ( ph -> X e. B ) |\n| 6 |  | idfu2nd.y | |- ( ph -> Y e. B ) |\n| 7 |  | idfu2.f | |- ( ph -> F e. ( X H Y ) ) |\n| 8 | 1, 2, 3, 4, 5, 6 | #P_idfu2nd | |- ( ph -> ( X ( 2nd ` I ) Y ) = ( _I |` ( X H Y ) ) ) |\n| 9 | 8 | #P_fveq1d | |- ( ph -> ( ( X ( 2nd ` I ) Y ) ` F ) = ( ( _I |` ( X H Y ) ) ` F ) ) |\n| 10 |  | #P_fvresi | |- ( F e. ( X H Y ) -> ( ( _I |` ( X H Y ) ) ` F ) = F ) |\n| 11 | 7, 10 | #P_syl | |- ( ph -> ( ( _I |` ( X H Y ) ) ` F ) = F ) |\n| 12 | 9, 11 | #P_eqtrd | |- ( ph -> ( ( X ( 2nd ` I ) Y ) ` F ) = F ) |",
+  "conclusion" : "#P_idfu2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cidfu", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c2nd", "#T_cfv", "#T_cI", "#T_cY", "#T_wceq", "#T_cid", "#T_cres", "#T_cX", "#T_cH", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c2nd", "#T_cfv", "#T_cI", "#T_cY", "#T_cfv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cX", "#T_cH", "#T_cY", "#T_cfv", "#T_cF", "#T_cF", "#T_wcel", "#T_cX", "#T_cH", "#T_cY", "#T_wi", "#T_cid", "#T_cres", "#T_cX", "#T_cH", "#T_cY", "#T_cfv", "#T_cF", "#T_wceq", "#T_cF", "#T_wph", "#T_wi", "#T_cid", "#T_cres", "#T_cX", "#T_cH", "#T_cY", "#T_cfv", "#T_cF", "#T_wceq", "#T_cF", "#T_wph", "#T_wi", "#T_cX", "#T_c2nd", "#T_cfv", "#T_cI", "#T_cY", "#T_cfv", "#T_cF", "#T_wceq", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvresi", "#P_fveq1d", "#P_eqtrd", "#P_syl", "#P_idfu2nd" ]
+}

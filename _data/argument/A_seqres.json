@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqres on Metamath](http://us.metamath.org/mpegif/seqres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( M e. ZZ -> M e. ZZ ) |\n| 2 |  | #P_fvres | |- ( k e. ( ZZ>= ` M ) -> ( ( F |` ( ZZ>= ` M ) ) ` k ) = ( F ` k ) ) |\n| 3 | 2 | #P_adantl | |- ( ( M e. ZZ /\\ k e. ( ZZ>= ` M ) ) -> ( ( F |` ( ZZ>= ` M ) ) ` k ) = ( F ` k ) ) |\n| 4 | 1, 3 | #P_seqfeq | |- ( M e. ZZ -> seq M ( .+ , ( F |` ( ZZ>= ` M ) ) ) = seq M ( .+ , F ) ) |",
+  "conclusion" : "#P_seqres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_cfv", "#T_vk", "#T_wceq", "#T_cF", "#T_cfv", "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_vk", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_cfv", "#T_vk", "#T_wceq", "#T_cF", "#T_cfv", "#T_vk", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cM", "#T_wceq", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvres", "#P_adantl", "#P_id", "#P_seqfeq" ]
+}

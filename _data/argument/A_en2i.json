@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See en2i on Metamath](http://us.metamath.org/mpegif/en2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | en2i.1 | |- A e. _V |\n| 2 |  | en2i.2 | |- B e. _V |\n| 3 |  | en2i.3 | |- ( x e. A -> C e. _V ) |\n| 4 |  | en2i.4 | |- ( y e. B -> D e. _V ) |\n| 5 |  | en2i.5 | |- ( ( x e. A /\\ y = C ) <-> ( y e. B /\\ x = D ) ) |\n| 6 | 1 | #P_a1i | |- ( T. -> A e. _V ) |\n| 7 | 2 | #P_a1i | |- ( T. -> B e. _V ) |\n| 8 | 3 | #P_a1i | |- ( T. -> ( x e. A -> C e. _V ) ) |\n| 9 | 4 | #P_a1i | |- ( T. -> ( y e. B -> D e. _V ) ) |\n| 10 | 5 | #P_a1i | |- ( T. -> ( ( x e. A /\\ y = C ) <-> ( y e. B /\\ x = D ) ) ) |\n| 11 | 6, 7, 8, 9, 10 | #P_en2d | |- ( T. -> A ~~ B ) |\n| 12 | 11 | #P_trud | |- A ~~ B |",
+  "conclusion" : "#P_en2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cD", "#T_wcel", "#T_cvv", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cC", "#T_wb", "#T_vy", "#T_wcel", "#T_cB", "#T_wa", "#T_vx", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wtru", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wtru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_wtru", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cD", "#T_wcel", "#T_cvv", "#T_wtru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cC", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA", "#T_cen", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_en2d", "#P_a1i" ]
+}

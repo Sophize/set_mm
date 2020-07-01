@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-poset on Metamath](http://us.metamath.org/mpegif/df-poset.html)"
+  } ],
+  "names" : [ "df-poset" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpo", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wex", "#T_vb", "#T_wex", "#T_vr", "#T_vb", "#T_wceq", "#T_cbs", "#T_cfv", "#T_vf", "#T_w3a--1", "#T_vr", "#T_wceq", "#T_cple", "#T_cfv", "#T_vf", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vb", "#T_vx", "#T_vr", "#T_vx", "#T_w3a--1", "#T_vx", "#T_vr", "#T_vy", "#T_wa", "#T_vy", "#T_vr", "#T_vx", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_w3a--2", "#T_vx", "#T_vr", "#T_vy", "#T_wa", "#T_vy", "#T_vr", "#T_vz", "#T_wi", "#T_vx", "#T_vr", "#T_vz", "#T_cab--3", "#T_vb", "#T_vf", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of partially ordered sets (posets).  A poset is a set equipped with a partial order, that is, a binary relation which is reflexive, antisymmetric, and transitive.  Unlike a total order, in a partial order there may be pairs of elements where neither precedes the other.  Definition of poset in [Crawley] p. 1.  Note that Crawley-Dilworth require that a poset base set be nonempty, but we follow the convention of most authors who don't make this a requirement. In our formalism of extensible structures, the base set of a poset ` f ` is denoted by ` ( Base `` f ) ` and its partial order by ` ( le `` f ) ` (for \"less than or equal to\").  The quantifiers ` E. b E. r ` provide a notational shorthand to allow us to refer to the base and ordering relation as ` b ` and ` r ` in the definition rather than having to repeat ` ( Base `` f ) ` and ` ( le `` f ) ` throughout.  These quantifiers can be eliminated with ~ ceqsex2v and related theorems. (Contributed by NM, 18-Oct-2012.) ",
+  "statement" : "df-poset $p |- Poset = { f | E. b E. r ( b = ( Base ` f ) /\\ r = ( le ` f ) /\\ A. x e. b A. y e. b A. z e. b ( x r x /\\ ( ( x r y /\\ y r x ) -> x = y ) /\\ ( ( x r y /\\ y r z ) -> x r z ) ) ) } $.\n$d b f r x y z $."
+}

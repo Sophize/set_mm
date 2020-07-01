@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee020 on Metamath](http://us.metamath.org/mpegif/ee020.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee020.1 | |- ph |\n| 2 |  | ee020.2 | |- ( ps -> ( ch -> th ) ) |\n| 3 |  | ee020.3 | |- ta |\n| 4 |  | ee020.4 | |- ( ph -> ( th -> ( ta -> et ) ) ) |\n| 5 | 1 | #P_a1i | |- ( ch -> ph ) |\n| 6 | 5 | #P_a1i | |- ( ps -> ( ch -> ph ) ) |\n| 7 | 3 | #P_a1i | |- ( ch -> ta ) |\n| 8 | 7 | #P_a1i | |- ( ps -> ( ch -> ta ) ) |\n| 9 | 6, 2, 8, 4 | #P_ee222 | |- ( ps -> ( ch -> et ) ) |",
+  "conclusion" : "#P_ee020",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wta", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wet", "#T_wch", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wch", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ee222", "#P_a1i" ]
+}

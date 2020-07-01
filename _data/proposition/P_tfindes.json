@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfindes on Metamath](http://us.metamath.org/mpegif/tfindes.html)"
+  } ],
+  "names" : [ "tfindes" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsbc--1", "#T_c0", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_csuc", "#T_vx", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wlim", "#T_vy", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vy", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_vy", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wph", "#T_wph", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfinite Induction with explicit substitution.  The first hypothesis is the basis, the second is the induction step for successors, and the third is the induction step for limit ordinals.  Theorem Schema 4 of [Suppes] p. 197.  (Contributed by NM, 5-Mar-2004.) ",
+  "statement" : "tfindes.1 $e |- [. (/) / x ]. ph $.\ntfindes.2 $e |- ( x e. On -> ( ph -> [. suc x / x ]. ph ) ) $.\ntfindes.3 $e |- ( Lim y -> ( A. x e. y ph -> [. y / x ]. ph ) ) $.\ntfindes $p |- ( x e. On -> ph ) $.\n$d ph y $.\n$d x y $."
+}

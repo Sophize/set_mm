@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0le2 on Metamath](http://us.metamath.org/mpegif/0le2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0le1 | |- 0 <_ 1 |\n| 2 |  | #P_1re | |- 1 e. RR |\n| 3 | 2, 2 | #P_addge0i | |- ( ( 0 <_ 1 /\\ 0 <_ 1 ) -> 0 <_ ( 1 + 1 ) ) |\n| 4 | 1, 1, 3 | #P_mp2an | |- 0 <_ ( 1 + 1 ) |\n| 5 |  | #P_df-2 | |- 2 = ( 1 + 1 ) |\n| 6 | 4, 5 | #P_breqtrri | |- 0 <_ 2 |",
+  "conclusion" : "#P_0le2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_cle", "#T_c1", "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_c1", "#T_wa", "#T_cc0", "#T_cle", "#T_c1", "#T_wi", "#T_cc0", "#T_cle", "#T_c1", "#T_caddc", "#T_c1", "#T_cc0", "#T_cle", "#T_c1", "#T_caddc", "#T_c1", "#T_c2", "#T_wceq", "#T_c1", "#T_caddc", "#T_c1", "#T_cc0", "#T_cle", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_0le1", "#P_addge0i", "#P_breqtrri", "#P_1re", "#P_df-2" ]
+}

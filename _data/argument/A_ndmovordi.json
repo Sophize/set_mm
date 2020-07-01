@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ndmovordi on Metamath](http://us.metamath.org/mpegif/ndmovordi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ndmovordi.2 | |- dom F = ( S X. S ) |\n| 2 |  | ndmovordi.4 | |- R C_ ( S X. S ) |\n| 3 |  | ndmovordi.5 | |- -. (/) e. S |\n| 4 |  | ndmovordi.6 | |- ( C e. S -> ( A R B <-> ( C F A ) R ( C F B ) ) ) |\n| 5 | 2 | #P_brel | |- ( ( C F A ) R ( C F B ) -> ( ( C F A ) e. S /\\ ( C F B ) e. S ) ) |\n| 6 | 5 | #P_simpld | |- ( ( C F A ) R ( C F B ) -> ( C F A ) e. S ) |\n| 7 | 1, 3 | #P_ndmovrcl | |- ( ( C F A ) e. S -> ( C e. S /\\ A e. S ) ) |\n| 8 | 7 | #P_simpld | |- ( ( C F A ) e. S -> C e. S ) |\n| 9 | 6, 8 | #P_syl | |- ( ( C F A ) R ( C F B ) -> C e. S ) |\n| 10 | 4 | #P_biimprd | |- ( C e. S -> ( ( C F A ) R ( C F B ) -> A R B ) ) |\n| 11 | 9, 10 | #P_mpcom | |- ( ( C F A ) R ( C F B ) -> A R B ) |",
+  "conclusion" : "#P_ndmovordi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cF", "#T_wceq", "#T_cS", "#T_cxp", "#T_cS", "#T_cR", "#T_wss", "#T_cS", "#T_cxp", "#T_cS", "#T_wn", "#T_c0", "#T_wcel", "#T_cS", "#T_cC", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wb", "#T_cC", "#T_cF", "#T_cA", "#T_cR", "#T_cC", "#T_cF", "#T_cB", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_wcel", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_wcel", "#T_cS", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cS", "#T_cC", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_cF", "#T_cA.wceq", "#T_cR", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_cC", "#T_cF", "#T_cA", "#T_cR", "#T_cC", "#T_cF", "#T_cB", "#T_wi", "#T_cA", "#T_cR", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_simpld", "#P_biimprd", "#P_syl", "#P_ndmovrcl", "#P_brel" ]
+}

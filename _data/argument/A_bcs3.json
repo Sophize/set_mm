@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bcs3 on Metamath](http://us.metamath.org/mpegif/bcs3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_abshicom | |- ( ( A e. ~H /\\ B e. ~H ) -> ( abs ` ( A .ih B ) ) = ( abs ` ( B .ih A ) ) ) |\n| 2 | 1 | #P_3adant3 | |- ( ( A e. ~H /\\ B e. ~H /\\ ( normh ` B ) <_ 1 ) -> ( abs ` ( A .ih B ) ) = ( abs ` ( B .ih A ) ) ) |\n| 3 |  | #P_bcs2 | |- ( ( B e. ~H /\\ A e. ~H /\\ ( normh ` B ) <_ 1 ) -> ( abs ` ( B .ih A ) ) <_ ( normh ` A ) ) |\n| 4 | 3 | #P_3com12 | |- ( ( A e. ~H /\\ B e. ~H /\\ ( normh ` B ) <_ 1 ) -> ( abs ` ( B .ih A ) ) <_ ( normh ` A ) ) |\n| 5 | 2, 4 | #P_eqbrtrd | |- ( ( A e. ~H /\\ B e. ~H /\\ ( normh ` B ) <_ 1 ) -> ( abs ` ( A .ih B ) ) <_ ( normh ` A ) ) |",
+  "conclusion" : "#P_bcs3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cB.wceq", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cno", "#T_cfv", "#T_cB.wceq", "#T_cle", "#T_c1", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_csp", "#T_cB.wceq", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cno", "#T_cfv", "#T_cB.wceq", "#T_cle", "#T_c1", "#T_wi", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_cle", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cno", "#T_cfv", "#T_cB.wceq", "#T_cle", "#T_c1", "#T_wi", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_csp", "#T_cA.wceq", "#T_cle", "#T_cno", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cno", "#T_cfv", "#T_cB", "#T_cle", "#T_c1", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_csp", "#T_cB", "#T_cle", "#T_cno", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bcs2", "#P_3com12", "#P_eqbrtrd", "#P_abshicom", "#P_3adant3" ]
+}

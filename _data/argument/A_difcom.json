@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difcom on Metamath](http://us.metamath.org/mpegif/difcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uncom | |- ( B u. C ) = ( C u. B ) |\n| 2 | 1 | #P_sseq2i | |- ( A C_ ( B u. C ) <-> A C_ ( C u. B ) ) |\n| 3 |  | #P_ssundif | |- ( A C_ ( B u. C ) <-> ( A \\ B ) C_ C ) |\n| 4 |  | #P_ssundif | |- ( A C_ ( C u. B ) <-> ( A \\ C ) C_ B ) |\n| 5 | 2, 3, 4 | #P_3bitr3i | |- ( ( A \\ B ) C_ C <-> ( A \\ C ) C_ B ) |",
+  "conclusion" : "#P_difcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wceq", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cun", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_cdif", "#T_cB", "#T_wss", "#T_cC", "#T_wb", "#T_cA", "#T_cdif", "#T_cC", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_uncom", "#P_ssundif", "#P_sseq2i", "#P_3bitr3i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvlip on Metamath](http://us.metamath.org/mpegif/dvlip.html)"
+  } ],
+  "names" : [ "dvlip" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_ccncf", "#T_cc", "#T_wph", "#T_wi", "#T_cdm", "#T_cr", "#T_cdv", "#T_cF", "#T_wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_cioo", "#T_cB", "#T_wi", "#T_cabs", "#T_cfv", "#T_cr", "#T_cdv", "#T_cF", "#T_cfv", "#T_vx", "#T_cle", "#T_cM", "#T_wph", "#T_wa", "#T_cX", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_wa", "#T_cY", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_cX", "#T_cmin", "#T_cF", "#T_cfv", "#T_cY", "#T_cle", "#T_cM", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cX", "#T_cmin", "#T_cY", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cF", "#T_vx", "#T_cM", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A function with derivative bounded by ` M ` is Lipschitz continuous with Lipschitz constant equal to ` M ` .  (Contributed by Mario Carneiro, 3-Mar-2015.) ",
+  "statement" : "dvlip.a $e |- ( ph -> A e. RR ) $.\ndvlip.b $e |- ( ph -> B e. RR ) $.\ndvlip.f $e |- ( ph -> F e. ( ( A [,] B ) -cn-> CC ) ) $.\ndvlip.d $e |- ( ph -> dom ( RR _D F ) = ( A (,) B ) ) $.\ndvlip.m $e |- ( ph -> M e. RR ) $.\ndvlip.l $e |- ( ( ph /\\ x e. ( A (,) B ) ) -> ( abs ` ( ( RR _D F ) ` x ) ) <_ M ) $.\ndvlip $p |- ( ( ph /\\ ( X e. ( A [,] B ) /\\ Y e. ( A [,] B ) ) ) -> ( abs ` ( ( F ` X ) - ( F ` Y ) ) ) <_ ( M x. ( abs ` ( X - Y ) ) ) ) $.\n$d A x $.\n$d B x $.\n$d F x $.\n$d M x $.\n$d ph x $."
+}

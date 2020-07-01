@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nsgsubg on Metamath](http://us.metamath.org/mpegif/nsgsubg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 2 |  | #P_eqid | |- ( +g ` G ) = ( +g ` G ) |\n| 3 | 1, 2 | #P_isnsg | |- ( S e. ( NrmSGrp ` G ) <-> ( S e. ( SubGrp ` G ) /\\ A. x e. ( Base ` G ) A. y e. ( Base ` G ) ( ( x ( +g ` G ) y ) e. S <-> ( y ( +g ` G ) x ) e. S ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( S e. ( NrmSGrp ` G ) -> S e. ( SubGrp ` G ) ) |",
+  "conclusion" : "#P_nsgsubg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cS", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cG", "#T_wb", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_wb", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_cnsg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isnsg" ]
+}

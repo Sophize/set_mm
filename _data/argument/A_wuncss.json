@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wuncss on Metamath](http://us.metamath.org/mpegif/wuncss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssexg | |- ( ( A C_ U /\\ U e. WUni ) -> A e. _V ) |\n| 2 | 1 | #P_ancoms | |- ( ( U e. WUni /\\ A C_ U ) -> A e. _V ) |\n| 3 |  | #P_wuncval | |- ( A e. _V -> ( wUniCl ` A ) = |^| { u e. WUni | A C_ u } ) |\n| 4 | 2, 3 | #P_syl | |- ( ( U e. WUni /\\ A C_ U ) -> ( wUniCl ` A ) = |^| { u e. WUni | A C_ u } ) |\n| 5 |  | #P_sseq2 | |- ( u = U -> ( A C_ u <-> A C_ U ) ) |\n| 6 | 5 | #P_intminss | |- ( ( U e. WUni /\\ A C_ U ) -> |^| { u e. WUni | A C_ u } C_ U ) |\n| 7 | 4, 6 | #P_eqsstrd | |- ( ( U e. WUni /\\ A C_ U ) -> ( wUniCl ` A ) C_ U ) |",
+  "conclusion" : "#P_wuncss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_wa", "#T_cU", "#T_wcel", "#T_cwun", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cU", "#T_wcel", "#T_cwun", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cwunm", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vu", "#T_crab--2", "#T_cwun", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vu", "#T_crab--4", "#T_cU", "#T_wcel", "#T_cwun", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_wi", "#T_cwunm", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vu", "#T_crab--2", "#T_cwun", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vu", "#T_crab--4", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_vu", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_cU", "#T_wcel", "#T_cwun", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cU", "#T_wi", "#T_cint", "#T_crab--1", "#T_vu", "#T_crab--2", "#T_cwun", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vu", "#T_crab--4", "#T_wss", "#T_cU", "#T_cU", "#T_wcel", "#T_cwun", "#T_wa", "#T_cA", "#T_wss", "#T_cU", "#T_wi", "#T_cwunm", "#T_cfv", "#T_cA", "#T_wss", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssexg", "#P_sseq2", "#P_eqsstrd", "#P_syl", "#P_wuncval", "#P_intminss", "#P_ancoms" ]
+}

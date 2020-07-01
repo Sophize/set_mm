@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equs5a on Metamath](http://us.metamath.org/mpegif/equs5a.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hba1 | |- ( A. x ( x = y -> ph ) -> A. x A. x ( x = y -> ph ) ) |\n| 2 |  | #P_ax-11--i | |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) |\n| 3 | 2 | #P_imp | |- ( ( x = y /\\ A. y ph ) -> A. x ( x = y -> ph ) ) |\n| 4 | 1, 3 | #P_exlimih | |- ( E. x ( x = y /\\ A. y ph ) -> A. x ( x = y -> ph ) ) |",
+  "conclusion" : "#P_equs5a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wa", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exlimih", "#P_hba1", "#P_imp", "#P_ax-11--i" ]
+}

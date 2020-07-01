@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlmnvc on Metamath](http://us.metamath.org/mpegif/rlmnvc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rlmnlm | |- ( R e. NrmRing -> ( ringLMod ` R ) e. NrmMod ) |\n| 2 |  | #P_rlmlvec | |- ( R e. DivRing -> ( ringLMod ` R ) e. LVec ) |\n| 3 |  | #P_isnvc | |- ( ( ringLMod ` R ) e. NrmVec <-> ( ( ringLMod ` R ) e. NrmMod /\\ ( ringLMod ` R ) e. LVec ) ) |\n| 4 | 3 | #P_biimpri | |- ( ( ( ringLMod ` R ) e. NrmMod /\\ ( ringLMod ` R ) e. LVec ) -> ( ringLMod ` R ) e. NrmVec ) |\n| 5 | 1, 2, 4 | #P_syl2an | |- ( ( R e. NrmRing /\\ R e. DivRing ) -> ( ringLMod ` R ) e. NrmVec ) |",
+  "conclusion" : "#P_rlmnvc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnlm", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clvec", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnvc", "#T_wb", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnlm", "#T_wa", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clvec", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnlm", "#T_wa", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clvec", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnvc", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnvc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rlmnlm", "#P_rlmlvec", "#P_isnvc", "#P_syl2an", "#P_biimpri" ]
+}

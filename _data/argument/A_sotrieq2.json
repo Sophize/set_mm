@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sotrieq2 on Metamath](http://us.metamath.org/mpegif/sotrieq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sotrieq | |- ( ( R Or A /\\ ( B e. A /\\ C e. A ) ) -> ( B = C <-> -. ( B R C \\/ C R B ) ) ) |\n| 2 |  | #P_ioran | |- ( -. ( B R C \\/ C R B ) <-> ( -. B R C /\\ -. C R B ) ) |\n| 3 | 1, 2 | #P_syl6bb | |- ( ( R Or A /\\ ( B e. A /\\ C e. A ) ) -> ( B = C <-> ( -. B R C /\\ -. C R B ) ) ) |",
+  "conclusion" : "#P_sotrieq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_wn", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wo", "#T_cC", "#T_cR", "#T_cB.wceq", "#T_wn", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wo", "#T_cC", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cB.wceq", "#T_cR", "#T_cC", "#T_wa", "#T_wn", "#T_cC", "#T_cR", "#T_cB.wceq", "#T_cR", "#T_wor", "#T_cA", "#T_wa", "#T_cB", "#T_wcel", "#T_cA", "#T_wa", "#T_cC", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wb", "#T_wn", "#T_cB", "#T_cR", "#T_cC", "#T_wa", "#T_wn", "#T_cC", "#T_cR", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sotrieq", "#P_syl6bb", "#P_ioran" ]
+}

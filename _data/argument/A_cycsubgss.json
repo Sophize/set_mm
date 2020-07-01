@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cycsubgss on Metamath](http://us.metamath.org/mpegif/cycsubgss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cycsubg.x | |- X = ( Base ` G ) |\n| 2 |  | cycsubg.t | |- .x. = ( .g ` G ) |\n| 3 |  | cycsubg.f | |- F = ( x e. ZZ |-> ( x .x. A ) ) |\n| 4 | 2 | #P_subgmulgcl | |- ( ( S e. ( SubGrp ` G ) /\\ x e. ZZ /\\ A e. S ) -> ( x .x. A ) e. S ) |\n| 5 | 4 | #P_3expa | |- ( ( ( S e. ( SubGrp ` G ) /\\ x e. ZZ ) /\\ A e. S ) -> ( x .x. A ) e. S ) |\n| 6 | 5 | #P_an32s | |- ( ( ( S e. ( SubGrp ` G ) /\\ A e. S ) /\\ x e. ZZ ) -> ( x .x. A ) e. S ) |\n| 7 | 6, 3 | #P_fmptd | |- ( ( S e. ( SubGrp ` G ) /\\ A e. S ) -> F : ZZ --> S ) |\n| 8 |  | #P_frn | |- ( F : ZZ --> S -> ran F C_ S ) |\n| 9 | 7, 8 | #P_syl | |- ( ( S e. ( SubGrp ` G ) /\\ A e. S ) -> ran F C_ S ) |",
+  "conclusion" : "#P_cycsubgss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.x", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx", "#T_c.x", "#T_cA", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--1", "#T_vx.wal", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cz", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cz", "#T_wi", "#T_vx.wal", "#T_c.x", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cF", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cS", "#T_cF", "#T_wf--1", "#T_cz", "#T_wf--2", "#T_cS", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cA", "#T_wcel", "#T_cS", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3expa", "#P_an32s", "#P_syl", "#P_subgmulgcl", "#P_frn", "#P_fmptd" ]
+}

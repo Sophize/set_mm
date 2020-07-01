@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpstval on Metamath](http://us.metamath.org/mpegif/mpstval.html)"
+  } ],
+  "names" : [ "mpstval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cmdv", "#T_cfv", "#T_cT", "#T_cE", "#T_wceq", "#T_cmex", "#T_cfv", "#T_cT", "#T_cP", "#T_wceq", "#T_cmpst", "#T_cfv", "#T_cT", "#T_cP", "#T_wceq", "#T_crab--1", "#T_vd", "#T_crab--2", "#T_cpw", "#T_cV", "#T_crab--3", "#T_ccnv", "#T_vd", "#T_wceq", "#T_vd", "#T_crab--4", "#T_cxp", "#T_cpw", "#T_cE", "#T_cin", "#T_cfn", "#T_cxp", "#T_cE", "#T_cT", "#T_vd", "#T_cV", "#T_vd" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A pre-statement is an ordered triple, whose first member is a symmetric set of DV conditions, whose second member is a finite set of expressions, and whose third member is an expression.  (Contributed by Mario Carneiro, 18-Jul-2016.) ",
+  "statement" : "mpstval.v $e |- V = ( mDV ` T ) $.\nmpstval.e $e |- E = ( mEx ` T ) $.\nmpstval.p $e |- P = ( mPreSt ` T ) $.\nmpstval $p |- P = ( ( { d e. ~P V | `' d = d } X. ( ~P E i^i Fin ) ) X. E ) $.\n$d T d $.\n$d V d $."
+}

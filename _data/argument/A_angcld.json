@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See angcld on Metamath](http://us.metamath.org/mpegif/angcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ang.1 | |- F = ( x e. ( CC \\ { 0 } ) , y e. ( CC \\ { 0 } ) |-> ( Im ` ( log ` ( y / x ) ) ) ) |\n| 2 |  | angcld.1 | |- ( ph -> X e. CC ) |\n| 3 |  | angcld.2 | |- ( ph -> X =/= 0 ) |\n| 4 |  | angcld.3 | |- ( ph -> Y e. CC ) |\n| 5 |  | angcld.4 | |- ( ph -> Y =/= 0 ) |\n| 6 | 1, 2, 3, 4, 5 | #P_angvald | |- ( ph -> ( X F Y ) = ( Im ` ( log ` ( Y / X ) ) ) ) |\n| 7 | 4, 2, 3 | #P_divcld | |- ( ph -> ( Y / X ) e. CC ) |\n| 8 | 4, 2, 5, 3 | #P_divne0d | |- ( ph -> ( Y / X ) =/= 0 ) |\n| 9 | 7, 8 | #P_logimclad | |- ( ph -> ( Im ` ( log ` ( Y / X ) ) ) e. ( -u _pi (,] _pi ) ) |\n| 10 | 6, 9 | #P_eqeltrd | |- ( ph -> ( X F Y ) e. ( -u _pi (,] _pi ) ) |",
+  "conclusion" : "#P_angcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vx", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cX", "#T_cF", "#T_cY", "#T_wceq", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_cY", "#T_cdiv", "#T_cX", "#T_wph", "#T_wi", "#T_cY", "#T_cdiv", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cY", "#T_cdiv", "#T_cX", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_cY", "#T_cdiv", "#T_cX", "#T_wcel", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi", "#T_wph", "#T_wi", "#T_cX", "#T_cF", "#T_cY", "#T_wcel", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_divcld", "#P_divne0d", "#P_logimclad", "#P_eqeltrd", "#P_angvald" ]
+}

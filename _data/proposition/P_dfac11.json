@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfac11 on Metamath](http://us.metamath.org/mpegif/dfac11.html)"
+  } ],
+  "names" : [ "dfac11" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wac", "#T_wb", "#T_wal", "#T_vx", "#T_wex", "#T_vf", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vx", "#T_vz", "#T_wne", "#T_c0", "#T_wi", "#T_vf", "#T_cfv", "#T_vz", "#T_wcel", "#T_cpw", "#T_vz", "#T_cin", "#T_cfn", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_vf", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The right-hand side of this theorem (compare with ~ ac4 ), sometimes known as the \"axiom of multiple choice\", is a choice equivalent. Curiously, this statement cannot be proved without ~ ax-reg , despite not mentioning the cumulative hierarchy in any way as most consequences of regularity do. This is definition (MC) of [Schechter] p. 141. _EDITORIAL_: the proof is not original with me of course but I lost my reference sometime after writing it. A multiple choice function allows any total order to be extended to a choice function, which in turn defines a well-ordering.  Since a well ordering on a set defines a simple ordering of the power set, this allows the trivial well-ordering of the empty set to be transfinitely bootstrapped up the cumulative hierarchy to any desired level. (Contributed by Stefan O'Rear, 20-Jan-2015.)  (Revised by Stefan O'Rear, 1-Jun-2015.) ",
+  "statement" : "dfac11 $p |- ( CHOICE <-> A. x E. f A. z e. x ( z =/= (/) -> ( f ` z ) e. ( ( ~P z i^i Fin ) \\ { (/) } ) ) ) $.\n$d f x z $."
+}

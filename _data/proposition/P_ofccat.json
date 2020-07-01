@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ofccat on Metamath](http://us.metamath.org/mpegif/ofccat.html)"
+  } ],
+  "names" : [ "ofccat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cE", "#T_wcel", "#T_cword", "#T_cS", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cword", "#T_cS", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cword", "#T_cT", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cword", "#T_cT", "#T_wph", "#T_wi", "#T_chash", "#T_cfv", "#T_cE", "#T_wceq", "#T_chash", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_chash", "#T_cfv", "#T_cF", "#T_wceq", "#T_chash", "#T_cfv", "#T_cH", "#T_wph", "#T_wi", "#T_cE", "#T_cconcat", "#T_cF", "#T_cof", "#T_cR", "#T_cG", "#T_cconcat", "#T_cH", "#T_wceq", "#T_cE", "#T_cof", "#T_cR", "#T_cG", "#T_cconcat", "#T_cF", "#T_cof", "#T_cR", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Letterwise operations on word concatenations.  (Contributed by Thierry Arnoux, 28-Sep-2018.) ",
+  "statement" : "ofccat.1 $e |- ( ph -> E e. Word S ) $.\nofccat.2 $e |- ( ph -> F e. Word S ) $.\nofccat.3 $e |- ( ph -> G e. Word T ) $.\nofccat.4 $e |- ( ph -> H e. Word T ) $.\nofccat.5 $e |- ( ph -> ( # ` E ) = ( # ` G ) ) $.\nofccat.6 $e |- ( ph -> ( # ` F ) = ( # ` H ) ) $.\nofccat $p |- ( ph -> ( ( E concat F ) oF R ( G concat H ) ) = ( ( E oF R G ) concat ( F oF R H ) ) ) $."
+}

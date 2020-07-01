@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See winalim on Metamath](http://us.metamath.org/mpegif/winalim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_winainf | |- ( A e. InaccW -> _om C_ A ) |\n| 2 |  | #P_winacard | |- ( A e. InaccW -> ( card ` A ) = A ) |\n| 3 |  | #P_cardlim | |- ( _om C_ ( card ` A ) <-> Lim ( card ` A ) ) |\n| 4 |  | #P_sseq2 | |- ( ( card ` A ) = A -> ( _om C_ ( card ` A ) <-> _om C_ A ) ) |\n| 5 |  | #P_limeq | |- ( ( card ` A ) = A -> ( Lim ( card ` A ) <-> Lim A ) ) |\n| 6 | 4, 5 | #P_bibi12d | |- ( ( card ` A ) = A -> ( ( _om C_ ( card ` A ) <-> Lim ( card ` A ) ) <-> ( _om C_ A <-> Lim A ) ) ) |\n| 7 | 3, 6 | #P_mpbii | |- ( ( card ` A ) = A -> ( _om C_ A <-> Lim A ) ) |\n| 8 | 2, 7 | #P_syl | |- ( A e. InaccW -> ( _om C_ A <-> Lim A ) ) |\n| 9 | 1, 8 | #P_mpbid | |- ( A e. InaccW -> Lim A ) |",
+  "conclusion" : "#P_winalim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cwina", "#T_wi", "#T_com", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cwina", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_com", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_com", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_com", "#T_wss", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wlim", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_com", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wb", "#T_com", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_com", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cwina", "#T_wi", "#T_com", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cwina", "#T_wi", "#T_wlim", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_winainf", "#P_limeq", "#P_mpbii", "#P_bibi12d", "#P_mpbid", "#P_winacard", "#P_sseq2", "#P_syl", "#P_cardlim" ]
+}

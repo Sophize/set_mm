@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pwin on Metamath](http://us.metamath.org/mpegif/pwin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssin | |- ( ( x C_ A /\\ x C_ B ) <-> x C_ ( A i^i B ) ) |\n| 2 |  | #P_selpw | |- ( x e. ~P A <-> x C_ A ) |\n| 3 |  | #P_selpw | |- ( x e. ~P B <-> x C_ B ) |\n| 4 | 2, 3 | #P_anbi12i | |- ( ( x e. ~P A /\\ x e. ~P B ) <-> ( x C_ A /\\ x C_ B ) ) |\n| 5 |  | #P_selpw | |- ( x e. ~P ( A i^i B ) <-> x C_ ( A i^i B ) ) |\n| 6 | 1, 4, 5 | #P_3bitr4i | |- ( ( x e. ~P A /\\ x e. ~P B ) <-> x e. ~P ( A i^i B ) ) |\n| 7 | 6 | #P_ineqri | |- ( ~P A i^i ~P B ) = ~P ( A i^i B ) |\n| 8 | 7 | #P_eqcomi | |- ~P ( A i^i B ) = ( ~P A i^i ~P B ) |",
+  "conclusion" : "#P_pwin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cpw", "#T_cA.wceq", "#T_cin", "#T_cpw", "#T_cB.wceq", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cpw", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_cpw", "#T_cA", "#T_cin", "#T_cpw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_selpw", "#P_3bitr4i", "#P_ssin", "#P_ineqri", "#P_eqcomi" ]
+}

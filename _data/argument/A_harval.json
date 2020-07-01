@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See harval on Metamath](http://us.metamath.org/mpegif/harval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elex | |- ( X e. V -> X e. _V ) |\n| 2 |  | #P_breq2 | |- ( x = X -> ( y ~<_ x <-> y ~<_ X ) ) |\n| 3 | 2 | #P_rabbidv | |- ( x = X -> { y e. On | y ~<_ x } = { y e. On | y ~<_ X } ) |\n| 4 |  | #P_df-har | |- har = ( x e. _V |-> { y e. On | y ~<_ x } ) |\n| 5 |  | #P_hartogs | |- ( x e. _V -> { y e. On | y ~<_ x } e. On ) |\n| 6 | 3, 4, 5 | #P_fvmpt3 | |- ( X e. _V -> ( har ` X ) = { y e. On | y ~<_ X } ) |\n| 7 | 1, 6 | #P_syl | |- ( X e. V -> ( har ` X ) = { y e. On | y ~<_ X } ) |",
+  "conclusion" : "#P_harval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_vy.tru", "#T_cdom", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_cdom", "#T_cX", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wi", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy.tru", "#T_cdom", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy.tru", "#T_cdom", "#T_cX", "#T_crab--4", "#T_char", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy.tru", "#T_cdom", "#T_vx.wal", "#T_crab--4", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy.tru", "#T_cdom", "#T_vx.wal", "#T_crab--4", "#T_wcel", "#T_con0", "#T_cX", "#T_wcel", "#T_cvv", "#T_wi", "#T_char", "#T_cfv", "#T_cX", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy.tru", "#T_cdom", "#T_cX", "#T_crab--4", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_char", "#T_cfv", "#T_cX", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vy", "#T_cdom", "#T_cX", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-har", "#P_elex", "#P_breq2", "#P_rabbidv", "#P_hartogs", "#P_syl", "#P_fvmpt3" ]
+}

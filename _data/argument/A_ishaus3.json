@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ishaus3 on Metamath](http://us.metamath.org/mpegif/ishaus3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_haust1 | |- ( J e. Haus -> J e. Fre ) |\n| 2 |  | #P_t1t0 | |- ( J e. Fre -> J e. Kol2 ) |\n| 3 | 1, 2 | #P_syl | |- ( J e. Haus -> J e. Kol2 ) |\n| 4 |  | #P_haushmph | |- ( J ~= ( KQ ` J ) -> ( J e. Haus -> ( KQ ` J ) e. Haus ) ) |\n| 5 |  | #P_haushmph | |- ( ( KQ ` J ) ~= J -> ( ( KQ ` J ) e. Haus -> J e. Haus ) ) |\n| 6 | 3, 4, 5 | #P_ist1-5lem | |- ( J e. Haus <-> ( J e. Kol2 /\\ ( KQ ` J ) e. Haus ) ) |",
+  "conclusion" : "#P_ishaus3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct1", "#T_cJ", "#T_wcel", "#T_ct1", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct0", "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct0", "#T_cJ", "#T_chmph", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cha", "#T_ckq", "#T_cfv", "#T_cJ", "#T_chmph", "#T_cJ", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cha", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_cJ", "#T_wcel", "#T_cha", "#T_wb", "#T_cJ", "#T_wcel", "#T_ct0", "#T_wa", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cha" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_t1t0", "#P_haushmph", "#P_haust1", "#P_syl", "#P_ist1-5lem" ]
+}

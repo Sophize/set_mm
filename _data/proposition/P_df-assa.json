@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-assa on Metamath](http://us.metamath.org/mpegif/df-assa.html)"
+  } ],
+  "names" : [ "df-assa" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_casa", "#T_wceq", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_clmod", "#T_cin", "#T_crg", "#T_crab--3", "#T_wsbc--1", "#T_csca", "#T_cfv", "#T_vw", "#T_wsbc--2", "#T_vf", "#T_wsbc--3", "#T_vf", "#T_wcel", "#T_ccrg", "#T_wa", "#T_wral--1", "#T_vr", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vf", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vw", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vw", "#T_wsbc--1", "#T_cvsca", "#T_cfv", "#T_vw", "#T_wsbc--2", "#T_vs", "#T_wsbc--3", "#T_wsbc--1", "#T_cmulr", "#T_cfv", "#T_vw", "#T_wsbc--2", "#T_vt", "#T_wsbc--3", "#T_vr", "#T_vs", "#T_vx", "#T_vt", "#T_vy", "#T_wceq", "#T_vr", "#T_vs", "#T_vx", "#T_vt", "#T_vy", "#T_wa", "#T_vx", "#T_vt", "#T_vr", "#T_vs", "#T_vy", "#T_wceq", "#T_vr", "#T_vs", "#T_vx", "#T_vt", "#T_vy", "#T_crab--4", "#T_vf", "#T_vr", "#T_vs", "#T_vt", "#T_vw", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definition of an associative algebra.  An associative algebra is a set equipped with a left-module structure on a (commutative) ring, coupled with a multiplicative internal operation on the vectors of the module that is associative and distributive for the additive structure of the left-module (so giving the vectors a ring structure) and that is also bilinear under the scalar product.  (Contributed by Mario Carneiro, 29-Dec-2014.) ",
+  "statement" : "df-assa $p |- AssAlg = { w e. ( LMod i^i Ring ) | [. ( Scalar ` w ) / f ]. ( f e. CRing /\\ A. r e. ( Base ` f ) A. x e. ( Base ` w ) A. y e. ( Base ` w ) [. ( .s ` w ) / s ]. [. ( .r ` w ) / t ]. ( ( ( r s x ) t y ) = ( r s ( x t y ) ) /\\ ( x t ( r s y ) ) = ( r s ( x t y ) ) ) ) } $.\n$d f r s t w x y $."
+}

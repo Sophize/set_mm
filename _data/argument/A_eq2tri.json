@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eq2tri on Metamath](http://us.metamath.org/mpegif/eq2tri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eq2tr.1 | |- ( A = C -> D = F ) |\n| 2 |  | eq2tr.2 | |- ( B = D -> C = G ) |\n| 3 |  | #P_ancom | |- ( ( A = C /\\ B = D ) <-> ( B = D /\\ A = C ) ) |\n| 4 | 1 | #P_eqeq2d | |- ( A = C -> ( B = D <-> B = F ) ) |\n| 5 | 4 | #P_pm5.32i | |- ( ( A = C /\\ B = D ) <-> ( A = C /\\ B = F ) ) |\n| 6 | 2 | #P_eqeq2d | |- ( B = D -> ( A = C <-> A = G ) ) |\n| 7 | 6 | #P_pm5.32i | |- ( ( B = D /\\ A = C ) <-> ( B = D /\\ A = G ) ) |\n| 8 | 3, 5, 7 | #P_3bitr3i | |- ( ( A = C /\\ B = F ) <-> ( B = D /\\ A = G ) ) |",
+  "conclusion" : "#P_eq2tri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cC", "#T_wi", "#T_cD", "#T_wceq", "#T_cF", "#T_cB", "#T_wceq", "#T_cD", "#T_wi", "#T_cC", "#T_wceq", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cB", "#T_wceq", "#T_cF", "#T_wb", "#T_cB", "#T_wceq", "#T_cD", "#T_wa", "#T_cA", "#T_wceq", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_pm5.32i", "#P_eqeq2d", "#P_3bitr3i" ]
+}

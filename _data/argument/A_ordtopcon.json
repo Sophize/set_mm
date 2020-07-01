@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordtopcon on Metamath](http://us.metamath.org/mpegif/ordtopcon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordtop | |- ( Ord J -> ( J e. Top <-> J =/= U. J ) ) |\n| 2 |  | #P_onsuccon | |- ( U. J e. On -> suc U. J e. Con ) |\n| 3 | 2 | #P_ordtoplem | |- ( Ord J -> ( J =/= U. J -> J e. Con ) ) |\n| 4 | 1, 3 | #P_sylbid | |- ( Ord J -> ( J e. Top -> J e. Con ) ) |\n| 5 |  | #P_contop | |- ( J e. Con -> J e. Top ) |\n| 6 | 4, 5 | #P_impbid1 | |- ( Ord J -> ( J e. Top <-> J e. Con ) ) |",
+  "conclusion" : "#P_ordtopcon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wne", "#T_cuni", "#T_cJ", "#T_cuni", "#T_cJ", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cuni", "#T_cJ", "#T_wcel", "#T_ccon", "#T_word", "#T_cJ", "#T_wi", "#T_cJ", "#T_wne", "#T_cuni", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ccon", "#T_word", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_wcel", "#T_ccon", "#T_cJ", "#T_wcel", "#T_ccon", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_word", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wcel", "#T_ccon" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordtoplem", "#P_onsuccon", "#P_sylbid", "#P_contop", "#P_impbid1", "#P_ordtop" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wlkntrl on Metamath](http://us.metamath.org/mpegif/wlkntrl.html)"
+  } ],
+  "names" : [ "wlkntrl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cpr--1", "#T_vx", "#T_cpr--2", "#T_vy", "#T_cpr--3", "#T_cE", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cpr--1", "#T_vx", "#T_cpr--2", "#T_vy", "#T_cpr--3", "#T_cop--3", "#T_csn--2", "#T_cF", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cc0", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_cc0", "#T_cop--3", "#T_cpr--3", "#T_cP", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_ctp--4", "#T_cF", "#T_cV", "#T_cwalk", "#T_cE", "#T_cP", "#T_wa", "#T_wn", "#T_cF", "#T_cV", "#T_ctrail", "#T_cE", "#T_cP", "#T_cF", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A walk which is not a trail:  In a graph with two vertices and one edge connecting these two vertices, to go from one edge to the other is a walk, but not a trail.  Notice that ` <. V , E >. ` is a simple graph (without loops) only if ` x =/= y ` .  (Contributed by Alexander van der Vekens, 22-Oct-2017.) ",
+  "statement" : "wlkntrl.v $e |- V = { x , y } $.\nwlkntrl.e $e |- E = { <. 0 , { x , y } >. } $.\nwlkntrl.f $e |- F = { <. 0 , 0 >. , <. 1 , 0 >. } $.\nwlkntrl.p $e |- P = { <. 0 , x >. , <. 1 , y >. , <. 2 , x >. } $.\nwlkntrl $p |- ( F ( V Walks E ) P /\\ -. F ( V Trails E ) P ) $.\n$d F x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See anordc on Metamath](http://us.metamath.org/mpegif/anordc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dcan | |- ( DECID ph -> ( DECID ps -> DECID ( ph /\\ ps ) ) ) |\n| 2 |  | #P_ianordc | |- ( DECID ph -> ( -. ( ph /\\ ps ) <-> ( -. ph \\/ -. ps ) ) ) |\n| 3 | 2 | #P_bicomd | |- ( DECID ph -> ( ( -. ph \\/ -. ps ) <-> -. ( ph /\\ ps ) ) ) |\n| 4 | 3 | #P_a1d | |- ( DECID ph -> ( DECID ( ph /\\ ps ) -> ( ( -. ph \\/ -. ps ) <-> -. ( ph /\\ ps ) ) ) ) |\n| 5 | 4 | #P_con2biddc | |- ( DECID ph -> ( DECID ( ph /\\ ps ) -> ( ( ph /\\ ps ) <-> -. ( -. ph \\/ -. ps ) ) ) ) |\n| 6 | 1, 5 | #P_syld | |- ( DECID ph -> ( DECID ps -> ( ( ph /\\ ps ) <-> -. ( -. ph \\/ -. ps ) ) ) ) |",
+  "conclusion" : "#P_anordc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wa", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ianordc", "#P_bicomd", "#P_dcan", "#P_con2biddc", "#P_syld", "#P_a1d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtdivd on Metamath](http://us.metamath.org/mpegif/sqrtdivd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqrcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | resqrcld.2 | |- ( ph -> 0 <_ A ) |\n| 3 |  | sqrdivd.3 | |- ( ph -> B e. RR+ ) |\n| 4 |  | #P_sqrtdiv | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ B e. RR+ ) -> ( sqrt ` ( A / B ) ) = ( ( sqrt ` A ) / ( sqrt ` B ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl21anc | |- ( ph -> ( sqrt ` ( A / B ) ) = ( ( sqrt ` A ) / ( sqrt ` B ) ) ) |",
+  "conclusion" : "#P_sqrtdivd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_cdiv", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_cA", "#T_cdiv", "#T_csqrt", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqrtdiv", "#P_syl21anc" ]
+}

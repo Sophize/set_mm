@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See usgraexmplc on Metamath](http://us.metamath.org/mpegif/usgraexmplc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | usgraexmpl.v | |- V = ( 0 ... 4 ) |\n| 2 |  | usgraexmpl.e | |- E = <\" { 0 , 1 } { 1 , 2 } { 2 , 0 } { 0 , 3 } \"> |\n| 3 |  | usgraexmplc.g | |- G = <. V , E >. |\n| 4 | 1, 2 | #P_usgraexmpl | |- V USGrph E |\n| 5 |  | #P_df-br | |- ( V USGrph E <-> <. V , E >. e. USGrph ) |\n| 6 | 4, 5 | #P_mpbi | |- <. V , E >. e. USGrph |\n| 7 | 3, 6 | #P_eqeltri | |- G e. USGrph |",
+  "conclusion" : "#P_usgraexmplc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cc0", "#T_cfz", "#T_c4", "#T_cE", "#T_wceq", "#T_cs4--1", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_c2", "#T_cpr--3", "#T_cpr--1", "#T_c2", "#T_cpr--2", "#T_cc0", "#T_cpr--3", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c3", "#T_cpr--3", "#T_cs4--2", "#T_cG", "#T_wceq", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_cV", "#T_cusg", "#T_cE", "#T_cV", "#T_cusg", "#T_cE", "#T_wb", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wcel", "#T_cusg", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_wcel", "#T_cusg", "#T_cG", "#T_wcel", "#T_cusg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_eqeltri", "#P_usgraexmpl", "#P_mpbi" ]
+}

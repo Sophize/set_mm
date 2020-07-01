@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvlmcl on Metamath](http://us.metamath.org/mpegif/nvlmcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvlmcl.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvlmcl.2 | |- D = ( IndMet ` U ) |\n| 3 |  | nvlmcl.3 | |- J = ( MetOpen ` D ) |\n| 4 | 1, 2 | #P_imsxmet | |- ( U e. NrmCVec -> D e. ( *Met ` X ) ) |\n| 5 | 3 | #P_mopntopon | |- ( D e. ( *Met ` X ) -> J e. ( TopOn ` X ) ) |\n| 6 | 4, 5 | #P_syl | |- ( U e. NrmCVec -> J e. ( TopOn ` X ) ) |\n| 7 |  | #P_lmcl | |- ( ( J e. ( TopOn ` X ) /\\ F ( ~~>t ` J ) P ) -> P e. X ) |\n| 8 | 6, 7 | #P_sylan | |- ( ( U e. NrmCVec /\\ F ( ~~>t ` J ) P ) -> P e. X ) |",
+  "conclusion" : "#P_nvlmcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cF", "#T_clm", "#T_cfv", "#T_cJ", "#T_cP", "#T_wi", "#T_cP", "#T_wcel", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cF", "#T_clm", "#T_cfv", "#T_cJ", "#T_cP", "#T_wi", "#T_cP", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_lmcl", "#P_imsxmet", "#P_syl", "#P_mopntopon" ]
+}

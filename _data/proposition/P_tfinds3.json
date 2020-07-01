@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfinds3 on Metamath](http://us.metamath.org/mpegif/tfinds3.html)"
+  } ],
+  "names" : [ "tfinds3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wet", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_con0", "#T_wi", "#T_wet", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wlim", "#T_vx", "#T_wi", "#T_wet", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_wet", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wet", "#T_vx", "#T_vy", "#T_wph", "#T_vy", "#T_wta", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Transfinite Induction (inference schema), using implicit substitutions.  The first four hypotheses establish the substitutions we need.  The last three are the basis, the induction step for successors, and the induction step for limit ordinals.  (Contributed by NM, 6-Jan-2005.)  (Revised by David Abernethy, 21-Jun-2011.) ",
+  "statement" : "tfinds3.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\ntfinds3.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\ntfinds3.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\ntfinds3.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\ntfinds3.5 $e |- ( et -> ps ) $.\ntfinds3.6 $e |- ( y e. On -> ( et -> ( ch -> th ) ) ) $.\ntfinds3.7 $e |- ( Lim x -> ( et -> ( A. y e. x ch -> ph ) ) ) $.\ntfinds3 $p |- ( A e. On -> ( et -> ta ) ) $.\n$d A x $.\n$d ch x $.\n$d et x y $.\n$d ph y $.\n$d ta x $."
+}

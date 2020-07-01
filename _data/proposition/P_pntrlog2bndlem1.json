@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pntrlog2bndlem1 on Metamath](http://us.metamath.org/mpegif/pntrlog2bndlem1.html)"
+  } ],
+  "names" : [ "pntrlog2bndlem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_csu--1", "#T_vi", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_va", "#T_cvma", "#T_cfv", "#T_vi", "#T_cmul", "#T_clog", "#T_cfv", "#T_vi", "#T_caddc", "#T_cchp", "#T_cfv", "#T_va", "#T_cdiv", "#T_vi", "#T_cR", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_cchp", "#T_cfv", "#T_va", "#T_cmin", "#T_va", "#T_vx", "#T_cmpt--1", "#T_c1", "#T_cioo", "#T_cpnf", "#T_cmpt--2", "#T_cabs", "#T_cfv", "#T_cR", "#T_cfv", "#T_vx", "#T_cmul", "#T_clog", "#T_cfv", "#T_vx", "#T_cmin", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_cabs", "#T_cfv", "#T_cR", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vn", "#T_cmul", "#T_cS", "#T_cfv", "#T_vn", "#T_cmin", "#T_cS", "#T_cfv", "#T_vn", "#T_cmin", "#T_c1", "#T_cdiv", "#T_clog", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vx", "#T_wcel", "#T_clo1", "#T_cR", "#T_vn", "#T_vx", "#T_cS", "#T_vn", "#T_vx", "#T_va", "#T_vi", "#T_vn", "#T_vx", "#T_vn", "#T_vx", "#T_vn", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The sum of ~ selberg3r and ~ selberg4r .  (Contributed by Mario Carneiro, 31-May-2016.) ",
+  "statement" : "pntsval.1 $e |- S = ( a e. RR |-> sum_ i e. ( 1 ... ( |_ ` a ) ) ( ( Lam ` i ) x. ( ( log ` i ) + ( psi ` ( a / i ) ) ) ) ) $.\npntrlog2bnd.r $e |- R = ( a e. RR+ |-> ( ( psi ` a ) - a ) ) $.\npntrlog2bndlem1 $p |- ( x e. ( 1 (,) +oo ) |-> ( ( ( ( abs ` ( R ` x ) ) x. ( log ` x ) ) - ( sum_ n e. ( 1 ... ( |_ ` x ) ) ( ( abs ` ( R ` ( x / n ) ) ) x. ( ( S ` n ) - ( S ` ( n - 1 ) ) ) ) / ( log ` x ) ) ) / x ) ) e. <_O(1) $.\n$d R n x $.\n$d S n x $.\n$d a i n x $.\n$d n x $.\n$d n x $."
+}

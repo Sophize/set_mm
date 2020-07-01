@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islnm on Metamath](http://us.metamath.org/mpegif/islnm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | islnm.s | |- S = ( LSubSp ` M ) |\n| 2 |  | #P_fveq2 | |- ( w = M -> ( LSubSp ` w ) = ( LSubSp ` M ) ) |\n| 3 | 2, 1 | #P_syl6eqr | |- ( w = M -> ( LSubSp ` w ) = S ) |\n| 4 |  | #P_oveq1 | |- ( w = M -> ( w |`s i ) = ( M |`s i ) ) |\n| 5 | 4 | #P_eleq1d | |- ( w = M -> ( ( w |`s i ) e. LFinGen <-> ( M |`s i ) e. LFinGen ) ) |\n| 6 | 3, 5 | #P_raleqbidv | |- ( w = M -> ( A. i e. ( LSubSp ` w ) ( w |`s i ) e. LFinGen <-> A. i e. S ( M |`s i ) e. LFinGen ) ) |\n| 7 |  | #P_df-lnm | |- LNoeM = { w e. LMod | A. i e. ( LSubSp ` w ) ( w |`s i ) e. LFinGen } |\n| 8 | 6, 7 | #P_elrab2 | |- ( M e. LNoeM <-> ( M e. LMod /\\ A. i e. S ( M |`s i ) e. LFinGen ) ) |",
+  "conclusion" : "#P_islnm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cM", "#T_vw", "#T_wceq", "#T_cM", "#T_wi", "#T_clss", "#T_cfv", "#T_vw", "#T_wceq", "#T_clss", "#T_cfv", "#T_cM", "#T_vw", "#T_wceq", "#T_cM", "#T_wi", "#T_clss", "#T_cfv", "#T_vw", "#T_wceq", "#T_cS", "#T_vw", "#T_wceq", "#T_cM", "#T_wi", "#T_vw", "#T_cress", "#T_vi", "#T_wceq", "#T_cM", "#T_cress", "#T_vi", "#T_vw", "#T_wceq", "#T_cM", "#T_wi", "#T_vw", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig", "#T_wb", "#T_cM", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig", "#T_vw", "#T_wceq", "#T_cM", "#T_wi", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_clss", "#T_cfv", "#T_vw", "#T_vw", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig", "#T_wb", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cS", "#T_cM", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig", "#T_clnm", "#T_wceq", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_clmod", "#T_crab--3", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_clss", "#T_cfv", "#T_vw", "#T_vw", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig", "#T_crab--4", "#T_cM", "#T_wcel", "#T_clnm", "#T_wb", "#T_cM", "#T_wcel", "#T_clmod", "#T_wa", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cS", "#T_cM", "#T_cress", "#T_vi", "#T_wcel", "#T_clfig" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_df-lnm", "#P_oveq1", "#P_fveq2", "#P_syl6eqr", "#P_eleq1d", "#P_raleqbidv" ]
+}

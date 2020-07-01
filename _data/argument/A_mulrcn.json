@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulrcn on Metamath](http://us.metamath.org/mpegif/mulrcn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulrcn.j | |- J = ( TopOpen ` R ) |\n| 2 |  | mulrcn.t | |- T = ( +f ` ( mulGrp ` R ) ) |\n| 3 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 4 | 3 | #P_trgtmd | |- ( R e. TopRing -> ( mulGrp ` R ) e. TopMnd ) |\n| 5 | 3, 1 | #P_mgptopn | |- J = ( TopOpen ` ( mulGrp ` R ) ) |\n| 6 | 5, 2 | #P_tmdcn | |- ( ( mulGrp ` R ) e. TopMnd -> T e. ( ( J tX J ) Cn J ) ) |\n| 7 | 4, 6 | #P_syl | |- ( R e. TopRing -> T e. ( ( J tX J ) Cn J ) ) |",
+  "conclusion" : "#P_mulrcn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cR", "#T_cT", "#T_wceq", "#T_cplusf", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ctrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ctmd", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ctmd", "#T_wi", "#T_cT", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cR", "#T_wcel", "#T_ctrg", "#T_wi", "#T_cT", "#T_wcel", "#T_cJ", "#T_ctx", "#T_cJ", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_trgtmd", "#P_tmdcn", "#P_syl", "#P_mgptopn" ]
+}

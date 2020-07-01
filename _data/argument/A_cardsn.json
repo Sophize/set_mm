@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardsn on Metamath](http://us.metamath.org/mpegif/cardsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- { A } = { A } |\n| 2 |  | #P_sneq | |- ( x = A -> { x } = { A } ) |\n| 3 | 2 | #P_eqeq2d | |- ( x = A -> ( { A } = { x } <-> { A } = { A } ) ) |\n| 4 | 3 | #P_spcegv | |- ( A e. V -> ( { A } = { A } -> E. x { A } = { x } ) ) |\n| 5 | 1, 4 | #P_mpi | |- ( A e. V -> E. x { A } = { x } ) |\n| 6 |  | #P_card1 | |- ( ( card ` { A } ) = 1o <-> E. x { A } = { x } ) |\n| 7 | 5, 6 | #P_sylibr | |- ( A e. V -> ( card ` { A } ) = 1o ) |",
+  "conclusion" : "#P_cardsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_wex", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wex", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_ccrd", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_c1o", "#T_wb", "#T_wex", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_ccrd", "#T_cfv", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wceq", "#T_c1o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eqeq2d", "#P_sneq", "#P_card1", "#P_sylibr", "#P_mpi", "#P_spcegv" ]
+}

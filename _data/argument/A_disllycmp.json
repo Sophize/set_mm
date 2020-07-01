@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See disllycmp on Metamath](http://us.metamath.org/mpegif/disllycmp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_snfi | |- { x } e. Fin |\n| 2 |  | #P_discmp | |- ( { x } e. Fin <-> ~P { x } e. Comp ) |\n| 3 | 1, 2 | #P_mpbi | |- ~P { x } e. Comp |\n| 4 | 3 | #P_rgenw | |- A. x e. X ~P { x } e. Comp |\n| 5 |  | #P_dislly | |- ( X e. V -> ( ~P X e. Locally Comp <-> A. x e. X ~P { x } e. Comp ) ) |\n| 6 | 4, 5 | #P_mpbiri | |- ( X e. V -> ~P X e. Locally Comp ) |",
+  "conclusion" : "#P_disllycmp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_ccmp", "#T_cpw", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_ccmp", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_cpw", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_ccmp", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cpw", "#T_cX", "#T_wcel", "#T_clly", "#T_ccmp", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_cpw", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_ccmp", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cpw", "#T_cX", "#T_wcel", "#T_clly", "#T_ccmp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_discmp", "#P_mpbiri", "#P_dislly", "#P_mpbi", "#P_rgenw", "#P_snfi" ]
+}

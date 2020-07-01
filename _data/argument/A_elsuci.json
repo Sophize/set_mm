@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elsuci on Metamath](http://us.metamath.org/mpegif/elsuci.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-suc | |- suc B = ( B u. { B } ) |\n| 2 | 1 | #P_eleq2i | |- ( A e. suc B <-> A e. ( B u. { B } ) ) |\n| 3 |  | #P_elun | |- ( A e. ( B u. { B } ) <-> ( A e. B \\/ A e. { B } ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( A e. suc B <-> ( A e. B \\/ A e. { B } ) ) |\n| 5 |  | #P_elsni | |- ( A e. { B } -> A = B ) |\n| 6 | 5 | #P_orim2i | |- ( ( A e. B \\/ A e. { B } ) -> ( A e. B \\/ A = B ) ) |\n| 7 | 4, 6 | #P_sylbi | |- ( A e. suc B -> ( A e. B \\/ A = B ) ) |",
+  "conclusion" : "#P_elsuci",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csuc", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_csuc", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wo", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2i", "#P_df-suc", "#P_elun", "#P_orim2i", "#P_bitri", "#P_sylbi", "#P_elsni" ]
+}

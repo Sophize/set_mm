@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ioopos on Metamath](http://us.metamath.org/mpegif/ioopos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0xr | |- 0 e. RR* |\n| 2 |  | #P_pnfxr | |- +oo e. RR* |\n| 3 |  | #P_iooval2 | |- ( ( 0 e. RR* /\\ +oo e. RR* ) -> ( 0 (,) +oo ) = { x e. RR | ( 0 < x /\\ x < +oo ) } ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( 0 (,) +oo ) = { x e. RR | ( 0 < x /\\ x < +oo ) } |\n| 5 |  | #P_ltpnf | |- ( x e. RR -> x < +oo ) |\n| 6 | 5 | #P_biantrud | |- ( x e. RR -> ( 0 < x <-> ( 0 < x /\\ x < +oo ) ) ) |\n| 7 | 6 | #P_rabbiia | |- { x e. RR | 0 < x } = { x e. RR | ( 0 < x /\\ x < +oo ) } |\n| 8 | 4, 7 | #P_eqtr4i | |- ( 0 (,) +oo ) = { x e. RR | 0 < x } |",
+  "conclusion" : "#P_ioopos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cxr", "#T_cpnf", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wa", "#T_cpnf", "#T_wcel", "#T_cxr", "#T_wi", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wb", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cc0", "#T_clt", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_clt", "#T_cpnf", "#T_crab--4", "#T_cc0", "#T_cioo", "#T_cpnf", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cc0", "#T_clt", "#T_vx", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iooval2", "#P_eqtr4i", "#P_mp2an", "#P_0xr", "#P_pnfxr", "#P_biantrud", "#P_rabbiia", "#P_ltpnf" ]
+}

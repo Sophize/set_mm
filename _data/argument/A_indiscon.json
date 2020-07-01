@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See indiscon on Metamath](http://us.metamath.org/mpegif/indiscon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_indistop | |- { (/) , A } e. Top |\n| 2 |  | #P_inss1 | |- ( { (/) , A } i^i ( Clsd ` { (/) , A } ) ) C_ { (/) , A } |\n| 3 |  | #P_indislem | |- { (/) , ( _I ` A ) } = { (/) , A } |\n| 4 | 2, 3 | #P_sseqtr4i | |- ( { (/) , A } i^i ( Clsd ` { (/) , A } ) ) C_ { (/) , ( _I ` A ) } |\n| 5 |  | #P_indisuni | |- ( _I ` A ) = U. { (/) , A } |\n| 6 | 5 | #P_iscon2 | |- ( { (/) , A } e. Con <-> ( { (/) , A } e. Top /\\ ( { (/) , A } i^i ( Clsd ` { (/) , A } ) ) C_ { (/) , ( _I ` A ) } ) ) |\n| 7 | 1, 4, 6 | #P_mpbir2an | |- { (/) , A } e. Con |",
+  "conclusion" : "#P_indiscon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctop", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cin", "#T_ccld", "#T_cfv", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wss", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cin", "#T_ccld", "#T_cfv", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wss", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ccon", "#T_wb", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctop", "#T_wa", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cin", "#T_ccld", "#T_cfv", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wss", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA", "#T_cpr--3", "#T_wcel", "#T_ccon" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_indisuni", "#P_indislem", "#P_iscon2", "#P_indistop", "#P_mpbir2an", "#P_sseqtr4i", "#P_inss1" ]
+}

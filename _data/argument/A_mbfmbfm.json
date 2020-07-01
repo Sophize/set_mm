@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mbfmbfm on Metamath](http://us.metamath.org/mpegif/mbfmbfm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mbfmbfm.1 | |- ( ph -> M e. U. ran measures ) |\n| 2 |  | mbfmbfm.2 | |- ( ph -> J e. Top ) |\n| 3 |  | mbfmbfm.3 | |- ( ph -> F e. ( dom M MblFnM ( sigaGen ` J ) ) ) |\n| 4 |  | #P_measbasedom | |- ( M e. U. ran measures <-> M e. ( measures ` dom M ) ) |\n| 5 | 4 | #P_biimpi | |- ( M e. U. ran measures -> M e. ( measures ` dom M ) ) |\n| 6 |  | #P_measbase | |- ( M e. ( measures ` dom M ) -> dom M e. U. ran sigAlgebra ) |\n| 7 | 1, 5, 6 | #P_3syl | |- ( ph -> dom M e. U. ran sigAlgebra ) |\n| 8 | 2 | #P_sgsiga | |- ( ph -> ( sigaGen ` J ) e. U. ran sigAlgebra ) |\n| 9 | 7, 8, 3 | #P_isanmbfm | |- ( ph -> F e. U. ran MblFnM ) |",
+  "conclusion" : "#P_mbfmbfm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cdm", "#T_cM", "#T_cmbfm", "#T_csigagen", "#T_cfv", "#T_cJ", "#T_cM", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_wb", "#T_cM", "#T_wcel", "#T_cmeas", "#T_cfv", "#T_cdm", "#T_cM", "#T_cM", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmeas", "#T_wi", "#T_cM", "#T_wcel", "#T_cmeas", "#T_cfv", "#T_cdm", "#T_cM", "#T_cM", "#T_wcel", "#T_cmeas", "#T_cfv", "#T_cdm", "#T_cM", "#T_wi", "#T_cdm", "#T_cM", "#T_wcel", "#T_cuni", "#T_crn", "#T_csiga", "#T_wph", "#T_wi", "#T_cdm", "#T_cM", "#T_wcel", "#T_cuni", "#T_crn", "#T_csiga", "#T_wph", "#T_wi", "#T_csigagen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cuni", "#T_crn", "#T_csiga", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cuni", "#T_crn", "#T_cmbfm" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sgsiga", "#P_3syl", "#P_measbase", "#P_measbasedom", "#P_isanmbfm", "#P_biimpi" ]
+}

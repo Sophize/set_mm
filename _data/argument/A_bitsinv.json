@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bitsinv on Metamath](http://us.metamath.org/mpegif/bitsinv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bitsinv.k | |- K = `' ( bits |` NN0 ) |\n| 2 |  | #P_sumeq1 | |- ( x = A -> sum_ k e. x ( 2 ^ k ) = sum_ k e. A ( 2 ^ k ) ) |\n| 3 |  | #P_bitsf1ocnv | |- ( ( bits |` NN0 ) : NN0 -1-1-onto-> ( ~P NN0 i^i Fin ) /\\ `' ( bits |` NN0 ) = ( x e. ( ~P NN0 i^i Fin ) |-> sum_ k e. x ( 2 ^ k ) ) ) |\n| 4 | 3 | #P_simpri | |- `' ( bits |` NN0 ) = ( x e. ( ~P NN0 i^i Fin ) |-> sum_ k e. x ( 2 ^ k ) ) |\n| 5 | 1, 4 | #P_eqtri | |- K = ( x e. ( ~P NN0 i^i Fin ) |-> sum_ k e. x ( 2 ^ k ) ) |\n| 6 |  | #P_sumex | |- sum_ k e. A ( 2 ^ k ) e. _V |\n| 7 | 2, 5, 6 | #P_fvmpt | |- ( A e. ( ~P NN0 i^i Fin ) -> ( K ` A ) = sum_ k e. A ( 2 ^ k ) ) |",
+  "conclusion" : "#P_bitsinv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cK", "#T_wceq", "#T_ccnv", "#T_cbits", "#T_cres", "#T_cn0", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_vx.wal", "#T_c2", "#T_cexp", "#T_vk", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA.wceq", "#T_c2", "#T_cexp", "#T_vk", "#T_cbits", "#T_cres", "#T_cn0", "#T_wf1o--1", "#T_cn0", "#T_wf1o--2", "#T_cpw", "#T_cn0", "#T_cin", "#T_cfn", "#T_wa", "#T_ccnv", "#T_cbits", "#T_cres", "#T_cn0", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cn0", "#T_cin", "#T_cfn", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_vx.wal", "#T_c2", "#T_cexp", "#T_vk", "#T_ccnv", "#T_cbits", "#T_cres", "#T_cn0", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cn0", "#T_cin", "#T_cfn", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_vx.wal", "#T_c2", "#T_cexp", "#T_vk", "#T_cK", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cn0", "#T_cin", "#T_cfn", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_vx.wal", "#T_c2", "#T_cexp", "#T_vk", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA.wceq", "#T_c2", "#T_cexp", "#T_vk", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cpw", "#T_cn0", "#T_cin", "#T_cfn", "#T_wi", "#T_cK", "#T_cfv", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_c2", "#T_cexp", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_simpri", "#P_fvmpt", "#P_sumeq1", "#P_bitsf1ocnv", "#P_sumex" ]
+}

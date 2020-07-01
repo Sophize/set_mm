@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mul2negi on Metamath](http://us.metamath.org/mpegif/mul2negi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulm1.1 | |- A e. CC |\n| 2 |  | mulneg.2 | |- B e. CC |\n| 3 |  | #P_mul2neg | |- ( ( A e. CC /\\ B e. CC ) -> ( -u A x. -u B ) = ( A x. B ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( -u A x. -u B ) = ( A x. B ) |",
+  "conclusion" : "#P_mul2negi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmul", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cneg", "#T_cA", "#T_cmul", "#T_cneg", "#T_cB", "#T_wceq", "#T_cA", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_mul2neg" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kqfval on Metamath](http://us.metamath.org/mpegif/kqfval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | kqval.2 | |- F = ( x e. X |-> { y e. J | x e. y } ) |\n| 2 |  | #P_id | |- ( A e. X -> A e. X ) |\n| 3 |  | #P_rabexg | |- ( J e. V -> { y e. J | A e. y } e. _V ) |\n| 4 |  | #P_eleq1 | |- ( x = A -> ( x e. y <-> A e. y ) ) |\n| 5 | 4 | #P_rabbidv | |- ( x = A -> { y e. J | x e. y } = { y e. J | A e. y } ) |\n| 6 | 5, 1 | #P_fvmptg | |- ( ( A e. X /\\ { y e. J | A e. y } e. _V ) -> ( F ` A ) = { y e. J | A e. y } ) |\n| 7 | 2, 3, 6 | #P_syl2anr | |- ( ( J e. V /\\ A e. X ) -> ( F ` A ) = { y e. J | A e. y } ) |",
+  "conclusion" : "#P_kqfval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_vx", "#T_wcel", "#T_vy", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_cJ", "#T_wcel", "#T_cV", "#T_wi", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wa", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vy.tru", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_cV", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cJ", "#T_crab--3", "#T_cA", "#T_wcel", "#T_vy", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmptg", "#P_rabexg", "#P_eleq1", "#P_rabbidv", "#P_syl2anr", "#P_id" ]
+}

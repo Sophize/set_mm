@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sstri on Metamath](http://us.metamath.org/mpegif/sstri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sstri.1 | |- A C_ B |\n| 2 |  | sstri.2 | |- B C_ C |\n| 3 |  | #P_sstr2 | |- ( A C_ B -> ( B C_ C -> A C_ C ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- A C_ C |",
+  "conclusion" : "#P_sstri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wss", "#T_cB", "#T_cB", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cA", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_mp2" ]
+}

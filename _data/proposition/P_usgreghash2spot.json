@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See usgreghash2spot on Metamath](http://us.metamath.org/mpegif/usgreghash2spot.html)"
+  } ],
+  "names" : [ "usgreghash2spot" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cV", "#T_wne", "#T_c0", "#T_wi", "#T_wral--1", "#T_vv", "#T_wral--2", "#T_cV", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_vv", "#T_wceq", "#T_cK", "#T_wi", "#T_chash", "#T_cfv", "#T_cV", "#T_c2spthot", "#T_cE", "#T_wceq", "#T_chash", "#T_cfv", "#T_cV", "#T_cmul", "#T_cK", "#T_cmul", "#T_cK", "#T_cmin", "#T_c1", "#T_cE", "#T_vv", "#T_cK", "#T_vv", "#T_cV", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a finite k-regular graph with N vertices there are N times \" ` k ` choose 2 \" paths with length 2, according to statement 8 in [Huneke] p. 2:  \"... giving n * ( k 2 ) total paths of length two.\", if the direction of traversing the path is not respected.  For simple paths of length 2 represented by ordered triples, however, we have again n*k*(k-1) such paths.  (Contributed by Alexander van der Vekens, 11-Mar-2018.) ",
+  "statement" : "usgreghash2spot $p |- ( ( V USGrph E /\\ V e. Fin /\\ V =/= (/) ) -> ( A. v e. V ( ( V VDeg E ) ` v ) = K -> ( # ` ( V 2SPathsOt E ) ) = ( ( # ` V ) x. ( K x. ( K - 1 ) ) ) ) ) $.\n$d E v $.\n$d K v $.\n$d V v $."
+}

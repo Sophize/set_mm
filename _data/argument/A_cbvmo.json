@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvmo on Metamath](http://us.metamath.org/mpegif/cbvmo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvmo.1 | |- F/ y ph |\n| 2 |  | cbvmo.2 | |- F/ x ps |\n| 3 |  | cbvmo.3 | |- ( x = y -> ( ph <-> ps ) ) |\n| 4 | 1, 2, 3 | #P_cbvex | |- ( E. x ph <-> E. y ps ) |\n| 5 | 1, 2, 3 | #P_cbveu | |- ( E! x ph <-> E! y ps ) |\n| 6 | 4, 5 | #P_imbi12i | |- ( ( E. x ph -> E! x ph ) <-> ( E. y ps -> E! y ps ) ) |\n| 7 |  | #P_df-mo | |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) |\n| 8 |  | #P_df-mo | |- ( E* y ps <-> ( E. y ps -> E! y ps ) ) |\n| 9 | 6, 7, 8 | #P_3bitr4i | |- ( E* x ph <-> E* y ps ) |",
+  "conclusion" : "#P_cbvmo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_weu", "#T_vy.tru", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wi", "#T_weu", "#T_vy.tru", "#T_wps", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wmo", "#T_vy.tru", "#T_wps", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wi", "#T_weu", "#T_vy.tru", "#T_wps", "#T_wmo", "#T_vx", "#T_wph", "#T_wb", "#T_wmo", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cbvex", "#P_df-mo", "#P_3bitr4i", "#P_imbi12i", "#P_cbveu" ]
+}

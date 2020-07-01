@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-met on Metamath](http://us.metamath.org/mpegif/df-met.html)"
+  } ],
+  "names" : [ "df-met" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cme", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vd", "#T_crab--2", "#T_cr", "#T_cmap", "#T_vx", "#T_cxp", "#T_vx", "#T_crab--3", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vx", "#T_vy", "#T_vd", "#T_vz", "#T_wceq", "#T_cc0", "#T_wb", "#T_vy", "#T_wceq", "#T_vz", "#T_wa", "#T_wral--1", "#T_vw", "#T_wral--2", "#T_vx", "#T_vy", "#T_vd", "#T_vz", "#T_cle", "#T_vw", "#T_vd", "#T_vy", "#T_caddc", "#T_vw", "#T_vd", "#T_vz", "#T_crab--4", "#T_vd", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the (proper) class of all metrics.  (A metric space is the metric's base set paired with the metric; see ~ df-ms .  However, we will often also call the metric itself a \"metric space\".)  Equivalent to Definition 14-1.1 of [Gleason] p. 223.  The 4 properties in Gleason's definition are shown by ~ met0 , ~ metgt0 , ~ metsym , and ~ mettri . (Contributed by NM, 25-Aug-2006.) ",
+  "statement" : "df-met $p |- Met = ( x e. _V |-> { d e. ( RR ^m ( x X. x ) ) | A. y e. x A. z e. x ( ( ( y d z ) = 0 <-> y = z ) /\\ A. w e. x ( y d z ) <_ ( ( w d y ) + ( w d z ) ) ) } ) $.\n$d d w x y z $."
+}

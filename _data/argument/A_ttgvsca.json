@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ttgvsca on Metamath](http://us.metamath.org/mpegif/ttgvsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ttgval.n | |- G = ( toTG ` H ) |\n| 2 |  | ttgvsca.1 | |- .x. = ( .s ` H ) |\n| 3 |  | #P_df-vsca | |- .s = Slot 6 |\n| 4 |  | #P_6nn | |- 6 e. NN |\n| 5 |  | #P_1nn | |- 1 e. NN |\n| 6 |  | #P_6nn0 | |- 6 e. NN0 |\n| 7 |  | #P_6lt10 | |- 6 < 10 |\n| 8 | 5, 6, 6, 7 | #P_declti | |- 6 < ; 1 6 |\n| 9 | 1, 3, 4, 8 | #P_ttglem | |- ( .s ` H ) = ( .s ` G ) |\n| 10 | 2, 9 | #P_eqtri | |- .x. = ( .s ` G ) |",
+  "conclusion" : "#P_ttgvsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cttg", "#T_cfv", "#T_cH", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cH", "#T_cvsca", "#T_wceq", "#T_cslot", "#T_c6", "#T_c6", "#T_wcel", "#T_cn", "#T_c1", "#T_wcel", "#T_cn", "#T_c6", "#T_wcel", "#T_cn0", "#T_c6", "#T_clt", "#T_c10", "#T_c6", "#T_clt", "#T_cdc", "#T_c1", "#T_c6", "#T_cvsca", "#T_cfv", "#T_cH", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cG", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ttglem", "#P_eqtri", "#P_1nn", "#P_6nn", "#P_6lt10", "#P_declti", "#P_6nn0", "#P_df-vsca" ]
+}

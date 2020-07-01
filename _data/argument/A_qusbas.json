@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qusbas on Metamath](http://us.metamath.org/mpegif/qusbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qusbas.u | |- ( ph -> U = ( R /s .~ ) ) |\n| 2 |  | qusbas.v | |- ( ph -> V = ( Base ` R ) ) |\n| 3 |  | qusbas.e | |- ( ph -> .~ e. W ) |\n| 4 |  | qusbas.r | |- ( ph -> R e. Z ) |\n| 5 |  | #P_eqid | |- ( x e. V |-> [ x ] .~ ) = ( x e. V |-> [ x ] .~ ) |\n| 6 | 1, 2, 5, 3, 4 | #P_qusval | |- ( ph -> U = ( ( x e. V |-> [ x ] .~ ) \"s R ) ) |\n| 7 | 1, 2, 5, 3, 4 | #P_quslem | |- ( ph -> ( x e. V |-> [ x ] .~ ) : V -onto-> ( V /. .~ ) ) |\n| 8 | 6, 2, 7, 4 | #P_imasbas | |- ( ph -> ( V /. .~ ) = ( Base ` U ) ) |",
+  "conclusion" : "#P_qusbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_cR", "#T_cqus", "#T_c.sm", "#T_wph", "#T_wi", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_wph", "#T_wi", "#T_c.sm", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cZ", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_c.sm", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_c.sm", "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_c.sm", "#T_cimas", "#T_cR", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_cec--1", "#T_vx.wal", "#T_cec--2", "#T_c.sm", "#T_wfo--1", "#T_cV", "#T_wfo--2", "#T_cV", "#T_cqs", "#T_c.sm", "#T_wph", "#T_wi", "#T_cV", "#T_cqs", "#T_c.sm", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_quslem", "#P_imasbas", "#P_qusval" ]
+}

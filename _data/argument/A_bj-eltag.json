@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-eltag on Metamath](http://us.metamath.org/mpegif/bj-eltag.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-tag | |- tag B = ( sngl B u. { (/) } ) |\n| 2 | 1 | #P_eleq2i | |- ( A e. tag B <-> A e. ( sngl B u. { (/) } ) ) |\n| 3 |  | #P_elun | |- ( A e. ( sngl B u. { (/) } ) <-> ( A e. sngl B \\/ A e. { (/) } ) ) |\n| 4 |  | #P_bj-elsngl | |- ( A e. sngl B <-> E. x e. B A = { x } ) |\n| 5 |  | #P_0ex | |- (/) e. _V |\n| 6 | 5 | #P_elsnc2 | |- ( A e. { (/) } <-> A = (/) ) |\n| 7 | 4, 6 | #P_orbi12i | |- ( ( A e. sngl B \\/ A e. { (/) } ) <-> ( E. x e. B A = { x } \\/ A = (/) ) ) |\n| 8 | 2, 3, 7 | #P_3bitri | |- ( A e. tag B <-> ( E. x e. B A = { x } \\/ A = (/) ) ) |",
+  "conclusion" : "#P_bj-eltag",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_bj-ctag", "#T_cB.wceq", "#T_wceq", "#T_bj-csngl", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_bj-ctag", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_bj-csngl", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_bj-csngl", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_bj-csngl", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_bj-csngl", "#T_cB.wceq", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_c0", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_bj-csngl", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_wcel", "#T_bj-ctag", "#T_cB", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_cA", "#T_wceq", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wo", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-elsngl", "#P_orbi12i", "#P_3bitri", "#P_eleq2i", "#P_elsnc2", "#P_df-bj-tag", "#P_elun", "#P_0ex" ]
+}

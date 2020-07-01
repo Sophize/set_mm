@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0ge0 on Metamath](http://us.metamath.org/mpegif/nn0ge0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elnn0 | |- ( N e. NN0 <-> ( N e. NN \\/ N = 0 ) ) |\n| 2 |  | #P_nnre | |- ( N e. NN -> N e. RR ) |\n| 3 |  | #P_nngt0 | |- ( N e. NN -> 0 < N ) |\n| 4 |  | #P_0re | |- 0 e. RR |\n| 5 |  | #P_ltle | |- ( ( 0 e. RR /\\ N e. RR ) -> ( 0 < N -> 0 <_ N ) ) |\n| 6 | 4, 5 | #P_mpan | |- ( N e. RR -> ( 0 < N -> 0 <_ N ) ) |\n| 7 | 2, 3, 6 | #P_sylc | |- ( N e. NN -> 0 <_ N ) |\n| 8 |  | #P_0le0 | |- 0 <_ 0 |\n| 9 |  | #P_breq2 | |- ( N = 0 -> ( 0 <_ N <-> 0 <_ 0 ) ) |\n| 10 | 8, 9 | #P_mpbiri | |- ( N = 0 -> 0 <_ N ) |\n| 11 | 7, 10 | #P_jaoi | |- ( ( N e. NN \\/ N = 0 ) -> 0 <_ N ) |\n| 12 | 1, 11 | #P_sylbi | |- ( N e. NN0 -> 0 <_ N ) |",
+  "conclusion" : "#P_nn0ge0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn0", "#T_wb", "#T_cN", "#T_wcel", "#T_cn", "#T_wo", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cc0", "#T_cle", "#T_cc0", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_wb", "#T_cc0", "#T_cle", "#T_cc0", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wo", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylc", "#P_mpbiri", "#P_0le0", "#P_breq2", "#P_nngt0", "#P_ltle", "#P_nnre", "#P_mpan", "#P_jaoi", "#P_elnn0", "#P_0re", "#P_sylbi" ]
+}

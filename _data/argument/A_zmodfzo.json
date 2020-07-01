@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zmodfzo on Metamath](http://us.metamath.org/mpegif/zmodfzo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zmodfz | |- ( ( A e. ZZ /\\ B e. NN ) -> ( A mod B ) e. ( 0 ... ( B - 1 ) ) ) |\n| 2 |  | #P_nnz | |- ( B e. NN -> B e. ZZ ) |\n| 3 |  | #P_fzoval | |- ( B e. ZZ -> ( 0 ..^ B ) = ( 0 ... ( B - 1 ) ) ) |\n| 4 | 2, 3 | #P_syl | |- ( B e. NN -> ( 0 ..^ B ) = ( 0 ... ( B - 1 ) ) ) |\n| 5 | 4 | #P_adantl | |- ( ( A e. ZZ /\\ B e. NN ) -> ( 0 ..^ B ) = ( 0 ... ( B - 1 ) ) ) |\n| 6 | 1, 5 | #P_eleqtrrd | |- ( ( A e. ZZ /\\ B e. NN ) -> ( A mod B ) e. ( 0 ..^ B ) ) |",
+  "conclusion" : "#P_zmodfzo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_cmo", "#T_cB.wceq", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cfz", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cn", "#T_wi", "#T_cA", "#T_cmo", "#T_cB", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_zmodfz", "#P_adantl", "#P_nnz", "#P_syl", "#P_eleqtrrd", "#P_fzoval" ]
+}

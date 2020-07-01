@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See op2nda on Metamath](http://us.metamath.org/mpegif/op2nda.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnvsn.1 | |- A e. _V |\n| 2 |  | cnvsn.2 | |- B e. _V |\n| 3 | 1 | #P_rnsnop | |- ran { <. A , B >. } = { B } |\n| 4 | 3 | #P_unieqi | |- U. ran { <. A , B >. } = U. { B } |\n| 5 | 2 | #P_unisn | |- U. { B } = B |\n| 6 | 4, 5 | #P_eqtri | |- U. ran { <. A , B >. } = B |",
+  "conclusion" : "#P_op2nda",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_crn", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cuni", "#T_crn", "#T_csn--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_cuni", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cuni", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_cB.wceq", "#T_cuni", "#T_crn", "#T_csn--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_eqtri", "#P_unisn", "#P_rnsnop" ]
+}

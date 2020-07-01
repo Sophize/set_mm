@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj529 on Metamath](http://us.metamath.org/mpegif/bnj529.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj529.1 | |- D = ( _om \\ { (/) } ) |\n| 2 |  | #P_eldifsn | |- ( M e. ( _om \\ { (/) } ) <-> ( M e. _om /\\ M =/= (/) ) ) |\n| 3 | 2 | #P_biimpi | |- ( M e. ( _om \\ { (/) } ) -> ( M e. _om /\\ M =/= (/) ) ) |\n| 4 | 3, 1 | #P_eleq2s | |- ( M e. D -> ( M e. _om /\\ M =/= (/) ) ) |\n| 5 |  | #P_nnord | |- ( M e. _om -> Ord M ) |\n| 6 | 5 | #P_anim1i | |- ( ( M e. _om /\\ M =/= (/) ) -> ( Ord M /\\ M =/= (/) ) ) |\n| 7 |  | #P_ord0eln0 | |- ( Ord M -> ( (/) e. M <-> M =/= (/) ) ) |\n| 8 | 7 | #P_biimpar | |- ( ( Ord M /\\ M =/= (/) ) -> (/) e. M ) |\n| 9 | 4, 6, 8 | #P_3syl | |- ( M e. D -> (/) e. M ) |",
+  "conclusion" : "#P_bnj529",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cM", "#T_wcel", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wb", "#T_cM", "#T_wcel", "#T_com", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_cM", "#T_wcel", "#T_com", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wi", "#T_cM", "#T_wcel", "#T_com", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_cM", "#T_wcel", "#T_cD", "#T_wi", "#T_cM", "#T_wcel", "#T_com", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_cM", "#T_wcel", "#T_com", "#T_wi", "#T_word", "#T_cM", "#T_cM", "#T_wcel", "#T_com", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_wi", "#T_word", "#T_cM", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_word", "#T_cM", "#T_wi", "#T_c0", "#T_wcel", "#T_cM", "#T_wb", "#T_cM", "#T_wne", "#T_c0", "#T_word", "#T_cM", "#T_wa", "#T_cM", "#T_wne", "#T_c0", "#T_wi", "#T_c0", "#T_wcel", "#T_cM", "#T_cM", "#T_wcel", "#T_cD", "#T_wi", "#T_c0", "#T_wcel", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2s", "#P_eldifsn", "#P_biimpar", "#P_ord0eln0", "#P_3syl", "#P_anim1i", "#P_nnord", "#P_biimpi" ]
+}

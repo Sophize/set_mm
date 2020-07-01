@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See catstr on Metamath](http://us.metamath.org/mpegif/catstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1nn | |- 1 e. NN |\n| 2 |  | #P_basendx | |- ( Base ` ndx ) = 1 |\n| 3 |  | #P_4nn0 | |- 4 e. NN0 |\n| 4 |  | #P_1nn0 | |- 1 e. NN0 |\n| 5 |  | #P_1lt10 | |- 1 < 10 |\n| 6 | 1, 3, 4, 5 | #P_declti | |- 1 < ; 1 4 |\n| 7 |  | #P_4nn | |- 4 e. NN |\n| 8 | 4, 7 | #P_decnncl | |- ; 1 4 e. NN |\n| 9 |  | #P_homndx | |- ( Hom ` ndx ) = ; 1 4 |\n| 10 |  | #P_5nn | |- 5 e. NN |\n| 11 |  | #P_4lt5 | |- 4 < 5 |\n| 12 | 4, 3, 10, 11 | #P_declt | |- ; 1 4 < ; 1 5 |\n| 13 | 4, 10 | #P_decnncl | |- ; 1 5 e. NN |\n| 14 |  | #P_ccondx | |- ( comp ` ndx ) = ; 1 5 |\n| 15 | 1, 2, 6, 8, 9, 12, 13, 14 | #P_strle3 | |- { <. ( Base ` ndx ) , U >. , <. ( Hom ` ndx ) , H >. , <. ( comp ` ndx ) , .x. >. } Struct <. 1 , ; 1 5 >. |",
+  "conclusion" : "#P_catstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cn", "#T_cbs", "#T_cfv", "#T_cnx", "#T_wceq", "#T_c1", "#T_c4", "#T_wcel", "#T_cn0", "#T_c1", "#T_wcel", "#T_cn0", "#T_c1", "#T_clt", "#T_c10", "#T_c1", "#T_clt", "#T_cdc", "#T_c1", "#T_c4", "#T_c4", "#T_wcel", "#T_cn", "#T_cdc", "#T_c1", "#T_c4", "#T_wcel", "#T_cn", "#T_chom", "#T_cfv", "#T_cnx", "#T_wceq", "#T_cdc", "#T_c1", "#T_c4", "#T_c5", "#T_wcel", "#T_cn", "#T_c4", "#T_clt", "#T_c5", "#T_cdc", "#T_c1", "#T_c4", "#T_clt", "#T_cdc", "#T_c1", "#T_c5", "#T_cdc", "#T_c1", "#T_c5", "#T_wcel", "#T_cn", "#T_cco", "#T_cfv", "#T_cnx", "#T_wceq", "#T_cdc", "#T_c1", "#T_c5", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cU", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_chom", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cH", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cco", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_ctp--4", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_cdc", "#T_c1", "#T_c5", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1nn0", "#P_ccondx", "#P_strle3", "#P_4nn", "#P_5nn", "#P_declt", "#P_1nn", "#P_decnncl", "#P_basendx", "#P_declti", "#P_4lt5", "#P_1lt10", "#P_homndx", "#P_4nn0" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulsubfacd on Metamath](http://us.metamath.org/mpegif/mulsubfacd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulsubfacd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulsubfacd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | #P_ax-1cn | |- 1 e. CC |\n| 4 | 3 | #P_a1i | |- ( ph -> 1 e. CC ) |\n| 5 | 1, 4, 2 | #P_subdird | |- ( ph -> ( ( A - 1 ) x. B ) = ( ( A x. B ) - ( 1 x. B ) ) ) |\n| 6 | 2 | #P_mulid2d | |- ( ph -> ( 1 x. B ) = B ) |\n| 7 | 6 | #P_oveq2d | |- ( ph -> ( ( A x. B ) - ( 1 x. B ) ) = ( ( A x. B ) - B ) ) |\n| 8 | 5, 7 | #P_eqtr2d | |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) |",
+  "conclusion" : "#P_mulsubfacd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_c1", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_c1", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cmul", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_c1", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_c1", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmin", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cmin", "#T_cB", "#T_wceq", "#T_cA", "#T_cmin", "#T_c1", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subdird", "#P_mulid2d", "#P_oveq2d", "#P_ax-1cn", "#P_a1i", "#P_eqtr2d" ]
+}

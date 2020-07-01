@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opabbii on Metamath](http://us.metamath.org/mpegif/opabbii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opabbii.1 | |- ( ph <-> ps ) |\n| 2 |  | #P_eqid | |- z = z |\n| 3 | 1 | #P_a1i | |- ( z = z -> ( ph <-> ps ) ) |\n| 4 | 3 | #P_opabbidv | |- ( z = z -> { <. x , y >. | ph } = { <. x , y >. | ps } ) |\n| 5 | 2, 4 | #P_ax-mp | |- { <. x , y >. | ph } = { <. x , y >. | ps } |",
+  "conclusion" : "#P_opabbii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wph", "#T_wb", "#T_wps", "#T_vz", "#T_wceq", "#T_vz", "#T_vz", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vz", "#T_wceq", "#T_vz", "#T_wi", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wps", "#T_copab--6", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wps", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_a1i", "#P_opabbidv" ]
+}

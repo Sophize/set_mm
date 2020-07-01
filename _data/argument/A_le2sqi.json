@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See le2sqi on Metamath](http://us.metamath.org/mpegif/le2sqi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqcl.1 | |- A e. RR |\n| 2 |  | lt2sq.2 | |- B e. RR |\n| 3 | 1, 2 | #P_le2msqi | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( A <_ B <-> ( A x. A ) <_ ( B x. B ) ) ) |\n| 4 | 1 | #P_recni | |- A e. CC |\n| 5 | 4 | #P_sqvali | |- ( A ^ 2 ) = ( A x. A ) |\n| 6 | 2 | #P_recni | |- B e. CC |\n| 7 | 6 | #P_sqvali | |- ( B ^ 2 ) = ( B x. B ) |\n| 8 | 5, 7 | #P_breq12i | |- ( ( A ^ 2 ) <_ ( B ^ 2 ) <-> ( A x. A ) <_ ( B x. B ) ) |\n| 9 | 3, 8 | #P_syl6bbr | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( A <_ B <-> ( A ^ 2 ) <_ ( B ^ 2 ) ) ) |",
+  "conclusion" : "#P_le2sqi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cle", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wb", "#T_cA.wceq", "#T_cmul", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cc0", "#T_cle", "#T_cA", "#T_wa", "#T_cc0", "#T_cle", "#T_cB", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cA", "#T_cexp", "#T_c2", "#T_cle", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq12i", "#P_recni", "#P_sqvali", "#P_le2msqi", "#P_syl6bbr" ]
+}

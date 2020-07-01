@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axrep5 on Metamath](http://us.metamath.org/mpegif/axrep5.html)"
+  } ],
+  "names" : [ "axrep5" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vz", "#T_wph", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_vw", "#T_wi", "#T_wex", "#T_vz", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_vy", "#T_wceq", "#T_vz", "#T_wi", "#T_wex", "#T_vz", "#T_wal", "#T_vy", "#T_vy", "#T_wcel", "#T_vz", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_vw", "#T_wa", "#T_wph", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of Replacement (similar to Axiom Rep of [BellMachover] p. 463). The antecedent tells us ` ph ` is analogous to a \"function\" from ` x ` to ` y ` (although it is not really a function since it is a wff and not a class).  In the consequent we postulate the existence of a set ` z ` that corresponds to the \"image\" of ` ph ` restricted to some other set ` w ` .  The hypothesis says ` z ` must not be free in ` ph ` . (Contributed by NM, 26-Nov-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) ",
+  "statement" : "axrep5.1 $e |- F/ z ph $.\naxrep5 $p |- ( A. x ( x e. w -> E. z A. y ( ph -> y = z ) ) -> E. z A. y ( y e. z <-> E. x ( x e. w /\\ ph ) ) ) $.\n$d w x y z $."
+}

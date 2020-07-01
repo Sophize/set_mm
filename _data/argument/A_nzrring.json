@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nzrring on Metamath](http://us.metamath.org/mpegif/nzrring.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 2 |  | #P_eqid | |- ( 0g ` R ) = ( 0g ` R ) |\n| 3 | 1, 2 | #P_isnzr | |- ( R e. NzRing <-> ( R e. Ring /\\ ( 1r ` R ) =/= ( 0g ` R ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( R e. NzRing -> R e. Ring ) |",
+  "conclusion" : "#P_nzrring",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wne", "#T_c0g", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wi", "#T_cR", "#T_wcel", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isnzr" ]
+}

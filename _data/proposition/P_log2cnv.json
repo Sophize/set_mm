@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See log2cnv on Metamath](http://us.metamath.org/mpegif/log2cnv.html)"
+  } ],
+  "names" : [ "log2cnv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_c2", "#T_cdiv", "#T_c3", "#T_cmul", "#T_c2", "#T_cmul", "#T_vn", "#T_caddc", "#T_c1", "#T_cmul", "#T_c9", "#T_cexp", "#T_vn", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_clog", "#T_cfv", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Using the Taylor series for ` arctan ( _i / 3 ) ` , produce a rapidly convergent series for ` log 2 ` .  (Contributed by Mario Carneiro, 7-Apr-2015.) ",
+  "statement" : "log2cnv.1 $e |- F = ( n e. NN0 |-> ( 2 / ( ( 3 x. ( ( 2 x. n ) + 1 ) ) x. ( 9 ^ n ) ) ) ) $.\nlog2cnv $p |- seq 0 ( + , F ) ~~> ( log ` 2 ) $."
+}

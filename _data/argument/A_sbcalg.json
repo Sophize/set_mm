@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbcalg on Metamath](http://us.metamath.org/mpegif/sbcalg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfsbcq2 | |- ( z = A -> ( [ z / y ] A. x ph <-> [. A / y ]. A. x ph ) ) |\n| 2 |  | #P_dfsbcq2 | |- ( z = A -> ( [ z / y ] ph <-> [. A / y ]. ph ) ) |\n| 3 | 2 | #P_albidv | |- ( z = A -> ( A. x [ z / y ] ph <-> A. x [. A / y ]. ph ) ) |\n| 4 |  | #P_sbal | |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) |\n| 5 | 1, 3, 4 | #P_vtoclbg | |- ( A e. V -> ( [. A / y ]. A. x ph <-> A. x [. A / y ]. ph ) ) |",
+  "conclusion" : "#P_sbcalg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vy.tru", "#T_wsbc--3", "#T_wal", "#T_vx.wal", "#T_wph", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vy.tru", "#T_wsbc--3", "#T_wph", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vy.tru", "#T_wsbc--3", "#T_wph", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_wph", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vy", "#T_wsbc--3", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vy", "#T_wsbc--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbal", "#P_vtoclbg", "#P_albidv", "#P_dfsbcq2" ]
+}

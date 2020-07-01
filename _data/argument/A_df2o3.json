@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df2o3 on Metamath](http://us.metamath.org/mpegif/df2o3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-2o | |- 2o = suc 1o |\n| 2 |  | #P_df-suc | |- suc 1o = ( 1o u. { 1o } ) |\n| 3 |  | #P_df1o2 | |- 1o = { (/) } |\n| 4 | 3 | #P_uneq1i | |- ( 1o u. { 1o } ) = ( { (/) } u. { 1o } ) |\n| 5 |  | #P_df-pr | |- { (/) , 1o } = ( { (/) } u. { 1o } ) |\n| 6 | 4, 5 | #P_eqtr4i | |- ( 1o u. { 1o } ) = { (/) , 1o } |\n| 7 | 1, 2, 6 | #P_3eqtri | |- 2o = { (/) , 1o } |",
+  "conclusion" : "#P_df2o3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2o", "#T_wceq", "#T_csuc", "#T_c1o", "#T_csuc", "#T_c1o", "#T_wceq", "#T_c1o", "#T_cun", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_c1o", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c1o", "#T_cun", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_c1o", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_c1o", "#T_cun", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_c1o", "#T_cpr--3", "#T_c2o", "#T_wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_c1o", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_uneq1i", "#P_df-pr", "#P_df1o2", "#P_df-suc", "#P_3eqtri", "#P_df-2o" ]
+}

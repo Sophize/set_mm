@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decsplit0b on Metamath](http://us.metamath.org/mpegif/decsplit0b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decsplit0.1 | |- A e. NN0 |\n| 2 |  | #P_10nn0 | |- 10 e. NN0 |\n| 3 | 2 | #P_numexp0 | |- ( 10 ^ 0 ) = 1 |\n| 4 | 3 | #P_oveq2i | |- ( A x. ( 10 ^ 0 ) ) = ( A x. 1 ) |\n| 5 | 1 | #P_nn0cni | |- A e. CC |\n| 6 | 5 | #P_mulid1i | |- ( A x. 1 ) = A |\n| 7 | 4, 6 | #P_eqtri | |- ( A x. ( 10 ^ 0 ) ) = A |\n| 8 | 7 | #P_oveq1i | |- ( ( A x. ( 10 ^ 0 ) ) + B ) = ( A + B ) |",
+  "conclusion" : "#P_decsplit0b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_c10", "#T_wcel", "#T_cn0", "#T_c10", "#T_cexp", "#T_cc0", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cexp", "#T_cc0", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cmul", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_cmul", "#T_c10", "#T_cexp", "#T_cc0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_cmul", "#T_c10", "#T_cexp", "#T_cc0", "#T_caddc", "#T_cB", "#T_wceq", "#T_cA", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_nn0cni", "#P_numexp0", "#P_mulid1i", "#P_oveq1i", "#P_10nn0", "#P_oveq2i" ]
+}

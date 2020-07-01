@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ee101 on Metamath](http://us.metamath.org/mpegif/ee101.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ee101.1 | |- ( ph -> ps ) |\n| 2 |  | ee101.2 | |- ch |\n| 3 |  | ee101.3 | |- ( ph -> th ) |\n| 4 |  | ee101.4 | |- ( ps -> ( ch -> ( th -> ta ) ) ) |\n| 5 | 2 | #P_a1i | |- ( ph -> ch ) |\n| 6 | 1, 5, 3, 4 | #P_syl3c | |- ( ph -> ta ) |",
+  "conclusion" : "#P_ee101",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3c", "#P_a1i" ]
+}

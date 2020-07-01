@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfne on Metamath](http://us.metamath.org/mpegif/nfne.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfne.1 | |- F/_ x A |\n| 2 |  | nfne.2 | |- F/_ x B |\n| 3 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 4 | 1, 2 | #P_nfeq | |- F/ x A = B |\n| 5 | 4 | #P_nfn | |- F/ x -. A = B |\n| 6 | 3, 5 | #P_nfxfr | |- F/ x A =/= B |",
+  "conclusion" : "#P_nfne",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wnf", "#T_vx", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ne", "#P_nfn", "#P_nfeq", "#P_nfxfr" ]
+}

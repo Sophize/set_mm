@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cesare on Metamath](http://us.metamath.org/mpegif/cesare.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cesare.maj | |- A. x ( ph -> -. ps ) |\n| 2 |  | cesare.min | |- A. x ( ch -> ps ) |\n| 3 | 1 | #P_spi | |- ( ph -> -. ps ) |\n| 4 | 2 | #P_spi | |- ( ch -> ps ) |\n| 5 | 3, 4 | #P_nsyl3 | |- ( ch -> -. ph ) |\n| 6 | 5 | #P_ax-gen | |- A. x ( ch -> -. ph ) |",
+  "conclusion" : "#P_cesare",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nsyl3", "#P_spi", "#P_ax-gen" ]
+}

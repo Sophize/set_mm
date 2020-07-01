@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axc16ALT on Metamath](http://us.metamath.org/mpegif/axc16ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sbequ12 | |- ( x = z -> ( ph <-> [ z / x ] ph ) ) |\n| 2 |  | #P_ax-5 | |- ( ph -> A. z ph ) |\n| 3 | 2 | #P_hbsb3 | |- ( [ z / x ] ph -> A. x [ z / x ] ph ) |\n| 4 | 1, 3 | #P_axc16i | |- ( A. x x = y -> ( ph -> A. x ph ) ) |\n\\\n Alternate proof of ~ axc16 , shorter but requiring ~ ax-11 and using ~ df-sb .  (Contributed by NM, 17-May-2008.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_axc16",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sbequ12", "#P_axc16i", "#P_ax-5", "#P_hbsb3" ]
+}

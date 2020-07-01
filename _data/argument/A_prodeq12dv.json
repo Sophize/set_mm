@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prodeq12dv on Metamath](http://us.metamath.org/mpegif/prodeq12dv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prodeq12dv.1 | |- ( ph -> A = B ) |\n| 2 |  | prodeq12dv.2 | |- ( ( ph /\\ k e. A ) -> C = D ) |\n| 3 | 2 | #P_prodeq2dv | |- ( ph -> prod_ k e. A C = prod_ k e. A D ) |\n| 4 | 1 | #P_prodeq1d | |- ( ph -> prod_ k e. A D = prod_ k e. B D ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( ph -> prod_ k e. A C = prod_ k e. B D ) |",
+  "conclusion" : "#P_prodeq12dv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA.wceq", "#T_cD", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB.wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_prodeq1d", "#P_prodeq2dv" ]
+}

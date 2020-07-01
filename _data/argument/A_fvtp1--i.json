@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvtp1 on Metamath](http://us.metamath.org/mpegif/fvtp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvtp1.1 | |- A e. _V |\n| 2 |  | fvtp1.4 | |- D e. _V |\n| 3 |  | #P_fvtp1g | |- ( ( ( A e. _V /\\ D e. _V ) /\\ ( A =/= B /\\ A =/= C ) ) -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` A ) = D ) |\n| 4 | 1, 2, 3 | #P_mpanl12 | |- ( ( A =/= B /\\ A =/= C ) -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` A ) = D ) |",
+  "conclusion" : "#P_fvtp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cD", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cD", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wi", "#T_ctp--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_ctp--4", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cD", "#T_cA", "#T_wne", "#T_cB", "#T_wa", "#T_cA", "#T_wne", "#T_cC", "#T_wi", "#T_ctp--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cB", "#T_cop--2", "#T_cE", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_ctp--4", "#T_cfv", "#T_cA", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanl12", "#P_fvtp1g" ]
+}

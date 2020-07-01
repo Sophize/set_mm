@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elicod on Metamath](http://us.metamath.org/mpegif/elicod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elicod.a | |- ( ph -> A e. RR* ) |\n| 2 |  | elicod.b | |- ( ph -> B e. RR* ) |\n| 3 |  | elicod.3 | |- ( ph -> C e. RR* ) |\n| 4 |  | elicod.4 | |- ( ph -> A <_ C ) |\n| 5 |  | elicod.5 | |- ( ph -> C < B ) |\n| 6 |  | #P_elico1 | |- ( ( A e. RR* /\\ B e. RR* ) -> ( C e. ( A [,) B ) <-> ( C e. RR* /\\ A <_ C /\\ C < B ) ) ) |\n| 7 | 1, 2, 6 | #P_syl2anc | |- ( ph -> ( C e. ( A [,) B ) <-> ( C e. RR* /\\ A <_ C /\\ C < B ) ) ) |\n| 8 | 3, 4, 5, 7 | #P_mpbir3and | |- ( ph -> C e. ( A [,) B ) ) |",
+  "conclusion" : "#P_elicod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_clt", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_cico", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_w3a--2", "#T_cC", "#T_clt", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_cico", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_cle", "#T_cC", "#T_w3a--2", "#T_cC", "#T_clt", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cA", "#T_cico", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elico1", "#P_mpbir3and", "#P_syl2anc" ]
+}

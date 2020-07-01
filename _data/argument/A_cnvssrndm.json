@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvssrndm on Metamath](http://us.metamath.org/mpegif/cnvssrndm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relcnv | |- Rel `' A |\n| 2 |  | #P_relssdmrn | |- ( Rel `' A -> `' A C_ ( dom `' A X. ran `' A ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- `' A C_ ( dom `' A X. ran `' A ) |\n| 4 |  | #P_df-rn | |- ran A = dom `' A |\n| 5 |  | #P_dfdm4 | |- dom A = ran `' A |\n| 6 | 4, 5 | #P_xpeq12i | |- ( ran A X. dom A ) = ( dom `' A X. ran `' A ) |\n| 7 | 3, 6 | #P_sseqtr4i | |- `' A C_ ( ran A X. dom A ) |",
+  "conclusion" : "#P_cnvssrndm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cA.wceq", "#T_wss", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_ccnv", "#T_cA.wceq", "#T_wss", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cdm", "#T_cA.wceq", "#T_wceq", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_crn", "#T_cA.wceq", "#T_cxp", "#T_cdm", "#T_cA.wceq", "#T_wceq", "#T_cdm", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_crn", "#T_ccnv", "#T_cA.wceq", "#T_ccnv", "#T_cA", "#T_wss", "#T_crn", "#T_cA", "#T_cxp", "#T_cdm", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_relcnv", "#P_relssdmrn", "#P_xpeq12i", "#P_sseqtr4i", "#P_df-rn", "#P_dfdm4" ]
+}

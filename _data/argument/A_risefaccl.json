@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See risefaccl on Metamath](http://us.metamath.org/mpegif/risefaccl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nk x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssid | |- CC C_ CC |\n| 2 |  | #P_ax-1cn | |- 1 e. CC |\n| 3 |  | #P_mulcl | |- ( ( x e. CC /\\ y e. CC ) -> ( x x. y ) e. CC ) |\n| 4 |  | #P_nn0cn | |- ( k e. NN0 -> k e. CC ) |\n| 5 |  | #P_addcl | |- ( ( A e. CC /\\ k e. CC ) -> ( A + k ) e. CC ) |\n| 6 | 4, 5 | #P_sylan2 | |- ( ( A e. CC /\\ k e. NN0 ) -> ( A + k ) e. CC ) |\n| 7 | 1, 2, 3, 6 | #P_risefaccllem | |- ( ( A e. CC /\\ N e. NN0 ) -> ( A RiseFac N ) e. CC ) |",
+  "conclusion" : "#P_risefaccl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_vx", "#T_vy", "#T_cc", "#T_wss", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_wi", "#T_vx.wal", "#T_cmul", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_vk", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_vk", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_vk", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_vk", "#T_wcel", "#T_cc", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA", "#T_crisefac", "#T_cN", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_risefaccllem", "#P_nn0cn", "#P_ssid", "#P_sylan2", "#P_mulcl", "#P_addcl", "#P_ax-1cn" ]
+}

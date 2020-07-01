@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iscbn on Metamath](http://us.metamath.org/mpegif/iscbn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iscbn.x | |- X = ( BaseSet ` U ) |\n| 2 |  | iscbn.8 | |- D = ( IndMet ` U ) |\n| 3 |  | #P_fveq2 | |- ( u = U -> ( IndMet ` u ) = ( IndMet ` U ) ) |\n| 4 | 3, 2 | #P_syl6eqr | |- ( u = U -> ( IndMet ` u ) = D ) |\n| 5 |  | #P_fveq2 | |- ( u = U -> ( BaseSet ` u ) = ( BaseSet ` U ) ) |\n| 6 | 5, 1 | #P_syl6eqr | |- ( u = U -> ( BaseSet ` u ) = X ) |\n| 7 | 6 | #P_fveq2d | |- ( u = U -> ( CMet ` ( BaseSet ` u ) ) = ( CMet ` X ) ) |\n| 8 | 4, 7 | #P_eleq12d | |- ( u = U -> ( ( IndMet ` u ) e. ( CMet ` ( BaseSet ` u ) ) <-> D e. ( CMet ` X ) ) ) |\n| 9 |  | #P_df-cbn | |- CBan = { u e. NrmCVec | ( IndMet ` u ) e. ( CMet ` ( BaseSet ` u ) ) } |\n| 10 | 8, 9 | #P_elrab2 | |- ( U e. CBan <-> ( U e. NrmCVec /\\ D e. ( CMet ` X ) ) ) |",
+  "conclusion" : "#P_iscbn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cims", "#T_cfv", "#T_vu", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cims", "#T_cfv", "#T_vu", "#T_wceq", "#T_cD", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cba", "#T_cfv", "#T_vu", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cba", "#T_cfv", "#T_vu", "#T_wceq", "#T_cX", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_vu", "#T_wceq", "#T_cms", "#T_cfv", "#T_cX", "#T_vu", "#T_wceq", "#T_cU", "#T_wi", "#T_cims", "#T_cfv", "#T_vu", "#T_wcel", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_vu", "#T_wb", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cX", "#T_ccbn", "#T_wceq", "#T_crab--1", "#T_vu", "#T_crab--2", "#T_cnv", "#T_crab--3", "#T_cims", "#T_cfv", "#T_vu", "#T_wcel", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_vu", "#T_crab--4", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wb", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_fveq2d", "#P_df-cbn", "#P_fveq2", "#P_syl6eqr", "#P_eleq12d" ]
+}

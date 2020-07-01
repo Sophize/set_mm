@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodvsca on Metamath](http://us.metamath.org/mpegif/lmodvsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lvecfn.w | |- W = ( { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( Scalar ` ndx ) , F >. } u. { <. ( .s ` ndx ) , .x. >. } ) |\n| 2 | 1 | #P_lmodstr | |- W Struct <. 1 , 6 >. |\n| 3 |  | #P_vscaid | |- .s = Slot ( .s ` ndx ) |\n| 4 |  | #P_ssun2 | |- { <. ( .s ` ndx ) , .x. >. } C_ ( { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( Scalar ` ndx ) , F >. } u. { <. ( .s ` ndx ) , .x. >. } ) |\n| 5 | 4, 1 | #P_sseqtr4i | |- { <. ( .s ` ndx ) , .x. >. } C_ W |\n| 6 | 2, 3, 5 | #P_strfv | |- ( .x. e. X -> .x. = ( .s ` W ) ) |",
+  "conclusion" : "#P_lmodvsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_csca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_ctp--4", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_cW", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cvsca", "#T_wceq", "#T_cslot", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_csca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_ctp--4", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_csn--1", "#T_cop--1", "#T_cvsca", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.x", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cW", "#T_c.x", "#T_wcel", "#T_cX", "#T_wi", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lmodstr", "#P_vscaid", "#P_ssun2", "#P_sseqtr4i", "#P_strfv" ]
+}

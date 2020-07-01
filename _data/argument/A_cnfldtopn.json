@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfldtopn on Metamath](http://us.metamath.org/mpegif/cnfldtopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnfldtopn.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | #P_cnxmet | |- ( abs o. - ) e. ( *Met ` CC ) |\n| 3 |  | #P_eqid | |- ( MetOpen ` ( abs o. - ) ) = ( MetOpen ` ( abs o. - ) ) |\n| 4 | 3 | #P_mopntopon | |- ( ( abs o. - ) e. ( *Met ` CC ) -> ( MetOpen ` ( abs o. - ) ) e. ( TopOn ` CC ) ) |\n| 5 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 6 |  | #P_cnfldtset | |- ( MetOpen ` ( abs o. - ) ) = ( TopSet ` CCfld ) |\n| 7 | 5, 6 | #P_topontopn | |- ( ( MetOpen ` ( abs o. - ) ) e. ( TopOn ` CC ) -> ( MetOpen ` ( abs o. - ) ) = ( TopOpen ` CCfld ) ) |\n| 8 | 2, 4, 7 | #P_mp2b | |- ( MetOpen ` ( abs o. - ) ) = ( TopOpen ` CCfld ) |\n| 9 | 1, 8 | #P_eqtr4i | |- J = ( MetOpen ` ( abs o. - ) ) |",
+  "conclusion" : "#P_cnfldtopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_wi", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cc", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wceq", "#T_cts", "#T_cfv", "#T_ccnfld", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cc", "#T_wi", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_topontopn", "#P_cnfldtset", "#P_cnxmet", "#P_cnfldbas", "#P_mp2b", "#P_mopntopon" ]
+}

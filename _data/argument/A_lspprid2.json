@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspprid2 on Metamath](http://us.metamath.org/mpegif/lspprid2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspprid.v | |- V = ( Base ` W ) |\n| 2 |  | lspprid.n | |- N = ( LSpan ` W ) |\n| 3 |  | lspprid.w | |- ( ph -> W e. LMod ) |\n| 4 |  | lspprid.x | |- ( ph -> X e. V ) |\n| 5 |  | lspprid.y | |- ( ph -> Y e. V ) |\n| 6 | 1, 2, 3, 5, 4 | #P_lspprid1 | |- ( ph -> Y e. ( N ` { Y , X } ) ) |\n| 7 |  | #P_prcom | |- { Y , X } = { X , Y } |\n| 8 | 7 | #P_fveq2i | |- ( N ` { Y , X } ) = ( N ` { X , Y } ) |\n| 9 | 6, 8 | #P_syl6eleq | |- ( ph -> Y e. ( N ` { X , Y } ) ) |",
+  "conclusion" : "#P_lspprid2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cY", "#T_cpr--2", "#T_cX", "#T_cpr--3", "#T_cpr--1", "#T_cY", "#T_cpr--2", "#T_cX", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cY", "#T_cpr--2", "#T_cX", "#T_cpr--3", "#T_wceq", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_prcom", "#P_lspprid1", "#P_syl6eleq" ]
+}

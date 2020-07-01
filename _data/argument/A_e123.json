@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See e123 on Metamath](http://us.metamath.org/mpegif/e123.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | e123.1 | |- (. ph ->. ps ). |\n| 2 |  | e123.2 | |- (. ph ,. ch ->. th ). |\n| 3 |  | e123.3 | |- (. ph ,. ch ,. ta ->. et ). |\n| 4 |  | e123.4 | |- ( ps -> ( th -> ( et -> ze ) ) ) |\n| 5 | 1 | #P_vd13 | |- (. ph ,. ch ,. ta ->. ps ). |\n| 6 | 2 | #P_vd23 | |- (. ph ,. ch ,. ta ->. th ). |\n| 7 | 5, 6, 3, 4 | #P_e333 | |- (. ph ,. ch ,. ta ->. ze ). |",
+  "conclusion" : "#P_e123",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wvd1--1", "#T_wph", "#T_wvd1--2", "#T_wps", "#T_wvd1--3", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wch", "#T_wvd2--3", "#T_wth", "#T_wvd2--4", "#T_wvd3--1", "#T_wph", "#T_wvd3--2", "#T_wch", "#T_wvd3--3", "#T_wta", "#T_wvd3--4", "#T_wet", "#T_wvd3--5", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wet", "#T_wi", "#T_wze", "#T_wvd3--1", "#T_wph", "#T_wvd3--2", "#T_wch", "#T_wvd3--3", "#T_wta", "#T_wvd3--4", "#T_wps", "#T_wvd3--5", "#T_wvd3--1", "#T_wph", "#T_wvd3--2", "#T_wch", "#T_wvd3--3", "#T_wta", "#T_wvd3--4", "#T_wth", "#T_wvd3--5", "#T_wvd3--1", "#T_wph", "#T_wvd3--2", "#T_wch", "#T_wvd3--3", "#T_wta", "#T_wvd3--4", "#T_wze", "#T_wvd3--5" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_e333", "#P_vd13", "#P_vd23" ]
+}

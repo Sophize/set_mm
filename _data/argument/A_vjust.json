@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vjust on Metamath](http://us.metamath.org/mpegif/vjust.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_equid | |- x = x |\n| 2 | 1 | #P_sbt | |- [ z / x ] x = x |\n| 3 |  | #P_equid | |- y = y |\n| 4 | 3 | #P_sbt | |- [ z / y ] y = y |\n| 5 | 2, 4 | #P_2th | |- ( [ z / x ] x = x <-> [ z / y ] y = y ) |\n| 6 |  | #P_df-clab | |- ( z e. { x | x = x } <-> [ z / x ] x = x ) |\n| 7 |  | #P_df-clab | |- ( z e. { y | y = y } <-> [ z / y ] y = y ) |\n| 8 | 5, 6, 7 | #P_3bitr4i | |- ( z e. { x | x = x } <-> z e. { y | y = y } ) |\n| 9 | 8 | #P_eqriv | |- { x | x = x } = { y | y = y } |",
+  "conclusion" : "#P_vjust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cab--3", "#T_wb", "#T_wsb--1", "#T_vz", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cab--3", "#T_wb", "#T_vz", "#T_wcel", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_wceq", "#T_vy.tru", "#T_cab--3", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_vx", "#T_wceq", "#T_vx", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_vy", "#T_wceq", "#T_vy", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-clab", "#P_2th", "#P_3bitr4i", "#P_eqriv", "#P_equid", "#P_sbt" ]
+}

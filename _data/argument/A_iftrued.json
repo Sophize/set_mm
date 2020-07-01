@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iftrued on Metamath](http://us.metamath.org/mpegif/iftrued.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iftrued.1 | |- ( ph -> ch ) |\n| 2 |  | #P_iftrue | |- ( ch -> if ( ch , A , B ) = A ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> if ( ch , A , B ) = A ) |",
+  "conclusion" : "#P_iftrued",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wch", "#T_wch", "#T_wi", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iftrue", "#P_syl" ]
+}

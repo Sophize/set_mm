@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acnen on Metamath](http://us.metamath.org/mpegif/acnen.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ensym | |- ( A ~~ B -> B ~~ A ) |\n| 2 |  | #P_endom | |- ( B ~~ A -> B ~<_ A ) |\n| 3 |  | #P_acndom | |- ( B ~<_ A -> ( x e. AC_ A -> x e. AC_ B ) ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( A ~~ B -> ( x e. AC_ A -> x e. AC_ B ) ) |\n| 5 |  | #P_endom | |- ( A ~~ B -> A ~<_ B ) |\n| 6 |  | #P_acndom | |- ( A ~<_ B -> ( x e. AC_ B -> x e. AC_ A ) ) |\n| 7 | 5, 6 | #P_syl | |- ( A ~~ B -> ( x e. AC_ B -> x e. AC_ A ) ) |\n| 8 | 4, 7 | #P_impbid | |- ( A ~~ B -> ( x e. AC_ A <-> x e. AC_ B ) ) |\n| 9 | 8 | #P_eqrdv | |- ( A ~~ B -> AC_ A = AC_ B ) |",
+  "conclusion" : "#P_acnen",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cB.wceq", "#T_cA", "#T_cen", "#T_cB", "#T_wi", "#T_wacn", "#T_cA", "#T_wceq", "#T_wacn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3syl", "#P_ensym", "#P_syl", "#P_impbid", "#P_eqrdv", "#P_endom", "#P_acndom" ]
+}

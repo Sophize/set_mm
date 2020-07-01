@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumspl on Metamath](http://us.metamath.org/mpegif/gsumspl.html)"
+  } ],
+  "names" : [ "gsumspl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cword", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cT", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cword", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cword", "#T_cB", "#T_wph", "#T_wi", "#T_cM", "#T_cgsu", "#T_cX", "#T_wceq", "#T_cM", "#T_cgsu", "#T_cY", "#T_wph", "#T_wi", "#T_cM", "#T_cgsu", "#T_cS", "#T_csplice", "#T_cotp--1", "#T_cF", "#T_cotp--2", "#T_cT", "#T_cotp--3", "#T_cX", "#T_cotp--4", "#T_wceq", "#T_cM", "#T_cgsu", "#T_cS", "#T_csplice", "#T_cotp--1", "#T_cF", "#T_cotp--2", "#T_cT", "#T_cotp--3", "#T_cY", "#T_cotp--4" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The primary purpose of the splice construction is to enable local rewrites.  Thus, in any monoidal valuation, if a splice does not cause a local change it does not cause a global change.  (Contributed by Stefan O'Rear, 23-Aug-2015.) ",
+  "statement" : "gsumspl.b $e |- B = ( Base ` M ) $.\ngsumspl.m $e |- ( ph -> M e. Mnd ) $.\ngsumspl.s $e |- ( ph -> S e. Word B ) $.\ngsumspl.f $e |- ( ph -> F e. ( 0 ... T ) ) $.\ngsumspl.t $e |- ( ph -> T e. ( 0 ... ( # ` S ) ) ) $.\ngsumspl.x $e |- ( ph -> X e. Word B ) $.\ngsumspl.y $e |- ( ph -> Y e. Word B ) $.\ngsumspl.eq $e |- ( ph -> ( M gsum X ) = ( M gsum Y ) ) $.\ngsumspl $p |- ( ph -> ( M gsum ( S splice <. F , T , X >. ) ) = ( M gsum ( S splice <. F , T , Y >. ) ) ) $."
+}

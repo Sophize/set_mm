@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isga on Metamath](http://us.metamath.org/mpegif/isga.html)"
+  } ],
+  "names" : [ "isga" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.po", "#T_wcel", "#T_cG", "#T_cga", "#T_cY", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wa", "#T_c.po", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cY", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cY", "#T_c.0", "#T_c.po", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cX", "#T_vy", "#T_c.pl", "#T_vz", "#T_c.po", "#T_vx", "#T_wceq", "#T_vy", "#T_c.po", "#T_vz", "#T_c.po", "#T_vx", "#T_c.po", "#T_vx", "#T_vy", "#T_vz", "#T_cG", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vy", "#T_vz", "#T_cY", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \"is a (left) group action.\"  The group ` G ` is said to act on the base set ` Y ` of the action, which is not assumed to have any special properties.  There is a related notion of right group action, but as the Wikipedia article explains, it is not mathematically interesting.  The way actions are usually thought of is that each element ` g ` of ` G ` is a permutation of the elements of ` Y ` (see ~ gapm ).  Since group theory was classically about symmetry groups, it is therefore likely that the notion of group action was useful even in early group theory.  (Contributed by Jeff Hankins, 10-Aug-2009.) (Revised by Mario Carneiro, 13-Jan-2015.) ",
+  "statement" : "isga.1 $e |- X = ( Base ` G ) $.\nisga.2 $e |- .+ = ( +g ` G ) $.\nisga.3 $e |- .0. = ( 0g ` G ) $.\nisga $p |- ( .(+) e. ( G GrpAct Y ) <-> ( ( G e. Grp /\\ Y e. _V ) /\\ ( .(+) : ( X X. Y ) --> Y /\\ A. x e. Y ( ( .0. .(+) x ) = x /\\ A. y e. X A. z e. X ( ( y .+ z ) .(+) x ) = ( y .(+) ( z .(+) x ) ) ) ) ) ) $.\n$d .(+) x y z $.\n$d G x y z $.\n$d X y z $.\n$d Y x y z $."
+}

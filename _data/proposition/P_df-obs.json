@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-obs on Metamath](http://us.metamath.org/mpegif/df-obs.html)"
+  } ],
+  "names" : [ "df-obs" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cobs", "#T_wceq", "#T_vh", "#T_cmpt--1", "#T_cphl", "#T_cmpt--2", "#T_crab--1", "#T_vb", "#T_crab--2", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vh", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_vx", "#T_cip", "#T_cfv", "#T_vh", "#T_vy", "#T_wceq", "#T_cif--1", "#T_vx", "#T_wceq", "#T_vy", "#T_cif--2", "#T_cur", "#T_cfv", "#T_csca", "#T_cfv", "#T_vh", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_csca", "#T_cfv", "#T_vh", "#T_wa", "#T_cocv", "#T_cfv", "#T_vh", "#T_cfv", "#T_vb", "#T_wceq", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_vh", "#T_csn--2", "#T_crab--4", "#T_vb", "#T_vh", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all orthonormal bases for a pre-Hilbert space.  An orthonormal basis is a set of mutually orthogonal vectors with norm 1 and such that the linear span is dense in the whole space.  (As this is an \"algebraic\" definition, before we have topology available, we express this denseness by saying that the double orthocomplement is the whole space, or equivalently, the single orthocomplement is trivial.) (Contributed by Mario Carneiro, 23-Oct-2015.) ",
+  "statement" : "df-obs $p |- OBasis = ( h e. PreHil |-> { b e. ~P ( Base ` h ) | ( A. x e. b A. y e. b ( x ( .i ` h ) y ) = if ( x = y , ( 1r ` ( Scalar ` h ) ) , ( 0g ` ( Scalar ` h ) ) ) /\\ ( ( ocv ` h ) ` b ) = { ( 0g ` h ) } ) } ) $.\n$d b h x y $."
+}

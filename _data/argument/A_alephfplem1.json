@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephfplem1 on Metamath](http://us.metamath.org/mpegif/alephfplem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | alephfplem.1 | |- H = ( rec ( aleph , _om ) |` _om ) |\n| 2 |  | #P_omex | |- _om e. _V |\n| 3 |  | #P_fr0g | |- ( _om e. _V -> ( ( rec ( aleph , _om ) |` _om ) ` (/) ) = _om ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( ( rec ( aleph , _om ) |` _om ) ` (/) ) = _om |\n| 5 | 1 | #P_fveq1i | |- ( H ` (/) ) = ( ( rec ( aleph , _om ) |` _om ) ` (/) ) |\n| 6 |  | #P_aleph0 | |- ( aleph ` (/) ) = _om |\n| 7 | 4, 5, 6 | #P_3eqtr4i | |- ( H ` (/) ) = ( aleph ` (/) ) |\n| 8 |  | #P_alephfnon | |- aleph Fn On |\n| 9 |  | #P_0elon | |- (/) e. On |\n| 10 |  | #P_fnfvelrn | |- ( ( aleph Fn On /\\ (/) e. On ) -> ( aleph ` (/) ) e. ran aleph ) |\n| 11 | 8, 9, 10 | #P_mp2an | |- ( aleph ` (/) ) e. ran aleph |\n| 12 | 7, 11 | #P_eqeltri | |- ( H ` (/) ) e. ran aleph |",
+  "conclusion" : "#P_alephfplem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_crdg--1", "#T_cale", "#T_crdg--2", "#T_com", "#T_cres", "#T_com", "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_crdg--1", "#T_cale", "#T_crdg--2", "#T_com", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_com", "#T_crdg--1", "#T_cale", "#T_crdg--2", "#T_com", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_com", "#T_cH", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_cale", "#T_crdg--2", "#T_com", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_cale", "#T_cfv", "#T_c0", "#T_wceq", "#T_com", "#T_cH", "#T_cfv", "#T_c0", "#T_wceq", "#T_cale", "#T_cfv", "#T_c0", "#T_cale", "#T_wfn", "#T_con0", "#T_c0", "#T_wcel", "#T_con0", "#T_cale", "#T_wfn", "#T_con0", "#T_wa", "#T_c0", "#T_wcel", "#T_con0", "#T_wi", "#T_cale", "#T_cfv", "#T_c0", "#T_wcel", "#T_crn", "#T_cale", "#T_cale", "#T_cfv", "#T_c0", "#T_wcel", "#T_crn", "#T_cale", "#T_cH", "#T_cfv", "#T_c0", "#T_wcel", "#T_crn", "#T_cale" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_aleph0", "#P_ax-mp", "#P_mp2an", "#P_eqeltri", "#P_3eqtr4i", "#P_fnfvelrn", "#P_fveq1i", "#P_alephfnon", "#P_fr0g", "#P_omex", "#P_0elon" ]
+}

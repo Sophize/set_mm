@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cshweqdif2 on Metamath](http://us.metamath.org/mpegif/cshweqdif2.html)"
+  } ],
+  "names" : [ "cshweqdif2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cU", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cW", "#T_ccsh", "#T_cN", "#T_wceq", "#T_cU", "#T_ccsh", "#T_cM", "#T_wi", "#T_cU", "#T_ccsh", "#T_cM", "#T_cmin", "#T_cN", "#T_wceq", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If cyclically shifting two words (of the same length) results in the same word, cyclically shifting one of the words by the difference of the numbers of shifts results in the other word.  (Contributed by AV, 21-Apr-2018.)  (Revised by AV, 6-Jun-2018.)  (Revised by AV, 1-Nov-2018.) ",
+  "statement" : "cshweqdif2 $p |- ( ( ( W e. Word V /\\ U e. Word V ) /\\ ( N e. ZZ /\\ M e. ZZ ) ) -> ( ( W cyclShift N ) = ( U cyclShift M ) -> ( U cyclShift ( M - N ) ) = W ) ) $."
+}

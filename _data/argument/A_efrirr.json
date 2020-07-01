@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efrirr on Metamath](http://us.metamath.org/mpegif/efrirr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_frirr | |- ( ( _E Fr A /\\ A e. A ) -> -. A _E A ) |\n| 2 |  | #P_epelg | |- ( A e. A -> ( A _E A <-> A e. A ) ) |\n| 3 | 2 | #P_adantl | |- ( ( _E Fr A /\\ A e. A ) -> ( A _E A <-> A e. A ) ) |\n| 4 | 1, 3 | #P_mtbid | |- ( ( _E Fr A /\\ A e. A ) -> -. A e. A ) |\n| 5 | 4 | #P_pm2.01da | |- ( _E Fr A -> -. A e. A ) |",
+  "conclusion" : "#P_efrirr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cep", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cep", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cep", "#T_wfr", "#T_cA", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frirr", "#P_pm2.01da", "#P_adantl", "#P_epelg", "#P_mtbid" ]
+}

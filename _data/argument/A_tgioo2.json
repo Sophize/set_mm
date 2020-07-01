@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgioo2 on Metamath](http://us.metamath.org/mpegif/tgioo2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgioo2.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | #P_eqid | |- ( ( abs o. - ) |` ( RR X. RR ) ) = ( ( abs o. - ) |` ( RR X. RR ) ) |\n| 3 |  | #P_cnxmet | |- ( abs o. - ) e. ( *Met ` CC ) |\n| 4 |  | #P_ax-resscn | |- RR C_ CC |\n| 5 | 1 | #P_cnfldtopn | |- J = ( MetOpen ` ( abs o. - ) ) |\n| 6 |  | #P_eqid | |- ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) = ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) |\n| 7 | 2, 5, 6 | #P_metrest | |- ( ( ( abs o. - ) e. ( *Met ` CC ) /\\ RR C_ CC ) -> ( J |`t RR ) = ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) ) |\n| 8 | 3, 4, 7 | #P_mp2an | |- ( J |`t RR ) = ( MetOpen ` ( ( abs o. - ) |` ( RR X. RR ) ) ) |\n| 9 | 2, 8 | #P_tgioo | |- ( topGen ` ran (,) ) = ( J |`t RR ) |",
+  "conclusion" : "#P_tgioo2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_cr", "#T_wss", "#T_cc", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_wa", "#T_cr", "#T_wss", "#T_cc", "#T_wi", "#T_cJ", "#T_crest", "#T_cr", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cJ", "#T_crest", "#T_cr", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wceq", "#T_cJ", "#T_crest", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-resscn", "#P_mp2an", "#P_cnfldtopn", "#P_metrest", "#P_cnxmet", "#P_tgioo" ]
+}

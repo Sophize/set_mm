@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cssi on Metamath](http://us.metamath.org/mpegif/cssi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cssval.o | |- ._|_ = ( ocv ` W ) |\n| 2 |  | cssval.c | |- C = ( CSubSp ` W ) |\n| 3 |  | #P_elfvdm | |- ( S e. ( CSubSp ` W ) -> W e. dom CSubSp ) |\n| 4 | 3, 2 | #P_eleq2s | |- ( S e. C -> W e. dom CSubSp ) |\n| 5 | 1, 2 | #P_iscss | |- ( W e. dom CSubSp -> ( S e. C <-> S = ( ._|_ ` ( ._|_ ` S ) ) ) ) |\n| 6 | 4, 5 | #P_syl | |- ( S e. C -> ( S e. C <-> S = ( ._|_ ` ( ._|_ ` S ) ) ) ) |\n| 7 | 6 | #P_ibi | |- ( S e. C -> S = ( ._|_ ` ( ._|_ ` S ) ) ) |",
+  "conclusion" : "#P_cssi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.pe", "#T_wceq", "#T_cocv", "#T_cfv", "#T_cW", "#T_cC", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cW", "#T_cS", "#T_wcel", "#T_ccss", "#T_cfv", "#T_cW", "#T_wi", "#T_cW", "#T_wcel", "#T_cdm", "#T_ccss", "#T_cS", "#T_wcel", "#T_cC", "#T_wi", "#T_cW", "#T_wcel", "#T_cdm", "#T_ccss", "#T_cW", "#T_wcel", "#T_cdm", "#T_ccss", "#T_wi", "#T_cS", "#T_wcel", "#T_cC", "#T_wb", "#T_cS", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_c.pe", "#T_cfv", "#T_cS", "#T_cS", "#T_wcel", "#T_cC", "#T_wi", "#T_cS", "#T_wcel", "#T_cC", "#T_wb", "#T_cS", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_c.pe", "#T_cfv", "#T_cS", "#T_cS", "#T_wcel", "#T_cC", "#T_wi", "#T_cS", "#T_wceq", "#T_c.pe", "#T_cfv", "#T_c.pe", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2s", "#P_iscss", "#P_ibi", "#P_elfvdm", "#P_syl" ]
+}

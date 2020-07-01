@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onprc on Metamath](http://us.metamath.org/mpegif/onprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordon | |- Ord On |\n| 2 |  | #P_ordirr | |- ( Ord On -> -. On e. On ) |\n| 3 | 1, 2 | #P_ax-mp | |- -. On e. On |\n| 4 |  | #P_elong | |- ( On e. _V -> ( On e. On <-> Ord On ) ) |\n| 5 | 1, 4 | #P_mpbiri | |- ( On e. _V -> On e. On ) |\n| 6 | 3, 5 | #P_mto | |- -. On e. _V |",
+  "conclusion" : "#P_onprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_con0", "#T_word", "#T_con0", "#T_wi", "#T_wn", "#T_con0", "#T_wcel", "#T_con0", "#T_wn", "#T_con0", "#T_wcel", "#T_con0", "#T_con0", "#T_wcel", "#T_cvv", "#T_wi", "#T_con0", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_con0", "#T_con0", "#T_wcel", "#T_cvv", "#T_wi", "#T_con0", "#T_wcel", "#T_con0", "#T_wn", "#T_con0", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ordirr", "#P_mpbiri", "#P_elong", "#P_ordon", "#P_mto" ]
+}

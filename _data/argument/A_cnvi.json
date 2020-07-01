@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvi on Metamath](http://us.metamath.org/mpegif/cnvi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_ideq | |- ( y _I x <-> y = x ) |\n| 3 |  | #P_equcom | |- ( y = x <-> x = y ) |\n| 4 | 2, 3 | #P_bitri | |- ( y _I x <-> x = y ) |\n| 5 | 4 | #P_opabbii | |- { <. x , y >. | y _I x } = { <. x , y >. | x = y } |\n| 6 |  | #P_df-cnv | |- `' _I = { <. x , y >. | y _I x } |\n| 7 |  | #P_df-id | |- _I = { <. x , y >. | x = y } |\n| 8 | 5, 6, 7 | #P_3eqtr4i | |- `' _I = _I |",
+  "conclusion" : "#P_cnvi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_cid", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vy.tru", "#T_cid", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cid", "#T_vx.wal", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_copab--6", "#T_ccnv", "#T_cid", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cid", "#T_vx.wal", "#T_copab--6", "#T_cid", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_copab--6", "#T_ccnv", "#T_cid", "#T_wceq", "#T_cid" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ideq", "#P_3eqtr4i", "#P_df-cnv", "#P_vex", "#P_opabbii", "#P_equcom", "#P_bitri", "#P_df-id" ]
+}

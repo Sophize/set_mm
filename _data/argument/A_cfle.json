@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cfle on Metamath](http://us.metamath.org/mpegif/cfle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cflecard | |- ( cf ` A ) C_ ( card ` A ) |\n| 2 |  | #P_cardonle | |- ( A e. On -> ( card ` A ) C_ A ) |\n| 3 | 1, 2 | #P_syl5ss | |- ( A e. On -> ( cf ` A ) C_ A ) |\n| 4 |  | #P_cff | |- cf : On --> On |\n| 5 | 4 | #P_fdmi | |- dom cf = On |\n| 6 | 5 | #P_eleq2i | |- ( A e. dom cf <-> A e. On ) |\n| 7 |  | #P_ndmfv | |- ( -. A e. dom cf -> ( cf ` A ) = (/) ) |\n| 8 | 6, 7 | #P_sylnbir | |- ( -. A e. On -> ( cf ` A ) = (/) ) |\n| 9 |  | #P_0ss | |- (/) C_ A |\n| 10 | 8, 9 | #P_syl6eqss | |- ( -. A e. On -> ( cf ` A ) C_ A ) |\n| 11 | 3, 10 | #P_pm2.61i | |- ( cf ` A ) C_ A |",
+  "conclusion" : "#P_cfle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_ccf", "#T_wf--1", "#T_con0", "#T_wf--2", "#T_con0", "#T_cdm", "#T_ccf", "#T_wceq", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccf", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccf", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_ccf", "#T_cfv", "#T_cA", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5ss", "#P_ndmfv", "#P_cardonle", "#P_0ss", "#P_fdmi", "#P_syl6eqss", "#P_cflecard", "#P_eleq2i", "#P_sylnbir", "#P_cff", "#P_pm2.61i" ]
+}

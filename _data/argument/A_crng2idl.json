@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See crng2idl on Metamath](http://us.metamath.org/mpegif/crng2idl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | crng2idl.i | |- I = ( LIdeal ` R ) |\n| 2 |  | #P_inidm | |- ( I i^i I ) = I |\n| 3 |  | #P_eqid | |- ( oppR ` R ) = ( oppR ` R ) |\n| 4 | 1, 3 | #P_crngridl | |- ( R e. CRing -> I = ( LIdeal ` ( oppR ` R ) ) ) |\n| 5 | 4 | #P_ineq2d | |- ( R e. CRing -> ( I i^i I ) = ( I i^i ( LIdeal ` ( oppR ` R ) ) ) ) |\n| 6 | 2, 5 | #P_syl5eqr | |- ( R e. CRing -> I = ( I i^i ( LIdeal ` ( oppR ` R ) ) ) ) |\n| 7 |  | #P_eqid | |- ( LIdeal ` ( oppR ` R ) ) = ( LIdeal ` ( oppR ` R ) ) |\n| 8 |  | #P_eqid | |- ( 2Ideal ` R ) = ( 2Ideal ` R ) |\n| 9 | 1, 3, 7, 8 | #P_2idlval | |- ( 2Ideal ` R ) = ( I i^i ( LIdeal ` ( oppR ` R ) ) ) |\n| 10 | 6, 9 | #P_syl6eqr | |- ( R e. CRing -> I = ( 2Ideal ` R ) ) |",
+  "conclusion" : "#P_crng2idl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_cI", "#T_cin", "#T_cI", "#T_wceq", "#T_cI", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cI", "#T_wceq", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cI", "#T_cin", "#T_cI", "#T_wceq", "#T_cI", "#T_cin", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cI", "#T_wceq", "#T_cI", "#T_cin", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_c2idl", "#T_cfv", "#T_cR", "#T_wceq", "#T_c2idl", "#T_cfv", "#T_cR", "#T_c2idl", "#T_cfv", "#T_cR", "#T_wceq", "#T_cI", "#T_cin", "#T_clidl", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cI", "#T_wceq", "#T_c2idl", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_crngridl", "#P_2idlval", "#P_ineq2d", "#P_inidm", "#P_syl5eqr", "#P_syl6eqr" ]
+}

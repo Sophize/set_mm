@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumiun on Metamath](http://us.metamath.org/mpegif/fsumiun.html)"
+  } ],
+  "names" : [ "fsumiun" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cA", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cB", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vx", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_cA", "#T_vk", "#T_vx", "#T_cB", "#T_vk", "#T_cC", "#T_vx", "#T_vk", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Sum over a disjoint indexed union.  (Contributed by Mario Carneiro, 1-Jul-2015.)  (Revised by Mario Carneiro, 10-Dec-2016.) ",
+  "statement" : "fsumiun.1 $e |- ( ph -> A e. Fin ) $.\nfsumiun.2 $e |- ( ( ph /\\ x e. A ) -> B e. Fin ) $.\nfsumiun.3 $e |- ( ph -> Disj_ x e. A B ) $.\nfsumiun.4 $e |- ( ( ph /\\ ( x e. A /\\ k e. B ) ) -> C e. CC ) $.\nfsumiun $p |- ( ph -> sum_ k e. U_ x e. A B C = sum_ x e. A sum_ k e. B C ) $.\n$d A k x $.\n$d B k $.\n$d C x $.\n$d k ph x $."
+}

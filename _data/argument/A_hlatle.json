@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlatle on Metamath](http://us.metamath.org/mpegif/hlatle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlatle.b | |- B = ( Base ` K ) |\n| 2 |  | hlatle.l | |- .<_ = ( le ` K ) |\n| 3 |  | hlatle.a | |- A = ( Atoms ` K ) |\n| 4 |  | #P_hlomcmat | |- ( K e. HL -> ( K e. OML /\\ K e. CLat /\\ K e. AtLat ) ) |\n| 5 | 1, 2, 3 | #P_atlatle | |- ( ( ( K e. OML /\\ K e. CLat /\\ K e. AtLat ) /\\ X e. B /\\ Y e. B ) -> ( X .<_ Y <-> A. p e. A ( p .<_ X -> p .<_ Y ) ) ) |\n| 6 | 4, 5 | #P_syl3an1 | |- ( ( K e. HL /\\ X e. B /\\ Y e. B ) -> ( X .<_ Y <-> A. p e. A ( p .<_ X -> p .<_ Y ) ) ) |",
+  "conclusion" : "#P_hlatle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_wi", "#T_cK", "#T_wcel", "#T_coml", "#T_w3a--1", "#T_cK", "#T_wcel", "#T_ccla", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_cal", "#T_cK", "#T_wcel", "#T_coml", "#T_w3a--1", "#T_cK", "#T_wcel", "#T_ccla", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_cal", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wb", "#T_wral--1", "#T_vp", "#T_wral--2", "#T_cA.wceq", "#T_vp", "#T_c.le", "#T_cX", "#T_wi", "#T_vp", "#T_c.le", "#T_cY", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wb", "#T_wral--1", "#T_vp", "#T_wral--2", "#T_cA", "#T_vp", "#T_c.le", "#T_cX", "#T_wi", "#T_vp", "#T_c.le", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hlomcmat", "#P_atlatle", "#P_syl3an1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmv on Metamath](http://us.metamath.org/mpegif/dmv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssv | |- dom _V C_ _V |\n| 2 |  | #P_dmi | |- dom _I = _V |\n| 3 |  | #P_ssv | |- _I C_ _V |\n| 4 |  | #P_dmss | |- ( _I C_ _V -> dom _I C_ dom _V ) |\n| 5 | 3, 4 | #P_ax-mp | |- dom _I C_ dom _V |\n| 6 | 2, 5 | #P_eqsstr3i | |- _V C_ dom _V |\n| 7 | 1, 6 | #P_eqssi | |- dom _V = _V |",
+  "conclusion" : "#P_dmv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cvv", "#T_wss", "#T_cvv", "#T_cdm", "#T_cid", "#T_wceq", "#T_cvv", "#T_cid", "#T_wss", "#T_cvv", "#T_cid", "#T_wss", "#T_cvv", "#T_wi", "#T_cdm", "#T_cid", "#T_wss", "#T_cdm", "#T_cvv", "#T_cdm", "#T_cid", "#T_wss", "#T_cdm", "#T_cvv", "#T_cvv", "#T_wss", "#T_cdm", "#T_cvv", "#T_cdm", "#T_cvv", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_dmi", "#P_eqssi", "#P_ssv", "#P_dmss", "#P_eqsstr3i" ]
+}

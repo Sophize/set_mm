@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm5.63 on Metamath](http://us.metamath.org/mpegif/pm5.63.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exmid | |- ( ph \\/ -. ph ) |\n| 2 |  | #P_ordi | |- ( ( ph \\/ ( -. ph /\\ ps ) ) <-> ( ( ph \\/ -. ph ) /\\ ( ph \\/ ps ) ) ) |\n| 3 | 1, 2 | #P_mpbiran | |- ( ( ph \\/ ( -. ph /\\ ps ) ) <-> ( ph \\/ ps ) ) |\n| 4 | 3 | #P_bicomi | |- ( ( ph \\/ ps ) <-> ( ph \\/ ( -. ph /\\ ps ) ) ) |",
+  "conclusion" : "#P_pm5.63",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordi", "#P_mpbiran", "#P_bicomi", "#P_exmid" ]
+}

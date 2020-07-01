@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsmunss on Metamath](http://us.metamath.org/mpegif/lsmunss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lsmub1.p | |- .(+) = ( LSSum ` G ) |\n| 2 | 1 | #P_lsmub1 | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> T C_ ( T .(+) U ) ) |\n| 3 | 1 | #P_lsmub2 | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> U C_ ( T .(+) U ) ) |\n| 4 | 2, 3 | #P_unssd | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> ( T u. U ) C_ ( T .(+) U ) ) |",
+  "conclusion" : "#P_lsmunss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.po", "#T_wceq", "#T_clsm", "#T_cfv", "#T_cG", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_wss", "#T_cT", "#T_c.po", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cU", "#T_wss", "#T_cT", "#T_c.po", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_cun", "#T_cU", "#T_wss", "#T_cT", "#T_c.po", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unssd", "#P_lsmub1", "#P_lsmub2" ]
+}

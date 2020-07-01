@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-sseq on Metamath](http://us.metamath.org/mpegif/bj-sseq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-sseq.1 | |- ( ph -> ( ps <-> A C_ B ) ) |\n| 2 |  | bj-sseq.2 | |- ( ph -> ( ch <-> B C_ A ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( ph -> ( ( ps /\\ ch ) <-> ( A C_ B /\\ B C_ A ) ) ) |\n| 4 |  | #P_eqss | |- ( A = B <-> ( A C_ B /\\ B C_ A ) ) |\n| 5 | 3, 4 | #P_syl6bbr | |- ( ph -> ( ( ps /\\ ch ) <-> A = B ) ) |",
+  "conclusion" : "#P_bj-sseq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_cB", "#T_wss", "#T_cA", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqss", "#P_anbi12d", "#P_syl6bbr" ]
+}

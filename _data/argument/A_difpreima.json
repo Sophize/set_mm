@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difpreima on Metamath](http://us.metamath.org/mpegif/difpreima.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funcnvcnv | |- ( Fun F -> Fun `' `' F ) |\n| 2 |  | #P_imadif | |- ( Fun `' `' F -> ( `' F \" ( A \\ B ) ) = ( ( `' F \" A ) \\ ( `' F \" B ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( Fun F -> ( `' F \" ( A \\ B ) ) = ( ( `' F \" A ) \\ ( `' F \" B ) ) ) |",
+  "conclusion" : "#P_difpreima",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wi", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_cdif", "#T_ccnv", "#T_cF", "#T_cima", "#T_cB.wceq", "#T_wfun", "#T_cF", "#T_wi", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA", "#T_cdif", "#T_cB", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA", "#T_cdif", "#T_ccnv", "#T_cF", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imadif", "#P_syl", "#P_funcnvcnv" ]
+}

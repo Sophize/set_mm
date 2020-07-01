@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eel012 on Metamath](http://us.metamath.org/mpegif/eel012.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eel012.1 | |- ph |\n| 2 |  | eel012.2 | |- ( ps -> ch ) |\n| 3 |  | eel012.3 | |- ( th -> ta ) |\n| 4 |  | eel012.4 | |- ( ( ph /\\ ch /\\ ta ) -> et ) |\n| 5 | 1, 4 | #P_mp3an1 | |- ( ( ch /\\ ta ) -> et ) |\n| 6 | 2, 3, 5 | #P_syl2an | |- ( ( ps /\\ th ) -> et ) |",
+  "conclusion" : "#P_eel012",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wta", "#T_wi", "#T_wet", "#T_wch", "#T_wa", "#T_wta", "#T_wi", "#T_wet", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an1", "#P_syl2an" ]
+}

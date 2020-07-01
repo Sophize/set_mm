@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltaddrp2d on Metamath](http://us.metamath.org/mpegif/ltaddrp2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rpgecld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | rpgecld.2 | |- ( ph -> B e. RR+ ) |\n| 3 | 1, 2 | #P_ltaddrpd | |- ( ph -> A < ( A + B ) ) |\n| 4 | 1 | #P_recnd | |- ( ph -> A e. CC ) |\n| 5 | 2 | #P_rpcnd | |- ( ph -> B e. CC ) |\n| 6 | 4, 5 | #P_addcomd | |- ( ph -> ( A + B ) = ( B + A ) ) |\n| 7 | 3, 6 | #P_breqtrd | |- ( ph -> A < ( B + A ) ) |",
+  "conclusion" : "#P_ltaddrp2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_caddc", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breqtrd", "#P_recnd", "#P_ltaddrpd", "#P_rpcnd", "#P_addcomd" ]
+}

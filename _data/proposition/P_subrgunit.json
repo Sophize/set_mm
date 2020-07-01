@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subrgunit on Metamath](http://us.metamath.org/mpegif/subrgunit.html)"
+  } ],
+  "names" : [ "subrgunit" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cR", "#T_cress", "#T_cA", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cV", "#T_wceq", "#T_cui", "#T_cfv", "#T_cS", "#T_cI", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cR", "#T_cA", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wb", "#T_cX", "#T_wcel", "#T_cU", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An element of a ring is a unit of a subring iff it is a unit of the parent ring and both it and its inverse are in the subring. (Contributed by Mario Carneiro, 4-Dec-2014.) ",
+  "statement" : "subrgugrp.1 $e |- S = ( R |`s A ) $.\nsubrgugrp.2 $e |- U = ( Unit ` R ) $.\nsubrgugrp.3 $e |- V = ( Unit ` S ) $.\nsubrgunit.4 $e |- I = ( invr ` R ) $.\nsubrgunit $p |- ( A e. ( SubRing ` R ) -> ( X e. V <-> ( X e. U /\\ X e. A /\\ ( I ` X ) e. A ) ) ) $."
+}

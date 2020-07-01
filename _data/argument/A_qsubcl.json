@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qsubcl on Metamath](http://us.metamath.org/mpegif/qsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_qcn | |- ( A e. QQ -> A e. CC ) |\n| 2 |  | #P_qcn | |- ( B e. QQ -> B e. CC ) |\n| 3 |  | #P_negsub | |- ( ( A e. CC /\\ B e. CC ) -> ( A + -u B ) = ( A - B ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. QQ /\\ B e. QQ ) -> ( A + -u B ) = ( A - B ) ) |\n| 5 |  | #P_qnegcl | |- ( B e. QQ -> -u B e. QQ ) |\n| 6 |  | #P_qaddcl | |- ( ( A e. QQ /\\ -u B e. QQ ) -> ( A + -u B ) e. QQ ) |\n| 7 | 5, 6 | #P_sylan2 | |- ( ( A e. QQ /\\ B e. QQ ) -> ( A + -u B ) e. QQ ) |\n| 8 | 4, 7 | #P_eqeltrrd | |- ( ( A e. QQ /\\ B e. QQ ) -> ( A - B ) e. QQ ) |",
+  "conclusion" : "#P_qsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_cA.wceq", "#T_wcel", "#T_cq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cB.wceq", "#T_wcel", "#T_cq", "#T_cA", "#T_wcel", "#T_cq", "#T_wa", "#T_cB", "#T_wcel", "#T_cq", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wcel", "#T_cq" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_qnegcl", "#P_eqeltrrd", "#P_sylan2", "#P_qcn", "#P_qaddcl", "#P_syl2an", "#P_negsub" ]
+}

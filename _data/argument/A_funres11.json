@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funres11 on Metamath](http://us.metamath.org/mpegif/funres11.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resss | |- ( F |` A ) C_ F |\n| 2 |  | #P_cnvss | |- ( ( F |` A ) C_ F -> `' ( F |` A ) C_ `' F ) |\n| 3 |  | #P_funss | |- ( `' ( F |` A ) C_ `' F -> ( Fun `' F -> Fun `' ( F |` A ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2b | |- ( Fun `' F -> Fun `' ( F |` A ) ) |",
+  "conclusion" : "#P_funres11",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cF", "#T_cF", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cF", "#T_wi", "#T_ccnv", "#T_cF", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_ccnv", "#T_cF", "#T_ccnv", "#T_cF", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_ccnv", "#T_cF", "#T_wi", "#T_wfun", "#T_ccnv", "#T_cF", "#T_wi", "#T_wfun", "#T_ccnv", "#T_cF", "#T_cres", "#T_cA.wceq", "#T_wfun", "#T_ccnv", "#T_cF", "#T_wi", "#T_wfun", "#T_ccnv", "#T_cF", "#T_cres", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resss", "#P_funss", "#P_cnvss", "#P_mp2b" ]
+}

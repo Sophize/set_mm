@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See re1axmp on Metamath](http://us.metamath.org/mpegif/re1axmp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | re1axmp.min | |- ph |\n| 2 |  | re1axmp.maj | |- ( ph -> ps ) |\n| 3 |  | #P_rb-imdf | |- -. ( -. ( -. ( ph -> ps ) \\/ ( -. ph \\/ ps ) ) \\/ -. ( -. ( -. ph \\/ ps ) \\/ ( ph -> ps ) ) ) |\n| 4 | 3 | #P_rblem6 | |- ( -. ( ph -> ps ) \\/ ( -. ph \\/ ps ) ) |\n| 5 | 2, 4 | #P_anmp | |- ( -. ph \\/ ps ) |\n| 6 | 1, 5 | #P_anmp | |- ps |",
+  "conclusion" : "#P_re1axmp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anmp", "#P_rb-imdf", "#P_rblem6" ]
+}

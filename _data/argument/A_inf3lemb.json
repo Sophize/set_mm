@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inf3lemb on Metamath](http://us.metamath.org/mpegif/inf3lemb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | inf3lem.1 | |- G = ( y e. _V |-> { w e. x | ( w i^i x ) C_ y } ) |\n| 2 |  | inf3lem.2 | |- F = ( rec ( G , (/) ) |` _om ) |\n| 3 |  | inf3lem.3 | |- A e. _V |\n| 4 |  | inf3lem.4 | |- B e. _V |\n| 5 | 2 | #P_fveq1i | |- ( F ` (/) ) = ( ( rec ( G , (/) ) |` _om ) ` (/) ) |\n| 6 |  | #P_0ex | |- (/) e. _V |\n| 7 |  | #P_fr0g | |- ( (/) e. _V -> ( ( rec ( G , (/) ) |` _om ) ` (/) ) = (/) ) |\n| 8 | 6, 7 | #P_ax-mp | |- ( ( rec ( G , (/) ) |` _om ) ` (/) ) = (/) |\n| 9 | 5, 8 | #P_eqtri | |- ( F ` (/) ) = (/) |",
+  "conclusion" : "#P_inf3lemb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vx", "#T_crab--3", "#T_vw", "#T_cin", "#T_vx", "#T_wss", "#T_vy", "#T_crab--4", "#T_cF", "#T_wceq", "#T_crdg--1", "#T_cG", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cF", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_cG", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_c0", "#T_wcel", "#T_cvv", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_crdg--1", "#T_cG", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_crdg--1", "#T_cG", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_cF", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_fveq1i", "#P_0ex", "#P_fr0g" ]
+}

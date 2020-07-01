@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spsbcdi on Metamath](http://us.metamath.org/mpegif/spsbcdi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spsbcdi.1 | |- A e. _V |\n| 2 |  | spsbcdi.2 | |- ( ph -> A. x ch ) |\n| 3 |  | spsbcdi.3 | |- ( [. A / x ]. ch <-> ps ) |\n| 4 | 1 | #P_a1i | |- ( ph -> A e. _V ) |\n| 5 | 4, 2 | #P_spsbcd | |- ( ph -> [. A / x ]. ch ) |\n| 6 | 5, 3 | #P_sylib | |- ( ph -> ps ) |",
+  "conclusion" : "#P_spsbcdi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wch", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wch", "#T_wb", "#T_wps", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylib", "#P_spsbcd", "#P_a1i" ]
+}

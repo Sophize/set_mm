@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brrelex12 on Metamath](http://us.metamath.org/mpegif/brrelex12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rel | |- ( Rel R <-> R C_ ( _V X. _V ) ) |\n| 2 | 1 | #P_biimpi | |- ( Rel R -> R C_ ( _V X. _V ) ) |\n| 3 | 2 | #P_ssbrd | |- ( Rel R -> ( A R B -> A ( _V X. _V ) B ) ) |\n| 4 | 3 | #P_imp | |- ( ( Rel R /\\ A R B ) -> A ( _V X. _V ) B ) |\n| 5 |  | #P_brxp | |- ( A ( _V X. _V ) B <-> ( A e. _V /\\ B e. _V ) ) |\n| 6 | 4, 5 | #P_sylib | |- ( ( Rel R /\\ A R B ) -> ( A e. _V /\\ B e. _V ) ) |",
+  "conclusion" : "#P_brrelex12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wb", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_cA.wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cA", "#T_cR", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssbrd", "#P_df-rel", "#P_imp", "#P_sylib", "#P_biimpi", "#P_brxp" ]
+}

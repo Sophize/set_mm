@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rblem2 on Metamath](http://us.metamath.org/mpegif/rblem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rb-ax2 | |- ( -. ( ps \\/ ph ) \\/ ( ph \\/ ps ) ) |\n| 2 |  | #P_rb-ax3 | |- ( -. ph \\/ ( ps \\/ ph ) ) |\n| 3 | 1, 2 | #P_rbsyl | |- ( -. ph \\/ ( ph \\/ ps ) ) |\n| 4 |  | #P_rb-ax1 | |- ( -. ( -. ph \\/ ( ph \\/ ps ) ) \\/ ( -. ( ch \\/ ph ) \\/ ( ch \\/ ( ph \\/ ps ) ) ) ) |\n| 5 | 3, 4 | #P_anmp | |- ( -. ( ch \\/ ph ) \\/ ( ch \\/ ( ph \\/ ps ) ) ) |",
+  "conclusion" : "#P_rblem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wn", "#T_wph", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wch", "#T_wo", "#T_wph", "#T_wo", "#T_wch", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wch", "#T_wo", "#T_wph", "#T_wo", "#T_wch", "#T_wo", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rb-ax1", "#P_anmp", "#P_rbsyl", "#P_rb-ax2", "#P_rb-ax3" ]
+}

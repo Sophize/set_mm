@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wrdeq on Metamath](http://us.metamath.org/mpegif/wrdeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sswrd | |- ( S C_ T -> Word S C_ Word T ) |\n| 2 |  | #P_sswrd | |- ( T C_ S -> Word T C_ Word S ) |\n| 3 | 1, 2 | #P_anim12i | |- ( ( S C_ T /\\ T C_ S ) -> ( Word S C_ Word T /\\ Word T C_ Word S ) ) |\n| 4 |  | #P_eqss | |- ( S = T <-> ( S C_ T /\\ T C_ S ) ) |\n| 5 |  | #P_eqss | |- ( Word S = Word T <-> ( Word S C_ Word T /\\ Word T C_ Word S ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4i | |- ( S = T -> Word S = Word T ) |",
+  "conclusion" : "#P_wrdeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wss", "#T_cT", "#T_wi", "#T_cword", "#T_cS", "#T_wss", "#T_cword", "#T_cT", "#T_cT", "#T_wss", "#T_cS", "#T_wi", "#T_cword", "#T_cT", "#T_wss", "#T_cword", "#T_cS", "#T_cS", "#T_wss", "#T_cT", "#T_wa", "#T_cT", "#T_wss", "#T_cS", "#T_wi", "#T_cword", "#T_cS", "#T_wss", "#T_cword", "#T_cT", "#T_wa", "#T_cword", "#T_cT", "#T_wss", "#T_cword", "#T_cS", "#T_cS", "#T_wceq", "#T_cT", "#T_wb", "#T_cS", "#T_wss", "#T_cT", "#T_wa", "#T_cT", "#T_wss", "#T_cS", "#T_cword", "#T_cS", "#T_wceq", "#T_cword", "#T_cT", "#T_wb", "#T_cword", "#T_cS", "#T_wss", "#T_cword", "#T_cT", "#T_wa", "#T_cword", "#T_cT", "#T_wss", "#T_cword", "#T_cS", "#T_cS", "#T_wceq", "#T_cT", "#T_wi", "#T_cword", "#T_cS", "#T_wceq", "#T_cword", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sswrd", "#P_3imtr4i", "#P_eqss", "#P_anim12i" ]
+}

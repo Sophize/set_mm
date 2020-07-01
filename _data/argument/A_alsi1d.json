@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alsi1d on Metamath](http://us.metamath.org/mpegif/alsi1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | alsi1d.1 | |- ( ph -> A! x ( ps -> ch ) ) |\n| 2 |  | #P_df-alsi | |- ( A! x ( ps -> ch ) <-> ( A. x ( ps -> ch ) /\\ E. x ps ) ) |\n| 3 | 1, 2 | #P_sylib | |- ( ph -> ( A. x ( ps -> ch ) /\\ E. x ps ) ) |\n| 4 | 3 | #P_simpld | |- ( ph -> A. x ( ps -> ch ) ) |",
+  "conclusion" : "#P_alsi1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_walsi--1", "#T_vx", "#T_wps", "#T_walsi--2", "#T_wch", "#T_walsi--1", "#T_vx.wal", "#T_wps", "#T_walsi--2", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_df-alsi", "#P_sylib" ]
+}

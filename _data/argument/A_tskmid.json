@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tskmid on Metamath](http://us.metamath.org/mpegif/tskmid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( A e. x -> A e. x ) |\n| 2 | 1 | #P_rgenw | |- A. x e. Tarski ( A e. x -> A e. x ) |\n| 3 |  | #P_elintrabg | |- ( A e. V -> ( A e. |^| { x e. Tarski | A e. x } <-> A. x e. Tarski ( A e. x -> A e. x ) ) ) |\n| 4 | 2, 3 | #P_mpbiri | |- ( A e. V -> A e. |^| { x e. Tarski | A e. x } ) |\n| 5 |  | #P_tskmval | |- ( A e. V -> ( tarskiMap ` A ) = |^| { x e. Tarski | A e. x } ) |\n| 6 | 4, 5 | #P_eleqtrrd | |- ( A e. V -> A e. ( tarskiMap ` A ) ) |",
+  "conclusion" : "#P_tskmid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_ctsk", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_ctsk", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_crab--4", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_ctsk", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_ctsk", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_ctskm", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_ctsk", "#T_crab--3", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_crab--4", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_ctskm", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_elintrabg", "#P_rgenw", "#P_eleqtrrd", "#P_tskmval", "#P_id" ]
+}

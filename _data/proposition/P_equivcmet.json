@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equivcmet on Metamath](http://us.metamath.org/mpegif/equivcmet.html)"
+  } ],
+  "names" : [ "equivcmet" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_crp", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cC", "#T_vy", "#T_cle", "#T_cR", "#T_cmul", "#T_vx", "#T_cD", "#T_vy", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cD", "#T_vy", "#T_cle", "#T_cS", "#T_cmul", "#T_vx", "#T_cC", "#T_vy", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cms", "#T_cfv", "#T_cX", "#T_wb", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cX", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If two metrics are strongly equivalent, one is complete iff the other is.  Unlike ~ equivcau , ~ metss2 , this theorem does not have a one-directional form - it is possible for a metric ` C ` that is strongly finer than the complete metric ` D ` to be incomplete and vice versa.  Consider ` D = ` the metric on ` RR ` induced by the usual homeomorphism from ` ( 0 , 1 ) ` against the usual metric ` C ` on ` RR ` and against the discrete metric ` E ` on ` RR ` .  Then both ` C ` and ` E ` are complete but ` D ` is not, and ` C ` is strongly finer than ` D ` , which is strongly finer than ` E ` .  (Contributed by Mario Carneiro, 15-Sep-2015.) ",
+  "statement" : "equivcmet.1 $e |- ( ph -> C e. ( Met ` X ) ) $.\nequivcmet.2 $e |- ( ph -> D e. ( Met ` X ) ) $.\nequivcmet.3 $e |- ( ph -> R e. RR+ ) $.\nequivcmet.4 $e |- ( ph -> S e. RR+ ) $.\nequivcmet.5 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x C y ) <_ ( R x. ( x D y ) ) ) $.\nequivcmet.6 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x D y ) <_ ( S x. ( x C y ) ) ) $.\nequivcmet $p |- ( ph -> ( C e. ( CMet ` X ) <-> D e. ( CMet ` X ) ) ) $.\n$d C x y $.\n$d D x y $.\n$d R x y $.\n$d S x y $.\n$d X x y $.\n$d ph x y $."
+}

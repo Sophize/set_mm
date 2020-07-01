@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifeq12 on Metamath](http://us.metamath.org/mpegif/ifeq12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ifeq1 | |- ( A = B -> if ( ph , A , C ) = if ( ph , B , C ) ) |\n| 2 |  | #P_ifeq2 | |- ( C = D -> if ( ph , B , C ) = if ( ph , B , D ) ) |\n| 3 | 1, 2 | #P_sylan9eq | |- ( ( A = B /\\ C = D ) -> if ( ph , A , C ) = if ( ph , B , D ) ) |",
+  "conclusion" : "#P_ifeq12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cC", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cD", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ifeq2", "#P_ifeq1", "#P_sylan9eq" ]
+}

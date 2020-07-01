@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f0bi on Metamath](http://us.metamath.org/mpegif/f0bi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ffn | |- ( F : (/) --> X -> F Fn (/) ) |\n| 2 |  | #P_fn0 | |- ( F Fn (/) <-> F = (/) ) |\n| 3 | 1, 2 | #P_sylib | |- ( F : (/) --> X -> F = (/) ) |\n| 4 |  | #P_f0 | |- (/) : (/) --> X |\n| 5 |  | #P_feq1 | |- ( F = (/) -> ( F : (/) --> X <-> (/) : (/) --> X ) ) |\n| 6 | 4, 5 | #P_mpbiri | |- ( F = (/) -> F : (/) --> X ) |\n| 7 | 3, 6 | #P_impbii | |- ( F : (/) --> X <-> F = (/) ) |",
+  "conclusion" : "#P_f0bi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_wi", "#T_cF", "#T_wfn", "#T_c0", "#T_cF", "#T_wfn", "#T_c0", "#T_wb", "#T_cF", "#T_wceq", "#T_c0", "#T_cF", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_wi", "#T_cF", "#T_wceq", "#T_c0", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_cF", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_wb", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_cF", "#T_wceq", "#T_c0", "#T_wi", "#T_cF", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_cF", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cX", "#T_wb", "#T_cF", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_mpbiri", "#P_impbii", "#P_sylib", "#P_feq1", "#P_fn0", "#P_f0" ]
+}

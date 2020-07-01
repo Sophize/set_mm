@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See simplbi2VD on Metamath](http://us.metamath.org/mpegif/simplbi2VD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm3.26bi2VD.1 | |- ( ph <-> ( ps /\\ ch ) ) |\n| 2 |  | #P_bi2 | |- ( ( ph <-> ( ps /\\ ch ) ) -> ( ( ps /\\ ch ) -> ph ) ) |\n| 3 | 1, 2 | #P_e0a | |- ( ( ps /\\ ch ) -> ph ) |\n| 4 |  | #P_pm3.3 | |- ( ( ( ps /\\ ch ) -> ph ) -> ( ps -> ( ch -> ph ) ) ) |\n| 5 | 3, 4 | #P_e0a | |- ( ps -> ( ch -> ph ) ) |",
+  "conclusion" : "#P_simplbi2VD",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bi2", "#P_e0a", "#P_pm3.3" ]
+}

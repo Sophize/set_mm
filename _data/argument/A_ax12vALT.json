@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax12vALT on Metamath](http://us.metamath.org/mpegif/ax12vALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-1 | |- ( ph -> ( x = y -> ph ) ) |\n| 2 |  | #P_axc16 | |- ( A. x x = y -> ( ( x = y -> ph ) -> A. x ( x = y -> ph ) ) ) |\n| 3 | 1, 2 | #P_syl5 | |- ( A. x x = y -> ( ph -> A. x ( x = y -> ph ) ) ) |\n| 4 | 3 | #P_a1d | |- ( A. x x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) |\n| 5 |  | #P_axc15 | |- ( -. A. x x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) |\n| 6 | 4, 5 | #P_pm2.61i | |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) |\n\\\n Alternative proof of ~ ax12v , shorter, but depending on more axioms. (Contributed by NM, 5-Aug-1993.)  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "conclusion" : "#P_ax12v",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_axc15", "#P_axc16", "#P_ax-1", "#P_pm2.61i", "#P_syl5", "#P_a1d" ]
+}

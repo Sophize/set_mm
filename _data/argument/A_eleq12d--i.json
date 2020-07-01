@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eleq12d on Metamath](http://us.metamath.org/mpegif/eleq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eleq2d.1 | |- ( ph -> A = B ) |\n| 2 |  | eleq12d.2 | |- ( ph -> C = D ) |\n| 3 | 2 | #P_eleq2d | |- ( ph -> ( A e. C <-> A e. D ) ) |\n| 4 | 1 | #P_eleq1d | |- ( ph -> ( A e. D <-> B e. D ) ) |\n| 5 | 3, 4 | #P_bitrd | |- ( ph -> ( A e. C <-> B e. D ) ) |",
+  "conclusion" : "#P_eleq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wb", "#T_cB", "#T_wcel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_bitrd", "#P_eleq1d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reloggim on Metamath](http://us.metamath.org/mpegif/reloggim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reloggim.1 | |- P = ( ( mulGrp ` CCfld ) |`s RR+ ) |\n| 2 |  | #P_dfrelog | |- ( log |` RR+ ) = `' ( exp |` RR ) |\n| 3 | 1 | #P_reefgim | |- ( exp |` RR ) e. ( RRfld GrpIso P ) |\n| 4 |  | #P_gimcnv | |- ( ( exp |` RR ) e. ( RRfld GrpIso P ) -> `' ( exp |` RR ) e. ( P GrpIso RRfld ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- `' ( exp |` RR ) e. ( P GrpIso RRfld ) |\n| 6 | 2, 5 | #P_eqeltri | |- ( log |` RR+ ) e. ( P GrpIso RRfld ) |",
+  "conclusion" : "#P_reloggim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_crp", "#T_clog", "#T_cres", "#T_crp", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_ce", "#T_cres", "#T_cr", "#T_wcel", "#T_crefld", "#T_cgim", "#T_cP", "#T_ce", "#T_cres", "#T_cr", "#T_wcel", "#T_crefld", "#T_cgim", "#T_cP", "#T_wi", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wcel", "#T_cP", "#T_cgim", "#T_crefld", "#T_ccnv", "#T_ce", "#T_cres", "#T_cr", "#T_wcel", "#T_cP", "#T_cgim", "#T_crefld", "#T_clog", "#T_cres", "#T_crp", "#T_wcel", "#T_cP", "#T_cgim", "#T_crefld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqeltri", "#P_gimcnv", "#P_dfrelog", "#P_reefgim" ]
+}

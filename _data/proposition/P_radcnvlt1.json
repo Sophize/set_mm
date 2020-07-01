@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See radcnvlt1 on Metamath](http://us.metamath.org/mpegif/radcnvlt1.html)"
+  } ],
+  "names" : [ "radcnvlt1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cfv", "#T_vn", "#T_cmul", "#T_vx", "#T_cexp", "#T_vn", "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_cR", "#T_wceq", "#T_csup--1", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_vr", "#T_wcel", "#T_cdm", "#T_cli", "#T_crab--4", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cX", "#T_clt", "#T_cR", "#T_cH", "#T_wceq", "#T_vm", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_vm", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cG", "#T_cfv", "#T_cX", "#T_cfv", "#T_vm", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cH", "#T_wcel", "#T_cdm", "#T_cli", "#T_wa", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cabs", "#T_ccom", "#T_cG", "#T_cfv", "#T_cX", "#T_wcel", "#T_cdm", "#T_cli", "#T_cA", "#T_vm", "#T_vn", "#T_vx", "#T_cG", "#T_vm", "#T_vr", "#T_cH", "#T_vm", "#T_cX", "#T_vm", "#T_vm", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` X ` is within the open disk of radius ` R ` centered at zero, then the infinite series converges absolutely at ` X ` , and also converges when the series is multiplied by ` n ` .  (Contributed by Mario Carneiro, 26-Feb-2015.) ",
+  "statement" : "pser.g $e |- G = ( x e. CC |-> ( n e. NN0 |-> ( ( A ` n ) x. ( x ^ n ) ) ) ) $.\nradcnv.a $e |- ( ph -> A : NN0 --> CC ) $.\nradcnv.r $e |- R = sup ( { r e. RR | seq 0 ( + , ( G ` r ) ) e. dom ~~> } , RR* , < ) $.\nradcnvlt.x $e |- ( ph -> X e. CC ) $.\nradcnvlt.a $e |- ( ph -> ( abs ` X ) < R ) $.\nradcnvlt1.h $e |- H = ( m e. NN0 |-> ( m x. ( abs ` ( ( G ` X ) ` m ) ) ) ) $.\nradcnvlt1 $p |- ( ph -> ( seq 0 ( + , H ) e. dom ~~> /\\ seq 0 ( + , ( abs o. ( G ` X ) ) ) e. dom ~~> ) ) $.\n$d A m n x $.\n$d G m r $.\n$d H m $.\n$d X m $.\n$d m ph $."
+}

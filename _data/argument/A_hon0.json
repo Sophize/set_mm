@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hon0 on Metamath](http://us.metamath.org/mpegif/hon0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hv0cl | |- 0h e. ~H |\n| 2 |  | #P_n0i | |- ( 0h e. ~H -> -. ~H = (/) ) |\n| 3 | 1, 2 | #P_ax-mp | |- -. ~H = (/) |\n| 4 |  | #P_fn0 | |- ( T Fn (/) <-> T = (/) ) |\n| 5 |  | #P_ffn | |- ( T : ~H --> ~H -> T Fn ~H ) |\n| 6 |  | #P_fndmu | |- ( ( T Fn ~H /\\ T Fn (/) ) -> ~H = (/) ) |\n| 7 | 6 | #P_ex | |- ( T Fn ~H -> ( T Fn (/) -> ~H = (/) ) ) |\n| 8 | 5, 7 | #P_syl | |- ( T : ~H --> ~H -> ( T Fn (/) -> ~H = (/) ) ) |\n| 9 | 4, 8 | #P_syl5bir | |- ( T : ~H --> ~H -> ( T = (/) -> ~H = (/) ) ) |\n| 10 | 3, 9 | #P_mtoi | |- ( T : ~H --> ~H -> -. T = (/) ) |",
+  "conclusion" : "#P_hon0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0v", "#T_wcel", "#T_chil", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_wn", "#T_chil", "#T_wceq", "#T_c0", "#T_wn", "#T_chil", "#T_wceq", "#T_c0", "#T_cT", "#T_wfn", "#T_c0", "#T_wb", "#T_cT", "#T_wceq", "#T_c0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cT", "#T_wfn", "#T_chil", "#T_cT", "#T_wfn", "#T_chil", "#T_wa", "#T_cT", "#T_wfn", "#T_c0", "#T_wi", "#T_chil", "#T_wceq", "#T_c0", "#T_cT", "#T_wfn", "#T_chil", "#T_wi", "#T_cT", "#T_wfn", "#T_c0", "#T_wi", "#T_chil", "#T_wceq", "#T_c0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cT", "#T_wfn", "#T_c0", "#T_wi", "#T_chil", "#T_wceq", "#T_c0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cT", "#T_wceq", "#T_c0", "#T_wi", "#T_chil", "#T_wceq", "#T_c0", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_wn", "#T_cT", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ffn", "#P_ax-hv0cl", "#P_syl5bir", "#P_ex", "#P_n0i", "#P_mtoi", "#P_syl", "#P_fndmu", "#P_fn0" ]
+}

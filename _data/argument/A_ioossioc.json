@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ioossioc on Metamath](http://us.metamath.org/mpegif/ioossioc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw x y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ioo | |- (,) = ( x e. RR* , y e. RR* |-> { z e. RR* | ( x < z /\\ z < y ) } ) |\n| 2 |  | #P_df-ioc | |- (,] = ( x e. RR* , y e. RR* |-> { z e. RR* | ( x < z /\\ z <_ y ) } ) |\n| 3 |  | #P_idd | |- ( ( A e. RR* /\\ w e. RR* ) -> ( A < w -> A < w ) ) |\n| 4 |  | #P_xrltle | |- ( ( w e. RR* /\\ B e. RR* ) -> ( w < B -> w <_ B ) ) |\n| 5 | 1, 2, 3, 4 | #P_ixxssixx | |- ( A (,) B ) C_ ( A (,] B ) |",
+  "conclusion" : "#P_ioossioc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cioo", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_vx.wal", "#T_clt", "#T_vz", "#T_wa", "#T_vz", "#T_clt", "#T_vy.tru", "#T_crab--4", "#T_cioc", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_vx.wal", "#T_clt", "#T_vz", "#T_wa", "#T_vz", "#T_cle", "#T_vy.tru", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_vw", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_vw", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_vw", "#T_vw", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_vw", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_vw", "#T_cle", "#T_cB.wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wss", "#T_cA", "#T_cioc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ioo", "#P_df-ioc", "#P_xrltle", "#P_ixxssixx", "#P_idd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrex on Metamath](http://us.metamath.org/mpegif/xrex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xr | |- RR* = ( RR u. { +oo , -oo } ) |\n| 2 |  | #P_reex | |- RR e. _V |\n| 3 |  | #P_pnfxr | |- +oo e. RR* |\n| 4 |  | #P_mnfxr | |- -oo e. RR* |\n| 5 |  | #P_prexg | |- ( ( +oo e. RR* /\\ -oo e. RR* ) -> { +oo , -oo } e. _V ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- { +oo , -oo } e. _V |\n| 7 | 2, 6 | #P_unex | |- ( RR u. { +oo , -oo } ) e. _V |\n| 8 | 1, 7 | #P_eqeltri | |- RR* e. _V |",
+  "conclusion" : "#P_xrex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cxr", "#T_wceq", "#T_cr", "#T_cun", "#T_cpr--1", "#T_cpnf", "#T_cpr--2", "#T_cmnf", "#T_cpr--3", "#T_cr", "#T_wcel", "#T_cvv", "#T_cpnf", "#T_wcel", "#T_cxr", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_cpnf", "#T_wcel", "#T_cxr", "#T_wa", "#T_cmnf", "#T_wcel", "#T_cxr", "#T_wi", "#T_cpr--1", "#T_cpnf", "#T_cpr--2", "#T_cmnf", "#T_cpr--3", "#T_wcel", "#T_cvv", "#T_cpr--1", "#T_cpnf", "#T_cpr--2", "#T_cmnf", "#T_cpr--3", "#T_wcel", "#T_cvv", "#T_cr", "#T_cun", "#T_cpr--1", "#T_cpnf", "#T_cpr--2", "#T_cmnf", "#T_cpr--3", "#T_wcel", "#T_cvv", "#T_cxr", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_unex", "#P_eqeltri", "#P_reex", "#P_pnfxr", "#P_mnfxr", "#P_prexg", "#P_df-xr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relssi on Metamath](http://us.metamath.org/mpegif/relssi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | relssi.1 | |- Rel A |\n| 2 |  | relssi.2 | |- ( <. x , y >. e. A -> <. x , y >. e. B ) |\n| 3 |  | #P_ssrel | |- ( Rel A -> ( A C_ B <-> A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- ( A C_ B <-> A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) |\n| 5 | 2 | #P_ax-gen | |- A. y ( <. x , y >. e. A -> <. x , y >. e. B ) |\n| 6 | 4, 5 | #P_mpgbir | |- A C_ B |",
+  "conclusion" : "#P_relssi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cA", "#T_wi", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cB", "#T_wrel", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_wal", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_ssrel", "#P_ax-gen", "#P_mpgbir" ]
+}

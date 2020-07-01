@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absf on Metamath](http://us.metamath.org/mpegif/absf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-abs | |- abs = ( x e. CC |-> ( sqrt ` ( x x. ( * ` x ) ) ) ) |\n| 2 |  | #P_absval | |- ( x e. CC -> ( abs ` x ) = ( sqrt ` ( x x. ( * ` x ) ) ) ) |\n| 3 |  | #P_abscl | |- ( x e. CC -> ( abs ` x ) e. RR ) |\n| 4 | 2, 3 | #P_eqeltrrd | |- ( x e. CC -> ( sqrt ` ( x x. ( * ` x ) ) ) e. RR ) |\n| 5 | 1, 4 | #P_fmpti | |- abs : CC --> RR |",
+  "conclusion" : "#P_absf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cabs", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cmul", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cmul", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cmul", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_abscl", "#P_fmpti", "#P_df-abs", "#P_absval" ]
+}

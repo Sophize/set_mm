@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See m1expcl on Metamath](http://us.metamath.org/mpegif/m1expcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neg1z | |- -u 1 e. ZZ |\n| 2 |  | #P_1z | |- 1 e. ZZ |\n| 3 |  | #P_prssi | |- ( ( -u 1 e. ZZ /\\ 1 e. ZZ ) -> { -u 1 , 1 } C_ ZZ ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- { -u 1 , 1 } C_ ZZ |\n| 5 |  | #P_m1expcl2 | |- ( N e. ZZ -> ( -u 1 ^ N ) e. { -u 1 , 1 } ) |\n| 6 | 4, 5 | #P_sseldi | |- ( N e. ZZ -> ( -u 1 ^ N ) e. ZZ ) |",
+  "conclusion" : "#P_m1expcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_c1", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_cneg", "#T_c1", "#T_wcel", "#T_cz", "#T_wa", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_cpr--1", "#T_cneg", "#T_c1", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wss", "#T_cz", "#T_cpr--1", "#T_cneg", "#T_c1", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_wss", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_c1", "#T_cexp", "#T_cN", "#T_wcel", "#T_cpr--1", "#T_cneg", "#T_c1", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_c1", "#T_cexp", "#T_cN", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_neg1z", "#P_prssi", "#P_sseldi", "#P_m1expcl2", "#P_1z" ]
+}

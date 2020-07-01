@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elab4g on Metamath](http://us.metamath.org/mpegif/elab4g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elab4g.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | elab4g.2 | |- B = { x | ph } |\n| 3 |  | #P_elex | |- ( A e. B -> A e. _V ) |\n| 4 | 1, 2 | #P_elab2g | |- ( A e. _V -> ( A e. B <-> ps ) ) |\n| 5 | 3, 4 | #P_biadan2 | |- ( A e. B <-> ( A e. _V /\\ ps ) ) |",
+  "conclusion" : "#P_elab4g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cB", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wph", "#T_cab--3", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wps", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elex", "#P_biadan2", "#P_elab2g" ]
+}

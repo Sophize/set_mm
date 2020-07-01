@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onfin2 on Metamath](http://us.metamath.org/mpegif/onfin2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnon | |- ( x e. _om -> x e. On ) |\n| 2 |  | #P_onfin | |- ( x e. On -> ( x e. Fin <-> x e. _om ) ) |\n| 3 | 2 | #P_biimprcd | |- ( x e. _om -> ( x e. On -> x e. Fin ) ) |\n| 4 | 1, 3 | #P_jcai | |- ( x e. _om -> ( x e. On /\\ x e. Fin ) ) |\n| 5 | 2 | #P_biimpa | |- ( ( x e. On /\\ x e. Fin ) -> x e. _om ) |\n| 6 | 4, 5 | #P_impbii | |- ( x e. _om <-> ( x e. On /\\ x e. Fin ) ) |\n| 7 |  | #P_elin | |- ( x e. ( On i^i Fin ) <-> ( x e. On /\\ x e. Fin ) ) |\n| 8 | 6, 7 | #P_bitr4i | |- ( x e. _om <-> x e. ( On i^i Fin ) ) |\n| 9 | 8 | #P_eqriv | |- _om = ( On i^i Fin ) |",
+  "conclusion" : "#P_onfin2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_com", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_com", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_cin", "#T_cfn", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cfn", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_cin", "#T_cfn", "#T_com", "#T_wceq", "#T_con0", "#T_cin", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_biimpa", "#P_elin", "#P_jcai", "#P_nnon", "#P_onfin", "#P_eqriv", "#P_bitr4i", "#P_biimprcd" ]
+}

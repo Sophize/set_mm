@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvadd4i on Metamath](http://us.metamath.org/mpegif/hvadd4i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvass.1 | |- A e. ~H |\n| 2 |  | hvass.2 | |- B e. ~H |\n| 3 |  | hvass.3 | |- C e. ~H |\n| 4 |  | hvadd4.4 | |- D e. ~H |\n| 5 |  | #P_hvadd4 | |- ( ( ( A e. ~H /\\ B e. ~H ) /\\ ( C e. ~H /\\ D e. ~H ) ) -> ( ( A +h B ) +h ( C +h D ) ) = ( ( A +h C ) +h ( B +h D ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_mp4an | |- ( ( A +h B ) +h ( C +h D ) ) = ( ( A +h C ) +h ( B +h D ) ) |",
+  "conclusion" : "#P_hvadd4i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cC", "#T_wcel", "#T_chil", "#T_cD", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cC", "#T_wcel", "#T_chil", "#T_wa", "#T_cD", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cva", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_cva", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cC", "#T_cva", "#T_cB.wceq", "#T_cva", "#T_cD", "#T_cA", "#T_cva", "#T_cB", "#T_cva", "#T_cC", "#T_cva", "#T_cD", "#T_wceq", "#T_cA", "#T_cva", "#T_cC", "#T_cva", "#T_cB", "#T_cva", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp4an", "#P_hvadd4" ]
+}

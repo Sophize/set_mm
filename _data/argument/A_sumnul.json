@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sumnul on Metamath](http://us.metamath.org/mpegif/sumnul.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isumcl.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | isumcl.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | isumcl.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) |\n| 4 |  | isumcl.4 | |- ( ( ph /\\ k e. Z ) -> A e. CC ) |\n| 5 |  | sumnul.5 | |- ( ph -> -. seq M ( + , F ) e. dom ~~> ) |\n| 6 | 1, 2, 3, 4 | #P_isum | |- ( ph -> sum_ k e. Z A = ( ~~> ` seq M ( + , F ) ) ) |\n| 7 |  | #P_ndmfv | |- ( -. seq M ( + , F ) e. dom ~~> -> ( ~~> ` seq M ( + , F ) ) = (/) ) |\n| 8 | 5, 7 | #P_syl | |- ( ph -> ( ~~> ` seq M ( + , F ) ) = (/) ) |\n| 9 | 6, 8 | #P_eqtrd | |- ( ph -> sum_ k e. Z A = (/) ) |",
+  "conclusion" : "#P_sumnul",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_wn", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA.wceq", "#T_wceq", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wn", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wceq", "#T_c0", "#T_wph", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wceq", "#T_c0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ndmfv", "#P_eqtrd", "#P_syl", "#P_isum" ]
+}

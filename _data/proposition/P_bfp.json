@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bfp on Metamath](http://us.metamath.org/mpegif/bfp.html)"
+  } ],
+  "names" : [ "bfp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cK", "#T_clt", "#T_c1", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cX", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_cD", "#T_cF", "#T_cfv", "#T_vy", "#T_cle", "#T_cK", "#T_cmul", "#T_vx", "#T_cD", "#T_vy", "#T_wph", "#T_wi", "#T_wreu--1", "#T_vz", "#T_wreu--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vz", "#T_wceq", "#T_vz", "#T_cD", "#T_vx", "#T_vy", "#T_vz", "#T_cF", "#T_vx", "#T_vy", "#T_vz", "#T_cK", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vx", "#T_vy", "#T_vz", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Banach fixed point theorem, also known as contraction mapping theorem. A contraction on a complete metric space has a unique fixed point.  We show existence in the lemmas, and uniqueness here - if ` F ` has two fixed points, then the distance between them is less than ` K ` times itself, a contradiction.  (Contributed by Jeff Madsen, 2-Sep-2009.) (Proof shortened by Mario Carneiro, 5-Jun-2014.) ",
+  "statement" : "bfp.2 $e |- ( ph -> D e. ( CMet ` X ) ) $.\nbfp.3 $e |- ( ph -> X =/= (/) ) $.\nbfp.4 $e |- ( ph -> K e. RR+ ) $.\nbfp.5 $e |- ( ph -> K < 1 ) $.\nbfp.6 $e |- ( ph -> F : X --> X ) $.\nbfp.7 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( ( F ` x ) D ( F ` y ) ) <_ ( K x. ( x D y ) ) ) $.\nbfp $p |- ( ph -> E! z e. X ( F ` z ) = z ) $.\n$d D x y z $.\n$d F x y z $.\n$d K x y $.\n$d X x y z $.\n$d ph x y $.\n$d x y z $.\n$d x y z $."
+}

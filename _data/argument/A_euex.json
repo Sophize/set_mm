@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euex on Metamath](http://us.metamath.org/mpegif/euex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-eu | |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) |\n| 2 |  | #P_ax6ev | |- E. x x = y |\n| 3 |  | #P_bi2 | |- ( ( ph <-> x = y ) -> ( x = y -> ph ) ) |\n| 4 | 3 | #P_com12 | |- ( x = y -> ( ( ph <-> x = y ) -> ph ) ) |\n| 5 | 2, 4 | #P_eximii | |- E. x ( ( ph <-> x = y ) -> ph ) |\n| 6 | 5 | #P_19.35i | |- ( A. x ( ph <-> x = y ) -> E. x ph ) |\n| 7 | 6 | #P_exlimiv | |- ( E. y A. x ( ph <-> x = y ) -> E. x ph ) |\n| 8 | 1, 7 | #P_sylbi | |- ( E! x ph -> E. x ph ) |",
+  "conclusion" : "#P_euex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-eu", "#P_exlimiv", "#P_bi2", "#P_eximii", "#P_ax6ev", "#P_19.35i", "#P_sylbi", "#P_com12" ]
+}

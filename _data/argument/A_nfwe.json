@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfwe on Metamath](http://us.metamath.org/mpegif/nfwe.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nffr.r | |- F/_ x R |\n| 2 |  | nffr.a | |- F/_ x A |\n| 3 |  | #P_df-we | |- ( R We A <-> ( R Fr A /\\ R Or A ) ) |\n| 4 | 1, 2 | #P_nffr | |- F/ x R Fr A |\n| 5 | 1, 2 | #P_nfso | |- F/ x R Or A |\n| 6 | 4, 5 | #P_nfan | |- F/ x ( R Fr A /\\ R Or A ) |\n| 7 | 3, 6 | #P_nfxfr | |- F/ x R We A |",
+  "conclusion" : "#P_nfwe",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cR", "#T_wnfc", "#T_vx", "#T_cA", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wnf", "#T_vx", "#T_cR", "#T_wwe", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nffr", "#P_nfso", "#P_nfan", "#P_nfxfr", "#P_df-we" ]
+}

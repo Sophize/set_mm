@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See retos on Metamath](http://us.metamath.org/mpegif/retos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ltso | |- < Or RR |\n| 2 |  | #P_idref | |- ( ( _I |` RR ) C_ <_ <-> A. x e. RR x <_ x ) |\n| 3 |  | #P_leid | |- ( x e. RR -> x <_ x ) |\n| 4 | 2, 3 | #P_mprgbir | |- ( _I |` RR ) C_ <_ |\n| 5 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 6 |  | #P_ovex | |- ( CCfld |`s RR ) e. _V |\n| 7 | 5, 6 | #P_eqeltri | |- RRfld e. _V |\n| 8 |  | #P_rebase | |- RR = ( Base ` RRfld ) |\n| 9 |  | #P_rele2 | |- <_ = ( le ` RRfld ) |\n| 10 |  | #P_relt | |- < = ( lt ` RRfld ) |\n| 11 | 8, 9, 10 | #P_tosso | |- ( RRfld e. _V -> ( RRfld e. Toset <-> ( < Or RR /\\ ( _I |` RR ) C_ <_ ) ) ) |\n| 12 | 7, 11 | #P_ax-mp | |- ( RRfld e. Toset <-> ( < Or RR /\\ ( _I |` RR ) C_ <_ ) ) |\n| 13 | 1, 4, 12 | #P_mpbir2an | |- RRfld e. Toset |",
+  "conclusion" : "#P_retos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_clt", "#T_wor", "#T_cr", "#T_cid", "#T_cres", "#T_cr", "#T_wss", "#T_cle", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cr", "#T_vx.wal", "#T_cle", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_cle", "#T_vx.wal", "#T_cid", "#T_cres", "#T_cr", "#T_wss", "#T_cle", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_ccnfld", "#T_cress", "#T_cr", "#T_wcel", "#T_cvv", "#T_crefld", "#T_wcel", "#T_cvv", "#T_cr", "#T_wceq", "#T_cbs", "#T_cfv", "#T_crefld", "#T_cle", "#T_wceq", "#T_cple", "#T_cfv", "#T_crefld", "#T_clt", "#T_wceq", "#T_cplt", "#T_cfv", "#T_crefld", "#T_crefld", "#T_wcel", "#T_cvv", "#T_wi", "#T_crefld", "#T_wcel", "#T_ctos", "#T_wb", "#T_clt", "#T_wor", "#T_cr", "#T_wa", "#T_cid", "#T_cres", "#T_cr", "#T_wss", "#T_cle", "#T_crefld", "#T_wcel", "#T_ctos", "#T_wb", "#T_clt", "#T_wor", "#T_cr", "#T_wa", "#T_cid", "#T_cres", "#T_cr", "#T_wss", "#T_cle", "#T_crefld", "#T_wcel", "#T_ctos" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_relt", "#P_eqeltri", "#P_ax-mp", "#P_mpbir2an", "#P_idref", "#P_tosso", "#P_leid", "#P_mprgbir", "#P_rebase", "#P_rele2", "#P_df-refld", "#P_ltso" ]
+}

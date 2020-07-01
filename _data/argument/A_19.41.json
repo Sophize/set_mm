@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.41 on Metamath](http://us.metamath.org/mpegif/19.41.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 19.41.1 | |- F/ x ps |\n| 2 |  | #P_19.40 | |- ( E. x ( ph /\\ ps ) -> ( E. x ph /\\ E. x ps ) ) |\n| 3 | 1 | #P_19.9 | |- ( E. x ps <-> ps ) |\n| 4 | 3 | #P_anbi2i | |- ( ( E. x ph /\\ E. x ps ) <-> ( E. x ph /\\ ps ) ) |\n| 5 | 2, 4 | #P_sylib | |- ( E. x ( ph /\\ ps ) -> ( E. x ph /\\ ps ) ) |\n| 6 |  | #P_pm3.21 | |- ( ps -> ( ph -> ( ph /\\ ps ) ) ) |\n| 7 | 1, 6 | #P_eximd | |- ( ps -> ( E. x ph -> E. x ( ph /\\ ps ) ) ) |\n| 8 | 7 | #P_impcom | |- ( ( E. x ph /\\ ps ) -> E. x ( ph /\\ ps ) ) |\n| 9 | 5, 8 | #P_impbii | |- ( E. x ( ph /\\ ps ) <-> ( E. x ph /\\ ps ) ) |",
+  "conclusion" : "#P_19.41",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_eximd", "#P_19.40", "#P_anbi2i", "#P_pm3.21", "#P_sylib", "#P_19.9", "#P_impcom" ]
+}

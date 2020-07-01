@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opelrn on Metamath](http://us.metamath.org/mpegif/opelrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | brelrn.1 | |- A e. _V |\n| 2 |  | brelrn.2 | |- B e. _V |\n| 3 |  | #P_df-br | |- ( A C B <-> <. A , B >. e. C ) |\n| 4 | 1, 2 | #P_brelrn | |- ( A C B -> B e. ran C ) |\n| 5 | 3, 4 | #P_sylbir | |- ( <. A , B >. e. C -> B e. ran C ) |",
+  "conclusion" : "#P_opelrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cC", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_cC", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_cC", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cC", "#T_wi", "#T_cB", "#T_wcel", "#T_crn", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_sylbir", "#P_brelrn" ]
+}

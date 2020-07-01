@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmptex on Metamath](http://us.metamath.org/mpegif/fvmptex.html)"
+  } ],
+  "names" : [ "fvmptex" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cid", "#T_cfv", "#T_cB", "#T_cF", "#T_cfv", "#T_cC", "#T_wceq", "#T_cG", "#T_cfv", "#T_cC", "#T_cA", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express a function ` F ` whose value ` B ` may not always be a set in terms of another function ` G ` for which sethood is guaranteed.  (Note that ` ( _I `` B ) ` is just shorthand for ` if ( B e. _V , B , (/) ) ` , and it is always a set by ~ fvex .)  Note also that these functions are not the same; wherever ` B ( C ) ` is not a set, ` C ` is not in the domain of ` F ` (so it evaluates to the empty set), but ` C ` is in the domain of ` G ` , and ` G ( C ) ` is defined to be the empty set.  (Contributed by Mario Carneiro, 14-Jul-2013.) (Revised by Mario Carneiro, 23-Apr-2014.) ",
+  "statement" : "fvmptex.1 $e |- F = ( x e. A |-> B ) $.\nfvmptex.2 $e |- G = ( x e. A |-> ( _I ` B ) ) $.\nfvmptex $p |- ( F ` C ) = ( G ` C ) $.\n$d A x $."
+}

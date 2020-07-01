@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtmsq2i on Metamath](http://us.metamath.org/mpegif/sqrtmsq2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sqrth.1 | |- A e. RR |\n| 2 |  | sqr11.1 | |- B e. RR |\n| 3 |  | #P_sqrtsq2 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ ( B e. RR /\\ 0 <_ B ) ) -> ( ( sqrt ` A ) = B <-> A = ( B ^ 2 ) ) ) |\n| 4 | 2, 3 | #P_mpanr1 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ 0 <_ B ) -> ( ( sqrt ` A ) = B <-> A = ( B ^ 2 ) ) ) |\n| 5 | 1, 4 | #P_mpanl1 | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( ( sqrt ` A ) = B <-> A = ( B ^ 2 ) ) ) |\n| 6 | 2 | #P_recni | |- B e. CC |\n| 7 | 6 | #P_sqvali | |- ( B ^ 2 ) = ( B x. B ) |\n| 8 | 7 | #P_eqeq2i | |- ( A = ( B ^ 2 ) <-> A = ( B x. B ) ) |\n| 9 | 5, 8 | #P_syl6bb | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( ( sqrt ` A ) = B <-> A = ( B x. B ) ) ) |",
+  "conclusion" : "#P_sqrtmsq2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cB.wceq", "#T_cc0", "#T_cle", "#T_cA", "#T_wa", "#T_cc0", "#T_cle", "#T_cB", "#T_wi", "#T_csqrt", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_syl6bb", "#P_recni", "#P_mpanl1", "#P_sqrtsq2", "#P_eqeq2i", "#P_sqvali" ]
+}

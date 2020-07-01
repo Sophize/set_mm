@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fssd on Metamath](http://us.metamath.org/mpegif/fssd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fssd.f | |- ( ph -> F : A --> B ) |\n| 2 |  | fssd.b | |- ( ph -> B C_ C ) |\n| 3 |  | #P_fss | |- ( ( F : A --> B /\\ B C_ C ) -> F : A --> C ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> F : A --> C ) |",
+  "conclusion" : "#P_fssd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cC", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_fss" ]
+}

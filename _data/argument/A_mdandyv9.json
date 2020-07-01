@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mdandyv9 on Metamath](http://us.metamath.org/mpegif/mdandyv9.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mdandyv9.1 | |- ( ph <-> F. ) |\n| 2 |  | mdandyv9.2 | |- ( ps <-> T. ) |\n| 3 |  | mdandyv9.3 | |- ( ch <-> T. ) |\n| 4 |  | mdandyv9.4 | |- ( th <-> F. ) |\n| 5 |  | mdandyv9.5 | |- ( ta <-> F. ) |\n| 6 |  | mdandyv9.6 | |- ( et <-> T. ) |\n| 7 | 3, 2 | #P_bothtbothsame | |- ( ch <-> ps ) |\n| 8 | 4, 1 | #P_bothfbothsame | |- ( th <-> ph ) |\n| 9 | 7, 8 | #P_pm3.2i | |- ( ( ch <-> ps ) /\\ ( th <-> ph ) ) |\n| 10 | 5, 1 | #P_bothfbothsame | |- ( ta <-> ph ) |\n| 11 | 9, 10 | #P_pm3.2i | |- ( ( ( ch <-> ps ) /\\ ( th <-> ph ) ) /\\ ( ta <-> ph ) ) |\n| 12 | 6, 2 | #P_bothtbothsame | |- ( et <-> ps ) |\n| 13 | 11, 12 | #P_pm3.2i | |- ( ( ( ( ch <-> ps ) /\\ ( th <-> ph ) ) /\\ ( ta <-> ph ) ) /\\ ( et <-> ps ) ) |",
+  "conclusion" : "#P_mdandyv9",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wfal", "#T_wps", "#T_wb", "#T_wtru", "#T_wch", "#T_wb", "#T_wtru", "#T_wth", "#T_wb", "#T_wfal", "#T_wta", "#T_wb", "#T_wfal", "#T_wet", "#T_wb", "#T_wtru", "#T_wch", "#T_wb", "#T_wps", "#T_wth", "#T_wb", "#T_wph", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wta", "#T_wb", "#T_wph", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wa", "#T_wta", "#T_wb", "#T_wph", "#T_wet", "#T_wb", "#T_wps", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wa", "#T_wta", "#T_wb", "#T_wph", "#T_wa", "#T_wet", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bothtbothsame", "#P_bothfbothsame", "#P_pm3.2i" ]
+}

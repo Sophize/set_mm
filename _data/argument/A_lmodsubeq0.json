@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodsubeq0 on Metamath](http://us.metamath.org/mpegif/lmodsubeq0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmodsubeq0.v | |- V = ( Base ` W ) |\n| 2 |  | lmodsubeq0.o | |- .0. = ( 0g ` W ) |\n| 3 |  | lmodsubeq0.m | |- .- = ( -g ` W ) |\n| 4 |  | #P_lmodgrp | |- ( W e. LMod -> W e. Grp ) |\n| 5 | 1, 2, 3 | #P_grpsubeq0 | |- ( ( W e. Grp /\\ A e. V /\\ B e. V ) -> ( ( A .- B ) = .0. <-> A = B ) ) |\n| 6 | 4, 5 | #P_syl3an1 | |- ( ( W e. LMod /\\ A e. V /\\ B e. V ) -> ( ( A .- B ) = .0. <-> A = B ) ) |",
+  "conclusion" : "#P_lmodsubeq0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_cgrp", "#T_cW", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_c.mi", "#T_cB.wceq", "#T_wceq", "#T_c.0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_c.mi", "#T_cB", "#T_wceq", "#T_c.0", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpsubeq0", "#P_lmodgrp", "#P_syl3an1" ]
+}

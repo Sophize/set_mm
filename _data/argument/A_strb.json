@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strb on Metamath](http://us.metamath.org/mpegif/strb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | str.1 | |- A e. CH |\n| 2 |  | str.2 | |- B e. CH |\n| 3 | 1, 2 | #P_stri | |- ( A. f e. States ( ( f ` A ) = 1 -> ( f ` B ) = 1 ) -> A C_ B ) |\n| 4 | 1, 2 | #P_stlesi | |- ( f e. States -> ( A C_ B -> ( ( f ` A ) = 1 -> ( f ` B ) = 1 ) ) ) |\n| 5 | 4 | #P_com12 | |- ( A C_ B -> ( f e. States -> ( ( f ` A ) = 1 -> ( f ` B ) = 1 ) ) ) |\n| 6 | 5 | #P_ralrimiv | |- ( A C_ B -> A. f e. States ( ( f ` A ) = 1 -> ( f ` B ) = 1 ) ) |\n| 7 | 3, 6 | #P_impbii | |- ( A. f e. States ( ( f ` A ) = 1 -> ( f ` B ) = 1 ) <-> A C_ B ) |",
+  "conclusion" : "#P_strb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_wral--1", "#T_cbvex4v.vf", "#T_wral--2", "#T_cst", "#T_cbvex4v.vf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cbvex4v.vf", "#T_wcel", "#T_cst", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cbvex4v.vf", "#T_wcel", "#T_cst", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_cbvex4v.vf", "#T_wral--2", "#T_cst", "#T_cbvex4v.vf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cbvex4v.vf", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_cst", "#T_vf", "#T_cfv", "#T_cA", "#T_wceq", "#T_c1", "#T_wi", "#T_vf", "#T_cfv", "#T_cB", "#T_wceq", "#T_c1", "#T_wb", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_stri", "#P_stlesi", "#P_ralrimiv", "#P_com12" ]
+}

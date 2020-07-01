@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cncdrg on Metamath](http://us.metamath.org/mpegif/cncdrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resscdrg.1 | |- F = ( CCfld |`s K ) |\n| 2 |  | #P_simp1 | |- ( ( K e. ( SubRing ` CCfld ) /\\ F e. DivRing /\\ F e. CMetSp ) -> K e. ( SubRing ` CCfld ) ) |\n| 3 | 1 | #P_resscdrg | |- ( ( K e. ( SubRing ` CCfld ) /\\ F e. DivRing /\\ F e. CMetSp ) -> RR C_ K ) |\n| 4 |  | #P_cnsubrg | |- ( ( K e. ( SubRing ` CCfld ) /\\ RR C_ K ) -> K e. { RR , CC } ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( ( K e. ( SubRing ` CCfld ) /\\ F e. DivRing /\\ F e. CMetSp ) -> K e. { RR , CC } ) |",
+  "conclusion" : "#P_cncdrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cK", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cdr", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_ccms", "#T_wi", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cdr", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_ccms", "#T_wi", "#T_cr", "#T_wss", "#T_cK", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_cr", "#T_wss", "#T_cK", "#T_wi", "#T_cK", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cdr", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_ccms", "#T_wi", "#T_cK", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resscdrg", "#P_syl2anc", "#P_simp1", "#P_cnsubrg" ]
+}

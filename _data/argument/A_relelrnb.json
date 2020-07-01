@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relelrnb on Metamath](http://us.metamath.org/mpegif/relelrnb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elrng | |- ( A e. ran R -> ( A e. ran R <-> E. x x R A ) ) |\n| 2 | 1 | #P_ibi | |- ( A e. ran R -> E. x x R A ) |\n| 3 |  | #P_relelrn | |- ( ( Rel R /\\ x R A ) -> A e. ran R ) |\n| 4 | 3 | #P_ex | |- ( Rel R -> ( x R A -> A e. ran R ) ) |\n| 5 | 4 | #P_exlimdv | |- ( Rel R -> ( E. x x R A -> A e. ran R ) ) |\n| 6 | 2, 5 | #P_impbid2 | |- ( Rel R -> ( A e. ran R <-> E. x x R A ) ) |",
+  "conclusion" : "#P_relelrnb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_cR", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_cR", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wa", "#T_vx.wal", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_vx.wal", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_cR", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cA", "#T_wcel", "#T_crn", "#T_cR", "#T_wb", "#T_wex", "#T_vx", "#T_vx", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibi", "#P_relelrn", "#P_ex", "#P_exlimdv", "#P_elrng", "#P_impbid2" ]
+}

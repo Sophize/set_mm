@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uztric on Metamath](http://us.metamath.org/mpegif/uztric.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zletric | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M <_ N \\/ N <_ M ) ) |\n| 2 |  | #P_eluz | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( N e. ( ZZ>= ` M ) <-> M <_ N ) ) |\n| 3 |  | #P_eluz | |- ( ( N e. ZZ /\\ M e. ZZ ) -> ( M e. ( ZZ>= ` N ) <-> N <_ M ) ) |\n| 4 | 3 | #P_ancoms | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M e. ( ZZ>= ` N ) <-> N <_ M ) ) |\n| 5 | 2, 4 | #P_orbi12d | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( ( N e. ( ZZ>= ` M ) \\/ M e. ( ZZ>= ` N ) ) <-> ( M <_ N \\/ N <_ M ) ) ) |\n| 6 | 1, 5 | #P_mpbird | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( N e. ( ZZ>= ` M ) \\/ M e. ( ZZ>= ` N ) ) ) |",
+  "conclusion" : "#P_uztric",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cle", "#T_cN", "#T_wo", "#T_cN", "#T_cle", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wb", "#T_cN", "#T_cle", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wb", "#T_cN", "#T_cle", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wo", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_wo", "#T_cN", "#T_cle", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wo", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eluz", "#P_orbi12d", "#P_ancoms", "#P_zletric", "#P_mpbird" ]
+}

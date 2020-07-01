@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfopab on Metamath](http://us.metamath.org/mpegif/nfopab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfopab.1 | |- F/ z ph |\n| 2 |  | #P_df-opab | |- { <. x , y >. | ph } = { w | E. x E. y ( w = <. x , y >. /\\ ph ) } |\n| 3 |  | #P_nfv | |- F/ z w = <. x , y >. |\n| 4 | 3, 1 | #P_nfan | |- F/ z ( w = <. x , y >. /\\ ph ) |\n| 5 | 4 | #P_nfex | |- F/ z E. y ( w = <. x , y >. /\\ ph ) |\n| 6 | 5 | #P_nfex | |- F/ z E. x E. y ( w = <. x , y >. /\\ ph ) |\n| 7 | 6 | #P_nfab | |- F/_ z { w | E. x E. y ( w = <. x , y >. /\\ ph ) } |\n| 8 | 2, 7 | #P_nfcxfr | |- F/_ z { <. x , y >. | ph } |",
+  "conclusion" : "#P_nfopab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wnf", "#T_vz", "#T_wph", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_wceq", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_wph", "#T_cab--3", "#T_wnf", "#T_vz", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wnf", "#T_vz", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_wph", "#T_wnf", "#T_vz", "#T_wex", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_wph", "#T_wnf", "#T_vz", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_wph", "#T_wnfc", "#T_vz", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_wph", "#T_cab--3", "#T_wnfc", "#T_vz", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_nfex", "#P_nfcxfr", "#P_df-opab", "#P_nfab", "#P_nfan" ]
+}

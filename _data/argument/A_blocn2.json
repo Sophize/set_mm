@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See blocn2 on Metamath](http://us.metamath.org/mpegif/blocn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | blocn.8 | |- C = ( IndMet ` U ) |\n| 2 |  | blocn.d | |- D = ( IndMet ` W ) |\n| 3 |  | blocn.j | |- J = ( MetOpen ` C ) |\n| 4 |  | blocn.k | |- K = ( MetOpen ` D ) |\n| 5 |  | blocn.5 | |- B = ( U BLnOp W ) |\n| 6 |  | blocn.u | |- U e. NrmCVec |\n| 7 |  | blocn.w | |- W e. NrmCVec |\n| 8 |  | #P_eqid | |- ( U LnOp W ) = ( U LnOp W ) |\n| 9 | 8, 5 | #P_bloln | |- ( ( U e. NrmCVec /\\ W e. NrmCVec /\\ T e. B ) -> T e. ( U LnOp W ) ) |\n| 10 | 6, 7, 9 | #P_mp3an12 | |- ( T e. B -> T e. ( U LnOp W ) ) |\n| 11 | 1, 2, 3, 4, 5, 6, 7, 8 | #P_blocn | |- ( T e. ( U LnOp W ) -> ( T e. ( J Cn K ) <-> T e. B ) ) |\n| 12 | 11 | #P_biimprd | |- ( T e. ( U LnOp W ) -> ( T e. B -> T e. ( J Cn K ) ) ) |\n| 13 | 10, 12 | #P_mpcom | |- ( T e. B -> T e. ( J Cn K ) ) |",
+  "conclusion" : "#P_blocn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cW", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cC", "#T_cK", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cB", "#T_wceq", "#T_cU", "#T_cblo", "#T_cW", "#T_cU", "#T_wcel", "#T_cnv", "#T_cW", "#T_wcel", "#T_cnv", "#T_cU", "#T_clno", "#T_cW", "#T_wceq", "#T_cU", "#T_clno", "#T_cW", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cnv", "#T_w3a--2", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cT", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cT", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_cT", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_wi", "#T_cT", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wb", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_cT", "#T_wcel", "#T_cU", "#T_clno", "#T_cW", "#T_wi", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cT", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_cT", "#T_wcel", "#T_cB", "#T_wi", "#T_cT", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_eqid", "#P_blocn", "#P_biimprd", "#P_mp3an12", "#P_bloln" ]
+}

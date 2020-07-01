@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbiegf on Metamath](http://us.metamath.org/mpegif/csbiegf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | csbiegf.1 | |- ( A e. V -> F/_ x C ) |\n| 2 |  | csbiegf.2 | |- ( x = A -> B = C ) |\n| 3 | 2 | #P_ax-gen | |- A. x ( x = A -> B = C ) |\n| 4 |  | #P_csbiebt | |- ( ( A e. V /\\ F/_ x C ) -> ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) |\n| 5 | 1, 4 | #P_mpdan | |- ( A e. V -> ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) |\n| 6 | 3, 5 | #P_mpbii | |- ( A e. V -> [_ A / x ]_ B = C ) |",
+  "conclusion" : "#P_csbiegf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wnfc", "#T_vx", "#T_cC", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_wnfc", "#T_vx.wal", "#T_cC", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_mpbii", "#P_csbiebt", "#P_ax-gen" ]
+}

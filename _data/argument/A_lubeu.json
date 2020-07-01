@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lubeu on Metamath](http://us.metamath.org/mpegif/lubeu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lubval.b | |- B = ( Base ` K ) |\n| 2 |  | lubval.l | |- .<_ = ( le ` K ) |\n| 3 |  | lubval.u | |- U = ( lub ` K ) |\n| 4 |  | lubval.p | |- ( ps <-> ( A. y e. S y .<_ x /\\ A. z e. B ( A. y e. S y .<_ z -> x .<_ z ) ) ) |\n| 5 |  | lubval.k | |- ( ph -> K e. V ) |\n| 6 |  | lubeleu.s | |- ( ph -> S e. dom U ) |\n| 7 | 1, 2, 3, 4, 5 | #P_lubeldm | |- ( ph -> ( S e. dom U <-> ( S C_ B /\\ E! x e. B ps ) ) ) |\n| 8 | 6, 7 | #P_mpbid | |- ( ph -> ( S C_ B /\\ E! x e. B ps ) ) |\n| 9 | 8 | #P_simprd | |- ( ph -> E! x e. B ps ) |",
+  "conclusion" : "#P_lubeu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_wps", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_vx", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_vz", "#T_wi", "#T_vx", "#T_c.le", "#T_vz", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cdm", "#T_cU", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cdm", "#T_cU", "#T_wb", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cB.wceq", "#T_wps", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cB.wceq", "#T_wps", "#T_wph", "#T_wi", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cB", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_simprd", "#P_lubeldm" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imass2 on Metamath](http://us.metamath.org/mpegif/imass2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssres2 | |- ( A C_ B -> ( C |` A ) C_ ( C |` B ) ) |\n| 2 |  | #P_rnss | |- ( ( C |` A ) C_ ( C |` B ) -> ran ( C |` A ) C_ ran ( C |` B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A C_ B -> ran ( C |` A ) C_ ran ( C |` B ) ) |\n| 4 |  | #P_df-ima | |- ( C \" A ) = ran ( C |` A ) |\n| 5 |  | #P_df-ima | |- ( C \" B ) = ran ( C |` B ) |\n| 6 | 3, 4, 5 | #P_3sstr4g | |- ( A C_ B -> ( C \" A ) C_ ( C \" B ) ) |",
+  "conclusion" : "#P_imass2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cres", "#T_cB.wceq", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cres", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_crn", "#T_cC", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_wss", "#T_crn", "#T_cC", "#T_cres", "#T_cB.wceq", "#T_cC", "#T_cima", "#T_cA.wceq", "#T_wceq", "#T_crn", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_cC", "#T_cima", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cC", "#T_cres", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cC", "#T_cima", "#T_cA", "#T_wss", "#T_cC", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rnss", "#P_3sstr4g", "#P_ssres2", "#P_df-ima", "#P_syl" ]
+}

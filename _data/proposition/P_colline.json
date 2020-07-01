@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See colline on Metamath](http://us.metamath.org/mpegif/colline.html)"
+  } ],
+  "names" : [ "colline" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_c2", "#T_cle", "#T_chash", "#T_cfv", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cY", "#T_cL", "#T_cZ", "#T_wo", "#T_cY", "#T_wceq", "#T_cZ", "#T_wb", "#T_wrex--1", "#T_va", "#T_wrex--2", "#T_crn", "#T_cL", "#T_cX", "#T_wcel", "#T_va", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_va", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_va", "#T_cL", "#T_va", "#T_cX", "#T_va", "#T_cY", "#T_va", "#T_cZ", "#T_va", "#T_va", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Three points are colinear iff there is a line through all three of them.  Theorem 6.23 of [Schwabhauser] p. 46.  (Contributed by Thierry Arnoux, 28-May-2019.) ",
+  "statement" : "tglineintmo.p $e |- P = ( Base ` G ) $.\ntglineintmo.i $e |- I = ( Itv ` G ) $.\ntglineintmo.l $e |- L = ( LineG ` G ) $.\ntglineintmo.g $e |- ( ph -> G e. TarskiG ) $.\ncolline.1 $e |- ( ph -> X e. P ) $.\ncolline.2 $e |- ( ph -> Y e. P ) $.\ncolline.3 $e |- ( ph -> Z e. P ) $.\ncolline.4 $e |- ( ph -> 2 <_ ( # ` P ) ) $.\ncolline $p |- ( ph -> ( ( X e. ( Y L Z ) \\/ Y = Z ) <-> E. a e. ran L ( X e. a /\\ Y e. a /\\ Z e. a ) ) ) $.\n$d L a $.\n$d X a $.\n$d Y a $.\n$d Z a $.\n$d a ph $."
+}

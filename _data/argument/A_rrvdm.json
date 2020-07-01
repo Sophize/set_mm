@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrvdm on Metamath](http://us.metamath.org/mpegif/rrvdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isrrvv.1 | |- ( ph -> P e. Prob ) |\n| 2 |  | rrvvf.1 | |- ( ph -> X e. ( rRndVar ` P ) ) |\n| 3 | 1, 2 | #P_rrvvf | |- ( ph -> X : U. dom P --> RR ) |\n| 4 |  | #P_fdm | |- ( X : U. dom P --> RR -> dom X = U. dom P ) |\n| 5 | 3, 4 | #P_syl | |- ( ph -> dom X = U. dom P ) |",
+  "conclusion" : "#P_rrvdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cprb", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_crrv", "#T_cfv", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_wf--1", "#T_cuni", "#T_cdm", "#T_cP", "#T_wf--2", "#T_cr", "#T_cX", "#T_wf--1", "#T_cuni", "#T_cdm", "#T_cP", "#T_wf--2", "#T_cr", "#T_wi", "#T_cdm", "#T_cX", "#T_wceq", "#T_cuni", "#T_cdm", "#T_cP", "#T_wph", "#T_wi", "#T_cdm", "#T_cX", "#T_wceq", "#T_cuni", "#T_cdm", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rrvvf", "#P_fdm", "#P_syl" ]
+}

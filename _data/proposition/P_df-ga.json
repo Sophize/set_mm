@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ga on Metamath](http://us.metamath.org/mpegif/df-ga.html)"
+  } ],
+  "names" : [ "df-ga" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cga", "#T_wceq", "#T_vg", "#T_cmpt2--1", "#T_cgrp", "#T_cmpt2--2", "#T_vs", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vg", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_crab--1", "#T_vm", "#T_crab--2", "#T_vs", "#T_cmap", "#T_vb", "#T_cxp", "#T_vs", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vs", "#T_c0g", "#T_cfv", "#T_vg", "#T_vm", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vb", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vb", "#T_vy", "#T_cplusg", "#T_cfv", "#T_vg", "#T_vz", "#T_vm", "#T_vx", "#T_wceq", "#T_vy", "#T_vm", "#T_vz", "#T_vm", "#T_vx", "#T_crab--4", "#T_vb", "#T_vg", "#T_vm", "#T_vs", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all group actions.  A group ` G ` acts on a set ` S ` if a permutation on ` S ` is associated with every element of ` G ` in such a way that the identity permutation on ` S ` is associated with the neutral element of ` G ` , and the composition of the permutations associated with two elements of ` G ` is identical with the permutation associated to the composition of these two elements (in the same order) in the group ` G ` .  (Contributed by Jeff Hankins, 10-Aug-2009.) ",
+  "statement" : "df-ga $p |- GrpAct = ( g e. Grp , s e. _V |-> [_ ( Base ` g ) / b ]_ { m e. ( s ^m ( b X. s ) ) | A. x e. s ( ( ( 0g ` g ) m x ) = x /\\ A. y e. b A. z e. b ( ( y ( +g ` g ) z ) m x ) = ( y m ( z m x ) ) ) } ) $.\n$d b g m s x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opelco on Metamath](http://us.metamath.org/mpegif/opelco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opelco.1 | |- A e. _V |\n| 2 |  | opelco.2 | |- B e. _V |\n| 3 |  | #P_df-br | |- ( A ( C o. D ) B <-> <. A , B >. e. ( C o. D ) ) |\n| 4 | 1, 2 | #P_brco | |- ( A ( C o. D ) B <-> E. x ( A D x /\\ x C B ) ) |\n| 5 | 3, 4 | #P_bitr3i | |- ( <. A , B >. e. ( C o. D ) <-> E. x ( A D x /\\ x C B ) ) |",
+  "conclusion" : "#P_opelco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cC", "#T_ccom", "#T_cD", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_ccom", "#T_cD", "#T_cA.wceq", "#T_cC", "#T_ccom", "#T_cD", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_cB.wceq", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_cC", "#T_ccom", "#T_cD", "#T_wb", "#T_wex", "#T_vx", "#T_cA", "#T_cD", "#T_vx", "#T_wa", "#T_vx", "#T_cC", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_brco", "#P_bitr3i" ]
+}

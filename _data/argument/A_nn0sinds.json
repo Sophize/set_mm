@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0sinds on Metamath](http://us.metamath.org/mpegif/nn0sinds.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nn0sinds.1 | |- ( x = y -> ( ph <-> ps ) ) |\n| 2 |  | nn0sinds.2 | |- ( x = N -> ( ph <-> ch ) ) |\n| 3 |  | nn0sinds.3 | |- ( x e. NN0 -> ( A. y e. ( 0 ... ( x - 1 ) ) ps -> ph ) ) |\n| 4 |  | #P_elnn0uz | |- ( N e. NN0 <-> N e. ( ZZ>= ` 0 ) ) |\n| 5 |  | #P_elnn0uz | |- ( x e. NN0 <-> x e. ( ZZ>= ` 0 ) ) |\n| 6 | 5, 3 | #P_sylbir | |- ( x e. ( ZZ>= ` 0 ) -> ( A. y e. ( 0 ... ( x - 1 ) ) ps -> ph ) ) |\n| 7 | 1, 2, 6 | #P_uzsinds | |- ( N e. ( ZZ>= ` 0 ) -> ch ) |\n| 8 | 4, 7 | #P_sylbi | |- ( N e. NN0 -> ch ) |",
+  "conclusion" : "#P_nn0sinds",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_cN", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wcel", "#T_cn0", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cc0", "#T_cfz", "#T_vx", "#T_cmin", "#T_c1", "#T_wps", "#T_wi", "#T_wph", "#T_cN", "#T_wcel", "#T_cn0", "#T_wb", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_cn0", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cc0", "#T_cfz", "#T_vx.wal", "#T_cmin", "#T_c1", "#T_wps", "#T_wi", "#T_wph", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cc0", "#T_wi", "#T_wch", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elnn0uz", "#P_sylbir", "#P_uzsinds", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prss on Metamath](http://us.metamath.org/mpegif/prss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prss.1 | |- A e. _V |\n| 2 |  | prss.2 | |- B e. _V |\n| 3 |  | #P_unss | |- ( ( { A } C_ C /\\ { B } C_ C ) <-> ( { A } u. { B } ) C_ C ) |\n| 4 | 1 | #P_snss | |- ( A e. C <-> { A } C_ C ) |\n| 5 | 2 | #P_snss | |- ( B e. C <-> { B } C_ C ) |\n| 6 | 4, 5 | #P_anbi12i | |- ( ( A e. C /\\ B e. C ) <-> ( { A } C_ C /\\ { B } C_ C ) ) |\n| 7 |  | #P_df-pr | |- { A , B } = ( { A } u. { B } ) |\n| 8 | 7 | #P_sseq1i | |- ( { A , B } C_ C <-> ( { A } u. { B } ) C_ C ) |\n| 9 | 3, 6, 8 | #P_3bitr4i | |- ( ( A e. C /\\ B e. C ) <-> { A , B } C_ C ) |",
+  "conclusion" : "#P_prss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_wa", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_wa", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cC", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wss", "#T_cC", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cC", "#T_wb", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_snss", "#P_df-pr", "#P_unss", "#P_3bitr4i", "#P_sseq1i" ]
+}

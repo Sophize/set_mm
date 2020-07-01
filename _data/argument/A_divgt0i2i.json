@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divgt0i2i on Metamath](http://us.metamath.org/mpegif/divgt0i2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltplus1.1 | |- A e. RR |\n| 2 |  | prodgt0.2 | |- B e. RR |\n| 3 |  | divgt0i2.3 | |- 0 < B |\n| 4 | 1, 2 | #P_divgt0i | |- ( ( 0 < A /\\ 0 < B ) -> 0 < ( A / B ) ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( 0 < A -> 0 < ( A / B ) ) |",
+  "conclusion" : "#P_divgt0i2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_cB", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cc0", "#T_clt", "#T_cA", "#T_wi", "#T_cc0", "#T_clt", "#T_cA", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpan2", "#P_divgt0i" ]
+}

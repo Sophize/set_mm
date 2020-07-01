@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See konigsberg on Metamath](http://us.metamath.org/mpegif/konigsberg.html)"
+  } ],
+  "names" : [ "konigsberg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cc0", "#T_cfz", "#T_c3", "#T_cE", "#T_wceq", "#T_cs7--1", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c1", "#T_cpr--3", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c2", "#T_cpr--3", "#T_cpr--1", "#T_cc0", "#T_cpr--2", "#T_c3", "#T_cpr--3", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_c2", "#T_cpr--3", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_c2", "#T_cpr--3", "#T_cpr--1", "#T_c2", "#T_cpr--2", "#T_c3", "#T_cpr--3", "#T_cpr--1", "#T_c2", "#T_cpr--2", "#T_c3", "#T_cpr--3", "#T_cs7--2", "#T_cV", "#T_ceup", "#T_cE", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Konigsberg Bridge problem.  If ` <. V , E >. ` is the graph on four vertices ` 0 , 1 , 2 , 3 ` , with edges ` { 0 , 1 } , { 0 , 2 } , ` ` { 0 , 3 } , { 1 , 2 } , { 1 , 2 } , { 2 , 3 } , { 2 , 3 } ` , then vertices ` 0 , 1 , 3 ` each have degree three, and ` 2 ` has degree five, so there are four vertices of odd degree and thus by ~ eupath the graph cannot have an Eulerian path.  This is Metamath 100 proof #54. (Contributed by Mario Carneiro, 11-Mar-2015.)  (Revised by Mario Carneiro, 28-Feb-2016.) ",
+  "statement" : "konigsberg.v $e |- V = ( 0 ... 3 ) $.\nkonigsberg.e $e |- E = <\" { 0 , 1 } { 0 , 2 } { 0 , 3 } { 1 , 2 } { 1 , 2 } { 2 , 3 } { 2 , 3 } \"> $.\nkonigsberg $p |- ( V EulPaths E ) = (/) $."
+}

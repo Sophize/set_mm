@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See setind on Metamath](http://us.metamath.org/mpegif/setind.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfss2 | |- ( x C_ A <-> A. y ( y e. x -> y e. A ) ) |\n| 2 | 1 | #P_imbi1i | |- ( ( x C_ A -> x e. A ) <-> ( A. y ( y e. x -> y e. A ) -> x e. A ) ) |\n| 3 | 2 | #P_albii | |- ( A. x ( x C_ A -> x e. A ) <-> A. x ( A. y ( y e. x -> y e. A ) -> x e. A ) ) |\n| 4 |  | #P_setindel | |- ( A. x ( A. y ( y e. x -> y e. A ) -> x e. A ) -> A = _V ) |\n| 5 | 3, 4 | #P_sylbi | |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) |",
+  "conclusion" : "#P_setind",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_wal", "#T_vx", "#T_vx", "#T_wss", "#T_cA", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cA", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_setindel", "#P_imbi1i", "#P_albii", "#P_dfss2", "#P_sylbi" ]
+}

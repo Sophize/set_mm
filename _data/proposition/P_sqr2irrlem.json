@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqr2irrlem on Metamath](http://us.metamath.org/mpegif/sqr2irrlem.html)"
+  } ],
+  "names" : [ "sqr2irrlem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_csqrt", "#T_cfv", "#T_c2", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for irrationality of square root of 2.  The core of the proof - if ` A / B = sqrt ( 2 ) ` , then ` A ` and ` B ` are even, so ` A / 2 ` and ` B / 2 ` are smaller representatives, which is absurd by the method of infinite descent (here implemented by strong induction).  This is Metamath 100 proof #1.  (Contributed by NM, 20-Aug-2001.)  (Revised by Mario Carneiro, 12-Sep-2015.) ",
+  "statement" : "sqr2irrlem.1 $e |- ( ph -> A e. ZZ ) $.\nsqr2irrlem.2 $e |- ( ph -> B e. NN ) $.\nsqrt2irrlem.3 $e |- ( ph -> ( sqrt ` 2 ) = ( A / B ) ) $.\nsqr2irrlem $p |- ( ph -> ( ( A / 2 ) e. ZZ /\\ ( B / 2 ) e. NN ) ) $."
+}

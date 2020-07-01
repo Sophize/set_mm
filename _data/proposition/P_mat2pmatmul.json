@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mat2pmatmul on Metamath](http://us.metamath.org/mpegif/mat2pmatmul.html)"
+  } ],
+  "names" : [ "mat2pmatmul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cH", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_cT", "#T_cfv", "#T_vx", "#T_cmulr", "#T_cfv", "#T_cA", "#T_vy", "#T_wceq", "#T_cT", "#T_cfv", "#T_vx", "#T_cmulr", "#T_cfv", "#T_cC", "#T_cT", "#T_cfv", "#T_vy", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cH", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cP", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cT", "#T_vx", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The transformation of matrices into polynomial matrices preserves the multiplication.  (Contributed by AV, 29-Oct-2019.)  (Proof shortened by AV, 28-Nov-2019.) ",
+  "statement" : "mat2pmatbas.t $e |- T = ( N matToPolyMat R ) $.\nmat2pmatbas.a $e |- A = ( N Mat R ) $.\nmat2pmatbas.b $e |- B = ( Base ` A ) $.\nmat2pmatbas.p $e |- P = ( Poly1 ` R ) $.\nmat2pmatbas.c $e |- C = ( N Mat P ) $.\nmat2pmatbas0.h $e |- H = ( Base ` C ) $.\nmat2pmatmul $p |- ( ( N e. Fin /\\ R e. CRing ) -> A. x e. B A. y e. B ( T ` ( x ( .r ` A ) y ) ) = ( ( T ` x ) ( .r ` C ) ( T ` y ) ) ) $.\n$d A x y $.\n$d B x y $.\n$d C x y $.\n$d H x y $.\n$d N x y $.\n$d P x y $.\n$d R x y $.\n$d T x y $.\n$d x y $."
+}

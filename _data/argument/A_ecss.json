@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ecss on Metamath](http://us.metamath.org/mpegif/ecss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ecss.1 | |- ( ph -> R Er X ) |\n| 2 |  | #P_df-ec | |- [ A ] R = ( R \" { A } ) |\n| 3 |  | #P_imassrn | |- ( R \" { A } ) C_ ran R |\n| 4 | 2, 3 | #P_eqsstri | |- [ A ] R C_ ran R |\n| 5 |  | #P_errn | |- ( R Er X -> ran R = X ) |\n| 6 | 1, 5 | #P_syl | |- ( ph -> ran R = X ) |\n| 7 | 4, 6 | #P_syl5sseq | |- ( ph -> [ A ] R C_ X ) |",
+  "conclusion" : "#P_ecss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_cec--1", "#T_cA.wceq", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cR", "#T_cima", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wss", "#T_crn", "#T_cR", "#T_cec--1", "#T_cA.wceq", "#T_cec--2", "#T_cR", "#T_wss", "#T_crn", "#T_cR", "#T_cR", "#T_wer", "#T_cX", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cec--1", "#T_cA", "#T_cec--2", "#T_cR", "#T_wss", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_errn", "#P_syl", "#P_eqsstri", "#P_df-ec", "#P_imassrn", "#P_syl5sseq" ]
+}

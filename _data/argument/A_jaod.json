@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jaod on Metamath](http://us.metamath.org/mpegif/jaod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jaod.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | jaod.2 | |- ( ph -> ( th -> ch ) ) |\n| 3 | 1 | #P_com12 | |- ( ps -> ( ph -> ch ) ) |\n| 4 | 2 | #P_com12 | |- ( th -> ( ph -> ch ) ) |\n| 5 | 3, 4 | #P_jaoi | |- ( ( ps \\/ th ) -> ( ph -> ch ) ) |\n| 6 | 5 | #P_com12 | |- ( ph -> ( ( ps \\/ th ) -> ch ) ) |",
+  "conclusion" : "#P_jaod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wo", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wth", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jaoi", "#P_com12" ]
+}

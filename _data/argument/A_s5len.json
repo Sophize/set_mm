@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s5len on Metamath](http://us.metamath.org/mpegif/s5len.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-s5 | |- <\" A B C D E \"> = ( <\" A B C D \"> concat <\" E \"> ) |\n| 2 |  | #P_s4cli | |- <\" A B C D \"> e. Word _V |\n| 3 |  | #P_s4len | |- ( # ` <\" A B C D \"> ) = 4 |\n| 4 |  | #P_4p1e5 | |- ( 4 + 1 ) = 5 |\n| 5 | 1, 2, 3, 4 | #P_cats1len | |- ( # ` <\" A B C D E \"> ) = 5 |",
+  "conclusion" : "#P_s5len",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs5--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cE", "#T_cs5--2", "#T_wceq", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_cconcat", "#T_cs1--1", "#T_cE", "#T_cs1--2", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_chash", "#T_cfv", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wceq", "#T_c4", "#T_c4", "#T_caddc", "#T_c1", "#T_wceq", "#T_c5", "#T_chash", "#T_cfv", "#T_cs5--1", "#T_cA", "#T_cB", "#T_cC", "#T_cD", "#T_cE", "#T_cs5--2", "#T_wceq", "#T_c5" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-s5", "#P_s4len", "#P_s4cli", "#P_4p1e5", "#P_cats1len" ]
+}

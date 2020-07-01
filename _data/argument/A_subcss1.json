@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subcss1 on Metamath](http://us.metamath.org/mpegif/subcss1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subcss1.1 | |- ( ph -> J e. ( Subcat ` C ) ) |\n| 2 |  | subcss1.2 | |- ( ph -> J Fn ( S X. S ) ) |\n| 3 |  | subcss1.b | |- B = ( Base ` C ) |\n| 4 |  | #P_eqid | |- ( Homf ` C ) = ( Homf ` C ) |\n| 5 | 4, 3 | #P_homffn | |- ( Homf ` C ) Fn ( B X. B ) |\n| 6 | 5 | #P_a1i | |- ( ph -> ( Homf ` C ) Fn ( B X. B ) ) |\n| 7 | 1, 4 | #P_subcssc | |- ( ph -> J C_cat ( Homf ` C ) ) |\n| 8 | 2, 6, 7 | #P_ssc1 | |- ( ph -> S C_ B ) |",
+  "conclusion" : "#P_subcss1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_csubc", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cJ", "#T_wfn", "#T_cS", "#T_cxp", "#T_cS", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_chomf", "#T_cfv", "#T_cC", "#T_wceq", "#T_chomf", "#T_cfv", "#T_cC", "#T_chomf", "#T_cfv", "#T_cC", "#T_wfn", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_chomf", "#T_cfv", "#T_cC", "#T_wfn", "#T_cB.wceq", "#T_cxp", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cJ", "#T_cssc", "#T_chomf", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_homffn", "#P_a1i", "#P_subcssc", "#P_ssc1" ]
+}

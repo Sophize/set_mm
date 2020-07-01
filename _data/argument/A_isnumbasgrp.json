@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isnumbasgrp on Metamath](http://us.metamath.org/mpegif/isnumbasgrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ablgrp | |- ( x e. Abel -> x e. Grp ) |\n| 2 | 1 | #P_ssriv | |- Abel C_ Grp |\n| 3 |  | #P_imass2 | |- ( Abel C_ Grp -> ( Base \" Abel ) C_ ( Base \" Grp ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( Base \" Abel ) C_ ( Base \" Grp ) |\n| 5 |  | #P_isnumbasabl | |- ( S e. dom card <-> ( S u. ( har ` S ) ) e. ( Base \" Abel ) ) |\n| 6 | 5 | #P_biimpi | |- ( S e. dom card -> ( S u. ( har ` S ) ) e. ( Base \" Abel ) ) |\n| 7 | 4, 6 | #P_sseldi | |- ( S e. dom card -> ( S u. ( har ` S ) ) e. ( Base \" Grp ) ) |\n| 8 |  | #P_isnumbasgrplem2 | |- ( ( S u. ( har ` S ) ) e. ( Base \" Grp ) -> S e. dom card ) |\n| 9 | 7, 8 | #P_impbii | |- ( S e. dom card <-> ( S u. ( har ` S ) ) e. ( Base \" Grp ) ) |",
+  "conclusion" : "#P_isnumbasgrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cabl", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cgrp", "#T_cabl", "#T_wss", "#T_cgrp", "#T_cabl", "#T_wss", "#T_cgrp", "#T_wi", "#T_cbs", "#T_cima", "#T_cabl", "#T_wss", "#T_cbs", "#T_cima", "#T_cgrp", "#T_cbs", "#T_cima", "#T_cabl", "#T_wss", "#T_cbs", "#T_cima", "#T_cgrp", "#T_cS", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_cS", "#T_cun", "#T_char", "#T_cfv", "#T_cS", "#T_wcel", "#T_cbs", "#T_cima", "#T_cabl", "#T_cS", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cS", "#T_cun", "#T_char", "#T_cfv", "#T_cS", "#T_wcel", "#T_cbs", "#T_cima", "#T_cabl", "#T_cS", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cS", "#T_cun", "#T_char", "#T_cfv", "#T_cS", "#T_wcel", "#T_cbs", "#T_cima", "#T_cgrp", "#T_cS", "#T_cun", "#T_char", "#T_cfv", "#T_cS", "#T_wcel", "#T_cbs", "#T_cima", "#T_cgrp", "#T_wi", "#T_cS", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cS", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_cS", "#T_cun", "#T_char", "#T_cfv", "#T_cS", "#T_wcel", "#T_cbs", "#T_cima", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_impbii", "#P_imass2", "#P_sseldi", "#P_isnumbasgrplem2", "#P_ablgrp", "#P_biimpi", "#P_isnumbasabl", "#P_ssriv" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspn0 on Metamath](http://us.metamath.org/mpegif/rspn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_n0 | |- ( A =/= (/) <-> E. x x e. A ) |\n| 2 |  | #P_nfra1 | |- F/ x A. x e. A ph |\n| 3 |  | #P_nfv | |- F/ x ph |\n| 4 | 2, 3 | #P_nfim | |- F/ x ( A. x e. A ph -> ph ) |\n| 5 |  | #P_rsp | |- ( A. x e. A ph -> ( x e. A -> ph ) ) |\n| 6 | 5 | #P_com12 | |- ( x e. A -> ( A. x e. A ph -> ph ) ) |\n| 7 | 4, 6 | #P_exlimi | |- ( E. x x e. A -> ( A. x e. A ph -> ph ) ) |\n| 8 | 1, 7 | #P_sylbi | |- ( A =/= (/) -> ( A. x e. A ph -> ph ) ) |",
+  "conclusion" : "#P_rspn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wph", "#T_cA", "#T_wne", "#T_c0", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rsp", "#P_nfv", "#P_nfim", "#P_n0", "#P_nfra1", "#P_exlimi", "#P_sylbi", "#P_com12" ]
+}

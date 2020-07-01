@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltdiv23ii on Metamath](http://us.metamath.org/mpegif/ltdiv23ii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltplus1.1 | |- A e. RR |\n| 2 |  | prodgt0.2 | |- B e. RR |\n| 3 |  | ltmul1.3 | |- C e. RR |\n| 4 |  | ltdiv23i.4 | |- 0 < B |\n| 5 |  | ltdiv23i.5 | |- 0 < C |\n| 6 | 1, 2, 3 | #P_ltdiv23i | |- ( ( 0 < B /\\ 0 < C ) -> ( ( A / B ) < C <-> ( A / C ) < B ) ) |\n| 7 | 4, 5, 6 | #P_mp2an | |- ( ( A / B ) < C <-> ( A / C ) < B ) |",
+  "conclusion" : "#P_ltdiv23ii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cC", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_cB", "#T_cc0", "#T_clt", "#T_cC", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_clt", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_clt", "#T_cB.wceq", "#T_cA", "#T_cdiv", "#T_cB", "#T_clt", "#T_cC", "#T_wb", "#T_cA", "#T_cdiv", "#T_cC", "#T_clt", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ltdiv23i", "#P_mp2an" ]
+}

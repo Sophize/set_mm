@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm5.61 on Metamath](http://us.metamath.org/mpegif/pm5.61.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_biorf | |- ( -. ps -> ( ph <-> ( ps \\/ ph ) ) ) |\n| 2 |  | #P_orcom | |- ( ( ps \\/ ph ) <-> ( ph \\/ ps ) ) |\n| 3 | 1, 2 | #P_syl6rbb | |- ( -. ps -> ( ( ph \\/ ps ) <-> ph ) ) |\n| 4 | 3 | #P_pm5.32ri | |- ( ( ( ph \\/ ps ) /\\ -. ps ) <-> ( ph /\\ -. ps ) ) |",
+  "conclusion" : "#P_pm5.61",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wo", "#T_wph", "#T_wps", "#T_wo", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biorf", "#P_orcom", "#P_pm5.32ri", "#P_syl6rbb" ]
+}

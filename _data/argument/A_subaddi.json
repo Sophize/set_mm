@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subaddi on Metamath](http://us.metamath.org/mpegif/subaddi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidi.1 | |- A e. CC |\n| 2 |  | pncan3i.2 | |- B e. CC |\n| 3 |  | subadd.3 | |- C e. CC |\n| 4 |  | #P_subadd | |- ( ( A e. CC /\\ B e. CC /\\ C e. CC ) -> ( ( A - B ) = C <-> ( B + C ) = A ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( ( A - B ) = C <-> ( B + C ) = A ) |",
+  "conclusion" : "#P_subaddi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cC", "#T_wb", "#T_cB", "#T_caddc", "#T_cC", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_subadd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See selberg4 on Metamath](http://us.metamath.org/mpegif/selberg4.html)"
+  } ],
+  "names" : [ "selberg4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cmpt--1", "#T_c1", "#T_cioo", "#T_cpnf", "#T_cmpt--2", "#T_cchp", "#T_cfv", "#T_vx", "#T_cmul", "#T_clog", "#T_cfv", "#T_vx", "#T_cmin", "#T_c2", "#T_cdiv", "#T_clog", "#T_cfv", "#T_vx", "#T_cmul", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_cvma", "#T_cfv", "#T_vn", "#T_cmul", "#T_csu--1", "#T_vm", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vn", "#T_cvma", "#T_cfv", "#T_vm", "#T_cmul", "#T_cchp", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vn", "#T_cdiv", "#T_vm", "#T_cdiv", "#T_vx", "#T_wcel", "#T_co1", "#T_vm", "#T_vn", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Selberg symmetry formula for products of three primes, instead of two.  The sum here can also be written in the symmetric form ` sum_ i j k <_ x , Lam ( i ) Lam ( j ) Lam ( k ) ` ; we eliminate one of the nested sums by using the definition of ` psi ( x ) = sum_ k <_ x , Lam ( k ) ` .  This statement can thus equivalently be written ` psi ( x ) log ^ 2 ( x ) = ` ` 2 sum_ i j k <_ x , Lam ( i ) Lam ( j ) Lam ( k ) + O ( x log x ) ` . Equation 10.4.23 of [Shapiro], p. 422.  (Contributed by Mario Carneiro, 30-May-2016.) ",
+  "statement" : "selberg4 $p |- ( x e. ( 1 (,) +oo ) |-> ( ( ( ( psi ` x ) x. ( log ` x ) ) - ( ( 2 / ( log ` x ) ) x. sum_ n e. ( 1 ... ( |_ ` x ) ) ( ( Lam ` n ) x. sum_ m e. ( 1 ... ( |_ ` ( x / n ) ) ) ( ( Lam ` m ) x. ( psi ` ( ( x / n ) / m ) ) ) ) ) ) / x ) ) e. O(1) $.\n$d m n x $."
+}

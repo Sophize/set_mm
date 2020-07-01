@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relogmuld on Metamath](http://us.metamath.org/mpegif/relogmuld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | relogcld.1 | |- ( ph -> A e. RR+ ) |\n| 2 |  | relogmuld.2 | |- ( ph -> B e. RR+ ) |\n| 3 |  | #P_relogmul | |- ( ( A e. RR+ /\\ B e. RR+ ) -> ( log ` ( A x. B ) ) = ( ( log ` A ) + ( log ` B ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( log ` ( A x. B ) ) = ( ( log ` A ) + ( log ` B ) ) ) |",
+  "conclusion" : "#P_relogmuld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_clog", "#T_cfv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_clog", "#T_cfv", "#T_cA", "#T_cmul", "#T_cB", "#T_wceq", "#T_clog", "#T_cfv", "#T_cA", "#T_caddc", "#T_clog", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_relogmul", "#P_syl2anc" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-ifim1 on Metamath](http://us.metamath.org/mpegif/bj-ifim1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tru | |- T. |\n| 2 | 1 | #P_olci | |- ( -. -. ph \\/ T. ) |\n| 3 | 2 | #P_biantrur | |- ( ( -. ph \\/ ps ) <-> ( ( -. -. ph \\/ T. ) /\\ ( -. ph \\/ ps ) ) ) |\n| 4 |  | #P_imor | |- ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) |\n| 5 |  | #P_bj-dfif3 | |- ( if- ( -. ph , T. , ps ) <-> ( ( -. -. ph \\/ T. ) /\\ ( -. ph \\/ ps ) ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4i | |- ( ( ph -> ps ) <-> if- ( -. ph , T. , ps ) ) |",
+  "conclusion" : "#P_bj-ifim1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wtru", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wtru", "#T_wa", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wif--1", "#T_wn", "#T_wph", "#T_wif--2", "#T_wtru", "#T_wif--3", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wtru", "#T_wa", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wif--1", "#T_wn", "#T_wph", "#T_wif--2", "#T_wtru", "#T_wif--3", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imor", "#P_tru", "#P_biantrur", "#P_3bitr4i", "#P_olci", "#P_bj-dfif3" ]
+}

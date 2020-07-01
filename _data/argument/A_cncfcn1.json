@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cncfcn1 on Metamath](http://us.metamath.org/mpegif/cncfcn1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cncfcn1.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | #P_ssid | |- CC C_ CC |\n| 3 | 1 | #P_cnfldtop | |- J e. Top |\n| 4 | 1 | #P_cnfldtopon | |- J e. ( TopOn ` CC ) |\n| 5 | 4 | #P_toponunii | |- CC = U. J |\n| 6 | 5 | #P_restid | |- ( J e. Top -> ( J |`t CC ) = J ) |\n| 7 | 3, 6 | #P_ax-mp | |- ( J |`t CC ) = J |\n| 8 | 7 | #P_eqcomi | |- J = ( J |`t CC ) |\n| 9 | 1, 8, 8 | #P_cncfcn | |- ( ( CC C_ CC /\\ CC C_ CC ) -> ( CC -cn-> CC ) = ( J Cn J ) ) |\n| 10 | 2, 2, 9 | #P_mp2an | |- ( CC -cn-> CC ) = ( J Cn J ) |",
+  "conclusion" : "#P_cncfcn1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wss", "#T_cc", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cc", "#T_cc", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_crest", "#T_cc", "#T_wceq", "#T_cJ", "#T_cJ", "#T_crest", "#T_cc", "#T_wceq", "#T_cJ", "#T_cJ", "#T_wceq", "#T_cJ", "#T_crest", "#T_cc", "#T_cc", "#T_wss", "#T_cc", "#T_wa", "#T_cc", "#T_wss", "#T_cc", "#T_wi", "#T_cc", "#T_ccncf", "#T_cc", "#T_wceq", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cc", "#T_ccncf", "#T_cc", "#T_wceq", "#T_cJ", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mp2an", "#P_ssid", "#P_restid", "#P_cnfldtop", "#P_toponunii", "#P_cnfldtopon", "#P_cncfcn", "#P_eqcomi" ]
+}

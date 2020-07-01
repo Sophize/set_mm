@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mircom on Metamath](http://us.metamath.org/mpegif/mircom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mirval.p | |- P = ( Base ` G ) |\n| 2 |  | mirval.d | |- .- = ( dist ` G ) |\n| 3 |  | mirval.i | |- I = ( Itv ` G ) |\n| 4 |  | mirval.l | |- L = ( LineG ` G ) |\n| 5 |  | mirval.s | |- S = ( pInvG ` G ) |\n| 6 |  | mirval.g | |- ( ph -> G e. TarskiG ) |\n| 7 |  | mirval.a | |- ( ph -> A e. P ) |\n| 8 |  | mirfv.m | |- M = ( S ` A ) |\n| 9 |  | mirmir.b | |- ( ph -> B e. P ) |\n| 10 |  | mircom.1 | |- ( ph -> ( M ` B ) = C ) |\n| 11 | 10 | #P_fveq2d | |- ( ph -> ( M ` ( M ` B ) ) = ( M ` C ) ) |\n| 12 | 1, 2, 3, 4, 5, 6, 7, 8, 9 | #P_mirmir | |- ( ph -> ( M ` ( M ` B ) ) = B ) |\n| 13 | 11, 12 | #P_eqtr3d | |- ( ph -> ( M ` C ) = B ) |",
+  "conclusion" : "#P_mircom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cS", "#T_wceq", "#T_cmir", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_cM", "#T_wceq", "#T_cS", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cM", "#T_cfv", "#T_cB", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cM", "#T_cfv", "#T_cM", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cM", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cM", "#T_cfv", "#T_cM", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cM", "#T_cfv", "#T_cC", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mirmir", "#P_fveq2d", "#P_eqtr3d" ]
+}

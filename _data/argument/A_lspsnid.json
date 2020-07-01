@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspsnid on Metamath](http://us.metamath.org/mpegif/lspsnid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspsnid.v | |- V = ( Base ` W ) |\n| 2 |  | lspsnid.n | |- N = ( LSpan ` W ) |\n| 3 |  | #P_snssi | |- ( X e. V -> { X } C_ V ) |\n| 4 | 1, 2 | #P_lspssid | |- ( ( W e. LMod /\\ { X } C_ V ) -> { X } C_ ( N ` { X } ) ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( W e. LMod /\\ X e. V ) -> { X } C_ ( N ` { X } ) ) |\n| 6 |  | #P_snssg | |- ( X e. V -> ( X e. ( N ` { X } ) <-> { X } C_ ( N ` { X } ) ) ) |\n| 7 | 6 | #P_adantl | |- ( ( W e. LMod /\\ X e. V ) -> ( X e. ( N ` { X } ) <-> { X } C_ ( N ` { X } ) ) ) |\n| 8 | 5, 7 | #P_mpbird | |- ( ( W e. LMod /\\ X e. V ) -> X e. ( N ` { X } ) ) |",
+  "conclusion" : "#P_lspsnid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cV", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cV", "#T_wi", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wb", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wb", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wss", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_adantl", "#P_lspssid", "#P_snssg", "#P_snssi", "#P_mpbird" ]
+}

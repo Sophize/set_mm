@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpt2eq123i on Metamath](http://us.metamath.org/mpegif/mpt2eq123i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpt2eq123i.1 | |- A = D |\n| 2 |  | mpt2eq123i.2 | |- B = E |\n| 3 |  | mpt2eq123i.3 | |- C = F |\n| 4 | 1 | #P_a1i | |- ( T. -> A = D ) |\n| 5 | 2 | #P_a1i | |- ( T. -> B = E ) |\n| 6 | 3 | #P_a1i | |- ( T. -> C = F ) |\n| 7 | 4, 5, 6 | #P_mpt2eq123dv | |- ( T. -> ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) ) |\n| 8 | 7 | #P_trud | |- ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) |",
+  "conclusion" : "#P_mpt2eq123i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cD", "#T_cB", "#T_wceq", "#T_cE", "#T_cC", "#T_wceq", "#T_cF", "#T_wtru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cD", "#T_wtru", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cE", "#T_wtru", "#T_wi", "#T_cC", "#T_wceq", "#T_cF", "#T_wtru", "#T_wi", "#T_vx.wal", "#T_cmpt2--1", "#T_cA.wceq", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_cC", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cD", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cE", "#T_cmpt2--4", "#T_cF", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cD", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cE", "#T_cmpt2--4", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_mpt2eq123dv", "#P_a1i" ]
+}

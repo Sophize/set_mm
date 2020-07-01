@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wlogle on Metamath](http://us.metamath.org/mpegif/wlogle.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wlogle.1 | |- ( ( z = x /\\ w = y ) -> ( ps <-> ch ) ) |\n| 2 |  | wlogle.2 | |- ( ( z = y /\\ w = x ) -> ( ps <-> th ) ) |\n| 3 |  | wlogle.3 | |- ( ph -> S C_ RR ) |\n| 4 |  | wlogle.4 | |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( ch <-> th ) ) |\n| 5 |  | wlogle.5 | |- ( ( ph /\\ ( x e. S /\\ y e. S /\\ x <_ y ) ) -> ch ) |\n| 6 | 4 | #P_3adantr3 | |- ( ( ph /\\ ( x e. S /\\ y e. S /\\ x <_ y ) ) -> ( ch <-> th ) ) |\n| 7 | 5, 6 | #P_mpbid | |- ( ( ph /\\ ( x e. S /\\ y e. S /\\ x <_ y ) ) -> th ) |\n| 8 | 1, 2, 3, 7, 5 | #P_wloglei | |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ch ) |",
+  "conclusion" : "#P_wlogle",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_vx", "#T_wa", "#T_vw", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vz", "#T_wceq", "#T_vy", "#T_wa", "#T_vw", "#T_wceq", "#T_vx", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_vx", "#T_cle", "#T_vy", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_w3a--1", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_vx.wal", "#T_cle", "#T_vy.tru", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_w3a--1", "#T_vy.tru", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_vx.wal", "#T_cle", "#T_vy.tru", "#T_wi", "#T_wth", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3adantr3", "#P_mpbid", "#P_wloglei" ]
+}

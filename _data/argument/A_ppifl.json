@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ppifl on Metamath](http://us.metamath.org/mpegif/ppifl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ppisval | |- ( A e. RR -> ( ( 0 [,] A ) i^i Prime ) = ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) |\n| 2 | 1 | #P_fveq2d | |- ( A e. RR -> ( # ` ( ( 0 [,] A ) i^i Prime ) ) = ( # ` ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) ) |\n| 3 |  | #P_ppival | |- ( A e. RR -> ( ppi ` A ) = ( # ` ( ( 0 [,] A ) i^i Prime ) ) ) |\n| 4 |  | #P_flcl | |- ( A e. RR -> ( |_ ` A ) e. ZZ ) |\n| 5 |  | #P_ppival2 | |- ( ( |_ ` A ) e. ZZ -> ( ppi ` ( |_ ` A ) ) = ( # ` ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) ) |\n| 6 | 4, 5 | #P_syl | |- ( A e. RR -> ( ppi ` ( |_ ` A ) ) = ( # ` ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) ) |\n| 7 | 2, 3, 6 | #P_3eqtr4rd | |- ( A e. RR -> ( ppi ` ( |_ ` A ) ) = ( ppi ` A ) ) |",
+  "conclusion" : "#P_ppifl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_wceq", "#T_c2", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_chash", "#T_cfv", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_wceq", "#T_chash", "#T_cfv", "#T_c2", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cppi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cppi", "#T_cfv", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_c2", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cppi", "#T_cfv", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_chash", "#T_cfv", "#T_c2", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cppi", "#T_cfv", "#T_cfl", "#T_cfv", "#T_cA", "#T_wceq", "#T_cppi", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4rd", "#P_fveq2d", "#P_ppisval", "#P_ppival", "#P_flcl", "#P_syl", "#P_ppival2" ]
+}

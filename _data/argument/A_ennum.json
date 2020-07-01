@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ennum on Metamath](http://us.metamath.org/mpegif/ennum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_enen2 | |- ( A ~~ B -> ( x ~~ A <-> x ~~ B ) ) |\n| 2 | 1 | #P_rexbidv | |- ( A ~~ B -> ( E. x e. On x ~~ A <-> E. x e. On x ~~ B ) ) |\n| 3 |  | #P_isnum2 | |- ( A e. dom card <-> E. x e. On x ~~ A ) |\n| 4 |  | #P_isnum2 | |- ( B e. dom card <-> E. x e. On x ~~ B ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A ~~ B -> ( A e. dom card <-> B e. dom card ) ) |",
+  "conclusion" : "#P_ennum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_cen", "#T_cB.wceq", "#T_cA", "#T_cen", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wb", "#T_cB", "#T_wcel", "#T_cdm", "#T_ccrd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_enen2", "#P_isnum2", "#P_rexbidv", "#P_3bitr4g" ]
+}

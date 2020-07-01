@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leord1 on Metamath](http://us.metamath.org/mpegif/leord1.html)"
+  } ],
+  "names" : [ "leord1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_vx", "#T_wceq", "#T_cC", "#T_wi", "#T_cA", "#T_wceq", "#T_cM", "#T_vx", "#T_wceq", "#T_cD", "#T_wi", "#T_cA", "#T_wceq", "#T_cN", "#T_cS", "#T_wss", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_vx", "#T_clt", "#T_vy", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wph", "#T_wa", "#T_cC", "#T_wcel", "#T_cS", "#T_wa", "#T_cD", "#T_wcel", "#T_cS", "#T_wi", "#T_cC", "#T_cle", "#T_cD", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_cB", "#T_vx", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_cN", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Infer an ordering relation from a proof in only one direction. (Contributed by Mario Carneiro, 14-Jun-2014.) ",
+  "statement" : "ltord.1 $e |- ( x = y -> A = B ) $.\nltord.2 $e |- ( x = C -> A = M ) $.\nltord.3 $e |- ( x = D -> A = N ) $.\nltord.4 $e |- S C_ RR $.\nltord.5 $e |- ( ( ph /\\ x e. S ) -> A e. RR ) $.\nltord.6 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( x < y -> A < B ) ) $.\nleord1 $p |- ( ( ph /\\ ( C e. S /\\ D e. S ) ) -> ( C <_ D <-> M <_ N ) ) $.\n$d B x $.\n$d C x y $.\n$d D x y $.\n$d M x y $.\n$d N x y $.\n$d S x y $.\n$d ph x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldualelvbase on Metamath](http://us.metamath.org/mpegif/ldualelvbase.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldualelvbase.f | |- F = ( LFnl ` W ) |\n| 2 |  | ldualelvbase.d | |- D = ( LDual ` W ) |\n| 3 |  | ldualelvbase.v | |- V = ( Base ` D ) |\n| 4 |  | ldualelvbase.w | |- ( ph -> W e. X ) |\n| 5 |  | ldualelvbase.g | |- ( ph -> G e. F ) |\n| 6 | 1, 2, 3, 4 | #P_ldualvbase | |- ( ph -> V = F ) |\n| 7 | 5, 6 | #P_eleqtrrd | |- ( ph -> G e. V ) |",
+  "conclusion" : "#P_ldualelvbase",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_clfn", "#T_cfv", "#T_cW", "#T_cD", "#T_wceq", "#T_cld", "#T_cfv", "#T_cW", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cF", "#T_wph", "#T_wi", "#T_cV", "#T_wceq", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ldualvbase", "#P_eleqtrrd" ]
+}

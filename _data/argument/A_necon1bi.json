@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon1bi on Metamath](http://us.metamath.org/mpegif/necon1bi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon1bi.1 | |- ( A =/= B -> ph ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 2, 1 | #P_sylbir | |- ( -. A = B -> ph ) |\n| 4 | 3 | #P_con1i | |- ( -. ph -> A = B ) |",
+  "conclusion" : "#P_necon1bi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wph", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylbir", "#P_con1i", "#P_df-ne" ]
+}

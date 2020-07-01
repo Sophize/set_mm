@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equsb3ALT on Metamath](http://us.metamath.org/mpegif/equsb3ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_equsb3lem | |- ( [ w / y ] y = z <-> w = z ) |\n| 2 | 1 | #P_sbbii | |- ( [ x / w ] [ w / y ] y = z <-> [ x / w ] w = z ) |\n| 3 |  | #P_nfv | |- F/ w y = z |\n| 4 | 3 | #P_sbco2 | |- ( [ x / w ] [ w / y ] y = z <-> [ x / y ] y = z ) |\n| 5 |  | #P_equsb3lem | |- ( [ x / w ] w = z <-> x = z ) |\n| 6 | 2, 4, 5 | #P_3bitr3i | |- ( [ x / y ] y = z <-> x = z ) |\n\\\n Alternate proof of ~ eqsb3 , shorter but requiring ~ ax-11 . (Contributed by Raph Levien and FL, 4-Dec-2005.) (New usage is discouraged.)  (Proof modification is discouraged.) ",
+  "conclusion" : "#P_equsb3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wb", "#T_vw", "#T_wceq", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wb", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wceq", "#T_vz", "#T_wnf", "#T_vw", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_wsb--1", "#T_vw", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wb", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vy.tru", "#T_wsb--3", "#T_vy.tru", "#T_wceq", "#T_vz", "#T_wsb--1", "#T_vx.wal", "#T_wsb--2", "#T_vw", "#T_wsb--3", "#T_vw", "#T_wceq", "#T_vz", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wsb--1", "#T_vx", "#T_wsb--2", "#T_vy", "#T_wsb--3", "#T_vy", "#T_wceq", "#T_vz", "#T_wb", "#T_vx", "#T_wceq", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_sbbii", "#P_equsb3lem", "#P_sbco2", "#P_3bitr3i" ]
+}

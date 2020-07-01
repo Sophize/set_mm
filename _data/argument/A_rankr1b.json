@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rankr1b on Metamath](http://us.metamath.org/mpegif/rankr1b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rankr1b.1 | |- A e. _V |\n| 2 |  | #P_r1fnon | |- R1 Fn On |\n| 3 |  | #P_fndm | |- ( R1 Fn On -> dom R1 = On ) |\n| 4 | 2, 3 | #P_ax-mp | |- dom R1 = On |\n| 5 | 4 | #P_eleq2i | |- ( B e. dom R1 <-> B e. On ) |\n| 6 |  | #P_unir1 | |- U. ( R1 \" On ) = _V |\n| 7 | 1, 6 | #P_eleqtrri | |- A e. U. ( R1 \" On ) |\n| 8 |  | #P_rankr1bg | |- ( ( A e. U. ( R1 \" On ) /\\ B e. dom R1 ) -> ( A C_ ( R1 ` B ) <-> ( rank ` A ) C_ B ) ) |\n| 9 | 7, 8 | #P_mpan | |- ( B e. dom R1 -> ( A C_ ( R1 ` B ) <-> ( rank ` A ) C_ B ) ) |\n| 10 | 5, 9 | #P_sylbir | |- ( B e. On -> ( A C_ ( R1 ` B ) <-> ( rank ` A ) C_ B ) ) |",
+  "conclusion" : "#P_rankr1b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cr1", "#T_wfn", "#T_con0", "#T_cr1", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cdm", "#T_cr1", "#T_wceq", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wceq", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_cr1", "#T_cima", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_cr1", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_crnk", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_wss", "#T_cr1", "#T_cfv", "#T_cB", "#T_wb", "#T_crnk", "#T_cfv", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_unir1", "#P_sylbir", "#P_eleqtrri", "#P_eleq2i", "#P_mpan", "#P_fndm", "#P_r1fnon", "#P_rankr1bg" ]
+}

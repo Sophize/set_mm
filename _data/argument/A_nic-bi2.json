@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nic-bi2 on Metamath](http://us.metamath.org/mpegif/nic-bi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nic-bi2.1 | |- ( ( ph -/\\ ps ) -/\\ ( ( ph -/\\ ph ) -/\\ ( ps -/\\ ps ) ) ) |\n| 2 | 1 | #P_nic-isw2 | |- ( ( ph -/\\ ps ) -/\\ ( ( ps -/\\ ps ) -/\\ ( ph -/\\ ph ) ) ) |\n| 3 |  | #P_nic-id | |- ( ps -/\\ ( ps -/\\ ps ) ) |\n| 4 | 2, 3 | #P_nic-iimp1 | |- ( ps -/\\ ( ph -/\\ ps ) ) |\n| 5 | 4 | #P_nic-idel | |- ( ps -/\\ ( ph -/\\ ph ) ) |",
+  "conclusion" : "#P_nic-bi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wph", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph", "#T_wps", "#T_wnan", "#T_wps", "#T_wnan", "#T_wps", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wps", "#T_wps", "#T_wnan", "#T_wph", "#T_wnan", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nic-id", "#P_nic-iimp1", "#P_nic-isw2", "#P_nic-idel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfbrd on Metamath](http://us.metamath.org/mpegif/nfbrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfbrd.2 | |- ( ph -> F/_ x A ) |\n| 2 |  | nfbrd.3 | |- ( ph -> F/_ x R ) |\n| 3 |  | nfbrd.4 | |- ( ph -> F/_ x B ) |\n| 4 |  | #P_df-br | |- ( A R B <-> <. A , B >. e. R ) |\n| 5 | 1, 3 | #P_nfopd | |- ( ph -> F/_ x <. A , B >. ) |\n| 6 | 5, 2 | #P_nfeld | |- ( ph -> F/ x <. A , B >. e. R ) |\n| 7 | 4, 6 | #P_nfxfrd | |- ( ph -> F/ x A R B ) |",
+  "conclusion" : "#P_nfbrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cR", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_cA", "#T_cR", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_nfeld", "#P_nfxfrd", "#P_nfopd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See raluz on Metamath](http://us.metamath.org/mpegif/raluz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eluz1 | |- ( M e. ZZ -> ( n e. ( ZZ>= ` M ) <-> ( n e. ZZ /\\ M <_ n ) ) ) |\n| 2 | 1 | #P_imbi1d | |- ( M e. ZZ -> ( ( n e. ( ZZ>= ` M ) -> ph ) <-> ( ( n e. ZZ /\\ M <_ n ) -> ph ) ) ) |\n| 3 |  | #P_impexp | |- ( ( ( n e. ZZ /\\ M <_ n ) -> ph ) <-> ( n e. ZZ -> ( M <_ n -> ph ) ) ) |\n| 4 | 2, 3 | #P_syl6bb | |- ( M e. ZZ -> ( ( n e. ( ZZ>= ` M ) -> ph ) <-> ( n e. ZZ -> ( M <_ n -> ph ) ) ) ) |\n| 5 | 4 | #P_ralbidv2 | |- ( M e. ZZ -> ( A. n e. ( ZZ>= ` M ) ph <-> A. n e. ZZ ( M <_ n -> ph ) ) ) |",
+  "conclusion" : "#P_raluz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wi", "#T_wph", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wi", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cle", "#T_vn", "#T_wi", "#T_wph", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cle", "#T_vn", "#T_wi", "#T_wph", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wb", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cz", "#T_cM", "#T_cle", "#T_vn", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6bb", "#P_imbi1d", "#P_eluz1", "#P_impexp", "#P_ralbidv2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See breldm on Metamath](http://us.metamath.org/mpegif/breldm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opeldm.1 | |- A e. _V |\n| 2 |  | opeldm.2 | |- B e. _V |\n| 3 |  | #P_df-br | |- ( A R B <-> <. A , B >. e. R ) |\n| 4 | 1, 2 | #P_opeldm | |- ( <. A , B >. e. R -> A e. dom R ) |\n| 5 | 3, 4 | #P_sylbi | |- ( A R B -> A e. dom R ) |",
+  "conclusion" : "#P_breldm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_cA", "#T_cR", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_sylbi", "#P_opeldm" ]
+}

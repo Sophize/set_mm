@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gcdval on Metamath](http://us.metamath.org/mpegif/gcdval.html)"
+  } ],
+  "names" : [ "gcdval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cgcd", "#T_cN", "#T_wceq", "#T_cif--1", "#T_cM", "#T_wceq", "#T_cc0", "#T_wa", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_csup--1", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vn", "#T_cdvds", "#T_cM", "#T_wa", "#T_vn", "#T_cdvds", "#T_cN", "#T_crab--4", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cM", "#T_vn", "#T_cN", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the ` gcd ` operator. ` ( M gcd N ) ` is the greatest common divisor of ` M ` and ` N ` .  If ` M ` and ` N ` are both ` 0 ` , the result is defined conventionally as ` 0 ` .  (Contributed by Paul Chapman, 21-Mar-2011.)  (Revised by Mario Carneiro, 10-Nov-2013.) ",
+  "statement" : "gcdval $p |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M gcd N ) = if ( ( M = 0 /\\ N = 0 ) , 0 , sup ( { n e. ZZ | ( n || M /\\ n || N ) } , RR , < ) ) ) $.\n$d M n $.\n$d N n $."
+}

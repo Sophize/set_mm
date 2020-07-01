@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngosn4 on Metamath](http://us.metamath.org/mpegif/rngosn4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | on1el3.1 | |- G = ( 1st ` R ) |\n| 2 |  | on1el3.2 | |- X = ran G |\n| 3 |  | #P_en1eqsnbi | |- ( A e. X -> ( X ~~ 1o <-> X = { A } ) ) |\n| 4 | 3 | #P_adantl | |- ( ( R e. RingOps /\\ A e. X ) -> ( X ~~ 1o <-> X = { A } ) ) |\n| 5 | 1, 2 | #P_rngosn3 | |- ( ( R e. RingOps /\\ A e. X ) -> ( X = { A } <-> R = <. { <. <. A , A >. , A >. } , { <. <. A , A >. , A >. } >. ) ) |\n| 6 | 4, 5 | #P_bitrd | |- ( ( R e. RingOps /\\ A e. X ) -> ( X ~~ 1o <-> R = <. { <. <. A , A >. , A >. } , { <. <. A , A >. , A >. } >. ) ) |",
+  "conclusion" : "#P_rngosn4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cX", "#T_cen", "#T_c1o", "#T_wb", "#T_cX", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cX", "#T_cen", "#T_c1o", "#T_wb", "#T_cX", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cX", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wb", "#T_cR", "#T_wceq", "#T_cop--1", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cop--2", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_csn--2", "#T_cop--3", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cX", "#T_cen", "#T_c1o", "#T_wb", "#T_cR", "#T_wceq", "#T_cop--1", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_csn--2", "#T_cop--2", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_csn--2", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_adantl", "#P_rngosn3", "#P_en1eqsnbi" ]
+}

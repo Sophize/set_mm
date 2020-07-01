@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brcog on Metamath](http://us.metamath.org/mpegif/brcog.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq1 | |- ( y = A -> ( y D x <-> A D x ) ) |\n| 2 |  | #P_breq2 | |- ( z = B -> ( x C z <-> x C B ) ) |\n| 3 | 1, 2 | #P_bi2anan9 | |- ( ( y = A /\\ z = B ) -> ( ( y D x /\\ x C z ) <-> ( A D x /\\ x C B ) ) ) |\n| 4 | 3 | #P_exbidv | |- ( ( y = A /\\ z = B ) -> ( E. x ( y D x /\\ x C z ) <-> E. x ( A D x /\\ x C B ) ) ) |\n| 5 |  | #P_df-co | |- ( C o. D ) = { <. y , z >. | E. x ( y D x /\\ x C z ) } |\n| 6 | 4, 5 | #P_brabga | |- ( ( A e. V /\\ B e. W ) -> ( A ( C o. D ) B <-> E. x ( A D x /\\ x C B ) ) ) |",
+  "conclusion" : "#P_brcog",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vz", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_cD", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_cD", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_cC", "#T_vz", "#T_wb", "#T_vx.wal", "#T_cC", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vy.tru", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_vz", "#T_wb", "#T_cA.wceq", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vy.tru", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_vz", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_cB.wceq", "#T_cC", "#T_ccom", "#T_cD", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vy.tru", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_wex", "#T_vx.wal", "#T_vy.tru", "#T_cD", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_cC", "#T_vz", "#T_copab--6", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cC", "#T_ccom", "#T_cD", "#T_cB", "#T_wb", "#T_wex", "#T_vx", "#T_cA", "#T_cD", "#T_vx", "#T_wa", "#T_vx", "#T_cC", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_exbidv", "#P_brabga", "#P_breq2", "#P_bi2anan9", "#P_df-co" ]
+}

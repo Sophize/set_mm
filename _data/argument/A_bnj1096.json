@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnj1096 on Metamath](http://us.metamath.org/mpegif/bnj1096.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bnj1096.1 | |- ( ph -> A. x ph ) |\n| 2 |  | bnj1096.2 | |- ( ps <-> ( ch /\\ th /\\ ta /\\ ph ) ) |\n| 3 |  | #P_ax-5 | |- ( ch -> A. x ch ) |\n| 4 |  | #P_ax-5 | |- ( th -> A. x th ) |\n| 5 |  | #P_ax-5 | |- ( ta -> A. x ta ) |\n| 6 | 3, 4, 5, 1 | #P_bnj982 | |- ( ( ch /\\ th /\\ ta /\\ ph ) -> A. x ( ch /\\ th /\\ ta /\\ ph ) ) |\n| 7 | 2, 6 | #P_hbxfrbi | |- ( ps -> A. x ps ) |",
+  "conclusion" : "#P_bnj1096",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wps", "#T_wb", "#T_wch", "#T_w-bnj17--1", "#T_wth", "#T_w-bnj17--2", "#T_wta", "#T_w-bnj17--3", "#T_wph", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wth", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wth", "#T_wta", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wta", "#T_wch", "#T_w-bnj17--1", "#T_wth", "#T_w-bnj17--2", "#T_wta", "#T_w-bnj17--3", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_w-bnj17--1", "#T_wth", "#T_w-bnj17--2", "#T_wta", "#T_w-bnj17--3", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bnj982", "#P_hbxfrbi", "#P_ax-5" ]
+}

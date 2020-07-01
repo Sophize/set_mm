@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cad11 on Metamath](http://us.metamath.org/mpegif/cad11.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orc | |- ( ( ph /\\ ps ) -> ( ( ph /\\ ps ) \\/ ( ch /\\ ( ph \\/_ ps ) ) ) ) |\n| 2 |  | #P_df-cad | |- ( cadd ( ph , ps , ch ) <-> ( ( ph /\\ ps ) \\/ ( ch /\\ ( ph \\/_ ps ) ) ) ) |\n| 3 | 1, 2 | #P_sylibr | |- ( ( ph /\\ ps ) -> cadd ( ph , ps , ch ) ) |",
+  "conclusion" : "#P_cad11",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wxo", "#T_wps", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orc", "#P_sylibr", "#P_df-cad" ]
+}

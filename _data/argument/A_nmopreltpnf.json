@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmopreltpnf on Metamath](http://us.metamath.org/mpegif/nmopreltpnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nmoprepnf | |- ( T : ~H --> ~H -> ( ( normop ` T ) e. RR <-> ( normop ` T ) =/= +oo ) ) |\n| 2 |  | #P_nmopxr | |- ( T : ~H --> ~H -> ( normop ` T ) e. RR* ) |\n| 3 |  | #P_nltpnft | |- ( ( normop ` T ) e. RR* -> ( ( normop ` T ) = +oo <-> -. ( normop ` T ) < +oo ) ) |\n| 4 | 2, 3 | #P_syl | |- ( T : ~H --> ~H -> ( ( normop ` T ) = +oo <-> -. ( normop ` T ) < +oo ) ) |\n| 5 | 4 | #P_necon2abid | |- ( T : ~H --> ~H -> ( ( normop ` T ) < +oo <-> ( normop ` T ) =/= +oo ) ) |\n| 6 | 1, 5 | #P_bitr4d | |- ( T : ~H --> ~H -> ( ( normop ` T ) e. RR <-> ( normop ` T ) < +oo ) ) |",
+  "conclusion" : "#P_nmopreltpnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cr", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cpnf", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cxr", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cxr", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wceq", "#T_cpnf", "#T_wb", "#T_wn", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wceq", "#T_cpnf", "#T_wb", "#T_wn", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wne", "#T_cpnf", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cr", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon2abid", "#P_nmoprepnf", "#P_bitr4d", "#P_syl", "#P_nltpnft", "#P_nmopxr" ]
+}

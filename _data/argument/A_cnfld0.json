@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfld0 on Metamath](http://us.metamath.org/mpegif/cnfld0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_00id | |- ( 0 + 0 ) = 0 |\n| 2 |  | #P_cnring | |- CCfld e. Ring |\n| 3 |  | #P_ringgrp | |- ( CCfld e. Ring -> CCfld e. Grp ) |\n| 4 | 2, 3 | #P_ax-mp | |- CCfld e. Grp |\n| 5 |  | #P_0cn | |- 0 e. CC |\n| 6 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 7 |  | #P_cnfldadd | |- + = ( +g ` CCfld ) |\n| 8 |  | #P_eqid | |- ( 0g ` CCfld ) = ( 0g ` CCfld ) |\n| 9 | 6, 7, 8 | #P_grpid | |- ( ( CCfld e. Grp /\\ 0 e. CC ) -> ( ( 0 + 0 ) = 0 <-> ( 0g ` CCfld ) = 0 ) ) |\n| 10 | 4, 5, 9 | #P_mp2an | |- ( ( 0 + 0 ) = 0 <-> ( 0g ` CCfld ) = 0 ) |\n| 11 | 1, 10 | #P_mpbi | |- ( 0g ` CCfld ) = 0 |\n| 12 | 11 | #P_eqcomi | |- 0 = ( 0g ` CCfld ) |",
+  "conclusion" : "#P_cnfld0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_wi", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_cc0", "#T_wcel", "#T_cc", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_ccnfld", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_wb", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cc0", "#T_cc0", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_wb", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cc0", "#T_c0g", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cc0", "#T_cc0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_ccnfld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnring", "#P_ax-mp", "#P_eqid", "#P_mp2an", "#P_00id", "#P_0cn", "#P_grpid", "#P_mpbi", "#P_ringgrp", "#P_cnfldadd", "#P_cnfldbas", "#P_eqcomi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islpir2 on Metamath](http://us.metamath.org/mpegif/islpir2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lpival.p | |- P = ( LPIdeal ` R ) |\n| 2 |  | lpiss.u | |- U = ( LIdeal ` R ) |\n| 3 | 1, 2 | #P_islpir | |- ( R e. LPIR <-> ( R e. Ring /\\ U = P ) ) |\n| 4 | 1, 2 | #P_lpiss | |- ( R e. Ring -> P C_ U ) |\n| 5 | 4 | #P_biantrud | |- ( R e. Ring -> ( U C_ P <-> ( U C_ P /\\ P C_ U ) ) ) |\n| 6 |  | #P_eqss | |- ( U = P <-> ( U C_ P /\\ P C_ U ) ) |\n| 7 | 5, 6 | #P_syl6rbbr | |- ( R e. Ring -> ( U = P <-> U C_ P ) ) |\n| 8 | 7 | #P_pm5.32i | |- ( ( R e. Ring /\\ U = P ) <-> ( R e. Ring /\\ U C_ P ) ) |\n| 9 | 3, 8 | #P_bitri | |- ( R e. LPIR <-> ( R e. Ring /\\ U C_ P ) ) |",
+  "conclusion" : "#P_islpir2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_clpidl", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_clpir", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wceq", "#T_cP", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cP", "#T_wss", "#T_cU", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cU", "#T_wss", "#T_cP", "#T_wb", "#T_cU", "#T_wss", "#T_cP", "#T_wa", "#T_cP", "#T_wss", "#T_cU", "#T_cU", "#T_wceq", "#T_cP", "#T_wb", "#T_cU", "#T_wss", "#T_cP", "#T_wa", "#T_cP", "#T_wss", "#T_cU", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cU", "#T_wceq", "#T_cP", "#T_wb", "#T_cU", "#T_wss", "#T_cP", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wceq", "#T_cP", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wss", "#T_cP", "#T_cR", "#T_wcel", "#T_clpir", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cU", "#T_wss", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_islpir", "#P_pm5.32i", "#P_eqss", "#P_biantrud", "#P_bitri", "#P_lpiss", "#P_syl6rbbr" ]
+}

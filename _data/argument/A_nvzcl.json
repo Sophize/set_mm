@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nvzcl on Metamath](http://us.metamath.org/mpegif/nvzcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvzcl.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvzcl.6 | |- Z = ( 0vec ` U ) |\n| 3 |  | #P_eqid | |- ( +v ` U ) = ( +v ` U ) |\n| 4 | 3, 2 | #P_0vfval | |- ( U e. NrmCVec -> Z = ( GId ` ( +v ` U ) ) ) |\n| 5 | 3 | #P_nvgrp | |- ( U e. NrmCVec -> ( +v ` U ) e. GrpOp ) |\n| 6 | 1, 3 | #P_bafval | |- X = ran ( +v ` U ) |\n| 7 |  | #P_eqid | |- ( GId ` ( +v ` U ) ) = ( GId ` ( +v ` U ) ) |\n| 8 | 6, 7 | #P_grpoidcl | |- ( ( +v ` U ) e. GrpOp -> ( GId ` ( +v ` U ) ) e. X ) |\n| 9 | 5, 8 | #P_syl | |- ( U e. NrmCVec -> ( GId ` ( +v ` U ) ) e. X ) |\n| 10 | 4, 9 | #P_eqeltrd | |- ( U e. NrmCVec -> Z e. X ) |",
+  "conclusion" : "#P_nvzcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cZ", "#T_wceq", "#T_cn0v", "#T_cfv", "#T_cU", "#T_cpv", "#T_cfv", "#T_cU", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cpv", "#T_cfv", "#T_cU", "#T_wcel", "#T_cgr", "#T_cX", "#T_wceq", "#T_crn", "#T_cpv", "#T_cfv", "#T_cU", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_cpv", "#T_cfv", "#T_cU", "#T_wcel", "#T_cgr", "#T_wi", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_wcel", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_wcel", "#T_cX", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_0vfval", "#P_nvgrp", "#P_eqeltrd", "#P_bafval", "#P_grpoidcl", "#P_syl" ]
+}

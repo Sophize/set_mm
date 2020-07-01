@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See structfun on Metamath](http://us.metamath.org/mpegif/structfun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | structfun.1 | |- F Struct X |\n| 2 |  | #P_isstruct2 | |- ( F Struct X <-> ( X e. ( <_ i^i ( NN X. NN ) ) /\\ Fun ( F \\ { (/) } ) /\\ dom F C_ ( ... ` X ) ) ) |\n| 3 | 2 | #P_simp2bi | |- ( F Struct X -> Fun ( F \\ { (/) } ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- Fun ( F \\ { (/) } ) |\n| 5 |  | #P_structcnvcnv | |- ( F Struct X -> `' `' F = ( F \\ { (/) } ) ) |\n| 6 | 1, 5 | #P_ax-mp | |- `' `' F = ( F \\ { (/) } ) |\n| 7 | 6 | #P_funeqi | |- ( Fun `' `' F <-> Fun ( F \\ { (/) } ) ) |\n| 8 | 4, 7 | #P_mpbir | |- Fun `' `' F |",
+  "conclusion" : "#P_structfun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cstr", "#T_cX", "#T_cF", "#T_cstr", "#T_cX", "#T_wb", "#T_cX", "#T_wcel", "#T_cle", "#T_cin", "#T_cn", "#T_cxp", "#T_cn", "#T_w3a--1", "#T_wfun", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_w3a--2", "#T_cdm", "#T_cF", "#T_wss", "#T_cfz", "#T_cfv", "#T_cX", "#T_cF", "#T_cstr", "#T_cX", "#T_wi", "#T_wfun", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wfun", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cF", "#T_cstr", "#T_cX", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wb", "#T_wfun", "#T_cF", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_structcnvcnv", "#P_isstruct2", "#P_simp2bi", "#P_mpbir", "#P_funeqi" ]
+}

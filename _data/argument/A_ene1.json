@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ene1 on Metamath](http://us.metamath.org/mpegif/ene1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_1lt2 | |- 1 < 2 |\n| 3 |  | #P_egt2lt3 | |- ( 2 < _e /\\ _e < 3 ) |\n| 4 | 3 | #P_simpli | |- 2 < _e |\n| 5 |  | #P_2re | |- 2 e. RR |\n| 6 |  | #P_ere | |- _e e. RR |\n| 7 | 1, 5, 6 | #P_lttri | |- ( ( 1 < 2 /\\ 2 < _e ) -> 1 < _e ) |\n| 8 | 2, 4, 7 | #P_mp2an | |- 1 < _e |\n| 9 | 1, 8 | #P_gtneii | |- _e =/= 1 |",
+  "conclusion" : "#P_ene1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_c1", "#T_clt", "#T_c2", "#T_c2", "#T_clt", "#T_ceu", "#T_wa", "#T_ceu", "#T_clt", "#T_c3", "#T_c2", "#T_clt", "#T_ceu", "#T_c2", "#T_wcel", "#T_cr", "#T_ceu", "#T_wcel", "#T_cr", "#T_c1", "#T_clt", "#T_c2", "#T_wa", "#T_c2", "#T_clt", "#T_ceu", "#T_wi", "#T_c1", "#T_clt", "#T_ceu", "#T_c1", "#T_clt", "#T_ceu", "#T_ceu", "#T_wne", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lttri", "#P_mp2an", "#P_gtneii", "#P_egt2lt3", "#P_simpli", "#P_1lt2", "#P_ere", "#P_1re", "#P_2re" ]
+}

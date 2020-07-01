@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0elcpmat on Metamath](http://us.metamath.org/mpegif/0elcpmat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 0elcpmat.s | |- S = ( N ConstPolyMat R ) |\n| 2 |  | 0elcpmat.p | |- P = ( Poly1 ` R ) |\n| 3 |  | 0elcpmat.c | |- C = ( N Mat P ) |\n| 4 | 1, 2, 3 | #P_cpmatsubgpmat | |- ( ( N e. Fin /\\ R e. Ring ) -> S e. ( SubGrp ` C ) ) |\n| 5 |  | #P_eqid | |- ( 0g ` C ) = ( 0g ` C ) |\n| 6 | 5 | #P_subg0cl | |- ( S e. ( SubGrp ` C ) -> ( 0g ` C ) e. S ) |\n| 7 | 4, 6 | #P_syl | |- ( ( N e. Fin /\\ R e. Ring ) -> ( 0g ` C ) e. S ) |",
+  "conclusion" : "#P_0elcpmat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cC", "#T_c0g", "#T_cfv", "#T_cC", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cC", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cC", "#T_wi", "#T_c0g", "#T_cfv", "#T_cC", "#T_wcel", "#T_cS", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c0g", "#T_cfv", "#T_cC", "#T_wcel", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_subg0cl", "#P_syl", "#P_cpmatsubgpmat" ]
+}

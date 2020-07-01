@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltadd1dd on Metamath](http://us.metamath.org/mpegif/ltadd1dd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | leidd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | ltnegd.2 | |- ( ph -> B e. RR ) |\n| 3 |  | ltadd1d.3 | |- ( ph -> C e. RR ) |\n| 4 |  | ltadd1dd.4 | |- ( ph -> A < B ) |\n| 5 | 1, 2, 3 | #P_ltadd1d | |- ( ph -> ( A < B <-> ( A + C ) < ( B + C ) ) ) |\n| 6 | 4, 5 | #P_mpbid | |- ( ph -> ( A + C ) < ( B + C ) ) |",
+  "conclusion" : "#P_ltadd1dd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_clt", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_caddc", "#T_cC", "#T_clt", "#T_cB", "#T_caddc", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_ltadd1d" ]
+}

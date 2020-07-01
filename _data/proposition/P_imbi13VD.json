@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imbi13VD on Metamath](http://us.metamath.org/mpegif/imbi13VD.html)"
+  } ],
+  "names" : [ "imbi13VD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wi", "#T_wta", "#T_wb", "#T_wet", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wb", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wet" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Join three logical equivalences to form equivalence of implications. The following User's Proof is a Virtual Deduction proof completed automatically by the tools program completeusersproof.cmd, which invokes Mel L. O'Cat's mmj2 and Norm Megill's Metamath Proof Assistant. ~ imbi13 is ~ imbi13VD without virtual deductions and was automatically derived from ~ imbi13VD . <HTML> <TABLE> <TR> <TD> 1::      <TD> ` |- (. ( ph <-> ps ) ->. ( ph <-> ps ) ). ` <TR> <TD> 2::      <TD> ` |- (. ( ph <-> ps ) ,. ( ch <-> th ) ` ` ->. ( ch <-> th ) ). ` <TR> <TD> 3::      <TD> ` |- (. ( ph <-> ps ) ,. ( ch <-> th ) ,. ( ta ` ` <-> et ) ->. ( ta <-> et ) ). ` <TR> <TD> 4:2,3:   <TD> ` |- (. ( ph <-> ps ) ,. ( ch <-> th ) ,. ( ta ` ` <-> et ) ->. ( ( ch -> ta ) <-> ( th -> et ) ) ). ` <TR> <TD> 5:1,4:   <TD> ` |- (. ( ph <-> ps ) ,. ( ch <-> th ) ,. ( ta ` ` <-> et ) ->. ( ( ph -> ( ch -> ta ) ) <-> ( ps -> ( th -> et ) ) ) ). ` <TR> <TD> 6:5:     <TD> ` |- (. ( ph <-> ps ) ,. ( ch <-> th ) ` ` ->. ( ( ta <-> et ) -> ( ( ph -> ( ch -> ta ) ) <-> ( ps -> ( th ` ` -> et ) ) ) ) ). ` <TR> <TD> 7:6:     <TD> ` |- (. ( ph <-> ps ) ->. ( ( ch <-> th ) ` ` -> ( ( ta <-> et ) -> ( ( ph -> ( ch -> ta ) ) <-> ( ps -> ( th ` ` -> et ) ) ) ) ) ).  ` <TR> <TD> qed:7:   <TD> ` |- ( ( ph <-> ps ) -> ( ( ch <-> th ) ` ` -> ( ( ta <-> et ) -> ( ( ph -> ( ch -> ta ) ) <-> ( ps -> ( th ` ` -> et ) ) ) ) ) ) ` </TABLE> </HTML> (Contributed by Alan Sare, 18-Mar-2012.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "imbi13VD $p |- ( ( ph <-> ps ) -> ( ( ch <-> th ) -> ( ( ta <-> et ) -> ( ( ph -> ( ch -> ta ) ) <-> ( ps -> ( th -> et ) ) ) ) ) ) $."
+}

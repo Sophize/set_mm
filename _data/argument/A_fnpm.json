@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnpm on Metamath](http://us.metamath.org/mpegif/fnpm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-pm | |- ^pm = ( x e. _V , y e. _V |-> { f e. ~P ( y X. x ) | Fun f } ) |\n| 2 |  | #P_vex | |- y e. _V |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 2, 3 | #P_xpex | |- ( y X. x ) e. _V |\n| 5 | 4 | #P_pwex | |- ~P ( y X. x ) e. _V |\n| 6 | 5 | #P_rabex | |- { f e. ~P ( y X. x ) | Fun f } e. _V |\n| 7 | 1, 6 | #P_fnmpt2i | |- ^pm Fn ( _V X. _V ) |",
+  "conclusion" : "#P_fnpm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_vx", "#T_vy", "#T_cpm", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cpw", "#T_vy.tru", "#T_cxp", "#T_vx.wal", "#T_crab--3", "#T_wfun", "#T_cbvex4v.vf", "#T_crab--4", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_cxp", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_vy.tru", "#T_cxp", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cpw", "#T_vy.tru", "#T_cxp", "#T_vx.wal", "#T_crab--3", "#T_wfun", "#T_cbvex4v.vf", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_cpm", "#T_wfn", "#T_cvv", "#T_cxp", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_rabex", "#P_vex", "#P_fnmpt2i", "#P_xpex", "#P_df-pm" ]
+}

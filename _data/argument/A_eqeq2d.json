@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqeq2d on Metamath](http://us.metamath.org/mpegif/eqeq2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqeq2d.1 | |- ( ph -> A = B ) |\n| 2 | 1 | #P_eqeq1d | |- ( ph -> ( A = C <-> B = C ) ) |\n| 3 |  | #P_eqcom | |- ( C = A <-> A = C ) |\n| 4 |  | #P_eqcom | |- ( C = B <-> B = C ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( ph -> ( C = A <-> C = B ) ) |",
+  "conclusion" : "#P_eqeq2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cA", "#T_wb", "#T_cC", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq1d", "#P_3bitr4g", "#P_eqcom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem11 on Metamath](http://us.metamath.org/mpegif/tfrlem11.html)"
+  } ],
+  "names" : [ "tfrlem11" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_vf", "#T_wfn", "#T_vx", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vf", "#T_cres", "#T_vy", "#T_cab--3", "#T_cC", "#T_wceq", "#T_crecs", "#T_cF", "#T_cun", "#T_csn--1", "#T_cop--1", "#T_cdm", "#T_crecs", "#T_cF", "#T_cop--2", "#T_cF", "#T_cfv", "#T_crecs", "#T_cF", "#T_cop--3", "#T_csn--2", "#T_cdm", "#T_crecs", "#T_cF", "#T_wcel", "#T_con0", "#T_wi", "#T_cB", "#T_wcel", "#T_csuc", "#T_cdm", "#T_crecs", "#T_cF", "#T_wi", "#T_cC", "#T_cfv", "#T_cB", "#T_wceq", "#T_cF", "#T_cfv", "#T_cC", "#T_cres", "#T_cB", "#T_cB", "#T_vf", "#T_vx", "#T_vy", "#T_cC", "#T_vf", "#T_vx", "#T_vy", "#T_cF", "#T_vf", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for transfinite recursion.  Compute the value of ` C ` . (Contributed by NM, 18-Aug-1994.)  (Revised by Mario Carneiro, 9-May-2015.) ",
+  "statement" : "tfrlem.1 $e |- A = { f | E. x e. On ( f Fn x /\\ A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.\ntfrlem.3 $e |- C = ( recs ( F ) u. { <. dom recs ( F ) , ( F ` recs ( F ) ) >. } ) $.\ntfrlem11 $p |- ( dom recs ( F ) e. On -> ( B e. suc dom recs ( F ) -> ( C ` B ) = ( F ` ( C |` B ) ) ) ) $.\n$d B f x y $.\n$d C f x y $.\n$d F f x y $."
+}

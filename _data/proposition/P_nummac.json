@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nummac on Metamath](http://us.metamath.org/mpegif/nummac.html)"
+  } ],
+  "names" : [ "nummac" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_cn0", "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cM", "#T_wceq", "#T_cT", "#T_cmul", "#T_cA", "#T_caddc", "#T_cB", "#T_cN", "#T_wceq", "#T_cT", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cP", "#T_wcel", "#T_cn0", "#T_cF", "#T_wcel", "#T_cn0", "#T_cG", "#T_wcel", "#T_cn0", "#T_cA", "#T_cmul", "#T_cP", "#T_caddc", "#T_cC", "#T_caddc", "#T_cG", "#T_wceq", "#T_cE", "#T_cB", "#T_cmul", "#T_cP", "#T_caddc", "#T_cD", "#T_wceq", "#T_cT", "#T_cmul", "#T_cG", "#T_caddc", "#T_cF", "#T_cM", "#T_cmul", "#T_cP", "#T_caddc", "#T_cN", "#T_wceq", "#T_cT", "#T_cmul", "#T_cE", "#T_caddc", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform a multiply-add of two decimal integers ` M ` and ` N ` against a fixed multiplicand ` P ` (with carry).  (Contributed by Mario Carneiro, 18-Feb-2014.) ",
+  "statement" : "numma.1 $e |- T e. NN0 $.\nnumma.2 $e |- A e. NN0 $.\nnumma.3 $e |- B e. NN0 $.\nnumma.4 $e |- C e. NN0 $.\nnumma.5 $e |- D e. NN0 $.\nnumma.6 $e |- M = ( ( T x. A ) + B ) $.\nnumma.7 $e |- N = ( ( T x. C ) + D ) $.\nnummac.8 $e |- P e. NN0 $.\nnummac.9 $e |- F e. NN0 $.\nnummac.10 $e |- G e. NN0 $.\nnummac.11 $e |- ( ( A x. P ) + ( C + G ) ) = E $.\nnummac.12 $e |- ( ( B x. P ) + D ) = ( ( T x. G ) + F ) $.\nnummac $p |- ( ( M x. P ) + N ) = ( ( T x. E ) + F ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege58c on Metamath](http://us.metamath.org/mpegif/frege58c.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frege58c.a | |- A e. B |\n| 2 |  | #P_ax-frege58b | |- ( A. x ph -> [ y / x ] ph ) |\n| 3 |  | #P_sbsbc | |- ( [ y / x ] ph <-> [. y / x ]. ph ) |\n| 4 | 2, 3 | #P_sylib | |- ( A. x ph -> [. y / x ]. ph ) |\n| 5 |  | #P_dfsbcq | |- ( y = A -> ( [. y / x ]. ph <-> [. A / x ]. ph ) ) |\n| 6 | 4, 5 | #P_syl5ib | |- ( y = A -> ( A. x ph -> [. A / x ]. ph ) ) |\n| 7 | 6 | #P_vtocleg | |- ( A e. B -> ( A. x ph -> [. A / x ]. ph ) ) |\n| 8 | 1, 7 | #P_ax-mp | |- ( A. x ph -> [. A / x ]. ph ) |",
+  "conclusion" : "#P_frege58c",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA", "#T_wcel", "#T_cB", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfsbcq", "#P_ax-mp", "#P_ax-frege58b", "#P_vtocleg", "#P_sylib", "#P_sbsbc", "#P_syl5ib" ]
+}

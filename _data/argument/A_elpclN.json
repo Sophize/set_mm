@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elpclN on Metamath](http://us.metamath.org/mpegif/elpclN.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pclfval.a | |- A = ( Atoms ` K ) |\n| 2 |  | pclfval.s | |- S = ( PSubSp ` K ) |\n| 3 |  | pclfval.c | |- U = ( PCl ` K ) |\n| 4 |  | elpcl.q | |- Q e. _V |\n| 5 | 1, 2, 3 | #P_pclvalN | |- ( ( K e. V /\\ X C_ A ) -> ( U ` X ) = |^| { y e. S | X C_ y } ) |\n| 6 | 5 | #P_eleq2d | |- ( ( K e. V /\\ X C_ A ) -> ( Q e. ( U ` X ) <-> Q e. |^| { y e. S | X C_ y } ) ) |\n| 7 | 4 | #P_elintrab | |- ( Q e. |^| { y e. S | X C_ y } <-> A. y e. S ( X C_ y -> Q e. y ) ) |\n| 8 | 6, 7 | #P_syl6bb | |- ( ( K e. V /\\ X C_ A ) -> ( Q e. ( U ` X ) <-> A. y e. S ( X C_ y -> Q e. y ) ) ) |",
+  "conclusion" : "#P_elpclN",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cS", "#T_wceq", "#T_cpsubsp", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_cpclN", "#T_cfv", "#T_cK", "#T_cQ", "#T_wcel", "#T_cvv", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cU", "#T_cfv", "#T_cX", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cX", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cQ", "#T_wcel", "#T_cU", "#T_cfv", "#T_cX", "#T_wb", "#T_cQ", "#T_wcel", "#T_cint", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cX", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_cQ", "#T_wcel", "#T_cint", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cS", "#T_crab--3", "#T_cX", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cS", "#T_cX", "#T_wss", "#T_vy.tru", "#T_wi", "#T_cQ", "#T_wcel", "#T_vy.tru", "#T_cK", "#T_wcel", "#T_cV", "#T_wa", "#T_cX", "#T_wss", "#T_cA", "#T_wi", "#T_cQ", "#T_wcel", "#T_cU", "#T_cfv", "#T_cX", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_cX", "#T_wss", "#T_vy", "#T_wi", "#T_cQ", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_syl6bb", "#P_pclvalN", "#P_elintrab" ]
+}

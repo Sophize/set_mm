@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tlmlmod on Metamath](http://us.metamath.org/mpegif/tlmlmod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( .sf ` W ) = ( .sf ` W ) |\n| 2 |  | #P_eqid | |- ( TopOpen ` W ) = ( TopOpen ` W ) |\n| 3 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 4 |  | #P_eqid | |- ( TopOpen ` ( Scalar ` W ) ) = ( TopOpen ` ( Scalar ` W ) ) |\n| 5 | 1, 2, 3, 4 | #P_istlm | |- ( W e. TopMod <-> ( ( W e. TopMnd /\\ W e. LMod /\\ ( Scalar ` W ) e. TopRing ) /\\ ( .sf ` W ) e. ( ( ( TopOpen ` ( Scalar ` W ) ) tX ( TopOpen ` W ) ) Cn ( TopOpen ` W ) ) ) ) |\n| 6 | 5 | #P_simplbi | |- ( W e. TopMod -> ( W e. TopMnd /\\ W e. LMod /\\ ( Scalar ` W ) e. TopRing ) ) |\n| 7 | 6 | #P_simp2d | |- ( W e. TopMod -> W e. LMod ) |",
+  "conclusion" : "#P_tlmlmod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cscaf", "#T_cfv", "#T_cW", "#T_wceq", "#T_cscaf", "#T_cfv", "#T_cW", "#T_ctopn", "#T_cfv", "#T_cW", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cW", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_ctopn", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wb", "#T_cW", "#T_wcel", "#T_ctmd", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--2", "#T_csca", "#T_cfv", "#T_cW", "#T_wcel", "#T_ctrg", "#T_wa", "#T_cscaf", "#T_cfv", "#T_cW", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_cW", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wi", "#T_cW", "#T_wcel", "#T_ctmd", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--2", "#T_csca", "#T_cfv", "#T_cW", "#T_wcel", "#T_ctrg", "#T_cW", "#T_wcel", "#T_ctlm", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_istlm", "#P_simp2d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See treq on Metamath](http://us.metamath.org/mpegif/treq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unieq | |- ( A = B -> U. A = U. B ) |\n| 2 | 1 | #P_sseq1d | |- ( A = B -> ( U. A C_ A <-> U. B C_ A ) ) |\n| 3 |  | #P_sseq2 | |- ( A = B -> ( U. B C_ A <-> U. B C_ B ) ) |\n| 4 | 2, 3 | #P_bitrd | |- ( A = B -> ( U. A C_ A <-> U. B C_ B ) ) |\n| 5 |  | #P_df-tr | |- ( Tr A <-> U. A C_ A ) |\n| 6 |  | #P_df-tr | |- ( Tr B <-> U. B C_ B ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( A = B -> ( Tr A <-> Tr B ) ) |",
+  "conclusion" : "#P_treq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_wtr", "#T_cA.wceq", "#T_wb", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wtr", "#T_cB.wceq", "#T_wb", "#T_cuni", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wtr", "#T_cA", "#T_wb", "#T_wtr", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_unieq", "#P_sseq2", "#P_3bitr4g", "#P_sseq1d", "#P_df-tr" ]
+}

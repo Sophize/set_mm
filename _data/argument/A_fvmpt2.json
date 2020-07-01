@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmpt2 on Metamath](http://us.metamath.org/mpegif/fvmpt2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvmpt2.1 | |- F = ( x e. A |-> B ) |\n| 2 | 1 | #P_fvmpt2i | |- ( x e. A -> ( F ` x ) = ( _I ` B ) ) |\n| 3 |  | #P_fvi | |- ( B e. C -> ( _I ` B ) = B ) |\n| 4 | 2, 3 | #P_sylan9eq | |- ( ( x e. A /\\ B e. C ) -> ( F ` x ) = B ) |",
+  "conclusion" : "#P_fvmpt2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cid", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvi", "#P_fvmpt2i", "#P_sylan9eq" ]
+}

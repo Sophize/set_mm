@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2fcoidinvd on Metamath](http://us.metamath.org/mpegif/2fcoidinvd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fcof1od.f | |- ( ph -> F : A --> B ) |\n| 2 |  | fcof1od.g | |- ( ph -> G : B --> A ) |\n| 3 |  | fcof1od.a | |- ( ph -> ( G o. F ) = ( _I |` A ) ) |\n| 4 |  | fcof1od.b | |- ( ph -> ( F o. G ) = ( _I |` B ) ) |\n| 5 | 1, 2, 3, 4 | #P_fcof1od | |- ( ph -> F : A -1-1-onto-> B ) |\n| 6 | 5, 2, 4 | #P_fcof1oinvd | |- ( ph -> `' F = G ) |",
+  "conclusion" : "#P_2fcoidinvd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cB", "#T_wf--2", "#T_cA", "#T_wph", "#T_wi", "#T_cG", "#T_ccom", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cid", "#T_cres", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fcof1od", "#P_fcof1oinvd" ]
+}

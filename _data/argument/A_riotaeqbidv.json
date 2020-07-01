@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See riotaeqbidv on Metamath](http://us.metamath.org/mpegif/riotaeqbidv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | riotaeqbidv.1 | |- ( ph -> A = B ) |\n| 2 |  | riotaeqbidv.2 | |- ( ph -> ( ps <-> ch ) ) |\n| 3 | 2 | #P_riotabidv | |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. A ch ) ) |\n| 4 | 1 | #P_riotaeqdv | |- ( ph -> ( iota_ x e. A ch ) = ( iota_ x e. B ch ) ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. B ch ) ) |",
+  "conclusion" : "#P_riotaeqbidv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cA.wceq", "#T_wps", "#T_wceq", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cA.wceq", "#T_wch", "#T_wph", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cA.wceq", "#T_wch", "#T_wceq", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cB.wceq", "#T_wch", "#T_wph", "#T_wi", "#T_crio--1", "#T_vx", "#T_crio--2", "#T_cA", "#T_wps", "#T_wceq", "#T_crio--1", "#T_vx", "#T_crio--2", "#T_cB", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_riotaeqdv", "#P_eqtrd", "#P_riotabidv" ]
+}

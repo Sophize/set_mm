@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grporid on Metamath](http://us.metamath.org/mpegif/grporid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpoidval.1 | |- X = ran G |\n| 2 |  | grpoidval.2 | |- U = ( GId ` G ) |\n| 3 | 1, 2 | #P_grpoidinv2 | |- ( ( G e. GrpOp /\\ A e. X ) -> ( ( ( U G A ) = A /\\ ( A G U ) = A ) /\\ E. x e. X ( ( x G A ) = U /\\ ( A G x ) = U ) ) ) |\n| 4 |  | #P_simplr | |- ( ( ( ( U G A ) = A /\\ ( A G U ) = A ) /\\ E. x e. X ( ( x G A ) = U /\\ ( A G x ) = U ) ) -> ( A G U ) = A ) |\n| 5 | 3, 4 | #P_syl | |- ( ( G e. GrpOp /\\ A e. X ) -> ( A G U ) = A ) |",
+  "conclusion" : "#P_grporid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cU", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cG", "#T_cU", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cU", "#T_wa", "#T_cA.wceq", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_cU", "#T_cU", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cG", "#T_cU", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cX", "#T_vx.wal", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cU", "#T_wa", "#T_cA.wceq", "#T_cG", "#T_vx.wal", "#T_wceq", "#T_cU", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cU", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cU", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpoidinv2", "#P_simplr", "#P_syl" ]
+}

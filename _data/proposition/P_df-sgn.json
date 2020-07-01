@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sgn on Metamath](http://us.metamath.org/mpegif/df-sgn.html)"
+  } ],
+  "names" : [ "df-sgn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csgn", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cxr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_vx", "#T_clt", "#T_cc0", "#T_cif--2", "#T_cneg", "#T_c1", "#T_cif--3", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Signum function.  Pronounced \"signum\" , otherwise it might be confused with \"sine\".  Defined as \"sgn\" in ISO 80000-2:2009(E) operation 2-9.13. It is named \"sign\" (with the same definition) in the \"NIST Digital Library of Mathematical Functions\" , front introduction, \"Common Notations and Definitions\" section at ~ http://dlmf.nist.gov/front/introduction#Sx4 . We define this over ` RR* ` ( ~ df-xr ) instead of ` RR ` so that it can accept ` +oo ` and ` -oo ` .  Note that ~ df-psgn defines the sign of a permutation, which is different.  Value shown in ~ sgnval .  (Contributed by David A. Wheeler, 15-May-2015.) ",
+  "statement" : "df-sgn $p |- sgn = ( x e. RR* |-> if ( x = 0 , 0 , if ( x < 0 , -u 1 , 1 ) ) ) $."
+}

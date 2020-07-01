@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnnv on Metamath](http://us.metamath.org/mpegif/bnnv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( BaseSet ` U ) = ( BaseSet ` U ) |\n| 2 |  | #P_eqid | |- ( IndMet ` U ) = ( IndMet ` U ) |\n| 3 | 1, 2 | #P_iscbn | |- ( U e. CBan <-> ( U e. NrmCVec /\\ ( IndMet ` U ) e. ( CMet ` ( BaseSet ` U ) ) ) ) |\n| 4 | 3 | #P_simplbi | |- ( U e. CBan -> U e. NrmCVec ) |",
+  "conclusion" : "#P_bnnv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wb", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cims", "#T_cfv", "#T_cU", "#T_wcel", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_ccbn", "#T_wi", "#T_cU", "#T_wcel", "#T_cnv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_iscbn" ]
+}

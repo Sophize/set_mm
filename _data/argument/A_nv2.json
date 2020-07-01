@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nv2 on Metamath](http://us.metamath.org/mpegif/nv2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nvdi.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | nvdi.2 | |- G = ( +v ` U ) |\n| 3 |  | nvdi.4 | |- S = ( .sOLD ` U ) |\n| 4 |  | #P_eqid | |- ( 1st ` U ) = ( 1st ` U ) |\n| 5 | 4 | #P_nvvc | |- ( U e. NrmCVec -> ( 1st ` U ) e. CVecOLD ) |\n| 6 | 2 | #P_vafval | |- G = ( 1st ` ( 1st ` U ) ) |\n| 7 | 3 | #P_smfval | |- S = ( 2nd ` ( 1st ` U ) ) |\n| 8 | 1, 2 | #P_bafval | |- X = ran G |\n| 9 | 6, 7, 8 | #P_vc2 | |- ( ( ( 1st ` U ) e. CVecOLD /\\ A e. X ) -> ( A G A ) = ( 2 S A ) ) |\n| 10 | 5, 9 | #P_sylan | |- ( ( U e. NrmCVec /\\ A e. X ) -> ( A G A ) = ( 2 S A ) ) |",
+  "conclusion" : "#P_nv2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cS", "#T_wceq", "#T_cns", "#T_cfv", "#T_cU", "#T_c1st", "#T_cfv", "#T_cU", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_c1st", "#T_cfv", "#T_cU", "#T_wcel", "#T_cvc", "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cU", "#T_cS", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_c1st", "#T_cfv", "#T_cU", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_c1st", "#T_cfv", "#T_cU", "#T_wcel", "#T_cvc", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_c2", "#T_cS", "#T_cA.wceq", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cA", "#T_wceq", "#T_c2", "#T_cS", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_smfval", "#P_vafval", "#P_sylan", "#P_bafval", "#P_nvvc", "#P_vc2" ]
+}

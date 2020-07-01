@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-minmar1 on Metamath](http://us.metamath.org/mpegif/df-minmar1.html)"
+  } ],
+  "names" : [ "df-minmar1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cminmar1", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vm", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_vn", "#T_cmat", "#T_vr", "#T_cmpt--2", "#T_vk", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vl", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_vi", "#T_cmpt2--1", "#T_vn", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_vn", "#T_cmpt2--4", "#T_cif--1", "#T_vi", "#T_wceq", "#T_vk", "#T_cif--2", "#T_cif--1", "#T_vj", "#T_wceq", "#T_vl", "#T_cif--2", "#T_cur", "#T_cfv", "#T_vr", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_vr", "#T_cif--3", "#T_vi", "#T_vm", "#T_vj", "#T_vi", "#T_vj", "#T_vk", "#T_vl", "#T_vm", "#T_vn", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the matrices whose determinants are the minors of a square matrix.  In contrast to the standard definition of minors, a row is replaced by 0's and one 1 instead of deleting the column and row (e.g. definition in [Lang] p. 515).  By this, the determinant of such a matrix is equal to the minor determined in the standard way (as determinant of a submatrix, see ~ df-subma - note that the matrix is transposed compared with the submatrix defined in ~ df-subma , but this does not matter because the determinants are the same, see ~ mdettpos ).  Such matrices are used in the definition of an adjunct of a square matrix, see ~ df-madu .  (Contributed by AV, 27-Dec-2018.) ",
+  "statement" : "df-minmar1 $p |- minMatR1 = ( n e. _V , r e. _V |-> ( m e. ( Base ` ( n Mat r ) ) |-> ( k e. n , l e. n |-> ( i e. n , j e. n |-> if ( i = k , if ( j = l , ( 1r ` r ) , ( 0g ` r ) ) , ( i m j ) ) ) ) ) ) $.\n$d i j k l m n r $."
+}

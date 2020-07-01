@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lediv2d on Metamath](http://us.metamath.org/mpegif/lediv2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rpred.1 | |- ( ph -> A e. RR+ ) |\n| 2 |  | rpaddcld.1 | |- ( ph -> B e. RR+ ) |\n| 3 |  | ltdiv2d.3 | |- ( ph -> C e. RR+ ) |\n| 4 | 1 | #P_rpregt0d | |- ( ph -> ( A e. RR /\\ 0 < A ) ) |\n| 5 | 2 | #P_rpregt0d | |- ( ph -> ( B e. RR /\\ 0 < B ) ) |\n| 6 | 3 | #P_rpregt0d | |- ( ph -> ( C e. RR /\\ 0 < C ) ) |\n| 7 |  | #P_lediv2 | |- ( ( ( A e. RR /\\ 0 < A ) /\\ ( B e. RR /\\ 0 < B ) /\\ ( C e. RR /\\ 0 < C ) ) -> ( A <_ B <-> ( C / B ) <_ ( C / A ) ) ) |\n| 8 | 4, 5, 6, 7 | #P_syl3anc | |- ( ph -> ( A <_ B <-> ( C / B ) <_ ( C / A ) ) ) |",
+  "conclusion" : "#P_lediv2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cle", "#T_cC", "#T_cdiv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cC", "#T_cdiv", "#T_cB", "#T_cle", "#T_cC", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rpregt0d", "#P_syl3anc", "#P_lediv2" ]
+}

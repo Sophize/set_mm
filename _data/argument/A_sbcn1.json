@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbcn1 on Metamath](http://us.metamath.org/mpegif/sbcn1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sbcex | |- ( [. A / x ]. -. ph -> A e. _V ) |\n| 2 |  | #P_sbcng | |- ( A e. _V -> ( [. A / x ]. -. ph <-> -. [. A / x ]. ph ) ) |\n| 3 | 2 | #P_biimpd | |- ( A e. _V -> ( [. A / x ]. -. ph -> -. [. A / x ]. ph ) ) |\n| 4 | 1, 3 | #P_mpcom | |- ( [. A / x ]. -. ph -> -. [. A / x ]. ph ) |",
+  "conclusion" : "#P_sbcn1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wn", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_sbcng", "#P_biimpd", "#P_sbcex" ]
+}

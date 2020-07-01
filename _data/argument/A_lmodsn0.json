@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodsn0 on Metamath](http://us.metamath.org/mpegif/lmodsn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmodsn0.f | |- F = ( Scalar ` W ) |\n| 2 |  | lmodsn0.b | |- B = ( Base ` F ) |\n| 3 | 1 | #P_lmodfgrp | |- ( W e. LMod -> F e. Grp ) |\n| 4 | 2 | #P_grpbn0 | |- ( F e. Grp -> B =/= (/) ) |\n| 5 | 3, 4 | #P_syl | |- ( W e. LMod -> B =/= (/) ) |",
+  "conclusion" : "#P_lmodsn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cF", "#T_wcel", "#T_cgrp", "#T_cF", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cB.wceq", "#T_wne", "#T_c0", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cB", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpbn0", "#P_lmodfgrp", "#P_syl" ]
+}

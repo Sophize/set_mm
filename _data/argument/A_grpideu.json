@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpideu on Metamath](http://us.metamath.org/mpegif/grpideu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpcl.b | |- B = ( Base ` G ) |\n| 2 |  | grpcl.p | |- .+ = ( +g ` G ) |\n| 3 |  | grpinvex.p | |- .0. = ( 0g ` G ) |\n| 4 |  | #P_grpmnd | |- ( G e. Grp -> G e. Mnd ) |\n| 5 | 1, 2 | #P_mndideu | |- ( G e. Mnd -> E! u e. B A. x e. B ( ( u .+ x ) = x /\\ ( x .+ u ) = x ) ) |\n| 6 | 4, 5 | #P_syl | |- ( G e. Grp -> E! u e. B A. x e. B ( ( u .+ x ) = x /\\ ( x .+ u ) = x ) ) |",
+  "conclusion" : "#P_grpideu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wi", "#T_wreu--1", "#T_vu", "#T_wreu--2", "#T_cB.wceq", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_vu", "#T_c.pl", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vx.wal", "#T_c.pl", "#T_vu", "#T_wceq", "#T_vx.wal", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_wreu--1", "#T_vu", "#T_wreu--2", "#T_cB", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_vu", "#T_c.pl", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_vx", "#T_c.pl", "#T_vu", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpmnd", "#P_mndideu", "#P_syl" ]
+}

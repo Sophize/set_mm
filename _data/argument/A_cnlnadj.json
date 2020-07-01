@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnlnadj on Metamath](http://us.metamath.org/mpegif/cnlnadj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnlnadjeu | |- ( T e. ( LinOp i^i ConOp ) -> E! t e. ( LinOp i^i ConOp ) A. x e. ~H A. y e. ~H ( ( T ` x ) .ih y ) = ( x .ih ( t ` y ) ) ) |\n| 2 |  | #P_reurex | |- ( E! t e. ( LinOp i^i ConOp ) A. x e. ~H A. y e. ~H ( ( T ` x ) .ih y ) = ( x .ih ( t ` y ) ) -> E. t e. ( LinOp i^i ConOp ) A. x e. ~H A. y e. ~H ( ( T ` x ) .ih y ) = ( x .ih ( t ` y ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( T e. ( LinOp i^i ConOp ) -> E. t e. ( LinOp i^i ConOp ) A. x e. ~H A. y e. ~H ( ( T ` x ) .ih y ) = ( x .ih ( t ` y ) ) ) |",
+  "conclusion" : "#P_cnlnadj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_clo", "#T_cin", "#T_ccop", "#T_wi", "#T_wreu--1", "#T_vt", "#T_wreu--2", "#T_clo", "#T_cin", "#T_ccop", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_csp", "#T_vt", "#T_cfv", "#T_vy.tru", "#T_wreu--1", "#T_vt", "#T_wreu--2", "#T_clo", "#T_cin", "#T_ccop", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_csp", "#T_vt", "#T_cfv", "#T_vy.tru", "#T_wi", "#T_wrex--1", "#T_vt", "#T_wrex--2", "#T_clo", "#T_cin", "#T_ccop", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_csp", "#T_vt", "#T_cfv", "#T_vy.tru", "#T_cT", "#T_wcel", "#T_clo", "#T_cin", "#T_ccop", "#T_wi", "#T_wrex--1", "#T_vt", "#T_wrex--2", "#T_clo", "#T_cin", "#T_ccop", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_chil", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_chil", "#T_cT", "#T_cfv", "#T_vx", "#T_csp", "#T_vy", "#T_wceq", "#T_vx", "#T_csp", "#T_vt", "#T_cfv", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reurex", "#P_syl", "#P_cnlnadjeu" ]
+}

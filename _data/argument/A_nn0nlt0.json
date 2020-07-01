@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0nlt0 on Metamath](http://us.metamath.org/mpegif/nn0nlt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0ge0 | |- ( A e. NN0 -> 0 <_ A ) |\n| 2 |  | #P_0re | |- 0 e. RR |\n| 3 |  | #P_nn0re | |- ( A e. NN0 -> A e. RR ) |\n| 4 |  | #P_lenlt | |- ( ( 0 e. RR /\\ A e. RR ) -> ( 0 <_ A <-> -. A < 0 ) ) |\n| 5 | 2, 3, 4 | #P_sylancr | |- ( A e. NN0 -> ( 0 <_ A <-> -. A < 0 ) ) |\n| 6 | 1, 5 | #P_mpbid | |- ( A e. NN0 -> -. A < 0 ) |",
+  "conclusion" : "#P_nn0nlt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cc0", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_cA", "#T_wcel", "#T_cn0", "#T_wi", "#T_wn", "#T_cA", "#T_clt", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lenlt", "#P_sylancr", "#P_mpbid", "#P_nn0ge0", "#P_nn0re", "#P_0re" ]
+}

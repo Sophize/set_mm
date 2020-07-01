@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvfi on Metamath](http://us.metamath.org/mpegif/cnvfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnvcnvss | |- `' `' A C_ A |\n| 2 |  | #P_ssfi | |- ( ( A e. Fin /\\ `' `' A C_ A ) -> `' `' A e. Fin ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. Fin -> `' `' A e. Fin ) |\n| 4 |  | #P_relcnv | |- Rel `' A |\n| 5 |  | #P_cnvexg | |- ( A e. Fin -> `' A e. _V ) |\n| 6 |  | #P_cnven | |- ( ( Rel `' A /\\ `' A e. _V ) -> `' A ~~ `' `' A ) |\n| 7 | 4, 5, 6 | #P_sylancr | |- ( A e. Fin -> `' A ~~ `' `' A ) |\n| 8 |  | #P_enfii | |- ( ( `' `' A e. Fin /\\ `' A ~~ `' `' A ) -> `' A e. Fin ) |\n| 9 | 3, 7, 8 | #P_syl2anc | |- ( A e. Fin -> `' A e. Fin ) |",
+  "conclusion" : "#P_cnvfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wrel", "#T_ccnv", "#T_cA.wceq", "#T_wa", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_ccnv", "#T_cA.wceq", "#T_cen", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccnv", "#T_cA.wceq", "#T_cen", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wa", "#T_ccnv", "#T_cA.wceq", "#T_cen", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccnv", "#T_cA", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_enfii", "#P_cnvcnvss", "#P_sylancr", "#P_cnvexg", "#P_syl2anc", "#P_relcnv", "#P_ssfi", "#P_mpan2", "#P_cnven" ]
+}

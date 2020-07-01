@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-hst on Metamath](http://us.metamath.org/mpegif/df-hst.html)"
+  } ],
+  "names" : [ "df-hst" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_chst", "#T_wceq", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_chil", "#T_cmap", "#T_cch", "#T_crab--3", "#T_cno", "#T_cfv", "#T_vf", "#T_cfv", "#T_chil", "#T_wceq", "#T_c1", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cch", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cch", "#T_vx", "#T_wss", "#T_cort", "#T_cfv", "#T_vy", "#T_wi", "#T_vf", "#T_cfv", "#T_vx", "#T_csp", "#T_vf", "#T_cfv", "#T_vy", "#T_wceq", "#T_cc0", "#T_wa", "#T_vf", "#T_cfv", "#T_vx", "#T_chj", "#T_vy", "#T_wceq", "#T_vf", "#T_cfv", "#T_vx", "#T_cva", "#T_vf", "#T_cfv", "#T_vy", "#T_crab--4", "#T_vf", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of complex Hilbert-space-valued states on a Hilbert lattice.  Definition of CH-states in [Mayet3] p. 9.  (Contributed by NM, 25-Jun-2006.)  (New usage is discouraged.) ",
+  "statement" : "df-hst $p |- CHStates = { f e. ( ~H ^m CH ) | ( ( normh ` ( f ` ~H ) ) = 1 /\\ A. x e. CH A. y e. CH ( x C_ ( _|_ ` y ) -> ( ( ( f ` x ) .ih ( f ` y ) ) = 0 /\\ ( f ` ( x vH y ) ) = ( ( f ` x ) +h ( f ` y ) ) ) ) ) } $.\n$d f x y $."
+}

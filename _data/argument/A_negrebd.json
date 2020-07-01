@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negrebd on Metamath](http://us.metamath.org/mpegif/negrebd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | negrebd.2 | |- ( ph -> -u A e. RR ) |\n| 3 |  | #P_negreb | |- ( A e. CC -> ( -u A e. RR <-> A e. RR ) ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> ( -u A e. RR <-> A e. RR ) ) |\n| 5 | 2, 4 | #P_mpbid | |- ( ph -> A e. RR ) |",
+  "conclusion" : "#P_negrebd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cneg", "#T_cA", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_syl", "#P_negreb" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-full on Metamath](http://us.metamath.org/mpegif/df-full.html)"
+  } ],
+  "names" : [ "df-full" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cful", "#T_wceq", "#T_vc", "#T_cmpt2--1", "#T_ccat", "#T_cmpt2--2", "#T_vd", "#T_cmpt2--3", "#T_ccat", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vg", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vc", "#T_cfunc", "#T_vd", "#T_vg", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vc", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vc", "#T_crn", "#T_vx", "#T_vg", "#T_vy", "#T_wceq", "#T_vf", "#T_cfv", "#T_vx", "#T_chom", "#T_cfv", "#T_vd", "#T_vf", "#T_cfv", "#T_vy", "#T_copab--6", "#T_vc", "#T_vd", "#T_vf", "#T_vg", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function returning all the full functors from a category ` C ` to a category ` D ` .  A full functor is a functor in which all the morphism maps ` G ( X , Y ) ` between objects ` X , Y e. C ` are surjections. Definition 3.27(3) in [Adamek] p. 34.  (Contributed by Mario Carneiro, 26-Jan-2017.) ",
+  "statement" : "df-full $p |- Full = ( c e. Cat , d e. Cat |-> { <. f , g >. | ( f ( c Func d ) g /\\ A. x e. ( Base ` c ) A. y e. ( Base ` c ) ran ( x g y ) = ( ( f ` x ) ( Hom ` d ) ( f ` y ) ) ) } ) $.\n$d c d f g x y $."
+}

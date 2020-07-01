@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brabga on Metamath](http://us.metamath.org/mpegif/brabga.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opelopabga.1 | |- ( ( x = A /\\ y = B ) -> ( ph <-> ps ) ) |\n| 2 |  | brabga.2 | |- R = { <. x , y >. | ph } |\n| 3 |  | #P_df-br | |- ( A R B <-> <. A , B >. e. R ) |\n| 4 | 2 | #P_eleq2i | |- ( <. A , B >. e. R <-> <. A , B >. e. { <. x , y >. | ph } ) |\n| 5 | 3, 4 | #P_bitri | |- ( A R B <-> <. A , B >. e. { <. x , y >. | ph } ) |\n| 6 | 1 | #P_opelopabga | |- ( ( A e. V /\\ B e. W ) -> ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) ) |\n| 7 | 5, 6 | #P_syl5bb | |- ( ( A e. V /\\ B e. W ) -> ( A R B <-> ps ) ) |",
+  "conclusion" : "#P_brabga",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_wb", "#T_wps", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_df-br", "#P_eleq2i", "#P_opelopabga", "#P_bitri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbied on Metamath](http://us.metamath.org/mpegif/sbied.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbied.1 | |- F/ x ph |\n| 2 |  | sbied.2 | |- ( ph -> F/ x ch ) |\n| 3 |  | sbied.3 | |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) |\n| 4 | 1 | #P_nfri | |- ( ph -> A. x ph ) |\n| 5 | 2 | #P_nfrd | |- ( ph -> ( ch -> A. x ch ) ) |\n| 6 | 4, 5, 3 | #P_sbiedh | |- ( ph -> ( [ y / x ] ps <-> ch ) ) |",
+  "conclusion" : "#P_sbied",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfrd", "#P_nfri", "#P_sbiedh" ]
+}

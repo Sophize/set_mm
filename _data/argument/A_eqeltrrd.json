@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqeltrrd on Metamath](http://us.metamath.org/mpegif/eqeltrrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqeltrrd.1 | |- ( ph -> A = B ) |\n| 2 |  | eqeltrrd.2 | |- ( ph -> A e. C ) |\n| 3 | 1 | #P_eqcomd | |- ( ph -> B = A ) |\n| 4 | 3, 2 | #P_eqeltrd | |- ( ph -> B e. C ) |",
+  "conclusion" : "#P_eqeltrrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrd", "#P_eqcomd" ]
+}

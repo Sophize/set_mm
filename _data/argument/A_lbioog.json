@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lbioog on Metamath](http://us.metamath.org/mpegif/lbioog.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xrltnr | |- ( A e. RR* -> -. A < A ) |\n| 2 |  | #P_simp2 | |- ( ( A e. RR* /\\ A < A /\\ A < B ) -> A < A ) |\n| 3 | 1, 2 | #P_nsyl | |- ( A e. RR* -> -. ( A e. RR* /\\ A < A /\\ A < B ) ) |\n| 4 | 3 | #P_adantr | |- ( ( A e. RR* /\\ B e. RR* ) -> -. ( A e. RR* /\\ A < A /\\ A < B ) ) |\n| 5 |  | #P_elioo1 | |- ( ( A e. RR* /\\ B e. RR* ) -> ( A e. ( A (,) B ) <-> ( A e. RR* /\\ A < A /\\ A < B ) ) ) |\n| 6 | 4, 5 | #P_mtbird | |- ( ( A e. RR* /\\ B e. RR* ) -> -. A e. ( A (,) B ) ) |",
+  "conclusion" : "#P_lbioog",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cioo", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_clt", "#T_cA.wceq", "#T_w3a--2", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB", "#T_wcel", "#T_cxr", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cA", "#T_cioo", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xrltnr", "#P_elioo1", "#P_nsyl", "#P_mtbird", "#P_simp2", "#P_adantr" ]
+}

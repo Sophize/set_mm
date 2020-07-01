@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghomgrpi on Metamath](http://us.metamath.org/mpegif/ghomgrpi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghomgrpi.1 | |- G e. GrpOp |\n| 2 |  | ghomgrpi.2 | |- H e. GrpOp |\n| 3 |  | ghomgrpi.3 | |- F e. ( G GrpOpHom H ) |\n| 4 |  | ghomgrpi.4 | |- Y = ran F |\n| 5 |  | ghomgrpi.5 | |- S = ( H |` ( Y X. Y ) ) |\n| 6 |  | #P_eqid | |- ran G = ran G |\n| 7 |  | #P_eqid | |- ( GId ` G ) = ( GId ` G ) |\n| 8 |  | #P_eqid | |- ( inv ` G ) = ( inv ` G ) |\n| 9 |  | #P_eqid | |- ran H = ran H |\n| 10 |  | #P_eqid | |- ( GId ` H ) = ( GId ` H ) |\n| 11 |  | #P_eqid | |- ( inv ` H ) = ( inv ` H ) |\n| 12 | 1, 2, 3, 6, 7, 8, 9, 10, 11, 4, 5 | #P_ghomgrpilem2 | |- S e. ( SubGrpOp ` H ) |",
+  "conclusion" : "#P_ghomgrpi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cgr", "#T_cH", "#T_wcel", "#T_cgr", "#T_cF", "#T_wcel", "#T_cG", "#T_cghomOLD", "#T_cH", "#T_cY", "#T_wceq", "#T_crn", "#T_cF", "#T_cS", "#T_wceq", "#T_cH", "#T_cres", "#T_cY", "#T_cxp", "#T_cY", "#T_crn", "#T_cG", "#T_wceq", "#T_crn", "#T_cG", "#T_cgi", "#T_cfv", "#T_cG", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cgn", "#T_cfv", "#T_cG", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cG", "#T_crn", "#T_cH", "#T_wceq", "#T_crn", "#T_cH", "#T_cgi", "#T_cfv", "#T_cH", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cH", "#T_cgn", "#T_cfv", "#T_cH", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cH", "#T_cS", "#T_wcel", "#T_csubgo", "#T_cfv", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ghomgrpilem2", "#P_eqid" ]
+}

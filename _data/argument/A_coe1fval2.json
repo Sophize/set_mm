@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coe1fval2 on Metamath](http://us.metamath.org/mpegif/coe1fval2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | coe1fval.a | |- A = ( coe1 ` F ) |\n| 2 |  | coe1f.b | |- B = ( Base ` P ) |\n| 3 |  | coe1f.p | |- P = ( Poly1 ` R ) |\n| 4 |  | coe1fval2.g | |- G = ( y e. NN0 |-> ( 1o X. { y } ) ) |\n| 5 | 3, 2 | #P_ply1bascl | |- ( F e. B -> F e. ( Base ` ( PwSer1 ` R ) ) ) |\n| 6 |  | #P_eqid | |- ( Base ` ( PwSer1 ` R ) ) = ( Base ` ( PwSer1 ` R ) ) |\n| 7 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 8 | 1, 6, 7, 4 | #P_coe1fval3 | |- ( F e. ( Base ` ( PwSer1 ` R ) ) -> A = ( F o. G ) ) |\n| 9 | 5, 8 | #P_syl | |- ( F e. B -> A = ( F o. G ) ) |",
+  "conclusion" : "#P_coe1fval2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cco1", "#T_cfv", "#T_cF", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_c1o", "#T_cxp", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cF", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cps1", "#T_cfv", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_cF", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ply1bascl", "#P_syl", "#P_coe1fval3" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See locfinreflem on Metamath](http://us.metamath.org/mpegif/locfinreflem.html)"
+  } ],
+  "names" : [ "locfinreflem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_wph", "#T_wi", "#T_cU", "#T_wss", "#T_cJ", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_cuni", "#T_cU", "#T_wph", "#T_wi", "#T_cV", "#T_wss", "#T_cJ", "#T_wph", "#T_wi", "#T_cV", "#T_cref", "#T_cU", "#T_wph", "#T_wi", "#T_cV", "#T_wcel", "#T_clocfin", "#T_cfv", "#T_cJ", "#T_wph", "#T_wi", "#T_wex", "#T_vf", "#T_wfun", "#T_vf", "#T_w3a--1", "#T_cdm", "#T_vf", "#T_wss", "#T_cU", "#T_w3a--2", "#T_crn", "#T_vf", "#T_wss", "#T_cJ", "#T_wa", "#T_crn", "#T_vf", "#T_cref", "#T_cU", "#T_wa", "#T_crn", "#T_vf", "#T_wcel", "#T_clocfin", "#T_cfv", "#T_cJ", "#T_cJ", "#T_vf", "#T_cU", "#T_vf", "#T_cV", "#T_vf", "#T_vf", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A locally finite refinement of an open cover induces a locally finite open cover with the original index set.  This is fact 2 of http://at.yorku.ca/p/a/c/a/02.pdf , it is expressed by exposing a function ` f ` from the original cover ` U ` , which is taken as the index set.  The solution is constructed by building unions, so the same method can be used to prove a similar theorem about closed covers. (Contributed by Thierry Arnoux, 29-Jan-2020.) ",
+  "statement" : "locfinref.x $e |- X = U. J $.\nlocfinref.1 $e |- ( ph -> U C_ J ) $.\nlocfinref.2 $e |- ( ph -> X = U. U ) $.\nlocfinref.3 $e |- ( ph -> V C_ J ) $.\nlocfinref.4 $e |- ( ph -> V Ref U ) $.\nlocfinref.5 $e |- ( ph -> V e. ( LocFin ` J ) ) $.\nlocfinreflem $p |- ( ph -> E. f ( ( Fun f /\\ dom f C_ U /\\ ran f C_ J ) /\\ ( ran f Ref U /\\ ran f e. ( LocFin ` J ) ) ) ) $.\n$d J f $.\n$d U f $.\n$d V f $.\n$d f ph $."
+}

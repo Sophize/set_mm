@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uhgraf on Metamath](http://us.metamath.org/mpegif/uhgraf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uhgrav | |- ( V UHGrph E -> ( V e. _V /\\ E e. _V ) ) |\n| 2 |  | #P_isuhgra | |- ( ( V e. _V /\\ E e. _V ) -> ( V UHGrph E <-> E : dom E --> ( ~P V \\ { (/) } ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( V UHGrph E -> ( V UHGrph E <-> E : dom E --> ( ~P V \\ { (/) } ) ) ) |\n| 4 | 3 | #P_ibi | |- ( V UHGrph E -> E : dom E --> ( ~P V \\ { (/) } ) ) |",
+  "conclusion" : "#P_uhgraf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cuhg", "#T_cE", "#T_wi", "#T_cV", "#T_wcel", "#T_cvv", "#T_wa", "#T_cE", "#T_wcel", "#T_cvv", "#T_cV", "#T_wcel", "#T_cvv", "#T_wa", "#T_cE", "#T_wcel", "#T_cvv", "#T_wi", "#T_cV", "#T_cuhg", "#T_cE", "#T_wb", "#T_cE", "#T_wf--1", "#T_cdm", "#T_cE", "#T_wf--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cV", "#T_cuhg", "#T_cE", "#T_wi", "#T_cV", "#T_cuhg", "#T_cE", "#T_wb", "#T_cE", "#T_wf--1", "#T_cdm", "#T_cE", "#T_wf--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cV", "#T_cuhg", "#T_cE", "#T_wi", "#T_cE", "#T_wf--1", "#T_cdm", "#T_cE", "#T_wf--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibi", "#P_syl", "#P_isuhgra", "#P_uhgrav" ]
+}

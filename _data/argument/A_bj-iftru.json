@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-iftru on Metamath](http://us.metamath.org/mpegif/bj-iftru.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-if | |- ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) ) |\n| 2 |  | #P_simpl | |- ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) -> ( ph -> ps ) ) |\n| 3 | 2 | #P_com12 | |- ( ph -> ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) -> ps ) ) |\n| 4 |  | #P_ax-1 | |- ( ps -> ( ph -> ps ) ) |\n| 5 | 4 | #P_a1i | |- ( ph -> ( ps -> ( ph -> ps ) ) ) |\n| 6 |  | #P_pm2.24 | |- ( ph -> ( -. ph -> ch ) ) |\n| 7 | 5, 6 | #P_jctird | |- ( ph -> ( ps -> ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) ) ) |\n| 8 | 3, 7 | #P_impbid | |- ( ph -> ( ( ( ph -> ps ) /\\ ( -. ph -> ch ) ) <-> ps ) ) |\n| 9 | 1, 8 | #P_syl5bb | |- ( ph -> ( if- ( ph , ps , ch ) <-> ps ) ) |",
+  "conclusion" : "#P_bj-iftru",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wph", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_pm2.24", "#P_jctird", "#P_df-bj-if", "#P_impbid", "#P_a1i", "#P_ax-1", "#P_simpl", "#P_com12" ]
+}

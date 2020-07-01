@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negexsr on Metamath](http://us.metamath.org/mpegif/negexsr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_m1r | |- -1R e. R. |\n| 2 |  | #P_mulclsr | |- ( ( A e. R. /\\ -1R e. R. ) -> ( A .R -1R ) e. R. ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. R. -> ( A .R -1R ) e. R. ) |\n| 4 |  | #P_pn0sr | |- ( A e. R. -> ( A +R ( A .R -1R ) ) = 0R ) |\n| 5 |  | #P_oveq2 | |- ( x = ( A .R -1R ) -> ( A +R x ) = ( A +R ( A .R -1R ) ) ) |\n| 6 | 5 | #P_eqeq1d | |- ( x = ( A .R -1R ) -> ( ( A +R x ) = 0R <-> ( A +R ( A .R -1R ) ) = 0R ) ) |\n| 7 | 6 | #P_rspcev | |- ( ( ( A .R -1R ) e. R. /\\ ( A +R ( A .R -1R ) ) = 0R ) -> E. x e. R. ( A +R x ) = 0R ) |\n| 8 | 3, 4, 7 | #P_syl2anc | |- ( A e. R. -> E. x e. R. ( A +R x ) = 0R ) |",
+  "conclusion" : "#P_negexsr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cm1r", "#T_wcel", "#T_cnr", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wa", "#T_cm1r", "#T_wcel", "#T_cnr", "#T_wi", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wcel", "#T_cnr", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wi", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wcel", "#T_cnr", "#T_cA.wceq", "#T_wcel", "#T_cnr", "#T_wi", "#T_cA.wceq", "#T_cplr", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wceq", "#T_c0r", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wi", "#T_cA.wceq", "#T_cplr", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cplr", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wi", "#T_cA.wceq", "#T_cplr", "#T_vx.wal", "#T_wceq", "#T_c0r", "#T_wb", "#T_cA.wceq", "#T_cplr", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wceq", "#T_c0r", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wcel", "#T_cnr", "#T_wa", "#T_cA.wceq", "#T_cplr", "#T_cA.wceq", "#T_cmr", "#T_cm1r", "#T_wceq", "#T_c0r", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cnr", "#T_cA.wceq", "#T_cplr", "#T_vx.wal", "#T_wceq", "#T_c0r", "#T_cA", "#T_wcel", "#T_cnr", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cnr", "#T_cA", "#T_cplr", "#T_vx", "#T_wceq", "#T_c0r" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_m1r", "#P_mulclsr", "#P_syl2anc", "#P_oveq2", "#P_eqeq1d", "#P_pn0sr", "#P_mpan2", "#P_rspcev" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fiufl on Metamath](http://us.metamath.org/mpegif/fiufl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pwfi | |- ( X e. Fin <-> ~P X e. Fin ) |\n| 2 |  | #P_pwfi | |- ( ~P X e. Fin <-> ~P ~P X e. Fin ) |\n| 3 |  | #P_finnum | |- ( ~P ~P X e. Fin -> ~P ~P X e. dom card ) |\n| 4 |  | #P_numufl | |- ( ~P ~P X e. dom card -> X e. UFL ) |\n| 5 | 3, 4 | #P_syl | |- ( ~P ~P X e. Fin -> X e. UFL ) |\n| 6 | 2, 5 | #P_sylbi | |- ( ~P X e. Fin -> X e. UFL ) |\n| 7 | 1, 6 | #P_sylbi | |- ( X e. Fin -> X e. UFL ) |",
+  "conclusion" : "#P_fiufl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_wb", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cX", "#T_wcel", "#T_cufl", "#T_cpw", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cX", "#T_wcel", "#T_cufl", "#T_cpw", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cX", "#T_wcel", "#T_cufl", "#T_cX", "#T_wcel", "#T_cfn", "#T_wi", "#T_cX", "#T_wcel", "#T_cufl" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwfi", "#P_numufl", "#P_syl", "#P_sylbi", "#P_finnum" ]
+}

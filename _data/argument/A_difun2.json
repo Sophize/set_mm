@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difun2 on Metamath](http://us.metamath.org/mpegif/difun2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_difundir | |- ( ( A u. B ) \\ B ) = ( ( A \\ B ) u. ( B \\ B ) ) |\n| 2 |  | #P_difid | |- ( B \\ B ) = (/) |\n| 3 | 2 | #P_uneq2i | |- ( ( A \\ B ) u. ( B \\ B ) ) = ( ( A \\ B ) u. (/) ) |\n| 4 |  | #P_un0 | |- ( ( A \\ B ) u. (/) ) = ( A \\ B ) |\n| 5 | 1, 3, 4 | #P_3eqtri | |- ( ( A u. B ) \\ B ) = ( A \\ B ) |",
+  "conclusion" : "#P_difun2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cB.wceq", "#T_cB.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA", "#T_cun", "#T_cB", "#T_cdif", "#T_cB", "#T_wceq", "#T_cA", "#T_cdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_difid", "#P_uneq2i", "#P_difundir", "#P_un0", "#P_3eqtri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reseq12i on Metamath](http://us.metamath.org/mpegif/reseq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reseqi.1 | |- A = B |\n| 2 |  | reseqi.2 | |- C = D |\n| 3 | 1 | #P_reseq1i | |- ( A |` C ) = ( B |` C ) |\n| 4 | 2 | #P_reseq2i | |- ( B |` C ) = ( B |` D ) |\n| 5 | 3, 4 | #P_eqtri | |- ( A |` C ) = ( B |` D ) |",
+  "conclusion" : "#P_reseq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cres", "#T_cC", "#T_cB.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cres", "#T_cD", "#T_cA", "#T_cres", "#T_cC", "#T_wceq", "#T_cB", "#T_cres", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_reseq2i", "#P_eqtri", "#P_reseq1i" ]
+}

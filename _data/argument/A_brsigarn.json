@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brsigarn on Metamath](http://us.metamath.org/mpegif/brsigarn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fvex | |- ( topGen ` ran (,) ) e. _V |\n| 2 |  | #P_sigagensiga | |- ( ( topGen ` ran (,) ) e. _V -> ( sigaGen ` ( topGen ` ran (,) ) ) e. ( sigAlgebra ` U. ( topGen ` ran (,) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( sigaGen ` ( topGen ` ran (,) ) ) e. ( sigAlgebra ` U. ( topGen ` ran (,) ) ) |\n| 4 |  | #P_df-brsiga | |- BrSiga = ( sigaGen ` ( topGen ` ran (,) ) ) |\n| 5 |  | #P_uniretop | |- RR = U. ( topGen ` ran (,) ) |\n| 6 | 5 | #P_fveq2i | |- ( sigAlgebra ` RR ) = ( sigAlgebra ` U. ( topGen ` ran (,) ) ) |\n| 7 | 3, 4, 6 | #P_3eltr4i | |- BrSiga e. ( sigAlgebra ` RR ) |",
+  "conclusion" : "#P_brsigarn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_cvv", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_cvv", "#T_wi", "#T_csigagen", "#T_cfv", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_csiga", "#T_cfv", "#T_cuni", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_csigagen", "#T_cfv", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_csiga", "#T_cfv", "#T_cuni", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cbrsiga", "#T_wceq", "#T_csigagen", "#T_cfv", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cr", "#T_wceq", "#T_cuni", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_csiga", "#T_cfv", "#T_cr", "#T_wceq", "#T_csiga", "#T_cfv", "#T_cuni", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cbrsiga", "#T_wcel", "#T_csiga", "#T_cfv", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_ax-mp", "#P_uniretop", "#P_3eltr4i", "#P_sigagensiga", "#P_df-brsiga", "#P_fvex" ]
+}

@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leibpi on Metamath](http://us.metamath.org/mpegif/leibpi.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "Leibniz' Series for Pi", "leibpi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cneg", "#T_c1", "#T_cexp", "#T_vn", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vn", "#T_caddc", "#T_c1", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_cpi", "#T_cdiv", "#T_c4" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Leibniz formula for ` _pi ` .  This proof depends on three main facts:  (1) the series ` F ` is convergent, because it is an alternating series ( ~ iseralt ).  (2) Using ~ leibpilem2 to rewrite the series as a power series, it is the ` x = 1 ` special case of the Taylor series for ` arctan ` ( ~ atantayl2 ).  (3) Although we cannot directly plug ` x = 1 ` into ~ atantayl2 , Abel's theorem ( ~ abelth2 ) says that the limit along any sequence converging to ` 1 ` , such as ` 1 - 1 / n ` , of the power series converges to the power series extended to ` 1 ` , and then since ` arctan ` is continuous at ` 1 ` ( ~ atancn ) we get the desired result.  This is Metamath 100 proof #26.  (Contributed by Mario Carneiro, 7-Apr-2015.) ",
+  "statement" : "leibpi.1 $e |- F = ( n e. NN0 |-> ( ( -u 1 ^ n ) / ( ( 2 x. n ) + 1 ) ) ) $.\nleibpi $p |- seq 0 ( + , F ) ~~> ( _pi / 4 ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lssmre on Metamath](http://us.metamath.org/mpegif/lssmre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lssacs.b | |- B = ( Base ` W ) |\n| 2 |  | lssacs.s | |- S = ( LSubSp ` W ) |\n| 3 | 1, 2 | #P_lssss | |- ( a e. S -> a C_ B ) |\n| 4 |  | #P_selpw | |- ( a e. ~P B <-> a C_ B ) |\n| 5 | 3, 4 | #P_sylibr | |- ( a e. S -> a e. ~P B ) |\n| 6 | 5 | #P_a1i | |- ( W e. LMod -> ( a e. S -> a e. ~P B ) ) |\n| 7 | 6 | #P_ssrdv | |- ( W e. LMod -> S C_ ~P B ) |\n| 8 | 1, 2 | #P_lss1 | |- ( W e. LMod -> B e. S ) |\n| 9 | 2 | #P_lssintcl | |- ( ( W e. LMod /\\ a C_ S /\\ a =/= (/) ) -> |^| a e. S ) |\n| 10 | 7, 8, 9 | #P_ismred | |- ( W e. LMod -> S e. ( Moore ` B ) ) |",
+  "conclusion" : "#P_lssmre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_va", "#T_wcel", "#T_cS", "#T_wi", "#T_va", "#T_wss", "#T_cB.wceq", "#T_va", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_va", "#T_wss", "#T_cB.wceq", "#T_va", "#T_wcel", "#T_cS", "#T_wi", "#T_va", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_va", "#T_wcel", "#T_cS", "#T_wi", "#T_va", "#T_wcel", "#T_cpw", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cS", "#T_wss", "#T_cpw", "#T_cB.wceq", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_va", "#T_wss", "#T_cS", "#T_w3a--2", "#T_va", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_va", "#T_wcel", "#T_cS", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cS", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_selpw", "#P_lssss", "#P_sylibr", "#P_a1i", "#P_lss1", "#P_ismred", "#P_lssintcl" ]
+}

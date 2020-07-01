@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1stdm on Metamath](http://us.metamath.org/mpegif/1stdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rel | |- ( Rel R <-> R C_ ( _V X. _V ) ) |\n| 2 | 1 | #P_biimpi | |- ( Rel R -> R C_ ( _V X. _V ) ) |\n| 3 | 2 | #P_sselda | |- ( ( Rel R /\\ A e. R ) -> A e. ( _V X. _V ) ) |\n| 4 |  | #P_1stval2 | |- ( A e. ( _V X. _V ) -> ( 1st ` A ) = |^| |^| A ) |\n| 5 | 3, 4 | #P_syl | |- ( ( Rel R /\\ A e. R ) -> ( 1st ` A ) = |^| |^| A ) |\n| 6 |  | #P_elreldm | |- ( ( Rel R /\\ A e. R ) -> |^| |^| A e. dom R ) |\n| 7 | 5, 6 | #P_eqeltrd | |- ( ( Rel R /\\ A e. R ) -> ( 1st ` A ) e. dom R ) |",
+  "conclusion" : "#P_1stdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wb", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_cint", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cint", "#T_cint", "#T_cA.wceq", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_cint", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_wrel", "#T_cR", "#T_wa", "#T_cA", "#T_wcel", "#T_cR", "#T_wi", "#T_c1st", "#T_cfv", "#T_cA", "#T_wcel", "#T_cdm", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-rel", "#P_1stval2", "#P_eqeltrd", "#P_syl", "#P_elreldm", "#P_biimpi", "#P_sselda" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See negid on Metamath](http://us.metamath.org/mpegif/negid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-neg | |- -u A = ( 0 - A ) |\n| 2 | 1 | #P_oveq2i | |- ( A + -u A ) = ( A + ( 0 - A ) ) |\n| 3 |  | #P_0cn | |- 0 e. CC |\n| 4 |  | #P_pncan3 | |- ( ( A e. CC /\\ 0 e. CC ) -> ( A + ( 0 - A ) ) = 0 ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( A e. CC -> ( A + ( 0 - A ) ) = 0 ) |\n| 6 | 2, 5 | #P_syl5eq | |- ( A e. CC -> ( A + -u A ) = 0 ) |",
+  "conclusion" : "#P_negid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_cA.wceq", "#T_caddc", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_cc0", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_cmin", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_caddc", "#T_cneg", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0cn", "#P_df-neg", "#P_pncan3", "#P_mpan2", "#P_syl5eq", "#P_oveq2i" ]
+}

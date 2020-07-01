@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pcndvds on Metamath](http://us.metamath.org/mpegif/pcndvds.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnz | |- ( N e. NN -> N e. ZZ ) |\n| 2 |  | #P_nnne0 | |- ( N e. NN -> N =/= 0 ) |\n| 3 | 1, 2 | #P_jca | |- ( N e. NN -> ( N e. ZZ /\\ N =/= 0 ) ) |\n| 4 |  | #P_pczndvds | |- ( ( P e. Prime /\\ ( N e. ZZ /\\ N =/= 0 ) ) -> -. ( P ^ ( ( P pCnt N ) + 1 ) ) || N ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( P e. Prime /\\ N e. NN ) -> -. ( P ^ ( ( P pCnt N ) + 1 ) ) || N ) |",
+  "conclusion" : "#P_pcndvds",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wne", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wne", "#T_cc0", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wne", "#T_cc0", "#T_wi", "#T_wn", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_cN", "#T_caddc", "#T_c1", "#T_cdvds", "#T_cN", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_wn", "#T_cP", "#T_cexp", "#T_cP", "#T_cpc", "#T_cN", "#T_caddc", "#T_c1", "#T_cdvds", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_nnz", "#P_jca", "#P_pczndvds", "#P_nnne0" ]
+}

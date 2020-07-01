@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3jaao on Metamath](http://us.metamath.org/mpegif/3jaao.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3jaao.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | 3jaao.2 | |- ( th -> ( ta -> ch ) ) |\n| 3 |  | 3jaao.3 | |- ( et -> ( ze -> ch ) ) |\n| 4 | 1 | #P_3ad2ant1 | |- ( ( ph /\\ th /\\ et ) -> ( ps -> ch ) ) |\n| 5 | 2 | #P_3ad2ant2 | |- ( ( ph /\\ th /\\ et ) -> ( ta -> ch ) ) |\n| 6 | 3 | #P_3ad2ant3 | |- ( ( ph /\\ th /\\ et ) -> ( ze -> ch ) ) |\n| 7 | 4, 5, 6 | #P_3jaod | |- ( ( ph /\\ th /\\ et ) -> ( ( ps \\/ ta \\/ ze ) -> ch ) ) |",
+  "conclusion" : "#P_3jaao",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wet", "#T_wi", "#T_wze", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wze", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wps", "#T_w3o--1", "#T_wta", "#T_w3o--2", "#T_wze", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3ad2ant1", "#P_3ad2ant2", "#P_3ad2ant3", "#P_3jaod" ]
+}

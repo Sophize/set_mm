@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfopif on Metamath](http://us.metamath.org/mpegif/dfopif.html)"
+  } ],
+  "names" : [ "dfopif" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wceq", "#T_cif--1", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB", "#T_wcel", "#T_cvv", "#T_cif--2", "#T_cpr--1", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cpr--2", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_cpr--3", "#T_cif--3", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rewrite ~ df-op using ` if ` .  When both arguments are sets, it reduces to the standard Kuratowski definition; otherwise, it is defined to be the empty set.  Avoid directly depending on this detail so that theorems will not depend on the Kuratowski construction.  (Contributed by Mario Carneiro, 26-Apr-2015.)  (Avoid depending on this detail.) ",
+  "statement" : "dfopif $p |- <. A , B >. = if ( ( A e. _V /\\ B e. _V ) , { { A } , { A , B } } , (/) ) $."
+}

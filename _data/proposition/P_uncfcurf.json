@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uncfcurf on Metamath](http://us.metamath.org/mpegif/uncfcurf.html)"
+  } ],
+  "names" : [ "uncfcurf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_ccurf", "#T_cF", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cC", "#T_cxpc", "#T_cD", "#T_cfunc", "#T_cE", "#T_wph", "#T_wi", "#T_cs3--1", "#T_cC", "#T_cD", "#T_cE", "#T_cs3--2", "#T_cuncf", "#T_cG", "#T_wceq", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Cancellation of uncurry with curry.  (Contributed by Mario Carneiro, 13-Jan-2017.) ",
+  "statement" : "uncfcurf.g $e |- G = ( <. C , D >. curryF F ) $.\nuncfcurf.c $e |- ( ph -> C e. Cat ) $.\nuncfcurf.d $e |- ( ph -> D e. Cat ) $.\nuncfcurf.f $e |- ( ph -> F e. ( ( C Xc. D ) Func E ) ) $.\nuncfcurf $p |- ( ph -> ( <\" C D E \"> uncurryF G ) = F ) $."
+}

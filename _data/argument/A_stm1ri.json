@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stm1ri on Metamath](http://us.metamath.org/mpegif/stm1ri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | stle.1 | |- A e. CH |\n| 2 |  | stle.2 | |- B e. CH |\n| 3 |  | #P_incom | |- ( A i^i B ) = ( B i^i A ) |\n| 4 | 3 | #P_fveq2i | |- ( S ` ( A i^i B ) ) = ( S ` ( B i^i A ) ) |\n| 5 | 4 | #P_eqeq1i | |- ( ( S ` ( A i^i B ) ) = 1 <-> ( S ` ( B i^i A ) ) = 1 ) |\n| 6 | 2, 1 | #P_stm1i | |- ( S e. States -> ( ( S ` ( B i^i A ) ) = 1 -> ( S ` B ) = 1 ) ) |\n| 7 | 5, 6 | #P_syl5bi | |- ( S e. States -> ( ( S ` ( A i^i B ) ) = 1 -> ( S ` B ) = 1 ) ) |",
+  "conclusion" : "#P_stm1ri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cS", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_wb", "#T_cS", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_wi", "#T_cS", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_c1", "#T_wi", "#T_cS", "#T_cfv", "#T_cB", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_stm1i", "#P_eqeq1i", "#P_incom", "#P_syl5bi" ]
+}

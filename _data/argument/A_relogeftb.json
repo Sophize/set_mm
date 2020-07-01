@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relogeftb on Metamath](http://us.metamath.org/mpegif/relogeftb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rpcnne0 | |- ( A e. RR+ -> ( A e. CC /\\ A =/= 0 ) ) |\n| 2 |  | #P_relogrn | |- ( B e. RR -> B e. ran log ) |\n| 3 |  | #P_logeftb | |- ( ( A e. CC /\\ A =/= 0 /\\ B e. ran log ) -> ( ( log ` A ) = B <-> ( exp ` B ) = A ) ) |\n| 4 | 3 | #P_3expa | |- ( ( ( A e. CC /\\ A =/= 0 ) /\\ B e. ran log ) -> ( ( log ` A ) = B <-> ( exp ` B ) = A ) ) |\n| 5 | 1, 2, 4 | #P_syl2an | |- ( ( A e. RR+ /\\ B e. RR ) -> ( ( log ` A ) = B <-> ( exp ` B ) = A ) ) |",
+  "conclusion" : "#P_relogeftb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_clog", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_clog", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_ce", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crn", "#T_clog", "#T_wi", "#T_clog", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_ce", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_crp", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wi", "#T_clog", "#T_cfv", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_ce", "#T_cfv", "#T_cB", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_logeftb", "#P_3expa", "#P_rpcnne0", "#P_relogrn", "#P_syl2an" ]
+}

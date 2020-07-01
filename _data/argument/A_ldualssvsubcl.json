@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldualssvsubcl on Metamath](http://us.metamath.org/mpegif/ldualssvsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldualssvsubcl.d | |- D = ( LDual ` W ) |\n| 2 |  | ldualssvsubcl.m | |- .- = ( -g ` D ) |\n| 3 |  | ldualssvsubcl.s | |- S = ( LSubSp ` D ) |\n| 4 |  | ldualssvsubcl.w | |- ( ph -> W e. LMod ) |\n| 5 |  | ldualssvsubcl.u | |- ( ph -> U e. S ) |\n| 6 |  | ldualssvsubcl.x | |- ( ph -> X e. U ) |\n| 7 |  | ldualssvsubcl.y | |- ( ph -> Y e. U ) |\n| 8 | 1, 4 | #P_lduallmod | |- ( ph -> D e. LMod ) |\n| 9 | 2, 3 | #P_lssvsubcl | |- ( ( ( D e. LMod /\\ U e. S ) /\\ ( X e. U /\\ Y e. U ) ) -> ( X .- Y ) e. U ) |\n| 10 | 8, 5, 6, 7, 9 | #P_syl22anc | |- ( ph -> ( X .- Y ) e. U ) |",
+  "conclusion" : "#P_ldualssvsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cld", "#T_cfv", "#T_cW", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cD", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_clmod", "#T_cD", "#T_wcel", "#T_clmod", "#T_wa", "#T_cU", "#T_wcel", "#T_cS", "#T_wa", "#T_cX", "#T_wcel", "#T_cU", "#T_wa", "#T_cY", "#T_wcel", "#T_cU", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cX", "#T_c.mi", "#T_cY", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lssvsubcl", "#P_lduallmod", "#P_syl22anc" ]
+}

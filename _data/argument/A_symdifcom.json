@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symdifcom on Metamath](http://us.metamath.org/mpegif/symdifcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_uncom | |- ( ( A \\ B ) u. ( B \\ A ) ) = ( ( B \\ A ) u. ( A \\ B ) ) |\n| 2 |  | #P_df-symdif | |- ( A (++) B ) = ( ( A \\ B ) u. ( B \\ A ) ) |\n| 3 |  | #P_df-symdif | |- ( B (++) A ) = ( ( B \\ A ) u. ( A \\ B ) ) |\n| 4 | 1, 2, 3 | #P_3eqtr4i | |- ( A (++) B ) = ( B (++) A ) |",
+  "conclusion" : "#P_symdifcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA.wceq", "#T_csymdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cB.wceq", "#T_csymdif", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_cun", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA", "#T_csymdif", "#T_cB", "#T_wceq", "#T_cB", "#T_csymdif", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_df-symdif", "#P_uncom" ]
+}

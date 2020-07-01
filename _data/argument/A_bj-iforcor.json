@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-iforcor on Metamath](http://us.metamath.org/mpegif/bj-iforcor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orcom | |- ( ( ph \\/ ps ) <-> ( ps \\/ ph ) ) |\n| 2 |  | #P_bj-ifdfor2 | |- ( ( ph \\/ ps ) <-> if- ( ph , ph , ps ) ) |\n| 3 |  | #P_bj-ifdfor2 | |- ( ( ps \\/ ph ) <-> if- ( ps , ps , ph ) ) |\n| 4 | 1, 2, 3 | #P_3bitr3i | |- ( if- ( ph , ph , ps ) <-> if- ( ps , ps , ph ) ) |",
+  "conclusion" : "#P_bj-iforcor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wph", "#T_wif--3", "#T_wps", "#T_wps", "#T_wo", "#T_wph", "#T_wb", "#T_wif--1", "#T_wps", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wph", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wph", "#T_wif--3", "#T_wps", "#T_wb", "#T_wif--1", "#T_wps", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orcom", "#P_bj-ifdfor2", "#P_3bitr3i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodcom on Metamath](http://us.metamath.org/mpegif/fprodcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fprodcom.1 | |- ( ph -> A e. Fin ) |\n| 2 |  | fprodcom.2 | |- ( ph -> B e. Fin ) |\n| 3 |  | fprodcom.3 | |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> C e. CC ) |\n| 4 | 2 | #P_adantr | |- ( ( ph /\\ j e. A ) -> B e. Fin ) |\n| 5 |  | #P_ancom | |- ( ( j e. A /\\ k e. B ) <-> ( k e. B /\\ j e. A ) ) |\n| 6 | 5 | #P_a1i | |- ( ph -> ( ( j e. A /\\ k e. B ) <-> ( k e. B /\\ j e. A ) ) ) |\n| 7 | 1, 2, 4, 6, 3 | #P_fprodcom2 | |- ( ph -> prod_ j e. A prod_ k e. B C = prod_ k e. B prod_ j e. A C ) |",
+  "conclusion" : "#P_fprodcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vk", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vk", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vk", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vk", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vj", "#T_wcel", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vj", "#T_cprod--2", "#T_cA", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cprod--1", "#T_vj", "#T_cprod--2", "#T_cA", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_fprodcom2", "#P_a1i", "#P_adantr" ]
+}

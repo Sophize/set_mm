@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cu2 on Metamath](http://us.metamath.org/mpegif/cu2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-3 | |- 3 = ( 2 + 1 ) |\n| 2 | 1 | #P_oveq2i | |- ( 2 ^ 3 ) = ( 2 ^ ( 2 + 1 ) ) |\n| 3 |  | #P_2cn | |- 2 e. CC |\n| 4 |  | #P_2nn0 | |- 2 e. NN0 |\n| 5 |  | #P_expp1 | |- ( ( 2 e. CC /\\ 2 e. NN0 ) -> ( 2 ^ ( 2 + 1 ) ) = ( ( 2 ^ 2 ) x. 2 ) ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- ( 2 ^ ( 2 + 1 ) ) = ( ( 2 ^ 2 ) x. 2 ) |\n| 7 |  | #P_sq2 | |- ( 2 ^ 2 ) = 4 |\n| 8 | 7 | #P_oveq1i | |- ( ( 2 ^ 2 ) x. 2 ) = ( 4 x. 2 ) |\n| 9 |  | #P_4t2e8 | |- ( 4 x. 2 ) = 8 |\n| 10 | 8, 9 | #P_eqtri | |- ( ( 2 ^ 2 ) x. 2 ) = 8 |\n| 11 | 6, 10 | #P_eqtri | |- ( 2 ^ ( 2 + 1 ) ) = 8 |\n| 12 | 2, 11 | #P_eqtri | |- ( 2 ^ 3 ) = 8 |",
+  "conclusion" : "#P_cu2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c3", "#T_wceq", "#T_c2", "#T_caddc", "#T_c1", "#T_c2", "#T_cexp", "#T_c3", "#T_wceq", "#T_c2", "#T_cexp", "#T_c2", "#T_caddc", "#T_c1", "#T_c2", "#T_wcel", "#T_cc", "#T_c2", "#T_wcel", "#T_cn0", "#T_c2", "#T_wcel", "#T_cc", "#T_wa", "#T_c2", "#T_wcel", "#T_cn0", "#T_wi", "#T_c2", "#T_cexp", "#T_c2", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cexp", "#T_c2", "#T_cmul", "#T_c2", "#T_c2", "#T_cexp", "#T_c2", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cexp", "#T_c2", "#T_cmul", "#T_c2", "#T_c2", "#T_cexp", "#T_c2", "#T_wceq", "#T_c4", "#T_c2", "#T_cexp", "#T_c2", "#T_cmul", "#T_c2", "#T_wceq", "#T_c4", "#T_cmul", "#T_c2", "#T_c4", "#T_cmul", "#T_c2", "#T_wceq", "#T_c8", "#T_c2", "#T_cexp", "#T_c2", "#T_cmul", "#T_c2", "#T_wceq", "#T_c8", "#T_c2", "#T_cexp", "#T_c2", "#T_caddc", "#T_c1", "#T_wceq", "#T_c8", "#T_c2", "#T_cexp", "#T_c3", "#T_wceq", "#T_c8" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2nn0", "#P_mp2an", "#P_eqtri", "#P_expp1", "#P_2cn", "#P_4t2e8", "#P_oveq1i", "#P_df-3", "#P_oveq2i", "#P_sq2" ]
+}

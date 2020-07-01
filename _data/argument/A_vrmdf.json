@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vrmdf on Metamath](http://us.metamath.org/mpegif/vrmdf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vrmdfval.u | |- U = ( varFMnd ` I ) |\n| 2 |  | #P_s1cl | |- ( j e. I -> <\" j \"> e. Word I ) |\n| 3 | 2 | #P_adantl | |- ( ( I e. V /\\ j e. I ) -> <\" j \"> e. Word I ) |\n| 4 |  | #P_eqid | |- ( j e. I |-> <\" j \"> ) = ( j e. I |-> <\" j \"> ) |\n| 5 | 3, 4 | #P_fmptd | |- ( I e. V -> ( j e. I |-> <\" j \"> ) : I --> Word I ) |\n| 6 | 1 | #P_vrmdfval | |- ( I e. V -> U = ( j e. I |-> <\" j \"> ) ) |\n| 7 | 6 | #P_feq1d | |- ( I e. V -> ( U : I --> Word I <-> ( j e. I |-> <\" j \"> ) : I --> Word I ) ) |\n| 8 | 5, 7 | #P_mpbird | |- ( I e. V -> U : I --> Word I ) |",
+  "conclusion" : "#P_vrmdf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_cU", "#T_wceq", "#T_cvrmd", "#T_cfv", "#T_cI", "#T_vj", "#T_wcel", "#T_cI", "#T_wi", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wa", "#T_vj", "#T_wcel", "#T_cI", "#T_wi", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cI", "#T_vj", "#T_cmpt--1", "#T_cI", "#T_cmpt--2", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_cI", "#T_cmpt--2", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_vj", "#T_cmpt--1", "#T_cI", "#T_cmpt--2", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cword", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_cI", "#T_cmpt--2", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cword", "#T_cI", "#T_wb", "#T_vj", "#T_cmpt--1", "#T_cI", "#T_cmpt--2", "#T_cs1--1", "#T_vj", "#T_cs1--2", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cword", "#T_cI", "#T_cI", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_wf--1", "#T_cI", "#T_wf--2", "#T_cword", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_s1cl", "#P_adantl", "#P_feq1d", "#P_fmptd", "#P_vrmdfval", "#P_mpbird" ]
+}

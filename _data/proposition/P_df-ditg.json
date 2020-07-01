@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ditg on Metamath](http://us.metamath.org/mpegif/df-ditg.html)"
+  } ],
+  "names" : [ "df-ditg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdit--1", "#T_cdit--2", "#T_cA", "#T_cdit--3", "#T_cB", "#T_cdit--4", "#T_cC", "#T_cdit--5", "#T_vx", "#T_wceq", "#T_cif--1", "#T_cA", "#T_cle", "#T_cB", "#T_cif--2", "#T_citg--1", "#T_cA", "#T_cioo", "#T_cB", "#T_cC", "#T_citg--2", "#T_vx", "#T_cif--3", "#T_cneg", "#T_citg--1", "#T_cB", "#T_cioo", "#T_cA", "#T_cC", "#T_citg--2", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the directed integral, which is just a regular integral but with a sign change when the limits are interchanged.  The ` A ` and ` B ` here are the lower and upper limits of the integral, usually written as a subscript and superscript next to the integral sign.  We define the region of integration to be an open interval instead of closed so that we can use ` +oo , -oo ` for limits and also integrate up to a singularity at an endpoint.  (Contributed by Mario Carneiro, 13-Aug-2014.) ",
+  "statement" : "df-ditg $p |- S_ [ A -> B ] C _d x = if ( A <_ B , S. ( A (,) B ) C _d x , -u S. ( B (,) A ) C _d x ) $."
+}

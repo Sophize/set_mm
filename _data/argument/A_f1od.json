@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1od on Metamath](http://us.metamath.org/mpegif/f1od.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | f1od.1 | |- F = ( x e. A |-> C ) |\n| 2 |  | f1od.2 | |- ( ( ph /\\ x e. A ) -> C e. W ) |\n| 3 |  | f1od.3 | |- ( ( ph /\\ y e. B ) -> D e. X ) |\n| 4 |  | f1od.4 | |- ( ph -> ( ( x e. A /\\ y = C ) <-> ( y e. B /\\ x = D ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_f1ocnvd | |- ( ph -> ( F : A -1-1-onto-> B /\\ `' F = ( y e. B |-> D ) ) ) |\n| 6 | 5 | #P_simpld | |- ( ph -> F : A -1-1-onto-> B ) |",
+  "conclusion" : "#P_f1od",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cC", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cW", "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cD", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cC", "#T_wb", "#T_vy", "#T_wcel", "#T_cB", "#T_wa", "#T_vx", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wa", "#T_ccnv", "#T_cF", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_f1ocnvd" ]
+}

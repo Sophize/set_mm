@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srgidcl on Metamath](http://us.metamath.org/mpegif/srgidcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srgidcl.b | |- B = ( Base ` R ) |\n| 2 |  | srgidcl.u | |- .1. = ( 1r ` R ) |\n| 3 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 4 | 3 | #P_srgmgp | |- ( R e. SRing -> ( mulGrp ` R ) e. Mnd ) |\n| 5 | 3, 1 | #P_mgpbas | |- B = ( Base ` ( mulGrp ` R ) ) |\n| 6 | 3, 2 | #P_ringidval | |- .1. = ( 0g ` ( mulGrp ` R ) ) |\n| 7 | 5, 6 | #P_mndidcl | |- ( ( mulGrp ` R ) e. Mnd -> .1. e. B ) |\n| 8 | 4, 7 | #P_syl | |- ( R e. SRing -> .1. e. B ) |",
+  "conclusion" : "#P_srgidcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_csrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_wi", "#T_c.1", "#T_wcel", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_csrg", "#T_wi", "#T_c.1", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mgpbas", "#P_syl", "#P_ringidval", "#P_srgmgp", "#P_mndidcl" ]
+}

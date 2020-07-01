@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coef3 on Metamath](http://us.metamath.org/mpegif/coef3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dgrval.1 | |- A = ( coeff ` F ) |\n| 2 |  | #P_plyssc | |- ( Poly ` S ) C_ ( Poly ` CC ) |\n| 3 | 2 | #P_sseli | |- ( F e. ( Poly ` S ) -> F e. ( Poly ` CC ) ) |\n| 4 |  | #P_0cn | |- 0 e. CC |\n| 5 | 1 | #P_coef2 | |- ( ( F e. ( Poly ` CC ) /\\ 0 e. CC ) -> A : NN0 --> CC ) |\n| 6 | 3, 4, 5 | #P_sylancl | |- ( F e. ( Poly ` S ) -> A : NN0 --> CC ) |",
+  "conclusion" : "#P_coef3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cply", "#T_cfv", "#T_cS", "#T_wss", "#T_cply", "#T_cfv", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_cc0", "#T_wcel", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cc", "#T_wa", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseli", "#P_0cn", "#P_sylancl", "#P_plyssc", "#P_coef2" ]
+}

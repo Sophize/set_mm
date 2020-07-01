@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mul4i on Metamath](http://us.metamath.org/mpegif/mul4i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mul.1 | |- A e. CC |\n| 2 |  | mul.2 | |- B e. CC |\n| 3 |  | mul.3 | |- C e. CC |\n| 4 |  | mul4.4 | |- D e. CC |\n| 5 |  | #P_mul4 | |- ( ( ( A e. CC /\\ B e. CC ) /\\ ( C e. CC /\\ D e. CC ) ) -> ( ( A x. B ) x. ( C x. D ) ) = ( ( A x. C ) x. ( B x. D ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_mp4an | |- ( ( A x. B ) x. ( C x. D ) ) = ( ( A x. C ) x. ( B x. D ) ) |",
+  "conclusion" : "#P_mul4i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cD", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cD", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_cmul", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_cA", "#T_cmul", "#T_cB", "#T_cmul", "#T_cC", "#T_cmul", "#T_cD", "#T_wceq", "#T_cA", "#T_cmul", "#T_cC", "#T_cmul", "#T_cB", "#T_cmul", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp4an", "#P_mul4" ]
+}

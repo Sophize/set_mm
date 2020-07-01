@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See grpass on Metamath](http://us.metamath.org/mpegif/grpass.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | grpcl.b | |- B = ( Base ` G ) |\n| 2 |  | grpcl.p | |- .+ = ( +g ` G ) |\n| 3 |  | #P_grpmnd | |- ( G e. Grp -> G e. Mnd ) |\n| 4 | 1, 2 | #P_mndass | |- ( ( G e. Mnd /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) |\n| 5 | 3, 4 | #P_sylan | |- ( ( G e. Grp /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) |",
+  "conclusion" : "#P_grpass",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_mndass", "#P_grpmnd" ]
+}

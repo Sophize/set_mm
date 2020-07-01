@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See digit1 on Metamath](http://us.metamath.org/mpegif/digit1.html)"
+  } ],
+  "names" : [ "digit1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cn", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_cn", "#T_wi", "#T_cfl", "#T_cfv", "#T_cB", "#T_cexp", "#T_cK", "#T_cmul", "#T_cA", "#T_cmo", "#T_cB", "#T_wceq", "#T_cfl", "#T_cfv", "#T_cB", "#T_cexp", "#T_cK", "#T_cmul", "#T_cA", "#T_cmo", "#T_cB", "#T_cexp", "#T_cK", "#T_cmin", "#T_cB", "#T_cmul", "#T_cfl", "#T_cfv", "#T_cB", "#T_cexp", "#T_cK", "#T_cmin", "#T_c1", "#T_cmul", "#T_cA", "#T_cmo", "#T_cB", "#T_cexp", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Two ways to express the ` K ` th digit in the decimal expansion of a number ` A ` (when base ` B = 10 ` ). ` K = 1 ` corresponds to the first digit after the decimal point.  (Contributed by NM, 3-Jan-2009.) ",
+  "statement" : "digit1 $p |- ( ( A e. RR /\\ B e. NN /\\ K e. NN ) -> ( ( |_ ` ( ( B ^ K ) x. A ) ) mod B ) = ( ( ( |_ ` ( ( B ^ K ) x. A ) ) mod ( B ^ K ) ) - ( ( B x. ( |_ ` ( ( B ^ ( K - 1 ) ) x. A ) ) ) mod ( B ^ K ) ) ) ) $."
+}

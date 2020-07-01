@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funfvdm2f on Metamath](http://us.metamath.org/mpegif/funfvdm2f.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | funfvdm2f.1 | |- F/_ y A |\n| 2 |  | funfvdm2f.2 | |- F/_ y F |\n| 3 |  | #P_funfvdm2 | |- ( ( Fun F /\\ A e. dom F ) -> ( F ` A ) = U. { w | A F w } ) |\n| 4 |  | #P_nfcv | |- F/_ y w |\n| 5 | 1, 2, 4 | #P_nfbr | |- F/ y A F w |\n| 6 |  | #P_nfv | |- F/ w A F y |\n| 7 |  | #P_breq2 | |- ( w = y -> ( A F w <-> A F y ) ) |\n| 8 | 5, 6, 7 | #P_cbvab | |- { w | A F w } = { y | A F y } |\n| 9 | 8 | #P_unieqi | |- U. { w | A F w } = U. { y | A F y } |\n| 10 | 3, 9 | #P_syl6eq | |- ( ( Fun F /\\ A e. dom F ) -> ( F ` A ) = U. { y | A F y } ) |",
+  "conclusion" : "#P_funfvdm2f",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wnfc", "#T_vy", "#T_cA", "#T_wnfc", "#T_vy", "#T_cF", "#T_wfun", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vw", "#T_cab--3", "#T_wnfc", "#T_vy.tru", "#T_vw", "#T_wnf", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vw", "#T_wnf", "#T_vw", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_vw", "#T_wb", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vw", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--3", "#T_cuni", "#T_cab--1", "#T_vw", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vw", "#T_cab--3", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_cab--3", "#T_wfun", "#T_cF", "#T_wa", "#T_cA", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cuni", "#T_cab--1", "#T_vy", "#T_cab--2", "#T_cA", "#T_cF", "#T_vy", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unieqi", "#P_nfcv", "#P_nfv", "#P_nfbr", "#P_breq2", "#P_funfvdm2", "#P_cbvab", "#P_syl6eq" ]
+}

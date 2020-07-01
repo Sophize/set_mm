@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See edg on Metamath](http://us.metamath.org/mpegif/edg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_edgss | |- ( G e. USGrph -> ( Edges ` G ) C_ { x e. ~P ( 1st ` G ) | ( # ` x ) = 2 } ) |\n| 2 | 1 | #P_sselda | |- ( ( G e. USGrph /\\ E e. ( Edges ` G ) ) -> E e. { x e. ~P ( 1st ` G ) | ( # ` x ) = 2 } ) |\n| 3 |  | #P_fveq2 | |- ( x = E -> ( # ` x ) = ( # ` E ) ) |\n| 4 | 3 | #P_eqeq1d | |- ( x = E -> ( ( # ` x ) = 2 <-> ( # ` E ) = 2 ) ) |\n| 5 | 4 | #P_elrab | |- ( E e. { x e. ~P ( 1st ` G ) | ( # ` x ) = 2 } <-> ( E e. ~P ( 1st ` G ) /\\ ( # ` E ) = 2 ) ) |\n| 6 | 2, 5 | #P_sylib | |- ( ( G e. USGrph /\\ E e. ( Edges ` G ) ) -> ( E e. ~P ( 1st ` G ) /\\ ( # ` E ) = 2 ) ) |",
+  "conclusion" : "#P_edg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cG", "#T_wcel", "#T_cusg", "#T_wi", "#T_cedg", "#T_cfv", "#T_cG", "#T_wss", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_c1st", "#T_cfv", "#T_cG", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c2", "#T_crab--4", "#T_cG", "#T_wcel", "#T_cusg", "#T_wa", "#T_cE", "#T_wcel", "#T_cedg", "#T_cfv", "#T_cG", "#T_wi", "#T_cE", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_c1st", "#T_cfv", "#T_cG", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c2", "#T_crab--4", "#T_vx.wal", "#T_wceq", "#T_cE", "#T_wi", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_chash", "#T_cfv", "#T_cE", "#T_vx.wal", "#T_wceq", "#T_cE", "#T_wi", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c2", "#T_wb", "#T_chash", "#T_cfv", "#T_cE", "#T_wceq", "#T_c2", "#T_cE", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cpw", "#T_c1st", "#T_cfv", "#T_cG", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_c2", "#T_crab--4", "#T_wb", "#T_cE", "#T_wcel", "#T_cpw", "#T_c1st", "#T_cfv", "#T_cG", "#T_wa", "#T_chash", "#T_cfv", "#T_cE", "#T_wceq", "#T_c2", "#T_cG", "#T_wcel", "#T_cusg", "#T_wa", "#T_cE", "#T_wcel", "#T_cedg", "#T_cfv", "#T_cG", "#T_wi", "#T_cE", "#T_wcel", "#T_cpw", "#T_c1st", "#T_cfv", "#T_cG", "#T_wa", "#T_chash", "#T_cfv", "#T_cE", "#T_wceq", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_edgss", "#P_elrab", "#P_eqeq1d", "#P_fveq2", "#P_sylib", "#P_sselda" ]
+}

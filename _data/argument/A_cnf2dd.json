@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnf2dd on Metamath](http://us.metamath.org/mpegif/cnf2dd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnf2dd.1 | |- ( ph -> ( ps -> -. th ) ) |\n| 2 |  | cnf2dd.2 | |- ( ph -> ( ps -> ( ch \\/ th ) ) ) |\n| 3 | 2 | #P_orcomdd | |- ( ph -> ( ps -> ( th \\/ ch ) ) ) |\n| 4 | 1, 3 | #P_cnf1dd | |- ( ph -> ( ps -> ch ) ) |",
+  "conclusion" : "#P_cnf2dd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wo", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orcomdd", "#P_cnf1dd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnleltp1 on Metamath](http://us.metamath.org/mpegif/nnleltp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnz | |- ( A e. NN -> A e. ZZ ) |\n| 2 |  | #P_nnz | |- ( B e. NN -> B e. ZZ ) |\n| 3 |  | #P_zleltp1 | |- ( ( A e. ZZ /\\ B e. ZZ ) -> ( A <_ B <-> A < ( B + 1 ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. NN /\\ B e. NN ) -> ( A <_ B <-> A < ( B + 1 ) ) ) |",
+  "conclusion" : "#P_nnleltp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cB.wceq", "#T_wcel", "#T_cn", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_caddc", "#T_c1", "#T_cA", "#T_wcel", "#T_cn", "#T_wa", "#T_cB", "#T_wcel", "#T_cn", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cA", "#T_clt", "#T_cB", "#T_caddc", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nnz", "#P_zleltp1", "#P_syl2an" ]
+}

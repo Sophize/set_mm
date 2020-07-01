@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvres on Metamath](http://us.metamath.org/mpegif/dvres.html)"
+  } ],
+  "names" : [ "dvres" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cT", "#T_wceq", "#T_cK", "#T_crest", "#T_cS", "#T_cS", "#T_wss", "#T_cc", "#T_wa", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cc", "#T_wa", "#T_cA", "#T_wss", "#T_cS", "#T_wa", "#T_cB", "#T_wss", "#T_cS", "#T_wi", "#T_cS", "#T_cdv", "#T_cF", "#T_cres", "#T_cB", "#T_wceq", "#T_cS", "#T_cdv", "#T_cF", "#T_cres", "#T_cnt", "#T_cfv", "#T_cT", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Restriction of a derivative.  Note that our definition of derivative ~ df-dv would still make sense if we demanded that ` x ` be an element of the domain instead of an interior point of the domain, but then it is possible for a non-differentiable function to have two different derivatives at a single point ` x ` when restricted to different subsets containing ` x ` ; a classic example is the absolute value function restricted to ` [ 0 , +oo ) ` and ` ( -oo , 0 ] ` .  (Contributed by Mario Carneiro, 8-Aug-2014.)  (Revised by Mario Carneiro, 9-Feb-2015.) ",
+  "statement" : "dvres.k $e |- K = ( TopOpen ` CCfld ) $.\ndvres.t $e |- T = ( K |`t S ) $.\ndvres $p |- ( ( ( S C_ CC /\\ F : A --> CC ) /\\ ( A C_ S /\\ B C_ S ) ) -> ( S _D ( F |` B ) ) = ( ( S _D F ) |` ( ( int ` T ) ` B ) ) ) $."
+}

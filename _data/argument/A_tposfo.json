@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tposfo on Metamath](http://us.metamath.org/mpegif/tposfo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relxp | |- Rel ( A X. B ) |\n| 2 |  | #P_tposfo2 | |- ( Rel ( A X. B ) -> ( F : ( A X. B ) -onto-> C -> tpos F : `' ( A X. B ) -onto-> C ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( F : ( A X. B ) -onto-> C -> tpos F : `' ( A X. B ) -onto-> C ) |\n| 4 |  | #P_cnvxp | |- `' ( A X. B ) = ( B X. A ) |\n| 5 |  | #P_foeq2 | |- ( `' ( A X. B ) = ( B X. A ) -> ( tpos F : `' ( A X. B ) -onto-> C <-> tpos F : ( B X. A ) -onto-> C ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( tpos F : `' ( A X. B ) -onto-> C <-> tpos F : ( B X. A ) -onto-> C ) |\n| 7 | 3, 6 | #P_sylib | |- ( F : ( A X. B ) -onto-> C -> tpos F : ( B X. A ) -onto-> C ) |",
+  "conclusion" : "#P_tposfo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wrel", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wi", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wi", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wi", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_ccnv", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_cB.wceq", "#T_cxp", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cA", "#T_cxp", "#T_cB", "#T_wfo--2", "#T_cC", "#T_wi", "#T_ctpos", "#T_cF", "#T_wfo--1", "#T_cB", "#T_cxp", "#T_cA", "#T_wfo--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_relxp", "#P_ax-mp", "#P_foeq2", "#P_tposfo2", "#P_sylib", "#P_cnvxp" ]
+}

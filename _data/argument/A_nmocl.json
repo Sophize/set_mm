@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nmocl on Metamath](http://us.metamath.org/mpegif/nmocl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nmofval.1 | |- N = ( S normOp T ) |\n| 2 | 1 | #P_nmof | |- ( ( S e. NrmGrp /\\ T e. NrmGrp ) -> N : ( S GrpHom T ) --> RR* ) |\n| 3 | 2 | #P_ffvelrnda | |- ( ( ( S e. NrmGrp /\\ T e. NrmGrp ) /\\ F e. ( S GrpHom T ) ) -> ( N ` F ) e. RR* ) |\n| 4 | 3 | #P_3impa | |- ( ( S e. NrmGrp /\\ T e. NrmGrp /\\ F e. ( S GrpHom T ) ) -> ( N ` F ) e. RR* ) |",
+  "conclusion" : "#P_nmocl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wceq", "#T_cS", "#T_cnmo", "#T_cT", "#T_cS", "#T_wcel", "#T_cngp", "#T_wa", "#T_cT", "#T_wcel", "#T_cngp", "#T_wi", "#T_cN", "#T_wf--1", "#T_cS", "#T_cghm", "#T_cT", "#T_wf--2", "#T_cxr", "#T_cS", "#T_wcel", "#T_cngp", "#T_wa", "#T_cT", "#T_wcel", "#T_cngp", "#T_wa", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_cN", "#T_cfv", "#T_cF", "#T_wcel", "#T_cxr", "#T_cS", "#T_wcel", "#T_cngp", "#T_w3a--1", "#T_cT", "#T_wcel", "#T_cngp", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wi", "#T_cN", "#T_cfv", "#T_cF", "#T_wcel", "#T_cxr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nmof", "#P_ffvelrnda", "#P_3impa" ]
+}

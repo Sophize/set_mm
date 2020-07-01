@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrieqvd on Metamath](http://us.metamath.org/mpegif/mrieqvd.html)"
+  } ],
+  "names" : [ "mrieqvd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cS", "#T_cN", "#T_cfv", "#T_cS", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wne", "#T_cN", "#T_cfv", "#T_cS", "#T_cA", "#T_vx", "#T_cS", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a Moore system, a set is independent if and only if, for all elements of the set, the closure of the set with the element removed is unequal to the closure of the original set.  Part of Proposition 4.1.3 in [FaureFrolicher] p. 83.  (Contributed by David Moews, 1-May-2017.) ",
+  "statement" : "mrieqvd.1 $e |- ( ph -> A e. ( Moore ` X ) ) $.\nmrieqvd.2 $e |- N = ( mrCls ` A ) $.\nmrieqvd.3 $e |- I = ( mrInd ` A ) $.\nmrieqvd.4 $e |- ( ph -> S C_ X ) $.\nmrieqvd $p |- ( ph -> ( S e. I <-> A. x e. S ( N ` ( S \\ { x } ) ) =/= ( N ` S ) ) ) $.\n$d A x $.\n$d S x $.\n$d ph x $."
+}

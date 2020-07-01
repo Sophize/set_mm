@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 4sqlem19 on Metamath](http://us.metamath.org/mpegif/4sqlem19.html)"
+  } ],
+  "names" : [ "4sqlem19" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cab--1", "#T_vn", "#T_cab--2", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cz", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cz", "#T_vn", "#T_wceq", "#T_vx", "#T_cexp", "#T_c2", "#T_caddc", "#T_vy", "#T_cexp", "#T_c2", "#T_caddc", "#T_vz", "#T_cexp", "#T_c2", "#T_caddc", "#T_vw", "#T_cexp", "#T_c2", "#T_cab--3", "#T_cn0", "#T_wceq", "#T_cS", "#T_cS", "#T_vn", "#T_vn", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ 4sq .  The proof is by strong induction - we show that if all the integers less than ` k ` are in ` S ` , then ` k ` is as well. In this part of the proof we do the induction argument and dispense with all the cases except the odd prime case, which is sent to ~ 4sqlem18 . If ` k ` is ` 0 , 1 , 2 ` , we show ` k e. S ` directly; otherwise if ` k ` is composite, ` k ` is the product of two numbers less than it (and hence in ` S ` by assumption), so by ~ mul4sq ` k e. S ` . (Contributed by Mario Carneiro, 14-Jul-2014.)  (Revised by Mario Carneiro, 20-Jun-2015.) ",
+  "statement" : "4sq.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.\n4sqlem19 $p |- NN0 = S $.\n$d S n $.\n$d n w x y z $."
+}

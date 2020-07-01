@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnmsgnbas on Metamath](http://us.metamath.org/mpegif/cnmsgnbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnmsgngrp.u | |- U = ( ( mulGrp ` CCfld ) |`s { 1 , -u 1 } ) |\n| 2 |  | #P_ax-1cn | |- 1 e. CC |\n| 3 |  | #P_neg1cn | |- -u 1 e. CC |\n| 4 |  | #P_prssi | |- ( ( 1 e. CC /\\ -u 1 e. CC ) -> { 1 , -u 1 } C_ CC ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- { 1 , -u 1 } C_ CC |\n| 6 |  | #P_eqid | |- ( mulGrp ` CCfld ) = ( mulGrp ` CCfld ) |\n| 7 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 8 | 6, 7 | #P_mgpbas | |- CC = ( Base ` ( mulGrp ` CCfld ) ) |\n| 9 | 1, 8 | #P_ressbas2 | |- ( { 1 , -u 1 } C_ CC -> { 1 , -u 1 } = ( Base ` U ) ) |\n| 10 | 5, 9 | #P_ax-mp | |- { 1 , -u 1 } = ( Base ` U ) |",
+  "conclusion" : "#P_cnmsgnbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_wa", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_wi", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_wss", "#T_cc", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_wss", "#T_cc", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_wss", "#T_cc", "#T_wi", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cU", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_cneg", "#T_c1", "#T_cpr--3", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_eqid", "#P_ax-mp", "#P_prssi", "#P_neg1cn", "#P_ax-1cn", "#P_mgpbas", "#P_ressbas2", "#P_cnfldbas" ]
+}

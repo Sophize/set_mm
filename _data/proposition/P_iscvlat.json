@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iscvlat on Metamath](http://us.metamath.org/mpegif/iscvlat.html)"
+  } ],
+  "names" : [ "iscvlat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clc", "#T_wb", "#T_cK", "#T_wcel", "#T_cal", "#T_wa", "#T_wral--1", "#T_vp", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vq", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wn", "#T_vp", "#T_c.le", "#T_vx", "#T_wa", "#T_vp", "#T_c.le", "#T_vx", "#T_c.or", "#T_vq", "#T_wi", "#T_vq", "#T_c.le", "#T_vx", "#T_c.or", "#T_vp", "#T_cA", "#T_vp", "#T_vq", "#T_cB", "#T_vx", "#T_cK", "#T_vp", "#T_vq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \"is an atomic lattice with the covering (or exchange) property\".  (Contributed by NM, 5-Nov-2012.) ",
+  "statement" : "iscvlat.b $e |- B = ( Base ` K ) $.\niscvlat.l $e |- .<_ = ( le ` K ) $.\niscvlat.j $e |- .\\/ = ( join ` K ) $.\niscvlat.a $e |- A = ( Atoms ` K ) $.\niscvlat $p |- ( K e. CvLat <-> ( K e. AtLat /\\ A. p e. A A. q e. A A. x e. B ( ( -. p .<_ x /\\ p .<_ ( x .\\/ q ) ) -> q .<_ ( x .\\/ p ) ) ) ) $.\n$d A p q $.\n$d B x $.\n$d K p q x $."
+}

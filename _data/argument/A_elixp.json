@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elixp on Metamath](http://us.metamath.org/mpegif/elixp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elixp.1 | |- F e. _V |\n| 2 |  | #P_elixp2 | |- ( F e. X_ x e. A B <-> ( F e. _V /\\ F Fn A /\\ A. x e. A ( F ` x ) e. B ) ) |\n| 3 |  | #P_3anass | |- ( ( F e. _V /\\ F Fn A /\\ A. x e. A ( F ` x ) e. B ) <-> ( F e. _V /\\ ( F Fn A /\\ A. x e. A ( F ` x ) e. B ) ) ) |\n| 4 | 1, 3 | #P_mpbiran | |- ( ( F e. _V /\\ F Fn A /\\ A. x e. A ( F ` x ) e. B ) <-> ( F Fn A /\\ A. x e. A ( F ` x ) e. B ) ) |\n| 5 | 2, 4 | #P_bitri | |- ( F e. X_ x e. A B <-> ( F Fn A /\\ A. x e. A ( F ` x ) e. B ) ) |",
+  "conclusion" : "#P_elixp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cixp--1", "#T_vx.wal", "#T_cixp--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cF", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wcel", "#T_cvv", "#T_wa", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cF", "#T_wcel", "#T_cvv", "#T_w3a--1", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cF", "#T_wcel", "#T_cixp--1", "#T_vx", "#T_cixp--2", "#T_cA", "#T_cB", "#T_wb", "#T_cF", "#T_wfn", "#T_cA", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3anass", "#P_mpbiran", "#P_elixp2", "#P_bitri" ]
+}

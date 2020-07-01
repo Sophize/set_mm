@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspsolv on Metamath](http://us.metamath.org/mpegif/lspsolv.html)"
+  } ],
+  "names" : [ "lspsolv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clvec", "#T_wa", "#T_cA", "#T_wss", "#T_cV", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_cA", "#T_cun", "#T_csn--1", "#T_cY", "#T_csn--2", "#T_cdif", "#T_cN", "#T_cfv", "#T_cA", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cA", "#T_cun", "#T_csn--1", "#T_cX", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` X ` is in the span of ` A u. { Y } ` but not ` A ` , then ` Y ` is in the span of ` A u. { X } ` .  (Contributed by Mario Carneiro, 25-Jun-2014.) ",
+  "statement" : "lspsolv.v $e |- V = ( Base ` W ) $.\nlspsolv.s $e |- S = ( LSubSp ` W ) $.\nlspsolv.n $e |- N = ( LSpan ` W ) $.\nlspsolv $p |- ( ( W e. LVec /\\ ( A C_ V /\\ Y e. V /\\ X e. ( ( N ` ( A u. { Y } ) ) \\ ( N ` A ) ) ) ) -> Y e. ( N ` ( A u. { X } ) ) ) $."
+}

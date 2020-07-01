@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rpmsubg on Metamath](http://us.metamath.org/mpegif/rpmsubg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnmgpabl.m | |- M = ( ( mulGrp ` CCfld ) |`s ( CC \\ { 0 } ) ) |\n| 2 |  | #P_rpcn | |- ( x e. RR+ -> x e. CC ) |\n| 3 |  | #P_rpne0 | |- ( x e. RR+ -> x =/= 0 ) |\n| 4 |  | #P_rpmulcl | |- ( ( x e. RR+ /\\ y e. RR+ ) -> ( x x. y ) e. RR+ ) |\n| 5 |  | #P_1rp | |- 1 e. RR+ |\n| 6 |  | #P_rpreccl | |- ( x e. RR+ -> ( 1 / x ) e. RR+ ) |\n| 7 | 1, 2, 3, 4, 5, 6 | #P_cnmsubglem | |- RR+ e. ( SubGrp ` M ) |",
+  "conclusion" : "#P_rpmsubg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cM", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wi", "#T_vx.wal", "#T_wne", "#T_cc0", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_crp", "#T_wi", "#T_vx.wal", "#T_cmul", "#T_vy.tru", "#T_wcel", "#T_crp", "#T_c1", "#T_wcel", "#T_crp", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_wi", "#T_c1", "#T_cdiv", "#T_vx.wal", "#T_wcel", "#T_crp", "#T_crp", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1rp", "#P_rpcn", "#P_rpmulcl", "#P_rpne0", "#P_rpreccl", "#P_cnmsubglem" ]
+}

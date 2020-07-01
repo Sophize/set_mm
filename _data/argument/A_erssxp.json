@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See erssxp on Metamath](http://us.metamath.org/mpegif/erssxp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_errel | |- ( R Er A -> Rel R ) |\n| 2 |  | #P_relssdmrn | |- ( Rel R -> R C_ ( dom R X. ran R ) ) |\n| 3 | 1, 2 | #P_syl | |- ( R Er A -> R C_ ( dom R X. ran R ) ) |\n| 4 |  | #P_erdm | |- ( R Er A -> dom R = A ) |\n| 5 |  | #P_errn | |- ( R Er A -> ran R = A ) |\n| 6 | 4, 5 | #P_xpeq12d | |- ( R Er A -> ( dom R X. ran R ) = ( A X. A ) ) |\n| 7 | 3, 6 | #P_sseqtrd | |- ( R Er A -> R C_ ( A X. A ) ) |",
+  "conclusion" : "#P_erssxp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_wrel", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_crn", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cR", "#T_wer", "#T_cA", "#T_wi", "#T_cR", "#T_wss", "#T_cA", "#T_cxp", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_erdm", "#P_errn", "#P_sseqtrd", "#P_errel", "#P_xpeq12d", "#P_relssdmrn", "#P_syl" ]
+}

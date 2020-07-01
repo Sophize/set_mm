@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difxp1 on Metamath](http://us.metamath.org/mpegif/difxp1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_difxp | |- ( ( A X. C ) \\ ( B X. C ) ) = ( ( ( A \\ B ) X. C ) u. ( A X. ( C \\ C ) ) ) |\n| 2 |  | #P_difid | |- ( C \\ C ) = (/) |\n| 3 | 2 | #P_xpeq2i | |- ( A X. ( C \\ C ) ) = ( A X. (/) ) |\n| 4 |  | #P_xp0 | |- ( A X. (/) ) = (/) |\n| 5 | 3, 4 | #P_eqtri | |- ( A X. ( C \\ C ) ) = (/) |\n| 6 | 5 | #P_uneq2i | |- ( ( ( A \\ B ) X. C ) u. ( A X. ( C \\ C ) ) ) = ( ( ( A \\ B ) X. C ) u. (/) ) |\n| 7 |  | #P_un0 | |- ( ( ( A \\ B ) X. C ) u. (/) ) = ( ( A \\ B ) X. C ) |\n| 8 | 1, 6, 7 | #P_3eqtrri | |- ( ( A \\ B ) X. C ) = ( ( A X. C ) \\ ( B X. C ) ) |",
+  "conclusion" : "#P_difxp1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_cun", "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_cdif", "#T_cC", "#T_cC", "#T_cdif", "#T_cC", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cxp", "#T_c0", "#T_cA.wceq", "#T_cxp", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_cdif", "#T_cC", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_cun", "#T_cA.wceq", "#T_cxp", "#T_cC", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_cun", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_cun", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cxp", "#T_cC", "#T_cA", "#T_cdif", "#T_cB", "#T_cxp", "#T_cC", "#T_wceq", "#T_cA", "#T_cxp", "#T_cC", "#T_cdif", "#T_cB", "#T_cxp", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_difid", "#P_3eqtrri", "#P_eqtri", "#P_uneq2i", "#P_xpeq2i", "#P_un0", "#P_xp0", "#P_difxp" ]
+}

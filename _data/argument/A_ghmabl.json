@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghmabl on Metamath](http://us.metamath.org/mpegif/ghmabl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghmabl.x | |- X = ( Base ` G ) |\n| 2 |  | ghmabl.y | |- Y = ( Base ` H ) |\n| 3 |  | ghmabl.p | |- .+ = ( +g ` G ) |\n| 4 |  | ghmabl.q | |- .+^ = ( +g ` H ) |\n| 5 |  | ghmabl.f | |- ( ( ph /\\ x e. X /\\ y e. X ) -> ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) |\n| 6 |  | ghmabl.1 | |- ( ph -> F : X -onto-> Y ) |\n| 7 |  | ghmabl.3 | |- ( ph -> G e. Abel ) |\n| 8 |  | #P_ablgrp | |- ( G e. Abel -> G e. Grp ) |\n| 9 | 7, 8 | #P_syl | |- ( ph -> G e. Grp ) |\n| 10 | 5, 1, 2, 3, 4, 6, 9 | #P_ghmgrp | |- ( ph -> H e. Grp ) |\n| 11 |  | #P_ablcmn | |- ( G e. Abel -> G e. CMnd ) |\n| 12 | 7, 11 | #P_syl | |- ( ph -> G e. CMnd ) |\n| 13 | 1, 2, 3, 4, 5, 6, 12 | #P_ghmcmn | |- ( ph -> H e. CMnd ) |\n| 14 |  | #P_isabl | |- ( H e. Abel <-> ( H e. Grp /\\ H e. CMnd ) ) |\n| 15 | 10, 13, 14 | #P_sylanbrc | |- ( ph -> H e. Abel ) |",
+  "conclusion" : "#P_ghmabl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cY", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cH", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c.pd", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cH", "#T_wph", "#T_w3a--1", "#T_vx", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_c.pl", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_c.pd", "#T_cF", "#T_cfv", "#T_vy", "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cabl", "#T_cG", "#T_wcel", "#T_cabl", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cgrp", "#T_cG", "#T_wcel", "#T_cabl", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_ccmn", "#T_cH", "#T_wcel", "#T_cabl", "#T_wb", "#T_cH", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cH", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cabl" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ghmgrp", "#P_ghmcmn", "#P_syl", "#P_sylanbrc", "#P_ablgrp", "#P_isabl", "#P_ablcmn" ]
+}

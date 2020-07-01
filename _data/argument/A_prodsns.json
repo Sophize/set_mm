@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prodsns on Metamath](http://us.metamath.org/mpegif/prodsns.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfcv | |- F/_ n A |\n| 2 |  | #P_nfcsb1v | |- F/_ k [_ n / k ]_ A |\n| 3 |  | #P_csbeq1a | |- ( k = n -> A = [_ n / k ]_ A ) |\n| 4 | 1, 2, 3 | #P_cbvprodi | |- prod_ k e. { M } A = prod_ n e. { M } [_ n / k ]_ A |\n| 5 |  | #P_csbeq1 | |- ( n = M -> [_ n / k ]_ A = [_ M / k ]_ A ) |\n| 6 | 5 | #P_prodsn | |- ( ( M e. V /\\ [_ M / k ]_ A e. CC ) -> prod_ n e. { M } [_ n / k ]_ A = [_ M / k ]_ A ) |\n| 7 | 4, 6 | #P_syl5eq | |- ( ( M e. V /\\ [_ M / k ]_ A e. CC ) -> prod_ k e. { M } A = [_ M / k ]_ A ) |",
+  "conclusion" : "#P_prodsns",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_wnfc", "#T_vn", "#T_cA.wceq", "#T_wnfc", "#T_vk", "#T_csb--1", "#T_vn", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_vk", "#T_wceq", "#T_vn", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_vn", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_cprod--1", "#T_vn", "#T_cprod--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_csb--1", "#T_vn", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_vn", "#T_wceq", "#T_cM", "#T_wi", "#T_csb--1", "#T_vn", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_cM", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_cM", "#T_wcel", "#T_cV", "#T_wa", "#T_csb--1", "#T_cM", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cprod--1", "#T_vn", "#T_cprod--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_csb--1", "#T_vn", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_wceq", "#T_csb--1", "#T_cM", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA.wceq", "#T_cM", "#T_wcel", "#T_cV", "#T_wa", "#T_csb--1", "#T_cM", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_csn--1", "#T_cM", "#T_csn--2", "#T_cA", "#T_wceq", "#T_csb--1", "#T_cM", "#T_csb--2", "#T_vk", "#T_csb--3", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_cbvprodi", "#P_prodsn", "#P_csbeq1a", "#P_nfcsb1v", "#P_syl5eq", "#P_csbeq1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See atanre on Metamath](http://us.metamath.org/mpegif/atanre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recn | |- ( A e. RR -> A e. CC ) |\n| 2 |  | #P_neg1rr | |- -u 1 e. RR |\n| 3 | 2 | #P_a1i | |- ( A e. RR -> -u 1 e. RR ) |\n| 4 |  | #P_0red | |- ( A e. RR -> 0 e. RR ) |\n| 5 |  | #P_resqcl | |- ( A e. RR -> ( A ^ 2 ) e. RR ) |\n| 6 |  | #P_neg1lt0 | |- -u 1 < 0 |\n| 7 | 6 | #P_a1i | |- ( A e. RR -> -u 1 < 0 ) |\n| 8 |  | #P_sqge0 | |- ( A e. RR -> 0 <_ ( A ^ 2 ) ) |\n| 9 | 3, 4, 5, 7, 8 | #P_ltletrd | |- ( A e. RR -> -u 1 < ( A ^ 2 ) ) |\n| 10 | 3, 9 | #P_gtned | |- ( A e. RR -> ( A ^ 2 ) =/= -u 1 ) |\n| 11 |  | #P_atandm3 | |- ( A e. dom arctan <-> ( A e. CC /\\ ( A ^ 2 ) =/= -u 1 ) ) |\n| 12 | 1, 10, 11 | #P_sylanbrc | |- ( A e. RR -> A e. dom arctan ) |",
+  "conclusion" : "#P_atanre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wcel", "#T_cr", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_clt", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_c1", "#T_clt", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wne", "#T_cneg", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_catan", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wne", "#T_cneg", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_catan" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neg1lt0", "#P_ltletrd", "#P_0red", "#P_sqge0", "#P_gtned", "#P_sylanbrc", "#P_a1i", "#P_resqcl", "#P_recn", "#P_atandm3", "#P_neg1rr" ]
+}

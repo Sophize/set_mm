@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See smup1 on Metamath](http://us.metamath.org/mpegif/smup1.html)"
+  } ],
+  "names" : [ "smup1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cn0", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cn0", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cA", "#T_cin", "#T_cc0", "#T_cfzo", "#T_cN", "#T_caddc", "#T_c1", "#T_csmu", "#T_cB", "#T_wceq", "#T_cA", "#T_cin", "#T_cc0", "#T_cfzo", "#T_cN", "#T_csmu", "#T_cB", "#T_csad", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_cn0", "#T_crab--3", "#T_cN", "#T_wcel", "#T_cA", "#T_wa", "#T_vn", "#T_cmin", "#T_cN", "#T_wcel", "#T_cB", "#T_crab--4", "#T_cA", "#T_vn", "#T_cB", "#T_vn", "#T_cN", "#T_vn", "#T_vn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rewrite ~ smupp1 using only ` smul ` instead of the internal recursive function ` P ` .  (Contributed by Mario Carneiro, 20-Sep-2016.) ",
+  "statement" : "smup1.a $e |- ( ph -> A C_ NN0 ) $.\nsmup1.b $e |- ( ph -> B C_ NN0 ) $.\nsmup1.n $e |- ( ph -> N e. NN0 ) $.\nsmup1 $p |- ( ph -> ( ( A i^i ( 0 ..^ ( N + 1 ) ) ) smul B ) = ( ( ( A i^i ( 0 ..^ N ) ) smul B ) sadd { n e. NN0 | ( N e. A /\\ ( n - N ) e. B ) } ) ) $.\n$d A n $.\n$d B n $.\n$d N n $.\n$d n ph $."
+}

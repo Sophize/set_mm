@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-0nelsngl on Metamath](http://us.metamath.org/mpegif/bj-0nelsngl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_snnz | |- { x } =/= (/) |\n| 3 | 2 | #P_nesymi | |- -. (/) = { x } |\n| 4 | 3 | #P_nex | |- -. E. x (/) = { x } |\n| 5 |  | #P_bj-elsngl | |- ( (/) e. sngl A <-> E. x e. A (/) = { x } ) |\n| 6 |  | #P_rexex | |- ( E. x e. A (/) = { x } -> E. x (/) = { x } ) |\n| 7 | 5, 6 | #P_sylbi | |- ( (/) e. sngl A -> E. x (/) = { x } ) |\n| 8 | 4, 7 | #P_mto | |- -. (/) e. sngl A |\n| 9 | 8 | #P_nelir | |- (/) e/ sngl A |",
+  "conclusion" : "#P_bj-0nelsngl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wne", "#T_c0", "#T_wn", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wn", "#T_wex", "#T_vx.wal", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_c0", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wi", "#T_wex", "#T_vx.wal", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_c0", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_c0", "#T_wceq", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wn", "#T_c0", "#T_wcel", "#T_bj-csngl", "#T_cA.wceq", "#T_c0", "#T_wnel", "#T_bj-csngl", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bj-elsngl", "#P_nex", "#P_snnz", "#P_nesymi", "#P_rexex", "#P_nelir", "#P_vex", "#P_mto", "#P_sylbi" ]
+}

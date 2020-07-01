@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fin1a2lem1 on Metamath](http://us.metamath.org/mpegif/fin1a2lem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fin1a2lem.a | |- S = ( x e. On |-> suc x ) |\n| 2 |  | #P_suceloni | |- ( A e. On -> suc A e. On ) |\n| 3 |  | #P_suceq | |- ( a = A -> suc a = suc A ) |\n| 4 |  | #P_suceq | |- ( x = a -> suc x = suc a ) |\n| 5 | 4 | #P_cbvmptv | |- ( x e. On |-> suc x ) = ( a e. On |-> suc a ) |\n| 6 | 1, 5 | #P_eqtri | |- S = ( a e. On |-> suc a ) |\n| 7 | 3, 6 | #P_fvmptg | |- ( ( A e. On /\\ suc A e. On ) -> ( S ` A ) = suc A ) |\n| 8 | 2, 7 | #P_mpdan | |- ( A e. On -> ( S ` A ) = suc A ) |",
+  "conclusion" : "#P_fin1a2lem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_cS", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_con0", "#T_cmpt--2", "#T_csuc", "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_va", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_va", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_va", "#T_wi", "#T_csuc", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_va", "#T_vx.wal", "#T_cmpt--1", "#T_con0", "#T_cmpt--2", "#T_csuc", "#T_vx.wal", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_con0", "#T_cmpt--2", "#T_csuc", "#T_va", "#T_cS", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_con0", "#T_cmpt--2", "#T_csuc", "#T_va", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cS", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cS", "#T_cfv", "#T_cA", "#T_wceq", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_eqtri", "#P_fvmptg", "#P_suceq", "#P_cbvmptv", "#P_suceloni" ]
+}

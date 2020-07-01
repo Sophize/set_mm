@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephord2i on Metamath](http://us.metamath.org/mpegif/alephord2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_onelon | |- ( ( B e. On /\\ A e. B ) -> A e. On ) |\n| 2 |  | #P_alephord2 | |- ( ( A e. On /\\ B e. On ) -> ( A e. B <-> ( aleph ` A ) e. ( aleph ` B ) ) ) |\n| 3 | 2 | #P_biimpd | |- ( ( A e. On /\\ B e. On ) -> ( A e. B -> ( aleph ` A ) e. ( aleph ` B ) ) ) |\n| 4 | 3 | #P_expimpd | |- ( A e. On -> ( ( B e. On /\\ A e. B ) -> ( aleph ` A ) e. ( aleph ` B ) ) ) |\n| 5 | 1, 4 | #P_mpcom | |- ( ( B e. On /\\ A e. B ) -> ( aleph ` A ) e. ( aleph ` B ) ) |\n| 6 | 5 | #P_ex | |- ( B e. On -> ( A e. B -> ( aleph ` A ) e. ( aleph ` B ) ) ) |",
+  "conclusion" : "#P_alephord2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cale", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cale", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cale", "#T_cfv", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cale", "#T_cfv", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cale", "#T_cfv", "#T_cA", "#T_wcel", "#T_cale", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alephord2", "#P_expimpd", "#P_mpcom", "#P_ex", "#P_onelon", "#P_biimpd" ]
+}

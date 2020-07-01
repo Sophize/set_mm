@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See smumul on Metamath](http://us.metamath.org/mpegif/smumul.html)"
+  } ],
+  "names" : [ "smumul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cz", "#T_wi", "#T_cbits", "#T_cfv", "#T_cA", "#T_csmu", "#T_cbits", "#T_cfv", "#T_cB", "#T_wceq", "#T_cbits", "#T_cfv", "#T_cA", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For sequences that correspond to valid integers, the sequence multiplication function produces the sequence for the product.  This is effectively a proof of the correctness of the multiplication process, implemented in terms of logic gates for ~ df-sad , whose correctness is verified in ~ sadadd . Outside this range, the sequences cannot be representing integers, but the ` smul ` function still \"works\".  This extended function is best interpreted in terms of the ring structure of the 2-adic integers. (Contributed by Mario Carneiro, 22-Sep-2016.) ",
+  "statement" : "smumul $p |- ( ( A e. ZZ /\\ B e. ZZ ) -> ( ( bits ` A ) smul ( bits ` B ) ) = ( bits ` ( A x. B ) ) ) $."
+}

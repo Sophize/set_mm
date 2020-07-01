@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elsucg on Metamath](http://us.metamath.org/mpegif/elsucg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-suc | |- suc B = ( B u. { B } ) |\n| 2 | 1 | #P_eleq2i | |- ( A e. suc B <-> A e. ( B u. { B } ) ) |\n| 3 |  | #P_elun | |- ( A e. ( B u. { B } ) <-> ( A e. B \\/ A e. { B } ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( A e. suc B <-> ( A e. B \\/ A e. { B } ) ) |\n| 5 |  | #P_elsncg | |- ( A e. V -> ( A e. { B } <-> A = B ) ) |\n| 6 | 5 | #P_orbi2d | |- ( A e. V -> ( ( A e. B \\/ A e. { B } ) <-> ( A e. B \\/ A = B ) ) ) |\n| 7 | 4, 6 | #P_syl5bb | |- ( A e. V -> ( A e. suc B <-> ( A e. B \\/ A = B ) ) ) |",
+  "conclusion" : "#P_elsucg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csuc", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cun", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_csuc", "#T_cB", "#T_wb", "#T_cA", "#T_wcel", "#T_cB", "#T_wo", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_elsncg", "#P_eleq2i", "#P_df-suc", "#P_orbi2d", "#P_elun", "#P_bitri" ]
+}

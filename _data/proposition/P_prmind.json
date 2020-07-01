@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prmind on Metamath](http://us.metamath.org/mpegif/prmind.html)"
+  } ],
+  "names" : [ "prmind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_vy", "#T_cmul", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wet", "#T_wps", "#T_vx", "#T_wcel", "#T_cprime", "#T_wi", "#T_wph", "#T_vy", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wa", "#T_vz", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_cA", "#T_wcel", "#T_cn", "#T_wi", "#T_wet", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_vz", "#T_wet", "#T_vx", "#T_wph", "#T_vy", "#T_vz", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform induction over the multiplicative structure of ` NN ` .  If a property ` ph ( x ) ` holds for the primes and ` 1 ` and is preserved under multiplication, then it holds for every positive integer. (Contributed by Mario Carneiro, 20-Jun-2015.) ",
+  "statement" : "prmind.1 $e |- ( x = 1 -> ( ph <-> ps ) ) $.\nprmind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nprmind.3 $e |- ( x = z -> ( ph <-> th ) ) $.\nprmind.4 $e |- ( x = ( y x. z ) -> ( ph <-> ta ) ) $.\nprmind.5 $e |- ( x = A -> ( ph <-> et ) ) $.\nprmind.6 $e |- ps $.\nprmind.7 $e |- ( x e. Prime -> ph ) $.\nprmind.8 $e |- ( ( y e. ( ZZ>= ` 2 ) /\\ z e. ( ZZ>= ` 2 ) ) -> ( ( ch /\\ th ) -> ta ) ) $.\nprmind $p |- ( A e. NN -> et ) $.\n$d A x $.\n$d ch x z $.\n$d et x $.\n$d ph y z $.\n$d ta x $.\n$d th x $.\n$d x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abnotataxb on Metamath](http://us.metamath.org/mpegif/abnotataxb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abnotataxb.1 | |- -. ph |\n| 2 |  | abnotataxb.2 | |- ps |\n| 3 | 2, 1 | #P_pm3.2i | |- ( ps /\\ -. ph ) |\n| 4 | 3 | #P_olci | |- ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) |\n| 5 |  | #P_xor | |- ( -. ( ph <-> ps ) <-> ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) ) |\n| 6 | 4, 5 | #P_mpbir | |- -. ( ph <-> ps ) |\n| 7 |  | #P_df-xor | |- ( ( ph \\/_ ps ) <-> -. ( ph <-> ps ) ) |\n| 8 | 6, 7 | #P_mpbir | |- ( ph \\/_ ps ) |",
+  "conclusion" : "#P_abnotataxb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wps", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wxo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-xor", "#P_xor", "#P_olci", "#P_mpbir", "#P_pm3.2i" ]
+}

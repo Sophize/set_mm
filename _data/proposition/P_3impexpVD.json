@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3impexpVD on Metamath](http://us.metamath.org/mpegif/3impexpVD.html)"
+  } ],
+  "names" : [ "3impexpVD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ 3impexp .  The following user's proof is completed by invoking mmj2's unify command and using mmj2's StepSelector to pick all remaining steps of the Metamath proof. <HTML> <TABLE> <TR> <TD> 1::                <TD> ` |- (. ( ( ph /\\ ps /\\ ch ) ` ` -> th ) ->. ( ( ph /\\ ps /\\ ch ) -> th ) ).  ` <TR> <TD> 2::                <TD> ` |- ( ( ph /\\ ps /\\ ch ) ` ` <-> ( ( ph /\\ ps ) /\\ ch ) )  ` <TR> <TD> 3:1,2,?: ~ e10        <TD> ` |- (. ( ( ph /\\ ps /\\ ch ) ` ` -> th ) ->. ( ( ( ph /\\ ps ) /\\ ch ) -> th ) ). ` <TR> <TD> 4:3,?: ~ e1a          <TD> ` |- (. ( ( ph /\\ ps /\\ ch ) ` ` -> th ) ->. ( ( ph /\\ ps ) -> ( ch -> th ) ) ). ` <TR> <TD> 5:4,?: ~ e1a          <TD> ` |- (. ( ( ph /\\ ps /\\ ch ) ` ` -> th ) ->. ( ph -> ( ps -> ( ch -> th ) ) ) ). ` <TR> <TD> 6:5:               <TD> ` |- ( ( ( ph /\\ ps /\\ ch ) -> th ) ` ` -> ( ph -> ( ps -> ( ch -> th ) ) ) ) ` <TR> <TD> 7::                <TD> ` |- (. ( ph -> ( ps -> ( ch ` ` -> th ) ) ) ->. ( ph -> ( ps -> ( ch -> th ) ) ) ). ` <TR> <TD> 8:7,?: ~ e1a          <TD> ` |- (. ( ph -> ( ps -> ( ch ` ` -> th ) ) ) ->. ( ( ph /\\ ps ) -> ( ch -> th ) ) ). ` <TR> <TD> 9:8,?: ~ e1a          <TD> ` |- (. ( ph -> ( ps -> ( ch ` ` -> th ) ) ) ->. ( ( ( ph /\\ ps ) /\\ ch ) -> th ) ). ` <TR> <TD> 10:2,9,?: ~ e01       <TD> ` |- (. ( ph -> ( ps -> ( ch ` ` -> th ) ) ) ->. ( ( ph /\\ ps /\\ ch ) -> th ) ). ` <TR> <TD> 11:10:             <TD> ` |- ( ( ph -> ( ps -> ( ch ` ` -> th ) ) ) -> ( ( ph /\\ ps /\\ ch ) -> th ) ) ` <TR> <TD> qed:6,11,?: ~ e00     <TD> ` |- ( ( ( ph /\\ ps /\\ ch ) ` ` -> th ) <-> ( ph -> ( ps -> ( ch -> th ) ) ) ) ` </TABLE> </HTML> (Contributed by Alan Sare, 31-Dec-2011.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "3impexpVD $p |- ( ( ( ph /\\ ps /\\ ch ) -> th ) <-> ( ph -> ( ps -> ( ch -> th ) ) ) ) $."
+}

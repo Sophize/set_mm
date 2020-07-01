@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zmod10 on Metamath](http://us.metamath.org/mpegif/zmod10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zre | |- ( N e. ZZ -> N e. RR ) |\n| 2 |  | #P_modfrac | |- ( N e. RR -> ( N mod 1 ) = ( N - ( |_ ` N ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( N e. ZZ -> ( N mod 1 ) = ( N - ( |_ ` N ) ) ) |\n| 4 |  | #P_flid | |- ( N e. ZZ -> ( |_ ` N ) = N ) |\n| 5 | 4 | #P_oveq2d | |- ( N e. ZZ -> ( N - ( |_ ` N ) ) = ( N - N ) ) |\n| 6 |  | #P_zcn | |- ( N e. ZZ -> N e. CC ) |\n| 7 | 6 | #P_subidd | |- ( N e. ZZ -> ( N - N ) = 0 ) |\n| 8 | 3, 5, 7 | #P_3eqtrd | |- ( N e. ZZ -> ( N mod 1 ) = 0 ) |",
+  "conclusion" : "#P_zmod10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cN", "#T_cmo", "#T_c1", "#T_wceq", "#T_cN", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmo", "#T_c1", "#T_wceq", "#T_cN", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cfl", "#T_cfv", "#T_cN", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cN", "#T_wceq", "#T_cN", "#T_cmin", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmo", "#T_c1", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_modfrac", "#P_zre", "#P_oveq2d", "#P_syl", "#P_flid", "#P_3eqtrd", "#P_zcn", "#P_subidd" ]
+}

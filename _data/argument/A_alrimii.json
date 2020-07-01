@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alrimii on Metamath](http://us.metamath.org/mpegif/alrimii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | alrimii.1 | |- F/ y ph |\n| 2 |  | alrimii.2 | |- ( ph -> ps ) |\n| 3 |  | alrimii.3 | |- ( [. y / x ]. ch <-> ps ) |\n| 4 |  | alrimii.4 | |- F/ y ch |\n| 5 | 2, 3 | #P_sylibr | |- ( ph -> [. y / x ]. ch ) |\n| 6 | 1, 5 | #P_alrimi | |- ( ph -> A. y [. y / x ]. ch ) |\n| 7 |  | #P_nfsbc1v | |- F/ x [. y / x ]. ch |\n| 8 |  | #P_sbceq2a | |- ( y = x -> ( [. y / x ]. ch <-> ch ) ) |\n| 9 | 7, 4, 8 | #P_cbval | |- ( A. y [. y / x ]. ch <-> A. x ch ) |\n| 10 | 6, 9 | #P_sylib | |- ( ph -> A. x ch ) |",
+  "conclusion" : "#P_alrimii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wsbc--1", "#T_vy", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wch", "#T_wb", "#T_wps", "#T_wnf", "#T_vy", "#T_wch", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wnf", "#T_vx.wal", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wb", "#T_wch", "#T_wal", "#T_vy.tru", "#T_wsbc--1", "#T_vy.tru", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wch", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfsbc1v", "#P_alrimi", "#P_sylibr", "#P_sylib", "#P_cbval", "#P_sbceq2a" ]
+}

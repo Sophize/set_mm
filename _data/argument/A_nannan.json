@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nannan on Metamath](http://us.metamath.org/mpegif/nannan.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_imnan | |- ( ( ph -> -. ( ch -/\\ ps ) ) <-> -. ( ph /\\ ( ch -/\\ ps ) ) ) |\n| 2 |  | #P_nanan | |- ( ( ch /\\ ps ) <-> -. ( ch -/\\ ps ) ) |\n| 3 | 2 | #P_imbi2i | |- ( ( ph -> ( ch /\\ ps ) ) <-> ( ph -> -. ( ch -/\\ ps ) ) ) |\n| 4 |  | #P_df-nan | |- ( ( ph -/\\ ( ch -/\\ ps ) ) <-> -. ( ph /\\ ( ch -/\\ ps ) ) ) |\n| 5 | 1, 3, 4 | #P_3bitr4ri | |- ( ( ph -/\\ ( ch -/\\ ps ) ) <-> ( ph -> ( ch /\\ ps ) ) ) |",
+  "conclusion" : "#P_nannan",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wnan", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wch", "#T_wnan", "#T_wps", "#T_wch", "#T_wa", "#T_wps", "#T_wb", "#T_wn", "#T_wch", "#T_wnan", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wnan", "#T_wps", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wch", "#T_wnan", "#T_wps", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi2i", "#P_df-nan", "#P_nanan", "#P_imnan", "#P_3bitr4ri" ]
+}

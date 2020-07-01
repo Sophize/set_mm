@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ledm on Metamath](http://us.metamath.org/mpegif/ledm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xrleid | |- ( x e. RR* -> x <_ x ) |\n| 2 |  | #P_lerel | |- Rel <_ |\n| 3 | 2 | #P_releldmi | |- ( x <_ x -> x e. dom <_ ) |\n| 4 | 1, 3 | #P_syl | |- ( x e. RR* -> x e. dom <_ ) |\n| 5 | 4 | #P_ssriv | |- RR* C_ dom <_ |\n| 6 |  | #P_lerelxr | |- <_ C_ ( RR* X. RR* ) |\n| 7 |  | #P_dmss | |- ( <_ C_ ( RR* X. RR* ) -> dom <_ C_ dom ( RR* X. RR* ) ) |\n| 8 | 6, 7 | #P_ax-mp | |- dom <_ C_ dom ( RR* X. RR* ) |\n| 9 |  | #P_dmxpss | |- dom ( RR* X. RR* ) C_ RR* |\n| 10 | 8, 9 | #P_sstri | |- dom <_ C_ RR* |\n| 11 | 5, 10 | #P_eqssi | |- RR* = dom <_ |",
+  "conclusion" : "#P_ledm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cxr", "#T_wi", "#T_vx.wal", "#T_cle", "#T_vx.wal", "#T_wrel", "#T_cle", "#T_vx.wal", "#T_cle", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cle", "#T_vx.wal", "#T_wcel", "#T_cxr", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cle", "#T_cxr", "#T_wss", "#T_cdm", "#T_cle", "#T_cle", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cle", "#T_wss", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wi", "#T_cdm", "#T_cle", "#T_wss", "#T_cdm", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cdm", "#T_cle", "#T_wss", "#T_cdm", "#T_cxr", "#T_cxp", "#T_cxr", "#T_cdm", "#T_cxr", "#T_cxp", "#T_cxr", "#T_wss", "#T_cxr", "#T_cdm", "#T_cle", "#T_wss", "#T_cxr", "#T_cxr", "#T_wceq", "#T_cdm", "#T_cle" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_lerelxr", "#P_dmxpss", "#P_xrleid", "#P_lerel", "#P_releldmi", "#P_eqssi", "#P_syl", "#P_sstri", "#P_dmss", "#P_ssriv" ]
+}

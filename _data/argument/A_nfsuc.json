@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfsuc on Metamath](http://us.metamath.org/mpegif/nfsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfsuc.1 | |- F/_ x A |\n| 2 |  | #P_df-suc | |- suc A = ( A u. { A } ) |\n| 3 | 1 | #P_nfsn | |- F/_ x { A } |\n| 4 | 1, 3 | #P_nfun | |- F/_ x ( A u. { A } ) |\n| 5 | 2, 4 | #P_nfcxfr | |- F/_ x suc A |",
+  "conclusion" : "#P_nfsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnfc", "#T_vx.wal", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wnfc", "#T_vx", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcxfr", "#P_df-suc", "#P_nfsn", "#P_nfun" ]
+}

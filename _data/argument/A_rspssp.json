@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspssp on Metamath](http://us.metamath.org/mpegif/rspssp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rspcl.k | |- K = ( RSpan ` R ) |\n| 2 |  | rspssp.u | |- U = ( LIdeal ` R ) |\n| 3 |  | #P_rlmlmod | |- ( R e. Ring -> ( ringLMod ` R ) e. LMod ) |\n| 4 |  | #P_lidlval | |- ( LIdeal ` R ) = ( LSubSp ` ( ringLMod ` R ) ) |\n| 5 | 2, 4 | #P_eqtri | |- U = ( LSubSp ` ( ringLMod ` R ) ) |\n| 6 |  | #P_rspval | |- ( RSpan ` R ) = ( LSpan ` ( ringLMod ` R ) ) |\n| 7 | 1, 6 | #P_eqtri | |- K = ( LSpan ` ( ringLMod ` R ) ) |\n| 8 | 5, 7 | #P_lspssp | |- ( ( ( ringLMod ` R ) e. LMod /\\ I e. U /\\ G C_ I ) -> ( K ` G ) C_ I ) |\n| 9 | 3, 8 | #P_syl3an1 | |- ( ( R e. Ring /\\ I e. U /\\ G C_ I ) -> ( K ` G ) C_ I ) |",
+  "conclusion" : "#P_rspssp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_crsp", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_clidl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_clidl", "#T_cfv", "#T_cR", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_crsp", "#T_cfv", "#T_cR", "#T_wceq", "#T_clspn", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cK", "#T_wceq", "#T_clspn", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cI", "#T_wcel", "#T_cU", "#T_w3a--2", "#T_cG", "#T_wss", "#T_cI", "#T_wi", "#T_cK", "#T_cfv", "#T_cG", "#T_wss", "#T_cI", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cI", "#T_wcel", "#T_cU", "#T_w3a--2", "#T_cG", "#T_wss", "#T_cI", "#T_wi", "#T_cK", "#T_cfv", "#T_cG", "#T_wss", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_lidlval", "#P_lspssp", "#P_rlmlmod", "#P_syl3an1", "#P_rspval" ]
+}

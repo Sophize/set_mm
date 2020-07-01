@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oawordexr on Metamath](http://us.metamath.org/mpegif/oawordexr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oaword1 | |- ( ( A e. On /\\ x e. On ) -> A C_ ( A +o x ) ) |\n| 2 |  | #P_sseq2 | |- ( ( A +o x ) = B -> ( A C_ ( A +o x ) <-> A C_ B ) ) |\n| 3 | 1, 2 | #P_syl5ibcom | |- ( ( A e. On /\\ x e. On ) -> ( ( A +o x ) = B -> A C_ B ) ) |\n| 4 | 3 | #P_rexlimdva | |- ( A e. On -> ( E. x e. On ( A +o x ) = B -> A C_ B ) ) |\n| 5 | 4 | #P_imp | |- ( ( A e. On /\\ E. x e. On ( A +o x ) = B ) -> A C_ B ) |",
+  "conclusion" : "#P_oawordexr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_coa", "#T_vx.wal", "#T_cA.wceq", "#T_coa", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_coa", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_coa", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_cA.wceq", "#T_coa", "#T_vx.wal", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_cA", "#T_coa", "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_cA", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5ibcom", "#P_oaword1", "#P_sseq2", "#P_rexlimdva", "#P_imp" ]
+}

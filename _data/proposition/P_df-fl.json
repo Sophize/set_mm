@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-fl on Metamath](http://us.metamath.org/mpegif/df-fl.html)"
+  } ],
+  "names" : [ "df-fl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cfl", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_crio--1", "#T_vy", "#T_crio--2", "#T_cz", "#T_vy", "#T_cle", "#T_vx", "#T_wa", "#T_vx", "#T_clt", "#T_vy", "#T_caddc", "#T_c1", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the floor (greatest integer less than or equal to) function.  See ~ flval for its value, ~ fllelt for its basic property, and ~ flcl for its closure.  For example, ` ( |_ `` ( 3 / 2 ) ) = 1 ` while ` ( |_ `` -u ( 3 / 2 ) ) = -u 2 ` ( ~ ex-fl ). The term \"floor\" was coined by Ken Iverson.  He also invented a mathematical notation for floor, consisting of an L-shaped left bracket and its reflection as a right bracket.  In APL, the left-bracket alone is used, and we borrow this idea.  (Thanks to Paul Chapman for this information.)  (Contributed by NM, 14-Nov-2004.) ",
+  "statement" : "df-fl $p |- |_ = ( x e. RR |-> ( iota_ y e. ZZ ( y <_ x /\\ x < ( y + 1 ) ) ) ) $.\n$d x y $."
+}

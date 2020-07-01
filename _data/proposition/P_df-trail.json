@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-trail on Metamath](http://us.metamath.org/mpegif/df-trail.html)"
+  } ],
+  "names" : [ "df-trail" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctrail", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vv", "#T_cwalk", "#T_ve", "#T_vp", "#T_wa", "#T_wfun", "#T_ccnv", "#T_vf", "#T_copab--6", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Trails (in an undirected graph). According to Wikipedia (\"Path (graph theory)\", ~ https://en.wikipedia.org/wiki/Path_(graph_theory) , 3-Oct-2017):  \"A trail is a walk in which all edges are distinct. According to Bollobas:  \"... walk is called a trail if all its edges are distinct.\", see Definition of [Bollobas] p. 5. Therefore, a trail can be represented by an injective mapping f from { 1 , ... , n } and a mapping p from { 0 , ... , n }, where f enumerates the (indices of the) different edges, and p enumerates the vertices.  So the trail is also represented by the following sequence: p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n) (Contributed by Alexander van der Vekens and Mario Carneiro, 4-Oct-2017.) ",
+  "statement" : "df-trail $p |- Trails = ( v e. _V , e e. _V |-> { <. f , p >. | ( f ( v Walks e ) p /\\ Fun `' f ) } ) $.\n$d e f p v $."
+}

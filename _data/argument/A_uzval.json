@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzval on Metamath](http://us.metamath.org/mpegif/uzval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq1 | |- ( j = N -> ( j <_ k <-> N <_ k ) ) |\n| 2 | 1 | #P_rabbidv | |- ( j = N -> { k e. ZZ | j <_ k } = { k e. ZZ | N <_ k } ) |\n| 3 |  | #P_df-uz | |- ZZ>= = ( j e. ZZ |-> { k e. ZZ | j <_ k } ) |\n| 4 |  | #P_zex | |- ZZ e. _V |\n| 5 | 4 | #P_rabex | |- { k e. ZZ | N <_ k } e. _V |\n| 6 | 2, 3, 5 | #P_fvmpt | |- ( N e. ZZ -> ( ZZ>= ` N ) = { k e. ZZ | N <_ k } ) |",
+  "conclusion" : "#P_uzval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vj", "#T_wceq", "#T_cN", "#T_wi", "#T_vj", "#T_cle", "#T_vk", "#T_wb", "#T_cN", "#T_cle", "#T_vk", "#T_vj", "#T_wceq", "#T_cN", "#T_wi", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cN", "#T_cle", "#T_vk", "#T_crab--4", "#T_cuz", "#T_wceq", "#T_vj", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_vj", "#T_cle", "#T_vk", "#T_crab--4", "#T_cz", "#T_wcel", "#T_cvv", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cN", "#T_cle", "#T_vk", "#T_crab--4", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cuz", "#T_cfv", "#T_cN", "#T_wceq", "#T_crab--1", "#T_vk", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_cN", "#T_cle", "#T_vk", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_fvmpt", "#P_rabbidv", "#P_df-uz", "#P_zex", "#P_rabex" ]
+}

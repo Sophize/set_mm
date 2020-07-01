@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fin1a2lem3 on Metamath](http://us.metamath.org/mpegif/fin1a2lem3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fin1a2lem.b | |- E = ( x e. _om |-> ( 2o .o x ) ) |\n| 2 |  | #P_oveq2 | |- ( a = A -> ( 2o .o a ) = ( 2o .o A ) ) |\n| 3 |  | #P_oveq2 | |- ( x = a -> ( 2o .o x ) = ( 2o .o a ) ) |\n| 4 | 3 | #P_cbvmptv | |- ( x e. _om |-> ( 2o .o x ) ) = ( a e. _om |-> ( 2o .o a ) ) |\n| 5 | 1, 4 | #P_eqtri | |- E = ( a e. _om |-> ( 2o .o a ) ) |\n| 6 |  | #P_ovex | |- ( 2o .o A ) e. _V |\n| 7 | 2, 5, 6 | #P_fvmpt | |- ( A e. _om -> ( E ` A ) = ( 2o .o A ) ) |",
+  "conclusion" : "#P_fin1a2lem3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_cE", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_com", "#T_cmpt--2", "#T_c2o", "#T_comu", "#T_vx", "#T_va", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_c2o", "#T_comu", "#T_va", "#T_wceq", "#T_c2o", "#T_comu", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_va", "#T_wi", "#T_c2o", "#T_comu", "#T_vx.wal", "#T_wceq", "#T_c2o", "#T_comu", "#T_va", "#T_vx.wal", "#T_cmpt--1", "#T_com", "#T_cmpt--2", "#T_c2o", "#T_comu", "#T_vx.wal", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_com", "#T_cmpt--2", "#T_c2o", "#T_comu", "#T_va", "#T_cE", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_com", "#T_cmpt--2", "#T_c2o", "#T_comu", "#T_va", "#T_c2o", "#T_comu", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_cE", "#T_cfv", "#T_cA", "#T_wceq", "#T_c2o", "#T_comu", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_eqtri", "#P_fvmpt", "#P_oveq2", "#P_cbvmptv" ]
+}

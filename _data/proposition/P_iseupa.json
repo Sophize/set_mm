@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iseupa on Metamath](http://us.metamath.org/mpegif/iseupa.html)"
+  } ],
+  "names" : [ "iseupa" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cE", "#T_wceq", "#T_cA", "#T_wi", "#T_cF", "#T_cV", "#T_ceup", "#T_cE", "#T_cP", "#T_wb", "#T_cV", "#T_cumg", "#T_cE", "#T_wa", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn0", "#T_cF", "#T_wf1o--1", "#T_c1", "#T_cfz", "#T_vn", "#T_wf1o--2", "#T_cA", "#T_w3a--1", "#T_cP", "#T_wf--1", "#T_cc0", "#T_cfz", "#T_vn", "#T_wf--2", "#T_cV", "#T_w3a--2", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_c1", "#T_cfz", "#T_vn", "#T_cE", "#T_cfv", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cpr--1", "#T_cP", "#T_cfv", "#T_vk", "#T_cmin", "#T_c1", "#T_cpr--2", "#T_cP", "#T_cfv", "#T_vk", "#T_cpr--3", "#T_cA", "#T_vk", "#T_vn", "#T_cE", "#T_vk", "#T_vn", "#T_cF", "#T_vk", "#T_vn", "#T_cP", "#T_vk", "#T_vn", "#T_cV", "#T_vk", "#T_vn", "#T_vk", "#T_vn", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The property \" ` <. F , P >. ` is an Eulerian path on the graph ` <. V , E >. ` \".  An Eulerian path is defined as bijection ` F ` from the edges to a set ` 1 ... N ` a function ` P : ( 0 ... N ) --> V ` into the vertices such that for each ` 1 <_ k <_ N ` , ` F ( k ) ` is an edge from ` P ( k - 1 ) ` to ` P ( k ) ` .  (Since the edges are undirected and there are possibly many edges between any two given vertices, we need to list both the edges and the vertices of the path separately.) (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario Carneiro, 3-May-2015.) ",
+  "statement" : "iseupa $p |- ( dom E = A -> ( F ( V EulPaths E ) P <-> ( V UMGrph E /\\ E. n e. NN0 ( F : ( 1 ... n ) -1-1-onto-> A /\\ P : ( 0 ... n ) --> V /\\ A. k e. ( 1 ... n ) ( E ` ( F ` k ) ) = { ( P ` ( k - 1 ) ) , ( P ` k ) } ) ) ) ) $.\n$d A k n $.\n$d E k n $.\n$d F k n $.\n$d P k n $.\n$d V k n $.\n$d k n $.\n$d k n $."
+}

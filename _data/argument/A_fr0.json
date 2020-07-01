@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fr0 on Metamath](http://us.metamath.org/mpegif/fr0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dffr2 | |- ( R Fr (/) <-> A. x ( ( x C_ (/) /\\ x =/= (/) ) -> E. y e. x { z e. x | z R y } = (/) ) ) |\n| 2 |  | #P_ss0 | |- ( x C_ (/) -> x = (/) ) |\n| 3 | 2 | #P_a1d | |- ( x C_ (/) -> ( -. E. y e. x { z e. x | z R y } = (/) -> x = (/) ) ) |\n| 4 | 3 | #P_necon1ad | |- ( x C_ (/) -> ( x =/= (/) -> E. y e. x { z e. x | z R y } = (/) ) ) |\n| 5 | 4 | #P_imp | |- ( ( x C_ (/) /\\ x =/= (/) ) -> E. y e. x { z e. x | z R y } = (/) ) |\n| 6 | 1, 5 | #P_mpgbir | |- R Fr (/) |",
+  "conclusion" : "#P_fr0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_cR", "#T_wfr", "#T_c0", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wa", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_vx.wal", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vz", "#T_cR", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_c0", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wi", "#T_wn", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_vx.wal", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vz", "#T_cR", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_c0", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wi", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_vx.wal", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vz", "#T_cR", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_c0", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wa", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_vx.wal", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vz", "#T_cR", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_c0", "#T_cR", "#T_wfr", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ss0", "#P_imp", "#P_necon1ad", "#P_dffr2", "#P_mpgbir", "#P_a1d" ]
+}

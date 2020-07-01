@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulcanap2ad on Metamath](http://us.metamath.org/mpegif/mulcanap2ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mulcanapad.1 | |- ( ph -> A e. CC ) |\n| 2 |  | mulcanapad.2 | |- ( ph -> B e. CC ) |\n| 3 |  | mulcanapad.3 | |- ( ph -> C e. CC ) |\n| 4 |  | mulcanapad.4 | |- ( ph -> C # 0 ) |\n| 5 |  | mulcanap2ad.5 | |- ( ph -> ( A x. C ) = ( B x. C ) ) |\n| 6 | 1, 2, 3, 4 | #P_mulcanap2d | |- ( ph -> ( ( A x. C ) = ( B x. C ) <-> A = B ) ) |\n| 7 | 5, 6 | #P_mpbid | |- ( ph -> A = B ) |",
+  "conclusion" : "#P_mulcanap2ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_cap", "#T_cc0", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cC", "#T_wceq", "#T_cB", "#T_cmul", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_mulcanap2d" ]
+}

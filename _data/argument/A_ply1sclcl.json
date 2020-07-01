@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ply1sclcl on Metamath](http://us.metamath.org/mpegif/ply1sclcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ply1scl.p | |- P = ( Poly1 ` R ) |\n| 2 |  | ply1scl.a | |- A = ( algSc ` P ) |\n| 3 |  | coe1scl.k | |- K = ( Base ` R ) |\n| 4 |  | ply1sclf.b | |- B = ( Base ` P ) |\n| 5 | 1, 2, 3, 4 | #P_ply1sclf | |- ( R e. Ring -> A : K --> B ) |\n| 6 | 5 | #P_ffvelrnda | |- ( ( R e. Ring /\\ S e. K ) -> ( A ` S ) e. B ) |",
+  "conclusion" : "#P_ply1sclcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cP", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cA.wceq", "#T_wf--1", "#T_cK", "#T_wf--2", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cS", "#T_wcel", "#T_cK", "#T_wi", "#T_cA", "#T_cfv", "#T_cS", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ply1sclf", "#P_ffvelrnda" ]
+}

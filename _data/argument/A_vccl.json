@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vccl on Metamath](http://us.metamath.org/mpegif/vccl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vci.1 | |- G = ( 1st ` W ) |\n| 2 |  | vci.2 | |- S = ( 2nd ` W ) |\n| 3 |  | vci.3 | |- X = ran G |\n| 4 | 1, 2, 3 | #P_vcsm | |- ( W e. CVecOLD -> S : ( CC X. X ) --> X ) |\n| 5 |  | #P_fovrn | |- ( ( S : ( CC X. X ) --> X /\\ A e. CC /\\ B e. X ) -> ( A S B ) e. X ) |\n| 6 | 4, 5 | #P_syl3an1 | |- ( ( W e. CVecOLD /\\ A e. CC /\\ B e. X ) -> ( A S B ) e. X ) |",
+  "conclusion" : "#P_vccl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cW", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cW", "#T_wcel", "#T_cvc", "#T_wi", "#T_cS", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_cS", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cX", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cS", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_cW", "#T_wcel", "#T_cvc", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cS", "#T_cB", "#T_wcel", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vcsm", "#P_syl3an1", "#P_fovrn" ]
+}

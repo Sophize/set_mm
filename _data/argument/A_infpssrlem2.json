@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infpssrlem2 on Metamath](http://us.metamath.org/mpegif/infpssrlem2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | infpssrlem.a | |- ( ph -> B C_ A ) |\n| 2 |  | infpssrlem.c | |- ( ph -> F : B -1-1-onto-> A ) |\n| 3 |  | infpssrlem.d | |- ( ph -> C e. ( A \\ B ) ) |\n| 4 |  | infpssrlem.e | |- G = ( rec ( `' F , C ) |` _om ) |\n| 5 |  | #P_frsuc | |- ( M e. _om -> ( ( rec ( `' F , C ) |` _om ) ` suc M ) = ( `' F ` ( ( rec ( `' F , C ) |` _om ) ` M ) ) ) |\n| 6 | 4 | #P_fveq1i | |- ( G ` suc M ) = ( ( rec ( `' F , C ) |` _om ) ` suc M ) |\n| 7 | 4 | #P_fveq1i | |- ( G ` M ) = ( ( rec ( `' F , C ) |` _om ) ` M ) |\n| 8 | 7 | #P_fveq2i | |- ( `' F ` ( G ` M ) ) = ( `' F ` ( ( rec ( `' F , C ) |` _om ) ` M ) ) |\n| 9 | 5, 6, 8 | #P_3eqtr4g | |- ( M e. _om -> ( G ` suc M ) = ( `' F ` ( G ` M ) ) ) |",
+  "conclusion" : "#P_infpssrlem2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cB", "#T_wf1o--2", "#T_cA", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cA", "#T_cdif", "#T_cB", "#T_cG", "#T_wceq", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cM", "#T_wcel", "#T_com", "#T_wi", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_csuc", "#T_cM", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cfv", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_cM", "#T_cG", "#T_cfv", "#T_csuc", "#T_cM", "#T_wceq", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_csuc", "#T_cM", "#T_cG", "#T_cfv", "#T_cM", "#T_wceq", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_cM", "#T_ccnv", "#T_cF", "#T_cfv", "#T_cG", "#T_cfv", "#T_cM", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cfv", "#T_crdg--1", "#T_ccnv", "#T_cF", "#T_crdg--2", "#T_cC", "#T_cres", "#T_com", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_com", "#T_wi", "#T_cG", "#T_cfv", "#T_csuc", "#T_cM", "#T_wceq", "#T_ccnv", "#T_cF", "#T_cfv", "#T_cG", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_fveq1i", "#P_frsuc", "#P_3eqtr4g" ]
+}

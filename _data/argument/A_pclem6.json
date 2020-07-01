@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pclem6 on Metamath](http://us.metamath.org/mpegif/pclem6.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ibar | |- ( ps -> ( -. ph <-> ( ps /\\ -. ph ) ) ) |\n| 2 |  | #P_nbbn | |- ( ( -. ph <-> ( ps /\\ -. ph ) ) <-> -. ( ph <-> ( ps /\\ -. ph ) ) ) |\n| 3 | 1, 2 | #P_sylib | |- ( ps -> -. ( ph <-> ( ps /\\ -. ph ) ) ) |\n| 4 | 3 | #P_con2i | |- ( ( ph <-> ( ps /\\ -. ph ) ) -> -. ps ) |",
+  "conclusion" : "#P_pclem6",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibar", "#P_sylib", "#P_con2i", "#P_nbbn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qabsabv on Metamath](http://us.metamath.org/mpegif/qabsabv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | qrng.q | |- Q = ( CCfld |`s QQ ) |\n| 2 |  | qabsabv.a | |- A = ( AbsVal ` Q ) |\n| 3 |  | #P_absabv | |- abs e. ( AbsVal ` CCfld ) |\n| 4 |  | #P_qsubdrg | |- ( QQ e. ( SubRing ` CCfld ) /\\ ( CCfld |`s QQ ) e. DivRing ) |\n| 5 | 4 | #P_simpli | |- QQ e. ( SubRing ` CCfld ) |\n| 6 |  | #P_eqid | |- ( AbsVal ` CCfld ) = ( AbsVal ` CCfld ) |\n| 7 | 6, 1, 2 | #P_abvres | |- ( ( abs e. ( AbsVal ` CCfld ) /\\ QQ e. ( SubRing ` CCfld ) ) -> ( abs |` QQ ) e. A ) |\n| 8 | 3, 5, 7 | #P_mp2an | |- ( abs |` QQ ) e. A |",
+  "conclusion" : "#P_qabsabv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cq", "#T_cA", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cQ", "#T_cabs", "#T_wcel", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_ccnfld", "#T_cress", "#T_cq", "#T_wcel", "#T_cdr", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_wcel", "#T_cabv", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cabs", "#T_cres", "#T_cq", "#T_wcel", "#T_cA.wceq", "#T_cabs", "#T_cres", "#T_cq", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_qsubdrg", "#P_eqid", "#P_mp2an", "#P_abvres", "#P_simpli", "#P_absabv" ]
+}

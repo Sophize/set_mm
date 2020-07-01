@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgtrinv on Metamath](http://us.metamath.org/mpegif/symgtrinv.html)"
+  } ],
+  "names" : [ "symgtrinv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cD", "#T_cI", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cD", "#T_wcel", "#T_cV", "#T_wa", "#T_cW", "#T_wcel", "#T_cword", "#T_cT", "#T_wi", "#T_cI", "#T_cfv", "#T_cG", "#T_cgsu", "#T_cW", "#T_wceq", "#T_cG", "#T_cgsu", "#T_creverse", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " To invert a permutation represented as a sequence of transpositions, reverse the sequence.  (Contributed by Stefan O'Rear, 27-Aug-2015.) ",
+  "statement" : "symgtrinv.t $e |- T = ran ( pmTrsp ` D ) $.\nsymgtrinv.g $e |- G = ( SymGrp ` D ) $.\nsymgtrinv.i $e |- I = ( invg ` G ) $.\nsymgtrinv $p |- ( ( D e. V /\\ W e. Word T ) -> ( I ` ( G gsum W ) ) = ( G gsum ( reverse ` W ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-aev on Metamath](http://us.metamath.org/mpegif/bj-aev.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-aevlem1v | |- ( A. x x = y -> A. u u = v ) |\n| 2 |  | #P_ax-7 | |- ( u = w -> ( u = v -> w = v ) ) |\n| 3 | 2 | #P_bj-spimvv | |- ( A. u u = v -> w = v ) |\n| 4 | 1, 3 | #P_syl | |- ( A. x x = y -> w = v ) |\n| 5 |  | #P_axc16g | |- ( A. x x = y -> ( w = v -> A. z w = v ) ) |\n| 6 | 4, 5 | #P_mpd | |- ( A. x x = y -> A. z w = v ) |\n\\\n Remove dependency on ~ ax-13 from ~ aev .  (Contributed by BJ, 31-May-2019.)  (Proof modification is discouraged.) ",
+  "conclusion" : "#P_aev",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vu", "#T_vu", "#T_wceq", "#T_vv", "#T_vu", "#T_wceq", "#T_vw", "#T_wi", "#T_vu", "#T_wceq", "#T_vv", "#T_wi", "#T_vw", "#T_wceq", "#T_vv", "#T_wal", "#T_vu", "#T_vu", "#T_wceq", "#T_vv", "#T_wi", "#T_vw", "#T_wceq", "#T_vv", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vw", "#T_wceq", "#T_vv", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vw", "#T_wceq", "#T_vv", "#T_wi", "#T_wal", "#T_vz", "#T_vw", "#T_wceq", "#T_vv", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vz", "#T_vw", "#T_wceq", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_axc16g", "#P_mpd", "#P_ax-7", "#P_bj-spimvv", "#P_bj-aevlem1v", "#P_syl" ]
+}

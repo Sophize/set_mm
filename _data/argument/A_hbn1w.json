@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbn1w on Metamath](http://us.metamath.org/mpegif/hbn1w.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hbn1w.1 | |- ( x = y -> ( ph <-> ps ) ) |\n| 2 |  | #P_ax-5 | |- ( A. x ph -> A. y A. x ph ) |\n| 3 |  | #P_ax-5 | |- ( -. ps -> A. x -. ps ) |\n| 4 |  | #P_ax-5 | |- ( A. y ps -> A. x A. y ps ) |\n| 5 |  | #P_ax-5 | |- ( -. ph -> A. y -. ph ) |\n| 6 |  | #P_ax-5 | |- ( -. A. y ps -> A. x -. A. y ps ) |\n| 7 | 2, 3, 4, 5, 6, 1 | #P_hbn1fw | |- ( -. A. x ph -> A. x -. A. x ph ) |",
+  "conclusion" : "#P_hbn1w",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wn", "#T_wph", "#T_wn", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wal", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-5", "#P_hbn1fw" ]
+}

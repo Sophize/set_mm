@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hoadd32i on Metamath](http://us.metamath.org/mpegif/hoadd32i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hods.1 | |- R : ~H --> ~H |\n| 2 |  | hods.2 | |- S : ~H --> ~H |\n| 3 |  | hods.3 | |- T : ~H --> ~H |\n| 4 | 2, 3 | #P_hoaddcomi | |- ( S +op T ) = ( T +op S ) |\n| 5 | 4 | #P_oveq2i | |- ( R +op ( S +op T ) ) = ( R +op ( T +op S ) ) |\n| 6 | 1, 2, 3 | #P_hoaddassi | |- ( ( R +op S ) +op T ) = ( R +op ( S +op T ) ) |\n| 7 | 1, 3, 2 | #P_hoaddassi | |- ( ( R +op T ) +op S ) = ( R +op ( T +op S ) ) |\n| 8 | 5, 6, 7 | #P_3eqtr4i | |- ( ( R +op S ) +op T ) = ( ( R +op T ) +op S ) |",
+  "conclusion" : "#P_hoadd32i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_chos", "#T_cT", "#T_wceq", "#T_cT", "#T_chos", "#T_cS", "#T_cR", "#T_chos", "#T_cS", "#T_chos", "#T_cT", "#T_wceq", "#T_cR", "#T_chos", "#T_cT", "#T_chos", "#T_cS", "#T_cR", "#T_chos", "#T_cS", "#T_chos", "#T_cT", "#T_wceq", "#T_cR", "#T_chos", "#T_cS", "#T_chos", "#T_cT", "#T_cR", "#T_chos", "#T_cT", "#T_chos", "#T_cS", "#T_wceq", "#T_cR", "#T_chos", "#T_cT", "#T_chos", "#T_cS", "#T_cR", "#T_chos", "#T_cS", "#T_chos", "#T_cT", "#T_wceq", "#T_cR", "#T_chos", "#T_cT", "#T_chos", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hoaddcomi", "#P_hoaddassi", "#P_3eqtr4i", "#P_oveq2i" ]
+}

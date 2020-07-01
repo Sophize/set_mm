@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hadcoma on Metamath](http://us.metamath.org/mpegif/hadcoma.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xorcom | |- ( ( ph \\/_ ps ) <-> ( ps \\/_ ph ) ) |\n| 2 |  | #P_biid | |- ( ch <-> ch ) |\n| 3 | 1, 2 | #P_xorbi12i | |- ( ( ( ph \\/_ ps ) \\/_ ch ) <-> ( ( ps \\/_ ph ) \\/_ ch ) ) |\n| 4 |  | #P_df-had | |- ( hadd ( ph , ps , ch ) <-> ( ( ph \\/_ ps ) \\/_ ch ) ) |\n| 5 |  | #P_df-had | |- ( hadd ( ps , ph , ch ) <-> ( ( ps \\/_ ph ) \\/_ ch ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4i | |- ( hadd ( ph , ps , ch ) <-> hadd ( ps , ph , ch ) ) |",
+  "conclusion" : "#P_hadcoma",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wxo", "#T_wph", "#T_wch", "#T_wb", "#T_wch", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wps", "#T_wxo", "#T_wph", "#T_wxo", "#T_wch", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wxo", "#T_wch", "#T_whad--1", "#T_wps", "#T_whad--2", "#T_wph", "#T_whad--3", "#T_wch", "#T_wb", "#T_wps", "#T_wxo", "#T_wph", "#T_wxo", "#T_wch", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_whad--1", "#T_wps", "#T_whad--2", "#T_wph", "#T_whad--3", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biid", "#P_xorbi12i", "#P_df-had", "#P_xorcom", "#P_3bitr4i" ]
+}

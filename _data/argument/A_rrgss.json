@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrgss on Metamath](http://us.metamath.org/mpegif/rrgss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rrgss.e | |- E = ( RLReg ` R ) |\n| 2 |  | rrgss.b | |- B = ( Base ` R ) |\n| 3 |  | #P_eqid | |- ( .r ` R ) = ( .r ` R ) |\n| 4 |  | #P_eqid | |- ( 0g ` R ) = ( 0g ` R ) |\n| 5 | 1, 2, 3, 4 | #P_rrgval | |- E = { x e. B | A. y e. B ( ( x ( .r ` R ) y ) = ( 0g ` R ) -> y = ( 0g ` R ) ) } |\n| 6 |  | #P_ssrab2 | |- { x e. B | A. y e. B ( ( x ( .r ` R ) y ) = ( 0g ` R ) -> y = ( 0g ` R ) ) } C_ B |\n| 7 | 5, 6 | #P_eqsstri | |- E C_ B |",
+  "conclusion" : "#P_rrgss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cE", "#T_wceq", "#T_crlreg", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cE", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_vx.wal", "#T_cmulr", "#T_cfv", "#T_cR", "#T_vy.tru", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_crab--4", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_vx.wal", "#T_cmulr", "#T_cfv", "#T_cR", "#T_vy.tru", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_crab--4", "#T_wss", "#T_cB.wceq", "#T_cE", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ssrab2", "#P_rrgval", "#P_eqsstri" ]
+}

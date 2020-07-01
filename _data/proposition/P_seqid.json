@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See seqid on Metamath](http://us.metamath.org/mpegif/seqid.html)"
+  } ],
+  "names" : [ "seqid" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wi", "#T_cZ", "#T_c.pl", "#T_vx", "#T_wceq", "#T_vx", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cF", "#T_cfv", "#T_cN", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cZ", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_cres", "#T_cuz", "#T_cfv", "#T_cN", "#T_wceq", "#T_cseq--1", "#T_cN", "#T_c.pl", "#T_cseq--2", "#T_cF", "#T_c.pl", "#T_vx", "#T_cF", "#T_vx", "#T_cM", "#T_vx", "#T_cN", "#T_vx", "#T_cS", "#T_vx", "#T_cZ", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Discard the first few terms of a sequence that starts with all zeroes (or whatever the identity ` Z ` is for operation ` .+ ` ).  (Contributed by Mario Carneiro, 13-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) ",
+  "statement" : "seqid.1 $e |- ( ( ph /\\ x e. S ) -> ( Z .+ x ) = x ) $.\nseqid.2 $e |- ( ph -> Z e. S ) $.\nseqid.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.\nseqid.4 $e |- ( ph -> ( F ` N ) e. S ) $.\nseqid.5 $e |- ( ( ph /\\ x e. ( M ... ( N - 1 ) ) ) -> ( F ` x ) = Z ) $.\nseqid $p |- ( ph -> ( seq M ( .+ , F ) |` ( ZZ>= ` N ) ) = seq N ( .+ , F ) ) $.\n$d .+ x $.\n$d F x $.\n$d M x $.\n$d N x $.\n$d S x $.\n$d Z x $.\n$d ph x $."
+}

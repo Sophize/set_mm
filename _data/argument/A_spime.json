@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spime on Metamath](http://us.metamath.org/mpegif/spime.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spime.1 | |- F/ x ph |\n| 2 |  | spime.2 | |- ( x = y -> ( ph -> ps ) ) |\n| 3 | 1 | #P_a1i | |- ( T. -> F/ x ph ) |\n| 4 | 3, 2 | #P_spimed | |- ( T. -> ( ph -> E. x ps ) ) |\n| 5 | 4 | #P_trud | |- ( ph -> E. x ps ) |",
+  "conclusion" : "#P_spime",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wtru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wtru", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_spimed", "#P_trud", "#P_a1i" ]
+}

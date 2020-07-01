@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnvcnvres on Metamath](http://us.metamath.org/mpegif/cnvcnvres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relres | |- Rel ( A |` B ) |\n| 2 |  | #P_dfrel2 | |- ( Rel ( A |` B ) <-> `' `' ( A |` B ) = ( A |` B ) ) |\n| 3 | 1, 2 | #P_mpbi | |- `' `' ( A |` B ) = ( A |` B ) |\n| 4 |  | #P_rescnvcnv | |- ( `' `' A |` B ) = ( A |` B ) |\n| 5 | 3, 4 | #P_eqtr4i | |- `' `' ( A |` B ) = ( `' `' A |` B ) |",
+  "conclusion" : "#P_cnvcnvres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wrel", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_ccnv", "#T_ccnv", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_ccnv", "#T_ccnv", "#T_cA", "#T_cres", "#T_cB", "#T_wceq", "#T_ccnv", "#T_ccnv", "#T_cA", "#T_cres", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_mpbi", "#P_relres", "#P_rescnvcnv", "#P_dfrel2" ]
+}

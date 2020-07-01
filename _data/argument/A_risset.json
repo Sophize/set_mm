@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See risset on Metamath](http://us.metamath.org/mpegif/risset.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exancom | |- ( E. x ( x e. B /\\ x = A ) <-> E. x ( x = A /\\ x e. B ) ) |\n| 2 |  | #P_df-rex | |- ( E. x e. B x = A <-> E. x ( x e. B /\\ x = A ) ) |\n| 3 |  | #P_df-clel | |- ( A e. B <-> E. x ( x = A /\\ x e. B ) ) |\n| 4 | 1, 2, 3 | #P_3bitr4ri | |- ( A e. B <-> E. x e. B x = A ) |",
+  "conclusion" : "#P_risset",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-clel", "#P_3bitr4ri", "#P_exancom", "#P_df-rex" ]
+}

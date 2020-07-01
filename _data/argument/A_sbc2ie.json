@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbc2ie on Metamath](http://us.metamath.org/mpegif/sbc2ie.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbc2ie.1 | |- A e. _V |\n| 2 |  | sbc2ie.2 | |- B e. _V |\n| 3 |  | sbc2ie.3 | |- ( ( x = A /\\ y = B ) -> ( ph <-> ps ) ) |\n| 4 |  | #P_nfv | |- F/ x ps |\n| 5 |  | #P_nfv | |- F/ y ps |\n| 6 | 2 | #P_nfth | |- F/ x B e. _V |\n| 7 | 4, 5, 6, 3 | #P_sbc2iegf | |- ( ( A e. _V /\\ B e. _V ) -> ( [. A / x ]. [. B / y ]. ph <-> ps ) ) |\n| 8 | 1, 2, 7 | #P_mp2an | |- ( [. A / x ]. [. B / y ]. ph <-> ps ) |",
+  "conclusion" : "#P_sbc2ie",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vy.tru", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vy.tru", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wps", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wsbc--1", "#T_cB", "#T_wsbc--2", "#T_vy", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_mp2an", "#P_nfth", "#P_sbc2iegf" ]
+}

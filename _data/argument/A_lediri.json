@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lediri on Metamath](http://us.metamath.org/mpegif/lediri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ledi.1 | |- A e. CH |\n| 2 |  | ledi.2 | |- B e. CH |\n| 3 |  | ledi.3 | |- C e. CH |\n| 4 | 3, 1, 2 | #P_ledii | |- ( ( C i^i A ) vH ( C i^i B ) ) C_ ( C i^i ( A vH B ) ) |\n| 5 |  | #P_incom | |- ( A i^i C ) = ( C i^i A ) |\n| 6 |  | #P_incom | |- ( B i^i C ) = ( C i^i B ) |\n| 7 | 5, 6 | #P_oveq12i | |- ( ( A i^i C ) vH ( B i^i C ) ) = ( ( C i^i A ) vH ( C i^i B ) ) |\n| 8 |  | #P_incom | |- ( ( A vH B ) i^i C ) = ( C i^i ( A vH B ) ) |\n| 9 | 4, 7, 8 | #P_3sstr4i | |- ( ( A i^i C ) vH ( B i^i C ) ) C_ ( ( A vH B ) i^i C ) |",
+  "conclusion" : "#P_lediri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cC", "#T_wcel", "#T_cch", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cC", "#T_cin", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cA", "#T_cin", "#T_cC", "#T_chj", "#T_cB", "#T_cin", "#T_cC", "#T_wss", "#T_cA", "#T_chj", "#T_cB", "#T_cin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ledii", "#P_3sstr4i", "#P_incom", "#P_oveq12i" ]
+}

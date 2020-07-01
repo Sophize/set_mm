@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inteximm on Metamath](http://us.metamath.org/mpegif/inteximm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_intss1 | |- ( x e. A -> |^| A C_ x ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 | 2 | #P_ssex | |- ( |^| A C_ x -> |^| A e. _V ) |\n| 4 | 1, 3 | #P_syl | |- ( x e. A -> |^| A e. _V ) |\n| 5 | 4 | #P_exlimiv | |- ( E. x x e. A -> |^| A e. _V ) |",
+  "conclusion" : "#P_inteximm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cint", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cint", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wex", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cint", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exlimiv", "#P_syl", "#P_vex", "#P_ssex", "#P_intss1" ]
+}

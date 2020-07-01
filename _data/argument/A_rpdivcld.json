@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rpdivcld on Metamath](http://us.metamath.org/mpegif/rpdivcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rpred.1 | |- ( ph -> A e. RR+ ) |\n| 2 |  | rpaddcld.1 | |- ( ph -> B e. RR+ ) |\n| 3 |  | #P_rpdivcl | |- ( ( A e. RR+ /\\ B e. RR+ ) -> ( A / B ) e. RR+ ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A / B ) e. RR+ ) |",
+  "conclusion" : "#P_rpdivcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_cA.wceq", "#T_wcel", "#T_crp", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cA", "#T_cdiv", "#T_cB", "#T_wcel", "#T_crp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_rpdivcl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl3anbr on Metamath](http://us.metamath.org/mpegif/syl3anbr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl3anbr.1 | |- ( ps <-> ph ) |\n| 2 |  | syl3anbr.2 | |- ( th <-> ch ) |\n| 3 |  | syl3anbr.3 | |- ( et <-> ta ) |\n| 4 |  | syl3anbr.4 | |- ( ( ps /\\ th /\\ et ) -> ze ) |\n| 5 | 1 | #P_bicomi | |- ( ph <-> ps ) |\n| 6 | 2 | #P_bicomi | |- ( ch <-> th ) |\n| 7 | 3 | #P_bicomi | |- ( ta <-> et ) |\n| 8 | 5, 6, 7, 4 | #P_syl3anb | |- ( ( ph /\\ ch /\\ ta ) -> ze ) |",
+  "conclusion" : "#P_syl3anbr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wb", "#T_wph", "#T_wth", "#T_wb", "#T_wch", "#T_wet", "#T_wb", "#T_wta", "#T_wps", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wze", "#T_wph", "#T_wb", "#T_wps", "#T_wch", "#T_wb", "#T_wth", "#T_wta", "#T_wb", "#T_wet", "#T_wph", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wta", "#T_wi", "#T_wze" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3anb", "#P_bicomi" ]
+}

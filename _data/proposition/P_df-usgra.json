@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-usgra on Metamath](http://us.metamath.org/mpegif/df-usgra.html)"
+  } ],
+  "names" : [ "df-usgra" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cusg", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vv", "#T_copab--3", "#T_ve", "#T_copab--4", "#T_copab--5", "#T_ve", "#T_wf1--1", "#T_cdm", "#T_ve", "#T_wf1--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cpw", "#T_vv", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vx", "#T_wceq", "#T_c2", "#T_crab--4", "#T_copab--6", "#T_ve", "#T_vv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all undirected simple graphs without loops.  An undirected simple graph without loops is a special undirected simple graph ` <. V , E >. ` where ` E ` is an injective (one-to-one) function into subsets of ` V ` of cardinality two, representing the two vertices incident to the edge.  Such graphs are usually simply called \"undirected graphs\", so if only the term \"undirected graph\" is used, an undirected simple graph without loops is meant.  Therefore, an undirected graph has no loops (edges a vertex to itself).  (Contributed by Alexander van der Vekens, 10-Aug-2017.) ",
+  "statement" : "df-usgra $p |- USGrph = { <. v , e >. | e : dom e -1-1-> { x e. ( ~P v \\ { (/) } ) | ( # ` x ) = 2 } } $.\n$d e v x $."
+}

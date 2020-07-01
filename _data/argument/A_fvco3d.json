@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvco3d on Metamath](http://us.metamath.org/mpegif/fvco3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvco3d.1 | |- ( ph -> G : A --> B ) |\n| 2 |  | fvco3d.2 | |- ( ph -> C e. A ) |\n| 3 |  | #P_fvco3 | |- ( ( G : A --> B /\\ C e. A ) -> ( ( F o. G ) ` C ) = ( F ` ( G ` C ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( ( F o. G ) ` C ) = ( F ` ( G ` C ) ) ) |",
+  "conclusion" : "#P_fvco3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cA", "#T_cG", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_cfv", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_cG", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_cfv", "#T_cC", "#T_wceq", "#T_cF", "#T_cfv", "#T_cG", "#T_cfv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_fvco3" ]
+}

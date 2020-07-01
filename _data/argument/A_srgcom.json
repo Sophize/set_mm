@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See srgcom on Metamath](http://us.metamath.org/mpegif/srgcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srgacl.b | |- B = ( Base ` R ) |\n| 2 |  | srgacl.p | |- .+ = ( +g ` R ) |\n| 3 |  | #P_srgcmn | |- ( R e. SRing -> R e. CMnd ) |\n| 4 | 1, 2 | #P_cmncom | |- ( ( R e. CMnd /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) = ( Y .+ X ) ) |\n| 5 | 3, 4 | #P_syl3an1 | |- ( ( R e. SRing /\\ X e. B /\\ Y e. B ) -> ( X .+ Y ) = ( Y .+ X ) ) |",
+  "conclusion" : "#P_srgcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_csrg", "#T_wi", "#T_cR", "#T_wcel", "#T_ccmn", "#T_cR", "#T_wcel", "#T_ccmn", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cY", "#T_c.pl", "#T_cX", "#T_cR", "#T_wcel", "#T_csrg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cY", "#T_c.pl", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_srgcmn", "#P_cmncom", "#P_syl3an1" ]
+}

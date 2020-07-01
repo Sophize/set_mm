@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cdleme31id on Metamath](http://us.metamath.org/mpegif/cdleme31id.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cdleme31fv2.f | |- F = ( x e. B |-> if ( ( P =/= Q /\\ -. x .<_ W ) , O , x ) ) |\n| 2 |  | #P_simpl | |- ( ( P =/= Q /\\ -. X .<_ W ) -> P =/= Q ) |\n| 3 | 2 | #P_necon2bi | |- ( P = Q -> -. ( P =/= Q /\\ -. X .<_ W ) ) |\n| 4 | 1 | #P_cdleme31fv2 | |- ( ( X e. B /\\ -. ( P =/= Q /\\ -. X .<_ W ) ) -> ( F ` X ) = X ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( X e. B /\\ P = Q ) -> ( F ` X ) = X ) |",
+  "conclusion" : "#P_cdleme31id",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cif--1", "#T_cP", "#T_wne", "#T_cQ", "#T_wa", "#T_wn", "#T_vx", "#T_c.le", "#T_cW", "#T_cif--2", "#T_cO", "#T_cif--3", "#T_vx", "#T_cP", "#T_wne", "#T_cQ", "#T_wa", "#T_wn", "#T_cX", "#T_c.le", "#T_cW", "#T_wi", "#T_cP", "#T_wne", "#T_cQ", "#T_cP", "#T_wceq", "#T_cQ", "#T_wi", "#T_wn", "#T_cP", "#T_wne", "#T_cQ", "#T_wa", "#T_wn", "#T_cX", "#T_c.le", "#T_cW", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wn", "#T_cP", "#T_wne", "#T_cQ", "#T_wa", "#T_wn", "#T_cX", "#T_c.le", "#T_cW", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_cX", "#T_wcel", "#T_cB", "#T_wa", "#T_cP", "#T_wceq", "#T_cQ", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon2bi", "#P_sylan2", "#P_simpl", "#P_cdleme31fv2" ]
+}

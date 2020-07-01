@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nffv on Metamath](http://us.metamath.org/mpegif/nffv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nffv.1 | |- F/_ x F |\n| 2 |  | nffv.2 | |- F/_ x A |\n| 3 |  | #P_df-fv | |- ( F ` A ) = ( iota y A F y ) |\n| 4 |  | #P_nfcv | |- F/_ x y |\n| 5 | 2, 1, 4 | #P_nfbr | |- F/ x A F y |\n| 6 | 5 | #P_nfiotaxy | |- F/_ x ( iota y A F y ) |\n| 7 | 3, 6 | #P_nfcxfr | |- F/_ x ( F ` A ) |",
+  "conclusion" : "#P_nffv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnfc", "#T_vx", "#T_cF", "#T_wnfc", "#T_vx", "#T_cA", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wnfc", "#T_vx.wal", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wnfc", "#T_vx", "#T_cF", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-fv", "#P_nfcv", "#P_nfcxfr", "#P_nfbr", "#P_nfiotaxy" ]
+}

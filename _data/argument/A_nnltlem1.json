@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnltlem1 on Metamath](http://us.metamath.org/mpegif/nnltlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnz | |- ( M e. NN -> M e. ZZ ) |\n| 2 |  | #P_nnz | |- ( N e. NN -> N e. ZZ ) |\n| 3 |  | #P_zltlem1 | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M < N <-> M <_ ( N - 1 ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( M e. NN /\\ N e. NN ) -> ( M < N <-> M <_ ( N - 1 ) ) ) |",
+  "conclusion" : "#P_nnltlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cn", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_clt", "#T_cN", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_cmin", "#T_c1", "#T_cM", "#T_wcel", "#T_cn", "#T_wa", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cM", "#T_clt", "#T_cN", "#T_wb", "#T_cM", "#T_cle", "#T_cN", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nnz", "#P_zltlem1", "#P_syl2an" ]
+}

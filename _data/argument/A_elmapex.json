@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elmapex on Metamath](http://us.metamath.org/mpegif/elmapex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_n0i | |- ( A e. ( B ^m C ) -> -. ( B ^m C ) = (/) ) |\n| 2 |  | #P_fnmap | |- ^m Fn ( _V X. _V ) |\n| 3 |  | #P_fndm | |- ( ^m Fn ( _V X. _V ) -> dom ^m = ( _V X. _V ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- dom ^m = ( _V X. _V ) |\n| 5 | 4 | #P_ndmov | |- ( -. ( B e. _V /\\ C e. _V ) -> ( B ^m C ) = (/) ) |\n| 6 | 1, 5 | #P_nsyl2 | |- ( A e. ( B ^m C ) -> ( B e. _V /\\ C e. _V ) ) |",
+  "conclusion" : "#P_elmapex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wceq", "#T_c0", "#T_cmap", "#T_wfn", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cmap", "#T_wfn", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wi", "#T_cdm", "#T_cmap", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cdm", "#T_cmap", "#T_wceq", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wceq", "#T_c0", "#T_cA", "#T_wcel", "#T_cB", "#T_cmap", "#T_cC", "#T_wi", "#T_cB", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_nsyl2", "#P_n0i", "#P_ndmov", "#P_fnmap", "#P_fndm" ]
+}

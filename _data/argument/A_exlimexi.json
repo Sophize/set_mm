@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exlimexi on Metamath](http://us.metamath.org/mpegif/exlimexi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | exlimexi.1 | |- ( ps -> A. x ps ) |\n| 2 |  | exlimexi.2 | |- ( E. x ph -> ( ph -> ps ) ) |\n| 3 |  | #P_hbe1 | |- ( E. x ph -> A. x E. x ph ) |\n| 4 | 3, 1, 2 | #P_exlimdh | |- ( E. x ph -> ( E. x ph -> ps ) ) |\n| 5 | 4 | #P_pm2.43i | |- ( E. x ph -> ps ) |",
+  "conclusion" : "#P_exlimexi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hbe1", "#P_pm2.43i", "#P_exlimdh" ]
+}

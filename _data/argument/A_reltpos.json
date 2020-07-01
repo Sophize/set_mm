@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reltpos on Metamath](http://us.metamath.org/mpegif/reltpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tposssxp | |- tpos F C_ ( ( `' dom F u. { (/) } ) X. ran F ) |\n| 2 |  | #P_relxp | |- Rel ( ( `' dom F u. { (/) } ) X. ran F ) |\n| 3 |  | #P_relss | |- ( tpos F C_ ( ( `' dom F u. { (/) } ) X. ran F ) -> ( Rel ( ( `' dom F u. { (/) } ) X. ran F ) -> Rel tpos F ) ) |\n| 4 | 1, 2, 3 | #P_mp2 | |- Rel tpos F |",
+  "conclusion" : "#P_reltpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctpos", "#T_cF", "#T_wss", "#T_ccnv", "#T_cdm", "#T_cF", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cF", "#T_wrel", "#T_ccnv", "#T_cdm", "#T_cF", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cF", "#T_ctpos", "#T_cF", "#T_wss", "#T_ccnv", "#T_cdm", "#T_cF", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cF", "#T_wi", "#T_wrel", "#T_ccnv", "#T_cdm", "#T_cF", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cxp", "#T_crn", "#T_cF", "#T_wi", "#T_wrel", "#T_ctpos", "#T_cF", "#T_wrel", "#T_ctpos", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_relxp", "#P_tposssxp", "#P_relss" ]
+}

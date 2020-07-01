@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frsucmptn on Metamath](http://us.metamath.org/mpegif/frsucmptn.html)"
+  } ],
+  "names" : [ "frsucmptn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wnfc", "#T_vx", "#T_cD", "#T_cF", "#T_wceq", "#T_crdg--1", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cC", "#T_crdg--2", "#T_cA", "#T_cres", "#T_com", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cB", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wn", "#T_cD", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_cfv", "#T_csuc", "#T_cB", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the finite recursive definition generator at a successor (special case where the characteristic function is a mapping abstraction and where the mapping class ` D ` is a proper class).  This is a technical lemma that can be used together with ~ frsucmpt to help eliminate redundant sethood antecedents.  (Contributed by Scott Fenton, 19-Feb-2011.)  (Revised by Mario Carneiro, 11-Sep-2015.) ",
+  "statement" : "frsucmpt.1 $e |- F/_ x A $.\nfrsucmpt.2 $e |- F/_ x B $.\nfrsucmpt.3 $e |- F/_ x D $.\nfrsucmpt.4 $e |- F = ( rec ( ( x e. _V |-> C ) , A ) |` _om ) $.\nfrsucmpt.5 $e |- ( x = ( F ` B ) -> C = D ) $.\nfrsucmptn $p |- ( -. D e. _V -> ( F ` suc B ) = (/) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stoweidlem7 on Metamath](http://us.metamath.org/mpegif/stoweidlem7.html)"
+  } ],
+  "names" : [ "stoweidlem7" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vi", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_c1", "#T_cdiv", "#T_cA", "#T_cexp", "#T_vi", "#T_cG", "#T_wceq", "#T_vi", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cB", "#T_cexp", "#T_vi", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_c1", "#T_clt", "#T_cA", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_clt", "#T_c1", "#T_wph", "#T_wi", "#T_cE", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn", "#T_c1", "#T_cmin", "#T_cE", "#T_clt", "#T_c1", "#T_cmin", "#T_cB", "#T_cexp", "#T_vn", "#T_wa", "#T_c1", "#T_cdiv", "#T_cA", "#T_cexp", "#T_vn", "#T_clt", "#T_cE", "#T_cA", "#T_vi", "#T_vn", "#T_cB", "#T_vi", "#T_vn", "#T_cE", "#T_vi", "#T_vn", "#T_cF", "#T_vn", "#T_cG", "#T_vn", "#T_vi", "#T_vn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This lemma is used to prove that q_n as in the proof of Lemma 1 in [BrosowskiDeutsh] p. 91, (at the top of page 91), is such that q_n < &epsilon; on ` T \\ U ` , and q_n > 1 - &epsilon; on ` V ` .  Here it is proven that, for ` n ` large enough, 1-(k*&delta;/2)^n > 1 - &epsilon; , and 1/(k*&delta;)^n < &epsilon;.  The variable ` A ` is used to represent (k*&delta;) in the paper, and ` B ` is used to represent (k*&delta;/2).  (Contributed by Glauco Siliprandi, 20-Apr-2017.) ",
+  "statement" : "stoweidlem7.1 $e |- F = ( i e. NN0 |-> ( ( 1 / A ) ^ i ) ) $.\nstoweidlem7.2 $e |- G = ( i e. NN0 |-> ( B ^ i ) ) $.\nstoweidlem7.3 $e |- ( ph -> A e. RR ) $.\nstoweidlem7.4 $e |- ( ph -> 1 < A ) $.\nstoweidlem7.5 $e |- ( ph -> B e. RR+ ) $.\nstoweidlem7.6 $e |- ( ph -> B < 1 ) $.\nstoweidlem7.7 $e |- ( ph -> E e. RR+ ) $.\nstoweidlem7 $p |- ( ph -> E. n e. NN ( ( 1 - E ) < ( 1 - ( B ^ n ) ) /\\ ( 1 / ( A ^ n ) ) < E ) ) $.\n$d A i n $.\n$d B i n $.\n$d E i n $.\n$d F n $.\n$d G n $.\n$d i n ph $."
+}

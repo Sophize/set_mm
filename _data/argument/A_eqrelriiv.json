@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqrelriiv on Metamath](http://us.metamath.org/mpegif/eqrelriiv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqreliiv.1 | |- Rel A |\n| 2 |  | eqreliiv.2 | |- Rel B |\n| 3 |  | eqreliiv.3 | |- ( <. x , y >. e. A <-> <. x , y >. e. B ) |\n| 4 | 3 | #P_eqrelriv | |- ( ( Rel A /\\ Rel B ) -> A = B ) |\n| 5 | 1, 2, 4 | #P_mp2an | |- A = B |",
+  "conclusion" : "#P_eqrelriiv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA", "#T_wrel", "#T_cB", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cA", "#T_wb", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cB", "#T_wrel", "#T_cA.wceq", "#T_wa", "#T_wrel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_eqrelriv" ]
+}

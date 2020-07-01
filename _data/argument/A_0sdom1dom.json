@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0sdom1dom on Metamath](http://us.metamath.org/mpegif/0sdom1dom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano1 | |- (/) e. _om |\n| 2 |  | #P_sucdom | |- ( (/) e. _om -> ( (/) ~< A <-> suc (/) ~<_ A ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( (/) ~< A <-> suc (/) ~<_ A ) |\n| 4 |  | #P_df-1o | |- 1o = suc (/) |\n| 5 | 4 | #P_breq1i | |- ( 1o ~<_ A <-> suc (/) ~<_ A ) |\n| 6 | 3, 5 | #P_bitr4i | |- ( (/) ~< A <-> 1o ~<_ A ) |",
+  "conclusion" : "#P_0sdom1dom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wcel", "#T_com", "#T_c0", "#T_wcel", "#T_com", "#T_wi", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_c1o", "#T_wceq", "#T_csuc", "#T_c0", "#T_c1o", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_csuc", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_c0", "#T_csdm", "#T_cA", "#T_wb", "#T_c1o", "#T_cdom", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_peano1", "#P_sucdom", "#P_breq1i", "#P_bitr4i", "#P_df-1o" ]
+}

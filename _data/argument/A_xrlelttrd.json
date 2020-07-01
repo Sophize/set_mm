@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xrlelttrd on Metamath](http://us.metamath.org/mpegif/xrlelttrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xrlttrd.1 | |- ( ph -> A e. RR* ) |\n| 2 |  | xrlttrd.2 | |- ( ph -> B e. RR* ) |\n| 3 |  | xrlttrd.3 | |- ( ph -> C e. RR* ) |\n| 4 |  | xrlelttrd.4 | |- ( ph -> A <_ B ) |\n| 5 |  | xrlelttrd.5 | |- ( ph -> B < C ) |\n| 6 |  | #P_xrlelttr | |- ( ( A e. RR* /\\ B e. RR* /\\ C e. RR* ) -> ( ( A <_ B /\\ B < C ) -> A < C ) ) |\n| 7 | 1, 2, 3, 6 | #P_syl3anc | |- ( ph -> ( ( A <_ B /\\ B < C ) -> A < C ) ) |\n| 8 | 4, 5, 7 | #P_mp2and | |- ( ph -> A < C ) |",
+  "conclusion" : "#P_xrlelttrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_clt", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2and", "#P_xrlelttr", "#P_syl3anc" ]
+}

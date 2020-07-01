@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ipge0 on Metamath](http://us.metamath.org/mpegif/ipge0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reipcl.v | |- V = ( Base ` W ) |\n| 2 |  | reipcl.h | |- ., = ( .i ` W ) |\n| 3 |  | #P_cphngp | |- ( W e. CPreHil -> W e. NrmGrp ) |\n| 4 |  | #P_eqid | |- ( norm ` W ) = ( norm ` W ) |\n| 5 | 1, 4 | #P_nmcl | |- ( ( W e. NrmGrp /\\ A e. V ) -> ( ( norm ` W ) ` A ) e. RR ) |\n| 6 | 3, 5 | #P_sylan | |- ( ( W e. CPreHil /\\ A e. V ) -> ( ( norm ` W ) ` A ) e. RR ) |\n| 7 | 6 | #P_sqge0d | |- ( ( W e. CPreHil /\\ A e. V ) -> 0 <_ ( ( ( norm ` W ) ` A ) ^ 2 ) ) |\n| 8 | 1, 2, 4 | #P_nmsq | |- ( ( W e. CPreHil /\\ A e. V ) -> ( ( ( norm ` W ) ` A ) ^ 2 ) = ( A ., A ) ) |\n| 9 | 7, 8 | #P_breqtrd | |- ( ( W e. CPreHil /\\ A e. V ) -> 0 <_ ( A ., A ) ) |",
+  "conclusion" : "#P_ipge0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.xi", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_ccph", "#T_wi", "#T_cW", "#T_wcel", "#T_cngp", "#T_cnm", "#T_cfv", "#T_cW", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cngp", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cW", "#T_wcel", "#T_ccph", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cW", "#T_wcel", "#T_ccph", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cc0", "#T_cle", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cW", "#T_wcel", "#T_ccph", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_c.xi", "#T_cA.wceq", "#T_cW", "#T_wcel", "#T_ccph", "#T_wa", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cc0", "#T_cle", "#T_cA", "#T_c.xi", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_nmsq", "#P_sylan", "#P_breqtrd", "#P_nmcl", "#P_cphngp", "#P_sqge0d" ]
+}

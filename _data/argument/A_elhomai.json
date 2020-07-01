@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elhomai on Metamath](http://us.metamath.org/mpegif/elhomai.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | homarcl.h | |- H = ( HomA ` C ) |\n| 2 |  | homafval.b | |- B = ( Base ` C ) |\n| 3 |  | homafval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | homaval.j | |- J = ( Hom ` C ) |\n| 5 |  | homaval.x | |- ( ph -> X e. B ) |\n| 6 |  | homaval.y | |- ( ph -> Y e. B ) |\n| 7 |  | elhomai.f | |- ( ph -> F e. ( X J Y ) ) |\n| 8 |  | #P_eqidd | |- ( ph -> <. X , Y >. = <. X , Y >. ) |\n| 9 | 1, 2, 3, 4, 5, 6 | #P_elhoma | |- ( ph -> ( <. X , Y >. ( X H Y ) F <-> ( <. X , Y >. = <. X , Y >. /\\ F e. ( X J Y ) ) ) ) |\n| 10 | 8, 7, 9 | #P_mpbir2and | |- ( ph -> <. X , Y >. ( X H Y ) F ) |",
+  "conclusion" : "#P_elhomai",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_choma", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_cJ", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cJ", "#T_cY", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cX", "#T_cH", "#T_cY", "#T_cF", "#T_wb", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wa", "#T_cF", "#T_wcel", "#T_cX", "#T_cJ", "#T_cY", "#T_wph", "#T_wi", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cX", "#T_cH", "#T_cY", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elhoma", "#P_eqidd", "#P_mpbir2and" ]
+}

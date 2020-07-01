@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rhmsubccat on Metamath](http://us.metamath.org/mpegif/rhmsubccat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rngcrescrhm.u | |- ( ph -> U e. V ) |\n| 2 |  | rngcrescrhm.c | |- C = ( RngCat ` U ) |\n| 3 |  | rngcrescrhm.r | |- ( ph -> R = ( Ring i^i U ) ) |\n| 4 |  | rngcrescrhm.h | |- H = ( RingHom |` ( R X. R ) ) |\n| 5 |  | #P_eqid | |- ( ( RngCat ` U ) |`cat H ) = ( ( RngCat ` U ) |`cat H ) |\n| 6 | 1, 2, 3, 4 | #P_rhmsubc | |- ( ph -> H e. ( Subcat ` ( RngCat ` U ) ) ) |\n| 7 | 5, 6 | #P_subccat | |- ( ph -> ( ( RngCat ` U ) |`cat H ) e. Cat ) |",
+  "conclusion" : "#P_rhmsubccat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cC", "#T_wceq", "#T_crngc", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_cR", "#T_wceq", "#T_crg", "#T_cin", "#T_cU", "#T_cH", "#T_wceq", "#T_crh", "#T_cres", "#T_cR", "#T_cxp", "#T_cR", "#T_crngc", "#T_cfv", "#T_cU", "#T_cresc", "#T_cH", "#T_wceq", "#T_crngc", "#T_cfv", "#T_cU", "#T_cresc", "#T_cH", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_csubc", "#T_cfv", "#T_crngc", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_crngc", "#T_cfv", "#T_cU", "#T_cresc", "#T_cH", "#T_wcel", "#T_ccat" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_subccat", "#P_rhmsubc" ]
+}

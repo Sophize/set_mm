@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfor on Metamath](http://us.metamath.org/mpegif/nfor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nf.1 | |- F/ x ph |\n| 2 |  | nf.2 | |- F/ x ps |\n| 3 |  | #P_df-or | |- ( ( ph \\/ ps ) <-> ( -. ph -> ps ) ) |\n| 4 | 1 | #P_nfn | |- F/ x -. ph |\n| 5 | 4, 2 | #P_nfim | |- F/ x ( -. ph -> ps ) |\n| 6 | 3, 5 | #P_nfxfr | |- F/ x ( ph \\/ ps ) |",
+  "conclusion" : "#P_nfor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vx", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wnf", "#T_vx", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfim", "#P_df-or", "#P_nfn", "#P_nfxfr" ]
+}

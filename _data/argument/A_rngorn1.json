@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngorn1 on Metamath](http://us.metamath.org/mpegif/rngorn1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rnplrnml0.1 | |- H = ( 2nd ` R ) |\n| 2 |  | rnplrnml0.2 | |- G = ( 1st ` R ) |\n| 3 | 2 | #P_rngogrpo | |- ( R e. RingOps -> G e. GrpOp ) |\n| 4 |  | #P_grporndm | |- ( G e. GrpOp -> ran G = dom dom G ) |\n| 5 | 3, 4 | #P_syl | |- ( R e. RingOps -> ran G = dom dom G ) |\n| 6 | 1, 2 | #P_rngodm1dm2 | |- ( R e. RingOps -> dom dom G = dom dom H ) |\n| 7 | 5, 6 | #P_eqtrd | |- ( R e. RingOps -> ran G = dom dom H ) |",
+  "conclusion" : "#P_rngorn1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cG", "#T_wcel", "#T_cgr", "#T_cG", "#T_wcel", "#T_cgr", "#T_wi", "#T_crn", "#T_cG", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_crn", "#T_cG", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cdm", "#T_cdm", "#T_cG", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cH", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_crn", "#T_cG", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rngogrpo", "#P_eqtrd", "#P_rngodm1dm2", "#P_syl", "#P_grporndm" ]
+}

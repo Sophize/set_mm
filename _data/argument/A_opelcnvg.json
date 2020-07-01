@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opelcnvg on Metamath](http://us.metamath.org/mpegif/opelcnvg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_breq2 | |- ( x = A -> ( y R x <-> y R A ) ) |\n| 2 |  | #P_breq1 | |- ( y = B -> ( y R A <-> B R A ) ) |\n| 3 |  | #P_df-cnv | |- `' R = { <. x , y >. | y R x } |\n| 4 | 1, 2, 3 | #P_brabg | |- ( ( A e. C /\\ B e. D ) -> ( A `' R B <-> B R A ) ) |\n| 5 |  | #P_df-br | |- ( A `' R B <-> <. A , B >. e. `' R ) |\n| 6 |  | #P_df-br | |- ( B R A <-> <. B , A >. e. R ) |\n| 7 | 4, 5, 6 | #P_3bitr3g | |- ( ( A e. C /\\ B e. D ) -> ( <. A , B >. e. `' R <-> <. B , A >. e. R ) ) |",
+  "conclusion" : "#P_opelcnvg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_wb", "#T_vy.tru", "#T_cR", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_vy.tru", "#T_cR", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_ccnv", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_cR", "#T_vx.wal", "#T_copab--6", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_ccnv", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_cA.wceq", "#T_ccnv", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_cR", "#T_cB.wceq", "#T_cR", "#T_cA.wceq", "#T_wb", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_wcel", "#T_cR", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wcel", "#T_ccnv", "#T_cR", "#T_wb", "#T_cop--1", "#T_cB", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_wcel", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breq1", "#P_df-br", "#P_df-cnv", "#P_breq2", "#P_brabg", "#P_3bitr3g" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axpow2 on Metamath](http://us.metamath.org/mpegif/axpow2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-pow | |- E. y A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) |\n| 2 |  | #P_dfss2 | |- ( z C_ x <-> A. w ( w e. z -> w e. x ) ) |\n| 3 | 2 | #P_imbi1i | |- ( ( z C_ x -> z e. y ) <-> ( A. w ( w e. z -> w e. x ) -> z e. y ) ) |\n| 4 | 3 | #P_albii | |- ( A. z ( z C_ x -> z e. y ) <-> A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) ) |\n| 5 | 4 | #P_exbii | |- ( E. y A. z ( z C_ x -> z e. y ) <-> E. y A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) ) |\n| 6 | 1, 5 | #P_mpbir | |- E. y A. z ( z C_ x -> z e. y ) |",
+  "conclusion" : "#P_axpow2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_wal", "#T_vw", "#T_vw", "#T_wcel", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wb", "#T_wal", "#T_vw", "#T_vw", "#T_wcel", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wal", "#T_vw", "#T_vw", "#T_wcel", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wal", "#T_vz", "#T_wal", "#T_vw", "#T_vw", "#T_wcel", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vz", "#T_wal", "#T_vw", "#T_vw", "#T_wcel", "#T_vz", "#T_wi", "#T_vw", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vy", "#T_wal", "#T_vz", "#T_vz", "#T_wss", "#T_vx", "#T_wi", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_exbii", "#P_ax-pow", "#P_albii", "#P_dfss2", "#P_mpbir" ]
+}

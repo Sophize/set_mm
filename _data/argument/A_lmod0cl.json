@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmod0cl on Metamath](http://us.metamath.org/mpegif/lmod0cl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmod0cl.f | |- F = ( Scalar ` W ) |\n| 2 |  | lmod0cl.k | |- K = ( Base ` F ) |\n| 3 |  | lmod0cl.z | |- .0. = ( 0g ` F ) |\n| 4 | 1 | #P_lmodring | |- ( W e. LMod -> F e. Ring ) |\n| 5 | 2, 3 | #P_ring0cl | |- ( F e. Ring -> .0. e. K ) |\n| 6 | 4, 5 | #P_syl | |- ( W e. LMod -> .0. e. K ) |",
+  "conclusion" : "#P_lmod0cl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cF", "#T_wcel", "#T_crg", "#T_cF", "#T_wcel", "#T_crg", "#T_wi", "#T_c.0", "#T_wcel", "#T_cK", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_c.0", "#T_wcel", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_ring0cl", "#P_lmodring" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bisym1 on Metamath](http://us.metamath.org/mpegif/bisym1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nbfal | |- ( -. ps <-> ( ps <-> F. ) ) |\n| 2 | 1 | #P_bibi2i | |- ( ( ps <-> -. ps ) <-> ( ps <-> ( ps <-> F. ) ) ) |\n| 3 |  | #P_pm5.19 | |- -. ( ps <-> -. ps ) |\n| 4 | 3 | #P_pm2.21i | |- ( ( ps <-> -. ps ) -> ( ps <-> ph ) ) |\n| 5 | 2, 4 | #P_sylbir | |- ( ( ps <-> ( ps <-> F. ) ) -> ( ps <-> ph ) ) |",
+  "conclusion" : "#P_bisym1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wfal", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wfal", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wfal", "#T_wi", "#T_wps", "#T_wb", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.19", "#P_pm2.21i", "#P_sylbir", "#P_bibi2i", "#P_nbfal" ]
+}

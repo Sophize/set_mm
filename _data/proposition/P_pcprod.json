@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pcprod on Metamath](http://us.metamath.org/mpegif/pcprod.html)"
+  } ],
+  "names" : [ "pcprod" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wcel", "#T_cprime", "#T_cif--2", "#T_vn", "#T_cexp", "#T_vn", "#T_cpc", "#T_cN", "#T_cif--3", "#T_c1", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_wceq", "#T_cN", "#T_cN", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The product of the primes taken to their respective powers reconstructs the original number.  (Contributed by Mario Carneiro, 12-Mar-2014.) ",
+  "statement" : "pcprod.1 $e |- F = ( n e. NN |-> if ( n e. Prime , ( n ^ ( n pCnt N ) ) , 1 ) ) $.\npcprod $p |- ( N e. NN -> ( seq 1 ( x. , F ) ` N ) = N ) $.\n$d N n $."
+}

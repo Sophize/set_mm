@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See selberg3lem1 on Metamath](http://us.metamath.org/mpegif/selberg3lem1.html)"
+  } ],
+  "names" : [ "selberg3lem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_c1", "#T_cico", "#T_cpnf", "#T_cabs", "#T_cfv", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vy", "#T_cvma", "#T_cfv", "#T_vk", "#T_cmul", "#T_clog", "#T_cfv", "#T_vk", "#T_cmin", "#T_cchp", "#T_cfv", "#T_vy", "#T_cmul", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vy", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_c1", "#T_cioo", "#T_cpnf", "#T_cmpt--2", "#T_c2", "#T_cdiv", "#T_clog", "#T_cfv", "#T_vx", "#T_cmul", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_cvma", "#T_cfv", "#T_vn", "#T_cmul", "#T_cchp", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vn", "#T_cmul", "#T_clog", "#T_cfv", "#T_vn", "#T_cmin", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vx", "#T_cvma", "#T_cfv", "#T_vn", "#T_cmul", "#T_cchp", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vn", "#T_cdiv", "#T_vx", "#T_wcel", "#T_co1", "#T_cA", "#T_vk", "#T_vn", "#T_vx", "#T_vy", "#T_vn", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Introduce a log weighting on the summands of ` sum_ m x. n <_ x , Lam ( m ) Lam ( n ) ` , the core of ~ selberg2 (written here as ` sum_ n <_ x , Lam ( n ) psi ( x / n ) ` ).  Equation 10.4.21 of [Shapiro], p. 422.  (Contributed by Mario Carneiro, 30-May-2016.) ",
+  "statement" : "selberg3lem1.1 $e |- ( ph -> A e. RR+ ) $.\nselberg3lem1.2 $e |- ( ph -> A. y e. ( 1 [,) +oo ) ( abs ` ( ( sum_ k e. ( 1 ... ( |_ ` y ) ) ( ( Lam ` k ) x. ( log ` k ) ) - ( ( psi ` y ) x. ( log ` y ) ) ) / y ) ) <_ A ) $.\nselberg3lem1 $p |- ( ph -> ( x e. ( 1 (,) +oo ) |-> ( ( ( ( 2 / ( log ` x ) ) x. sum_ n e. ( 1 ... ( |_ ` x ) ) ( ( ( Lam ` n ) x. ( psi ` ( x / n ) ) ) x. ( log ` n ) ) ) - sum_ n e. ( 1 ... ( |_ ` x ) ) ( ( Lam ` n ) x. ( psi ` ( x / n ) ) ) ) / x ) ) e. O(1) ) $.\n$d A k n x y $.\n$d n ph x $."
+}

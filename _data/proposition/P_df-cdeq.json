@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-cdeq on Metamath](http://us.metamath.org/mpegif/df-cdeq.html)"
+  } ],
+  "names" : [ "df-cdeq" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_wph", "#T_wb", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define conditional equality.  All the notation to the left of the ` <-> ` is fake; the parentheses and arrows are all part of the notation, which could equally well be written ` CondEq x y ph ` .  On the right side is the actual implication arrow.  The reason for this definition is to \"flatten\" the structure on the right side (whose tree structure is something like (wi (wceq (cv vx) (cv vy)) wph) ) into just (wcdeq vx vy wph).  (Contributed by Mario Carneiro, 11-Aug-2016.) ",
+  "statement" : "df-cdeq $p |- ( CondEq ( x = y -> ph ) <-> ( x = y -> ph ) ) $."
+}

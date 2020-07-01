@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chordthmlem4 on Metamath](http://us.metamath.org/mpegif/chordthmlem4.html)"
+  } ],
+  "names" : [ "chordthmlem4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc0", "#T_cicc", "#T_c1", "#T_wph", "#T_wi", "#T_cM", "#T_wceq", "#T_cA", "#T_caddc", "#T_cB", "#T_cdiv", "#T_c2", "#T_wph", "#T_wi", "#T_cP", "#T_wceq", "#T_cX", "#T_cmul", "#T_cA", "#T_caddc", "#T_c1", "#T_cmin", "#T_cX", "#T_cmul", "#T_cB", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cP", "#T_cmin", "#T_cA", "#T_cmul", "#T_cabs", "#T_cfv", "#T_cP", "#T_cmin", "#T_cB", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cB", "#T_cmin", "#T_cM", "#T_cexp", "#T_c2", "#T_cmin", "#T_cabs", "#T_cfv", "#T_cP", "#T_cmin", "#T_cM", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If P is on the segment AB and M is the midpoint of AB, then PA ` x. ` PB = BM<HTML><sup>2</sup></HTML> ` - ` PM<HTML><sup>2</sup></HTML>. If all lengths are reexpressed as fractions of AB, this reduces to the identity ` X x. ( 1 - X ) = ( 1 / 2 )`<HTML><sup>2</sup></HTML> ` - ( ( 1 / 2 ) - X )`<HTML><sup>2</sup></HTML>.  (Contributed by David Moews, 28-Feb-2017.) ",
+  "statement" : "chordthmlem4.A $e |- ( ph -> A e. CC ) $.\nchordthmlem4.B $e |- ( ph -> B e. CC ) $.\nchordthmlem4.X $e |- ( ph -> X e. ( 0 [,] 1 ) ) $.\nchordthmlem4.M $e |- ( ph -> M = ( ( A + B ) / 2 ) ) $.\nchordthmlem4.P $e |- ( ph -> P = ( ( X x. A ) + ( ( 1 - X ) x. B ) ) ) $.\nchordthmlem4 $p |- ( ph -> ( ( abs ` ( P - A ) ) x. ( abs ` ( P - B ) ) ) = ( ( ( abs ` ( B - M ) ) ^ 2 ) - ( ( abs ` ( P - M ) ) ^ 2 ) ) ) $."
+}

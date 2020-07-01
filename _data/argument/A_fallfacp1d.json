@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fallfacp1d on Metamath](http://us.metamath.org/mpegif/fallfacp1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rffacp1d.1 | |- ( ph -> A e. CC ) |\n| 2 |  | rffacp1d.2 | |- ( ph -> N e. NN0 ) |\n| 3 |  | #P_fallfacp1 | |- ( ( A e. CC /\\ N e. NN0 ) -> ( A FallFac ( N + 1 ) ) = ( ( A FallFac N ) x. ( A - N ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A FallFac ( N + 1 ) ) = ( ( A FallFac N ) x. ( A - N ) ) ) |",
+  "conclusion" : "#P_fallfacp1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cA.wceq", "#T_cfallfac", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_cfallfac", "#T_cN", "#T_cmul", "#T_cA.wceq", "#T_cmin", "#T_cN", "#T_wph", "#T_wi", "#T_cA", "#T_cfallfac", "#T_cN", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA", "#T_cfallfac", "#T_cN", "#T_cmul", "#T_cA", "#T_cmin", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_fallfacp1" ]
+}

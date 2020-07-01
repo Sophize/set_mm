@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnnegz on Metamath](http://us.metamath.org/mpegif/nnnegz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnre | |- ( N e. NN -> N e. RR ) |\n| 2 | 1 | #P_renegcld | |- ( N e. NN -> -u N e. RR ) |\n| 3 |  | #P_nncn | |- ( N e. NN -> N e. CC ) |\n| 4 |  | #P_negneg | |- ( N e. CC -> -u -u N = N ) |\n| 5 | 4 | #P_eleq1d | |- ( N e. CC -> ( -u -u N e. NN <-> N e. NN ) ) |\n| 6 | 5 | #P_biimprd | |- ( N e. CC -> ( N e. NN -> -u -u N e. NN ) ) |\n| 7 | 3, 6 | #P_mpcom | |- ( N e. NN -> -u -u N e. NN ) |\n| 8 | 7 | #P_3mix3d | |- ( N e. NN -> ( -u N = 0 \\/ -u N e. NN \\/ -u -u N e. NN ) ) |\n| 9 |  | #P_elz | |- ( -u N e. ZZ <-> ( -u N e. RR /\\ ( -u N = 0 \\/ -u N e. NN \\/ -u -u N e. NN ) ) ) |\n| 10 | 2, 8, 9 | #P_sylanbrc | |- ( N e. NN -> -u N e. ZZ ) |",
+  "conclusion" : "#P_nnnegz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cneg", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_wb", "#T_cN", "#T_wcel", "#T_cn", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cneg", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cneg", "#T_cN", "#T_wceq", "#T_cc0", "#T_w3o--1", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_w3o--2", "#T_cneg", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_wb", "#T_cneg", "#T_cN", "#T_wcel", "#T_cr", "#T_wa", "#T_cneg", "#T_cN", "#T_wceq", "#T_cc0", "#T_w3o--1", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_w3o--2", "#T_cneg", "#T_cneg", "#T_cN", "#T_wcel", "#T_cn", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpcom", "#P_nncn", "#P_biimprd", "#P_nnre", "#P_sylanbrc", "#P_negneg", "#P_eleq1d", "#P_elz", "#P_renegcld", "#P_3mix3d" ]
+}

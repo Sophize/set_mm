@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clatglbcl on Metamath](http://us.metamath.org/mpegif/clatglbcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clatglbcl.b | |- B = ( Base ` K ) |\n| 2 |  | clatglbcl.g | |- G = ( glb ` K ) |\n| 3 |  | #P_eqid | |- ( lub ` K ) = ( lub ` K ) |\n| 4 | 1, 3, 2 | #P_clatlem | |- ( ( K e. CLat /\\ S C_ B ) -> ( ( ( lub ` K ) ` S ) e. B /\\ ( G ` S ) e. B ) ) |\n| 5 | 4 | #P_simprd | |- ( ( K e. CLat /\\ S C_ B ) -> ( G ` S ) e. B ) |",
+  "conclusion" : "#P_clatglbcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cG", "#T_wceq", "#T_cglb", "#T_cfv", "#T_cK", "#T_club", "#T_cfv", "#T_cK", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_club", "#T_cfv", "#T_cK", "#T_cfv", "#T_cS", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cG", "#T_cfv", "#T_cS", "#T_wcel", "#T_cB.wceq", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB", "#T_wi", "#T_cG", "#T_cfv", "#T_cS", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_clatlem", "#P_simprd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsw on Metamath](http://us.metamath.org/mpegif/lsw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elex | |- ( W e. X -> W e. _V ) |\n| 2 |  | #P_fvex | |- ( W ` ( ( # ` W ) - 1 ) ) e. _V |\n| 3 |  | #P_id | |- ( w = W -> w = W ) |\n| 4 |  | #P_fveq2 | |- ( w = W -> ( # ` w ) = ( # ` W ) ) |\n| 5 | 4 | #P_oveq1d | |- ( w = W -> ( ( # ` w ) - 1 ) = ( ( # ` W ) - 1 ) ) |\n| 6 | 3, 5 | #P_fveq12d | |- ( w = W -> ( w ` ( ( # ` w ) - 1 ) ) = ( W ` ( ( # ` W ) - 1 ) ) ) |\n| 7 |  | #P_df-lsw | |- lastS = ( w e. _V |-> ( w ` ( ( # ` w ) - 1 ) ) ) |\n| 8 | 6, 7 | #P_fvmptg | |- ( ( W e. _V /\\ ( W ` ( ( # ` W ) - 1 ) ) e. _V ) -> ( lastS ` W ) = ( W ` ( ( # ` W ) - 1 ) ) ) |\n| 9 | 1, 2, 8 | #P_sylancl | |- ( W e. X -> ( lastS ` W ) = ( W ` ( ( # ` W ) - 1 ) ) ) |",
+  "conclusion" : "#P_lsw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_cW", "#T_wcel", "#T_cX", "#T_wi", "#T_cW", "#T_wcel", "#T_cvv", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_wcel", "#T_cvv", "#T_vw", "#T_wceq", "#T_cW", "#T_wi", "#T_vw", "#T_wceq", "#T_cW", "#T_vw", "#T_wceq", "#T_cW", "#T_wi", "#T_chash", "#T_cfv", "#T_vw", "#T_wceq", "#T_chash", "#T_cfv", "#T_cW", "#T_vw", "#T_wceq", "#T_cW", "#T_wi", "#T_chash", "#T_cfv", "#T_vw", "#T_cmin", "#T_c1", "#T_wceq", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_vw", "#T_wceq", "#T_cW", "#T_wi", "#T_vw", "#T_cfv", "#T_chash", "#T_cfv", "#T_vw", "#T_cmin", "#T_c1", "#T_wceq", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_clsw", "#T_wceq", "#T_vw", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vw", "#T_cfv", "#T_chash", "#T_cfv", "#T_vw", "#T_cmin", "#T_c1", "#T_cW", "#T_wcel", "#T_cvv", "#T_wa", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_wcel", "#T_cvv", "#T_wi", "#T_clsw", "#T_cfv", "#T_cW", "#T_wceq", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_cW", "#T_wcel", "#T_cX", "#T_wi", "#T_clsw", "#T_cfv", "#T_cW", "#T_wceq", "#T_cW", "#T_cfv", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmptg", "#P_fveq12d", "#P_elex", "#P_df-lsw", "#P_fveq2", "#P_oveq1d", "#P_sylancl", "#P_fvex", "#P_id" ]
+}

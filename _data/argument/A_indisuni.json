@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See indisuni on Metamath](http://us.metamath.org/mpegif/indisuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_indislem | |- { (/) , ( _I ` A ) } = { (/) , A } |\n| 2 |  | #P_fvex | |- ( _I ` A ) e. _V |\n| 3 |  | #P_indistopon | |- ( ( _I ` A ) e. _V -> { (/) , ( _I ` A ) } e. ( TopOn ` ( _I ` A ) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- { (/) , ( _I ` A ) } e. ( TopOn ` ( _I ` A ) ) |\n| 5 | 1, 4 | #P_eqeltrri | |- { (/) , A } e. ( TopOn ` ( _I ` A ) ) |\n| 6 | 5 | #P_toponunii | |- ( _I ` A ) = U. { (/) , A } |",
+  "conclusion" : "#P_indisuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cid", "#T_cfv", "#T_cA.wceq", "#T_cid", "#T_cfv", "#T_cA", "#T_wceq", "#T_cuni", "#T_cpr--1", "#T_c0", "#T_cpr--2", "#T_cA", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_indislem", "#P_indistopon", "#P_toponunii", "#P_fvex", "#P_eqeltrri" ]
+}

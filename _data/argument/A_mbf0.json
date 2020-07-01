@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mbf0 on Metamath](http://us.metamath.org/mpegif/mbf0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnv0 | |- `' (/) = (/) |\n| 2 | 1 | #P_imaeq1i | |- ( `' (/) \" x ) = ( (/) \" x ) |\n| 3 |  | #P_0ima | |- ( (/) \" x ) = (/) |\n| 4 |  | #P_0mbl | |- (/) e. dom vol |\n| 5 | 3, 4 | #P_eqeltri | |- ( (/) \" x ) e. dom vol |\n| 6 | 2, 5 | #P_eqeltri | |- ( `' (/) \" x ) e. dom vol |\n| 7 | 6 | #P_rgenw | |- A. x e. ran (,) ( `' (/) \" x ) e. dom vol |\n| 8 |  | #P_f0 | |- (/) : (/) --> RR |\n| 9 |  | #P_ismbf | |- ( (/) : (/) --> RR -> ( (/) e. MblFn <-> A. x e. ran (,) ( `' (/) \" x ) e. dom vol ) ) |\n| 10 | 8, 9 | #P_ax-mp | |- ( (/) e. MblFn <-> A. x e. ran (,) ( `' (/) \" x ) e. dom vol ) |\n| 11 | 7, 10 | #P_mpbir | |- (/) e. MblFn |",
+  "conclusion" : "#P_mbf0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_ccnv", "#T_c0", "#T_wceq", "#T_c0", "#T_ccnv", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_cima", "#T_vx.wal", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_c0", "#T_wcel", "#T_cdm", "#T_cvol", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cvol", "#T_ccnv", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_crn", "#T_cioo", "#T_ccnv", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cvol", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cr", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cr", "#T_wi", "#T_c0", "#T_wcel", "#T_cmbf", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_crn", "#T_cioo", "#T_ccnv", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cvol", "#T_c0", "#T_wcel", "#T_cmbf", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_crn", "#T_cioo", "#T_ccnv", "#T_c0", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cvol", "#T_c0", "#T_wcel", "#T_cmbf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnv0", "#P_0ima", "#P_ismbf", "#P_eqeltri", "#P_ax-mp", "#P_0mbl", "#P_rgenw", "#P_mpbir", "#P_imaeq1i", "#P_f0" ]
+}

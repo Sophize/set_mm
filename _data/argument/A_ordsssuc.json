@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordsssuc on Metamath](http://us.metamath.org/mpegif/ordsssuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eloni | |- ( A e. On -> Ord A ) |\n| 2 |  | #P_ordsseleq | |- ( ( Ord A /\\ Ord B ) -> ( A C_ B <-> ( A e. B \\/ A = B ) ) ) |\n| 3 | 1, 2 | #P_sylan | |- ( ( A e. On /\\ Ord B ) -> ( A C_ B <-> ( A e. B \\/ A = B ) ) ) |\n| 4 |  | #P_elsucg | |- ( A e. On -> ( A e. suc B <-> ( A e. B \\/ A = B ) ) ) |\n| 5 | 4 | #P_adantr | |- ( ( A e. On /\\ Ord B ) -> ( A e. suc B <-> ( A e. B \\/ A = B ) ) ) |\n| 6 | 3, 5 | #P_bitr4d | |- ( ( A e. On /\\ Ord B ) -> ( A C_ B <-> A e. suc B ) ) |",
+  "conclusion" : "#P_ordsssuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_word", "#T_cB", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_wcel", "#T_csuc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_elsucg", "#P_bitr4d", "#P_ordsseleq", "#P_eloni", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexxfr on Metamath](http://us.metamath.org/mpegif/rexxfr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralxfr.1 | |- ( y e. C -> A e. B ) |\n| 2 |  | ralxfr.2 | |- ( x e. B -> E. y e. C x = A ) |\n| 3 |  | ralxfr.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 | 1 | #P_adantl | |- ( ( T. /\\ y e. C ) -> A e. B ) |\n| 5 | 2 | #P_adantl | |- ( ( T. /\\ x e. B ) -> E. y e. C x = A ) |\n| 6 | 3 | #P_adantl | |- ( ( T. /\\ x = A ) -> ( ph <-> ps ) ) |\n| 7 | 4, 5, 6 | #P_rexxfrd | |- ( T. -> ( E. x e. B ph <-> E. y e. C ps ) ) |\n| 8 | 7 | #P_trud | |- ( E. x e. B ph <-> E. y e. C ps ) |",
+  "conclusion" : "#P_rexxfr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cC", "#T_vx", "#T_wceq", "#T_cA", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wtru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wtru", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cC", "#T_wps", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cC", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_adantl", "#P_rexxfrd" ]
+}

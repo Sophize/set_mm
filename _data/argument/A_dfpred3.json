@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfpred3 on Metamath](http://us.metamath.org/mpegif/dfpred3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dfpred2.1 | |- X e. _V |\n| 2 |  | #P_incom | |- ( A i^i { y | y R X } ) = ( { y | y R X } i^i A ) |\n| 3 | 1 | #P_dfpred2 | |- Pred ( R , A , X ) = ( A i^i { y | y R X } ) |\n| 4 |  | #P_dfrab2 | |- { y e. A | y R X } = ( { y | y R X } i^i A ) |\n| 5 | 2, 3, 4 | #P_3eqtr4i | |- Pred ( R , A , X ) = { y e. A | y R X } |",
+  "conclusion" : "#P_dfpred3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_cR", "#T_cX", "#T_cab--3", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_cR", "#T_cX", "#T_cab--3", "#T_cin", "#T_cA.wceq", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA.wceq", "#T_cpred--3", "#T_cX", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_cR", "#T_cX", "#T_cab--3", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_vy.tru", "#T_cR", "#T_cX", "#T_crab--4", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_vy.tru", "#T_cR", "#T_cX", "#T_cab--3", "#T_cin", "#T_cA.wceq", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_cX", "#T_wceq", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_vy", "#T_cR", "#T_cX", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_dfrab2", "#P_dfpred2", "#P_incom" ]
+}

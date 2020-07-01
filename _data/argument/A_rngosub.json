@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngosub on Metamath](http://us.metamath.org/mpegif/rngosub.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ringnegcl.1 | |- G = ( 1st ` R ) |\n| 2 |  | ringnegcl.2 | |- X = ran G |\n| 3 |  | ringnegcl.3 | |- N = ( inv ` G ) |\n| 4 |  | ringsub.4 | |- D = ( /g ` G ) |\n| 5 | 1 | #P_rngogrpo | |- ( R e. RingOps -> G e. GrpOp ) |\n| 6 | 2, 3, 4 | #P_grpodivval | |- ( ( G e. GrpOp /\\ A e. X /\\ B e. X ) -> ( A D B ) = ( A G ( N ` B ) ) ) |\n| 7 | 5, 6 | #P_syl3an1 | |- ( ( R e. RingOps /\\ A e. X /\\ B e. X ) -> ( A D B ) = ( A G ( N ` B ) ) ) |",
+  "conclusion" : "#P_rngosub",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cN", "#T_wceq", "#T_cgn", "#T_cfv", "#T_cG", "#T_cD", "#T_wceq", "#T_cgs", "#T_cfv", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cG", "#T_wcel", "#T_cgr", "#T_cG", "#T_wcel", "#T_cgr", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cD", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cN", "#T_cfv", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crngo", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cD", "#T_cB", "#T_wceq", "#T_cA", "#T_cG", "#T_cN", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rngogrpo", "#P_grpodivval", "#P_syl3an1" ]
+}

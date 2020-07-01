@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xorcom on Metamath](http://us.metamath.org/mpegif/xorcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bicom | |- ( ( ph <-> ps ) <-> ( ps <-> ph ) ) |\n| 2 | 1 | #P_notbii | |- ( -. ( ph <-> ps ) <-> -. ( ps <-> ph ) ) |\n| 3 |  | #P_df-xor | |- ( ( ph \\/_ ps ) <-> -. ( ph <-> ps ) ) |\n| 4 |  | #P_df-xor | |- ( ( ps \\/_ ph ) <-> -. ( ps <-> ph ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( ( ph \\/_ ps ) <-> ( ps \\/_ ph ) ) |",
+  "conclusion" : "#P_xorcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wxo", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wxo", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_df-xor", "#P_bicom", "#P_3bitr4i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-grp on Metamath](http://us.metamath.org/mpegif/df-grp.html)"
+  } ],
+  "names" : [ "df-grp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cgrp", "#T_wceq", "#T_crab--1", "#T_vg", "#T_crab--2", "#T_cmnd", "#T_crab--3", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vg", "#T_wrex--1", "#T_vm", "#T_wrex--2", "#T_cbs", "#T_cfv", "#T_vg", "#T_vm", "#T_cplusg", "#T_cfv", "#T_vg", "#T_va", "#T_wceq", "#T_c0g", "#T_cfv", "#T_vg", "#T_crab--4", "#T_va", "#T_vg", "#T_vm" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define class of all groups.  A group is a monoid ( ~ df-mnd ) whose internal operation is such that every element admits a left inverse (which can be proven to be a two-sided inverse).  Thus, a group ` G ` is an algebraic structure formed from a base set of elements (notated ` ( Base `` G ) ` per ~ df-base ) and an internal group operation (notated ` ( +g `` G ) ` per ~ df-plusg ).  The operation combines any two elements of the group base set and must satisfy the 4 group axioms: closure (the result of the group operation must always be a member of the base set, see ~ grpcl ), associativity (so ` ( ( a +g b ) +g c ) = ( a +g ( b +g c ) ) ` for any a, b, c, see ~ grpass ), identity (there must be an element ` e = ( 0g `` G ) ` such that ` e +g a = a +g e = a ` for any a), and inverse (for each element a in the base set, there must be an element ` b = invg a ` in the base set such that ` a +g b = b +g a = e ` ).  It can be proven that the identity element is unique ( ~ grpideu ).  Groups need not be commutative; a commutative group is an Abelian group (see ~ df-abl ).  Subgroups can often be formed from groups, see ~ df-subg .  An example of an (Abelian) group is the set of complex numbers ` CC ` over the group operation ` + ` (addition), as proven in ~ cnaddablx ; an Abelian group is a group as proven in ~ ablgrp .  Other structures include groups, including unital rings ( ~ df-ring ) and fields ( ~ df-field ).  (Contributed by NM, 17-Oct-2012.)  (Revised by Mario Carneiro, 6-Jan-2015.) ",
+  "statement" : "df-grp $p |- Grp = { g e. Mnd | A. a e. ( Base ` g ) E. m e. ( Base ` g ) ( m ( +g ` g ) a ) = ( 0g ` g ) } $.\n$d a g m $."
+}

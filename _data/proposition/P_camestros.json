@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See camestros on Metamath](http://us.metamath.org/mpegif/camestros.html)"
+  } ],
+  "names" : [ "camestros" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wex", "#T_vx", "#T_wch", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " \"Camestros\", one of the syllogisms of Aristotelian logic.  All ` ph ` is ` ps ` , no ` ch ` is ` ps ` , and ` ch ` exist, therefore some ` ch ` is not ` ph ` .  (In Aristotelian notation, AEO-2:  PaM and SeM therefore SoP.) For example, \"All horses have hooves\", \"No humans have hooves\", and humans exist, therefore \"Some humans are not horses\". (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler, 2-Sep-2016.) ",
+  "statement" : "camestros.maj $e |- A. x ( ph -> ps ) $.\ncamestros.min $e |- A. x ( ch -> -. ps ) $.\ncamestros.e $e |- E. x ch $.\ncamestros $p |- E. x ( ch /\\ -. ph ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See submcmn on Metamath](http://us.metamath.org/mpegif/submcmn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subgabl.h | |- H = ( G |`s S ) |\n| 2 | 1 | #P_submmnd | |- ( S e. ( SubMnd ` G ) -> H e. Mnd ) |\n| 3 | 1 | #P_subcmn | |- ( ( G e. CMnd /\\ H e. Mnd ) -> H e. CMnd ) |\n| 4 | 2, 3 | #P_sylan2 | |- ( ( G e. CMnd /\\ S e. ( SubMnd ` G ) ) -> H e. CMnd ) |",
+  "conclusion" : "#P_submcmn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_cG", "#T_cress", "#T_cS", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wi", "#T_cH", "#T_wcel", "#T_cmnd", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wa", "#T_cH", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cH", "#T_wcel", "#T_ccmn", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wa", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wi", "#T_cH", "#T_wcel", "#T_ccmn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subcmn", "#P_sylan2", "#P_submmnd" ]
+}

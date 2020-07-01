@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See constmap on Metamath](http://us.metamath.org/mpegif/constmap.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | constmap.1 | |- A e. _V |\n| 2 |  | constmap.3 | |- C e. _V |\n| 3 |  | #P_fconst6g | |- ( B e. C -> ( A X. { B } ) : A --> C ) |\n| 4 | 2, 1 | #P_elmap | |- ( ( A X. { B } ) e. ( C ^m A ) <-> ( A X. { B } ) : A --> C ) |\n| 5 | 3, 4 | #P_sylibr | |- ( B e. C -> ( A X. { B } ) e. ( C ^m A ) ) |",
+  "conclusion" : "#P_constmap",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wcel", "#T_cC", "#T_cmap", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cxp", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_cA", "#T_cxp", "#T_csn--1", "#T_cB", "#T_csn--2", "#T_wcel", "#T_cC", "#T_cmap", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylibr", "#P_elmap", "#P_fconst6g" ]
+}

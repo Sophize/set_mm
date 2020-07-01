@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See birthday on Metamath](http://us.metamath.org/mpegif/birthday.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "The Birthday Problem", "birthday" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_vf", "#T_wf--1", "#T_c1", "#T_cfz", "#T_cK", "#T_wf--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cab--3", "#T_cT", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_vf", "#T_wf1--1", "#T_c1", "#T_cfz", "#T_cK", "#T_wf1--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cab--3", "#T_cK", "#T_wceq", "#T_cdc", "#T_c2", "#T_c3", "#T_cN", "#T_wceq", "#T_cdc", "#T_cdc", "#T_c3", "#T_c6", "#T_c5", "#T_chash", "#T_cfv", "#T_cT", "#T_cdiv", "#T_chash", "#T_cfv", "#T_cS", "#T_clt", "#T_c1", "#T_cdiv", "#T_c2", "#T_cK", "#T_vf", "#T_cN", "#T_vf" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Birthday Problem.  There is a more than even chance that out of 23 people in a room, at least two of them have the same birthday. Mathematically, this is asserting that for ` K = 2 3 ` and ` N = 3 6 5 ` , fewer than half of the set of all functions from ` 1 ... K ` to ` 1 ... N ` are injective.  This is Metamath 100 proof #93.  (Contributed by Mario Carneiro, 17-Apr-2015.) ",
+  "statement" : "birthday.s $e |- S = { f | f : ( 1 ... K ) --> ( 1 ... N ) } $.\nbirthday.t $e |- T = { f | f : ( 1 ... K ) -1-1-> ( 1 ... N ) } $.\nbirthday.k $e |- K = ; 2 3 $.\nbirthday.n $e |- N = ; ; 3 6 5 $.\nbirthday $p |- ( ( # ` T ) / ( # ` S ) ) < ( 1 / 2 ) $.\n$d K f $.\n$d N f $."
+}

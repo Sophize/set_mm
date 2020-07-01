@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eel000cT on Metamath](http://us.metamath.org/mpegif/eel000cT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eel000cT.1 | |- ph |\n| 2 |  | eel000cT.2 | |- ps |\n| 3 |  | eel000cT.3 | |- ch |\n| 4 |  | eel000cT.4 | |- ( ( ph /\\ ps /\\ ch ) -> th ) |\n| 5 | 1, 4 | #P_mp3an1 | |- ( ( ps /\\ ch ) -> th ) |\n| 6 | 2, 5 | #P_mpan | |- ( ch -> th ) |\n| 7 | 3, 6 | #P_ax-mp | |- th |\n| 8 | 7 | #P_a1i | |- ( T. -> th ) |",
+  "conclusion" : "#P_eel000cT",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wps", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wth", "#T_wth", "#T_wtru", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_mpan", "#P_mp3an1", "#P_a1i" ]
+}

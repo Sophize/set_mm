@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See karatsuba on Metamath](http://us.metamath.org/mpegif/karatsuba.html)"
+  } ],
+  "names" : [ "karatsuba" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cS", "#T_wcel", "#T_cn0", "#T_cM", "#T_wcel", "#T_cn0", "#T_cA", "#T_cmul", "#T_cC", "#T_wceq", "#T_cR", "#T_cB", "#T_cmul", "#T_cD", "#T_wceq", "#T_cT", "#T_cA", "#T_caddc", "#T_cB", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_wceq", "#T_cR", "#T_caddc", "#T_cS", "#T_caddc", "#T_cT", "#T_cA", "#T_cmul", "#T_c10", "#T_cexp", "#T_cM", "#T_caddc", "#T_cB", "#T_wceq", "#T_cX", "#T_cC", "#T_cmul", "#T_c10", "#T_cexp", "#T_cM", "#T_caddc", "#T_cD", "#T_wceq", "#T_cY", "#T_cR", "#T_cmul", "#T_c10", "#T_cexp", "#T_cM", "#T_caddc", "#T_cS", "#T_wceq", "#T_cW", "#T_cW", "#T_cmul", "#T_c10", "#T_cexp", "#T_cM", "#T_caddc", "#T_cT", "#T_wceq", "#T_cZ", "#T_cX", "#T_cmul", "#T_cY", "#T_wceq", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Karatsuba multiplication algorithm.  If ` X ` and ` Y ` are decomposed into two groups of digits of length ` M ` (only the lower group is known to be this size but the algorithm is most efficient when the partition is chosen near the middle of the digit string), then ` X Y ` can be written in three groups of digits, where each group needs only one multiplication.  Thus, we can halve both inputs with only three multiplications on the smaller operands, yielding an asymptotic improvement of n^(log_2 3) instead of n^2 for the \"naive\" algorithm ~ decmul1c .  (Contributed by Mario Carneiro, 16-Jul-2015.) ",
+  "statement" : "karatsuba.a $e |- A e. NN0 $.\nkaratsuba.b $e |- B e. NN0 $.\nkaratsuba.c $e |- C e. NN0 $.\nkaratsuba.d $e |- D e. NN0 $.\nkaratsuba.s $e |- S e. NN0 $.\nkaratsuba.m $e |- M e. NN0 $.\nkaratsuba.r $e |- ( A x. C ) = R $.\nkaratsuba.t $e |- ( B x. D ) = T $.\nkaratsuba.e $e |- ( ( A + B ) x. ( C + D ) ) = ( ( R + S ) + T ) $.\nkaratsuba.x $e |- ( ( A x. ( 10 ^ M ) ) + B ) = X $.\nkaratsuba.y $e |- ( ( C x. ( 10 ^ M ) ) + D ) = Y $.\nkaratsuba.w $e |- ( ( R x. ( 10 ^ M ) ) + S ) = W $.\nkaratsuba.z $e |- ( ( W x. ( 10 ^ M ) ) + T ) = Z $.\nkaratsuba $p |- ( X x. Y ) = Z $."
+}

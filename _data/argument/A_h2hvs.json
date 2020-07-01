@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See h2hvs on Metamath](http://us.metamath.org/mpegif/h2hvs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | h2h.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 |  | h2h.2 | |- U e. NrmCVec |\n| 3 |  | h2h.4 | |- ~H = ( BaseSet ` U ) |\n| 4 |  | #P_df-hvsub | |- -h = ( x e. ~H , y e. ~H |-> ( x +h ( -u 1 .h y ) ) ) |\n| 5 | 1, 2 | #P_h2hva | |- +h = ( +v ` U ) |\n| 6 | 1, 2 | #P_h2hsm | |- .h = ( .sOLD ` U ) |\n| 7 |  | #P_eqid | |- ( -v ` U ) = ( -v ` U ) |\n| 8 | 3, 5, 6, 7 | #P_nvmfval | |- ( U e. NrmCVec -> ( -v ` U ) = ( x e. ~H , y e. ~H |-> ( x +h ( -u 1 .h y ) ) ) ) |\n| 9 | 2, 8 | #P_ax-mp | |- ( -v ` U ) = ( x e. ~H , y e. ~H |-> ( x +h ( -u 1 .h y ) ) ) |\n| 10 | 4, 9 | #P_eqtr4i | |- -h = ( -v ` U ) |",
+  "conclusion" : "#P_h2hvs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cU", "#T_wcel", "#T_cnv", "#T_chil", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cmv", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_chil", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_chil", "#T_cmpt2--4", "#T_vx.wal", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_cva", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_csm", "#T_wceq", "#T_cns", "#T_cfv", "#T_cU", "#T_cnsb", "#T_cfv", "#T_cU", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cnsb", "#T_cfv", "#T_cU", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_chil", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_chil", "#T_cmpt2--4", "#T_vx.wal", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_cnsb", "#T_cfv", "#T_cU", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_chil", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_chil", "#T_cmpt2--4", "#T_vx.wal", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_cmv", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-hvsub", "#P_eqtr4i", "#P_eqid", "#P_ax-mp", "#P_nvmfval", "#P_h2hva", "#P_h2hsm" ]
+}

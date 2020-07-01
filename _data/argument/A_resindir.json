@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resindir on Metamath](http://us.metamath.org/mpegif/resindir.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inindir | |- ( ( A i^i B ) i^i ( C X. _V ) ) = ( ( A i^i ( C X. _V ) ) i^i ( B i^i ( C X. _V ) ) ) |\n| 2 |  | #P_df-res | |- ( ( A i^i B ) |` C ) = ( ( A i^i B ) i^i ( C X. _V ) ) |\n| 3 |  | #P_df-res | |- ( A |` C ) = ( A i^i ( C X. _V ) ) |\n| 4 |  | #P_df-res | |- ( B |` C ) = ( B i^i ( C X. _V ) ) |\n| 5 | 3, 4 | #P_ineq12i | |- ( ( A |` C ) i^i ( B |` C ) ) = ( ( A i^i ( C X. _V ) ) i^i ( B i^i ( C X. _V ) ) ) |\n| 6 | 1, 2, 5 | #P_3eqtr4i | |- ( ( A i^i B ) |` C ) = ( ( A |` C ) i^i ( B |` C ) ) |",
+  "conclusion" : "#P_resindir",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cB.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_cres", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_cres", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cin", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cxp", "#T_cvv", "#T_cA", "#T_cin", "#T_cB", "#T_cres", "#T_cC", "#T_wceq", "#T_cA", "#T_cres", "#T_cC", "#T_cin", "#T_cB", "#T_cres", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_df-res", "#P_ineq12i", "#P_inindir" ]
+}

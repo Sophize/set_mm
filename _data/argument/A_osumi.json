@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See osumi on Metamath](http://us.metamath.org/mpegif/osumi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | osum.1 | |- A e. CH |\n| 2 |  | osum.2 | |- B e. CH |\n| 3 | 1 | #P_a1i | |- ( A C_ ( _|_ ` B ) -> A e. CH ) |\n| 4 | 2 | #P_a1i | |- ( A C_ ( _|_ ` B ) -> B e. CH ) |\n| 5 | 1, 2 | #P_chsscon2i | |- ( A C_ ( _|_ ` B ) <-> B C_ ( _|_ ` A ) ) |\n| 6 | 5 | #P_biimpi | |- ( A C_ ( _|_ ` B ) -> B C_ ( _|_ ` A ) ) |\n| 7 | 3, 4, 6 | #P_chscl | |- ( A C_ ( _|_ ` B ) -> ( A +H B ) e. CH ) |\n| 8 | 1 | #P_chshii | |- A e. SH |\n| 9 | 2 | #P_chshii | |- B e. SH |\n| 10 | 8, 9 | #P_shjshseli | |- ( ( A +H B ) e. CH <-> ( A +H B ) = ( A vH B ) ) |\n| 11 | 7, 10 | #P_sylib | |- ( A C_ ( _|_ ` B ) -> ( A +H B ) = ( A vH B ) ) |",
+  "conclusion" : "#P_osumi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cph", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_cph", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wb", "#T_cA.wceq", "#T_cph", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_chj", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cort", "#T_cfv", "#T_cB", "#T_wi", "#T_cA", "#T_cph", "#T_cB", "#T_wceq", "#T_cA", "#T_chj", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chshii", "#P_chsscon2i", "#P_sylib", "#P_chscl", "#P_a1i", "#P_biimpi", "#P_shjshseli" ]
+}

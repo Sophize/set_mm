@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0mod on Metamath](http://us.metamath.org/mpegif/0mod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0re | |- 0 e. RR |\n| 2 | 1 | #P_jctl | |- ( N e. RR+ -> ( 0 e. RR /\\ N e. RR+ ) ) |\n| 3 |  | #P_rpgt0 | |- ( N e. RR+ -> 0 < N ) |\n| 4 |  | #P_0le0 | |- 0 <_ 0 |\n| 5 | 3, 4 | #P_jctil | |- ( N e. RR+ -> ( 0 <_ 0 /\\ 0 < N ) ) |\n| 6 |  | #P_modid | |- ( ( ( 0 e. RR /\\ N e. RR+ ) /\\ ( 0 <_ 0 /\\ 0 < N ) ) -> ( 0 mod N ) = 0 ) |\n| 7 | 2, 5, 6 | #P_syl2anc | |- ( N e. RR+ -> ( 0 mod N ) = 0 ) |",
+  "conclusion" : "#P_0mod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_crp", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_cc0", "#T_cle", "#T_cc0", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cc0", "#T_cle", "#T_cc0", "#T_wa", "#T_cc0", "#T_clt", "#T_cN", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_crp", "#T_wa", "#T_cc0", "#T_cle", "#T_cc0", "#T_wa", "#T_cc0", "#T_clt", "#T_cN", "#T_wi", "#T_cc0", "#T_cmo", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wcel", "#T_crp", "#T_wi", "#T_cc0", "#T_cmo", "#T_cN", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jctil", "#P_rpgt0", "#P_syl2anc", "#P_0le0", "#P_modid", "#P_jctl", "#P_0re" ]
+}

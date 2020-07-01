@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cdeqeq on Metamath](http://us.metamath.org/mpegif/cdeqeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cdeqeq.1 | |- CondEq ( x = y -> A = B ) |\n| 2 |  | cdeqeq.2 | |- CondEq ( x = y -> C = D ) |\n| 3 | 1 | #P_cdeqri | |- ( x = y -> A = B ) |\n| 4 | 2 | #P_cdeqri | |- ( x = y -> C = D ) |\n| 5 | 3, 4 | #P_eqeq12d | |- ( x = y -> ( A = C <-> B = D ) ) |\n| 6 | 5 | #P_cdeqi | |- CondEq ( x = y -> ( A = C <-> B = D ) ) |",
+  "conclusion" : "#P_cdeqeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_cA", "#T_wceq", "#T_cB", "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_cC", "#T_wceq", "#T_cD", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_cA", "#T_wceq", "#T_cC", "#T_wb", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_cdeqi", "#P_cdeqri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See scaffn on Metamath](http://us.metamath.org/mpegif/scaffn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | scaffval.b | |- B = ( Base ` W ) |\n| 2 |  | scaffval.f | |- F = ( Scalar ` W ) |\n| 3 |  | scaffval.k | |- K = ( Base ` F ) |\n| 4 |  | scaffval.a | |- .xb = ( .sf ` W ) |\n| 5 |  | #P_eqid | |- ( .s ` W ) = ( .s ` W ) |\n| 6 | 1, 2, 3, 4, 5 | #P_scaffval | |- .xb = ( x e. K , y e. B |-> ( x ( .s ` W ) y ) ) |\n| 7 |  | #P_ovex | |- ( x ( .s ` W ) y ) e. _V |\n| 8 | 6, 7 | #P_fnmpt2i | |- .xb Fn ( K X. B ) |",
+  "conclusion" : "#P_scaffn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_c.xb", "#T_wceq", "#T_cscaf", "#T_cfv", "#T_cW", "#T_cvsca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_c.xb", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cK", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cB.wceq", "#T_cmpt2--4", "#T_vx.wal", "#T_cvsca", "#T_cfv", "#T_cW", "#T_vy.tru", "#T_vx.wal", "#T_cvsca", "#T_cfv", "#T_cW", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_c.xb", "#T_wfn", "#T_cK", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_eqid", "#P_scaffval", "#P_fnmpt2i" ]
+}

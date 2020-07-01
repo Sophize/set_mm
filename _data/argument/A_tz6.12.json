@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tz6.12 on Metamath](http://us.metamath.org/mpegif/tz6.12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-br | |- ( A F y <-> <. A , y >. e. F ) |\n| 2 | 1 | #P_eubii | |- ( E! y A F y <-> E! y <. A , y >. e. F ) |\n| 3 |  | #P_tz6.12-1 | |- ( ( A F y /\\ E! y A F y ) -> ( F ` A ) = y ) |\n| 4 | 1, 2, 3 | #P_syl2anbr | |- ( ( <. A , y >. e. F /\\ E! y <. A , y >. e. F ) -> ( F ` A ) = y ) |",
+  "conclusion" : "#P_tz6.12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cF", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wb", "#T_weu", "#T_vy.tru", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cF", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wa", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vy.tru", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wa", "#T_weu", "#T_vy", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_syl2anbr", "#P_tz6.12-1", "#P_eubii" ]
+}

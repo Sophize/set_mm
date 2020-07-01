@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-relexp on Metamath](http://us.metamath.org/mpegif/df-relexp.html)"
+  } ],
+  "names" : [ "df-relexp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crelexp", "#T_wceq", "#T_vr", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_cseq--1", "#T_cc0", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx", "#T_ccom", "#T_vr", "#T_cseq--2", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cid", "#T_cres", "#T_cuni", "#T_cuni", "#T_vr", "#T_cfv", "#T_vn", "#T_vn", "#T_vr", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definition of repeated composition of a relation with itself, aka relation exponentiation.  (Contributed by Drahflow, 12-Nov-2015.) ",
+  "statement" : "df-relexp $p |- ^r = ( r e. _V , n e. NN0 |-> ( seq 0 ( ( x e. _V , y e. _V |-> ( x o. r ) ) , ( z e. _V |-> ( _I |` U. U. r ) ) ) ` n ) ) $.\n$d n r x y z $."
+}

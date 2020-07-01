@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sb7f on Metamath](http://us.metamath.org/mpegif/sb7f.html)"
+  } ],
+  "names" : [ "sb7f" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy", "#T_wa", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_wph", "#T_vx", "#T_vz", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " This version of ~ dfsb7 does not require that ` ph ` and ` z ` be distinct.  This permits it to be used as a definition for substitution in a formalization that omits the logically redundant axiom ~ ax-17 i.e. that doesn't have the concept of a variable not occurring in a wff. ( ~ df-sb is also suitable, but its mixing of free and bound variables is distasteful to some logicians.)  (Contributed by NM, 26-Jul-2006.) (Proof shortened by Andrew Salmon, 25-May-2011.) ",
+  "statement" : "sb7f.1 $e |- ( ph -> A. z ph ) $.\nsb7f $p |- ( [ y / x ] ph <-> E. z ( z = y /\\ E. x ( x = z /\\ ph ) ) ) $.\n$d x z $.\n$d y z $."
+}

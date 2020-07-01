@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbmpt2 on Metamath](http://us.metamath.org/mpegif/csbmpt2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_csbmpt12 | |- ( A e. V -> [_ A / x ]_ ( y e. Y |-> Z ) = ( y e. [_ A / x ]_ Y |-> [_ A / x ]_ Z ) ) |\n| 2 |  | #P_csbconstg | |- ( A e. V -> [_ A / x ]_ Y = Y ) |\n| 3 | 2 | #P_mpteq1d | |- ( A e. V -> ( y e. [_ A / x ]_ Y |-> [_ A / x ]_ Z ) = ( y e. Y |-> [_ A / x ]_ Z ) ) |\n| 4 | 1, 3 | #P_eqtrd | |- ( A e. V -> [_ A / x ]_ ( y e. Y |-> Z ) = ( y e. Y |-> [_ A / x ]_ Z ) ) |",
+  "conclusion" : "#P_csbmpt2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_vy.tru", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_cZ", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cY", "#T_cmpt--2", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cZ", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cY", "#T_wceq", "#T_cY", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vy.tru", "#T_cmpt--1", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cY", "#T_cmpt--2", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cZ", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cZ", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_vy", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_cZ", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_csbconstg", "#P_mpteq1d", "#P_csbmpt12" ]
+}

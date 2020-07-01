@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsettps on Metamath](http://us.metamath.org/mpegif/tsettps.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tsettps.a | |- A = ( Base ` K ) |\n| 2 |  | tsettps.j | |- J = ( TopSet ` K ) |\n| 3 | 1, 2 | #P_topontopn | |- ( J e. ( TopOn ` A ) -> J = ( TopOpen ` K ) ) |\n| 4 |  | #P_id | |- ( J e. ( TopOn ` A ) -> J e. ( TopOn ` A ) ) |\n| 5 | 3, 4 | #P_eqeltrrd | |- ( J e. ( TopOn ` A ) -> ( TopOpen ` K ) e. ( TopOn ` A ) ) |\n| 6 |  | #P_eqid | |- ( TopOpen ` K ) = ( TopOpen ` K ) |\n| 7 | 1, 6 | #P_istps | |- ( K e. TopSp <-> ( TopOpen ` K ) e. ( TopOn ` A ) ) |\n| 8 | 5, 7 | #P_sylibr | |- ( J e. ( TopOn ` A ) -> K e. TopSp ) |",
+  "conclusion" : "#P_tsettps",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cJ", "#T_wceq", "#T_cts", "#T_cfv", "#T_cK", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_wi", "#T_ctopn", "#T_cfv", "#T_cK", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ctps", "#T_wb", "#T_ctopn", "#T_cfv", "#T_cK", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cA", "#T_wi", "#T_cK", "#T_wcel", "#T_ctps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_eqid", "#P_topontopn", "#P_sylibr", "#P_id", "#P_istps" ]
+}

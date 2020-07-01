@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsummhm on Metamath](http://us.metamath.org/mpegif/gsummhm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gsummhm.b | |- B = ( Base ` G ) |\n| 2 |  | gsummhm.z | |- .0. = ( 0g ` G ) |\n| 3 |  | gsummhm.g | |- ( ph -> G e. CMnd ) |\n| 4 |  | gsummhm.h | |- ( ph -> H e. Mnd ) |\n| 5 |  | gsummhm.a | |- ( ph -> A e. V ) |\n| 6 |  | gsummhm.k | |- ( ph -> K e. ( G MndHom H ) ) |\n| 7 |  | gsummhm.f | |- ( ph -> F : A --> B ) |\n| 8 |  | gsummhm.w | |- ( ph -> F finSupp .0. ) |\n| 9 |  | #P_eqid | |- ( Cntz ` G ) = ( Cntz ` G ) |\n| 10 |  | #P_cmnmnd | |- ( G e. CMnd -> G e. Mnd ) |\n| 11 | 3, 10 | #P_syl | |- ( ph -> G e. Mnd ) |\n| 12 | 1, 9, 3, 7 | #P_cntzcmnf | |- ( ph -> ran F C_ ( ( Cntz ` G ) ` ran F ) ) |\n| 13 | 1, 9, 11, 4, 5, 6, 7, 12, 2, 8 | #P_gsumzmhm | |- ( ph -> ( H gsum ( K o. F ) ) = ( K ` ( G gsum F ) ) ) |",
+  "conclusion" : "#P_gsummhm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cH", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cG", "#T_cmhm", "#T_cH", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_c.0", "#T_ccntz", "#T_cfv", "#T_cG", "#T_wceq", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cmnd", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_ccntz", "#T_cfv", "#T_cG", "#T_cfv", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cH", "#T_cgsu", "#T_cK", "#T_ccom", "#T_cF", "#T_wceq", "#T_cK", "#T_cfv", "#T_cG", "#T_cgsu", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_cntzcmnf", "#P_syl", "#P_gsumzmhm", "#P_cmnmnd" ]
+}

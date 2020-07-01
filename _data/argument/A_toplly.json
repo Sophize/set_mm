@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See toplly on Metamath](http://us.metamath.org/mpegif/toplly.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nj x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_llytop | |- ( j e. Locally Top -> j e. Top ) |\n| 2 | 1 | #P_ssriv | |- Locally Top C_ Top |\n| 3 |  | #P_resttop | |- ( ( j e. Top /\\ x e. j ) -> ( j |`t x ) e. Top ) |\n| 4 | 3 | #P_adantl | |- ( ( T. /\\ ( j e. Top /\\ x e. j ) ) -> ( j |`t x ) e. Top ) |\n| 5 |  | #P_ssid | |- Top C_ Top |\n| 6 | 5 | #P_a1i | |- ( T. -> Top C_ Top ) |\n| 7 | 4, 6 | #P_restlly | |- ( T. -> Top C_ Locally Top ) |\n| 8 | 7 | #P_trud | |- Top C_ Locally Top |\n| 9 | 2, 8 | #P_eqssi | |- Locally Top = Top |",
+  "conclusion" : "#P_toplly",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vj", "#T_vx", "#T_vj", "#T_wcel", "#T_clly", "#T_ctop", "#T_wi", "#T_vj", "#T_wcel", "#T_ctop", "#T_clly", "#T_ctop", "#T_wss", "#T_ctop", "#T_vj", "#T_wcel", "#T_ctop", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_wi", "#T_vj", "#T_crest", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_wtru", "#T_wa", "#T_vj", "#T_wcel", "#T_ctop", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_vj", "#T_wi", "#T_vj", "#T_crest", "#T_vx.wal", "#T_wcel", "#T_ctop", "#T_ctop", "#T_wss", "#T_ctop", "#T_wtru", "#T_wi", "#T_ctop", "#T_wss", "#T_ctop", "#T_wtru", "#T_wi", "#T_ctop", "#T_wss", "#T_clly", "#T_ctop", "#T_ctop", "#T_wss", "#T_clly", "#T_ctop", "#T_clly", "#T_ctop", "#T_wceq", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_llytop", "#P_trud", "#P_ssid", "#P_adantl", "#P_restlly", "#P_eqssi", "#P_resttop", "#P_a1i", "#P_ssriv" ]
+}

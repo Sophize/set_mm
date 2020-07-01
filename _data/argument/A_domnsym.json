@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See domnsym on Metamath](http://us.metamath.org/mpegif/domnsym.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_brdom2 | |- ( A ~<_ B <-> ( A ~< B \\/ A ~~ B ) ) |\n| 2 |  | #P_sdomnsym | |- ( A ~< B -> -. B ~< A ) |\n| 3 |  | #P_sdomnen | |- ( B ~< A -> -. B ~~ A ) |\n| 4 |  | #P_ensym | |- ( A ~~ B -> B ~~ A ) |\n| 5 | 3, 4 | #P_nsyl3 | |- ( A ~~ B -> -. B ~< A ) |\n| 6 | 2, 5 | #P_jaoi | |- ( ( A ~< B \\/ A ~~ B ) -> -. B ~< A ) |\n| 7 | 1, 6 | #P_sylbi | |- ( A ~<_ B -> -. B ~< A ) |",
+  "conclusion" : "#P_domnsym",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wo", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_csdm", "#T_cA.wceq", "#T_cA", "#T_cdom", "#T_cB", "#T_wi", "#T_wn", "#T_cB", "#T_csdm", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nsyl3", "#P_ensym", "#P_jaoi", "#P_sdomnsym", "#P_brdom2", "#P_sdomnen", "#P_sylbi" ]
+}

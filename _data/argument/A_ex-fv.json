@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ex-fv on Metamath](http://us.metamath.org/mpegif/ex-fv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq1 | |- ( F = { <. 2 , 6 >. , <. 3 , 9 >. } -> ( F ` 3 ) = ( { <. 2 , 6 >. , <. 3 , 9 >. } ` 3 ) ) |\n| 2 |  | #P_2re | |- 2 e. RR |\n| 3 |  | #P_2lt3 | |- 2 < 3 |\n| 4 | 2, 3 | #P_ltneii | |- 2 =/= 3 |\n| 5 |  | #P_3ex | |- 3 e. _V |\n| 6 |  | #P_9re | |- 9 e. RR |\n| 7 | 6 | #P_elexi | |- 9 e. _V |\n| 8 | 5, 7 | #P_fvpr2 | |- ( 2 =/= 3 -> ( { <. 2 , 6 >. , <. 3 , 9 >. } ` 3 ) = 9 ) |\n| 9 | 4, 8 | #P_ax-mp | |- ( { <. 2 , 6 >. , <. 3 , 9 >. } ` 3 ) = 9 |\n| 10 | 1, 9 | #P_syl6eq | |- ( F = { <. 2 , 6 >. , <. 3 , 9 >. } -> ( F ` 3 ) = 9 ) |",
+  "conclusion" : "#P_ex-fv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c3", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cpr--3", "#T_wi", "#T_cF", "#T_cfv", "#T_c3", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c3", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cpr--3", "#T_cfv", "#T_c3", "#T_c2", "#T_wcel", "#T_cr", "#T_c2", "#T_clt", "#T_c3", "#T_c2", "#T_wne", "#T_c3", "#T_c3", "#T_wcel", "#T_cvv", "#T_c9", "#T_wcel", "#T_cr", "#T_c9", "#T_wcel", "#T_cvv", "#T_c2", "#T_wne", "#T_c3", "#T_wi", "#T_cpr--1", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c3", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cpr--3", "#T_cfv", "#T_c3", "#T_wceq", "#T_c9", "#T_cpr--1", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c3", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cpr--3", "#T_cfv", "#T_c3", "#T_wceq", "#T_c9", "#T_cF", "#T_wceq", "#T_cpr--1", "#T_cop--1", "#T_c2", "#T_cop--2", "#T_c6", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_c3", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cpr--3", "#T_wi", "#T_cF", "#T_cfv", "#T_c3", "#T_wceq", "#T_c9" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_fvpr2", "#P_elexi", "#P_9re", "#P_3ex", "#P_2lt3", "#P_ltneii", "#P_fveq1", "#P_2re", "#P_syl6eq" ]
+}

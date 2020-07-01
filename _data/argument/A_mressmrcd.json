@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mressmrcd on Metamath](http://us.metamath.org/mpegif/mressmrcd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mressmrcd.1 | |- ( ph -> A e. ( Moore ` X ) ) |\n| 2 |  | mressmrcd.2 | |- N = ( mrCls ` A ) |\n| 3 |  | mressmrcd.3 | |- ( ph -> S C_ ( N ` T ) ) |\n| 4 |  | mressmrcd.4 | |- ( ph -> T C_ S ) |\n| 5 | 1, 2 | #P_mrcssvd | |- ( ph -> ( N ` T ) C_ X ) |\n| 6 | 1, 2, 3, 5 | #P_mrcssd | |- ( ph -> ( N ` S ) C_ ( N ` ( N ` T ) ) ) |\n| 7 | 3, 5 | #P_sstrd | |- ( ph -> S C_ X ) |\n| 8 | 4, 7 | #P_sstrd | |- ( ph -> T C_ X ) |\n| 9 | 1, 2, 8 | #P_mrcidmd | |- ( ph -> ( N ` ( N ` T ) ) = ( N ` T ) ) |\n| 10 | 6, 9 | #P_sseqtrd | |- ( ph -> ( N ` S ) C_ ( N ` T ) ) |\n| 11 | 1, 2, 4, 7 | #P_mrcssd | |- ( ph -> ( N ` T ) C_ ( N ` S ) ) |\n| 12 | 10, 11 | #P_eqssd | |- ( ph -> ( N ` S ) = ( N ` T ) ) |",
+  "conclusion" : "#P_mressmrcd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_cT", "#T_wss", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cT", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cS", "#T_wss", "#T_cN", "#T_cfv", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cT", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cN", "#T_cfv", "#T_cT", "#T_wceq", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cS", "#T_wss", "#T_cN", "#T_cfv", "#T_cT", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cT", "#T_wss", "#T_cN", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cS", "#T_wceq", "#T_cN", "#T_cfv", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseqtrd", "#P_mrcssd", "#P_sstrd", "#P_eqssd", "#P_mrcidmd", "#P_mrcssvd" ]
+}

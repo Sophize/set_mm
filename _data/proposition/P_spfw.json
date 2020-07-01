@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spfw on Metamath](http://us.metamath.org/mpegif/spfw.html)"
+  } ],
+  "names" : [ "spfw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wal", "#T_vx", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wn", "#T_wph", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Weak version of ~ sp .  Uses only Tarski's FOL axiom schemes.  Lemma 9 of [KalishMontague] p. 87.  This may be the best we can do with minimal distinct variable conditions.  (Contributed by NM, 19-Apr-2017.) ",
+  "statement" : "spfw.1 $e |- ( -. ps -> A. x -. ps ) $.\nspfw.2 $e |- ( A. x ph -> A. y A. x ph ) $.\nspfw.3 $e |- ( -. ph -> A. y -. ph ) $.\nspfw.4 $e |- ( x = y -> ( ph <-> ps ) ) $.\nspfw $p |- ( A. x ph -> ph ) $.\n$d x y $."
+}

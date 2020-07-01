@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frins on Metamath](http://us.metamath.org/mpegif/frins.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frins.1 | |- R Fr A |\n| 2 |  | frins.2 | |- R Se A |\n| 3 |  | frins.3 | |- ( y e. A -> ( A. z e. Pred ( R , A , y ) [. z / y ]. ph -> ph ) ) |\n| 4 | 3 | #P_frinsg | |- ( ( R Fr A /\\ R Se A ) -> A. y e. A ph ) |\n| 5 | 1, 2, 4 | #P_mp2an | |- A. y e. A ph |\n| 6 | 5 | #P_rspec | |- ( y e. A -> ph ) |",
+  "conclusion" : "#P_frins",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wfr", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_vy", "#T_wsbc--1", "#T_vz", "#T_wsbc--2", "#T_vy", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wph", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wse", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_vy", "#T_wcel", "#T_cA", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_frinsg", "#P_rspec" ]
+}

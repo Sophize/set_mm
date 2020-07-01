@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See irredn1 on Metamath](http://us.metamath.org/mpegif/irredn1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | irredn0.i | |- I = ( Irred ` R ) |\n| 2 |  | irredn1.o | |- .1. = ( 1r ` R ) |\n| 3 |  | #P_eqid | |- ( Unit ` R ) = ( Unit ` R ) |\n| 4 | 1, 3 | #P_irrednu | |- ( X e. I -> -. X e. ( Unit ` R ) ) |\n| 5 | 3, 2 | #P_1unit | |- ( R e. Ring -> .1. e. ( Unit ` R ) ) |\n| 6 |  | #P_eleq1 | |- ( X = .1. -> ( X e. ( Unit ` R ) <-> .1. e. ( Unit ` R ) ) ) |\n| 7 | 5, 6 | #P_syl5ibrcom | |- ( R e. Ring -> ( X = .1. -> X e. ( Unit ` R ) ) ) |\n| 8 | 7 | #P_necon3bd | |- ( R e. Ring -> ( -. X e. ( Unit ` R ) -> X =/= .1. ) ) |\n| 9 | 4, 8 | #P_syl5 | |- ( R e. Ring -> ( X e. I -> X =/= .1. ) ) |\n| 10 | 9 | #P_imp | |- ( ( R e. Ring /\\ X e. I ) -> X =/= .1. ) |",
+  "conclusion" : "#P_irredn1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cir", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cui", "#T_cfv", "#T_cR", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cI", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c.1", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_c.1", "#T_wi", "#T_cX", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_wb", "#T_c.1", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cX", "#T_wceq", "#T_c.1", "#T_wi", "#T_cX", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_wi", "#T_cX", "#T_wne", "#T_c.1", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cX", "#T_wcel", "#T_cI", "#T_wi", "#T_cX", "#T_wne", "#T_c.1", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cI", "#T_wi", "#T_cX", "#T_wne", "#T_c.1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_1unit", "#P_irrednu", "#P_eleq1", "#P_imp", "#P_syl5ibrcom", "#P_necon3bd", "#P_syl5" ]
+}

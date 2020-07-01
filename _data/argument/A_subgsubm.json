@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subgsubm on Metamath](http://us.metamath.org/mpegif/subgsubm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_subgrcl | |- ( S e. ( SubGrp ` G ) -> G e. Grp ) |\n| 2 |  | #P_eqid | |- ( invg ` G ) = ( invg ` G ) |\n| 3 | 2 | #P_issubg3 | |- ( G e. Grp -> ( S e. ( SubGrp ` G ) <-> ( S e. ( SubMnd ` G ) /\\ A. x e. S ( ( invg ` G ) ` x ) e. S ) ) ) |\n| 4 | 1, 3 | #P_syl | |- ( S e. ( SubGrp ` G ) -> ( S e. ( SubGrp ` G ) <-> ( S e. ( SubMnd ` G ) /\\ A. x e. S ( ( invg ` G ) ` x ) e. S ) ) ) |\n| 5 | 4 | #P_ibi | |- ( S e. ( SubGrp ` G ) -> ( S e. ( SubMnd ` G ) /\\ A. x e. S ( ( invg ` G ) ` x ) e. S ) ) |\n| 6 | 5 | #P_simpld | |- ( S e. ( SubGrp ` G ) -> S e. ( SubMnd ` G ) ) |",
+  "conclusion" : "#P_subgsubm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_cminusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wi", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wb", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wb", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_cminusg", "#T_cfv", "#T_cG", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cS", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simpld", "#P_issubg3", "#P_ibi", "#P_subgrcl", "#P_syl" ]
+}

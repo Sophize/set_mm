@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equivcfil on Metamath](http://us.metamath.org/mpegif/equivcfil.html)"
+  } ],
+  "names" : [ "equivcfil" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crp", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cC", "#T_vy", "#T_cle", "#T_cR", "#T_cmul", "#T_vx", "#T_cD", "#T_vy", "#T_wph", "#T_wi", "#T_ccfil", "#T_cfv", "#T_cD", "#T_wss", "#T_ccfil", "#T_cfv", "#T_cC", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the metric ` D ` is \"strongly finer\" than ` C ` (meaning that there is a positive real constant ` R ` such that ` C ( x , y ) <_ R x. D ( x , y ) ` ), all the ` D ` -Cauchy filters are also ` C ` -Cauchy.  (Using this theorem twice in each direction states that if two metrics are strongly equivalent, then they have the same Cauchy sequences.)  (Contributed by Mario Carneiro, 14-Sep-2015.) ",
+  "statement" : "equivcau.1 $e |- ( ph -> C e. ( Met ` X ) ) $.\nequivcau.2 $e |- ( ph -> D e. ( Met ` X ) ) $.\nequivcau.3 $e |- ( ph -> R e. RR+ ) $.\nequivcau.4 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x C y ) <_ ( R x. ( x D y ) ) ) $.\nequivcfil $p |- ( ph -> ( CauFil ` D ) C_ ( CauFil ` C ) ) $.\n$d C x y $.\n$d D x y $.\n$d R x y $.\n$d X x y $.\n$d ph x y $."
+}

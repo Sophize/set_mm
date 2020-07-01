@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.61neOLD on Metamath](http://us.metamath.org/mpegif/pm2.61neOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm2.61ne.1 | |- ( A = B -> ( ps <-> ch ) ) |\n| 2 |  | pm2.61ne.2 | |- ( ( ph /\\ A =/= B ) -> ps ) |\n| 3 |  | pm2.61ne.3 | |- ( ph -> ch ) |\n| 4 | 2 | #P_expcom | |- ( A =/= B -> ( ph -> ps ) ) |\n| 5 |  | #P_nne | |- ( -. A =/= B <-> A = B ) |\n| 6 | 3, 1 | #P_syl5ibr | |- ( A = B -> ( ph -> ps ) ) |\n| 7 | 5, 6 | #P_sylbi | |- ( -. A =/= B -> ( ph -> ps ) ) |\n| 8 | 4, 7 | #P_pm2.61i | |- ( ph -> ps ) |\n\\\n Obsolete proof of ~ pm2.61ne as of 25-Nov-2019.  (Contributed by NM, 24-May-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_pm2.61ne",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wa", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_expcom", "#P_syl5ibr", "#P_nne", "#P_sylbi", "#P_pm2.61i" ]
+}

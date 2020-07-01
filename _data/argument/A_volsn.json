@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See volsn on Metamath](http://us.metamath.org/mpegif/volsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_snmbl | |- ( A e. RR -> { A } e. dom vol ) |\n| 2 |  | #P_mblvol | |- ( { A } e. dom vol -> ( vol ` { A } ) = ( vol* ` { A } ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. RR -> ( vol ` { A } ) = ( vol* ` { A } ) ) |\n| 4 |  | #P_ovolsn | |- ( A e. RR -> ( vol* ` { A } ) = 0 ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A e. RR -> ( vol ` { A } ) = 0 ) |",
+  "conclusion" : "#P_volsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cdm", "#T_cvol", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wi", "#T_cvol", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_covol", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cvol", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_covol", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_covol", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cvol", "#T_cfv", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_ovolsn", "#P_syl", "#P_snmbl", "#P_mblvol" ]
+}

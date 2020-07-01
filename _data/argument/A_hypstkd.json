@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hypstkd on Metamath](http://us.metamath.org/mpegif/hypstkd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hypstkd.1 | |- ( ( ( ph /\\ ps ) /\\ ch ) -> th ) |\n| 2 |  | hypstkd.2 | |- ( ph -> ch ) |\n| 3 |  | #P_id | |- ( ( ph /\\ ps ) -> ( ph /\\ ps ) ) |\n| 4 | 2 | #P_adantr | |- ( ( ph /\\ ps ) -> ch ) |\n| 5 | 3, 4, 1 | #P_syl2anc | |- ( ( ph /\\ ps ) -> th ) |",
+  "conclusion" : "#P_hypstkd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_id", "#P_adantr" ]
+}

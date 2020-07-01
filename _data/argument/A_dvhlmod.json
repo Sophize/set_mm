@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvhlmod on Metamath](http://us.metamath.org/mpegif/dvhlmod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dvhlvec.h | |- H = ( LHyp ` K ) |\n| 2 |  | dvhlvec.u | |- U = ( ( DVecH ` K ) ` W ) |\n| 3 |  | dvhlvec.k | |- ( ph -> ( K e. HL /\\ W e. H ) ) |\n| 4 | 1, 2, 3 | #P_dvhlvec | |- ( ph -> U e. LVec ) |\n| 5 |  | #P_lveclmod | |- ( U e. LVec -> U e. LMod ) |\n| 6 | 4, 5 | #P_syl | |- ( ph -> U e. LMod ) |",
+  "conclusion" : "#P_dvhlmod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_cdvh", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_clvec", "#T_cU", "#T_wcel", "#T_clvec", "#T_wi", "#T_cU", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dvhlvec", "#P_syl", "#P_lveclmod" ]
+}

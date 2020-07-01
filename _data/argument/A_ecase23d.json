@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ecase23d on Metamath](http://us.metamath.org/mpegif/ecase23d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ecase23d.1 | |- ( ph -> -. ch ) |\n| 2 |  | ecase23d.2 | |- ( ph -> -. th ) |\n| 3 |  | ecase23d.3 | |- ( ph -> ( ps \\/ ch \\/ th ) ) |\n| 4 |  | #P_ioran | |- ( -. ( ch \\/ th ) <-> ( -. ch /\\ -. th ) ) |\n| 5 | 1, 2, 4 | #P_sylanbrc | |- ( ph -> -. ( ch \\/ th ) ) |\n| 6 |  | #P_3orass | |- ( ( ps \\/ ch \\/ th ) <-> ( ps \\/ ( ch \\/ th ) ) ) |\n| 7 | 3, 6 | #P_sylib | |- ( ph -> ( ps \\/ ( ch \\/ th ) ) ) |\n| 8 | 7 | #P_ord | |- ( ph -> ( -. ps -> ( ch \\/ th ) ) ) |\n| 9 | 5, 8 | #P_mt3d | |- ( ph -> ps ) |",
+  "conclusion" : "#P_ecase23d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_w3o--1", "#T_wch", "#T_w3o--2", "#T_wth", "#T_wn", "#T_wch", "#T_wo", "#T_wth", "#T_wb", "#T_wn", "#T_wch", "#T_wa", "#T_wn", "#T_wth", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wo", "#T_wth", "#T_wps", "#T_w3o--1", "#T_wch", "#T_w3o--2", "#T_wth", "#T_wb", "#T_wps", "#T_wo", "#T_wch", "#T_wo", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wo", "#T_wth", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wo", "#T_wth", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mt3d", "#P_ord", "#P_ioran", "#P_sylib", "#P_sylanbrc", "#P_3orass" ]
+}

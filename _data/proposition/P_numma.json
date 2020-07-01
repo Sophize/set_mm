@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See numma on Metamath](http://us.metamath.org/mpegif/numma.html)"
+  } ],
+  "names" : [ "numma" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_cn0", "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cM", "#T_wceq", "#T_cT", "#T_cmul", "#T_cA", "#T_caddc", "#T_cB", "#T_cN", "#T_wceq", "#T_cT", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cP", "#T_wcel", "#T_cn0", "#T_cA", "#T_cmul", "#T_cP", "#T_caddc", "#T_cC", "#T_wceq", "#T_cE", "#T_cB", "#T_cmul", "#T_cP", "#T_caddc", "#T_cD", "#T_wceq", "#T_cF", "#T_cM", "#T_cmul", "#T_cP", "#T_caddc", "#T_cN", "#T_wceq", "#T_cT", "#T_cmul", "#T_cE", "#T_caddc", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform a multiply-add of two decimal integers ` M ` and ` N ` against a fixed multiplicand ` P ` (no carry).  (Contributed by Mario Carneiro, 18-Feb-2014.) ",
+  "statement" : "numma.1 $e |- T e. NN0 $.\nnumma.2 $e |- A e. NN0 $.\nnumma.3 $e |- B e. NN0 $.\nnumma.4 $e |- C e. NN0 $.\nnumma.5 $e |- D e. NN0 $.\nnumma.6 $e |- M = ( ( T x. A ) + B ) $.\nnumma.7 $e |- N = ( ( T x. C ) + D ) $.\nnumma.8 $e |- P e. NN0 $.\nnumma.9 $e |- ( ( A x. P ) + C ) = E $.\nnumma.10 $e |- ( ( B x. P ) + D ) = F $.\nnumma $p |- ( ( M x. P ) + N ) = ( ( T x. E ) + F ) $."
+}

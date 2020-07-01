@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psrelbasfun on Metamath](http://us.metamath.org/mpegif/psrelbasfun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psrelbasfun.s | |- S = ( I mPwSer R ) |\n| 2 |  | psrelbasfun.b | |- B = ( Base ` S ) |\n| 3 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 4 |  | #P_eqid | |- { f e. ( NN0 ^m I ) | ( `' f \" NN ) e. Fin } = { f e. ( NN0 ^m I ) | ( `' f \" NN ) e. Fin } |\n| 5 |  | #P_id | |- ( X e. B -> X e. B ) |\n| 6 | 1, 3, 4, 2, 5 | #P_psrelbas | |- ( X e. B -> X : { f e. ( NN0 ^m I ) | ( `' f \" NN ) e. Fin } --> ( Base ` R ) ) |\n| 7 |  | #P_ffun | |- ( X : { f e. ( NN0 ^m I ) | ( `' f \" NN ) e. Fin } --> ( Base ` R ) -> Fun X ) |\n| 8 | 6, 7 | #P_syl | |- ( X e. B -> Fun X ) |",
+  "conclusion" : "#P_psrelbasfun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cS", "#T_wceq", "#T_cI", "#T_cmps", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cI", "#T_crab--3", "#T_ccnv", "#T_cbvex4v.vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cI", "#T_crab--3", "#T_ccnv", "#T_cbvex4v.vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_wf--1", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cI", "#T_crab--3", "#T_ccnv", "#T_cbvex4v.vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_wf--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_cX", "#T_wf--1", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_cI", "#T_crab--3", "#T_ccnv", "#T_cbvex4v.vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_wf--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_wi", "#T_wfun", "#T_cX", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_wfun", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ffun", "#P_psrelbas", "#P_syl", "#P_id" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See msxms on Metamath](http://us.metamath.org/mpegif/msxms.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` M ) = ( TopOpen ` M ) |\n| 2 |  | #P_eqid | |- ( Base ` M ) = ( Base ` M ) |\n| 3 |  | #P_eqid | |- ( ( dist ` M ) |` ( ( Base ` M ) X. ( Base ` M ) ) ) = ( ( dist ` M ) |` ( ( Base ` M ) X. ( Base ` M ) ) ) |\n| 4 | 1, 2, 3 | #P_isms | |- ( M e. MetSp <-> ( M e. *MetSp /\\ ( ( dist ` M ) |` ( ( Base ` M ) X. ( Base ` M ) ) ) e. ( Met ` ( Base ` M ) ) ) ) |\n| 5 | 4 | #P_simplbi | |- ( M e. MetSp -> M e. *MetSp ) |",
+  "conclusion" : "#P_msxms",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctopn", "#T_cfv", "#T_cM", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cM", "#T_cbs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cds", "#T_cfv", "#T_cM", "#T_cres", "#T_cbs", "#T_cfv", "#T_cM", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cds", "#T_cfv", "#T_cM", "#T_cres", "#T_cbs", "#T_cfv", "#T_cM", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cmt", "#T_wb", "#T_cM", "#T_wcel", "#T_cxme", "#T_wa", "#T_cds", "#T_cfv", "#T_cM", "#T_cres", "#T_cbs", "#T_cfv", "#T_cM", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cM", "#T_wcel", "#T_cme", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cmt", "#T_wi", "#T_cM", "#T_wcel", "#T_cxme" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isms" ]
+}

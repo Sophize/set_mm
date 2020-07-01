@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hbntal on Metamath](http://us.metamath.org/mpegif/hbntal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hba1 | |- ( A. x ( ph -> A. x ph ) -> A. x A. x ( ph -> A. x ph ) ) |\n| 2 |  | #P_axc7 | |- ( -. A. x -. A. x ph -> ph ) |\n| 3 | 2 | #P_con1i | |- ( -. ph -> A. x -. A. x ph ) |\n| 4 |  | #P_con3 | |- ( ( ph -> A. x ph ) -> ( -. A. x ph -> -. ph ) ) |\n| 5 | 4 | #P_al2imi | |- ( A. x ( ph -> A. x ph ) -> ( A. x -. A. x ph -> A. x -. ph ) ) |\n| 6 | 3, 5 | #P_syl5 | |- ( A. x ( ph -> A. x ph ) -> ( -. ph -> A. x -. ph ) ) |\n| 7 | 6 | #P_alimi | |- ( A. x A. x ( ph -> A. x ph ) -> A. x ( -. ph -> A. x -. ph ) ) |\n| 8 | 1, 7 | #P_syl | |- ( A. x ( ph -> A. x ph ) -> A. x ( -. ph -> A. x -. ph ) ) |",
+  "conclusion" : "#P_hbntal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con3", "#P_hba1", "#P_con1i", "#P_al2imi", "#P_alimi", "#P_syl", "#P_axc7", "#P_syl5" ]
+}

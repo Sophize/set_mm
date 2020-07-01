@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s1s3 on Metamath](http://us.metamath.org/mpegif/s1s3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-s3 | |- <\" B C D \"> = ( <\" B C \"> concat <\" D \"> ) |\n| 2 |  | #P_s1cli | |- <\" A \"> e. Word _V |\n| 3 |  | #P_s2cli | |- <\" B C \"> e. Word _V |\n| 4 |  | #P_df-s4 | |- <\" A B C D \"> = ( <\" A B C \"> concat <\" D \"> ) |\n| 5 |  | #P_s1s2 | |- <\" A B C \"> = ( <\" A \"> concat <\" B C \"> ) |\n| 6 | 1, 2, 3, 4, 5 | #P_cats1cat | |- <\" A B C D \"> = ( <\" A \"> concat <\" B C D \"> ) |",
+  "conclusion" : "#P_s1s3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cs3--1", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs3--2", "#T_wceq", "#T_cs2--1", "#T_cB.wceq", "#T_cC", "#T_cs2--2", "#T_cconcat", "#T_cs1--1", "#T_cD", "#T_cs1--2", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs2--1", "#T_cB.wceq", "#T_cC", "#T_cs2--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wceq", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_cconcat", "#T_cs1--1", "#T_cD", "#T_cs1--2", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_wceq", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_cconcat", "#T_cs2--1", "#T_cB.wceq", "#T_cC", "#T_cs2--2", "#T_cs4--1", "#T_cA", "#T_cB", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wceq", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_cconcat", "#T_cs3--1", "#T_cB", "#T_cC", "#T_cD", "#T_cs3--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-s3", "#P_df-s4", "#P_s1s2", "#P_s1cli", "#P_cats1cat", "#P_s2cli" ]
+}

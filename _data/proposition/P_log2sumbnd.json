@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See log2sumbnd on Metamath](http://us.metamath.org/mpegif/log2sumbnd.html)"
+  } ],
+  "names" : [ "log2sumbnd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_crp", "#T_wa", "#T_c1", "#T_cle", "#T_cA", "#T_wi", "#T_cabs", "#T_cfv", "#T_csu--1", "#T_vn", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_cA", "#T_clog", "#T_cfv", "#T_vn", "#T_cexp", "#T_c2", "#T_cmin", "#T_cA", "#T_cmul", "#T_clog", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_caddc", "#T_c2", "#T_cmin", "#T_c2", "#T_cmul", "#T_clog", "#T_cfv", "#T_cA", "#T_cle", "#T_clog", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_caddc", "#T_c2", "#T_cA", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Bound on the difference between ` sum_ n <_ A , log ^ 2 ( n ) ` and the equivalent integral.  (Contributed by Mario Carneiro, 20-May-2016.) ",
+  "statement" : "log2sumbnd $p |- ( ( A e. RR+ /\\ 1 <_ A ) -> ( abs ` ( sum_ n e. ( 1 ... ( |_ ` A ) ) ( ( log ` n ) ^ 2 ) - ( A x. ( ( ( log ` A ) ^ 2 ) + ( 2 - ( 2 x. ( log ` A ) ) ) ) ) ) ) <_ ( ( ( log ` A ) ^ 2 ) + 2 ) ) $.\n$d A n $."
+}

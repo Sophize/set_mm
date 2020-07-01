@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See circcn on Metamath](http://us.metamath.org/mpegif/circcn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | circtopn.i | |- I = ( 0 [,] ( 2 x. _pi ) ) |\n| 2 |  | circtopn.j | |- J = ( topGen ` ran (,) ) |\n| 3 |  | circtopn.f | |- F = ( x e. RR |-> ( exp ` ( _i x. x ) ) ) |\n| 4 |  | circtopn.c | |- C = ( `' abs \" { 1 } ) |\n| 5 |  | #P_retopon | |- ( topGen ` ran (,) ) e. ( TopOn ` RR ) |\n| 6 | 2, 5 | #P_eqeltri | |- J e. ( TopOn ` RR ) |\n| 7 | 3, 4 | #P_efifo | |- F : RR -onto-> C |\n| 8 |  | #P_fofn | |- ( F : RR -onto-> C -> F Fn RR ) |\n| 9 | 7, 8 | #P_ax-mp | |- F Fn RR |\n| 10 |  | #P_qtopid | |- ( ( J e. ( TopOn ` RR ) /\\ F Fn RR ) -> F e. ( J Cn ( J qTop F ) ) ) |\n| 11 | 6, 9, 10 | #P_mp2an | |- F e. ( J Cn ( J qTop F ) ) |",
+  "conclusion" : "#P_circcn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cc0", "#T_cicc", "#T_c2", "#T_cmul", "#T_cpi", "#T_cJ", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_ce", "#T_cfv", "#T_ci", "#T_cmul", "#T_vx", "#T_cC", "#T_wceq", "#T_ccnv", "#T_cabs", "#T_cima", "#T_csn--1", "#T_c1", "#T_csn--2", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cr", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cr", "#T_cF", "#T_wfo--1", "#T_cr", "#T_wfo--2", "#T_cC", "#T_cF", "#T_wfo--1", "#T_cr", "#T_wfo--2", "#T_cC", "#T_wi", "#T_cF", "#T_wfn", "#T_cr", "#T_cF", "#T_wfn", "#T_cr", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cr", "#T_wa", "#T_cF", "#T_wfn", "#T_cr", "#T_wi", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cqtop", "#T_cF", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cqtop", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_ax-mp", "#P_mp2an", "#P_qtopid", "#P_efifo", "#P_fofn", "#P_retopon" ]
+}

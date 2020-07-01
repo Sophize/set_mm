@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zringmpg on Metamath](http://us.metamath.org/mpegif/zringmpg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cndrng | |- CCfld e. DivRing |\n| 2 |  | #P_zex | |- ZZ e. _V |\n| 3 |  | #P_df-zring | |- ZZring = ( CCfld |`s ZZ ) |\n| 4 |  | #P_eqid | |- ( mulGrp ` CCfld ) = ( mulGrp ` CCfld ) |\n| 5 | 3, 4 | #P_mgpress | |- ( ( CCfld e. DivRing /\\ ZZ e. _V ) -> ( ( mulGrp ` CCfld ) |`s ZZ ) = ( mulGrp ` ZZring ) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( ( mulGrp ` CCfld ) |`s ZZ ) = ( mulGrp ` ZZring ) |",
+  "conclusion" : "#P_zringmpg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_cdr", "#T_cz", "#T_wcel", "#T_cvv", "#T_zring", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cz", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cdr", "#T_wa", "#T_cz", "#T_wcel", "#T_cvv", "#T_wi", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cz", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_zring", "#T_cmgp", "#T_cfv", "#T_ccnfld", "#T_cress", "#T_cz", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_zring" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mgpress", "#P_mp2an", "#P_cndrng", "#P_df-zring", "#P_zex" ]
+}

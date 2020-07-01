@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rimgim on Metamath](http://us.metamath.org/mpegif/rimgim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 2 |  | #P_eqid | |- ( Base ` S ) = ( Base ` S ) |\n| 3 | 1, 2 | #P_rimrhm | |- ( F e. ( R RingIso S ) -> F e. ( R RingHom S ) ) |\n| 4 |  | #P_rhmghm | |- ( F e. ( R RingHom S ) -> F e. ( R GrpHom S ) ) |\n| 5 | 3, 4 | #P_syl | |- ( F e. ( R RingIso S ) -> F e. ( R GrpHom S ) ) |\n| 6 | 1, 2 | #P_rimf1o | |- ( F e. ( R RingIso S ) -> F : ( Base ` R ) -1-1-onto-> ( Base ` S ) ) |\n| 7 | 1, 2 | #P_isgim | |- ( F e. ( R GrpIso S ) <-> ( F e. ( R GrpHom S ) /\\ F : ( Base ` R ) -1-1-onto-> ( Base ` S ) ) ) |\n| 8 | 5, 6, 7 | #P_sylanbrc | |- ( F e. ( R RingIso S ) -> F e. ( R GrpIso S ) ) |",
+  "conclusion" : "#P_rimgim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crs", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_crh", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crh", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_cghm", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crs", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_cghm", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crs", "#T_cS", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cbs", "#T_cfv", "#T_cR", "#T_wf1o--2", "#T_cbs", "#T_cfv", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_cgim", "#T_cS", "#T_wb", "#T_cF", "#T_wcel", "#T_cR", "#T_cghm", "#T_cS", "#T_wa", "#T_cF", "#T_wf1o--1", "#T_cbs", "#T_cfv", "#T_cR", "#T_wf1o--2", "#T_cbs", "#T_cfv", "#T_cS", "#T_cF", "#T_wcel", "#T_cR", "#T_crs", "#T_cS", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_cgim", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_rhmghm", "#P_syl", "#P_sylanbrc", "#P_isgim", "#P_rimf1o", "#P_rimrhm" ]
+}

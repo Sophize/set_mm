@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dihsmsnrn on Metamath](http://us.metamath.org/mpegif/dihsmsnrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dihsmsnrn.h | |- H = ( LHyp ` K ) |\n| 2 |  | dihsmsnrn.u | |- U = ( ( DVecH ` K ) ` W ) |\n| 3 |  | dihsmsnrn.v | |- V = ( Base ` U ) |\n| 4 |  | dihsmsnrn.p | |- .(+) = ( LSSum ` U ) |\n| 5 |  | dihsmsnrn.n | |- N = ( LSpan ` U ) |\n| 6 |  | dihsmsnrn.i | |- I = ( ( DIsoH ` K ) ` W ) |\n| 7 |  | dihsmsnrn.k | |- ( ph -> ( K e. HL /\\ W e. H ) ) |\n| 8 |  | dihsmsnrn.x | |- ( ph -> X e. V ) |\n| 9 |  | dihsmsnrn.y | |- ( ph -> Y e. V ) |\n| 10 | 1, 2, 3, 5, 6 | #P_dihlsprn | |- ( ( ( K e. HL /\\ W e. H ) /\\ X e. V ) -> ( N ` { X } ) e. ran I ) |\n| 11 | 7, 8, 10 | #P_syl2anc | |- ( ph -> ( N ` { X } ) e. ran I ) |\n| 12 | 1, 2, 3, 4, 5, 6, 7, 11, 9 | #P_dihsmsprn | |- ( ph -> ( ( N ` { X } ) .(+) ( N ` { Y } ) ) e. ran I ) |",
+  "conclusion" : "#P_dihsmsnrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_cdvh", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cU", "#T_c.po", "#T_wceq", "#T_clsm", "#T_cfv", "#T_cU", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cU", "#T_cI", "#T_wceq", "#T_cdih", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wcel", "#T_crn", "#T_cI", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wcel", "#T_crn", "#T_cI", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_c.po", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cY", "#T_csn--2", "#T_wcel", "#T_crn", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dihsmsprn", "#P_dihlsprn", "#P_syl2anc" ]
+}

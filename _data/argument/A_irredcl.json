@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See irredcl on Metamath](http://us.metamath.org/mpegif/irredcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | irredn0.i | |- I = ( Irred ` R ) |\n| 2 |  | irredcl.b | |- B = ( Base ` R ) |\n| 3 |  | #P_eqid | |- ( Unit ` R ) = ( Unit ` R ) |\n| 4 |  | #P_eqid | |- ( .r ` R ) = ( .r ` R ) |\n| 5 | 2, 3, 1, 4 | #P_isirred2 | |- ( X e. I <-> ( X e. B /\\ -. X e. ( Unit ` R ) /\\ A. x e. B A. y e. B ( ( x ( .r ` R ) y ) = X -> ( x e. ( Unit ` R ) \\/ y e. ( Unit ` R ) ) ) ) ) |\n| 6 | 5 | #P_simp1bi | |- ( X e. I -> X e. B ) |",
+  "conclusion" : "#P_irredcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cI", "#T_wceq", "#T_cir", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cui", "#T_cfv", "#T_cR", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cI", "#T_wb", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_wn", "#T_cX", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_vx.wal", "#T_cmulr", "#T_cfv", "#T_cR", "#T_vy.tru", "#T_wceq", "#T_cX", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_wo", "#T_vy.tru", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cI", "#T_wi", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp1bi", "#P_isirred2" ]
+}

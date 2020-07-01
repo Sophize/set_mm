@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wl-impchain-com-1.3 on Metamath](http://us.metamath.org/mpegif/wl-impchain-com-1.3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wl-impchain-com-1.3.1 | |- ( th -> ( ch -> ( ps -> ph ) ) ) |\n| 2 | 1 | #P_wl-impchain-com-1.2 | |- ( ch -> ( th -> ( ps -> ph ) ) ) |\n| 3 |  | #P_wl-pm2.04 | |- ( ( th -> ( ps -> ph ) ) -> ( ps -> ( th -> ph ) ) ) |\n| 4 | 2, 3 | #P_wl-impchain-mp-1 | |- ( ch -> ( ps -> ( th -> ph ) ) ) |\n| 5 | 4 | #P_wl-impchain-com-1.2 | |- ( ps -> ( ch -> ( th -> ph ) ) ) |",
+  "conclusion" : "#P_wl-impchain-com-1.3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wth", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wl-impchain-mp-1", "#P_wl-pm2.04", "#P_wl-impchain-com-1.2" ]
+}

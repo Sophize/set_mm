@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leop on Metamath](http://us.metamath.org/mpegif/leop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_leopg | |- ( ( T e. HrmOp /\\ U e. HrmOp ) -> ( T <_op U <-> ( ( U -op T ) e. HrmOp /\\ A. x e. ~H 0 <_ ( ( ( U -op T ) ` x ) .ih x ) ) ) ) |\n| 2 |  | #P_hmopd | |- ( ( U e. HrmOp /\\ T e. HrmOp ) -> ( U -op T ) e. HrmOp ) |\n| 3 | 2 | #P_ancoms | |- ( ( T e. HrmOp /\\ U e. HrmOp ) -> ( U -op T ) e. HrmOp ) |\n| 4 | 3 | #P_biantrurd | |- ( ( T e. HrmOp /\\ U e. HrmOp ) -> ( A. x e. ~H 0 <_ ( ( ( U -op T ) ` x ) .ih x ) <-> ( ( U -op T ) e. HrmOp /\\ A. x e. ~H 0 <_ ( ( ( U -op T ) ` x ) .ih x ) ) ) ) |\n| 5 | 1, 4 | #P_bitr4d | |- ( ( T e. HrmOp /\\ U e. HrmOp ) -> ( T <_op U <-> A. x e. ~H 0 <_ ( ( ( U -op T ) ` x ) .ih x ) ) ) |",
+  "conclusion" : "#P_leop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_cU", "#T_wcel", "#T_cho", "#T_wi", "#T_cT", "#T_cleo", "#T_cU", "#T_wb", "#T_cU", "#T_chod", "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_cc0", "#T_cle", "#T_cU", "#T_chod", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_cU", "#T_wcel", "#T_cho", "#T_wa", "#T_cT", "#T_wcel", "#T_cho", "#T_wi", "#T_cU", "#T_chod", "#T_cT", "#T_wcel", "#T_cho", "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_cU", "#T_wcel", "#T_cho", "#T_wi", "#T_cU", "#T_chod", "#T_cT", "#T_wcel", "#T_cho", "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_cU", "#T_wcel", "#T_cho", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_cc0", "#T_cle", "#T_cU", "#T_chod", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_wb", "#T_cU", "#T_chod", "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_chil", "#T_cc0", "#T_cle", "#T_cU", "#T_chod", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_csp", "#T_vx.wal", "#T_cT", "#T_wcel", "#T_cho", "#T_wa", "#T_cU", "#T_wcel", "#T_cho", "#T_wi", "#T_cT", "#T_cleo", "#T_cU", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_chil", "#T_cc0", "#T_cle", "#T_cU", "#T_chod", "#T_cT", "#T_cfv", "#T_vx", "#T_csp", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_leopg", "#P_bitr4d", "#P_hmopd", "#P_biantrurd", "#P_ancoms" ]
+}

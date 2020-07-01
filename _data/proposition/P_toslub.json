@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See toslub on Metamath](http://us.metamath.org/mpegif/toslub.html)"
+  } ],
+  "names" : [ "toslub" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.lt", "#T_wceq", "#T_cplt", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_ctos", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_club", "#T_cfv", "#T_cK", "#T_cfv", "#T_cA", "#T_wceq", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cB", "#T_csup--3", "#T_c.lt" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a toset, the lowest upper bound ` lub ` , defined for partial orders is the supremum, ` sup ( A , B , .< ) ` , defined for total orders. (these are the set.mm definitions: lowest upper bound and supremum are normally synonymous).  Note that those two values are also equal if such a supremum does not exist: in that case, both are equal to the empty set.  (Contributed by Thierry Arnoux, 15-Feb-2018.)  (Revised by Thierry Arnoux, 24-Sep-2018.) ",
+  "statement" : "toslub.b $e |- B = ( Base ` K ) $.\ntoslub.l $e |- .< = ( lt ` K ) $.\ntoslub.1 $e |- ( ph -> K e. Toset ) $.\ntoslub.2 $e |- ( ph -> A C_ B ) $.\ntoslub $p |- ( ph -> ( ( lub ` K ) ` A ) = sup ( A , B , .< ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nrgring on Metamath](http://us.metamath.org/mpegif/nrgring.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( norm ` R ) = ( norm ` R ) |\n| 2 |  | #P_eqid | |- ( AbsVal ` R ) = ( AbsVal ` R ) |\n| 3 | 1, 2 | #P_nrgabv | |- ( R e. NrmRing -> ( norm ` R ) e. ( AbsVal ` R ) ) |\n| 4 | 2 | #P_abvrcl | |- ( ( norm ` R ) e. ( AbsVal ` R ) -> R e. Ring ) |\n| 5 | 3, 4 | #P_syl | |- ( R e. NrmRing -> R e. Ring ) |",
+  "conclusion" : "#P_nrgring",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cnm", "#T_cfv", "#T_cR", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cR", "#T_cabv", "#T_cfv", "#T_cR", "#T_wceq", "#T_cabv", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cnm", "#T_cfv", "#T_cR", "#T_wcel", "#T_cabv", "#T_cfv", "#T_cR", "#T_cnm", "#T_cfv", "#T_cR", "#T_wcel", "#T_cabv", "#T_cfv", "#T_cR", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_nrgabv", "#P_abvrcl", "#P_syl" ]
+}

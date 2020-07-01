@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfiunya on Metamath](http://us.metamath.org/mpegif/nfiunya.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfiunya.1 | |- F/_ y A |\n| 2 |  | nfiunya.2 | |- F/_ y B |\n| 3 |  | #P_df-iun | |- U_ x e. A B = { z | E. x e. A z e. B } |\n| 4 | 2 | #P_nfcri | |- F/ y z e. B |\n| 5 | 1, 4 | #P_nfrexya | |- F/ y E. x e. A z e. B |\n| 6 | 5 | #P_nfab | |- F/_ y { z | E. x e. A z e. B } |\n| 7 | 3, 6 | #P_nfcxfr | |- F/_ y U_ x e. A B |",
+  "conclusion" : "#P_nfiunya",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnfc", "#T_vy", "#T_cA", "#T_wnfc", "#T_vy", "#T_cB", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_wnf", "#T_vy.tru", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vy.tru", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnfc", "#T_vy.tru", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_cab--3", "#T_wnfc", "#T_vy", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcxfr", "#P_nfcri", "#P_nfab", "#P_df-iun", "#P_nfrexya" ]
+}

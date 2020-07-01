@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itunifn on Metamath](http://us.metamath.org/mpegif/itunifn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ituni.u | |- U = ( x e. _V |-> ( rec ( ( y e. _V |-> U. y ) , x ) |` _om ) ) |\n| 2 |  | #P_frfnom | |- ( rec ( ( y e. _V |-> U. y ) , A ) |` _om ) Fn _om |\n| 3 | 1 | #P_itunifval | |- ( A e. V -> ( U ` A ) = ( rec ( ( y e. _V |-> U. y ) , A ) |` _om ) ) |\n| 4 | 3 | #P_fneq1d | |- ( A e. V -> ( ( U ` A ) Fn _om <-> ( rec ( ( y e. _V |-> U. y ) , A ) |` _om ) Fn _om ) ) |\n| 5 | 2, 4 | #P_mpbiri | |- ( A e. V -> ( U ` A ) Fn _om ) |",
+  "conclusion" : "#P_itunifn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crdg--1", "#T_vy", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cuni", "#T_vy", "#T_crdg--2", "#T_vx", "#T_cres", "#T_com", "#T_crdg--1", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cuni", "#T_vy.tru", "#T_crdg--2", "#T_cA.wceq", "#T_cres", "#T_com", "#T_wfn", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crdg--1", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cuni", "#T_vy.tru", "#T_crdg--2", "#T_cA.wceq", "#T_cres", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_cfv", "#T_cA.wceq", "#T_wfn", "#T_com", "#T_wb", "#T_crdg--1", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cuni", "#T_vy.tru", "#T_crdg--2", "#T_cA.wceq", "#T_cres", "#T_com", "#T_wfn", "#T_com", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cU", "#T_cfv", "#T_cA", "#T_wfn", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_frfnom", "#P_itunifval", "#P_fneq1d" ]
+}

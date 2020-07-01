@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gsumlsscl on Metamath](http://us.metamath.org/mpegif/gsumlsscl.html)"
+  } ],
+  "names" : [ "gsumlsscl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cM", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cM", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cM", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cZ", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_cV", "#T_wss", "#T_cZ", "#T_wi", "#T_cF", "#T_wcel", "#T_cB", "#T_cmap", "#T_cV", "#T_wa", "#T_cF", "#T_cfsupp", "#T_c0g", "#T_cfv", "#T_cR", "#T_wi", "#T_cM", "#T_cgsu", "#T_vv", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vv", "#T_cvsca", "#T_cfv", "#T_cM", "#T_vv", "#T_wcel", "#T_cZ", "#T_cB", "#T_vv", "#T_cF", "#T_vv", "#T_cM", "#T_vv", "#T_cR", "#T_vv", "#T_cS", "#T_vv", "#T_cV", "#T_vv", "#T_cZ", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Closure of a group sum in a linear subspace:  A (finitely supported) sum of scalar multiplications of vectors of a subset of a linear subspace is also contained in the linear subspace.  (Contributed by AV, 20-Apr-2019.)  (Revised by AV, 28-Jul-2019.) ",
+  "statement" : "gsumlsscl.s $e |- S = ( LSubSp ` M ) $.\ngsumlsscl.r $e |- R = ( Scalar ` M ) $.\ngsumlsscl.b $e |- B = ( Base ` R ) $.\ngsumlsscl $p |- ( ( M e. LMod /\\ Z e. S /\\ V C_ Z ) -> ( ( F e. ( B ^m V ) /\\ F finSupp ( 0g ` R ) ) -> ( M gsum ( v e. V |-> ( ( F ` v ) ( .s ` M ) v ) ) ) e. Z ) ) $.\n$d B v $.\n$d F v $.\n$d M v $.\n$d R v $.\n$d S v $.\n$d V v $.\n$d Z v $."
+}

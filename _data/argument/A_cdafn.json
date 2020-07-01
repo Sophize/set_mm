@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cdafn on Metamath](http://us.metamath.org/mpegif/cdafn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-cda | |- +c = ( x e. _V , y e. _V |-> ( ( x X. { (/) } ) u. ( y X. { 1o } ) ) ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 |  | #P_snex | |- { (/) } e. _V |\n| 4 | 2, 3 | #P_xpex | |- ( x X. { (/) } ) e. _V |\n| 5 |  | #P_vex | |- y e. _V |\n| 6 |  | #P_snex | |- { 1o } e. _V |\n| 7 | 5, 6 | #P_xpex | |- ( y X. { 1o } ) e. _V |\n| 8 | 4, 7 | #P_unex | |- ( ( x X. { (/) } ) u. ( y X. { 1o } ) ) e. _V |\n| 9 | 1, 8 | #P_fnmpt2i | |- +c Fn ( _V X. _V ) |",
+  "conclusion" : "#P_cdafn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_ccda", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx.wal", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cun", "#T_vy.tru", "#T_cxp", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_cxp", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cun", "#T_vy.tru", "#T_cxp", "#T_csn--1", "#T_c1o", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_ccda", "#T_wfn", "#T_cvv", "#T_cxp", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unex", "#P_df-cda", "#P_vex", "#P_fnmpt2i", "#P_xpex", "#P_snex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfin4-2 on Metamath](http://us.metamath.org/mpegif/isfin4-2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfin4 | |- ( A e. V -> ( A e. Fin4 <-> -. E. x ( x C. A /\\ x ~~ A ) ) ) |\n| 2 |  | #P_infpssr | |- ( ( x C. A /\\ x ~~ A ) -> _om ~<_ A ) |\n| 3 | 2 | #P_exlimiv | |- ( E. x ( x C. A /\\ x ~~ A ) -> _om ~<_ A ) |\n| 4 |  | #P_infpss | |- ( _om ~<_ A -> E. x ( x C. A /\\ x ~~ A ) ) |\n| 5 | 3, 4 | #P_impbii | |- ( E. x ( x C. A /\\ x ~~ A ) <-> _om ~<_ A ) |\n| 6 | 5 | #P_notbii | |- ( -. E. x ( x C. A /\\ x ~~ A ) <-> -. _om ~<_ A ) |\n| 7 | 1, 6 | #P_syl6bb | |- ( A e. V -> ( A e. Fin4 <-> -. _om ~<_ A ) ) |",
+  "conclusion" : "#P_isfin4-2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin4", "#T_wb", "#T_wn", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wn", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wpss", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cfin4", "#T_wb", "#T_wn", "#T_com", "#T_cdom", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_impbii", "#P_infpssr", "#P_exlimiv", "#P_syl6bb", "#P_infpss", "#P_isfin4" ]
+}

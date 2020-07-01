@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See submrcl on Metamath](http://us.metamath.org/mpegif/submrcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ns t x y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-submnd | |- SubMnd = ( s e. Mnd |-> { t e. ~P ( Base ` s ) | ( ( 0g ` s ) e. t /\\ A. x e. t A. y e. t ( x ( +g ` s ) y ) e. t ) } ) |\n| 2 | 1 | #P_dmmptss | |- dom SubMnd C_ Mnd |\n| 3 |  | #P_elfvdm | |- ( S e. ( SubMnd ` M ) -> M e. dom SubMnd ) |\n| 4 | 2, 3 | #P_sseldi | |- ( S e. ( SubMnd ` M ) -> M e. Mnd ) |",
+  "conclusion" : "#P_submrcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vs", "#T_vt", "#T_vx", "#T_vy", "#T_csubmnd", "#T_wceq", "#T_vs", "#T_cmpt--1", "#T_cmnd", "#T_cmpt--2", "#T_crab--1", "#T_vt", "#T_crab--2", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vs", "#T_crab--3", "#T_c0g", "#T_cfv", "#T_vs", "#T_wcel", "#T_vt", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_vt", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_vt", "#T_vx.wal", "#T_cplusg", "#T_cfv", "#T_vs", "#T_vy.tru", "#T_wcel", "#T_vt", "#T_crab--4", "#T_cdm", "#T_csubmnd", "#T_wss", "#T_cmnd", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cdm", "#T_csubmnd", "#T_cS", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cmnd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseldi", "#P_df-submnd", "#P_dmmptss", "#P_elfvdm" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-plusf on Metamath](http://us.metamath.org/mpegif/df-plusf.html)"
+  } ],
+  "names" : [ "df-plusf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cplusf", "#T_wceq", "#T_vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vg", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vg", "#T_cmpt2--4", "#T_vx", "#T_cplusg", "#T_cfv", "#T_vg", "#T_vy", "#T_vg", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define group addition function.  Usually we will use ` +g ` directly instead of ` +f ` , and they have the same behavior in most cases.  The main advantage of ` +f ` for any magma is that it is a guaranteed function ( ~ mgmplusf ), while ` +g ` only has closure ( ~ mgmcl ). (Contributed by Mario Carneiro, 14-Aug-2015.) ",
+  "statement" : "df-plusf $p |- +f = ( g e. _V |-> ( x e. ( Base ` g ) , y e. ( Base ` g ) |-> ( x ( +g ` g ) y ) ) ) $.\n$d g x y $."
+}

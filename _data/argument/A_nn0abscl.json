@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0abscl on Metamath](http://us.metamath.org/mpegif/nn0abscl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zre | |- ( A e. ZZ -> A e. RR ) |\n| 2 |  | #P_absz | |- ( A e. RR -> ( A e. ZZ <-> ( abs ` A ) e. ZZ ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. ZZ -> ( A e. ZZ <-> ( abs ` A ) e. ZZ ) ) |\n| 4 | 3 | #P_ibi | |- ( A e. ZZ -> ( abs ` A ) e. ZZ ) |\n| 5 |  | #P_zcn | |- ( A e. ZZ -> A e. CC ) |\n| 6 |  | #P_absge0 | |- ( A e. CC -> 0 <_ ( abs ` A ) ) |\n| 7 | 5, 6 | #P_syl | |- ( A e. ZZ -> 0 <_ ( abs ` A ) ) |\n| 8 |  | #P_elnn0z | |- ( ( abs ` A ) e. NN0 <-> ( ( abs ` A ) e. ZZ /\\ 0 <_ ( abs ` A ) ) ) |\n| 9 | 4, 7, 8 | #P_sylanbrc | |- ( A e. ZZ -> ( abs ` A ) e. NN0 ) |",
+  "conclusion" : "#P_nn0abscl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cn0", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wa", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_wcel", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibi", "#P_zre", "#P_absge0", "#P_syl", "#P_sylanbrc", "#P_elnn0z", "#P_absz", "#P_zcn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvfg on Metamath](http://us.metamath.org/mpegif/dvfg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_recnperf | |- ( S e. { RR , CC } -> ( ( TopOpen ` CCfld ) |`t S ) e. Perf ) |\n| 3 | 1 | #P_perfdvf | |- ( ( ( TopOpen ` CCfld ) |`t S ) e. Perf -> ( S _D F ) : dom ( S _D F ) --> CC ) |\n| 4 | 2, 3 | #P_syl | |- ( S e. { RR , CC } -> ( S _D F ) : dom ( S _D F ) --> CC ) |",
+  "conclusion" : "#P_dvfg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_cS", "#T_wcel", "#T_cperf", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_cS", "#T_wcel", "#T_cperf", "#T_wi", "#T_cS", "#T_cdv", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cS", "#T_cdv", "#T_cF", "#T_wf--2", "#T_cc", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_cS", "#T_cdv", "#T_cF", "#T_wf--1", "#T_cdm", "#T_cS", "#T_cdv", "#T_cF", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_recnperf", "#P_syl", "#P_perfdvf" ]
+}

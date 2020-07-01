@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 0heALT on Metamath](http://us.metamath.org/mpegif/0heALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xphe | |- ( (/) X. A ) hereditary A |\n| 2 |  | #P_0xp | |- ( (/) X. A ) = (/) |\n| 3 |  | #P_heeq1 | |- ( ( (/) X. A ) = (/) -> ( ( (/) X. A ) hereditary A <-> (/) hereditary A ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( ( (/) X. A ) hereditary A <-> (/) hereditary A ) |\n| 5 | 1, 4 | #P_mpbi | |- (/) hereditary A |\n\\\n The empty relation is hereditary in any class.  (Contributed by RP, 27-Mar-2020.) ",
+  "conclusion" : "#P_0he",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_whe", "#T_cA.wceq", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_whe", "#T_cA.wceq", "#T_wb", "#T_c0", "#T_whe", "#T_cA.wceq", "#T_c0", "#T_cxp", "#T_cA.wceq", "#T_whe", "#T_cA.wceq", "#T_wb", "#T_c0", "#T_whe", "#T_cA.wceq", "#T_c0", "#T_whe", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_xphe", "#P_heeq1", "#P_mpbi", "#P_0xp" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prmrp on Metamath](http://us.metamath.org/mpegif/prmrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_prmz | |- ( Q e. Prime -> Q e. ZZ ) |\n| 2 |  | #P_coprm | |- ( ( P e. Prime /\\ Q e. ZZ ) -> ( -. P || Q <-> ( P gcd Q ) = 1 ) ) |\n| 3 | 1, 2 | #P_sylan2 | |- ( ( P e. Prime /\\ Q e. Prime ) -> ( -. P || Q <-> ( P gcd Q ) = 1 ) ) |\n| 4 |  | #P_prmuz2 | |- ( P e. Prime -> P e. ( ZZ>= ` 2 ) ) |\n| 5 |  | #P_dvdsprm | |- ( ( P e. ( ZZ>= ` 2 ) /\\ Q e. Prime ) -> ( P || Q <-> P = Q ) ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( P e. Prime /\\ Q e. Prime ) -> ( P || Q <-> P = Q ) ) |\n| 7 | 6 | #P_necon3bbid | |- ( ( P e. Prime /\\ Q e. Prime ) -> ( -. P || Q <-> P =/= Q ) ) |\n| 8 | 3, 7 | #P_bitr3d | |- ( ( P e. Prime /\\ Q e. Prime ) -> ( ( P gcd Q ) = 1 <-> P =/= Q ) ) |",
+  "conclusion" : "#P_prmrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_cQ", "#T_wcel", "#T_cz", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cQ", "#T_wcel", "#T_cz", "#T_wi", "#T_wn", "#T_cP", "#T_cdvds", "#T_cQ", "#T_wb", "#T_cP", "#T_cgcd", "#T_cQ", "#T_wceq", "#T_c1", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_wn", "#T_cP", "#T_cdvds", "#T_cQ", "#T_wb", "#T_cP", "#T_cgcd", "#T_cQ", "#T_wceq", "#T_c1", "#T_cP", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_cP", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wa", "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_cdvds", "#T_cQ", "#T_wb", "#T_cP", "#T_wceq", "#T_cQ", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_cdvds", "#T_cQ", "#T_wb", "#T_cP", "#T_wceq", "#T_cQ", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_wn", "#T_cP", "#T_cdvds", "#T_cQ", "#T_wb", "#T_cP", "#T_wne", "#T_cQ", "#T_cP", "#T_wcel", "#T_cprime", "#T_wa", "#T_cQ", "#T_wcel", "#T_cprime", "#T_wi", "#T_cP", "#T_cgcd", "#T_cQ", "#T_wceq", "#T_c1", "#T_wb", "#T_cP", "#T_wne", "#T_cQ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3bbid", "#P_coprm", "#P_sylan2", "#P_sylan", "#P_prmuz2", "#P_dvdsprm", "#P_bitr3d", "#P_prmz" ]
+}

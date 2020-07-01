@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2bornot2b on Metamath](http://us.metamath.org/mpegif/2bornot2b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-1 | |- ( -. 2 x. B -> ( 2 x. B -> -. 2 x. B ) ) |\n| 2 |  | #P_ax-1 | |- ( -. 2 x. B -> ( ( 2 x. B -> -. 2 x. B ) -> -. 2 x. B ) ) |\n| 3 | 1, 2 | #P_mpd | |- ( -. 2 x. B -> -. 2 x. B ) |\n| 4 |  | #P_df-or | |- ( ( 2 x. B \\/ -. 2 x. B ) <-> ( -. 2 x. B -> -. 2 x. B ) ) |\n| 5 | 3, 4 | #P_mpbir | |- ( 2 x. B \\/ -. 2 x. B ) |",
+  "conclusion" : "#P_2bornot2b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wo", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_c2", "#T_cmul", "#T_cB", "#T_wo", "#T_wn", "#T_c2", "#T_cmul", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_df-or", "#P_mpbir", "#P_ax-1" ]
+}

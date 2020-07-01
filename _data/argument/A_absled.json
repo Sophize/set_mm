@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See absled on Metamath](http://us.metamath.org/mpegif/absled.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | absltd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | absltd.2 | |- ( ph -> B e. RR ) |\n| 3 |  | #P_absle | |- ( ( A e. RR /\\ B e. RR ) -> ( ( abs ` A ) <_ B <-> ( -u B <_ A /\\ A <_ B ) ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( ( abs ` A ) <_ B <-> ( -u B <_ A /\\ A <_ B ) ) ) |",
+  "conclusion" : "#P_absled",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wb", "#T_cneg", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA", "#T_cle", "#T_cB", "#T_wb", "#T_cneg", "#T_cB", "#T_cle", "#T_cA", "#T_wa", "#T_cA", "#T_cle", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_absle", "#P_syl2anc" ]
+}

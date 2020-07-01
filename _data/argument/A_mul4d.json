@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mul4d on Metamath](http://us.metamath.org/mpegif/mul4d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | muld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | addcomd.2 | |- ( ph -> B e. CC ) |\n| 3 |  | addcand.3 | |- ( ph -> C e. CC ) |\n| 4 |  | mul4d.4 | |- ( ph -> D e. CC ) |\n| 5 |  | #P_mul4 | |- ( ( ( A e. CC /\\ B e. CC ) /\\ ( C e. CC /\\ D e. CC ) ) -> ( ( A x. B ) x. ( C x. D ) ) = ( ( A x. C ) x. ( B x. D ) ) ) |\n| 6 | 1, 2, 3, 4, 5 | #P_syl22anc | |- ( ph -> ( ( A x. B ) x. ( C x. D ) ) = ( ( A x. C ) x. ( B x. D ) ) ) |",
+  "conclusion" : "#P_mul4d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cD", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_cmul", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cmul", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cB", "#T_cmul", "#T_cC", "#T_cmul", "#T_cD", "#T_wceq", "#T_cA", "#T_cmul", "#T_cC", "#T_cmul", "#T_cB", "#T_cmul", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl22anc", "#P_mul4" ]
+}

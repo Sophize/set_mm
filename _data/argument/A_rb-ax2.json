@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rb-ax2 on Metamath](http://us.metamath.org/mpegif/rb-ax2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm1.4 | |- ( ( ph \\/ ps ) -> ( ps \\/ ph ) ) |\n| 2 | 1 | #P_con3i | |- ( -. ( ps \\/ ph ) -> -. ( ph \\/ ps ) ) |\n| 3 | 2 | #P_con1i | |- ( -. -. ( ph \\/ ps ) -> ( ps \\/ ph ) ) |\n| 4 | 3 | #P_orri | |- ( -. ( ph \\/ ps ) \\/ ( ps \\/ ph ) ) |",
+  "conclusion" : "#P_rb-ax2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wps", "#T_wo", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orri", "#P_con1i", "#P_con3i", "#P_pm1.4" ]
+}

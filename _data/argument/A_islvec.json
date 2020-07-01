@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See islvec on Metamath](http://us.metamath.org/mpegif/islvec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | islvec.1 | |- F = ( Scalar ` W ) |\n| 2 |  | #P_fveq2 | |- ( f = W -> ( Scalar ` f ) = ( Scalar ` W ) ) |\n| 3 | 2, 1 | #P_syl6eqr | |- ( f = W -> ( Scalar ` f ) = F ) |\n| 4 | 3 | #P_eleq1d | |- ( f = W -> ( ( Scalar ` f ) e. DivRing <-> F e. DivRing ) ) |\n| 5 |  | #P_df-lvec | |- LVec = { f e. LMod | ( Scalar ` f ) e. DivRing } |\n| 6 | 4, 5 | #P_elrab2 | |- ( W e. LVec <-> ( W e. LMod /\\ F e. DivRing ) ) |",
+  "conclusion" : "#P_islvec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbvex4v.vf", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_cbvex4v.vf", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbvex4v.vf", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_cbvex4v.vf", "#T_wceq", "#T_cF", "#T_cbvex4v.vf", "#T_wceq", "#T_cW", "#T_wi", "#T_csca", "#T_cfv", "#T_cbvex4v.vf", "#T_wcel", "#T_cdr", "#T_wb", "#T_cF", "#T_wcel", "#T_cdr", "#T_clvec", "#T_wceq", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_clmod", "#T_crab--3", "#T_csca", "#T_cfv", "#T_cbvex4v.vf", "#T_wcel", "#T_cdr", "#T_crab--4", "#T_cW", "#T_wcel", "#T_clvec", "#T_wb", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cF", "#T_wcel", "#T_cdr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_df-lvec", "#P_fveq2", "#P_syl6eqr", "#P_eleq1d" ]
+}

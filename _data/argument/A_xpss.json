@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpss on Metamath](http://us.metamath.org/mpegif/xpss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssv | |- A C_ _V |\n| 2 |  | #P_ssv | |- B C_ _V |\n| 3 |  | #P_xpss12 | |- ( ( A C_ _V /\\ B C_ _V ) -> ( A X. B ) C_ ( _V X. _V ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A X. B ) C_ ( _V X. _V ) |",
+  "conclusion" : "#P_xpss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cA", "#T_cxp", "#T_cB", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_xpss12", "#P_ssv" ]
+}

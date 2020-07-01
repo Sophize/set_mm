@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lefld on Metamath](http://us.metamath.org/mpegif/lefld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_lerel | |- Rel <_ |\n| 2 |  | #P_relfld | |- ( Rel <_ -> U. U. <_ = ( dom <_ u. ran <_ ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- U. U. <_ = ( dom <_ u. ran <_ ) |\n| 4 |  | #P_ledm | |- RR* = dom <_ |\n| 5 |  | #P_lern | |- RR* = ran <_ |\n| 6 | 4, 5 | #P_uneq12i | |- ( RR* u. RR* ) = ( dom <_ u. ran <_ ) |\n| 7 |  | #P_unidm | |- ( RR* u. RR* ) = RR* |\n| 8 | 3, 6, 7 | #P_3eqtr2ri | |- RR* = U. U. <_ |",
+  "conclusion" : "#P_lefld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cle", "#T_wrel", "#T_cle", "#T_wi", "#T_cuni", "#T_cuni", "#T_cle", "#T_wceq", "#T_cdm", "#T_cle", "#T_cun", "#T_crn", "#T_cle", "#T_cuni", "#T_cuni", "#T_cle", "#T_wceq", "#T_cdm", "#T_cle", "#T_cun", "#T_crn", "#T_cle", "#T_cxr", "#T_wceq", "#T_cdm", "#T_cle", "#T_cxr", "#T_wceq", "#T_crn", "#T_cle", "#T_cxr", "#T_cun", "#T_cxr", "#T_wceq", "#T_cdm", "#T_cle", "#T_cun", "#T_crn", "#T_cle", "#T_cxr", "#T_cun", "#T_cxr", "#T_wceq", "#T_cxr", "#T_cxr", "#T_wceq", "#T_cuni", "#T_cuni", "#T_cle" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_relfld", "#P_lerel", "#P_3eqtr2ri", "#P_unidm", "#P_lern", "#P_ledm", "#P_uneq12i" ]
+}

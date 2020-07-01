@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See remet on Metamath](http://us.metamath.org/mpegif/remet.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | remet.1 | |- D = ( ( abs o. - ) |` ( RR X. RR ) ) |\n| 2 |  | #P_cnmet | |- ( abs o. - ) e. ( Met ` CC ) |\n| 3 |  | #P_ax-resscn | |- RR C_ CC |\n| 4 |  | #P_metres2 | |- ( ( ( abs o. - ) e. ( Met ` CC ) /\\ RR C_ CC ) -> ( ( abs o. - ) |` ( RR X. RR ) ) e. ( Met ` RR ) ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( ( abs o. - ) |` ( RR X. RR ) ) e. ( Met ` RR ) |\n| 6 | 1, 5 | #P_eqeltri | |- D e. ( Met ` RR ) |",
+  "conclusion" : "#P_remet",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cme", "#T_cfv", "#T_cc", "#T_cr", "#T_wss", "#T_cc", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cme", "#T_cfv", "#T_cc", "#T_wa", "#T_cr", "#T_wss", "#T_cc", "#T_wi", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cme", "#T_cfv", "#T_cr", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cme", "#T_cfv", "#T_cr", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnmet", "#P_ax-resscn", "#P_mp2an", "#P_eqeltri", "#P_metres2" ]
+}

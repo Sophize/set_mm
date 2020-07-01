@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexnalOLD on Metamath](http://us.metamath.org/mpegif/rexnalOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rex | |- ( E. x e. A -. ph <-> E. x ( x e. A /\\ -. ph ) ) |\n| 2 |  | #P_exanali | |- ( E. x ( x e. A /\\ -. ph ) <-> -. A. x ( x e. A -> ph ) ) |\n| 3 |  | #P_df-ral | |- ( A. x e. A ph <-> A. x ( x e. A -> ph ) ) |\n| 4 | 2, 3 | #P_xchbinxr | |- ( E. x ( x e. A /\\ -. ph ) <-> -. A. x e. A ph ) |\n| 5 | 1, 4 | #P_bitri | |- ( E. x e. A -. ph <-> -. A. x e. A ph ) |\n\\\n Obsolete proof of ~ rexnal as of 26-Nov-2019.  (Contributed by NM, 21-Jan-1997.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_rexnal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wn", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wph", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ral", "#P_xchbinxr", "#P_bitri", "#P_df-rex", "#P_exanali" ]
+}

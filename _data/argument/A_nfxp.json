@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfxp on Metamath](http://us.metamath.org/mpegif/nfxp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfxp.1 | |- F/_ x A |\n| 2 |  | nfxp.2 | |- F/_ x B |\n| 3 |  | #P_df-xp | |- ( A X. B ) = { <. y , z >. | ( y e. A /\\ z e. B ) } |\n| 4 | 1 | #P_nfcri | |- F/ x y e. A |\n| 5 | 2 | #P_nfcri | |- F/ x z e. B |\n| 6 | 4, 5 | #P_nfan | |- F/ x ( y e. A /\\ z e. B ) |\n| 7 | 6 | #P_nfopab | |- F/_ x { <. y , z >. | ( y e. A /\\ z e. B ) } |\n| 8 | 3, 7 | #P_nfcxfr | |- F/_ x ( A X. B ) |",
+  "conclusion" : "#P_nfxp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vz", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vy.tru", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_copab--6", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_copab--1", "#T_copab--2", "#T_vy.tru", "#T_copab--3", "#T_vz", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_copab--6", "#T_wnfc", "#T_vx", "#T_cA", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcxfr", "#P_nfopab", "#P_nfcri", "#P_df-xp", "#P_nfan" ]
+}

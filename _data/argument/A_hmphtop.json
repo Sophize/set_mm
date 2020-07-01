@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hmphtop on Metamath](http://us.metamath.org/mpegif/hmphtop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-hmph | |- ~= = ( `' Homeo \" ( _V \\ 1o ) ) |\n| 2 |  | #P_cnvimass | |- ( `' Homeo \" ( _V \\ 1o ) ) C_ dom Homeo |\n| 3 |  | #P_hmeofn | |- Homeo Fn ( Top X. Top ) |\n| 4 |  | #P_fndm | |- ( Homeo Fn ( Top X. Top ) -> dom Homeo = ( Top X. Top ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- dom Homeo = ( Top X. Top ) |\n| 6 | 2, 5 | #P_sseqtri | |- ( `' Homeo \" ( _V \\ 1o ) ) C_ ( Top X. Top ) |\n| 7 | 1, 6 | #P_eqsstri | |- ~= C_ ( Top X. Top ) |\n| 8 | 7 | #P_brel | |- ( J ~= K -> ( J e. Top /\\ K e. Top ) ) |",
+  "conclusion" : "#P_hmphtop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_chmph", "#T_wceq", "#T_ccnv", "#T_chmeo", "#T_cima", "#T_cvv", "#T_cdif", "#T_c1o", "#T_ccnv", "#T_chmeo", "#T_cima", "#T_cvv", "#T_cdif", "#T_c1o", "#T_wss", "#T_cdm", "#T_chmeo", "#T_chmeo", "#T_wfn", "#T_ctop", "#T_cxp", "#T_ctop", "#T_chmeo", "#T_wfn", "#T_ctop", "#T_cxp", "#T_ctop", "#T_wi", "#T_cdm", "#T_chmeo", "#T_wceq", "#T_ctop", "#T_cxp", "#T_ctop", "#T_cdm", "#T_chmeo", "#T_wceq", "#T_ctop", "#T_cxp", "#T_ctop", "#T_ccnv", "#T_chmeo", "#T_cima", "#T_cvv", "#T_cdif", "#T_c1o", "#T_wss", "#T_ctop", "#T_cxp", "#T_ctop", "#T_chmph", "#T_wss", "#T_ctop", "#T_cxp", "#T_ctop", "#T_cJ", "#T_chmph", "#T_cK", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cK", "#T_wcel", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnvimass", "#P_ax-mp", "#P_df-hmph", "#P_sseqtri", "#P_hmeofn", "#P_fndm", "#P_eqsstri", "#P_brel" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mon on Metamath](http://us.metamath.org/mpegif/df-mon.html)"
+  } ],
+  "names" : [ "df-mon" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmon", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_csb--1", "#T_chom", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vh", "#T_csb--3", "#T_vx", "#T_cmpt2--1", "#T_vb", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_vb", "#T_cmpt2--4", "#T_crab--1", "#T_vf", "#T_crab--2", "#T_vx", "#T_vh", "#T_vy", "#T_crab--3", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vb", "#T_wfun", "#T_ccnv", "#T_vg", "#T_cmpt--1", "#T_vz", "#T_vh", "#T_vx", "#T_cmpt--2", "#T_vf", "#T_cop--1", "#T_vz", "#T_cop--2", "#T_vx", "#T_cop--3", "#T_cco", "#T_cfv", "#T_vc", "#T_vy", "#T_vg", "#T_crab--4", "#T_vb", "#T_vc", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Function returning the monomorphisms of the category ` c ` .  JFM CAT_1 def. 10.  (Contributed by FL, 5-Dec-2007.)  (Revised by Mario Carneiro, 2-Jan-2017.) ",
+  "statement" : "df-mon $p |- Mono = ( c e. Cat |-> [_ ( Base ` c ) / b ]_ [_ ( Hom ` c ) / h ]_ ( x e. b , y e. b |-> { f e. ( x h y ) | A. z e. b Fun `' ( g e. ( z h x ) |-> ( f ( <. z , x >. ( comp ` c ) y ) g ) ) } ) ) $.\n$d b c f g h x y z $."
+}

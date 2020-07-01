@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mulcompig on Metamath](http://us.metamath.org/mpegif/mulcompig.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pinn | |- ( A e. N. -> A e. _om ) |\n| 2 |  | #P_pinn | |- ( B e. N. -> B e. _om ) |\n| 3 |  | #P_nnmcom | |- ( ( A e. _om /\\ B e. _om ) -> ( A .o B ) = ( B .o A ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. N. /\\ B e. N. ) -> ( A .o B ) = ( B .o A ) ) |\n| 5 |  | #P_mulpiord | |- ( ( A e. N. /\\ B e. N. ) -> ( A .N B ) = ( A .o B ) ) |\n| 6 |  | #P_mulpiord | |- ( ( B e. N. /\\ A e. N. ) -> ( B .N A ) = ( B .o A ) ) |\n| 7 | 6 | #P_ancoms | |- ( ( A e. N. /\\ B e. N. ) -> ( B .N A ) = ( B .o A ) ) |\n| 8 | 4, 5, 7 | #P_3eqtr4d | |- ( ( A e. N. /\\ B e. N. ) -> ( A .N B ) = ( B .N A ) ) |",
+  "conclusion" : "#P_mulcompig",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_comu", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_comu", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA.wceq", "#T_cmi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cB.wceq", "#T_cmi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_comu", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cB.wceq", "#T_cmi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_comu", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cnpi", "#T_wa", "#T_cB", "#T_wcel", "#T_cnpi", "#T_wi", "#T_cA", "#T_cmi", "#T_cB", "#T_wceq", "#T_cB", "#T_cmi", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pinn", "#P_nnmcom", "#P_3eqtr4d", "#P_syl2an", "#P_mulpiord", "#P_ancoms" ]
+}

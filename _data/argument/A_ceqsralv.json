@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ceqsralv on Metamath](http://us.metamath.org/mpegif/ceqsralv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ceqsralv.2 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | #P_nfv | |- F/ x ps |\n| 3 | 1 | #P_ax-gen | |- A. x ( x = A -> ( ph <-> ps ) ) |\n| 4 |  | #P_ceqsralt | |- ( ( F/ x ps /\\ A. x ( x = A -> ( ph <-> ps ) ) /\\ A e. B ) -> ( A. x e. B ( x = A -> ph ) <-> ps ) ) |\n| 5 | 2, 3, 4 | #P_mp3an12 | |- ( A e. B -> ( A. x e. B ( x = A -> ph ) <-> ps ) ) |",
+  "conclusion" : "#P_ceqsralv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_w3a--1", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_mp3an12", "#P_ceqsralt", "#P_ax-gen" ]
+}

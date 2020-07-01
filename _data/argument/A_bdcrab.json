@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdcrab on Metamath](http://us.metamath.org/mpegif/bdcrab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdcrab.1 | |- Bdd_ A |\n| 2 |  | bdcrab.2 | |- Bdd ph |\n| 3 | 1 | #P_bdeli | |- Bdd x e. A |\n| 4 | 3, 2 | #P_ax-bdan | |- Bdd ( x e. A /\\ ph ) |\n| 5 | 4 | #P_bdcab | |- Bdd_ { x | ( x e. A /\\ ph ) } |\n| 6 |  | #P_df-rab | |- { x e. A | ph } = { x | ( x e. A /\\ ph ) } |\n| 7 | 5, 6 | #P_bdceqir | |- Bdd_ { x e. A | ph } |",
+  "conclusion" : "#P_bdcrab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbdc", "#T_cA", "#T_wbd", "#T_wph", "#T_wbd", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wbd", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wbdc", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cab--3", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cA.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cab--3", "#T_wbdc", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cA", "#T_crab--3", "#T_wph", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bdeli", "#P_bdceqir", "#P_ax-bdan", "#P_bdcab", "#P_df-rab" ]
+}

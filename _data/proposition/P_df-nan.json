@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-nan on Metamath](http://us.metamath.org/mpegif/df-nan.html)"
+  } ],
+  "names" : [ "df-nan" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wnan", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define incompatibility, or alternative denial ('not-and' or 'nand').  This is also called the Sheffer stroke, represented by a vertical bar, but we use a different symbol to avoid ambiguity with other uses of the vertical bar.  In the second edition of Principia Mathematica (1927), Russell and Whitehead used the Sheffer stroke and suggested it as a replacement for the \"or\" and \"not\" operations of the first edition.  However, in practice, \"or\" and \"not\" are more widely used.  After we define the constant true ` T. ` ( ~ df-tru ) and the constant false ` F. ` ( ~ df-fal ), we will be able to prove these truth table values: ` ( ( T. -/\\ T. ) <-> F. ) ` ( ~ trunantru ), ` ( ( T. -/\\ F. ) <-> T. ) ` ( ~ trunanfal ), ` ( ( F. -/\\ T. ) <-> T. ) ` ( ~ falnantru ), and ` ( ( F. -/\\ F. ) <-> T. ) ` ( ~ falnanfal ).  Contrast with ` /\\ ` ( ~ df-an ), ` \\/ ` ( ~ df-or ), ` -> ` ( ~ wi ), and ` \\/_ ` ( ~ df-xor ) .  (Contributed by Jeff Hoffman, 19-Nov-2007.) ",
+  "statement" : "df-nan $p |- ( ( ph -/\\ ps ) <-> -. ( ph /\\ ps ) ) $."
+}

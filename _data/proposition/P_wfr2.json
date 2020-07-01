@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wfr2 on Metamath](http://us.metamath.org/mpegif/wfr2.html)"
+  } ],
+  "names" : [ "wfr2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wwe", "#T_cA", "#T_cR", "#T_wse", "#T_cA", "#T_cF", "#T_wceq", "#T_cwrecs--1", "#T_cR", "#T_cwrecs--2", "#T_cA", "#T_cwrecs--3", "#T_cG", "#T_cX", "#T_wcel", "#T_cA", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cG", "#T_cfv", "#T_cF", "#T_cres", "#T_cpred--1", "#T_cR", "#T_cpred--2", "#T_cA", "#T_cpred--3", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Principle of Well-Founded Recursion, part 2 of 3.  Next, we show that the value of ` F ` at any ` z e. A ` is ` G ` recursively applied to all \"previous\" values of ` F ` .  (Contributed by Scott Fenton, 18-Apr-2011.)  (Revised by Mario Carneiro, 26-Jun-2015.) ",
+  "statement" : "wfr2.1 $e |- R We A $.\nwfr2.2 $e |- R Se A $.\nwfr2.3 $e |- F = wrecs ( R , A , G ) $.\nwfr2 $p |- ( X e. A -> ( F ` X ) = ( G ` ( F |` Pred ( R , A , X ) ) ) ) $."
+}

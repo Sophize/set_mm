@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0opthi on Metamath](http://us.metamath.org/mpegif/nn0opthi.html)"
+  } ],
+  "names" : [ "nn0opthi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cA", "#T_caddc", "#T_cB", "#T_cmul", "#T_cA", "#T_caddc", "#T_cB", "#T_caddc", "#T_cB", "#T_wceq", "#T_cC", "#T_caddc", "#T_cD", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_caddc", "#T_cD", "#T_wb", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An ordered pair theorem for nonnegative integers.  Theorem 17.3 of [Quine] p. 124.  We can represent an ordered pair of nonnegative integers ` A ` and ` B ` by ` ( ( ( A + B ) x. ( A + B ) ) + B ) ` .  If two such ordered pairs are equal, their first elements are equal and their second elements are equal.  Contrast this ordered pair representation with the standard one ~ df-op that works for any set. (Contributed by Raph Levien, 10-Dec-2002.)  (Proof shortened by Scott Fenton, 8-Sep-2010.) ",
+  "statement" : "nn0opth.1 $e |- A e. NN0 $.\nnn0opth.2 $e |- B e. NN0 $.\nnn0opth.3 $e |- C e. NN0 $.\nnn0opth.4 $e |- D e. NN0 $.\nnn0opthi $p |- ( ( ( ( A + B ) x. ( A + B ) ) + B ) = ( ( ( C + D ) x. ( C + D ) ) + D ) <-> ( A = C /\\ B = D ) ) $."
+}

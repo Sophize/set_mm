@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sin0 on Metamath](http://us.metamath.org/mpegif/sin0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neg0 | |- -u 0 = 0 |\n| 2 | 1 | #P_fveq2i | |- ( sin ` -u 0 ) = ( sin ` 0 ) |\n| 3 |  | #P_0cn | |- 0 e. CC |\n| 4 |  | #P_sinneg | |- ( 0 e. CC -> ( sin ` -u 0 ) = -u ( sin ` 0 ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( sin ` -u 0 ) = -u ( sin ` 0 ) |\n| 6 | 2, 5 | #P_eqtr3i | |- ( sin ` 0 ) = -u ( sin ` 0 ) |\n| 7 |  | #P_sincl | |- ( 0 e. CC -> ( sin ` 0 ) e. CC ) |\n| 8 | 3, 7 | #P_ax-mp | |- ( sin ` 0 ) e. CC |\n| 9 | 8 | #P_eqnegi | |- ( ( sin ` 0 ) = -u ( sin ` 0 ) <-> ( sin ` 0 ) = 0 ) |\n| 10 | 6, 9 | #P_mpbi | |- ( sin ` 0 ) = 0 |",
+  "conclusion" : "#P_sin0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_cc0", "#T_wceq", "#T_cc0", "#T_csin", "#T_cfv", "#T_cneg", "#T_cc0", "#T_wceq", "#T_csin", "#T_cfv", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cc", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_csin", "#T_cfv", "#T_cneg", "#T_cc0", "#T_wceq", "#T_cneg", "#T_csin", "#T_cfv", "#T_cc0", "#T_csin", "#T_cfv", "#T_cneg", "#T_cc0", "#T_wceq", "#T_cneg", "#T_csin", "#T_cfv", "#T_cc0", "#T_csin", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cneg", "#T_csin", "#T_cfv", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_csin", "#T_cfv", "#T_cc0", "#T_wcel", "#T_cc", "#T_csin", "#T_cfv", "#T_cc0", "#T_wcel", "#T_cc", "#T_csin", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cneg", "#T_csin", "#T_cfv", "#T_cc0", "#T_wb", "#T_csin", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0", "#T_csin", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_ax-mp", "#P_sincl", "#P_eqtr3i", "#P_0cn", "#P_mpbi", "#P_eqnegi", "#P_sinneg", "#P_neg0" ]
+}

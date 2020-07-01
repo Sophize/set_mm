@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm13.181 on Metamath](http://us.metamath.org/mpegif/pm13.181.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqcom | |- ( A = B <-> B = A ) |\n| 2 |  | #P_pm13.18 | |- ( ( B = A /\\ B =/= C ) -> A =/= C ) |\n| 3 | 1, 2 | #P_sylanb | |- ( ( A = B /\\ B =/= C ) -> A =/= C ) |",
+  "conclusion" : "#P_pm13.181",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_cA", "#T_wceq", "#T_cB", "#T_wa", "#T_cB", "#T_wne", "#T_cC", "#T_wi", "#T_cA", "#T_wne", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylanb", "#P_pm13.18", "#P_eqcom" ]
+}

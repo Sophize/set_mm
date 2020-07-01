@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neg11 on Metamath](http://us.metamath.org/mpegif/neg11.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_negeq | |- ( -u A = -u B -> -u -u A = -u -u B ) |\n| 2 |  | #P_negneg | |- ( A e. CC -> -u -u A = A ) |\n| 3 |  | #P_negneg | |- ( B e. CC -> -u -u B = B ) |\n| 4 | 2, 3 | #P_eqeqan12d | |- ( ( A e. CC /\\ B e. CC ) -> ( -u -u A = -u -u B <-> A = B ) ) |\n| 5 | 1, 4 | #P_syl5ib | |- ( ( A e. CC /\\ B e. CC ) -> ( -u A = -u B -> A = B ) ) |\n| 6 |  | #P_negeq | |- ( A = B -> -u A = -u B ) |\n| 7 | 5, 6 | #P_impbid1 | |- ( ( A e. CC /\\ B e. CC ) -> ( -u A = -u B <-> A = B ) ) |",
+  "conclusion" : "#P_neg11",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_wi", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cneg", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cneg", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cB", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA", "#T_wceq", "#T_cneg", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeqan12d", "#P_syl5ib", "#P_negneg", "#P_impbid1", "#P_negeq" ]
+}

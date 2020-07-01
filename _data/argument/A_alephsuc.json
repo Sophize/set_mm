@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephsuc on Metamath](http://us.metamath.org/mpegif/alephsuc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_rdgsuc | |- ( A e. On -> ( rec ( har , _om ) ` suc A ) = ( har ` ( rec ( har , _om ) ` A ) ) ) |\n| 2 |  | #P_df-aleph | |- aleph = rec ( har , _om ) |\n| 3 | 2 | #P_fveq1i | |- ( aleph ` suc A ) = ( rec ( har , _om ) ` suc A ) |\n| 4 | 2 | #P_fveq1i | |- ( aleph ` A ) = ( rec ( har , _om ) ` A ) |\n| 5 | 4 | #P_fveq2i | |- ( har ` ( aleph ` A ) ) = ( har ` ( rec ( har , _om ) ` A ) ) |\n| 6 | 1, 3, 5 | #P_3eqtr4g | |- ( A e. On -> ( aleph ` suc A ) = ( har ` ( aleph ` A ) ) ) |",
+  "conclusion" : "#P_alephsuc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_char", "#T_cfv", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_cA.wceq", "#T_cale", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cale", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_cA.wceq", "#T_char", "#T_cfv", "#T_cale", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_char", "#T_cfv", "#T_crdg--1", "#T_char", "#T_crdg--2", "#T_com", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cale", "#T_cfv", "#T_csuc", "#T_cA", "#T_wceq", "#T_char", "#T_cfv", "#T_cale", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_fveq1i", "#P_df-aleph", "#P_3eqtr4g", "#P_rdgsuc" ]
+}

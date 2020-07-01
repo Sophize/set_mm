@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lemul1ad on Metamath](http://us.metamath.org/mpegif/lemul1ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ltp1d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | divgt0d.2 | |- ( ph -> B e. RR ) |\n| 3 |  | lemul1ad.3 | |- ( ph -> C e. RR ) |\n| 4 |  | lemul1ad.4 | |- ( ph -> 0 <_ C ) |\n| 5 |  | lemul1ad.5 | |- ( ph -> A <_ B ) |\n| 6 | 3, 4 | #P_jca | |- ( ph -> ( C e. RR /\\ 0 <_ C ) ) |\n| 7 |  | #P_lemul1a | |- ( ( ( A e. RR /\\ B e. RR /\\ ( C e. RR /\\ 0 <_ C ) ) /\\ A <_ B ) -> ( A x. C ) <_ ( B x. C ) ) |\n| 8 | 1, 2, 6, 5, 7 | #P_syl31anc | |- ( ph -> ( A x. C ) <_ ( B x. C ) ) |",
+  "conclusion" : "#P_lemul1ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cle", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cC", "#T_wa", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cle", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cmul", "#T_cC", "#T_cle", "#T_cB", "#T_cmul", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl31anc", "#P_lemul1a", "#P_jca" ]
+}

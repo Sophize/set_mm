@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See flidz on Metamath](http://us.metamath.org/mpegif/flidz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_flcl | |- ( A e. RR -> ( |_ ` A ) e. ZZ ) |\n| 2 |  | #P_eleq1 | |- ( ( |_ ` A ) = A -> ( ( |_ ` A ) e. ZZ <-> A e. ZZ ) ) |\n| 3 | 1, 2 | #P_syl5ibcom | |- ( A e. RR -> ( ( |_ ` A ) = A -> A e. ZZ ) ) |\n| 4 |  | #P_flid | |- ( A e. ZZ -> ( |_ ` A ) = A ) |\n| 5 | 3, 4 | #P_impbid1 | |- ( A e. RR -> ( ( |_ ` A ) = A <-> A e. ZZ ) ) |",
+  "conclusion" : "#P_flidz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_cA.wceq", "#T_wcel", "#T_cz", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA", "#T_wb", "#T_cA", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5ibcom", "#P_eleq1", "#P_flcl", "#P_flid", "#P_impbid1" ]
+}

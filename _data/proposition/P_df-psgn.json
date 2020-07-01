@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-psgn on Metamath](http://us.metamath.org/mpegif/df-psgn.html)"
+  } ],
+  "names" : [ "df-psgn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpsgn", "#T_wceq", "#T_vd", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx", "#T_cmpt--1", "#T_crab--1", "#T_vp", "#T_crab--2", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_vd", "#T_crab--3", "#T_cdm", "#T_vp", "#T_cdif", "#T_cid", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cmpt--2", "#T_cio", "#T_vs", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cword", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_vd", "#T_vx", "#T_wceq", "#T_csymg", "#T_cfv", "#T_vd", "#T_cgsu", "#T_vw", "#T_wa", "#T_vs", "#T_wceq", "#T_cneg", "#T_c1", "#T_cexp", "#T_chash", "#T_cfv", "#T_vw", "#T_vd", "#T_vp", "#T_vs", "#T_vw", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a function which takes the value ` 1 ` for even permutations and ` -u 1 ` for odd.  (Contributed by Stefan O'Rear, 28-Aug-2015.) ",
+  "statement" : "df-psgn $p |- pmSgn = ( d e. _V |-> ( x e. { p e. ( Base ` ( SymGrp ` d ) ) | dom ( p \\ _I ) e. Fin } |-> ( iota s E. w e. Word ran ( pmTrsp ` d ) ( x = ( ( SymGrp ` d ) gsum w ) /\\ s = ( -u 1 ^ ( # ` w ) ) ) ) ) ) $.\n$d d p s w x $."
+}

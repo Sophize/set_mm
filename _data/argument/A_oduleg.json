@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oduleg on Metamath](http://us.metamath.org/mpegif/oduleg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oduval.d | |- D = ( ODual ` O ) |\n| 2 |  | oduval.l | |- .<_ = ( le ` O ) |\n| 3 |  | oduleg.g | |- G = ( le ` D ) |\n| 4 | 1, 2 | #P_oduleval | |- `' .<_ = ( le ` D ) |\n| 5 | 3, 4 | #P_eqtr4i | |- G = `' .<_ |\n| 6 | 5 | #P_breqi | |- ( A G B <-> A `' .<_ B ) |\n| 7 |  | #P_brcnvg | |- ( ( A e. V /\\ B e. W ) -> ( A `' .<_ B <-> B .<_ A ) ) |\n| 8 | 6, 7 | #P_syl5bb | |- ( ( A e. V /\\ B e. W ) -> ( A G B <-> B .<_ A ) ) |",
+  "conclusion" : "#P_oduleg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_codu", "#T_cfv", "#T_cO", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cO", "#T_cG", "#T_wceq", "#T_cple", "#T_cfv", "#T_cD", "#T_ccnv", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cD", "#T_cG", "#T_wceq", "#T_ccnv", "#T_c.le", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_ccnv", "#T_c.le", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_ccnv", "#T_c.le", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_c.le", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_wb", "#T_cB", "#T_c.le", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_syl5bb", "#P_brcnvg", "#P_breqi", "#P_oduleval" ]
+}

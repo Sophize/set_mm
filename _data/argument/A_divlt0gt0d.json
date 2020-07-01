@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divlt0gt0d on Metamath](http://us.metamath.org/mpegif/divlt0gt0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divlt0gt0d.1 | |- ( ph -> A e. RR ) |\n| 2 |  | divlt0gt0d.2 | |- ( ph -> B e. RR+ ) |\n| 3 |  | divlt0gt0d.3 | |- ( ph -> A < 0 ) |\n| 4 |  | #P_0red | |- ( ph -> 0 e. RR ) |\n| 5 | 1, 4 | #P_ltnled | |- ( ph -> ( A < 0 <-> -. 0 <_ A ) ) |\n| 6 | 3, 5 | #P_mpbid | |- ( ph -> -. 0 <_ A ) |\n| 7 | 1, 2 | #P_ge0divd | |- ( ph -> ( 0 <_ A <-> 0 <_ ( A / B ) ) ) |\n| 8 | 6, 7 | #P_mtbid | |- ( ph -> -. 0 <_ ( A / B ) ) |\n| 9 | 1, 2 | #P_rerpdivcld | |- ( ph -> ( A / B ) e. RR ) |\n| 10 | 9, 4 | #P_ltnled | |- ( ph -> ( ( A / B ) < 0 <-> -. 0 <_ ( A / B ) ) ) |\n| 11 | 8, 10 | #P_mpbird | |- ( ph -> ( A / B ) < 0 ) |",
+  "conclusion" : "#P_divlt0gt0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cc0", "#T_wph", "#T_wi", "#T_cc0", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cc0", "#T_wb", "#T_wn", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_wn", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wb", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wn", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_clt", "#T_cc0", "#T_wb", "#T_wn", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cdiv", "#T_cB", "#T_clt", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0red", "#P_mpbid", "#P_ge0divd", "#P_mtbid", "#P_ltnled", "#P_rerpdivcld", "#P_mpbird" ]
+}

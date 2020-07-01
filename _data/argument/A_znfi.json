@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See znfi on Metamath](http://us.metamath.org/mpegif/znfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | zntos.y | |- Y = ( Z/nZ ` N ) |\n| 2 |  | znhash.1 | |- B = ( Base ` Y ) |\n| 3 | 1, 2 | #P_znhash | |- ( N e. NN -> ( # ` B ) = N ) |\n| 4 |  | #P_nnnn0 | |- ( N e. NN -> N e. NN0 ) |\n| 5 | 3, 4 | #P_eqeltrd | |- ( N e. NN -> ( # ` B ) e. NN0 ) |\n| 6 |  | #P_fvex | |- ( Base ` Y ) e. _V |\n| 7 | 2, 6 | #P_eqeltri | |- B e. _V |\n| 8 |  | #P_hashclb | |- ( B e. _V -> ( B e. Fin <-> ( # ` B ) e. NN0 ) ) |\n| 9 | 7, 8 | #P_ax-mp | |- ( B e. Fin <-> ( # ` B ) e. NN0 ) |\n| 10 | 5, 9 | #P_sylibr | |- ( N e. NN -> B e. Fin ) |",
+  "conclusion" : "#P_znfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_czn", "#T_cfv", "#T_cN", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cn0", "#T_cbs", "#T_cfv", "#T_cY", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cn0", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_chash", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cn0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_ax-mp", "#P_znhash", "#P_eqeltrd", "#P_nnnn0", "#P_sylibr", "#P_hashclb", "#P_fvex" ]
+}

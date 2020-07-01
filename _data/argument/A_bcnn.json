@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bcnn on Metamath](http://us.metamath.org/mpegif/bcnn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0z | |- 0 e. ZZ |\n| 2 |  | #P_bccmpl | |- ( ( N e. NN0 /\\ 0 e. ZZ ) -> ( N _C 0 ) = ( N _C ( N - 0 ) ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( N e. NN0 -> ( N _C 0 ) = ( N _C ( N - 0 ) ) ) |\n| 4 |  | #P_bcn0 | |- ( N e. NN0 -> ( N _C 0 ) = 1 ) |\n| 5 |  | #P_nn0cn | |- ( N e. NN0 -> N e. CC ) |\n| 6 | 5 | #P_subid1d | |- ( N e. NN0 -> ( N - 0 ) = N ) |\n| 7 | 6 | #P_oveq2d | |- ( N e. NN0 -> ( N _C ( N - 0 ) ) = ( N _C N ) ) |\n| 8 | 3, 4, 7 | #P_3eqtr3rd | |- ( N e. NN0 -> ( N _C N ) = 1 ) |",
+  "conclusion" : "#P_bcnn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cn0", "#T_wa", "#T_cc0", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cbc", "#T_cc0", "#T_wceq", "#T_cN", "#T_cbc", "#T_cN", "#T_cmin", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_cbc", "#T_cc0", "#T_wceq", "#T_cN", "#T_cbc", "#T_cN", "#T_cmin", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_cbc", "#T_cc0", "#T_wceq", "#T_c1", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_cmin", "#T_cc0", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_cbc", "#T_cN", "#T_cmin", "#T_cc0", "#T_wceq", "#T_cN", "#T_cbc", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_cbc", "#T_cN", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0cn", "#P_bcn0", "#P_3eqtr3rd", "#P_oveq2d", "#P_subid1d", "#P_bccmpl", "#P_mpan2", "#P_0z" ]
+}

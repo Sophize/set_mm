@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wdomref on Metamath](http://us.metamath.org/mpegif/wdomref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resiexg | |- ( X e. V -> ( _I |` X ) e. _V ) |\n| 2 |  | #P_f1oi | |- ( _I |` X ) : X -1-1-onto-> X |\n| 3 |  | #P_f1ofo | |- ( ( _I |` X ) : X -1-1-onto-> X -> ( _I |` X ) : X -onto-> X ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( _I |` X ) : X -onto-> X |\n| 5 |  | #P_fowdom | |- ( ( ( _I |` X ) e. _V /\\ ( _I |` X ) : X -onto-> X ) -> X ~<_* X ) |\n| 6 | 1, 4, 5 | #P_sylancl | |- ( X e. V -> X ~<_* X ) |",
+  "conclusion" : "#P_wdomref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cid", "#T_cres", "#T_cX", "#T_wcel", "#T_cvv", "#T_cid", "#T_cres", "#T_cX", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cX", "#T_cid", "#T_cres", "#T_cX", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cX", "#T_wi", "#T_cid", "#T_cres", "#T_cX", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cX", "#T_cid", "#T_cres", "#T_cX", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cX", "#T_cid", "#T_cres", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cid", "#T_cres", "#T_cX", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cX", "#T_wi", "#T_cX", "#T_cwdom", "#T_cX", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_cwdom", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1oi", "#P_ax-mp", "#P_f1ofo", "#P_sylancl", "#P_resiexg", "#P_fowdom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqlei2 on Metamath](http://us.metamath.org/mpegif/eqlei2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt.1 | |- A e. RR |\n| 2 |  | #P_eleq1a | |- ( A e. RR -> ( B = A -> B e. RR ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( B = A -> B e. RR ) |\n| 4 |  | #P_eqcom | |- ( B = A <-> A = B ) |\n| 5 |  | #P_letri3 | |- ( ( A e. RR /\\ B e. RR ) -> ( A = B <-> ( A <_ B /\\ B <_ A ) ) ) |\n| 6 | 1, 5 | #P_mpan | |- ( B e. RR -> ( A = B <-> ( A <_ B /\\ B <_ A ) ) ) |\n| 7 | 4, 6 | #P_syl5bb | |- ( B e. RR -> ( B = A <-> ( A <_ B /\\ B <_ A ) ) ) |\n| 8 |  | #P_simpr | |- ( ( A <_ B /\\ B <_ A ) -> B <_ A ) |\n| 9 | 7, 8 | #P_syl6bi | |- ( B e. RR -> ( B = A -> B <_ A ) ) |\n| 10 | 3, 9 | #P_mpcom | |- ( B = A -> B <_ A ) |",
+  "conclusion" : "#P_eqlei2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cA.wceq", "#T_cle", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cB", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_mpcom", "#P_eleq1a", "#P_ax-mp", "#P_syl6bi", "#P_letri3", "#P_mpan", "#P_simpr", "#P_eqcom" ]
+}

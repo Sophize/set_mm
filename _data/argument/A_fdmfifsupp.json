@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fdmfifsupp on Metamath](http://us.metamath.org/mpegif/fdmfifsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fdmfisuppfi.f | |- ( ph -> F : D --> R ) |\n| 2 |  | fdmfisuppfi.d | |- ( ph -> D e. Fin ) |\n| 3 |  | fdmfisuppfi.z | |- ( ph -> Z e. V ) |\n| 4 |  | #P_ffun | |- ( F : D --> R -> Fun F ) |\n| 5 | 1, 4 | #P_syl | |- ( ph -> Fun F ) |\n| 6 | 1, 2, 3 | #P_fdmfisuppfi | |- ( ph -> ( F supp Z ) e. Fin ) |\n| 7 |  | #P_ffn | |- ( F : D --> R -> F Fn D ) |\n| 8 | 1, 7 | #P_syl | |- ( ph -> F Fn D ) |\n| 9 |  | #P_fnex | |- ( ( F Fn D /\\ D e. Fin ) -> F e. _V ) |\n| 10 | 8, 2, 9 | #P_syl2anc | |- ( ph -> F e. _V ) |\n| 11 |  | #P_isfsupp | |- ( ( F e. _V /\\ Z e. V ) -> ( F finSupp Z <-> ( Fun F /\\ ( F supp Z ) e. Fin ) ) ) |\n| 12 | 10, 3, 11 | #P_syl2anc | |- ( ph -> ( F finSupp Z <-> ( Fun F /\\ ( F supp Z ) e. Fin ) ) ) |\n| 13 | 5, 6, 12 | #P_mpbir2and | |- ( ph -> F finSupp Z ) |",
+  "conclusion" : "#P_fdmfifsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_cR", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cV", "#T_cF", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_cR", "#T_wi", "#T_wfun", "#T_cF", "#T_wph", "#T_wi", "#T_wfun", "#T_cF", "#T_wph", "#T_wi", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_cF", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_cR", "#T_wi", "#T_cF", "#T_wfn", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wfn", "#T_cD", "#T_cF", "#T_wfn", "#T_cD", "#T_wa", "#T_cD", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_wcel", "#T_cvv", "#T_wa", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_ffun", "#P_fnex", "#P_syl2anc", "#P_isfsupp", "#P_syl", "#P_fdmfisuppfi", "#P_mpbir2and" ]
+}

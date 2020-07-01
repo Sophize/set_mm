@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfcdeq on Metamath](http://us.metamath.org/mpegif/nfcdeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfcdeq.1 | |- F/ x ph |\n| 2 |  | nfcdeq.2 | |- CondEq ( x = y -> ( ph <-> ps ) ) |\n| 3 | 1 | #P_sbf | |- ( [ y / x ] ph <-> ph ) |\n| 4 |  | #P_nfv | |- F/ x ps |\n| 5 | 2 | #P_cdeqri | |- ( x = y -> ( ph <-> ps ) ) |\n| 6 | 4, 5 | #P_sbie | |- ( [ y / x ] ph <-> ps ) |\n| 7 | 3, 6 | #P_bitr3i | |- ( ph <-> ps ) |",
+  "conclusion" : "#P_nfcdeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wcdeq--1", "#T_vx", "#T_wcdeq--2", "#T_vy", "#T_wcdeq--3", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_sbie", "#P_sbf", "#P_cdeqri", "#P_bitr3i" ]
+}

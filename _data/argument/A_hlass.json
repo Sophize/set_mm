@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlass on Metamath](http://us.metamath.org/mpegif/hlass.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hladdf.1 | |- X = ( BaseSet ` U ) |\n| 2 |  | hladdf.2 | |- G = ( +v ` U ) |\n| 3 |  | #P_hlnv | |- ( U e. CHilOLD -> U e. NrmCVec ) |\n| 4 | 1, 2 | #P_nvass | |- ( ( U e. NrmCVec /\\ ( A e. X /\\ B e. X /\\ C e. X ) ) -> ( ( A G B ) G C ) = ( A G ( B G C ) ) ) |\n| 5 | 3, 4 | #P_sylan | |- ( ( U e. CHilOLD /\\ ( A e. X /\\ B e. X /\\ C e. X ) ) -> ( ( A G B ) G C ) = ( A G ( B G C ) ) ) |",
+  "conclusion" : "#P_hlass",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_chlo", "#T_wi", "#T_cU", "#T_wcel", "#T_cnv", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cG", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cG", "#T_cB.wceq", "#T_cG", "#T_cC", "#T_cU", "#T_wcel", "#T_chlo", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cX", "#T_wi", "#T_cA", "#T_cG", "#T_cB", "#T_cG", "#T_cC", "#T_wceq", "#T_cA", "#T_cG", "#T_cB", "#T_cG", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan", "#P_hlnv", "#P_nvass" ]
+}

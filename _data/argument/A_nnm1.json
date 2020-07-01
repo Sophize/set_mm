@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nnm1 on Metamath](http://us.metamath.org/mpegif/nnm1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-1o | |- 1o = suc (/) |\n| 2 | 1 | #P_oveq2i | |- ( A .o 1o ) = ( A .o suc (/) ) |\n| 3 |  | #P_peano1 | |- (/) e. _om |\n| 4 |  | #P_nnmsuc | |- ( ( A e. _om /\\ (/) e. _om ) -> ( A .o suc (/) ) = ( ( A .o (/) ) +o A ) ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( A e. _om -> ( A .o suc (/) ) = ( ( A .o (/) ) +o A ) ) |\n| 6 |  | #P_nnm0 | |- ( A e. _om -> ( A .o (/) ) = (/) ) |\n| 7 | 6 | #P_oveq1d | |- ( A e. _om -> ( ( A .o (/) ) +o A ) = ( (/) +o A ) ) |\n| 8 |  | #P_nna0r | |- ( A e. _om -> ( (/) +o A ) = A ) |\n| 9 | 5, 7, 8 | #P_3eqtrd | |- ( A e. _om -> ( A .o suc (/) ) = A ) |\n| 10 | 2, 9 | #P_syl5eq | |- ( A e. _om -> ( A .o 1o ) = A ) |",
+  "conclusion" : "#P_nnm1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1o", "#T_wceq", "#T_csuc", "#T_c0", "#T_cA.wceq", "#T_comu", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c0", "#T_c0", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_c0", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_c0", "#T_coa", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_coa", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_c0", "#T_coa", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_comu", "#T_csuc", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_cA", "#T_comu", "#T_c1o", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_peano1", "#P_nna0r", "#P_nnmsuc", "#P_nnm0", "#P_oveq1d", "#P_mpan2", "#P_syl5eq", "#P_oveq2i", "#P_3eqtrd", "#P_df-1o" ]
+}

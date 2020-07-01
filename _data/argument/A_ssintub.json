@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssintub on Metamath](http://us.metamath.org/mpegif/ssintub.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssint | |- ( A C_ |^| { x e. B | A C_ x } <-> A. y e. { x e. B | A C_ x } A C_ y ) |\n| 2 |  | #P_sseq2 | |- ( x = y -> ( A C_ x <-> A C_ y ) ) |\n| 3 | 2 | #P_elrab | |- ( y e. { x e. B | A C_ x } <-> ( y e. B /\\ A C_ y ) ) |\n| 4 | 3 | #P_simprbi | |- ( y e. { x e. B | A C_ x } -> A C_ y ) |\n| 5 | 1, 4 | #P_mprgbir | |- A C_ |^| { x e. B | A C_ x } |",
+  "conclusion" : "#P_ssintub",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cA.wceq", "#T_wss", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA.wceq", "#T_wss", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wb", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_cA.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_vy.tru", "#T_cA", "#T_wss", "#T_cint", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_cA", "#T_wss", "#T_vx", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_simprbi", "#P_sseq2", "#P_mprgbir", "#P_ssint" ]
+}

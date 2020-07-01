@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-xrs on Metamath](http://us.metamath.org/mpegif/df-xrs.html)"
+  } ],
+  "names" : [ "df-xrs" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cxrs", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cxr", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cxad", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cmulr", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cxmu", "#T_cop--3", "#T_ctp--4", "#T_cun", "#T_ctp--1", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cordt", "#T_cfv", "#T_cle", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cple", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cle", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cds", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_cxr", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cxr", "#T_cmpt2--4", "#T_cif--1", "#T_vx", "#T_cle", "#T_vy", "#T_cif--2", "#T_vy", "#T_cxad", "#T_cxne", "#T_vx", "#T_cif--3", "#T_vx", "#T_cxad", "#T_cxne", "#T_vy", "#T_cop--3", "#T_ctp--4", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The extended real number structure.  Unlike ~ df-cnfld , the extended real numbers do not have good algebraic properties, so this is not actually a group or anything higher, even though it has just as many operations as ~ df-cnfld .  The main interest in this structure is in its ordering, which is complete and compact.  The metric described here is an extension of the absolute value metric, but it is not itself a metric because ` +oo ` is infinitely far from all other points.  The topology is based on the order and not the extended metric (which would make ` +oo ` an isolated point since there is nothing else in the ` 1 ` -ball around it).  All components of this structure agree with ` CCfld ` when restricted to ` RR ` .  (Contributed by Mario Carneiro, 20-Aug-2015.) ",
+  "statement" : "df-xrs $p |- RR*s = ( { <. ( Base ` ndx ) , RR* >. , <. ( +g ` ndx ) , +e >. , <. ( .r ` ndx ) , *e >. } u. { <. ( TopSet ` ndx ) , ( ordTop ` <_ ) >. , <. ( le ` ndx ) , <_ >. , <. ( dist ` ndx ) , ( x e. RR* , y e. RR* |-> if ( x <_ y , ( y +e -e x ) , ( x +e -e y ) ) ) >. } ) $.\n$d x y $."
+}

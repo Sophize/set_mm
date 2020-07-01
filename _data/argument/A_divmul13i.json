@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divmul13i on Metamath](http://us.metamath.org/mpegif/divmul13i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | divmuldiv.4 | |- D e. CC |\n| 5 |  | divmuldiv.5 | |- B =/= 0 |\n| 6 |  | divmuldiv.6 | |- D =/= 0 |\n| 7 | 3, 1 | #P_mulcomi | |- ( C x. A ) = ( A x. C ) |\n| 8 | 7 | #P_oveq1i | |- ( ( C x. A ) / ( B x. D ) ) = ( ( A x. C ) / ( B x. D ) ) |\n| 9 | 3, 2, 1, 4, 5, 6 | #P_divmuldivi | |- ( ( C / B ) x. ( A / D ) ) = ( ( C x. A ) / ( B x. D ) ) |\n| 10 | 1, 2, 3, 4, 5, 6 | #P_divmuldivi | |- ( ( A / B ) x. ( C / D ) ) = ( ( A x. C ) / ( B x. D ) ) |\n| 11 | 8, 9, 10 | #P_3eqtr4ri | |- ( ( A / B ) x. ( C / D ) ) = ( ( C / B ) x. ( A / D ) ) |",
+  "conclusion" : "#P_divmul13i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cD", "#T_wcel", "#T_cc", "#T_cB", "#T_wne", "#T_cc0", "#T_cD", "#T_wne", "#T_cc0", "#T_cC", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cC", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cD", "#T_wceq", "#T_cC", "#T_cmul", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_cdiv", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_cmul", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cmul", "#T_cD", "#T_cA", "#T_cdiv", "#T_cB", "#T_cmul", "#T_cC", "#T_cdiv", "#T_cD", "#T_wceq", "#T_cC", "#T_cdiv", "#T_cB", "#T_cmul", "#T_cA", "#T_cdiv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulcomi", "#P_3eqtr4ri", "#P_divmuldivi", "#P_oveq1i" ]
+}

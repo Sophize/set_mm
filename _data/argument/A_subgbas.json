@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subgbas on Metamath](http://us.metamath.org/mpegif/subgbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subggrp.h | |- H = ( G |`s S ) |\n| 2 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 3 | 2 | #P_subgss | |- ( S e. ( SubGrp ` G ) -> S C_ ( Base ` G ) ) |\n| 4 | 1, 2 | #P_ressbas2 | |- ( S C_ ( Base ` G ) -> S = ( Base ` H ) ) |\n| 5 | 3, 4 | #P_syl | |- ( S e. ( SubGrp ` G ) -> S = ( Base ` H ) ) |",
+  "conclusion" : "#P_subgbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_cG", "#T_cress", "#T_cS", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_cS", "#T_wss", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cH", "#T_cS", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_syl", "#P_ressbas2", "#P_subgss" ]
+}

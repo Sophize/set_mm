@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See erex on Metamath](http://us.metamath.org/mpegif/erex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_erssxp | |- ( R Er A -> R C_ ( A X. A ) ) |\n| 2 |  | #P_sqxpexg | |- ( A e. V -> ( A X. A ) e. _V ) |\n| 3 |  | #P_ssexg | |- ( ( R C_ ( A X. A ) /\\ ( A X. A ) e. _V ) -> R e. _V ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( R Er A /\\ A e. V ) -> R e. _V ) |\n| 5 | 4 | #P_ex | |- ( R Er A -> ( A e. V -> R e. _V ) ) |",
+  "conclusion" : "#P_erex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cR", "#T_wss", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cxp", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_wer", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_wer", "#T_cA", "#T_wi", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqxpexg", "#P_ssexg", "#P_ex", "#P_erssxp", "#P_syl2an" ]
+}

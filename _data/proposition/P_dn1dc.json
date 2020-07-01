@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dn1dc on Metamath](http://us.metamath.org/mpegif/dn1dc.html)"
+  } ],
+  "names" : [ "dn1dc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wa", "#T_wdc", "#T_wch", "#T_wa", "#T_wdc", "#T_wth", "#T_wi", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wn", "#T_wn", "#T_wch", "#T_wo", "#T_wn", "#T_wch", "#T_wo", "#T_wth", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " DN_1 for decidable propositions.  Without the decidability conditions, DN_1 can serve as a single axiom for Boolean algebra.  See ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf . (Contributed by Jim Kingdon, 22-Apr-2018.) ",
+  "statement" : "dn1dc $p |- ( ( DECID ph /\\ ( DECID ps /\\ ( DECID ch /\\ DECID th ) ) ) -> ( -. ( -. ( -. ( ph \\/ ps ) \\/ ch ) \\/ -. ( ph \\/ -. ( -. ch \\/ -. ( ch \\/ th ) ) ) ) <-> ch ) ) $."
+}

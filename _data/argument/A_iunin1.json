@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iunin1 on Metamath](http://us.metamath.org/mpegif/iunin1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iunin2 | |- U_ x e. A ( B i^i C ) = ( B i^i U_ x e. A C ) |\n| 2 |  | #P_incom | |- ( C i^i B ) = ( B i^i C ) |\n| 3 | 2 | #P_a1i | |- ( x e. A -> ( C i^i B ) = ( B i^i C ) ) |\n| 4 | 3 | #P_iuneq2i | |- U_ x e. A ( C i^i B ) = U_ x e. A ( B i^i C ) |\n| 5 |  | #P_incom | |- ( U_ x e. A C i^i B ) = ( B i^i U_ x e. A C ) |\n| 6 | 1, 4, 5 | #P_3eqtr4i | |- U_ x e. A ( C i^i B ) = ( U_ x e. A C i^i B ) |",
+  "conclusion" : "#P_iunin1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cC", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cC", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_ciun--1", "#T_vx.wal", "#T_ciun--2", "#T_cA.wceq", "#T_cC", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cC", "#T_cin", "#T_cB", "#T_wceq", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cA", "#T_cC", "#T_cin", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_iunin2", "#P_incom", "#P_a1i", "#P_iuneq2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1ococnv1 on Metamath](http://us.metamath.org/mpegif/f1ococnv1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1orel | |- ( F : A -1-1-onto-> B -> Rel F ) |\n| 2 |  | #P_dfrel2 | |- ( Rel F <-> `' `' F = F ) |\n| 3 | 1, 2 | #P_sylib | |- ( F : A -1-1-onto-> B -> `' `' F = F ) |\n| 4 | 3 | #P_coeq2d | |- ( F : A -1-1-onto-> B -> ( `' F o. `' `' F ) = ( `' F o. F ) ) |\n| 5 |  | #P_f1ocnv | |- ( F : A -1-1-onto-> B -> `' F : B -1-1-onto-> A ) |\n| 6 |  | #P_f1ococnv2 | |- ( `' F : B -1-1-onto-> A -> ( `' F o. `' `' F ) = ( _I |` A ) ) |\n| 7 | 5, 6 | #P_syl | |- ( F : A -1-1-onto-> B -> ( `' F o. `' `' F ) = ( _I |` A ) ) |\n| 8 | 4, 7 | #P_eqtr3d | |- ( F : A -1-1-onto-> B -> ( `' F o. F ) = ( _I |` A ) ) |",
+  "conclusion" : "#P_f1ococnv1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_wrel", "#T_cF", "#T_wrel", "#T_cF", "#T_wb", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cF", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_ccnv", "#T_cF", "#T_ccom", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_ccnv", "#T_cF", "#T_ccom", "#T_cF", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_ccnv", "#T_cF", "#T_wf1o--1", "#T_cB.wceq", "#T_wf1o--2", "#T_cA.wceq", "#T_ccnv", "#T_cF", "#T_wf1o--1", "#T_cB.wceq", "#T_wf1o--2", "#T_cA.wceq", "#T_wi", "#T_ccnv", "#T_cF", "#T_ccom", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_ccnv", "#T_cF", "#T_ccom", "#T_ccnv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cA.wceq", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB", "#T_wi", "#T_ccnv", "#T_cF", "#T_ccom", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1ocnv", "#P_sylib", "#P_coeq2d", "#P_f1orel", "#P_syl", "#P_f1ococnv2", "#P_eqtr3d", "#P_dfrel2" ]
+}

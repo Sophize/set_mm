@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fr0g on Metamath](http://us.metamath.org/mpegif/fr0g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano1 | |- (/) e. _om |\n| 2 |  | #P_fvres | |- ( (/) e. _om -> ( ( rec ( F , A ) |` _om ) ` (/) ) = ( rec ( F , A ) ` (/) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( rec ( F , A ) |` _om ) ` (/) ) = ( rec ( F , A ) ` (/) ) |\n| 4 |  | #P_rdg0g | |- ( A e. B -> ( rec ( F , A ) ` (/) ) = A ) |\n| 5 | 3, 4 | #P_syl5eq | |- ( A e. B -> ( ( rec ( F , A ) |` _om ) ` (/) ) = A ) |",
+  "conclusion" : "#P_fr0g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wcel", "#T_com", "#T_c0", "#T_wcel", "#T_com", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_c0", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA", "#T_cres", "#T_com", "#T_cfv", "#T_c0", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_peano1", "#P_fvres", "#P_rdg0g", "#P_syl5eq" ]
+}

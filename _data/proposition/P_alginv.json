@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alginv on Metamath](http://us.metamath.org/mpegif/alginv.html)"
+  } ],
+  "names" : [ "alginv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_cseq--1", "#T_cc0", "#T_cF", "#T_ccom", "#T_c1st", "#T_cseq--2", "#T_cn0", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cF", "#T_wf--1", "#T_cS", "#T_wf--2", "#T_cS", "#T_cI", "#T_wfn", "#T_cS", "#T_vx", "#T_wcel", "#T_cS", "#T_wi", "#T_cI", "#T_cfv", "#T_cF", "#T_cfv", "#T_vx", "#T_wceq", "#T_cI", "#T_cfv", "#T_vx", "#T_cA", "#T_wcel", "#T_cS", "#T_wa", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cI", "#T_cfv", "#T_cR", "#T_cfv", "#T_cK", "#T_wceq", "#T_cI", "#T_cfv", "#T_cR", "#T_cfv", "#T_cc0", "#T_cF", "#T_vx", "#T_cI", "#T_vx", "#T_cR", "#T_vx", "#T_cS", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` I ` is an invariant of ` F ` , its value is unchanged after any number of iterations of ` F ` .  (Contributed by Paul Chapman, 31-Mar-2011.) ",
+  "statement" : "alginv.1 $e |- R = seq 0 ( ( F o. 1st ) , ( NN0 X. { A } ) ) $.\nalginv.2 $e |- F : S --> S $.\nalginv.3 $e |- I Fn S $.\nalginv.4 $e |- ( x e. S -> ( I ` ( F ` x ) ) = ( I ` x ) ) $.\nalginv $p |- ( ( A e. S /\\ K e. NN0 ) -> ( I ` ( R ` K ) ) = ( I ` ( R ` 0 ) ) ) $.\n$d F x $.\n$d I x $.\n$d R x $.\n$d S x $."
+}

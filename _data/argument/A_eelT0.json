@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eelT0 on Metamath](http://us.metamath.org/mpegif/eelT0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eelT0.1 | |- ( T. -> ph ) |\n| 2 |  | eelT0.2 | |- ps |\n| 3 |  | eelT0.3 | |- ( ( ph /\\ ps ) -> ch ) |\n| 4 | 1, 3 | #P_sylan | |- ( ( T. /\\ ps ) -> ch ) |\n| 5 | 2, 4 | #P_mpan2 | |- ( T. -> ch ) |\n| 6 | 5 | #P_trud | |- ch |",
+  "conclusion" : "#P_eelT0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wi", "#T_wph", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wtru", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wtru", "#T_wi", "#T_wch", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_sylan", "#P_mpan2" ]
+}

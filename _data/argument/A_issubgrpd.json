@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See issubgrpd on Metamath](http://us.metamath.org/mpegif/issubgrpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | issubgrpd.s | |- ( ph -> S = ( I |`s D ) ) |\n| 2 |  | issubgrpd.z | |- ( ph -> .0. = ( 0g ` I ) ) |\n| 3 |  | issubgrpd.p | |- ( ph -> .+ = ( +g ` I ) ) |\n| 4 |  | issubgrpd.ss | |- ( ph -> D C_ ( Base ` I ) ) |\n| 5 |  | issubgrpd.zcl | |- ( ph -> .0. e. D ) |\n| 6 |  | issubgrpd.acl | |- ( ( ph /\\ x e. D /\\ y e. D ) -> ( x .+ y ) e. D ) |\n| 7 |  | issubgrpd.ncl | |- ( ( ph /\\ x e. D ) -> ( ( invg ` I ) ` x ) e. D ) |\n| 8 |  | issubgrpd.g | |- ( ph -> I e. Grp ) |\n| 9 | 1, 2, 3, 4, 5, 6, 7, 8 | #P_issubgrpd2 | |- ( ph -> D e. ( SubGrp ` I ) ) |\n| 10 |  | #P_eqid | |- ( I |`s D ) = ( I |`s D ) |\n| 11 | 10 | #P_subggrp | |- ( D e. ( SubGrp ` I ) -> ( I |`s D ) e. Grp ) |\n| 12 | 9, 11 | #P_syl | |- ( ph -> ( I |`s D ) e. Grp ) |\n| 13 | 1, 12 | #P_eqeltrd | |- ( ph -> S e. Grp ) |",
+  "conclusion" : "#P_issubgrpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wceq", "#T_cI", "#T_cress", "#T_cD", "#T_wph", "#T_wi", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cI", "#T_wph", "#T_wi", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cI", "#T_wph", "#T_wi", "#T_cD", "#T_wss", "#T_cbs", "#T_cfv", "#T_cI", "#T_wph", "#T_wi", "#T_c.0", "#T_wcel", "#T_cD", "#T_wph", "#T_w3a--1", "#T_vx", "#T_wcel", "#T_cD", "#T_w3a--2", "#T_vy", "#T_wcel", "#T_cD", "#T_wi", "#T_vx", "#T_c.pl", "#T_vy", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cD", "#T_wi", "#T_cminusg", "#T_cfv", "#T_cI", "#T_cfv", "#T_vx", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cgrp", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cI", "#T_cI", "#T_cress", "#T_cD", "#T_wceq", "#T_cI", "#T_cress", "#T_cD", "#T_cD", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cI", "#T_wi", "#T_cI", "#T_cress", "#T_cD", "#T_wcel", "#T_cgrp", "#T_wph", "#T_wi", "#T_cI", "#T_cress", "#T_cD", "#T_wcel", "#T_cgrp", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_eqeltrd", "#P_subggrp", "#P_syl", "#P_issubgrpd2" ]
+}

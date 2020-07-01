@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodcom on Metamath](http://us.metamath.org/mpegif/fprodcom.html)"
+  } ],
+  "names" : [ "fprodcom" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vj", "#T_cprod--2", "#T_cA", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cB", "#T_cprod--1", "#T_vj", "#T_cprod--2", "#T_cA", "#T_cC", "#T_cA", "#T_vj", "#T_vk", "#T_cB", "#T_vj", "#T_vk", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Interchange product order.  (Contributed by Scott Fenton, 2-Feb-2018.) ",
+  "statement" : "fprodcom.1 $e |- ( ph -> A e. Fin ) $.\nfprodcom.2 $e |- ( ph -> B e. Fin ) $.\nfprodcom.3 $e |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> C e. CC ) $.\nfprodcom $p |- ( ph -> prod_ j e. A prod_ k e. B C = prod_ k e. B prod_ j e. A C ) $.\n$d A j k $.\n$d B j k $.\n$d j k ph $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resfsupp on Metamath](http://us.metamath.org/mpegif/resfsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resfsupp.b | |- ( ph -> ( dom F \\ B ) e. Fin ) |\n| 2 |  | resfsupp.e | |- ( ph -> F e. W ) |\n| 3 |  | resfsupp.f | |- ( ph -> Fun F ) |\n| 4 |  | resfsupp.g | |- ( ph -> G = ( F |` B ) ) |\n| 5 |  | resfsupp.s | |- ( ph -> G finSupp Z ) |\n| 6 |  | resfsupp.z | |- ( ph -> Z e. V ) |\n| 7 | 5 | #P_fsuppimpd | |- ( ph -> ( G supp Z ) e. Fin ) |\n| 8 | 1, 2, 4, 7, 6 | #P_ressuppfi | |- ( ph -> ( F supp Z ) e. Fin ) |\n| 9 |  | #P_funisfsupp | |- ( ( Fun F /\\ F e. W /\\ Z e. V ) -> ( F finSupp Z <-> ( F supp Z ) e. Fin ) ) |\n| 10 | 3, 2, 6, 9 | #P_syl3anc | |- ( ph -> ( F finSupp Z <-> ( F supp Z ) e. Fin ) ) |\n| 11 | 8, 10 | #P_mpbird | |- ( ph -> F finSupp Z ) |",
+  "conclusion" : "#P_resfsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cdm", "#T_cF", "#T_cdif", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_wfun", "#T_cF", "#T_wph", "#T_wi", "#T_cG", "#T_wceq", "#T_cF", "#T_cres", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_cfsupp", "#T_cZ", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cG", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wfun", "#T_cF", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cW", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ", "#T_wb", "#T_cF", "#T_csupp", "#T_cZ", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ressuppfi", "#P_funisfsupp", "#P_syl3anc", "#P_fsuppimpd", "#P_mpbird" ]
+}

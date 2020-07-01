@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-tagss on Metamath](http://us.metamath.org/mpegif/bj-tagss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-bj-tag | |- tag A = ( sngl A u. { (/) } ) |\n| 2 |  | #P_bj-snglss | |- sngl A C_ ~P A |\n| 3 |  | #P_0elpw | |- (/) e. ~P A |\n| 4 |  | #P_0ex | |- (/) e. _V |\n| 5 | 4 | #P_snss | |- ( (/) e. ~P A <-> { (/) } C_ ~P A ) |\n| 6 | 3, 5 | #P_mpbi | |- { (/) } C_ ~P A |\n| 7 | 2, 6 | #P_unssi | |- ( sngl A u. { (/) } ) C_ ~P A |\n| 8 | 1, 7 | #P_eqsstri | |- tag A C_ ~P A |",
+  "conclusion" : "#P_bj-tagss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_bj-ctag", "#T_cA.wceq", "#T_wceq", "#T_bj-csngl", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_bj-csngl", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_c0", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_c0", "#T_wcel", "#T_cvv", "#T_c0", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_bj-csngl", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_bj-ctag", "#T_cA", "#T_wss", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unssi", "#P_snss", "#P_bj-snglss", "#P_0elpw", "#P_mpbi", "#P_df-bj-tag", "#P_0ex", "#P_eqsstri" ]
+}

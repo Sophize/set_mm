@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2zrngbas on Metamath](http://us.metamath.org/mpegif/2zrngbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 2zrng.e | |- E = { z e. ZZ | E. x e. ZZ z = ( 2 x. x ) } |\n| 2 |  | 2zrngbas.r | |- R = ( CCfld |`s E ) |\n| 3 |  | #P_ssrab2 | |- { z e. ZZ | E. x e. ZZ z = ( 2 x. x ) } C_ ZZ |\n| 4 |  | #P_zsscn | |- ZZ C_ CC |\n| 5 | 3, 4 | #P_sstri | |- { z e. ZZ | E. x e. ZZ z = ( 2 x. x ) } C_ CC |\n| 6 | 1, 5 | #P_eqsstri | |- E C_ CC |\n| 7 | 2 | #P_cnfldsrngbas | |- ( E C_ CC -> E = ( Base ` R ) ) |\n| 8 | 6, 7 | #P_ax-mp | |- E = ( Base ` R ) |",
+  "conclusion" : "#P_2zrngbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cE", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_vz", "#T_wceq", "#T_c2", "#T_cmul", "#T_vx", "#T_crab--4", "#T_cR", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cE", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cz", "#T_vz", "#T_wceq", "#T_c2", "#T_cmul", "#T_vx.wal", "#T_crab--4", "#T_wss", "#T_cz", "#T_cz", "#T_wss", "#T_cc", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cz", "#T_vz", "#T_wceq", "#T_c2", "#T_cmul", "#T_vx.wal", "#T_crab--4", "#T_wss", "#T_cc", "#T_cE", "#T_wss", "#T_cc", "#T_cE", "#T_wss", "#T_cc", "#T_wi", "#T_cE", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cE", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrab2", "#P_ax-mp", "#P_zsscn", "#P_sstri", "#P_cnfldsrngbas", "#P_eqsstri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tglowdim1 on Metamath](http://us.metamath.org/mpegif/tglowdim1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tglowdim1.p | |- P = ( Base ` G ) |\n| 2 |  | tglowdim1.d | |- .- = ( dist ` G ) |\n| 3 |  | tglowdim1.i | |- I = ( Itv ` G ) |\n| 4 |  | tglowdim1.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tglowdim1.1 | |- ( ph -> 2 <_ ( # ` P ) ) |\n| 6 |  | #P_fvex | |- ( Base ` G ) e. _V |\n| 7 | 1, 6 | #P_eqeltri | |- P e. _V |\n| 8 |  | #P_hashge2el2dif | |- ( ( P e. _V /\\ 2 <_ ( # ` P ) ) -> E. x e. P E. y e. P x =/= y ) |\n| 9 | 7, 5, 8 | #P_sylancr | |- ( ph -> E. x e. P E. y e. P x =/= y ) |",
+  "conclusion" : "#P_tglowdim1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_c2", "#T_cle", "#T_chash", "#T_cfv", "#T_cP", "#T_cbs", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cP", "#T_wcel", "#T_cvv", "#T_cP", "#T_wcel", "#T_cvv", "#T_wa", "#T_c2", "#T_cle", "#T_chash", "#T_cfv", "#T_cP", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cP", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cP", "#T_vx.wal", "#T_wne", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cP", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cP", "#T_vx", "#T_wne", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_sylancr", "#P_fvex", "#P_hashge2el2dif" ]
+}

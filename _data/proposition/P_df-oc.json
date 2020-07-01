@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-oc on Metamath](http://us.metamath.org/mpegif/df-oc.html)"
+  } ],
+  "names" : [ "df-oc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cort", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cpw", "#T_chil", "#T_cmpt--2", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_chil", "#T_crab--3", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vx", "#T_vy", "#T_csp", "#T_vz", "#T_wceq", "#T_cc0", "#T_crab--4", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define orthogonal complement of a subset (usually a subspace) of Hilbert space.  The orthogonal complement is the set of all vectors orthogonal to all vectors in the subset.  See ~ ocval and ~ chocvali for its value.  Textbooks usually denote this unary operation with the symbol ` _|_ ` as a small superscript, although Mittelstaedt uses the symbol as a prefix operation.  Here we define a function (prefix operation) ` _|_ ` rather than introducing a new syntactical form.  This lets us take advantage of the theorems about functions that we already have proved under set theory.  Definition of [Mittelstaedt] p. 9. (Contributed by NM, 7-Aug-2000.)  (New usage is discouraged.) ",
+  "statement" : "df-oc $p |- _|_ = ( x e. ~P ~H |-> { y e. ~H | A. z e. x ( y .ih z ) = 0 } ) $.\n$d x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See biorfi on Metamath](http://us.metamath.org/mpegif/biorfi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | biorfi.1 | |- -. ph |\n| 2 |  | #P_orc | |- ( ps -> ( ps \\/ ph ) ) |\n| 3 |  | #P_orel2 | |- ( -. ph -> ( ( ps \\/ ph ) -> ps ) ) |\n| 4 | 2, 3 | #P_impbid2 | |- ( -. ph -> ( ps <-> ( ps \\/ ph ) ) ) |\n| 5 | 1, 4 | #P_ax-mp | |- ( ps <-> ( ps \\/ ph ) ) |",
+  "conclusion" : "#P_biorfi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wph", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_orc", "#P_impbid2", "#P_orel2" ]
+}

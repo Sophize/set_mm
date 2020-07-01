@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ensn1g on Metamath](http://us.metamath.org/mpegif/ensn1g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sneq | |- ( x = A -> { x } = { A } ) |\n| 2 | 1 | #P_breq1d | |- ( x = A -> ( { x } ~~ 1o <-> { A } ~~ 1o ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_ensn1 | |- { x } ~~ 1o |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> { A } ~~ 1o ) |",
+  "conclusion" : "#P_ensn1g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cen", "#T_c1o", "#T_wb", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cen", "#T_c1o", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_cen", "#T_c1o", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_cen", "#T_c1o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ensn1", "#P_vtoclg", "#P_sneq", "#P_vex", "#P_breq1d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege57c on Metamath](http://us.metamath.org/mpegif/frege57c.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frege57c.a | |- A e. C |\n| 2 |  | #P_ax-frege52c | |- ( B = A -> ( [. B / x ]. ph -> [. A / x ]. ph ) ) |\n| 3 | 1 | #P_frege56c | |- ( ( B = A -> ( [. B / x ]. ph -> [. A / x ]. ph ) ) -> ( A = B -> ( [. B / x ]. ph -> [. A / x ]. ph ) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( A = B -> ( [. B / x ]. ph -> [. A / x ]. ph ) ) |",
+  "conclusion" : "#P_frege57c",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cC", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wsbc--1", "#T_cB", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_frege56c", "#P_ax-frege52c" ]
+}

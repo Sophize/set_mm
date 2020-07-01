@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See efneg on Metamath](http://us.metamath.org/mpegif/efneg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_efcl | |- ( A e. CC -> ( exp ` A ) e. CC ) |\n| 2 |  | #P_negcl | |- ( A e. CC -> -u A e. CC ) |\n| 3 |  | #P_efcl | |- ( -u A e. CC -> ( exp ` -u A ) e. CC ) |\n| 4 | 2, 3 | #P_syl | |- ( A e. CC -> ( exp ` -u A ) e. CC ) |\n| 5 |  | #P_efne0 | |- ( A e. CC -> ( exp ` A ) =/= 0 ) |\n| 6 |  | #P_efcan | |- ( A e. CC -> ( ( exp ` A ) x. ( exp ` -u A ) ) = 1 ) |\n| 7 | 1, 4, 5, 6 | #P_mvllmuld | |- ( A e. CC -> ( exp ` -u A ) = ( 1 / ( exp ` A ) ) ) |",
+  "conclusion" : "#P_efneg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cA.wceq", "#T_cmul", "#T_ce", "#T_cfv", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_ce", "#T_cfv", "#T_cneg", "#T_cA", "#T_wceq", "#T_c1", "#T_cdiv", "#T_ce", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_efne0", "#P_negcl", "#P_mvllmuld", "#P_syl", "#P_efcan", "#P_efcl" ]
+}

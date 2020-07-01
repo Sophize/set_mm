@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bcsiHIL on Metamath](http://us.metamath.org/mpegif/bcsiHIL.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bcs.1 | |- A e. ~H |\n| 2 |  | bcs.2 | |- B e. ~H |\n| 3 |  | #P_df-hba | |- ~H = ( BaseSet ` <. <. +h , .h >. , normh >. ) |\n| 4 |  | #P_eqid | |- <. <. +h , .h >. , normh >. = <. <. +h , .h >. , normh >. |\n| 5 | 4 | #P_hhnm | |- normh = ( normCV ` <. <. +h , .h >. , normh >. ) |\n| 6 | 4 | #P_hhip | |- .ih = ( .iOLD ` <. <. +h , .h >. , normh >. ) |\n| 7 | 4 | #P_hhph | |- <. <. +h , .h >. , normh >. e. CPreHilOLD |\n| 8 | 3, 5, 6, 7, 1, 2 | #P_siii | |- ( abs ` ( A .ih B ) ) <_ ( ( normh ` A ) x. ( normh ` B ) ) |\n\\\n Bunjakovaskij-Cauchy-Schwarz inequality.  Remark 3.4 of [Beran] p. 98. (Proved from ZFC version.)  (Contributed by NM, 24-Nov-2007.) (New usage is discouraged.) ",
+  "conclusion" : "#P_bcsiALT",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_chil", "#T_wceq", "#T_cba", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cno", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_csp", "#T_wceq", "#T_cdip", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_wcel", "#T_ccphlo", "#T_cabs", "#T_cfv", "#T_cA", "#T_csp", "#T_cB", "#T_cle", "#T_cno", "#T_cfv", "#T_cA", "#T_cmul", "#T_cno", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hhip", "#P_eqid", "#P_hhph", "#P_siii", "#P_hhnm", "#P_df-hba" ]
+}

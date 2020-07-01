@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tchsub on Metamath](http://us.metamath.org/mpegif/tchsub.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tchval.n | |- G = ( toCHil ` W ) |\n| 2 |  | tchsub.v | |- .- = ( -g ` W ) |\n| 3 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 4 | 1, 3 | #P_tchbas | |- ( Base ` W ) = ( Base ` G ) |\n| 5 | 4 | #P_a1i | |- ( T. -> ( Base ` W ) = ( Base ` G ) ) |\n| 6 |  | #P_eqid | |- ( +g ` W ) = ( +g ` W ) |\n| 7 | 1, 6 | #P_tchplusg | |- ( +g ` W ) = ( +g ` G ) |\n| 8 | 7 | #P_a1i | |- ( T. -> ( +g ` W ) = ( +g ` G ) ) |\n| 9 | 5, 8 | #P_grpsubpropd | |- ( T. -> ( -g ` W ) = ( -g ` G ) ) |\n| 10 | 9 | #P_trud | |- ( -g ` W ) = ( -g ` G ) |\n| 11 | 2, 10 | #P_eqtri | |- .- = ( -g ` G ) |",
+  "conclusion" : "#P_tchsub",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_ctch", "#T_cfv", "#T_cW", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_wtru", "#T_wi", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cplusg", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_cplusg", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wtru", "#T_wi", "#T_cplusg", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wtru", "#T_wi", "#T_csg", "#T_cfv", "#T_cW", "#T_wceq", "#T_csg", "#T_cfv", "#T_cG", "#T_csg", "#T_cfv", "#T_cW", "#T_wceq", "#T_csg", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_grpsubpropd", "#P_eqid", "#P_trud", "#P_eqtri", "#P_tchbas", "#P_tchplusg", "#P_a1i" ]
+}

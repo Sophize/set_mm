@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovmpt2elrn on Metamath](http://us.metamath.org/mpegif/ovmpt2elrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ovmpt2elrn.o | |- O = ( x e. A , y e. B |-> C ) |\n| 2 | 1 | #P_fmpt2 | |- ( A. x e. A A. y e. B C e. M <-> O : ( A X. B ) --> M ) |\n| 3 |  | #P_fovrn | |- ( ( O : ( A X. B ) --> M /\\ X e. A /\\ Y e. B ) -> ( X O Y ) e. M ) |\n| 4 | 2, 3 | #P_syl3an1b | |- ( ( A. x e. A A. y e. B C e. M /\\ X e. A /\\ Y e. B ) -> ( X O Y ) e. M ) |",
+  "conclusion" : "#P_ovmpt2elrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cM", "#T_wb", "#T_cO", "#T_wf--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cM", "#T_cO", "#T_wf--1", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wf--2", "#T_cM", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cA.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_cO", "#T_cY", "#T_wcel", "#T_cM", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_cC", "#T_wcel", "#T_cM", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_cO", "#T_cY", "#T_wcel", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3an1b", "#P_fmpt2", "#P_fovrn" ]
+}

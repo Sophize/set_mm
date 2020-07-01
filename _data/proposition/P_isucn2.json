@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isucn2 on Metamath](http://us.metamath.org/mpegif/isucn2.html)"
+  } ],
+  "names" : [ "isucn2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cX", "#T_cxp", "#T_cX", "#T_cfg", "#T_cR", "#T_cV", "#T_wceq", "#T_cY", "#T_cxp", "#T_cY", "#T_cfg", "#T_cS", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cust", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cV", "#T_wcel", "#T_cust", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cfbas", "#T_cfv", "#T_cX", "#T_cxp", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cfbas", "#T_cfv", "#T_cY", "#T_cxp", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cU", "#T_cucn", "#T_cV", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cS", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cR", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_vx", "#T_vr", "#T_vy", "#T_wi", "#T_cF", "#T_cfv", "#T_vx", "#T_vs", "#T_cF", "#T_cfv", "#T_vy", "#T_cF", "#T_vr", "#T_vs", "#T_vx", "#T_vy", "#T_cR", "#T_vr", "#T_vx", "#T_vy", "#T_cS", "#T_vs", "#T_vx", "#T_vy", "#T_cU", "#T_vr", "#T_vs", "#T_vx", "#T_vy", "#T_cV", "#T_vs", "#T_vx", "#T_cX", "#T_vr", "#T_vs", "#T_vx", "#T_vy", "#T_cY", "#T_vs", "#T_vx", "#T_vy", "#T_wph", "#T_vr", "#T_vs", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \" ` F ` is a uniformly continuous function from uniform space ` U ` to uniform space ` V ` .\" , expressed with filter bases for the entourages.  (Contributed by Thierry Arnoux, 26-Jan-2018.) ",
+  "statement" : "isucn2.u $e |- U = ( ( X X. X ) filGen R ) $.\nisucn2.v $e |- V = ( ( Y X. Y ) filGen S ) $.\nisucn2.1 $e |- ( ph -> U e. ( UnifOn ` X ) ) $.\nisucn2.2 $e |- ( ph -> V e. ( UnifOn ` Y ) ) $.\nisucn2.3 $e |- ( ph -> R e. ( fBas ` ( X X. X ) ) ) $.\nisucn2.4 $e |- ( ph -> S e. ( fBas ` ( Y X. Y ) ) ) $.\nisucn2 $p |- ( ph -> ( F e. ( U uCn V ) <-> ( F : X --> Y /\\ A. s e. S E. r e. R A. x e. X A. y e. X ( x r y -> ( F ` x ) s ( F ` y ) ) ) ) ) $.\n$d F r s x y $.\n$d R r x y $.\n$d S s x y $.\n$d U r s x y $.\n$d V s x $.\n$d X r s x y $.\n$d Y s x y $.\n$d ph r s x y $."
+}

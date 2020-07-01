@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mplvsca2 on Metamath](http://us.metamath.org/mpegif/mplvsca2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mplvsca2.p | |- P = ( I mPoly R ) |\n| 2 |  | mplvsca2.s | |- S = ( I mPwSer R ) |\n| 3 |  | mplvsca2.n | |- .x. = ( .s ` P ) |\n| 4 |  | #P_fvex | |- ( Base ` P ) e. _V |\n| 5 |  | #P_eqid | |- ( Base ` P ) = ( Base ` P ) |\n| 6 | 1, 2, 5 | #P_mplval2 | |- P = ( S |`s ( Base ` P ) ) |\n| 7 |  | #P_eqid | |- ( .s ` S ) = ( .s ` S ) |\n| 8 | 6, 7 | #P_ressvsca | |- ( ( Base ` P ) e. _V -> ( .s ` S ) = ( .s ` P ) ) |\n| 9 | 4, 8 | #P_ax-mp | |- ( .s ` S ) = ( .s ` P ) |\n| 10 | 3, 9 | #P_eqtr4i | |- .x. = ( .s ` S ) |",
+  "conclusion" : "#P_mplvsca2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cI", "#T_cmpl", "#T_cR", "#T_cS", "#T_wceq", "#T_cI", "#T_cmps", "#T_cR", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cP", "#T_cbs", "#T_cfv", "#T_cP", "#T_wcel", "#T_cvv", "#T_cbs", "#T_cfv", "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cP", "#T_wceq", "#T_cS", "#T_cress", "#T_cbs", "#T_cfv", "#T_cP", "#T_cvsca", "#T_cfv", "#T_cS", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cS", "#T_cbs", "#T_cfv", "#T_cP", "#T_wcel", "#T_cvv", "#T_wi", "#T_cvsca", "#T_cfv", "#T_cS", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cP", "#T_cvsca", "#T_cfv", "#T_cS", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cP", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_ressvsca", "#P_ax-mp", "#P_mplval2", "#P_fvex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r1sscl on Metamath](http://us.metamath.org/mpegif/r1sscl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_r1pwss | |- ( A e. ( R1 ` B ) -> ~P A C_ ( R1 ` B ) ) |\n| 2 | 1 | #P_adantr | |- ( ( A e. ( R1 ` B ) /\\ C C_ A ) -> ~P A C_ ( R1 ` B ) ) |\n| 3 |  | #P_elpw2g | |- ( A e. ( R1 ` B ) -> ( C e. ~P A <-> C C_ A ) ) |\n| 4 | 3 | #P_biimpar | |- ( ( A e. ( R1 ` B ) /\\ C C_ A ) -> C e. ~P A ) |\n| 5 | 2, 4 | #P_sseldd | |- ( ( A e. ( R1 ` B ) /\\ C C_ A ) -> C e. ( R1 ` B ) ) |",
+  "conclusion" : "#P_r1sscl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_cA.wceq", "#T_wss", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_wb", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cpw", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB", "#T_wa", "#T_cC", "#T_wss", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cr1", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_r1pwss", "#P_biimpar", "#P_sseldd", "#P_elpw2g", "#P_adantr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See annimim on Metamath](http://us.metamath.org/mpegif/annimim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.27 | |- ( ph -> ( ( ph -> ps ) -> ps ) ) |\n| 2 |  | #P_con3 | |- ( ( ( ph -> ps ) -> ps ) -> ( -. ps -> -. ( ph -> ps ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> ( -. ps -> -. ( ph -> ps ) ) ) |\n| 4 | 3 | #P_imp | |- ( ( ph /\\ -. ps ) -> -. ( ph -> ps ) ) |",
+  "conclusion" : "#P_annimim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con3", "#P_imp", "#P_syl", "#P_pm2.27" ]
+}

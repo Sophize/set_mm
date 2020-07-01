@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzolb on Metamath](http://us.metamath.org/mpegif/fzolb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elfzo2 | |- ( M e. ( M ..^ N ) <-> ( M e. ( ZZ>= ` M ) /\\ N e. ZZ /\\ M < N ) ) |\n| 2 |  | #P_eluzel2 | |- ( M e. ( ZZ>= ` M ) -> M e. ZZ ) |\n| 3 |  | #P_uzid | |- ( M e. ZZ -> M e. ( ZZ>= ` M ) ) |\n| 4 | 2, 3 | #P_impbii | |- ( M e. ( ZZ>= ` M ) <-> M e. ZZ ) |\n| 5 | 4 | #P_3anbi1i | |- ( ( M e. ( ZZ>= ` M ) /\\ N e. ZZ /\\ M < N ) <-> ( M e. ZZ /\\ N e. ZZ /\\ M < N ) ) |\n| 6 | 1, 5 | #P_bitri | |- ( M e. ( M ..^ N ) <-> ( M e. ZZ /\\ N e. ZZ /\\ M < N ) ) |",
+  "conclusion" : "#P_fzolb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cM", "#T_cfzo", "#T_cN", "#T_wb", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_cN", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_cM", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_cN", "#T_wb", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_cN", "#T_cM", "#T_wcel", "#T_cM", "#T_cfzo", "#T_cN", "#T_wb", "#T_cM", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cM", "#T_clt", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3anbi1i", "#P_impbii", "#P_elfzo2", "#P_eluzel2", "#P_bitri", "#P_uzid" ]
+}

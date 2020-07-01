@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opabbi2dv on Metamath](http://us.metamath.org/mpegif/opabbi2dv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opabbi2dv.1 | |- Rel A |\n| 2 |  | opabbi2dv.3 | |- ( ph -> ( <. x , y >. e. A <-> ps ) ) |\n| 3 |  | #P_opabid2 | |- ( Rel A -> { <. x , y >. | <. x , y >. e. A } = A ) |\n| 4 | 1, 3 | #P_ax-mp | |- { <. x , y >. | <. x , y >. e. A } = A |\n| 5 | 2 | #P_opabbidv | |- ( ph -> { <. x , y >. | <. x , y >. e. A } = { <. x , y >. | ps } ) |\n| 6 | 4, 5 | #P_syl5eqr | |- ( ph -> A = { <. x , y >. | ps } ) |",
+  "conclusion" : "#P_opabbi2dv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cA", "#T_wph", "#T_wi", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_wcel", "#T_cA", "#T_wb", "#T_wps", "#T_wrel", "#T_cA.wceq", "#T_wi", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_copab--6", "#T_wceq", "#T_cA.wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_copab--6", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_copab--6", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wps", "#T_copab--6", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wps", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_opabid2", "#P_syl5eqr", "#P_opabbidv" ]
+}

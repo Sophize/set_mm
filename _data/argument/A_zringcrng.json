@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zringcrng on Metamath](http://us.metamath.org/mpegif/zringcrng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cncrng | |- CCfld e. CRing |\n| 2 |  | #P_zsubrg | |- ZZ e. ( SubRing ` CCfld ) |\n| 3 |  | #P_df-zring | |- ZZring = ( CCfld |`s ZZ ) |\n| 4 | 3 | #P_subrgcrng | |- ( ( CCfld e. CRing /\\ ZZ e. ( SubRing ` CCfld ) ) -> ZZring e. CRing ) |\n| 5 | 1, 2, 4 | #P_mp2an | |- ZZring e. CRing |",
+  "conclusion" : "#P_zringcrng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_cz", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_zring", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cz", "#T_ccnfld", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cz", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_zring", "#T_wcel", "#T_ccrg", "#T_zring", "#T_wcel", "#T_ccrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cncrng", "#P_mp2an", "#P_subrgcrng", "#P_df-zring", "#P_zsubrg" ]
+}

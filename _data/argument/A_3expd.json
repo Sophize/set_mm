@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3expd on Metamath](http://us.metamath.org/mpegif/3expd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3expd.1 | |- ( ph -> ( ( ps /\\ ch /\\ th ) -> ta ) ) |\n| 2 | 1 | #P_com12 | |- ( ( ps /\\ ch /\\ th ) -> ( ph -> ta ) ) |\n| 3 | 2 | #P_3exp | |- ( ps -> ( ch -> ( th -> ( ph -> ta ) ) ) ) |\n| 4 | 3 | #P_com4r | |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) |",
+  "conclusion" : "#P_3expd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wta", "#T_wps", "#T_w3a--1", "#T_wch", "#T_w3a--2", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_com4r", "#P_3exp", "#P_com12" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wdomac on Metamath](http://us.metamath.org/mpegif/wdomac.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relwdom | |- Rel ~<_* |\n| 2 | 1 | #P_brrelex2i | |- ( X ~<_* Y -> Y e. _V ) |\n| 3 |  | #P_reldom | |- Rel ~<_ |\n| 4 | 3 | #P_brrelex2i | |- ( X ~<_ Y -> Y e. _V ) |\n| 5 |  | #P_numth3 | |- ( Y e. _V -> Y e. dom card ) |\n| 6 |  | #P_wdomnumr | |- ( Y e. dom card -> ( X ~<_* Y <-> X ~<_ Y ) ) |\n| 7 | 5, 6 | #P_syl | |- ( Y e. _V -> ( X ~<_* Y <-> X ~<_ Y ) ) |\n| 8 | 2, 4, 7 | #P_pm5.21nii | |- ( X ~<_* Y <-> X ~<_ Y ) |",
+  "conclusion" : "#P_wdomac",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cwdom", "#T_cX", "#T_cwdom", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cdom", "#T_cX", "#T_cdom", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_cvv", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cY", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cY", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cX", "#T_cwdom", "#T_cY", "#T_wb", "#T_cX", "#T_cdom", "#T_cY", "#T_cY", "#T_wcel", "#T_cvv", "#T_wi", "#T_cX", "#T_cwdom", "#T_cY", "#T_wb", "#T_cX", "#T_cdom", "#T_cY", "#T_cX", "#T_cwdom", "#T_cY", "#T_wb", "#T_cX", "#T_cdom", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm5.21nii", "#P_relwdom", "#P_reldom", "#P_numth3", "#P_syl", "#P_wdomnumr", "#P_brrelex2i" ]
+}

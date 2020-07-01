@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See refbas on Metamath](http://us.metamath.org/mpegif/refbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | refbas.1 | |- X = U. A |\n| 2 |  | refbas.2 | |- Y = U. B |\n| 3 |  | #P_refrel | |- Rel Ref |\n| 4 | 3 | #P_brrelexi | |- ( A Ref B -> A e. _V ) |\n| 5 | 1, 2 | #P_isref | |- ( A e. _V -> ( A Ref B <-> ( Y = X /\\ A. x e. A E. y e. B x C_ y ) ) ) |\n| 6 | 5 | #P_simprbda | |- ( ( A e. _V /\\ A Ref B ) -> Y = X ) |\n| 7 | 4, 6 | #P_mpancom | |- ( A Ref B -> Y = X ) |",
+  "conclusion" : "#P_refbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cX", "#T_wceq", "#T_cuni", "#T_cA", "#T_cY", "#T_wceq", "#T_cuni", "#T_cB", "#T_wrel", "#T_cref", "#T_cA.wceq", "#T_cref", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cref", "#T_cB.wceq", "#T_wb", "#T_cY", "#T_wceq", "#T_cX", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cB.wceq", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_cref", "#T_cB.wceq", "#T_wi", "#T_cY", "#T_wceq", "#T_cX", "#T_cA", "#T_cref", "#T_cB", "#T_wi", "#T_cY", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isref", "#P_mpancom", "#P_refrel", "#P_simprbda", "#P_brrelexi" ]
+}

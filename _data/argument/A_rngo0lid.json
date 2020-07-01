@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngo0lid on Metamath](http://us.metamath.org/mpegif/rngo0lid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ring0cl.1 | |- G = ( 1st ` R ) |\n| 2 |  | ring0cl.2 | |- X = ran G |\n| 3 |  | ring0cl.3 | |- Z = ( GId ` G ) |\n| 4 | 1 | #P_rngogrpo | |- ( R e. RingOps -> G e. GrpOp ) |\n| 5 | 2, 3 | #P_grpolid | |- ( ( G e. GrpOp /\\ A e. X ) -> ( Z G A ) = A ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( R e. RingOps /\\ A e. X ) -> ( Z G A ) = A ) |",
+  "conclusion" : "#P_rngo0lid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cZ", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cG", "#T_wcel", "#T_cgr", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cZ", "#T_cG", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cA", "#T_wcel", "#T_cX", "#T_wi", "#T_cZ", "#T_cG", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rngogrpo", "#P_sylan", "#P_grpolid" ]
+}

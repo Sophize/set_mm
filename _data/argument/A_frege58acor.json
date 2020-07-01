@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege58acor on Metamath](http://us.metamath.org/mpegif/frege58acor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-frege58a | |- ( ( ( ps -> ch ) /\\ ( th -> ta ) ) -> if- ( ph , ( ps -> ch ) , ( th -> ta ) ) ) |\n| 2 |  | #P_bj-ifimim | |- ( if- ( ph , ( ps -> ch ) , ( th -> ta ) ) -> ( if- ( ph , ps , th ) -> if- ( ph , ch , ta ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( ( ps -> ch ) /\\ ( th -> ta ) ) -> ( if- ( ph , ps , th ) -> if- ( ph , ch , ta ) ) ) |",
+  "conclusion" : "#P_frege58acor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wi", "#T_wch", "#T_wif--3", "#T_wth", "#T_wi", "#T_wta", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wi", "#T_wch", "#T_wif--3", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wth", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wch", "#T_wif--3", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wth", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wch", "#T_wif--3", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-frege58a", "#P_syl", "#P_bj-ifimim" ]
+}

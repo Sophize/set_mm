@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gagrp on Metamath](http://us.metamath.org/mpegif/gagrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 2 |  | #P_eqid | |- ( +g ` G ) = ( +g ` G ) |\n| 3 |  | #P_eqid | |- ( 0g ` G ) = ( 0g ` G ) |\n| 4 | 1, 2, 3 | #P_isga | |- ( .(+) e. ( G GrpAct Y ) <-> ( ( G e. Grp /\\ Y e. _V ) /\\ ( .(+) : ( ( Base ` G ) X. Y ) --> Y /\\ A. x e. Y ( ( ( 0g ` G ) .(+) x ) = x /\\ A. y e. ( Base ` G ) A. z e. ( Base ` G ) ( ( y ( +g ` G ) z ) .(+) x ) = ( y .(+) ( z .(+) x ) ) ) ) ) ) |\n| 5 | 4 | #P_simplbi | |- ( .(+) e. ( G GrpAct Y ) -> ( G e. Grp /\\ Y e. _V ) ) |\n| 6 | 5 | #P_simpld | |- ( .(+) e. ( G GrpAct Y ) -> G e. Grp ) |",
+  "conclusion" : "#P_gagrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vz", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_c0g", "#T_cfv", "#T_cG", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.po", "#T_wcel", "#T_cG", "#T_cga", "#T_cY", "#T_wb", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_wa", "#T_c.po", "#T_wf--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cxp", "#T_cY", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cY", "#T_c0g", "#T_cfv", "#T_cG", "#T_c.po", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cG", "#T_vy.tru", "#T_cplusg", "#T_cfv", "#T_cG", "#T_vz", "#T_c.po", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_c.po", "#T_vz", "#T_c.po", "#T_vx.wal", "#T_c.po", "#T_wcel", "#T_cG", "#T_cga", "#T_cY", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cY", "#T_wcel", "#T_cvv", "#T_c.po", "#T_wcel", "#T_cG", "#T_cga", "#T_cY", "#T_wi", "#T_cG", "#T_wcel", "#T_cgrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_simpld", "#P_isga" ]
+}

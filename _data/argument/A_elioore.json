@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elioore on Metamath](http://us.metamath.org/mpegif/elioore.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elioo3g | |- ( A e. ( B (,) C ) <-> ( ( B e. RR* /\\ C e. RR* /\\ A e. RR* ) /\\ ( B < A /\\ A < C ) ) ) |\n| 2 |  | #P_3ancomb | |- ( ( B e. RR* /\\ C e. RR* /\\ A e. RR* ) <-> ( B e. RR* /\\ A e. RR* /\\ C e. RR* ) ) |\n| 3 |  | #P_xrre2 | |- ( ( ( B e. RR* /\\ A e. RR* /\\ C e. RR* ) /\\ ( B < A /\\ A < C ) ) -> A e. RR ) |\n| 4 | 2, 3 | #P_sylanb | |- ( ( ( B e. RR* /\\ C e. RR* /\\ A e. RR* ) /\\ ( B < A /\\ A < C ) ) -> A e. RR ) |\n| 5 | 1, 4 | #P_sylbi | |- ( A e. ( B (,) C ) -> A e. RR ) |",
+  "conclusion" : "#P_elioore",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cioo", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cC", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cC", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wcel", "#T_cxr", "#T_w3a--1", "#T_cC", "#T_wcel", "#T_cxr", "#T_w3a--2", "#T_cA.wceq", "#T_wcel", "#T_cxr", "#T_wa", "#T_cB.wceq", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_clt", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cB", "#T_cioo", "#T_cC", "#T_wi", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3ancomb", "#P_sylanb", "#P_xrre2", "#P_elioo3g", "#P_sylbi" ]
+}

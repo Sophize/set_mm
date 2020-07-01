@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See m2cpminvid2 on Metamath](http://us.metamath.org/mpegif/m2cpminvid2.html)"
+  } ],
+  "names" : [ "m2cpminvid2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cN", "#T_ccpmat", "#T_cR", "#T_cI", "#T_wceq", "#T_cN", "#T_ccpmat2mat", "#T_cR", "#T_cT", "#T_wceq", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_cN", "#T_wcel", "#T_cfn", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--2", "#T_cM", "#T_wcel", "#T_cS", "#T_wi", "#T_cT", "#T_cfv", "#T_cI", "#T_cfv", "#T_cM", "#T_wceq", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The transformation applied to the inverse transformation of a constant polynomial matrix over the ring ` R ` results in the matrix itself. (Contributed by AV, 12-Nov-2019.)  (Revised by AV, 14-Dec-2019.) ",
+  "statement" : "m2cpminvid2.s $e |- S = ( N ConstPolyMat R ) $.\nm2cpminvid2.i $e |- I = ( N cPolyMatToMat R ) $.\nm2cpminvid2.t $e |- T = ( N matToPolyMat R ) $.\nm2cpminvid2 $p |- ( ( N e. Fin /\\ R e. Ring /\\ M e. S ) -> ( T ` ( I ` M ) ) = M ) $."
+}

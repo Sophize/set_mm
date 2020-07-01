@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfnul2 on Metamath](http://us.metamath.org/mpegif/dfnul2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-nul | |- (/) = ( _V \\ _V ) |\n| 2 | 1 | #P_eleq2i | |- ( x e. (/) <-> x e. ( _V \\ _V ) ) |\n| 3 |  | #P_eldif | |- ( x e. ( _V \\ _V ) <-> ( x e. _V /\\ -. x e. _V ) ) |\n| 4 |  | #P_eqid | |- x = x |\n| 5 |  | #P_pm3.24 | |- -. ( x e. _V /\\ -. x e. _V ) |\n| 6 | 4, 5 | #P_2th | |- ( x = x <-> -. ( x e. _V /\\ -. x e. _V ) ) |\n| 7 | 6 | #P_con2bii | |- ( ( x e. _V /\\ -. x e. _V ) <-> -. x = x ) |\n| 8 | 2, 3, 7 | #P_3bitri | |- ( x e. (/) <-> -. x = x ) |\n| 9 | 8 | #P_abbi2i | |- (/) = { x | -. x = x } |",
+  "conclusion" : "#P_dfnul2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cdif", "#T_cvv", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_c0", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_c0", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_wn", "#T_vx", "#T_wceq", "#T_vx", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_eqid", "#P_pm3.24", "#P_abbi2i", "#P_con2bii", "#P_3bitri", "#P_eleq2i", "#P_2th", "#P_df-nul" ]
+}

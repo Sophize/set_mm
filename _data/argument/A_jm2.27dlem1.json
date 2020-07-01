@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jm2.27dlem1 on Metamath](http://us.metamath.org/mpegif/jm2.27dlem1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jm2.27dlem1.1 | |- A e. ( 1 ... B ) |\n| 2 |  | #P_fveq1 | |- ( a = ( b |` ( 1 ... B ) ) -> ( a ` A ) = ( ( b |` ( 1 ... B ) ) ` A ) ) |\n| 3 |  | #P_fvres | |- ( A e. ( 1 ... B ) -> ( ( b |` ( 1 ... B ) ) ` A ) = ( b ` A ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- ( ( b |` ( 1 ... B ) ) ` A ) = ( b ` A ) |\n| 5 | 2, 4 | #P_syl6eq | |- ( a = ( b |` ( 1 ... B ) ) -> ( a ` A ) = ( b ` A ) ) |",
+  "conclusion" : "#P_jm2.27dlem1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_c1", "#T_cfz", "#T_cB", "#T_va", "#T_wceq", "#T_vb", "#T_cres", "#T_c1", "#T_cfz", "#T_cB.wceq", "#T_wi", "#T_va", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vb", "#T_cres", "#T_c1", "#T_cfz", "#T_cB.wceq", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_c1", "#T_cfz", "#T_cB.wceq", "#T_wi", "#T_vb", "#T_cres", "#T_c1", "#T_cfz", "#T_cB.wceq", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vb", "#T_cfv", "#T_cA.wceq", "#T_vb", "#T_cres", "#T_c1", "#T_cfz", "#T_cB.wceq", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_vb", "#T_cfv", "#T_cA.wceq", "#T_va", "#T_wceq", "#T_vb", "#T_cres", "#T_c1", "#T_cfz", "#T_cB", "#T_wi", "#T_va", "#T_cfv", "#T_cA", "#T_wceq", "#T_vb", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_fvres", "#P_fveq1", "#P_syl6eq" ]
+}

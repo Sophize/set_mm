@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See an12 on Metamath](http://us.metamath.org/mpegif/an12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ancom | |- ( ( ph /\\ ps ) <-> ( ps /\\ ph ) ) |\n| 2 | 1 | #P_anbi1i | |- ( ( ( ph /\\ ps ) /\\ ch ) <-> ( ( ps /\\ ph ) /\\ ch ) ) |\n| 3 |  | #P_anass | |- ( ( ( ph /\\ ps ) /\\ ch ) <-> ( ph /\\ ( ps /\\ ch ) ) ) |\n| 4 |  | #P_anass | |- ( ( ( ps /\\ ph ) /\\ ch ) <-> ( ps /\\ ( ph /\\ ch ) ) ) |\n| 5 | 2, 3, 4 | #P_3bitr3i | |- ( ( ph /\\ ( ps /\\ ch ) ) <-> ( ps /\\ ( ph /\\ ch ) ) ) |",
+  "conclusion" : "#P_an12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_anass", "#P_anbi1i", "#P_3bitr3i" ]
+}

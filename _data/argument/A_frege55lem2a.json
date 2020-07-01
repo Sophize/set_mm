@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege55lem2a on Metamath](http://us.metamath.org/mpegif/frege55lem2a.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bicom1 | |- ( ( ph <-> ps ) -> ( ps <-> ph ) ) |\n| 2 |  | #P_frege54cor0a | |- ( ( ps <-> ph ) <-> if- ( ps , ph , -. ph ) ) |\n| 3 | 1, 2 | #P_sylib | |- ( ( ph <-> ps ) -> if- ( ps , ph , -. ph ) ) |\n| 4 | 3 | #P_idi | |- ( ( ph <-> ps ) -> if- ( ps , ph , -. ph ) ) |",
+  "conclusion" : "#P_frege55lem2a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wif--1", "#T_wps", "#T_wif--2", "#T_wph", "#T_wif--3", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wif--1", "#T_wps", "#T_wif--2", "#T_wph", "#T_wif--3", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wif--1", "#T_wps", "#T_wif--2", "#T_wph", "#T_wif--3", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_frege54cor0a", "#P_idi", "#P_bicom1", "#P_sylib" ]
+}

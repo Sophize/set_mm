@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mpt on Metamath](http://us.metamath.org/mpegif/df-mpt.html)"
+  } ],
+  "names" : [ "df-mpt" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_copab--6", "#T_cA", "#T_vy", "#T_cB", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define maps-to notation for defining a function via a rule.  Read as \"the function defined by the map from ` x ` (in ` A ` ) to ` B ( x ) ` .\"  The class expression ` B ` is the value of the function at ` x ` and normally contains the variable ` x ` .  An example is the square function for complex numbers, ` ( x e. CC |-> ( x ^ 2 ) ) ` . Similar to the definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM, 17-Feb-2008.) \n\n---\n\n Define maps-to notation for defining a function via a rule.  Read as \"the function defined by the map from ` x ` (in ` A ` ) to ` B ( x ) ` .\"  The class expression ` B ` is the value of the function at ` x ` and normally contains the variable ` x ` .  Similar to the definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM, 17-Feb-2008.) ",
+  "statement" : "df-mpt $p |- ( x e. A |-> B ) = { <. x , y >. | ( x e. A /\\ y = B ) } $.\n$d A y $.\n$d B y $.\n$d x y $."
+}

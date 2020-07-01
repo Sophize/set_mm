@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-grpo on Metamath](http://us.metamath.org/mpegif/df-grpo.html)"
+  } ],
+  "names" : [ "df-grpo" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cgr", "#T_wceq", "#T_cab--1", "#T_vg", "#T_cab--2", "#T_wex", "#T_vt", "#T_vg", "#T_wf--1", "#T_vt", "#T_cxp", "#T_vt", "#T_wf--2", "#T_vt", "#T_w3a--1", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vt", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vt", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vt", "#T_vx", "#T_vg", "#T_vy", "#T_vg", "#T_vz", "#T_wceq", "#T_vx", "#T_vg", "#T_vy", "#T_vg", "#T_vz", "#T_w3a--2", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_vt", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vt", "#T_vu", "#T_vg", "#T_vx", "#T_wceq", "#T_vx", "#T_wa", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_vt", "#T_vy", "#T_vg", "#T_vx", "#T_wceq", "#T_vu", "#T_cab--3", "#T_vg", "#T_vt", "#T_vu", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all group operations.  The base set for a group can be determined from its group operation.  Based on the definition in Exercise 28 of [Herstein] p. 54.  (Contributed by NM, 10-Oct-2006.) (New usage is discouraged.) ",
+  "statement" : "df-grpo $p |- GrpOp = { g | E. t ( g : ( t X. t ) --> t /\\ A. x e. t A. y e. t A. z e. t ( ( x g y ) g z ) = ( x g ( y g z ) ) /\\ E. u e. t A. x e. t ( ( u g x ) = x /\\ E. y e. t ( y g x ) = u ) ) } $.\n$d g t u x y z $."
+}

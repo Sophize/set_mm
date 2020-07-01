@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brtpid3 on Metamath](http://us.metamath.org/mpegif/brtpid3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opex | |- <. A , B >. e. _V |\n| 2 | 1 | #P_tpid3 | |- <. A , B >. e. { C , D , <. A , B >. } |\n| 3 |  | #P_df-br | |- ( A { C , D , <. A , B >. } B <-> <. A , B >. e. { C , D , <. A , B >. } ) |\n| 4 | 2, 3 | #P_mpbir | |- A { C , D , <. A , B >. } B |",
+  "conclusion" : "#P_brtpid3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cD", "#T_ctp--3", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--4", "#T_cA.wceq", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cD", "#T_ctp--3", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--4", "#T_cB.wceq", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cD", "#T_ctp--3", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--4", "#T_cA", "#T_ctp--1", "#T_cC", "#T_ctp--2", "#T_cD", "#T_ctp--3", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctp--4", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-br", "#P_tpid3", "#P_opex", "#P_mpbir" ]
+}

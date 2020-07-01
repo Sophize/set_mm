@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm4.14dc on Metamath](http://us.metamath.org/mpegif/pm4.14dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_con34bdc | |- ( DECID ch -> ( ( ps -> ch ) <-> ( -. ch -> -. ps ) ) ) |\n| 2 | 1 | #P_imbi2d | |- ( DECID ch -> ( ( ph -> ( ps -> ch ) ) <-> ( ph -> ( -. ch -> -. ps ) ) ) ) |\n| 3 |  | #P_impexp | |- ( ( ( ph /\\ ps ) -> ch ) <-> ( ph -> ( ps -> ch ) ) ) |\n| 4 |  | #P_impexp | |- ( ( ( ph /\\ -. ch ) -> -. ps ) <-> ( ph -> ( -. ch -> -. ps ) ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( DECID ch -> ( ( ( ph /\\ ps ) -> ch ) <-> ( ( ph /\\ -. ch ) -> -. ps ) ) ) |",
+  "conclusion" : "#P_pm4.14dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wdc", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps", "#T_wdc", "#T_wch", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con34bdc", "#P_impexp", "#P_3bitr4g", "#P_imbi2d" ]
+}

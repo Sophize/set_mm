@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See kgenftop on Metamath](http://us.metamath.org/mpegif/kgenftop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- U. J = U. J |\n| 2 | 1 | #P_toptopon | |- ( J e. Top <-> J e. ( TopOn ` U. J ) ) |\n| 3 |  | #P_kgentopon | |- ( J e. ( TopOn ` U. J ) -> ( kGen ` J ) e. ( TopOn ` U. J ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( J e. Top -> ( kGen ` J ) e. ( TopOn ` U. J ) ) |\n| 5 |  | #P_topontop | |- ( ( kGen ` J ) e. ( TopOn ` U. J ) -> ( kGen ` J ) e. Top ) |\n| 6 | 4, 5 | #P_syl | |- ( J e. Top -> ( kGen ` J ) e. Top ) |",
+  "conclusion" : "#P_kgenftop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wi", "#T_ckgen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ckgen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_ckgen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wi", "#T_ckgen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ckgen", "#T_cfv", "#T_cJ", "#T_wcel", "#T_ctop" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_topontop", "#P_syl", "#P_kgentopon", "#P_sylbi", "#P_toptopon" ]
+}

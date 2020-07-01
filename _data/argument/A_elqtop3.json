@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elqtop3 on Metamath](http://us.metamath.org/mpegif/elqtop3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_toponuni | |- ( J e. ( TopOn ` X ) -> X = U. J ) |\n| 2 |  | #P_eqimss | |- ( X = U. J -> X C_ U. J ) |\n| 3 | 1, 2 | #P_syl | |- ( J e. ( TopOn ` X ) -> X C_ U. J ) |\n| 4 | 3 | #P_adantr | |- ( ( J e. ( TopOn ` X ) /\\ F : X -onto-> Y ) -> X C_ U. J ) |\n| 5 |  | #P_eqid | |- U. J = U. J |\n| 6 | 5 | #P_elqtop | |- ( ( J e. ( TopOn ` X ) /\\ F : X -onto-> Y /\\ X C_ U. J ) -> ( A e. ( J qTop F ) <-> ( A C_ Y /\\ ( `' F \" A ) e. J ) ) ) |\n| 7 | 4, 6 | #P_mpd3an3 | |- ( ( J e. ( TopOn ` X ) /\\ F : X -onto-> Y ) -> ( A e. ( J qTop F ) <-> ( A C_ Y /\\ ( `' F \" A ) e. J ) ) ) |",
+  "conclusion" : "#P_elqtop3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_wi", "#T_cX", "#T_wss", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wss", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_wi", "#T_cX", "#T_wss", "#T_cuni", "#T_cJ", "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_w3a--1", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_w3a--2", "#T_cX", "#T_wss", "#T_cuni", "#T_cJ", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cY", "#T_wa", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_wa", "#T_cF", "#T_wfo--1", "#T_cX", "#T_wfo--2", "#T_cY", "#T_wi", "#T_cA", "#T_wcel", "#T_cJ", "#T_cqtop", "#T_cF", "#T_wb", "#T_cA", "#T_wss", "#T_cY", "#T_wa", "#T_ccnv", "#T_cF", "#T_cima", "#T_cA", "#T_wcel", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_elqtop", "#P_toponuni", "#P_syl", "#P_eqimss", "#P_adantr", "#P_mpd3an3" ]
+}

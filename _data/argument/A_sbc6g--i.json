@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbc6g on Metamath](http://us.metamath.org/mpegif/sbc6g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfe1 | |- F/ x E. x ( x = A /\\ ph ) |\n| 2 |  | #P_ceqex | |- ( x = A -> ( ph <-> E. x ( x = A /\\ ph ) ) ) |\n| 3 | 1, 2 | #P_ceqsalg | |- ( A e. V -> ( A. x ( x = A -> ph ) <-> E. x ( x = A /\\ ph ) ) ) |\n| 4 |  | #P_sbc5 | |- ( [. A / x ]. ph <-> E. x ( x = A /\\ ph ) ) |\n| 5 | 3, 4 | #P_syl6rbbr | |- ( A e. V -> ( [. A / x ]. ph <-> A. x ( x = A -> ph ) ) ) |",
+  "conclusion" : "#P_sbc6g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfe1", "#P_ceqex", "#P_ceqsalg", "#P_sbc5", "#P_syl6rbbr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See albi on Metamath](http://us.metamath.org/mpegif/albi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bi1 | |- ( ( ph <-> ps ) -> ( ph -> ps ) ) |\n| 2 | 1 | #P_al2imi | |- ( A. x ( ph <-> ps ) -> ( A. x ph -> A. x ps ) ) |\n| 3 |  | #P_bi2 | |- ( ( ph <-> ps ) -> ( ps -> ph ) ) |\n| 4 | 3 | #P_al2imi | |- ( A. x ( ph <-> ps ) -> ( A. x ps -> A. x ph ) ) |\n| 5 | 2, 4 | #P_impbid | |- ( A. x ( ph <-> ps ) -> ( A. x ph <-> A. x ps ) ) |",
+  "conclusion" : "#P_albi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bi2", "#P_bi1", "#P_al2imi", "#P_impbid" ]
+}

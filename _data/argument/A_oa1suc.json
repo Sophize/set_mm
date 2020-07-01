@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oa1suc on Metamath](http://us.metamath.org/mpegif/oa1suc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-1o | |- 1o = suc (/) |\n| 2 | 1 | #P_oveq2i | |- ( A +o 1o ) = ( A +o suc (/) ) |\n| 3 |  | #P_peano1 | |- (/) e. _om |\n| 4 |  | #P_onasuc | |- ( ( A e. On /\\ (/) e. _om ) -> ( A +o suc (/) ) = suc ( A +o (/) ) ) |\n| 5 | 3, 4 | #P_mpan2 | |- ( A e. On -> ( A +o suc (/) ) = suc ( A +o (/) ) ) |\n| 6 | 2, 5 | #P_syl5eq | |- ( A e. On -> ( A +o 1o ) = suc ( A +o (/) ) ) |\n| 7 |  | #P_oa0 | |- ( A e. On -> ( A +o (/) ) = A ) |\n| 8 |  | #P_suceq | |- ( ( A +o (/) ) = A -> suc ( A +o (/) ) = suc A ) |\n| 9 | 7, 8 | #P_syl | |- ( A e. On -> suc ( A +o (/) ) = suc A ) |\n| 10 | 6, 9 | #P_eqtrd | |- ( A e. On -> ( A +o 1o ) = suc A ) |",
+  "conclusion" : "#P_oa1suc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1o", "#T_wceq", "#T_csuc", "#T_c0", "#T_cA.wceq", "#T_coa", "#T_c1o", "#T_wceq", "#T_cA.wceq", "#T_coa", "#T_csuc", "#T_c0", "#T_c0", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_c0", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_coa", "#T_csuc", "#T_c0", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_coa", "#T_csuc", "#T_c0", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_coa", "#T_c1o", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_coa", "#T_c0", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_coa", "#T_c1o", "#T_wceq", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oa0", "#P_peano1", "#P_eqtrd", "#P_suceq", "#P_syl", "#P_mpan2", "#P_syl5eq", "#P_oveq2i", "#P_onasuc", "#P_df-1o" ]
+}

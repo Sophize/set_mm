@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See findcard3 on Metamath](http://us.metamath.org/mpegif/findcard3.html)"
+  } ],
+  "names" : [ "findcard3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_vy", "#T_wcel", "#T_cfn", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wpss", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wta", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Schema for strong induction on the cardinality of a finite set.  The inductive hypothesis is that the result is true on any proper subset. The result is then proven to be true for all finite sets.  (Contributed by Mario Carneiro, 13-Dec-2013.) ",
+  "statement" : "findcard3.1 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfindcard3.2 $e |- ( x = A -> ( ph <-> ta ) ) $.\nfindcard3.3 $e |- ( y e. Fin -> ( A. x ( x C. y -> ph ) -> ch ) ) $.\nfindcard3 $p |- ( A e. Fin -> ta ) $.\n$d A x $.\n$d ch x $.\n$d ph y $.\n$d ta x $.\n$d x y $."
+}

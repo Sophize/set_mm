@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.25dc on Metamath](http://us.metamath.org/mpegif/pm2.25dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-dc | |- ( DECID ph <-> ( ph \\/ -. ph ) ) |\n| 2 |  | #P_orel1 | |- ( -. ph -> ( ( ph \\/ ps ) -> ps ) ) |\n| 3 | 2 | #P_orim2i | |- ( ( ph \\/ -. ph ) -> ( ph \\/ ( ( ph \\/ ps ) -> ps ) ) ) |\n| 4 | 1, 3 | #P_sylbi | |- ( DECID ph -> ( ph \\/ ( ( ph \\/ ps ) -> ps ) ) ) |",
+  "conclusion" : "#P_pm2.25dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-dc", "#P_orim2i", "#P_orel1", "#P_sylbi" ]
+}

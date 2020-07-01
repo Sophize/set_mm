@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See s4eqd on Metamath](http://us.metamath.org/mpegif/s4eqd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | s2eqd.1 | |- ( ph -> A = N ) |\n| 2 |  | s2eqd.2 | |- ( ph -> B = O ) |\n| 3 |  | s3eqd.3 | |- ( ph -> C = P ) |\n| 4 |  | s4eqd.4 | |- ( ph -> D = Q ) |\n| 5 | 1, 2, 3 | #P_s3eqd | |- ( ph -> <\" A B C \"> = <\" N O P \"> ) |\n| 6 | 4 | #P_s1eqd | |- ( ph -> <\" D \"> = <\" Q \"> ) |\n| 7 | 5, 6 | #P_oveq12d | |- ( ph -> ( <\" A B C \"> concat <\" D \"> ) = ( <\" N O P \"> concat <\" Q \"> ) ) |\n| 8 |  | #P_df-s4 | |- <\" A B C D \"> = ( <\" A B C \"> concat <\" D \"> ) |\n| 9 |  | #P_df-s4 | |- <\" N O P Q \"> = ( <\" N O P \"> concat <\" Q \"> ) |\n| 10 | 7, 8, 9 | #P_3eqtr4g | |- ( ph -> <\" A B C D \"> = <\" N O P Q \"> ) |",
+  "conclusion" : "#P_s4eqd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cN", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cO", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cP", "#T_wph", "#T_wi", "#T_cD", "#T_wceq", "#T_cQ", "#T_wph", "#T_wi", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_wceq", "#T_cs3--1", "#T_cN", "#T_cO", "#T_cP", "#T_cs3--2", "#T_wph", "#T_wi", "#T_cs1--1", "#T_cD", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cQ", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_cconcat", "#T_cs1--1", "#T_cD", "#T_cs1--2", "#T_wceq", "#T_cs3--1", "#T_cN", "#T_cO", "#T_cP", "#T_cs3--2", "#T_cconcat", "#T_cs1--1", "#T_cQ", "#T_cs1--2", "#T_cs4--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wceq", "#T_cs3--1", "#T_cA.wceq", "#T_cB.wceq", "#T_cC", "#T_cs3--2", "#T_cconcat", "#T_cs1--1", "#T_cD", "#T_cs1--2", "#T_cs4--1", "#T_cN", "#T_cO", "#T_cP", "#T_cQ", "#T_cs4--2", "#T_wceq", "#T_cs3--1", "#T_cN", "#T_cO", "#T_cP", "#T_cs3--2", "#T_cconcat", "#T_cs1--1", "#T_cQ", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cs4--1", "#T_cA", "#T_cB", "#T_cC", "#T_cD", "#T_cs4--2", "#T_wceq", "#T_cs4--1", "#T_cN", "#T_cO", "#T_cP", "#T_cQ", "#T_cs4--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveq12d", "#P_df-s4", "#P_s3eqd", "#P_s1eqd", "#P_3eqtr4g" ]
+}

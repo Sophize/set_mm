@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodcnv on Metamath](http://us.metamath.org/mpegif/fprodcnv.html)"
+  } ],
+  "names" : [ "fprodcnv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cop--1", "#T_vj", "#T_cop--2", "#T_vk", "#T_cop--3", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_vy", "#T_wceq", "#T_cop--1", "#T_vk", "#T_cop--2", "#T_vj", "#T_cop--3", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_wrel", "#T_cA", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vx", "#T_cprod--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cprod--1", "#T_vy", "#T_cprod--2", "#T_ccnv", "#T_cA", "#T_cC", "#T_cA", "#T_vx", "#T_vy", "#T_cA", "#T_vy", "#T_cB", "#T_vj", "#T_vk", "#T_vy", "#T_cC", "#T_vj", "#T_vk", "#T_cD", "#T_vx", "#T_vy", "#T_vj", "#T_vk", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transform a product region using the converse operation.  (Contributed by Scott Fenton, 1-Feb-2018.) ",
+  "statement" : "fprodcnv.1 $e |- ( x = <. j , k >. -> B = D ) $.\nfprodcnv.2 $e |- ( y = <. k , j >. -> C = D ) $.\nfprodcnv.3 $e |- ( ph -> A e. Fin ) $.\nfprodcnv.4 $e |- ( ph -> Rel A ) $.\nfprodcnv.5 $e |- ( ( ph /\\ x e. A ) -> B e. CC ) $.\nfprodcnv $p |- ( ph -> prod_ x e. A B = prod_ y e. `' A C ) $.\n$d A x y $.\n$d A y $.\n$d B j k y $.\n$d C j k $.\n$d D x y $.\n$d j k x y $.\n$d ph x y $."
+}

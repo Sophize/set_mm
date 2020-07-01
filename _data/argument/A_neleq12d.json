@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neleq12d on Metamath](http://us.metamath.org/mpegif/neleq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neleq12d.1 | |- ( ph -> A = B ) |\n| 2 |  | neleq12d.2 | |- ( ph -> C = D ) |\n| 3 | 1, 2 | #P_eleq12d | |- ( ph -> ( A e. C <-> B e. D ) ) |\n| 4 | 3 | #P_notbid | |- ( ph -> ( -. A e. C <-> -. B e. D ) ) |\n| 5 |  | #P_df-nel | |- ( A e/ C <-> -. A e. C ) |\n| 6 |  | #P_df-nel | |- ( B e/ D <-> -. B e. D ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( ph -> ( A e/ C <-> B e/ D ) ) |",
+  "conclusion" : "#P_neleq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wnel", "#T_cC", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cB.wceq", "#T_wnel", "#T_cD", "#T_wb", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wnel", "#T_cC", "#T_wb", "#T_cB", "#T_wnel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3bitr4g", "#P_notbid", "#P_df-nel", "#P_eleq12d" ]
+}

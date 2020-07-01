@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordeq on Metamath](http://us.metamath.org/mpegif/ordeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_treq | |- ( A = B -> ( Tr A <-> Tr B ) ) |\n| 2 |  | #P_raleq | |- ( A = B -> ( A. x e. A Tr x <-> A. x e. B Tr x ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( A = B -> ( ( Tr A /\\ A. x e. A Tr x ) <-> ( Tr B /\\ A. x e. B Tr x ) ) ) |\n| 4 |  | #P_dford3--i | |- ( Ord A <-> ( Tr A /\\ A. x e. A Tr x ) ) |\n| 5 |  | #P_dford3--i | |- ( Ord B <-> ( Tr B /\\ A. x e. B Tr x ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( A = B -> ( Ord A <-> Ord B ) ) |",
+  "conclusion" : "#P_ordeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wb", "#T_wtr", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wtr", "#T_vx.wal", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wtr", "#T_vx.wal", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wtr", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wtr", "#T_vx.wal", "#T_wb", "#T_wtr", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wtr", "#T_vx.wal", "#T_word", "#T_cA.wceq", "#T_wb", "#T_wtr", "#T_cA.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wtr", "#T_vx.wal", "#T_word", "#T_cB.wceq", "#T_wb", "#T_wtr", "#T_cB.wceq", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cB.wceq", "#T_wtr", "#T_vx.wal", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_word", "#T_cA", "#T_wb", "#T_word", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_treq", "#P_dford3--i", "#P_3bitr4g", "#P_raleq", "#P_anbi12d" ]
+}

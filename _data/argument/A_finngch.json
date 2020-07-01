@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See finngch on Metamath](http://us.metamath.org/mpegif/finngch.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fin12 | |- ( A e. Fin -> A e. Fin2 ) |\n| 2 |  | #P_fin23 | |- ( A e. Fin2 -> A e. Fin3 ) |\n| 3 |  | #P_fin34 | |- ( A e. Fin3 -> A e. Fin4 ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( A e. Fin -> A e. Fin4 ) |\n| 5 |  | #P_isfin4-3 | |- ( A e. Fin4 <-> A ~< ( A +c 1o ) ) |\n| 6 | 4, 5 | #P_sylib | |- ( A e. Fin -> A ~< ( A +c 1o ) ) |\n| 7 |  | #P_canthp1 | |- ( 1o ~< A -> ( A +c 1o ) ~< ~P A ) |\n| 8 | 6, 7 | #P_anim12i | |- ( ( A e. Fin /\\ 1o ~< A ) -> ( A ~< ( A +c 1o ) /\\ ( A +c 1o ) ~< ~P A ) ) |",
+  "conclusion" : "#P_finngch",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin2", "#T_cA.wceq", "#T_wcel", "#T_cfin2", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin3", "#T_cA.wceq", "#T_wcel", "#T_cfin3", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin4", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfin4", "#T_cA.wceq", "#T_wcel", "#T_cfin4", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_ccda", "#T_c1o", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_ccda", "#T_c1o", "#T_c1o", "#T_csdm", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_ccda", "#T_c1o", "#T_csdm", "#T_cpw", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cfn", "#T_wa", "#T_c1o", "#T_csdm", "#T_cA", "#T_wi", "#T_cA", "#T_csdm", "#T_cA", "#T_ccda", "#T_c1o", "#T_wa", "#T_cA", "#T_ccda", "#T_c1o", "#T_csdm", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_canthp1", "#P_3syl", "#P_isfin4-3", "#P_sylib", "#P_fin12", "#P_fin23", "#P_fin34", "#P_anim12i" ]
+}

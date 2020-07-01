@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1p1times on Metamath](http://us.metamath.org/mpegif/1p1times.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1cnd | |- ( A e. CC -> 1 e. CC ) |\n| 2 |  | #P_id | |- ( A e. CC -> A e. CC ) |\n| 3 | 1, 1, 2 | #P_adddird | |- ( A e. CC -> ( ( 1 + 1 ) x. A ) = ( ( 1 x. A ) + ( 1 x. A ) ) ) |\n| 4 |  | #P_mulid2 | |- ( A e. CC -> ( 1 x. A ) = A ) |\n| 5 | 4, 4 | #P_oveq12d | |- ( A e. CC -> ( ( 1 x. A ) + ( 1 x. A ) ) = ( A + A ) ) |\n| 6 | 3, 5 | #P_eqtrd | |- ( A e. CC -> ( ( 1 + 1 ) x. A ) = ( A + A ) ) |",
+  "conclusion" : "#P_1p1times",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_cmul", "#T_cA", "#T_wceq", "#T_cA", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveq12d", "#P_eqtrd", "#P_adddird", "#P_mulid2", "#P_1cnd", "#P_id" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unnum on Metamath](http://us.metamath.org/mpegif/unnum.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cdanum | |- ( ( A e. dom card /\\ B e. dom card ) -> ( A +c B ) e. dom card ) |\n| 2 |  | #P_uncdadom | |- ( ( A e. dom card /\\ B e. dom card ) -> ( A u. B ) ~<_ ( A +c B ) ) |\n| 3 |  | #P_numdom | |- ( ( ( A +c B ) e. dom card /\\ ( A u. B ) ~<_ ( A +c B ) ) -> ( A u. B ) e. dom card ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ( A e. dom card /\\ B e. dom card ) -> ( A u. B ) e. dom card ) |",
+  "conclusion" : "#P_unnum",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_cA", "#T_cun", "#T_cB", "#T_wcel", "#T_cdm", "#T_ccrd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_numdom", "#P_cdanum", "#P_uncdadom" ]
+}

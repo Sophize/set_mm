@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See conss2 on Metamath](http://us.metamath.org/mpegif/conss2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssv | |- A C_ _V |\n| 2 |  | #P_ssv | |- B C_ _V |\n| 3 |  | #P_ssconb | |- ( ( A C_ _V /\\ B C_ _V ) -> ( A C_ ( _V \\ B ) <-> B C_ ( _V \\ A ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( A C_ ( _V \\ B ) <-> B C_ ( _V \\ A ) ) |",
+  "conclusion" : "#P_conss2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cvv", "#T_cdif", "#T_cB", "#T_wb", "#T_cB", "#T_wss", "#T_cvv", "#T_cdif", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_ssv", "#P_ssconb" ]
+}

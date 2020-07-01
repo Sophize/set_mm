@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-nfs1t2 on Metamath](http://us.metamath.org/mpegif/bj-nfs1t2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfr | |- ( F/ y ph -> ( ph -> A. y ph ) ) |\n| 2 | 1 | #P_alimi | |- ( A. x F/ y ph -> A. x ( ph -> A. y ph ) ) |\n| 3 |  | #P_bj-nfs1t | |- ( A. x ( ph -> A. y ph ) -> F/ x [ y / x ] ph ) |\n| 4 | 2, 3 | #P_syl | |- ( A. x F/ y ph -> F/ x [ y / x ] ph ) |",
+  "conclusion" : "#P_bj-nfs1t2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wal", "#T_vx", "#T_wnf", "#T_vy", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfr", "#P_bj-nfs1t", "#P_alimi", "#P_syl" ]
+}

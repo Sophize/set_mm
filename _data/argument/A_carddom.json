@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See carddom on Metamath](http://us.metamath.org/mpegif/carddom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_numth3 | |- ( A e. V -> A e. dom card ) |\n| 2 |  | #P_numth3 | |- ( B e. W -> B e. dom card ) |\n| 3 |  | #P_carddom2 | |- ( ( A e. dom card /\\ B e. dom card ) -> ( ( card ` A ) C_ ( card ` B ) <-> A ~<_ B ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. V /\\ B e. W ) -> ( ( card ` A ) C_ ( card ` B ) <-> A ~<_ B ) ) |",
+  "conclusion" : "#P_carddom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cdom", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA", "#T_wss", "#T_ccrd", "#T_cfv", "#T_cB", "#T_wb", "#T_cA", "#T_cdom", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_carddom2", "#P_numth3", "#P_syl2an" ]
+}

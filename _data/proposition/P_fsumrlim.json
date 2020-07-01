@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumrlim on Metamath](http://us.metamath.org/mpegif/fsumrlim.html)"
+  } ],
+  "names" : [ "fsumrlim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cC", "#T_crli", "#T_cD", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_crli", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cD", "#T_cA", "#T_vk", "#T_vx", "#T_cB", "#T_vk", "#T_vx", "#T_vk", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Limit of a finite sum of converging sequences.  Note that ` C ( k ) ` is a collection of functions with implicit parameter ` k ` , each of which converges to ` D ( k ) ` as ` n ~~> +oo ` .  (Contributed by Mario Carneiro, 22-May-2016.) ",
+  "statement" : "fsumrlim.1 $e |- ( ph -> A C_ RR ) $.\nfsumrlim.2 $e |- ( ph -> B e. Fin ) $.\nfsumrlim.3 $e |- ( ( ph /\\ ( x e. A /\\ k e. B ) ) -> C e. V ) $.\nfsumrlim.4 $e |- ( ( ph /\\ k e. B ) -> ( x e. A |-> C ) ~~>r D ) $.\nfsumrlim $p |- ( ph -> ( x e. A |-> sum_ k e. B C ) ~~>r sum_ k e. B D ) $.\n$d A k x $.\n$d B k x $.\n$d k ph x $."
+}

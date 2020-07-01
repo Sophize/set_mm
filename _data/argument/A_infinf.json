@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infinf on Metamath](http://us.metamath.org/mpegif/infinf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_omex | |- _om e. _V |\n| 2 |  | #P_domtri | |- ( ( _om e. _V /\\ A e. B ) -> ( _om ~<_ A <-> -. A ~< _om ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. B -> ( _om ~<_ A <-> -. A ~< _om ) ) |\n| 4 |  | #P_isfinite | |- ( A e. Fin <-> A ~< _om ) |\n| 5 | 4 | #P_notbii | |- ( -. A e. Fin <-> -. A ~< _om ) |\n| 6 | 3, 5 | #P_syl6rbbr | |- ( A e. B -> ( -. A e. Fin <-> _om ~<_ A ) ) |",
+  "conclusion" : "#P_infinf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wn", "#T_cA", "#T_wcel", "#T_cfn", "#T_wb", "#T_com", "#T_cdom", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_isfinite", "#P_domtri", "#P_mpan", "#P_syl6rbbr", "#P_omex" ]
+}

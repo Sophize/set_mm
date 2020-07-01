@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm4.78 on Metamath](http://us.metamath.org/mpegif/pm4.78.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orordi | |- ( ( -. ph \\/ ( ps \\/ ch ) ) <-> ( ( -. ph \\/ ps ) \\/ ( -. ph \\/ ch ) ) ) |\n| 2 |  | #P_imor | |- ( ( ph -> ( ps \\/ ch ) ) <-> ( -. ph \\/ ( ps \\/ ch ) ) ) |\n| 3 |  | #P_imor | |- ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) |\n| 4 |  | #P_imor | |- ( ( ph -> ch ) <-> ( -. ph \\/ ch ) ) |\n| 5 | 3, 4 | #P_orbi12i | |- ( ( ( ph -> ps ) \\/ ( ph -> ch ) ) <-> ( ( -. ph \\/ ps ) \\/ ( -. ph \\/ ch ) ) ) |\n| 6 | 1, 2, 5 | #P_3bitr4ri | |- ( ( ( ph -> ps ) \\/ ( ph -> ch ) ) <-> ( ph -> ( ps \\/ ch ) ) ) |",
+  "conclusion" : "#P_pm4.78",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orordi", "#P_imor", "#P_orbi12i", "#P_3bitr4ri" ]
+}

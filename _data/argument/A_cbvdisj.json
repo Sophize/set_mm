@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvdisj on Metamath](http://us.metamath.org/mpegif/cbvdisj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cbvdisj.1 | |- F/_ y B |\n| 2 |  | cbvdisj.2 | |- F/_ x C |\n| 3 |  | cbvdisj.3 | |- ( x = y -> B = C ) |\n| 4 | 1 | #P_nfcri | |- F/ y z e. B |\n| 5 | 2 | #P_nfcri | |- F/ x z e. C |\n| 6 | 3 | #P_eleq2d | |- ( x = y -> ( z e. B <-> z e. C ) ) |\n| 7 | 4, 5, 6 | #P_cbvrmo | |- ( E* x e. A z e. B <-> E* y e. A z e. C ) |\n| 8 | 7 | #P_albii | |- ( A. z E* x e. A z e. B <-> A. z E* y e. A z e. C ) |\n| 9 |  | #P_df-disj | |- ( Disj_ x e. A B <-> A. z E* x e. A z e. B ) |\n| 10 |  | #P_df-disj | |- ( Disj_ y e. A C <-> A. z E* y e. A z e. C ) |\n| 11 | 8, 9, 10 | #P_3bitr4i | |- ( Disj_ x e. A B <-> Disj_ y e. A C ) |",
+  "conclusion" : "#P_cbvdisj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnfc", "#T_vy", "#T_cB", "#T_wnfc", "#T_vx", "#T_cC", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_wnf", "#T_vy.tru", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vz", "#T_wcel", "#T_cC", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wrmo--1", "#T_vy.tru", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cC", "#T_wal", "#T_vz", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vz", "#T_wrmo--1", "#T_vy.tru", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cC", "#T_wdisj--1", "#T_vx.wal", "#T_wdisj--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vz", "#T_wrmo--1", "#T_vx.wal", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wdisj--1", "#T_vy.tru", "#T_wdisj--2", "#T_cA.wceq", "#T_cC", "#T_wb", "#T_wal", "#T_vz", "#T_wrmo--1", "#T_vy.tru", "#T_wrmo--2", "#T_cA.wceq", "#T_vz", "#T_wcel", "#T_cC", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cA", "#T_cB", "#T_wb", "#T_wdisj--1", "#T_vy", "#T_wdisj--2", "#T_cA", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_albii", "#P_nfcri", "#P_df-disj", "#P_3bitr4i", "#P_cbvrmo" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See renegcl on Metamath](http://us.metamath.org/mpegif/renegcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_negeq | |- ( A = if ( A e. RR , A , 1 ) -> -u A = -u if ( A e. RR , A , 1 ) ) |\n| 2 | 1 | #P_eleq1d | |- ( A = if ( A e. RR , A , 1 ) -> ( -u A e. RR <-> -u if ( A e. RR , A , 1 ) e. RR ) ) |\n| 3 |  | #P_1re | |- 1 e. RR |\n| 4 | 3 | #P_elimel | |- if ( A e. RR , A , 1 ) e. RR |\n| 5 | 4 | #P_renegcli | |- -u if ( A e. RR , A , 1 ) e. RR |\n| 6 | 2, 5 | #P_dedth | |- ( A e. RR -> -u A e. RR ) |",
+  "conclusion" : "#P_renegcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wb", "#T_cneg", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wcel", "#T_cr", "#T_cneg", "#T_cif--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wcel", "#T_cr", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cneg", "#T_cA", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elimel", "#P_renegcli", "#P_eleq1d", "#P_dedth", "#P_1re", "#P_negeq" ]
+}

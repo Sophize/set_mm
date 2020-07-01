@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divcli on Metamath](http://us.metamath.org/mpegif/divcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divcl.3 | |- B =/= 0 |\n| 4 | 1, 2 | #P_divclzi | |- ( B =/= 0 -> ( A / B ) e. CC ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( A / B ) e. CC |",
+  "conclusion" : "#P_divcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cB", "#T_wne", "#T_cc0", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA", "#T_cdiv", "#T_cB", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_divclzi", "#P_ax-mp" ]
+}

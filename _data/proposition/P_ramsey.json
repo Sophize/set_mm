@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ramsey on Metamath](http://us.metamath.org/mpegif/ramsey.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "Ramsey's Theorem", "ramsey" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_va", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vi", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_crab--1", "#T_vb", "#T_crab--2", "#T_cpw", "#T_va", "#T_crab--3", "#T_chash", "#T_cfv", "#T_vb", "#T_wceq", "#T_vi", "#T_crab--4", "#T_cM", "#T_wcel", "#T_cn0", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cfn", "#T_w3a--2", "#T_cF", "#T_wf--1", "#T_cR", "#T_wf--2", "#T_cn0", "#T_wi", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cn0", "#T_wal", "#T_vs", "#T_vn", "#T_cle", "#T_chash", "#T_cfv", "#T_vs", "#T_wi", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_cR", "#T_cmap", "#T_vs", "#T_cC", "#T_cM", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cR", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cpw", "#T_vs", "#T_cF", "#T_cfv", "#T_vc", "#T_cle", "#T_chash", "#T_cfv", "#T_vx", "#T_wa", "#T_vx", "#T_cC", "#T_cM", "#T_wss", "#T_ccnv", "#T_vf", "#T_cima", "#T_csn--1", "#T_vc", "#T_csn--2", "#T_cC", "#T_vc", "#T_vf", "#T_vx", "#T_cF", "#T_vc", "#T_vf", "#T_vn", "#T_vs", "#T_vx", "#T_cM", "#T_va", "#T_vb", "#T_vc", "#T_vf", "#T_vi", "#T_vn", "#T_vs", "#T_vx", "#T_cR", "#T_vc", "#T_vf", "#T_vn", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Ramsey's theorem with the definition ` Ramsey ` eliminated.  If ` M ` is an integer, ` R ` is a specified finite set of colors, and ` F : R --> NN0 ` is a set of lower bounds for each color, then there is an ` n ` such that for every set ` s ` of size greater than ` n ` and every coloring ` f ` of the set ` ( s C M ) ` of all ` M ` -element subsets of ` s ` , there is a color ` c ` and a subset ` x C_ s ` such that ` x ` is larger than ` F ( c ) ` and the ` M ` -element subsets of ` x ` are monochromatic with color ` c ` .  This is the hypergraph version of Ramsey's theorem; the version for simple graphs is the case ` M = 2 ` .  This is Metamath 100 proof #31.  (Contributed by Mario Carneiro, 23-Apr-2015.) ",
+  "statement" : "ramsey.c $e |- C = ( a e. _V , i e. NN0 |-> { b e. ~P a | ( # ` b ) = i } ) $.\nramsey $p |- ( ( M e. NN0 /\\ R e. Fin /\\ F : R --> NN0 ) -> E. n e. NN0 A. s ( n <_ ( # ` s ) -> A. f e. ( R ^m ( s C M ) ) E. c e. R E. x e. ~P s ( ( F ` c ) <_ ( # ` x ) /\\ ( x C M ) C_ ( `' f \" { c } ) ) ) ) $.\n$d C c f x $.\n$d F c f n s x $.\n$d M a b c f i n s x $.\n$d R c f n s x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euor2 on Metamath](http://us.metamath.org/mpegif/euor2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfe1 | |- F/ x E. x ph |\n| 2 | 1 | #P_nfn | |- F/ x -. E. x ph |\n| 3 |  | #P_19.8a | |- ( ph -> E. x ph ) |\n| 4 | 3 | #P_con3i | |- ( -. E. x ph -> -. ph ) |\n| 5 |  | #P_biorf | |- ( -. ph -> ( ps <-> ( ph \\/ ps ) ) ) |\n| 6 | 5 | #P_bicomd | |- ( -. ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 7 | 4, 6 | #P_syl | |- ( -. E. x ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 8 | 2, 7 | #P_eubid | |- ( -. E. x ph -> ( E! x ( ph \\/ ps ) <-> E! x ps ) ) |",
+  "conclusion" : "#P_euor2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wn", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_weu", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_weu", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biorf", "#P_bicomd", "#P_eubid", "#P_19.8a", "#P_nfn", "#P_con3i", "#P_syl", "#P_nfe1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See braba on Metamath](http://us.metamath.org/mpegif/braba.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opelopaba.1 | |- A e. _V |\n| 2 |  | opelopaba.2 | |- B e. _V |\n| 3 |  | opelopaba.3 | |- ( ( x = A /\\ y = B ) -> ( ph <-> ps ) ) |\n| 4 |  | braba.4 | |- R = { <. x , y >. | ph } |\n| 5 | 3, 4 | #P_brabga | |- ( ( A e. _V /\\ B e. _V ) -> ( A R B <-> ps ) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( A R B <-> ps ) |",
+  "conclusion" : "#P_braba",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cR", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_copab--6", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_wps", "#T_cA", "#T_cR", "#T_cB", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_brabga" ]
+}

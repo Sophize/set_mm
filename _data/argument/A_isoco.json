@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isoco on Metamath](http://us.metamath.org/mpegif/isoco.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isoco.b | |- B = ( Base ` C ) |\n| 2 |  | isoco.o | |- .x. = ( comp ` C ) |\n| 3 |  | isoco.n | |- I = ( Iso ` C ) |\n| 4 |  | isoco.c | |- ( ph -> C e. Cat ) |\n| 5 |  | isoco.x | |- ( ph -> X e. B ) |\n| 6 |  | isoco.y | |- ( ph -> Y e. B ) |\n| 7 |  | isoco.z | |- ( ph -> Z e. B ) |\n| 8 |  | isoco.f | |- ( ph -> F e. ( X I Y ) ) |\n| 9 |  | isoco.g | |- ( ph -> G e. ( Y I Z ) ) |\n| 10 |  | #P_eqid | |- ( Inv ` C ) = ( Inv ` C ) |\n| 11 | 1, 10, 4, 5, 6, 3, 8, 2, 7, 9 | #P_invco | |- ( ph -> ( G ( <. X , Y >. .x. Z ) F ) ( X ( Inv ` C ) Z ) ( ( ( X ( Inv ` C ) Y ) ` F ) ( <. Z , Y >. .x. X ) ( ( Y ( Inv ` C ) Z ) ` G ) ) ) |\n| 12 | 1, 10, 4, 5, 7, 3, 11 | #P_inviso1 | |- ( ph -> ( G ( <. X , Y >. .x. Z ) F ) e. ( X I Z ) ) |",
+  "conclusion" : "#P_isoco",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_c.x", "#T_wceq", "#T_cco", "#T_cfv", "#T_cC", "#T_cI", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cY", "#T_cI", "#T_cZ", "#T_cinv", "#T_cfv", "#T_cC", "#T_wceq", "#T_cinv", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cG", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cZ", "#T_cF", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cZ", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cY", "#T_cfv", "#T_cF", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cX", "#T_cY", "#T_cinv", "#T_cfv", "#T_cC", "#T_cZ", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_c.x", "#T_cZ", "#T_cF", "#T_wcel", "#T_cX", "#T_cI", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_invco", "#P_inviso1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psr1bas on Metamath](http://us.metamath.org/mpegif/psr1bas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psr1val.1 | |- S = ( PwSer1 ` R ) |\n| 2 |  | psr1bas2.b | |- B = ( Base ` S ) |\n| 3 |  | psr1bas.k | |- K = ( Base ` R ) |\n| 4 |  | #P_eqid | |- ( 1o mPwSer R ) = ( 1o mPwSer R ) |\n| 5 |  | #P_psr1baslem | |- ( NN0 ^m 1o ) = { f e. ( NN0 ^m 1o ) | ( `' f \" NN ) e. Fin } |\n| 6 | 1, 2, 4 | #P_psr1bas2 | |- B = ( Base ` ( 1o mPwSer R ) ) |\n| 7 |  | #P_1on | |- 1o e. On |\n| 8 | 7 | #P_a1i | |- ( T. -> 1o e. On ) |\n| 9 | 4, 3, 5, 6, 8 | #P_psrbas | |- ( T. -> B = ( K ^m ( NN0 ^m 1o ) ) ) |\n| 10 | 9 | #P_trud | |- B = ( K ^m ( NN0 ^m 1o ) ) |",
+  "conclusion" : "#P_psr1bas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_cS", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c1o", "#T_cmps", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmps", "#T_cR", "#T_cn0", "#T_cmap", "#T_c1o", "#T_wceq", "#T_crab--1", "#T_cbvex4v.vf", "#T_crab--2", "#T_cn0", "#T_cmap", "#T_c1o", "#T_crab--3", "#T_ccnv", "#T_cbvex4v.vf", "#T_cima", "#T_cn", "#T_wcel", "#T_cfn", "#T_crab--4", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmps", "#T_cR", "#T_c1o", "#T_wcel", "#T_con0", "#T_wtru", "#T_wi", "#T_c1o", "#T_wcel", "#T_con0", "#T_wtru", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cK", "#T_cmap", "#T_cn0", "#T_cmap", "#T_c1o", "#T_cB", "#T_wceq", "#T_cK", "#T_cmap", "#T_cn0", "#T_cmap", "#T_c1o" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_trud", "#P_1on", "#P_psr1bas2", "#P_psrbas", "#P_a1i", "#P_psr1baslem" ]
+}

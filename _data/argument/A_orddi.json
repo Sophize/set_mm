@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See orddi on Metamath](http://us.metamath.org/mpegif/orddi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordir | |- ( ( ( ph /\\ ps ) \\/ ( ch /\\ th ) ) <-> ( ( ph \\/ ( ch /\\ th ) ) /\\ ( ps \\/ ( ch /\\ th ) ) ) ) |\n| 2 |  | #P_ordi | |- ( ( ph \\/ ( ch /\\ th ) ) <-> ( ( ph \\/ ch ) /\\ ( ph \\/ th ) ) ) |\n| 3 |  | #P_ordi | |- ( ( ps \\/ ( ch /\\ th ) ) <-> ( ( ps \\/ ch ) /\\ ( ps \\/ th ) ) ) |\n| 4 | 2, 3 | #P_anbi12i | |- ( ( ( ph \\/ ( ch /\\ th ) ) /\\ ( ps \\/ ( ch /\\ th ) ) ) <-> ( ( ( ph \\/ ch ) /\\ ( ph \\/ th ) ) /\\ ( ( ps \\/ ch ) /\\ ( ps \\/ th ) ) ) ) |\n| 5 | 1, 4 | #P_bitri | |- ( ( ( ph /\\ ps ) \\/ ( ch /\\ th ) ) <-> ( ( ( ph \\/ ch ) /\\ ( ph \\/ th ) ) /\\ ( ( ps \\/ ch ) /\\ ( ps \\/ th ) ) ) ) |",
+  "conclusion" : "#P_orddi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wo", "#T_wth", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wth", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wo", "#T_wth", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wth", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wth", "#T_wb", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wph", "#T_wo", "#T_wth", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordir", "#P_anbi12i", "#P_ordi", "#P_bitri" ]
+}

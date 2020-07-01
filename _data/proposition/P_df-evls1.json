@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-evls1 on Metamath](http://us.metamath.org/mpegif/df-evls1.html)"
+  } ],
+  "names" : [ "df-evls1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ces1", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vs", "#T_cmpt2--4", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vs", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_vx", "#T_cmpt--1", "#T_vb", "#T_cmap", "#T_vb", "#T_cmap", "#T_c1o", "#T_cmpt--2", "#T_vx", "#T_ccom", "#T_vy", "#T_cmpt--1", "#T_vb", "#T_cmpt--2", "#T_c1o", "#T_cxp", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_ccom", "#T_c1o", "#T_ces", "#T_vs", "#T_cfv", "#T_vr", "#T_vb", "#T_vr", "#T_vs", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the evaluation map for the univariate polynomial algebra.  The function ` ( S evalSub1 R ) : V --> ( S ^m S ) ` makes sense when ` S ` is a ring and ` R ` is a subring of ` S ` , and where ` V ` is the set of polynomials in ` ( Poly1 `` R ) ` .  This function maps an element of the formal polynomial algebra (with coefficients in ` R ` ) to a function from assignments to the variable from ` S ` into an element of ` S ` formed by evaluating the polynomial with the given assignment. (Contributed by Mario Carneiro, 12-Jun-2015.) ",
+  "statement" : "df-evls1 $p |- evalSub1 = ( s e. _V , r e. ~P ( Base ` s ) |-> [_ ( Base ` s ) / b ]_ ( ( x e. ( b ^m ( b ^m 1o ) ) |-> ( x o. ( y e. b |-> ( 1o X. { y } ) ) ) ) o. ( ( 1o evalSub s ) ` r ) ) ) $.\n$d b r s x y $."
+}

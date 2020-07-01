@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See preq1 on Metamath](http://us.metamath.org/mpegif/preq1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sneq | |- ( A = B -> { A } = { B } ) |\n| 2 | 1 | #P_uneq1d | |- ( A = B -> ( { A } u. { C } ) = ( { B } u. { C } ) ) |\n| 3 |  | #P_df-pr | |- { A , C } = ( { A } u. { C } ) |\n| 4 |  | #P_df-pr | |- { B , C } = ( { B } u. { C } ) |\n| 5 | 2, 3, 4 | #P_3eqtr4g | |- ( A = B -> { A , C } = { B , C } ) |",
+  "conclusion" : "#P_preq1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cC", "#T_csn--2", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cB", "#T_cpr--2", "#T_cC", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-pr", "#P_sneq", "#P_uneq1d", "#P_3eqtr4g" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eupicka on Metamath](http://us.metamath.org/mpegif/eupicka.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfeu1 | |- F/ x E! x ph |\n| 2 |  | #P_nfe1 | |- F/ x E. x ( ph /\\ ps ) |\n| 3 | 1, 2 | #P_nfan | |- F/ x ( E! x ph /\\ E. x ( ph /\\ ps ) ) |\n| 4 |  | #P_eupick | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) |\n| 5 | 3, 4 | #P_alrimi | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( ph -> ps ) ) |",
+  "conclusion" : "#P_eupicka",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_weu", "#T_vx", "#T_wph", "#T_wa", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfeu1", "#P_eupick", "#P_alrimi", "#P_nfe1", "#P_nfan" ]
+}

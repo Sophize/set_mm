@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ppi2i on Metamath](http://us.metamath.org/mpegif/ppi2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ppi1i.m | |- M e. NN0 |\n| 2 |  | ppi1i.n | |- N = ( M + 1 ) |\n| 3 |  | ppi1i.p | |- ( ppi ` M ) = K |\n| 4 |  | ppi2i.1 | |- -. N e. Prime |\n| 5 | 2 | #P_fveq2i | |- ( ppi ` N ) = ( ppi ` ( M + 1 ) ) |\n| 6 | 1 | #P_nn0zi | |- M e. ZZ |\n| 7 | 2 | #P_eleq1i | |- ( N e. Prime <-> ( M + 1 ) e. Prime ) |\n| 8 | 4, 7 | #P_mtbi | |- -. ( M + 1 ) e. Prime |\n| 9 |  | #P_ppinprm | |- ( ( M e. ZZ /\\ -. ( M + 1 ) e. Prime ) -> ( ppi ` ( M + 1 ) ) = ( ppi ` M ) ) |\n| 10 | 6, 8, 9 | #P_mp2an | |- ( ppi ` ( M + 1 ) ) = ( ppi ` M ) |\n| 11 | 5, 10, 3 | #P_3eqtri | |- ( ppi ` N ) = K |",
+  "conclusion" : "#P_ppi2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cn0", "#T_cN", "#T_wceq", "#T_cM", "#T_caddc", "#T_c1", "#T_cppi", "#T_cfv", "#T_cM", "#T_wceq", "#T_cK", "#T_wn", "#T_cN", "#T_wcel", "#T_cprime", "#T_cppi", "#T_cfv", "#T_cN", "#T_wceq", "#T_cppi", "#T_cfv", "#T_cM", "#T_caddc", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cprime", "#T_wb", "#T_cM", "#T_caddc", "#T_c1", "#T_wcel", "#T_cprime", "#T_wn", "#T_cM", "#T_caddc", "#T_c1", "#T_wcel", "#T_cprime", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_wn", "#T_cM", "#T_caddc", "#T_c1", "#T_wcel", "#T_cprime", "#T_wi", "#T_cppi", "#T_cfv", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cppi", "#T_cfv", "#T_cM", "#T_cppi", "#T_cfv", "#T_cM", "#T_caddc", "#T_c1", "#T_wceq", "#T_cppi", "#T_cfv", "#T_cM", "#T_cppi", "#T_cfv", "#T_cN", "#T_wceq", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_mp2an", "#P_ppinprm", "#P_nn0zi", "#P_eleq1i", "#P_3eqtri", "#P_mtbi" ]
+}

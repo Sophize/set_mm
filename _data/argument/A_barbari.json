@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See barbari on Metamath](http://us.metamath.org/mpegif/barbari.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | barbari.maj | |- A. x ( ph -> ps ) |\n| 2 |  | barbari.min | |- A. x ( ch -> ph ) |\n| 3 |  | barbari.e | |- E. x ch |\n| 4 | 1, 2 | #P_barbara | |- A. x ( ch -> ps ) |\n| 5 | 4 | #P_spi | |- ( ch -> ps ) |\n| 6 | 5 | #P_ancli | |- ( ch -> ( ch /\\ ps ) ) |\n| 7 | 3, 6 | #P_eximii | |- E. x ( ch /\\ ps ) |",
+  "conclusion" : "#P_barbari",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wps", "#T_wch", "#T_wi", "#T_wch", "#T_wa", "#T_wps", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancli", "#P_barbara", "#P_eximii", "#P_spi" ]
+}

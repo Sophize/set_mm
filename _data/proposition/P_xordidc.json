@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xordidc on Metamath](http://us.metamath.org/mpegif/xordidc.html)"
+  } ],
+  "names" : [ "xordidc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wch", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wxo", "#T_wph", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Conjunction distributes over exclusive-or, for decidable propositions. This is one way to interpret the distributive law of multiplication over addition in modulo 2 arithmetic.  (Contributed by Jim Kingdon, 14-Jul-2018.) ",
+  "statement" : "xordidc $p |- ( DECID ph -> ( DECID ps -> ( DECID ch -> ( ( ph /\\ ( ps \\/_ ch ) ) <-> ( ( ph /\\ ps ) \\/_ ( ph /\\ ch ) ) ) ) ) ) $."
+}

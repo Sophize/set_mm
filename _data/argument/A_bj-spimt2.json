@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-spimt2 on Metamath](http://us.metamath.org/mpegif/bj-spimt2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-alequex | |- ( A. x ( x = y -> ( ph -> ps ) ) -> E. x ( ph -> ps ) ) |\n| 2 |  | #P_19.35 | |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) |\n| 3 | 1, 2 | #P_sylib | |- ( A. x ( x = y -> ( ph -> ps ) ) -> ( A. x ph -> E. x ps ) ) |\n| 4 | 3 | #P_imim1d | |- ( A. x ( x = y -> ( ph -> ps ) ) -> ( ( E. x ps -> ps ) -> ( A. x ph -> ps ) ) ) |",
+  "conclusion" : "#P_bj-spimt2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_19.35", "#P_sylib", "#P_imim1d", "#P_bj-alequex" ]
+}

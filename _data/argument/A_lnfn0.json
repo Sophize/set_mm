@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnfn0 on Metamath](http://us.metamath.org/mpegif/lnfn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq1 | |- ( T = if ( T e. LinFn , T , ( ~H X. { 0 } ) ) -> ( T ` 0h ) = ( if ( T e. LinFn , T , ( ~H X. { 0 } ) ) ` 0h ) ) |\n| 2 | 1 | #P_eqeq1d | |- ( T = if ( T e. LinFn , T , ( ~H X. { 0 } ) ) -> ( ( T ` 0h ) = 0 <-> ( if ( T e. LinFn , T , ( ~H X. { 0 } ) ) ` 0h ) = 0 ) ) |\n| 3 |  | #P_0lnfn | |- ( ~H X. { 0 } ) e. LinFn |\n| 4 | 3 | #P_elimel | |- if ( T e. LinFn , T , ( ~H X. { 0 } ) ) e. LinFn |\n| 5 | 4 | #P_lnfn0i | |- ( if ( T e. LinFn , T , ( ~H X. { 0 } ) ) ` 0h ) = 0 |\n| 6 | 2, 5 | #P_dedth | |- ( T e. LinFn -> ( T ` 0h ) = 0 ) |",
+  "conclusion" : "#P_lnfn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wi", "#T_cT", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cfv", "#T_c0v", "#T_cT", "#T_wceq", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wi", "#T_cT", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cc0", "#T_wb", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cc0", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wcel", "#T_clf", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wcel", "#T_clf", "#T_cif--1", "#T_cT", "#T_wcel", "#T_clf", "#T_cif--2", "#T_cT", "#T_cif--3", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cc0", "#T_cT", "#T_wcel", "#T_clf", "#T_wi", "#T_cT", "#T_cfv", "#T_c0v", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elimel", "#P_eqeq1d", "#P_0lnfn", "#P_lnfn0i", "#P_dedth", "#P_fveq1" ]
+}

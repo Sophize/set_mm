@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnoppnhpg on Metamath](http://us.metamath.org/mpegif/lnoppnhpg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ishpg.p | |- P = ( Base ` G ) |\n| 2 |  | ishpg.i | |- I = ( Itv ` G ) |\n| 3 |  | ishpg.l | |- L = ( LineG ` G ) |\n| 4 |  | ishpg.o | |- O = { <. a , b >. | ( ( a e. ( P \\ D ) /\\ b e. ( P \\ D ) ) /\\ E. t e. D t e. ( a I b ) ) } |\n| 5 |  | ishpg.g | |- ( ph -> G e. TarskiG ) |\n| 6 |  | ishpg.d | |- ( ph -> D e. ran L ) |\n| 7 |  | hpgbr.a | |- ( ph -> A e. P ) |\n| 8 |  | hpgbr.b | |- ( ph -> B e. P ) |\n| 9 |  | lnoppnhpg.1 | |- ( ph -> A O B ) |\n| 10 |  | #P_eqid | |- ( dist ` G ) = ( dist ` G ) |\n| 11 | 1, 10, 2, 4, 3, 6, 5, 8 | #P_oppnid | |- ( ph -> -. B O B ) |\n| 12 | 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 | #P_lnopp2hpgb | |- ( ph -> ( B O B <-> A ( ( hpG ` G ) ` D ) B ) ) |\n| 13 | 11, 12 | #P_mtbid | |- ( ph -> -. A ( ( hpG ` G ) ` D ) B ) |",
+  "conclusion" : "#P_lnoppnhpg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cO", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_va", "#T_copab--3", "#T_vb", "#T_copab--4", "#T_copab--5", "#T_va", "#T_wcel", "#T_cP", "#T_cdif", "#T_cD", "#T_wa", "#T_vb", "#T_wcel", "#T_cP", "#T_cdif", "#T_cD", "#T_wa", "#T_wrex--1", "#T_vt", "#T_wrex--2", "#T_cD", "#T_vt", "#T_wcel", "#T_va", "#T_cI", "#T_vb", "#T_copab--6", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_crn", "#T_cL", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cA", "#T_cO", "#T_cB", "#T_cds", "#T_cfv", "#T_cG", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_wn", "#T_cB.wceq", "#T_cO", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cO", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_chpg", "#T_cfv", "#T_cG", "#T_cfv", "#T_cD", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wn", "#T_cA", "#T_chpg", "#T_cfv", "#T_cG", "#T_cfv", "#T_cD", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_lnopp2hpgb", "#P_mtbid", "#P_oppnid" ]
+}

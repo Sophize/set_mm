@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See slotfn on Metamath](http://us.metamath.org/mpegif/slotfn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strfvnd.c | |- E = Slot N |\n| 2 |  | #P_fvex | |- ( x ` N ) e. _V |\n| 3 |  | #P_df-slot | |- Slot N = ( x e. _V |-> ( x ` N ) ) |\n| 4 | 1, 3 | #P_eqtri | |- E = ( x e. _V |-> ( x ` N ) ) |\n| 5 | 2, 4 | #P_fnmpti | |- E Fn _V |",
+  "conclusion" : "#P_slotfn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cE", "#T_wceq", "#T_cslot", "#T_cN", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_wcel", "#T_cvv", "#T_cslot", "#T_cN", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_cE", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_cfv", "#T_cN", "#T_cE", "#T_wfn", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_fnmpti", "#P_fvex", "#P_df-slot" ]
+}

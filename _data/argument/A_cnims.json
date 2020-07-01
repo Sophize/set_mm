@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnims on Metamath](http://us.metamath.org/mpegif/cnims.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnims.6 | |- U = <. <. + , x. >. , abs >. |\n| 2 |  | cnims.7 | |- D = ( abs o. - ) |\n| 3 | 1 | #P_cnnv | |- U e. NrmCVec |\n| 4 | 1 | #P_cnnvm | |- - = ( -v ` U ) |\n| 5 | 1 | #P_cnnvnm | |- abs = ( normCV ` U ) |\n| 6 |  | #P_eqid | |- ( IndMet ` U ) = ( IndMet ` U ) |\n| 7 | 4, 5, 6 | #P_imsval | |- ( U e. NrmCVec -> ( IndMet ` U ) = ( abs o. - ) ) |\n| 8 | 3, 7 | #P_ax-mp | |- ( IndMet ` U ) = ( abs o. - ) |\n| 9 | 2, 8 | #P_eqtr4i | |- D = ( IndMet ` U ) |",
+  "conclusion" : "#P_cnims",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_caddc", "#T_cop--2", "#T_cmul", "#T_cop--3", "#T_cop--2", "#T_cabs", "#T_cop--3", "#T_cD", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cU", "#T_wcel", "#T_cnv", "#T_cmin", "#T_wceq", "#T_cnsb", "#T_cfv", "#T_cU", "#T_cabs", "#T_wceq", "#T_cnmcv", "#T_cfv", "#T_cU", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cims", "#T_cfv", "#T_cU", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqid", "#P_ax-mp", "#P_cnnv", "#P_cnnvm", "#P_imsval", "#P_cnnvnm" ]
+}

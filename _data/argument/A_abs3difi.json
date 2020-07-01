@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abs3difi on Metamath](http://us.metamath.org/mpegif/abs3difi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | absvalsqi.1 | |- A e. CC |\n| 2 |  | abssub.2 | |- B e. CC |\n| 3 |  | abs3dif.3 | |- C e. CC |\n| 4 |  | #P_abs3dif | |- ( ( A e. CC /\\ B e. CC /\\ C e. CC ) -> ( abs ` ( A - B ) ) <_ ( ( abs ` ( A - C ) ) + ( abs ` ( C - B ) ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( abs ` ( A - B ) ) <_ ( ( abs ` ( A - C ) ) + ( abs ` ( C - B ) ) ) |",
+  "conclusion" : "#P_abs3difi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_caddc", "#T_cabs", "#T_cfv", "#T_cC", "#T_cmin", "#T_cB.wceq", "#T_cabs", "#T_cfv", "#T_cA", "#T_cmin", "#T_cB", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA", "#T_cmin", "#T_cC", "#T_caddc", "#T_cabs", "#T_cfv", "#T_cC", "#T_cmin", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_abs3dif" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See disjxpin on Metamath](http://us.metamath.org/mpegif/disjxpin.html)"
+  } ],
+  "names" : [ "disjxpin" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c1st", "#T_cfv", "#T_vp", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_vy", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_vp", "#T_wi", "#T_cD", "#T_wceq", "#T_cF", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cA", "#T_cC", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vy", "#T_wdisj--2", "#T_cB", "#T_cD", "#T_wph", "#T_wi", "#T_wdisj--1", "#T_vp", "#T_wdisj--2", "#T_cA", "#T_cxp", "#T_cB", "#T_cE", "#T_cin", "#T_cF", "#T_cA", "#T_vp", "#T_vx", "#T_cB", "#T_vp", "#T_vy", "#T_cC", "#T_vp", "#T_cD", "#T_vp", "#T_cE", "#T_vx", "#T_cF", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Derive a disjunction over a Cartesian product from the disjunctions over its first and second elements.  (Contributed by Thierry Arnoux, 9-Mar-2018.) ",
+  "statement" : "disjxpin.1 $e |- ( x = ( 1st ` p ) -> C = E ) $.\ndisjxpin.2 $e |- ( y = ( 2nd ` p ) -> D = F ) $.\ndisjxpin.3 $e |- ( ph -> Disj_ x e. A C ) $.\ndisjxpin.4 $e |- ( ph -> Disj_ y e. B D ) $.\ndisjxpin $p |- ( ph -> Disj_ p e. ( A X. B ) ( E i^i F ) ) $.\n$d A p x $.\n$d B p y $.\n$d C p $.\n$d D p $.\n$d E x $.\n$d F y $."
+}

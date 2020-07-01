@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pwun on Metamath](http://us.metamath.org/mpegif/pwun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pwunss | |- ( ~P A u. ~P B ) C_ ~P ( A u. B ) |\n| 2 | 1 | #P_biantru | |- ( ~P ( A u. B ) C_ ( ~P A u. ~P B ) <-> ( ~P ( A u. B ) C_ ( ~P A u. ~P B ) /\\ ( ~P A u. ~P B ) C_ ~P ( A u. B ) ) ) |\n| 3 |  | #P_pwssun | |- ( ( A C_ B \\/ B C_ A ) <-> ~P ( A u. B ) C_ ( ~P A u. ~P B ) ) |\n| 4 |  | #P_eqss | |- ( ~P ( A u. B ) = ( ~P A u. ~P B ) <-> ( ~P ( A u. B ) C_ ( ~P A u. ~P B ) /\\ ( ~P A u. ~P B ) C_ ~P ( A u. B ) ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( ( A C_ B \\/ B C_ A ) <-> ~P ( A u. B ) = ( ~P A u. ~P B ) ) |",
+  "conclusion" : "#P_pwun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wa", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wb", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wa", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cpw", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wo", "#T_cB", "#T_wss", "#T_cA", "#T_wb", "#T_cpw", "#T_cA", "#T_cun", "#T_cB", "#T_wceq", "#T_cpw", "#T_cA", "#T_cun", "#T_cpw", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biantru", "#P_eqss", "#P_pwssun", "#P_3bitr4i", "#P_pwunss" ]
+}

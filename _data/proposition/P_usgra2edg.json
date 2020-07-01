@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See usgra2edg on Metamath](http://us.metamath.org/mpegif/usgra2edg.html)"
+  } ],
+  "names" : [ "usgra2edg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cV", "#T_w3a--2", "#T_vb", "#T_wne", "#T_vc", "#T_wa", "#T_cpr--1", "#T_cN", "#T_cpr--2", "#T_vb", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_wa", "#T_cpr--1", "#T_vc", "#T_cpr--2", "#T_cN", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cdm", "#T_cE", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_cdm", "#T_cE", "#T_vx", "#T_wne", "#T_vy", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cE", "#T_cfv", "#T_vx", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cE", "#T_cfv", "#T_vy", "#T_cE", "#T_vb", "#T_vc", "#T_vx", "#T_vy", "#T_cN", "#T_vb", "#T_vc", "#T_vx", "#T_vy", "#T_cV", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If a vertex is adjacent to two different vertices in a simple graph, there are more than one edges starting at this vertex.  (Contributed by Alexander van der Vekens, 10-Dec-2017.) ",
+  "statement" : "usgra2edg $p |- ( ( ( V USGrph E /\\ N e. V /\\ b =/= c ) /\\ ( { N , b } e. ran E /\\ { c , N } e. ran E ) ) -> E. x e. dom E E. y e. dom E ( x =/= y /\\ N e. ( E ` x ) /\\ N e. ( E ` y ) ) ) $.\n$d E b c x y $.\n$d N b c x y $.\n$d V x y $."
+}

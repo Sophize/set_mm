@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oddinmgm on Metamath](http://us.metamath.org/mpegif/oddinmgm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oddinmgm.e | |- O = { z e. ZZ | E. x e. ZZ z = ( ( 2 x. x ) + 1 ) } |\n| 2 |  | oddinmgm.r | |- M = ( CCfld |`s O ) |\n| 3 | 1 | #P_1odd | |- 1 e. O |\n| 4 | 1 | #P_2nodd | |- 2 e/ O |\n| 5 |  | #P_1p1e2 | |- ( 1 + 1 ) = 2 |\n| 6 |  | #P_neleq1 | |- ( ( 1 + 1 ) = 2 -> ( ( 1 + 1 ) e/ O <-> 2 e/ O ) ) |\n| 7 | 5, 6 | #P_ax-mp | |- ( ( 1 + 1 ) e/ O <-> 2 e/ O ) |\n| 8 | 4, 7 | #P_mpbir | |- ( 1 + 1 ) e/ O |\n| 9 | 1, 2 | #P_oddibas | |- O = ( Base ` M ) |\n| 10 | 1, 2 | #P_oddiadd | |- + = ( +g ` M ) |\n| 11 | 9, 10 | #P_isnmgm | |- ( ( 1 e. O /\\ 1 e. O /\\ ( 1 + 1 ) e/ O ) -> M e/ Mgm ) |\n| 12 | 3, 3, 8, 11 | #P_mp3an | |- M e/ Mgm |",
+  "conclusion" : "#P_oddinmgm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cO", "#T_wceq", "#T_crab--1", "#T_vz", "#T_crab--2", "#T_cz", "#T_crab--3", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cz", "#T_vz", "#T_wceq", "#T_c2", "#T_cmul", "#T_vx", "#T_caddc", "#T_c1", "#T_crab--4", "#T_cM", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cO", "#T_c1", "#T_wcel", "#T_cO", "#T_c2", "#T_wnel", "#T_cO", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_wi", "#T_c1", "#T_caddc", "#T_c1", "#T_wnel", "#T_cO", "#T_wb", "#T_c2", "#T_wnel", "#T_cO", "#T_c1", "#T_caddc", "#T_c1", "#T_wnel", "#T_cO", "#T_wb", "#T_c2", "#T_wnel", "#T_cO", "#T_c1", "#T_caddc", "#T_c1", "#T_wnel", "#T_cO", "#T_cO", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_caddc", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cM", "#T_c1", "#T_wcel", "#T_cO", "#T_w3a--1", "#T_c1", "#T_wcel", "#T_cO", "#T_w3a--2", "#T_c1", "#T_caddc", "#T_c1", "#T_wnel", "#T_cO", "#T_wi", "#T_cM", "#T_wnel", "#T_cmgm", "#T_cM", "#T_wnel", "#T_cmgm" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1odd", "#P_mp3an", "#P_ax-mp", "#P_neleq1", "#P_oddiadd", "#P_1p1e2", "#P_mpbir", "#P_2nodd", "#P_oddibas", "#P_isnmgm" ]
+}

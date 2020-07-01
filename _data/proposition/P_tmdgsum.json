@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tmdgsum on Metamath](http://us.metamath.org/mpegif/tmdgsum.html)"
+  } ],
+  "names" : [ "tmdgsum" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ccmn", "#T_w3a--1", "#T_cG", "#T_wcel", "#T_ctmd", "#T_w3a--2", "#T_cA", "#T_wcel", "#T_cfn", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmap", "#T_cA", "#T_cmpt--2", "#T_cG", "#T_cgsu", "#T_vx", "#T_wcel", "#T_cJ", "#T_cxko", "#T_cpw", "#T_cA", "#T_ccn", "#T_cJ", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cG", "#T_vx", "#T_cJ", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a topological monoid, the group sum operation is a continuous function from the function space to the base topology.  This theorem is not true when ` A ` is infinite, because in this case for any basic open set of the domain one of the factors will be the whole space, so by varying the value of the functions to sum at this index, one can achieve any desired sum.  (Contributed by Mario Carneiro, 19-Sep-2015.)  (Proof shortened by AV, 24-Jul-2019.) ",
+  "statement" : "tmdgsum.j $e |- J = ( TopOpen ` G ) $.\ntmdgsum.b $e |- B = ( Base ` G ) $.\ntmdgsum $p |- ( ( G e. CMnd /\\ G e. TopMnd /\\ A e. Fin ) -> ( x e. ( B ^m A ) |-> ( G gsum x ) ) e. ( ( J ^ko ~P A ) Cn J ) ) $.\n$d A x $.\n$d B x $.\n$d G x $.\n$d J x $."
+}

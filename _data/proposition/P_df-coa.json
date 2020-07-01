@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-coa on Metamath](http://us.metamath.org/mpegif/df-coa.html)"
+  } ],
+  "names" : [ "df-coa" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccoa", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_vg", "#T_cmpt2--1", "#T_carw", "#T_cfv", "#T_vc", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_carw", "#T_cfv", "#T_vc", "#T_crab--3", "#T_ccoda", "#T_cfv", "#T_vh", "#T_wceq", "#T_cdoma", "#T_cfv", "#T_vg", "#T_crab--4", "#T_cmpt2--4", "#T_cotp--1", "#T_cdoma", "#T_cfv", "#T_vf", "#T_cotp--2", "#T_ccoda", "#T_cfv", "#T_vg", "#T_cotp--3", "#T_c2nd", "#T_cfv", "#T_vg", "#T_cop--1", "#T_cdoma", "#T_cfv", "#T_vf", "#T_cop--2", "#T_cdoma", "#T_cfv", "#T_vg", "#T_cop--3", "#T_cco", "#T_cfv", "#T_vc", "#T_ccoda", "#T_cfv", "#T_vg", "#T_c2nd", "#T_cfv", "#T_vf", "#T_cotp--4", "#T_vc", "#T_vf", "#T_vg", "#T_vh" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Definition of the composition of arrows.  Since arrows are tagged with domain and codomain, this does not need to be a 5-ary operation like the regular composition in a category ` comp ` .  Instead, it is a partial binary operation on arrows, which is defined when the domain of the first arrow matches the codomain of the second.  (Contributed by Mario Carneiro, 11-Jan-2017.) ",
+  "statement" : "df-coa $p |- compA = ( c e. Cat |-> ( g e. ( Arrow ` c ) , f e. { h e. ( Arrow ` c ) | ( codA ` h ) = ( domA ` g ) } |-> <. ( domA ` f ) , ( codA ` g ) , ( ( 2nd ` g ) ( <. ( domA ` f ) , ( domA ` g ) >. ( comp ` c ) ( codA ` g ) ) ( 2nd ` f ) ) >. ) ) $.\n$d c f g h $."
+}

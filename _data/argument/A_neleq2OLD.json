@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neleq2OLD on Metamath](http://us.metamath.org/mpegif/neleq2OLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq2 | |- ( A = B -> ( C e. A <-> C e. B ) ) |\n| 2 | 1 | #P_notbid | |- ( A = B -> ( -. C e. A <-> -. C e. B ) ) |\n| 3 |  | #P_df-nel | |- ( C e/ A <-> -. C e. A ) |\n| 4 |  | #P_df-nel | |- ( C e/ B <-> -. C e. B ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A = B -> ( C e/ A <-> C e/ B ) ) |\n\\\n Obsolete proof of ~ neleq2 as of 25-Nov-2019.  (Contributed by NM, 20-Nov-1994.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_neleq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cC", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wcel", "#T_cB.wceq", "#T_cC", "#T_wnel", "#T_cA.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wcel", "#T_cA.wceq", "#T_cC", "#T_wnel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cC", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cC", "#T_wnel", "#T_cA", "#T_wb", "#T_cC", "#T_wnel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2", "#P_3bitr4g", "#P_notbid", "#P_df-nel" ]
+}

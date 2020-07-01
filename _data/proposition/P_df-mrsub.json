@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mrsub on Metamath](http://us.metamath.org/mpegif/df-mrsub.html)"
+  } ],
+  "names" : [ "df-mrsub" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmrsub", "#T_wceq", "#T_vt", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vf", "#T_cmpt--1", "#T_cmrex", "#T_cfv", "#T_vt", "#T_cpm", "#T_cmvar", "#T_cfv", "#T_vt", "#T_cmpt--2", "#T_ve", "#T_cmpt--1", "#T_cmrex", "#T_cfv", "#T_vt", "#T_cmpt--2", "#T_cfrmd", "#T_cfv", "#T_cmcn", "#T_cfv", "#T_vt", "#T_cun", "#T_cmvar", "#T_cfv", "#T_vt", "#T_cgsu", "#T_vv", "#T_cmpt--1", "#T_cmcn", "#T_cfv", "#T_vt", "#T_cun", "#T_cmvar", "#T_cfv", "#T_vt", "#T_cmpt--2", "#T_cif--1", "#T_vv", "#T_wcel", "#T_cdm", "#T_vf", "#T_cif--2", "#T_vf", "#T_cfv", "#T_vv", "#T_cif--3", "#T_cs1--1", "#T_vv", "#T_cs1--2", "#T_ccom", "#T_ve", "#T_ve", "#T_vf", "#T_vt", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a substitution of raw expressions given a mapping from variables to expressions.  (Contributed by Mario Carneiro, 14-Jul-2016.) ",
+  "statement" : "df-mrsub $p |- mRSubst = ( t e. _V |-> ( f e. ( ( mREx ` t ) ^pm ( mVR ` t ) ) |-> ( e e. ( mREx ` t ) |-> ( ( freeMnd ` ( ( mCN ` t ) u. ( mVR ` t ) ) ) gsum ( ( v e. ( ( mCN ` t ) u. ( mVR ` t ) ) |-> if ( v e. dom f , ( f ` v ) , <\" v \"> ) ) o. e ) ) ) ) ) $.\n$d e f t v $."
+}

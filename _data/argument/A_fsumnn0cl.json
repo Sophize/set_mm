@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumnn0cl on Metamath](http://us.metamath.org/mpegif/fsumnn0cl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fsumcl.1 | |- ( ph -> A e. Fin ) |\n| 2 |  | fsumnn0cl.2 | |- ( ( ph /\\ k e. A ) -> B e. NN0 ) |\n| 3 |  | #P_nn0sscn | |- NN0 C_ CC |\n| 4 | 3 | #P_a1i | |- ( ph -> NN0 C_ CC ) |\n| 5 |  | #P_nn0addcl | |- ( ( x e. NN0 /\\ y e. NN0 ) -> ( x + y ) e. NN0 ) |\n| 6 | 5 | #P_adantl | |- ( ( ph /\\ ( x e. NN0 /\\ y e. NN0 ) ) -> ( x + y ) e. NN0 ) |\n| 7 |  | #P_0nn0 | |- 0 e. NN0 |\n| 8 | 7 | #P_a1i | |- ( ph -> 0 e. NN0 ) |\n| 9 | 4, 6, 1, 2, 8 | #P_fsumcllem | |- ( ph -> sum_ k e. A B e. NN0 ) |",
+  "conclusion" : "#P_fsumnn0cl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cn0", "#T_cn0", "#T_wss", "#T_cc", "#T_wph", "#T_wi", "#T_cn0", "#T_wss", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cn0", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cn0", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cn0", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cn0", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cn0", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cn0", "#T_cc0", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cc0", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nn0sscn", "#P_0nn0", "#P_adantl", "#P_nn0addcl", "#P_fsumcllem", "#P_a1i" ]
+}

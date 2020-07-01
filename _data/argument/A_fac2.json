@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fac2 on Metamath](http://us.metamath.org/mpegif/fac2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-2 | |- 2 = ( 1 + 1 ) |\n| 2 | 1 | #P_fveq2i | |- ( ! ` 2 ) = ( ! ` ( 1 + 1 ) ) |\n| 3 |  | #P_1nn0 | |- 1 e. NN0 |\n| 4 |  | #P_facp1 | |- ( 1 e. NN0 -> ( ! ` ( 1 + 1 ) ) = ( ( ! ` 1 ) x. ( 1 + 1 ) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ! ` ( 1 + 1 ) ) = ( ( ! ` 1 ) x. ( 1 + 1 ) ) |\n| 6 |  | #P_fac1 | |- ( ! ` 1 ) = 1 |\n| 7 |  | #P_1p1e2 | |- ( 1 + 1 ) = 2 |\n| 8 | 6, 7 | #P_oveq12i | |- ( ( ! ` 1 ) x. ( 1 + 1 ) ) = ( 1 x. 2 ) |\n| 9 |  | #P_2cn | |- 2 e. CC |\n| 10 | 9 | #P_mulid2i | |- ( 1 x. 2 ) = 2 |\n| 11 | 8, 10 | #P_eqtri | |- ( ( ! ` 1 ) x. ( 1 + 1 ) ) = 2 |\n| 12 | 5, 11 | #P_eqtri | |- ( ! ` ( 1 + 1 ) ) = 2 |\n| 13 | 2, 12 | #P_eqtri | |- ( ! ` 2 ) = 2 |",
+  "conclusion" : "#P_fac2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_wceq", "#T_c1", "#T_caddc", "#T_c1", "#T_cfa", "#T_cfv", "#T_c2", "#T_wceq", "#T_cfa", "#T_cfv", "#T_c1", "#T_caddc", "#T_c1", "#T_c1", "#T_wcel", "#T_cn0", "#T_c1", "#T_wcel", "#T_cn0", "#T_wi", "#T_cfa", "#T_cfv", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_cfa", "#T_cfv", "#T_c1", "#T_cmul", "#T_c1", "#T_caddc", "#T_c1", "#T_cfa", "#T_cfv", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_cfa", "#T_cfv", "#T_c1", "#T_cmul", "#T_c1", "#T_caddc", "#T_c1", "#T_cfa", "#T_cfv", "#T_c1", "#T_wceq", "#T_c1", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cfa", "#T_cfv", "#T_c1", "#T_cmul", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c1", "#T_cmul", "#T_c2", "#T_c2", "#T_wcel", "#T_cc", "#T_c1", "#T_cmul", "#T_c2", "#T_wceq", "#T_c2", "#T_cfa", "#T_cfv", "#T_c1", "#T_cmul", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cfa", "#T_cfv", "#T_c1", "#T_caddc", "#T_c1", "#T_wceq", "#T_c2", "#T_cfa", "#T_cfv", "#T_c2", "#T_wceq", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_1nn0", "#P_ax-mp", "#P_eqtri", "#P_fac1", "#P_1p1e2", "#P_facp1", "#P_2cn", "#P_mulid2i", "#P_oveq12i", "#P_df-2" ]
+}

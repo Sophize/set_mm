@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvaev on Metamath](http://us.metamath.org/mpegif/cbvaev.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nv\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-7 | |- ( x = v -> ( x = w -> v = w ) ) |\n| 2 | 1 | #P_cbvalivw | |- ( A. x x = w -> A. v v = w ) |\n| 3 |  | #P_ax-7 | |- ( v = y -> ( v = w -> y = w ) ) |\n| 4 | 3 | #P_cbvalivw | |- ( A. v v = w -> A. y y = w ) |\n| 5 | 2, 4 | #P_syl | |- ( A. x x = w -> A. y y = w ) |",
+  "conclusion" : "#P_cbvaev",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vv", "#T_vx.wal", "#T_wceq", "#T_vv", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_vv", "#T_wceq", "#T_vw", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wal", "#T_vv", "#T_vv", "#T_wceq", "#T_vw", "#T_vv", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vv", "#T_wceq", "#T_vw", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vw", "#T_wal", "#T_vv", "#T_vv", "#T_wceq", "#T_vw", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vw", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vw", "#T_wi", "#T_wal", "#T_vy", "#T_vy", "#T_wceq", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cbvalivw", "#P_ax-7", "#P_syl" ]
+}

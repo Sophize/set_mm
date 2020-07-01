@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssindif0 on Metamath](http://us.metamath.org/mpegif/ssindif0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_disj2 | |- ( ( A i^i ( _V \\ B ) ) = (/) <-> A C_ ( _V \\ ( _V \\ B ) ) ) |\n| 2 |  | #P_ddif | |- ( _V \\ ( _V \\ B ) ) = B |\n| 3 | 2 | #P_sseq2i | |- ( A C_ ( _V \\ ( _V \\ B ) ) <-> A C_ B ) |\n| 4 | 1, 3 | #P_bitr2i | |- ( A C_ B <-> ( A i^i ( _V \\ B ) ) = (/) ) |",
+  "conclusion" : "#P_ssindif0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ddif", "#P_bitr2i", "#P_disj2", "#P_sseq2i" ]
+}

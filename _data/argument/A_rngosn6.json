@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rngosn6 on Metamath](http://us.metamath.org/mpegif/rngosn6.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | on1el3.1 | |- G = ( 1st ` R ) |\n| 2 |  | on1el3.2 | |- X = ran G |\n| 3 |  | on1el3.3 | |- Z = ( GId ` G ) |\n| 4 | 1, 2, 3 | #P_rngo0cl | |- ( R e. RingOps -> Z e. X ) |\n| 5 | 1, 2 | #P_rngosn4 | |- ( ( R e. RingOps /\\ Z e. X ) -> ( X ~~ 1o <-> R = <. { <. <. Z , Z >. , Z >. } , { <. <. Z , Z >. , Z >. } >. ) ) |\n| 6 | 4, 5 | #P_mpdan | |- ( R e. RingOps -> ( X ~~ 1o <-> R = <. { <. <. Z , Z >. , Z >. } , { <. <. Z , Z >. , Z >. } >. ) ) |",
+  "conclusion" : "#P_rngosn6",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cZ", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cG", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cZ", "#T_wcel", "#T_cX", "#T_wi", "#T_cX", "#T_cen", "#T_c1o", "#T_wb", "#T_cR", "#T_wceq", "#T_cop--1", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_csn--2", "#T_cop--2", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_csn--2", "#T_cop--3", "#T_cR", "#T_wcel", "#T_crngo", "#T_wi", "#T_cX", "#T_cen", "#T_c1o", "#T_wb", "#T_cR", "#T_wceq", "#T_cop--1", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_csn--2", "#T_cop--2", "#T_csn--1", "#T_cop--1", "#T_cop--1", "#T_cZ", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_csn--2", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_rngosn4", "#P_rngo0cl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logcld on Metamath](http://us.metamath.org/mpegif/logcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | logcld.1 | |- ( ph -> X e. CC ) |\n| 2 |  | logcld.2 | |- ( ph -> X =/= 0 ) |\n| 3 |  | #P_logcl | |- ( ( X e. CC /\\ X =/= 0 ) -> ( log ` X ) e. CC ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( log ` X ) e. CC ) |",
+  "conclusion" : "#P_logcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cc0", "#T_cX", "#T_wcel", "#T_cc", "#T_wa", "#T_cX", "#T_wne", "#T_cc0", "#T_wi", "#T_clog", "#T_cfv", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_clog", "#T_cfv", "#T_cX", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_logcl" ]
+}

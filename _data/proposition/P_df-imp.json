@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-imp on Metamath](http://us.metamath.org/mpegif/df-imp.html)"
+  } ],
+  "names" : [ "df-imp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmp", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cnp", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cnp", "#T_cmpt2--4", "#T_cop--1", "#T_crab--1", "#T_vq", "#T_crab--2", "#T_cnq", "#T_crab--3", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cnq", "#T_wrex--1", "#T_vs", "#T_wrex--2", "#T_cnq", "#T_vr", "#T_wcel", "#T_c1st", "#T_cfv", "#T_vx", "#T_w3a--1", "#T_vs", "#T_wcel", "#T_c1st", "#T_cfv", "#T_vy", "#T_w3a--2", "#T_vq", "#T_wceq", "#T_vr", "#T_cmq", "#T_vs", "#T_crab--4", "#T_cop--2", "#T_crab--1", "#T_vq", "#T_crab--2", "#T_cnq", "#T_crab--3", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cnq", "#T_wrex--1", "#T_vs", "#T_wrex--2", "#T_cnq", "#T_vr", "#T_wcel", "#T_c2nd", "#T_cfv", "#T_vx", "#T_w3a--1", "#T_vs", "#T_wcel", "#T_c2nd", "#T_cfv", "#T_vy", "#T_w3a--2", "#T_vq", "#T_wceq", "#T_vr", "#T_cmq", "#T_vs", "#T_crab--4", "#T_cop--3", "#T_vq", "#T_vr", "#T_vs", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define multiplication on positive reals.  Here we use a simple definition which is similar to ~ df-iplp or the definition of multiplication on positive reals in Metamath Proof Explorer.  This is as opposed to the more complicated definition of multiplication given in Section 11.2.1 of [HoTT], p.  (varies), which appears to be motivated by handling negative numbers or handling modified Dedekind cuts in which locatedness is omitted. This is a \"temporary\" set used in the construction of complex numbers, and is intended to be used only by the construction.  (Contributed by Jim Kingdon, 29-Sep-2019.) ",
+  "statement" : "df-imp $p |- .P. = ( x e. P. , y e. P. |-> <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\\ s e. ( 1st ` y ) /\\ q = ( r .Q s ) ) } , { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\\ s e. ( 2nd ` y ) /\\ q = ( r .Q s ) ) } >. ) $.\n$d q r s x y $."
+}

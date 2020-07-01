@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem3-2d on Metamath](http://us.metamath.org/mpegif/tfrlem3-2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfrlem3-2d.1 | |- ( ph -> A. x ( Fun F /\\ ( F ` x ) e. _V ) ) |\n| 2 |  | #P_fveq2 | |- ( x = g -> ( F ` x ) = ( F ` g ) ) |\n| 3 | 2 | #P_eleq1d | |- ( x = g -> ( ( F ` x ) e. _V <-> ( F ` g ) e. _V ) ) |\n| 4 | 3 | #P_anbi2d | |- ( x = g -> ( ( Fun F /\\ ( F ` x ) e. _V ) <-> ( Fun F /\\ ( F ` g ) e. _V ) ) ) |\n| 5 | 4 | #P_cbvalv | |- ( A. x ( Fun F /\\ ( F ` x ) e. _V ) <-> A. g ( Fun F /\\ ( F ` g ) e. _V ) ) |\n| 6 | 1, 5 | #P_sylib | |- ( ph -> A. g ( Fun F /\\ ( F ` g ) e. _V ) ) |\n| 7 | 6 | #P_19.21bi | |- ( ph -> ( Fun F /\\ ( F ` g ) e. _V ) ) |",
+  "conclusion" : "#P_tfrlem3-2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_wal", "#T_vx.wal", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_wal", "#T_cbvex4v.vg", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_wal", "#T_cbvex4v.vg", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vg", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi2d", "#P_cbvalv", "#P_fveq2", "#P_sylib", "#P_19.21bi", "#P_eleq1d" ]
+}

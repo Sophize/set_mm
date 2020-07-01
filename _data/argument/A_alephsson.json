@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alephsson on Metamath](http://us.metamath.org/mpegif/alephsson.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isinfcard | |- ( ( _om C_ x /\\ ( card ` x ) = x ) <-> x e. ran aleph ) |\n| 2 |  | #P_cardon | |- ( card ` x ) e. On |\n| 3 |  | #P_eleq1 | |- ( ( card ` x ) = x -> ( ( card ` x ) e. On <-> x e. On ) ) |\n| 4 | 2, 3 | #P_mpbii | |- ( ( card ` x ) = x -> x e. On ) |\n| 5 | 4 | #P_adantl | |- ( ( _om C_ x /\\ ( card ` x ) = x ) -> x e. On ) |\n| 6 | 1, 5 | #P_sylbir | |- ( x e. ran aleph -> x e. On ) |\n| 7 | 6 | #P_ssriv | |- ran aleph C_ On |",
+  "conclusion" : "#P_alephsson",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_com", "#T_wss", "#T_vx.wal", "#T_wa", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_crn", "#T_cale", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_com", "#T_wss", "#T_vx.wal", "#T_wa", "#T_ccrd", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_vx.wal", "#T_wcel", "#T_crn", "#T_cale", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_crn", "#T_cale", "#T_wss", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbii", "#P_cardon", "#P_adantl", "#P_eleq1", "#P_sylbir", "#P_isinfcard", "#P_ssriv" ]
+}

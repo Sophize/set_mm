@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtocl2ga on Metamath](http://us.metamath.org/mpegif/vtocl2ga.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vtocl2ga.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | vtocl2ga.2 | |- ( y = B -> ( ps <-> ch ) ) |\n| 3 |  | vtocl2ga.3 | |- ( ( x e. C /\\ y e. D ) -> ph ) |\n| 4 |  | #P_nfcv | |- F/_ x A |\n| 5 |  | #P_nfcv | |- F/_ y A |\n| 6 |  | #P_nfcv | |- F/_ y B |\n| 7 |  | #P_nfv | |- F/ x ps |\n| 8 |  | #P_nfv | |- F/ y ch |\n| 9 | 4, 5, 6, 7, 8, 1, 2, 3 | #P_vtocl2gaf | |- ( ( A e. C /\\ B e. D ) -> ch ) |",
+  "conclusion" : "#P_vtocl2ga",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vx", "#T_wcel", "#T_cC", "#T_wa", "#T_vy", "#T_wcel", "#T_cD", "#T_wi", "#T_wph", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wnfc", "#T_vy.tru", "#T_cA.wceq", "#T_wnfc", "#T_vy.tru", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vy.tru", "#T_wch", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfv", "#P_vtocl2gaf" ]
+}

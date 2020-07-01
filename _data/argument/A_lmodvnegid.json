@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmodvnegid on Metamath](http://us.metamath.org/mpegif/lmodvnegid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lmodvnegid.v | |- V = ( Base ` W ) |\n| 2 |  | lmodvnegid.p | |- .+ = ( +g ` W ) |\n| 3 |  | lmodvnegid.z | |- .0. = ( 0g ` W ) |\n| 4 |  | lmodvnegid.n | |- N = ( invg ` W ) |\n| 5 |  | #P_lmodgrp | |- ( W e. LMod -> W e. Grp ) |\n| 6 | 1, 2, 3, 4 | #P_grprinv | |- ( ( W e. Grp /\\ X e. V ) -> ( X .+ ( N ` X ) ) = .0. ) |\n| 7 | 5, 6 | #P_sylan | |- ( ( W e. LMod /\\ X e. V ) -> ( X .+ ( N ` X ) ) = .0. ) |",
+  "conclusion" : "#P_lmodvnegid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cW", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_cminusg", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_cW", "#T_wcel", "#T_cgrp", "#T_cW", "#T_wcel", "#T_cgrp", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cN", "#T_cfv", "#T_cX", "#T_wceq", "#T_c.0", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cX", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_c.pl", "#T_cN", "#T_cfv", "#T_cX", "#T_wceq", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lmodgrp", "#P_grprinv", "#P_sylan" ]
+}

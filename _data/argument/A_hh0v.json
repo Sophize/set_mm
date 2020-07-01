@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hh0v on Metamath](http://us.metamath.org/mpegif/hh0v.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hhnv.1 | |- U = <. <. +h , .h >. , normh >. |\n| 2 | 1 | #P_hhnv | |- U e. NrmCVec |\n| 3 |  | #P_eqid | |- ( +v ` U ) = ( +v ` U ) |\n| 4 |  | #P_eqid | |- ( 0vec ` U ) = ( 0vec ` U ) |\n| 5 | 3, 4 | #P_0vfval | |- ( U e. NrmCVec -> ( 0vec ` U ) = ( GId ` ( +v ` U ) ) ) |\n| 6 | 2, 5 | #P_ax-mp | |- ( 0vec ` U ) = ( GId ` ( +v ` U ) ) |\n| 7 | 1 | #P_hhva | |- +h = ( +v ` U ) |\n| 8 | 7 | #P_fveq2i | |- ( GId ` +h ) = ( GId ` ( +v ` U ) ) |\n| 9 |  | #P_hilid | |- ( GId ` +h ) = 0h |\n| 10 | 6, 8, 9 | #P_3eqtr2ri | |- 0h = ( 0vec ` U ) |",
+  "conclusion" : "#P_hh0v",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cva", "#T_cop--2", "#T_csm", "#T_cop--3", "#T_cop--2", "#T_cno", "#T_cop--3", "#T_cU", "#T_wcel", "#T_cnv", "#T_cpv", "#T_cfv", "#T_cU", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cn0v", "#T_cfv", "#T_cU", "#T_wceq", "#T_cn0v", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_cnv", "#T_wi", "#T_cn0v", "#T_cfv", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_cn0v", "#T_cfv", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_cva", "#T_wceq", "#T_cpv", "#T_cfv", "#T_cU", "#T_cgi", "#T_cfv", "#T_cva", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cpv", "#T_cfv", "#T_cU", "#T_cgi", "#T_cfv", "#T_cva", "#T_wceq", "#T_c0v", "#T_c0v", "#T_wceq", "#T_cn0v", "#T_cfv", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_eqid", "#P_ax-mp", "#P_hhnv", "#P_0vfval", "#P_hhva", "#P_hilid", "#P_3eqtr2ri" ]
+}

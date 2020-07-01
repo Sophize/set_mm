@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovif on Metamath](http://us.metamath.org/mpegif/ovif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq1 | |- ( if ( ph , A , B ) = A -> ( if ( ph , A , B ) F C ) = ( A F C ) ) |\n| 2 |  | #P_oveq1 | |- ( if ( ph , A , B ) = B -> ( if ( ph , A , B ) F C ) = ( B F C ) ) |\n| 3 | 1, 2 | #P_ifsb | |- ( if ( ph , A , B ) F C ) = if ( ph , ( A F C ) , ( B F C ) ) |",
+  "conclusion" : "#P_ovif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_cF", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cF", "#T_cC", "#T_cif--3", "#T_cB", "#T_cF", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_oveq1", "#P_ifsb" ]
+}

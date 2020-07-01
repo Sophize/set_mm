@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsk2 on Metamath](http://us.metamath.org/mpegif/tsk2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tsk1 | |- ( ( T e. Tarski /\\ T =/= (/) ) -> 1o e. T ) |\n| 2 |  | #P_df-2o | |- 2o = suc 1o |\n| 3 |  | #P_1on | |- 1o e. On |\n| 4 |  | #P_tsksuc | |- ( ( T e. Tarski /\\ 1o e. On /\\ 1o e. T ) -> suc 1o e. T ) |\n| 5 | 3, 4 | #P_mp3an2 | |- ( ( T e. Tarski /\\ 1o e. T ) -> suc 1o e. T ) |\n| 6 | 2, 5 | #P_syl5eqel | |- ( ( T e. Tarski /\\ 1o e. T ) -> 2o e. T ) |\n| 7 | 1, 6 | #P_syldan | |- ( ( T e. Tarski /\\ T =/= (/) ) -> 2o e. T ) |",
+  "conclusion" : "#P_tsk2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cT", "#T_wne", "#T_c0", "#T_wi", "#T_c1o", "#T_wcel", "#T_cT", "#T_c2o", "#T_wceq", "#T_csuc", "#T_c1o", "#T_c1o", "#T_wcel", "#T_con0", "#T_cT", "#T_wcel", "#T_ctsk", "#T_w3a--1", "#T_c1o", "#T_wcel", "#T_con0", "#T_w3a--2", "#T_c1o", "#T_wcel", "#T_cT", "#T_wi", "#T_csuc", "#T_c1o", "#T_wcel", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_c1o", "#T_wcel", "#T_cT", "#T_wi", "#T_csuc", "#T_c1o", "#T_wcel", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_c1o", "#T_wcel", "#T_cT", "#T_wi", "#T_c2o", "#T_wcel", "#T_cT", "#T_cT", "#T_wcel", "#T_ctsk", "#T_wa", "#T_cT", "#T_wne", "#T_c0", "#T_wi", "#T_c2o", "#T_wcel", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1on", "#P_tsksuc", "#P_syl5eqel", "#P_tsk1", "#P_mp3an2", "#P_df-2o", "#P_syldan" ]
+}

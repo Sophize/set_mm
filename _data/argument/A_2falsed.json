@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 2falsed on Metamath](http://us.metamath.org/mpegif/2falsed.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 2falsed.1 | |- ( ph -> -. ps ) |\n| 2 |  | 2falsed.2 | |- ( ph -> -. ch ) |\n| 3 | 1 | #P_pm2.21d | |- ( ph -> ( ps -> ch ) ) |\n| 4 | 2 | #P_pm2.21d | |- ( ph -> ( ch -> ps ) ) |\n| 5 | 3, 4 | #P_impbid | |- ( ph -> ( ps <-> ch ) ) |",
+  "conclusion" : "#P_2falsed",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.21d", "#P_impbid" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sucinc on Metamath](http://us.metamath.org/mpegif/sucinc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sucinc.1 | |- F = ( z e. _V |-> suc z ) |\n| 2 |  | #P_sssucid | |- x C_ suc x |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_sucex | |- suc x e. _V |\n| 5 |  | #P_suceq | |- ( z = x -> suc z = suc x ) |\n| 6 | 5, 1 | #P_fvmptg | |- ( ( x e. _V /\\ suc x e. _V ) -> ( F ` x ) = suc x ) |\n| 7 | 3, 4, 6 | #P_mp2an | |- ( F ` x ) = suc x |\n| 8 | 2, 7 | #P_sseqtr4i | |- x C_ ( F ` x ) |\n| 9 | 8 | #P_ax-gen | |- A. x x C_ ( F ` x ) |",
+  "conclusion" : "#P_sucinc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_csuc", "#T_vz", "#T_vx.wal", "#T_wss", "#T_csuc", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_csuc", "#T_vz", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_csuc", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_vx.wal", "#T_wss", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wal", "#T_vx", "#T_vx", "#T_wss", "#T_cF", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sucex", "#P_fvmptg", "#P_mp2an", "#P_suceq", "#P_sseqtr4i", "#P_vex", "#P_sssucid", "#P_ax-gen" ]
+}

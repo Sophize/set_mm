@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lt2addmuld on Metamath](http://us.metamath.org/mpegif/lt2addmuld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt2addmuld.a | |- ( ph -> A e. RR ) |\n| 2 |  | lt2addmuld.b | |- ( ph -> B e. RR ) |\n| 3 |  | lt2addmuld.c | |- ( ph -> C e. RR ) |\n| 4 |  | lt2addmuld.altc | |- ( ph -> A < C ) |\n| 5 |  | lt2addmuld.bltc | |- ( ph -> B < C ) |\n| 6 | 1, 2, 3, 3, 4, 5 | #P_lt2addd | |- ( ph -> ( A + B ) < ( C + C ) ) |\n| 7 | 3 | #P_recnd | |- ( ph -> C e. CC ) |\n| 8 | 7 | #P_2timesd | |- ( ph -> ( 2 x. C ) = ( C + C ) ) |\n| 9 | 6, 8 | #P_breqtrrd | |- ( ph -> ( A + B ) < ( 2 x. C ) ) |",
+  "conclusion" : "#P_lt2addmuld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_clt", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_clt", "#T_cC", "#T_caddc", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_c2", "#T_cmul", "#T_cC", "#T_wceq", "#T_cC", "#T_caddc", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_caddc", "#T_cB", "#T_clt", "#T_c2", "#T_cmul", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_breqtrrd", "#P_lt2addd", "#P_recnd", "#P_2timesd" ]
+}

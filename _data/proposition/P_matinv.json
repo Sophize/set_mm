@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See matinv on Metamath](http://us.metamath.org/mpegif/matinv.html)"
+  } ],
+  "names" : [ "matinv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cJ", "#T_wceq", "#T_cN", "#T_cmadu", "#T_cR", "#T_cD", "#T_wceq", "#T_cN", "#T_cmdat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cA", "#T_cV", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cH", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cR", "#T_cI", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cA", "#T_c.xb", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cA", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cM", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cD", "#T_cfv", "#T_cM", "#T_wcel", "#T_cV", "#T_wi", "#T_cM", "#T_wcel", "#T_cU", "#T_wa", "#T_cI", "#T_cfv", "#T_cM", "#T_wceq", "#T_cH", "#T_cfv", "#T_cD", "#T_cfv", "#T_cM", "#T_c.xb", "#T_cJ", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The inverse of a matrix is the adjunct of the matrix multiplied with the inverse of the determinant of the matrix if the determinant is a unit in the underlying ring.  Proposition 4.16 in [Lang] p. 518.  (Contributed by Stefan O'Rear, 17-Jul-2018.) ",
+  "statement" : "matinv.a $e |- A = ( N Mat R ) $.\nmatinv.j $e |- J = ( N maAdju R ) $.\nmatinv.d $e |- D = ( N maDet R ) $.\nmatinv.b $e |- B = ( Base ` A ) $.\nmatinv.u $e |- U = ( Unit ` A ) $.\nmatinv.v $e |- V = ( Unit ` R ) $.\nmatinv.h $e |- H = ( invr ` R ) $.\nmatinv.i $e |- I = ( invr ` A ) $.\nmatinv.t $e |- .xb = ( .s ` A ) $.\nmatinv $p |- ( ( R e. CRing /\\ M e. B /\\ ( D ` M ) e. V ) -> ( M e. U /\\ ( I ` M ) = ( ( H ` ( D ` M ) ) .xb ( J ` M ) ) ) ) $."
+}

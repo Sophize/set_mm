@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bnrel on Metamath](http://us.metamath.org/mpegif/bnrel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bnnv | |- ( x e. CBan -> x e. NrmCVec ) |\n| 2 | 1 | #P_ssriv | |- CBan C_ NrmCVec |\n| 3 |  | #P_nvrel | |- Rel NrmCVec |\n| 4 |  | #P_relss | |- ( CBan C_ NrmCVec -> ( Rel NrmCVec -> Rel CBan ) ) |\n| 5 | 2, 3, 4 | #P_mp2 | |- Rel CBan |",
+  "conclusion" : "#P_bnrel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_ccbn", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cnv", "#T_ccbn", "#T_wss", "#T_cnv", "#T_wrel", "#T_cnv", "#T_ccbn", "#T_wss", "#T_cnv", "#T_wi", "#T_wrel", "#T_cnv", "#T_wi", "#T_wrel", "#T_ccbn", "#T_wrel", "#T_ccbn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bnnv", "#P_mp2", "#P_nvrel", "#P_relss", "#P_ssriv" ]
+}

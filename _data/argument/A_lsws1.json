@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsws1 on Metamath](http://us.metamath.org/mpegif/lsws1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_s1cl | |- ( A e. V -> <\" A \"> e. Word V ) |\n| 2 |  | #P_s1len | |- ( # ` <\" A \"> ) = 1 |\n| 3 |  | #P_lsw1 | |- ( ( <\" A \"> e. Word V /\\ ( # ` <\" A \"> ) = 1 ) -> ( lastS ` <\" A \"> ) = ( <\" A \"> ` 0 ) ) |\n| 4 | 1, 2, 3 | #P_sylancl | |- ( A e. V -> ( lastS ` <\" A \"> ) = ( <\" A \"> ` 0 ) ) |\n| 5 |  | #P_s1fv | |- ( A e. V -> ( <\" A \"> ` 0 ) = A ) |\n| 6 | 4, 5 | #P_eqtrd | |- ( A e. V -> ( lastS ` <\" A \"> ) = A ) |",
+  "conclusion" : "#P_lsws1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cV", "#T_chash", "#T_cfv", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_c1", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_chash", "#T_cfv", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_c1", "#T_wi", "#T_clsw", "#T_cfv", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_cfv", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_clsw", "#T_cfv", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_wceq", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_cfv", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cs1--1", "#T_cA.wceq", "#T_cs1--2", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_clsw", "#T_cfv", "#T_cs1--1", "#T_cA", "#T_cs1--2", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_s1len", "#P_s1cl", "#P_eqtrd", "#P_lsw1", "#P_sylancl", "#P_s1fv" ]
+}

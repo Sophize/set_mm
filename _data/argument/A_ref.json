@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ref on Metamath](http://us.metamath.org/mpegif/ref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-re | |- Re = ( x e. CC |-> ( ( x + ( * ` x ) ) / 2 ) ) |\n| 2 |  | #P_reval | |- ( x e. CC -> ( Re ` x ) = ( ( x + ( * ` x ) ) / 2 ) ) |\n| 3 |  | #P_recl | |- ( x e. CC -> ( Re ` x ) e. RR ) |\n| 4 | 2, 3 | #P_eqeltrrd | |- ( x e. CC -> ( ( x + ( * ` x ) ) / 2 ) e. RR ) |\n| 5 | 1, 4 | #P_fmpti | |- Re : CC --> RR |",
+  "conclusion" : "#P_ref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cre", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_c2", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_caddc", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_c2", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_ccj", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cr", "#T_cre", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_reval", "#P_recl", "#P_df-re", "#P_fmpti" ]
+}

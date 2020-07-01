@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ecexr on Metamath](http://us.metamath.org/mpegif/ecexr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_n0i | |- ( A e. ( R \" { B } ) -> -. ( R \" { B } ) = (/) ) |\n| 2 |  | #P_snprc | |- ( -. B e. _V <-> { B } = (/) ) |\n| 3 |  | #P_imaeq2 | |- ( { B } = (/) -> ( R \" { B } ) = ( R \" (/) ) ) |\n| 4 | 2, 3 | #P_sylbi | |- ( -. B e. _V -> ( R \" { B } ) = ( R \" (/) ) ) |\n| 5 |  | #P_ima0 | |- ( R \" (/) ) = (/) |\n| 6 | 4, 5 | #P_syl6eq | |- ( -. B e. _V -> ( R \" { B } ) = (/) ) |\n| 7 | 1, 6 | #P_nsyl2 | |- ( A e. ( R \" { B } ) -> B e. _V ) |\n| 8 |  | #P_df-ec | |- [ B ] R = ( R \" { B } ) |\n| 9 | 7, 8 | #P_eleq2s | |- ( A e. [ B ] R -> B e. _V ) |",
+  "conclusion" : "#P_ecexr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_wn", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_wi", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_cR", "#T_cima", "#T_c0", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_cR", "#T_cima", "#T_c0", "#T_cR", "#T_cima", "#T_c0", "#T_wceq", "#T_c0", "#T_wn", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cec--1", "#T_cB.wceq", "#T_cec--2", "#T_cR", "#T_wceq", "#T_cR", "#T_cima", "#T_csn--1", "#T_cB.wceq", "#T_csn--2", "#T_cA", "#T_wcel", "#T_cec--1", "#T_cB", "#T_cec--2", "#T_cR", "#T_wi", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2s", "#P_snprc", "#P_nsyl2", "#P_n0i", "#P_imaeq2", "#P_ima0", "#P_sylbi", "#P_syl6eq", "#P_df-ec" ]
+}

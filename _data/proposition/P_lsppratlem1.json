@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsppratlem1 on Metamath](http://us.metamath.org/mpegif/lsppratlem1.html)"
+  } ],
+  "names" : [ "lsppratlem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cU", "#T_wpss", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cU", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wph", "#T_wi", "#T_vy", "#T_wcel", "#T_cU", "#T_cdif", "#T_cN", "#T_cfv", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_wph", "#T_wi", "#T_vx", "#T_wcel", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cY", "#T_csn--2", "#T_wo", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_vx", "#T_cpr--2", "#T_cY", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ lspprat .  Let ` x e. ( U \\ { 0 } ) ` (if there is no such ` x ` then ` U ` is the zero subspace), and let ` y e. ( U \\ ( N `` { x } ) ) ` (assuming the conclusion is false). The goal is to write ` X ` , ` Y ` in terms of ` x ` , ` y ` , which would normally be done by solving the system of linear equations.  The span equivalent of this process is ~ lspsolv (hence the name), which we use extensively below.  In this lemma, we show that since ` x e. ( N `` { X , Y } ) ` , either ` x e. ( N `` { Y } ) ` or ` X e. ( N `` { x , Y } ) ` .  (Contributed by NM, 29-Aug-2014.) ",
+  "statement" : "lspprat.v $e |- V = ( Base ` W ) $.\nlspprat.s $e |- S = ( LSubSp ` W ) $.\nlspprat.n $e |- N = ( LSpan ` W ) $.\nlspprat.w $e |- ( ph -> W e. LVec ) $.\nlspprat.u $e |- ( ph -> U e. S ) $.\nlspprat.x $e |- ( ph -> X e. V ) $.\nlspprat.y $e |- ( ph -> Y e. V ) $.\nlspprat.p $e |- ( ph -> U C. ( N ` { X , Y } ) ) $.\nlsppratlem1.o $e |- .0. = ( 0g ` W ) $.\nlsppratlem1.x2 $e |- ( ph -> x e. ( U \\ { .0. } ) ) $.\nlsppratlem1.y2 $e |- ( ph -> y e. ( U \\ ( N ` { x } ) ) ) $.\nlsppratlem1 $p |- ( ph -> ( x e. ( N ` { Y } ) \\/ X e. ( N ` { x , Y } ) ) ) $."
+}

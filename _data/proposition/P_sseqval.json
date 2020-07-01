@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sseqval on Metamath](http://us.metamath.org/mpegif/sseqval.html)"
+  } ],
+  "names" : [ "sseqval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cword", "#T_cS", "#T_cW", "#T_wceq", "#T_cword", "#T_cS", "#T_cin", "#T_ccnv", "#T_chash", "#T_cima", "#T_cuz", "#T_cfv", "#T_chash", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cW", "#T_wf--2", "#T_cS", "#T_wph", "#T_wi", "#T_cM", "#T_csseq", "#T_cF", "#T_wceq", "#T_cM", "#T_cun", "#T_clsw", "#T_ccom", "#T_cseq--1", "#T_chash", "#T_cfv", "#T_cM", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx", "#T_cconcat", "#T_cs1--1", "#T_cF", "#T_cfv", "#T_vx", "#T_cs1--2", "#T_cseq--2", "#T_cn0", "#T_cxp", "#T_csn--1", "#T_cM", "#T_cconcat", "#T_cs1--1", "#T_cF", "#T_cfv", "#T_cM", "#T_cs1--2", "#T_csn--2", "#T_cF", "#T_vx", "#T_vy", "#T_cM", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the strong sequence builder function.  The set ` W ` represents here the words of length greater than or equal to the lenght of the initial sequence ` M ` .  (Contributed by Thierry Arnoux, 21-Apr-2019.) ",
+  "statement" : "sseqval.1 $e |- ( ph -> S e. _V ) $.\nsseqval.2 $e |- ( ph -> M e. Word S ) $.\nsseqval.3 $e |- W = ( Word S i^i ( `' # \" ( ZZ>= ` ( # ` M ) ) ) ) $.\nsseqval.4 $e |- ( ph -> F : W --> S ) $.\nsseqval $p |- ( ph -> ( M seqstr F ) = ( M u. ( lastS o. seq ( # ` M ) ( ( x e. _V , y e. _V |-> ( x concat <\" ( F ` x ) \"> ) ) , ( NN0 X. { ( M concat <\" ( F ` M ) \"> ) } ) ) ) ) ) $.\n$d F x y $.\n$d M x y $.\n$d ph x y $."
+}

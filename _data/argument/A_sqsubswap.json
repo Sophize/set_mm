@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqsubswap on Metamath](http://us.metamath.org/mpegif/sqsubswap.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_subcl | |- ( ( A e. CC /\\ B e. CC ) -> ( A - B ) e. CC ) |\n| 2 |  | #P_sqneg | |- ( ( A - B ) e. CC -> ( -u ( A - B ) ^ 2 ) = ( ( A - B ) ^ 2 ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( A e. CC /\\ B e. CC ) -> ( -u ( A - B ) ^ 2 ) = ( ( A - B ) ^ 2 ) ) |\n| 4 |  | #P_negsubdi2 | |- ( ( A e. CC /\\ B e. CC ) -> -u ( A - B ) = ( B - A ) ) |\n| 5 | 4 | #P_oveq1d | |- ( ( A e. CC /\\ B e. CC ) -> ( -u ( A - B ) ^ 2 ) = ( ( B - A ) ^ 2 ) ) |\n| 6 | 3, 5 | #P_eqtr3d | |- ( ( A e. CC /\\ B e. CC ) -> ( ( A - B ) ^ 2 ) = ( ( B - A ) ^ 2 ) ) |",
+  "conclusion" : "#P_sqsubswap",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB.wceq", "#T_cmin", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cB", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_cexp", "#T_c2", "#T_wceq", "#T_cB", "#T_cmin", "#T_cA", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sqneg", "#P_subcl", "#P_negsubdi2", "#P_syl", "#P_oveq1d", "#P_eqtr3d" ]
+}

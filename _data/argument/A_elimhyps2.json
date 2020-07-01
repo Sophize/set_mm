@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elimhyps2 on Metamath](http://us.metamath.org/mpegif/elimhyps2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elimhyps2.1 | |- [. B / x ]. ph |\n| 2 |  | #P_dfsbcq | |- ( A = if ( [. A / x ]. ph , A , B ) -> ( [. A / x ]. ph <-> [. if ( [. A / x ]. ph , A , B ) / x ]. ph ) ) |\n| 3 |  | #P_dfsbcq | |- ( B = if ( [. A / x ]. ph , A , B ) -> ( [. B / x ]. ph <-> [. if ( [. A / x ]. ph , A , B ) / x ]. ph ) ) |\n| 4 | 2, 3, 1 | #P_elimhyp | |- [. if ( [. A / x ]. ph , A , B ) / x ]. ph |",
+  "conclusion" : "#P_elimhyps2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wsbc--1", "#T_cB", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cif--1", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wi", "#T_wsbc--1", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wsbc--1", "#T_cif--1", "#T_wsbc--1", "#T_cA.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wsbc--2", "#T_vx.wal", "#T_wsbc--3", "#T_wph", "#T_wsbc--1", "#T_cif--1", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfsbcq", "#P_elimhyp" ]
+}

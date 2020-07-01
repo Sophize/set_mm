@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See speimfw on Metamath](http://us.metamath.org/mpegif/speimfw.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | speimfw.2 | |- ( x = y -> ( ph -> ps ) ) |\n| 2 |  | #P_df-ex | |- ( E. x x = y <-> -. A. x -. x = y ) |\n| 3 | 2 | #P_biimpri | |- ( -. A. x -. x = y -> E. x x = y ) |\n| 4 | 1 | #P_com12 | |- ( ph -> ( x = y -> ps ) ) |\n| 5 | 4 | #P_aleximi | |- ( A. x ph -> ( E. x x = y -> E. x ps ) ) |\n| 6 | 3, 5 | #P_syl5com | |- ( -. A. x -. x = y -> ( A. x ph -> E. x ps ) ) |",
+  "conclusion" : "#P_speimfw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wn", "#T_wal", "#T_vx", "#T_wn", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ex", "#P_aleximi", "#P_biimpri", "#P_com12", "#P_syl5com" ]
+}

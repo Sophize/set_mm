@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opcom on Metamath](http://us.metamath.org/mpegif/opcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | opcom.1 | |- A e. _V |\n| 2 |  | opcom.2 | |- B e. _V |\n| 3 | 1, 2 | #P_opth | |- ( <. A , B >. = <. B , A >. <-> ( A = B /\\ B = A ) ) |\n| 4 |  | #P_eqcom | |- ( B = A <-> A = B ) |\n| 5 | 4 | #P_anbi2i | |- ( ( A = B /\\ B = A ) <-> ( A = B /\\ A = B ) ) |\n| 6 |  | #P_anidm | |- ( ( A = B /\\ A = B ) <-> A = B ) |\n| 7 | 3, 5, 6 | #P_3bitri | |- ( <. A , B >. = <. B , A >. <-> A = B ) |",
+  "conclusion" : "#P_opcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cB.wceq", "#T_cop--2", "#T_cA.wceq", "#T_cop--3", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cB", "#T_cop--2", "#T_cA", "#T_cop--3", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anidm", "#P_3bitri", "#P_anbi2i", "#P_opth", "#P_eqcom" ]
+}

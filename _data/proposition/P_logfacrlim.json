@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logfacrlim on Metamath](http://us.metamath.org/mpegif/logfacrlim.html)"
+  } ],
+  "names" : [ "logfacrlim" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_clog", "#T_cfv", "#T_vx", "#T_cmin", "#T_clog", "#T_cfv", "#T_cfa", "#T_cfv", "#T_cfl", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vx", "#T_crli", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Combine the estimates ~ logfacubnd and ~ logfaclbnd , to get ` log ( x ! ) = x log x + O ( x ) ` .  Equation 9.2.9 of [Shapiro], p. 329.  This is a weak form of the even stronger statement, ` log ( x ! ) = x log x - x + O ( log x ) ` .  (Contributed by Mario Carneiro, 16-Apr-2016.)  (Revised by Mario Carneiro, 21-May-2016.) ",
+  "statement" : "logfacrlim $p |- ( x e. RR+ |-> ( ( log ` x ) - ( ( log ` ( ! ` ( |_ ` x ) ) ) / x ) ) ) ~~>r 1 $."
+}

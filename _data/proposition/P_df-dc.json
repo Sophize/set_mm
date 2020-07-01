@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-dc on Metamath](http://us.metamath.org/mpegif/df-dc.html)"
+  } ],
+  "names" : [ "df-dc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Propositions which are known to be true or false are called decidable. The (classical) Law of the Excluded Middle corresponds to the principle that all propositions are decidable, but even given intuitionistic logic, particular kinds of propositions may be decidable (for example, the proposition that two natural numbers are equal will be decidable under most sets of axioms). Our notation for decidability is a connective ` DECID ` which we place before the formula in question.  For example, ` DECID x = y ` corresponds to \"x = y is decidable\". We could transform intuitionistic logic to classical logic by adding unconditional forms of ~ condc , ~ exmiddc , ~ peircedc , or ~ notnot2dc , any of which would correspond to the assertion that all propositions are decidable. (Contributed by Jim Kingdon, 11-Mar-2018.) ",
+  "statement" : "df-dc $p |- ( DECID ph <-> ( ph \\/ -. ph ) ) $."
+}

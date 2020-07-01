@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cxpp1d on Metamath](http://us.metamath.org/mpegif/cxpp1d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cxp0d.1 | |- ( ph -> A e. CC ) |\n| 2 |  | cxpefd.2 | |- ( ph -> A =/= 0 ) |\n| 3 |  | cxpefd.3 | |- ( ph -> B e. CC ) |\n| 4 |  | #P_cxpp1 | |- ( ( A e. CC /\\ A =/= 0 /\\ B e. CC ) -> ( A ^c ( B + 1 ) ) = ( ( A ^c B ) x. A ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( A ^c ( B + 1 ) ) = ( ( A ^c B ) x. A ) ) |",
+  "conclusion" : "#P_cxpp1d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_ccxp", "#T_cB.wceq", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA.wceq", "#T_ccxp", "#T_cB.wceq", "#T_cmul", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_ccxp", "#T_cB", "#T_caddc", "#T_c1", "#T_wceq", "#T_cA", "#T_ccxp", "#T_cB", "#T_cmul", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cxpp1", "#P_syl3anc" ]
+}

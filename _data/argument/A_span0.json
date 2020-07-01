@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See span0 on Metamath](http://us.metamath.org/mpegif/span0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_h0elsh | |- 0H e. SH |\n| 2 | 1 | #P_shssii | |- 0H C_ ~H |\n| 3 |  | #P_0ss | |- (/) C_ 0H |\n| 4 |  | #P_spanss | |- ( ( 0H C_ ~H /\\ (/) C_ 0H ) -> ( span ` (/) ) C_ ( span ` 0H ) ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( span ` (/) ) C_ ( span ` 0H ) |\n| 6 |  | #P_spanid | |- ( 0H e. SH -> ( span ` 0H ) = 0H ) |\n| 7 | 1, 6 | #P_ax-mp | |- ( span ` 0H ) = 0H |\n| 8 | 5, 7 | #P_sseqtri | |- ( span ` (/) ) C_ 0H |\n| 9 |  | #P_0ss | |- (/) C_ ~H |\n| 10 |  | #P_spancl | |- ( (/) C_ ~H -> ( span ` (/) ) e. SH ) |\n| 11 | 9, 10 | #P_ax-mp | |- ( span ` (/) ) e. SH |\n| 12 |  | #P_sh0le | |- ( ( span ` (/) ) e. SH -> 0H C_ ( span ` (/) ) ) |\n| 13 | 11, 12 | #P_ax-mp | |- 0H C_ ( span ` (/) ) |\n| 14 | 8, 13 | #P_eqssi | |- ( span ` (/) ) = 0H |",
+  "conclusion" : "#P_span0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0h", "#T_wcel", "#T_csh", "#T_c0h", "#T_wss", "#T_chil", "#T_c0", "#T_wss", "#T_c0h", "#T_c0h", "#T_wss", "#T_chil", "#T_wa", "#T_c0", "#T_wss", "#T_c0h", "#T_wi", "#T_cspn", "#T_cfv", "#T_c0", "#T_wss", "#T_cspn", "#T_cfv", "#T_c0h", "#T_cspn", "#T_cfv", "#T_c0", "#T_wss", "#T_cspn", "#T_cfv", "#T_c0h", "#T_c0h", "#T_wcel", "#T_csh", "#T_wi", "#T_cspn", "#T_cfv", "#T_c0h", "#T_wceq", "#T_c0h", "#T_cspn", "#T_cfv", "#T_c0h", "#T_wceq", "#T_c0h", "#T_cspn", "#T_cfv", "#T_c0", "#T_wss", "#T_c0h", "#T_c0", "#T_wss", "#T_chil", "#T_c0", "#T_wss", "#T_chil", "#T_wi", "#T_cspn", "#T_cfv", "#T_c0", "#T_wcel", "#T_csh", "#T_cspn", "#T_cfv", "#T_c0", "#T_wcel", "#T_csh", "#T_cspn", "#T_cfv", "#T_c0", "#T_wcel", "#T_csh", "#T_wi", "#T_c0h", "#T_wss", "#T_cspn", "#T_cfv", "#T_c0", "#T_c0h", "#T_wss", "#T_cspn", "#T_cfv", "#T_c0", "#T_cspn", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0h" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_shssii", "#P_mp2an", "#P_ax-mp", "#P_0ss", "#P_spanss", "#P_h0elsh", "#P_sseqtri", "#P_eqssi", "#P_spanid", "#P_spancl", "#P_sh0le" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dgradd on Metamath](http://us.metamath.org/mpegif/dgradd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dgradd.1 | |- M = ( deg ` F ) |\n| 2 |  | dgradd.2 | |- N = ( deg ` G ) |\n| 3 |  | #P_eqid | |- ( coeff ` F ) = ( coeff ` F ) |\n| 4 |  | #P_eqid | |- ( coeff ` G ) = ( coeff ` G ) |\n| 5 | 3, 4, 1, 2 | #P_coeaddlem | |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) ) -> ( ( coeff ` ( F oF + G ) ) = ( ( coeff ` F ) oF + ( coeff ` G ) ) /\\ ( deg ` ( F oF + G ) ) <_ if ( M <_ N , N , M ) ) ) |\n| 6 | 5 | #P_simprd | |- ( ( F e. ( Poly ` S ) /\\ G e. ( Poly ` S ) ) -> ( deg ` ( F oF + G ) ) <_ if ( M <_ N , N , M ) ) |",
+  "conclusion" : "#P_dgradd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cN", "#T_wceq", "#T_cdgr", "#T_cfv", "#T_cG", "#T_ccoe", "#T_cfv", "#T_cF", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_ccoe", "#T_cfv", "#T_cG", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cG", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_wceq", "#T_ccoe", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_ccoe", "#T_cfv", "#T_cG", "#T_wa", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_cle", "#T_cif--1", "#T_cM", "#T_cle", "#T_cN", "#T_cif--2", "#T_cN", "#T_cif--3", "#T_cM", "#T_cF", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wa", "#T_cG", "#T_wcel", "#T_cply", "#T_cfv", "#T_cS", "#T_wi", "#T_cdgr", "#T_cfv", "#T_cF", "#T_cof", "#T_caddc", "#T_cG", "#T_cle", "#T_cif--1", "#T_cM", "#T_cle", "#T_cN", "#T_cif--2", "#T_cN", "#T_cif--3", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simprd", "#P_coeaddlem" ]
+}

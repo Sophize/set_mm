@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See latpos on Metamath](http://us.metamath.org/mpegif/latpos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` K ) = ( Base ` K ) |\n| 2 |  | #P_eqid | |- ( join ` K ) = ( join ` K ) |\n| 3 |  | #P_eqid | |- ( meet ` K ) = ( meet ` K ) |\n| 4 | 1, 2, 3 | #P_islat | |- ( K e. Lat <-> ( K e. Poset /\\ ( dom ( join ` K ) = ( ( Base ` K ) X. ( Base ` K ) ) /\\ dom ( meet ` K ) = ( ( Base ` K ) X. ( Base ` K ) ) ) ) ) |\n| 5 | 4 | #P_simplbi | |- ( K e. Lat -> K e. Poset ) |",
+  "conclusion" : "#P_latpos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cjn", "#T_cfv", "#T_cK", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cmee", "#T_cfv", "#T_cK", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wb", "#T_cK", "#T_wcel", "#T_cpo", "#T_wa", "#T_cdm", "#T_cjn", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cK", "#T_wa", "#T_cdm", "#T_cmee", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wi", "#T_cK", "#T_wcel", "#T_cpo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_islat" ]
+}

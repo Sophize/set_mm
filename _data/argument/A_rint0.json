@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rint0 on Metamath](http://us.metamath.org/mpegif/rint0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_inteq | |- ( X = (/) -> |^| X = |^| (/) ) |\n| 2 | 1 | #P_ineq2d | |- ( X = (/) -> ( A i^i |^| X ) = ( A i^i |^| (/) ) ) |\n| 3 |  | #P_int0 | |- |^| (/) = _V |\n| 4 | 3 | #P_ineq2i | |- ( A i^i |^| (/) ) = ( A i^i _V ) |\n| 5 |  | #P_inv1 | |- ( A i^i _V ) = A |\n| 6 | 4, 5 | #P_eqtri | |- ( A i^i |^| (/) ) = A |\n| 7 | 2, 6 | #P_syl6eq | |- ( X = (/) -> ( A i^i |^| X ) = A ) |",
+  "conclusion" : "#P_rint0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_c0", "#T_wi", "#T_cint", "#T_cX", "#T_wceq", "#T_cint", "#T_c0", "#T_cX", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cint", "#T_cX", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cint", "#T_c0", "#T_cint", "#T_c0", "#T_wceq", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cint", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cint", "#T_c0", "#T_wceq", "#T_cA.wceq", "#T_cX", "#T_wceq", "#T_c0", "#T_wi", "#T_cA", "#T_cin", "#T_cint", "#T_cX", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_ineq2d", "#P_ineq2i", "#P_inteq", "#P_int0", "#P_inv1", "#P_syl6eq" ]
+}

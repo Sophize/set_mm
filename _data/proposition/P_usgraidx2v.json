@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See usgraidx2v on Metamath](http://us.metamath.org/mpegif/usgraidx2v.html)"
+  } ],
+  "names" : [ "usgraidx2v" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cdm", "#T_cE", "#T_crab--3", "#T_cN", "#T_wcel", "#T_cE", "#T_cfv", "#T_vx", "#T_crab--4", "#T_cF", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_crio--1", "#T_vz", "#T_crio--2", "#T_cV", "#T_cE", "#T_cfv", "#T_vy", "#T_wceq", "#T_cpr--1", "#T_vz", "#T_cpr--2", "#T_cN", "#T_cpr--3", "#T_cV", "#T_cusg", "#T_cE", "#T_wa", "#T_cN", "#T_wcel", "#T_cV", "#T_wi", "#T_cF", "#T_wf1--1", "#T_cA", "#T_wf1--2", "#T_cV", "#T_cA", "#T_vy", "#T_cE", "#T_vx", "#T_vy", "#T_vz", "#T_cE", "#T_vy", "#T_vz", "#T_cN", "#T_vx", "#T_vy", "#T_vz", "#T_cN", "#T_vy", "#T_vz", "#T_cV", "#T_vy", "#T_vz", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The mapping of indices of edges containing a given vertex into the set of vertices is 1-1.  The index is mapped to the other vertex of the edge containing the vertex N. (Contributed by Alexander van der Vekens, 4-Jan-2018.) ",
+  "statement" : "usgraidx2v.a $e |- A = { x e. dom E | N e. ( E ` x ) } $.\nusgraidx2v.f $e |- F = ( y e. A |-> ( iota_ z e. V ( E ` y ) = { z , N } ) ) $.\nusgraidx2v $p |- ( ( V USGrph E /\\ N e. V ) -> F : A -1-1-> V ) $.\n$d A y $.\n$d E x y z $.\n$d E y z $.\n$d N x y z $.\n$d N y z $.\n$d V y z $.\n$d x z $."
+}

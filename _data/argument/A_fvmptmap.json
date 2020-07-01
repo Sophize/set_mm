@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmptmap on Metamath](http://us.metamath.org/mpegif/fvmptmap.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fvmptmap.1 | |- C e. _V |\n| 2 |  | fvmptmap.2 | |- D e. _V |\n| 3 |  | fvmptmap.3 | |- R e. _V |\n| 4 |  | fvmptmap.4 | |- ( x = A -> B = C ) |\n| 5 |  | fvmptmap.5 | |- F = ( x e. ( R ^m D ) |-> B ) |\n| 6 | 3, 2 | #P_elmap | |- ( A e. ( R ^m D ) <-> A : D --> R ) |\n| 7 | 4, 5, 1 | #P_fvmpt | |- ( A e. ( R ^m D ) -> ( F ` A ) = C ) |\n| 8 | 6, 7 | #P_sylbir | |- ( A : D --> R -> ( F ` A ) = C ) |",
+  "conclusion" : "#P_fvmptmap",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wcel", "#T_cvv", "#T_cD", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cR", "#T_cmap", "#T_cD", "#T_cmpt--2", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_cmap", "#T_cD", "#T_wb", "#T_cA.wceq", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_cR", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_cmap", "#T_cD", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cA", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_cR", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_sylbir", "#P_elmap" ]
+}

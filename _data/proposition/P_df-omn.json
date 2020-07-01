@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-omn on Metamath](http://us.metamath.org/mpegif/df-omn.html)"
+  } ],
+  "names" : [ "df-omn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_comn", "#T_wceq", "#T_vj", "#T_cmpt2--1", "#T_ctop", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cuni", "#T_vj", "#T_cmpt2--4", "#T_cseq--1", "#T_cc0", "#T_vx", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vp", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_cop--1", "#T_ctopn", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vx", "#T_comi", "#T_c2nd", "#T_cfv", "#T_vx", "#T_cop--2", "#T_cc0", "#T_cicc", "#T_c1", "#T_cxp", "#T_csn--1", "#T_c2nd", "#T_cfv", "#T_vx", "#T_csn--2", "#T_cop--3", "#T_ccom", "#T_c1st", "#T_cseq--2", "#T_cop--1", "#T_cpr--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cuni", "#T_vj", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vj", "#T_cop--3", "#T_cpr--3", "#T_cop--2", "#T_vy", "#T_cop--3", "#T_vj", "#T_vp", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the n-th iterated loop space of a topological space.  Unlike ` Om1 ` this is actually a _pointed_ topological space, which is to say a tuple of a topological space (a member of ` TopSp ` , not ` Top ` ) and a point in the space.  Higher loop spaces select the constant loop at the point from the lower loop space for the distinguished point. (Contributed by Mario Carneiro, 10-Jul-2015.) ",
+  "statement" : "df-omn $p |- OmN = ( j e. Top , y e. U. j |-> seq 0 ( ( ( x e. _V , p e. _V |-> <. ( ( TopOpen ` ( 1st ` x ) ) Om1 ( 2nd ` x ) ) , ( ( 0 [,] 1 ) X. { ( 2nd ` x ) } ) >. ) o. 1st ) , <. { <. ( Base ` ndx ) , U. j >. , <. ( TopSet ` ndx ) , j >. } , y >. ) ) $.\n$d j p x y $."
+}

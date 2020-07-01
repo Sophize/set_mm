@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-lgam on Metamath](http://us.metamath.org/mpegif/df-lgam.html)"
+  } ],
+  "names" : [ "df-lgam" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clgam", "#T_wceq", "#T_vz", "#T_cmpt--1", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_cmpt--2", "#T_csu--1", "#T_vm", "#T_csu--2", "#T_cn", "#T_vz", "#T_cmul", "#T_clog", "#T_cfv", "#T_vm", "#T_caddc", "#T_c1", "#T_cdiv", "#T_vm", "#T_cmin", "#T_clog", "#T_cfv", "#T_vz", "#T_cdiv", "#T_vm", "#T_caddc", "#T_c1", "#T_cmin", "#T_clog", "#T_cfv", "#T_vz", "#T_vm", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the log-Gamma function.  We can work with this form of the gamma function a bit easier than the equivalent expression for the gamma function itself, and moreover this function is not actually equal to ` log ( _G ( x ) ) ` because the branch cuts are placed differently (we do have ` exp ( log_G ( x ) ) = _G ( x ) ` , though).  This definition is attributed to Euler, and unlike the usual integral definition is defined on the entire complex plane except the nonpositive integers ` ZZ \\ NN ` , where the function has simple poles.  (Contributed by Mario Carneiro, 12-Jul-2014.) ",
+  "statement" : "df-lgam $p |- log_G = ( z e. ( CC \\ ( ZZ \\ NN ) ) |-> ( sum_ m e. NN ( ( z x. ( log ` ( ( m + 1 ) / m ) ) ) - ( log ` ( ( z / m ) + 1 ) ) ) - ( log ` z ) ) ) $.\n$d m z $."
+}

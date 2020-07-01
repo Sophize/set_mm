@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sucidVD on Metamath](http://us.metamath.org/mpegif/sucidVD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sucid.1 | |- A e. _V |\n| 2 | 1 | #P_snid | |- A e. { A } |\n| 3 |  | #P_elun2 | |- ( A e. { A } -> A e. ( A u. { A } ) ) |\n| 4 | 2, 3 | #P_e0a | |- A e. ( A u. { A } ) |\n| 5 |  | #P_df-suc | |- suc A = ( A u. { A } ) |\n| 6 | 4, 5 | #P_eleqtrri | |- A e. suc A |\n\\\n A set belongs to its successor.  The following User's Proof is a Virtual Deduction proof completed automatically by the tools program completeusersproof.cmd, which invokes Mel L. O'Cat's mmj2 and Norm Megill's Metamath Proof Assistant. ~ sucid is ~ sucidVD without virtual deductions and was automatically derived from ~ sucidVD . <HTML> <TABLE> <TR> <TD> h1::     <TD> ` |- A e. _V   ` <TR> <TD> 2:1:     <TD> ` |- A e. { A } ` <TR> <TD> 3:2:     <TD> ` |- A e. ( A u. { A } ) ` <TR> <TD> 4::      <TD> ` |- suc A = ( A u. { A } ) ` <TR> <TD> qed:3,4: <TD> ` |- A e. suc A  ` </TABLE> </HTML> (Contributed by Alan Sare, 18-Feb-2012.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_sucid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cA", "#T_wcel", "#T_csuc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_snid", "#P_eleqtrri", "#P_e0a", "#P_df-suc", "#P_elun2" ]
+}

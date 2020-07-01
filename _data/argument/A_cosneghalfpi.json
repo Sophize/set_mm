@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cosneghalfpi on Metamath](http://us.metamath.org/mpegif/cosneghalfpi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_halfpire | |- ( _pi / 2 ) e. RR |\n| 2 | 1 | #P_recni | |- ( _pi / 2 ) e. CC |\n| 3 |  | #P_cosneg | |- ( ( _pi / 2 ) e. CC -> ( cos ` -u ( _pi / 2 ) ) = ( cos ` ( _pi / 2 ) ) ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( cos ` -u ( _pi / 2 ) ) = ( cos ` ( _pi / 2 ) ) |\n| 5 |  | #P_coshalfpi | |- ( cos ` ( _pi / 2 ) ) = 0 |\n| 6 | 4, 5 | #P_eqtri | |- ( cos ` -u ( _pi / 2 ) ) = 0 |",
+  "conclusion" : "#P_cosneghalfpi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cr", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cc", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cneg", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wceq", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_ccos", "#T_cfv", "#T_cneg", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wceq", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wceq", "#T_cc0", "#T_ccos", "#T_cfv", "#T_cneg", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cosneg", "#P_halfpire", "#P_ax-mp", "#P_eqtri", "#P_recni", "#P_coshalfpi" ]
+}

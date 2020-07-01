@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unisg on Metamath](http://us.metamath.org/mpegif/unisg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sigagensiga | |- ( A e. V -> ( sigaGen ` A ) e. ( sigAlgebra ` U. A ) ) |\n| 2 |  | #P_issgon | |- ( ( sigaGen ` A ) e. ( sigAlgebra ` U. A ) <-> ( ( sigaGen ` A ) e. U. ran sigAlgebra /\\ U. A = U. ( sigaGen ` A ) ) ) |\n| 3 | 1, 2 | #P_sylib | |- ( A e. V -> ( ( sigaGen ` A ) e. U. ran sigAlgebra /\\ U. A = U. ( sigaGen ` A ) ) ) |\n| 4 | 3 | #P_simprd | |- ( A e. V -> U. A = U. ( sigaGen ` A ) ) |\n| 5 | 4 | #P_eqcomd | |- ( A e. V -> U. ( sigaGen ` A ) = U. A ) |",
+  "conclusion" : "#P_unisg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_csiga", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_csiga", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wb", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_crn", "#T_csiga", "#T_wa", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cuni", "#T_crn", "#T_csiga", "#T_wa", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_csigagen", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_csigagen", "#T_cfv", "#T_cA", "#T_wceq", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sigagensiga", "#P_sylib", "#P_eqcomd", "#P_simprd", "#P_issgon" ]
+}

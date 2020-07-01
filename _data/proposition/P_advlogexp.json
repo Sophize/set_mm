@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See advlogexp on Metamath](http://us.metamath.org/mpegif/advlogexp.html)"
+  } ],
+  "names" : [ "advlogexp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_crp", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cr", "#T_cdv", "#T_vx", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_vx", "#T_cmul", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_clog", "#T_cfv", "#T_cA", "#T_cdiv", "#T_vx", "#T_cexp", "#T_vk", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vk", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_clog", "#T_cfv", "#T_cA", "#T_cdiv", "#T_vx", "#T_cexp", "#T_cN", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cN", "#T_cA", "#T_vk", "#T_vx", "#T_cN", "#T_vk", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The antiderivative of a power of the logarithm.  (Set ` A = 1 ` and multiply by ` ( -u 1 ) ^ N x. N ! ` to get the antiderivative of ` log ( x ) ^ N ` itself.)  (Contributed by Mario Carneiro, 22-May-2016.) ",
+  "statement" : "advlogexp $p |- ( ( A e. RR+ /\\ N e. NN0 ) -> ( RR _D ( x e. RR+ |-> ( x x. sum_ k e. ( 0 ... N ) ( ( ( log ` ( A / x ) ) ^ k ) / ( ! ` k ) ) ) ) ) = ( x e. RR+ |-> ( ( ( log ` ( A / x ) ) ^ N ) / ( ! ` N ) ) ) ) $.\n$d A k x $.\n$d N k x $."
+}

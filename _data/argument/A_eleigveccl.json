@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eleigveccl on Metamath](http://us.metamath.org/mpegif/eleigveccl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleigvec2 | |- ( T : ~H --> ~H -> ( A e. ( eigvec ` T ) <-> ( A e. ~H /\\ A =/= 0h /\\ ( T ` A ) e. ( span ` { A } ) ) ) ) |\n| 2 | 1 | #P_biimpa | |- ( ( T : ~H --> ~H /\\ A e. ( eigvec ` T ) ) -> ( A e. ~H /\\ A =/= 0h /\\ ( T ` A ) e. ( span ` { A } ) ) ) |\n| 3 | 2 | #P_simp1d | |- ( ( T : ~H --> ~H /\\ A e. ( eigvec ` T ) ) -> A e. ~H ) |",
+  "conclusion" : "#P_eleigveccl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cei", "#T_cfv", "#T_cT", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_c0v", "#T_w3a--2", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cspn", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cei", "#T_cfv", "#T_cT", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cA.wceq", "#T_wne", "#T_c0v", "#T_w3a--2", "#T_cT", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cspn", "#T_cfv", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cA", "#T_wcel", "#T_cei", "#T_cfv", "#T_cT", "#T_wi", "#T_cA", "#T_wcel", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_eleigvec2", "#P_simp1d" ]
+}

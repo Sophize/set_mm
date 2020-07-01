@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax10oe on Metamath](http://us.metamath.org/mpegif/ax10oe.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ia3 | |- ( x = y -> ( ps -> ( x = y /\\ ps ) ) ) |\n| 2 | 1 | #P_alimi | |- ( A. x x = y -> A. x ( ps -> ( x = y /\\ ps ) ) ) |\n| 3 |  | #P_exim | |- ( A. x ( ps -> ( x = y /\\ ps ) ) -> ( E. x ps -> E. x ( x = y /\\ ps ) ) ) |\n| 4 | 2, 3 | #P_syl | |- ( A. x x = y -> ( E. x ps -> E. x ( x = y /\\ ps ) ) ) |\n| 5 |  | #P_ax11e | |- ( x = y -> ( E. x ( x = y /\\ ps ) -> E. y ps ) ) |\n| 6 | 5 | #P_sps | |- ( A. x x = y -> ( E. x ( x = y /\\ ps ) -> E. y ps ) ) |\n| 7 | 4, 6 | #P_syld | |- ( A. x x = y -> ( E. x ps -> E. y ps ) ) |",
+  "conclusion" : "#P_ax10oe",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_wps", "#T_wi", "#T_wex", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wex", "#T_vx", "#T_wps", "#T_wi", "#T_wex", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exim", "#P_ax-ia3", "#P_alimi", "#P_syl", "#P_sps", "#P_ax11e", "#P_syld" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lmicl on Metamath](http://us.metamath.org/mpegif/lmicl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismid.p | |- P = ( Base ` G ) |\n| 2 |  | ismid.d | |- .- = ( dist ` G ) |\n| 3 |  | ismid.i | |- I = ( Itv ` G ) |\n| 4 |  | ismid.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | ismid.1 | |- ( ph -> G TarskiGDim>= 2 ) |\n| 6 |  | lmif.m | |- M = ( ( lInvG ` G ) ` D ) |\n| 7 |  | lmif.l | |- L = ( LineG ` G ) |\n| 8 |  | lmif.d | |- ( ph -> D e. ran L ) |\n| 9 |  | lmicl.1 | |- ( ph -> A e. P ) |\n| 10 | 1, 2, 3, 4, 5, 6, 7, 8 | #P_lmif | |- ( ph -> M : P --> P ) |\n| 11 | 10, 9 | #P_ffvelrnd | |- ( ph -> ( M ` A ) e. P ) |",
+  "conclusion" : "#P_lmicl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.mi", "#T_wceq", "#T_cds", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cG", "#T_cstrkgld", "#T_c2", "#T_cM", "#T_wceq", "#T_clmi", "#T_cfv", "#T_cG", "#T_cfv", "#T_cD", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_crn", "#T_cL", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cM", "#T_wf--1", "#T_cP", "#T_wf--2", "#T_cP", "#T_wph", "#T_wi", "#T_cM", "#T_cfv", "#T_cA", "#T_wcel", "#T_cP" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffvelrnd", "#P_lmif" ]
+}

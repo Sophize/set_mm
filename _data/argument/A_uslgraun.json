@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uslgraun on Metamath](http://us.metamath.org/mpegif/uslgraun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uslgraun.e | |- ( ph -> E Fn A ) |\n| 2 |  | uslgraun.f | |- ( ph -> F Fn B ) |\n| 3 |  | uslgraun.i | |- ( ph -> ( A i^i B ) = (/) ) |\n| 4 |  | uslgraun.ge | |- ( ph -> V USLGrph E ) |\n| 5 |  | uslgraun.gf | |- ( ph -> V USLGrph F ) |\n| 6 |  | #P_uslisumgra | |- ( V USLGrph E -> V UMGrph E ) |\n| 7 | 4, 6 | #P_syl | |- ( ph -> V UMGrph E ) |\n| 8 |  | #P_uslisumgra | |- ( V USLGrph F -> V UMGrph F ) |\n| 9 | 5, 8 | #P_syl | |- ( ph -> V UMGrph F ) |\n| 10 | 1, 2, 3, 7, 9 | #P_umgraun | |- ( ph -> V UMGrph ( E u. F ) ) |",
+  "conclusion" : "#P_uslgraun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cE", "#T_wfn", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_wfn", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_c0", "#T_wph", "#T_wi", "#T_cV", "#T_cuslg", "#T_cE", "#T_wph", "#T_wi", "#T_cV", "#T_cuslg", "#T_cF", "#T_cV", "#T_cuslg", "#T_cE", "#T_wi", "#T_cV", "#T_cumg", "#T_cE", "#T_wph", "#T_wi", "#T_cV", "#T_cumg", "#T_cE", "#T_cV", "#T_cuslg", "#T_cF", "#T_wi", "#T_cV", "#T_cumg", "#T_cF", "#T_wph", "#T_wi", "#T_cV", "#T_cumg", "#T_cF", "#T_wph", "#T_wi", "#T_cV", "#T_cumg", "#T_cE", "#T_cun", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_uslisumgra", "#P_umgraun", "#P_syl" ]
+}

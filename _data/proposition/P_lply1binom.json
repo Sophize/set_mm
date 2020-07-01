@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lply1binom on Metamath](http://us.metamath.org/mpegif/lply1binom.html)"
+  } ],
+  "names" : [ "lply1binom" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cR", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cP", "#T_c.xp", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cP", "#T_c.x", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cP", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cP", "#T_c.ex", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cN", "#T_c.ex", "#T_cX", "#T_c.pl", "#T_cA", "#T_wceq", "#T_cP", "#T_cgsu", "#T_vk", "#T_cmpt--1", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmpt--2", "#T_cN", "#T_cbc", "#T_vk", "#T_c.x", "#T_cN", "#T_cmin", "#T_vk", "#T_c.ex", "#T_cA", "#T_c.xp", "#T_vk", "#T_c.ex", "#T_cX", "#T_c.pl", "#T_vk", "#T_c.xp", "#T_vk", "#T_c.ex", "#T_vk", "#T_c.x", "#T_vk", "#T_cA", "#T_vk", "#T_cN", "#T_vk", "#T_cP", "#T_vk", "#T_cR", "#T_vk", "#T_cX", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The binomial theorem for linear polynomials (monic polynomials of degree 1) over commutative rings: ` ( X + A ) ^ N ` is the sum from ` k = 0 ` to ` N ` of ` ( N _C k ) x. ( ( A ^ ( N - k ) ) x. ( X ^ k ) ) ` .  (Contributed by AV, 25-Aug-2019.) ",
+  "statement" : "cply1binom.p $e |- P = ( Poly1 ` R ) $.\ncply1binom.x $e |- X = ( var1 ` R ) $.\ncply1binom.a $e |- .+ = ( +g ` P ) $.\ncply1binom.m $e |- .X. = ( .r ` P ) $.\ncply1binom.t $e |- .x. = ( .g ` P ) $.\ncply1binom.g $e |- G = ( mulGrp ` P ) $.\ncply1binom.e $e |- .^ = ( .g ` G ) $.\ncply1binom.b $e |- B = ( Base ` P ) $.\nlply1binom $p |- ( ( R e. CRing /\\ N e. NN0 /\\ A e. B ) -> ( N .^ ( X .+ A ) ) = ( P gsum ( k e. ( 0 ... N ) |-> ( ( N _C k ) .x. ( ( ( N - k ) .^ A ) .X. ( k .^ X ) ) ) ) ) ) $.\n$d .+ k $.\n$d .X. k $.\n$d .^ k $.\n$d .x. k $.\n$d A k $.\n$d N k $.\n$d P k $.\n$d R k $.\n$d X k $."
+}

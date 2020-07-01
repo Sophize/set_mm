@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nic-idel on Metamath](http://us.metamath.org/mpegif/nic-idel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nic-idel.1 | |- ( ph -/\\ ( ch -/\\ ps ) ) |\n| 2 |  | #P_nic-id | |- ( ch -/\\ ( ch -/\\ ch ) ) |\n| 3 | 2 | #P_nic-isw1 | |- ( ( ch -/\\ ch ) -/\\ ch ) |\n| 4 | 1 | #P_nic-imp | |- ( ( ( ch -/\\ ch ) -/\\ ch ) -/\\ ( ( ph -/\\ ( ch -/\\ ch ) ) -/\\ ( ph -/\\ ( ch -/\\ ch ) ) ) ) |\n| 5 | 3, 4 | #P_nic-mp | |- ( ph -/\\ ( ch -/\\ ch ) ) |",
+  "conclusion" : "#P_nic-idel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wps", "#T_wch", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch", "#T_wch", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch", "#T_wch", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch", "#T_wnan", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch", "#T_wnan", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch", "#T_wph", "#T_wnan", "#T_wch", "#T_wnan", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nic-id", "#P_nic-imp", "#P_nic-mp", "#P_nic-isw1" ]
+}

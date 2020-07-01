@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strcollnf on Metamath](http://us.metamath.org/mpegif/strcollnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | strcollnf.nf | |- F/ b ph |\n| 2 |  | #P_strcollnft | |- ( A. x A. y F/ b ph -> ( A. x e. a E. y ph -> E. b A. y ( y e. b <-> E. x e. a ph ) ) ) |\n| 3 | 1 | #P_ax-gen | |- A. y F/ b ph |\n| 4 | 2, 3 | #P_mpg | |- ( A. x e. a E. y ph -> E. b A. y ( y e. b <-> E. x e. a ph ) ) |",
+  "conclusion" : "#P_strcollnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vb", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vb", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_va", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wi", "#T_wex", "#T_vb", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_vb", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_va", "#T_wph", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vb", "#T_wph", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_va", "#T_wex", "#T_vy", "#T_wph", "#T_wi", "#T_wex", "#T_vb", "#T_wal", "#T_vy", "#T_vy", "#T_wcel", "#T_vb", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_va", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_strcollnft", "#P_ax-gen", "#P_mpg" ]
+}

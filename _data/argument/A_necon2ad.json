@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon2ad on Metamath](http://us.metamath.org/mpegif/necon2ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon2ad.1 | |- ( ph -> ( A = B -> -. ps ) ) |\n| 2 |  | #P_notnot1 | |- ( ps -> -. -. ps ) |\n| 3 | 1 | #P_necon3bd | |- ( ph -> ( -. -. ps -> A =/= B ) ) |\n| 4 | 2, 3 | #P_syl5 | |- ( ph -> ( ps -> A =/= B ) ) |",
+  "conclusion" : "#P_necon2ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wn", "#T_wn", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wps", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot1", "#P_necon3bd", "#P_syl5" ]
+}

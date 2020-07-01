@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See moi2 on Metamath](http://us.metamath.org/mpegif/moi2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | moi2.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_mob2 | |- ( ( A e. B /\\ E* x ph /\\ ph ) -> ( x = A <-> ps ) ) |\n| 3 | 2 | #P_3expa | |- ( ( ( A e. B /\\ E* x ph ) /\\ ph ) -> ( x = A <-> ps ) ) |\n| 4 | 3 | #P_biimprd | |- ( ( ( A e. B /\\ E* x ph ) /\\ ph ) -> ( ps -> x = A ) ) |\n| 5 | 4 | #P_impr | |- ( ( ( A e. B /\\ E* x ph ) /\\ ( ph /\\ ps ) ) -> x = A ) |",
+  "conclusion" : "#P_moi2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_w3a--2", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wmo", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wmo", "#T_vx", "#T_wph", "#T_wa", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_vx", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impr", "#P_biimprd", "#P_3expa", "#P_mob2" ]
+}

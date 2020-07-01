@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uniwun on Metamath](http://us.metamath.org/mpegif/uniwun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nu x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqv | |- ( U. WUni = _V <-> A. x x e. U. WUni ) |\n| 2 |  | #P_snex | |- { x } e. _V |\n| 3 |  | #P_wunex | |- ( { x } e. _V -> E. u e. WUni { x } C_ u ) |\n| 4 | 2, 3 | #P_ax-mp | |- E. u e. WUni { x } C_ u |\n| 5 |  | #P_eluni2 | |- ( x e. U. WUni <-> E. u e. WUni x e. u ) |\n| 6 |  | #P_vex | |- x e. _V |\n| 7 | 6 | #P_snss | |- ( x e. u <-> { x } C_ u ) |\n| 8 | 7 | #P_rexbii | |- ( E. u e. WUni x e. u <-> E. u e. WUni { x } C_ u ) |\n| 9 | 5, 8 | #P_bitri | |- ( x e. U. WUni <-> E. u e. WUni { x } C_ u ) |\n| 10 | 4, 9 | #P_mpbir | |- x e. U. WUni |\n| 11 | 1, 10 | #P_mpgbir | |- U. WUni = _V |",
+  "conclusion" : "#P_uniwun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vu", "#T_vx", "#T_cuni", "#T_cwun", "#T_wceq", "#T_cvv", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cwun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_wi", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wss", "#T_vu", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wss", "#T_vu", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cwun", "#T_wb", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_vx.wal", "#T_wcel", "#T_vu", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_vu", "#T_wb", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wss", "#T_vu", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_vx.wal", "#T_wcel", "#T_vu", "#T_wb", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wss", "#T_vu", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cwun", "#T_wb", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cwun", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wss", "#T_vu", "#T_vx.wal", "#T_wcel", "#T_cuni", "#T_cwun", "#T_cuni", "#T_cwun", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eluni2", "#P_ax-mp", "#P_snss", "#P_eqv", "#P_rexbii", "#P_wunex", "#P_vex", "#P_mpbir", "#P_bitri", "#P_mpgbir", "#P_snex" ]
+}

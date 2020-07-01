@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssini on Metamath](http://us.metamath.org/mpegif/ssini.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ssini.1 | |- A C_ B |\n| 2 |  | ssini.2 | |- A C_ C |\n| 3 | 1, 2 | #P_pm3.2i | |- ( A C_ B /\\ A C_ C ) |\n| 4 |  | #P_ssin | |- ( ( A C_ B /\\ A C_ C ) <-> A C_ ( B i^i C ) ) |\n| 5 | 3, 4 | #P_mpbi | |- A C_ ( B i^i C ) |",
+  "conclusion" : "#P_ssini",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wss", "#T_cB", "#T_cA", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_cin", "#T_cC", "#T_cA", "#T_wss", "#T_cB", "#T_cin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbi", "#P_ssin", "#P_pm3.2i" ]
+}

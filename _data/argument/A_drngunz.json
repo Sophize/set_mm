@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See drngunz on Metamath](http://us.metamath.org/mpegif/drngunz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | drngunz.z | |- .0. = ( 0g ` R ) |\n| 2 |  | drngunz.u | |- .1. = ( 1r ` R ) |\n| 3 |  | #P_drngring | |- ( R e. DivRing -> R e. Ring ) |\n| 4 |  | #P_eqid | |- ( Unit ` R ) = ( Unit ` R ) |\n| 5 | 4, 2 | #P_1unit | |- ( R e. Ring -> .1. e. ( Unit ` R ) ) |\n| 6 | 3, 5 | #P_syl | |- ( R e. DivRing -> .1. e. ( Unit ` R ) ) |\n| 7 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 8 | 7, 4, 1 | #P_drngunit | |- ( R e. DivRing -> ( .1. e. ( Unit ` R ) <-> ( .1. e. ( Base ` R ) /\\ .1. =/= .0. ) ) ) |\n| 9 | 6, 8 | #P_mpbid | |- ( R e. DivRing -> ( .1. e. ( Base ` R ) /\\ .1. =/= .0. ) ) |\n| 10 | 9 | #P_simprd | |- ( R e. DivRing -> .1. =/= .0. ) |",
+  "conclusion" : "#P_drngunz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cui", "#T_cfv", "#T_cR", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c.1", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_c.1", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_c.1", "#T_wcel", "#T_cui", "#T_cfv", "#T_cR", "#T_wb", "#T_c.1", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cR", "#T_wa", "#T_c.1", "#T_wne", "#T_c.0", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_c.1", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cR", "#T_wa", "#T_c.1", "#T_wne", "#T_c.0", "#T_cR", "#T_wcel", "#T_cdr", "#T_wi", "#T_c.1", "#T_wne", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_1unit", "#P_mpbid", "#P_drngring", "#P_syl", "#P_simprd", "#P_drngunit" ]
+}

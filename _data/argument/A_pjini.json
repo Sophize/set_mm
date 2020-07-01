@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pjini on Metamath](http://us.metamath.org/mpegif/pjini.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjocin.1 | |- G e. CH |\n| 2 |  | pjocin.2 | |- H e. CH |\n| 3 |  | #P_inss1 | |- ( G i^i H ) C_ G |\n| 4 | 3 | #P_sseli | |- ( A e. ( G i^i H ) -> A e. G ) |\n| 5 |  | #P_pjid | |- ( ( G e. CH /\\ A e. G ) -> ( ( projh ` G ) ` A ) = A ) |\n| 6 | 1, 4, 5 | #P_sylancr | |- ( A e. ( G i^i H ) -> ( ( projh ` G ) ` A ) = A ) |\n| 7 | 6 | #P_eleq1d | |- ( A e. ( G i^i H ) -> ( ( ( projh ` G ) ` A ) e. ( G i^i H ) <-> A e. ( G i^i H ) ) ) |\n| 8 | 7 | #P_ibir | |- ( A e. ( G i^i H ) -> ( ( projh ` G ) ` A ) e. ( G i^i H ) ) |",
+  "conclusion" : "#P_pjini",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cch", "#T_cH", "#T_wcel", "#T_cch", "#T_cG", "#T_cin", "#T_cH", "#T_wss", "#T_cG", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cG", "#T_wcel", "#T_cch", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_cA", "#T_wcel", "#T_cG", "#T_cin", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_cfv", "#T_cA", "#T_wcel", "#T_cG", "#T_cin", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseli", "#P_sylancr", "#P_inss1", "#P_pjid", "#P_eleq1d", "#P_ibir" ]
+}

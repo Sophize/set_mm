@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imdivd on Metamath](http://us.metamath.org/mpegif/imdivd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | crred.1 | |- ( ph -> A e. RR ) |\n| 2 |  | remul2d.2 | |- ( ph -> B e. CC ) |\n| 3 |  | redivd.2 | |- ( ph -> A =/= 0 ) |\n| 4 |  | #P_imdiv | |- ( ( B e. CC /\\ A e. RR /\\ A =/= 0 ) -> ( Im ` ( B / A ) ) = ( ( Im ` B ) / A ) ) |\n| 5 | 2, 1, 3, 4 | #P_syl3anc | |- ( ph -> ( Im ` ( B / A ) ) = ( ( Im ` B ) / A ) ) |",
+  "conclusion" : "#P_imdivd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cim", "#T_cfv", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_cim", "#T_cfv", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cim", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cA", "#T_wceq", "#T_cim", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imdiv", "#P_syl3anc" ]
+}

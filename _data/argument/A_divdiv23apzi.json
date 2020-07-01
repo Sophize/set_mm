@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divdiv23apzi on Metamath](http://us.metamath.org/mpegif/divdiv23apzi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | #P_divdiv32ap | |- ( ( A e. CC /\\ ( B e. CC /\\ B # 0 ) /\\ ( C e. CC /\\ C # 0 ) ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) |\n| 5 | 1, 4 | #P_mp3an1 | |- ( ( ( B e. CC /\\ B # 0 ) /\\ ( C e. CC /\\ C # 0 ) ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) |\n| 6 | 2, 5 | #P_mpanl1 | |- ( ( B # 0 /\\ ( C e. CC /\\ C # 0 ) ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) |\n| 7 | 3, 6 | #P_mpanr1 | |- ( ( B # 0 /\\ C # 0 ) -> ( ( A / B ) / C ) = ( ( A / C ) / B ) ) |",
+  "conclusion" : "#P_divdiv23apzi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cB.wceq", "#T_cap", "#T_cc0", "#T_wa", "#T_cC", "#T_wcel", "#T_cc", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB.wceq", "#T_cB", "#T_cap", "#T_cc0", "#T_wa", "#T_cC", "#T_cap", "#T_cc0", "#T_wi", "#T_cA", "#T_cdiv", "#T_cB", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_mpanl1", "#P_mp3an1", "#P_divdiv32ap" ]
+}

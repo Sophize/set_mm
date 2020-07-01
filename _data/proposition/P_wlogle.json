@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wlogle on Metamath](http://us.metamath.org/mpegif/wlogle.html)"
+  } ],
+  "names" : [ "wlogle" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_vx", "#T_wa", "#T_vw", "#T_wceq", "#T_vy", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vz", "#T_wceq", "#T_vy", "#T_wa", "#T_vw", "#T_wceq", "#T_vx", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cS", "#T_w3a--2", "#T_vx", "#T_cle", "#T_vy", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cS", "#T_wa", "#T_vy", "#T_wcel", "#T_cS", "#T_wi", "#T_wch", "#T_cS", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_wch", "#T_vw", "#T_vz", "#T_wph", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_wps", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the predicate ` ch ( x , y ) ` is symmetric under interchange of ` x , y ` , then \"without loss of generality\" we can assume that ` x <_ y ` .  (Contributed by Mario Carneiro, 18-Aug-2014.)  (Revised by Mario Carneiro, 11-Sep-2014.) ",
+  "statement" : "wlogle.1 $e |- ( ( z = x /\\ w = y ) -> ( ps <-> ch ) ) $.\nwlogle.2 $e |- ( ( z = y /\\ w = x ) -> ( ps <-> th ) ) $.\nwlogle.3 $e |- ( ph -> S C_ RR ) $.\nwlogle.4 $e |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ( ch <-> th ) ) $.\nwlogle.5 $e |- ( ( ph /\\ ( x e. S /\\ y e. S /\\ x <_ y ) ) -> ch ) $.\nwlogle $p |- ( ( ph /\\ ( x e. S /\\ y e. S ) ) -> ch ) $.\n$d S w x y z $.\n$d ch w z $.\n$d ph w x y z $.\n$d ps x y $."
+}

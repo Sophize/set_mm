@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lplnneat on Metamath](http://us.metamath.org/mpegif/lplnneat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lplnneat.a | |- A = ( Atoms ` K ) |\n| 2 |  | lplnneat.p | |- P = ( LPlanes ` K ) |\n| 3 |  | #P_hllat | |- ( K e. HL -> K e. Lat ) |\n| 4 |  | #P_eqid | |- ( Base ` K ) = ( Base ` K ) |\n| 5 | 4, 2 | #P_lplnbase | |- ( X e. P -> X e. ( Base ` K ) ) |\n| 6 |  | #P_eqid | |- ( le ` K ) = ( le ` K ) |\n| 7 | 4, 6 | #P_latref | |- ( ( K e. Lat /\\ X e. ( Base ` K ) ) -> X ( le ` K ) X ) |\n| 8 | 3, 5, 7 | #P_syl2an | |- ( ( K e. HL /\\ X e. P ) -> X ( le ` K ) X ) |\n| 9 | 6, 1, 2 | #P_lplnnleat | |- ( ( K e. HL /\\ X e. P /\\ X e. A ) -> -. X ( le ` K ) X ) |\n| 10 | 9 | #P_3expia | |- ( ( K e. HL /\\ X e. P ) -> ( X e. A -> -. X ( le ` K ) X ) ) |\n| 11 | 8, 10 | #P_mt2d | |- ( ( K e. HL /\\ X e. P ) -> -. X e. A ) |",
+  "conclusion" : "#P_lplnneat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cP", "#T_wceq", "#T_clpl", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_wi", "#T_cK", "#T_wcel", "#T_clat", "#T_cbs", "#T_cfv", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_cX", "#T_wcel", "#T_cP", "#T_wi", "#T_cX", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cK", "#T_cple", "#T_cfv", "#T_cK", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_cX", "#T_wcel", "#T_cbs", "#T_cfv", "#T_cK", "#T_wi", "#T_cX", "#T_cple", "#T_cfv", "#T_cK", "#T_cX", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cX", "#T_wcel", "#T_cP", "#T_wi", "#T_cX", "#T_cple", "#T_cfv", "#T_cK", "#T_cX", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cP", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cX", "#T_cple", "#T_cfv", "#T_cK", "#T_cX", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cX", "#T_wcel", "#T_cP", "#T_wi", "#T_cX", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cX", "#T_cple", "#T_cfv", "#T_cK", "#T_cX", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cX", "#T_wcel", "#T_cP", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mt2d", "#P_eqid", "#P_3expia", "#P_lplnbase", "#P_latref", "#P_lplnnleat", "#P_syl2an", "#P_hllat" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See preqr2 on Metamath](http://us.metamath.org/mpegif/preqr2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | preqr2.1 | |- A e. _V |\n| 2 |  | preqr2.2 | |- B e. _V |\n| 3 |  | #P_prcom | |- { C , A } = { A , C } |\n| 4 |  | #P_prcom | |- { C , B } = { B , C } |\n| 5 | 3, 4 | #P_eqeq12i | |- ( { C , A } = { C , B } <-> { A , C } = { B , C } ) |\n| 6 | 1, 2 | #P_preqr1 | |- ( { A , C } = { B , C } -> A = B ) |\n| 7 | 5, 6 | #P_sylbi | |- ( { C , A } = { C , B } -> A = B ) |",
+  "conclusion" : "#P_preqr2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cA.wceq", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wb", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cB.wceq", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cA", "#T_cpr--3", "#T_wceq", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_preqr1", "#P_eqeq12i", "#P_prcom", "#P_sylbi" ]
+}

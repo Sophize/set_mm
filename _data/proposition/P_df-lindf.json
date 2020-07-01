@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-lindf on Metamath](http://us.metamath.org/mpegif/df-lindf.html)"
+  } ],
+  "names" : [ "df-lindf" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clindf", "#T_wceq", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vw", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_wf--1", "#T_cdm", "#T_vf", "#T_wf--2", "#T_cbs", "#T_cfv", "#T_vw", "#T_wa", "#T_wsbc--1", "#T_csca", "#T_cfv", "#T_vw", "#T_wsbc--2", "#T_vs", "#T_wsbc--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cdm", "#T_vf", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_vs", "#T_cdif", "#T_csn--1", "#T_c0g", "#T_cfv", "#T_vs", "#T_csn--2", "#T_wn", "#T_vk", "#T_cvsca", "#T_cfv", "#T_vw", "#T_vf", "#T_cfv", "#T_vx", "#T_wcel", "#T_clspn", "#T_cfv", "#T_vw", "#T_cfv", "#T_vf", "#T_cima", "#T_cdm", "#T_vf", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_copab--6", "#T_vf", "#T_vk", "#T_vs", "#T_vw", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An independent family is a family of vectors, no nonzero multiple of which can be expressed as a linear combination of other elements of the family.  This is almost, but not quite, the same as a function into an independent set. This is a defined concept because it matters in many cases whether independence is taken at a set or family level.  For instance, a number is transcedental iff its nonzero powers are linearly independent.  Is 1 transcedental?  It has only one nonzero power. We can almost define family independence as a family of unequal elements with independent range, as ~ islindf3 , but taking that as primitive would lead to unpleasant corner case behavior with the zero ring. This is equivalent to the common definition of having no nontrivial representations of zero ( ~ islindf4 ) and only one representation for each element of the range ( ~ islindf5 ).  (Contributed by Stefan O'Rear, 24-Feb-2015.) ",
+  "statement" : "df-lindf $p |- LIndF = { <. f , w >. | ( f : dom f --> ( Base ` w ) /\\ [. ( Scalar ` w ) / s ]. A. x e. dom f A. k e. ( ( Base ` s ) \\ { ( 0g ` s ) } ) -. ( k ( .s ` w ) ( f ` x ) ) e. ( ( LSpan ` w ) ` ( f \" ( dom f \\ { x } ) ) ) ) } $.\n$d f k s w x $."
+}

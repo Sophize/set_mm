@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See birthdaylem2 on Metamath](http://us.metamath.org/mpegif/birthdaylem2.html)"
+  } ],
+  "names" : [ "birthdaylem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_vf", "#T_wf--1", "#T_c1", "#T_cfz", "#T_cK", "#T_wf--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cab--3", "#T_cT", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_vf", "#T_wf1--1", "#T_c1", "#T_cfz", "#T_cK", "#T_wf1--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cab--3", "#T_cN", "#T_wcel", "#T_cn", "#T_wa", "#T_cK", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wi", "#T_chash", "#T_cfv", "#T_cT", "#T_cdiv", "#T_chash", "#T_cfv", "#T_cS", "#T_wceq", "#T_ce", "#T_cfv", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cK", "#T_cmin", "#T_c1", "#T_clog", "#T_cfv", "#T_c1", "#T_cmin", "#T_vk", "#T_cdiv", "#T_cN", "#T_cK", "#T_vf", "#T_vk", "#T_cN", "#T_vf", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For general ` N ` and ` K ` , count the fraction of injective functions from ` 1 ... K ` to ` 1 ... N ` .  (Contributed by Mario Carneiro, 7-May-2015.) ",
+  "statement" : "birthday.s $e |- S = { f | f : ( 1 ... K ) --> ( 1 ... N ) } $.\nbirthday.t $e |- T = { f | f : ( 1 ... K ) -1-1-> ( 1 ... N ) } $.\nbirthdaylem2 $p |- ( ( N e. NN /\\ K e. ( 0 ... N ) ) -> ( ( # ` T ) / ( # ` S ) ) = ( exp ` sum_ k e. ( 0 ... ( K - 1 ) ) ( log ` ( 1 - ( k / N ) ) ) ) ) $.\n$d K f k $.\n$d N f k $."
+}

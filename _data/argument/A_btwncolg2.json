@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See btwncolg2 on Metamath](http://us.metamath.org/mpegif/btwncolg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tglngval.p | |- P = ( Base ` G ) |\n| 2 |  | tglngval.l | |- L = ( LineG ` G ) |\n| 3 |  | tglngval.i | |- I = ( Itv ` G ) |\n| 4 |  | tglngval.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | tglngval.x | |- ( ph -> X e. P ) |\n| 6 |  | tglngval.y | |- ( ph -> Y e. P ) |\n| 7 |  | tgcolg.z | |- ( ph -> Z e. P ) |\n| 8 |  | btwncolg2.z | |- ( ph -> X e. ( Z I Y ) ) |\n| 9 | 8 | #P_3mix2d | |- ( ph -> ( Z e. ( X I Y ) \\/ X e. ( Z I Y ) \\/ Y e. ( X I Z ) ) ) |\n| 10 | 1, 2, 3, 4, 5, 6, 7 | #P_tgcolg | |- ( ph -> ( ( Z e. ( X L Y ) \\/ X = Y ) <-> ( Z e. ( X I Y ) \\/ X e. ( Z I Y ) \\/ Y e. ( X I Z ) ) ) ) |\n| 11 | 9, 10 | #P_mpbird | |- ( ph -> ( Z e. ( X L Y ) \\/ X = Y ) ) |",
+  "conclusion" : "#P_btwncolg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cP", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cZ", "#T_cI", "#T_cY", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_w3o--1", "#T_cX", "#T_wcel", "#T_cZ", "#T_cI", "#T_cY", "#T_w3o--2", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_cZ", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cL", "#T_cY", "#T_wo", "#T_cX", "#T_wceq", "#T_cY", "#T_wb", "#T_cZ", "#T_wcel", "#T_cX", "#T_cI", "#T_cY", "#T_w3o--1", "#T_cX", "#T_wcel", "#T_cZ", "#T_cI", "#T_cY", "#T_w3o--2", "#T_cY", "#T_wcel", "#T_cX", "#T_cI", "#T_cZ", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cX", "#T_cL", "#T_cY", "#T_wo", "#T_cX", "#T_wceq", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgcolg", "#P_3mix2d", "#P_mpbird" ]
+}

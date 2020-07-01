@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See st0 on Metamath](http://us.metamath.org/mpegif/st0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_helch | |- ~H e. CH |\n| 2 | 1 | #P_sto2i | |- ( S e. States -> ( S ` ( _|_ ` ~H ) ) = ( 1 - ( S ` ~H ) ) ) |\n| 3 |  | #P_sthil | |- ( S e. States -> ( S ` ~H ) = 1 ) |\n| 4 | 3 | #P_oveq2d | |- ( S e. States -> ( 1 - ( S ` ~H ) ) = ( 1 - 1 ) ) |\n| 5 | 2, 4 | #P_eqtrd | |- ( S e. States -> ( S ` ( _|_ ` ~H ) ) = ( 1 - 1 ) ) |\n| 6 |  | #P_choc1 | |- ( _|_ ` ~H ) = 0H |\n| 7 | 6 | #P_fveq2i | |- ( S ` ( _|_ ` ~H ) ) = ( S ` 0H ) |\n| 8 |  | #P_1m1e0 | |- ( 1 - 1 ) = 0 |\n| 9 | 5, 7, 8 | #P_3eqtr3g | |- ( S e. States -> ( S ` 0H ) = 0 ) |",
+  "conclusion" : "#P_st0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_chil", "#T_wcel", "#T_cch", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_cort", "#T_cfv", "#T_chil", "#T_wceq", "#T_c1", "#T_cmin", "#T_cS", "#T_cfv", "#T_chil", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_chil", "#T_wceq", "#T_c1", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_c1", "#T_cmin", "#T_cS", "#T_cfv", "#T_chil", "#T_wceq", "#T_c1", "#T_cmin", "#T_c1", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_cort", "#T_cfv", "#T_chil", "#T_wceq", "#T_c1", "#T_cmin", "#T_c1", "#T_cort", "#T_cfv", "#T_chil", "#T_wceq", "#T_c0h", "#T_cS", "#T_cfv", "#T_cort", "#T_cfv", "#T_chil", "#T_wceq", "#T_cS", "#T_cfv", "#T_c0h", "#T_c1", "#T_cmin", "#T_c1", "#T_wceq", "#T_cc0", "#T_cS", "#T_wcel", "#T_cst", "#T_wi", "#T_cS", "#T_cfv", "#T_c0h", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_sto2i", "#P_1m1e0", "#P_helch", "#P_eqtrd", "#P_oveq2d", "#P_sthil", "#P_choc1", "#P_3eqtr3g" ]
+}

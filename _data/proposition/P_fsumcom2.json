@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsumcom2 on Metamath](http://us.metamath.org/mpegif/fsumcom2.html)"
+  } ],
+  "names" : [ "fsumcom2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wb", "#T_vk", "#T_wcel", "#T_cC", "#T_wa", "#T_vj", "#T_wcel", "#T_cD", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cE", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cE", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cC", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cD", "#T_cE", "#T_cA", "#T_vj", "#T_vk", "#T_cB", "#T_vk", "#T_cC", "#T_vj", "#T_vk", "#T_cD", "#T_vj", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Interchange order of summation.  Note that ` B ( j ) ` and ` D ( k ) ` are not necessarily constant expressions.  (Contributed by Mario Carneiro, 28-Apr-2014.)  (Revised by Mario Carneiro, 8-Apr-2016.) ",
+  "statement" : "fsumcom2.1 $e |- ( ph -> A e. Fin ) $.\nfsumcom2.2 $e |- ( ph -> C e. Fin ) $.\nfsumcom2.3 $e |- ( ( ph /\\ j e. A ) -> B e. Fin ) $.\nfsumcom2.4 $e |- ( ph -> ( ( j e. A /\\ k e. B ) <-> ( k e. C /\\ j e. D ) ) ) $.\nfsumcom2.5 $e |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> E e. CC ) $.\nfsumcom2 $p |- ( ph -> sum_ j e. A sum_ k e. B E = sum_ k e. C sum_ j e. D E ) $.\n$d A j k $.\n$d B k $.\n$d C j k $.\n$d D j $.\n$d j k ph $."
+}

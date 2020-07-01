@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decadd on Metamath](http://us.metamath.org/mpegif/decadd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | decma.1 | |- A e. NN0 |\n| 2 |  | decma.2 | |- B e. NN0 |\n| 3 |  | decma.3 | |- C e. NN0 |\n| 4 |  | decma.4 | |- D e. NN0 |\n| 5 |  | decma.5 | |- M = ; A B |\n| 6 |  | decma.6 | |- N = ; C D |\n| 7 |  | decadd.7 | |- ( A + C ) = E |\n| 8 |  | decadd.8 | |- ( B + D ) = F |\n| 9 |  | #P_10nn0 | |- 10 e. NN0 |\n| 10 |  | #P_df-dec | |- ; A B = ( ( 10 x. A ) + B ) |\n| 11 | 5, 10 | #P_eqtri | |- M = ( ( 10 x. A ) + B ) |\n| 12 |  | #P_df-dec | |- ; C D = ( ( 10 x. C ) + D ) |\n| 13 | 6, 12 | #P_eqtri | |- N = ( ( 10 x. C ) + D ) |\n| 14 | 9, 1, 2, 3, 4, 11, 13, 7, 8 | #P_numadd | |- ( M + N ) = ( ( 10 x. E ) + F ) |\n| 15 |  | #P_df-dec | |- ; E F = ( ( 10 x. E ) + F ) |\n| 16 | 14, 15 | #P_eqtr4i | |- ( M + N ) = ; E F |",
+  "conclusion" : "#P_decadd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cM", "#T_wceq", "#T_cdc", "#T_cA", "#T_cB", "#T_cN", "#T_wceq", "#T_cdc", "#T_cC", "#T_cD", "#T_cA", "#T_caddc", "#T_cC", "#T_wceq", "#T_cE", "#T_cB", "#T_caddc", "#T_cD", "#T_wceq", "#T_cF", "#T_c10", "#T_wcel", "#T_cn0", "#T_cdc", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cM", "#T_wceq", "#T_c10", "#T_cmul", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdc", "#T_cC", "#T_cD", "#T_wceq", "#T_c10", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cN", "#T_wceq", "#T_c10", "#T_cmul", "#T_cC", "#T_caddc", "#T_cD", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_c10", "#T_cmul", "#T_cE", "#T_caddc", "#T_cF", "#T_cdc", "#T_cE", "#T_cF", "#T_wceq", "#T_c10", "#T_cmul", "#T_cE", "#T_caddc", "#T_cF", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cdc", "#T_cE", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_eqtri", "#P_df-dec", "#P_10nn0", "#P_numadd" ]
+}

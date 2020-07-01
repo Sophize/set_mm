@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pssdifn0 on Metamath](http://us.metamath.org/mpegif/pssdifn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssdif0 | |- ( B C_ A <-> ( B \\ A ) = (/) ) |\n| 2 |  | #P_eqss | |- ( A = B <-> ( A C_ B /\\ B C_ A ) ) |\n| 3 | 2 | #P_simplbi2 | |- ( A C_ B -> ( B C_ A -> A = B ) ) |\n| 4 | 1, 3 | #P_syl5bir | |- ( A C_ B -> ( ( B \\ A ) = (/) -> A = B ) ) |\n| 5 | 4 | #P_necon3d | |- ( A C_ B -> ( A =/= B -> ( B \\ A ) =/= (/) ) ) |\n| 6 | 5 | #P_imp | |- ( ( A C_ B /\\ A =/= B ) -> ( B \\ A ) =/= (/) ) |",
+  "conclusion" : "#P_pssdifn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cdif", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_cA", "#T_wss", "#T_cB", "#T_wa", "#T_cA", "#T_wne", "#T_cB", "#T_wi", "#T_cB", "#T_cdif", "#T_cA", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3d", "#P_simplbi2", "#P_syl5bir", "#P_eqss", "#P_imp", "#P_ssdif0" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubval on Metamath](http://us.metamath.org/mpegif/hvsubval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq1 | |- ( x = A -> ( x +h ( -u 1 .h y ) ) = ( A +h ( -u 1 .h y ) ) ) |\n| 2 |  | #P_oveq2 | |- ( y = B -> ( -u 1 .h y ) = ( -u 1 .h B ) ) |\n| 3 | 2 | #P_oveq2d | |- ( y = B -> ( A +h ( -u 1 .h y ) ) = ( A +h ( -u 1 .h B ) ) ) |\n| 4 |  | #P_df-hvsub | |- -h = ( x e. ~H , y e. ~H |-> ( x +h ( -u 1 .h y ) ) ) |\n| 5 |  | #P_ovex | |- ( A +h ( -u 1 .h B ) ) e. _V |\n| 6 | 1, 3, 4, 5 | #P_ovmpt2 | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A -h B ) = ( A +h ( -u 1 .h B ) ) ) |",
+  "conclusion" : "#P_hvsubval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_wceq", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_cmv", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_chil", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_chil", "#T_cmpt2--4", "#T_vx.wal", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_vy.tru", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_chil", "#T_wa", "#T_cB", "#T_wcel", "#T_chil", "#T_wi", "#T_cA", "#T_cmv", "#T_cB", "#T_wceq", "#T_cA", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-hvsub", "#P_ovex", "#P_oveq2", "#P_oveq2d", "#P_oveq1", "#P_ovmpt2" ]
+}

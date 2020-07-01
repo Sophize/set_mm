@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subccat on Metamath](http://us.metamath.org/mpegif/subccat.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subccat.1 | |- D = ( C |`cat J ) |\n| 2 |  | subccat.j | |- ( ph -> J e. ( Subcat ` C ) ) |\n| 3 |  | #P_eqidd | |- ( ph -> dom dom J = dom dom J ) |\n| 4 | 2, 3 | #P_subcfn | |- ( ph -> J Fn ( dom dom J X. dom dom J ) ) |\n| 5 |  | #P_eqid | |- ( Id ` C ) = ( Id ` C ) |\n| 6 | 1, 2, 4, 5 | #P_subccatid | |- ( ph -> ( D e. Cat /\\ ( Id ` D ) = ( x e. dom dom J |-> ( ( Id ` C ) ` x ) ) ) ) |\n| 7 | 6 | #P_simpld | |- ( ph -> D e. Cat ) |",
+  "conclusion" : "#P_subccat",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cD", "#T_wceq", "#T_cC", "#T_cresc", "#T_cJ", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_csubc", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cdm", "#T_cdm", "#T_cJ", "#T_wceq", "#T_cdm", "#T_cdm", "#T_cJ", "#T_wph", "#T_wi", "#T_cJ", "#T_wfn", "#T_cdm", "#T_cdm", "#T_cJ", "#T_cxp", "#T_cdm", "#T_cdm", "#T_cJ", "#T_ccid", "#T_cfv", "#T_cC", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat", "#T_wa", "#T_ccid", "#T_cfv", "#T_cD", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cdm", "#T_cdm", "#T_cJ", "#T_cmpt--2", "#T_ccid", "#T_cfv", "#T_cC", "#T_cfv", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ccat" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_subccatid", "#P_simpld", "#P_eqidd", "#P_subcfn" ]
+}

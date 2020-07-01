@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspexch on Metamath](http://us.metamath.org/mpegif/lspexch.html)"
+  } ],
+  "names" : [ "lspexch" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clvec", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c.0", "#T_csn--2", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wne", "#T_cN", "#T_cfv", "#T_csn--1", "#T_cZ", "#T_csn--2", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cY", "#T_cpr--2", "#T_cZ", "#T_cpr--3", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cZ", "#T_cpr--3" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Exchange property for span of a pair.  TODO: see if a version with Y,Z and X,Z reversed will shorten proofs (analogous to ~ lspexchn1 vs. ~ lspexchn2 ); look for ~ lspexch and ~ prcom in same proof.  TODO: would a hypothesis of ` -. X e. ( N `` { Z } ) ` instead of ` ( N `` { X } ) =/= ( N ` { Z } ) `` be better overall?  This would be shorter and also satisfy the ` X =/= .0. ` condition.  Here and also lspindp* and all proofs affected by them (all in NM's mathbox); there are 58 hypotheses with the ` =/= ` pattern as of 24-May-2015. (Contributed by NM, 11-Apr-2015.) ",
+  "statement" : "lspexch.v $e |- V = ( Base ` W ) $.\nlspexch.o $e |- .0. = ( 0g ` W ) $.\nlspexch.n $e |- N = ( LSpan ` W ) $.\nlspexch.w $e |- ( ph -> W e. LVec ) $.\nlspexch.x $e |- ( ph -> X e. ( V \\ { .0. } ) ) $.\nlspexch.y $e |- ( ph -> Y e. V ) $.\nlspexch.z $e |- ( ph -> Z e. V ) $.\nlspexch.q $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Z } ) ) $.\nlspexch.e $e |- ( ph -> X e. ( N ` { Y , Z } ) ) $.\nlspexch $p |- ( ph -> Y e. ( N ` { X , Z } ) ) $."
+}

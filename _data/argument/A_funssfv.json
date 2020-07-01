@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funssfv on Metamath](http://us.metamath.org/mpegif/funssfv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fvres | |- ( A e. dom G -> ( ( F |` dom G ) ` A ) = ( F ` A ) ) |\n| 2 | 1 | #P_eqcomd | |- ( A e. dom G -> ( F ` A ) = ( ( F |` dom G ) ` A ) ) |\n| 3 |  | #P_funssres | |- ( ( Fun F /\\ G C_ F ) -> ( F |` dom G ) = G ) |\n| 4 | 3 | #P_fveq1d | |- ( ( Fun F /\\ G C_ F ) -> ( ( F |` dom G ) ` A ) = ( G ` A ) ) |\n| 5 | 2, 4 | #P_sylan9eqr | |- ( ( ( Fun F /\\ G C_ F ) /\\ A e. dom G ) -> ( F ` A ) = ( G ` A ) ) |\n| 6 | 5 | #P_3impa | |- ( ( Fun F /\\ G C_ F /\\ A e. dom G ) -> ( F ` A ) = ( G ` A ) ) |",
+  "conclusion" : "#P_funssfv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cG", "#T_wi", "#T_cF", "#T_cres", "#T_cdm", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cG", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_cres", "#T_cdm", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wa", "#T_cG", "#T_wss", "#T_cF", "#T_wi", "#T_cF", "#T_cres", "#T_cdm", "#T_cG", "#T_wceq", "#T_cG", "#T_wfun", "#T_cF", "#T_wa", "#T_cG", "#T_wss", "#T_cF", "#T_wi", "#T_cF", "#T_cres", "#T_cdm", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_wa", "#T_cG", "#T_wss", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cG", "#T_wi", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cG", "#T_cfv", "#T_cA.wceq", "#T_wfun", "#T_cF", "#T_w3a--1", "#T_cG", "#T_wss", "#T_cF", "#T_w3a--2", "#T_cA", "#T_wcel", "#T_cdm", "#T_cG", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wceq", "#T_cG", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan9eqr", "#P_fvres", "#P_fveq1d", "#P_eqcomd", "#P_funssres", "#P_3impa" ]
+}

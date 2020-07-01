@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cleljustALT on Metamath](http://us.metamath.org/mpegif/cleljustALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfv | |- F/ z x e. y |\n| 2 |  | #P_elequ1 | |- ( z = x -> ( z e. y <-> x e. y ) ) |\n| 3 | 1, 2 | #P_equsex | |- ( E. z ( z = x /\\ z e. y ) <-> x e. y ) |\n| 4 | 3 | #P_bicomi | |- ( x e. y <-> E. z ( z = x /\\ z e. y ) ) |\n\\\n Alternate proof of ~ cleljust .  (Contributed by NM, 28-Jan-2004.) (Revised by Mario Carneiro, 21-Dec-2016.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_cleljust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vz", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_vz", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_vy.tru", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_elequ1", "#P_bicomi", "#P_equsex" ]
+}

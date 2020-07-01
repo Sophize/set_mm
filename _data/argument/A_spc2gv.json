@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spc2gv on Metamath](http://us.metamath.org/mpegif/spc2gv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spc2egv.1 | |- ( ( x = A /\\ y = B ) -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_notbid | |- ( ( x = A /\\ y = B ) -> ( -. ph <-> -. ps ) ) |\n| 3 | 2 | #P_spc2egv | |- ( ( A e. V /\\ B e. W ) -> ( -. ps -> E. x E. y -. ph ) ) |\n| 4 |  | #P_2nalexn | |- ( -. A. x A. y ph <-> E. x E. y -. ph ) |\n| 5 | 3, 4 | #P_syl6ibr | |- ( ( A e. V /\\ B e. W ) -> ( -. ps -> -. A. x A. y ph ) ) |\n| 6 | 5 | #P_con4d | |- ( ( A e. V /\\ B e. W ) -> ( A. x A. y ph -> ps ) ) |",
+  "conclusion" : "#P_spc2gv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wn", "#T_wph", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wn", "#T_wph", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wph", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_wal", "#T_vx", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2nalexn", "#P_spc2egv", "#P_syl6ibr", "#P_notbid", "#P_con4d" ]
+}

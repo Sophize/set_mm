@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oteqex2 on Metamath](http://us.metamath.org/mpegif/oteqex2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opeqex | |- ( <. <. A , B >. , C >. = <. <. R , S >. , T >. -> ( ( <. A , B >. e. _V /\\ C e. _V ) <-> ( <. R , S >. e. _V /\\ T e. _V ) ) ) |\n| 2 |  | #P_opex | |- <. A , B >. e. _V |\n| 3 | 2 | #P_biantrur | |- ( C e. _V <-> ( <. A , B >. e. _V /\\ C e. _V ) ) |\n| 4 |  | #P_opex | |- <. R , S >. e. _V |\n| 5 | 4 | #P_biantrur | |- ( T e. _V <-> ( <. R , S >. e. _V /\\ T e. _V ) ) |\n| 6 | 1, 3, 5 | #P_3bitr4g | |- ( <. <. A , B >. , C >. = <. <. R , S >. , T >. -> ( C e. _V <-> T e. _V ) ) |",
+  "conclusion" : "#P_oteqex2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cR", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_cop--2", "#T_cT", "#T_cop--3", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv", "#T_wb", "#T_cop--1", "#T_cR", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cT", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_wb", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cR", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cT", "#T_wcel", "#T_cvv", "#T_wb", "#T_cop--1", "#T_cR", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cT", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cR", "#T_cop--2", "#T_cS", "#T_cop--3", "#T_cop--2", "#T_cT", "#T_cop--3", "#T_wi", "#T_cC", "#T_wcel", "#T_cvv", "#T_wb", "#T_cT", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biantrur", "#P_opex", "#P_3bitr4g", "#P_opeqex" ]
+}

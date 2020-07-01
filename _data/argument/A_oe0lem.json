@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oe0lem on Metamath](http://us.metamath.org/mpegif/oe0lem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oe0lem.1 | |- ( ( ph /\\ A = (/) ) -> ps ) |\n| 2 |  | oe0lem.2 | |- ( ( ( A e. On /\\ ph ) /\\ (/) e. A ) -> ps ) |\n| 3 | 1 | #P_ex | |- ( ph -> ( A = (/) -> ps ) ) |\n| 4 | 3 | #P_adantl | |- ( ( A e. On /\\ ph ) -> ( A = (/) -> ps ) ) |\n| 5 |  | #P_on0eln0 | |- ( A e. On -> ( (/) e. A <-> A =/= (/) ) ) |\n| 6 | 5 | #P_adantr | |- ( ( A e. On /\\ ph ) -> ( (/) e. A <-> A =/= (/) ) ) |\n| 7 | 2 | #P_ex | |- ( ( A e. On /\\ ph ) -> ( (/) e. A -> ps ) ) |\n| 8 | 6, 7 | #P_sylbird | |- ( ( A e. On /\\ ph ) -> ( A =/= (/) -> ps ) ) |\n| 9 | 4, 8 | #P_pm2.61dne | |- ( ( A e. On /\\ ph ) -> ps ) |",
+  "conclusion" : "#P_oe0lem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_cA", "#T_wceq", "#T_c0", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wa", "#T_c0", "#T_wcel", "#T_cA", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wi", "#T_c0", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wps", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_on0eln0", "#P_adantl", "#P_ex", "#P_adantr", "#P_sylbird", "#P_pm2.61dne" ]
+}

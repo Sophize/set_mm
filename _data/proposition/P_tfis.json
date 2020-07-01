@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfis on Metamath](http://us.metamath.org/mpegif/tfis.html)"
+  } ],
+  "names" : [ "tfis" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph", "#T_wi", "#T_wph", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wph", "#T_wph", "#T_vy", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfinite Induction Schema.  If all ordinal numbers less than a given number ` x ` have a property (induction hypothesis), then all ordinal numbers have the property (conclusion).  Exercise 25 of [Enderton] p. 200.  (Contributed by NM, 1-Aug-1994.)  (Revised by Mario Carneiro, 20-Nov-2016.) ",
+  "statement" : "tfis.1 $e |- ( x e. On -> ( A. y e. x [ y / x ] ph -> ph ) ) $.\ntfis $p |- ( x e. On -> ph ) $.\n$d ph y $.\n$d x y $."
+}

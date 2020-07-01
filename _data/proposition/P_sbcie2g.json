@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbcie2g on Metamath](http://us.metamath.org/mpegif/sbcie2g.html)"
+  } ],
+  "names" : [ "sbcie2g" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_wb", "#T_wch", "#T_cA", "#T_vy", "#T_wch", "#T_vy", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Conversion of implicit substitution to explicit class substitution. This version of ~ sbcie avoids a disjointness condition on ` x , A ` by substituting twice.  (Contributed by Mario Carneiro, 15-Oct-2016.) \n\n---\n\n Conversion of implicit substitution to explicit class substitution. This version of ~ sbcie avoids a disjointness condition on ` x ` and ` A ` by substituting twice.  (Contributed by Mario Carneiro, 15-Oct-2016.) ",
+  "statement" : "sbcie2g.1 $e |- ( x = y -> ( ph <-> ps ) ) $.\nsbcie2g.2 $e |- ( y = A -> ( ps <-> ch ) ) $.\nsbcie2g $p |- ( A e. V -> ( [. A / x ]. ph <-> ch ) ) $.\n$d A y $.\n$d ch y $.\n$d ph y $.\n$d ps x $.\n$d x y $."
+}

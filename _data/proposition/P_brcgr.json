@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See brcgr on Metamath](http://us.metamath.org/mpegif/brcgr.html)"
+  } ],
+  "names" : [ "brcgr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wa", "#T_cB", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wa", "#T_cC", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wa", "#T_cD", "#T_wcel", "#T_cee", "#T_cfv", "#T_cN", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ccgr", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wb", "#T_csu--1", "#T_vi", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cA", "#T_cfv", "#T_vi", "#T_cmin", "#T_cB", "#T_cfv", "#T_vi", "#T_cexp", "#T_c2", "#T_wceq", "#T_csu--1", "#T_vi", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cN", "#T_cC", "#T_cfv", "#T_vi", "#T_cmin", "#T_cD", "#T_cfv", "#T_vi", "#T_cexp", "#T_c2", "#T_cA", "#T_vi", "#T_cB", "#T_vi", "#T_cC", "#T_vi", "#T_cD", "#T_vi", "#T_cN", "#T_vi" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The binary relationship form of the congruence predicate.  The statement ` <. A , B >. Cgr <. C , D >. ` should be read informally as \"the ` N ` dimensional point ` A ` is as far from ` B ` as ` C ` is from ` D ` , or \"the line segment ` A B ` is congruent to the line segment ` C D ` . This particular definition is encapsulated by Tarski's axioms later on. (Contributed by Scott Fenton, 3-Jun-2013.) ",
+  "statement" : "brcgr $p |- ( ( ( A e. ( EE ` N ) /\\ B e. ( EE ` N ) ) /\\ ( C e. ( EE ` N ) /\\ D e. ( EE ` N ) ) ) -> ( <. A , B >. Cgr <. C , D >. <-> sum_ i e. ( 1 ... N ) ( ( ( A ` i ) - ( B ` i ) ) ^ 2 ) = sum_ i e. ( 1 ... N ) ( ( ( C ` i ) - ( D ` i ) ) ^ 2 ) ) ) $.\n$d A i $.\n$d B i $.\n$d C i $.\n$d D i $.\n$d N i $."
+}

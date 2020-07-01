@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acacni on Metamath](http://us.metamath.org/mpegif/acacni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( CHOICE /\\ A e. V ) -> A e. V ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 |  | #P_simpl | |- ( ( CHOICE /\\ A e. V ) -> CHOICE ) |\n| 4 |  | #P_dfac10 | |- ( CHOICE <-> dom card = _V ) |\n| 5 | 3, 4 | #P_sylib | |- ( ( CHOICE /\\ A e. V ) -> dom card = _V ) |\n| 6 | 2, 5 | #P_syl5eleqr | |- ( ( CHOICE /\\ A e. V ) -> x e. dom card ) |\n| 7 |  | #P_numacn | |- ( A e. V -> ( x e. dom card -> x e. AC_ A ) ) |\n| 8 | 1, 6, 7 | #P_sylc | |- ( ( CHOICE /\\ A e. V ) -> x e. AC_ A ) |\n| 9 | 2 | #P_a1i | |- ( ( CHOICE /\\ A e. V ) -> x e. _V ) |\n| 10 | 8, 9 | #P_2thd | |- ( ( CHOICE /\\ A e. V ) -> ( x e. AC_ A <-> x e. _V ) ) |\n| 11 | 10 | #P_eqrdv | |- ( ( CHOICE /\\ A e. V ) -> AC_ A = _V ) |",
+  "conclusion" : "#P_acacni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wac", "#T_wac", "#T_wb", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wa", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wacn", "#T_cA", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2thd", "#P_sylc", "#P_sylib", "#P_simpr", "#P_vex", "#P_numacn", "#P_a1i", "#P_eqrdv", "#P_simpl", "#P_syl5eleqr", "#P_dfac10" ]
+}

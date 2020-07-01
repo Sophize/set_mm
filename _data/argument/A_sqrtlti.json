@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sqrtlti on Metamath](http://us.metamath.org/mpegif/sqrtlti.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sqrth.1 | |- A e. RR |\n| 2 |  | sqr11.1 | |- B e. RR |\n| 3 |  | #P_sqrtlt | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ ( B e. RR /\\ 0 <_ B ) ) -> ( A < B <-> ( sqrt ` A ) < ( sqrt ` B ) ) ) |\n| 4 | 2, 3 | #P_mpanr1 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ 0 <_ B ) -> ( A < B <-> ( sqrt ` A ) < ( sqrt ` B ) ) ) |\n| 5 | 1, 4 | #P_mpanl1 | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( A < B <-> ( sqrt ` A ) < ( sqrt ` B ) ) ) |",
+  "conclusion" : "#P_sqrtlti",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_wb", "#T_csqrt", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_csqrt", "#T_cfv", "#T_cB.wceq", "#T_cc0", "#T_cle", "#T_cA", "#T_wa", "#T_cc0", "#T_cle", "#T_cB", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wb", "#T_csqrt", "#T_cfv", "#T_cA", "#T_clt", "#T_csqrt", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpanr1", "#P_mpanl1", "#P_sqrtlt" ]
+}

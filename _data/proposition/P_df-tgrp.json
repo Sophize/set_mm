@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-tgrp on Metamath](http://us.metamath.org/mpegif/df-tgrp.html)"
+  } ],
+  "names" : [ "df-tgrp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctgrp", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vw", "#T_cmpt--1", "#T_clh", "#T_cfv", "#T_vk", "#T_cmpt--2", "#T_cpr--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cltrn", "#T_cfv", "#T_vk", "#T_cfv", "#T_vw", "#T_cop--3", "#T_cpr--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_vf", "#T_cmpt2--1", "#T_cltrn", "#T_cfv", "#T_vk", "#T_cfv", "#T_vw", "#T_cmpt2--2", "#T_vg", "#T_cmpt2--3", "#T_cltrn", "#T_cfv", "#T_vk", "#T_cfv", "#T_vw", "#T_cmpt2--4", "#T_vf", "#T_ccom", "#T_vg", "#T_cop--3", "#T_cpr--3", "#T_vf", "#T_vg", "#T_vk", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of all translation groups. ` k ` is normally a member of ` HL ` .  Each base set is the set of all lattice translations with respect to a hyperplane ` w ` , and the operation is function composition.  Similar to definition of G in [Crawley] p. 116, third paragraph (which defines this for geomodular lattices).  (Contributed by NM, 5-Jun-2013.) ",
+  "statement" : "df-tgrp $p |- TGrp = ( k e. _V |-> ( w e. ( LHyp ` k ) |-> { <. ( Base ` ndx ) , ( ( LTrn ` k ) ` w ) >. , <. ( +g ` ndx ) , ( f e. ( ( LTrn ` k ) ` w ) , g e. ( ( LTrn ` k ) ` w ) |-> ( f o. g ) ) >. } ) ) $.\n$d f g k w $."
+}

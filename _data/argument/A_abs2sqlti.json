@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abs2sqlti on Metamath](http://us.metamath.org/mpegif/abs2sqlti.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abs2sqlti.1 | |- A e. CC |\n| 2 |  | abs2sqlti.2 | |- B e. CC |\n| 3 | 1 | #P_absge0i | |- 0 <_ ( abs ` A ) |\n| 4 | 2 | #P_absge0i | |- 0 <_ ( abs ` B ) |\n| 5 | 1 | #P_abscli | |- ( abs ` A ) e. RR |\n| 6 | 2 | #P_abscli | |- ( abs ` B ) e. RR |\n| 7 | 5, 6 | #P_lt2sqi | |- ( ( 0 <_ ( abs ` A ) /\\ 0 <_ ( abs ` B ) ) -> ( ( abs ` A ) < ( abs ` B ) <-> ( ( abs ` A ) ^ 2 ) < ( ( abs ` B ) ^ 2 ) ) ) |\n| 8 | 3, 4, 7 | #P_mp2an | |- ( ( abs ` A ) < ( abs ` B ) <-> ( ( abs ` A ) ^ 2 ) < ( ( abs ` B ) ^ 2 ) ) |",
+  "conclusion" : "#P_abs2sqlti",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_c2", "#T_clt", "#T_cabs", "#T_cfv", "#T_cB.wceq", "#T_cexp", "#T_c2", "#T_cabs", "#T_cfv", "#T_cA", "#T_clt", "#T_cabs", "#T_cfv", "#T_cB", "#T_wb", "#T_cabs", "#T_cfv", "#T_cA", "#T_cexp", "#T_c2", "#T_clt", "#T_cabs", "#T_cfv", "#T_cB", "#T_cexp", "#T_c2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_abscli", "#P_lt2sqi", "#P_absge0i" ]
+}

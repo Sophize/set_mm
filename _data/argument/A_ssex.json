@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssex on Metamath](http://us.metamath.org/mpegif/ssex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ssex.1 | |- B e. _V |\n| 2 |  | #P_df-ss | |- ( A C_ B <-> ( A i^i B ) = A ) |\n| 3 | 1 | #P_inex2 | |- ( A i^i B ) e. _V |\n| 4 |  | #P_eleq1 | |- ( ( A i^i B ) = A -> ( ( A i^i B ) e. _V <-> A e. _V ) ) |\n| 5 | 3, 4 | #P_mpbii | |- ( ( A i^i B ) = A -> A e. _V ) |\n| 6 | 2, 5 | #P_sylbi | |- ( A C_ B -> A e. _V ) |",
+  "conclusion" : "#P_ssex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ss", "#P_mpbii", "#P_eleq1", "#P_inex2", "#P_sylbi" ]
+}

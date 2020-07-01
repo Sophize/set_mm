@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrab2 on Metamath](http://us.metamath.org/mpegif/elrab2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | elrab2.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | elrab2.2 | |- C = { x e. B | ph } |\n| 3 | 2 | #P_eleq2i | |- ( A e. C <-> A e. { x e. B | ph } ) |\n| 4 | 1 | #P_elrab | |- ( A e. { x e. B | ph } <-> ( A e. B /\\ ps ) ) |\n| 5 | 3, 4 | #P_bitri | |- ( A e. C <-> ( A e. B /\\ ps ) ) |",
+  "conclusion" : "#P_elrab2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cC", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_cA.wceq", "#T_wcel", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_cB.wceq", "#T_crab--3", "#T_wph", "#T_crab--4", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wps", "#T_cA", "#T_wcel", "#T_cC", "#T_wb", "#T_cA", "#T_wcel", "#T_cB", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab", "#P_eleq2i", "#P_bitri" ]
+}

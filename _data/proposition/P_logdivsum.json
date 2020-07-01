@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See logdivsum on Metamath](http://us.metamath.org/mpegif/logdivsum.html)"
+  } ],
+  "names" : [ "logdivsum" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_crp", "#T_cmpt--2", "#T_csu--1", "#T_vi", "#T_csu--2", "#T_c1", "#T_cfz", "#T_cfl", "#T_cfv", "#T_vy", "#T_clog", "#T_cfv", "#T_vi", "#T_cdiv", "#T_vi", "#T_cmin", "#T_clog", "#T_cfv", "#T_vy", "#T_cexp", "#T_c2", "#T_cdiv", "#T_c2", "#T_cF", "#T_wf--1", "#T_crp", "#T_wf--2", "#T_cr", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cdm", "#T_crli", "#T_w3a--2", "#T_cF", "#T_crli", "#T_cL", "#T_w3a--1", "#T_cA", "#T_wcel", "#T_crp", "#T_w3a--2", "#T_ceu", "#T_cle", "#T_cA", "#T_wi", "#T_cabs", "#T_cfv", "#T_cF", "#T_cfv", "#T_cA", "#T_cmin", "#T_cL", "#T_cle", "#T_clog", "#T_cfv", "#T_cA", "#T_cdiv", "#T_cA", "#T_cA", "#T_vi", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Asymptotic analysis of ` sum_ n <_ x , log n / n = ( log x ) ^ 2 / 2 + L + O ( log x / x ) ` . (Contributed by Mario Carneiro, 18-May-2016.) ",
+  "statement" : "logdivsum.1 $e |- F = ( y e. RR+ |-> ( sum_ i e. ( 1 ... ( |_ ` y ) ) ( ( log ` i ) / i ) - ( ( ( log ` y ) ^ 2 ) / 2 ) ) ) $.\nlogdivsum $p |- ( F : RR+ --> RR /\\ F e. dom ~~>r /\\ ( ( F ~~>r L /\\ A e. RR+ /\\ _e <_ A ) -> ( abs ` ( ( F ` A ) - L ) ) <_ ( ( log ` A ) / A ) ) ) $.\n$d A i y $."
+}

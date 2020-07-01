@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3ianorr on Metamath](http://us.metamath.org/mpegif/3ianorr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simp1 | |- ( ( ph /\\ ps /\\ ch ) -> ph ) |\n| 2 | 1 | #P_con3i | |- ( -. ph -> -. ( ph /\\ ps /\\ ch ) ) |\n| 3 |  | #P_simp2 | |- ( ( ph /\\ ps /\\ ch ) -> ps ) |\n| 4 | 3 | #P_con3i | |- ( -. ps -> -. ( ph /\\ ps /\\ ch ) ) |\n| 5 |  | #P_simp3 | |- ( ( ph /\\ ps /\\ ch ) -> ch ) |\n| 6 | 5 | #P_con3i | |- ( -. ch -> -. ( ph /\\ ps /\\ ch ) ) |\n| 7 | 2, 4, 6 | #P_3jaoi | |- ( ( -. ph \\/ -. ps \\/ -. ch ) -> -. ( ph /\\ ps /\\ ch ) ) |",
+  "conclusion" : "#P_3ianorr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wps", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wch", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wn", "#T_wph", "#T_w3o--1", "#T_wn", "#T_wps", "#T_w3o--2", "#T_wn", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simp3", "#P_con3i", "#P_simp2", "#P_3jaoi", "#P_simp1" ]
+}

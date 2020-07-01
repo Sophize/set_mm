@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See celaront on Metamath](http://us.metamath.org/mpegif/celaront.html)"
+  } ],
+  "names" : [ "celaront" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " \"Celaront\", one of the syllogisms of Aristotelian logic.  No ` ph ` is ` ps ` , all ` ch ` is ` ph ` , and some ` ch ` exist, therefore some ` ch ` is not ` ps ` .  (In Aristotelian notation, EAO-1:  MeP and SaM therefore SoP.) For example, given \"No reptiles have fur\", \"All snakes are reptiles.\", and \"Snakes exist.\", prove \"Some snakes have no fur\". Note the existence hypothesis.  Example from ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A. Wheeler, 27-Aug-2016.)  (Revised by David A. Wheeler, 2-Sep-2016.) ",
+  "statement" : "celaront.maj $e |- A. x ( ph -> -. ps ) $.\ncelaront.min $e |- A. x ( ch -> ph ) $.\ncelaront.e $e |- E. x ch $.\ncelaront $p |- E. x ( ch /\\ -. ps ) $."
+}

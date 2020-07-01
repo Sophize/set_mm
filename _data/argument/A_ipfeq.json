@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ipfeq on Metamath](http://us.metamath.org/mpegif/ipfeq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ipffval.1 | |- V = ( Base ` W ) |\n| 2 |  | ipffval.2 | |- ., = ( .i ` W ) |\n| 3 |  | ipffval.3 | |- .x. = ( .if ` W ) |\n| 4 |  | #P_fnov | |- ( ., Fn ( V X. V ) <-> ., = ( x e. V , y e. V |-> ( x ., y ) ) ) |\n| 5 | 4 | #P_biimpi | |- ( ., Fn ( V X. V ) -> ., = ( x e. V , y e. V |-> ( x ., y ) ) ) |\n| 6 | 1, 2, 3 | #P_ipffval | |- .x. = ( x e. V , y e. V |-> ( x ., y ) ) |\n| 7 | 5, 6 | #P_syl6reqr | |- ( ., Fn ( V X. V ) -> .x. = ., ) |",
+  "conclusion" : "#P_ipfeq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_c.xi", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_c.x", "#T_wceq", "#T_cipf", "#T_cfv", "#T_cW", "#T_c.xi", "#T_wfn", "#T_cV", "#T_cxp", "#T_cV", "#T_wb", "#T_c.xi", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cV", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cV", "#T_cmpt2--4", "#T_vx.wal", "#T_c.xi", "#T_vy.tru", "#T_c.xi", "#T_wfn", "#T_cV", "#T_cxp", "#T_cV", "#T_wi", "#T_c.xi", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cV", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cV", "#T_cmpt2--4", "#T_vx.wal", "#T_c.xi", "#T_vy.tru", "#T_c.x", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cV", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cV", "#T_cmpt2--4", "#T_vx.wal", "#T_c.xi", "#T_vy.tru", "#T_c.xi", "#T_wfn", "#T_cV", "#T_cxp", "#T_cV", "#T_wi", "#T_c.x", "#T_wceq", "#T_c.xi" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fnov", "#P_syl6reqr", "#P_biimpi", "#P_ipffval" ]
+}

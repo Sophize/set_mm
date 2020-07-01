@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pcmpt2 on Metamath](http://us.metamath.org/mpegif/pcmpt2.html)"
+  } ],
+  "names" : [ "pcmpt2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wcel", "#T_cprime", "#T_cif--2", "#T_vn", "#T_cexp", "#T_cA", "#T_cif--3", "#T_c1", "#T_wph", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cprime", "#T_cA", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cP", "#T_wcel", "#T_cprime", "#T_vn", "#T_wceq", "#T_cP", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_wph", "#T_wi", "#T_cP", "#T_cpc", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cM", "#T_cdiv", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_wceq", "#T_cif--1", "#T_cP", "#T_cle", "#T_cM", "#T_wa", "#T_wn", "#T_cP", "#T_cle", "#T_cN", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cc0", "#T_cB", "#T_vn", "#T_cP", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Dividing two prime count maps yields a number with all dividing primes confined to an interval.  (Contributed by Mario Carneiro, 14-Mar-2014.) ",
+  "statement" : "pcmpt.1 $e |- F = ( n e. NN |-> if ( n e. Prime , ( n ^ A ) , 1 ) ) $.\npcmpt.2 $e |- ( ph -> A. n e. Prime A e. NN0 ) $.\npcmpt.3 $e |- ( ph -> N e. NN ) $.\npcmpt.4 $e |- ( ph -> P e. Prime ) $.\npcmpt.5 $e |- ( n = P -> A = B ) $.\npcmpt2.6 $e |- ( ph -> M e. ( ZZ>= ` N ) ) $.\npcmpt2 $p |- ( ph -> ( P pCnt ( ( seq 1 ( x. , F ) ` M ) / ( seq 1 ( x. , F ) ` N ) ) ) = if ( ( P <_ M /\\ -. P <_ N ) , B , 0 ) ) $.\n$d B n $.\n$d P n $."
+}

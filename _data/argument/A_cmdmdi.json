@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cmdmdi on Metamath](http://us.metamath.org/mpegif/cmdmdi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sumdmdi.1 | |- A e. CH |\n| 2 |  | sumdmdi.2 | |- B e. CH |\n| 3 | 1 | #P_choccli | |- ( _|_ ` A ) e. CH |\n| 4 | 2 | #P_choccli | |- ( _|_ ` B ) e. CH |\n| 5 | 3, 4 | #P_cmmdi | |- ( ( _|_ ` A ) C_H ( _|_ ` B ) -> ( _|_ ` A ) MH ( _|_ ` B ) ) |\n| 6 | 1, 2 | #P_cmcm4i | |- ( A C_H B <-> ( _|_ ` A ) C_H ( _|_ ` B ) ) |\n| 7 |  | #P_dmdmd | |- ( ( A e. CH /\\ B e. CH ) -> ( A MH* B <-> ( _|_ ` A ) MH ( _|_ ` B ) ) ) |\n| 8 | 1, 2, 7 | #P_mp2an | |- ( A MH* B <-> ( _|_ ` A ) MH ( _|_ ` B ) ) |\n| 9 | 5, 6, 8 | #P_3imtr4i | |- ( A C_H B -> A MH* B ) |",
+  "conclusion" : "#P_cmdmdi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cch", "#T_cB", "#T_wcel", "#T_cch", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cmd", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_ccm", "#T_cB.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_ccm", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_cdmd", "#T_cB.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cmd", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_cdmd", "#T_cB.wceq", "#T_wb", "#T_cort", "#T_cfv", "#T_cA.wceq", "#T_cmd", "#T_cort", "#T_cfv", "#T_cB.wceq", "#T_cA", "#T_ccm", "#T_cB", "#T_wi", "#T_cA", "#T_cdmd", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_3imtr4i", "#P_cmmdi", "#P_cmcm4i", "#P_dmdmd", "#P_choccli" ]
+}

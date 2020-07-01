@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fiuni on Metamath](http://us.metamath.org/mpegif/fiuni.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssfii | |- ( A e. V -> A C_ ( fi ` A ) ) |\n| 2 | 1 | #P_unissd | |- ( A e. V -> U. A C_ U. ( fi ` A ) ) |\n| 3 |  | #P_fipwuni | |- ( fi ` A ) C_ ~P U. A |\n| 4 | 3 | #P_unissi | |- U. ( fi ` A ) C_ U. ~P U. A |\n| 5 |  | #P_unipw | |- U. ~P U. A = U. A |\n| 6 | 4, 5 | #P_sseqtri | |- U. ( fi ` A ) C_ U. A |\n| 7 | 6 | #P_a1i | |- ( A e. V -> U. ( fi ` A ) C_ U. A ) |\n| 8 | 2, 7 | #P_eqssd | |- ( A e. V -> U. A = U. ( fi ` A ) ) |",
+  "conclusion" : "#P_fiuni",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cpw", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cpw", "#T_cuni", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cuni", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA", "#T_wceq", "#T_cuni", "#T_cfi", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fipwuni", "#P_unissi", "#P_ssfii", "#P_sseqtri", "#P_unissd", "#P_unipw", "#P_a1i", "#P_eqssd" ]
+}

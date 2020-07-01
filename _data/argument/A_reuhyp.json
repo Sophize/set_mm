@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuhyp on Metamath](http://us.metamath.org/mpegif/reuhyp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reuhyp.1 | |- ( x e. C -> B e. C ) |\n| 2 |  | reuhyp.2 | |- ( ( x e. C /\\ y e. C ) -> ( x = A <-> y = B ) ) |\n| 3 |  | #P_tru | |- T. |\n| 4 | 1 | #P_adantl | |- ( ( T. /\\ x e. C ) -> B e. C ) |\n| 5 | 2 | #P_3adant1 | |- ( ( T. /\\ x e. C /\\ y e. C ) -> ( x = A <-> y = B ) ) |\n| 6 | 4, 5 | #P_reuhypd | |- ( ( T. /\\ x e. C ) -> E! y e. C x = A ) |\n| 7 | 3, 6 | #P_mpan | |- ( x e. C -> E! y e. C x = A ) |",
+  "conclusion" : "#P_reuhyp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cC", "#T_wi", "#T_cB", "#T_wcel", "#T_cC", "#T_vx", "#T_wcel", "#T_cC", "#T_wa", "#T_vy", "#T_wcel", "#T_cC", "#T_wi", "#T_vx", "#T_wceq", "#T_cA", "#T_wb", "#T_vy", "#T_wceq", "#T_cB", "#T_wtru", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wtru", "#T_w3a--1", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_w3a--2", "#T_vy.tru", "#T_wcel", "#T_cC", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wi", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cC", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx", "#T_wcel", "#T_cC", "#T_wi", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cC", "#T_vx", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3adant1", "#P_adantl", "#P_tru", "#P_mpan", "#P_reuhypd" ]
+}

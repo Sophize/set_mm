@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqlei2 on Metamath](http://us.metamath.org/mpegif/eqlei2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt.1 | |- A e. RR |\n| 2 |  | #P_eleq1 | |- ( B = A -> ( B e. RR <-> A e. RR ) ) |\n| 3 | 1, 2 | #P_mpbiri | |- ( B = A -> B e. RR ) |\n| 4 |  | #P_eqle | |- ( ( B e. RR /\\ B = A ) -> B <_ A ) |\n| 5 | 3, 4 | #P_mpancom | |- ( B = A -> B <_ A ) |",
+  "conclusion" : "#P_eqlei2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cB.wceq", "#T_cle", "#T_cA.wceq", "#T_cB", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_cle", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_mpancom", "#P_eleq1", "#P_eqle" ]
+}

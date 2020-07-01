@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdssexd on Metamath](http://us.metamath.org/mpegif/bdssexd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdssexd.1 | |- ( ph -> B e. C ) |\n| 2 |  | bdssexd.2 | |- ( ph -> A C_ B ) |\n| 3 |  | bdssexd.bd | |- Bdd_ A |\n| 4 | 3 | #P_bdssexg | |- ( ( A C_ B /\\ B e. C ) -> A e. _V ) |\n| 5 | 2, 1, 4 | #P_syl2anc | |- ( ph -> A e. _V ) |",
+  "conclusion" : "#P_bdssexd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wbdc", "#T_cA", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_bdssexg" ]
+}

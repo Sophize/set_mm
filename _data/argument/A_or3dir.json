@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See or3dir on Metamath](http://us.metamath.org/mpegif/or3dir.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_or3di | |- ( ( ta \\/ ( ph /\\ ps /\\ ch ) ) <-> ( ( ta \\/ ph ) /\\ ( ta \\/ ps ) /\\ ( ta \\/ ch ) ) ) |\n| 2 |  | #P_orcom | |- ( ( ta \\/ ( ph /\\ ps /\\ ch ) ) <-> ( ( ph /\\ ps /\\ ch ) \\/ ta ) ) |\n| 3 |  | #P_orcom | |- ( ( ta \\/ ph ) <-> ( ph \\/ ta ) ) |\n| 4 |  | #P_orcom | |- ( ( ta \\/ ps ) <-> ( ps \\/ ta ) ) |\n| 5 |  | #P_orcom | |- ( ( ta \\/ ch ) <-> ( ch \\/ ta ) ) |\n| 6 | 3, 4, 5 | #P_3anbi123i | |- ( ( ( ta \\/ ph ) /\\ ( ta \\/ ps ) /\\ ( ta \\/ ch ) ) <-> ( ( ph \\/ ta ) /\\ ( ps \\/ ta ) /\\ ( ch \\/ ta ) ) ) |\n| 7 | 1, 2, 6 | #P_3bitr3i | |- ( ( ( ph /\\ ps /\\ ch ) \\/ ta ) <-> ( ( ph \\/ ta ) /\\ ( ps \\/ ta ) /\\ ( ch \\/ ta ) ) ) |",
+  "conclusion" : "#P_or3dir",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wta", "#T_wo", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wta", "#T_wo", "#T_wph", "#T_w3a--1", "#T_wta", "#T_wo", "#T_wps", "#T_w3a--2", "#T_wta", "#T_wo", "#T_wch", "#T_wta", "#T_wo", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wo", "#T_wta", "#T_wta", "#T_wo", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wta", "#T_wta", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wo", "#T_wta", "#T_wta", "#T_wo", "#T_wch", "#T_wb", "#T_wch", "#T_wo", "#T_wta", "#T_wta", "#T_wo", "#T_wph", "#T_w3a--1", "#T_wta", "#T_wo", "#T_wps", "#T_w3a--2", "#T_wta", "#T_wo", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wta", "#T_w3a--1", "#T_wps", "#T_wo", "#T_wta", "#T_w3a--2", "#T_wch", "#T_wo", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wo", "#T_wta", "#T_wb", "#T_wph", "#T_wo", "#T_wta", "#T_w3a--1", "#T_wps", "#T_wo", "#T_wta", "#T_w3a--2", "#T_wch", "#T_wo", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3anbi123i", "#P_orcom", "#P_or3di", "#P_3bitr3i" ]
+}

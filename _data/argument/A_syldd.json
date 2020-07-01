@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syldd on Metamath](http://us.metamath.org/mpegif/syldd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syldd.1 | |- ( ph -> ( ps -> ( ch -> th ) ) ) |\n| 2 |  | syldd.2 | |- ( ph -> ( ps -> ( th -> ta ) ) ) |\n| 3 |  | #P_imim2 | |- ( ( th -> ta ) -> ( ( ch -> th ) -> ( ch -> ta ) ) ) |\n| 4 | 2, 1, 3 | #P_syl6c | |- ( ph -> ( ps -> ( ch -> ta ) ) ) |",
+  "conclusion" : "#P_syldd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl6c", "#P_imim2" ]
+}

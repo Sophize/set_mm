@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfald on Metamath](http://us.metamath.org/mpegif/nfald.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfald.1 | |- F/ y ph |\n| 2 |  | nfald.2 | |- ( ph -> F/ x ps ) |\n| 3 | 1, 2 | #P_alrimi | |- ( ph -> A. y F/ x ps ) |\n| 4 |  | #P_nfnf1 | |- F/ x F/ x ps |\n| 5 | 4 | #P_nfal | |- F/ x A. y F/ x ps |\n| 6 |  | #P_hba1 | |- ( A. y F/ x ps -> A. y A. y F/ x ps ) |\n| 7 |  | #P_sp | |- ( A. y F/ x ps -> F/ x ps ) |\n| 8 | 7 | #P_nfrd | |- ( A. y F/ x ps -> ( ps -> A. x ps ) ) |\n| 9 | 6, 8 | #P_hbald | |- ( A. y F/ x ps -> ( A. y ps -> A. x A. y ps ) ) |\n| 10 | 5, 9 | #P_nfd | |- ( A. y F/ x ps -> F/ x A. y ps ) |\n| 11 | 3, 10 | #P_syl | |- ( ph -> F/ x A. y ps ) |",
+  "conclusion" : "#P_nfald",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vy", "#T_wph", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wps", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vy.tru", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wal", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfrd", "#P_hbald", "#P_hba1", "#P_alrimi", "#P_nfd", "#P_nfnf1", "#P_nfal", "#P_syl", "#P_sp" ]
+}

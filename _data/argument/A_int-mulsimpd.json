@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See int-mulsimpd on Metamath](http://us.metamath.org/mpegif/int-mulsimpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | int-mulsimpd.1 | |- ( ph -> B e. RR ) |\n| 2 |  | int-mulsimpd.2 | |- ( ph -> A = B ) |\n| 3 |  | int-mulsimpd.3 | |- ( ph -> B =/= 0 ) |\n| 4 | 1 | #P_recnd | |- ( ph -> B e. CC ) |\n| 5 | 4, 3, 2 | #P_diveq1bd | |- ( ph -> ( A / B ) = 1 ) |\n| 6 | 5 | #P_eqcomd | |- ( ph -> 1 = ( A / B ) ) |",
+  "conclusion" : "#P_int-mulsimpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cc0", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_c1", "#T_wph", "#T_wi", "#T_c1", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_diveq1bd", "#P_eqcomd", "#P_recnd" ]
+}

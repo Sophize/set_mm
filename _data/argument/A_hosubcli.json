@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hosubcli on Metamath](http://us.metamath.org/mpegif/hosubcli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hoeq.1 | |- S : ~H --> ~H |\n| 2 |  | hoeq.2 | |- T : ~H --> ~H |\n| 3 |  | #P_hodmval | |- ( ( S : ~H --> ~H /\\ T : ~H --> ~H ) -> ( S -op T ) = ( x e. ~H |-> ( ( S ` x ) -h ( T ` x ) ) ) ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- ( S -op T ) = ( x e. ~H |-> ( ( S ` x ) -h ( T ` x ) ) ) |\n| 5 | 1 | #P_ffvelrni | |- ( x e. ~H -> ( S ` x ) e. ~H ) |\n| 6 | 2 | #P_ffvelrni | |- ( x e. ~H -> ( T ` x ) e. ~H ) |\n| 7 |  | #P_hvsubcl | |- ( ( ( S ` x ) e. ~H /\\ ( T ` x ) e. ~H ) -> ( ( S ` x ) -h ( T ` x ) ) e. ~H ) |\n| 8 | 5, 6, 7 | #P_syl2anc | |- ( x e. ~H -> ( ( S ` x ) -h ( T ` x ) ) e. ~H ) |\n| 9 | 4, 8 | #P_fmpti | |- ( S -op T ) : ~H --> ~H |",
+  "conclusion" : "#P_hosubcli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cS", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wa", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_wi", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_cmv", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_cS", "#T_chod", "#T_cT", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_cmv", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wa", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_cmv", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_cS", "#T_cfv", "#T_vx.wal", "#T_cmv", "#T_cT", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_cS", "#T_chod", "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_hvsubcl", "#P_fmpti", "#P_syl2anc", "#P_hodmval", "#P_ffvelrni" ]
+}

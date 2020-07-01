@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cjexpd on Metamath](http://us.metamath.org/mpegif/cjexpd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recld.1 | |- ( ph -> A e. CC ) |\n| 2 |  | cjexpd.2 | |- ( ph -> N e. NN0 ) |\n| 3 |  | #P_cjexp | |- ( ( A e. CC /\\ N e. NN0 ) -> ( * ` ( A ^ N ) ) = ( ( * ` A ) ^ N ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( * ` ( A ^ N ) ) = ( ( * ` A ) ^ N ) ) |",
+  "conclusion" : "#P_cjexpd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wceq", "#T_ccj", "#T_cfv", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wph", "#T_wi", "#T_ccj", "#T_cfv", "#T_cA", "#T_cexp", "#T_cN", "#T_wceq", "#T_ccj", "#T_cfv", "#T_cA", "#T_cexp", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_cjexp" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgtrf on Metamath](http://us.metamath.org/mpegif/symgtrf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgtrf.t | |- T = ran ( pmTrsp ` D ) |\n| 2 |  | symgtrf.g | |- G = ( SymGrp ` D ) |\n| 3 |  | symgtrf.b | |- B = ( Base ` G ) |\n| 4 |  | #P_eqid | |- ( pmTrsp ` D ) = ( pmTrsp ` D ) |\n| 5 | 4, 1 | #P_pmtrff1o | |- ( x e. T -> x : D -1-1-onto-> D ) |\n| 6 | 2, 3 | #P_elsymgbas2 | |- ( x e. T -> ( x e. B <-> x : D -1-1-onto-> D ) ) |\n| 7 | 5, 6 | #P_mpbird | |- ( x e. T -> x e. B ) |\n| 8 | 7 | #P_ssriv | |- T C_ B |",
+  "conclusion" : "#P_symgtrf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cT", "#T_wceq", "#T_crn", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_cG", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cD", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_wceq", "#T_cpmtr", "#T_cfv", "#T_cD", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_vx.wal", "#T_wf1o--1", "#T_cD", "#T_wf1o--2", "#T_cD", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wf1o--1", "#T_cD", "#T_wf1o--2", "#T_cD", "#T_vx.wal", "#T_wcel", "#T_cT", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cT", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elsymgbas2", "#P_eqid", "#P_pmtrff1o", "#P_mpbird", "#P_ssriv" ]
+}

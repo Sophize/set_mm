@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acufl on Metamath](http://us.metamath.org/mpegif/acufl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_pwex | |- ~P x e. _V |\n| 3 | 2 | #P_pwex | |- ~P ~P x e. _V |\n| 4 |  | #P_dfac10 | |- ( CHOICE <-> dom card = _V ) |\n| 5 | 4 | #P_biimpi | |- ( CHOICE -> dom card = _V ) |\n| 6 | 3, 5 | #P_syl5eleqr | |- ( CHOICE -> ~P ~P x e. dom card ) |\n| 7 |  | #P_numufl | |- ( ~P ~P x e. dom card -> x e. UFL ) |\n| 8 | 6, 7 | #P_syl | |- ( CHOICE -> x e. UFL ) |\n| 9 | 1 | #P_a1i | |- ( CHOICE -> x e. _V ) |\n| 10 | 8, 9 | #P_2thd | |- ( CHOICE -> ( x e. UFL <-> x e. _V ) ) |\n| 11 | 10 | #P_eqrdv | |- ( CHOICE -> UFL = _V ) |",
+  "conclusion" : "#P_acufl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wb", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_wac", "#T_wi", "#T_cdm", "#T_ccrd", "#T_wceq", "#T_cvv", "#T_wac", "#T_wi", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cufl", "#T_wac", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cufl", "#T_wac", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cufl", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wac", "#T_wi", "#T_cufl", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2thd", "#P_pwex", "#P_numufl", "#P_syl", "#P_vex", "#P_a1i", "#P_eqrdv", "#P_biimpi", "#P_syl5eleqr", "#P_dfac10" ]
+}

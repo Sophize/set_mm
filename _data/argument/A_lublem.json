@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lublem on Metamath](http://us.metamath.org/mpegif/lublem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lublem.b | |- B = ( Base ` K ) |\n| 2 |  | lublem.l | |- .<_ = ( le ` K ) |\n| 3 |  | lublem.u | |- U = ( lub ` K ) |\n| 4 |  | #P_simpl | |- ( ( K e. CLat /\\ S C_ B ) -> K e. CLat ) |\n| 5 | 1, 3 | #P_clatlubcl2 | |- ( ( K e. CLat /\\ S C_ B ) -> S e. dom U ) |\n| 6 | 1, 2, 3, 4, 5 | #P_lubprop | |- ( ( K e. CLat /\\ S C_ B ) -> ( A. y e. S y .<_ ( U ` S ) /\\ A. z e. B ( A. y e. S y .<_ z -> ( U ` S ) .<_ z ) ) ) |",
+  "conclusion" : "#P_lublem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_club", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cK", "#T_wcel", "#T_ccla", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cS", "#T_wcel", "#T_cdm", "#T_cU", "#T_cK", "#T_wcel", "#T_ccla", "#T_wa", "#T_cS", "#T_wss", "#T_cB", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_cU", "#T_cfv", "#T_cS", "#T_wa", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cS", "#T_vy", "#T_c.le", "#T_vz", "#T_wi", "#T_cU", "#T_cfv", "#T_cS", "#T_c.le", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lubprop", "#P_simpl", "#P_clatlubcl2" ]
+}

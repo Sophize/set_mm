@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See zsubcl on Metamath](http://us.metamath.org/mpegif/zsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zcn | |- ( M e. ZZ -> M e. CC ) |\n| 2 |  | #P_zcn | |- ( N e. ZZ -> N e. CC ) |\n| 3 |  | #P_negsub | |- ( ( M e. CC /\\ N e. CC ) -> ( M + -u N ) = ( M - N ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M + -u N ) = ( M - N ) ) |\n| 5 |  | #P_znegcl | |- ( N e. ZZ -> -u N e. ZZ ) |\n| 6 |  | #P_zaddcl | |- ( ( M e. ZZ /\\ -u N e. ZZ ) -> ( M + -u N ) e. ZZ ) |\n| 7 | 5, 6 | #P_sylan2 | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M + -u N ) e. ZZ ) |\n| 8 | 4, 7 | #P_eqeltrrd | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M - N ) e. ZZ ) |",
+  "conclusion" : "#P_zsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cM", "#T_wcel", "#T_cc", "#T_wa", "#T_cN", "#T_wcel", "#T_cc", "#T_wi", "#T_cM", "#T_caddc", "#T_cneg", "#T_cN", "#T_wceq", "#T_cM", "#T_cmin", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_caddc", "#T_cneg", "#T_cN", "#T_wceq", "#T_cM", "#T_cmin", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_caddc", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_caddc", "#T_cneg", "#T_cN", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cmin", "#T_cN", "#T_wcel", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_sylan2", "#P_znegcl", "#P_syl2an", "#P_negsub", "#P_zaddcl", "#P_zcn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tlt2 on Metamath](http://us.metamath.org/mpegif/tlt2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tlt2.b | |- B = ( Base ` K ) |\n| 2 |  | tlt2.e | |- .<_ = ( le ` K ) |\n| 3 |  | tlt2.l | |- .< = ( lt ` K ) |\n| 4 |  | #P_exmidd | |- ( ( K e. Toset /\\ X e. B /\\ Y e. B ) -> ( X .<_ Y \\/ -. X .<_ Y ) ) |\n| 5 | 1, 2, 3 | #P_tltnle | |- ( ( K e. Toset /\\ Y e. B /\\ X e. B ) -> ( Y .< X <-> -. X .<_ Y ) ) |\n| 6 | 5 | #P_3com23 | |- ( ( K e. Toset /\\ X e. B /\\ Y e. B ) -> ( Y .< X <-> -. X .<_ Y ) ) |\n| 7 | 6 | #P_orbi2d | |- ( ( K e. Toset /\\ X e. B /\\ Y e. B ) -> ( ( X .<_ Y \\/ Y .< X ) <-> ( X .<_ Y \\/ -. X .<_ Y ) ) ) |\n| 8 | 4, 7 | #P_mpbird | |- ( ( K e. Toset /\\ X e. B /\\ Y e. B ) -> ( X .<_ Y \\/ Y .< X ) ) |",
+  "conclusion" : "#P_tlt2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_c.lt", "#T_wceq", "#T_cplt", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_ctos", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wo", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_cK", "#T_wcel", "#T_ctos", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cY", "#T_c.lt", "#T_cX", "#T_wb", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_cK", "#T_wcel", "#T_ctos", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cY", "#T_c.lt", "#T_cX", "#T_wb", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_cK", "#T_wcel", "#T_ctos", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wo", "#T_cY", "#T_c.lt", "#T_cX", "#T_wb", "#T_cX", "#T_c.le", "#T_cY", "#T_wo", "#T_wn", "#T_cX", "#T_c.le", "#T_cY", "#T_cK", "#T_wcel", "#T_ctos", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wo", "#T_cY", "#T_c.lt", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exmidd", "#P_3com23", "#P_orbi2d", "#P_tltnle", "#P_mpbird" ]
+}

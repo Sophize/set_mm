@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imandc on Metamath](http://us.metamath.org/mpegif/imandc.html)"
+  } ],
+  "names" : [ "imandc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll] p. 176, with an added decidability condition.  The forward direction, ~ imanim , holds for all propositions, not just decidable ones. (Contributed by Jim Kingdon, 25-Apr-2018.) ",
+  "statement" : "imandc $p |- ( DECID ps -> ( ( ph -> ps ) <-> -. ( ph /\\ -. ps ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See evls1varpw on Metamath](http://us.metamath.org/mpegif/evls1varpw.html)"
+  } ],
+  "names" : [ "evls1varpw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_cS", "#T_ces1", "#T_cR", "#T_cU", "#T_wceq", "#T_cS", "#T_cress", "#T_cR", "#T_cW", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cU", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cW", "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_c.ex", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_ccrg", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cQ", "#T_cfv", "#T_cN", "#T_c.ex", "#T_cX", "#T_wceq", "#T_cN", "#T_cmg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cS", "#T_cpws", "#T_cB", "#T_cQ", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Univariate polynomial evaluation for subrings maps the exponentiation of a variable to the exponentiation of the evaluated variable. (Contributed by AV, 14-Sep-2019.) ",
+  "statement" : "evls1varpw.q $e |- Q = ( S evalSub1 R ) $.\nevls1varpw.u $e |- U = ( S |`s R ) $.\nevls1varpw.w $e |- W = ( Poly1 ` U ) $.\nevls1varpw.g $e |- G = ( mulGrp ` W ) $.\nevls1varpw.x $e |- X = ( var1 ` U ) $.\nevls1varpw.b $e |- B = ( Base ` S ) $.\nevls1varpw.e $e |- .^ = ( .g ` G ) $.\nevls1varpw.s $e |- ( ph -> S e. CRing ) $.\nevls1varpw.r $e |- ( ph -> R e. ( SubRing ` S ) ) $.\nevls1varpw.n $e |- ( ph -> N e. NN0 ) $.\nevls1varpw $p |- ( ph -> ( Q ` ( N .^ X ) ) = ( N ( .g ` ( mulGrp ` ( S ^s B ) ) ) ( Q ` X ) ) ) $."
+}

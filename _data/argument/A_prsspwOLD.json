@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prsspwOLD on Metamath](http://us.metamath.org/mpegif/prsspwOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | prsspw.1 | |- A e. _V |\n| 2 |  | prsspw.2 | |- B e. _V |\n| 3 | 1, 2 | #P_prss | |- ( ( A e. ~P C /\\ B e. ~P C ) <-> { A , B } C_ ~P C ) |\n| 4 | 1 | #P_elpw | |- ( A e. ~P C <-> A C_ C ) |\n| 5 | 2 | #P_elpw | |- ( B e. ~P C <-> B C_ C ) |\n| 6 | 4, 5 | #P_anbi12i | |- ( ( A e. ~P C /\\ B e. ~P C ) <-> ( A C_ C /\\ B C_ C ) ) |\n| 7 | 3, 6 | #P_bitr3i | |- ( { A , B } C_ ~P C <-> ( A C_ C /\\ B C_ C ) ) |\n\\\n An unordered pair belongs to the power class of a class iff each member belongs to the class.  (Contributed by NM, 10-Dec-2003.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.)  Obsolete version of ~ prsspw as of 25-Mar-2020.  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "conclusion" : "#P_prsspw",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wb", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wss", "#T_cpw", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cpw", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wss", "#T_cpw", "#T_cC", "#T_wb", "#T_cA", "#T_wss", "#T_cC", "#T_wa", "#T_cB", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_elpw", "#P_prss", "#P_bitr3i" ]
+}

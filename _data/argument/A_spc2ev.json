@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spc2ev on Metamath](http://us.metamath.org/mpegif/spc2ev.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spc2ev.1 | |- A e. _V |\n| 2 |  | spc2ev.2 | |- B e. _V |\n| 3 |  | spc2ev.3 | |- ( ( x = A /\\ y = B ) -> ( ph <-> ps ) ) |\n| 4 | 3 | #P_spc2egv | |- ( ( A e. _V /\\ B e. _V ) -> ( ps -> E. x E. y ph ) ) |\n| 5 | 1, 2, 4 | #P_mp2an | |- ( ps -> E. x E. y ph ) |",
+  "conclusion" : "#P_spc2ev",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wa", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_wph", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_spc2egv" ]
+}

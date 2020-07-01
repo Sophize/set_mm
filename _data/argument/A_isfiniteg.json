@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfiniteg on Metamath](http://us.metamath.org/mpegif/isfiniteg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isfi | |- ( A e. Fin <-> E. x e. _om A ~~ x ) |\n| 2 |  | #P_nnsdomg | |- ( ( _om e. _V /\\ x e. _om ) -> x ~< _om ) |\n| 3 |  | #P_sdomen1 | |- ( A ~~ x -> ( A ~< _om <-> x ~< _om ) ) |\n| 4 | 2, 3 | #P_syl5ibrcom | |- ( ( _om e. _V /\\ x e. _om ) -> ( A ~~ x -> A ~< _om ) ) |\n| 5 | 4 | #P_rexlimdva | |- ( _om e. _V -> ( E. x e. _om A ~~ x -> A ~< _om ) ) |\n| 6 | 1, 5 | #P_syl5bi | |- ( _om e. _V -> ( A e. Fin -> A ~< _om ) ) |\n| 7 |  | #P_isfinite2 | |- ( A ~< _om -> A e. Fin ) |\n| 8 | 6, 7 | #P_impbid1 | |- ( _om e. _V -> ( A e. Fin <-> A ~< _om ) ) |",
+  "conclusion" : "#P_isfiniteg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_com", "#T_wcel", "#T_cvv", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_vx.wal", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wb", "#T_vx.wal", "#T_csdm", "#T_com", "#T_com", "#T_wcel", "#T_cvv", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_cen", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_cA.wceq", "#T_csdm", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_com", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wb", "#T_cA", "#T_csdm", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isfinite2", "#P_nnsdomg", "#P_isfi", "#P_rexlimdva", "#P_syl5bi", "#P_sdomen1", "#P_syl5ibrcom", "#P_impbid1" ]
+}

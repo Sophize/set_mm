@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubcl on Metamath](http://us.metamath.org/mpegif/hvsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hvsubval | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A -h B ) = ( A +h ( -u 1 .h B ) ) ) |\n| 2 |  | #P_neg1cn | |- -u 1 e. CC |\n| 3 |  | #P_hvmulcl | |- ( ( -u 1 e. CC /\\ B e. ~H ) -> ( -u 1 .h B ) e. ~H ) |\n| 4 | 2, 3 | #P_mpan | |- ( B e. ~H -> ( -u 1 .h B ) e. ~H ) |\n| 5 |  | #P_hvaddcl | |- ( ( A e. ~H /\\ ( -u 1 .h B ) e. ~H ) -> ( A +h ( -u 1 .h B ) ) e. ~H ) |\n| 6 | 4, 5 | #P_sylan2 | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A +h ( -u 1 .h B ) ) e. ~H ) |\n| 7 | 1, 6 | #P_eqeltrd | |- ( ( A e. ~H /\\ B e. ~H ) -> ( A -h B ) e. ~H ) |",
+  "conclusion" : "#P_hvsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cva", "#T_cneg", "#T_c1", "#T_csm", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_cA", "#T_wcel", "#T_chil", "#T_wa", "#T_cB", "#T_wcel", "#T_chil", "#T_wi", "#T_cA", "#T_cmv", "#T_cB", "#T_wcel", "#T_chil" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hvsubval", "#P_neg1cn", "#P_sylan2", "#P_eqeltrd", "#P_mpan", "#P_hvmulcl", "#P_hvaddcl" ]
+}

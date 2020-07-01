@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See disji on Metamath](http://us.metamath.org/mpegif/disji.html)"
+  } ],
+  "names" : [ "disji" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cX", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_vx", "#T_wceq", "#T_cY", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_wdisj--1", "#T_vx", "#T_wdisj--2", "#T_cA", "#T_cB", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cA", "#T_wa", "#T_cY", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cC", "#T_wa", "#T_cZ", "#T_wcel", "#T_cD", "#T_wi", "#T_cX", "#T_wceq", "#T_cY", "#T_cA", "#T_vx", "#T_cC", "#T_vx", "#T_cD", "#T_vx", "#T_cX", "#T_vx", "#T_cY", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Property of a disjoint collection: if ` B ( X ) = C ` and ` B ( Y ) = D ` have a common element ` Z ` , then ` X = Y ` . (Contributed by Mario Carneiro, 14-Nov-2016.) ",
+  "statement" : "disji.1 $e |- ( x = X -> B = C ) $.\ndisji.2 $e |- ( x = Y -> B = D ) $.\ndisji $p |- ( ( Disj_ x e. A B /\\ ( X e. A /\\ Y e. A ) /\\ ( Z e. C /\\ Z e. D ) ) -> X = Y ) $.\n$d A x $.\n$d C x $.\n$d D x $.\n$d X x $.\n$d Y x $."
+}

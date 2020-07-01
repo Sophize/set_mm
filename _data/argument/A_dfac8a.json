@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfac8a on Metamath](http://us.metamath.org/mpegif/dfac8a.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nf v\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- recs ( ( v e. _V |-> ( h ` ( A \\ ran v ) ) ) ) = recs ( ( v e. _V |-> ( h ` ( A \\ ran v ) ) ) ) |\n| 2 |  | #P_rneq | |- ( v = f -> ran v = ran f ) |\n| 3 | 2 | #P_difeq2d | |- ( v = f -> ( A \\ ran v ) = ( A \\ ran f ) ) |\n| 4 | 3 | #P_fveq2d | |- ( v = f -> ( h ` ( A \\ ran v ) ) = ( h ` ( A \\ ran f ) ) ) |\n| 5 | 4 | #P_cbvmptv | |- ( v e. _V |-> ( h ` ( A \\ ran v ) ) ) = ( f e. _V |-> ( h ` ( A \\ ran f ) ) ) |\n| 6 | 1, 5 | #P_dfac8alem | |- ( A e. B -> ( E. h A. y e. ~P A ( y =/= (/) -> ( h ` y ) e. y ) -> A e. dom card ) ) |",
+  "conclusion" : "#P_dfac8a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vf", "#T_vv", "#T_crecs", "#T_vv", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_vv", "#T_wceq", "#T_crecs", "#T_vv", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_vv", "#T_vv", "#T_wceq", "#T_cbvex4v.vf", "#T_wi", "#T_crn", "#T_vv", "#T_wceq", "#T_crn", "#T_cbvex4v.vf", "#T_vv", "#T_wceq", "#T_cbvex4v.vf", "#T_wi", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_vv", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_cbvex4v.vf", "#T_vv", "#T_wceq", "#T_cbvex4v.vf", "#T_wi", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_vv", "#T_wceq", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_cbvex4v.vf", "#T_vv", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_vv", "#T_wceq", "#T_cbvex4v.vf", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vh", "#T_cfv", "#T_cA.wceq", "#T_cdif", "#T_crn", "#T_cbvex4v.vf", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_wex", "#T_vh", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpw", "#T_cA", "#T_vy", "#T_wne", "#T_c0", "#T_wi", "#T_vh", "#T_cfv", "#T_vy", "#T_wcel", "#T_vy", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_ccrd" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_dfac8alem", "#P_rneq", "#P_fveq2d", "#P_difeq2d", "#P_cbvmptv" ]
+}

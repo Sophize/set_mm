@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jca on Metamath](http://us.metamath.org/mpegif/jca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jca.1 | |- ( ph -> ps ) |\n| 2 |  | jca.2 | |- ( ph -> ch ) |\n| 3 |  | #P_pm3.2 | |- ( ps -> ( ch -> ( ps /\\ ch ) ) ) |\n| 4 | 1, 2, 3 | #P_sylc | |- ( ph -> ( ps /\\ ch ) ) |",
+  "conclusion" : "#P_jca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylc", "#P_pm3.2" ]
+}

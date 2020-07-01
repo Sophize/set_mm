@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege55b on Metamath](http://us.metamath.org/mpegif/frege55b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_frege55lem2b | |- ( x = y -> [ y / z ] z = x ) |\n| 2 |  | #P_df-sb | |- ( [ y / z ] z = x <-> ( ( z = y -> z = x ) /\\ E. z ( z = y /\\ z = x ) ) ) |\n| 3 |  | #P_eqtr2 | |- ( ( z = y /\\ z = x ) -> y = x ) |\n| 4 | 3 | #P_exlimiv | |- ( E. z ( z = y /\\ z = x ) -> y = x ) |\n| 5 | 4 | #P_adantl | |- ( ( ( z = y -> z = x ) /\\ E. z ( z = y /\\ z = x ) ) -> y = x ) |\n| 6 | 2, 5 | #P_sylbi | |- ( [ y / z ] z = x -> y = x ) |\n| 7 | 1, 6 | #P_syl | |- ( x = y -> y = x ) |",
+  "conclusion" : "#P_frege55b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wa", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wa", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vz", "#T_wsb--3", "#T_vz", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vy", "#T_wceq", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-sb", "#P_exlimiv", "#P_adantl", "#P_syl", "#P_eqtr2", "#P_frege55lem2b", "#P_sylbi" ]
+}

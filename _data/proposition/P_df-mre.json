@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mre on Metamath](http://us.metamath.org/mpegif/df-mre.html)"
+  } ],
+  "names" : [ "df-mre" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmre", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vc", "#T_crab--2", "#T_cpw", "#T_cpw", "#T_vx", "#T_crab--3", "#T_vx", "#T_wcel", "#T_vc", "#T_wa", "#T_wral--1", "#T_vs", "#T_wral--2", "#T_cpw", "#T_vc", "#T_vs", "#T_wne", "#T_c0", "#T_wi", "#T_cint", "#T_vs", "#T_wcel", "#T_vc", "#T_crab--4", "#T_vc", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a _Moore collection_, which is a family of subsets of a base set which preserve arbitrary intersection.  Elements of a Moore collection are termed _closed_; Moore collections generalize the notion of closedness from topologies ( ~ cldmre ) and vector spaces ( ~ lssmre ) to the most general setting in which such concepts make sense. Definition of Moore collection of sets in [Schechter] p. 78.  A Moore collection may also be called a _closure system_ (Section 0.6 in [Gratzer] p. 23.)  The name _Moore collection_ is after Eliakim Hastings Moore, who discussed these systems in Part I of [Moore] p. 53 to 76. See ~ ismre , ~ mresspw , ~ mre1cl and ~ mreintcl for the major properties of a Moore collection.  Note that a Moore collection uniquely determines its base set ( ~ mreuni ); as such the disjoint union of all Moore collections is sometimes considered as ` U. ran Moore ` , justified by ~ mreunirn .  (Contributed by Stefan O'Rear, 30-Jan-2015.) (Revised by David Moews, 1-May-2017.) ",
+  "statement" : "df-mre $p |- Moore = ( x e. _V |-> { c e. ~P ~P x | ( x e. c /\\ A. s e. ~P c ( s =/= (/) -> |^| s e. c ) ) } ) $.\n$d c s x $."
+}

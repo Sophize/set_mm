@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See imf on Metamath](http://us.metamath.org/mpegif/imf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-im | |- Im = ( x e. CC |-> ( Re ` ( x / _i ) ) ) |\n| 2 |  | #P_imval | |- ( x e. CC -> ( Im ` x ) = ( Re ` ( x / _i ) ) ) |\n| 3 |  | #P_imcl | |- ( x e. CC -> ( Im ` x ) e. RR ) |\n| 4 | 2, 3 | #P_eqeltrrd | |- ( x e. CC -> ( Re ` ( x / _i ) ) e. RR ) |\n| 5 | 1, 4 | #P_fmpti | |- Im : CC --> RR |",
+  "conclusion" : "#P_imf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cim", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_cre", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_ci", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cim", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cre", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_ci", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cim", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_vx.wal", "#T_cdiv", "#T_ci", "#T_wcel", "#T_cr", "#T_cim", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltrrd", "#P_fmpti", "#P_df-im", "#P_imcl", "#P_imval" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See difundir on Metamath](http://us.metamath.org/mpegif/difundir.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_indir | |- ( ( A u. B ) i^i ( _V \\ C ) ) = ( ( A i^i ( _V \\ C ) ) u. ( B i^i ( _V \\ C ) ) ) |\n| 2 |  | #P_invdif | |- ( ( A u. B ) i^i ( _V \\ C ) ) = ( ( A u. B ) \\ C ) |\n| 3 |  | #P_invdif | |- ( A i^i ( _V \\ C ) ) = ( A \\ C ) |\n| 4 |  | #P_invdif | |- ( B i^i ( _V \\ C ) ) = ( B \\ C ) |\n| 5 | 3, 4 | #P_uneq12i | |- ( ( A i^i ( _V \\ C ) ) u. ( B i^i ( _V \\ C ) ) ) = ( ( A \\ C ) u. ( B \\ C ) ) |\n| 6 | 1, 2, 5 | #P_3eqtr3i | |- ( ( A u. B ) \\ C ) = ( ( A \\ C ) u. ( B \\ C ) ) |",
+  "conclusion" : "#P_difundir",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_cB.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cC", "#T_cun", "#T_cB.wceq", "#T_cdif", "#T_cC", "#T_cA", "#T_cun", "#T_cB", "#T_cdif", "#T_cC", "#T_wceq", "#T_cA", "#T_cdif", "#T_cC", "#T_cun", "#T_cB", "#T_cdif", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr3i", "#P_indir", "#P_invdif", "#P_uneq12i" ]
+}

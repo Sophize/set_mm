@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isxmet2d on Metamath](http://us.metamath.org/mpegif/isxmet2d.html)"
+  } ],
+  "names" : [ "isxmet2d" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cD", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cX", "#T_wf--2", "#T_cxr", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_cc0", "#T_cle", "#T_vx", "#T_cD", "#T_vy", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cD", "#T_vy", "#T_cle", "#T_cc0", "#T_wb", "#T_vx", "#T_wceq", "#T_vy", "#T_wph", "#T_w3a--1", "#T_vx", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_vz", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_vz", "#T_cD", "#T_vx", "#T_wcel", "#T_cr", "#T_wa", "#T_vz", "#T_cD", "#T_vy", "#T_wcel", "#T_cr", "#T_wi", "#T_vx", "#T_cD", "#T_vy", "#T_cle", "#T_vz", "#T_cD", "#T_vx", "#T_caddc", "#T_vz", "#T_cD", "#T_vy", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_cD", "#T_vx", "#T_vy", "#T_vz", "#T_cX", "#T_vx", "#T_vy", "#T_vz", "#T_wph", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " It is safe to only require the triangle inequality when the values are real (so that we can use the standard addition over the reals), but in this case the nonnegativity constraint cannot be deduced and must be provided separately.  (Counterexample: ` D ( x , y ) = if ( x = y , 0 , -oo ) ` satisfies all hypotheses except nonnegativity.)  (Contributed by Mario Carneiro, 20-Aug-2015.) ",
+  "statement" : "isxmetd.0 $e |- ( ph -> X e. _V ) $.\nisxmetd.1 $e |- ( ph -> D : ( X X. X ) --> RR* ) $.\nisxmet2d.2 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> 0 <_ ( x D y ) ) $.\nisxmet2d.3 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( ( x D y ) <_ 0 <-> x = y ) ) $.\nisxmet2d.4 $e |- ( ( ph /\\ ( x e. X /\\ y e. X /\\ z e. X ) /\\ ( ( z D x ) e. RR /\\ ( z D y ) e. RR ) ) -> ( x D y ) <_ ( ( z D x ) + ( z D y ) ) ) $.\nisxmet2d $p |- ( ph -> D e. ( *Met ` X ) ) $.\n$d D x y z $.\n$d X x y z $.\n$d ph x y z $."
+}

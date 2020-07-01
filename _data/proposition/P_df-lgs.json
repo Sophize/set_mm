@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-lgs on Metamath](http://us.metamath.org/mpegif/df-lgs.html)"
+  } ],
+  "names" : [ "df-lgs" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clgs", "#T_wceq", "#T_va", "#T_cmpt2--1", "#T_cz", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cz", "#T_cmpt2--4", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cif--1", "#T_va", "#T_cexp", "#T_c2", "#T_wceq", "#T_c1", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_vn", "#T_clt", "#T_cc0", "#T_wa", "#T_va", "#T_clt", "#T_cc0", "#T_cif--2", "#T_cneg", "#T_c1", "#T_cif--3", "#T_c1", "#T_cmul", "#T_cseq--1", "#T_c1", "#T_cmul", "#T_cseq--2", "#T_vm", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cif--1", "#T_vm", "#T_wcel", "#T_cprime", "#T_cif--2", "#T_cif--1", "#T_vm", "#T_wceq", "#T_c2", "#T_cif--2", "#T_cif--1", "#T_c2", "#T_cdvds", "#T_va", "#T_cif--2", "#T_cc0", "#T_cif--3", "#T_cif--1", "#T_va", "#T_cmo", "#T_c8", "#T_wcel", "#T_cpr--1", "#T_c1", "#T_cpr--2", "#T_c7", "#T_cpr--3", "#T_cif--2", "#T_c1", "#T_cif--3", "#T_cneg", "#T_c1", "#T_cif--3", "#T_va", "#T_cexp", "#T_vm", "#T_cmin", "#T_c1", "#T_cdiv", "#T_c2", "#T_caddc", "#T_c1", "#T_cmo", "#T_vm", "#T_cmin", "#T_c1", "#T_cexp", "#T_vm", "#T_cpc", "#T_vn", "#T_cif--3", "#T_c1", "#T_cfv", "#T_cabs", "#T_cfv", "#T_vn", "#T_va", "#T_vm", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Legendre symbol (actually the Kronecker symbol, which extends the Legendre symbol to all integers).  (Contributed by Mario Carneiro, 4-Feb-2015.) ",
+  "statement" : "df-lgs $p |- /L = ( a e. ZZ , n e. ZZ |-> if ( n = 0 , if ( ( a ^ 2 ) = 1 , 1 , 0 ) , ( if ( ( n < 0 /\\ a < 0 ) , -u 1 , 1 ) x. ( seq 1 ( x. , ( m e. NN |-> if ( m e. Prime , ( if ( m = 2 , if ( 2 || a , 0 , if ( ( a mod 8 ) e. { 1 , 7 } , 1 , -u 1 ) ) , ( ( ( ( a ^ ( ( m - 1 ) / 2 ) ) + 1 ) mod m ) - 1 ) ) ^ ( m pCnt n ) ) , 1 ) ) ) ` ( abs ` n ) ) ) ) ) $.\n$d a m n $."
+}

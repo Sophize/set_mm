@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See crngcom on Metamath](http://us.metamath.org/mpegif/crngcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ringcl.b | |- B = ( Base ` R ) |\n| 2 |  | ringcl.t | |- .x. = ( .r ` R ) |\n| 3 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 4 | 3 | #P_crngmgp | |- ( R e. CRing -> ( mulGrp ` R ) e. CMnd ) |\n| 5 | 3, 1 | #P_mgpbas | |- B = ( Base ` ( mulGrp ` R ) ) |\n| 6 | 3, 2 | #P_mgpplusg | |- .x. = ( +g ` ( mulGrp ` R ) ) |\n| 7 | 5, 6 | #P_cmncom | |- ( ( ( mulGrp ` R ) e. CMnd /\\ X e. B /\\ Y e. B ) -> ( X .x. Y ) = ( Y .x. X ) ) |\n| 8 | 4, 7 | #P_syl3an1 | |- ( ( R e. CRing /\\ X e. B /\\ Y e. B ) -> ( X .x. Y ) = ( Y .x. X ) ) |",
+  "conclusion" : "#P_crngcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ccmn", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_ccmn", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.x", "#T_cY", "#T_wceq", "#T_cY", "#T_c.x", "#T_cX", "#T_cR", "#T_wcel", "#T_ccrg", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cX", "#T_c.x", "#T_cY", "#T_wceq", "#T_cY", "#T_c.x", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_crngmgp", "#P_eqid", "#P_mgpplusg", "#P_cmncom", "#P_mgpbas", "#P_syl3an1" ]
+}

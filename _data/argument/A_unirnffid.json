@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unirnffid on Metamath](http://us.metamath.org/mpegif/unirnffid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unirnffid.1 | |- ( ph -> F : T --> Fin ) |\n| 2 |  | unirnffid.2 | |- ( ph -> T e. Fin ) |\n| 3 |  | #P_ffn | |- ( F : T --> Fin -> F Fn T ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> F Fn T ) |\n| 5 |  | #P_fnfi | |- ( ( F Fn T /\\ T e. Fin ) -> F e. Fin ) |\n| 6 | 4, 2, 5 | #P_syl2anc | |- ( ph -> F e. Fin ) |\n| 7 |  | #P_rnfi | |- ( F e. Fin -> ran F e. Fin ) |\n| 8 | 6, 7 | #P_syl | |- ( ph -> ran F e. Fin ) |\n| 9 |  | #P_frn | |- ( F : T --> Fin -> ran F C_ Fin ) |\n| 10 | 1, 9 | #P_syl | |- ( ph -> ran F C_ Fin ) |\n| 11 |  | #P_unifi | |- ( ( ran F e. Fin /\\ ran F C_ Fin ) -> U. ran F e. Fin ) |\n| 12 | 8, 10, 11 | #P_syl2anc | |- ( ph -> U. ran F e. Fin ) |",
+  "conclusion" : "#P_unirnffid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cfn", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cfn", "#T_cF", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cfn", "#T_wi", "#T_cF", "#T_wfn", "#T_cT", "#T_wph", "#T_wi", "#T_cF", "#T_wfn", "#T_cT", "#T_cF", "#T_wfn", "#T_cT", "#T_wa", "#T_cT", "#T_wcel", "#T_cfn", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cfn", "#T_cF", "#T_wcel", "#T_cfn", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn", "#T_cF", "#T_wf--1", "#T_cT", "#T_wf--2", "#T_cfn", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cfn", "#T_wph", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cfn", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cfn", "#T_wi", "#T_cuni", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cuni", "#T_crn", "#T_cF", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_fnfi", "#P_syl2anc", "#P_syl", "#P_frn", "#P_unifi", "#P_rnfi" ]
+}

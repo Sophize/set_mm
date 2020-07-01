@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnf on Metamath](http://us.metamath.org/mpegif/cnf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | iscnp2.1 | |- X = U. J |\n| 2 |  | iscnp2.2 | |- Y = U. K |\n| 3 | 1, 2 | #P_iscn2 | |- ( F e. ( J Cn K ) <-> ( ( J e. Top /\\ K e. Top ) /\\ ( F : X --> Y /\\ A. x e. K ( `' F \" x ) e. J ) ) ) |\n| 4 | 3 | #P_simprbi | |- ( F e. ( J Cn K ) -> ( F : X --> Y /\\ A. x e. K ( `' F \" x ) e. J ) ) |\n| 5 | 4 | #P_simpld | |- ( F e. ( J Cn K ) -> F : X --> Y ) |",
+  "conclusion" : "#P_cnf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cY", "#T_wceq", "#T_cuni", "#T_cK", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cK", "#T_wcel", "#T_ctop", "#T_wa", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cK", "#T_ccnv", "#T_cF", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cJ", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cK", "#T_ccnv", "#T_cF", "#T_cima", "#T_vx.wal", "#T_wcel", "#T_cJ", "#T_cF", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simpld", "#P_simprbi", "#P_iscn2" ]
+}

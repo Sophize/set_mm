@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1dvds on Metamath](http://us.metamath.org/mpegif/1dvds.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_zcn | |- ( N e. ZZ -> N e. CC ) |\n| 2 | 1 | #P_mulid1d | |- ( N e. ZZ -> ( N x. 1 ) = N ) |\n| 3 |  | #P_1z | |- 1 e. ZZ |\n| 4 |  | #P_dvds0lem | |- ( ( ( N e. ZZ /\\ 1 e. ZZ /\\ N e. ZZ ) /\\ ( N x. 1 ) = N ) -> 1 || N ) |\n| 5 | 3, 4 | #P_mp3anl2 | |- ( ( ( N e. ZZ /\\ N e. ZZ ) /\\ ( N x. 1 ) = N ) -> 1 || N ) |\n| 6 | 5 | #P_anabsan | |- ( ( N e. ZZ /\\ ( N x. 1 ) = N ) -> 1 || N ) |\n| 7 | 2, 6 | #P_mpdan | |- ( N e. ZZ -> 1 || N ) |",
+  "conclusion" : "#P_1dvds",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cc", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmul", "#T_c1", "#T_wceq", "#T_cN", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_c1", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_cmul", "#T_c1", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cdvds", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_cmul", "#T_c1", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cdvds", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_cmul", "#T_c1", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cdvds", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cdvds", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_anabsan", "#P_dvds0lem", "#P_1z", "#P_zcn", "#P_mulid1d", "#P_mp3anl2" ]
+}

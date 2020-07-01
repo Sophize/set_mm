@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wceq on Metamath](http://us.metamath.org/mpegif/wceq.html)"
+  } ],
+  "definition" : "wff A = B",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq" ],
+  "metaLanguage" : "METAMATH",
+  "phrase" : "=",
+  "remarks" : " Extend wff definition to include class equality. For a general discussion of the theory of classes, see ~ http://us.metamath.org/mpeuni/mmset.html#class . (The purpose of introducing ` wff A = B ` here, and not in set theory where it belongs, is to allow us to express i.e.  \"prove\" the ~ weq of predicate calculus in terms of the ~ wceq of set theory, so that we don't \"overload\" the ` = ` connective with two syntax definitions.  This is done to prevent ambiguity that would complicate some Metamath parsers.  For example, some parsers - although not the Metamath program - stumble on the fact that the ` = ` in ` x = y ` could be the ` = ` of either ~ weq or ~ wceq , although mathematically it makes no difference.  The class variables ` A ` and ` B ` are introduced temporarily for the purpose of this definition but otherwise not used in predicate calculus.  See ~ df-cleq for more information on the set theory usage of ~ wceq .) \n\n---\n\nThis syntax is primitive. The first axiom using it is #P_df-tru|NAV_LINK|HIDE_TVI.\n\n---"
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See syl2ani on Metamath](http://us.metamath.org/mpegif/syl2ani.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl2ani.1 | |- ( ph -> ch ) |\n| 2 |  | syl2ani.2 | |- ( et -> th ) |\n| 3 |  | syl2ani.3 | |- ( ps -> ( ( ch /\\ th ) -> ta ) ) |\n| 4 | 2, 3 | #P_sylan2i | |- ( ps -> ( ( ch /\\ et ) -> ta ) ) |\n| 5 | 1, 4 | #P_sylani | |- ( ps -> ( ( ph /\\ et ) -> ta ) ) |",
+  "conclusion" : "#P_syl2ani",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wch", "#T_wet", "#T_wi", "#T_wth", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wet", "#T_wi", "#T_wta", "#T_wps", "#T_wi", "#T_wph", "#T_wa", "#T_wet", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylani", "#P_sylan2i" ]
+}

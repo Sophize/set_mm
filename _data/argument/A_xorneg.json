@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xorneg on Metamath](http://us.metamath.org/mpegif/xorneg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xorneg1 | |- ( ( -. ph \\/_ -. ps ) <-> -. ( ph \\/_ -. ps ) ) |\n| 2 |  | #P_xorneg2 | |- ( ( ph \\/_ -. ps ) <-> -. ( ph \\/_ ps ) ) |\n| 3 | 2 | #P_con2bii | |- ( ( ph \\/_ ps ) <-> -. ( ph \\/_ -. ps ) ) |\n| 4 | 1, 3 | #P_bitr4i | |- ( ( -. ph \\/_ -. ps ) <-> ( ph \\/_ ps ) ) |",
+  "conclusion" : "#P_xorneg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wn", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wph", "#T_wxo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con2bii", "#P_xorneg1", "#P_xorneg2", "#P_bitr4i" ]
+}

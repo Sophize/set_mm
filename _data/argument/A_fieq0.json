@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fieq0 on Metamath](http://us.metamath.org/mpegif/fieq0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( A = (/) -> ( fi ` A ) = ( fi ` (/) ) ) |\n| 2 |  | #P_fi0 | |- ( fi ` (/) ) = (/) |\n| 3 | 1, 2 | #P_syl6eq | |- ( A = (/) -> ( fi ` A ) = (/) ) |\n| 4 |  | #P_ssfii | |- ( A e. V -> A C_ ( fi ` A ) ) |\n| 5 |  | #P_sseq0 | |- ( ( A C_ ( fi ` A ) /\\ ( fi ` A ) = (/) ) -> A = (/) ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( A e. V /\\ ( fi ` A ) = (/) ) -> A = (/) ) |\n| 7 | 6 | #P_ex | |- ( A e. V -> ( ( fi ` A ) = (/) -> A = (/) ) ) |\n| 8 | 3, 7 | #P_impbid2 | |- ( A e. V -> ( A = (/) <-> ( fi ` A ) = (/) ) ) |",
+  "conclusion" : "#P_fieq0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cfi", "#T_cfv", "#T_c0", "#T_cfi", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wa", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cfi", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wceq", "#T_c0", "#T_wb", "#T_cfi", "#T_cfv", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq0", "#P_sylan", "#P_fi0", "#P_ssfii", "#P_ex", "#P_fveq2", "#P_impbid2", "#P_syl6eq" ]
+}

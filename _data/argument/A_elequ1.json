@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elequ1 on Metamath](http://us.metamath.org/mpegif/elequ1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-8 | |- ( x = y -> ( x e. z -> y e. z ) ) |\n| 2 |  | #P_ax-8 | |- ( y = x -> ( y e. z -> x e. z ) ) |\n| 3 | 2 | #P_equcoms | |- ( x = y -> ( y e. z -> x e. z ) ) |\n| 4 | 1, 3 | #P_impbid | |- ( x = y -> ( x e. z <-> y e. z ) ) |",
+  "conclusion" : "#P_elequ1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vz", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vz", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vx", "#T_wcel", "#T_vz", "#T_wb", "#T_vy", "#T_wcel", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-8", "#P_impbid", "#P_equcoms" ]
+}

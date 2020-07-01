@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unixpss on Metamath](http://us.metamath.org/mpegif/unixpss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xpsspw | |- ( A X. B ) C_ ~P ~P ( A u. B ) |\n| 2 | 1 | #P_unissi | |- U. ( A X. B ) C_ U. ~P ~P ( A u. B ) |\n| 3 |  | #P_unipw | |- U. ~P ~P ( A u. B ) = ~P ( A u. B ) |\n| 4 | 2, 3 | #P_sseqtri | |- U. ( A X. B ) C_ ~P ( A u. B ) |\n| 5 | 4 | #P_unissi | |- U. U. ( A X. B ) C_ U. ~P ( A u. B ) |\n| 6 |  | #P_unipw | |- U. ~P ( A u. B ) = ( A u. B ) |\n| 7 | 5, 6 | #P_sseqtri | |- U. U. ( A X. B ) C_ ( A u. B ) |",
+  "conclusion" : "#P_unixpss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cuni", "#T_cA.wceq", "#T_cxp", "#T_cB.wceq", "#T_wss", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cpw", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cuni", "#T_cuni", "#T_cA", "#T_cxp", "#T_cB", "#T_wss", "#T_cA", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unissi", "#P_sseqtri", "#P_unipw", "#P_xpsspw" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringidmlem on Metamath](http://us.metamath.org/mpegif/ringidmlem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rngidm.b | |- B = ( Base ` R ) |\n| 2 |  | rngidm.t | |- .x. = ( .r ` R ) |\n| 3 |  | rngidm.u | |- .1. = ( 1r ` R ) |\n| 4 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 5 | 4 | #P_ringmgp | |- ( R e. Ring -> ( mulGrp ` R ) e. Mnd ) |\n| 6 | 4, 1 | #P_mgpbas | |- B = ( Base ` ( mulGrp ` R ) ) |\n| 7 | 4, 2 | #P_mgpplusg | |- .x. = ( +g ` ( mulGrp ` R ) ) |\n| 8 | 4, 3 | #P_ringidval | |- .1. = ( 0g ` ( mulGrp ` R ) ) |\n| 9 | 6, 7, 8 | #P_mndlrid | |- ( ( ( mulGrp ` R ) e. Mnd /\\ X e. B ) -> ( ( .1. .x. X ) = X /\\ ( X .x. .1. ) = X ) ) |\n| 10 | 5, 9 | #P_sylan | |- ( ( R e. Ring /\\ X e. B ) -> ( ( .1. .x. X ) = X /\\ ( X .x. .1. ) = X ) ) |",
+  "conclusion" : "#P_ringidmlem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.x", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_c.1", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cmgp", "#T_cfv", "#T_cR", "#T_wcel", "#T_cmnd", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_c.1", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX", "#T_wa", "#T_cX", "#T_c.x", "#T_c.1", "#T_wceq", "#T_cX", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cB", "#T_wi", "#T_c.1", "#T_c.x", "#T_cX", "#T_wceq", "#T_cX", "#T_wa", "#T_cX", "#T_c.x", "#T_c.1", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mgpplusg", "#P_sylan", "#P_mgpbas", "#P_ringmgp", "#P_ringidval", "#P_mndlrid" ]
+}

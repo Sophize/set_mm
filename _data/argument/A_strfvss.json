@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strfvss on Metamath](http://us.metamath.org/mpegif/strfvss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ndxarg.1 | |- E = Slot N |\n| 2 |  | #P_id | |- ( S e. _V -> S e. _V ) |\n| 3 | 1, 2 | #P_strfvnd | |- ( S e. _V -> ( E ` S ) = ( S ` N ) ) |\n| 4 |  | #P_fvssunirn | |- ( S ` N ) C_ U. ran S |\n| 5 | 3, 4 | #P_syl6eqss | |- ( S e. _V -> ( E ` S ) C_ U. ran S ) |\n| 6 |  | #P_fvprc | |- ( -. S e. _V -> ( E ` S ) = (/) ) |\n| 7 |  | #P_0ss | |- (/) C_ U. ran S |\n| 8 | 6, 7 | #P_syl6eqss | |- ( -. S e. _V -> ( E ` S ) C_ U. ran S ) |\n| 9 | 5, 8 | #P_pm2.61i | |- ( E ` S ) C_ U. ran S |",
+  "conclusion" : "#P_strfvss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cE", "#T_wceq", "#T_cslot", "#T_cN", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cS", "#T_wcel", "#T_cvv", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wceq", "#T_cS", "#T_cfv", "#T_cN", "#T_cS", "#T_cfv", "#T_cN", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_wn", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_wn", "#T_cS", "#T_wcel", "#T_cvv", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_cE", "#T_cfv", "#T_cS", "#T_wss", "#T_cuni", "#T_crn", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0ss", "#P_fvprc", "#P_syl6eqss", "#P_fvssunirn", "#P_strfvnd", "#P_id", "#P_pm2.61i" ]
+}

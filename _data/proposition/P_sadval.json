@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sadval on Metamath](http://us.metamath.org/mpegif/sadval.html)"
+  } ],
+  "names" : [ "sadval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cn0", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cn0", "#T_cC", "#T_wceq", "#T_cseq--1", "#T_cc0", "#T_vc", "#T_cmpt2--1", "#T_c2o", "#T_cmpt2--2", "#T_vm", "#T_cmpt2--3", "#T_cn0", "#T_cmpt2--4", "#T_cif--1", "#T_wcad--1", "#T_vm", "#T_wcel", "#T_cA", "#T_wcad--2", "#T_vm", "#T_wcel", "#T_cB", "#T_wcad--3", "#T_c0", "#T_wcel", "#T_vc", "#T_cif--2", "#T_c1o", "#T_cif--3", "#T_c0", "#T_cseq--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_vn", "#T_cmin", "#T_c1", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cA", "#T_csad", "#T_cB", "#T_wb", "#T_whad--1", "#T_cN", "#T_wcel", "#T_cA", "#T_whad--2", "#T_cN", "#T_wcel", "#T_cB", "#T_whad--3", "#T_c0", "#T_wcel", "#T_cC", "#T_cfv", "#T_cN", "#T_cA", "#T_vc", "#T_vm", "#T_cB", "#T_vc", "#T_vm", "#T_cN", "#T_vn", "#T_vc", "#T_vm", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The full adder sequence is the half adder function applied to the inputs and the carry sequence.  (Contributed by Mario Carneiro, 5-Sep-2016.) ",
+  "statement" : "sadval.a $e |- ( ph -> A C_ NN0 ) $.\nsadval.b $e |- ( ph -> B C_ NN0 ) $.\nsadval.c $e |- C = seq 0 ( ( c e. 2o , m e. NN0 |-> if ( cadd ( m e. A , m e. B , (/) e. c ) , 1o , (/) ) ) , ( n e. NN0 |-> if ( n = 0 , (/) , ( n - 1 ) ) ) ) $.\nsadcp1.n $e |- ( ph -> N e. NN0 ) $.\nsadval $p |- ( ph -> ( N e. ( A sadd B ) <-> hadd ( N e. A , N e. B , (/) e. ( C ` N ) ) ) ) $.\n$d A c m $.\n$d B c m $.\n$d N n $.\n$d c m n $."
+}

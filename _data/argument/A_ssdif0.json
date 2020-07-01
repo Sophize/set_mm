@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssdif0 on Metamath](http://us.metamath.org/mpegif/ssdif0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iman | |- ( ( x e. A -> x e. B ) <-> -. ( x e. A /\\ -. x e. B ) ) |\n| 2 |  | #P_eldif | |- ( x e. ( A \\ B ) <-> ( x e. A /\\ -. x e. B ) ) |\n| 3 | 1, 2 | #P_xchbinxr | |- ( ( x e. A -> x e. B ) <-> -. x e. ( A \\ B ) ) |\n| 4 | 3 | #P_albii | |- ( A. x ( x e. A -> x e. B ) <-> A. x -. x e. ( A \\ B ) ) |\n| 5 |  | #P_dfss2 | |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) |\n| 6 |  | #P_eq0 | |- ( ( A \\ B ) = (/) <-> A. x -. x e. ( A \\ B ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4i | |- ( A C_ B <-> ( A \\ B ) = (/) ) |",
+  "conclusion" : "#P_ssdif0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wb", "#T_cA", "#T_cdif", "#T_cB", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eldif", "#P_albii", "#P_xchbinxr", "#P_dfss2", "#P_3bitr4i", "#P_iman", "#P_eq0" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elvv on Metamath](http://us.metamath.org/mpegif/elvv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elxp | |- ( A e. ( _V X. _V ) <-> E. x E. y ( A = <. x , y >. /\\ ( x e. _V /\\ y e. _V ) ) ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 |  | #P_vex | |- y e. _V |\n| 4 | 2, 3 | #P_pm3.2i | |- ( x e. _V /\\ y e. _V ) |\n| 5 | 4 | #P_biantru | |- ( A = <. x , y >. <-> ( A = <. x , y >. /\\ ( x e. _V /\\ y e. _V ) ) ) |\n| 6 | 5 | #P_2exbii | |- ( E. x E. y A = <. x , y >. <-> E. x E. y ( A = <. x , y >. /\\ ( x e. _V /\\ y e. _V ) ) ) |\n| 7 | 1, 6 | #P_bitr4i | |- ( A e. ( _V X. _V ) <-> E. x E. y A = <. x , y >. ) |",
+  "conclusion" : "#P_elvv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wb", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_cA", "#T_wceq", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biantru", "#P_elxp", "#P_vex", "#P_2exbii", "#P_pm3.2i", "#P_bitr4i" ]
+}

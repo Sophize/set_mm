@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eltop on Metamath](http://us.metamath.org/mpegif/eltop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tgtop | |- ( J e. Top -> ( topGen ` J ) = J ) |\n| 2 | 1 | #P_eleq2d | |- ( J e. Top -> ( A e. ( topGen ` J ) <-> A e. J ) ) |\n| 3 |  | #P_eltg | |- ( J e. Top -> ( A e. ( topGen ` J ) <-> A C_ U. ( J i^i ~P A ) ) ) |\n| 4 | 2, 3 | #P_bitr3d | |- ( J e. Top -> ( A e. J <-> A C_ U. ( J i^i ~P A ) ) ) |",
+  "conclusion" : "#P_eltop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_ctg", "#T_cfv", "#T_cJ", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cuni", "#T_cJ", "#T_cin", "#T_cpw", "#T_cA.wceq", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cA", "#T_wcel", "#T_cJ", "#T_wb", "#T_cA", "#T_wss", "#T_cuni", "#T_cJ", "#T_cin", "#T_cpw", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_eltg", "#P_bitr3d", "#P_tgtop" ]
+}

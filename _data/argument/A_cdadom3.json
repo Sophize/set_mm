@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cdadom3 on Metamath](http://us.metamath.org/mpegif/cdadom3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_unexg | |- ( ( A e. V /\\ B e. W ) -> ( A u. B ) e. _V ) |\n| 2 |  | #P_ssun1 | |- A C_ ( A u. B ) |\n| 3 |  | #P_ssdomg | |- ( ( A u. B ) e. _V -> ( A C_ ( A u. B ) -> A ~<_ ( A u. B ) ) ) |\n| 4 | 1, 2, 3 | #P_mpisyl | |- ( ( A e. V /\\ B e. W ) -> A ~<_ ( A u. B ) ) |\n| 5 |  | #P_uncdadom | |- ( ( A e. V /\\ B e. W ) -> ( A u. B ) ~<_ ( A +c B ) ) |\n| 6 |  | #P_domtr | |- ( ( A ~<_ ( A u. B ) /\\ ( A u. B ) ~<_ ( A +c B ) ) -> A ~<_ ( A +c B ) ) |\n| 7 | 4, 5, 6 | #P_syl2anc | |- ( ( A e. V /\\ B e. W ) -> A ~<_ ( A +c B ) ) |",
+  "conclusion" : "#P_cdadom3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cW", "#T_wi", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_cdom", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cdom", "#T_cA.wceq", "#T_ccda", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cV", "#T_wa", "#T_cB", "#T_wcel", "#T_cW", "#T_wi", "#T_cA", "#T_cdom", "#T_cA", "#T_ccda", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_domtr", "#P_ssun1", "#P_unexg", "#P_syl2anc", "#P_mpisyl", "#P_ssdomg", "#P_uncdadom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strfv on Metamath](http://us.metamath.org/mpegif/strfv.html)"
+  } ],
+  "names" : [ "strfv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_cstr", "#T_cX", "#T_cE", "#T_wceq", "#T_cslot", "#T_cE", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cE", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cS", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_cfv", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Extract a structure component ` C ` (such as the base set) from a structure ` S ` (such as a member of ` Poset ` , ~ df-poset ) with a component extractor ` E ` (such as the base set extractor ~ df-base ). By virtue of ~ ndxid , this can be done without having to refer to the hard-coded numeric index of ` E ` .  (Contributed by Mario Carneiro, 6-Oct-2013.)  (Revised by Mario Carneiro, 29-Aug-2015.) ",
+  "statement" : "strfv.s $e |- S Struct X $.\nstrfv.e $e |- E = Slot ( E ` ndx ) $.\nstrfv.n $e |- { <. ( E ` ndx ) , C >. } C_ S $.\nstrfv $p |- ( C e. V -> C = ( E ` S ) ) $."
+}

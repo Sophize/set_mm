@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lvecisfrlm on Metamath](http://us.metamath.org/mpegif/lvecisfrlm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lvecisfrlm.f | |- F = ( Scalar ` W ) |\n| 2 |  | #P_eqid | |- ( LBasis ` W ) = ( LBasis ` W ) |\n| 3 | 2 | #P_lbsex | |- ( W e. LVec -> ( LBasis ` W ) =/= (/) ) |\n| 4 |  | #P_lveclmod | |- ( W e. LVec -> W e. LMod ) |\n| 5 | 2, 1 | #P_lmisfree | |- ( W e. LMod -> ( ( LBasis ` W ) =/= (/) <-> E. k W ~=m ( F freeLMod k ) ) ) |\n| 6 | 4, 5 | #P_syl | |- ( W e. LVec -> ( ( LBasis ` W ) =/= (/) <-> E. k W ~=m ( F freeLMod k ) ) ) |\n| 7 | 3, 6 | #P_mpbid | |- ( W e. LVec -> E. k W ~=m ( F freeLMod k ) ) |",
+  "conclusion" : "#P_lvecisfrlm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_clbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_clbs", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_clvec", "#T_wi", "#T_clbs", "#T_cfv", "#T_cW", "#T_wne", "#T_c0", "#T_cW", "#T_wcel", "#T_clvec", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_cW", "#T_wcel", "#T_clmod", "#T_wi", "#T_clbs", "#T_cfv", "#T_cW", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vk", "#T_cW", "#T_clmic", "#T_cF", "#T_cfrlm", "#T_vk", "#T_cW", "#T_wcel", "#T_clvec", "#T_wi", "#T_clbs", "#T_cfv", "#T_cW", "#T_wne", "#T_c0", "#T_wb", "#T_wex", "#T_vk", "#T_cW", "#T_clmic", "#T_cF", "#T_cfrlm", "#T_vk", "#T_cW", "#T_wcel", "#T_clvec", "#T_wi", "#T_wex", "#T_vk", "#T_cW", "#T_clmic", "#T_cF", "#T_cfrlm", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbid", "#P_lbsex", "#P_syl", "#P_lveclmod", "#P_lmisfree" ]
+}

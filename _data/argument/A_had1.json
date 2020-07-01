@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See had1 on Metamath](http://us.metamath.org/mpegif/had1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hadbi | |- ( hadd ( ph , ps , ch ) <-> ( ( ph <-> ps ) <-> ch ) ) |\n| 2 |  | #P_biass | |- ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( hadd ( ph , ps , ch ) <-> ( ph <-> ( ps <-> ch ) ) ) |\n| 4 |  | #P_id | |- ( ph -> ph ) |\n| 5 |  | #P_biidd | |- ( ph -> ( ( ps <-> ch ) <-> ( ps <-> ch ) ) ) |\n| 6 | 4, 5 | #P_2thd | |- ( ph -> ( ph <-> ( ( ps <-> ch ) <-> ( ps <-> ch ) ) ) ) |\n| 7 |  | #P_biass | |- ( ( ( ph <-> ( ps <-> ch ) ) <-> ( ps <-> ch ) ) <-> ( ph <-> ( ( ps <-> ch ) <-> ( ps <-> ch ) ) ) ) |\n| 8 | 6, 7 | #P_sylibr | |- ( ph -> ( ( ph <-> ( ps <-> ch ) ) <-> ( ps <-> ch ) ) ) |\n| 9 | 3, 8 | #P_syl5bb | |- ( ph -> ( hadd ( ph , ps , ch ) <-> ( ps <-> ch ) ) ) |",
+  "conclusion" : "#P_had1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_whad--1", "#T_wph", "#T_whad--2", "#T_wps", "#T_whad--3", "#T_wch", "#T_wb", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2thd", "#P_syl5bb", "#P_biass", "#P_sylibr", "#P_bitri", "#P_id", "#P_biidd", "#P_hadbi" ]
+}

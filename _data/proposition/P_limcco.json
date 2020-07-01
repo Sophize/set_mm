@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See limcco on Metamath](http://us.metamath.org/mpegif/limcco.html)"
+  } ],
+  "names" : [ "limcco" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_cR", "#T_wne", "#T_cC", "#T_wi", "#T_cR", "#T_wcel", "#T_cB", "#T_wph", "#T_wa", "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cS", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cR", "#T_climc", "#T_cX", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_vy", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cS", "#T_climc", "#T_cC", "#T_vy", "#T_wceq", "#T_cR", "#T_wi", "#T_cS", "#T_wceq", "#T_cT", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_cR", "#T_wceq", "#T_cC", "#T_wi", "#T_cT", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cT", "#T_climc", "#T_cX", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cR", "#T_vy", "#T_cS", "#T_vx", "#T_cT", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Composition of two limits.  (Contributed by Mario Carneiro, 29-Dec-2016.) ",
+  "statement" : "limcco.r $e |- ( ( ph /\\ ( x e. A /\\ R =/= C ) ) -> R e. B ) $.\nlimcco.s $e |- ( ( ph /\\ y e. B ) -> S e. CC ) $.\nlimcco.c $e |- ( ph -> C e. ( ( x e. A |-> R ) limCC X ) ) $.\nlimcco.d $e |- ( ph -> D e. ( ( y e. B |-> S ) limCC C ) ) $.\nlimcco.1 $e |- ( y = R -> S = T ) $.\nlimcco.2 $e |- ( ( ph /\\ ( x e. A /\\ R = C ) ) -> T = D ) $.\nlimcco $p |- ( ph -> D e. ( ( x e. A |-> T ) limCC X ) ) $.\n$d A x $.\n$d B x y $.\n$d C x y $.\n$d D x y $.\n$d R y $.\n$d S x $.\n$d T y $.\n$d ph x y $."
+}

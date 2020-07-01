@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rspsbc2VD on Metamath](http://us.metamath.org/mpegif/rspsbc2VD.html)"
+  } ],
+  "names" : [ "rspsbc2VD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cD", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cD", "#T_wph", "#T_wi", "#T_wsbc--1", "#T_cC", "#T_wsbc--2", "#T_vy", "#T_wsbc--3", "#T_wsbc--1", "#T_cA", "#T_wsbc--2", "#T_vx", "#T_wsbc--3", "#T_wph", "#T_cA", "#T_vy", "#T_cB", "#T_vx", "#T_cD", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ rspsbc2 .  The following user's proof is completed by invoking mmj2's unify command and using mmj2's StepSelector to pick all remaining steps of the Metamath proof. <HTML> <TABLE> <TR> <TD> 1::            <TD> ` |- (. A e. B ->. A e. B ). ` <TR> <TD> 2::            <TD> ` |- (. A e. B ,. C e. D ->. C e. D ). ` <TR> <TD> 3::            <TD> ` |- (. A e. B ,. C e. D ,. A. x e. B ` ` A. y e. D ph ->. A. x e. B A. y e. D ph ). ` <TR> <TD> 4:1,3,?: ~ e13    <TD> ` |- (. A e. B ,. C e. D ,. A. x e. B ` ` A. y e. D ph ->. [. A / x ]. A. y e. D ph ). ` <TR> <TD> 5:1,4,?: ~ e13    <TD> ` |- (. A e. B ,. C e. D ,. A. x e. B ` ` A. y e. D ph ->. A. y e. D [. A / x ]. ph ). ` <TR> <TD> 6:2,5,?: ~ e23    <TD> ` |- (. A e. B ,. C e. D ,. A. x e. B ` ` A. y e. D ph ->. [. C / y ]. [. A / x ]. ph ). ` <TR> <TD> 7:6:           <TD> ` |- (. A e. B ,. C e. D ->. ( A. x e. B ` ` A. y e. D ph -> [. C / y ]. [. A / x ]. ph ) ). ` <TR> <TD> 8:7:           <TD> ` |- (. A e. B ->. ( C e. D ` ` -> ( A. x e. B A. y e. D ph -> [. C / y ]. [. A / x ]. ph ) ) ). ` <TR> <TD> qed:8:         <TD> ` |- ( A e. B -> ( C e. D ` ` -> ( A. x e. B A. y e. D ph -> [. C / y ]. [. A / x ]. ph ) ) ) ` </TABLE> </HTML> (Contributed by Alan Sare, 31-Dec-2011.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "rspsbc2VD $p |- ( A e. B -> ( C e. D -> ( A. x e. B A. y e. D ph -> [. C / y ]. [. A / x ]. ph ) ) ) $.\n$d A y $.\n$d B x $.\n$d D x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ntr0 on Metamath](http://us.metamath.org/mpegif/ntr0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0opn | |- ( J e. Top -> (/) e. J ) |\n| 2 |  | #P_0ss | |- (/) C_ U. J |\n| 3 |  | #P_eqid | |- U. J = U. J |\n| 4 | 3 | #P_isopn3 | |- ( ( J e. Top /\\ (/) C_ U. J ) -> ( (/) e. J <-> ( ( int ` J ) ` (/) ) = (/) ) ) |\n| 5 | 2, 4 | #P_mpan2 | |- ( J e. Top -> ( (/) e. J <-> ( ( int ` J ) ` (/) ) = (/) ) ) |\n| 6 | 1, 5 | #P_mpbid | |- ( J e. Top -> ( ( int ` J ) ` (/) ) = (/) ) |",
+  "conclusion" : "#P_ntr0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_c0", "#T_wcel", "#T_cJ", "#T_c0", "#T_wss", "#T_cuni", "#T_cJ", "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_c0", "#T_wss", "#T_cuni", "#T_cJ", "#T_wi", "#T_c0", "#T_wcel", "#T_cJ", "#T_wb", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_c0", "#T_wcel", "#T_cJ", "#T_wb", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_c0", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_0ss", "#P_mpbid", "#P_isopn3", "#P_mpan2", "#P_0opn" ]
+}

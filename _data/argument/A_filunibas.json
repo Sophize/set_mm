@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See filunibas on Metamath](http://us.metamath.org/mpegif/filunibas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_filsspw | |- ( F e. ( Fil ` X ) -> F C_ ~P X ) |\n| 2 |  | #P_sspwuni | |- ( F C_ ~P X <-> U. F C_ X ) |\n| 3 | 1, 2 | #P_sylib | |- ( F e. ( Fil ` X ) -> U. F C_ X ) |\n| 4 |  | #P_filtop | |- ( F e. ( Fil ` X ) -> X e. F ) |\n| 5 |  | #P_unissel | |- ( ( U. F C_ X /\\ X e. F ) -> U. F = X ) |\n| 6 | 3, 4, 5 | #P_syl2anc | |- ( F e. ( Fil ` X ) -> U. F = X ) |",
+  "conclusion" : "#P_filunibas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_wss", "#T_cpw", "#T_cX", "#T_cF", "#T_wss", "#T_cpw", "#T_cX", "#T_wb", "#T_cuni", "#T_cF", "#T_wss", "#T_cX", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cuni", "#T_cF", "#T_wss", "#T_cX", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_cF", "#T_cuni", "#T_cF", "#T_wss", "#T_cX", "#T_wa", "#T_cX", "#T_wcel", "#T_cF", "#T_wi", "#T_cuni", "#T_cF", "#T_wceq", "#T_cX", "#T_cF", "#T_wcel", "#T_cfil", "#T_cfv", "#T_cX", "#T_wi", "#T_cuni", "#T_cF", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_filsspw", "#P_syl2anc", "#P_sylib", "#P_unissel", "#P_sspwuni", "#P_filtop" ]
+}

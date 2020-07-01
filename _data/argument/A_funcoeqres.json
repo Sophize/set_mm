@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funcoeqres on Metamath](http://us.metamath.org/mpegif/funcoeqres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_funcocnv2 | |- ( Fun G -> ( G o. `' G ) = ( _I |` ran G ) ) |\n| 2 | 1 | #P_coeq2d | |- ( Fun G -> ( F o. ( G o. `' G ) ) = ( F o. ( _I |` ran G ) ) ) |\n| 3 |  | #P_coass | |- ( ( F o. G ) o. `' G ) = ( F o. ( G o. `' G ) ) |\n| 4 | 3 | #P_eqcomi | |- ( F o. ( G o. `' G ) ) = ( ( F o. G ) o. `' G ) |\n| 5 |  | #P_coires1 | |- ( F o. ( _I |` ran G ) ) = ( F |` ran G ) |\n| 6 | 2, 4, 5 | #P_3eqtr3g | |- ( Fun G -> ( ( F o. G ) o. `' G ) = ( F |` ran G ) ) |\n| 7 |  | #P_coeq1 | |- ( ( F o. G ) = H -> ( ( F o. G ) o. `' G ) = ( H o. `' G ) ) |\n| 8 | 6, 7 | #P_sylan9req | |- ( ( Fun G /\\ ( F o. G ) = H ) -> ( F |` ran G ) = ( H o. `' G ) ) |",
+  "conclusion" : "#P_funcoeqres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cG", "#T_wi", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cid", "#T_cres", "#T_crn", "#T_cG", "#T_wfun", "#T_cG", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_cid", "#T_cres", "#T_crn", "#T_cG", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_cF", "#T_ccom", "#T_cid", "#T_cres", "#T_crn", "#T_cG", "#T_wceq", "#T_cF", "#T_cres", "#T_crn", "#T_cG", "#T_wfun", "#T_cG", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cF", "#T_cres", "#T_crn", "#T_cG", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cH", "#T_wi", "#T_cF", "#T_ccom", "#T_cG", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wceq", "#T_cH", "#T_ccom", "#T_ccnv", "#T_cG", "#T_wfun", "#T_cG", "#T_wa", "#T_cF", "#T_ccom", "#T_cG", "#T_wceq", "#T_cH", "#T_wi", "#T_cF", "#T_cres", "#T_crn", "#T_cG", "#T_wceq", "#T_cH", "#T_ccom", "#T_ccnv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_coires1", "#P_funcocnv2", "#P_coeq2d", "#P_coeq1", "#P_sylan9req", "#P_coass", "#P_3eqtr3g", "#P_eqcomi" ]
+}

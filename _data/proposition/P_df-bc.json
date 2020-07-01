@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-bc on Metamath](http://us.metamath.org/mpegif/df-bc.html)"
+  } ],
+  "names" : [ "df-bc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbc", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cn0", "#T_cmpt2--2", "#T_vk", "#T_cmpt2--3", "#T_cz", "#T_cmpt2--4", "#T_cif--1", "#T_vk", "#T_wcel", "#T_cc0", "#T_cfz", "#T_vn", "#T_cif--2", "#T_cfa", "#T_cfv", "#T_vn", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_vn", "#T_cmin", "#T_vk", "#T_cmul", "#T_cfa", "#T_cfv", "#T_vk", "#T_cif--3", "#T_cc0", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the binomial coefficient operation.  In the literature, this function is often written as a column vector of the two arguments, or with the arguments as subscripts before and after the letter \"C\". ` ( N _C K ) ` is read \" ` N ` choose ` K ` .\"  Definition of binomial coefficient in [Gleason] p. 295.  As suggested by Gleason, we define it to be 0 when ` 0 <_ k <_ n ` does not hold.  (Contributed by NM, 10-Jul-2005.) ",
+  "statement" : "df-bc $p |- _C = ( n e. NN0 , k e. ZZ |-> if ( k e. ( 0 ... n ) , ( ( ! ` n ) / ( ( ! ` ( n - k ) ) x. ( ! ` k ) ) ) , 0 ) ) $.\n$d k n $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ringinvcl on Metamath](http://us.metamath.org/mpegif/ringinvcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unitinvcl.1 | |- U = ( Unit ` R ) |\n| 2 |  | unitinvcl.2 | |- I = ( invr ` R ) |\n| 3 |  | ringinvcl.3 | |- B = ( Base ` R ) |\n| 4 | 1, 2 | #P_unitinvcl | |- ( ( R e. Ring /\\ X e. U ) -> ( I ` X ) e. U ) |\n| 5 | 3, 1 | #P_unitcl | |- ( ( I ` X ) e. U -> ( I ` X ) e. B ) |\n| 6 | 4, 5 | #P_syl | |- ( ( R e. Ring /\\ X e. U ) -> ( I ` X ) e. B ) |",
+  "conclusion" : "#P_ringinvcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cI", "#T_wceq", "#T_cinvr", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cU", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unitcl", "#P_unitinvcl", "#P_syl" ]
+}

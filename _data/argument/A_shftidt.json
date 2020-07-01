@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shftidt on Metamath](http://us.metamath.org/mpegif/shftidt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | shftfval.1 | |- F e. _V |\n| 2 | 1 | #P_shftidt2 | |- ( F shift 0 ) = ( F |` CC ) |\n| 3 | 2 | #P_fveq1i | |- ( ( F shift 0 ) ` A ) = ( ( F |` CC ) ` A ) |\n| 4 |  | #P_fvres | |- ( A e. CC -> ( ( F |` CC ) ` A ) = ( F ` A ) ) |\n| 5 | 3, 4 | #P_syl5eq | |- ( A e. CC -> ( ( F shift 0 ) ` A ) = ( F ` A ) ) |",
+  "conclusion" : "#P_shftidt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wcel", "#T_cvv", "#T_cF", "#T_cshi", "#T_cc0", "#T_wceq", "#T_cF", "#T_cres", "#T_cc", "#T_cF", "#T_cshi", "#T_cc0", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_cres", "#T_cc", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cF", "#T_cres", "#T_cc", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cF", "#T_cshi", "#T_cc0", "#T_cfv", "#T_cA", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_shftidt2", "#P_fvres", "#P_fveq1i", "#P_syl5eq" ]
+}

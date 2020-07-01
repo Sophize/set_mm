@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hsupval on Metamath](http://us.metamath.org/mpegif/hsupval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hilex | |- ~H e. _V |\n| 2 | 1 | #P_pwex | |- ~P ~H e. _V |\n| 3 | 2 | #P_elpw2 | |- ( A e. ~P ~P ~H <-> A C_ ~P ~H ) |\n| 4 |  | #P_unieq | |- ( x = A -> U. x = U. A ) |\n| 5 | 4 | #P_fveq2d | |- ( x = A -> ( _|_ ` U. x ) = ( _|_ ` U. A ) ) |\n| 6 | 5 | #P_fveq2d | |- ( x = A -> ( _|_ ` ( _|_ ` U. x ) ) = ( _|_ ` ( _|_ ` U. A ) ) ) |\n| 7 |  | #P_df-chsup | |- \\/H = ( x e. ~P ~P ~H |-> ( _|_ ` ( _|_ ` U. x ) ) ) |\n| 8 |  | #P_fvex | |- ( _|_ ` ( _|_ ` U. A ) ) e. _V |\n| 9 | 6, 7, 8 | #P_fvmpt | |- ( A e. ~P ~P ~H -> ( \\/H ` A ) = ( _|_ ` ( _|_ ` U. A ) ) ) |\n| 10 | 3, 9 | #P_sylbir | |- ( A C_ ~P ~H -> ( \\/H ` A ) = ( _|_ ` ( _|_ ` U. A ) ) ) |",
+  "conclusion" : "#P_hsupval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_chil", "#T_wcel", "#T_cvv", "#T_cpw", "#T_chil", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cpw", "#T_chil", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_cpw", "#T_chil", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cuni", "#T_vx.wal", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cort", "#T_cfv", "#T_cuni", "#T_vx.wal", "#T_wceq", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_vx.wal", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_chsup", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cpw", "#T_cpw", "#T_chil", "#T_cmpt--2", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_vx.wal", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_cpw", "#T_chil", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA.wceq", "#T_cA", "#T_wss", "#T_cpw", "#T_chil", "#T_wi", "#T_chsup", "#T_cfv", "#T_cA", "#T_wceq", "#T_cort", "#T_cfv", "#T_cort", "#T_cfv", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pwex", "#P_fvmpt", "#P_ax-hilex", "#P_fveq2d", "#P_sylbir", "#P_unieq", "#P_elpw2", "#P_df-chsup", "#P_fvex" ]
+}

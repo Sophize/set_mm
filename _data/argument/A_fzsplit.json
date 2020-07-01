@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzsplit on Metamath](http://us.metamath.org/mpegif/fzsplit.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elfzuz | |- ( K e. ( M ... N ) -> K e. ( ZZ>= ` M ) ) |\n| 2 |  | #P_peano2uz | |- ( K e. ( ZZ>= ` M ) -> ( K + 1 ) e. ( ZZ>= ` M ) ) |\n| 3 | 1, 2 | #P_syl | |- ( K e. ( M ... N ) -> ( K + 1 ) e. ( ZZ>= ` M ) ) |\n| 4 |  | #P_elfzuz3 | |- ( K e. ( M ... N ) -> N e. ( ZZ>= ` K ) ) |\n| 5 |  | #P_fzsplit2 | |- ( ( ( K + 1 ) e. ( ZZ>= ` M ) /\\ N e. ( ZZ>= ` K ) ) -> ( M ... N ) = ( ( M ... K ) u. ( ( K + 1 ) ... N ) ) ) |\n| 6 | 3, 4, 5 | #P_syl2anc | |- ( K e. ( M ... N ) -> ( M ... N ) = ( ( M ... K ) u. ( ( K + 1 ) ... N ) ) ) |",
+  "conclusion" : "#P_fzsplit",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cK", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_cK", "#T_caddc", "#T_c1", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cK", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cK", "#T_cun", "#T_cK", "#T_caddc", "#T_c1", "#T_cfz", "#T_cN", "#T_cK", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cK", "#T_cun", "#T_cK", "#T_caddc", "#T_c1", "#T_cfz", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_peano2uz", "#P_elfzuz3", "#P_syl2anc", "#P_elfzuz", "#P_syl", "#P_fzsplit2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bitsmod on Metamath](http://us.metamath.org/mpegif/bitsmod.html)"
+  } ],
+  "names" : [ "bitsmod" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_cbits", "#T_cfv", "#T_cN", "#T_cmo", "#T_c2", "#T_cexp", "#T_cM", "#T_wceq", "#T_cbits", "#T_cfv", "#T_cN", "#T_cin", "#T_cc0", "#T_cfzo", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Truncating the bit sequence after some ` M ` is equivalent to reducing the argument ` mod 2 ^ M ` .  (Contributed by Mario Carneiro, 6-Sep-2016.) ",
+  "statement" : "bitsmod $p |- ( ( N e. ZZ /\\ M e. NN0 ) -> ( bits ` ( N mod ( 2 ^ M ) ) ) = ( ( bits ` N ) i^i ( 0 ..^ M ) ) ) $."
+}

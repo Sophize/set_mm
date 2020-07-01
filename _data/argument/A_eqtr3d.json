@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqtr3d on Metamath](http://us.metamath.org/mpegif/eqtr3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eqtr3d.1 | |- ( ph -> A = B ) |\n| 2 |  | eqtr3d.2 | |- ( ph -> A = C ) |\n| 3 | 1 | #P_eqcomd | |- ( ph -> B = A ) |\n| 4 | 3, 2 | #P_eqtrd | |- ( ph -> B = C ) |",
+  "conclusion" : "#P_eqtr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_eqcomd" ]
+}

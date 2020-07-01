@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frgrawopreglem4 on Metamath](http://us.metamath.org/mpegif/frgrawopreglem4.html)"
+  } ],
+  "names" : [ "frgrawopreglem4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cV", "#T_crab--3", "#T_cV", "#T_cvdg", "#T_cE", "#T_cfv", "#T_vx", "#T_wceq", "#T_cK", "#T_crab--4", "#T_cB", "#T_wceq", "#T_cV", "#T_cdif", "#T_cA", "#T_cV", "#T_cfrgra", "#T_cE", "#T_wi", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cB", "#T_cpr--1", "#T_va", "#T_cpr--2", "#T_vb", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_cA", "#T_vb", "#T_vx", "#T_cE", "#T_va", "#T_vb", "#T_vx", "#T_cK", "#T_vx", "#T_cV", "#T_va", "#T_vb", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma 4 for ~ frgrawopreg .  In a friendship graph each vertex with degree K is connected with a vertex with degree other than K. This corresponds to statement 4 in [Huneke] p. 2:  \"By the first claim, every vertex in A is adjacent to every vertex in B.\".  (Contributed by Alexander van der Vekens, 30-Dec-2017.) ",
+  "statement" : "frgrawopreg.a $e |- A = { x e. V | ( ( V VDeg E ) ` x ) = K } $.\nfrgrawopreg.b $e |- B = ( V \\ A ) $.\nfrgrawopreglem4 $p |- ( V FriendGrph E -> A. a e. A A. b e. B { a , b } e. ran E ) $.\n$d A b x $.\n$d E a b x $.\n$d K x $.\n$d V a b x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfif on Metamath](http://us.metamath.org/mpegif/nfif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfif.1 | |- F/ x ph |\n| 2 |  | nfif.2 | |- F/_ x A |\n| 3 |  | nfif.3 | |- F/_ x B |\n| 4 | 1 | #P_a1i | |- ( T. -> F/ x ph ) |\n| 5 | 2 | #P_a1i | |- ( T. -> F/_ x A ) |\n| 6 | 3 | #P_a1i | |- ( T. -> F/_ x B ) |\n| 7 | 4, 5, 6 | #P_nfifd | |- ( T. -> F/_ x if ( ph , A , B ) ) |\n| 8 | 7 | #P_trud | |- F/_ x if ( ph , A , B ) |",
+  "conclusion" : "#P_nfif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_wtru", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cB.wceq", "#T_wtru", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wnfc", "#T_vx", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_a1i", "#P_nfifd" ]
+}

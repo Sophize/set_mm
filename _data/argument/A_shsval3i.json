@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See shsval3i on Metamath](http://us.metamath.org/mpegif/shsval3i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | shlesb1.1 | |- A e. SH |\n| 2 |  | shlesb1.2 | |- B e. SH |\n| 3 | 1, 2 | #P_shsval2i | |- ( A +H B ) = |^| { x e. SH | ( A u. B ) C_ x } |\n| 4 | 1 | #P_shssii | |- A C_ ~H |\n| 5 | 2 | #P_shssii | |- B C_ ~H |\n| 6 | 4, 5 | #P_unssi | |- ( A u. B ) C_ ~H |\n| 7 |  | #P_spanval | |- ( ( A u. B ) C_ ~H -> ( span ` ( A u. B ) ) = |^| { x e. SH | ( A u. B ) C_ x } ) |\n| 8 | 6, 7 | #P_ax-mp | |- ( span ` ( A u. B ) ) = |^| { x e. SH | ( A u. B ) C_ x } |\n| 9 | 3, 8 | #P_eqtr4i | |- ( A +H B ) = ( span ` ( A u. B ) ) |",
+  "conclusion" : "#P_shsval3i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA", "#T_wcel", "#T_csh", "#T_cB", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_cph", "#T_cB.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA.wceq", "#T_wss", "#T_chil", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_chil", "#T_wi", "#T_cspn", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cspn", "#T_cfv", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cint", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_csh", "#T_crab--3", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_vx.wal", "#T_crab--4", "#T_cA", "#T_cph", "#T_cB", "#T_wceq", "#T_cspn", "#T_cfv", "#T_cA", "#T_cun", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_shssii", "#P_ax-mp", "#P_unssi", "#P_spanval", "#P_shsval2i" ]
+}

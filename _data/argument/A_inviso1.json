@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inviso1 on Metamath](http://us.metamath.org/mpegif/inviso1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | invfval.b | |- B = ( Base ` C ) |\n| 2 |  | invfval.n | |- N = ( Inv ` C ) |\n| 3 |  | invfval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | invfval.x | |- ( ph -> X e. B ) |\n| 5 |  | invfval.y | |- ( ph -> Y e. B ) |\n| 6 |  | isoval.n | |- I = ( Iso ` C ) |\n| 7 |  | inviso1.1 | |- ( ph -> F ( X N Y ) G ) |\n| 8 | 1, 2, 3, 4, 5 | #P_invfun | |- ( ph -> Fun ( X N Y ) ) |\n| 9 |  | #P_funrel | |- ( Fun ( X N Y ) -> Rel ( X N Y ) ) |\n| 10 | 8, 9 | #P_syl | |- ( ph -> Rel ( X N Y ) ) |\n| 11 |  | #P_releldm | |- ( ( Rel ( X N Y ) /\\ F ( X N Y ) G ) -> F e. dom ( X N Y ) ) |\n| 12 | 10, 7, 11 | #P_syl2anc | |- ( ph -> F e. dom ( X N Y ) ) |\n| 13 | 1, 2, 3, 4, 5, 6 | #P_isoval | |- ( ph -> ( X I Y ) = dom ( X N Y ) ) |\n| 14 | 12, 13 | #P_eleqtrrd | |- ( ph -> F e. ( X I Y ) ) |",
+  "conclusion" : "#P_inviso1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cN", "#T_wceq", "#T_cinv", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_cI", "#T_wceq", "#T_ciso", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_cX", "#T_cN", "#T_cY", "#T_cG", "#T_wph", "#T_wi", "#T_wfun", "#T_cX", "#T_cN", "#T_cY", "#T_wfun", "#T_cX", "#T_cN", "#T_cY", "#T_wi", "#T_wrel", "#T_cX", "#T_cN", "#T_cY", "#T_wph", "#T_wi", "#T_wrel", "#T_cX", "#T_cN", "#T_cY", "#T_wrel", "#T_cX", "#T_cN", "#T_cY", "#T_wa", "#T_cF", "#T_cX", "#T_cN", "#T_cY", "#T_cG", "#T_wi", "#T_cF", "#T_wcel", "#T_cdm", "#T_cX", "#T_cN", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cdm", "#T_cX", "#T_cN", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_cI", "#T_cY", "#T_wceq", "#T_cdm", "#T_cX", "#T_cN", "#T_cY", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_cI", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isoval", "#P_syl2anc", "#P_funrel", "#P_syl", "#P_releldm", "#P_eleqtrrd", "#P_invfun" ]
+}

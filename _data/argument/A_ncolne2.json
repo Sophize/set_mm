@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ncolne2 on Metamath](http://us.metamath.org/mpegif/ncolne2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tglineelsb2.p | |- B = ( Base ` G ) |\n| 2 |  | tglineelsb2.i | |- I = ( Itv ` G ) |\n| 3 |  | tglineelsb2.l | |- L = ( LineG ` G ) |\n| 4 |  | tglineelsb2.g | |- ( ph -> G e. TarskiG ) |\n| 5 |  | ncolne.x | |- ( ph -> X e. B ) |\n| 6 |  | ncolne.y | |- ( ph -> Y e. B ) |\n| 7 |  | ncolne.z | |- ( ph -> Z e. B ) |\n| 8 |  | ncolne.2 | |- ( ph -> -. ( X e. ( Y L Z ) \\/ Y = Z ) ) |\n| 9 | 1, 3, 2, 4, 6, 7, 5, 8 | #P_ncolcom | |- ( ph -> -. ( X e. ( Z L Y ) \\/ Z = Y ) ) |\n| 10 | 1, 2, 3, 4, 5, 7, 6, 9 | #P_ncolne1 | |- ( ph -> X =/= Z ) |",
+  "conclusion" : "#P_ncolne2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cI", "#T_wceq", "#T_citv", "#T_cfv", "#T_cG", "#T_cL", "#T_wceq", "#T_clng", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cstrkg", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cY", "#T_cL", "#T_cZ", "#T_wo", "#T_cY", "#T_wceq", "#T_cZ", "#T_wph", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cZ", "#T_cL", "#T_cY", "#T_wo", "#T_cZ", "#T_wceq", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_wne", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ncolcom", "#P_ncolne1" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ppif on Metamath](http://us.metamath.org/mpegif/ppif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ppi | |- ppi = ( x e. RR |-> ( # ` ( ( 0 [,] x ) i^i Prime ) ) ) |\n| 2 |  | #P_ppifi | |- ( x e. RR -> ( ( 0 [,] x ) i^i Prime ) e. Fin ) |\n| 3 |  | #P_hashcl | |- ( ( ( 0 [,] x ) i^i Prime ) e. Fin -> ( # ` ( ( 0 [,] x ) i^i Prime ) ) e. NN0 ) |\n| 4 | 2, 3 | #P_syl | |- ( x e. RR -> ( # ` ( ( 0 [,] x ) i^i Prime ) ) e. NN0 ) |\n| 5 | 1, 4 | #P_fmpti | |- ppi : RR --> NN0 |",
+  "conclusion" : "#P_ppif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cppi", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_chash", "#T_cfv", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_wcel", "#T_cfn", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_wcel", "#T_cfn", "#T_wi", "#T_chash", "#T_cfv", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_wcel", "#T_cn0", "#T_vx.wal", "#T_wcel", "#T_cr", "#T_wi", "#T_chash", "#T_cfv", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_wcel", "#T_cn0", "#T_cppi", "#T_wf--1", "#T_cr", "#T_wf--2", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ppi", "#P_hashcl", "#P_fmpti", "#P_syl", "#P_ppifi" ]
+}

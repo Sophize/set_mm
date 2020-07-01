@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0suc on Metamath](http://us.metamath.org/mpegif/nn0suc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ne | |- ( A =/= (/) <-> -. A = (/) ) |\n| 2 |  | #P_nnsuc | |- ( ( A e. _om /\\ A =/= (/) ) -> E. x e. _om A = suc x ) |\n| 3 | 1, 2 | #P_sylan2br | |- ( ( A e. _om /\\ -. A = (/) ) -> E. x e. _om A = suc x ) |\n| 4 | 3 | #P_ex | |- ( A e. _om -> ( -. A = (/) -> E. x e. _om A = suc x ) ) |\n| 5 | 4 | #P_orrd | |- ( A e. _om -> ( A = (/) \\/ E. x e. _om A = suc x ) ) |",
+  "conclusion" : "#P_nn0suc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_com", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_cA", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_com", "#T_cA", "#T_wceq", "#T_csuc", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nnsuc", "#P_ex", "#P_df-ne", "#P_sylan2br", "#P_orrd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exopxfr on Metamath](http://us.metamath.org/mpegif/exopxfr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | exopxfr.1 | |- ( x = <. y , z >. -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_rexxp | |- ( E. x e. ( _V X. _V ) ph <-> E. y e. _V E. z e. _V ps ) |\n| 3 |  | #P_rexv | |- ( E. y e. _V E. z e. _V ps <-> E. y E. z e. _V ps ) |\n| 4 |  | #P_rexv | |- ( E. z e. _V ps <-> E. z ps ) |\n| 5 | 4 | #P_exbii | |- ( E. y E. z e. _V ps <-> E. y E. z ps ) |\n| 6 | 2, 3, 5 | #P_3bitri | |- ( E. x e. ( _V X. _V ) ph <-> E. y E. z ps ) |",
+  "conclusion" : "#P_exopxfr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cop--1", "#T_vy", "#T_cop--2", "#T_vz", "#T_cop--3", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cvv", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cvv", "#T_wps", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cvv", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cvv", "#T_wps", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cvv", "#T_wps", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cvv", "#T_wps", "#T_wb", "#T_wex", "#T_vz", "#T_wps", "#T_wex", "#T_vy.tru", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cvv", "#T_wps", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wex", "#T_vz", "#T_wps", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wph", "#T_wb", "#T_wex", "#T_vy", "#T_wex", "#T_vz", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_rexxp", "#P_3bitri", "#P_rexv" ]
+}

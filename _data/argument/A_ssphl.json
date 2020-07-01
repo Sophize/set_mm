@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ssphl on Metamath](http://us.metamath.org/mpegif/ssphl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ssphl.h | |- H = ( SubSp ` U ) |\n| 2 |  | #P_simp3 | |- ( ( U e. CPreHilOLD /\\ W e. H /\\ W e. CBan ) -> W e. CBan ) |\n| 3 | 1 | #P_sspph | |- ( ( U e. CPreHilOLD /\\ W e. H ) -> W e. CPreHilOLD ) |\n| 4 | 3 | #P_3adant3 | |- ( ( U e. CPreHilOLD /\\ W e. H /\\ W e. CBan ) -> W e. CPreHilOLD ) |\n| 5 |  | #P_ishlo | |- ( W e. CHilOLD <-> ( W e. CBan /\\ W e. CPreHilOLD ) ) |\n| 6 | 2, 4, 5 | #P_sylanbrc | |- ( ( U e. CPreHilOLD /\\ W e. H /\\ W e. CBan ) -> W e. CHilOLD ) |",
+  "conclusion" : "#P_ssphl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_css", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--2", "#T_cW", "#T_wcel", "#T_ccbn", "#T_wi", "#T_cW", "#T_wcel", "#T_ccbn", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wi", "#T_cW", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--2", "#T_cW", "#T_wcel", "#T_ccbn", "#T_wi", "#T_cW", "#T_wcel", "#T_ccphlo", "#T_cW", "#T_wcel", "#T_chlo", "#T_wb", "#T_cW", "#T_wcel", "#T_ccbn", "#T_wa", "#T_cW", "#T_wcel", "#T_ccphlo", "#T_cU", "#T_wcel", "#T_ccphlo", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cH", "#T_w3a--2", "#T_cW", "#T_wcel", "#T_ccbn", "#T_wi", "#T_cW", "#T_wcel", "#T_chlo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sspph", "#P_simp3", "#P_sylanbrc", "#P_ishlo", "#P_3adant3" ]
+}

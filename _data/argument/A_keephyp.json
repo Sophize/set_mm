@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See keephyp on Metamath](http://us.metamath.org/mpegif/keephyp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | keephyp.1 | |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) |\n| 2 |  | keephyp.2 | |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) |\n| 3 |  | keephyp.3 | |- ps |\n| 4 |  | keephyp.4 | |- ch |\n| 5 | 1, 2 | #P_ifboth | |- ( ( ps /\\ ch ) -> th ) |\n| 6 | 3, 4, 5 | #P_mp2an | |- th |",
+  "conclusion" : "#P_keephyp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wps", "#T_wch", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ifboth", "#P_mp2an" ]
+}

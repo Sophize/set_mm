@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ipo0 on Metamath](http://us.metamath.org/mpegif/ipo0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_equid | |- x = x |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 | 2 | #P_ideq | |- ( x _I x <-> x = x ) |\n| 4 | 1, 3 | #P_mpbir | |- x _I x |\n| 5 |  | #P_poirr | |- ( ( _I Po A /\\ x e. A ) -> -. x _I x ) |\n| 6 | 5 | #P_ex | |- ( _I Po A -> ( x e. A -> -. x _I x ) ) |\n| 7 | 4, 6 | #P_mt2i | |- ( _I Po A -> -. x e. A ) |\n| 8 | 7 | #P_eq0rdv | |- ( _I Po A -> A = (/) ) |\n| 9 |  | #P_po0 | |- _I Po (/) |\n| 10 |  | #P_poeq2 | |- ( A = (/) -> ( _I Po A <-> _I Po (/) ) ) |\n| 11 | 9, 10 | #P_mpbiri | |- ( A = (/) -> _I Po A ) |\n| 12 | 8, 11 | #P_impbii | |- ( _I Po A <-> A = (/) ) |",
+  "conclusion" : "#P_ipo0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_cid", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_cid", "#T_vx.wal", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_cid", "#T_vx.wal", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_cid", "#T_vx.wal", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cid", "#T_wpo", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_wb", "#T_cid", "#T_wpo", "#T_c0", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_wi", "#T_cid", "#T_wpo", "#T_cA.wceq", "#T_cid", "#T_wpo", "#T_cA", "#T_wb", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ideq", "#P_eq0rdv", "#P_po0", "#P_mpbiri", "#P_impbii", "#P_poeq2", "#P_ex", "#P_vex", "#P_mpbir", "#P_mt2i", "#P_equid", "#P_poirr" ]
+}

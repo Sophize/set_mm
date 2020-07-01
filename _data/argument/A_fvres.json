@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvres on Metamath](http://us.metamath.org/mpegif/fvres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_brres | |- ( A ( F |` B ) x <-> ( A F x /\\ A e. B ) ) |\n| 3 | 2 | #P_rbaib | |- ( A e. B -> ( A ( F |` B ) x <-> A F x ) ) |\n| 4 | 3 | #P_iotabidv | |- ( A e. B -> ( iota x A ( F |` B ) x ) = ( iota x A F x ) ) |\n| 5 |  | #P_df-fv | |- ( ( F |` B ) ` A ) = ( iota x A ( F |` B ) x ) |\n| 6 |  | #P_df-fv | |- ( F ` A ) = ( iota x A F x ) |\n| 7 | 4, 5, 6 | #P_3eqtr4g | |- ( A e. B -> ( ( F |` B ) ` A ) = ( F ` A ) ) |",
+  "conclusion" : "#P_fvres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_cres", "#T_cB.wceq", "#T_vx.wal", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_cA.wceq", "#T_cF", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cB", "#T_wi", "#T_cF", "#T_cres", "#T_cB", "#T_cfv", "#T_cA", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-fv", "#P_rbaib", "#P_vex", "#P_brres", "#P_3eqtr4g", "#P_iotabidv" ]
+}

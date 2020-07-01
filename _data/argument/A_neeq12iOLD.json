@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See neeq12iOLD on Metamath](http://us.metamath.org/mpegif/neeq12iOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | neeq1i.1 | |- A = B |\n| 2 |  | neeq12i.2 | |- C = D |\n| 3 | 2 | #P_neeq2i | |- ( A =/= C <-> A =/= D ) |\n| 4 | 1 | #P_neeq1i | |- ( A =/= D <-> B =/= D ) |\n| 5 | 3, 4 | #P_bitri | |- ( A =/= C <-> B =/= D ) |\n\\\n Obsolete proof of ~ neeq12i as of 25-Nov-2019.  (Contributed by NM, 24-Jul-2012.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_neeq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wne", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_cD", "#T_cA.wceq", "#T_wne", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cD", "#T_cA", "#T_wne", "#T_cC", "#T_wb", "#T_cB", "#T_wne", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neeq1i", "#P_neeq2i", "#P_bitri" ]
+}

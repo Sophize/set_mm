@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fiidomfld on Metamath](http://us.metamath.org/mpegif/fiidomfld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fidomndrng.b | |- B = ( Base ` R ) |\n| 2 | 1 | #P_fidomndrng | |- ( B e. Fin -> ( R e. Domn <-> R e. DivRing ) ) |\n| 3 | 2 | #P_anbi2d | |- ( B e. Fin -> ( ( R e. CRing /\\ R e. Domn ) <-> ( R e. CRing /\\ R e. DivRing ) ) ) |\n| 4 |  | #P_isidom | |- ( R e. IDomn <-> ( R e. CRing /\\ R e. Domn ) ) |\n| 5 |  | #P_isfld | |- ( R e. Field <-> ( R e. DivRing /\\ R e. CRing ) ) |\n| 6 |  | #P_ancom | |- ( ( R e. DivRing /\\ R e. CRing ) <-> ( R e. CRing /\\ R e. DivRing ) ) |\n| 7 | 5, 6 | #P_bitri | |- ( R e. Field <-> ( R e. CRing /\\ R e. DivRing ) ) |\n| 8 | 3, 4, 7 | #P_3bitr4g | |- ( B e. Fin -> ( R e. IDomn <-> R e. Field ) ) |",
+  "conclusion" : "#P_fiidomfld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cR", "#T_wcel", "#T_cdomn", "#T_wb", "#T_cR", "#T_wcel", "#T_cdr", "#T_cB.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdomn", "#T_wb", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdr", "#T_cR", "#T_wcel", "#T_cidom", "#T_wb", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdomn", "#T_cR", "#T_wcel", "#T_cfield", "#T_wb", "#T_cR", "#T_wcel", "#T_cdr", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_cR", "#T_wcel", "#T_cdr", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wb", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdr", "#T_cR", "#T_wcel", "#T_cfield", "#T_wb", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdr", "#T_cB", "#T_wcel", "#T_cfn", "#T_wi", "#T_cR", "#T_wcel", "#T_cidom", "#T_wb", "#T_cR", "#T_wcel", "#T_cfield" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_anbi2d", "#P_isfld", "#P_3bitr4g", "#P_bitri", "#P_isidom", "#P_fidomndrng" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funfvex on Metamath](http://us.metamath.org/mpegif/funfvex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-fv | |- ( F ` A ) = ( iota y A F y ) |\n| 2 |  | #P_funfveu | |- ( ( Fun F /\\ A e. dom F ) -> E! y A F y ) |\n| 3 |  | #P_euiotaex | |- ( E! y A F y -> ( iota y A F y ) e. _V ) |\n| 4 | 2, 3 | #P_syl | |- ( ( Fun F /\\ A e. dom F ) -> ( iota y A F y ) e. _V ) |\n| 5 | 1, 4 | #P_syl5eqel | |- ( ( Fun F /\\ A e. dom F ) -> ( F ` A ) e. _V ) |",
+  "conclusion" : "#P_funfvex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wfun", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_weu", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wi", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wfun", "#T_cF", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cio", "#T_vy.tru", "#T_cA.wceq", "#T_cF", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wfun", "#T_cF", "#T_wa", "#T_cA", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cA", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_funfveu", "#P_df-fv", "#P_euiotaex", "#P_syl5eqel", "#P_syl" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See qsubdrg on Metamath](http://us.metamath.org/mpegif/qsubdrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_qcn | |- ( x e. QQ -> x e. CC ) |\n| 2 |  | #P_qaddcl | |- ( ( x e. QQ /\\ y e. QQ ) -> ( x + y ) e. QQ ) |\n| 3 |  | #P_qnegcl | |- ( x e. QQ -> -u x e. QQ ) |\n| 4 |  | #P_zssq | |- ZZ C_ QQ |\n| 5 |  | #P_1z | |- 1 e. ZZ |\n| 6 | 4, 5 | #P_sselii | |- 1 e. QQ |\n| 7 |  | #P_qmulcl | |- ( ( x e. QQ /\\ y e. QQ ) -> ( x x. y ) e. QQ ) |\n| 8 |  | #P_qreccl | |- ( ( x e. QQ /\\ x =/= 0 ) -> ( 1 / x ) e. QQ ) |\n| 9 | 1, 2, 3, 6, 7, 8 | #P_cnsubdrglem | |- ( QQ e. ( SubRing ` CCfld ) /\\ ( CCfld |`s QQ ) e. DivRing ) |",
+  "conclusion" : "#P_qsubdrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cq", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cq", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_wi", "#T_cneg", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_cz", "#T_wss", "#T_cq", "#T_c1", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cq", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cq", "#T_wi", "#T_vx.wal", "#T_cmul", "#T_vy.tru", "#T_wcel", "#T_cq", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_wa", "#T_vx.wal", "#T_wne", "#T_cc0", "#T_wi", "#T_c1", "#T_cdiv", "#T_vx.wal", "#T_wcel", "#T_cq", "#T_cq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_ccnfld", "#T_cress", "#T_cq", "#T_wcel", "#T_cdr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_qnegcl", "#P_sselii", "#P_qcn", "#P_zssq", "#P_qreccl", "#P_cnsubdrglem", "#P_qaddcl", "#P_1z", "#P_qmulcl" ]
+}

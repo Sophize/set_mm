@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fz1eqb on Metamath](http://us.metamath.org/mpegif/fz1eqb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fveq2 | |- ( ( 1 ... M ) = ( 1 ... N ) -> ( # ` ( 1 ... M ) ) = ( # ` ( 1 ... N ) ) ) |\n| 2 |  | #P_hashfz1 | |- ( M e. NN0 -> ( # ` ( 1 ... M ) ) = M ) |\n| 3 |  | #P_hashfz1 | |- ( N e. NN0 -> ( # ` ( 1 ... N ) ) = N ) |\n| 4 | 2, 3 | #P_eqeqan12d | |- ( ( M e. NN0 /\\ N e. NN0 ) -> ( ( # ` ( 1 ... M ) ) = ( # ` ( 1 ... N ) ) <-> M = N ) ) |\n| 5 | 1, 4 | #P_syl5ib | |- ( ( M e. NN0 /\\ N e. NN0 ) -> ( ( 1 ... M ) = ( 1 ... N ) -> M = N ) ) |\n| 6 |  | #P_oveq2 | |- ( M = N -> ( 1 ... M ) = ( 1 ... N ) ) |\n| 7 | 5, 6 | #P_impbid1 | |- ( ( M e. NN0 /\\ N e. NN0 ) -> ( ( 1 ... M ) = ( 1 ... N ) <-> M = N ) ) |",
+  "conclusion" : "#P_fz1eqb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_wi", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_cM", "#T_wcel", "#T_cn0", "#T_wi", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_cM", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_wceq", "#T_cN", "#T_cM", "#T_wcel", "#T_cn0", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_chash", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_wb", "#T_cM", "#T_wceq", "#T_cN", "#T_cM", "#T_wcel", "#T_cn0", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_wi", "#T_cM", "#T_wceq", "#T_cN", "#T_cM", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_cM", "#T_wcel", "#T_cn0", "#T_wa", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_c1", "#T_cfz", "#T_cM", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_wb", "#T_cM", "#T_wceq", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeqan12d", "#P_oveq2", "#P_fveq2", "#P_syl5ib", "#P_hashfz1", "#P_impbid1" ]
+}

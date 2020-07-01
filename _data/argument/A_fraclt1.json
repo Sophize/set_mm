@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fraclt1 on Metamath](http://us.metamath.org/mpegif/fraclt1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_flltp1 | |- ( A e. RR -> A < ( ( |_ ` A ) + 1 ) ) |\n| 2 |  | #P_reflcl | |- ( A e. RR -> ( |_ ` A ) e. RR ) |\n| 3 |  | #P_1re | |- 1 e. RR |\n| 4 |  | #P_ltsubadd2 | |- ( ( A e. RR /\\ ( |_ ` A ) e. RR /\\ 1 e. RR ) -> ( ( A - ( |_ ` A ) ) < 1 <-> A < ( ( |_ ` A ) + 1 ) ) ) |\n| 5 | 3, 4 | #P_mp3an3 | |- ( ( A e. RR /\\ ( |_ ` A ) e. RR ) -> ( ( A - ( |_ ` A ) ) < 1 <-> A < ( ( |_ ` A ) + 1 ) ) ) |\n| 6 | 2, 5 | #P_mpdan | |- ( A e. RR -> ( ( A - ( |_ ` A ) ) < 1 <-> A < ( ( |_ ` A ) + 1 ) ) ) |\n| 7 | 1, 6 | #P_mpbird | |- ( A e. RR -> ( A - ( |_ ` A ) ) < 1 ) |",
+  "conclusion" : "#P_fraclt1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_clt", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_c1", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_c1", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_clt", "#T_c1", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cfl", "#T_cfv", "#T_cA.wceq", "#T_caddc", "#T_c1", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_cA", "#T_cmin", "#T_cfl", "#T_cfv", "#T_cA", "#T_clt", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_reflcl", "#P_mp3an3", "#P_ltsubadd2", "#P_flltp1", "#P_1re", "#P_mpbird" ]
+}

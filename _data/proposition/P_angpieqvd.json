@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See angpieqvd on Metamath](http://us.metamath.org/mpegif/angpieqvd.html)"
+  } ],
+  "names" : [ "angpieqvd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cc", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cmpt2--4", "#T_cim", "#T_cfv", "#T_clog", "#T_cfv", "#T_vy", "#T_cdiv", "#T_vx", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_cF", "#T_cC", "#T_cmin", "#T_cB", "#T_wceq", "#T_cpi", "#T_wb", "#T_wrex--1", "#T_vw", "#T_wrex--2", "#T_cc0", "#T_cioo", "#T_c1", "#T_cB", "#T_wceq", "#T_vw", "#T_cmul", "#T_cA", "#T_caddc", "#T_c1", "#T_cmin", "#T_vw", "#T_cmul", "#T_cC", "#T_cA", "#T_vw", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vw", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vw", "#T_cC", "#T_vx", "#T_vy", "#T_cF", "#T_vw", "#T_wph", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The angle ABC is ` _pi ` iff B is a nontrivial convex combination of A and C, i.e., iff B is in the interior of the segment AC. (Contributed by David Moews, 28-Feb-2017.) ",
+  "statement" : "angpieqvd.angdef $e |- F = ( x e. ( CC \\ { 0 } ) , y e. ( CC \\ { 0 } ) |-> ( Im ` ( log ` ( y / x ) ) ) ) $.\nangpieqvd.A $e |- ( ph -> A e. CC ) $.\nangpieqvd.B $e |- ( ph -> B e. CC ) $.\nangpieqvd.C $e |- ( ph -> C e. CC ) $.\nangpieqvd.AneB $e |- ( ph -> A =/= B ) $.\nangpieqvd.BneC $e |- ( ph -> B =/= C ) $.\nangpieqvd $p |- ( ph -> ( ( ( A - B ) F ( C - B ) ) = _pi <-> E. w e. ( 0 (,) 1 ) B = ( ( w x. A ) + ( ( 1 - w ) x. C ) ) ) ) $.\n$d A w $.\n$d A x y $.\n$d B w $.\n$d B x y $.\n$d C w $.\n$d C x y $.\n$d F w $.\n$d ph w $."
+}

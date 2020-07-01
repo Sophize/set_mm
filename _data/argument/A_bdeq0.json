@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdeq0 on Metamath](http://us.metamath.org/mpegif/bdeq0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bdcnul | |- Bdd_ (/) |\n| 2 | 1 | #P_bdss | |- Bdd x C_ (/) |\n| 3 |  | #P_0ss | |- (/) C_ x |\n| 4 |  | #P_eqss | |- ( x = (/) <-> ( x C_ (/) /\\ (/) C_ x ) ) |\n| 5 | 3, 4 | #P_mpbiran2 | |- ( x = (/) <-> x C_ (/) ) |\n| 6 | 2, 5 | #P_bd0r | |- Bdd x = (/) |",
+  "conclusion" : "#P_bdeq0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbdc", "#T_c0", "#T_wbd", "#T_vx.wal", "#T_wss", "#T_c0", "#T_c0", "#T_wss", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wb", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wa", "#T_c0", "#T_wss", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wb", "#T_vx.wal", "#T_wss", "#T_c0", "#T_wbd", "#T_vx", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bd0r", "#P_mpbiran2", "#P_bdss", "#P_0ss", "#P_bdcnul", "#P_eqss" ]
+}

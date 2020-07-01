@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pmat1op on Metamath](http://us.metamath.org/mpegif/pmat1op.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pmatring.p | |- P = ( Poly1 ` R ) |\n| 2 |  | pmatring.c | |- C = ( N Mat P ) |\n| 3 |  | pmat0op.z | |- .0. = ( 0g ` P ) |\n| 4 |  | pmat1op.o | |- .1. = ( 1r ` P ) |\n| 5 | 1 | #P_ply1ring | |- ( R e. Ring -> P e. Ring ) |\n| 6 | 2, 4, 3 | #P_mat1 | |- ( ( N e. Fin /\\ P e. Ring ) -> ( 1r ` C ) = ( i e. N , j e. N |-> if ( i = j , .1. , .0. ) ) ) |\n| 7 | 5, 6 | #P_sylan2 | |- ( ( N e. Fin /\\ R e. Ring ) -> ( 1r ` C ) = ( i e. N , j e. N |-> if ( i = j , .1. , .0. ) ) ) |",
+  "conclusion" : "#P_pmat1op",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cP", "#T_c.1", "#T_wceq", "#T_cur", "#T_cfv", "#T_cP", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cP", "#T_wcel", "#T_crg", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cP", "#T_wcel", "#T_crg", "#T_wi", "#T_cur", "#T_cfv", "#T_cC", "#T_wceq", "#T_vi", "#T_cmpt2--1", "#T_cN", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_cN", "#T_cmpt2--4", "#T_cif--1", "#T_vi", "#T_wceq", "#T_vj", "#T_cif--2", "#T_c.1", "#T_cif--3", "#T_c.0", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cur", "#T_cfv", "#T_cC", "#T_wceq", "#T_vi", "#T_cmpt2--1", "#T_cN", "#T_cmpt2--2", "#T_vj", "#T_cmpt2--3", "#T_cN", "#T_cmpt2--4", "#T_cif--1", "#T_vi", "#T_wceq", "#T_vj", "#T_cif--2", "#T_c.1", "#T_cif--3", "#T_c.0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_ply1ring", "#P_mat1" ]
+}

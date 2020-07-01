@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See csbco3g on Metamath](http://us.metamath.org/mpegif/csbco3g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | sbcco3g.1 | |- ( x = A -> B = C ) |\n| 2 |  | #P_csbnestg | |- ( A e. V -> [_ A / x ]_ [_ B / y ]_ D = [_ [_ A / x ]_ B / y ]_ D ) |\n| 3 |  | #P_elex | |- ( A e. V -> A e. _V ) |\n| 4 |  | #P_nfcvd | |- ( A e. _V -> F/_ x C ) |\n| 5 | 4, 1 | #P_csbiegf | |- ( A e. _V -> [_ A / x ]_ B = C ) |\n| 6 | 3, 5 | #P_syl | |- ( A e. V -> [_ A / x ]_ B = C ) |\n| 7 | 6 | #P_csbeq1d | |- ( A e. V -> [_ [_ A / x ]_ B / y ]_ D = [_ C / y ]_ D ) |\n| 8 | 2, 7 | #P_eqtrd | |- ( A e. V -> [_ A / x ]_ [_ B / y ]_ D = [_ C / y ]_ D ) |",
+  "conclusion" : "#P_csbco3g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_cB", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_csb--1", "#T_cB.wceq", "#T_csb--2", "#T_vy.tru", "#T_csb--3", "#T_cD", "#T_wceq", "#T_csb--1", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_csb--2", "#T_vy.tru", "#T_csb--3", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wnfc", "#T_vx.wal", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_csb--1", "#T_cA.wceq", "#T_csb--2", "#T_vx.wal", "#T_csb--3", "#T_cB.wceq", "#T_csb--2", "#T_vy.tru", "#T_csb--3", "#T_cD", "#T_wceq", "#T_csb--1", "#T_cC", "#T_csb--2", "#T_vy.tru", "#T_csb--3", "#T_cD", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_csb--1", "#T_cA", "#T_csb--2", "#T_vx", "#T_csb--3", "#T_csb--1", "#T_cB", "#T_csb--2", "#T_vy", "#T_csb--3", "#T_cD", "#T_wceq", "#T_csb--1", "#T_cC", "#T_csb--2", "#T_vy", "#T_csb--3", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcvd", "#P_csbiegf", "#P_elex", "#P_eqtrd", "#P_csbeq1d", "#P_csbnestg", "#P_syl" ]
+}

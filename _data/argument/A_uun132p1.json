@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uun132p1 on Metamath](http://us.metamath.org/mpegif/uun132p1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uun132p1.1 | |- ( ( ( ps /\\ ch ) /\\ ph ) -> th ) |\n| 2 |  | #P_3anass | |- ( ( ph /\\ ps /\\ ch ) <-> ( ph /\\ ( ps /\\ ch ) ) ) |\n| 3 |  | #P_ancom | |- ( ( ph /\\ ( ps /\\ ch ) ) <-> ( ( ps /\\ ch ) /\\ ph ) ) |\n| 4 | 2, 3 | #P_bitri | |- ( ( ph /\\ ps /\\ ch ) <-> ( ( ps /\\ ch ) /\\ ph ) ) |\n| 5 | 4, 1 | #P_sylbi | |- ( ( ph /\\ ps /\\ ch ) -> th ) |",
+  "conclusion" : "#P_uun132p1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wph", "#T_wi", "#T_wth", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wph", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_3anass", "#P_bitri", "#P_sylbi" ]
+}

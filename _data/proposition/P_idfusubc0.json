@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idfusubc0 on Metamath](http://us.metamath.org/mpegif/idfusubc0.html)"
+  } ],
+  "names" : [ "idfusubc0" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cC", "#T_cresc", "#T_cJ", "#T_cI", "#T_wceq", "#T_cidfu", "#T_cfv", "#T_cS", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_cJ", "#T_wcel", "#T_csubc", "#T_cfv", "#T_cC", "#T_wi", "#T_cI", "#T_wceq", "#T_cop--1", "#T_cid", "#T_cres", "#T_cB", "#T_cop--2", "#T_vx", "#T_cmpt2--1", "#T_cB", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cid", "#T_cres", "#T_vx", "#T_chom", "#T_cfv", "#T_cS", "#T_vy", "#T_cop--3", "#T_cB", "#T_vx", "#T_vy", "#T_cC", "#T_vx", "#T_vy", "#T_cJ", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The identity functor for a subcategory is an \"inclusion functor\" from the subcategory into its supercategory.  (Contributed by AV, 29-Mar-2020.) ",
+  "statement" : "idfusubc.s $e |- S = ( C |`cat J ) $.\nidfusubc.i $e |- I = ( idFunc ` S ) $.\nidfusubc.b $e |- B = ( Base ` S ) $.\nidfusubc0 $p |- ( J e. ( Subcat ` C ) -> I = <. ( _I |` B ) , ( x e. B , y e. B |-> ( _I |` ( x ( Hom ` S ) y ) ) ) >. ) $.\n$d B x y $.\n$d C x y $.\n$d J x y $.\n$d S x y $."
+}

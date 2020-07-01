@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lncnopbd on Metamath](http://us.metamath.org/mpegif/lncnopbd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elin | |- ( T e. ( LinOp i^i ConOp ) <-> ( T e. LinOp /\\ T e. ConOp ) ) |\n| 2 |  | #P_lnopcnbd | |- ( T e. LinOp -> ( T e. ConOp <-> T e. BndLinOp ) ) |\n| 3 | 2 | #P_biimpa | |- ( ( T e. LinOp /\\ T e. ConOp ) -> T e. BndLinOp ) |\n| 4 |  | #P_bdopln | |- ( T e. BndLinOp -> T e. LinOp ) |\n| 5 | 2 | #P_biimparc | |- ( ( T e. BndLinOp /\\ T e. LinOp ) -> T e. ConOp ) |\n| 6 | 4, 5 | #P_mpdan | |- ( T e. BndLinOp -> T e. ConOp ) |\n| 7 | 4, 6 | #P_jca | |- ( T e. BndLinOp -> ( T e. LinOp /\\ T e. ConOp ) ) |\n| 8 | 3, 7 | #P_impbii | |- ( ( T e. LinOp /\\ T e. ConOp ) <-> T e. BndLinOp ) |\n| 9 | 1, 8 | #P_bitri | |- ( T e. ( LinOp i^i ConOp ) <-> T e. BndLinOp ) |",
+  "conclusion" : "#P_lncnopbd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_clo", "#T_cin", "#T_ccop", "#T_wb", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cT", "#T_wcel", "#T_ccop", "#T_cT", "#T_wcel", "#T_clo", "#T_wi", "#T_cT", "#T_wcel", "#T_ccop", "#T_wb", "#T_cT", "#T_wcel", "#T_cbo", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cT", "#T_wcel", "#T_ccop", "#T_wi", "#T_cT", "#T_wcel", "#T_cbo", "#T_cT", "#T_wcel", "#T_cbo", "#T_wi", "#T_cT", "#T_wcel", "#T_clo", "#T_cT", "#T_wcel", "#T_cbo", "#T_wa", "#T_cT", "#T_wcel", "#T_clo", "#T_wi", "#T_cT", "#T_wcel", "#T_ccop", "#T_cT", "#T_wcel", "#T_cbo", "#T_wi", "#T_cT", "#T_wcel", "#T_ccop", "#T_cT", "#T_wcel", "#T_cbo", "#T_wi", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cT", "#T_wcel", "#T_ccop", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cT", "#T_wcel", "#T_ccop", "#T_wb", "#T_cT", "#T_wcel", "#T_cbo", "#T_cT", "#T_wcel", "#T_clo", "#T_cin", "#T_ccop", "#T_wb", "#T_cT", "#T_wcel", "#T_cbo" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimparc", "#P_mpdan", "#P_impbii", "#P_biimpa", "#P_elin", "#P_jca", "#P_bitri", "#P_lnopcnbd", "#P_bdopln" ]
+}

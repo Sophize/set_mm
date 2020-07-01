@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xordc on Metamath](http://us.metamath.org/mpegif/xordc.html)"
+  } ],
+  "names" : [ "xordc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Two ways to express \"exclusive or\" between decidable propositions. Theorem *5.22 of [WhiteheadRussell] p. 124, but for decidable propositions.  (Contributed by Jim Kingdon, 5-May-2018.) ",
+  "statement" : "xordc $p |- ( DECID ph -> ( DECID ps -> ( -. ( ph <-> ps ) <-> ( ( ph /\\ -. ps ) \\/ ( ps /\\ -. ph ) ) ) ) ) $."
+}

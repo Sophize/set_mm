@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghomf on Metamath](http://us.metamath.org/mpegif/ghomf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ghomf.1 | |- X = ran G |\n| 2 |  | ghomf.2 | |- W = ran H |\n| 3 | 1, 2 | #P_elghomOLD | |- ( ( G e. GrpOp /\\ H e. GrpOp ) -> ( F e. ( G GrpOpHom H ) <-> ( F : X --> W /\\ A. x e. X A. y e. X ( ( F ` x ) H ( F ` y ) ) = ( F ` ( x G y ) ) ) ) ) |\n| 4 | 3 | #P_simprbda | |- ( ( ( G e. GrpOp /\\ H e. GrpOp ) /\\ F e. ( G GrpOpHom H ) ) -> F : X --> W ) |\n| 5 | 4 | #P_3impa | |- ( ( G e. GrpOp /\\ H e. GrpOp /\\ F e. ( G GrpOpHom H ) ) -> F : X --> W ) |",
+  "conclusion" : "#P_ghomf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cW", "#T_wceq", "#T_crn", "#T_cH", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cH", "#T_wcel", "#T_cgr", "#T_wi", "#T_cF", "#T_wcel", "#T_cG", "#T_cghomOLD", "#T_cH", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cW", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cH", "#T_cF", "#T_cfv", "#T_vy.tru", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cG", "#T_vy.tru", "#T_cG", "#T_wcel", "#T_cgr", "#T_wa", "#T_cH", "#T_wcel", "#T_cgr", "#T_wa", "#T_cF", "#T_wcel", "#T_cG", "#T_cghomOLD", "#T_cH", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cW", "#T_cG", "#T_wcel", "#T_cgr", "#T_w3a--1", "#T_cH", "#T_wcel", "#T_cgr", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cG", "#T_cghomOLD", "#T_cH", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elghomOLD", "#P_simprbda", "#P_3impa" ]
+}

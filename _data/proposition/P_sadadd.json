@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sadadd on Metamath](http://us.metamath.org/mpegif/sadadd.html)"
+  } ],
+  "names" : [ "sadadd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cz", "#T_wi", "#T_cbits", "#T_cfv", "#T_cA", "#T_csad", "#T_cbits", "#T_cfv", "#T_cB", "#T_wceq", "#T_cbits", "#T_cfv", "#T_cA", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For sequences that correspond to valid integers, the adder sequence function produces the sequence for the sum.  This is effectively a proof of the correctness of the ripple carry adder, implemented with logic gates corresponding to ~ df-had and ~ df-cad . It is interesting to consider in what sense the ` sadd ` function can be said to be \"adding\" things outside the range of the ` bits ` function, that is, when adding sequences that are not eventually constant and so do not denote any integer.  The correct interpretation is that the sequences are representations of 2-adic integers, which have a natural ring structure.  (Contributed by Mario Carneiro, 9-Sep-2016.) ",
+  "statement" : "sadadd $p |- ( ( A e. ZZ /\\ B e. ZZ ) -> ( ( bits ` A ) sadd ( bits ` B ) ) = ( bits ` ( A + B ) ) ) $."
+}

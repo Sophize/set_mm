@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iszeroo on Metamath](http://us.metamath.org/mpegif/iszeroo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isinito.b | |- B = ( Base ` C ) |\n| 2 |  | isinito.h | |- H = ( Hom ` C ) |\n| 3 |  | isinito.c | |- ( ph -> C e. Cat ) |\n| 4 |  | isinito.i | |- ( ph -> I e. B ) |\n| 5 | 3, 1, 2 | #P_zerooval | |- ( ph -> ( ZeroO ` C ) = ( ( InitO ` C ) i^i ( TermO ` C ) ) ) |\n| 6 | 5 | #P_eleq2d | |- ( ph -> ( I e. ( ZeroO ` C ) <-> I e. ( ( InitO ` C ) i^i ( TermO ` C ) ) ) ) |\n| 7 |  | #P_elin | |- ( I e. ( ( InitO ` C ) i^i ( TermO ` C ) ) <-> ( I e. ( InitO ` C ) /\\ I e. ( TermO ` C ) ) ) |\n| 8 | 6, 7 | #P_syl6bb | |- ( ph -> ( I e. ( ZeroO ` C ) <-> ( I e. ( InitO ` C ) /\\ I e. ( TermO ` C ) ) ) ) |",
+  "conclusion" : "#P_iszeroo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_czeroo", "#T_cfv", "#T_cC", "#T_wceq", "#T_cinito", "#T_cfv", "#T_cC", "#T_cin", "#T_ctermo", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_czeroo", "#T_cfv", "#T_cC", "#T_wb", "#T_cI", "#T_wcel", "#T_cinito", "#T_cfv", "#T_cC", "#T_cin", "#T_ctermo", "#T_cfv", "#T_cC", "#T_cI", "#T_wcel", "#T_cinito", "#T_cfv", "#T_cC", "#T_cin", "#T_ctermo", "#T_cfv", "#T_cC", "#T_wb", "#T_cI", "#T_wcel", "#T_cinito", "#T_cfv", "#T_cC", "#T_wa", "#T_cI", "#T_wcel", "#T_ctermo", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cI", "#T_wcel", "#T_czeroo", "#T_cfv", "#T_cC", "#T_wb", "#T_cI", "#T_wcel", "#T_cinito", "#T_cfv", "#T_cC", "#T_wa", "#T_cI", "#T_wcel", "#T_ctermo", "#T_cfv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2d", "#P_syl6bb", "#P_zerooval", "#P_elin" ]
+}

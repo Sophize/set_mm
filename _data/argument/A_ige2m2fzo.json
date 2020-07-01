@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ige2m2fzo on Metamath](http://us.metamath.org/mpegif/ige2m2fzo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eluzel2 | |- ( N e. ( ZZ>= ` 2 ) -> 2 e. ZZ ) |\n| 2 |  | #P_1z | |- 1 e. ZZ |\n| 3 | 1, 2 | #P_jctir | |- ( N e. ( ZZ>= ` 2 ) -> ( 2 e. ZZ /\\ 1 e. ZZ ) ) |\n| 4 |  | #P_1lt2 | |- 1 < 2 |\n| 5 | 4 | #P_jctr | |- ( N e. ( ZZ>= ` 2 ) -> ( N e. ( ZZ>= ` 2 ) /\\ 1 < 2 ) ) |\n| 6 |  | #P_eluzgtdifelfzo | |- ( ( 2 e. ZZ /\\ 1 e. ZZ ) -> ( ( N e. ( ZZ>= ` 2 ) /\\ 1 < 2 ) -> ( N - 2 ) e. ( 0 ..^ ( N - 1 ) ) ) ) |\n| 7 | 3, 5, 6 | #P_sylc | |- ( N e. ( ZZ>= ` 2 ) -> ( N - 2 ) e. ( 0 ..^ ( N - 1 ) ) ) |",
+  "conclusion" : "#P_ige2m2fzo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_c2", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_c2", "#T_wcel", "#T_cz", "#T_wa", "#T_c1", "#T_wcel", "#T_cz", "#T_c1", "#T_clt", "#T_c2", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wa", "#T_c1", "#T_clt", "#T_c2", "#T_c2", "#T_wcel", "#T_cz", "#T_wa", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wa", "#T_c1", "#T_clt", "#T_c2", "#T_wi", "#T_cN", "#T_cmin", "#T_c2", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_c1", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_c2", "#T_wi", "#T_cN", "#T_cmin", "#T_c2", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylc", "#P_jctr", "#P_1z", "#P_eluzel2", "#P_1lt2", "#P_eluzgtdifelfzo", "#P_jctir" ]
+}

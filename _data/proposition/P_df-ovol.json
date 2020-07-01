@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-ovol on Metamath](http://us.metamath.org/mpegif/df-ovol.html)"
+  } ],
+  "names" : [ "df-ovol" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_covol", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cpw", "#T_cr", "#T_cmpt--2", "#T_csup--1", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_cxr", "#T_crab--3", "#T_wrex--1", "#T_vf", "#T_wrex--2", "#T_cle", "#T_cin", "#T_cr", "#T_cxp", "#T_cr", "#T_cmap", "#T_cn", "#T_vx", "#T_wss", "#T_cuni", "#T_crn", "#T_cioo", "#T_ccom", "#T_vf", "#T_wa", "#T_vy", "#T_wceq", "#T_csup--1", "#T_crn", "#T_cseq--1", "#T_c1", "#T_caddc", "#T_cseq--2", "#T_cabs", "#T_ccom", "#T_cmin", "#T_ccom", "#T_vf", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_crab--4", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_vf", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the outer Lebesgue measure for subsets of the reals.  Here ` f ` is a function from the positive integers to pairs ` <. a , b >. ` with ` a <_ b ` , and the outer volume of the set ` x ` is the infimum over all such functions such that the union of the open intervals ` ( a , b ) ` covers ` x ` of the sum of ` b - a ` .  (Contributed by Mario Carneiro, 16-Mar-2014.) ",
+  "statement" : "df-ovol $p |- vol* = ( x e. ~P RR |-> sup ( { y e. RR* | E. f e. ( ( <_ i^i ( RR X. RR ) ) ^m NN ) ( x C_ U. ran ( (,) o. f ) /\\ y = sup ( ran seq 1 ( + , ( ( abs o. - ) o. f ) ) , RR* , < ) ) } , RR* , `' < ) ) $.\n$d f x y $."
+}

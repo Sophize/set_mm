@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mapsnf1o2 on Metamath](http://us.metamath.org/mpegif/mapsnf1o2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mapsncnv.s | |- S = { X } |\n| 2 |  | mapsncnv.b | |- B e. _V |\n| 3 |  | mapsncnv.x | |- X e. _V |\n| 4 |  | mapsncnv.f | |- F = ( x e. ( B ^m S ) |-> ( x ` X ) ) |\n| 5 |  | #P_fvex | |- ( x ` X ) e. _V |\n| 6 | 5, 4 | #P_fnmpti | |- F Fn ( B ^m S ) |\n| 7 |  | #P_snex | |- { X } e. _V |\n| 8 | 1, 7 | #P_eqeltri | |- S e. _V |\n| 9 |  | #P_snex | |- { y } e. _V |\n| 10 | 8, 9 | #P_xpex | |- ( S X. { y } ) e. _V |\n| 11 | 1, 2, 3, 4 | #P_mapsncnv | |- `' F = ( y e. B |-> ( S X. { y } ) ) |\n| 12 | 10, 11 | #P_fnmpti | |- `' F Fn B |\n| 13 |  | #P_dff1o4 | |- ( F : ( B ^m S ) -1-1-onto-> B <-> ( F Fn ( B ^m S ) /\\ `' F Fn B ) ) |\n| 14 | 6, 12, 13 | #P_mpbir2an | |- F : ( B ^m S ) -1-1-onto-> B |",
+  "conclusion" : "#P_mapsnf1o2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_cS", "#T_wceq", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_cB", "#T_wcel", "#T_cvv", "#T_cX", "#T_wcel", "#T_cvv", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmap", "#T_cS", "#T_cmpt--2", "#T_vx", "#T_cfv", "#T_cX", "#T_vx.wal", "#T_cfv", "#T_cX", "#T_wcel", "#T_cvv", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cmap", "#T_cS", "#T_csn--1", "#T_cX", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cS", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_cS", "#T_cxp", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_wcel", "#T_cvv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cS", "#T_cxp", "#T_csn--1", "#T_vy.tru", "#T_csn--2", "#T_ccnv", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cF", "#T_wf1o--1", "#T_cB.wceq", "#T_cmap", "#T_cS", "#T_wf1o--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cmap", "#T_cS", "#T_wa", "#T_ccnv", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_cF", "#T_wf1o--1", "#T_cB", "#T_cmap", "#T_cS", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeltri", "#P_mapsncnv", "#P_mpbir2an", "#P_fnmpti", "#P_fvex", "#P_xpex", "#P_snex", "#P_dff1o4" ]
+}

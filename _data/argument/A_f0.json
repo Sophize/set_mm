@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f0 on Metamath](http://us.metamath.org/mpegif/f0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- (/) = (/) |\n| 2 |  | #P_fn0 | |- ( (/) Fn (/) <-> (/) = (/) ) |\n| 3 | 1, 2 | #P_mpbir | |- (/) Fn (/) |\n| 4 |  | #P_rn0 | |- ran (/) = (/) |\n| 5 |  | #P_0ss | |- (/) C_ A |\n| 6 | 4, 5 | #P_eqsstri | |- ran (/) C_ A |\n| 7 |  | #P_df-f | |- ( (/) : (/) --> A <-> ( (/) Fn (/) /\\ ran (/) C_ A ) ) |\n| 8 | 3, 6, 7 | #P_mpbir2an | |- (/) : (/) --> A |",
+  "conclusion" : "#P_f0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_wb", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wfn", "#T_c0", "#T_crn", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_crn", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cA.wceq", "#T_wb", "#T_c0", "#T_wfn", "#T_c0", "#T_wa", "#T_crn", "#T_c0", "#T_wss", "#T_cA.wceq", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_0ss", "#P_mpbir2an", "#P_mpbir", "#P_df-f", "#P_fn0", "#P_eqsstri", "#P_rn0" ]
+}

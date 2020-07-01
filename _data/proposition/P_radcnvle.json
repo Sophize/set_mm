@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See radcnvle on Metamath](http://us.metamath.org/mpegif/radcnvle.html)"
+  } ],
+  "names" : [ "radcnvle" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cA", "#T_cfv", "#T_vn", "#T_cmul", "#T_vx", "#T_cexp", "#T_vn", "#T_wph", "#T_wi", "#T_cA", "#T_wf--1", "#T_cn0", "#T_wf--2", "#T_cc", "#T_cR", "#T_wceq", "#T_csup--1", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cr", "#T_crab--3", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_vr", "#T_wcel", "#T_cdm", "#T_cli", "#T_crab--4", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_clt", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cc0", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cfv", "#T_cX", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_cabs", "#T_cfv", "#T_cX", "#T_cle", "#T_cR", "#T_cA", "#T_vn", "#T_vx", "#T_cG", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If ` X ` is a convergent point of the infinite series, then ` X ` is within the closed disk of radius ` R ` centered at zero.  Or, by contraposition, the series diverges at any point strictly more than ` R ` from the origin.  (Contributed by Mario Carneiro, 26-Feb-2015.) ",
+  "statement" : "pser.g $e |- G = ( x e. CC |-> ( n e. NN0 |-> ( ( A ` n ) x. ( x ^ n ) ) ) ) $.\nradcnv.a $e |- ( ph -> A : NN0 --> CC ) $.\nradcnv.r $e |- R = sup ( { r e. RR | seq 0 ( + , ( G ` r ) ) e. dom ~~> } , RR* , < ) $.\nradcnvle.x $e |- ( ph -> X e. CC ) $.\nradcnvle.a $e |- ( ph -> seq 0 ( + , ( G ` X ) ) e. dom ~~> ) $.\nradcnvle $p |- ( ph -> ( abs ` X ) <_ R ) $.\n$d A n x $.\n$d G r $."
+}

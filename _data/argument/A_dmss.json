@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dmss on Metamath](http://us.metamath.org/mpegif/dmss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssel | |- ( A C_ B -> ( <. x , y >. e. A -> <. x , y >. e. B ) ) |\n| 2 | 1 | #P_eximdv | |- ( A C_ B -> ( E. y <. x , y >. e. A -> E. y <. x , y >. e. B ) ) |\n| 3 |  | #P_vex | |- x e. _V |\n| 4 | 3 | #P_eldm2 | |- ( x e. dom A <-> E. y <. x , y >. e. A ) |\n| 5 | 3 | #P_eldm2 | |- ( x e. dom B <-> E. y <. x , y >. e. B ) |\n| 6 | 2, 4, 5 | #P_3imtr4g | |- ( A C_ B -> ( x e. dom A -> x e. dom B ) ) |\n| 7 | 6 | #P_ssrdv | |- ( A C_ B -> dom A C_ dom B ) |",
+  "conclusion" : "#P_dmss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cA.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vy.tru", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wcel", "#T_cB.wceq", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cdm", "#T_cB.wceq", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cdm", "#T_cA", "#T_wss", "#T_cdm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrdv", "#P_eximdv", "#P_ssel", "#P_eldm2", "#P_vex", "#P_3imtr4g" ]
+}

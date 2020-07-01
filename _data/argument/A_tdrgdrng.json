@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tdrgdrng on Metamath](http://us.metamath.org/mpegif/tdrgdrng.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( mulGrp ` R ) = ( mulGrp ` R ) |\n| 2 |  | #P_eqid | |- ( Unit ` R ) = ( Unit ` R ) |\n| 3 | 1, 2 | #P_istdrg | |- ( R e. TopDRing <-> ( R e. TopRing /\\ R e. DivRing /\\ ( ( mulGrp ` R ) |`s ( Unit ` R ) ) e. TopGrp ) ) |\n| 4 | 3 | #P_simp2bi | |- ( R e. TopDRing -> R e. DivRing ) |",
+  "conclusion" : "#P_tdrgdrng",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmgp", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cui", "#T_cfv", "#T_cR", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wb", "#T_cR", "#T_wcel", "#T_ctrg", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cdr", "#T_w3a--2", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cress", "#T_cui", "#T_cfv", "#T_cR", "#T_wcel", "#T_ctgp", "#T_cR", "#T_wcel", "#T_ctdrg", "#T_wi", "#T_cR", "#T_wcel", "#T_cdr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_istdrg", "#P_simp2bi" ]
+}

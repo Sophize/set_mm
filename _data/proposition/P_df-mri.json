@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mri on Metamath](http://us.metamath.org/mpegif/df-mri.html)"
+  } ],
+  "names" : [ "df-mri" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmri", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_cuni", "#T_crn", "#T_cmre", "#T_cmpt--2", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cpw", "#T_cuni", "#T_vc", "#T_crab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vs", "#T_wn", "#T_vx", "#T_wcel", "#T_cmrc", "#T_cfv", "#T_vc", "#T_cfv", "#T_vs", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_crab--4", "#T_vc", "#T_vs", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " In a Moore system, a set is _independent_ if no element of the set is in the closure of the set with the element removed (Section 0.6 in [Gratzer] p. 27; Definition 4.1.1 in [FaureFrolicher] p. 83.) ` mrInd ` is a class function which takes a Moore system to its set of independent sets.  (Contributed by David Moews, 1-May-2017.) ",
+  "statement" : "df-mri $p |- mrInd = ( c e. U. ran Moore |-> { s e. ~P U. c | A. x e. s -. x e. ( ( mrCls ` c ) ` ( s \\ { x } ) ) } ) $.\n$d c s x $."
+}

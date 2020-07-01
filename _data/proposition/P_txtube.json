@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See txtube on Metamath](http://us.metamath.org/mpegif/txtube.html)"
+  } ],
+  "names" : [ "txtube" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cR", "#T_cY", "#T_wceq", "#T_cuni", "#T_cS", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_ccmp", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_ctop", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cR", "#T_ctx", "#T_cS", "#T_wph", "#T_wi", "#T_cX", "#T_cxp", "#T_csn--1", "#T_cA", "#T_csn--2", "#T_wss", "#T_cU", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cY", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vu", "#T_wrex--2", "#T_cS", "#T_cA", "#T_wcel", "#T_vu", "#T_wa", "#T_cX", "#T_cxp", "#T_vu", "#T_wss", "#T_cU", "#T_cA", "#T_vu", "#T_cR", "#T_vu", "#T_cS", "#T_vu", "#T_cU", "#T_vu", "#T_cX", "#T_vu", "#T_cY", "#T_vu", "#T_wph", "#T_vu" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The \"tube lemma\".  If ` X ` is compact and there is an open set ` U ` containing the line ` X X. { A } ` , then there is a \"tube\" ` X X. u ` for some neighborhood ` u ` of ` A ` which is entirely contained within ` U ` .  (Contributed by Mario Carneiro, 21-Mar-2015.) ",
+  "statement" : "txtube.x $e |- X = U. R $.\ntxtube.y $e |- Y = U. S $.\ntxtube.r $e |- ( ph -> R e. Comp ) $.\ntxtube.s $e |- ( ph -> S e. Top ) $.\ntxtube.w $e |- ( ph -> U e. ( R tX S ) ) $.\ntxtube.u $e |- ( ph -> ( X X. { A } ) C_ U ) $.\ntxtube.a $e |- ( ph -> A e. Y ) $.\ntxtube $p |- ( ph -> E. u e. S ( A e. u /\\ ( X X. u ) C_ U ) ) $.\n$d A u $.\n$d R u $.\n$d S u $.\n$d U u $.\n$d X u $.\n$d Y u $.\n$d ph u $."
+}

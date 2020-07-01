@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hofcl on Metamath](http://us.metamath.org/mpegif/hofcl.html)"
+  } ],
+  "names" : [ "hofcl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wceq", "#T_chof", "#T_cfv", "#T_cC", "#T_cO", "#T_wceq", "#T_coppc", "#T_cfv", "#T_cC", "#T_cD", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_crn", "#T_chomf", "#T_cfv", "#T_cC", "#T_wss", "#T_cU", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cO", "#T_cxpc", "#T_cC", "#T_cfunc", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Closure of the Hom functor.  Note that the codomain is the category ` SetCat `` U ` for any universe ` U ` which contains each Hom-set. This corresponds to the assertion that ` C ` be locally small (with respect to ` U ` ).  (Contributed by Mario Carneiro, 15-Jan-2017.) ",
+  "statement" : "hofcl.m $e |- M = ( HomF ` C ) $.\nhofcl.o $e |- O = ( oppCat ` C ) $.\nhofcl.d $e |- D = ( SetCat ` U ) $.\nhofcl.c $e |- ( ph -> C e. Cat ) $.\nhofcl.u $e |- ( ph -> U e. V ) $.\nhofcl.h $e |- ( ph -> ran ( Homf ` C ) C_ U ) $.\nhofcl $p |- ( ph -> M e. ( ( O Xc. C ) Func D ) ) $."
+}

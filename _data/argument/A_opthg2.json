@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See opthg2 on Metamath](http://us.metamath.org/mpegif/opthg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opthg | |- ( ( C e. V /\\ D e. W ) -> ( <. C , D >. = <. A , B >. <-> ( C = A /\\ D = B ) ) ) |\n| 2 |  | #P_eqcom | |- ( <. A , B >. = <. C , D >. <-> <. C , D >. = <. A , B >. ) |\n| 3 |  | #P_eqcom | |- ( A = C <-> C = A ) |\n| 4 |  | #P_eqcom | |- ( B = D <-> D = B ) |\n| 5 | 3, 4 | #P_anbi12i | |- ( ( A = C /\\ B = D ) <-> ( C = A /\\ D = B ) ) |\n| 6 | 1, 2, 5 | #P_3bitr4g | |- ( ( C e. V /\\ D e. W ) -> ( <. A , B >. = <. C , D >. <-> ( A = C /\\ B = D ) ) ) |",
+  "conclusion" : "#P_opthg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wcel", "#T_cV", "#T_wa", "#T_cD", "#T_wcel", "#T_cW", "#T_wi", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wb", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cD", "#T_wceq", "#T_cB.wceq", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wb", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wb", "#T_cD", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cD", "#T_wb", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_cD", "#T_wceq", "#T_cB.wceq", "#T_cC", "#T_wcel", "#T_cV", "#T_wa", "#T_cD", "#T_wcel", "#T_cW", "#T_wi", "#T_cop--1", "#T_cA", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_wceq", "#T_cop--1", "#T_cC", "#T_cop--2", "#T_cD", "#T_cop--3", "#T_wb", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cB", "#T_wceq", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi12i", "#P_opthg", "#P_3bitr4g", "#P_eqcom" ]
+}

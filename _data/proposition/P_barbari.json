@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See barbari on Metamath](http://us.metamath.org/mpegif/barbari.html)"
+  } ],
+  "names" : [ "barbari" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " \"Barbari\", one of the syllogisms of Aristotelian logic.  All ` ph ` is ` ps ` , all ` ch ` is ` ph ` , and some ` ch ` exist, therefore some ` ch ` is ` ps ` .  (In Aristotelian notation, AAI-1:  MaP and SaM therefore SiP.) For example, given \"All men are mortal\", \"All Greeks are men\", and \"Greeks exist\", therefore \"Some Greeks are mortal\".  Note the existence hypothesis (to prove the \"some\" in the conclusion).  Example from ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A. Wheeler, 27-Aug-2016.)  (Revised by David A. Wheeler, 30-Aug-2016.) ",
+  "statement" : "barbari.maj $e |- A. x ( ph -> ps ) $.\nbarbari.min $e |- A. x ( ch -> ph ) $.\nbarbari.e $e |- E. x ch $.\nbarbari $p |- E. x ( ch /\\ ps ) $."
+}

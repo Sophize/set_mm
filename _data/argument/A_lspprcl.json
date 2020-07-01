@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lspprcl on Metamath](http://us.metamath.org/mpegif/lspprcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lspval.v | |- V = ( Base ` W ) |\n| 2 |  | lspval.s | |- S = ( LSubSp ` W ) |\n| 3 |  | lspval.n | |- N = ( LSpan ` W ) |\n| 4 |  | lspprcl.w | |- ( ph -> W e. LMod ) |\n| 5 |  | lspprcl.x | |- ( ph -> X e. V ) |\n| 6 |  | lspprcl.y | |- ( ph -> Y e. V ) |\n| 7 |  | #P_prssi | |- ( ( X e. V /\\ Y e. V ) -> { X , Y } C_ V ) |\n| 8 | 5, 6, 7 | #P_syl2anc | |- ( ph -> { X , Y } C_ V ) |\n| 9 | 1, 2, 3 | #P_lspcl | |- ( ( W e. LMod /\\ { X , Y } C_ V ) -> ( N ` { X , Y } ) e. S ) |\n| 10 | 4, 8, 9 | #P_syl2anc | |- ( ph -> ( N ` { X , Y } ) e. S ) |",
+  "conclusion" : "#P_lspprcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cS", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cN", "#T_wceq", "#T_clspn", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_cX", "#T_wcel", "#T_cV", "#T_wa", "#T_cY", "#T_wcel", "#T_cV", "#T_wi", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wss", "#T_cV", "#T_wph", "#T_wi", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wss", "#T_cV", "#T_cW", "#T_wcel", "#T_clmod", "#T_wa", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wss", "#T_cV", "#T_wi", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cN", "#T_cfv", "#T_cpr--1", "#T_cX", "#T_cpr--2", "#T_cY", "#T_cpr--3", "#T_wcel", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_prssi", "#P_syl2anc", "#P_lspcl" ]
+}

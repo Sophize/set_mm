@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax12w on Metamath](http://us.metamath.org/mpegif/ax12w.html)"
+  } ],
+  "names" : [ "ax12w" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wch", "#T_vy", "#T_wph", "#T_vz", "#T_wps", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Weak version of ~ ax-12 from which we can prove any ~ ax-12 instance not involving wff variables or bundling.  Uses only Tarski's FOL axiom schemes.  An instance of the first hypothesis will normally require that ` x ` and ` y ` be distinct (unless ` x ` does not occur in ` ph ` ). For an example of how the hypotheses can be eliminated when we substitute an expression without wff variables for ` ph ` , see ~ ax12wdemo .  (Contributed by NM, 10-Apr-2017.) ",
+  "statement" : "ax12w.1 $e |- ( x = y -> ( ph <-> ps ) ) $.\nax12w.2 $e |- ( y = z -> ( ph <-> ch ) ) $.\nax12w $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.\n$d ch y $.\n$d ph z $.\n$d ps x $.\n$d y z $."
+}

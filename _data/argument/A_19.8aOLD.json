@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.8aOLD on Metamath](http://us.metamath.org/mpegif/19.8aOLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax6ev | |- E. w w = x |\n| 2 |  | #P_ax-5 | |- ( ph -> A. w ph ) |\n| 3 |  | #P_ax-12 | |- ( x = w -> ( A. w ph -> A. x ( x = w -> ph ) ) ) |\n| 4 |  | #P_ax6ev | |- E. x x = w |\n| 5 |  | #P_exim | |- ( A. x ( x = w -> ph ) -> ( E. x x = w -> E. x ph ) ) |\n| 6 | 4, 5 | #P_mpi | |- ( A. x ( x = w -> ph ) -> E. x ph ) |\n| 7 | 2, 3, 6 | #P_syl56 | |- ( x = w -> ( ph -> E. x ph ) ) |\n| 8 | 7 | #P_equcoms | |- ( w = x -> ( ph -> E. x ph ) ) |\n| 9 | 8 | #P_exlimiv | |- ( E. w w = x -> ( ph -> E. x ph ) ) |\n| 10 | 1, 9 | #P_ax-mp | |- ( ph -> E. x ph ) |\n\\\n Obsolete proof of ~ 19.8a as of 8-Dec-2019.  (Contributed by NM, 9-Jan-1993.)  (Revised by Wolf Lammen, 13-Jan-2018.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_19.8a",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_wex", "#T_vw", "#T_vw", "#T_wceq", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vw", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wal", "#T_vw", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wph", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vw", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_vw", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vw", "#T_vw", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl56", "#P_exim", "#P_ax-mp", "#P_ax-12", "#P_exlimiv", "#P_ax-5", "#P_ax6ev", "#P_mpi", "#P_equcoms" ]
+}

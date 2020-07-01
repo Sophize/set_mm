@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See relfld on Metamath](http://us.metamath.org/mpegif/relfld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relssdmrn | |- ( Rel R -> R C_ ( dom R X. ran R ) ) |\n| 2 |  | #P_uniss | |- ( R C_ ( dom R X. ran R ) -> U. R C_ U. ( dom R X. ran R ) ) |\n| 3 |  | #P_uniss | |- ( U. R C_ U. ( dom R X. ran R ) -> U. U. R C_ U. U. ( dom R X. ran R ) ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( Rel R -> U. U. R C_ U. U. ( dom R X. ran R ) ) |\n| 5 |  | #P_unixpss | |- U. U. ( dom R X. ran R ) C_ ( dom R u. ran R ) |\n| 6 | 4, 5 | #P_syl6ss | |- ( Rel R -> U. U. R C_ ( dom R u. ran R ) ) |\n| 7 |  | #P_dmrnssfld | |- ( dom R u. ran R ) C_ U. U. R |\n| 8 | 7 | #P_a1i | |- ( Rel R -> ( dom R u. ran R ) C_ U. U. R ) |\n| 9 | 6, 8 | #P_eqssd | |- ( Rel R -> U. U. R = ( dom R u. ran R ) ) |",
+  "conclusion" : "#P_relfld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_wi", "#T_cuni", "#T_cR", "#T_wss", "#T_cuni", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_cuni", "#T_cR", "#T_wss", "#T_cuni", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_wi", "#T_cuni", "#T_cuni", "#T_cR", "#T_wss", "#T_cuni", "#T_cuni", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cuni", "#T_cuni", "#T_cR", "#T_wss", "#T_cuni", "#T_cuni", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_cuni", "#T_cuni", "#T_cdm", "#T_cR", "#T_cxp", "#T_crn", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cun", "#T_crn", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cuni", "#T_cuni", "#T_cR", "#T_wss", "#T_cdm", "#T_cR", "#T_cun", "#T_crn", "#T_cR", "#T_cdm", "#T_cR", "#T_cun", "#T_crn", "#T_cR", "#T_wss", "#T_cuni", "#T_cuni", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cdm", "#T_cR", "#T_cun", "#T_crn", "#T_cR", "#T_wss", "#T_cuni", "#T_cuni", "#T_cR", "#T_wrel", "#T_cR", "#T_wi", "#T_cuni", "#T_cuni", "#T_cR", "#T_wceq", "#T_cdm", "#T_cR", "#T_cun", "#T_crn", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_uniss", "#P_syl6ss", "#P_3syl", "#P_dmrnssfld", "#P_relssdmrn", "#P_a1i", "#P_eqssd", "#P_unixpss" ]
+}

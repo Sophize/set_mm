@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bijadc on Metamath](http://us.metamath.org/mpegif/bijadc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bijadc.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | bijadc.2 | |- ( -. ph -> ( -. ps -> ch ) ) |\n| 3 |  | #P_bi2 | |- ( ( ph <-> ps ) -> ( ps -> ph ) ) |\n| 4 | 3, 1 | #P_syli | |- ( ( ph <-> ps ) -> ( ps -> ch ) ) |\n| 5 |  | #P_bi1 | |- ( ( ph <-> ps ) -> ( ph -> ps ) ) |\n| 6 | 5 | #P_con3d | |- ( ( ph <-> ps ) -> ( -. ps -> -. ph ) ) |\n| 7 | 6, 2 | #P_syli | |- ( ( ph <-> ps ) -> ( -. ps -> ch ) ) |\n| 8 | 4, 7 | #P_pm2.61ddc | |- ( DECID ps -> ( ( ph <-> ps ) -> ch ) ) |",
+  "conclusion" : "#P_bijadc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bi2", "#P_bi1", "#P_pm2.61ddc", "#P_syli", "#P_con3d" ]
+}

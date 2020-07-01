@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-dv on Metamath](http://us.metamath.org/mpegif/df-dv.html)"
+  } ],
+  "names" : [ "df-dv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdv", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cpw", "#T_cc", "#T_cmpt2--2", "#T_vf", "#T_cmpt2--3", "#T_cc", "#T_cpm", "#T_vs", "#T_cmpt2--4", "#T_ciun--1", "#T_vx", "#T_ciun--2", "#T_cnt", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crest", "#T_vs", "#T_cfv", "#T_cdm", "#T_vf", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cxp", "#T_vz", "#T_cmpt--1", "#T_cdm", "#T_vf", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2", "#T_cmpt--2", "#T_vf", "#T_cfv", "#T_vz", "#T_cmin", "#T_vf", "#T_cfv", "#T_vx", "#T_cdiv", "#T_vz", "#T_cmin", "#T_vx", "#T_climc", "#T_vx", "#T_vf", "#T_vs", "#T_vx", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the derivative operator on functions on the reals.  This acts on functions to produce a function that is defined where the original function is differentiable, with value the derivative of the function at these points.  The set ` s ` here is the ambient topological space under which we are evaluating the continuity of the difference quotient. Although the definition is valid for any subset of ` CC ` and is well-behaved when ` s ` contains no isolated points, we will restrict our attention to the cases ` s = RR ` or ` s = CC ` for the majority of the development, these corresponding respectively to real and complex differentiation.  (Contributed by Mario Carneiro, 7-Aug-2014.) ",
+  "statement" : "df-dv $p |- _D = ( s e. ~P CC , f e. ( CC ^pm s ) |-> U_ x e. ( ( int ` ( ( TopOpen ` CCfld ) |`t s ) ) ` dom f ) ( { x } X. ( ( z e. ( dom f \\ { x } ) |-> ( ( ( f ` z ) - ( f ` x ) ) / ( z - x ) ) ) limCC x ) ) ) $.\n$d f s x z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexbii2 on Metamath](http://us.metamath.org/mpegif/rexbii2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rexbii2.1 | |- ( ( x e. A /\\ ph ) <-> ( x e. B /\\ ps ) ) |\n| 2 | 1 | #P_exbii | |- ( E. x ( x e. A /\\ ph ) <-> E. x ( x e. B /\\ ps ) ) |\n| 3 |  | #P_df-rex | |- ( E. x e. A ph <-> E. x ( x e. A /\\ ph ) ) |\n| 4 |  | #P_df-rex | |- ( E. x e. B ps <-> E. x ( x e. B /\\ ps ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( E. x e. A ph <-> E. x e. B ps ) |",
+  "conclusion" : "#P_rexbii2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_wph", "#T_wb", "#T_vx", "#T_wcel", "#T_cB", "#T_wa", "#T_wps", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wps", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wph", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cB.wceq", "#T_wps", "#T_wb", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wa", "#T_wps", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cB", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exbii", "#P_3bitr4i", "#P_df-rex" ]
+}

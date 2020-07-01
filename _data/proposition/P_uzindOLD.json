@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzindOLD on Metamath](http://us.metamath.org/mpegif/uzindOLD.html)"
+  } ],
+  "names" : [ "uzindOLD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_wps", "#T_vy", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_cle", "#T_vy", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_wcel", "#T_cz", "#T_wa", "#T_cB", "#T_cle", "#T_cA", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Induction on the upper integers that start at an integer ` B ` .  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step. _Warning:  The HTML proof page is 3/4 megabyte in size.  An attempt to shorten it is on my to-do list.  Anyone is welcome to try_. (Contributed by NM, 11-May-2004.)  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "statement" : "uzindOLD.1 $e |- ( x = B -> ( ph <-> ps ) ) $.\nuzindOLD.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nuzindOLD.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nuzindOLD.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nuzindOLD.5 $e |- ps $.\nuzindOLD.6 $e |- ( ( ( y e. ZZ /\\ B e. ZZ ) /\\ B <_ y ) -> ( ch -> th ) ) $.\nuzindOLD $p |- ( ( ( A e. ZZ /\\ B e. ZZ ) /\\ B <_ A ) -> ta ) $.\n$d A x $.\n$d B x y $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $."
+}

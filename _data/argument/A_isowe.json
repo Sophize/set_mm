@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isowe on Metamath](http://us.metamath.org/mpegif/isowe.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isofr | |- ( H Isom R , S ( A , B ) -> ( R Fr A <-> S Fr B ) ) |\n| 2 |  | #P_isoso | |- ( H Isom R , S ( A , B ) -> ( R Or A <-> S Or B ) ) |\n| 3 | 1, 2 | #P_anbi12d | |- ( H Isom R , S ( A , B ) -> ( ( R Fr A /\\ R Or A ) <-> ( S Fr B /\\ S Or B ) ) ) |\n| 4 |  | #P_df-we | |- ( R We A <-> ( R Fr A /\\ R Or A ) ) |\n| 5 |  | #P_df-we | |- ( S We B <-> ( S Fr B /\\ S Or B ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4g | |- ( H Isom R , S ( A , B ) -> ( R We A <-> S We B ) ) |",
+  "conclusion" : "#P_isowe",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wfr", "#T_cB.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wor", "#T_cB.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cS", "#T_wor", "#T_cB.wceq", "#T_cR", "#T_wwe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wfr", "#T_cA.wceq", "#T_wa", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_cS", "#T_wwe", "#T_cB.wceq", "#T_wb", "#T_cS", "#T_wfr", "#T_cB.wceq", "#T_wa", "#T_cS", "#T_wor", "#T_cB.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA", "#T_wiso--3", "#T_cB", "#T_wi", "#T_cR", "#T_wwe", "#T_cA", "#T_wb", "#T_cS", "#T_wwe", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isofr", "#P_isoso", "#P_3bitr4g", "#P_anbi12d", "#P_df-we" ]
+}

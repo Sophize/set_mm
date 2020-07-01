@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See condc on Metamath](http://us.metamath.org/mpegif/condc.html)"
+  } ],
+  "names" : [ "condc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Contraposition of a decidable proposition. This theorem swaps or \"transposes\" the order of the consequents when negation is removed.  An informal example is that the statement \"if there are no clouds in the sky, it is not raining\" implies the statement \"if it is raining, there are clouds in the sky.\"  This theorem (without the decidability condition, of course) is called _Transp_ or \"the principle of transposition\" in _Principia Mathematica_ (Theorem *2.17 of [WhiteheadRussell] p. 103) and is Axiom A3 of [Margaris] p. 49.  We will also use the term \"contraposition\" for this principle, although the reader is advised that in the field of philosophical logic, \"contraposition\" has a different technical meaning. (Contributed by Jim Kingdon, 13-Mar-2018.) ",
+  "statement" : "condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $."
+}

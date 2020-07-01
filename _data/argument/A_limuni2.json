@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See limuni2 on Metamath](http://us.metamath.org/mpegif/limuni2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_limuni | |- ( Lim A -> A = U. A ) |\n| 2 |  | #P_limeq | |- ( A = U. A -> ( Lim A <-> Lim U. A ) ) |\n| 3 | 1, 2 | #P_syl | |- ( Lim A -> ( Lim A <-> Lim U. A ) ) |\n| 4 | 3 | #P_ibi | |- ( Lim A -> Lim U. A ) |",
+  "conclusion" : "#P_limuni2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_wlim", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cuni", "#T_cA.wceq", "#T_wlim", "#T_cA.wceq", "#T_wi", "#T_wlim", "#T_cA.wceq", "#T_wb", "#T_wlim", "#T_cuni", "#T_cA.wceq", "#T_wlim", "#T_cA", "#T_wi", "#T_wlim", "#T_cuni", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_limeq", "#P_ibi", "#P_syl", "#P_limuni" ]
+}

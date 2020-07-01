@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rdglim on Metamath](http://us.metamath.org/mpegif/rdglim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_limelon | |- ( ( B e. C /\\ Lim B ) -> B e. On ) |\n| 2 |  | #P_rdgfnon | |- rec ( F , A ) Fn On |\n| 3 |  | #P_fndm | |- ( rec ( F , A ) Fn On -> dom rec ( F , A ) = On ) |\n| 4 | 2, 3 | #P_ax-mp | |- dom rec ( F , A ) = On |\n| 5 | 1, 4 | #P_syl6eleqr | |- ( ( B e. C /\\ Lim B ) -> B e. dom rec ( F , A ) ) |\n| 6 |  | #P_rdglimg | |- ( ( B e. dom rec ( F , A ) /\\ Lim B ) -> ( rec ( F , A ) ` B ) = U. ( rec ( F , A ) \" B ) ) |\n| 7 | 5, 6 | #P_sylancom | |- ( ( B e. C /\\ Lim B ) -> ( rec ( F , A ) ` B ) = U. ( rec ( F , A ) \" B ) ) |",
+  "conclusion" : "#P_rdglim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_wlim", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wfn", "#T_con0", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wfn", "#T_con0", "#T_wi", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wceq", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_wlim", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_wa", "#T_wlim", "#T_cB.wceq", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cfv", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_cB", "#T_wcel", "#T_cC", "#T_wa", "#T_wlim", "#T_cB", "#T_wi", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA", "#T_cfv", "#T_cB", "#T_wceq", "#T_cuni", "#T_crdg--1", "#T_cF", "#T_crdg--2", "#T_cA", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_rdgfnon", "#P_syl6eleqr", "#P_fndm", "#P_sylancom", "#P_limelon", "#P_rdglimg" ]
+}

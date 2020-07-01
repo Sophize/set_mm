@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divdiri on Metamath](http://us.metamath.org/mpegif/divdiri.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | divass.4 | |- C =/= 0 |\n| 5 | 1, 2, 3 | #P_divdirzi | |- ( C =/= 0 -> ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( ( A + B ) / C ) = ( ( A / C ) + ( B / C ) ) |",
+  "conclusion" : "#P_divdiri",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cC", "#T_wne", "#T_cc0", "#T_cC", "#T_wne", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cdiv", "#T_cC", "#T_caddc", "#T_cB.wceq", "#T_cdiv", "#T_cC", "#T_cA", "#T_caddc", "#T_cB", "#T_cdiv", "#T_cC", "#T_wceq", "#T_cA", "#T_cdiv", "#T_cC", "#T_caddc", "#T_cB", "#T_cdiv", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_divdirzi" ]
+}

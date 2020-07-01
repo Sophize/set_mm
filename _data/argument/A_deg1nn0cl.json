@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See deg1nn0cl on Metamath](http://us.metamath.org/mpegif/deg1nn0cl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | deg1z.d | |- D = ( deg1 ` R ) |\n| 2 |  | deg1z.p | |- P = ( Poly1 ` R ) |\n| 3 |  | deg1z.z | |- .0. = ( 0g ` P ) |\n| 4 |  | deg1nn0cl.b | |- B = ( Base ` P ) |\n| 5 | 1 | #P_deg1fval | |- D = ( 1o mDeg R ) |\n| 6 |  | #P_eqid | |- ( 1o mPoly R ) = ( 1o mPoly R ) |\n| 7 | 6, 2, 3 | #P_ply1mpl0 | |- .0. = ( 0g ` ( 1o mPoly R ) ) |\n| 8 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 9 | 2, 8, 4 | #P_ply1bas | |- B = ( Base ` ( 1o mPoly R ) ) |\n| 10 | 5, 6, 7, 9 | #P_mdegnn0cl | |- ( ( R e. Ring /\\ F e. B /\\ F =/= .0. ) -> ( D ` F ) e. NN0 ) |",
+  "conclusion" : "#P_deg1nn0cl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cdg1", "#T_cfv", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cP", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cD", "#T_wceq", "#T_c1o", "#T_cmdg", "#T_cR", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmpl", "#T_cR", "#T_c.0", "#T_wceq", "#T_c0g", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cF", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cF", "#T_wne", "#T_c.0", "#T_wi", "#T_cD", "#T_cfv", "#T_cF", "#T_wcel", "#T_cn0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_deg1fval", "#P_mdegnn0cl", "#P_ply1mpl0", "#P_ply1bas" ]
+}

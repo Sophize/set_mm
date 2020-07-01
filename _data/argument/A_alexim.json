@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See alexim on Metamath](http://us.metamath.org/mpegif/alexim.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.24 | |- ( ph -> ( -. ph -> F. ) ) |\n| 2 | 1 | #P_alimi | |- ( A. x ph -> A. x ( -. ph -> F. ) ) |\n| 3 |  | #P_exim | |- ( A. x ( -. ph -> F. ) -> ( E. x -. ph -> E. x F. ) ) |\n| 4 | 2, 3 | #P_syl | |- ( A. x ph -> ( E. x -. ph -> E. x F. ) ) |\n| 5 |  | #P_nfv | |- F/ x F. |\n| 6 | 5 | #P_19.9 | |- ( E. x F. <-> F. ) |\n| 7 | 4, 6 | #P_syl6ib | |- ( A. x ph -> ( E. x -. ph -> F. ) ) |\n| 8 |  | #P_dfnot | |- ( -. E. x -. ph <-> ( E. x -. ph -> F. ) ) |\n| 9 | 7, 8 | #P_sylibr | |- ( A. x ph -> -. E. x -. ph ) |",
+  "conclusion" : "#P_alexim",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wfal", "#T_wnf", "#T_vx.wal", "#T_wfal", "#T_wex", "#T_vx.wal", "#T_wfal", "#T_wb", "#T_wfal", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wfal", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wex", "#T_vx", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exim", "#P_nfv", "#P_pm2.24", "#P_dfnot", "#P_sylibr", "#P_alimi", "#P_syl", "#P_19.9", "#P_syl6ib" ]
+}

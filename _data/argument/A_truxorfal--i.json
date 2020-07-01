@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See truxorfal on Metamath](http://us.metamath.org/mpegif/truxorfal.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor--i | |- ( ( T. \\/_ F. ) <-> ( ( T. \\/ F. ) /\\ -. ( T. /\\ F. ) ) ) |\n| 2 |  | #P_truorfal | |- ( ( T. \\/ F. ) <-> T. ) |\n| 3 |  | #P_notfal | |- ( -. F. <-> T. ) |\n| 4 |  | #P_truan | |- ( ( T. /\\ F. ) <-> F. ) |\n| 5 | 3, 4 | #P_xchnxbir | |- ( -. ( T. /\\ F. ) <-> T. ) |\n| 6 | 2, 5 | #P_anbi12i | |- ( ( ( T. \\/ F. ) /\\ -. ( T. /\\ F. ) ) <-> ( T. /\\ T. ) ) |\n| 7 |  | #P_anidm | |- ( ( T. /\\ T. ) <-> T. ) |\n| 8 | 1, 6, 7 | #P_3bitri | |- ( ( T. \\/_ F. ) <-> T. ) |",
+  "conclusion" : "#P_truxorfal",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wtru", "#T_wxo", "#T_wfal", "#T_wb", "#T_wtru", "#T_wo", "#T_wfal", "#T_wa", "#T_wn", "#T_wtru", "#T_wa", "#T_wfal", "#T_wtru", "#T_wo", "#T_wfal", "#T_wb", "#T_wtru", "#T_wn", "#T_wfal", "#T_wb", "#T_wtru", "#T_wtru", "#T_wa", "#T_wfal", "#T_wb", "#T_wfal", "#T_wn", "#T_wtru", "#T_wa", "#T_wfal", "#T_wb", "#T_wtru", "#T_wtru", "#T_wo", "#T_wfal", "#T_wa", "#T_wn", "#T_wtru", "#T_wa", "#T_wfal", "#T_wb", "#T_wtru", "#T_wa", "#T_wtru", "#T_wtru", "#T_wa", "#T_wtru", "#T_wb", "#T_wtru", "#T_wtru", "#T_wxo", "#T_wfal", "#T_wb", "#T_wtru" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notfal", "#P_anbi12i", "#P_anidm", "#P_truan", "#P_df-xor--i", "#P_3bitri", "#P_xchnxbir", "#P_truorfal" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sucelon on Metamath](http://us.metamath.org/mpegif/sucelon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordsuc | |- ( Ord A <-> Ord suc A ) |\n| 2 |  | #P_sucexb | |- ( A e. _V <-> suc A e. _V ) |\n| 3 | 1, 2 | #P_anbi12i | |- ( ( Ord A /\\ A e. _V ) <-> ( Ord suc A /\\ suc A e. _V ) ) |\n| 4 |  | #P_elon2 | |- ( A e. On <-> ( Ord A /\\ A e. _V ) ) |\n| 5 |  | #P_elon2 | |- ( suc A e. On <-> ( Ord suc A /\\ suc A e. _V ) ) |\n| 6 | 3, 4, 5 | #P_3bitr4i | |- ( A e. On <-> suc A e. On ) |",
+  "conclusion" : "#P_sucelon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cA.wceq", "#T_wb", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_word", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wb", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_wa", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_csuc", "#T_cA.wceq", "#T_wa", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_con0", "#T_wb", "#T_csuc", "#T_cA", "#T_wcel", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elon2", "#P_anbi12i", "#P_sucexb", "#P_3bitr4i", "#P_ordsuc" ]
+}

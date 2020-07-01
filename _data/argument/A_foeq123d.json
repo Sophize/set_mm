@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See foeq123d on Metamath](http://us.metamath.org/mpegif/foeq123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | f1eq123d.1 | |- ( ph -> F = G ) |\n| 2 |  | f1eq123d.2 | |- ( ph -> A = B ) |\n| 3 |  | f1eq123d.3 | |- ( ph -> C = D ) |\n| 4 |  | #P_foeq1 | |- ( F = G -> ( F : A -onto-> C <-> G : A -onto-> C ) ) |\n| 5 | 1, 4 | #P_syl | |- ( ph -> ( F : A -onto-> C <-> G : A -onto-> C ) ) |\n| 6 |  | #P_foeq2 | |- ( A = B -> ( G : A -onto-> C <-> G : B -onto-> C ) ) |\n| 7 | 2, 6 | #P_syl | |- ( ph -> ( G : A -onto-> C <-> G : B -onto-> C ) ) |\n| 8 |  | #P_foeq3 | |- ( C = D -> ( G : B -onto-> C <-> G : B -onto-> D ) ) |\n| 9 | 3, 8 | #P_syl | |- ( ph -> ( G : B -onto-> C <-> G : B -onto-> D ) ) |\n| 10 | 5, 7, 9 | #P_3bitrd | |- ( ph -> ( F : A -onto-> C <-> G : B -onto-> D ) ) |",
+  "conclusion" : "#P_foeq123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_cG", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cF", "#T_wceq", "#T_cG", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wph", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cD", "#T_wph", "#T_wi", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cB.wceq", "#T_wfo--2", "#T_cD", "#T_wph", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cC", "#T_wb", "#T_cG", "#T_wfo--1", "#T_cB", "#T_wfo--2", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_foeq2", "#P_foeq1", "#P_foeq3", "#P_3bitrd", "#P_syl" ]
+}

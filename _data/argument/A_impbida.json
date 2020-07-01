@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See impbida on Metamath](http://us.metamath.org/mpegif/impbida.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | impbida.1 | |- ( ( ph /\\ ps ) -> ch ) |\n| 2 |  | impbida.2 | |- ( ( ph /\\ ch ) -> ps ) |\n| 3 | 1 | #P_ex | |- ( ph -> ( ps -> ch ) ) |\n| 4 | 2 | #P_ex | |- ( ph -> ( ch -> ps ) ) |\n| 5 | 3, 4 | #P_impbid | |- ( ph -> ( ps <-> ch ) ) |",
+  "conclusion" : "#P_impbida",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ex", "#P_impbid" ]
+}

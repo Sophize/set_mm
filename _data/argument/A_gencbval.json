@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gencbval on Metamath](http://us.metamath.org/mpegif/gencbval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gencbval.1 | |- A e. _V |\n| 2 |  | gencbval.2 | |- ( A = y -> ( ph <-> ps ) ) |\n| 3 |  | gencbval.3 | |- ( A = y -> ( ch <-> th ) ) |\n| 4 |  | gencbval.4 | |- ( th <-> E. x ( ch /\\ A = y ) ) |\n| 5 | 2 | #P_notbid | |- ( A = y -> ( -. ph <-> -. ps ) ) |\n| 6 | 1, 5, 3, 4 | #P_gencbvex | |- ( E. x ( ch /\\ -. ph ) <-> E. y ( th /\\ -. ps ) ) |\n| 7 |  | #P_exanali | |- ( E. x ( ch /\\ -. ph ) <-> -. A. x ( ch -> ph ) ) |\n| 8 |  | #P_exanali | |- ( E. y ( th /\\ -. ps ) <-> -. A. y ( th -> ps ) ) |\n| 9 | 6, 7, 8 | #P_3bitr3i | |- ( -. A. x ( ch -> ph ) <-> -. A. y ( th -> ps ) ) |\n| 10 | 9 | #P_con4bii | |- ( A. x ( ch -> ph ) <-> A. y ( th -> ps ) ) |",
+  "conclusion" : "#P_gencbval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cA", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_cA", "#T_wceq", "#T_vy", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wth", "#T_wb", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_cA", "#T_wceq", "#T_vy", "#T_cA.wceq", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wth", "#T_wa", "#T_wn", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wph", "#T_wex", "#T_vy.tru", "#T_wth", "#T_wa", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wal", "#T_vy.tru", "#T_wth", "#T_wi", "#T_wps", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wal", "#T_vy.tru", "#T_wth", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_wb", "#T_wal", "#T_vy", "#T_wth", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con4bii", "#P_notbid", "#P_gencbvex", "#P_exanali", "#P_3bitr3i" ]
+}

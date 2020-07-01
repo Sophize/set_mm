@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fprodmul on Metamath](http://us.metamath.org/mpegif/fprodmul.html)"
+  } ],
+  "names" : [ "fprodmul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cB", "#T_cmul", "#T_cC", "#T_wceq", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cB", "#T_cmul", "#T_cprod--1", "#T_vk", "#T_cprod--2", "#T_cA", "#T_cC", "#T_cA", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The product of two finite products.  (Contributed by Scott Fenton, 14-Dec-2017.) ",
+  "statement" : "fprodmul.1 $e |- ( ph -> A e. Fin ) $.\nfprodmul.2 $e |- ( ( ph /\\ k e. A ) -> B e. CC ) $.\nfprodmul.3 $e |- ( ( ph /\\ k e. A ) -> C e. CC ) $.\nfprodmul $p |- ( ph -> prod_ k e. A ( B x. C ) = ( prod_ k e. A B x. prod_ k e. A C ) ) $.\n$d A k $.\n$d k ph $."
+}

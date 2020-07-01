@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fneq2 on Metamath](http://us.metamath.org/mpegif/fneq2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqeq2 | |- ( A = B -> ( dom F = A <-> dom F = B ) ) |\n| 2 | 1 | #P_anbi2d | |- ( A = B -> ( ( Fun F /\\ dom F = A ) <-> ( Fun F /\\ dom F = B ) ) ) |\n| 3 |  | #P_df-fn | |- ( F Fn A <-> ( Fun F /\\ dom F = A ) ) |\n| 4 |  | #P_df-fn | |- ( F Fn B <-> ( Fun F /\\ dom F = B ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( A = B -> ( F Fn A <-> F Fn B ) ) |",
+  "conclusion" : "#P_fneq2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_cdm", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_wfn", "#T_cB.wceq", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cdm", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cF", "#T_wfn", "#T_cA", "#T_wb", "#T_cF", "#T_wfn", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi2d", "#P_eqeq2", "#P_df-fn", "#P_3bitr4g" ]
+}

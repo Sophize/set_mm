@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-dfif3 on Metamath](http://us.metamath.org/mpegif/bj-dfif3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_bj-dfif2 | |- ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\\ ( ph \\/ ch ) ) ) |\n| 2 |  | #P_imor | |- ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) |\n| 3 | 2 | #P_anbi1i | |- ( ( ( ph -> ps ) /\\ ( ph \\/ ch ) ) <-> ( ( -. ph \\/ ps ) /\\ ( ph \\/ ch ) ) ) |\n| 4 | 1, 3 | #P_bitri | |- ( if- ( ph , ps , ch ) <-> ( ( -. ph \\/ ps ) /\\ ( ph \\/ ch ) ) ) |",
+  "conclusion" : "#P_bj-dfif3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imor", "#P_anbi1i", "#P_bitri", "#P_bj-dfif2" ]
+}

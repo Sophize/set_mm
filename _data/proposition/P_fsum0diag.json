@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsum0diag on Metamath](http://us.metamath.org/mpegif/fsum0diag.html)"
+  } ],
+  "names" : [ "fsum0diag" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_wa", "#T_vk", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_vj", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_vj", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cc0", "#T_cfz", "#T_cN", "#T_cmin", "#T_vk", "#T_cA", "#T_cN", "#T_vj", "#T_vk", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Two ways to express \"the sum of ` A ( j , k ) ` over the triangular region ` M <_ j ` , ` M <_ k ` , ` j + k <_ N ` .\"  (Contributed by NM, 31-Dec-2005.)  (Proof shortened by Mario Carneiro, 28-Apr-2014.) (Revised by Mario Carneiro, 8-Apr-2016.) ",
+  "statement" : "fsum0diag.1 $e |- ( ( ph /\\ ( j e. ( 0 ... N ) /\\ k e. ( 0 ... ( N - j ) ) ) ) -> A e. CC ) $.\nfsum0diag $p |- ( ph -> sum_ j e. ( 0 ... N ) sum_ k e. ( 0 ... ( N - j ) ) A = sum_ k e. ( 0 ... N ) sum_ j e. ( 0 ... ( N - k ) ) A ) $.\n$d N j k $.\n$d j k ph $."
+}

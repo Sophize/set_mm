@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cldcss2 on Metamath](http://us.metamath.org/mpegif/cldcss2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cldcss.v | |- V = ( Base ` W ) |\n| 2 |  | cldcss.j | |- J = ( TopOpen ` W ) |\n| 3 |  | cldcss.l | |- L = ( LSubSp ` W ) |\n| 4 |  | cldcss.c | |- C = ( CSubSp ` W ) |\n| 5 | 1, 2, 3, 4 | #P_cldcss | |- ( W e. CHil -> ( x e. C <-> ( x e. L /\\ x e. ( Clsd ` J ) ) ) ) |\n| 6 |  | #P_elin | |- ( x e. ( L i^i ( Clsd ` J ) ) <-> ( x e. L /\\ x e. ( Clsd ` J ) ) ) |\n| 7 | 5, 6 | #P_syl6bbr | |- ( W e. CHil -> ( x e. C <-> x e. ( L i^i ( Clsd ` J ) ) ) ) |\n| 8 | 7 | #P_eqrdv | |- ( W e. CHil -> C = ( L i^i ( Clsd ` J ) ) ) |",
+  "conclusion" : "#P_cldcss2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cW", "#T_cL", "#T_wceq", "#T_clss", "#T_cfv", "#T_cW", "#T_cC", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_chl", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cL", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_vx.wal", "#T_wcel", "#T_cL", "#T_cin", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cL", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cW", "#T_wcel", "#T_chl", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cL", "#T_cin", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cW", "#T_wcel", "#T_chl", "#T_wi", "#T_cC", "#T_wceq", "#T_cL", "#T_cin", "#T_ccld", "#T_cfv", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cldcss", "#P_elin", "#P_eqrdv", "#P_syl6bbr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idinv on Metamath](http://us.metamath.org/mpegif/idinv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | invid.b | |- B = ( Base ` C ) |\n| 2 |  | invid.i | |- I = ( Id ` C ) |\n| 3 |  | invid.c | |- ( ph -> C e. Cat ) |\n| 4 |  | invid.x | |- ( ph -> X e. B ) |\n| 5 |  | #P_eqid | |- ( Inv ` C ) = ( Inv ` C ) |\n| 6 | 1, 5, 3, 4, 4 | #P_invfun | |- ( ph -> Fun ( X ( Inv ` C ) X ) ) |\n| 7 | 1, 2, 3, 4 | #P_invid | |- ( ph -> ( I ` X ) ( X ( Inv ` C ) X ) ( I ` X ) ) |\n| 8 |  | #P_funbrfv | |- ( Fun ( X ( Inv ` C ) X ) -> ( ( I ` X ) ( X ( Inv ` C ) X ) ( I ` X ) -> ( ( X ( Inv ` C ) X ) ` ( I ` X ) ) = ( I ` X ) ) ) |\n| 9 | 6, 7, 8 | #P_sylc | |- ( ph -> ( ( X ( Inv ` C ) X ) ` ( I ` X ) ) = ( I ` X ) ) |",
+  "conclusion" : "#P_idinv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cI", "#T_wceq", "#T_ccid", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_cinv", "#T_cfv", "#T_cC", "#T_wceq", "#T_cinv", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_wfun", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_wph", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_cI", "#T_cfv", "#T_cX", "#T_wfun", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_wi", "#T_cI", "#T_cfv", "#T_cX", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_cI", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cI", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_cinv", "#T_cfv", "#T_cC", "#T_cX", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cI", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sylc", "#P_funbrfv", "#P_invid", "#P_invfun" ]
+}

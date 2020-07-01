@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunstr on Metamath](http://us.metamath.org/mpegif/wunstr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ndxarg.1 | |- E = Slot N |\n| 2 |  | wunstr.2 | |- ( ph -> U e. WUni ) |\n| 3 |  | wunstr.3 | |- ( ph -> S e. U ) |\n| 4 | 2, 3 | #P_wunrn | |- ( ph -> ran S e. U ) |\n| 5 | 2, 4 | #P_wununi | |- ( ph -> U. ran S e. U ) |\n| 6 | 1 | #P_strfvss | |- ( E ` S ) C_ U. ran S |\n| 7 | 6 | #P_a1i | |- ( ph -> ( E ` S ) C_ U. ran S ) |\n| 8 | 2, 5, 7 | #P_wunss | |- ( ph -> ( E ` S ) e. U ) |",
+  "conclusion" : "#P_wunstr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cE", "#T_wceq", "#T_cslot", "#T_cN", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_crn", "#T_cS", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cuni", "#T_crn", "#T_cS", "#T_wcel", "#T_cU", "#T_cE", "#T_cfv", "#T_cS", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_wph", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wss", "#T_cuni", "#T_crn", "#T_cS", "#T_wph", "#T_wi", "#T_cE", "#T_cfv", "#T_cS", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunrn", "#P_wunss", "#P_a1i", "#P_wununi", "#P_strfvss" ]
+}

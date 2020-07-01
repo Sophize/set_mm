@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfneld on Metamath](http://us.metamath.org/mpegif/nfneld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfneld.1 | |- ( ph -> F/_ x A ) |\n| 2 |  | nfneld.2 | |- ( ph -> F/_ x B ) |\n| 3 |  | #P_df-nel | |- ( A e/ B <-> -. A e. B ) |\n| 4 | 1, 2 | #P_nfeld | |- ( ph -> F/ x A e. B ) |\n| 5 | 4 | #P_nfnd | |- ( ph -> F/ x -. A e. B ) |\n| 6 | 3, 5 | #P_nfxfrd | |- ( ph -> F/ x A e/ B ) |",
+  "conclusion" : "#P_nfneld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cA", "#T_wph", "#T_wi", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_wnel", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_cA", "#T_wnel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfeld", "#P_nfxfrd", "#P_nfnd", "#P_df-nel" ]
+}

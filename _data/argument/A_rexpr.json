@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexpr on Metamath](http://us.metamath.org/mpegif/rexpr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ralpr.1 | |- A e. _V |\n| 2 |  | ralpr.2 | |- B e. _V |\n| 3 |  | ralpr.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 |  | ralpr.4 | |- ( x = B -> ( ph <-> ch ) ) |\n| 5 | 3, 4 | #P_rexprg | |- ( ( A e. _V /\\ B e. _V ) -> ( E. x e. { A , B } ph <-> ( ps \\/ ch ) ) ) |\n| 6 | 1, 2, 5 | #P_mp2an | |- ( E. x e. { A , B } ph <-> ( ps \\/ ch ) ) |",
+  "conclusion" : "#P_rexpr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cpr--1", "#T_cA.wceq", "#T_cpr--2", "#T_cB.wceq", "#T_cpr--3", "#T_wph", "#T_wb", "#T_wps", "#T_wo", "#T_wch", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wph", "#T_wb", "#T_wps", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_rexprg" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rb-ax1 on Metamath](http://us.metamath.org/mpegif/rb-ax1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orim2 | |- ( ( ps -> ch ) -> ( ( ph \\/ ps ) -> ( ph \\/ ch ) ) ) |\n| 2 |  | #P_imor | |- ( ( ps -> ch ) <-> ( -. ps \\/ ch ) ) |\n| 3 |  | #P_imor | |- ( ( ( ph \\/ ps ) -> ( ph \\/ ch ) ) <-> ( -. ( ph \\/ ps ) \\/ ( ph \\/ ch ) ) ) |\n| 4 | 1, 2, 3 | #P_3imtr3i | |- ( ( -. ps \\/ ch ) -> ( -. ( ph \\/ ps ) \\/ ( ph \\/ ch ) ) ) |\n| 5 | 4 | #P_imori | |- ( -. ( -. ps \\/ ch ) \\/ ( -. ( ph \\/ ps ) \\/ ( ph \\/ ch ) ) ) |",
+  "conclusion" : "#P_rb-ax1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wo", "#T_wch", "#T_wn", "#T_wps", "#T_wo", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wo", "#T_wch", "#T_wn", "#T_wn", "#T_wps", "#T_wo", "#T_wch", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wo", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orim2", "#P_imor", "#P_imori", "#P_3imtr3i" ]
+}

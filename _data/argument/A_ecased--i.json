@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ecased on Metamath](http://us.metamath.org/mpegif/ecased.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ecased.1 | |- ( ph -> -. ch ) |\n| 2 |  | ecased.2 | |- ( ph -> ( ps \\/ ch ) ) |\n| 3 | 1, 2 | #P_jca | |- ( ph -> ( -. ch /\\ ( ps \\/ ch ) ) ) |\n| 4 |  | #P_orel2 | |- ( -. ch -> ( ( ps \\/ ch ) -> ps ) ) |\n| 5 | 4 | #P_imp | |- ( ( -. ch /\\ ( ps \\/ ch ) ) -> ps ) |\n| 6 | 3, 5 | #P_syl | |- ( ph -> ps ) |\n\\\n Deduction form of disjunctive syllogism.  (Contributed by Jim Kingdon, 9-Dec-2017.) ",
+  "conclusion" : "#P_ecased--i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wn", "#T_wch", "#T_wi", "#T_wps", "#T_wo", "#T_wch", "#T_wi", "#T_wps", "#T_wn", "#T_wch", "#T_wa", "#T_wps", "#T_wo", "#T_wch", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imp", "#P_syl", "#P_jca", "#P_orel2" ]
+}

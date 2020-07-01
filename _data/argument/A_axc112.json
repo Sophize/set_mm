@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See axc112 on Metamath](http://us.metamath.org/mpegif/axc112.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-12 | |- ( y = x -> ( A. x ph -> A. y ( y = x -> ph ) ) ) |\n| 2 | 1 | #P_sps | |- ( A. y y = x -> ( A. x ph -> A. y ( y = x -> ph ) ) ) |\n| 3 |  | #P_pm2.27 | |- ( y = x -> ( ( y = x -> ph ) -> ph ) ) |\n| 4 | 3 | #P_al2imi | |- ( A. y y = x -> ( A. y ( y = x -> ph ) -> A. y ph ) ) |\n| 5 | 2, 4 | #P_syld | |- ( A. y y = x -> ( A. x ph -> A. y ph ) ) |",
+  "conclusion" : "#P_axc112",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wph", "#T_wal", "#T_vy", "#T_vy", "#T_wceq", "#T_vx", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wal", "#T_vy", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-12", "#P_sps", "#P_al2imi", "#P_syld", "#P_pm2.27" ]
+}

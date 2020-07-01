@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-clwlk on Metamath](http://us.metamath.org/mpegif/df-clwlk.html)"
+  } ],
+  "names" : [ "df-clwlk" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cclwlk", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vv", "#T_cwalk", "#T_ve", "#T_vp", "#T_wa", "#T_vp", "#T_cfv", "#T_cc0", "#T_wceq", "#T_vp", "#T_cfv", "#T_chash", "#T_cfv", "#T_vf", "#T_copab--6", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the set of all Closed Walks (in an undirected graph). According to definition 4 in [Huneke] p. 2:  \"A walk of length n on (a graph) G is an ordered sequence v0 , v1 , ... v(n) of vertices such that v(i) and v(i+1) are neighbors (i.e are connected by an edge).  We say the walk is closed if v(n) = v0\". According to the definition of a walk as two mappings f from { 1 , ... , n } and p from { 0 , ... , n }, where f enumerates the (indices of the) edges, and p enumerates the vertices, a closed walk is represented by the following sequence: p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0). Notice that by this definition, a single vertex is a closed walk of length 0, see also ~ 0clwlk !  (Contributed by Alexander van der Vekens, 12-Mar-2018.) ",
+  "statement" : "df-clwlk $p |- ClWalks = ( v e. _V , e e. _V |-> { <. f , p >. | ( f ( v Walks e ) p /\\ ( p ` 0 ) = ( p ` ( # ` f ) ) ) } ) $.\n$d e f p v $."
+}

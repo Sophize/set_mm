@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rexuz on Metamath](http://us.metamath.org/mpegif/rexuz.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eluz1 | |- ( M e. ZZ -> ( n e. ( ZZ>= ` M ) <-> ( n e. ZZ /\\ M <_ n ) ) ) |\n| 2 | 1 | #P_anbi1d | |- ( M e. ZZ -> ( ( n e. ( ZZ>= ` M ) /\\ ph ) <-> ( ( n e. ZZ /\\ M <_ n ) /\\ ph ) ) ) |\n| 3 |  | #P_anass | |- ( ( ( n e. ZZ /\\ M <_ n ) /\\ ph ) <-> ( n e. ZZ /\\ ( M <_ n /\\ ph ) ) ) |\n| 4 | 2, 3 | #P_syl6bb | |- ( M e. ZZ -> ( ( n e. ( ZZ>= ` M ) /\\ ph ) <-> ( n e. ZZ /\\ ( M <_ n /\\ ph ) ) ) ) |\n| 5 | 4 | #P_rexbidv2 | |- ( M e. ZZ -> ( E. n e. ( ZZ>= ` M ) ph <-> E. n e. ZZ ( M <_ n /\\ ph ) ) ) |",
+  "conclusion" : "#P_rexuz",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wa", "#T_wph", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wa", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wa", "#T_wph", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wa", "#T_wph", "#T_wb", "#T_vn", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_cle", "#T_vn", "#T_wa", "#T_wph", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wb", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cz", "#T_cM", "#T_cle", "#T_vn", "#T_wa", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anass", "#P_anbi1d", "#P_rexbidv2", "#P_syl6bb", "#P_eluz1" ]
+}

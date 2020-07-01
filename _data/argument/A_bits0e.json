@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bits0e on Metamath](http://us.metamath.org/mpegif/bits0e.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2z | |- 2 e. ZZ |\n| 2 |  | #P_dvdsmul1 | |- ( ( 2 e. ZZ /\\ N e. ZZ ) -> 2 || ( 2 x. N ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( N e. ZZ -> 2 || ( 2 x. N ) ) |\n| 4 | 1 | #P_a1i | |- ( N e. ZZ -> 2 e. ZZ ) |\n| 5 |  | #P_id | |- ( N e. ZZ -> N e. ZZ ) |\n| 6 | 4, 5 | #P_zmulcld | |- ( N e. ZZ -> ( 2 x. N ) e. ZZ ) |\n| 7 |  | #P_bits0 | |- ( ( 2 x. N ) e. ZZ -> ( 0 e. ( bits ` ( 2 x. N ) ) <-> -. 2 || ( 2 x. N ) ) ) |\n| 8 | 6, 7 | #P_syl | |- ( N e. ZZ -> ( 0 e. ( bits ` ( 2 x. N ) ) <-> -. 2 || ( 2 x. N ) ) ) |\n| 9 | 8 | #P_con2bid | |- ( N e. ZZ -> ( 2 || ( 2 x. N ) <-> -. 0 e. ( bits ` ( 2 x. N ) ) ) ) |\n| 10 | 3, 9 | #P_mpbid | |- ( N e. ZZ -> -. 0 e. ( bits ` ( 2 x. N ) ) ) |",
+  "conclusion" : "#P_bits0e",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_wcel", "#T_cz", "#T_c2", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c2", "#T_cdvds", "#T_c2", "#T_cmul", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c2", "#T_cdvds", "#T_c2", "#T_cmul", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c2", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c2", "#T_cmul", "#T_cN", "#T_wcel", "#T_cz", "#T_c2", "#T_cmul", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_wcel", "#T_cbits", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN", "#T_wb", "#T_wn", "#T_c2", "#T_cdvds", "#T_c2", "#T_cmul", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_wcel", "#T_cbits", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN", "#T_wb", "#T_wn", "#T_c2", "#T_cdvds", "#T_c2", "#T_cmul", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_c2", "#T_cdvds", "#T_c2", "#T_cmul", "#T_cN", "#T_wb", "#T_wn", "#T_cc0", "#T_wcel", "#T_cbits", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_wn", "#T_cc0", "#T_wcel", "#T_cbits", "#T_cfv", "#T_c2", "#T_cmul", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_bits0", "#P_zmulcld", "#P_2z", "#P_mpan", "#P_syl", "#P_a1i", "#P_dvdsmul1", "#P_id", "#P_con2bid" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See f1ovv on Metamath](http://us.metamath.org/mpegif/f1ovv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f1ofo | |- ( F : A -1-1-onto-> B -> F : A -onto-> B ) |\n| 2 |  | #P_fornex | |- ( A e. _V -> ( F : A -onto-> B -> B e. _V ) ) |\n| 3 | 1, 2 | #P_syl5com | |- ( F : A -1-1-onto-> B -> ( A e. _V -> B e. _V ) ) |\n| 4 |  | #P_f1of1 | |- ( F : A -1-1-onto-> B -> F : A -1-1-> B ) |\n| 5 |  | #P_f1dmex | |- ( ( F : A -1-1-> B /\\ B e. _V ) -> A e. _V ) |\n| 6 | 5 | #P_ex | |- ( F : A -1-1-> B -> ( B e. _V -> A e. _V ) ) |\n| 7 | 4, 6 | #P_syl | |- ( F : A -1-1-onto-> B -> ( B e. _V -> A e. _V ) ) |\n| 8 | 3, 7 | #P_impbid | |- ( F : A -1-1-onto-> B -> ( A e. _V <-> B e. _V ) ) |",
+  "conclusion" : "#P_f1ovv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf1--1", "#T_cA.wceq", "#T_wf1--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf1o--1", "#T_cA.wceq", "#T_wf1o--2", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cF", "#T_wf1o--1", "#T_cA", "#T_wf1o--2", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cvv", "#T_wb", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_f1of1", "#P_f1dmex", "#P_fornex", "#P_f1ofo", "#P_ex", "#P_syl", "#P_impbid", "#P_syl5com" ]
+}

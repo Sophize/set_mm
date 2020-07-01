@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpbidi on Metamath](http://us.metamath.org/mpegif/mpbidi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpbidi.min | |- ( th -> ( ph -> ps ) ) |\n| 2 |  | mpbidi.maj | |- ( ph -> ( ps <-> ch ) ) |\n| 3 | 2 | #P_biimpd | |- ( ph -> ( ps -> ch ) ) |\n| 4 | 1, 3 | #P_sylcom | |- ( th -> ( ph -> ch ) ) |",
+  "conclusion" : "#P_mpbidi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpd", "#P_sylcom" ]
+}

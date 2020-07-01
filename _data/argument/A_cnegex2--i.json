@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnegex2 on Metamath](http://us.metamath.org/mpegif/cnegex2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnegex | |- ( A e. CC -> E. x e. CC ( A + x ) = 0 ) |\n| 2 |  | #P_addcom | |- ( ( A e. CC /\\ x e. CC ) -> ( A + x ) = ( x + A ) ) |\n| 3 | 2 | #P_eqeq1d | |- ( ( A e. CC /\\ x e. CC ) -> ( ( A + x ) = 0 <-> ( x + A ) = 0 ) ) |\n| 4 | 3 | #P_rexbidva | |- ( A e. CC -> ( E. x e. CC ( A + x ) = 0 <-> E. x e. CC ( x + A ) = 0 ) ) |\n| 5 | 1, 4 | #P_mpbid | |- ( A e. CC -> E. x e. CC ( x + A ) = 0 ) |",
+  "conclusion" : "#P_cnegex2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_cA.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wb", "#T_vx.wal", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_cA.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cc", "#T_vx", "#T_caddc", "#T_cA", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rexbidva", "#P_cnegex", "#P_mpbid", "#P_eqeq1d", "#P_addcom" ]
+}

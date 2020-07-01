@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3brtr3d on Metamath](http://us.metamath.org/mpegif/3brtr3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3brtr3d.1 | |- ( ph -> A R B ) |\n| 2 |  | 3brtr3d.2 | |- ( ph -> A = C ) |\n| 3 |  | 3brtr3d.3 | |- ( ph -> B = D ) |\n| 4 | 2, 3 | #P_breq12d | |- ( ph -> ( A R B <-> C R D ) ) |\n| 5 | 1, 4 | #P_mpbid | |- ( ph -> C R D ) |",
+  "conclusion" : "#P_3brtr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cB", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_cR", "#T_cD", "#T_wph", "#T_wi", "#T_cC", "#T_cR", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbid", "#P_breq12d" ]
+}

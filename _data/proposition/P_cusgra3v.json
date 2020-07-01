@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cusgra3v on Metamath](http://us.metamath.org/mpegif/cusgra3v.html)"
+  } ],
+  "names" : [ "cusgra3v" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cV", "#T_wceq", "#T_ctp--1", "#T_cA", "#T_ctp--2", "#T_cB", "#T_ctp--3", "#T_cC", "#T_ctp--4", "#T_cA", "#T_wcel", "#T_cX", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cY", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cZ", "#T_w3a--1", "#T_cV", "#T_cusg", "#T_cE", "#T_w3a--2", "#T_cA", "#T_wne", "#T_cB", "#T_w3a--1", "#T_cA", "#T_wne", "#T_cC", "#T_w3a--2", "#T_cB", "#T_wne", "#T_cC", "#T_wi", "#T_cV", "#T_ccusgra", "#T_cE", "#T_wb", "#T_cpr--1", "#T_cA", "#T_cpr--2", "#T_cB", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_w3a--1", "#T_cpr--1", "#T_cB", "#T_cpr--2", "#T_cC", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE", "#T_w3a--2", "#T_cpr--1", "#T_cC", "#T_cpr--2", "#T_cA", "#T_cpr--3", "#T_wcel", "#T_crn", "#T_cE" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A graph with three (different) vertices is complete if and only if there is an edge between each of these three vertices.  (Contributed by Alexander van der Vekens, 12-Oct-2017.) ",
+  "statement" : "cusgra3v.v $e |- V = { A , B , C } $.\ncusgra3v $p |- ( ( ( A e. X /\\ B e. Y /\\ C e. Z ) /\\ V USGrph E /\\ ( A =/= B /\\ A =/= C /\\ B =/= C ) ) -> ( V ComplUSGrph E <-> ( { A , B } e. ran E /\\ { B , C } e. ran E /\\ { C , A } e. ran E ) ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See idfu1 on Metamath](http://us.metamath.org/mpegif/idfu1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | idfuval.i | |- I = ( idFunc ` C ) |\n| 2 |  | idfuval.b | |- B = ( Base ` C ) |\n| 3 |  | idfuval.c | |- ( ph -> C e. Cat ) |\n| 4 |  | idfu1.x | |- ( ph -> X e. B ) |\n| 5 | 1, 2, 3 | #P_idfu1st | |- ( ph -> ( 1st ` I ) = ( _I |` B ) ) |\n| 6 | 5 | #P_fveq1d | |- ( ph -> ( ( 1st ` I ) ` X ) = ( ( _I |` B ) ` X ) ) |\n| 7 |  | #P_fvresi | |- ( X e. B -> ( ( _I |` B ) ` X ) = X ) |\n| 8 | 4, 7 | #P_syl | |- ( ph -> ( ( _I |` B ) ` X ) = X ) |\n| 9 | 6, 8 | #P_eqtrd | |- ( ph -> ( ( 1st ` I ) ` X ) = X ) |",
+  "conclusion" : "#P_idfu1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cidfu", "#T_cfv", "#T_cC", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ccat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_c1st", "#T_cfv", "#T_cI", "#T_wceq", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_c1st", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_cfv", "#T_cX", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_c1st", "#T_cfv", "#T_cI", "#T_cfv", "#T_cX", "#T_wceq", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvresi", "#P_fveq1d", "#P_eqtrd", "#P_idfu1st", "#P_syl" ]
+}

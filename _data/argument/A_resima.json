@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resima on Metamath](http://us.metamath.org/mpegif/resima.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_residm | |- ( ( A |` B ) |` B ) = ( A |` B ) |\n| 2 | 1 | #P_rneqi | |- ran ( ( A |` B ) |` B ) = ran ( A |` B ) |\n| 3 |  | #P_df-ima | |- ( ( A |` B ) \" B ) = ran ( ( A |` B ) |` B ) |\n| 4 |  | #P_df-ima | |- ( A \" B ) = ran ( A |` B ) |\n| 5 | 2, 3, 4 | #P_3eqtr4i | |- ( ( A |` B ) \" B ) = ( A \" B ) |",
+  "conclusion" : "#P_resima",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cres", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cima", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cres", "#T_cB.wceq", "#T_cA.wceq", "#T_cima", "#T_cB.wceq", "#T_wceq", "#T_crn", "#T_cA.wceq", "#T_cres", "#T_cB.wceq", "#T_cA", "#T_cres", "#T_cB", "#T_cima", "#T_cB", "#T_wceq", "#T_cA", "#T_cima", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_residm", "#P_3eqtr4i", "#P_df-ima", "#P_rneqi" ]
+}

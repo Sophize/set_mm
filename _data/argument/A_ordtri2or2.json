@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ordtri2or2 on Metamath](http://us.metamath.org/mpegif/ordtri2or2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordtri2or | |- ( ( Ord A /\\ Ord B ) -> ( A e. B \\/ B C_ A ) ) |\n| 2 |  | #P_ordelss | |- ( ( Ord B /\\ A e. B ) -> A C_ B ) |\n| 3 | 2 | #P_ex | |- ( Ord B -> ( A e. B -> A C_ B ) ) |\n| 4 | 3 | #P_orim1d | |- ( Ord B -> ( ( A e. B \\/ B C_ A ) -> ( A C_ B \\/ B C_ A ) ) ) |\n| 5 | 4 | #P_adantl | |- ( ( Ord A /\\ Ord B ) -> ( ( A e. B \\/ B C_ A ) -> ( A C_ B \\/ B C_ A ) ) ) |\n| 6 | 1, 5 | #P_mpd | |- ( ( Ord A /\\ Ord B ) -> ( A C_ B \\/ B C_ A ) ) |",
+  "conclusion" : "#P_ordtri2or2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cB.wceq", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wo", "#T_cB.wceq", "#T_wss", "#T_cA.wceq", "#T_word", "#T_cA", "#T_wa", "#T_word", "#T_cB", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wo", "#T_cB", "#T_wss", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_adantl", "#P_ordtri2or", "#P_ex", "#P_orim1d", "#P_ordelss" ]
+}

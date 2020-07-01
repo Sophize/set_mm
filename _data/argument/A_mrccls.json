@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrccls on Metamath](http://us.metamath.org/mpegif/mrccls.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mrccls.f | |- F = ( mrCls ` ( Clsd ` J ) ) |\n| 2 |  | #P_eqid | |- U. J = U. J |\n| 3 | 2 | #P_clsfval | |- ( J e. Top -> ( cls ` J ) = ( a e. ~P U. J |-> |^| { b e. ( Clsd ` J ) | a C_ b } ) ) |\n| 4 | 2 | #P_cldmre | |- ( J e. Top -> ( Clsd ` J ) e. ( Moore ` U. J ) ) |\n| 5 | 1 | #P_mrcfval | |- ( ( Clsd ` J ) e. ( Moore ` U. J ) -> F = ( a e. ~P U. J |-> |^| { b e. ( Clsd ` J ) | a C_ b } ) ) |\n| 6 | 4, 5 | #P_syl | |- ( J e. Top -> F = ( a e. ~P U. J |-> |^| { b e. ( Clsd ` J ) | a C_ b } ) ) |\n| 7 | 3, 6 | #P_eqtr4d | |- ( J e. Top -> ( cls ` J ) = F ) |",
+  "conclusion" : "#P_mrccls",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_cF", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_ccld", "#T_cfv", "#T_cJ", "#T_cuni", "#T_cJ", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cpw", "#T_cuni", "#T_cJ", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vb", "#T_crab--2", "#T_ccld", "#T_cfv", "#T_cJ", "#T_crab--3", "#T_va", "#T_wss", "#T_vb", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cuni", "#T_cJ", "#T_ccld", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cuni", "#T_cJ", "#T_wi", "#T_cF", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cpw", "#T_cuni", "#T_cJ", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vb", "#T_crab--2", "#T_ccld", "#T_cfv", "#T_cJ", "#T_crab--3", "#T_va", "#T_wss", "#T_vb", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cF", "#T_wceq", "#T_va", "#T_cmpt--1", "#T_cpw", "#T_cuni", "#T_cJ", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vb", "#T_crab--2", "#T_ccld", "#T_cfv", "#T_cJ", "#T_crab--3", "#T_va", "#T_wss", "#T_vb", "#T_crab--4", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_ccl", "#T_cfv", "#T_cJ", "#T_wceq", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_clsfval", "#P_mrcfval", "#P_syl", "#P_eqtr4d", "#P_cldmre" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elmapi on Metamath](http://us.metamath.org/mpegif/elmapi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elmapex | |- ( A e. ( B ^m C ) -> ( B e. _V /\\ C e. _V ) ) |\n| 2 |  | #P_elmapg | |- ( ( B e. _V /\\ C e. _V ) -> ( A e. ( B ^m C ) <-> A : C --> B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. ( B ^m C ) -> ( A e. ( B ^m C ) <-> A : C --> B ) ) |\n| 4 | 3 | #P_ibi | |- ( A e. ( B ^m C ) -> A : C --> B ) |",
+  "conclusion" : "#P_elmapi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wf--1", "#T_cC", "#T_wf--2", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_cmap", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wf--1", "#T_cC", "#T_wf--2", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cB", "#T_cmap", "#T_cC", "#T_wi", "#T_cA", "#T_wf--1", "#T_cC", "#T_wf--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elmapg", "#P_ibi", "#P_syl", "#P_elmapex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sdomsdomcard on Metamath](http://us.metamath.org/mpegif/sdomsdomcard.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relsdom | |- Rel ~< |\n| 2 | 1 | #P_brrelex2i | |- ( A ~< B -> B e. _V ) |\n| 3 |  | #P_numth3 | |- ( B e. _V -> B e. dom card ) |\n| 4 |  | #P_cardid2 | |- ( B e. dom card -> ( card ` B ) ~~ B ) |\n| 5 |  | #P_ensym | |- ( ( card ` B ) ~~ B -> B ~~ ( card ` B ) ) |\n| 6 | 2, 3, 4, 5 | #P_4syl | |- ( A ~< B -> B ~~ ( card ` B ) ) |\n| 7 |  | #P_sdomentr | |- ( ( A ~< B /\\ B ~~ ( card ` B ) ) -> A ~< ( card ` B ) ) |\n| 8 | 6, 7 | #P_mpdan | |- ( A ~< B -> A ~< ( card ` B ) ) |\n| 9 |  | #P_sdomsdomcardi | |- ( A ~< ( card ` B ) -> A ~< B ) |\n| 10 | 8, 9 | #P_impbii | |- ( A ~< B <-> A ~< ( card ` B ) ) |",
+  "conclusion" : "#P_sdomsdomcard",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_csdm", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cB.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cen", "#T_cB.wceq", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cen", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cen", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cen", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_cA.wceq", "#T_csdm", "#T_ccrd", "#T_cfv", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_csdm", "#T_cB.wceq", "#T_cA", "#T_csdm", "#T_cB", "#T_wb", "#T_cA", "#T_csdm", "#T_ccrd", "#T_cfv", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpdan", "#P_relsdom", "#P_impbii", "#P_cardid2", "#P_sdomentr", "#P_4syl", "#P_ensym", "#P_numth3", "#P_brrelex2i", "#P_sdomsdomcardi" ]
+}

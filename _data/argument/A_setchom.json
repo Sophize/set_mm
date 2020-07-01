@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See setchom on Metamath](http://us.metamath.org/mpegif/setchom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | setcbas.c | |- C = ( SetCat ` U ) |\n| 2 |  | setcbas.u | |- ( ph -> U e. V ) |\n| 3 |  | setchomfval.h | |- H = ( Hom ` C ) |\n| 4 |  | setchom.x | |- ( ph -> X e. U ) |\n| 5 |  | setchom.y | |- ( ph -> Y e. U ) |\n| 6 | 1, 2, 3 | #P_setchomfval | |- ( ph -> H = ( x e. U , y e. U |-> ( y ^m x ) ) ) |\n| 7 |  | #P_simprr | |- ( ( ph /\\ ( x = X /\\ y = Y ) ) -> y = Y ) |\n| 8 |  | #P_simprl | |- ( ( ph /\\ ( x = X /\\ y = Y ) ) -> x = X ) |\n| 9 | 7, 8 | #P_oveq12d | |- ( ( ph /\\ ( x = X /\\ y = Y ) ) -> ( y ^m x ) = ( Y ^m X ) ) |\n| 10 |  | #P_ovex | |- ( Y ^m X ) e. _V |\n| 11 | 10 | #P_a1i | |- ( ph -> ( Y ^m X ) e. _V ) |\n| 12 | 6, 9, 4, 5, 11 | #P_ovmpt2d | |- ( ph -> ( X H Y ) = ( Y ^m X ) ) |",
+  "conclusion" : "#P_setchom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cC", "#T_wceq", "#T_csetc", "#T_cfv", "#T_cU", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cV", "#T_cH", "#T_wceq", "#T_chom", "#T_cfv", "#T_cC", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cH", "#T_wceq", "#T_vx.wal", "#T_cmpt2--1", "#T_cU", "#T_cmpt2--2", "#T_vy.tru", "#T_cmpt2--3", "#T_cU", "#T_cmpt2--4", "#T_vy.tru", "#T_cmap", "#T_vx.wal", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wph", "#T_wa", "#T_vx.wal", "#T_wceq", "#T_cX", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cY", "#T_wi", "#T_vy.tru", "#T_cmap", "#T_vx.wal", "#T_wceq", "#T_cY", "#T_cmap", "#T_cX", "#T_cY", "#T_cmap", "#T_cX", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cY", "#T_cmap", "#T_cX", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cX", "#T_cH", "#T_cY", "#T_wceq", "#T_cY", "#T_cmap", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_setchomfval", "#P_oveq12d", "#P_simprl", "#P_simprr", "#P_a1i", "#P_ovmpt2d" ]
+}

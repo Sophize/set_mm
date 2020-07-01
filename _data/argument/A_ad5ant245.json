@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ad5ant245 on Metamath](http://us.metamath.org/mpegif/ad5ant245.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ad5ant245.1 | |- ( ( ph /\\ ps /\\ ch ) -> th ) |\n| 2 | 1 | #P_3exp | |- ( ph -> ( ps -> ( ch -> th ) ) ) |\n| 3 | 2 | #P_a1i4 | |- ( ph -> ( ps -> ( ch -> ( ta -> th ) ) ) ) |\n| 4 | 3 | #P_a1i4 | |- ( ph -> ( ps -> ( ch -> ( et -> ( ta -> th ) ) ) ) ) |\n| 5 | 4 | #P_com5r | |- ( ta -> ( ph -> ( ps -> ( ch -> ( et -> th ) ) ) ) ) |\n| 6 | 5 | #P_com45 | |- ( ta -> ( ph -> ( ps -> ( et -> ( ch -> th ) ) ) ) ) |\n| 7 | 6 | #P_com34 | |- ( ta -> ( ph -> ( et -> ( ps -> ( ch -> th ) ) ) ) ) |\n| 8 | 7 | #P_imp | |- ( ( ta /\\ ph ) -> ( et -> ( ps -> ( ch -> th ) ) ) ) |\n| 9 | 8 | #P_imp41 | |- ( ( ( ( ( ta /\\ ph ) /\\ et ) /\\ ps ) /\\ ch ) -> th ) |",
+  "conclusion" : "#P_ad5ant245",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wet", "#T_wi", "#T_wta", "#T_wi", "#T_wth", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wet", "#T_wi", "#T_wth", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wet", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wta", "#T_wi", "#T_wph", "#T_wi", "#T_wet", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wta", "#T_wa", "#T_wph", "#T_wi", "#T_wet", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wta", "#T_wa", "#T_wph", "#T_wa", "#T_wet", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_com5r", "#P_imp41", "#P_imp", "#P_a1i4", "#P_3exp", "#P_com45", "#P_com34" ]
+}

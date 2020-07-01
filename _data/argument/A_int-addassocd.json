@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See int-addassocd on Metamath](http://us.metamath.org/mpegif/int-addassocd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | int-addassocd.1 | |- ( ph -> A e. RR ) |\n| 2 |  | int-addassocd.2 | |- ( ph -> C e. RR ) |\n| 3 |  | int-addassocd.3 | |- ( ph -> D e. RR ) |\n| 4 |  | int-addassocd.4 | |- ( ph -> A = B ) |\n| 5 | 1 | #P_recnd | |- ( ph -> A e. CC ) |\n| 6 | 2 | #P_recnd | |- ( ph -> C e. CC ) |\n| 7 | 3 | #P_recnd | |- ( ph -> D e. CC ) |\n| 8 | 5, 6, 7 | #P_addassd | |- ( ph -> ( ( A + C ) + D ) = ( A + ( C + D ) ) ) |\n| 9 | 4 | #P_oveq1d | |- ( ph -> ( A + ( C + D ) ) = ( B + ( C + D ) ) ) |\n| 10 | 8, 9 | #P_eqtr2d | |- ( ph -> ( B + ( C + D ) ) = ( ( A + C ) + D ) ) |",
+  "conclusion" : "#P_int-addassocd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD", "#T_wceq", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD", "#T_wph", "#T_wi", "#T_cB", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD", "#T_wceq", "#T_cA", "#T_caddc", "#T_cC", "#T_caddc", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_recnd", "#P_oveq1d", "#P_addassd", "#P_eqtr2d" ]
+}

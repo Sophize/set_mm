@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See noprc on Metamath](http://us.metamath.org/mpegif/noprc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_onprc | |- -. On e. _V |\n| 2 |  | #P_bdayfo | |- bday : No -onto-> On |\n| 3 |  | #P_fornex | |- ( No e. _V -> ( bday : No -onto-> On -> On e. _V ) ) |\n| 4 | 2, 3 | #P_mpi | |- ( No e. _V -> On e. _V ) |\n| 5 | 1, 4 | #P_mto | |- -. No e. _V |",
+  "conclusion" : "#P_noprc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_con0", "#T_wcel", "#T_cvv", "#T_cbday", "#T_wfo--1", "#T_csur", "#T_wfo--2", "#T_con0", "#T_csur", "#T_wcel", "#T_cvv", "#T_wi", "#T_cbday", "#T_wfo--1", "#T_csur", "#T_wfo--2", "#T_con0", "#T_wi", "#T_con0", "#T_wcel", "#T_cvv", "#T_csur", "#T_wcel", "#T_cvv", "#T_wi", "#T_con0", "#T_wcel", "#T_cvv", "#T_wn", "#T_csur", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fornex", "#P_bdayfo", "#P_onprc", "#P_mpi", "#P_mto" ]
+}

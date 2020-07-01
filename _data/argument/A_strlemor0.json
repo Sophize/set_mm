@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See strlemor0 on Metamath](http://us.metamath.org/mpegif/strlemor0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fun0 | |- Fun (/) |\n| 2 |  | #P_funcnvcnv | |- ( Fun (/) -> Fun `' `' (/) ) |\n| 3 | 1, 2 | #P_ax-mp | |- Fun `' `' (/) |\n| 4 |  | #P_dm0 | |- dom (/) = (/) |\n| 5 |  | #P_0ss | |- (/) C_ ( 1 ... 0 ) |\n| 6 | 4, 5 | #P_eqsstri | |- dom (/) C_ ( 1 ... 0 ) |\n| 7 | 3, 6 | #P_pm3.2i | |- ( Fun `' `' (/) /\\ dom (/) C_ ( 1 ... 0 ) ) |",
+  "conclusion" : "#P_strlemor0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_c0", "#T_wfun", "#T_c0", "#T_wi", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_c0", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_c0", "#T_cdm", "#T_c0", "#T_wceq", "#T_c0", "#T_c0", "#T_wss", "#T_c1", "#T_cfz", "#T_cc0", "#T_cdm", "#T_c0", "#T_wss", "#T_c1", "#T_cfz", "#T_cc0", "#T_wfun", "#T_ccnv", "#T_ccnv", "#T_c0", "#T_wa", "#T_cdm", "#T_c0", "#T_wss", "#T_c1", "#T_cfz", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_0ss", "#P_dm0", "#P_fun0", "#P_eqsstri", "#P_pm3.2i", "#P_funcnvcnv" ]
+}

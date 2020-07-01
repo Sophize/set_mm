@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlcompl on Metamath](http://us.metamath.org/mpegif/hlcompl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlcompl.1 | |- D = ( IndMet ` U ) |\n| 2 |  | hlcompl.2 | |- J = ( MetOpen ` D ) |\n| 3 |  | #P_eqid | |- ( BaseSet ` U ) = ( BaseSet ` U ) |\n| 4 | 3, 1 | #P_hlcmet | |- ( U e. CHilOLD -> D e. ( CMet ` ( BaseSet ` U ) ) ) |\n| 5 | 2 | #P_cmetcau | |- ( ( D e. ( CMet ` ( BaseSet ` U ) ) /\\ F e. ( Cau ` D ) ) -> F e. dom ( ~~>t ` J ) ) |\n| 6 | 4, 5 | #P_sylan | |- ( ( U e. CHilOLD /\\ F e. ( Cau ` D ) ) -> F e. dom ( ~~>t ` J ) ) |",
+  "conclusion" : "#P_hlcompl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wceq", "#T_cims", "#T_cfv", "#T_cU", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cba", "#T_cfv", "#T_cU", "#T_wceq", "#T_cba", "#T_cfv", "#T_cU", "#T_cU", "#T_wcel", "#T_chlo", "#T_wi", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_cU", "#T_cD", "#T_wcel", "#T_cms", "#T_cfv", "#T_cba", "#T_cfv", "#T_cU", "#T_wa", "#T_cF", "#T_wcel", "#T_cca", "#T_cfv", "#T_cD", "#T_wi", "#T_cF", "#T_wcel", "#T_cdm", "#T_clm", "#T_cfv", "#T_cJ", "#T_cU", "#T_wcel", "#T_chlo", "#T_wa", "#T_cF", "#T_wcel", "#T_cca", "#T_cfv", "#T_cD", "#T_wi", "#T_cF", "#T_wcel", "#T_cdm", "#T_clm", "#T_cfv", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_sylan", "#P_cmetcau", "#P_hlcmet" ]
+}

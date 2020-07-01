@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifcld on Metamath](http://us.metamath.org/mpegif/ifcld.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ifcld.a | |- ( ph -> A e. C ) |\n| 2 |  | ifcld.b | |- ( ph -> B e. C ) |\n| 3 |  | #P_ifcl | |- ( ( A e. C /\\ B e. C ) -> if ( ps , A , B ) e. C ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> if ( ps , A , B ) e. C ) |",
+  "conclusion" : "#P_ifcld",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ifcl", "#P_syl2anc" ]
+}

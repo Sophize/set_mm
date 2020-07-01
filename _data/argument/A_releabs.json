@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See releabs on Metamath](http://us.metamath.org/mpegif/releabs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recl | |- ( A e. CC -> ( Re ` A ) e. RR ) |\n| 2 | 1 | #P_recnd | |- ( A e. CC -> ( Re ` A ) e. CC ) |\n| 3 |  | #P_abscl | |- ( ( Re ` A ) e. CC -> ( abs ` ( Re ` A ) ) e. RR ) |\n| 4 | 2, 3 | #P_syl | |- ( A e. CC -> ( abs ` ( Re ` A ) ) e. RR ) |\n| 5 |  | #P_abscl | |- ( A e. CC -> ( abs ` A ) e. RR ) |\n| 6 |  | #P_leabs | |- ( ( Re ` A ) e. RR -> ( Re ` A ) <_ ( abs ` ( Re ` A ) ) ) |\n| 7 | 1, 6 | #P_syl | |- ( A e. CC -> ( Re ` A ) <_ ( abs ` ( Re ` A ) ) ) |\n| 8 |  | #P_absrele | |- ( A e. CC -> ( abs ` ( Re ` A ) ) <_ ( abs ` A ) ) |\n| 9 | 1, 4, 5, 7, 8 | #P_letrd | |- ( A e. CC -> ( Re ` A ) <_ ( abs ` A ) ) |",
+  "conclusion" : "#P_releabs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cabs", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cabs", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cre", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cre", "#T_cfv", "#T_cA", "#T_cle", "#T_cabs", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_absrele", "#P_letrd", "#P_recl", "#P_abscl", "#P_recnd", "#P_syl", "#P_leabs" ]
+}

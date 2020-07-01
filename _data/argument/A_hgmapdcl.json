@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hgmapdcl on Metamath](http://us.metamath.org/mpegif/hgmapdcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hgmapdcl.h | |- H = ( LHyp ` K ) |\n| 2 |  | hgmapdcl.u | |- U = ( ( DVecH ` K ) ` W ) |\n| 3 |  | hgmapdcl.r | |- R = ( Scalar ` U ) |\n| 4 |  | hgmapdcl.b | |- B = ( Base ` R ) |\n| 5 |  | hgmapdcl.c | |- C = ( ( LCDual ` K ) ` W ) |\n| 6 |  | hgmapdcl.q | |- Q = ( Scalar ` C ) |\n| 7 |  | hgmapdcl.a | |- A = ( Base ` Q ) |\n| 8 |  | hgmapdcl.g | |- G = ( ( HGMap ` K ) ` W ) |\n| 9 |  | hgmapdcl.k | |- ( ph -> ( K e. HL /\\ W e. H ) ) |\n| 10 |  | hgmapdcl.f | |- ( ph -> F e. B ) |\n| 11 | 1, 2, 3, 4, 8, 9, 10 | #P_hgmapcl | |- ( ph -> ( G ` F ) e. B ) |\n| 12 | 1, 2, 3, 4, 5, 6, 7, 9 | #P_lcdsbase | |- ( ph -> A = B ) |\n| 13 | 11, 12 | #P_eleqtrrd | |- ( ph -> ( G ` F ) e. A ) |",
+  "conclusion" : "#P_hgmapdcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wceq", "#T_clh", "#T_cfv", "#T_cK", "#T_cU", "#T_wceq", "#T_cdvh", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_cU", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_clcd", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_cQ", "#T_wceq", "#T_csca", "#T_cfv", "#T_cC", "#T_cA", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cQ", "#T_cG", "#T_wceq", "#T_chg", "#T_cfv", "#T_cK", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_chlt", "#T_wa", "#T_cW", "#T_wcel", "#T_cH", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_cF", "#T_wcel", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_cF", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_hgmapcl", "#P_lcdsbase", "#P_eleqtrrd" ]
+}

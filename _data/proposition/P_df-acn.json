@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-acn on Metamath](http://us.metamath.org/mpegif/df-acn.html)"
+  } ],
+  "names" : [ "df-acn" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wacn", "#T_cA", "#T_wceq", "#T_cab--1", "#T_vx", "#T_cab--2", "#T_cA", "#T_wcel", "#T_cvv", "#T_wa", "#T_wral--1", "#T_vf", "#T_wral--2", "#T_cpw", "#T_vx", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cmap", "#T_cA", "#T_wex", "#T_vg", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_vg", "#T_cfv", "#T_vy", "#T_wcel", "#T_vf", "#T_cfv", "#T_vy", "#T_cab--3", "#T_cA", "#T_vf", "#T_vg", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a local and length-limited version of the axiom of choice.  The definition of the predicate ` X e. AC_ A ` is that for all families of nonempty subsets of ` X ` indexed on ` A ` (i.e. functions ` A --> ~P X \\ { (/) } ` ), there is a function which selects an element from each set in the family.  (Contributed by Mario Carneiro, 31-Aug-2015.) ",
+  "statement" : "df-acn $p |- AC_ A = { x | ( A e. _V /\\ A. f e. ( ( ~P x \\ { (/) } ) ^m A ) E. g A. y e. A ( g ` y ) e. ( f ` y ) ) } $.\n$d A f g x y $."
+}

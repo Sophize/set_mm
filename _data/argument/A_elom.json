@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elom on Metamath](http://us.metamath.org/mpegif/elom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1 | |- ( y = A -> ( y e. x <-> A e. x ) ) |\n| 2 | 1 | #P_imbi2d | |- ( y = A -> ( ( Lim x -> y e. x ) <-> ( Lim x -> A e. x ) ) ) |\n| 3 | 2 | #P_albidv | |- ( y = A -> ( A. x ( Lim x -> y e. x ) <-> A. x ( Lim x -> A e. x ) ) ) |\n| 4 |  | #P_df-om | |- _om = { y e. On | A. x ( Lim x -> y e. x ) } |\n| 5 | 3, 4 | #P_elrab2 | |- ( A e. _om <-> ( A e. On /\\ A. x ( Lim x -> A e. x ) ) ) |",
+  "conclusion" : "#P_elom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wlim", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wlim", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wlim", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wlim", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_vx.wal", "#T_com", "#T_wceq", "#T_crab--1", "#T_vy.tru", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_wal", "#T_vx.wal", "#T_wlim", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_crab--4", "#T_cA", "#T_wcel", "#T_com", "#T_wb", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_wal", "#T_vx", "#T_wlim", "#T_vx", "#T_wi", "#T_cA", "#T_wcel", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elrab2", "#P_eleq1", "#P_albidv", "#P_imbi2d", "#P_df-om" ]
+}

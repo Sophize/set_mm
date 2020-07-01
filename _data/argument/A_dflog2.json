@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dflog2 on Metamath](http://us.metamath.org/mpegif/dflog2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-log | |- log = `' ( exp |` ( `' Im \" ( -u _pi (,] _pi ) ) ) |\n| 2 |  | #P_logrn | |- ran log = ( `' Im \" ( -u _pi (,] _pi ) ) |\n| 3 | 2 | #P_reseq2i | |- ( exp |` ran log ) = ( exp |` ( `' Im \" ( -u _pi (,] _pi ) ) ) |\n| 4 | 3 | #P_cnveqi | |- `' ( exp |` ran log ) = `' ( exp |` ( `' Im \" ( -u _pi (,] _pi ) ) ) |\n| 5 | 1, 4 | #P_eqtr4i | |- log = `' ( exp |` ran log ) |",
+  "conclusion" : "#P_dflog2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clog", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_ccnv", "#T_cim", "#T_cima", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi", "#T_crn", "#T_clog", "#T_wceq", "#T_ccnv", "#T_cim", "#T_cima", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi", "#T_ce", "#T_cres", "#T_crn", "#T_clog", "#T_wceq", "#T_ce", "#T_cres", "#T_ccnv", "#T_cim", "#T_cima", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi", "#T_ccnv", "#T_ce", "#T_cres", "#T_crn", "#T_clog", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_ccnv", "#T_cim", "#T_cima", "#T_cneg", "#T_cpi", "#T_cioc", "#T_cpi", "#T_clog", "#T_wceq", "#T_ccnv", "#T_ce", "#T_cres", "#T_crn", "#T_clog" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_reseq2i", "#P_logrn", "#P_df-log", "#P_cnveqi" ]
+}

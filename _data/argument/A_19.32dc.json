@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.32dc on Metamath](http://us.metamath.org/mpegif/19.32dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 19.32dc.1 | |- F/ x ph |\n| 2 | 1 | #P_nfn | |- F/ x -. ph |\n| 3 | 2 | #P_19.21 | |- ( A. x ( -. ph -> ps ) <-> ( -. ph -> A. x ps ) ) |\n| 4 | 3 | #P_a1i | |- ( DECID ph -> ( A. x ( -. ph -> ps ) <-> ( -. ph -> A. x ps ) ) ) |\n| 5 | 1 | #P_nfdc | |- F/ x DECID ph |\n| 6 |  | #P_dfordc | |- ( DECID ph -> ( ( ph \\/ ps ) <-> ( -. ph -> ps ) ) ) |\n| 7 | 5, 6 | #P_albid | |- ( DECID ph -> ( A. x ( ph \\/ ps ) <-> A. x ( -. ph -> ps ) ) ) |\n| 8 |  | #P_dfordc | |- ( DECID ph -> ( ( ph \\/ A. x ps ) <-> ( -. ph -> A. x ps ) ) ) |\n| 9 | 4, 7, 8 | #P_3bitr4d | |- ( DECID ph -> ( A. x ( ph \\/ ps ) <-> ( ph \\/ A. x ps ) ) ) |",
+  "conclusion" : "#P_19.32dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wdc", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_albid", "#P_nfdc", "#P_3bitr4d", "#P_19.21", "#P_nfn", "#P_dfordc", "#P_a1i" ]
+}

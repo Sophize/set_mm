@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrsubccat on Metamath](http://us.metamath.org/mpegif/mrsubccat.html)"
+  } ],
+  "names" : [ "mrsubccat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cmrsub", "#T_cfv", "#T_cT", "#T_cR", "#T_wceq", "#T_cmrex", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_crn", "#T_cS", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cR", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cR", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_cconcat", "#T_cY", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_cconcat", "#T_cF", "#T_cfv", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Substitution distributes over concatenation.  (Contributed by Mario Carneiro, 18-Jul-2016.) ",
+  "statement" : "mrsubccat.s $e |- S = ( mRSubst ` T ) $.\nmrsubccat.r $e |- R = ( mREx ` T ) $.\nmrsubccat $p |- ( ( F e. ran S /\\ X e. R /\\ Y e. R ) -> ( F ` ( X concat Y ) ) = ( ( F ` X ) concat ( F ` Y ) ) ) $."
+}

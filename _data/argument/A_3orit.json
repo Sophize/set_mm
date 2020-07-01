@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3orit on Metamath](http://us.metamath.org/mpegif/3orit.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-3or | |- ( ( ph \\/ ps \\/ ch ) <-> ( ( ph \\/ ps ) \\/ ch ) ) |\n| 2 |  | #P_df-or | |- ( ( ( ph \\/ ps ) \\/ ch ) <-> ( -. ( ph \\/ ps ) -> ch ) ) |\n| 3 |  | #P_ioran | |- ( -. ( ph \\/ ps ) <-> ( -. ph /\\ -. ps ) ) |\n| 4 | 3 | #P_imbi1i | |- ( ( -. ( ph \\/ ps ) -> ch ) <-> ( ( -. ph /\\ -. ps ) -> ch ) ) |\n| 5 | 1, 2, 4 | #P_3bitri | |- ( ( ph \\/ ps \\/ ch ) <-> ( ( -. ph /\\ -. ps ) -> ch ) ) |",
+  "conclusion" : "#P_3orit",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wch", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_w3o--1", "#T_wps", "#T_w3o--2", "#T_wch", "#T_wb", "#T_wn", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi1i", "#P_df-or", "#P_ioran", "#P_3bitri", "#P_df-3or" ]
+}

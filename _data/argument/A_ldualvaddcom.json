@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ldualvaddcom on Metamath](http://us.metamath.org/mpegif/ldualvaddcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ldualvaddcom.f | |- F = ( LFnl ` W ) |\n| 2 |  | ldualvaddcom.d | |- D = ( LDual ` W ) |\n| 3 |  | ldualvaddcom.p | |- .+ = ( +g ` D ) |\n| 4 |  | ldualvaddcom.w | |- ( ph -> W e. LMod ) |\n| 5 |  | ldualvaddcom.x | |- ( ph -> X e. F ) |\n| 6 |  | ldualvaddcom.y | |- ( ph -> Y e. F ) |\n| 7 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 8 |  | #P_eqid | |- ( +g ` ( Scalar ` W ) ) = ( +g ` ( Scalar ` W ) ) |\n| 9 | 7, 8, 1, 4, 5, 6 | #P_lfladdcom | |- ( ph -> ( X oF ( +g ` ( Scalar ` W ) ) Y ) = ( Y oF ( +g ` ( Scalar ` W ) ) X ) ) |\n| 10 | 1, 7, 8, 2, 3, 4, 5, 6 | #P_ldualvadd | |- ( ph -> ( X .+ Y ) = ( X oF ( +g ` ( Scalar ` W ) ) Y ) ) |\n| 11 | 1, 7, 8, 2, 3, 4, 6, 5 | #P_ldualvadd | |- ( ph -> ( Y .+ X ) = ( Y oF ( +g ` ( Scalar ` W ) ) X ) ) |\n| 12 | 9, 10, 11 | #P_3eqtr4d | |- ( ph -> ( X .+ Y ) = ( Y .+ X ) ) |",
+  "conclusion" : "#P_ldualvaddcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_clfn", "#T_cfv", "#T_cW", "#T_cD", "#T_wceq", "#T_cld", "#T_cfv", "#T_cW", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cF", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cF", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cX", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cY", "#T_wceq", "#T_cY", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cX", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cY", "#T_wph", "#T_wi", "#T_cY", "#T_c.pl", "#T_cX", "#T_wceq", "#T_cY", "#T_cof", "#T_cplusg", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cX", "#T_wph", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_wceq", "#T_cY", "#T_c.pl", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lfladdcom", "#P_eqid", "#P_3eqtr4d", "#P_ldualvadd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sdomen2 on Metamath](http://us.metamath.org/mpegif/sdomen2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sdomentr | |- ( ( C ~< A /\\ A ~~ B ) -> C ~< B ) |\n| 2 | 1 | #P_ancoms | |- ( ( A ~~ B /\\ C ~< A ) -> C ~< B ) |\n| 3 |  | #P_ensym | |- ( A ~~ B -> B ~~ A ) |\n| 4 |  | #P_sdomentr | |- ( ( C ~< B /\\ B ~~ A ) -> C ~< A ) |\n| 5 | 4 | #P_ancoms | |- ( ( B ~~ A /\\ C ~< B ) -> C ~< A ) |\n| 6 | 3, 5 | #P_sylan | |- ( ( A ~~ B /\\ C ~< B ) -> C ~< A ) |\n| 7 | 2, 6 | #P_impbida | |- ( A ~~ B -> ( C ~< A <-> C ~< B ) ) |",
+  "conclusion" : "#P_sdomen2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_csdm", "#T_cA.wceq", "#T_wa", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_csdm", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_csdm", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_csdm", "#T_cB.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_cC", "#T_csdm", "#T_cB.wceq", "#T_wa", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_wi", "#T_cC", "#T_csdm", "#T_cA.wceq", "#T_cB.wceq", "#T_cen", "#T_cA.wceq", "#T_wa", "#T_cC", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_csdm", "#T_cA.wceq", "#T_cA.wceq", "#T_cen", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_csdm", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_csdm", "#T_cA.wceq", "#T_cA", "#T_cen", "#T_cB", "#T_wi", "#T_cC", "#T_csdm", "#T_cA", "#T_wb", "#T_cC", "#T_csdm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sdomentr", "#P_sylan", "#P_ensym", "#P_ancoms", "#P_impbida" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ist1-5lem on Metamath](http://us.metamath.org/mpegif/ist1-5lem.html)"
+  } ],
+  "names" : [ "ist1-5lem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_cA", "#T_wi", "#T_cJ", "#T_wcel", "#T_ct0", "#T_cJ", "#T_chmph", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wi", "#T_cJ", "#T_wcel", "#T_cA", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cA", "#T_ckq", "#T_cfv", "#T_cJ", "#T_chmph", "#T_cJ", "#T_wi", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cA", "#T_wi", "#T_cJ", "#T_wcel", "#T_cA", "#T_cJ", "#T_wcel", "#T_cA", "#T_wb", "#T_cJ", "#T_wcel", "#T_ct0", "#T_wa", "#T_ckq", "#T_cfv", "#T_cJ", "#T_wcel", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ ist1-5 and similar theorems.  If ` A ` is a topological property which implies T_0, such as T_1 or T_2, the property can be \"decomposed\" into T_0 and a non-T_0 version of property ` A ` (which is defined as stating that the Kolmogorov quotient of the space has property ` A ` ).  For example, if ` A ` is T_1, then the theorem states that a space is T_1 iff it is T_0 and its Kolmogorov quotient is T_1 (we call this property R_0).  (Contributed by Mario Carneiro, 25-Aug-2015.) ",
+  "statement" : "ist1-5lem.1 $e |- ( J e. A -> J e. Kol2 ) $.\nist1-5lem.2 $e |- ( J ~= ( KQ ` J ) -> ( J e. A -> ( KQ ` J ) e. A ) ) $.\nist1-5lem.3 $e |- ( ( KQ ` J ) ~= J -> ( ( KQ ` J ) e. A -> J e. A ) ) $.\nist1-5lem $p |- ( J e. A <-> ( J e. Kol2 /\\ ( KQ ` J ) e. A ) ) $."
+}

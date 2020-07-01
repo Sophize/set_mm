@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See divmuli on Metamath](http://us.metamath.org/mpegif/divmuli.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | divclz.1 | |- A e. CC |\n| 2 |  | divclz.2 | |- B e. CC |\n| 3 |  | divmulz.3 | |- C e. CC |\n| 4 |  | divmul.4 | |- B =/= 0 |\n| 5 | 1, 2, 3 | #P_divmulzi | |- ( B =/= 0 -> ( ( A / B ) = C <-> ( B x. C ) = A ) ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( ( A / B ) = C <-> ( B x. C ) = A ) |",
+  "conclusion" : "#P_divmuli",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cB", "#T_wne", "#T_cc0", "#T_cB.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cA.wceq", "#T_cdiv", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_cmul", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_cdiv", "#T_cB", "#T_wceq", "#T_cC", "#T_wb", "#T_cB", "#T_cmul", "#T_cC", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_divmulzi" ]
+}

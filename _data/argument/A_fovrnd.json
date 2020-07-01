@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fovrnd on Metamath](http://us.metamath.org/mpegif/fovrnd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fovrnd.1 | |- ( ph -> F : ( R X. S ) --> C ) |\n| 2 |  | fovrnd.2 | |- ( ph -> A e. R ) |\n| 3 |  | fovrnd.3 | |- ( ph -> B e. S ) |\n| 4 |  | #P_fovrn | |- ( ( F : ( R X. S ) --> C /\\ A e. R /\\ B e. S ) -> ( A F B ) e. C ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( A F B ) e. C ) |",
+  "conclusion" : "#P_fovrnd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cR", "#T_cxp", "#T_cS", "#T_wf--2", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cR", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cS", "#T_cF", "#T_wf--1", "#T_cR", "#T_cxp", "#T_cS", "#T_wf--2", "#T_cC", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3anc", "#P_fovrn" ]
+}

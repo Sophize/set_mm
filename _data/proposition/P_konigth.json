@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See konigth on Metamath](http://us.metamath.org/mpegif/konigth.html)"
+  } ],
+  "names" : [ "konigth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cS", "#T_wceq", "#T_ciun--1", "#T_vi", "#T_ciun--2", "#T_cA", "#T_cM", "#T_cfv", "#T_vi", "#T_cP", "#T_wceq", "#T_cixp--1", "#T_vi", "#T_cixp--2", "#T_cA", "#T_cN", "#T_cfv", "#T_vi", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cA", "#T_cM", "#T_cfv", "#T_vi", "#T_csdm", "#T_cN", "#T_cfv", "#T_vi", "#T_wi", "#T_cS", "#T_csdm", "#T_cP", "#T_cA", "#T_vi", "#T_cA", "#T_vi" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Konig's Theorem.  If ` m ( i ) ~< n ( i ) ` for all ` i e. A ` , then ` sum_ i e. A m ( i ) ~< prod_ i e. A n ( i ) ` , where the sums and products stand in for disjoint union and infinite cartesian product. The version here is proven with regular unions rather than disjoint unions for convenience, but the version with disjoint unions is clearly a special case of this version.  The Axiom of Choice is needed for this proof, but it contains AC as a simple corollary (letting ` m ( i ) = (/) ` , this theorem says that an infinite cartesian product of nonempty sets is nonempty), so this is an AC equivalent.  Theorem 11.26 of [TakeutiZaring] p. 107.  (Contributed by Mario Carneiro, 22-Feb-2013.) ",
+  "statement" : "konigth.1 $e |- A e. _V $.\nkonigth.2 $e |- S = U_ i e. A ( M ` i ) $.\nkonigth.3 $e |- P = X_ i e. A ( N ` i ) $.\nkonigth $p |- ( A. i e. A ( M ` i ) ~< ( N ` i ) -> S ~< P ) $.\n$d A i $.\n$d A i $."
+}

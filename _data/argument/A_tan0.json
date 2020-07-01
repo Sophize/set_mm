@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tan0 on Metamath](http://us.metamath.org/mpegif/tan0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0cn | |- 0 e. CC |\n| 2 |  | #P_cos0 | |- ( cos ` 0 ) = 1 |\n| 3 |  | #P_ax-1ne0 | |- 1 =/= 0 |\n| 4 | 2, 3 | #P_eqnetri | |- ( cos ` 0 ) =/= 0 |\n| 5 |  | #P_tanval | |- ( ( 0 e. CC /\\ ( cos ` 0 ) =/= 0 ) -> ( tan ` 0 ) = ( ( sin ` 0 ) / ( cos ` 0 ) ) ) |\n| 6 | 1, 4, 5 | #P_mp2an | |- ( tan ` 0 ) = ( ( sin ` 0 ) / ( cos ` 0 ) ) |\n| 7 |  | #P_sin0 | |- ( sin ` 0 ) = 0 |\n| 8 | 7 | #P_oveq1i | |- ( ( sin ` 0 ) / ( cos ` 0 ) ) = ( 0 / ( cos ` 0 ) ) |\n| 9 |  | #P_ax-1cn | |- 1 e. CC |\n| 10 | 2, 9 | #P_eqeltri | |- ( cos ` 0 ) e. CC |\n| 11 | 10, 4 | #P_div0i | |- ( 0 / ( cos ` 0 ) ) = 0 |\n| 12 | 6, 8, 11 | #P_3eqtri | |- ( tan ` 0 ) = 0 |",
+  "conclusion" : "#P_tan0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cc", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_c1", "#T_c1", "#T_wne", "#T_cc0", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wne", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cc", "#T_wa", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wne", "#T_cc0", "#T_wi", "#T_ctan", "#T_cfv", "#T_cc0", "#T_wceq", "#T_csin", "#T_cfv", "#T_cc0", "#T_cdiv", "#T_ccos", "#T_cfv", "#T_cc0", "#T_ctan", "#T_cfv", "#T_cc0", "#T_wceq", "#T_csin", "#T_cfv", "#T_cc0", "#T_cdiv", "#T_ccos", "#T_cfv", "#T_cc0", "#T_csin", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0", "#T_csin", "#T_cfv", "#T_cc0", "#T_cdiv", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cdiv", "#T_ccos", "#T_cfv", "#T_cc0", "#T_c1", "#T_wcel", "#T_cc", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wcel", "#T_cc", "#T_cc0", "#T_cdiv", "#T_ccos", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0", "#T_ctan", "#T_cfv", "#T_cc0", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_eqeltri", "#P_div0i", "#P_tanval", "#P_sin0", "#P_0cn", "#P_eqnetri", "#P_ax-1cn", "#P_3eqtri", "#P_cos0", "#P_ax-1ne0", "#P_oveq1i" ]
+}

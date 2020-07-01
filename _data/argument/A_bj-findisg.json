@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bj-findisg on Metamath](http://us.metamath.org/mpegif/bj-findisg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bj-findis.nf0 | |- F/ x ps |\n| 2 |  | bj-findis.nf1 | |- F/ x ch |\n| 3 |  | bj-findis.nfsuc | |- F/ x th |\n| 4 |  | bj-findis.0 | |- ( x = (/) -> ( ps -> ph ) ) |\n| 5 |  | bj-findis.1 | |- ( x = y -> ( ph -> ch ) ) |\n| 6 |  | bj-findis.suc | |- ( x = suc y -> ( th -> ph ) ) |\n| 7 |  | bj-findisg.nfa | |- F/_ x A |\n| 8 |  | bj-findisg.nfterm | |- F/ x ta |\n| 9 |  | bj-findisg.term | |- ( x = A -> ( ph -> ta ) ) |\n| 10 | 1, 2, 3, 4, 5, 6 | #P_bj-findis | |- ( ( ps /\\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) |\n| 11 |  | #P_nfcv | |- F/_ x _om |\n| 12 | 7, 11, 8, 9 | #P_bj-rspg | |- ( A. x e. _om ph -> ( A e. _om -> ta ) ) |\n| 13 | 10, 12 | #P_syl | |- ( ( ps /\\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) |",
+  "conclusion" : "#P_bj-findisg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wps", "#T_wnf", "#T_vx", "#T_wch", "#T_wnf", "#T_vx", "#T_wth", "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wth", "#T_wi", "#T_wph", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnf", "#T_vx", "#T_wta", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wi", "#T_wta", "#T_wps", "#T_wa", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_com", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_wph", "#T_wnfc", "#T_vx.wal", "#T_com", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_com", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_wta", "#T_wps", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_com", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_bj-findis", "#P_syl", "#P_bj-rspg" ]
+}

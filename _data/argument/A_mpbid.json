@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpbid on Metamath](http://us.metamath.org/mpegif/mpbid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpbid.min | |- ( ph -> ps ) |\n| 2 |  | mpbid.maj | |- ( ph -> ( ps <-> ch ) ) |\n| 3 | 2 | #P_biimpd | |- ( ph -> ( ps -> ch ) ) |\n| 4 | 1, 3 | #P_mpd | |- ( ph -> ch ) |",
+  "conclusion" : "#P_mpbid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_biimpd" ]
+}

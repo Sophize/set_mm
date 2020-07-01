@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See telfsum on Metamath](http://us.metamath.org/mpegif/telfsum.html)"
+  } ],
+  "names" : [ "telfsum" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vk", "#T_wceq", "#T_vj", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_vk", "#T_wceq", "#T_vj", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_vk", "#T_wceq", "#T_cM", "#T_wi", "#T_cA", "#T_wceq", "#T_cD", "#T_vk", "#T_wceq", "#T_cN", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wceq", "#T_cE", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cN", "#T_caddc", "#T_c1", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cM", "#T_cfz", "#T_cN", "#T_caddc", "#T_c1", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cM", "#T_cfz", "#T_cN", "#T_cB", "#T_cmin", "#T_cC", "#T_wceq", "#T_cD", "#T_cmin", "#T_cE", "#T_cA", "#T_vj", "#T_cB", "#T_vk", "#T_cC", "#T_vk", "#T_cD", "#T_vk", "#T_cE", "#T_vk", "#T_cM", "#T_vj", "#T_vk", "#T_cN", "#T_vj", "#T_vk", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Sum of a telescoping series.  (Contributed by Scott Fenton, 24-Apr-2014.)  (Revised by Mario Carneiro, 2-May-2016.) ",
+  "statement" : "telfsum.1 $e |- ( k = j -> A = B ) $.\ntelfsum.2 $e |- ( k = ( j + 1 ) -> A = C ) $.\ntelfsum.3 $e |- ( k = M -> A = D ) $.\ntelfsum.4 $e |- ( k = ( N + 1 ) -> A = E ) $.\ntelfsum.5 $e |- ( ph -> N e. ZZ ) $.\ntelfsum.6 $e |- ( ph -> ( N + 1 ) e. ( ZZ>= ` M ) ) $.\ntelfsum.7 $e |- ( ( ph /\\ k e. ( M ... ( N + 1 ) ) ) -> A e. CC ) $.\ntelfsum $p |- ( ph -> sum_ j e. ( M ... N ) ( B - C ) = ( D - E ) ) $.\n$d A j $.\n$d B k $.\n$d C k $.\n$d D k $.\n$d E k $.\n$d M j k $.\n$d N j k $.\n$d j k ph $."
+}

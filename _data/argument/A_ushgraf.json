@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ushgraf on Metamath](http://us.metamath.org/mpegif/ushgraf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_relushgra | |- Rel USHGrph |\n| 2 | 1 | #P_brrelexi | |- ( V USHGrph E -> V e. _V ) |\n| 3 | 1 | #P_brrelex2i | |- ( V USHGrph E -> E e. _V ) |\n| 4 |  | #P_isushgra | |- ( ( V e. _V /\\ E e. _V ) -> ( V USHGrph E <-> E : dom E -1-1-> ( ~P V \\ { (/) } ) ) ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( V USHGrph E -> ( V USHGrph E <-> E : dom E -1-1-> ( ~P V \\ { (/) } ) ) ) |\n| 6 | 5 | #P_ibi | |- ( V USHGrph E -> E : dom E -1-1-> ( ~P V \\ { (/) } ) ) |",
+  "conclusion" : "#P_ushgraf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cushg", "#T_cV", "#T_cushg", "#T_cE", "#T_wi", "#T_cV", "#T_wcel", "#T_cvv", "#T_cV", "#T_cushg", "#T_cE", "#T_wi", "#T_cE", "#T_wcel", "#T_cvv", "#T_cV", "#T_wcel", "#T_cvv", "#T_wa", "#T_cE", "#T_wcel", "#T_cvv", "#T_wi", "#T_cV", "#T_cushg", "#T_cE", "#T_wb", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cV", "#T_cushg", "#T_cE", "#T_wi", "#T_cV", "#T_cushg", "#T_cE", "#T_wb", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cV", "#T_cushg", "#T_cE", "#T_wi", "#T_cE", "#T_wf1--1", "#T_cdm", "#T_cE", "#T_wf1--2", "#T_cpw", "#T_cV", "#T_cdif", "#T_csn--1", "#T_c0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ibi", "#P_syl2anc", "#P_isushgra", "#P_relushgra", "#P_brrelex2i", "#P_brrelexi" ]
+}

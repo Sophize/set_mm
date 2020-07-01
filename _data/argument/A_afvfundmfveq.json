@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See afvfundmfveq on Metamath](http://us.metamath.org/mpegif/afvfundmfveq.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfafv2 | |- ( F ''' A ) = if ( F defAt A , ( F ` A ) , _V ) |\n| 2 |  | #P_iftrue | |- ( F defAt A -> if ( F defAt A , ( F ` A ) , _V ) = ( F ` A ) ) |\n| 3 | 1, 2 | #P_syl5eq | |- ( F defAt A -> ( F ''' A ) = ( F ` A ) ) |",
+  "conclusion" : "#P_afvfundmfveq",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cafv", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cif--3", "#T_cvv", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_wi", "#T_cif--1", "#T_cF", "#T_wdfat", "#T_cA.wceq", "#T_cif--2", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cif--3", "#T_cvv", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA.wceq", "#T_cF", "#T_wdfat", "#T_cA", "#T_wi", "#T_cF", "#T_cafv", "#T_cA", "#T_wceq", "#T_cF", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_iftrue", "#P_syl5eq", "#P_dfafv2" ]
+}

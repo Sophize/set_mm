@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eleq12i on Metamath](http://us.metamath.org/mpegif/eleq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | eleq1i.1 | |- A = B |\n| 2 |  | eleq12i.2 | |- C = D |\n| 3 | 2 | #P_eleq2i | |- ( A e. C <-> A e. D ) |\n| 4 | 1 | #P_eleq1i | |- ( A e. D <-> B e. D ) |\n| 5 | 3, 4 | #P_bitri | |- ( A e. C <-> B e. D ) |",
+  "conclusion" : "#P_eleq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cD", "#T_wb", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_cA", "#T_wcel", "#T_cC", "#T_wb", "#T_cB", "#T_wcel", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eleq2i", "#P_eleq1i", "#P_bitri" ]
+}

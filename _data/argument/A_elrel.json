@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elrel on Metamath](http://us.metamath.org/mpegif/elrel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-rel | |- ( Rel R <-> R C_ ( _V X. _V ) ) |\n| 2 | 1 | #P_biimpi | |- ( Rel R -> R C_ ( _V X. _V ) ) |\n| 3 | 2 | #P_sselda | |- ( ( Rel R /\\ A e. R ) -> A e. ( _V X. _V ) ) |\n| 4 |  | #P_elvv | |- ( A e. ( _V X. _V ) <-> E. x E. y A = <. x , y >. ) |\n| 5 | 3, 4 | #P_sylib | |- ( ( Rel R /\\ A e. R ) -> E. x E. y A = <. x , y >. ) |",
+  "conclusion" : "#P_elrel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cR", "#T_wb", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wi", "#T_cR", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cR", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wex", "#T_vy.tru", "#T_cA.wceq", "#T_wceq", "#T_cop--1", "#T_vx.wal", "#T_cop--2", "#T_vy.tru", "#T_cop--3", "#T_wrel", "#T_cR", "#T_wa", "#T_cA", "#T_wcel", "#T_cR", "#T_wi", "#T_wex", "#T_vx", "#T_wex", "#T_vy", "#T_cA", "#T_wceq", "#T_cop--1", "#T_vx", "#T_cop--2", "#T_vy", "#T_cop--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-rel", "#P_elvv", "#P_sylib", "#P_biimpi", "#P_sselda" ]
+}

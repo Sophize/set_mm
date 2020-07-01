@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsum2mul on Metamath](http://us.metamath.org/mpegif/fsum2mul.html)"
+  } ],
+  "names" : [ "fsum2mul" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_cmul", "#T_cD", "#T_wceq", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_cA", "#T_cC", "#T_cmul", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cD", "#T_cA", "#T_vj", "#T_vk", "#T_cB", "#T_vj", "#T_vk", "#T_cC", "#T_vk", "#T_cD", "#T_vj", "#T_vj", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Separate the nested sum of the product ` C ( j ) x. D ( k ) ` . (Contributed by NM, 13-Nov-2005.)  (Revised by Mario Carneiro, 24-Apr-2014.) ",
+  "statement" : "fsum2mul.1 $e |- ( ph -> A e. Fin ) $.\nfsum2mul.2 $e |- ( ph -> B e. Fin ) $.\nfsum2mul.3 $e |- ( ( ph /\\ j e. A ) -> C e. CC ) $.\nfsum2mul.4 $e |- ( ( ph /\\ k e. B ) -> D e. CC ) $.\nfsum2mul $p |- ( ph -> sum_ j e. A sum_ k e. B ( C x. D ) = ( sum_ j e. A C x. sum_ k e. B D ) ) $.\n$d A j k $.\n$d B j k $.\n$d C k $.\n$d D j $.\n$d j k ph $."
+}

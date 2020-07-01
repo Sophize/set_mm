@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cbvmpt2x on Metamath](http://us.metamath.org/mpegif/cbvmpt2x.html)"
+  } ],
+  "names" : [ "cbvmpt2x" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vz", "#T_cB", "#T_wnfc", "#T_vx", "#T_cD", "#T_wnfc", "#T_vz", "#T_cC", "#T_wnfc", "#T_vw", "#T_cC", "#T_wnfc", "#T_vx", "#T_cE", "#T_wnfc", "#T_vy", "#T_cE", "#T_vx", "#T_wceq", "#T_vz", "#T_wi", "#T_cB", "#T_wceq", "#T_cD", "#T_vx", "#T_wceq", "#T_vz", "#T_wa", "#T_vy", "#T_wceq", "#T_vw", "#T_wi", "#T_cC", "#T_wceq", "#T_cE", "#T_vx", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cB", "#T_cmpt2--4", "#T_cC", "#T_wceq", "#T_vz", "#T_cmpt2--1", "#T_cA", "#T_cmpt2--2", "#T_vw", "#T_cmpt2--3", "#T_cD", "#T_cmpt2--4", "#T_cE", "#T_cA", "#T_vw", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vw", "#T_cD", "#T_vy", "#T_vw", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Rule to change the bound variable in a maps-to function, using implicit substitution.  This version of ~ cbvmpt2 allows ` B ` to be a function of ` x ` .  (Contributed by NM, 29-Dec-2014.) ",
+  "statement" : "cbvmpt2x.1 $e |- F/_ z B $.\ncbvmpt2x.2 $e |- F/_ x D $.\ncbvmpt2x.3 $e |- F/_ z C $.\ncbvmpt2x.4 $e |- F/_ w C $.\ncbvmpt2x.5 $e |- F/_ x E $.\ncbvmpt2x.6 $e |- F/_ y E $.\ncbvmpt2x.7 $e |- ( x = z -> B = D ) $.\ncbvmpt2x.8 $e |- ( ( x = z /\\ y = w ) -> C = E ) $.\ncbvmpt2x $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. D |-> E ) $.\n$d A w x y z $.\n$d B w $.\n$d D y $.\n$d w x y z $."
+}

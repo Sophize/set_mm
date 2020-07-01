@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvm1neg on Metamath](http://us.metamath.org/mpegif/hvm1neg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neg1cn | |- -u 1 e. CC |\n| 2 |  | #P_ax-hvmulass | |- ( ( -u 1 e. CC /\\ A e. CC /\\ B e. ~H ) -> ( ( -u 1 x. A ) .h B ) = ( -u 1 .h ( A .h B ) ) ) |\n| 3 | 1, 2 | #P_mp3an1 | |- ( ( A e. CC /\\ B e. ~H ) -> ( ( -u 1 x. A ) .h B ) = ( -u 1 .h ( A .h B ) ) ) |\n| 4 |  | #P_mulm1 | |- ( A e. CC -> ( -u 1 x. A ) = -u A ) |\n| 5 | 4 | #P_adantr | |- ( ( A e. CC /\\ B e. ~H ) -> ( -u 1 x. A ) = -u A ) |\n| 6 | 5 | #P_oveq1d | |- ( ( A e. CC /\\ B e. ~H ) -> ( ( -u 1 x. A ) .h B ) = ( -u A .h B ) ) |\n| 7 | 3, 6 | #P_eqtr3d | |- ( ( A e. CC /\\ B e. ~H ) -> ( -u 1 .h ( A .h B ) ) = ( -u A .h B ) ) |",
+  "conclusion" : "#P_hvm1neg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_cneg", "#T_c1", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_w3a--2", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_wceq", "#T_cneg", "#T_c1", "#T_csm", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_wceq", "#T_cneg", "#T_c1", "#T_csm", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_cmul", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_wceq", "#T_cneg", "#T_cA.wceq", "#T_csm", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cB", "#T_wcel", "#T_chil", "#T_wi", "#T_cneg", "#T_c1", "#T_csm", "#T_cA", "#T_csm", "#T_cB", "#T_wceq", "#T_cneg", "#T_cA", "#T_csm", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_neg1cn", "#P_ax-hvmulass", "#P_mulm1", "#P_oveq1d", "#P_mp3an1", "#P_eqtr3d", "#P_adantr" ]
+}

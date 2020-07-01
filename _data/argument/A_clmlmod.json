@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmlmod on Metamath](http://us.metamath.org/mpegif/clmlmod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Scalar ` W ) = ( Scalar ` W ) |\n| 2 |  | #P_eqid | |- ( Base ` ( Scalar ` W ) ) = ( Base ` ( Scalar ` W ) ) |\n| 3 | 1, 2 | #P_isclm | |- ( W e. CMod <-> ( W e. LMod /\\ ( Scalar ` W ) = ( CCfld |`s ( Base ` ( Scalar ` W ) ) ) /\\ ( Base ` ( Scalar ` W ) ) e. ( SubRing ` CCfld ) ) ) |\n| 4 | 3 | #P_simp1bi | |- ( W e. CMod -> W e. LMod ) |",
+  "conclusion" : "#P_clmlmod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_cW", "#T_wcel", "#T_cclm", "#T_wb", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_csca", "#T_cfv", "#T_cW", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_w3a--2", "#T_cbs", "#T_cfv", "#T_csca", "#T_cfv", "#T_cW", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cW", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simp1bi", "#P_isclm" ]
+}

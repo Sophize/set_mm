@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdth on Metamath](http://us.metamath.org/mpegif/bdth.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdth.1 | |- ph |\n| 2 |  | #P_ax-bdeq | |- Bdd x = x |\n| 3 | 2, 2 | #P_ax-bdim | |- Bdd ( x = x -> x = x ) |\n| 4 |  | #P_id | |- ( x = x -> x = x ) |\n| 5 | 4, 1 | #P_2th | |- ( ( x = x -> x = x ) <-> ph ) |\n| 6 | 3, 5 | #P_bd0 | |- Bdd ph |",
+  "conclusion" : "#P_bdth",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wph", "#T_wbd", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wbd", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wb", "#T_wph", "#T_wbd", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bd0", "#P_ax-bdeq", "#P_2th", "#P_ax-bdim", "#P_id" ]
+}

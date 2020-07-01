@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stirlinglem9 on Metamath](http://us.metamath.org/mpegif/stirlinglem9.html)"
+  } ],
+  "names" : [ "stirlinglem9" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cfa", "#T_cfv", "#T_vn", "#T_cdiv", "#T_csqrt", "#T_cfv", "#T_c2", "#T_cmul", "#T_vn", "#T_cmul", "#T_vn", "#T_cdiv", "#T_ceu", "#T_cexp", "#T_vn", "#T_cB", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_clog", "#T_cfv", "#T_cA", "#T_cfv", "#T_vn", "#T_cJ", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_c1", "#T_caddc", "#T_c2", "#T_cmul", "#T_vn", "#T_cdiv", "#T_c2", "#T_cmul", "#T_clog", "#T_cfv", "#T_vn", "#T_caddc", "#T_c1", "#T_cdiv", "#T_vn", "#T_cmin", "#T_c1", "#T_cK", "#T_wceq", "#T_vk", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_c1", "#T_cdiv", "#T_c2", "#T_cmul", "#T_vk", "#T_caddc", "#T_c1", "#T_cmul", "#T_c1", "#T_cdiv", "#T_c2", "#T_cmul", "#T_cN", "#T_caddc", "#T_c1", "#T_cexp", "#T_c2", "#T_cmul", "#T_vk", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cseq--1", "#T_c1", "#T_caddc", "#T_cseq--2", "#T_cK", "#T_cli", "#T_cB", "#T_cfv", "#T_cN", "#T_cmin", "#T_cB", "#T_cfv", "#T_cN", "#T_caddc", "#T_c1", "#T_cK", "#T_vn", "#T_cN", "#T_vk", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " ` ( ( B `` N ) - ( B `` ( N + 1 ) ) ) ` is expressed as a limit of a series.  This result will be used both to prove that ` B ` is decreasing and to prove that ` B ` is bounded (below).  It will follow that ` B ` converges in the reals.  (Contributed by Glauco Siliprandi, 29-Jun-2017.) ",
+  "statement" : "stirlinglem9.1 $e |- A = ( n e. NN |-> ( ( ! ` n ) / ( ( sqrt ` ( 2 x. n ) ) x. ( ( n / _e ) ^ n ) ) ) ) $.\nstirlinglem9.2 $e |- B = ( n e. NN |-> ( log ` ( A ` n ) ) ) $.\nstirlinglem9.3 $e |- J = ( n e. NN |-> ( ( ( ( 1 + ( 2 x. n ) ) / 2 ) x. ( log ` ( ( n + 1 ) / n ) ) ) - 1 ) ) $.\nstirlinglem9.4 $e |- K = ( k e. NN |-> ( ( 1 / ( ( 2 x. k ) + 1 ) ) x. ( ( 1 / ( ( 2 x. N ) + 1 ) ) ^ ( 2 x. k ) ) ) ) $.\nstirlinglem9 $p |- ( N e. NN -> seq 1 ( + , K ) ~~> ( ( B ` N ) - ( B ` ( N + 1 ) ) ) ) $.\n$d K n $.\n$d N k n $."
+}

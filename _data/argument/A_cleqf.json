@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cleqf on Metamath](http://us.metamath.org/mpegif/cleqf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cleqf.1 | |- F/_ x A |\n| 2 |  | cleqf.2 | |- F/_ x B |\n| 3 | 1 | #P_nfcrii | |- ( y e. A -> A. x y e. A ) |\n| 4 | 2 | #P_nfcrii | |- ( y e. B -> A. x y e. B ) |\n| 5 | 3, 4 | #P_cleqh | |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) |",
+  "conclusion" : "#P_cleqf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cA.wceq", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_cA", "#T_wb", "#T_vx", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcrii", "#P_cleqh" ]
+}

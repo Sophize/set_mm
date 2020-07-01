@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 19.23v on Metamath](http://us.metamath.org/mpegif/19.23v.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_exim | |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) |\n| 2 |  | #P_19.9v | |- ( E. x ps <-> ps ) |\n| 3 | 1, 2 | #P_syl6ib | |- ( A. x ( ph -> ps ) -> ( E. x ph -> ps ) ) |\n| 4 |  | #P_ax-5 | |- ( ps -> A. x ps ) |\n| 5 | 4 | #P_imim2i | |- ( ( E. x ph -> ps ) -> ( E. x ph -> A. x ps ) ) |\n| 6 |  | #P_19.38 | |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) |\n| 7 | 5, 6 | #P_syl | |- ( ( E. x ph -> ps ) -> A. x ( ph -> ps ) ) |\n| 8 | 3, 7 | #P_impbii | |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) |",
+  "conclusion" : "#P_19.23v",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wps", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_exim", "#P_impbii", "#P_19.9v", "#P_imim2i", "#P_ax-5", "#P_syl", "#P_syl6ib", "#P_19.38" ]
+}

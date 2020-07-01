@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See invdif on Metamath](http://us.metamath.org/mpegif/invdif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfin2 | |- ( A i^i ( _V \\ B ) ) = ( A \\ ( _V \\ ( _V \\ B ) ) ) |\n| 2 |  | #P_ddif | |- ( _V \\ ( _V \\ B ) ) = B |\n| 3 | 2 | #P_difeq2i | |- ( A \\ ( _V \\ ( _V \\ B ) ) ) = ( A \\ B ) |\n| 4 | 1, 3 | #P_eqtri | |- ( A i^i ( _V \\ B ) ) = ( A \\ B ) |",
+  "conclusion" : "#P_invdif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cA", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB", "#T_wceq", "#T_cA", "#T_cdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfin2", "#P_eqtri", "#P_difeq2i", "#P_ddif" ]
+}

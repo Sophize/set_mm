@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stdpc5 on Metamath](http://us.metamath.org/mpegif/stdpc5.html)"
+  } ],
+  "names" : [ "stdpc5" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An axiom scheme of standard predicate calculus that emulates Axiom 5 of [Mendelson] p. 69.  The hypothesis ` F/ x ph ` can be thought of as emulating \" ` x ` is not free in ` ph ` .\"  With this definition, the meaning of \"not free\" is less restrictive than the usual textbook definition; for example ` x ` would not (for us) be free in ` x = x ` by ~ nfequid .  This theorem scheme can be proved as a metatheorem of Mendelson's axiom system, even though it is slightly stronger than his Axiom 5.  See ~ stdpc5v for a version requiring fewer axioms. (Contributed by NM, 22-Sep-1993.)  (Revised by Mario Carneiro, 12-Oct-2016.)  (Proof shortened by Wolf Lammen, 1-Jan-2018.) \n\n---\n\n An axiom scheme of standard predicate calculus that emulates Axiom 5 of [Mendelson] p. 69.  The hypothesis ` F/ x ph ` can be thought of as emulating \" ` x ` is not free in ` ph ` .\"  With this definition, the meaning of \"not free\" is less restrictive than the usual textbook definition; for example ` x ` would not (for us) be free in ` x = x ` by ~ nfequid .  This theorem scheme can be proved as a metatheorem of Mendelson's axiom system, even though it is slightly stronger than his Axiom 5.  (Contributed by NM, 22-Sep-1993.)  (Revised by Mario Carneiro, 12-Oct-2016.)  (Proof shortened by Wolf Lammen, 1-Jan-2018.) ",
+  "statement" : "stdpc5.1 $e |- F/ x ph $.\nstdpc5 $p |- ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See jaao on Metamath](http://us.metamath.org/mpegif/jaao.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | jaao.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | jaao.2 | |- ( th -> ( ta -> ch ) ) |\n| 3 | 1 | #P_adantr | |- ( ( ph /\\ th ) -> ( ps -> ch ) ) |\n| 4 | 2 | #P_adantl | |- ( ( ph /\\ th ) -> ( ta -> ch ) ) |\n| 5 | 3, 4 | #P_jaod | |- ( ( ph /\\ th ) -> ( ( ps \\/ ta ) -> ch ) ) |",
+  "conclusion" : "#P_jaao",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wth", "#T_wi", "#T_wps", "#T_wo", "#T_wta", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_jaod", "#P_adantr" ]
+}

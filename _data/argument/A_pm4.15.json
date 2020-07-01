@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm4.15 on Metamath](http://us.metamath.org/mpegif/pm4.15.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_con2b | |- ( ( ( ps /\\ ch ) -> -. ph ) <-> ( ph -> -. ( ps /\\ ch ) ) ) |\n| 2 |  | #P_nan | |- ( ( ph -> -. ( ps /\\ ch ) ) <-> ( ( ph /\\ ps ) -> -. ch ) ) |\n| 3 | 1, 2 | #P_bitr2i | |- ( ( ( ph /\\ ps ) -> -. ch ) <-> ( ( ps /\\ ch ) -> -. ph ) ) |",
+  "conclusion" : "#P_pm4.15",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wn", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nan", "#P_bitr2i", "#P_con2b" ]
+}

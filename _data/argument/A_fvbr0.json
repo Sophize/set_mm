@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvbr0 on Metamath](http://us.metamath.org/mpegif/fvbr0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( F ` X ) = ( F ` X ) |\n| 2 |  | #P_tz6.12i | |- ( ( F ` X ) =/= (/) -> ( ( F ` X ) = ( F ` X ) -> X F ( F ` X ) ) ) |\n| 3 | 1, 2 | #P_mpi | |- ( ( F ` X ) =/= (/) -> X F ( F ` X ) ) |\n| 4 | 3 | #P_necon1bi | |- ( -. X F ( F ` X ) -> ( F ` X ) = (/) ) |\n| 5 | 4 | #P_orri | |- ( X F ( F ` X ) \\/ ( F ` X ) = (/) ) |",
+  "conclusion" : "#P_fvbr0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_cfv", "#T_cX", "#T_wne", "#T_c0", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_cF", "#T_cfv", "#T_cX", "#T_wi", "#T_cX", "#T_cF", "#T_cF", "#T_cfv", "#T_cX", "#T_cF", "#T_cfv", "#T_cX", "#T_wne", "#T_c0", "#T_wi", "#T_cX", "#T_cF", "#T_cF", "#T_cfv", "#T_cX", "#T_wn", "#T_cX", "#T_cF", "#T_cF", "#T_cfv", "#T_cX", "#T_wi", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_c0", "#T_cX", "#T_cF", "#T_cF", "#T_cfv", "#T_cX", "#T_wo", "#T_cF", "#T_cfv", "#T_cX", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_orri", "#P_eqid", "#P_tz6.12i", "#P_mpi", "#P_necon1bi" ]
+}

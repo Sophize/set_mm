@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tsxo3 on Metamath](http://us.metamath.org/mpegif/tsxo3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tsbi3 | |- ( th -> ( ( ph \\/ -. ps ) \\/ -. ( ph <-> ps ) ) ) |\n| 2 |  | #P_df-xor | |- ( ( ph \\/_ ps ) <-> -. ( ph <-> ps ) ) |\n| 3 | 2 | #P_bicomi | |- ( -. ( ph <-> ps ) <-> ( ph \\/_ ps ) ) |\n| 4 | 3 | #P_orbi2i | |- ( ( ( ph \\/ -. ps ) \\/ -. ( ph <-> ps ) ) <-> ( ( ph \\/ -. ps ) \\/ ( ph \\/_ ps ) ) ) |\n| 5 | 1, 4 | #P_sylib | |- ( th -> ( ( ph \\/ -. ps ) \\/ ( ph \\/_ ps ) ) ) |",
+  "conclusion" : "#P_tsxo3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wth", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wxo", "#T_wps", "#T_wth", "#T_wi", "#T_wph", "#T_wo", "#T_wn", "#T_wps", "#T_wo", "#T_wph", "#T_wxo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-xor", "#P_orbi2i", "#P_sylib", "#P_tsbi3", "#P_bicomi" ]
+}

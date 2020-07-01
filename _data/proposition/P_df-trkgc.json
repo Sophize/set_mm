@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-trkgc on Metamath](http://us.metamath.org/mpegif/df-trkgc.html)"
+  } ],
+  "names" : [ "df-trkgc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cstrkgc", "#T_wceq", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wsbc--1", "#T_cbs", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vp", "#T_wsbc--3", "#T_wsbc--1", "#T_cds", "#T_cfv", "#T_vf", "#T_wsbc--2", "#T_vd", "#T_wsbc--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vp", "#T_vx", "#T_vd", "#T_vy", "#T_wceq", "#T_vy", "#T_vd", "#T_vx", "#T_wa", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_vp", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vp", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_vp", "#T_vx", "#T_vd", "#T_vy", "#T_wceq", "#T_vz", "#T_vd", "#T_vz", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_cab--3", "#T_vd", "#T_vf", "#T_vp", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the class of geometries fulfilling the congruence axioms of reflexivity, identity and transitivity.  These are axioms A1 to A3 of [Schwabhauser] p. 10.  With our distance based notation for congruence, transitivity of congruence boils down to transitivity of equality and is already given by ~ eqtr , so it is not listed in this definition. (Contributed by Thierry Arnoux, 24-Aug-2017.) ",
+  "statement" : "df-trkgc $p |- TarskiGC = { f | [. ( Base ` f ) / p ]. [. ( dist ` f ) / d ]. ( A. x e. p A. y e. p ( x d y ) = ( y d x ) /\\ A. x e. p A. y e. p A. z e. p ( ( x d y ) = ( z d z ) -> x = y ) ) } $.\n$d d f p x y z $."
+}

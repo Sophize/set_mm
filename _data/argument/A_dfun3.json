@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfun3 on Metamath](http://us.metamath.org/mpegif/dfun3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfun2 | |- ( A u. B ) = ( _V \\ ( ( _V \\ A ) \\ B ) ) |\n| 2 |  | #P_dfin2 | |- ( ( _V \\ A ) i^i ( _V \\ B ) ) = ( ( _V \\ A ) \\ ( _V \\ ( _V \\ B ) ) ) |\n| 3 |  | #P_ddif | |- ( _V \\ ( _V \\ B ) ) = B |\n| 4 | 3 | #P_difeq2i | |- ( ( _V \\ A ) \\ ( _V \\ ( _V \\ B ) ) ) = ( ( _V \\ A ) \\ B ) |\n| 5 | 2, 4 | #P_eqtr2i | |- ( ( _V \\ A ) \\ B ) = ( ( _V \\ A ) i^i ( _V \\ B ) ) |\n| 6 | 5 | #P_difeq2i | |- ( _V \\ ( ( _V \\ A ) \\ B ) ) = ( _V \\ ( ( _V \\ A ) i^i ( _V \\ B ) ) ) |\n| 7 | 1, 6 | #P_eqtri | |- ( A u. B ) = ( _V \\ ( ( _V \\ A ) i^i ( _V \\ B ) ) ) |",
+  "conclusion" : "#P_dfun3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cdif", "#T_cB.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB.wceq", "#T_cA", "#T_cun", "#T_cB", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA", "#T_cin", "#T_cvv", "#T_cdif", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfin2", "#P_eqtri", "#P_eqtr2i", "#P_difeq2i", "#P_ddif", "#P_dfun2" ]
+}

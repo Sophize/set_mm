@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See spcimegf on Metamath](http://us.metamath.org/mpegif/spcimegf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | spcimgf.1 | |- F/_ x A |\n| 2 |  | spcimgf.2 | |- F/ x ps |\n| 3 |  | spcimegf.3 | |- ( x = A -> ( ps -> ph ) ) |\n| 4 | 2 | #P_nfn | |- F/ x -. ps |\n| 5 | 3 | #P_con3d | |- ( x = A -> ( -. ph -> -. ps ) ) |\n| 6 | 1, 4, 5 | #P_spcimgf | |- ( A e. V -> ( A. x -. ph -> -. ps ) ) |\n| 7 | 6 | #P_con2d | |- ( A e. V -> ( ps -> -. A. x -. ph ) ) |\n| 8 |  | #P_df-ex | |- ( E. x ph <-> -. A. x -. ph ) |\n| 9 | 7, 8 | #P_syl6ibr | |- ( A e. V -> ( ps -> E. x ph ) ) |",
+  "conclusion" : "#P_spcimegf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnfc", "#T_vx", "#T_cA", "#T_wnf", "#T_vx", "#T_wps", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wps", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_wps", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wph", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wps", "#T_wi", "#T_wex", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ex", "#P_syl6ibr", "#P_nfn", "#P_spcimgf", "#P_con2d", "#P_con3d" ]
+}

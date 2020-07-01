@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lsmss1b on Metamath](http://us.metamath.org/mpegif/lsmss1b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lsmub1.p | |- .(+) = ( LSSum ` G ) |\n| 2 | 1 | #P_lsmss1 | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) /\\ T C_ U ) -> ( T .(+) U ) = U ) |\n| 3 | 2 | #P_3expia | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> ( T C_ U -> ( T .(+) U ) = U ) ) |\n| 4 | 1 | #P_lsmub1 | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> T C_ ( T .(+) U ) ) |\n| 5 |  | #P_sseq2 | |- ( ( T .(+) U ) = U -> ( T C_ ( T .(+) U ) <-> T C_ U ) ) |\n| 6 | 4, 5 | #P_syl5ibcom | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> ( ( T .(+) U ) = U -> T C_ U ) ) |\n| 7 | 3, 6 | #P_impbid | |- ( ( T e. ( SubGrp ` G ) /\\ U e. ( SubGrp ` G ) ) -> ( T C_ U <-> ( T .(+) U ) = U ) ) |",
+  "conclusion" : "#P_lsmss1b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.po", "#T_wceq", "#T_clsm", "#T_cfv", "#T_cG", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--1", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_w3a--2", "#T_cT", "#T_wss", "#T_cU", "#T_wi", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_wss", "#T_cU", "#T_wi", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_wss", "#T_cT", "#T_c.po", "#T_cU", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_wi", "#T_cT", "#T_wss", "#T_cT", "#T_c.po", "#T_cU", "#T_wb", "#T_cT", "#T_wss", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU", "#T_wi", "#T_cT", "#T_wss", "#T_cU", "#T_cT", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cG", "#T_wi", "#T_cT", "#T_wss", "#T_cU", "#T_wb", "#T_cT", "#T_c.po", "#T_cU", "#T_wceq", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lsmss1", "#P_syl5ibcom", "#P_3expia", "#P_sseq2", "#P_impbid", "#P_lsmub1" ]
+}

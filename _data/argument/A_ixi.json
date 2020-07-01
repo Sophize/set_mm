@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ixi on Metamath](http://us.metamath.org/mpegif/ixi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-neg | |- -u 1 = ( 0 - 1 ) |\n| 2 |  | #P_ax-i2m1 | |- ( ( _i x. _i ) + 1 ) = 0 |\n| 3 |  | #P_0cn | |- 0 e. CC |\n| 4 |  | #P_ax-1cn | |- 1 e. CC |\n| 5 |  | #P_ax-icn | |- _i e. CC |\n| 6 | 5, 5 | #P_mulcli | |- ( _i x. _i ) e. CC |\n| 7 | 3, 4, 6 | #P_subadd2i | |- ( ( 0 - 1 ) = ( _i x. _i ) <-> ( ( _i x. _i ) + 1 ) = 0 ) |\n| 8 | 2, 7 | #P_mpbir | |- ( 0 - 1 ) = ( _i x. _i ) |\n| 9 | 1, 8 | #P_eqtr2i | |- ( _i x. _i ) = -u 1 |",
+  "conclusion" : "#P_ixi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cneg", "#T_c1", "#T_wceq", "#T_cc0", "#T_cmin", "#T_c1", "#T_ci", "#T_cmul", "#T_ci", "#T_caddc", "#T_c1", "#T_wceq", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cc", "#T_c1", "#T_wcel", "#T_cc", "#T_ci", "#T_wcel", "#T_cc", "#T_ci", "#T_cmul", "#T_ci", "#T_wcel", "#T_cc", "#T_cc0", "#T_cmin", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_ci", "#T_wb", "#T_ci", "#T_cmul", "#T_ci", "#T_caddc", "#T_c1", "#T_wceq", "#T_cc0", "#T_cc0", "#T_cmin", "#T_c1", "#T_wceq", "#T_ci", "#T_cmul", "#T_ci", "#T_ci", "#T_cmul", "#T_ci", "#T_wceq", "#T_cneg", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-icn", "#P_mulcli", "#P_eqtr2i", "#P_subadd2i", "#P_0cn", "#P_df-neg", "#P_ax-1cn", "#P_ax-i2m1", "#P_mpbir" ]
+}

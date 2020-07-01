@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See r19.29af2 on Metamath](http://us.metamath.org/mpegif/r19.29af2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | r19.29af2.p | |- F/ x ph |\n| 2 |  | r19.29af2.c | |- F/ x ch |\n| 3 |  | r19.29af2.1 | |- ( ( ( ph /\\ x e. A ) /\\ ps ) -> ch ) |\n| 4 |  | r19.29af2.2 | |- ( ph -> E. x e. A ps ) |\n| 5 | 3 | #P_exp31 | |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) |\n| 6 | 1, 2, 5 | #P_rexlimd | |- ( ph -> ( E. x e. A ps -> ch ) ) |\n| 7 | 4, 6 | #P_mpd | |- ( ph -> ch ) |",
+  "conclusion" : "#P_r19.29af2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wnf", "#T_vx", "#T_wch", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cA", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_wps", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpd", "#P_exp31", "#P_rexlimd" ]
+}

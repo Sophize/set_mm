@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trrelssd on Metamath](http://us.metamath.org/mpegif/trrelssd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | trrelssd.r | |- ( ph -> ( R o. R ) C_ R ) |\n| 2 |  | trrelssd.s | |- ( ph -> S C_ R ) |\n| 3 |  | trrelssd.t | |- ( ph -> T C_ R ) |\n| 4 | 2, 3 | #P_coss12d | |- ( ph -> ( S o. T ) C_ ( R o. R ) ) |\n| 5 | 4, 1 | #P_sstrd | |- ( ph -> ( S o. T ) C_ R ) |",
+  "conclusion" : "#P_trrelssd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_ccom", "#T_cR", "#T_wss", "#T_cR", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cR", "#T_wph", "#T_wi", "#T_cT", "#T_wss", "#T_cR", "#T_wph", "#T_wi", "#T_cS", "#T_ccom", "#T_cT", "#T_wss", "#T_cR", "#T_ccom", "#T_cR", "#T_wph", "#T_wi", "#T_cS", "#T_ccom", "#T_cT", "#T_wss", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstrd", "#P_coss12d" ]
+}

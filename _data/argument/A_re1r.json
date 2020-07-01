@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See re1r on Metamath](http://us.metamath.org/mpegif/re1r.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_resubdrg | |- ( RR e. ( SubRing ` CCfld ) /\\ RRfld e. DivRing ) |\n| 2 | 1 | #P_simpli | |- RR e. ( SubRing ` CCfld ) |\n| 3 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 4 |  | #P_cnfld1 | |- 1 = ( 1r ` CCfld ) |\n| 5 | 3, 4 | #P_subrg1 | |- ( RR e. ( SubRing ` CCfld ) -> 1 = ( 1r ` RRfld ) ) |\n| 6 | 2, 5 | #P_ax-mp | |- 1 = ( 1r ` RRfld ) |",
+  "conclusion" : "#P_re1r",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_crefld", "#T_wcel", "#T_cdr", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_crefld", "#T_c1", "#T_wceq", "#T_cur", "#T_cfv", "#T_crefld" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_cnfld1", "#P_simpli", "#P_resubdrg", "#P_subrg1", "#P_df-refld" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See evl1varpw on Metamath](http://us.metamath.org/mpegif/evl1varpw.html)"
+  } ],
+  "names" : [ "evl1varpw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_ce1", "#T_cfv", "#T_cR", "#T_cW", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cW", "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c.ex", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cQ", "#T_cfv", "#T_cN", "#T_c.ex", "#T_cX", "#T_wceq", "#T_cN", "#T_cmg", "#T_cfv", "#T_cmgp", "#T_cfv", "#T_cR", "#T_cpws", "#T_cB", "#T_cQ", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Univariate polynomial evaluation maps the exponentiation of a variable to the exponentiation of the evaluated variable.  Remark: in contrast to ~ evl1gsumadd , the proof is shorter using ~ evls1varpw instead of proving it directly.  (Contributed by AV, 15-Sep-2019.) ",
+  "statement" : "evl1varpw.q $e |- Q = ( eval1 ` R ) $.\nevl1varpw.w $e |- W = ( Poly1 ` R ) $.\nevl1varpw.g $e |- G = ( mulGrp ` W ) $.\nevl1varpw.x $e |- X = ( var1 ` R ) $.\nevl1varpw.b $e |- B = ( Base ` R ) $.\nevl1varpw.e $e |- .^ = ( .g ` G ) $.\nevl1varpw.r $e |- ( ph -> R e. CRing ) $.\nevl1varpw.n $e |- ( ph -> N e. NN0 ) $.\nevl1varpw $p |- ( ph -> ( Q ` ( N .^ X ) ) = ( N ( .g ` ( mulGrp ` ( R ^s B ) ) ) ( Q ` X ) ) ) $."
+}

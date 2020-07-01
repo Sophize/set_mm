@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgmov2 on Metamath](http://us.metamath.org/mpegif/symgmov2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgmov1.p | |- P = ( Base ` ( SymGrp ` N ) ) |\n| 2 |  | #P_eqid | |- ( SymGrp ` N ) = ( SymGrp ` N ) |\n| 3 | 2, 1 | #P_symgbasf1o | |- ( Q e. P -> Q : N -1-1-onto-> N ) |\n| 4 |  | #P_f1ofo | |- ( Q : N -1-1-onto-> N -> Q : N -onto-> N ) |\n| 5 |  | #P_foelrni | |- ( ( Q : N -onto-> N /\\ n e. N ) -> E. k e. N ( Q ` k ) = n ) |\n| 6 | 5 | #P_ralrimiva | |- ( Q : N -onto-> N -> A. n e. N E. k e. N ( Q ` k ) = n ) |\n| 7 | 3, 4, 6 | #P_3syl | |- ( Q e. P -> A. n e. N E. k e. N ( Q ` k ) = n ) |",
+  "conclusion" : "#P_symgmov2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_csymg", "#T_cfv", "#T_cN", "#T_wceq", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wcel", "#T_cP", "#T_wi", "#T_cQ", "#T_wf1o--1", "#T_cN", "#T_wf1o--2", "#T_cN", "#T_cQ", "#T_wf1o--1", "#T_cN", "#T_wf1o--2", "#T_cN", "#T_wi", "#T_cQ", "#T_wfo--1", "#T_cN", "#T_wfo--2", "#T_cN", "#T_cQ", "#T_wfo--1", "#T_cN", "#T_wfo--2", "#T_cN", "#T_wa", "#T_vn", "#T_wcel", "#T_cN", "#T_wi", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vk", "#T_wceq", "#T_vn", "#T_cQ", "#T_wfo--1", "#T_cN", "#T_wfo--2", "#T_cN", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cN", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vk", "#T_wceq", "#T_vn", "#T_cQ", "#T_wcel", "#T_cP", "#T_wi", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cN", "#T_wrex--1", "#T_vk", "#T_wrex--2", "#T_cN", "#T_cQ", "#T_cfv", "#T_vk", "#T_wceq", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_3syl", "#P_f1ofo", "#P_symgbasf1o", "#P_ralrimiva", "#P_foelrni" ]
+}

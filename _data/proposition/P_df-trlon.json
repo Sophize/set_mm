@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-trlon on Metamath](http://us.metamath.org/mpegif/df-trlon.html)"
+  } ],
+  "names" : [ "df-trlon" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctrlon", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_va", "#T_cmpt2--1", "#T_vv", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_vv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_va", "#T_vv", "#T_cwlkon", "#T_ve", "#T_vb", "#T_vp", "#T_wa", "#T_vf", "#T_vv", "#T_ctrail", "#T_ve", "#T_vp", "#T_copab--6", "#T_va", "#T_vb", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the collection of trails with particular endpoints (in an undirected graph).  (Contributed by Alexander van der Vekens and Mario Carneiro, 4-Oct-2017.) ",
+  "statement" : "df-trlon $p |- TrailOn = ( v e. _V , e e. _V |-> ( a e. v , b e. v |-> { <. f , p >. | ( f ( a ( v WalkOn e ) b ) p /\\ f ( v Trails e ) p ) } ) ) $.\n$d a b e f p v $."
+}

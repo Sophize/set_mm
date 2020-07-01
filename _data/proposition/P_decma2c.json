@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See decma2c on Metamath](http://us.metamath.org/mpegif/decma2c.html)"
+  } ],
+  "names" : [ "decma2c" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cn0", "#T_cB", "#T_wcel", "#T_cn0", "#T_cC", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cn0", "#T_cM", "#T_wceq", "#T_cdc", "#T_cA", "#T_cB", "#T_cN", "#T_wceq", "#T_cdc", "#T_cC", "#T_cD", "#T_cP", "#T_wcel", "#T_cn0", "#T_cF", "#T_wcel", "#T_cn0", "#T_cG", "#T_wcel", "#T_cn0", "#T_cP", "#T_cmul", "#T_cA", "#T_caddc", "#T_cC", "#T_caddc", "#T_cG", "#T_wceq", "#T_cE", "#T_cP", "#T_cmul", "#T_cB", "#T_caddc", "#T_cD", "#T_wceq", "#T_cdc", "#T_cG", "#T_cF", "#T_cP", "#T_cmul", "#T_cM", "#T_caddc", "#T_cN", "#T_wceq", "#T_cdc", "#T_cE", "#T_cF" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Perform a multiply-add of two numerals ` M ` and ` N ` against a fixed multiplicand ` P ` (with carry).  (Contributed by Mario Carneiro, 18-Feb-2014.) ",
+  "statement" : "decma.1 $e |- A e. NN0 $.\ndecma.2 $e |- B e. NN0 $.\ndecma.3 $e |- C e. NN0 $.\ndecma.4 $e |- D e. NN0 $.\ndecma.5 $e |- M = ; A B $.\ndecma.6 $e |- N = ; C D $.\ndecma2c.7 $e |- P e. NN0 $.\ndecma2c.8 $e |- F e. NN0 $.\ndecma2c.9 $e |- G e. NN0 $.\ndecma2c.10 $e |- ( ( P x. A ) + ( C + G ) ) = E $.\ndecma2c.11 $e |- ( ( P x. B ) + D ) = ; G F $.\ndecma2c $p |- ( ( P x. M ) + N ) = ; E F $."
+}

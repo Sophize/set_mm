@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ackbij1lem3 on Metamath](http://us.metamath.org/mpegif/ackbij1lem3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ordom | |- Ord _om |\n| 2 |  | #P_ordelss | |- ( ( Ord _om /\\ A e. _om ) -> A C_ _om ) |\n| 3 | 1, 2 | #P_mpan | |- ( A e. _om -> A C_ _om ) |\n| 4 |  | #P_elpwg | |- ( A e. _om -> ( A e. ~P _om <-> A C_ _om ) ) |\n| 5 | 3, 4 | #P_mpbird | |- ( A e. _om -> A e. ~P _om ) |\n| 6 |  | #P_nnfi | |- ( A e. _om -> A e. Fin ) |\n| 7 | 5, 6 | #P_elind | |- ( A e. _om -> A e. ( ~P _om i^i Fin ) ) |",
+  "conclusion" : "#P_ackbij1lem3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_word", "#T_com", "#T_word", "#T_com", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wss", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_com", "#T_wb", "#T_cA.wceq", "#T_wss", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cpw", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_cA", "#T_wcel", "#T_cpw", "#T_com", "#T_cin", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ordom", "#P_mpan", "#P_nnfi", "#P_elpwg", "#P_ordelss", "#P_mpbird", "#P_elind" ]
+}

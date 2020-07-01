@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-mamu on Metamath](http://us.metamath.org/mpegif/df-mamu.html)"
+  } ],
+  "names" : [ "df-mamu" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cmmul", "#T_wceq", "#T_vr", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vo", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_csb--1", "#T_c1st", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vo", "#T_csb--2", "#T_vm", "#T_csb--3", "#T_csb--1", "#T_c2nd", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vo", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_csb--1", "#T_c2nd", "#T_cfv", "#T_vo", "#T_csb--2", "#T_vp", "#T_csb--3", "#T_vx", "#T_cmpt2--1", "#T_cbs", "#T_cfv", "#T_vr", "#T_cmap", "#T_vm", "#T_cxp", "#T_vn", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cbs", "#T_cfv", "#T_vr", "#T_cmap", "#T_vn", "#T_cxp", "#T_vp", "#T_cmpt2--4", "#T_vi", "#T_cmpt2--1", "#T_vm", "#T_cmpt2--2", "#T_vk", "#T_cmpt2--3", "#T_vp", "#T_cmpt2--4", "#T_vr", "#T_cgsu", "#T_vj", "#T_cmpt--1", "#T_vn", "#T_cmpt--2", "#T_vi", "#T_vx", "#T_vj", "#T_cmulr", "#T_cfv", "#T_vr", "#T_vj", "#T_vy", "#T_vk", "#T_vi", "#T_vj", "#T_vk", "#T_vm", "#T_vn", "#T_vo", "#T_vp", "#T_vr", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The operator which multiplies an m x n matrix with an n x p matrix, see also the definition in [Lang] p. 504.  Note that it is not generally possible to recover the dimensions from the matrix, since all n x 0 and all 0 x n matrices are represented by the empty set.  (Contributed by Stefan O'Rear, 4-Sep-2015.) ",
+  "statement" : "df-mamu $p |- maMul = ( r e. _V , o e. _V |-> [_ ( 1st ` ( 1st ` o ) ) / m ]_ [_ ( 2nd ` ( 1st ` o ) ) / n ]_ [_ ( 2nd ` o ) / p ]_ ( x e. ( ( Base ` r ) ^m ( m X. n ) ) , y e. ( ( Base ` r ) ^m ( n X. p ) ) |-> ( i e. m , k e. p |-> ( r gsum ( j e. n |-> ( ( i x j ) ( .r ` r ) ( j y k ) ) ) ) ) ) ) $.\n$d i j k m n o p r x y $."
+}

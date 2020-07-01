@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See geomcau on Metamath](http://us.metamath.org/mpegif/geomcau.html)"
+  } ],
+  "names" : [ "geomcau" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cB", "#T_clt", "#T_c1", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cn", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_cD", "#T_cF", "#T_cfv", "#T_vk", "#T_caddc", "#T_c1", "#T_cle", "#T_cA", "#T_cmul", "#T_cB", "#T_cexp", "#T_vk", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cca", "#T_cfv", "#T_cD", "#T_cA", "#T_vk", "#T_cB", "#T_vk", "#T_cD", "#T_vk", "#T_cF", "#T_vk", "#T_cX", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the distance between consecutive points in a sequence is bounded by a geometric sequence, then the sequence is Cauchy.  (Contributed by Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro, 5-Jun-2014.) ",
+  "statement" : "lmclim2.2 $e |- ( ph -> D e. ( Met ` X ) ) $.\nlmclim2.3 $e |- ( ph -> F : NN --> X ) $.\ngeomcau.4 $e |- ( ph -> A e. RR ) $.\ngeomcau.5 $e |- ( ph -> B e. RR+ ) $.\ngeomcau.6 $e |- ( ph -> B < 1 ) $.\ngeomcau.7 $e |- ( ( ph /\\ k e. NN ) -> ( ( F ` k ) D ( F ` ( k + 1 ) ) ) <_ ( A x. ( B ^ k ) ) ) $.\ngeomcau $p |- ( ph -> F e. ( Cau ` D ) ) $.\n$d A k $.\n$d B k $.\n$d D k $.\n$d F k $.\n$d X k $.\n$d k ph $."
+}

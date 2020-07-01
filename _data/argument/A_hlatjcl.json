@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hlatjcl on Metamath](http://us.metamath.org/mpegif/hlatjcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hlatjcl.b | |- B = ( Base ` K ) |\n| 2 |  | hlatjcl.j | |- .\\/ = ( join ` K ) |\n| 3 |  | hlatjcl.a | |- A = ( Atoms ` K ) |\n| 4 |  | #P_hllat | |- ( K e. HL -> K e. Lat ) |\n| 5 | 1, 3 | #P_atbase | |- ( X e. A -> X e. B ) |\n| 6 | 1, 3 | #P_atbase | |- ( Y e. A -> Y e. B ) |\n| 7 | 1, 2 | #P_latjcl | |- ( ( K e. Lat /\\ X e. B /\\ Y e. B ) -> ( X .\\/ Y ) e. B ) |\n| 8 | 4, 5, 6, 7 | #P_syl3an | |- ( ( K e. HL /\\ X e. A /\\ Y e. A ) -> ( X .\\/ Y ) e. B ) |",
+  "conclusion" : "#P_hlatjcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.or", "#T_wceq", "#T_cjn", "#T_cfv", "#T_cK", "#T_cA", "#T_wceq", "#T_catm", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_chlt", "#T_wi", "#T_cK", "#T_wcel", "#T_clat", "#T_cX", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cY", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cK", "#T_wcel", "#T_clat", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.or", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_cK", "#T_wcel", "#T_chlt", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cA", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cA", "#T_wi", "#T_cX", "#T_c.or", "#T_cY", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_latjcl", "#P_atbase", "#P_hllat", "#P_syl3an" ]
+}

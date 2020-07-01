@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1strwun on Metamath](http://us.metamath.org/mpegif/1strwun.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 1str.g | |- G = { <. ( Base ` ndx ) , B >. } |\n| 2 |  | 1strwun.u | |- ( ph -> U e. WUni ) |\n| 3 |  | 1strwun.o | |- ( ph -> _om e. U ) |\n| 4 |  | #P_df-base | |- Base = Slot 1 |\n| 5 | 2, 3 | #P_wunndx | |- ( ph -> ndx e. U ) |\n| 6 | 4, 2, 5 | #P_wunstr | |- ( ph -> ( Base ` ndx ) e. U ) |\n| 7 | 1, 2, 6 | #P_1strwunbndx | |- ( ( ph /\\ B e. U ) -> G e. U ) |",
+  "conclusion" : "#P_1strwun",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_csn--2", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_com", "#T_wcel", "#T_cU", "#T_cbs", "#T_wceq", "#T_cslot", "#T_c1", "#T_wph", "#T_wi", "#T_cnx", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cbs", "#T_cfv", "#T_cnx", "#T_wcel", "#T_cU", "#T_wph", "#T_wa", "#T_cB", "#T_wcel", "#T_cU", "#T_wi", "#T_cG", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-base", "#P_1strwunbndx", "#P_wunndx", "#P_wunstr" ]
+}

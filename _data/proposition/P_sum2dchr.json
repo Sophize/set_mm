@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sum2dchr on Metamath](http://us.metamath.org/mpegif/sum2dchr.html)"
+  } ],
+  "names" : [ "sum2dchr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_cdchr", "#T_cfv", "#T_cN", "#T_cD", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cZ", "#T_wceq", "#T_czn", "#T_cfv", "#T_cN", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cZ", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cZ", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csu--1", "#T_vx", "#T_csu--2", "#T_cD", "#T_vx", "#T_cfv", "#T_cA", "#T_cmul", "#T_ccj", "#T_cfv", "#T_vx", "#T_cfv", "#T_cC", "#T_wceq", "#T_cif--1", "#T_cA", "#T_wceq", "#T_cC", "#T_cif--2", "#T_cphi", "#T_cfv", "#T_cN", "#T_cif--3", "#T_cc0", "#T_cA", "#T_vx", "#T_cC", "#T_vx", "#T_cD", "#T_vx", "#T_cG", "#T_vx", "#T_cN", "#T_vx", "#T_cZ", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " An orthogonality relation for Dirichlet characters: the sum of ` x ( A ) ` for fixed ` A ` and all ` x ` is ` 0 ` if ` A = 1 ` and ` phi ( n ) ` otherwise.  Part of Theorem 6.5.2 of [Shapiro] p. 232. (Contributed by Mario Carneiro, 28-Apr-2016.) ",
+  "statement" : "sum2dchr.g $e |- G = ( DChr ` N ) $.\nsum2dchr.d $e |- D = ( Base ` G ) $.\nsum2dchr.z $e |- Z = ( Z/nZ ` N ) $.\nsum2dchr.b $e |- B = ( Base ` Z ) $.\nsum2dchr.u $e |- U = ( Unit ` Z ) $.\nsum2dchr.n $e |- ( ph -> N e. NN ) $.\nsum2dchr.a $e |- ( ph -> A e. B ) $.\nsum2dchr.c $e |- ( ph -> C e. U ) $.\nsum2dchr $p |- ( ph -> sum_ x e. D ( ( x ` A ) x. ( * ` ( x ` C ) ) ) = if ( A = C , ( phi ` N ) , 0 ) ) $.\n$d A x $.\n$d C x $.\n$d D x $.\n$d G x $.\n$d N x $.\n$d Z x $.\n$d ph x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See climreu on Metamath](http://us.metamath.org/mpegif/climreu.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_climeu | |- ( F ~~> A -> E! x F ~~> x ) |\n| 2 |  | #P_climcl | |- ( F ~~> x -> x e. CC ) |\n| 3 | 2 | #P_pm4.71ri | |- ( F ~~> x <-> ( x e. CC /\\ F ~~> x ) ) |\n| 4 | 3 | #P_eubii | |- ( E! x F ~~> x <-> E! x ( x e. CC /\\ F ~~> x ) ) |\n| 5 |  | #P_df-reu | |- ( E! x e. CC F ~~> x <-> E! x ( x e. CC /\\ F ~~> x ) ) |\n| 6 | 4, 5 | #P_bitr4i | |- ( E! x F ~~> x <-> E! x e. CC F ~~> x ) |\n| 7 | 1, 6 | #P_sylib | |- ( F ~~> A -> E! x e. CC F ~~> x ) |",
+  "conclusion" : "#P_climreu",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cli", "#T_cA.wceq", "#T_wi", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_cF", "#T_cli", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_weu", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cc", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_weu", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_cF", "#T_cli", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_cF", "#T_cli", "#T_vx.wal", "#T_wb", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cc", "#T_cF", "#T_cli", "#T_vx.wal", "#T_cF", "#T_cli", "#T_cA", "#T_wi", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cc", "#T_cF", "#T_cli", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_climeu", "#P_climcl", "#P_df-reu", "#P_sylib", "#P_eubii", "#P_bitr4i", "#P_pm4.71ri" ]
+}

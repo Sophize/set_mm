@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bra0 on Metamath](http://us.metamath.org/mpegif/bra0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-hv0cl | |- 0h e. ~H |\n| 2 |  | #P_brafval | |- ( 0h e. ~H -> ( bra ` 0h ) = ( x e. ~H |-> ( x .ih 0h ) ) ) |\n| 3 |  | #P_hi02 | |- ( x e. ~H -> ( x .ih 0h ) = 0 ) |\n| 4 | 3 | #P_mpteq2ia | |- ( x e. ~H |-> ( x .ih 0h ) ) = ( x e. ~H |-> 0 ) |\n| 5 | 2, 4 | #P_syl6eq | |- ( 0h e. ~H -> ( bra ` 0h ) = ( x e. ~H |-> 0 ) ) |\n| 6 | 1, 5 | #P_ax-mp | |- ( bra ` 0h ) = ( x e. ~H |-> 0 ) |\n| 7 |  | #P_fconstmpt | |- ( ~H X. { 0 } ) = ( x e. ~H |-> 0 ) |\n| 8 | 6, 7 | #P_eqtr4i | |- ( bra ` 0h ) = ( ~H X. { 0 } ) |",
+  "conclusion" : "#P_bra0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_c0v", "#T_wcel", "#T_chil", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_c0v", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_c0v", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_csp", "#T_c0v", "#T_wceq", "#T_cc0", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_vx.wal", "#T_csp", "#T_c0v", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cc0", "#T_c0v", "#T_wcel", "#T_chil", "#T_wi", "#T_cbr", "#T_cfv", "#T_c0v", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cc0", "#T_cbr", "#T_cfv", "#T_c0v", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cc0", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_chil", "#T_cmpt--2", "#T_cc0", "#T_cbr", "#T_cfv", "#T_c0v", "#T_wceq", "#T_chil", "#T_cxp", "#T_csn--1", "#T_cc0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr4i", "#P_ax-mp", "#P_ax-hv0cl", "#P_mpteq2ia", "#P_brafval", "#P_hi02", "#P_fconstmpt", "#P_syl6eq" ]
+}

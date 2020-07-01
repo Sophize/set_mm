@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmsubcl on Metamath](http://us.metamath.org/mpegif/clmsubcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clm0.f | |- F = ( Scalar ` W ) |\n| 2 |  | clmsub.k | |- K = ( Base ` F ) |\n| 3 | 1, 2 | #P_clmsubrg | |- ( W e. CMod -> K e. ( SubRing ` CCfld ) ) |\n| 4 |  | #P_subrgsubg | |- ( K e. ( SubRing ` CCfld ) -> K e. ( SubGrp ` CCfld ) ) |\n| 5 | 3, 4 | #P_syl | |- ( W e. CMod -> K e. ( SubGrp ` CCfld ) ) |\n| 6 |  | #P_cnfldsub | |- - = ( -g ` CCfld ) |\n| 7 | 6 | #P_subgsubcl | |- ( ( K e. ( SubGrp ` CCfld ) /\\ X e. K /\\ Y e. K ) -> ( X - Y ) e. K ) |\n| 8 | 5, 7 | #P_syl3an1 | |- ( ( W e. CMod /\\ X e. K /\\ Y e. K ) -> ( X - Y ) e. K ) |",
+  "conclusion" : "#P_clmsubcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cK", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cK", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_cmin", "#T_wceq", "#T_csg", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cK", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cK", "#T_wi", "#T_cX", "#T_cmin", "#T_cY", "#T_wcel", "#T_cK", "#T_cW", "#T_wcel", "#T_cclm", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cK", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cK", "#T_wi", "#T_cX", "#T_cmin", "#T_cY", "#T_wcel", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnfldsub", "#P_syl", "#P_subgsubcl", "#P_syl3an1", "#P_subrgsubg", "#P_clmsubrg" ]
+}

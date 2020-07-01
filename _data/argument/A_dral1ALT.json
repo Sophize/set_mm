@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dral1ALT on Metamath](http://us.metamath.org/mpegif/dral1ALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dral1.1 | |- ( A. x x = y -> ( ph <-> ps ) ) |\n| 2 | 1 | #P_dral2 | |- ( A. x x = y -> ( A. x ph <-> A. x ps ) ) |\n| 3 |  | #P_axc11 | |- ( A. x x = y -> ( A. x ps -> A. y ps ) ) |\n| 4 |  | #P_axc112 | |- ( A. x x = y -> ( A. y ps -> A. x ps ) ) |\n| 5 | 3, 4 | #P_impbid | |- ( A. x x = y -> ( A. x ps <-> A. y ps ) ) |\n| 6 | 2, 5 | #P_bitrd | |- ( A. x x = y -> ( A. x ph <-> A. y ps ) ) |\n\\\n Alternate proof of ~ dral1 , shorter but requiring ~ ax-11 . (Contributed by NM, 24-Nov-1994.)  (Proof shortened by Wolf Lammen, 22-Apr-2018.)  (New usage is discouraged.) (Proof modification is discouraged.) ",
+  "conclusion" : "#P_dral1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wal", "#T_vy.tru", "#T_wps", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wb", "#T_wal", "#T_vy", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_axc112", "#P_bitrd", "#P_dral2", "#P_impbid", "#P_axc11" ]
+}

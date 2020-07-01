@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hvsubassi on Metamath](http://us.metamath.org/mpegif/hvsubassi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hvass.1 | |- A e. ~H |\n| 2 |  | hvass.2 | |- B e. ~H |\n| 3 |  | hvass.3 | |- C e. ~H |\n| 4 |  | #P_hvsubass | |- ( ( A e. ~H /\\ B e. ~H /\\ C e. ~H ) -> ( ( A -h B ) -h C ) = ( A -h ( B +h C ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( ( A -h B ) -h C ) = ( A -h ( B +h C ) ) |",
+  "conclusion" : "#P_hvsubassi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_chil", "#T_cB", "#T_wcel", "#T_chil", "#T_cC", "#T_wcel", "#T_chil", "#T_cA.wceq", "#T_wcel", "#T_chil", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_chil", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_chil", "#T_wi", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_cmv", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cmv", "#T_cB.wceq", "#T_cva", "#T_cC", "#T_cA", "#T_cmv", "#T_cB", "#T_cmv", "#T_cC", "#T_wceq", "#T_cA", "#T_cmv", "#T_cB", "#T_cva", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_hvsubass" ]
+}

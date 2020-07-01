@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unben on Metamath](http://us.metamath.org/mpegif/unben.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) |` _om ) = ( rec ( ( x e. _V |-> ( x + 1 ) ) , 1 ) |` _om ) |\n| 2 | 1 | #P_unbenlem | |- ( ( A C_ NN /\\ A. m e. NN E. n e. A m < n ) -> A ~~ _om ) |\n| 3 |  | #P_nnenom | |- NN ~~ _om |\n| 4 | 3 | #P_ensymi | |- _om ~~ NN |\n| 5 |  | #P_entr | |- ( ( A ~~ _om /\\ _om ~~ NN ) -> A ~~ NN ) |\n| 6 | 2, 4, 5 | #P_sylancl | |- ( ( A C_ NN /\\ A. m e. NN E. n e. A m < n ) -> A ~~ NN ) |",
+  "conclusion" : "#P_unben",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_cres", "#T_com", "#T_wceq", "#T_crdg--1", "#T_vx.wal", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_crdg--2", "#T_c1", "#T_cres", "#T_com", "#T_cA.wceq", "#T_wss", "#T_cn", "#T_wa", "#T_wral--1", "#T_vm", "#T_wral--2", "#T_cn", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cA.wceq", "#T_vm", "#T_clt", "#T_vn", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_com", "#T_cn", "#T_cen", "#T_com", "#T_com", "#T_cen", "#T_cn", "#T_cA.wceq", "#T_cen", "#T_com", "#T_wa", "#T_com", "#T_cen", "#T_cn", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cn", "#T_cA", "#T_wss", "#T_cn", "#T_wa", "#T_wral--1", "#T_vm", "#T_wral--2", "#T_cn", "#T_wrex--1", "#T_vn", "#T_wrex--2", "#T_cA", "#T_vm", "#T_clt", "#T_vn", "#T_wi", "#T_cA", "#T_cen", "#T_cn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_entr", "#P_nnenom", "#P_unbenlem", "#P_sylancl", "#P_ensymi" ]
+}

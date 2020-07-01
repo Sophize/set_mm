@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See findsg on Metamath](http://us.metamath.org/mpegif/findsg.html)"
+  } ],
+  "names" : [ "findsg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cB", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cB", "#T_wcel", "#T_com", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wss", "#T_vy", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wss", "#T_cA", "#T_wi", "#T_wta", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_vy", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Principle of Finite Induction (inference schema), using implicit substitutions.  The first four hypotheses establish the substitutions we need.  The last two are the basis and the induction step.  The basis of this version is an arbitrary natural number ` B ` instead of zero. (Contributed by NM, 16-Sep-1995.) ",
+  "statement" : "findsg.1 $e |- ( x = B -> ( ph <-> ps ) ) $.\nfindsg.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfindsg.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\nfindsg.4 $e |- ( x = A -> ( ph <-> ta ) ) $.\nfindsg.5 $e |- ( B e. _om -> ps ) $.\nfindsg.6 $e |- ( ( ( y e. _om /\\ B e. _om ) /\\ B C_ y ) -> ( ch -> th ) ) $.\nfindsg $p |- ( ( ( A e. _om /\\ B e. _om ) /\\ B C_ A ) -> ta ) $.\n$d A x $.\n$d B x y $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tchmulr on Metamath](http://us.metamath.org/mpegif/tchmulr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tchval.n | |- G = ( toCHil ` W ) |\n| 2 |  | tchmulr.t | |- .x. = ( .r ` W ) |\n| 3 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 4 | 3 | #P_tchex | |- ( x e. ( Base ` W ) |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) e. _V |\n| 5 |  | #P_eqid | |- ( .i ` W ) = ( .i ` W ) |\n| 6 | 1, 3, 5 | #P_tchval | |- G = ( W toNrmGrp ( x e. ( Base ` W ) |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) ) |\n| 7 | 6, 2 | #P_tngmulr | |- ( ( x e. ( Base ` W ) |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) e. _V -> .x. = ( .r ` G ) ) |\n| 8 | 4, 7 | #P_ax-mp | |- .x. = ( .r ` G ) |",
+  "conclusion" : "#P_tchmulr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cG", "#T_wceq", "#T_ctch", "#T_cfv", "#T_cW", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cW", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cip", "#T_cfv", "#T_cW", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_cG", "#T_wceq", "#T_cW", "#T_ctng", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cW", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cW", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cG", "#T_c.x", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_tchex", "#P_tchval", "#P_tngmulr" ]
+}

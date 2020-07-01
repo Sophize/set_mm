@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfdm on Metamath](http://us.metamath.org/mpegif/nfdm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny z\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfrn.1 | |- F/_ x A |\n| 2 |  | #P_df-dm | |- dom A = { y | E. z y A z } |\n| 3 |  | #P_nfcv | |- F/_ x y |\n| 4 |  | #P_nfcv | |- F/_ x z |\n| 5 | 3, 1, 4 | #P_nfbr | |- F/ x y A z |\n| 6 | 5 | #P_nfex | |- F/ x E. z y A z |\n| 7 | 6 | #P_nfab | |- F/_ x { y | E. z y A z } |\n| 8 | 2, 7 | #P_nfcxfr | |- F/_ x dom A |",
+  "conclusion" : "#P_nfdm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vz", "#T_wnfc", "#T_vx", "#T_cA", "#T_cdm", "#T_cA.wceq", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wex", "#T_vz", "#T_vy.tru", "#T_cA.wceq", "#T_vz", "#T_cab--3", "#T_wnfc", "#T_vx.wal", "#T_vy.tru", "#T_wnfc", "#T_vx.wal", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_vy.tru", "#T_cA.wceq", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vz", "#T_vy.tru", "#T_cA.wceq", "#T_vz", "#T_wnfc", "#T_vx.wal", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wex", "#T_vz", "#T_vy.tru", "#T_cA.wceq", "#T_vz", "#T_cab--3", "#T_wnfc", "#T_vx", "#T_cdm", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfex", "#P_nfcxfr", "#P_nfbr", "#P_nfab", "#P_df-dm" ]
+}

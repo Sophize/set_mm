@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tchbas on Metamath](http://us.metamath.org/mpegif/tchbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tchval.n | |- G = ( toCHil ` W ) |\n| 2 |  | tchbas.v | |- V = ( Base ` W ) |\n| 3 | 2 | #P_tchex | |- ( x e. V |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) e. _V |\n| 4 |  | #P_eqid | |- ( .i ` W ) = ( .i ` W ) |\n| 5 | 1, 2, 4 | #P_tchval | |- G = ( W toNrmGrp ( x e. V |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) ) |\n| 6 | 5, 2 | #P_tngbas | |- ( ( x e. V |-> ( sqrt ` ( x ( .i ` W ) x ) ) ) e. _V -> V = ( Base ` G ) ) |\n| 7 | 3, 6 | #P_ax-mp | |- V = ( Base ` G ) |",
+  "conclusion" : "#P_tchbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cG", "#T_wceq", "#T_ctch", "#T_cfv", "#T_cW", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cip", "#T_cfv", "#T_cW", "#T_wceq", "#T_cip", "#T_cfv", "#T_cW", "#T_cG", "#T_wceq", "#T_cW", "#T_ctng", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_vx.wal", "#T_cmpt--1", "#T_cV", "#T_cmpt--2", "#T_csqrt", "#T_cfv", "#T_vx.wal", "#T_cip", "#T_cfv", "#T_cW", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wi", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cV", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tngbas", "#P_eqid", "#P_ax-mp", "#P_tchex", "#P_tchval" ]
+}

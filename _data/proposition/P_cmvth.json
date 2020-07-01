@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cmvth on Metamath](http://us.metamath.org/mpegif/cmvth.html)"
+  } ],
+  "names" : [ "cmvth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_ccncf", "#T_cr", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cA", "#T_cicc", "#T_cB", "#T_ccncf", "#T_cr", "#T_wph", "#T_wi", "#T_cdm", "#T_cr", "#T_cdv", "#T_cF", "#T_wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wph", "#T_wi", "#T_cdm", "#T_cr", "#T_cdv", "#T_cG", "#T_wceq", "#T_cA", "#T_cioo", "#T_cB", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cA", "#T_cioo", "#T_cB", "#T_cF", "#T_cfv", "#T_cB", "#T_cmin", "#T_cF", "#T_cfv", "#T_cA", "#T_cmul", "#T_cr", "#T_cdv", "#T_cG", "#T_cfv", "#T_vx", "#T_wceq", "#T_cG", "#T_cfv", "#T_cB", "#T_cmin", "#T_cG", "#T_cfv", "#T_cA", "#T_cmul", "#T_cr", "#T_cdv", "#T_cF", "#T_cfv", "#T_vx", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cF", "#T_vx", "#T_cG", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Cauchy's Mean Value Theorem.  If ` F , G ` are real continuous functions on ` [ A , B ] ` differentiable on ` ( A , B ) ` , then there is some ` x e. ( A , B ) ` such that ` F ` ' ` ( x ) / G ` ' ` ( x ) = ` ` ( F ( A ) - F ( B ) ) / ( G ( A ) - G ( B ) ) ` .  (We express the condition without division, so that we need no nonzero constraints.) (Contributed by Mario Carneiro, 29-Dec-2016.) ",
+  "statement" : "cmvth.a $e |- ( ph -> A e. RR ) $.\ncmvth.b $e |- ( ph -> B e. RR ) $.\ncmvth.lt $e |- ( ph -> A < B ) $.\ncmvth.f $e |- ( ph -> F e. ( ( A [,] B ) -cn-> RR ) ) $.\ncmvth.g $e |- ( ph -> G e. ( ( A [,] B ) -cn-> RR ) ) $.\ncmvth.df $e |- ( ph -> dom ( RR _D F ) = ( A (,) B ) ) $.\ncmvth.dg $e |- ( ph -> dom ( RR _D G ) = ( A (,) B ) ) $.\ncmvth $p |- ( ph -> E. x e. ( A (,) B ) ( ( ( F ` B ) - ( F ` A ) ) x. ( ( RR _D G ) ` x ) ) = ( ( ( G ` B ) - ( G ` A ) ) x. ( ( RR _D F ) ` x ) ) ) $.\n$d A x $.\n$d B x $.\n$d F x $.\n$d G x $.\n$d ph x $."
+}

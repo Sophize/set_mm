@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-rank on Metamath](http://us.metamath.org/mpegif/df-rank.html)"
+  } ],
+  "names" : [ "df-rank" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crnk", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cint", "#T_crab--1", "#T_vy", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vx", "#T_wcel", "#T_cr1", "#T_cfv", "#T_csuc", "#T_vy", "#T_crab--4", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the rank function.  See ~ rankval , ~ rankval2 , ~ rankval3 , or ~ rankval4 its value.  The rank is a kind of \"inverse\" of the cumulative hierarchy of sets function ` R1 ` : given a set, it returns an ordinal number telling us the smallest layer of the hierarchy to which the set belongs.  Based on Definition 9.14 of [TakeutiZaring] p. 79.  Theorem ~ rankid illustrates the \"inverse\" concept.  Another nice theorem showing the relationship is ~ rankr1a .  (Contributed by NM, 11-Oct-2003.) ",
+  "statement" : "df-rank $p |- rank = ( x e. _V |-> |^| { y e. On | x e. ( R1 ` suc y ) } ) $.\n$d x y $."
+}

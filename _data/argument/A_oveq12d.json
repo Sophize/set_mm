@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oveq12d on Metamath](http://us.metamath.org/mpegif/oveq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oveq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | oveq12d.2 | |- ( ph -> C = D ) |\n| 3 |  | #P_oveq12 | |- ( ( A = B /\\ C = D ) -> ( A F C ) = ( B F D ) ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( A F C ) = ( B F D ) ) |",
+  "conclusion" : "#P_oveq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_cF", "#T_cC", "#T_wceq", "#T_cB", "#T_cF", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_oveq12" ]
+}

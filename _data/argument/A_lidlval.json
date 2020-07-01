@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lidlval on Metamath](http://us.metamath.org/mpegif/lidlval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-lidl | |- LIdeal = ( LSubSp o. ringLMod ) |\n| 2 | 1 | #P_fveq1i | |- ( LIdeal ` W ) = ( ( LSubSp o. ringLMod ) ` W ) |\n| 3 |  | #P_00lss | |- (/) = ( LSubSp ` (/) ) |\n| 4 |  | #P_rlmfn | |- ringLMod Fn _V |\n| 5 |  | #P_fnfun | |- ( ringLMod Fn _V -> Fun ringLMod ) |\n| 6 | 4, 5 | #P_ax-mp | |- Fun ringLMod |\n| 7 | 3, 6 | #P_fvco4i | |- ( ( LSubSp o. ringLMod ) ` W ) = ( LSubSp ` ( ringLMod ` W ) ) |\n| 8 | 2, 7 | #P_eqtri | |- ( LIdeal ` W ) = ( LSubSp ` ( ringLMod ` W ) ) |",
+  "conclusion" : "#P_lidlval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clidl", "#T_wceq", "#T_clss", "#T_ccom", "#T_crglmod", "#T_clidl", "#T_cfv", "#T_cW", "#T_wceq", "#T_clss", "#T_ccom", "#T_crglmod", "#T_cfv", "#T_cW", "#T_c0", "#T_wceq", "#T_clss", "#T_cfv", "#T_c0", "#T_crglmod", "#T_wfn", "#T_cvv", "#T_crglmod", "#T_wfn", "#T_cvv", "#T_wi", "#T_wfun", "#T_crglmod", "#T_wfun", "#T_crglmod", "#T_clss", "#T_ccom", "#T_crglmod", "#T_cfv", "#T_cW", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cW", "#T_clidl", "#T_cfv", "#T_cW", "#T_wceq", "#T_clss", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_fveq1i", "#P_fvco4i", "#P_rlmfn", "#P_df-lidl", "#P_00lss", "#P_fnfun" ]
+}

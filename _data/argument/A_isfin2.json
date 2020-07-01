@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isfin2 on Metamath](http://us.metamath.org/mpegif/isfin2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pweq | |- ( x = A -> ~P x = ~P A ) |\n| 2 | 1 | #P_pweqd | |- ( x = A -> ~P ~P x = ~P ~P A ) |\n| 3 | 2 | #P_raleqdv | |- ( x = A -> ( A. y e. ~P ~P x ( ( y =/= (/) /\\ [C.] Or y ) -> U. y e. y ) <-> A. y e. ~P ~P A ( ( y =/= (/) /\\ [C.] Or y ) -> U. y e. y ) ) ) |\n| 4 |  | #P_df-fin2 | |- Fin2 = { x | A. y e. ~P ~P x ( ( y =/= (/) /\\ [C.] Or y ) -> U. y e. y ) } |\n| 5 | 3, 4 | #P_elab2g | |- ( A e. V -> ( A e. Fin2 <-> A. y e. ~P ~P A ( ( y =/= (/) /\\ [C.] Or y ) -> U. y e. y ) ) ) |",
+  "conclusion" : "#P_isfin2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_vx.wal", "#T_wceq", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_wceq", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_vy.tru", "#T_wne", "#T_c0", "#T_wa", "#T_crpss", "#T_wor", "#T_vy.tru", "#T_wi", "#T_cuni", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_wb", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cpw", "#T_cpw", "#T_cA.wceq", "#T_vy.tru", "#T_wne", "#T_c0", "#T_wa", "#T_crpss", "#T_wor", "#T_vy.tru", "#T_wi", "#T_cuni", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_cfin2", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cpw", "#T_cpw", "#T_vx.wal", "#T_vy.tru", "#T_wne", "#T_c0", "#T_wa", "#T_crpss", "#T_wor", "#T_vy.tru", "#T_wi", "#T_cuni", "#T_vy.tru", "#T_wcel", "#T_vy.tru", "#T_cab--3", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_cA", "#T_wcel", "#T_cfin2", "#T_wb", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cpw", "#T_cpw", "#T_cA", "#T_vy", "#T_wne", "#T_c0", "#T_wa", "#T_crpss", "#T_wor", "#T_vy", "#T_wi", "#T_cuni", "#T_vy", "#T_wcel", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_raleqdv", "#P_df-fin2", "#P_pweqd", "#P_pweq", "#P_elab2g" ]
+}

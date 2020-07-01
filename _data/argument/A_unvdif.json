@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unvdif on Metamath](http://us.metamath.org/mpegif/unvdif.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfun3 | |- ( A u. ( _V \\ A ) ) = ( _V \\ ( ( _V \\ A ) i^i ( _V \\ ( _V \\ A ) ) ) ) |\n| 2 |  | #P_disjdif | |- ( ( _V \\ A ) i^i ( _V \\ ( _V \\ A ) ) ) = (/) |\n| 3 | 2 | #P_difeq2i | |- ( _V \\ ( ( _V \\ A ) i^i ( _V \\ ( _V \\ A ) ) ) ) = ( _V \\ (/) ) |\n| 4 |  | #P_dif0 | |- ( _V \\ (/) ) = _V |\n| 5 | 1, 3, 4 | #P_3eqtri | |- ( A u. ( _V \\ A ) ) = _V |",
+  "conclusion" : "#P_unvdif",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cin", "#T_cvv", "#T_cdif", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_c0", "#T_cvv", "#T_cdif", "#T_c0", "#T_wceq", "#T_cvv", "#T_cA", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dif0", "#P_difeq2i", "#P_3eqtri", "#P_disjdif", "#P_dfun3" ]
+}

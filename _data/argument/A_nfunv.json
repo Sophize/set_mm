@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfunv on Metamath](http://us.metamath.org/mpegif/nfunv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0nelxp | |- -. (/) e. ( _V X. _V ) |\n| 2 |  | #P_0ex | |- (/) e. _V |\n| 3 |  | #P_df-rel | |- ( Rel _V <-> _V C_ ( _V X. _V ) ) |\n| 4 | 3 | #P_biimpi | |- ( Rel _V -> _V C_ ( _V X. _V ) ) |\n| 5 | 4 | #P_sseld | |- ( Rel _V -> ( (/) e. _V -> (/) e. ( _V X. _V ) ) ) |\n| 6 | 2, 5 | #P_mpi | |- ( Rel _V -> (/) e. ( _V X. _V ) ) |\n| 7 | 1, 6 | #P_mto | |- -. Rel _V |\n| 8 |  | #P_funrel | |- ( Fun _V -> Rel _V ) |\n| 9 | 7, 8 | #P_mto | |- -. Fun _V |",
+  "conclusion" : "#P_nfunv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wn", "#T_c0", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_c0", "#T_wcel", "#T_cvv", "#T_wrel", "#T_cvv", "#T_wb", "#T_cvv", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cvv", "#T_wi", "#T_cvv", "#T_wss", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cvv", "#T_wi", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wrel", "#T_cvv", "#T_wi", "#T_c0", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wn", "#T_wrel", "#T_cvv", "#T_wfun", "#T_cvv", "#T_wi", "#T_wrel", "#T_cvv", "#T_wn", "#T_wfun", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0nelxp", "#P_df-rel", "#P_funrel", "#P_sseld", "#P_mpi", "#P_biimpi", "#P_mto", "#P_0ex" ]
+}

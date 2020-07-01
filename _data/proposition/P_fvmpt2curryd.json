@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmpt2curryd on Metamath](http://us.metamath.org/mpegif/fvmpt2curryd.html)"
+  } ],
+  "names" : [ "fvmpt2curryd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt2--1", "#T_cX", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_cY", "#T_cmpt2--4", "#T_cC", "#T_wph", "#T_wi", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cY", "#T_cC", "#T_wcel", "#T_cV", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cW", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cX", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cY", "#T_wph", "#T_wi", "#T_ccur", "#T_cF", "#T_cfv", "#T_cA", "#T_cfv", "#T_cB", "#T_wceq", "#T_cA", "#T_cF", "#T_cB", "#T_cA", "#T_vx", "#T_vy", "#T_cB", "#T_vx", "#T_vy", "#T_cV", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the value of a curried operation given in maps-to notation is the operation value of the original operation.  (Contributed by AV, 27-Oct-2019.) ",
+  "statement" : "fvmpt2curryd.f $e |- F = ( x e. X , y e. Y |-> C ) $.\nfvmpt2curryd.c $e |- ( ph -> A. x e. X A. y e. Y C e. V ) $.\nfvmpt2curryd.y $e |- ( ph -> Y e. W ) $.\nfvmpt2curryd.a $e |- ( ph -> A e. X ) $.\nfvmpt2curryd.b $e |- ( ph -> B e. Y ) $.\nfvmpt2curryd $p |- ( ph -> ( ( curry F ` A ) ` B ) = ( A F B ) ) $.\n$d A x y $.\n$d B x y $.\n$d V x y $.\n$d X x y $.\n$d Y x y $.\n$d ph x y $."
+}

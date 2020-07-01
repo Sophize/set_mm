@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isrngohom on Metamath](http://us.metamath.org/mpegif/isrngohom.html)"
+  } ],
+  "names" : [ "isrngohom" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cR", "#T_cH", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cR", "#T_cX", "#T_wceq", "#T_crn", "#T_cG", "#T_cU", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cH", "#T_cJ", "#T_wceq", "#T_c1st", "#T_cfv", "#T_cS", "#T_cK", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cS", "#T_cY", "#T_wceq", "#T_crn", "#T_cJ", "#T_cV", "#T_wceq", "#T_cgi", "#T_cfv", "#T_cK", "#T_cR", "#T_wcel", "#T_crngo", "#T_wa", "#T_cS", "#T_wcel", "#T_crngo", "#T_wi", "#T_cF", "#T_wcel", "#T_cR", "#T_crnghom", "#T_cS", "#T_wb", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_cY", "#T_w3a--1", "#T_cF", "#T_cfv", "#T_cU", "#T_wceq", "#T_cV", "#T_w3a--2", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cX", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cX", "#T_cF", "#T_cfv", "#T_vx", "#T_cG", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_cJ", "#T_cF", "#T_cfv", "#T_vy", "#T_wa", "#T_cF", "#T_cfv", "#T_vx", "#T_cH", "#T_vy", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx", "#T_cK", "#T_cF", "#T_cfv", "#T_vy", "#T_cF", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cX", "#T_vx", "#T_vy", "#T_cY", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The predicate \"is a ring homomorphism from ` R ` to ` S ` .\" (Contributed by Jeff Madsen, 19-Jun-2010.) ",
+  "statement" : "rnghomval.1 $e |- G = ( 1st ` R ) $.\nrnghomval.2 $e |- H = ( 2nd ` R ) $.\nrnghomval.3 $e |- X = ran G $.\nrnghomval.4 $e |- U = ( GId ` H ) $.\nrnghomval.5 $e |- J = ( 1st ` S ) $.\nrnghomval.6 $e |- K = ( 2nd ` S ) $.\nrnghomval.7 $e |- Y = ran J $.\nrnghomval.8 $e |- V = ( GId ` K ) $.\nisrngohom $p |- ( ( R e. RingOps /\\ S e. RingOps ) -> ( F e. ( R RngHom S ) <-> ( F : X --> Y /\\ ( F ` U ) = V /\\ A. x e. X A. y e. X ( ( F ` ( x G y ) ) = ( ( F ` x ) J ( F ` y ) ) /\\ ( F ` ( x H y ) ) = ( ( F ` x ) K ( F ` y ) ) ) ) ) ) $.\n$d F x y $.\n$d R x y $.\n$d S x y $.\n$d X x y $.\n$d Y y $."
+}

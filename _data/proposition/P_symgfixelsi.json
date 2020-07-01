@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgfixelsi on Metamath](http://us.metamath.org/mpegif/symgfixelsi.html)"
+  } ],
+  "names" : [ "symgfixelsi" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cP", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cQ", "#T_wceq", "#T_crab--1", "#T_vq", "#T_crab--2", "#T_cP", "#T_crab--3", "#T_vq", "#T_cfv", "#T_cK", "#T_wceq", "#T_cK", "#T_crab--4", "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cD", "#T_wceq", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cF", "#T_wcel", "#T_cQ", "#T_wi", "#T_cF", "#T_cres", "#T_cD", "#T_wcel", "#T_cS", "#T_cK", "#T_vq", "#T_cP", "#T_vq" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The restriction of a permutation fixing an element to the set with this element removed is an element of the restricted symmetric group. (Contributed by AV, 4-Jan-2019.) ",
+  "statement" : "symgfixf.p $e |- P = ( Base ` ( SymGrp ` N ) ) $.\nsymgfixf.q $e |- Q = { q e. P | ( q ` K ) = K } $.\nsymgfixf.s $e |- S = ( Base ` ( SymGrp ` ( N \\ { K } ) ) ) $.\nsymgfixf.d $e |- D = ( N \\ { K } ) $.\nsymgfixelsi $p |- ( ( K e. N /\\ F e. Q ) -> ( F |` D ) e. S ) $.\n$d K q $.\n$d P q $."
+}

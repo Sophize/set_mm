@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See supadd on Metamath](http://us.metamath.org/mpegif/supadd.html)"
+  } ],
+  "names" : [ "supadd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_vy", "#T_cle", "#T_vx", "#T_wph", "#T_wi", "#T_cB", "#T_wss", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cr", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_vy", "#T_cle", "#T_vx", "#T_cC", "#T_wceq", "#T_cab--1", "#T_vz", "#T_cab--2", "#T_wrex--1", "#T_vv", "#T_wrex--2", "#T_cA", "#T_wrex--1", "#T_vb", "#T_wrex--2", "#T_cB", "#T_vz", "#T_wceq", "#T_vv", "#T_caddc", "#T_vb", "#T_cab--3", "#T_wph", "#T_wi", "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_caddc", "#T_csup--1", "#T_cB", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wceq", "#T_csup--1", "#T_cC", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_cA", "#T_vb", "#T_vv", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vb", "#T_vv", "#T_vx", "#T_vy", "#T_vz", "#T_cC", "#T_vx", "#T_vb", "#T_wph", "#T_vv", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The supremum function distributes over addition in a sense similar to that in ~ supmul .  (Contributed by Brendan Leahy, 26-Sep-2017.) ",
+  "statement" : "supadd.a1 $e |- ( ph -> A C_ RR ) $.\nsupadd.a2 $e |- ( ph -> A =/= (/) ) $.\nsupadd.a3 $e |- ( ph -> E. x e. RR A. y e. A y <_ x ) $.\nsupadd.b1 $e |- ( ph -> B C_ RR ) $.\nsupadd.b2 $e |- ( ph -> B =/= (/) ) $.\nsupadd.b3 $e |- ( ph -> E. x e. RR A. y e. B y <_ x ) $.\nsupadd.c $e |- C = { z | E. v e. A E. b e. B z = ( v + b ) } $.\nsupadd $p |- ( ph -> ( sup ( A , RR , < ) + sup ( B , RR , < ) ) = sup ( C , RR , < ) ) $.\n$d A b v x y z $.\n$d B b v x y z $.\n$d C x $.\n$d b ph v z $."
+}

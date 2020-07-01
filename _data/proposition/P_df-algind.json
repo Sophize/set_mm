@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-algind on Metamath](http://us.metamath.org/mpegif/df-algind.html)"
+  } ],
+  "names" : [ "df-algind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cai", "#T_wceq", "#T_vw", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vk", "#T_cmpt2--3", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vw", "#T_cmpt2--4", "#T_crab--1", "#T_vv", "#T_crab--2", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vw", "#T_crab--3", "#T_wfun", "#T_ccnv", "#T_vf", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_vv", "#T_cmpl", "#T_vw", "#T_cress", "#T_vk", "#T_cmpt--2", "#T_vv", "#T_ces", "#T_vw", "#T_cfv", "#T_vk", "#T_cfv", "#T_vf", "#T_cfv", "#T_cid", "#T_cres", "#T_vv", "#T_crab--4", "#T_vf", "#T_vk", "#T_vv", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the predicate \"the set ` v ` is algebraically independent in the algebra ` w ` \".  A collection of vectors is algebraically independent if no nontrivial polynomial with elements from the subset evaluates to zero.  (Contributed by Mario Carneiro, 21-Mar-2015.) ",
+  "statement" : "df-algind $p |- AlgInd = ( w e. _V , k e. ~P ( Base ` w ) |-> { v e. ~P ( Base ` w ) | Fun `' ( f e. ( Base ` ( v mPoly ( w |`s k ) ) ) |-> ( ( ( ( v evalSub w ) ` k ) ` f ) ` ( _I |` v ) ) ) } ) $.\n$d f k v w $."
+}

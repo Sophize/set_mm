@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See times2 on Metamath](http://us.metamath.org/mpegif/times2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_2cn | |- 2 e. CC |\n| 2 |  | #P_mulcom | |- ( ( A e. CC /\\ 2 e. CC ) -> ( A x. 2 ) = ( 2 x. A ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. CC -> ( A x. 2 ) = ( 2 x. A ) ) |\n| 4 |  | #P_2times | |- ( A e. CC -> ( 2 x. A ) = ( A + A ) ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( A e. CC -> ( A x. 2 ) = ( A + A ) ) |",
+  "conclusion" : "#P_times2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c2", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_c2", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_c2", "#T_wceq", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmul", "#T_c2", "#T_wceq", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_c2", "#T_cmul", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_caddc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_cmul", "#T_c2", "#T_wceq", "#T_cA", "#T_caddc", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mulcom", "#P_eqtrd", "#P_2cn", "#P_2times", "#P_mpan2" ]
+}

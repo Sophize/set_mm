@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfiin3g on Metamath](http://us.metamath.org/mpegif/dfiin3g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dfiin2g | |- ( A. x e. A B e. C -> |^|_ x e. A B = |^| { y | E. x e. A y = B } ) |\n| 2 |  | #P_eqid | |- ( x e. A |-> B ) = ( x e. A |-> B ) |\n| 3 | 2 | #P_rnmpt | |- ran ( x e. A |-> B ) = { y | E. x e. A y = B } |\n| 4 | 3 | #P_inteqi | |- |^| ran ( x e. A |-> B ) = |^| { y | E. x e. A y = B } |\n| 5 | 1, 4 | #P_syl6eqr | |- ( A. x e. A B e. C -> |^|_ x e. A B = |^| ran ( x e. A |-> B ) ) |",
+  "conclusion" : "#P_dfiin3g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cC", "#T_wi", "#T_ciin--1", "#T_vx.wal", "#T_ciin--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_cab--3", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_crn", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_cab--3", "#T_cint", "#T_crn", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vy.tru", "#T_cab--2", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cA.wceq", "#T_vy.tru", "#T_wceq", "#T_cB.wceq", "#T_cab--3", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cC", "#T_wi", "#T_ciin--1", "#T_vx", "#T_ciin--2", "#T_cA", "#T_cB", "#T_wceq", "#T_cint", "#T_crn", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_rnmpt", "#P_inteqi", "#P_syl6eqr", "#P_dfiin2g" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isumcl on Metamath](http://us.metamath.org/mpegif/isumcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | isumcl.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | isumcl.2 | |- ( ph -> M e. ZZ ) |\n| 3 |  | isumcl.3 | |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = A ) |\n| 4 |  | isumcl.4 | |- ( ( ph /\\ k e. Z ) -> A e. CC ) |\n| 5 |  | isumcl.5 | |- ( ph -> seq M ( + , F ) e. dom ~~> ) |\n| 6 | 1, 2, 3, 4 | #P_isum | |- ( ph -> sum_ k e. Z A = ( ~~> ` seq M ( + , F ) ) ) |\n| 7 |  | #P_fclim | |- ~~> : dom ~~> --> CC |\n| 8 |  | #P_ffvelrn | |- ( ( ~~> : dom ~~> --> CC /\\ seq M ( + , F ) e. dom ~~> ) -> ( ~~> ` seq M ( + , F ) ) e. CC ) |\n| 9 | 7, 5, 8 | #P_sylancr | |- ( ph -> ( ~~> ` seq M ( + , F ) ) e. CC ) |\n| 10 | 6, 9 | #P_eqeltrd | |- ( ph -> sum_ k e. Z A e. CC ) |",
+  "conclusion" : "#P_isumcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cA", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA.wceq", "#T_wceq", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cli", "#T_wf--1", "#T_cdm", "#T_cli", "#T_wf--2", "#T_cc", "#T_cli", "#T_wf--1", "#T_cdm", "#T_cli", "#T_wf--2", "#T_cc", "#T_wa", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cdm", "#T_cli", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cli", "#T_cfv", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cZ", "#T_cA", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffvelrn", "#P_sylancr", "#P_fclim", "#P_eqeltrd", "#P_isum" ]
+}

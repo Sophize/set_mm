@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See edgval on Metamath](http://us.metamath.org/mpegif/edgval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ng\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-edg | |- Edges = ( g e. _V |-> ran ( 2nd ` g ) ) |\n| 2 | 1 | #P_a1i | |- ( G e. V -> Edges = ( g e. _V |-> ran ( 2nd ` g ) ) ) |\n| 3 |  | #P_fveq2 | |- ( g = G -> ( 2nd ` g ) = ( 2nd ` G ) ) |\n| 4 | 3 | #P_adantl | |- ( ( G e. V /\\ g = G ) -> ( 2nd ` g ) = ( 2nd ` G ) ) |\n| 5 | 4 | #P_rneqd | |- ( ( G e. V /\\ g = G ) -> ran ( 2nd ` g ) = ran ( 2nd ` G ) ) |\n| 6 |  | #P_elex | |- ( G e. V -> G e. _V ) |\n| 7 |  | #P_fvex | |- ( 2nd ` G ) e. _V |\n| 8 | 7 | #P_rnex | |- ran ( 2nd ` G ) e. _V |\n| 9 | 8 | #P_a1i | |- ( G e. V -> ran ( 2nd ` G ) e. _V ) |\n| 10 | 2, 5, 6, 9 | #P_fvmptd | |- ( G e. V -> ( Edges ` G ) = ran ( 2nd ` G ) ) |",
+  "conclusion" : "#P_edgval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vg", "#T_cedg", "#T_wceq", "#T_cbvex4v.vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cbvex4v.vg", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cedg", "#T_wceq", "#T_cbvex4v.vg", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cbvex4v.vg", "#T_cbvex4v.vg", "#T_wceq", "#T_cG", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cV", "#T_wa", "#T_cbvex4v.vg", "#T_wceq", "#T_cG", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cV", "#T_wa", "#T_cbvex4v.vg", "#T_wceq", "#T_cG", "#T_wi", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cbvex4v.vg", "#T_wceq", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cG", "#T_wcel", "#T_cvv", "#T_c2nd", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cG", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_cV", "#T_wi", "#T_cedg", "#T_cfv", "#T_cG", "#T_wceq", "#T_crn", "#T_c2nd", "#T_cfv", "#T_cG" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_elex", "#P_fveq2", "#P_rneqd", "#P_a1i", "#P_fvmptd", "#P_fvex", "#P_df-edg", "#P_rnex" ]
+}

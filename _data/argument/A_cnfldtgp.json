@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfldtgp on Metamath](http://us.metamath.org/mpegif/cnfldtgp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cnring | |- CCfld e. Ring |\n| 2 |  | #P_ringgrp | |- ( CCfld e. Ring -> CCfld e. Grp ) |\n| 3 | 1, 2 | #P_ax-mp | |- CCfld e. Grp |\n| 4 |  | #P_cnfldtps | |- CCfld e. TopSp |\n| 5 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 6 | 5 | #P_subcn | |- - e. ( ( ( TopOpen ` CCfld ) tX ( TopOpen ` CCfld ) ) Cn ( TopOpen ` CCfld ) ) |\n| 7 |  | #P_cnfldsub | |- - = ( -g ` CCfld ) |\n| 8 | 5, 7 | #P_istgp2 | |- ( CCfld e. TopGrp <-> ( CCfld e. Grp /\\ CCfld e. TopSp /\\ - e. ( ( ( TopOpen ` CCfld ) tX ( TopOpen ` CCfld ) ) Cn ( TopOpen ` CCfld ) ) ) ) |\n| 9 | 3, 4, 6, 8 | #P_mpbir3an | |- CCfld e. TopGrp |",
+  "conclusion" : "#P_cnfldtgp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ccnfld", "#T_wcel", "#T_crg", "#T_ccnfld", "#T_wcel", "#T_crg", "#T_wi", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_ccnfld", "#T_wcel", "#T_ctps", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cmin", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cmin", "#T_wceq", "#T_csg", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ctgp", "#T_wb", "#T_ccnfld", "#T_wcel", "#T_cgrp", "#T_w3a--1", "#T_ccnfld", "#T_wcel", "#T_ctps", "#T_w3a--2", "#T_cmin", "#T_wcel", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ctx", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccn", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ctgp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cnring", "#P_ax-mp", "#P_eqid", "#P_cnfldsub", "#P_istgp2", "#P_mpbir3an", "#P_cnfldtps", "#P_subcn", "#P_ringgrp" ]
+}

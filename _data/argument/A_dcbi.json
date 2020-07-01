@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dcbi on Metamath](http://us.metamath.org/mpegif/dcbi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dcim | |- ( DECID ph -> ( DECID ps -> DECID ( ph -> ps ) ) ) |\n| 2 |  | #P_dcim | |- ( DECID ps -> ( DECID ph -> DECID ( ps -> ph ) ) ) |\n| 3 | 2 | #P_com12 | |- ( DECID ph -> ( DECID ps -> DECID ( ps -> ph ) ) ) |\n| 4 |  | #P_dcan | |- ( DECID ( ph -> ps ) -> ( DECID ( ps -> ph ) -> DECID ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) ) |\n| 5 | 1, 3, 4 | #P_syl6c | |- ( DECID ph -> ( DECID ps -> DECID ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) ) |\n| 6 |  | #P_dfbi2 | |- ( ( ph <-> ps ) <-> ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) |\n| 7 | 6 | #P_dcbii | |- ( DECID ( ph <-> ps ) <-> DECID ( ( ph -> ps ) /\\ ( ps -> ph ) ) ) |\n| 8 | 5, 7 | #P_syl6ibr | |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) |",
+  "conclusion" : "#P_dcbi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wdc", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dcim", "#P_syl6c", "#P_dcbii", "#P_syl6ibr", "#P_dcan", "#P_dfbi2", "#P_com12" ]
+}

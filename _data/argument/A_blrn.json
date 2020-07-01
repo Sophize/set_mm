@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See blrn on Metamath](http://us.metamath.org/mpegif/blrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_blf | |- ( D e. ( *Met ` X ) -> ( ball ` D ) : ( X X. RR* ) --> ~P X ) |\n| 2 |  | #P_ffn | |- ( ( ball ` D ) : ( X X. RR* ) --> ~P X -> ( ball ` D ) Fn ( X X. RR* ) ) |\n| 3 |  | #P_ovelrn | |- ( ( ball ` D ) Fn ( X X. RR* ) -> ( A e. ran ( ball ` D ) <-> E. x e. X E. r e. RR* A = ( x ( ball ` D ) r ) ) ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( D e. ( *Met ` X ) -> ( A e. ran ( ball ` D ) <-> E. x e. X E. r e. RR* A = ( x ( ball ` D ) r ) ) ) |",
+  "conclusion" : "#P_blrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cbl", "#T_cfv", "#T_cD", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cX", "#T_cbl", "#T_cfv", "#T_cD", "#T_wf--1", "#T_cX", "#T_cxp", "#T_cxr", "#T_wf--2", "#T_cpw", "#T_cX", "#T_wi", "#T_cbl", "#T_cfv", "#T_cD", "#T_wfn", "#T_cX", "#T_cxp", "#T_cxr", "#T_cbl", "#T_cfv", "#T_cD", "#T_wfn", "#T_cX", "#T_cxp", "#T_cxr", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cX", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cxr", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cbl", "#T_cfv", "#T_cD", "#T_vr", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cA", "#T_wcel", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_wb", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cX", "#T_wrex--1", "#T_vr", "#T_wrex--2", "#T_cxr", "#T_cA", "#T_wceq", "#T_vx", "#T_cbl", "#T_cfv", "#T_cD", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ffn", "#P_3syl", "#P_blf", "#P_ovelrn" ]
+}

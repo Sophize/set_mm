@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mrissd on Metamath](http://us.metamath.org/mpegif/mrissd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mriss.1 | |- I = ( mrInd ` A ) |\n| 2 |  | mrissd.2 | |- ( ph -> A e. ( Moore ` X ) ) |\n| 3 |  | mrissd.3 | |- ( ph -> S e. I ) |\n| 4 | 1 | #P_mriss | |- ( ( A e. ( Moore ` X ) /\\ S e. I ) -> S C_ X ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( ph -> S C_ X ) |",
+  "conclusion" : "#P_mrissd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_cA.wceq", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wa", "#T_cS", "#T_wcel", "#T_cI", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_mriss" ]
+}

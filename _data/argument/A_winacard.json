@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See winacard on Metamath](http://us.metamath.org/mpegif/winacard.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elwina | |- ( A e. InaccW <-> ( A =/= (/) /\\ ( cf ` A ) = A /\\ A. x e. A E. y e. A x ~< y ) ) |\n| 2 |  | #P_cardcf | |- ( card ` ( cf ` A ) ) = ( cf ` A ) |\n| 3 |  | #P_fveq2 | |- ( ( cf ` A ) = A -> ( card ` ( cf ` A ) ) = ( card ` A ) ) |\n| 4 |  | #P_id | |- ( ( cf ` A ) = A -> ( cf ` A ) = A ) |\n| 5 | 2, 3, 4 | #P_3eqtr3a | |- ( ( cf ` A ) = A -> ( card ` A ) = A ) |\n| 6 | 5 | #P_3ad2ant2 | |- ( ( A =/= (/) /\\ ( cf ` A ) = A /\\ A. x e. A E. y e. A x ~< y ) -> ( card ` A ) = A ) |\n| 7 | 1, 6 | #P_sylbi | |- ( A e. InaccW -> ( card ` A ) = A ) |",
+  "conclusion" : "#P_winacard",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cA.wceq", "#T_wcel", "#T_cwina", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_w3a--1", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_csdm", "#T_vy.tru", "#T_ccrd", "#T_cfv", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_ccrd", "#T_cfv", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_w3a--1", "#T_ccf", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_w3a--2", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cA.wceq", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_cA.wceq", "#T_vx.wal", "#T_csdm", "#T_vy.tru", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cwina", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cardcf", "#P_3ad2ant2", "#P_elwina", "#P_fveq2", "#P_3eqtr3a", "#P_id", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See stdpc4 on Metamath](http://us.metamath.org/mpegif/stdpc4.html)"
+  } ],
+  "names" : [ "stdpc4" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wsb--1", "#T_vy", "#T_wsb--2", "#T_vx", "#T_wsb--3", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The specialization axiom of standard predicate calculus.  It states that if a statement ` ph ` holds for all ` x ` , then it also holds for the specific case of ` y ` (properly) substituted for ` x ` .  Translated to traditional notation, it can be read:  \" ` A. x ph ( x ) -> ph ( y ) ` , provided that ` y ` is free for ` x ` in ` ph ( x ) ` .\"  Axiom 4 of [Mendelson] p. 69.  See also ~ spsbc and ~ rspsbc .  (Contributed by NM, 14-May-1993.) \n\n---\n\n The specialization axiom of standard predicate calculus.  It states that if a statement ` ph ` holds for all ` x ` , then it also holds for the specific case of ` y ` (properly) substituted for ` x ` .  Translated to traditional notation, it can be read:  \" ` A. x ph ( x ) -> ph ( y ) ` , provided that ` y ` is free for ` x ` in ` ph ( x ) ` .\"  Axiom 4 of [Mendelson] p. 69.  (Contributed by NM, 5-Aug-1993.) ",
+  "statement" : "stdpc4 $p |- ( A. x ph -> [ y / x ] ph ) $."
+}

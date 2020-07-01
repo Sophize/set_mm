@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3anibar on Metamath](http://us.metamath.org/mpegif/3anibar.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3anibar.1 | |- ( ( ph /\\ ps /\\ ch ) -> ( th <-> ( ch /\\ ta ) ) ) |\n| 2 |  | #P_simp3 | |- ( ( ph /\\ ps /\\ ch ) -> ch ) |\n| 3 | 2 | #P_biantrurd | |- ( ( ph /\\ ps /\\ ch ) -> ( ta <-> ( ch /\\ ta ) ) ) |\n| 4 | 1, 3 | #P_bitr4d | |- ( ( ph /\\ ps /\\ ch ) -> ( th <-> ta ) ) |",
+  "conclusion" : "#P_3anibar",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wa", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wch", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wta", "#T_wb", "#T_wch", "#T_wa", "#T_wta", "#T_wph", "#T_w3a--1", "#T_wps", "#T_w3a--2", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_simp3", "#P_bitr4d", "#P_biantrurd" ]
+}

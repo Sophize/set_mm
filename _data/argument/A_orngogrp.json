@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See orngogrp on Metamath](http://us.metamath.org/mpegif/orngogrp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na b\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 2 |  | #P_eqid | |- ( 0g ` R ) = ( 0g ` R ) |\n| 3 |  | #P_eqid | |- ( .r ` R ) = ( .r ` R ) |\n| 4 |  | #P_eqid | |- ( le ` R ) = ( le ` R ) |\n| 5 | 1, 2, 3, 4 | #P_isorng | |- ( R e. oRing <-> ( R e. Ring /\\ R e. oGrp /\\ A. a e. ( Base ` R ) A. b e. ( Base ` R ) ( ( ( 0g ` R ) ( le ` R ) a /\\ ( 0g ` R ) ( le ` R ) b ) -> ( 0g ` R ) ( le ` R ) ( a ( .r ` R ) b ) ) ) ) |\n| 6 | 5 | #P_simp2bi | |- ( R e. oRing -> R e. oGrp ) |",
+  "conclusion" : "#P_orngogrp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_vb", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cR", "#T_cmulr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmulr", "#T_cfv", "#T_cR", "#T_cple", "#T_cfv", "#T_cR", "#T_wceq", "#T_cple", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_corng", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_w3a--1", "#T_cR", "#T_wcel", "#T_cogrp", "#T_w3a--2", "#T_wral--1", "#T_va", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_wral--1", "#T_vb", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_c0g", "#T_cfv", "#T_cR", "#T_cple", "#T_cfv", "#T_cR", "#T_va", "#T_wa", "#T_c0g", "#T_cfv", "#T_cR", "#T_cple", "#T_cfv", "#T_cR", "#T_vb", "#T_wi", "#T_c0g", "#T_cfv", "#T_cR", "#T_cple", "#T_cfv", "#T_cR", "#T_va", "#T_cmulr", "#T_cfv", "#T_cR", "#T_vb", "#T_cR", "#T_wcel", "#T_corng", "#T_wi", "#T_cR", "#T_wcel", "#T_cogrp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isorng", "#P_simp2bi" ]
+}

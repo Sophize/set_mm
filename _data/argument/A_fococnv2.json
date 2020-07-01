@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fococnv2 on Metamath](http://us.metamath.org/mpegif/fococnv2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fofun | |- ( F : A -onto-> B -> Fun F ) |\n| 2 |  | #P_funcocnv2 | |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) |\n| 3 | 1, 2 | #P_syl | |- ( F : A -onto-> B -> ( F o. `' F ) = ( _I |` ran F ) ) |\n| 4 |  | #P_forn | |- ( F : A -onto-> B -> ran F = B ) |\n| 5 | 4 | #P_reseq2d | |- ( F : A -onto-> B -> ( _I |` ran F ) = ( _I |` B ) ) |\n| 6 | 3, 5 | #P_eqtrd | |- ( F : A -onto-> B -> ( F o. `' F ) = ( _I |` B ) ) |",
+  "conclusion" : "#P_fococnv2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_wfun", "#T_cF", "#T_wfun", "#T_cF", "#T_wi", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_crn", "#T_cF", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_crn", "#T_cF", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wceq", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA.wceq", "#T_wfo--2", "#T_cB.wceq", "#T_wi", "#T_cid", "#T_cres", "#T_crn", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cB.wceq", "#T_cF", "#T_wfo--1", "#T_cA", "#T_wfo--2", "#T_cB", "#T_wi", "#T_cF", "#T_ccom", "#T_ccnv", "#T_cF", "#T_wceq", "#T_cid", "#T_cres", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtrd", "#P_funcocnv2", "#P_syl", "#P_reseq2d", "#P_fofun", "#P_forn" ]
+}

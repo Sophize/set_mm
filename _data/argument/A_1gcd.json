@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 1gcd on Metamath](http://us.metamath.org/mpegif/1gcd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1z | |- 1 e. ZZ |\n| 2 |  | #P_gcdcom | |- ( ( 1 e. ZZ /\\ M e. ZZ ) -> ( 1 gcd M ) = ( M gcd 1 ) ) |\n| 3 | 1, 2 | #P_mpan | |- ( M e. ZZ -> ( 1 gcd M ) = ( M gcd 1 ) ) |\n| 4 |  | #P_gcd1 | |- ( M e. ZZ -> ( M gcd 1 ) = 1 ) |\n| 5 | 3, 4 | #P_eqtrd | |- ( M e. ZZ -> ( 1 gcd M ) = 1 ) |",
+  "conclusion" : "#P_1gcd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cz", "#T_c1", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cgcd", "#T_cM", "#T_wceq", "#T_cM", "#T_cgcd", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cgcd", "#T_cM", "#T_wceq", "#T_cM", "#T_cgcd", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cgcd", "#T_c1", "#T_wceq", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_c1", "#T_cgcd", "#T_cM", "#T_wceq", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_gcd1", "#P_eqtrd", "#P_gcdcom", "#P_1z", "#P_mpan" ]
+}

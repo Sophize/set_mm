@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chlej2 on Metamath](http://us.metamath.org/mpegif/chlej2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chsh | |- ( A e. CH -> A e. SH ) |\n| 2 |  | #P_chsh | |- ( B e. CH -> B e. SH ) |\n| 3 |  | #P_chsh | |- ( C e. CH -> C e. SH ) |\n| 4 |  | #P_shlej2 | |- ( ( ( A e. SH /\\ B e. SH /\\ C e. SH ) /\\ A C_ B ) -> ( C vH A ) C_ ( C vH B ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anl | |- ( ( ( A e. CH /\\ B e. CH /\\ C e. CH ) /\\ A C_ B ) -> ( C vH A ) C_ ( C vH B ) ) |",
+  "conclusion" : "#P_chlej2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_cB.wceq", "#T_wcel", "#T_cch", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_cC", "#T_wcel", "#T_cch", "#T_wi", "#T_cC", "#T_wcel", "#T_csh", "#T_cA.wceq", "#T_wcel", "#T_csh", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_csh", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_csh", "#T_wa", "#T_cA.wceq", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cC", "#T_chj", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_chj", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cch", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cch", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cch", "#T_wa", "#T_cA", "#T_wss", "#T_cB", "#T_wi", "#T_cC", "#T_chj", "#T_cA", "#T_wss", "#T_cC", "#T_chj", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_shlej2", "#P_chsh", "#P_syl3anl" ]
+}

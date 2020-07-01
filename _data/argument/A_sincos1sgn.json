@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sincos1sgn on Metamath](http://us.metamath.org/mpegif/sincos1sgn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1re | |- 1 e. RR |\n| 2 |  | #P_0lt1 | |- 0 < 1 |\n| 3 |  | #P_1le1 | |- 1 <_ 1 |\n| 4 |  | #P_0xr | |- 0 e. RR* |\n| 5 |  | #P_elioc2 | |- ( ( 0 e. RR* /\\ 1 e. RR ) -> ( 1 e. ( 0 (,] 1 ) <-> ( 1 e. RR /\\ 0 < 1 /\\ 1 <_ 1 ) ) ) |\n| 6 | 4, 1, 5 | #P_mp2an | |- ( 1 e. ( 0 (,] 1 ) <-> ( 1 e. RR /\\ 0 < 1 /\\ 1 <_ 1 ) ) |\n| 7 | 1, 2, 3, 6 | #P_mpbir3an | |- 1 e. ( 0 (,] 1 ) |\n| 8 |  | #P_sin01gt0 | |- ( 1 e. ( 0 (,] 1 ) -> 0 < ( sin ` 1 ) ) |\n| 9 |  | #P_cos01gt0 | |- ( 1 e. ( 0 (,] 1 ) -> 0 < ( cos ` 1 ) ) |\n| 10 | 8, 9 | #P_jca | |- ( 1 e. ( 0 (,] 1 ) -> ( 0 < ( sin ` 1 ) /\\ 0 < ( cos ` 1 ) ) ) |\n| 11 | 7, 10 | #P_ax-mp | |- ( 0 < ( sin ` 1 ) /\\ 0 < ( cos ` 1 ) ) |",
+  "conclusion" : "#P_sincos1sgn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wcel", "#T_cr", "#T_cc0", "#T_clt", "#T_c1", "#T_c1", "#T_cle", "#T_c1", "#T_cc0", "#T_wcel", "#T_cxr", "#T_cc0", "#T_wcel", "#T_cxr", "#T_wa", "#T_c1", "#T_wcel", "#T_cr", "#T_wi", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_wb", "#T_c1", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cc0", "#T_clt", "#T_c1", "#T_w3a--2", "#T_c1", "#T_cle", "#T_c1", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_wb", "#T_c1", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cc0", "#T_clt", "#T_c1", "#T_w3a--2", "#T_c1", "#T_cle", "#T_c1", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_wi", "#T_cc0", "#T_clt", "#T_csin", "#T_cfv", "#T_c1", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_wi", "#T_cc0", "#T_clt", "#T_ccos", "#T_cfv", "#T_c1", "#T_c1", "#T_wcel", "#T_cc0", "#T_cioc", "#T_c1", "#T_wi", "#T_cc0", "#T_clt", "#T_csin", "#T_cfv", "#T_c1", "#T_wa", "#T_cc0", "#T_clt", "#T_ccos", "#T_cfv", "#T_c1", "#T_cc0", "#T_clt", "#T_csin", "#T_cfv", "#T_c1", "#T_wa", "#T_cc0", "#T_clt", "#T_ccos", "#T_cfv", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2an", "#P_ax-mp", "#P_cos01gt0", "#P_0lt1", "#P_0xr", "#P_mpbir3an", "#P_1le1", "#P_elioc2", "#P_jca", "#P_1re", "#P_sin01gt0" ]
+}

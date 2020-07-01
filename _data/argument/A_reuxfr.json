@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See reuxfr on Metamath](http://us.metamath.org/mpegif/reuxfr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | reuxfr.1 | |- ( y e. B -> A e. B ) |\n| 2 |  | reuxfr.2 | |- ( x e. B -> E! y e. B x = A ) |\n| 3 |  | reuxfr.3 | |- ( x = A -> ( ph <-> ps ) ) |\n| 4 | 1 | #P_adantl | |- ( ( T. /\\ y e. B ) -> A e. B ) |\n| 5 | 2 | #P_adantl | |- ( ( T. /\\ x e. B ) -> E! y e. B x = A ) |\n| 6 | 4, 5, 3 | #P_reuxfrd | |- ( T. -> ( E! x e. B ph <-> E! y e. B ps ) ) |\n| 7 | 6 | #P_trud | |- ( E! x e. B ph <-> E! y e. B ps ) |",
+  "conclusion" : "#P_reuxfr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wcel", "#T_cB", "#T_wi", "#T_cA", "#T_wcel", "#T_cB", "#T_vx", "#T_wcel", "#T_cB", "#T_wi", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cB", "#T_vx", "#T_wceq", "#T_cA", "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wtru", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wtru", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cB.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wtru", "#T_wi", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cB.wceq", "#T_wph", "#T_wb", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cB.wceq", "#T_wps", "#T_wreu--1", "#T_vx", "#T_wreu--2", "#T_cB", "#T_wph", "#T_wb", "#T_wreu--1", "#T_vy", "#T_wreu--2", "#T_cB", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trud", "#P_adantl", "#P_reuxfrd" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fglmod on Metamath](http://us.metamath.org/mpegif/fglmod.html)"
+  } ],
+  "argumentText" : "ARGUMENT\na\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-lfig | |- LFinGen = { a e. LMod | ( Base ` a ) e. ( ( LSpan ` a ) \" ( ~P ( Base ` a ) i^i Fin ) ) } |\n| 2 |  | #P_ssrab2 | |- { a e. LMod | ( Base ` a ) e. ( ( LSpan ` a ) \" ( ~P ( Base ` a ) i^i Fin ) ) } C_ LMod |\n| 3 | 1, 2 | #P_eqsstri | |- LFinGen C_ LMod |\n| 4 | 3 | #P_sseli | |- ( M e. LFinGen -> M e. LMod ) |",
+  "conclusion" : "#P_fglmod",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_va", "#T_clfig", "#T_wceq", "#T_crab--1", "#T_va", "#T_crab--2", "#T_clmod", "#T_crab--3", "#T_cbs", "#T_cfv", "#T_va", "#T_wcel", "#T_clspn", "#T_cfv", "#T_va", "#T_cima", "#T_cpw", "#T_cbs", "#T_cfv", "#T_va", "#T_cin", "#T_cfn", "#T_crab--4", "#T_crab--1", "#T_va", "#T_crab--2", "#T_clmod", "#T_crab--3", "#T_cbs", "#T_cfv", "#T_va", "#T_wcel", "#T_clspn", "#T_cfv", "#T_va", "#T_cima", "#T_cpw", "#T_cbs", "#T_cfv", "#T_va", "#T_cin", "#T_cfn", "#T_crab--4", "#T_wss", "#T_clmod", "#T_clfig", "#T_wss", "#T_clmod", "#T_cM", "#T_wcel", "#T_clfig", "#T_wi", "#T_cM", "#T_wcel", "#T_clmod" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ssrab2", "#P_sseli", "#P_df-lfig", "#P_eqsstri" ]
+}

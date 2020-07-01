@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See itg2split on Metamath](http://us.metamath.org/mpegif/itg2split.html)"
+  } ],
+  "names" : [ "itg2split" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cdm", "#T_cvol", "#T_wph", "#T_wi", "#T_covol", "#T_cfv", "#T_cA", "#T_cin", "#T_cB", "#T_wceq", "#T_cc0", "#T_wph", "#T_wi", "#T_cU", "#T_wceq", "#T_cA", "#T_cun", "#T_cB", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cU", "#T_wi", "#T_cC", "#T_wcel", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wcel", "#T_cA", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cc0", "#T_cG", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wcel", "#T_cB", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cc0", "#T_cH", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wcel", "#T_cU", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cc0", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cF", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cG", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_citg2", "#T_cfv", "#T_cH", "#T_wceq", "#T_citg2", "#T_cfv", "#T_cF", "#T_caddc", "#T_citg2", "#T_cfv", "#T_cG", "#T_cA", "#T_vx", "#T_cB", "#T_vx", "#T_cU", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The ` S.2 ` integral splits under an almost disjoint union.  (The proof avoids the use of ~ itg2add which requires CC.) (Contributed by Mario Carneiro, 11-Aug-2014.) ",
+  "statement" : "itg2split.a $e |- ( ph -> A e. dom vol ) $.\nitg2split.b $e |- ( ph -> B e. dom vol ) $.\nitg2split.i $e |- ( ph -> ( vol* ` ( A i^i B ) ) = 0 ) $.\nitg2split.u $e |- ( ph -> U = ( A u. B ) ) $.\nitg2split.c $e |- ( ( ph /\\ x e. U ) -> C e. ( 0 [,] +oo ) ) $.\nitg2split.f $e |- F = ( x e. RR |-> if ( x e. A , C , 0 ) ) $.\nitg2split.g $e |- G = ( x e. RR |-> if ( x e. B , C , 0 ) ) $.\nitg2split.h $e |- H = ( x e. RR |-> if ( x e. U , C , 0 ) ) $.\nitg2split.sf $e |- ( ph -> ( S.2 ` F ) e. RR ) $.\nitg2split.sg $e |- ( ph -> ( S.2 ` G ) e. RR ) $.\nitg2split $p |- ( ph -> ( S.2 ` H ) = ( ( S.2 ` F ) + ( S.2 ` G ) ) ) $.\n$d A x $.\n$d B x $.\n$d U x $.\n$d ph x $."
+}

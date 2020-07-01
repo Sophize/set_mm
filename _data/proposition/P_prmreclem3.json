@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See prmreclem3 on Metamath](http://us.metamath.org/mpegif/prmreclem3.html)"
+  } ],
+  "names" : [ "prmreclem3" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wcel", "#T_cprime", "#T_cif--2", "#T_c1", "#T_cdiv", "#T_vn", "#T_cif--3", "#T_cc0", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_cM", "#T_wceq", "#T_crab--1", "#T_vn", "#T_crab--2", "#T_c1", "#T_cfz", "#T_cN", "#T_crab--3", "#T_wral--1", "#T_vp", "#T_wral--2", "#T_cprime", "#T_cdif", "#T_c1", "#T_cfz", "#T_cK", "#T_wn", "#T_vp", "#T_cdvds", "#T_vn", "#T_crab--4", "#T_cQ", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csup--1", "#T_crab--1", "#T_vr", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vr", "#T_cexp", "#T_c2", "#T_cdvds", "#T_vn", "#T_crab--4", "#T_csup--2", "#T_cr", "#T_csup--3", "#T_clt", "#T_wph", "#T_wi", "#T_chash", "#T_cfv", "#T_cM", "#T_cle", "#T_c2", "#T_cexp", "#T_cK", "#T_cmul", "#T_csqrt", "#T_cfv", "#T_cN", "#T_cF", "#T_vn", "#T_vp", "#T_vr", "#T_cK", "#T_vn", "#T_vp", "#T_cM", "#T_vn", "#T_vp", "#T_cN", "#T_vn", "#T_vp", "#T_cQ", "#T_vn", "#T_vp", "#T_vr", "#T_vn", "#T_vp", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ prmrec .  The main inequality established here is ` # M <_ # { x e. M | ( Q `` x ) = 1 } x. sqrt N ` , where ` { x e. M | ( Q `` x ) = 1 } ` is the set of squarefree numbers in ` M ` .  This is demonstrated by the map ` y |-> <. y / ( Q `` y ) ^ 2 , ( Q `` y ) >. ` where ` Q `` y ` is the largest number whose square divides ` y ` .  (Contributed by Mario Carneiro, 5-Aug-2014.) ",
+  "statement" : "prmrec.1 $e |- F = ( n e. NN |-> if ( n e. Prime , ( 1 / n ) , 0 ) ) $.\nprmrec.2 $e |- ( ph -> K e. NN ) $.\nprmrec.3 $e |- ( ph -> N e. NN ) $.\nprmrec.4 $e |- M = { n e. ( 1 ... N ) | A. p e. ( Prime \\ ( 1 ... K ) ) -. p || n } $.\nprmreclem2.5 $e |- Q = ( n e. NN |-> sup ( { r e. NN | ( r ^ 2 ) || n } , RR , < ) ) $.\nprmreclem3 $p |- ( ph -> ( # ` M ) <_ ( ( 2 ^ K ) x. ( sqrt ` N ) ) ) $.\n$d F n p r $.\n$d K n p $.\n$d M n p $.\n$d N n p $.\n$d Q n p r $.\n$d n p ph $."
+}

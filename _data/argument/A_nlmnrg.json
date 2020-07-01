@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nlmnrg on Metamath](http://us.metamath.org/mpegif/nlmnrg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nlmnrg.1 | |- F = ( Scalar ` W ) |\n| 2 |  | #P_eqid | |- ( Base ` W ) = ( Base ` W ) |\n| 3 |  | #P_eqid | |- ( norm ` W ) = ( norm ` W ) |\n| 4 |  | #P_eqid | |- ( .s ` W ) = ( .s ` W ) |\n| 5 |  | #P_eqid | |- ( Base ` F ) = ( Base ` F ) |\n| 6 |  | #P_eqid | |- ( norm ` F ) = ( norm ` F ) |\n| 7 | 2, 3, 4, 1, 5, 6 | #P_isnlm | |- ( W e. NrmMod <-> ( ( W e. NrmGrp /\\ W e. LMod /\\ F e. NrmRing ) /\\ A. x e. ( Base ` F ) A. y e. ( Base ` W ) ( ( norm ` W ) ` ( x ( .s ` W ) y ) ) = ( ( ( norm ` F ) ` x ) x. ( ( norm ` W ) ` y ) ) ) ) |\n| 8 | 7 | #P_simplbi | |- ( W e. NrmMod -> ( W e. NrmGrp /\\ W e. LMod /\\ F e. NrmRing ) ) |\n| 9 | 8 | #P_simp3d | |- ( W e. NrmMod -> F e. NrmRing ) |",
+  "conclusion" : "#P_nlmnrg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW", "#T_cnm", "#T_cfv", "#T_cW", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cW", "#T_cvsca", "#T_cfv", "#T_cW", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cW", "#T_cbs", "#T_cfv", "#T_cF", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cnm", "#T_cfv", "#T_cF", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wb", "#T_cW", "#T_wcel", "#T_cngp", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cnrg", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cF", "#T_wral--1", "#T_vy.tru", "#T_wral--2", "#T_cbs", "#T_cfv", "#T_cW", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_vx.wal", "#T_cvsca", "#T_cfv", "#T_cW", "#T_vy.tru", "#T_wceq", "#T_cnm", "#T_cfv", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_cmul", "#T_cnm", "#T_cfv", "#T_cW", "#T_cfv", "#T_vy.tru", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wi", "#T_cW", "#T_wcel", "#T_cngp", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_clmod", "#T_w3a--2", "#T_cF", "#T_wcel", "#T_cnrg", "#T_cW", "#T_wcel", "#T_cnlm", "#T_wi", "#T_cF", "#T_wcel", "#T_cnrg" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simplbi", "#P_isnlm", "#P_simp3d" ]
+}

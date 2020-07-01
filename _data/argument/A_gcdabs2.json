@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gcdabs2 on Metamath](http://us.metamath.org/mpegif/gcdabs2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_gcdabs1 | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( ( abs ` M ) gcd N ) = ( M gcd N ) ) |\n| 2 | 1 | #P_ancoms | |- ( ( N e. ZZ /\\ M e. ZZ ) -> ( ( abs ` M ) gcd N ) = ( M gcd N ) ) |\n| 3 |  | #P_zabscl | |- ( M e. ZZ -> ( abs ` M ) e. ZZ ) |\n| 4 |  | #P_gcdcom | |- ( ( N e. ZZ /\\ ( abs ` M ) e. ZZ ) -> ( N gcd ( abs ` M ) ) = ( ( abs ` M ) gcd N ) ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( N e. ZZ /\\ M e. ZZ ) -> ( N gcd ( abs ` M ) ) = ( ( abs ` M ) gcd N ) ) |\n| 6 |  | #P_gcdcom | |- ( ( N e. ZZ /\\ M e. ZZ ) -> ( N gcd M ) = ( M gcd N ) ) |\n| 7 | 2, 5, 6 | #P_3eqtr4d | |- ( ( N e. ZZ /\\ M e. ZZ ) -> ( N gcd ( abs ` M ) ) = ( N gcd M ) ) |",
+  "conclusion" : "#P_gcdabs2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cM", "#T_cgcd", "#T_cN", "#T_wceq", "#T_cM", "#T_cgcd", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cM", "#T_cgcd", "#T_cN", "#T_wceq", "#T_cM", "#T_cgcd", "#T_cN", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cabs", "#T_cfv", "#T_cM", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cabs", "#T_cfv", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cgcd", "#T_cabs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cM", "#T_cgcd", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cgcd", "#T_cabs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cabs", "#T_cfv", "#T_cM", "#T_cgcd", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cgcd", "#T_cM", "#T_wceq", "#T_cM", "#T_cgcd", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wa", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cgcd", "#T_cabs", "#T_cfv", "#T_cM", "#T_wceq", "#T_cN", "#T_cgcd", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_gcdcom", "#P_gcdabs1", "#P_3eqtr4d", "#P_ancoms", "#P_zabscl" ]
+}

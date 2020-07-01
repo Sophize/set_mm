@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-sup on Metamath](http://us.metamath.org/mpegif/df-sup.html)"
+  } ],
+  "names" : [ "df-sup" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csup--1", "#T_cA", "#T_csup--2", "#T_cB", "#T_csup--3", "#T_cR", "#T_wceq", "#T_cuni", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cB", "#T_crab--3", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cA", "#T_wn", "#T_vx", "#T_cR", "#T_vy", "#T_wa", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_vy", "#T_cR", "#T_vx", "#T_wi", "#T_wrex--1", "#T_vz", "#T_wrex--2", "#T_cA", "#T_vy", "#T_cR", "#T_vz", "#T_crab--4", "#T_cA", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vx", "#T_vy", "#T_vz", "#T_cR", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the supremum of class ` A ` .  It is meaningful when ` R ` is a relation that strictly orders ` B ` and when the supremum exists.  For example, ` R ` could be 'less than', ` B ` could be the set of real numbers, and ` A ` could be the set of all positive reals whose square is less than 2; in this case the supremum is defined as the square root of 2 per ~ sqrtval .  See ~ dfsup2 for alternate definition not requiring dummy variables. We will also use this notation for \"infimum\" by replacing ` R ` with ` ``' R ` .  (Contributed by NM, 22-May-1999.) ",
+  "statement" : "df-sup $p |- sup ( A , B , R ) = U. { x e. B | ( A. y e. A -. x R y /\\ A. y e. B ( y R x -> E. z e. A y R z ) ) } $.\n$d A x y z $.\n$d B x y z $.\n$d R x y z $."
+}

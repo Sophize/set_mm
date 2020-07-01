@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlimres2 on Metamath](http://us.metamath.org/mpegif/rlimres2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rlimres2.1 | |- ( ph -> A C_ B ) |\n| 2 |  | rlimres2.2 | |- ( ph -> ( x e. B |-> C ) ~~>r D ) |\n| 3 | 1 | #P_resmptd | |- ( ph -> ( ( x e. B |-> C ) |` A ) = ( x e. A |-> C ) ) |\n| 4 |  | #P_rlimres | |- ( ( x e. B |-> C ) ~~>r D -> ( ( x e. B |-> C ) |` A ) ~~>r D ) |\n| 5 | 2, 4 | #P_syl | |- ( ph -> ( ( x e. B |-> C ) |` A ) ~~>r D ) |\n| 6 | 3, 5 | #P_eqbrtrrd | |- ( ph -> ( x e. A |-> C ) ~~>r D ) |",
+  "conclusion" : "#P_rlimres2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cB", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cB", "#T_cmpt--2", "#T_cC", "#T_crli", "#T_cD", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cC", "#T_vx.wal", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cC", "#T_crli", "#T_cD", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_crli", "#T_cD", "#T_wph", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cB.wceq", "#T_cmpt--2", "#T_cC", "#T_cres", "#T_cA.wceq", "#T_crli", "#T_cD", "#T_wph", "#T_wi", "#T_vx", "#T_cmpt--1", "#T_cA", "#T_cmpt--2", "#T_cC", "#T_crli", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_resmptd", "#P_eqbrtrrd", "#P_rlimres", "#P_syl" ]
+}

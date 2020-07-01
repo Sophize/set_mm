@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lattrd on Metamath](http://us.metamath.org/mpegif/lattrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lattrd.b | |- B = ( Base ` K ) |\n| 2 |  | lattrd.l | |- .<_ = ( le ` K ) |\n| 3 |  | lattrd.1 | |- ( ph -> K e. Lat ) |\n| 4 |  | lattrd.2 | |- ( ph -> X e. B ) |\n| 5 |  | lattrd.3 | |- ( ph -> Y e. B ) |\n| 6 |  | lattrd.4 | |- ( ph -> Z e. B ) |\n| 7 |  | lattrd.5 | |- ( ph -> X .<_ Y ) |\n| 8 |  | lattrd.6 | |- ( ph -> Y .<_ Z ) |\n| 9 | 1, 2 | #P_lattr | |- ( ( K e. Lat /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X .<_ Y /\\ Y .<_ Z ) -> X .<_ Z ) ) |\n| 10 | 3, 4, 5, 6, 9 | #P_syl13anc | |- ( ph -> ( ( X .<_ Y /\\ Y .<_ Z ) -> X .<_ Z ) ) |\n| 11 | 7, 8, 10 | #P_mp2and | |- ( ph -> X .<_ Z ) |",
+  "conclusion" : "#P_lattrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.le", "#T_wceq", "#T_cple", "#T_cfv", "#T_cK", "#T_wph", "#T_wi", "#T_cK", "#T_wcel", "#T_clat", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wph", "#T_wi", "#T_cY", "#T_c.le", "#T_cZ", "#T_cK", "#T_wcel", "#T_clat", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wa", "#T_cY", "#T_c.le", "#T_cZ", "#T_wi", "#T_cX", "#T_c.le", "#T_cZ", "#T_wph", "#T_wi", "#T_cX", "#T_c.le", "#T_cY", "#T_wa", "#T_cY", "#T_c.le", "#T_cZ", "#T_wi", "#T_cX", "#T_c.le", "#T_cZ", "#T_wph", "#T_wi", "#T_cX", "#T_c.le", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2and", "#P_lattr", "#P_syl13anc" ]
+}

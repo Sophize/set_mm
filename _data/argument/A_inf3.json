@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See inf3 on Metamath](http://us.metamath.org/mpegif/inf3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nw y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | inf3.1 | |- E. x ( x =/= (/) /\\ x C_ U. x ) |\n| 2 |  | #P_eqid | |- ( y e. _V |-> { w e. x | ( w i^i x ) C_ y } ) = ( y e. _V |-> { w e. x | ( w i^i x ) C_ y } ) |\n| 3 |  | #P_eqid | |- ( rec ( ( y e. _V |-> { w e. x | ( w i^i x ) C_ y } ) , (/) ) |` _om ) = ( rec ( ( y e. _V |-> { w e. x | ( w i^i x ) C_ y } ) , (/) ) |` _om ) |\n| 4 |  | #P_vex | |- x e. _V |\n| 5 | 2, 3, 4, 4 | #P_inf3lem7 | |- ( ( x =/= (/) /\\ x C_ U. x ) -> _om e. _V ) |\n| 6 | 5 | #P_exlimiv | |- ( E. x ( x =/= (/) /\\ x C_ U. x ) -> _om e. _V ) |\n| 7 | 1, 6 | #P_ax-mp | |- _om e. _V |",
+  "conclusion" : "#P_inf3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vw", "#T_vy", "#T_wex", "#T_vx", "#T_vx", "#T_wne", "#T_c0", "#T_wa", "#T_vx", "#T_wss", "#T_cuni", "#T_vx", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vw", "#T_cin", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_wceq", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vw", "#T_cin", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_crdg--1", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vw", "#T_cin", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_wceq", "#T_crdg--1", "#T_vy.tru", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_crab--1", "#T_vw", "#T_crab--2", "#T_vx.wal", "#T_crab--3", "#T_vw", "#T_cin", "#T_vx.wal", "#T_wss", "#T_vy.tru", "#T_crab--4", "#T_crdg--2", "#T_c0", "#T_cres", "#T_com", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_vx.wal", "#T_wi", "#T_com", "#T_wcel", "#T_cvv", "#T_wex", "#T_vx.wal", "#T_vx.wal", "#T_wne", "#T_c0", "#T_wa", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_vx.wal", "#T_wi", "#T_com", "#T_wcel", "#T_cvv", "#T_com", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_inf3lem7", "#P_exlimiv", "#P_vex" ]
+}

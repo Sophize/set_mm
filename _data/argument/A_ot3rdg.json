@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ot3rdg on Metamath](http://us.metamath.org/mpegif/ot3rdg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ot | |- <. A , B , C >. = <. <. A , B >. , C >. |\n| 2 | 1 | #P_fveq2i | |- ( 2nd ` <. A , B , C >. ) = ( 2nd ` <. <. A , B >. , C >. ) |\n| 3 |  | #P_opex | |- <. A , B >. e. _V |\n| 4 |  | #P_op2ndg | |- ( ( <. A , B >. e. _V /\\ C e. V ) -> ( 2nd ` <. <. A , B >. , C >. ) = C ) |\n| 5 | 3, 4 | #P_mpan | |- ( C e. V -> ( 2nd ` <. <. A , B >. , C >. ) = C ) |\n| 6 | 2, 5 | #P_syl5eq | |- ( C e. V -> ( 2nd ` <. A , B , C >. ) = C ) |",
+  "conclusion" : "#P_ot3rdg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cotp--1", "#T_cA.wceq", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wceq", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_c2nd", "#T_cfv", "#T_cotp--1", "#T_cA.wceq", "#T_cotp--2", "#T_cB.wceq", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wceq", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cvv", "#T_wa", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cC", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cop--1", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cop--2", "#T_cC", "#T_cop--3", "#T_wceq", "#T_cC", "#T_cC", "#T_wcel", "#T_cV", "#T_wi", "#T_c2nd", "#T_cfv", "#T_cotp--1", "#T_cA", "#T_cotp--2", "#T_cB", "#T_cotp--3", "#T_cC", "#T_cotp--4", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq2i", "#P_df-ot", "#P_op2ndg", "#P_mpan", "#P_opex", "#P_syl5eq" ]
+}

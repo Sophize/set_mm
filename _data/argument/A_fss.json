@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fss on Metamath](http://us.metamath.org/mpegif/fss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sstr2 | |- ( ran F C_ B -> ( B C_ C -> ran F C_ C ) ) |\n| 2 | 1 | #P_com12 | |- ( B C_ C -> ( ran F C_ B -> ran F C_ C ) ) |\n| 3 | 2 | #P_anim2d | |- ( B C_ C -> ( ( F Fn A /\\ ran F C_ B ) -> ( F Fn A /\\ ran F C_ C ) ) ) |\n| 4 |  | #P_df-f | |- ( F : A --> B <-> ( F Fn A /\\ ran F C_ B ) ) |\n| 5 |  | #P_df-f | |- ( F : A --> C <-> ( F Fn A /\\ ran F C_ C ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4g | |- ( B C_ C -> ( F : A --> B -> F : A --> C ) ) |\n| 7 | 6 | #P_impcom | |- ( ( F : A --> B /\\ B C_ C ) -> F : A --> C ) |",
+  "conclusion" : "#P_fss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cC", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_crn", "#T_cF", "#T_wss", "#T_cC", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cC", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cB.wceq", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_wb", "#T_cF", "#T_wfn", "#T_cA.wceq", "#T_wa", "#T_crn", "#T_cF", "#T_wss", "#T_cC", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cC", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wa", "#T_cB", "#T_wss", "#T_cC", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_df-f", "#P_anim2d", "#P_3imtr4g", "#P_impcom", "#P_com12" ]
+}

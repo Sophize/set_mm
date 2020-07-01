@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bdstab on Metamath](http://us.metamath.org/mpegif/bdstab.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bdstab.1 | |- Bdd ph |\n| 2 | 1 | #P_ax-bdn | |- Bdd -. ph |\n| 3 | 2 | #P_ax-bdn | |- Bdd -. -. ph |\n| 4 | 3, 1 | #P_ax-bdim | |- Bdd ( -. -. ph -> ph ) |\n| 5 |  | #P_df-stab | |- ( STAB ph <-> ( -. -. ph -> ph ) ) |\n| 6 | 4, 5 | #P_bd0r | |- Bdd STAB ph |",
+  "conclusion" : "#P_bdstab",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wbd", "#T_wph", "#T_wbd", "#T_wn", "#T_wph", "#T_wbd", "#T_wn", "#T_wn", "#T_wph", "#T_wbd", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wstab", "#T_wph", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wbd", "#T_wstab", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bd0r", "#P_df-stab", "#P_ax-bdn", "#P_ax-bdim" ]
+}

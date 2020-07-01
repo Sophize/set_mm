@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See meetcom on Metamath](http://us.metamath.org/mpegif/meetcom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | meetcom.b | |- B = ( Base ` K ) |\n| 2 |  | meetcom.m | |- ./\\ = ( meet ` K ) |\n| 3 | 1, 2 | #P_meetcomALT | |- ( ( K e. Poset /\\ X e. B /\\ Y e. B ) -> ( X ./\\ Y ) = ( Y ./\\ X ) ) |\n| 4 | 3 | #P_adantr | |- ( ( ( K e. Poset /\\ X e. B /\\ Y e. B ) /\\ ( <. X , Y >. e. dom ./\\ /\\ <. Y , X >. e. dom ./\\ ) ) -> ( X ./\\ Y ) = ( Y ./\\ X ) ) |",
+  "conclusion" : "#P_meetcom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cK", "#T_c.an", "#T_wceq", "#T_cmee", "#T_cfv", "#T_cK", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_wceq", "#T_cY", "#T_c.an", "#T_cX", "#T_cK", "#T_wcel", "#T_cpo", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cB", "#T_wa", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.an", "#T_wa", "#T_cop--1", "#T_cY", "#T_cop--2", "#T_cX", "#T_cop--3", "#T_wcel", "#T_cdm", "#T_c.an", "#T_wi", "#T_cX", "#T_c.an", "#T_cY", "#T_wceq", "#T_cY", "#T_c.an", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_meetcomALT", "#P_adantr" ]
+}

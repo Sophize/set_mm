@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See deceq12i on Metamath](http://us.metamath.org/mpegif/deceq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | deceq1i.1 | |- A = B |\n| 2 |  | deceq12i.2 | |- C = D |\n| 3 | 1 | #P_deceq1i | |- ; A C = ; B C |\n| 4 | 2 | #P_deceq2i | |- ; B C = ; B D |\n| 5 | 3, 4 | #P_eqtri | |- ; A C = ; B D |",
+  "conclusion" : "#P_deceq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cdc", "#T_cA.wceq", "#T_cC", "#T_wceq", "#T_cdc", "#T_cB.wceq", "#T_cC", "#T_cdc", "#T_cB.wceq", "#T_cC", "#T_wceq", "#T_cdc", "#T_cB.wceq", "#T_cD", "#T_cdc", "#T_cA", "#T_cC", "#T_wceq", "#T_cdc", "#T_cB", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_deceq2i", "#P_deceq1i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See isopo on Metamath](http://us.metamath.org/mpegif/isopo.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_isocnv | |- ( H Isom R , S ( A , B ) -> `' H Isom S , R ( B , A ) ) |\n| 2 |  | #P_isopolem | |- ( `' H Isom S , R ( B , A ) -> ( R Po A -> S Po B ) ) |\n| 3 | 1, 2 | #P_syl | |- ( H Isom R , S ( A , B ) -> ( R Po A -> S Po B ) ) |\n| 4 |  | #P_isopolem | |- ( H Isom R , S ( A , B ) -> ( S Po B -> R Po A ) ) |\n| 5 | 3, 4 | #P_impbid | |- ( H Isom R , S ( A , B ) -> ( R Po A <-> S Po B ) ) |",
+  "conclusion" : "#P_isopo",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_ccnv", "#T_cH", "#T_wiso--1", "#T_cS", "#T_wiso--2", "#T_cR", "#T_cB.wceq", "#T_wiso--3", "#T_cA.wceq", "#T_ccnv", "#T_cH", "#T_wiso--1", "#T_cS", "#T_wiso--2", "#T_cR", "#T_cB.wceq", "#T_wiso--3", "#T_cA.wceq", "#T_wi", "#T_cR", "#T_wpo", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_wpo", "#T_cB.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wpo", "#T_cA.wceq", "#T_wi", "#T_cS", "#T_wpo", "#T_cB.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA.wceq", "#T_wiso--3", "#T_cB.wceq", "#T_wi", "#T_cS", "#T_wpo", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wpo", "#T_cA.wceq", "#T_cH", "#T_wiso--1", "#T_cR", "#T_wiso--2", "#T_cS", "#T_cA", "#T_wiso--3", "#T_cB", "#T_wi", "#T_cR", "#T_wpo", "#T_cA", "#T_wb", "#T_cS", "#T_wpo", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_isocnv", "#P_syl", "#P_impbid", "#P_isopolem" ]
+}

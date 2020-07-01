@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abscn on Metamath](http://us.metamath.org/mpegif/abscn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | abscn.3 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | abscn.4 | |- K = ( topGen ` ran (,) ) |\n| 3 |  | #P_cnngp | |- CCfld e. NrmGrp |\n| 4 |  | #P_cnfldnm | |- abs = ( norm ` CCfld ) |\n| 5 | 4, 1, 2 | #P_nmcn | |- ( CCfld e. NrmGrp -> abs e. ( J Cn K ) ) |\n| 6 | 3, 5 | #P_ax-mp | |- abs e. ( J Cn K ) |",
+  "conclusion" : "#P_abscn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_ccnfld", "#T_wcel", "#T_cngp", "#T_cabs", "#T_wceq", "#T_cnm", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_cngp", "#T_wi", "#T_cabs", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK", "#T_cabs", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nmcn", "#P_ax-mp", "#P_cnngp", "#P_cnfldnm" ]
+}

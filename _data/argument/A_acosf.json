@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acosf on Metamath](http://us.metamath.org/mpegif/acosf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-acos | |- arccos = ( x e. CC |-> ( ( _pi / 2 ) - ( arcsin ` x ) ) ) |\n| 2 |  | #P_picn | |- _pi e. CC |\n| 3 |  | #P_halfcl | |- ( _pi e. CC -> ( _pi / 2 ) e. CC ) |\n| 4 | 2, 3 | #P_ax-mp | |- ( _pi / 2 ) e. CC |\n| 5 |  | #P_asincl | |- ( x e. CC -> ( arcsin ` x ) e. CC ) |\n| 6 |  | #P_subcl | |- ( ( ( _pi / 2 ) e. CC /\\ ( arcsin ` x ) e. CC ) -> ( ( _pi / 2 ) - ( arcsin ` x ) ) e. CC ) |\n| 7 | 4, 5, 6 | #P_sylancr | |- ( x e. CC -> ( ( _pi / 2 ) - ( arcsin ` x ) ) e. CC ) |\n| 8 | 1, 7 | #P_fmpti | |- arccos : CC --> CC |",
+  "conclusion" : "#P_acosf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cacos", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_vx.wal", "#T_cpi", "#T_wcel", "#T_cc", "#T_cpi", "#T_wcel", "#T_cc", "#T_wi", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cc", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_casin", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_cpi", "#T_cdiv", "#T_c2", "#T_wcel", "#T_cc", "#T_wa", "#T_casin", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_cacos", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sylancr", "#P_halfcl", "#P_subcl", "#P_fmpti", "#P_asincl", "#P_picn", "#P_df-acos" ]
+}

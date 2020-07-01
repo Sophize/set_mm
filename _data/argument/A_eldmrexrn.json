@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eldmrexrn on Metamath](http://us.metamath.org/mpegif/eldmrexrn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fvelrn | |- ( ( Fun F /\\ Y e. dom F ) -> ( F ` Y ) e. ran F ) |\n| 2 |  | #P_eqid | |- ( F ` Y ) = ( F ` Y ) |\n| 3 |  | #P_eqeq1 | |- ( x = ( F ` Y ) -> ( x = ( F ` Y ) <-> ( F ` Y ) = ( F ` Y ) ) ) |\n| 4 | 3 | #P_rspcev | |- ( ( ( F ` Y ) e. ran F /\\ ( F ` Y ) = ( F ` Y ) ) -> E. x e. ran F x = ( F ` Y ) ) |\n| 5 | 1, 2, 4 | #P_sylancl | |- ( ( Fun F /\\ Y e. dom F ) -> E. x e. ran F x = ( F ` Y ) ) |\n| 6 | 5 | #P_ex | |- ( Fun F -> ( Y e. dom F -> E. x e. ran F x = ( F ` Y ) ) ) |",
+  "conclusion" : "#P_eldmrexrn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wa", "#T_cY", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_cF", "#T_cfv", "#T_cY", "#T_wcel", "#T_crn", "#T_cF", "#T_cF", "#T_cfv", "#T_cY", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_wb", "#T_cF", "#T_cfv", "#T_cY", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_cF", "#T_cfv", "#T_cY", "#T_wcel", "#T_crn", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_cY", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_crn", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_wfun", "#T_cF", "#T_wa", "#T_cY", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_crn", "#T_cF", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY", "#T_wfun", "#T_cF", "#T_wi", "#T_cY", "#T_wcel", "#T_cdm", "#T_cF", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_crn", "#T_cF", "#T_vx", "#T_wceq", "#T_cF", "#T_cfv", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvelrn", "#P_eqid", "#P_ex", "#P_sylancl", "#P_eqeq1", "#P_rspcev" ]
+}

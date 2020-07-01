@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3anim123d on Metamath](http://us.metamath.org/mpegif/3anim123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3anim123d.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | 3anim123d.2 | |- ( ph -> ( th -> ta ) ) |\n| 3 |  | 3anim123d.3 | |- ( ph -> ( et -> ze ) ) |\n| 4 | 1, 2 | #P_anim12d | |- ( ph -> ( ( ps /\\ th ) -> ( ch /\\ ta ) ) ) |\n| 5 | 4, 3 | #P_anim12d | |- ( ph -> ( ( ( ps /\\ th ) /\\ et ) -> ( ( ch /\\ ta ) /\\ ze ) ) ) |\n| 6 |  | #P_df-3an | |- ( ( ps /\\ th /\\ et ) <-> ( ( ps /\\ th ) /\\ et ) ) |\n| 7 |  | #P_df-3an | |- ( ( ch /\\ ta /\\ ze ) <-> ( ( ch /\\ ta ) /\\ ze ) ) |\n| 8 | 5, 6, 7 | #P_3imtr4g | |- ( ph -> ( ( ps /\\ th /\\ et ) -> ( ch /\\ ta /\\ ze ) ) ) |",
+  "conclusion" : "#P_3anim123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wet", "#T_wi", "#T_wze", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wth", "#T_wi", "#T_wch", "#T_wa", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wth", "#T_wa", "#T_wet", "#T_wi", "#T_wch", "#T_wa", "#T_wta", "#T_wa", "#T_wze", "#T_wps", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wa", "#T_wet", "#T_wch", "#T_w3a--1", "#T_wta", "#T_w3a--2", "#T_wze", "#T_wb", "#T_wch", "#T_wa", "#T_wta", "#T_wa", "#T_wze", "#T_wph", "#T_wi", "#T_wps", "#T_w3a--1", "#T_wth", "#T_w3a--2", "#T_wet", "#T_wi", "#T_wch", "#T_w3a--1", "#T_wta", "#T_w3a--2", "#T_wze" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-3an", "#P_anim12d", "#P_3imtr4g" ]
+}

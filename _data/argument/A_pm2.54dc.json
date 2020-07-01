@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm2.54dc on Metamath](http://us.metamath.org/mpegif/pm2.54dc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dcn | |- ( DECID ph -> DECID -. ph ) |\n| 2 |  | #P_notnot2dc | |- ( DECID ph -> ( -. -. ph -> ph ) ) |\n| 3 |  | #P_orc | |- ( ph -> ( ph \\/ ps ) ) |\n| 4 | 2, 3 | #P_syl6 | |- ( DECID ph -> ( -. -. ph -> ( ph \\/ ps ) ) ) |\n| 5 | 4 | #P_a1d | |- ( DECID ph -> ( DECID -. ph -> ( -. -. ph -> ( ph \\/ ps ) ) ) ) |\n| 6 |  | #P_olc | |- ( ps -> ( ph \\/ ps ) ) |\n| 7 | 6 | #P_a1i | |- ( DECID ph -> ( ps -> ( ph \\/ ps ) ) ) |\n| 8 | 5, 7 | #P_jaddc | |- ( DECID ph -> ( DECID -. ph -> ( ( -. ph -> ps ) -> ( ph \\/ ps ) ) ) ) |\n| 9 | 1, 8 | #P_mpd | |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ph \\/ ps ) ) ) |",
+  "conclusion" : "#P_pm2.54dc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dcn", "#P_jaddc", "#P_mpd", "#P_orc", "#P_notnot2dc", "#P_olc", "#P_a1i", "#P_syl6", "#P_a1d" ]
+}

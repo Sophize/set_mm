@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See expcomdg on Metamath](http://us.metamath.org/mpegif/expcomdg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ancomst | |- ( ( ( ps /\\ ch ) -> th ) <-> ( ( ch /\\ ps ) -> th ) ) |\n| 2 |  | #P_impexp | |- ( ( ( ch /\\ ps ) -> th ) <-> ( ch -> ( ps -> th ) ) ) |\n| 3 | 1, 2 | #P_bitri | |- ( ( ( ps /\\ ch ) -> th ) <-> ( ch -> ( ps -> th ) ) ) |\n| 4 | 3 | #P_imbi2i | |- ( ( ph -> ( ( ps /\\ ch ) -> th ) ) <-> ( ph -> ( ch -> ( ps -> th ) ) ) ) |",
+  "conclusion" : "#P_expcomdg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wth", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imbi2i", "#P_ancomst", "#P_impexp", "#P_bitri" ]
+}

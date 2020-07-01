@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wunsets on Metamath](http://us.metamath.org/mpegif/wunsets.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | wunsets.1 | |- ( ph -> U e. WUni ) |\n| 2 |  | wunsets.2 | |- ( ph -> S e. U ) |\n| 3 |  | wunsets.3 | |- ( ph -> A e. U ) |\n| 4 |  | #P_setsvalg | |- ( ( S e. U /\\ A e. U ) -> ( S sSet A ) = ( ( S |` ( _V \\ dom { A } ) ) u. { A } ) ) |\n| 5 | 2, 3, 4 | #P_syl2anc | |- ( ph -> ( S sSet A ) = ( ( S |` ( _V \\ dom { A } ) ) u. { A } ) ) |\n| 6 | 1, 2 | #P_wunres | |- ( ph -> ( S |` ( _V \\ dom { A } ) ) e. U ) |\n| 7 | 1, 3 | #P_wunsn | |- ( ph -> { A } e. U ) |\n| 8 | 1, 6, 7 | #P_wunun | |- ( ph -> ( ( S |` ( _V \\ dom { A } ) ) u. { A } ) e. U ) |\n| 9 | 5, 8 | #P_eqeltrd | |- ( ph -> ( S sSet A ) e. U ) |",
+  "conclusion" : "#P_wunsets",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cwun", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cU", "#T_cS", "#T_wcel", "#T_cU", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cU", "#T_wi", "#T_cS", "#T_csts", "#T_cA.wceq", "#T_wceq", "#T_cS", "#T_cres", "#T_cvv", "#T_cdif", "#T_cdm", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wph", "#T_wi", "#T_cS", "#T_csts", "#T_cA.wceq", "#T_wceq", "#T_cS", "#T_cres", "#T_cvv", "#T_cdif", "#T_cdm", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wph", "#T_wi", "#T_cS", "#T_cres", "#T_cvv", "#T_cdif", "#T_cdm", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cS", "#T_cres", "#T_cvv", "#T_cdif", "#T_cdm", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_cun", "#T_csn--1", "#T_cA.wceq", "#T_csn--2", "#T_wcel", "#T_cU", "#T_wph", "#T_wi", "#T_cS", "#T_csts", "#T_cA", "#T_wcel", "#T_cU" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_wunsn", "#P_syl2anc", "#P_eqeltrd", "#P_wunres", "#P_wunun", "#P_setsvalg" ]
+}

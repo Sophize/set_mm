@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfd on Metamath](http://us.metamath.org/mpegif/nfd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfd.1 | |- F/ x ph |\n| 2 |  | nfd.2 | |- ( ph -> ( ps -> A. x ps ) ) |\n| 3 | 1, 2 | #P_alrimi | |- ( ph -> A. x ( ps -> A. x ps ) ) |\n| 4 |  | #P_df-nf | |- ( F/ x ps <-> A. x ( ps -> A. x ps ) ) |\n| 5 | 3, 4 | #P_sylibr | |- ( ph -> F/ x ps ) |",
+  "conclusion" : "#P_nfd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wnf", "#T_vx.wal", "#T_wps", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wps", "#T_wph", "#T_wi", "#T_wnf", "#T_vx", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alrimi", "#P_sylibr", "#P_df-nf" ]
+}

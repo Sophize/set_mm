@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cosacos on Metamath](http://us.metamath.org/mpegif/cosacos.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_acosval | |- ( A e. CC -> ( arccos ` A ) = ( ( _pi / 2 ) - ( arcsin ` A ) ) ) |\n| 2 | 1 | #P_fveq2d | |- ( A e. CC -> ( cos ` ( arccos ` A ) ) = ( cos ` ( ( _pi / 2 ) - ( arcsin ` A ) ) ) ) |\n| 3 |  | #P_asincl | |- ( A e. CC -> ( arcsin ` A ) e. CC ) |\n| 4 |  | #P_coshalfpim | |- ( ( arcsin ` A ) e. CC -> ( cos ` ( ( _pi / 2 ) - ( arcsin ` A ) ) ) = ( sin ` ( arcsin ` A ) ) ) |\n| 5 | 3, 4 | #P_syl | |- ( A e. CC -> ( cos ` ( ( _pi / 2 ) - ( arcsin ` A ) ) ) = ( sin ` ( arcsin ` A ) ) ) |\n| 6 |  | #P_sinasin | |- ( A e. CC -> ( sin ` ( arcsin ` A ) ) = A ) |\n| 7 | 2, 5, 6 | #P_3eqtrd | |- ( A e. CC -> ( cos ` ( arccos ` A ) ) = A ) |",
+  "conclusion" : "#P_cosacos",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cacos", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cacos", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csin", "#T_cfv", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cpi", "#T_cdiv", "#T_c2", "#T_cmin", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csin", "#T_cfv", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_csin", "#T_cfv", "#T_casin", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_ccos", "#T_cfv", "#T_cacos", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_acosval", "#P_fveq2d", "#P_asincl", "#P_syl", "#P_coshalfpim", "#P_3eqtrd", "#P_sinasin" ]
+}

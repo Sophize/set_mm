@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mod2xi on Metamath](http://us.metamath.org/mpegif/mod2xi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | modxai.1 | |- N e. NN |\n| 2 |  | modxai.2 | |- A e. NN |\n| 3 |  | modxai.3 | |- B e. NN0 |\n| 4 |  | modxai.4 | |- D e. ZZ |\n| 5 |  | modxai.5 | |- K e. NN0 |\n| 6 |  | modxai.6 | |- M e. NN0 |\n| 7 |  | mod2xi.9 | |- ( ( A ^ B ) mod N ) = ( K mod N ) |\n| 8 |  | mod2xi.7 | |- ( 2 x. B ) = E |\n| 9 |  | mod2xi.8 | |- ( ( D x. N ) + M ) = ( K x. K ) |\n| 10 | 3 | #P_nn0cni | |- B e. CC |\n| 11 | 10 | #P_2timesi | |- ( 2 x. B ) = ( B + B ) |\n| 12 | 11, 8 | #P_eqtr3i | |- ( B + B ) = E |\n| 13 | 1, 2, 3, 4, 5, 6, 3, 5, 7, 7, 12, 9 | #P_modxai | |- ( ( A ^ E ) mod N ) = ( M mod N ) |",
+  "conclusion" : "#P_mod2xi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn", "#T_cA", "#T_wcel", "#T_cn", "#T_cB", "#T_wcel", "#T_cn0", "#T_cD", "#T_wcel", "#T_cz", "#T_cK", "#T_wcel", "#T_cn0", "#T_cM", "#T_wcel", "#T_cn0", "#T_cA", "#T_cexp", "#T_cB", "#T_cmo", "#T_cN", "#T_wceq", "#T_cK", "#T_cmo", "#T_cN", "#T_c2", "#T_cmul", "#T_cB", "#T_wceq", "#T_cE", "#T_cD", "#T_cmul", "#T_cN", "#T_caddc", "#T_cM", "#T_wceq", "#T_cK", "#T_cmul", "#T_cK", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_c2", "#T_cmul", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_caddc", "#T_cB.wceq", "#T_cB.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cE", "#T_cA", "#T_cexp", "#T_cE", "#T_cmo", "#T_cN", "#T_wceq", "#T_cM", "#T_cmo", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_2timesi", "#P_nn0cni", "#P_eqtr3i", "#P_modxai" ]
+}

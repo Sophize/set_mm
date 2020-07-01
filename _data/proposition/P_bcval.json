@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bcval on Metamath](http://us.metamath.org/mpegif/bcval.html)"
+  } ],
+  "names" : [ "bcval" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn0", "#T_wa", "#T_cK", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cbc", "#T_cK", "#T_wceq", "#T_cif--1", "#T_cK", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cN", "#T_cif--2", "#T_cfa", "#T_cfv", "#T_cN", "#T_cdiv", "#T_cfa", "#T_cfv", "#T_cN", "#T_cmin", "#T_cK", "#T_cmul", "#T_cfa", "#T_cfv", "#T_cK", "#T_cif--3", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Value of the binomial coefficient, ` N ` choose ` K ` .  Definition of binomial coefficient in [Gleason] p. 295.  As suggested by Gleason, we define it to be 0 when ` 0 <_ K <_ N ` does not hold.  See ~ bcval2 for the value in the standard domain.  (Contributed by NM, 10-Jul-2005.) (Revised by Mario Carneiro, 7-Nov-2013.) ",
+  "statement" : "bcval $p |- ( ( N e. NN0 /\\ K e. ZZ ) -> ( N _C K ) = if ( K e. ( 0 ... N ) , ( ( ! ` N ) / ( ( ! ` ( N - K ) ) x. ( ! ` K ) ) ) , 0 ) ) $."
+}

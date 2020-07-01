@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfinds2 on Metamath](http://us.metamath.org/mpegif/tfinds2.html)"
+  } ],
+  "names" : [ "tfinds2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_c0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_wta", "#T_wi", "#T_wps", "#T_vy", "#T_wcel", "#T_con0", "#T_wi", "#T_wta", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wlim", "#T_vx", "#T_wi", "#T_wta", "#T_wi", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_vx", "#T_wch", "#T_wi", "#T_wph", "#T_vx", "#T_wcel", "#T_con0", "#T_wi", "#T_wta", "#T_wi", "#T_wph", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_vy", "#T_wth", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Transfinite Induction (inference schema), using implicit substitutions. The first three hypotheses establish the substitutions we need.  The last three are the basis and the induction hypotheses (for successor and limit ordinals respectively).  Theorem Schema 4 of [Suppes] p. 197.  The wff ` ta ` is an auxiliary antecedent to help shorten proofs using this theorem.  (Contributed by NM, 4-Sep-2004.) ",
+  "statement" : "tfinds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.\ntfinds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\ntfinds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.\ntfinds2.4 $e |- ( ta -> ps ) $.\ntfinds2.5 $e |- ( y e. On -> ( ta -> ( ch -> th ) ) ) $.\ntfinds2.6 $e |- ( Lim x -> ( ta -> ( A. y e. x ch -> ph ) ) ) $.\ntfinds2 $p |- ( x e. On -> ( ta -> ph ) ) $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x y $.\n$d th x $."
+}

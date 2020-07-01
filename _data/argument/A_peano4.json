@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See peano4 on Metamath](http://us.metamath.org/mpegif/peano4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnon | |- ( A e. _om -> A e. On ) |\n| 2 |  | #P_nnon | |- ( B e. _om -> B e. On ) |\n| 3 |  | #P_suc11 | |- ( ( A e. On /\\ B e. On ) -> ( suc A = suc B <-> A = B ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. _om /\\ B e. _om ) -> ( suc A = suc B <-> A = B ) ) |",
+  "conclusion" : "#P_peano4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cB.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wa", "#T_cB", "#T_wcel", "#T_com", "#T_wi", "#T_csuc", "#T_cA", "#T_wceq", "#T_csuc", "#T_cB", "#T_wb", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2an", "#P_suc11", "#P_nnon" ]
+}

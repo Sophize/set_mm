@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fsum2dlem on Metamath](http://us.metamath.org/mpegif/fsum2dlem.html)"
+  } ],
+  "names" : [ "fsum2dlem" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wceq", "#T_cop--1", "#T_vj", "#T_cop--2", "#T_vk", "#T_cop--3", "#T_wi", "#T_cD", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wi", "#T_cB", "#T_wcel", "#T_cfn", "#T_wph", "#T_wa", "#T_vj", "#T_wcel", "#T_cA", "#T_wa", "#T_vk", "#T_wcel", "#T_cB", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_wn", "#T_vy", "#T_wcel", "#T_vx", "#T_wph", "#T_wi", "#T_vx", "#T_cun", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_wss", "#T_cA", "#T_wps", "#T_wb", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_vx", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vz", "#T_csu--2", "#T_ciun--1", "#T_vj", "#T_ciun--2", "#T_vx", "#T_csn--1", "#T_vj", "#T_csn--2", "#T_cxp", "#T_cB", "#T_cD", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_vx", "#T_cun", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cB", "#T_cC", "#T_wceq", "#T_csu--1", "#T_vz", "#T_csu--2", "#T_ciun--1", "#T_vj", "#T_ciun--2", "#T_vx", "#T_cun", "#T_csn--1", "#T_vy", "#T_csn--2", "#T_csn--1", "#T_vj", "#T_csn--2", "#T_cxp", "#T_cB", "#T_cD", "#T_cA", "#T_vj", "#T_vk", "#T_vx", "#T_vy", "#T_vz", "#T_cB", "#T_vk", "#T_vx", "#T_vy", "#T_vz", "#T_cC", "#T_vx", "#T_vy", "#T_vz", "#T_cD", "#T_vj", "#T_vk", "#T_vx", "#T_vy", "#T_vj", "#T_vk", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ fsum2d - induction step.  (Contributed by Mario Carneiro, 23-Apr-2014.) ",
+  "statement" : "fsum2d.1 $e |- ( z = <. j , k >. -> D = C ) $.\nfsum2d.2 $e |- ( ph -> A e. Fin ) $.\nfsum2d.3 $e |- ( ( ph /\\ j e. A ) -> B e. Fin ) $.\nfsum2d.4 $e |- ( ( ph /\\ ( j e. A /\\ k e. B ) ) -> C e. CC ) $.\nfsum2d.5 $e |- ( ph -> -. y e. x ) $.\nfsum2d.6 $e |- ( ph -> ( x u. { y } ) C_ A ) $.\nfsum2d.7 $e |- ( ps <-> sum_ j e. x sum_ k e. B C = sum_ z e. U_ j e. x ( { j } X. B ) D ) $.\nfsum2dlem $p |- ( ( ph /\\ ps ) -> sum_ j e. ( x u. { y } ) sum_ k e. B C = sum_ z e. U_ j e. ( x u. { y } ) ( { j } X. B ) D ) $.\n$d A j k x y z $.\n$d B k x y z $.\n$d C x y z $.\n$d D j k x y $.\n$d j k ph z $."
+}

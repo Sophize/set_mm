@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unitcl on Metamath](http://us.metamath.org/mpegif/unitcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unitcl.1 | |- B = ( Base ` R ) |\n| 2 |  | unitcl.2 | |- U = ( Unit ` R ) |\n| 3 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 4 |  | #P_eqid | |- ( ||r ` R ) = ( ||r ` R ) |\n| 5 |  | #P_eqid | |- ( oppR ` R ) = ( oppR ` R ) |\n| 6 |  | #P_eqid | |- ( ||r ` ( oppR ` R ) ) = ( ||r ` ( oppR ` R ) ) |\n| 7 | 2, 3, 4, 5, 6 | #P_isunit | |- ( X e. U <-> ( X ( ||r ` R ) ( 1r ` R ) /\\ X ( ||r ` ( oppR ` R ) ) ( 1r ` R ) ) ) |\n| 8 | 7 | #P_simplbi | |- ( X e. U -> X ( ||r ` R ) ( 1r ` R ) ) |\n| 9 | 1, 4 | #P_dvdsrcl | |- ( X ( ||r ` R ) ( 1r ` R ) -> X e. B ) |\n| 10 | 8, 9 | #P_syl | |- ( X e. U -> X e. B ) |",
+  "conclusion" : "#P_unitcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cU", "#T_wceq", "#T_cui", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cdsr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cdsr", "#T_cfv", "#T_cR", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_coppr", "#T_cfv", "#T_cR", "#T_cdsr", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cdsr", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cU", "#T_wb", "#T_cX", "#T_cdsr", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_wa", "#T_cX", "#T_cdsr", "#T_cfv", "#T_coppr", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cX", "#T_cdsr", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_cX", "#T_cdsr", "#T_cfv", "#T_cR", "#T_cur", "#T_cfv", "#T_cR", "#T_wi", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_cX", "#T_wcel", "#T_cU", "#T_wi", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isunit", "#P_simplbi", "#P_dvdsrcl", "#P_syl" ]
+}

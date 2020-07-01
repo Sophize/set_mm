@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chtval on Metamath](http://us.metamath.org/mpegif/chtval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_oveq2 | |- ( x = A -> ( 0 [,] x ) = ( 0 [,] A ) ) |\n| 2 | 1 | #P_ineq1d | |- ( x = A -> ( ( 0 [,] x ) i^i Prime ) = ( ( 0 [,] A ) i^i Prime ) ) |\n| 3 | 2 | #P_sumeq1d | |- ( x = A -> sum_ p e. ( ( 0 [,] x ) i^i Prime ) ( log ` p ) = sum_ p e. ( ( 0 [,] A ) i^i Prime ) ( log ` p ) ) |\n| 4 |  | #P_df-cht | |- theta = ( x e. RR |-> sum_ p e. ( ( 0 [,] x ) i^i Prime ) ( log ` p ) ) |\n| 5 |  | #P_sumex | |- sum_ p e. ( ( 0 [,] A ) i^i Prime ) ( log ` p ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( A e. RR -> ( theta ` A ) = sum_ p e. ( ( 0 [,] A ) i^i Prime ) ( log ` p ) ) |",
+  "conclusion" : "#P_chtval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_wceq", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_wceq", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_clog", "#T_cfv", "#T_vp", "#T_wceq", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_clog", "#T_cfv", "#T_vp", "#T_ccht", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cr", "#T_cmpt--2", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cc0", "#T_cicc", "#T_vx.wal", "#T_cin", "#T_cprime", "#T_clog", "#T_cfv", "#T_vp", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cc0", "#T_cicc", "#T_cA.wceq", "#T_cin", "#T_cprime", "#T_clog", "#T_cfv", "#T_vp", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cr", "#T_wi", "#T_ccht", "#T_cfv", "#T_cA", "#T_wceq", "#T_csu--1", "#T_vp", "#T_csu--2", "#T_cc0", "#T_cicc", "#T_cA", "#T_cin", "#T_cprime", "#T_clog", "#T_cfv", "#T_vp" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvmpt", "#P_ineq1d", "#P_oveq2", "#P_df-cht", "#P_sumeq1d", "#P_sumex" ]
+}

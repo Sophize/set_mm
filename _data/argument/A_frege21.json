@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frege21 on Metamath](http://us.metamath.org/mpegif/frege21.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_frege9 | |- ( ( ph -> th ) -> ( ( th -> ps ) -> ( ph -> ps ) ) ) |\n| 2 |  | #P_frege19 | |- ( ( ( ph -> th ) -> ( ( th -> ps ) -> ( ph -> ps ) ) ) -> ( ( ( ph -> ps ) -> ch ) -> ( ( ph -> th ) -> ( ( th -> ps ) -> ch ) ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ( ph -> ps ) -> ch ) -> ( ( ph -> th ) -> ( ( th -> ps ) -> ch ) ) ) |",
+  "conclusion" : "#P_frege21",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wth", "#T_wi", "#T_wps", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_frege9", "#P_frege19" ]
+}

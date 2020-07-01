@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symgextf1o on Metamath](http://us.metamath.org/mpegif/symgextf1o.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | symgext.s | |- S = ( Base ` ( SymGrp ` ( N \\ { K } ) ) ) |\n| 2 |  | symgext.e | |- E = ( x e. N |-> if ( x = K , K , ( Z ` x ) ) ) |\n| 3 | 1, 2 | #P_symgextf1 | |- ( ( K e. N /\\ Z e. S ) -> E : N -1-1-> N ) |\n| 4 | 1, 2 | #P_symgextfo | |- ( ( K e. N /\\ Z e. S ) -> E : N -onto-> N ) |\n| 5 |  | #P_df-f1o | |- ( E : N -1-1-onto-> N <-> ( E : N -1-1-> N /\\ E : N -onto-> N ) ) |\n| 6 | 3, 4, 5 | #P_sylanbrc | |- ( ( K e. N /\\ Z e. S ) -> E : N -1-1-onto-> N ) |",
+  "conclusion" : "#P_symgextf1o",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cS", "#T_wceq", "#T_cbs", "#T_cfv", "#T_csymg", "#T_cfv", "#T_cN", "#T_cdif", "#T_csn--1", "#T_cK", "#T_csn--2", "#T_cE", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cN", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wceq", "#T_cK", "#T_cif--2", "#T_cK", "#T_cif--3", "#T_cZ", "#T_cfv", "#T_vx", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cZ", "#T_wcel", "#T_cS", "#T_wi", "#T_cE", "#T_wf1--1", "#T_cN", "#T_wf1--2", "#T_cN", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cZ", "#T_wcel", "#T_cS", "#T_wi", "#T_cE", "#T_wfo--1", "#T_cN", "#T_wfo--2", "#T_cN", "#T_cE", "#T_wf1o--1", "#T_cN", "#T_wf1o--2", "#T_cN", "#T_wb", "#T_cE", "#T_wf1--1", "#T_cN", "#T_wf1--2", "#T_cN", "#T_wa", "#T_cE", "#T_wfo--1", "#T_cN", "#T_wfo--2", "#T_cN", "#T_cK", "#T_wcel", "#T_cN", "#T_wa", "#T_cZ", "#T_wcel", "#T_cS", "#T_wi", "#T_cE", "#T_wf1o--1", "#T_cN", "#T_wf1o--2", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_symgextfo", "#P_sylanbrc", "#P_symgextf1", "#P_df-f1o" ]
+}

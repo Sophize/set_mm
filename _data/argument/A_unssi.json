@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See unssi on Metamath](http://us.metamath.org/mpegif/unssi.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | unssi.1 | |- A C_ C |\n| 2 |  | unssi.2 | |- B C_ C |\n| 3 | 1, 2 | #P_pm3.2i | |- ( A C_ C /\\ B C_ C ) |\n| 4 |  | #P_unss | |- ( ( A C_ C /\\ B C_ C ) <-> ( A u. B ) C_ C ) |\n| 5 | 3, 4 | #P_mpbi | |- ( A u. B ) C_ C |",
+  "conclusion" : "#P_unssi",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wss", "#T_cC", "#T_cB", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA.wceq", "#T_wss", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_cun", "#T_cB.wceq", "#T_wss", "#T_cC", "#T_cA", "#T_cun", "#T_cB", "#T_wss", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_unss", "#P_mpbi", "#P_pm3.2i" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subrgid on Metamath](http://us.metamath.org/mpegif/subrgid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | subrgss.1 | |- B = ( Base ` R ) |\n| 2 | 1 | #P_ressid | |- ( R e. Ring -> ( R |`s B ) = R ) |\n| 3 |  | #P_id | |- ( R e. Ring -> R e. Ring ) |\n| 4 | 2, 3 | #P_eqeltrd | |- ( R e. Ring -> ( R |`s B ) e. Ring ) |\n| 5 | 4 | #P_ancli | |- ( R e. Ring -> ( R e. Ring /\\ ( R |`s B ) e. Ring ) ) |\n| 6 |  | #P_eqid | |- ( 1r ` R ) = ( 1r ` R ) |\n| 7 | 1, 6 | #P_ringidcl | |- ( R e. Ring -> ( 1r ` R ) e. B ) |\n| 8 |  | #P_ssid | |- B C_ B |\n| 9 | 7, 8 | #P_jctil | |- ( R e. Ring -> ( B C_ B /\\ ( 1r ` R ) e. B ) ) |\n| 10 | 1, 6 | #P_issubrg | |- ( B e. ( SubRing ` R ) <-> ( ( R e. Ring /\\ ( R |`s B ) e. Ring ) /\\ ( B C_ B /\\ ( 1r ` R ) e. B ) ) ) |\n| 11 | 5, 9, 10 | #P_sylanbrc | |- ( R e. Ring -> B e. ( SubRing ` R ) ) |",
+  "conclusion" : "#P_subrgid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_crg", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cR", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_crg", "#T_cur", "#T_cfv", "#T_cR", "#T_wceq", "#T_cur", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cB.wceq", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cB.wceq", "#T_cB.wceq", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR", "#T_wb", "#T_cR", "#T_wcel", "#T_crg", "#T_wa", "#T_cR", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_crg", "#T_wa", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_wa", "#T_cur", "#T_cfv", "#T_cR", "#T_wcel", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cB", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_jctil", "#P_eqid", "#P_ancli", "#P_ssid", "#P_ringidcl", "#P_ressid", "#P_eqeltrd", "#P_sylanbrc", "#P_issubrg", "#P_id" ]
+}

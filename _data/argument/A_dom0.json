@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dom0 on Metamath](http://us.metamath.org/mpegif/dom0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_reldom | |- Rel ~<_ |\n| 2 | 1 | #P_brrelexi | |- ( A ~<_ (/) -> A e. _V ) |\n| 3 |  | #P_0domg | |- ( A e. _V -> (/) ~<_ A ) |\n| 4 | 2, 3 | #P_syl | |- ( A ~<_ (/) -> (/) ~<_ A ) |\n| 5 | 4 | #P_pm4.71i | |- ( A ~<_ (/) <-> ( A ~<_ (/) /\\ (/) ~<_ A ) ) |\n| 6 |  | #P_sbthb | |- ( ( A ~<_ (/) /\\ (/) ~<_ A ) <-> A ~~ (/) ) |\n| 7 |  | #P_en0 | |- ( A ~~ (/) <-> A = (/) ) |\n| 8 | 5, 6, 7 | #P_3bitri | |- ( A ~<_ (/) <-> A = (/) ) |",
+  "conclusion" : "#P_dom0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wrel", "#T_cdom", "#T_cA.wceq", "#T_cdom", "#T_c0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_c0", "#T_wi", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_c0", "#T_wb", "#T_cA.wceq", "#T_cdom", "#T_c0", "#T_wa", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_cA.wceq", "#T_cdom", "#T_c0", "#T_wa", "#T_c0", "#T_cdom", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_cen", "#T_c0", "#T_cA.wceq", "#T_cen", "#T_c0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cA", "#T_cdom", "#T_c0", "#T_wb", "#T_cA", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3bitri", "#P_sbthb", "#P_reldom", "#P_0domg", "#P_en0", "#P_syl", "#P_brrelexi", "#P_pm4.71i" ]
+}

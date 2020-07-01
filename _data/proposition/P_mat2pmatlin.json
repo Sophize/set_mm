@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mat2pmatlin on Metamath](http://us.metamath.org/mpegif/mat2pmatlin.html)"
+  } ],
+  "names" : [ "mat2pmatlin" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cN", "#T_cmat2pmat", "#T_cR", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cC", "#T_wceq", "#T_cN", "#T_cmat", "#T_cP", "#T_cH", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cC", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cS", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cP", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cA", "#T_c.xp", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cC", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cX", "#T_wcel", "#T_cK", "#T_wa", "#T_cY", "#T_wcel", "#T_cB", "#T_wi", "#T_cT", "#T_cfv", "#T_cX", "#T_c.x", "#T_cY", "#T_wceq", "#T_cS", "#T_cfv", "#T_cX", "#T_c.xp", "#T_cT", "#T_cfv", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The transformation of matrices into polynomial matrices is \"linear\", analogous to ~ lmhmlin .  Since ` A ` and ` C ` have different scalar rings, ` T ` cannot be a left module homomorphism as defined in ~ df-lmhm , see ~ lmhmsca .  (Contributed by AV, 13-Nov-2019.)  (Proof shortened by AV, 28-Nov-2019.) ",
+  "statement" : "mat2pmatbas.t $e |- T = ( N matToPolyMat R ) $.\nmat2pmatbas.a $e |- A = ( N Mat R ) $.\nmat2pmatbas.b $e |- B = ( Base ` A ) $.\nmat2pmatbas.p $e |- P = ( Poly1 ` R ) $.\nmat2pmatbas.c $e |- C = ( N Mat P ) $.\nmat2pmatbas0.h $e |- H = ( Base ` C ) $.\nmat2pmatlin.k $e |- K = ( Base ` R ) $.\nmat2pmatlin.s $e |- S = ( algSc ` P ) $.\nmat2pmatlin.m $e |- .x. = ( .s ` A ) $.\nmat2pmatlin.n $e |- .X. = ( .s ` C ) $.\nmat2pmatlin $p |- ( ( ( N e. Fin /\\ R e. CRing ) /\\ ( X e. K /\\ Y e. B ) ) -> ( T ` ( X .x. Y ) ) = ( ( S ` X ) .X. ( T ` Y ) ) ) $."
+}

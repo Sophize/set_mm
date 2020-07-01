@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fndmfifsupp on Metamath](http://us.metamath.org/mpegif/fndmfifsupp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fndmfisuppfi.f | |- ( ph -> F Fn D ) |\n| 2 |  | fndmfisuppfi.d | |- ( ph -> D e. Fin ) |\n| 3 |  | fndmfisuppfi.z | |- ( ph -> Z e. V ) |\n| 4 |  | #P_dffn3 | |- ( F Fn D <-> F : D --> ran F ) |\n| 5 | 1, 4 | #P_sylib | |- ( ph -> F : D --> ran F ) |\n| 6 | 5, 2, 3 | #P_fdmfifsupp | |- ( ph -> F finSupp Z ) |",
+  "conclusion" : "#P_fndmfifsupp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wfn", "#T_cD", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cV", "#T_cF", "#T_wfn", "#T_cD", "#T_wb", "#T_cF", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cD", "#T_wf--2", "#T_crn", "#T_cF", "#T_wph", "#T_wi", "#T_cF", "#T_cfsupp", "#T_cZ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylib", "#P_dffn3", "#P_fdmfifsupp" ]
+}

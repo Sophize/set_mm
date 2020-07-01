@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See topgrpbas on Metamath](http://us.metamath.org/mpegif/topgrpbas.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | topgrpfn.w | |- W = { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( TopSet ` ndx ) , J >. } |\n| 2 | 1 | #P_topgrpstr | |- W Struct <. 1 , 9 >. |\n| 3 |  | #P_baseid | |- Base = Slot ( Base ` ndx ) |\n| 4 |  | #P_snsstp1 | |- { <. ( Base ` ndx ) , B >. } C_ { <. ( Base ` ndx ) , B >. , <. ( +g ` ndx ) , .+ >. , <. ( TopSet ` ndx ) , J >. } |\n| 5 | 4, 1 | #P_sseqtr4i | |- { <. ( Base ` ndx ) , B >. } C_ W |\n| 6 | 2, 3, 5 | #P_strfv | |- ( B e. X -> B = ( Base ` W ) ) |",
+  "conclusion" : "#P_topgrpbas",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cW", "#T_wceq", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_ctp--4", "#T_cW", "#T_cstr", "#T_cop--1", "#T_c1", "#T_cop--2", "#T_c9", "#T_cop--3", "#T_cbs", "#T_wceq", "#T_cslot", "#T_cbs", "#T_cfv", "#T_cnx", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_ctp--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_ctp--2", "#T_cop--1", "#T_cplusg", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_c.pl", "#T_cop--3", "#T_ctp--3", "#T_cop--1", "#T_cts", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cJ", "#T_cop--3", "#T_ctp--4", "#T_csn--1", "#T_cop--1", "#T_cbs", "#T_cfv", "#T_cnx", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_csn--2", "#T_wss", "#T_cW", "#T_cB", "#T_wcel", "#T_cX", "#T_wi", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cW" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_topgrpstr", "#P_snsstp1", "#P_sseqtr4i", "#P_strfv", "#P_baseid" ]
+}

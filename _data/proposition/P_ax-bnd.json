@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-bnd on Metamath](http://us.metamath.org/mpegif/ax-bnd.html)"
+  } ],
+  "names" : [ "ax-bnd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vx", "#T_wo", "#T_wal", "#T_vz", "#T_vz", "#T_wceq", "#T_vy", "#T_wo", "#T_wal", "#T_vx", "#T_wal", "#T_vz", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vz", "#T_vx", "#T_wceq", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of bundling.  The general idea of this axiom is that two variables are either distinct or non-distinct.  That idea could be expressed as ` A. z z = x \\/ -. A. z z = x ` .  However, we instead choose an axiom which has many of the same consequences, but which is different with respect to a universe which contains only one object. ` A. z z = x ` holds if ` z ` and ` x ` are the same variable, likewise for ` z ` and ` y ` , and ` A. x A. z ( x = y -> A. z x = y ) ` holds if ` z ` is distinct from the others (and the universe has at least two objects). As with other statements of the form \"x is decidable (either true or false)\", this does not entail the full Law of the Excluded Middle (which is the proposition that all statements are decidable), but instead merely the assertion that particular kinds of statements are decidable (or in this case, an assertion similar to decidability). This axiom implies ~ ax-i12 as can be seen at ~ axi12 .  Whether ax-bnd can be proved from the remaining axioms including ~ ax-i12 is not known. The reason we call this \"bundling\" is that a statement without a distinct variable constraint \"bundles\" together two statements, one in which the two variables are the same and one in which they are different. (Contributed by Mario Carneiro and Jim Kingdon, 14-Mar-2018.) ",
+  "statement" : "ax-bnd $p |- ( A. z z = x \\/ ( A. z z = y \\/ A. x A. z ( x = y -> A. z x = y ) ) ) $."
+}

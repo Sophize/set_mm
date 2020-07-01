@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ltsubadd2i on Metamath](http://us.metamath.org/mpegif/ltsubadd2i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt_2.1 | |- A e. RR |\n| 2 |  | lt_2.2 | |- B e. RR |\n| 3 |  | lt_2.3 | |- C e. RR |\n| 4 |  | #P_ltsubadd2 | |- ( ( A e. RR /\\ B e. RR /\\ C e. RR ) -> ( ( A - B ) < C <-> A < ( B + C ) ) ) |\n| 5 | 1, 2, 3, 4 | #P_mp3an | |- ( ( A - B ) < C <-> A < ( B + C ) ) |",
+  "conclusion" : "#P_ltsubadd2i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cC", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cC", "#T_wcel", "#T_cr", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_clt", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_clt", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_cA", "#T_cmin", "#T_cB", "#T_clt", "#T_cC", "#T_wb", "#T_cA", "#T_clt", "#T_cB", "#T_caddc", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp3an", "#P_ltsubadd2" ]
+}

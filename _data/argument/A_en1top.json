@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See en1top on Metamath](http://us.metamath.org/mpegif/en1top.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0opn | |- ( J e. Top -> (/) e. J ) |\n| 2 |  | #P_en1eqsn | |- ( ( (/) e. J /\\ J ~~ 1o ) -> J = { (/) } ) |\n| 3 | 2 | #P_ex | |- ( (/) e. J -> ( J ~~ 1o -> J = { (/) } ) ) |\n| 4 | 1, 3 | #P_syl | |- ( J e. Top -> ( J ~~ 1o -> J = { (/) } ) ) |\n| 5 |  | #P_id | |- ( J = { (/) } -> J = { (/) } ) |\n| 6 |  | #P_0ex | |- (/) e. _V |\n| 7 | 6 | #P_ensn1 | |- { (/) } ~~ 1o |\n| 8 | 5, 7 | #P_syl6eqbr | |- ( J = { (/) } -> J ~~ 1o ) |\n| 9 | 4, 8 | #P_impbid1 | |- ( J e. Top -> ( J ~~ 1o <-> J = { (/) } ) ) |",
+  "conclusion" : "#P_en1top",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_c0", "#T_wcel", "#T_cJ", "#T_c0", "#T_wcel", "#T_cJ", "#T_wa", "#T_cJ", "#T_cen", "#T_c1o", "#T_wi", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c0", "#T_wcel", "#T_cJ", "#T_wi", "#T_cJ", "#T_cen", "#T_c1o", "#T_wi", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_cen", "#T_c1o", "#T_wi", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wi", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_c0", "#T_wcel", "#T_cvv", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cen", "#T_c1o", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wi", "#T_cJ", "#T_cen", "#T_c1o", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wi", "#T_cJ", "#T_cen", "#T_c1o", "#T_wb", "#T_cJ", "#T_wceq", "#T_csn--1", "#T_c0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ensn1", "#P_en1eqsn", "#P_syl6eqbr", "#P_ex", "#P_syl", "#P_0ex", "#P_impbid1", "#P_id", "#P_0opn" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 8lt10 on Metamath](http://us.metamath.org/mpegif/8lt10.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_8lt9 | |- 8 < 9 |\n| 2 |  | #P_9lt10 | |- 9 < 10 |\n| 3 |  | #P_8re | |- 8 e. RR |\n| 4 |  | #P_9re | |- 9 e. RR |\n| 5 |  | #P_10re | |- 10 e. RR |\n| 6 | 3, 4, 5 | #P_lttri | |- ( ( 8 < 9 /\\ 9 < 10 ) -> 8 < 10 ) |\n| 7 | 1, 2, 6 | #P_mp2an | |- 8 < 10 |",
+  "conclusion" : "#P_8lt10",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c8", "#T_clt", "#T_c9", "#T_c9", "#T_clt", "#T_c10", "#T_c8", "#T_wcel", "#T_cr", "#T_c9", "#T_wcel", "#T_cr", "#T_c10", "#T_wcel", "#T_cr", "#T_c8", "#T_clt", "#T_c9", "#T_wa", "#T_c9", "#T_clt", "#T_c10", "#T_wi", "#T_c8", "#T_clt", "#T_c10", "#T_c8", "#T_clt", "#T_c10" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_9lt10", "#P_lttri", "#P_mp2an", "#P_8re", "#P_9re", "#P_8lt9", "#P_10re" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfac10b on Metamath](http://us.metamath.org/mpegif/dfac10b.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_vex | |- x e. _V |\n| 2 | 1 | #P_elima | |- ( x e. ( ~~ \" On ) <-> E. y e. On y ~~ x ) |\n| 3 | 2 | #P_bicomi | |- ( E. y e. On y ~~ x <-> x e. ( ~~ \" On ) ) |\n| 4 | 3 | #P_albii | |- ( A. x E. y e. On y ~~ x <-> A. x x e. ( ~~ \" On ) ) |\n| 5 |  | #P_dfac10c | |- ( CHOICE <-> A. x E. y e. On y ~~ x ) |\n| 6 |  | #P_eqv | |- ( ( ~~ \" On ) = _V <-> A. x x e. ( ~~ \" On ) ) |\n| 7 | 4, 5, 6 | #P_3bitr4i | |- ( CHOICE <-> ( ~~ \" On ) = _V ) |",
+  "conclusion" : "#P_dfac10b",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cen", "#T_cima", "#T_con0", "#T_wb", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wb", "#T_vx.wal", "#T_wcel", "#T_cen", "#T_cima", "#T_con0", "#T_wal", "#T_vx.wal", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cen", "#T_cima", "#T_con0", "#T_wac", "#T_wb", "#T_wal", "#T_vx.wal", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_cen", "#T_vx.wal", "#T_cen", "#T_cima", "#T_con0", "#T_wceq", "#T_cvv", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cen", "#T_cima", "#T_con0", "#T_wac", "#T_wb", "#T_cen", "#T_cima", "#T_con0", "#T_wceq", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dfac10c", "#P_albii", "#P_eqv", "#P_3bitr4i", "#P_vex", "#P_bicomi", "#P_elima" ]
+}

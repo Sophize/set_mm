@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See muinv on Metamath](http://us.metamath.org/mpegif/muinv.html)"
+  } ],
+  "names" : [ "muinv" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cn", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vx", "#T_cdvds", "#T_vn", "#T_crab--4", "#T_cF", "#T_cfv", "#T_vk", "#T_wph", "#T_wi", "#T_cF", "#T_wceq", "#T_vm", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_csu--1", "#T_vj", "#T_csu--2", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_cn", "#T_crab--3", "#T_vx", "#T_cdvds", "#T_vm", "#T_crab--4", "#T_cmu", "#T_cfv", "#T_vj", "#T_cmul", "#T_cG", "#T_cfv", "#T_vm", "#T_cdiv", "#T_vj", "#T_cF", "#T_vj", "#T_vk", "#T_vm", "#T_vn", "#T_vj", "#T_vk", "#T_vm", "#T_vn", "#T_vx", "#T_vj", "#T_vk", "#T_vm", "#T_wph", "#T_vk", "#T_vm" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The M&ouml;bius inversion formula.  If ` G ( n ) = sum_ k || n F ( k ) ` for every ` n e. NN ` , then ` F ( n ) = sum_ k || n ` ` mmu ( k ) G ( n / k ) = sum_ k || n mmu ( n / k ) G ( k ) ` , i.e. the M&ouml;bius function is the Dirichlet convolution inverse of the constant function ` 1 ` .  (Contributed by Mario Carneiro, 2-Jul-2015.) ",
+  "statement" : "muinv.1 $e |- ( ph -> F : NN --> CC ) $.\nmuinv.2 $e |- ( ph -> G = ( n e. NN |-> sum_ k e. { x e. NN | x || n } ( F ` k ) ) ) $.\nmuinv $p |- ( ph -> F = ( m e. NN |-> sum_ j e. { x e. NN | x || m } ( ( mmu ` j ) x. ( G ` ( m / j ) ) ) ) ) $.\n$d F j k m n $.\n$d j k m n x $.\n$d j k m ph $.\n$d k m $."
+}

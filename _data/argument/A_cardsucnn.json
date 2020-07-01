@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardsucnn on Metamath](http://us.metamath.org/mpegif/cardsucnn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano2 | |- ( A e. _om -> suc A e. _om ) |\n| 2 |  | #P_cardnn | |- ( suc A e. _om -> ( card ` suc A ) = suc A ) |\n| 3 | 1, 2 | #P_syl | |- ( A e. _om -> ( card ` suc A ) = suc A ) |\n| 4 |  | #P_cardnn | |- ( A e. _om -> ( card ` A ) = A ) |\n| 5 |  | #P_suceq | |- ( ( card ` A ) = A -> suc ( card ` A ) = suc A ) |\n| 6 | 4, 5 | #P_syl | |- ( A e. _om -> suc ( card ` A ) = suc A ) |\n| 7 | 3, 6 | #P_eqtr4d | |- ( A e. _om -> ( card ` suc A ) = suc ( card ` A ) ) |",
+  "conclusion" : "#P_cardsucnn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_csuc", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_csuc", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_csuc", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_csuc", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_csuc", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_csuc", "#T_cA", "#T_wceq", "#T_csuc", "#T_ccrd", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_peano2", "#P_cardnn", "#P_suceq", "#P_syl", "#P_eqtr4d" ]
+}

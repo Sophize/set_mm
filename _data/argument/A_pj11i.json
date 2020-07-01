@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pj11i on Metamath](http://us.metamath.org/mpegif/pj11i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pjsumt.1 | |- G e. CH |\n| 2 |  | pjsumt.2 | |- H e. CH |\n| 3 |  | #P_rneq | |- ( ( projh ` G ) = ( projh ` H ) -> ran ( projh ` G ) = ran ( projh ` H ) ) |\n| 4 | 1 | #P_pjrni | |- ran ( projh ` G ) = G |\n| 5 | 2 | #P_pjrni | |- ran ( projh ` H ) = H |\n| 6 | 3, 4, 5 | #P_3eqtr3g | |- ( ( projh ` G ) = ( projh ` H ) -> G = H ) |\n| 7 |  | #P_fveq2 | |- ( G = H -> ( projh ` G ) = ( projh ` H ) ) |\n| 8 | 6, 7 | #P_impbii | |- ( ( projh ` G ) = ( projh ` H ) <-> G = H ) |",
+  "conclusion" : "#P_pj11i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wcel", "#T_cch", "#T_cH", "#T_wcel", "#T_cch", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wi", "#T_crn", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_crn", "#T_cpjh", "#T_cfv", "#T_cH", "#T_crn", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cG", "#T_crn", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wceq", "#T_cH", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wi", "#T_cG", "#T_wceq", "#T_cH", "#T_cG", "#T_wceq", "#T_cH", "#T_wi", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cpjh", "#T_cfv", "#T_cG", "#T_wceq", "#T_cpjh", "#T_cfv", "#T_cH", "#T_wb", "#T_cG", "#T_wceq", "#T_cH" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_rneq", "#P_pjrni", "#P_fveq2", "#P_3eqtr3g" ]
+}

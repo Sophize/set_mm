@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See soeq12d on Metamath](http://us.metamath.org/mpegif/soeq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | weeq12d.l | |- ( ph -> R = S ) |\n| 2 |  | weeq12d.r | |- ( ph -> A = B ) |\n| 3 |  | #P_soeq1 | |- ( R = S -> ( R Or A <-> S Or A ) ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> ( R Or A <-> S Or A ) ) |\n| 5 |  | #P_soeq2 | |- ( A = B -> ( S Or A <-> S Or B ) ) |\n| 6 | 2, 5 | #P_syl | |- ( ph -> ( S Or A <-> S Or B ) ) |\n| 7 | 4, 6 | #P_bitrd | |- ( ph -> ( R Or A <-> S Or B ) ) |",
+  "conclusion" : "#P_soeq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_cR", "#T_wceq", "#T_cS", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wor", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cR", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wor", "#T_cA.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cS", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wor", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cS", "#T_wor", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_wor", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cR", "#T_wor", "#T_cA", "#T_wb", "#T_cS", "#T_wor", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_soeq1", "#P_soeq2", "#P_syl" ]
+}

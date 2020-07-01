@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See leexp2ad on Metamath](http://us.metamath.org/mpegif/leexp2ad.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resqcld.1 | |- ( ph -> A e. RR ) |\n| 2 |  | leexp2ad.2 | |- ( ph -> 1 <_ A ) |\n| 3 |  | leexp2ad.3 | |- ( ph -> N e. ( ZZ>= ` M ) ) |\n| 4 |  | #P_leexp2a | |- ( ( A e. RR /\\ 1 <_ A /\\ N e. ( ZZ>= ` M ) ) -> ( A ^ M ) <_ ( A ^ N ) ) |\n| 5 | 1, 2, 3, 4 | #P_syl3anc | |- ( ph -> ( A ^ M ) <_ ( A ^ N ) ) |",
+  "conclusion" : "#P_leexp2ad",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_c1", "#T_cle", "#T_cA", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--1", "#T_c1", "#T_cle", "#T_cA.wceq", "#T_w3a--2", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_cA.wceq", "#T_cexp", "#T_cM", "#T_cle", "#T_cA.wceq", "#T_cexp", "#T_cN", "#T_wph", "#T_wi", "#T_cA", "#T_cexp", "#T_cM", "#T_cle", "#T_cA", "#T_cexp", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl3anc", "#P_leexp2a" ]
+}

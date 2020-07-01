@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgpmulg2 on Metamath](http://us.metamath.org/mpegif/tgpmulg2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn x\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgpmulg.j | |- J = ( TopOpen ` G ) |\n| 2 |  | tgpmulg.t | |- .x. = ( .g ` G ) |\n| 3 |  | #P_zex | |- ZZ e. _V |\n| 4 | 3 | #P_a1i | |- ( G e. TopGrp -> ZZ e. _V ) |\n| 5 |  | #P_eqid | |- ( Base ` G ) = ( Base ` G ) |\n| 6 | 1, 5 | #P_tgptopon | |- ( G e. TopGrp -> J e. ( TopOn ` ( Base ` G ) ) ) |\n| 7 |  | #P_topontop | |- ( J e. ( TopOn ` ( Base ` G ) ) -> J e. Top ) |\n| 8 | 6, 7 | #P_syl | |- ( G e. TopGrp -> J e. Top ) |\n| 9 | 5, 2 | #P_mulgfn | |- .x. Fn ( ZZ X. ( Base ` G ) ) |\n| 10 | 9 | #P_a1i | |- ( G e. TopGrp -> .x. Fn ( ZZ X. ( Base ` G ) ) ) |\n| 11 | 1, 2, 5 | #P_tgpmulg | |- ( ( G e. TopGrp /\\ n e. ZZ ) -> ( x e. ( Base ` G ) |-> ( n .x. x ) ) e. ( J Cn J ) ) |\n| 12 | 4, 6, 8, 10, 11 | #P_txdis1cn | |- ( G e. TopGrp -> .x. e. ( ( ~P ZZ tX J ) Cn J ) ) |",
+  "conclusion" : "#P_tgpmulg2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_vx", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_c.x", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_cz", "#T_wcel", "#T_cvv", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cz", "#T_wcel", "#T_cvv", "#T_cbs", "#T_cfv", "#T_cG", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cG", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cG", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctop", "#T_c.x", "#T_wfn", "#T_cz", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_c.x", "#T_wfn", "#T_cz", "#T_cxp", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wa", "#T_vn", "#T_wcel", "#T_cz", "#T_wi", "#T_vx.wal", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_cG", "#T_cmpt--2", "#T_vn", "#T_c.x", "#T_vx.wal", "#T_wcel", "#T_cJ", "#T_ccn", "#T_cJ", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_c.x", "#T_wcel", "#T_cpw", "#T_cz", "#T_ctx", "#T_cJ", "#T_ccn", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mulgfn", "#P_topontop", "#P_tgptopon", "#P_zex", "#P_txdis1cn", "#P_syl", "#P_a1i", "#P_tgpmulg" ]
+}

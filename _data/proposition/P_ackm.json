@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ackm on Metamath](http://us.metamath.org/mpegif/ackm.html)"
+  } ],
+  "names" : [ "ackm" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wex", "#T_vy", "#T_wal", "#T_vz", "#T_wex", "#T_vv", "#T_wal", "#T_vu", "#T_vy", "#T_wcel", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vy", "#T_wi", "#T_vv", "#T_wcel", "#T_vx", "#T_wa", "#T_wn", "#T_vy", "#T_wceq", "#T_vv", "#T_wa", "#T_vz", "#T_wcel", "#T_vv", "#T_wo", "#T_wn", "#T_vy", "#T_wcel", "#T_vx", "#T_wa", "#T_vz", "#T_wcel", "#T_vx", "#T_wi", "#T_vv", "#T_wcel", "#T_vz", "#T_wa", "#T_vv", "#T_wcel", "#T_vy", "#T_wa", "#T_vu", "#T_wcel", "#T_vz", "#T_wa", "#T_vu", "#T_wcel", "#T_vy", "#T_wi", "#T_vu", "#T_wceq", "#T_vv", "#T_vu", "#T_vv", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A remarkable equivalent to the Axiom of Choice that has only 5 quantifiers (when expanded to ` e. ` , ` = ` primitives in prenex form), discovered and proved by Kurt Maes.  This establishes a new record, reducing from 6 to 5 the largest number of quantified variables needed by any ZFC axiom.  The ZF-equivalence to AC is shown by theorem ~ dfackm .  Maes found this version of AC in April, 2004 (replacing a longer version, also with 5 quantifiers, that he found in November, 2003).  See Kurt Maes, \"A 5-quantifier ( ` e. ` ,=)-expression ZF-equivalent to the Axiom of Choice\" ( ~ http://arxiv.org/PS_cache/arxiv/pdf/0705/0705.3162v1.pdf ). The original FOM posts are: ~ http://www.cs.nyu.edu/pipermail/fom/2003-November/007631.html ~ http://www.cs.nyu.edu/pipermail/fom/2003-November/007641.html . (Contributed by NM, 29-Apr-2004.)  (Revised by Mario Carneiro, 17-May-2015.)  (Proof modification is discouraged.) ",
+  "statement" : "ackm $p |- A. x E. y A. z E. v A. u ( ( y e. x /\\ ( z e. y -> ( ( v e. x /\\ -. y = v ) /\\ z e. v ) ) ) \\/ ( -. y e. x /\\ ( z e. x -> ( ( v e. z /\\ v e. y ) /\\ ( ( u e. z /\\ u e. y ) -> u = v ) ) ) ) ) $.\n$d u v x y z $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See znf1o on Metamath](http://us.metamath.org/mpegif/znf1o.html)"
+  } ],
+  "names" : [ "znf1o" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cY", "#T_wceq", "#T_czn", "#T_cfv", "#T_cN", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cY", "#T_cF", "#T_wceq", "#T_czrh", "#T_cfv", "#T_cY", "#T_cres", "#T_cW", "#T_cW", "#T_wceq", "#T_cif--1", "#T_cN", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cz", "#T_cif--3", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cW", "#T_wf1o--2", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The function ` F ` enumerates all equivalence classes in ` Z/nZ ` for each ` n ` .  When ` n = 0 ` , ` ZZ / 0 ZZ = ZZ / { 0 } ~~ ZZ ` so we let ` W = ZZ ` ; otherwise ` W = { 0 , ... , n - 1 } ` enumerates all the equivalence classes.  (Contributed by Mario Carneiro, 15-Jun-2015.) (Revised by Mario Carneiro, 2-May-2016.)  (Revised by AV, 13-Jun-2019.) ",
+  "statement" : "znf1o.y $e |- Y = ( Z/nZ ` N ) $.\nznf1o.b $e |- B = ( Base ` Y ) $.\nznf1o.f $e |- F = ( ( ZRHom ` Y ) |` W ) $.\nznf1o.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.\nznf1o $p |- ( N e. NN0 -> F : W -1-1-onto-> B ) $."
+}

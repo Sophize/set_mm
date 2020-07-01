@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nbbndc on Metamath](http://us.metamath.org/mpegif/nbbndc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xor3dc | |- ( DECID ph -> ( DECID ps -> ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) ) ) |\n| 2 | 1 | #P_imp | |- ( ( DECID ph /\\ DECID ps ) -> ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) ) |\n| 3 |  | #P_con2bidc | |- ( DECID ph -> ( DECID ps -> ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) ) ) |\n| 4 | 3 | #P_imp | |- ( ( DECID ph /\\ DECID ps ) -> ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) ) |\n| 5 | 2, 4 | #P_bitrd | |- ( ( DECID ph /\\ DECID ps ) -> ( -. ( ph <-> ps ) <-> ( ps <-> -. ph ) ) ) |\n| 6 |  | #P_bicom | |- ( ( ps <-> -. ph ) <-> ( -. ph <-> ps ) ) |\n| 7 | 5, 6 | #P_syl6rbb | |- ( ( DECID ph /\\ DECID ps ) -> ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) ) |\n| 8 | 7 | #P_ex | |- ( DECID ph -> ( DECID ps -> ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) ) ) |",
+  "conclusion" : "#P_nbbndc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wdc", "#T_wph", "#T_wa", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wdc", "#T_wph", "#T_wi", "#T_wdc", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_con2bidc", "#P_bitrd", "#P_xor3dc", "#P_bicom", "#P_ex", "#P_imp", "#P_syl6rbb" ]
+}

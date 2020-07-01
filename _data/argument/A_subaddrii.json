@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subaddrii on Metamath](http://us.metamath.org/mpegif/subaddrii.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidi.1 | |- A e. CC |\n| 2 |  | pncan3i.2 | |- B e. CC |\n| 3 |  | subadd.3 | |- C e. CC |\n| 4 |  | subaddri.4 | |- ( B + C ) = A |\n| 5 | 1, 2, 3 | #P_subaddi | |- ( ( A - B ) = C <-> ( B + C ) = A ) |\n| 6 | 4, 5 | #P_mpbir | |- ( A - B ) = C |",
+  "conclusion" : "#P_subaddrii",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cc", "#T_cB", "#T_wcel", "#T_cc", "#T_cC", "#T_wcel", "#T_cc", "#T_cB", "#T_caddc", "#T_cC", "#T_wceq", "#T_cA", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_caddc", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_cmin", "#T_cB", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subaddi", "#P_mpbir" ]
+}

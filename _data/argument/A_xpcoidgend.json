@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xpcoidgend on Metamath](http://us.metamath.org/mpegif/xpcoidgend.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | xpcoidgend.1 | |- ( ph -> ( A i^i B ) =/= (/) ) |\n| 2 |  | #P_incom | |- ( A i^i B ) = ( B i^i A ) |\n| 3 | 2, 1 | #P_syl5eqner | |- ( ph -> ( B i^i A ) =/= (/) ) |\n| 4 | 3 | #P_xpcogend | |- ( ph -> ( ( A X. B ) o. ( A X. B ) ) = ( A X. B ) ) |",
+  "conclusion" : "#P_xpcoidgend",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_cin", "#T_cB", "#T_wne", "#T_c0", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wceq", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_cin", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_wph", "#T_wi", "#T_cA", "#T_cxp", "#T_cB", "#T_ccom", "#T_cA", "#T_cxp", "#T_cB", "#T_wceq", "#T_cA", "#T_cxp", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_incom", "#P_syl5eqner", "#P_xpcogend" ]
+}

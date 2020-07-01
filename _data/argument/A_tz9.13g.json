@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tz9.13g on Metamath](http://us.metamath.org/mpegif/tz9.13g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eleq1 | |- ( y = A -> ( y e. ( R1 ` x ) <-> A e. ( R1 ` x ) ) ) |\n| 2 | 1 | #P_rexbidv | |- ( y = A -> ( E. x e. On y e. ( R1 ` x ) <-> E. x e. On A e. ( R1 ` x ) ) ) |\n| 3 |  | #P_vex | |- y e. _V |\n| 4 | 3 | #P_tz9.13 | |- E. x e. On y e. ( R1 ` x ) |\n| 5 | 2, 4 | #P_vtoclg | |- ( A e. V -> E. x e. On A e. ( R1 ` x ) ) |",
+  "conclusion" : "#P_tz9.13g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_wb", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_con0", "#T_vy.tru", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx.wal", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_con0", "#T_cA", "#T_wcel", "#T_cr1", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tz9.13", "#P_vtoclg", "#P_eleq1", "#P_rexbidv", "#P_vex" ]
+}

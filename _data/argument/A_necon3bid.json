@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See necon3bid on Metamath](http://us.metamath.org/mpegif/necon3bid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | necon3bid.1 | |- ( ph -> ( A = B <-> C = D ) ) |\n| 2 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 3 | 1 | #P_necon3bbid | |- ( ph -> ( -. A = B <-> C =/= D ) ) |\n| 4 | 2, 3 | #P_syl5bb | |- ( ph -> ( A =/= B <-> C =/= D ) ) |",
+  "conclusion" : "#P_necon3bid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wb", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wb", "#T_cC", "#T_wne", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cB", "#T_wb", "#T_cC", "#T_wne", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5bb", "#P_necon3bbid", "#P_df-ne" ]
+}

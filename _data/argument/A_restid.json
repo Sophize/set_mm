@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See restid on Metamath](http://us.metamath.org/mpegif/restid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | restid.1 | |- X = U. J |\n| 2 |  | #P_uniexg | |- ( J e. V -> U. J e. _V ) |\n| 3 | 1, 2 | #P_syl5eqel | |- ( J e. V -> X e. _V ) |\n| 4 | 1 | #P_eqimss2i | |- U. J C_ X |\n| 5 |  | #P_sspwuni | |- ( J C_ ~P X <-> U. J C_ X ) |\n| 6 | 4, 5 | #P_mpbir | |- J C_ ~P X |\n| 7 |  | #P_restid2 | |- ( ( X e. _V /\\ J C_ ~P X ) -> ( J |`t X ) = J ) |\n| 8 | 3, 6, 7 | #P_sylancl | |- ( J e. V -> ( J |`t X ) = J ) |",
+  "conclusion" : "#P_restid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cJ", "#T_wcel", "#T_cvv", "#T_cJ", "#T_wcel", "#T_cV", "#T_wi", "#T_cX", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cJ", "#T_wss", "#T_cX", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_wb", "#T_cuni", "#T_cJ", "#T_wss", "#T_cX", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_cX", "#T_wcel", "#T_cvv", "#T_wa", "#T_cJ", "#T_wss", "#T_cpw", "#T_cX", "#T_wi", "#T_cJ", "#T_crest", "#T_cX", "#T_wceq", "#T_cJ", "#T_cJ", "#T_wcel", "#T_cV", "#T_wi", "#T_cJ", "#T_crest", "#T_cX", "#T_wceq", "#T_cJ" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_restid2", "#P_syl5eqel", "#P_uniexg", "#P_sylancl", "#P_mpbir", "#P_eqimss2i", "#P_sspwuni" ]
+}

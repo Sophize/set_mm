@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-diag on Metamath](http://us.metamath.org/mpegif/df-diag.html)"
+  } ],
+  "names" : [ "df-diag" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdiag", "#T_wceq", "#T_vc", "#T_cmpt2--1", "#T_ccat", "#T_cmpt2--2", "#T_vd", "#T_cmpt2--3", "#T_ccat", "#T_cmpt2--4", "#T_cop--1", "#T_vc", "#T_cop--2", "#T_vd", "#T_cop--3", "#T_ccurf", "#T_vc", "#T_c1stf", "#T_vd", "#T_vc", "#T_vd" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the diagonal functor, which is the functor ` C --> ( D Func C ) ` whose object part is ` x e. C |-> ( y e. D |-> x ) ` .  The value of the functor at an object ` x ` is the constant functor which maps all objects in ` D ` to ` x ` and all morphisms to ` 1 ( x ) ` .  The morphism part is a natural transformation between these functors, which takes ` f : x --> y ` to the natural transformation with every component equal to ` f ` .  (Contributed by Mario Carneiro, 6-Jan-2017.) ",
+  "statement" : "df-diag $p |- DiagFunc = ( c e. Cat , d e. Cat |-> ( <. c , d >. curryF ( c 1stF d ) ) ) $.\n$d c d $."
+}

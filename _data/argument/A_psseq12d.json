@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See psseq12d on Metamath](http://us.metamath.org/mpegif/psseq12d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | psseq1d.1 | |- ( ph -> A = B ) |\n| 2 |  | psseq12d.2 | |- ( ph -> C = D ) |\n| 3 | 1 | #P_psseq1d | |- ( ph -> ( A C. C <-> B C. C ) ) |\n| 4 | 2 | #P_psseq2d | |- ( ph -> ( B C. C <-> B C. D ) ) |\n| 5 | 3, 4 | #P_bitrd | |- ( ph -> ( A C. C <-> B C. D ) ) |",
+  "conclusion" : "#P_psseq12d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wceq", "#T_cD", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wpss", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wph", "#T_wi", "#T_cB.wceq", "#T_wpss", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wpss", "#T_cD", "#T_wph", "#T_wi", "#T_cA", "#T_wpss", "#T_cC", "#T_wb", "#T_cB", "#T_wpss", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_psseq2d", "#P_psseq1d" ]
+}

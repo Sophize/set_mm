@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedth4h on Metamath](http://us.metamath.org/mpegif/dedth4h.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dedth4h.1 | |- ( A = if ( ph , A , R ) -> ( ta <-> et ) ) |\n| 2 |  | dedth4h.2 | |- ( B = if ( ps , B , S ) -> ( et <-> ze ) ) |\n| 3 |  | dedth4h.3 | |- ( C = if ( ch , C , F ) -> ( ze <-> si ) ) |\n| 4 |  | dedth4h.4 | |- ( D = if ( th , D , G ) -> ( si <-> rh ) ) |\n| 5 |  | dedth4h.5 | |- rh |\n| 6 | 1 | #P_imbi2d | |- ( A = if ( ph , A , R ) -> ( ( ( ch /\\ th ) -> ta ) <-> ( ( ch /\\ th ) -> et ) ) ) |\n| 7 | 2 | #P_imbi2d | |- ( B = if ( ps , B , S ) -> ( ( ( ch /\\ th ) -> et ) <-> ( ( ch /\\ th ) -> ze ) ) ) |\n| 8 | 3, 4, 5 | #P_dedth2h | |- ( ( ch /\\ th ) -> ze ) |\n| 9 | 6, 7, 8 | #P_dedth2h | |- ( ( ph /\\ ps ) -> ( ( ch /\\ th ) -> ta ) ) |\n| 10 | 9 | #P_imp | |- ( ( ( ph /\\ ps ) /\\ ( ch /\\ th ) ) -> ta ) |",
+  "conclusion" : "#P_dedth4h",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cR", "#T_wi", "#T_wta", "#T_wb", "#T_wet", "#T_cB", "#T_wceq", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cB", "#T_cif--3", "#T_cS", "#T_wi", "#T_wet", "#T_wb", "#T_wze", "#T_cC", "#T_wceq", "#T_cif--1", "#T_wch", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cF", "#T_wi", "#T_wze", "#T_wb", "#T_wsi", "#T_cD", "#T_wceq", "#T_cif--1", "#T_wth", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cG", "#T_wi", "#T_wsi", "#T_wb", "#T_wrh", "#T_wrh", "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_wph", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_cR", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wb", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wet", "#T_cB.wceq", "#T_wceq", "#T_cif--1", "#T_wps", "#T_cif--2", "#T_cB.wceq", "#T_cif--3", "#T_cS", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wet", "#T_wb", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wze", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wze", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta", "#T_wph", "#T_wa", "#T_wps", "#T_wa", "#T_wch", "#T_wa", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dedth2h", "#P_imp", "#P_imbi2d" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nn0ge0 on Metamath](http://us.metamath.org/mpegif/nn0ge0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elnn0 | |- ( N e. NN0 <-> ( N e. NN \\/ N = 0 ) ) |\n| 2 |  | #P_nngt0 | |- ( N e. NN -> 0 < N ) |\n| 3 |  | #P_id | |- ( N = 0 -> N = 0 ) |\n| 4 | 3 | #P_eqcomd | |- ( N = 0 -> 0 = N ) |\n| 5 | 2, 4 | #P_orim12i | |- ( ( N e. NN \\/ N = 0 ) -> ( 0 < N \\/ 0 = N ) ) |\n| 6 | 1, 5 | #P_sylbi | |- ( N e. NN0 -> ( 0 < N \\/ 0 = N ) ) |\n| 7 |  | #P_0re | |- 0 e. RR |\n| 8 |  | #P_nn0re | |- ( N e. NN0 -> N e. RR ) |\n| 9 |  | #P_leloe | |- ( ( 0 e. RR /\\ N e. RR ) -> ( 0 <_ N <-> ( 0 < N \\/ 0 = N ) ) ) |\n| 10 | 7, 8, 9 | #P_sylancr | |- ( N e. NN0 -> ( 0 <_ N <-> ( 0 < N \\/ 0 = N ) ) ) |\n| 11 | 6, 10 | #P_mpbird | |- ( N e. NN0 -> 0 <_ N ) |",
+  "conclusion" : "#P_nn0ge0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cn0", "#T_wb", "#T_cN", "#T_wcel", "#T_cn", "#T_wo", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wcel", "#T_cn", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cN", "#T_wceq", "#T_cc0", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn", "#T_wo", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_wo", "#T_cc0", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_clt", "#T_cN", "#T_wo", "#T_cc0", "#T_wceq", "#T_cN", "#T_cc0", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cN", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_wb", "#T_cc0", "#T_clt", "#T_cN", "#T_wo", "#T_cc0", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN", "#T_wb", "#T_cc0", "#T_clt", "#T_cN", "#T_wo", "#T_cc0", "#T_wceq", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cc0", "#T_cle", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylancr", "#P_nngt0", "#P_eqcomd", "#P_nn0re", "#P_elnn0", "#P_orim12i", "#P_0re", "#P_id", "#P_sylbi", "#P_leloe", "#P_mpbird" ]
+}

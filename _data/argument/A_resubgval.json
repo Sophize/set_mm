@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See resubgval on Metamath](http://us.metamath.org/mpegif/resubgval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | resubgval.m | |- .- = ( -g ` RRfld ) |\n| 2 |  | #P_resubdrg | |- ( RR e. ( SubRing ` CCfld ) /\\ RRfld e. DivRing ) |\n| 3 | 2 | #P_simpli | |- RR e. ( SubRing ` CCfld ) |\n| 4 |  | #P_subrgsubg | |- ( RR e. ( SubRing ` CCfld ) -> RR e. ( SubGrp ` CCfld ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- RR e. ( SubGrp ` CCfld ) |\n| 6 |  | #P_cnfldsub | |- - = ( -g ` CCfld ) |\n| 7 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 8 | 6, 7, 1 | #P_subgsub | |- ( ( RR e. ( SubGrp ` CCfld ) /\\ X e. RR /\\ Y e. RR ) -> ( X - Y ) = ( X .- Y ) ) |\n| 9 | 5, 8 | #P_mp3an1 | |- ( ( X e. RR /\\ Y e. RR ) -> ( X - Y ) = ( X .- Y ) ) |",
+  "conclusion" : "#P_resubgval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_crefld", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wa", "#T_crefld", "#T_wcel", "#T_cdr", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cr", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_cmin", "#T_wceq", "#T_csg", "#T_cfv", "#T_ccnfld", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_cr", "#T_wcel", "#T_csubg", "#T_cfv", "#T_ccnfld", "#T_w3a--1", "#T_cX", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cr", "#T_wi", "#T_cX", "#T_cmin", "#T_cY", "#T_wceq", "#T_cX", "#T_c.mi", "#T_cY", "#T_cX", "#T_wcel", "#T_cr", "#T_wa", "#T_cY", "#T_wcel", "#T_cr", "#T_wi", "#T_cX", "#T_cmin", "#T_cY", "#T_wceq", "#T_cX", "#T_c.mi", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_cnfldsub", "#P_subgsub", "#P_simpli", "#P_resubdrg", "#P_mp3an1", "#P_subrgsubg", "#P_df-refld" ]
+}

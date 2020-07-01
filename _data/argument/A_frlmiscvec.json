@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frlmiscvec on Metamath](http://us.metamath.org/mpegif/frlmiscvec.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpr | |- ( ( R e. NzRing /\\ I e. Y ) -> I e. Y ) |\n| 2 |  | #P_0ex | |- (/) e. _V |\n| 3 |  | #P_xpsneng | |- ( ( I e. Y /\\ (/) e. _V ) -> ( I X. { (/) } ) ~~ I ) |\n| 4 | 3 | #P_ensymd | |- ( ( I e. Y /\\ (/) e. _V ) -> I ~~ ( I X. { (/) } ) ) |\n| 5 | 1, 2, 4 | #P_sylancl | |- ( ( R e. NzRing /\\ I e. Y ) -> I ~~ ( I X. { (/) } ) ) |\n| 6 |  | #P_frlmisfrlm | |- ( ( R e. NzRing /\\ I e. Y /\\ I ~~ ( I X. { (/) } ) ) -> ( R freeLMod I ) ~=m ( R freeLMod ( I X. { (/) } ) ) ) |\n| 7 | 5, 6 | #P_mpd3an3 | |- ( ( R e. NzRing /\\ I e. Y ) -> ( R freeLMod I ) ~=m ( R freeLMod ( I X. { (/) } ) ) ) |",
+  "conclusion" : "#P_frlmiscvec",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wcel", "#T_cnzr", "#T_wa", "#T_cI", "#T_wcel", "#T_cY", "#T_wi", "#T_cI", "#T_wcel", "#T_cY", "#T_c0", "#T_wcel", "#T_cvv", "#T_cI", "#T_wcel", "#T_cY", "#T_wa", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cen", "#T_cI", "#T_cI", "#T_wcel", "#T_cY", "#T_wa", "#T_c0", "#T_wcel", "#T_cvv", "#T_wi", "#T_cI", "#T_cen", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wa", "#T_cI", "#T_wcel", "#T_cY", "#T_wi", "#T_cI", "#T_cen", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cR", "#T_wcel", "#T_cnzr", "#T_w3a--1", "#T_cI", "#T_wcel", "#T_cY", "#T_w3a--2", "#T_cI", "#T_cen", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_wi", "#T_cR", "#T_cfrlm", "#T_cI", "#T_clmic", "#T_cR", "#T_cfrlm", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2", "#T_cR", "#T_wcel", "#T_cnzr", "#T_wa", "#T_cI", "#T_wcel", "#T_cY", "#T_wi", "#T_cR", "#T_cfrlm", "#T_cI", "#T_clmic", "#T_cR", "#T_cfrlm", "#T_cI", "#T_cxp", "#T_csn--1", "#T_c0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_xpsneng", "#P_frlmisfrlm", "#P_sylancl", "#P_simpr", "#P_0ex", "#P_ensymd", "#P_mpd3an3" ]
+}

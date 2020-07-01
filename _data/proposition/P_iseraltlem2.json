@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See iseraltlem2 on Metamath](http://us.metamath.org/mpegif/iseraltlem2.html)"
+  } ],
+  "names" : [ "iseraltlem2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_cG", "#T_wf--1", "#T_cZ", "#T_wf--2", "#T_cr", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cG", "#T_cfv", "#T_vk", "#T_caddc", "#T_c1", "#T_cle", "#T_cG", "#T_cfv", "#T_vk", "#T_wph", "#T_wi", "#T_cG", "#T_cli", "#T_cc0", "#T_wph", "#T_wa", "#T_vk", "#T_wcel", "#T_cZ", "#T_wi", "#T_cF", "#T_cfv", "#T_vk", "#T_wceq", "#T_cneg", "#T_c1", "#T_cexp", "#T_vk", "#T_cmul", "#T_cG", "#T_cfv", "#T_vk", "#T_wph", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cZ", "#T_w3a--2", "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cneg", "#T_c1", "#T_cexp", "#T_cN", "#T_cmul", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_caddc", "#T_c2", "#T_cmul", "#T_cK", "#T_cle", "#T_cneg", "#T_c1", "#T_cexp", "#T_cN", "#T_cmul", "#T_cseq--1", "#T_cM", "#T_caddc", "#T_cseq--2", "#T_cF", "#T_cfv", "#T_cN", "#T_cF", "#T_vk", "#T_cG", "#T_vk", "#T_cK", "#T_vk", "#T_cM", "#T_vk", "#T_cN", "#T_vk", "#T_cZ", "#T_vk", "#T_vk", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ iseralt .  The terms of an alternating series form a chain of inequalities in alternate terms, so that for example ` S ( 1 ) <_ S ( 3 ) <_ S ( 5 ) <_ ... ` and ` ... <_ S ( 4 ) <_ S ( 2 ) <_ S ( 0 ) ` (assuming ` M = 0 ` so that these terms are defined).  (Contributed by Mario Carneiro, 6-Apr-2015.) ",
+  "statement" : "iseralt.1 $e |- Z = ( ZZ>= ` M ) $.\niseralt.2 $e |- ( ph -> M e. ZZ ) $.\niseralt.3 $e |- ( ph -> G : Z --> RR ) $.\niseralt.4 $e |- ( ( ph /\\ k e. Z ) -> ( G ` ( k + 1 ) ) <_ ( G ` k ) ) $.\niseralt.5 $e |- ( ph -> G ~~> 0 ) $.\niseralt.6 $e |- ( ( ph /\\ k e. Z ) -> ( F ` k ) = ( ( -u 1 ^ k ) x. ( G ` k ) ) ) $.\niseraltlem2 $p |- ( ( ph /\\ N e. Z /\\ K e. NN0 ) -> ( ( -u 1 ^ N ) x. ( seq M ( + , F ) ` ( N + ( 2 x. K ) ) ) ) <_ ( ( -u 1 ^ N ) x. ( seq M ( + , F ) ` N ) ) ) $.\n$d F k $.\n$d G k $.\n$d K k $.\n$d M k $.\n$d N k $.\n$d Z k $.\n$d k ph $."
+}

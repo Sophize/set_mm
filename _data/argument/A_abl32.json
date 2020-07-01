@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abl32 on Metamath](http://us.metamath.org/mpegif/abl32.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ablcom.b | |- B = ( Base ` G ) |\n| 2 |  | ablcom.p | |- .+ = ( +g ` G ) |\n| 3 |  | abl32.g | |- ( ph -> G e. Abel ) |\n| 4 |  | abl32.x | |- ( ph -> X e. B ) |\n| 5 |  | abl32.y | |- ( ph -> Y e. B ) |\n| 6 |  | abl32.z | |- ( ph -> Z e. B ) |\n| 7 |  | #P_ablcmn | |- ( G e. Abel -> G e. CMnd ) |\n| 8 | 3, 7 | #P_syl | |- ( ph -> G e. CMnd ) |\n| 9 | 1, 2 | #P_cmn32 | |- ( ( G e. CMnd /\\ ( X e. B /\\ Y e. B /\\ Z e. B ) ) -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) |\n| 10 | 8, 4, 5, 6, 9 | #P_syl13anc | |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( ( X .+ Z ) .+ Y ) ) |",
+  "conclusion" : "#P_abl32",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_c.pl", "#T_wceq", "#T_cplusg", "#T_cfv", "#T_cG", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_cabl", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cB", "#T_wph", "#T_wi", "#T_cZ", "#T_wcel", "#T_cB", "#T_cG", "#T_wcel", "#T_cabl", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wph", "#T_wi", "#T_cG", "#T_wcel", "#T_ccmn", "#T_cG", "#T_wcel", "#T_ccmn", "#T_wa", "#T_cX", "#T_wcel", "#T_cB.wceq", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cY", "#T_wph", "#T_wi", "#T_cX", "#T_c.pl", "#T_cY", "#T_c.pl", "#T_cZ", "#T_wceq", "#T_cX", "#T_c.pl", "#T_cZ", "#T_c.pl", "#T_cY" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_syl13anc", "#P_ablcmn", "#P_cmn32" ]
+}

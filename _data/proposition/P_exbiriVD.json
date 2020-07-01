@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See exbiriVD on Metamath](http://us.metamath.org/mpegif/exbiriVD.html)"
+  } ],
+  "names" : [ "exbiriVD" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wth", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Virtual deduction proof of ~ exbiri .  The following user's proof is completed by invoking mmj2's unify command and using mmj2's StepSelector to pick all remaining steps of the Metamath proof. <HTML> <TABLE> <TR> <TD> h1::        <TD> ` |- ( ( ph /\\ ps ) -> ( ch <-> th ) ) ` <TR> <TD> 2::         <TD> ` |- (. ph ->. ph ). ` <TR> <TD> 3::         <TD> ` |- (. ph ,. ps ->. ps ). ` <TR> <TD> 4::         <TD> ` |- (. ph ,. ps ,. th ->. th ). ` <TR> <TD> 5:2,1,?: ~ e10 <TD> ` |- (. ph ->. ( ps -> ( ch <-> th ) ) ). ` <TR> <TD> 6:3,5,?: ~ e21 <TD> ` |- (. ph ,. ps ->. ( ch <-> th ) ). ` <TR> <TD> 7:4,6,?: ~ e32 <TD> ` |- (. ph ,. ps ,. th ->. ch ). ` <TR> <TD> 8:7:        <TD> ` |- (. ph ,. ps ->. ( th -> ch ) ). ` <TR> <TD> 9:8:        <TD> ` |- (. ph ->. ( ps -> ( th -> ch ) ) ). ` <TR> <TD> qed:9:      <TD> ` |- ( ph -> ( ps -> ( th -> ch ) ) ) ` </TABLE> </HTML> (Contributed by Alan Sare, 31-Dec-2011.)  (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "statement" : "exbiriVD.1 $e |- ( ( ph /\\ ps ) -> ( ch <-> th ) ) $.\nexbiriVD $p |- ( ph -> ( ps -> ( th -> ch ) ) ) $."
+}

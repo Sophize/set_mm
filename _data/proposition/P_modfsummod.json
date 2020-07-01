@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See modfsummod on Metamath](http://us.metamath.org/mpegif/modfsummod.html)"
+  } ],
+  "names" : [ "modfsummod" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_wral--1", "#T_vk", "#T_wral--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cz", "#T_wph", "#T_wi", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cB", "#T_cmo", "#T_cN", "#T_wceq", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cA", "#T_cB", "#T_cmo", "#T_cN", "#T_cmo", "#T_cN", "#T_cA", "#T_vk", "#T_cN", "#T_vk" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " A finite sum modulo a positive integer equals the finite sum of their summands modulo the positive integer, modulo the positive integer. (Contributed by Alexander van der Vekens, 1-Sep-2018.) ",
+  "statement" : "modfsummod.n $e |- ( ph -> N e. NN ) $.\nmodfsummod.1 $e |- ( ph -> A e. Fin ) $.\nmodfsummod.2 $e |- ( ph -> A. k e. A B e. ZZ ) $.\nmodfsummod $p |- ( ph -> ( sum_ k e. A B mod N ) = ( sum_ k e. A ( B mod N ) mod N ) ) $.\n$d A k $.\n$d N k $."
+}

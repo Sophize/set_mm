@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfpprod2 on Metamath](http://us.metamath.org/mpegif/dfpprod2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-pprod | |- pprod ( A , B ) = ( ( A o. ( 1st |` ( _V X. _V ) ) ) (x) ( B o. ( 2nd |` ( _V X. _V ) ) ) ) |\n| 2 |  | #P_df-txp | |- ( ( A o. ( 1st |` ( _V X. _V ) ) ) (x) ( B o. ( 2nd |` ( _V X. _V ) ) ) ) = ( ( `' ( 1st |` ( _V X. _V ) ) o. ( A o. ( 1st |` ( _V X. _V ) ) ) ) i^i ( `' ( 2nd |` ( _V X. _V ) ) o. ( B o. ( 2nd |` ( _V X. _V ) ) ) ) ) |\n| 3 | 1, 2 | #P_eqtri | |- pprod ( A , B ) = ( ( `' ( 1st |` ( _V X. _V ) ) o. ( A o. ( 1st |` ( _V X. _V ) ) ) ) i^i ( `' ( 2nd |` ( _V X. _V ) ) o. ( B o. ( 2nd |` ( _V X. _V ) ) ) ) ) |",
+  "conclusion" : "#P_dfpprod2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cpprod--1", "#T_cA.wceq", "#T_cpprod--2", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_ccom", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ctxp", "#T_cB.wceq", "#T_ccom", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cA.wceq", "#T_ccom", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ctxp", "#T_cB.wceq", "#T_ccom", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wceq", "#T_ccnv", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cA.wceq", "#T_ccom", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cin", "#T_ccnv", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cB.wceq", "#T_ccom", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cpprod--1", "#T_cA", "#T_cpprod--2", "#T_cB", "#T_wceq", "#T_ccnv", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cA", "#T_ccom", "#T_c1st", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_cin", "#T_ccnv", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv", "#T_ccom", "#T_cB", "#T_ccom", "#T_c2nd", "#T_cres", "#T_cvv", "#T_cxp", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_df-txp", "#P_df-pprod" ]
+}

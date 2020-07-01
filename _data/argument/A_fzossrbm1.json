@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzossrbm1 on Metamath](http://us.metamath.org/mpegif/fzossrbm1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano2zm | |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) |\n| 2 |  | #P_id | |- ( N e. ZZ -> N e. ZZ ) |\n| 3 |  | #P_zre | |- ( N e. ZZ -> N e. RR ) |\n| 4 | 3 | #P_lem1d | |- ( N e. ZZ -> ( N - 1 ) <_ N ) |\n| 5 |  | #P_eluz2 | |- ( N e. ( ZZ>= ` ( N - 1 ) ) <-> ( ( N - 1 ) e. ZZ /\\ N e. ZZ /\\ ( N - 1 ) <_ N ) ) |\n| 6 | 1, 2, 4, 5 | #P_syl3anbrc | |- ( N e. ZZ -> N e. ( ZZ>= ` ( N - 1 ) ) ) |\n| 7 |  | #P_fzoss2 | |- ( N e. ( ZZ>= ` ( N - 1 ) ) -> ( 0 ..^ ( N - 1 ) ) C_ ( 0 ..^ N ) ) |\n| 8 | 6, 7 | #P_syl | |- ( N e. ZZ -> ( 0 ..^ ( N - 1 ) ) C_ ( 0 ..^ N ) ) |",
+  "conclusion" : "#P_fzossrbm1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cz", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cr", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_cmin", "#T_c1", "#T_wb", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_w3a--1", "#T_cN", "#T_wcel", "#T_cz", "#T_w3a--2", "#T_cN", "#T_cmin", "#T_c1", "#T_cle", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_cmin", "#T_c1", "#T_cN", "#T_wcel", "#T_cuz", "#T_cfv", "#T_cN", "#T_cmin", "#T_c1", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_c1", "#T_wss", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cN", "#T_cmin", "#T_c1", "#T_wss", "#T_cc0", "#T_cfzo", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_zre", "#P_syl3anbrc", "#P_peano2zm", "#P_syl", "#P_fzoss2", "#P_lem1d", "#P_id", "#P_eluz2" ]
+}

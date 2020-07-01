@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-uss on Metamath](http://us.metamath.org/mpegif/df-uss.html)"
+  } ],
+  "names" : [ "df-uss" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cuss", "#T_wceq", "#T_vf", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_cunif", "#T_cfv", "#T_vf", "#T_crest", "#T_cbs", "#T_cfv", "#T_vf", "#T_cxp", "#T_cbs", "#T_cfv", "#T_vf" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the uniform structure extractor function.  Similarly with ~ df-topn this differs from ~ df-unif when a structure has been restricted using ~ df-ress ; in this case the ` UnifSet ` component will still have a uniform set over the larger set, and this function fixes this by restricting the uniform set as well.  (Contributed by Thierry Arnoux, 1-Dec-2017.) ",
+  "statement" : "df-uss $p |- UnifSt = ( f e. _V |-> ( ( UnifSet ` f ) |`t ( ( Base ` f ) X. ( Base ` f ) ) ) ) $."
+}

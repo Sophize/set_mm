@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See redivd on Metamath](http://us.metamath.org/mpegif/redivd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | crred.1 | |- ( ph -> A e. RR ) |\n| 2 |  | remul2d.2 | |- ( ph -> B e. CC ) |\n| 3 |  | redivd.2 | |- ( ph -> A =/= 0 ) |\n| 4 |  | #P_rediv | |- ( ( B e. CC /\\ A e. RR /\\ A =/= 0 ) -> ( Re ` ( B / A ) ) = ( ( Re ` B ) / A ) ) |\n| 5 | 2, 1, 3, 4 | #P_syl3anc | |- ( ph -> ( Re ` ( B / A ) ) = ( ( Re ` B ) / A ) ) |",
+  "conclusion" : "#P_redivd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA", "#T_wne", "#T_cc0", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_w3a--1", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_w3a--2", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wi", "#T_cre", "#T_cfv", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wceq", "#T_cre", "#T_cfv", "#T_cB.wceq", "#T_cdiv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cre", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cA", "#T_wceq", "#T_cre", "#T_cfv", "#T_cB", "#T_cdiv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_rediv", "#P_syl3anc" ]
+}

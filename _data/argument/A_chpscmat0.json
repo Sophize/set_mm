@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See chpscmat0 on Metamath](http://us.metamath.org/mpegif/chpscmat0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | chp0mat.c | |- C = ( N CharPlyMat R ) |\n| 2 |  | chp0mat.p | |- P = ( Poly1 ` R ) |\n| 3 |  | chp0mat.a | |- A = ( N Mat R ) |\n| 4 |  | chp0mat.x | |- X = ( var1 ` R ) |\n| 5 |  | chp0mat.g | |- G = ( mulGrp ` P ) |\n| 6 |  | chp0mat.m | |- .^ = ( .g ` G ) |\n| 7 |  | chpscmat.d | |- D = { m e. ( Base ` A ) | E. c e. ( Base ` R ) A. i e. N A. j e. N ( i m j ) = if ( i = j , c , ( 0g ` R ) ) } |\n| 8 |  | chpscmat.s | |- S = ( algSc ` P ) |\n| 9 |  | chpscmat.m | |- .- = ( -g ` P ) |\n| 10 | 1, 2, 3, 4, 5, 6, 7, 8, 9 | #P_chpscmat | |- ( ( ( N e. Fin /\\ R e. CRing ) /\\ ( M e. D /\\ I e. N /\\ A. n e. N ( n M n ) = ( I M I ) ) ) -> ( C ` M ) = ( ( # ` N ) .^ ( X .- ( S ` ( I M I ) ) ) ) ) |",
+  "conclusion" : "#P_chpscmat0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cC", "#T_wceq", "#T_cN", "#T_cchpmat", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cA", "#T_wceq", "#T_cN", "#T_cmat", "#T_cR", "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cR", "#T_cG", "#T_wceq", "#T_cmgp", "#T_cfv", "#T_cP", "#T_c.ex", "#T_wceq", "#T_cmg", "#T_cfv", "#T_cG", "#T_cD", "#T_wceq", "#T_crab--1", "#T_vm", "#T_crab--2", "#T_cbs", "#T_cfv", "#T_cA", "#T_crab--3", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cbs", "#T_cfv", "#T_cR", "#T_wral--1", "#T_vi", "#T_wral--2", "#T_cN", "#T_wral--1", "#T_vj", "#T_wral--2", "#T_cN", "#T_vi", "#T_vm", "#T_vj", "#T_wceq", "#T_cif--1", "#T_vi", "#T_wceq", "#T_vj", "#T_cif--2", "#T_vc", "#T_cif--3", "#T_c0g", "#T_cfv", "#T_cR", "#T_crab--4", "#T_cS", "#T_wceq", "#T_cascl", "#T_cfv", "#T_cP", "#T_c.mi", "#T_wceq", "#T_csg", "#T_cfv", "#T_cP", "#T_cN", "#T_wcel", "#T_cfn", "#T_wa", "#T_cR", "#T_wcel", "#T_ccrg", "#T_wa", "#T_cM", "#T_wcel", "#T_cD", "#T_w3a--1", "#T_cI", "#T_wcel", "#T_cN", "#T_w3a--2", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cN", "#T_vn", "#T_cM", "#T_vn", "#T_wceq", "#T_cI", "#T_cM", "#T_cI", "#T_wi", "#T_cC", "#T_cfv", "#T_cM", "#T_wceq", "#T_chash", "#T_cfv", "#T_cN", "#T_c.ex", "#T_cX", "#T_c.mi", "#T_cS", "#T_cfv", "#T_cI", "#T_cM", "#T_cI" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_chpscmat" ]
+}

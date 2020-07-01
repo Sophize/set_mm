@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sdomirr on Metamath](http://us.metamath.org/mpegif/sdomirr.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sdomnen | |- ( A ~< A -> -. A ~~ A ) |\n| 2 |  | #P_enrefg | |- ( A e. _V -> A ~~ A ) |\n| 3 | 1, 2 | #P_nsyl3 | |- ( A e. _V -> -. A ~< A ) |\n| 4 |  | #P_relsdom | |- Rel ~< |\n| 5 | 4 | #P_brrelexi | |- ( A ~< A -> A e. _V ) |\n| 6 | 5 | #P_con3i | |- ( -. A e. _V -> -. A ~< A ) |\n| 7 | 3, 6 | #P_pm2.61i | |- -. A ~< A |",
+  "conclusion" : "#P_sdomirr",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_wrel", "#T_csdm", "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_csdm", "#T_cA.wceq", "#T_wn", "#T_cA", "#T_csdm", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_relsdom", "#P_nsyl3", "#P_enrefg", "#P_con3i", "#P_sdomnen", "#P_pm2.61i", "#P_brrelexi" ]
+}

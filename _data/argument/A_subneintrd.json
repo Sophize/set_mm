@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subneintrd on Metamath](http://us.metamath.org/mpegif/subneintrd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | negidd.1 | |- ( ph -> A e. CC ) |\n| 2 |  | pncand.2 | |- ( ph -> B e. CC ) |\n| 3 |  | subaddd.3 | |- ( ph -> C e. CC ) |\n| 4 |  | subneintrd.4 | |- ( ph -> B =/= C ) |\n| 5 | 1, 2, 3 | #P_subcanad | |- ( ph -> ( ( A - B ) = ( A - C ) <-> B = C ) ) |\n| 6 | 5 | #P_necon3bid | |- ( ph -> ( ( A - B ) =/= ( A - C ) <-> B =/= C ) ) |\n| 7 | 4, 6 | #P_mpbird | |- ( ph -> ( A - B ) =/= ( A - C ) ) |",
+  "conclusion" : "#P_subneintrd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wne", "#T_cA.wceq", "#T_cmin", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wne", "#T_cC", "#T_wph", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wne", "#T_cA", "#T_cmin", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_necon3bid", "#P_subcanad", "#P_mpbird" ]
+}

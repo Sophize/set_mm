@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfdc on Metamath](http://us.metamath.org/mpegif/nfdc.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfdc.1 | |- F/ x ph |\n| 2 |  | #P_df-dc | |- ( DECID ph <-> ( ph \\/ -. ph ) ) |\n| 3 | 1 | #P_nfn | |- F/ x -. ph |\n| 4 | 1, 3 | #P_nfor | |- F/ x ( ph \\/ -. ph ) |\n| 5 | 2, 4 | #P_nfxfr | |- F/ x DECID ph |",
+  "conclusion" : "#P_nfdc",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wnf", "#T_vx", "#T_wph", "#T_wdc", "#T_wph", "#T_wb", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wn", "#T_wph", "#T_wnf", "#T_vx.wal", "#T_wph", "#T_wo", "#T_wn", "#T_wph", "#T_wnf", "#T_vx", "#T_wdc", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-dc", "#P_nfor", "#P_nfn", "#P_nfxfr" ]
+}

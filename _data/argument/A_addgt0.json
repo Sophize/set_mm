@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See addgt0 on Metamath](http://us.metamath.org/mpegif/addgt0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_00id | |- ( 0 + 0 ) = 0 |\n| 2 |  | #P_0re | |- 0 e. RR |\n| 3 |  | #P_lt2add | |- ( ( ( 0 e. RR /\\ 0 e. RR ) /\\ ( A e. RR /\\ B e. RR ) ) -> ( ( 0 < A /\\ 0 < B ) -> ( 0 + 0 ) < ( A + B ) ) ) |\n| 4 | 2, 2, 3 | #P_mpanl12 | |- ( ( A e. RR /\\ B e. RR ) -> ( ( 0 < A /\\ 0 < B ) -> ( 0 + 0 ) < ( A + B ) ) ) |\n| 5 | 4 | #P_imp | |- ( ( ( A e. RR /\\ B e. RR ) /\\ ( 0 < A /\\ 0 < B ) ) -> ( 0 + 0 ) < ( A + B ) ) |\n| 6 | 1, 5 | #P_syl5eqbrr | |- ( ( ( A e. RR /\\ B e. RR ) /\\ ( 0 < A /\\ 0 < B ) ) -> 0 < ( A + B ) ) |",
+  "conclusion" : "#P_addgt0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cc0", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_cc0", "#T_wcel", "#T_cr", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_wcel", "#T_cr", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_caddc", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wi", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_caddc", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_clt", "#T_cB.wceq", "#T_wi", "#T_cc0", "#T_caddc", "#T_cc0", "#T_clt", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_cr", "#T_wa", "#T_cB", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_clt", "#T_cA", "#T_wa", "#T_cc0", "#T_clt", "#T_cB", "#T_wi", "#T_cc0", "#T_clt", "#T_cA", "#T_caddc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqbrr", "#P_00id", "#P_lt2add", "#P_mpanl12", "#P_imp", "#P_0re" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-subg on Metamath](http://us.metamath.org/mpegif/df-subg.html)"
+  } ],
+  "names" : [ "df-subg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_csubg", "#T_wceq", "#T_vw", "#T_cmpt--1", "#T_cgrp", "#T_cmpt--2", "#T_crab--1", "#T_vs", "#T_crab--2", "#T_cpw", "#T_cbs", "#T_cfv", "#T_vw", "#T_crab--3", "#T_vw", "#T_cress", "#T_vs", "#T_wcel", "#T_cgrp", "#T_crab--4", "#T_vs", "#T_vw" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define a subgroup of a group as a set of elements that is a group in its own right.  Equivalently ( ~ issubg2 ), a subgroup is a subset of the group that is closed for the group internal operation (see ~ subgcl ), contains the neutral element of the group (see ~ subg0 ) and contains the inverses for all of its elements (see ~ subginvcl ).  (Contributed by Mario Carneiro, 2-Dec-2014.) ",
+  "statement" : "df-subg $p |- SubGrp = ( w e. Grp |-> { s e. ~P ( Base ` w ) | ( w |`s s ) e. Grp } ) $.\n$d s w $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnfldhaus on Metamath](http://us.metamath.org/mpegif/cnfldhaus.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cnfldtopn.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 |  | #P_cnxmet | |- ( abs o. - ) e. ( *Met ` CC ) |\n| 3 | 1 | #P_cnfldtopn | |- J = ( MetOpen ` ( abs o. - ) ) |\n| 4 | 3 | #P_methaus | |- ( ( abs o. - ) e. ( *Met ` CC ) -> J e. Haus ) |\n| 5 | 2, 4 | #P_ax-mp | |- J e. Haus |",
+  "conclusion" : "#P_cnfldhaus",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cc", "#T_wi", "#T_cJ", "#T_wcel", "#T_cha", "#T_cJ", "#T_wcel", "#T_cha" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_methaus", "#P_ax-mp", "#P_cnfldtopn", "#P_cnxmet" ]
+}

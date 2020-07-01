@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xmetutop on Metamath](http://us.metamath.org/mpegif/xmetutop.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xmetpsmet | |- ( D e. ( *Met ` X ) -> D e. ( PsMet ` X ) ) |\n| 2 |  | #P_psmetutop | |- ( ( X =/= (/) /\\ D e. ( PsMet ` X ) ) -> ( unifTop ` ( metUnif ` D ) ) = ( topGen ` ran ( ball ` D ) ) ) |\n| 3 | 1, 2 | #P_sylan2 | |- ( ( X =/= (/) /\\ D e. ( *Met ` X ) ) -> ( unifTop ` ( metUnif ` D ) ) = ( topGen ` ran ( ball ` D ) ) ) |\n| 4 |  | #P_eqid | |- ( MetOpen ` D ) = ( MetOpen ` D ) |\n| 5 | 4 | #P_mopnval | |- ( D e. ( *Met ` X ) -> ( MetOpen ` D ) = ( topGen ` ran ( ball ` D ) ) ) |\n| 6 | 5 | #P_adantl | |- ( ( X =/= (/) /\\ D e. ( *Met ` X ) ) -> ( MetOpen ` D ) = ( topGen ` ran ( ball ` D ) ) ) |\n| 7 | 3, 6 | #P_eqtr4d | |- ( ( X =/= (/) /\\ D e. ( *Met ` X ) ) -> ( unifTop ` ( metUnif ` D ) ) = ( MetOpen ` D ) ) |",
+  "conclusion" : "#P_xmetutop",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cD", "#T_wcel", "#T_cpsmet", "#T_cfv", "#T_cX", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cD", "#T_wcel", "#T_cpsmet", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cmetu", "#T_cfv", "#T_cD", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cmetu", "#T_cfv", "#T_cD", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_cmopn", "#T_cfv", "#T_cD", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cmopn", "#T_cfv", "#T_cD", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cmopn", "#T_cfv", "#T_cD", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cbl", "#T_cfv", "#T_cD", "#T_cX", "#T_wne", "#T_c0", "#T_wa", "#T_cD", "#T_wcel", "#T_cxmt", "#T_cfv", "#T_cX", "#T_wi", "#T_cutop", "#T_cfv", "#T_cmetu", "#T_cfv", "#T_cD", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_psmetutop", "#P_sylan2", "#P_mopnval", "#P_adantl", "#P_xmetpsmet", "#P_eqtr4d" ]
+}

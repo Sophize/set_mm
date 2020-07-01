@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ntrss2 on Metamath](http://us.metamath.org/mpegif/ntrss2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clscld.1 | |- X = U. J |\n| 2 | 1 | #P_ntrval | |- ( ( J e. Top /\\ S C_ X ) -> ( ( int ` J ) ` S ) = U. ( J i^i ~P S ) ) |\n| 3 |  | #P_inss2 | |- ( J i^i ~P S ) C_ ~P S |\n| 4 | 3 | #P_unissi | |- U. ( J i^i ~P S ) C_ U. ~P S |\n| 5 |  | #P_unipw | |- U. ~P S = S |\n| 6 | 4, 5 | #P_sseqtri | |- U. ( J i^i ~P S ) C_ S |\n| 7 | 2, 6 | #P_syl6eqss | |- ( ( J e. Top /\\ S C_ X ) -> ( ( int ` J ) ` S ) C_ S ) |",
+  "conclusion" : "#P_ntrss2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cin", "#T_cpw", "#T_cS", "#T_cJ", "#T_cin", "#T_cpw", "#T_cS", "#T_wss", "#T_cpw", "#T_cS", "#T_cuni", "#T_cJ", "#T_cin", "#T_cpw", "#T_cS", "#T_wss", "#T_cuni", "#T_cpw", "#T_cS", "#T_cuni", "#T_cpw", "#T_cS", "#T_wceq", "#T_cS", "#T_cuni", "#T_cJ", "#T_cin", "#T_cpw", "#T_cS", "#T_wss", "#T_cS", "#T_cJ", "#T_wcel", "#T_ctop", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cnt", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cS", "#T_wss", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ntrval", "#P_unissi", "#P_syl6eqss", "#P_sseqtri", "#P_inss2", "#P_unipw" ]
+}

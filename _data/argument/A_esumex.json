@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See esumex on Metamath](http://us.metamath.org/mpegif/esumex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-esum | |- sum* k e. A B = U. ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) |\n| 2 |  | #P_ovex | |- ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) e. _V |\n| 3 | 2 | #P_uniex | |- U. ( ( RR*s |`s ( 0 [,] +oo ) ) tsums ( k e. A |-> B ) ) e. _V |\n| 4 | 1, 3 | #P_eqeltri | |- sum* k e. A B e. _V |",
+  "conclusion" : "#P_esumex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cesum--1", "#T_vk", "#T_cesum--2", "#T_cA.wceq", "#T_cB.wceq", "#T_wceq", "#T_cuni", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cuni", "#T_cxrs", "#T_cress", "#T_cc0", "#T_cicc", "#T_cpnf", "#T_ctsu", "#T_vk", "#T_cmpt--1", "#T_cA.wceq", "#T_cmpt--2", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cesum--1", "#T_vk", "#T_cesum--2", "#T_cA", "#T_cB", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ovex", "#P_eqeltri", "#P_df-esum", "#P_uniex" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See acnen2 on Metamath](http://us.metamath.org/mpegif/acnen2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ensym | |- ( X ~~ Y -> Y ~~ X ) |\n| 2 |  | #P_endom | |- ( Y ~~ X -> Y ~<_ X ) |\n| 3 |  | #P_acndom2 | |- ( Y ~<_ X -> ( X e. AC_ A -> Y e. AC_ A ) ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( X ~~ Y -> ( X e. AC_ A -> Y e. AC_ A ) ) |\n| 5 |  | #P_endom | |- ( X ~~ Y -> X ~<_ Y ) |\n| 6 |  | #P_acndom2 | |- ( X ~<_ Y -> ( Y e. AC_ A -> X e. AC_ A ) ) |\n| 7 | 5, 6 | #P_syl | |- ( X ~~ Y -> ( Y e. AC_ A -> X e. AC_ A ) ) |\n| 8 | 4, 7 | #P_impbid | |- ( X ~~ Y -> ( X e. AC_ A <-> Y e. AC_ A ) ) |",
+  "conclusion" : "#P_acnen2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_cen", "#T_cY", "#T_wi", "#T_cY", "#T_cen", "#T_cX", "#T_cY", "#T_cen", "#T_cX", "#T_wi", "#T_cY", "#T_cdom", "#T_cX", "#T_cY", "#T_cdom", "#T_cX", "#T_wi", "#T_cX", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_cY", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cX", "#T_cen", "#T_cY", "#T_wi", "#T_cX", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_cY", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cX", "#T_cen", "#T_cY", "#T_wi", "#T_cX", "#T_cdom", "#T_cY", "#T_cX", "#T_cdom", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cX", "#T_cen", "#T_cY", "#T_wi", "#T_cY", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_wi", "#T_cX", "#T_wcel", "#T_wacn", "#T_cA.wceq", "#T_cX", "#T_cen", "#T_cY", "#T_wi", "#T_cX", "#T_wcel", "#T_wacn", "#T_cA", "#T_wb", "#T_cY", "#T_wcel", "#T_wacn", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3syl", "#P_ensym", "#P_syl", "#P_impbid", "#P_acndom2", "#P_endom" ]
+}

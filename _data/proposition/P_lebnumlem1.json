@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lebnumlem1 on Metamath](http://us.metamath.org/mpegif/lebnumlem1.html)"
+  } ],
+  "names" : [ "lebnumlem1" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cD", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cJ", "#T_wcel", "#T_ccmp", "#T_wph", "#T_wi", "#T_cU", "#T_wss", "#T_cJ", "#T_wph", "#T_wi", "#T_cX", "#T_wceq", "#T_cuni", "#T_cU", "#T_wph", "#T_wi", "#T_cU", "#T_wcel", "#T_cfn", "#T_wph", "#T_wi", "#T_wn", "#T_cX", "#T_wcel", "#T_cU", "#T_cF", "#T_wceq", "#T_vy", "#T_cmpt--1", "#T_cX", "#T_cmpt--2", "#T_csu--1", "#T_vk", "#T_csu--2", "#T_cU", "#T_csup--1", "#T_crn", "#T_vz", "#T_cmpt--1", "#T_cX", "#T_cdif", "#T_vk", "#T_cmpt--2", "#T_vy", "#T_cD", "#T_vz", "#T_csup--2", "#T_cxr", "#T_csup--3", "#T_ccnv", "#T_clt", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cX", "#T_wf--2", "#T_crp", "#T_cD", "#T_vk", "#T_vy", "#T_vz", "#T_cJ", "#T_vk", "#T_vy", "#T_vz", "#T_cU", "#T_vk", "#T_vy", "#T_vz", "#T_cX", "#T_vk", "#T_vy", "#T_vz", "#T_vk", "#T_wph", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Lemma for ~ lebnum .  The function ` F ` measures the sum of all of the distances to escape the sets of the cover.  Since by assumption it is a cover, there is at least one set which covers a given point, and since it is open, the point is a positive distance from the edge of the set.  Thus, the sum is a strictly positive number.  (Contributed by Mario Carneiro, 14-Feb-2015.) ",
+  "statement" : "lebnum.j $e |- J = ( MetOpen ` D ) $.\nlebnum.d $e |- ( ph -> D e. ( Met ` X ) ) $.\nlebnum.c $e |- ( ph -> J e. Comp ) $.\nlebnum.s $e |- ( ph -> U C_ J ) $.\nlebnum.u $e |- ( ph -> X = U. U ) $.\nlebnumlem1.u $e |- ( ph -> U e. Fin ) $.\nlebnumlem1.n $e |- ( ph -> -. X e. U ) $.\nlebnumlem1.f $e |- F = ( y e. X |-> sum_ k e. U sup ( ran ( z e. ( X \\ k ) |-> ( y D z ) ) , RR* , `' < ) ) $.\nlebnumlem1 $p |- ( ph -> F : X --> RR+ ) $.\n$d D k y z $.\n$d J k y z $.\n$d U k y z $.\n$d X k y z $.\n$d k ph y z $."
+}

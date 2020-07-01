@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onxpdisj on Metamath](http://us.metamath.org/mpegif/onxpdisj.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_disj | |- ( ( On i^i ( _V X. _V ) ) = (/) <-> A. x e. On -. x e. ( _V X. _V ) ) |\n| 2 |  | #P_on0eqel | |- ( x e. On -> ( x = (/) \\/ (/) e. x ) ) |\n| 3 |  | #P_0nelxp | |- -. (/) e. ( _V X. _V ) |\n| 4 |  | #P_eleq1 | |- ( x = (/) -> ( x e. ( _V X. _V ) <-> (/) e. ( _V X. _V ) ) ) |\n| 5 | 3, 4 | #P_mtbiri | |- ( x = (/) -> -. x e. ( _V X. _V ) ) |\n| 6 |  | #P_0nelelxp | |- ( x e. ( _V X. _V ) -> -. (/) e. x ) |\n| 7 | 6 | #P_con2i | |- ( (/) e. x -> -. x e. ( _V X. _V ) ) |\n| 8 | 5, 7 | #P_jaoi | |- ( ( x = (/) \\/ (/) e. x ) -> -. x e. ( _V X. _V ) ) |\n| 9 | 2, 8 | #P_syl | |- ( x e. On -> -. x e. ( _V X. _V ) ) |\n| 10 | 1, 9 | #P_mprgbir | |- ( On i^i ( _V X. _V ) ) = (/) |",
+  "conclusion" : "#P_onxpdisj",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_con0", "#T_cin", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wceq", "#T_c0", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_con0", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wn", "#T_c0", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wb", "#T_c0", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wi", "#T_wn", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_c0", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_cxp", "#T_cvv", "#T_con0", "#T_cin", "#T_cvv", "#T_cxp", "#T_cvv", "#T_wceq", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0nelxp", "#P_eleq1", "#P_con2i", "#P_mprgbir", "#P_disj", "#P_jaoi", "#P_syl", "#P_on0eqel", "#P_0nelelxp", "#P_mtbiri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fnn0ind on Metamath](http://us.metamath.org/mpegif/fnn0ind.html)"
+  } ],
+  "names" : [ "fnn0ind" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cc0", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wch", "#T_vx", "#T_wceq", "#T_vy", "#T_caddc", "#T_c1", "#T_wi", "#T_wph", "#T_wb", "#T_wth", "#T_vx", "#T_wceq", "#T_cK", "#T_wi", "#T_wph", "#T_wb", "#T_wta", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_wps", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--1", "#T_vy", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_vy", "#T_clt", "#T_cN", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_cN", "#T_wcel", "#T_cn0", "#T_w3a--1", "#T_cK", "#T_wcel", "#T_cn0", "#T_w3a--2", "#T_cK", "#T_cle", "#T_cN", "#T_wi", "#T_wta", "#T_cK", "#T_vx", "#T_cN", "#T_vx", "#T_vy", "#T_wch", "#T_vx", "#T_wph", "#T_vy", "#T_wps", "#T_vx", "#T_wta", "#T_vx", "#T_wth", "#T_vx", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Induction on the integers from ` 0 ` to ` N ` inclusive.  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  (Contributed by Paul Chapman, 31-Mar-2011.) \n\n---\n\n Induction on the integers from ` 0 ` to ` N ` inclusive .  The first four hypotheses give us the substitution instances we need; the last two are the basis and the induction step.  (Contributed by Paul Chapman, 31-Mar-2011.) ",
+  "statement" : "fnn0ind.1 $e |- ( x = 0 -> ( ph <-> ps ) ) $.\nfnn0ind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.\nfnn0ind.3 $e |- ( x = ( y + 1 ) -> ( ph <-> th ) ) $.\nfnn0ind.4 $e |- ( x = K -> ( ph <-> ta ) ) $.\nfnn0ind.5 $e |- ( N e. NN0 -> ps ) $.\nfnn0ind.6 $e |- ( ( N e. NN0 /\\ y e. NN0 /\\ y < N ) -> ( ch -> th ) ) $.\nfnn0ind $p |- ( ( N e. NN0 /\\ K e. NN0 /\\ K <_ N ) -> ta ) $.\n$d K x $.\n$d N x y $.\n$d ch x $.\n$d ph y $.\n$d ps x $.\n$d ta x $.\n$d th x $.\n$d x y $."
+}

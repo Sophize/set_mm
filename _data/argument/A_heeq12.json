@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See heeq12 on Metamath](http://us.metamath.org/mpegif/heeq12.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpl | |- ( ( R = S /\\ A = B ) -> R = S ) |\n| 2 |  | #P_simpr | |- ( ( R = S /\\ A = B ) -> A = B ) |\n| 3 | 1, 2 | #P_imaeq12d | |- ( ( R = S /\\ A = B ) -> ( R \" A ) = ( S \" B ) ) |\n| 4 | 3, 2 | #P_sseq12d | |- ( ( R = S /\\ A = B ) -> ( ( R \" A ) C_ A <-> ( S \" B ) C_ B ) ) |\n| 5 |  | #P_df-he | |- ( R hereditary A <-> ( R \" A ) C_ A ) |\n| 6 |  | #P_df-he | |- ( S hereditary B <-> ( S \" B ) C_ B ) |\n| 7 | 4, 5, 6 | #P_3bitr4g | |- ( ( R = S /\\ A = B ) -> ( R hereditary A <-> S hereditary B ) ) |",
+  "conclusion" : "#P_heeq12",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wceq", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wceq", "#T_cS", "#T_cR", "#T_wceq", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cR", "#T_wceq", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wceq", "#T_cS", "#T_cima", "#T_cB.wceq", "#T_cR", "#T_wceq", "#T_cS", "#T_wa", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cS", "#T_cima", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cR", "#T_whe", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_cima", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_cS", "#T_whe", "#T_cB.wceq", "#T_wb", "#T_cS", "#T_cima", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cR", "#T_wceq", "#T_cS", "#T_wa", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_whe", "#T_cA", "#T_wb", "#T_cS", "#T_whe", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imaeq12d", "#P_simpr", "#P_3bitr4g", "#P_simpl", "#P_df-he", "#P_sseq12d" ]
+}

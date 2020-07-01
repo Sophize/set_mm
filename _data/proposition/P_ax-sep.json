@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-sep on Metamath](http://us.metamath.org/mpegif/ax-sep.html)"
+  } ],
+  "names" : [ "ax-sep" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vy", "#T_wal", "#T_vx", "#T_vx", "#T_wcel", "#T_vy", "#T_wb", "#T_vx", "#T_wcel", "#T_vz", "#T_wa", "#T_wph", "#T_wph", "#T_vy", "#T_vz", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The Axiom of Separation of ZF set theory.  See ~ axsep for more information.  It was derived as ~ axsep above and is therefore redundant, but we state it as a separate axiom here so that its uses can be identified more easily.  (Contributed by NM, 11-Sep-2006.) \n\n---\n\n The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p. \"Axioms of CZF and IZF\" (with unnecessary quantifier removed, and with a ` F/ y ph ` condition replaced by a distinct variable constraint between ` y ` and ` ph ` ). The Separation Scheme is a weak form of Frege's Axiom of Comprehension, conditioning it (with ` x e. z ` ) so that it asserts the existence of a collection only if it is smaller than some other collection ` z ` that already exists.  This prevents Russell's paradox ~ ru .  In some texts, this scheme is called \"Aussonderung\" or the Subset Axiom. (Contributed by NM, 11-Sep-2006.) ",
+  "statement" : "ax-sep $p |- E. y A. x ( x e. y <-> ( x e. z /\\ ph ) ) $.\n$d ph y z $.\n$d x y z $."
+}

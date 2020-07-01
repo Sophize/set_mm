@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lincvalsn on Metamath](http://us.metamath.org/mpegif/lincvalsn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lincvalsn.b | |- B = ( Base ` M ) |\n| 2 |  | lincvalsn.s | |- S = ( Scalar ` M ) |\n| 3 |  | lincvalsn.r | |- R = ( Base ` S ) |\n| 4 |  | lincvalsn.t | |- .x. = ( .s ` M ) |\n| 5 |  | lincvalsn.f | |- F = { <. V , Y >. } |\n| 6 | 5 | #P_oveq1i | |- ( F ( linC ` M ) { V } ) = ( { <. V , Y >. } ( linC ` M ) { V } ) |\n| 7 | 1, 2, 3, 4 | #P_lincvalsng | |- ( ( M e. LMod /\\ V e. B /\\ Y e. R ) -> ( { <. V , Y >. } ( linC ` M ) { V } ) = ( Y .x. V ) ) |\n| 8 | 6, 7 | #P_syl5eq | |- ( ( M e. LMod /\\ V e. B /\\ Y e. R ) -> ( F ( linC ` M ) { V } ) = ( Y .x. V ) ) |",
+  "conclusion" : "#P_lincvalsn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cS", "#T_wceq", "#T_csca", "#T_cfv", "#T_cM", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cS", "#T_c.x", "#T_wceq", "#T_cvsca", "#T_cfv", "#T_cM", "#T_cF", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_cF", "#T_clinc", "#T_cfv", "#T_cM", "#T_csn--1", "#T_cV", "#T_csn--2", "#T_wceq", "#T_csn--1", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_clinc", "#T_cfv", "#T_cM", "#T_csn--1", "#T_cV", "#T_csn--2", "#T_cM", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cR", "#T_wi", "#T_csn--1", "#T_cop--1", "#T_cV", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_csn--2", "#T_clinc", "#T_cfv", "#T_cM", "#T_csn--1", "#T_cV", "#T_csn--2", "#T_wceq", "#T_cY", "#T_c.x", "#T_cV", "#T_cM", "#T_wcel", "#T_clmod", "#T_w3a--1", "#T_cV", "#T_wcel", "#T_cB", "#T_w3a--2", "#T_cY", "#T_wcel", "#T_cR", "#T_wi", "#T_cF", "#T_clinc", "#T_cfv", "#T_cM", "#T_csn--1", "#T_cV", "#T_csn--2", "#T_wceq", "#T_cY", "#T_c.x", "#T_cV" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_lincvalsng", "#P_oveq1i", "#P_syl5eq" ]
+}

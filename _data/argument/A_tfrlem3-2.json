@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tfrlem3-2 on Metamath](http://us.metamath.org/mpegif/tfrlem3-2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tfrlem3-2.1 | |- ( Fun F /\\ ( F ` x ) e. _V ) |\n| 2 |  | #P_fveq2 | |- ( x = g -> ( F ` x ) = ( F ` g ) ) |\n| 3 | 2 | #P_eleq1d | |- ( x = g -> ( ( F ` x ) e. _V <-> ( F ` g ) e. _V ) ) |\n| 4 | 3 | #P_anbi2d | |- ( x = g -> ( ( Fun F /\\ ( F ` x ) e. _V ) <-> ( Fun F /\\ ( F ` g ) e. _V ) ) ) |\n| 5 | 4, 1 | #P_chvarv | |- ( Fun F /\\ ( F ` g ) e. _V ) |",
+  "conclusion" : "#P_tfrlem3-2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vx", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wceq", "#T_cbvex4v.vg", "#T_wi", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_wb", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_cbvex4v.vg", "#T_wcel", "#T_cvv", "#T_wfun", "#T_cF", "#T_wa", "#T_cF", "#T_cfv", "#T_vg", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_anbi2d", "#P_fveq2", "#P_eleq1d", "#P_chvarv" ]
+}

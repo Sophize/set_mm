@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rrextust on Metamath](http://us.metamath.org/mpegif/rrextust.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | rrextust.b | |- B = ( Base ` R ) |\n| 2 |  | rrextust.d | |- D = ( ( dist ` R ) |` ( B X. B ) ) |\n| 3 |  | #P_eqid | |- ( ZMod ` R ) = ( ZMod ` R ) |\n| 4 | 1, 2, 3 | #P_isrrext | |- ( R e. RRExt <-> ( ( R e. NrmRing /\\ R e. DivRing ) /\\ ( ( ZMod ` R ) e. NrmMod /\\ ( chr ` R ) = 0 ) /\\ ( R e. CUnifSp /\\ ( UnifSt ` R ) = ( metUnif ` D ) ) ) ) |\n| 5 | 4 | #P_simp3bi | |- ( R e. RRExt -> ( R e. CUnifSp /\\ ( UnifSt ` R ) = ( metUnif ` D ) ) ) |\n| 6 | 5 | #P_simprd | |- ( R e. RRExt -> ( UnifSt ` R ) = ( metUnif ` D ) ) |",
+  "conclusion" : "#P_rrextust",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cD", "#T_wceq", "#T_cds", "#T_cfv", "#T_cR", "#T_cres", "#T_cB", "#T_cxp", "#T_cB", "#T_czlm", "#T_cfv", "#T_cR", "#T_wceq", "#T_czlm", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_crrext", "#T_wb", "#T_cR", "#T_wcel", "#T_cnrg", "#T_wa", "#T_cR", "#T_wcel", "#T_cdr", "#T_w3a--1", "#T_czlm", "#T_cfv", "#T_cR", "#T_wcel", "#T_cnlm", "#T_wa", "#T_cchr", "#T_cfv", "#T_cR", "#T_wceq", "#T_cc0", "#T_w3a--2", "#T_cR", "#T_wcel", "#T_ccusp", "#T_wa", "#T_cuss", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmetu", "#T_cfv", "#T_cD", "#T_cR", "#T_wcel", "#T_crrext", "#T_wi", "#T_cR", "#T_wcel", "#T_ccusp", "#T_wa", "#T_cuss", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmetu", "#T_cfv", "#T_cD", "#T_cR", "#T_wcel", "#T_crrext", "#T_wi", "#T_cuss", "#T_cfv", "#T_cR", "#T_wceq", "#T_cmetu", "#T_cfv", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_isrrext", "#P_simp3bi", "#P_simprd" ]
+}

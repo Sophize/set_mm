@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fucass on Metamath](http://us.metamath.org/mpegif/fucass.html)"
+  } ],
+  "names" : [ "fucass" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cQ", "#T_wceq", "#T_cC", "#T_cfuc", "#T_cD", "#T_cN", "#T_wceq", "#T_cC", "#T_cnat", "#T_cD", "#T_c.xb", "#T_wceq", "#T_cco", "#T_cfv", "#T_cQ", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cF", "#T_cN", "#T_cG", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cG", "#T_cN", "#T_cH", "#T_wph", "#T_wi", "#T_cT", "#T_wcel", "#T_cH", "#T_cN", "#T_cK", "#T_wph", "#T_wi", "#T_cT", "#T_cop--1", "#T_cG", "#T_cop--2", "#T_cH", "#T_cop--3", "#T_c.xb", "#T_cK", "#T_cS", "#T_cop--1", "#T_cF", "#T_cop--2", "#T_cG", "#T_cop--3", "#T_c.xb", "#T_cK", "#T_cR", "#T_wceq", "#T_cT", "#T_cop--1", "#T_cF", "#T_cop--2", "#T_cH", "#T_cop--3", "#T_c.xb", "#T_cK", "#T_cS", "#T_cop--1", "#T_cF", "#T_cop--2", "#T_cG", "#T_cop--3", "#T_c.xb", "#T_cH", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Associativity of natural transformation composition.  Remark 6.14(b) in [Adamek] p. 87.  (Contributed by Mario Carneiro, 6-Jan-2017.) ",
+  "statement" : "fucass.q $e |- Q = ( C FuncCat D ) $.\nfucass.n $e |- N = ( C Nat D ) $.\nfucass.x $e |- .xb = ( comp ` Q ) $.\nfucass.r $e |- ( ph -> R e. ( F N G ) ) $.\nfucass.s $e |- ( ph -> S e. ( G N H ) ) $.\nfucass.t $e |- ( ph -> T e. ( H N K ) ) $.\nfucass $p |- ( ph -> ( ( T ( <. G , H >. .xb K ) S ) ( <. F , G >. .xb K ) R ) = ( T ( <. F , H >. .xb K ) ( S ( <. F , G >. .xb H ) R ) ) ) $."
+}

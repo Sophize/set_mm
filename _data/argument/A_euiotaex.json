@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euiotaex on Metamath](http://us.metamath.org/mpegif/euiotaex.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_iotaval | |- ( A. x ( ph <-> x = y ) -> ( iota x ph ) = y ) |\n| 2 | 1 | #P_eqcomd | |- ( A. x ( ph <-> x = y ) -> y = ( iota x ph ) ) |\n| 3 | 2 | #P_eximi | |- ( E. y A. x ( ph <-> x = y ) -> E. y y = ( iota x ph ) ) |\n| 4 |  | #P_df-eu | |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) |\n| 5 |  | #P_isset | |- ( ( iota x ph ) e. _V <-> E. y y = ( iota x ph ) ) |\n| 6 | 3, 4, 5 | #P_3imtr4i | |- ( E! x ph -> ( iota x ph ) e. _V ) |",
+  "conclusion" : "#P_euiotaex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wceq", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vy.tru", "#T_wal", "#T_vx.wal", "#T_wph", "#T_wb", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_cio", "#T_vx.wal", "#T_wph", "#T_wcel", "#T_cvv", "#T_wb", "#T_wex", "#T_vy.tru", "#T_vy.tru", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_cio", "#T_vx", "#T_wph", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-eu", "#P_isset", "#P_3imtr4i", "#P_eqcomd", "#P_iotaval", "#P_eximi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm4.87 on Metamath](http://us.metamath.org/mpegif/pm4.87.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_impexp | |- ( ( ( ph /\\ ps ) -> ch ) <-> ( ph -> ( ps -> ch ) ) ) |\n| 2 |  | #P_bi2.04 | |- ( ( ph -> ( ps -> ch ) ) <-> ( ps -> ( ph -> ch ) ) ) |\n| 3 | 1, 2 | #P_pm3.2i | |- ( ( ( ( ph /\\ ps ) -> ch ) <-> ( ph -> ( ps -> ch ) ) ) /\\ ( ( ph -> ( ps -> ch ) ) <-> ( ps -> ( ph -> ch ) ) ) ) |\n| 4 |  | #P_impexp | |- ( ( ( ps /\\ ph ) -> ch ) <-> ( ps -> ( ph -> ch ) ) ) |\n| 5 | 4 | #P_bicomi | |- ( ( ps -> ( ph -> ch ) ) <-> ( ( ps /\\ ph ) -> ch ) ) |\n| 6 | 3, 5 | #P_pm3.2i | |- ( ( ( ( ( ph /\\ ps ) -> ch ) <-> ( ph -> ( ps -> ch ) ) ) /\\ ( ( ph -> ( ps -> ch ) ) <-> ( ps -> ( ph -> ch ) ) ) ) /\\ ( ( ps -> ( ph -> ch ) ) <-> ( ( ps /\\ ph ) -> ch ) ) ) |",
+  "conclusion" : "#P_pm4.87",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impexp", "#P_bi2.04", "#P_bicomi", "#P_pm3.2i" ]
+}

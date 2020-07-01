@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cjf on Metamath](http://us.metamath.org/mpegif/cjf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-cj | |- * = ( x e. CC |-> ( iota_ y e. CC ( ( x + y ) e. RR /\\ ( _i x. ( x - y ) ) e. RR ) ) ) |\n| 2 |  | #P_cju | |- ( x e. CC -> E! y e. CC ( ( x + y ) e. RR /\\ ( _i x. ( x - y ) ) e. RR ) ) |\n| 3 |  | #P_riotacl | |- ( E! y e. CC ( ( x + y ) e. RR /\\ ( _i x. ( x - y ) ) e. RR ) -> ( iota_ y e. CC ( ( x + y ) e. RR /\\ ( _i x. ( x - y ) ) e. RR ) ) e. CC ) |\n| 4 | 2, 3 | #P_syl | |- ( x e. CC -> ( iota_ y e. CC ( ( x + y ) e. RR /\\ ( _i x. ( x - y ) ) e. RR ) ) e. CC ) |\n| 5 | 1, 4 | #P_fmpti | |- * : CC --> CC |",
+  "conclusion" : "#P_cjf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_ccj", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cc", "#T_cmpt--2", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cmin", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cmin", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wreu--1", "#T_vy.tru", "#T_wreu--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cmin", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cmin", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wi", "#T_crio--1", "#T_vy.tru", "#T_crio--2", "#T_cc", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wa", "#T_ci", "#T_cmul", "#T_vx.wal", "#T_cmin", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wcel", "#T_cc", "#T_ccj", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cju", "#P_fmpti", "#P_df-cj", "#P_syl", "#P_riotacl" ]
+}

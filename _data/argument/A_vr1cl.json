@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vr1cl on Metamath](http://us.metamath.org/mpegif/vr1cl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vr1cl.x | |- X = ( var1 ` R ) |\n| 2 |  | vr1cl.p | |- P = ( Poly1 ` R ) |\n| 3 |  | vr1cl.b | |- B = ( Base ` P ) |\n| 4 | 1 | #P_vr1val | |- X = ( ( 1o mVar R ) ` (/) ) |\n| 5 |  | #P_eqid | |- ( 1o mPoly R ) = ( 1o mPoly R ) |\n| 6 |  | #P_eqid | |- ( 1o mVar R ) = ( 1o mVar R ) |\n| 7 |  | #P_eqid | |- ( PwSer1 ` R ) = ( PwSer1 ` R ) |\n| 8 | 2, 7, 3 | #P_ply1bas | |- B = ( Base ` ( 1o mPoly R ) ) |\n| 9 |  | #P_1onn | |- 1o e. _om |\n| 10 | 9 | #P_a1i | |- ( R e. Ring -> 1o e. _om ) |\n| 11 |  | #P_id | |- ( R e. Ring -> R e. Ring ) |\n| 12 |  | #P_0lt1o | |- (/) e. 1o |\n| 13 | 12 | #P_a1i | |- ( R e. Ring -> (/) e. 1o ) |\n| 14 | 5, 6, 8, 10, 11, 13 | #P_mvrcl | |- ( R e. Ring -> ( ( 1o mVar R ) ` (/) ) e. B ) |\n| 15 | 4, 14 | #P_syl5eqel | |- ( R e. Ring -> X e. B ) |",
+  "conclusion" : "#P_vr1cl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cX", "#T_wceq", "#T_cv1", "#T_cfv", "#T_cR", "#T_cP", "#T_wceq", "#T_cpl1", "#T_cfv", "#T_cR", "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cP", "#T_cX", "#T_wceq", "#T_c1o", "#T_cmvr", "#T_cR", "#T_cfv", "#T_c0", "#T_c1o", "#T_cmpl", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmpl", "#T_cR", "#T_c1o", "#T_cmvr", "#T_cR", "#T_wceq", "#T_c1o", "#T_cmvr", "#T_cR", "#T_cps1", "#T_cfv", "#T_cR", "#T_wceq", "#T_cps1", "#T_cfv", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cbs", "#T_cfv", "#T_c1o", "#T_cmpl", "#T_cR", "#T_c1o", "#T_wcel", "#T_com", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c1o", "#T_wcel", "#T_com", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cR", "#T_wcel", "#T_crg", "#T_c0", "#T_wcel", "#T_c1o", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c0", "#T_wcel", "#T_c1o", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_c1o", "#T_cmvr", "#T_cR", "#T_cfv", "#T_c0", "#T_wcel", "#T_cB.wceq", "#T_cR", "#T_wcel", "#T_crg", "#T_wi", "#T_cX", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_1onn", "#P_eqid", "#P_syl5eqel", "#P_a1i", "#P_0lt1o", "#P_ply1bas", "#P_vr1val", "#P_id", "#P_mvrcl" ]
+}

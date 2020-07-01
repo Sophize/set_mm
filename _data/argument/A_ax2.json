@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax2 on Metamath](http://us.metamath.org/mpegif/ax2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luklem7 | |- ( ( ph -> ( ps -> ch ) ) -> ( ps -> ( ph -> ch ) ) ) |\n| 2 |  | #P_imim2 | |- ( ( ps -> ( ph -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ( ph -> ch ) ) ) ) |\n| 3 |  | #P_luklem6 | |- ( ( ph -> ( ph -> ch ) ) -> ( ph -> ch ) ) |\n| 4 |  | #P_imim2 | |- ( ( ( ph -> ( ph -> ch ) ) -> ( ph -> ch ) ) -> ( ( ( ph -> ps ) -> ( ph -> ( ph -> ch ) ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( ( ( ph -> ps ) -> ( ph -> ( ph -> ch ) ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) |\n| 6 | 2, 5 | #P_luklem1 | |- ( ( ps -> ( ph -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) |\n| 7 | 1, 6 | #P_luklem1 | |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) |",
+  "conclusion" : "#P_ax2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_luklem1", "#P_luklem7", "#P_luklem6", "#P_imim2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See add20i on Metamath](http://us.metamath.org/mpegif/add20i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | lt_2.1 | |- A e. RR |\n| 2 |  | lt_2.2 | |- B e. RR |\n| 3 |  | #P_add20 | |- ( ( ( A e. RR /\\ 0 <_ A ) /\\ ( B e. RR /\\ 0 <_ B ) ) -> ( ( A + B ) = 0 <-> ( A = 0 /\\ B = 0 ) ) ) |\n| 4 | 3 | #P_an4s | |- ( ( ( A e. RR /\\ B e. RR ) /\\ ( 0 <_ A /\\ 0 <_ B ) ) -> ( ( A + B ) = 0 <-> ( A = 0 /\\ B = 0 ) ) ) |\n| 5 | 1, 2, 4 | #P_mpanl12 | |- ( ( 0 <_ A /\\ 0 <_ B ) -> ( ( A + B ) = 0 <-> ( A = 0 /\\ B = 0 ) ) ) |",
+  "conclusion" : "#P_add20i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cr", "#T_cB", "#T_wcel", "#T_cr", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cA.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cr", "#T_wa", "#T_cc0", "#T_cle", "#T_cA.wceq", "#T_wa", "#T_cc0", "#T_cle", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cc0", "#T_wa", "#T_cB.wceq", "#T_wceq", "#T_cc0", "#T_cc0", "#T_cle", "#T_cA", "#T_wa", "#T_cc0", "#T_cle", "#T_cB", "#T_wi", "#T_cA", "#T_caddc", "#T_cB", "#T_wceq", "#T_cc0", "#T_wb", "#T_cA", "#T_wceq", "#T_cc0", "#T_wa", "#T_cB", "#T_wceq", "#T_cc0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_add20", "#P_mpanl12", "#P_an4s" ]
+}

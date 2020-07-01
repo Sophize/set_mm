@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-lsw on Metamath](http://us.metamath.org/mpegif/df-lsw.html)"
+  } ],
+  "names" : [ "df-lsw" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_clsw", "#T_wceq", "#T_vw", "#T_cmpt--1", "#T_cvv", "#T_cmpt--2", "#T_vw", "#T_cfv", "#T_chash", "#T_cfv", "#T_vw", "#T_cmin", "#T_c1" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Extract the last symbol of a word.  May be not meaningful for other sets which are not words.  The name ` lastS ` (as abbreviation of \"lastSymbol\") is a compromise between usually used names for corresponding functions in computer programs (as last() or lastChar()), the terminology used for words in set.mm (\"symbol\" instead of \"character\") and brevity (\"lastS\" is shorter than \"lastChar\" and \"lastSymbol\").  Labels of theorems about last symbols of a word will contain the abbreviation \"lsw\" (Last Symbol of a Word).  (Contributed by Alexander van der Vekens, 18-Mar-2018.) ",
+  "statement" : "df-lsw $p |- lastS = ( w e. _V |-> ( w ` ( ( # ` w ) - 1 ) ) ) $."
+}

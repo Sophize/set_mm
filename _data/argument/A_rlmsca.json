@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rlmsca on Metamath](http://us.metamath.org/mpegif/rlmsca.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( Base ` R ) = ( Base ` R ) |\n| 2 | 1 | #P_ressid | |- ( R e. X -> ( R |`s ( Base ` R ) ) = R ) |\n| 3 |  | #P_rlmval | |- ( ringLMod ` R ) = ( ( subringAlg ` R ) ` ( Base ` R ) ) |\n| 4 | 3 | #P_a1i | |- ( R e. X -> ( ringLMod ` R ) = ( ( subringAlg ` R ) ` ( Base ` R ) ) ) |\n| 5 |  | #P_ssid | |- ( Base ` R ) C_ ( Base ` R ) |\n| 6 | 5 | #P_a1i | |- ( R e. X -> ( Base ` R ) C_ ( Base ` R ) ) |\n| 7 | 4, 6 | #P_srasca | |- ( R e. X -> ( R |`s ( Base ` R ) ) = ( Scalar ` ( ringLMod ` R ) ) ) |\n| 8 | 2, 7 | #P_eqtr3d | |- ( R e. X -> R = ( Scalar ` ( ringLMod ` R ) ) ) |",
+  "conclusion" : "#P_rlmsca",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cX", "#T_wi", "#T_cR", "#T_cress", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_cR", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_csra", "#T_cfv", "#T_cR", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cX", "#T_wi", "#T_crglmod", "#T_cfv", "#T_cR", "#T_wceq", "#T_csra", "#T_cfv", "#T_cR", "#T_cfv", "#T_cbs", "#T_cfv", "#T_cR", "#T_cbs", "#T_cfv", "#T_cR", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cX", "#T_wi", "#T_cbs", "#T_cfv", "#T_cR", "#T_wss", "#T_cbs", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cX", "#T_wi", "#T_cR", "#T_cress", "#T_cbs", "#T_cfv", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cX", "#T_wi", "#T_cR", "#T_wceq", "#T_csca", "#T_cfv", "#T_crglmod", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ssid", "#P_ressid", "#P_rlmval", "#P_a1i", "#P_srasca", "#P_eqtr3d" ]
+}

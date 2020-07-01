@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm5.32rd on Metamath](http://us.metamath.org/mpegif/pm5.32rd.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | pm5.32d.1 | |- ( ph -> ( ps -> ( ch <-> th ) ) ) |\n| 2 | 1 | #P_pm5.32d | |- ( ph -> ( ( ps /\\ ch ) <-> ( ps /\\ th ) ) ) |\n| 3 |  | #P_ancom | |- ( ( ch /\\ ps ) <-> ( ps /\\ ch ) ) |\n| 4 |  | #P_ancom | |- ( ( th /\\ ps ) <-> ( ps /\\ th ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4g | |- ( ph -> ( ( ch /\\ ps ) <-> ( th /\\ ps ) ) ) |",
+  "conclusion" : "#P_pm5.32rd",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wch", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wch", "#T_wth", "#T_wa", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wps", "#T_wb", "#T_wth", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ancom", "#P_pm5.32d", "#P_3bitr4g" ]
+}

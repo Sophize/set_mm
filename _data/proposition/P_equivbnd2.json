@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See equivbnd2 on Metamath](http://us.metamath.org/mpegif/equivbnd2.html)"
+  } ],
+  "names" : [ "equivbnd2" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cM", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cme", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_crp", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_crp", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cN", "#T_vy", "#T_cle", "#T_cR", "#T_cmul", "#T_vx", "#T_cM", "#T_vy", "#T_wph", "#T_wa", "#T_vx", "#T_wcel", "#T_cX", "#T_wa", "#T_vy", "#T_wcel", "#T_cX", "#T_wi", "#T_vx", "#T_cM", "#T_vy", "#T_cle", "#T_cS", "#T_cmul", "#T_vx", "#T_cN", "#T_vy", "#T_cC", "#T_wceq", "#T_cM", "#T_cres", "#T_cY", "#T_cxp", "#T_cY", "#T_cD", "#T_wceq", "#T_cN", "#T_cres", "#T_cY", "#T_cxp", "#T_cY", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_ctotbnd", "#T_cfv", "#T_cY", "#T_wb", "#T_cC", "#T_wcel", "#T_cbnd", "#T_cfv", "#T_cY", "#T_wph", "#T_wi", "#T_cD", "#T_wcel", "#T_ctotbnd", "#T_cfv", "#T_cY", "#T_wb", "#T_cD", "#T_wcel", "#T_cbnd", "#T_cfv", "#T_cY", "#T_cC", "#T_vx", "#T_vy", "#T_cD", "#T_vx", "#T_vy", "#T_cR", "#T_vx", "#T_vy", "#T_cS", "#T_vx", "#T_vy", "#T_cY", "#T_vx", "#T_vy", "#T_wph", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If balls are totally bounded in the metric ` M ` , then balls are totally bounded in the equivalent metric ` N ` .  (Contributed by Mario Carneiro, 15-Sep-2015.) ",
+  "statement" : "equivbnd2.1 $e |- ( ph -> M e. ( Met ` X ) ) $.\nequivbnd2.2 $e |- ( ph -> N e. ( Met ` X ) ) $.\nequivbnd2.3 $e |- ( ph -> R e. RR+ ) $.\nequivbnd2.4 $e |- ( ph -> S e. RR+ ) $.\nequivbnd2.5 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x N y ) <_ ( R x. ( x M y ) ) ) $.\nequivbnd2.6 $e |- ( ( ph /\\ ( x e. X /\\ y e. X ) ) -> ( x M y ) <_ ( S x. ( x N y ) ) ) $.\nequivbnd2.7 $e |- C = ( M |` ( Y X. Y ) ) $.\nequivbnd2.8 $e |- D = ( N |` ( Y X. Y ) ) $.\nequivbnd2.9 $e |- ( ph -> ( C e. ( TotBnd ` Y ) <-> C e. ( Bnd ` Y ) ) ) $.\nequivbnd2 $p |- ( ph -> ( D e. ( TotBnd ` Y ) <-> D e. ( Bnd ` Y ) ) ) $.\n$d C x y $.\n$d D x y $.\n$d R x y $.\n$d S x y $.\n$d Y x y $.\n$d ph x y $."
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subcl on Metamath](http://us.metamath.org/mpegif/subcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_subval | |- ( ( A e. CC /\\ B e. CC ) -> ( A - B ) = ( iota_ x e. CC ( B + x ) = A ) ) |\n| 2 |  | #P_negeu | |- ( ( B e. CC /\\ A e. CC ) -> E! x e. CC ( B + x ) = A ) |\n| 3 | 2 | #P_ancoms | |- ( ( A e. CC /\\ B e. CC ) -> E! x e. CC ( B + x ) = A ) |\n| 4 |  | #P_riotacl | |- ( E! x e. CC ( B + x ) = A -> ( iota_ x e. CC ( B + x ) = A ) e. CC ) |\n| 5 | 3, 4 | #P_syl | |- ( ( A e. CC /\\ B e. CC ) -> ( iota_ x e. CC ( B + x ) = A ) e. CC ) |\n| 6 | 1, 5 | #P_eqeltrd | |- ( ( A e. CC /\\ B e. CC ) -> ( A - B ) e. CC ) |",
+  "conclusion" : "#P_subcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_cmin", "#T_cB.wceq", "#T_wceq", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wreu--1", "#T_vx.wal", "#T_wreu--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cc", "#T_cB.wceq", "#T_caddc", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_cB", "#T_wcel", "#T_cc", "#T_wi", "#T_cA", "#T_cmin", "#T_cB", "#T_wcel", "#T_cc" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_subval", "#P_eqeltrd", "#P_syl", "#P_negeu", "#P_ancoms", "#P_riotacl" ]
+}

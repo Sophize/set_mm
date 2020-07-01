@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oibabs on Metamath](http://us.metamath.org/mpegif/oibabs.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.67-2 | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) -> ( ph -> ( ph <-> ps ) ) ) |\n| 2 | 1 | #P_ibd | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) -> ( ph -> ps ) ) |\n| 3 |  | #P_olc | |- ( ps -> ( ph \\/ ps ) ) |\n| 4 | 3 | #P_imim1i | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) -> ( ps -> ( ph <-> ps ) ) ) |\n| 5 |  | #P_ibibr | |- ( ( ps -> ph ) <-> ( ps -> ( ph <-> ps ) ) ) |\n| 6 | 4, 5 | #P_sylibr | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) -> ( ps -> ph ) ) |\n| 7 | 2, 6 | #P_impbid | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) -> ( ph <-> ps ) ) |\n| 8 |  | #P_ax-1 | |- ( ( ph <-> ps ) -> ( ( ph \\/ ps ) -> ( ph <-> ps ) ) ) |\n| 9 | 7, 8 | #P_impbii | |- ( ( ( ph \\/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) |",
+  "conclusion" : "#P_oibabs",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wph", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_ibibr", "#P_ibd", "#P_imim1i", "#P_sylibr", "#P_olc", "#P_impbid", "#P_pm2.67-2", "#P_ax-1" ]
+}

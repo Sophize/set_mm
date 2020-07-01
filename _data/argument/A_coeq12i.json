@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See coeq12i on Metamath](http://us.metamath.org/mpegif/coeq12i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | coeq12i.1 | |- A = B |\n| 2 |  | coeq12i.2 | |- C = D |\n| 3 | 1 | #P_coeq1i | |- ( A o. C ) = ( B o. C ) |\n| 4 | 2 | #P_coeq2i | |- ( B o. C ) = ( B o. D ) |\n| 5 | 3, 4 | #P_eqtri | |- ( A o. C ) = ( B o. D ) |",
+  "conclusion" : "#P_coeq12i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cB", "#T_cC", "#T_wceq", "#T_cD", "#T_cA.wceq", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_ccom", "#T_cC", "#T_cB.wceq", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_ccom", "#T_cD", "#T_cA", "#T_ccom", "#T_cC", "#T_wceq", "#T_cB", "#T_ccom", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_coeq2i", "#P_coeq1i" ]
+}

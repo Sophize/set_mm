@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ghmima on Metamath](http://us.metamath.org/mpegif/ghmima.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-ima | |- ( F \" U ) = ran ( F |` U ) |\n| 2 |  | #P_eqid | |- ( S |`s U ) = ( S |`s U ) |\n| 3 | 2 | #P_resghm | |- ( ( F e. ( S GrpHom T ) /\\ U e. ( SubGrp ` S ) ) -> ( F |` U ) e. ( ( S |`s U ) GrpHom T ) ) |\n| 4 |  | #P_ghmrn | |- ( ( F |` U ) e. ( ( S |`s U ) GrpHom T ) -> ran ( F |` U ) e. ( SubGrp ` T ) ) |\n| 5 | 3, 4 | #P_syl | |- ( ( F e. ( S GrpHom T ) /\\ U e. ( SubGrp ` S ) ) -> ran ( F |` U ) e. ( SubGrp ` T ) ) |\n| 6 | 1, 5 | #P_syl5eqel | |- ( ( F e. ( S GrpHom T ) /\\ U e. ( SubGrp ` S ) ) -> ( F \" U ) e. ( SubGrp ` T ) ) |",
+  "conclusion" : "#P_ghmima",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_cima", "#T_cU", "#T_wceq", "#T_crn", "#T_cF", "#T_cres", "#T_cU", "#T_cS", "#T_cress", "#T_cU", "#T_wceq", "#T_cS", "#T_cress", "#T_cU", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_cres", "#T_cU", "#T_wcel", "#T_cS", "#T_cress", "#T_cU", "#T_cghm", "#T_cT", "#T_cF", "#T_cres", "#T_cU", "#T_wcel", "#T_cS", "#T_cress", "#T_cU", "#T_cghm", "#T_cT", "#T_wi", "#T_crn", "#T_cF", "#T_cres", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cS", "#T_wi", "#T_crn", "#T_cF", "#T_cres", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cT", "#T_cF", "#T_wcel", "#T_cS", "#T_cghm", "#T_cT", "#T_wa", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cS", "#T_wi", "#T_cF", "#T_cima", "#T_cU", "#T_wcel", "#T_csubg", "#T_cfv", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ghmrn", "#P_df-ima", "#P_resghm", "#P_syl5eqel", "#P_syl" ]
+}

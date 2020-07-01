@@ -1,0 +1,12 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sbth on Metamath](http://us.metamath.org/mpegif/sbth.html)"
+  } ],
+  "indexable" : true,
+  "names" : [ "Schroeder-Bernstein Theorem", "sbth" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_cdom", "#T_cB", "#T_wa", "#T_cB", "#T_cdom", "#T_cA", "#T_wi", "#T_cA", "#T_cen", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Schroeder-Bernstein Theorem.  Theorem 18 of [Suppes] p. 95.  This theorem states that if set ` A ` is smaller (has lower cardinality) than ` B ` and vice-versa, then ` A ` and ` B ` are equinumerous (have the same cardinality).  The interesting thing is that this can be proved without invoking the Axiom of Choice, as we do here, but the proof as you can see is quite difficult.  (The theorem can be proved more easily if we allow AC.) The main proof consists of lemmas ~ sbthlem1 through ~ sbthlem10 ; this final piece mainly changes bound variables to eliminate the hypotheses of ~ sbthlem10 .  We follow closely the proof in Suppes, which you should consult to understand our proof at a higher level.  Note that Suppes' proof, which is credited to J. M. Whitaker, does not require the Axiom of Infinity.  This is Metamath 100 proof #25.  (Contributed by NM, 8-Jun-1998.) ",
+  "statement" : "sbth $p |- ( ( A ~<_ B /\\ B ~<_ A ) -> A ~~ B ) $."
+}

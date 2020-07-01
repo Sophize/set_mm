@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See feqresmpt on Metamath](http://us.metamath.org/mpegif/feqresmpt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | feqmptd.1 | |- ( ph -> F : A --> B ) |\n| 2 |  | feqresmpt.2 | |- ( ph -> C C_ A ) |\n| 3 |  | #P_fssres | |- ( ( F : A --> B /\\ C C_ A ) -> ( F |` C ) : C --> B ) |\n| 4 | 1, 2, 3 | #P_syl2anc | |- ( ph -> ( F |` C ) : C --> B ) |\n| 5 | 4 | #P_feqmptd | |- ( ph -> ( F |` C ) = ( x e. C |-> ( ( F |` C ) ` x ) ) ) |\n| 6 |  | #P_fvres | |- ( x e. C -> ( ( F |` C ) ` x ) = ( F ` x ) ) |\n| 7 | 6 | #P_mpteq2ia | |- ( x e. C |-> ( ( F |` C ) ` x ) ) = ( x e. C |-> ( F ` x ) ) |\n| 8 | 5, 7 | #P_syl6eq | |- ( ph -> ( F |` C ) = ( x e. C |-> ( F ` x ) ) ) |",
+  "conclusion" : "#P_feqresmpt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cC", "#T_wss", "#T_cA", "#T_cF", "#T_wf--1", "#T_cA.wceq", "#T_wf--2", "#T_cB.wceq", "#T_wa", "#T_cC", "#T_wss", "#T_cA.wceq", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_wf--1", "#T_cC", "#T_wf--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_wf--1", "#T_cC", "#T_wf--2", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cF", "#T_cres", "#T_cC", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cC", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_vx.wal", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cF", "#T_cres", "#T_cC", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cC", "#T_cmpt--2", "#T_cF", "#T_cfv", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvres", "#P_mpteq2ia", "#P_syl2anc", "#P_fssres", "#P_feqmptd", "#P_syl6eq" ]
+}

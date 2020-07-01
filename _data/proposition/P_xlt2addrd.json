@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See xlt2addrd on Metamath](http://us.metamath.org/mpegif/xlt2addrd.html)"
+  } ],
+  "names" : [ "xlt2addrd" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cr", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cxr", "#T_wph", "#T_wi", "#T_cB", "#T_wne", "#T_cmnf", "#T_wph", "#T_wi", "#T_cC", "#T_wne", "#T_cmnf", "#T_wph", "#T_wi", "#T_cA", "#T_clt", "#T_cB", "#T_cxad", "#T_cC", "#T_wph", "#T_wi", "#T_wrex--1", "#T_vb", "#T_wrex--2", "#T_cxr", "#T_wrex--1", "#T_vc", "#T_wrex--2", "#T_cxr", "#T_cA", "#T_wceq", "#T_vb", "#T_cxad", "#T_vc", "#T_w3a--1", "#T_vb", "#T_clt", "#T_cB", "#T_w3a--2", "#T_vc", "#T_clt", "#T_cC", "#T_cA", "#T_vb", "#T_vc", "#T_cB", "#T_vb", "#T_vc", "#T_cC", "#T_vb", "#T_vc" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " If the right-hand side of a 'less than' relationship is an addition, then we can express the left-hand side as an addition, too, where each term is respectively less than each term of the original right side. (Contributed by Thierry Arnoux, 15-Mar-2017.) ",
+  "statement" : "xlt2addrd.1 $e |- ( ph -> A e. RR ) $.\nxlt2addrd.2 $e |- ( ph -> B e. RR* ) $.\nxlt2addrd.3 $e |- ( ph -> C e. RR* ) $.\nxlt2addrd.4 $e |- ( ph -> B =/= -oo ) $.\nxlt2addrd.5 $e |- ( ph -> C =/= -oo ) $.\nxlt2addrd.6 $e |- ( ph -> A < ( B +e C ) ) $.\nxlt2addrd $p |- ( ph -> E. b e. RR* E. c e. RR* ( A = ( b +e c ) /\\ b < B /\\ c < C ) ) $.\n$d A b c $.\n$d B b c $.\n$d C b c $."
+}

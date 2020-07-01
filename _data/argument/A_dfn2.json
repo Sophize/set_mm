@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dfn2 on Metamath](http://us.metamath.org/mpegif/dfn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-n0 | |- NN0 = ( NN u. { 0 } ) |\n| 2 | 1 | #P_difeq1i | |- ( NN0 \\ { 0 } ) = ( ( NN u. { 0 } ) \\ { 0 } ) |\n| 3 |  | #P_difun2 | |- ( ( NN u. { 0 } ) \\ { 0 } ) = ( NN \\ { 0 } ) |\n| 4 |  | #P_0nnn | |- -. 0 e. NN |\n| 5 |  | #P_difsn | |- ( -. 0 e. NN -> ( NN \\ { 0 } ) = NN ) |\n| 6 | 4, 5 | #P_ax-mp | |- ( NN \\ { 0 } ) = NN |\n| 7 | 2, 3, 6 | #P_3eqtrri | |- NN = ( NN0 \\ { 0 } ) |",
+  "conclusion" : "#P_dfn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cn0", "#T_wceq", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cn0", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cn", "#T_cun", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cn", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wn", "#T_cc0", "#T_wcel", "#T_cn", "#T_wn", "#T_cc0", "#T_wcel", "#T_cn", "#T_wi", "#T_cn", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cn", "#T_cn", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_wceq", "#T_cn", "#T_cn", "#T_wceq", "#T_cn0", "#T_cdif", "#T_csn--1", "#T_cc0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_0nnn", "#P_difsn", "#P_3eqtrri", "#P_ax-mp", "#P_df-n0", "#P_difeq1i", "#P_difun2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ismri2d on Metamath](http://us.metamath.org/mpegif/ismri2d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ismri2.1 | |- N = ( mrCls ` A ) |\n| 2 |  | ismri2.2 | |- I = ( mrInd ` A ) |\n| 3 |  | ismri2d.3 | |- ( ph -> A e. ( Moore ` X ) ) |\n| 4 |  | ismri2d.4 | |- ( ph -> S C_ X ) |\n| 5 | 1, 2 | #P_ismri2 | |- ( ( A e. ( Moore ` X ) /\\ S C_ X ) -> ( S e. I <-> A. x e. S -. x e. ( N ` ( S \\ { x } ) ) ) ) |\n| 6 | 3, 4, 5 | #P_syl2anc | |- ( ph -> ( S e. I <-> A. x e. S -. x e. ( N ` ( S \\ { x } ) ) ) ) |",
+  "conclusion" : "#P_ismri2d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wceq", "#T_cmrc", "#T_cfv", "#T_cA", "#T_cI", "#T_wceq", "#T_cmri", "#T_cfv", "#T_cA", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cX", "#T_cA.wceq", "#T_wcel", "#T_cmre", "#T_cfv", "#T_cX", "#T_wa", "#T_cS", "#T_wss", "#T_cX", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_cS", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_cdif", "#T_csn--1", "#T_vx.wal", "#T_csn--2", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cI", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cS", "#T_wn", "#T_vx", "#T_wcel", "#T_cN", "#T_cfv", "#T_cS", "#T_cdif", "#T_csn--1", "#T_vx", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl2anc", "#P_ismri2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ishil on Metamath](http://us.metamath.org/mpegif/ishil.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nh\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ishil.k | |- K = ( proj ` H ) |\n| 2 |  | ishil.c | |- C = ( CSubSp ` H ) |\n| 3 |  | #P_fveq2 | |- ( h = H -> ( proj ` h ) = ( proj ` H ) ) |\n| 4 | 3, 1 | #P_syl6eqr | |- ( h = H -> ( proj ` h ) = K ) |\n| 5 | 4 | #P_dmeqd | |- ( h = H -> dom ( proj ` h ) = dom K ) |\n| 6 |  | #P_fveq2 | |- ( h = H -> ( CSubSp ` h ) = ( CSubSp ` H ) ) |\n| 7 | 6, 2 | #P_syl6eqr | |- ( h = H -> ( CSubSp ` h ) = C ) |\n| 8 | 5, 7 | #P_eqeq12d | |- ( h = H -> ( dom ( proj ` h ) = ( CSubSp ` h ) <-> dom K = C ) ) |\n| 9 |  | #P_df-hil | |- Hil = { h e. PreHil | dom ( proj ` h ) = ( CSubSp ` h ) } |\n| 10 | 8, 9 | #P_elrab2 | |- ( H e. Hil <-> ( H e. PreHil /\\ dom K = C ) ) |",
+  "conclusion" : "#P_ishil",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vh", "#T_cK", "#T_wceq", "#T_cpj", "#T_cfv", "#T_cH", "#T_cC", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cH", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_cpj", "#T_cfv", "#T_vh", "#T_wceq", "#T_cpj", "#T_cfv", "#T_cH", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_cpj", "#T_cfv", "#T_vh", "#T_wceq", "#T_cK", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_cdm", "#T_cpj", "#T_cfv", "#T_vh", "#T_wceq", "#T_cdm", "#T_cK", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_ccss", "#T_cfv", "#T_vh", "#T_wceq", "#T_ccss", "#T_cfv", "#T_cH", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_ccss", "#T_cfv", "#T_vh", "#T_wceq", "#T_cC", "#T_vh", "#T_wceq", "#T_cH", "#T_wi", "#T_cdm", "#T_cpj", "#T_cfv", "#T_vh", "#T_wceq", "#T_ccss", "#T_cfv", "#T_vh", "#T_wb", "#T_cdm", "#T_cK", "#T_wceq", "#T_cC", "#T_chs", "#T_wceq", "#T_crab--1", "#T_vh", "#T_crab--2", "#T_cphl", "#T_crab--3", "#T_cdm", "#T_cpj", "#T_cfv", "#T_vh", "#T_wceq", "#T_ccss", "#T_cfv", "#T_vh", "#T_crab--4", "#T_cH", "#T_wcel", "#T_chs", "#T_wb", "#T_cH", "#T_wcel", "#T_cphl", "#T_wa", "#T_cdm", "#T_cK", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqeq12d", "#P_dmeqd", "#P_elrab2", "#P_df-hil", "#P_fveq2", "#P_syl6eqr" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tron on Metamath](http://us.metamath.org/mpegif/tron.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_dftr3 | |- ( Tr On <-> A. x e. On x C_ On ) |\n| 2 |  | #P_vex | |- x e. _V |\n| 3 | 2 | #P_elon | |- ( x e. On <-> Ord x ) |\n| 4 |  | #P_ordelord | |- ( ( Ord x /\\ y e. x ) -> Ord y ) |\n| 5 | 3, 4 | #P_sylanb | |- ( ( x e. On /\\ y e. x ) -> Ord y ) |\n| 6 | 5 | #P_ex | |- ( x e. On -> ( y e. x -> Ord y ) ) |\n| 7 |  | #P_vex | |- y e. _V |\n| 8 | 7 | #P_elon | |- ( y e. On <-> Ord y ) |\n| 9 | 6, 8 | #P_syl6ibr | |- ( x e. On -> ( y e. x -> y e. On ) ) |\n| 10 | 9 | #P_ssrdv | |- ( x e. On -> x C_ On ) |\n| 11 | 1, 10 | #P_mprgbir | |- Tr On |",
+  "conclusion" : "#P_tron",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_wtr", "#T_con0", "#T_wb", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_con0", "#T_vx.wal", "#T_wss", "#T_con0", "#T_vx.wal", "#T_wcel", "#T_cvv", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_vx.wal", "#T_word", "#T_vx.wal", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_word", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_word", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_word", "#T_vy.tru", "#T_vy.tru", "#T_wcel", "#T_cvv", "#T_vy.tru", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_vy.tru", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_vx.wal", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_con0", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wss", "#T_con0", "#T_wtr", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_elon", "#P_ssrdv", "#P_sylanb", "#P_ex", "#P_ordelord", "#P_dftr3", "#P_syl6ibr", "#P_mprgbir", "#P_vex" ]
+}

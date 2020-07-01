@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See oveq123i on Metamath](http://us.metamath.org/mpegif/oveq123i.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | oveq123i.1 | |- A = C |\n| 2 |  | oveq123i.2 | |- B = D |\n| 3 |  | oveq123i.3 | |- F = G |\n| 4 | 1, 2 | #P_oveq12i | |- ( A F B ) = ( C F D ) |\n| 5 | 3 | #P_oveqi | |- ( C F D ) = ( C G D ) |\n| 6 | 4, 5 | #P_eqtri | |- ( A F B ) = ( C G D ) |",
+  "conclusion" : "#P_oveq123i",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cC", "#T_cB", "#T_wceq", "#T_cD", "#T_cF", "#T_wceq", "#T_cG", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cF", "#T_cD", "#T_cC", "#T_cF", "#T_cD", "#T_wceq", "#T_cC", "#T_cG", "#T_cD", "#T_cA", "#T_cF", "#T_cB", "#T_wceq", "#T_cC", "#T_cG", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_oveq12i", "#P_oveqi" ]
+}

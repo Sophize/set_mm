@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See tgptopon on Metamath](http://us.metamath.org/mpegif/tgptopon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tgpcn.j | |- J = ( TopOpen ` G ) |\n| 2 |  | tgptopon.x | |- X = ( Base ` G ) |\n| 3 |  | #P_tgptps | |- ( G e. TopGrp -> G e. TopSp ) |\n| 4 | 2, 1 | #P_istps | |- ( G e. TopSp <-> J e. ( TopOn ` X ) ) |\n| 5 | 3, 4 | #P_sylib | |- ( G e. TopGrp -> J e. ( TopOn ` X ) ) |",
+  "conclusion" : "#P_tgptopon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cG", "#T_cX", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cG", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cG", "#T_wcel", "#T_ctps", "#T_cG", "#T_wcel", "#T_ctps", "#T_wb", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX", "#T_cG", "#T_wcel", "#T_ctgp", "#T_wi", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cX" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_tgptps", "#P_sylib", "#P_istps" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See mpto2 on Metamath](http://us.metamath.org/mpegif/mpto2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | mpto2.1 | |- ph |\n| 2 |  | mpto2.2 | |- ( ph \\/_ ps ) |\n| 3 |  | #P_df-xor--i | |- ( ( ph \\/_ ps ) <-> ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) ) |\n| 4 | 2, 3 | #P_mpbi | |- ( ( ph \\/ ps ) /\\ -. ( ph /\\ ps ) ) |\n| 5 | 4 | #P_simpri | |- -. ( ph /\\ ps ) |\n| 6 | 1, 5 | #P_mpto1 | |- -. ps |",
+  "conclusion" : "#P_mpto2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wph", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wn", "#T_wph", "#T_wa", "#T_wps", "#T_wn", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-xor--i", "#P_simpri", "#P_mpbi", "#P_mpto1" ]
+}

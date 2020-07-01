@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See notbid on Metamath](http://us.metamath.org/mpegif/notbid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | notbid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | #P_notnot | |- ( ps <-> -. -. ps ) |\n| 3 |  | #P_notnot | |- ( ch <-> -. -. ch ) |\n| 4 | 1, 2, 3 | #P_3bitr3g | |- ( ph -> ( -. -. ps <-> -. -. ch ) ) |\n| 5 | 4 | #P_con4bid | |- ( ph -> ( -. ps <-> -. ch ) ) |",
+  "conclusion" : "#P_notbid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wps", "#T_wch", "#T_wb", "#T_wn", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wch" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notnot", "#P_3bitr3g", "#P_con4bid" ]
+}

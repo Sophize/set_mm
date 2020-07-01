@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See abscn2 on Metamath](http://us.metamath.org/mpegif/abscn2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_absf | |- abs : CC --> RR |\n| 2 |  | #P_ax-resscn | |- RR C_ CC |\n| 3 |  | #P_fss | |- ( ( abs : CC --> RR /\\ RR C_ CC ) -> abs : CC --> CC ) |\n| 4 | 1, 2, 3 | #P_mp2an | |- abs : CC --> CC |\n| 5 |  | #P_abs2difabs | |- ( ( z e. CC /\\ A e. CC ) -> ( abs ` ( ( abs ` z ) - ( abs ` A ) ) ) <_ ( abs ` ( z - A ) ) ) |\n| 6 | 4, 5 | #P_cn1lem | |- ( ( A e. CC /\\ x e. RR+ ) -> E. y e. RR+ A. z e. CC ( ( abs ` ( z - A ) ) < y -> ( abs ` ( ( abs ` z ) - ( abs ` A ) ) ) < x ) ) |",
+  "conclusion" : "#P_abscn2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr", "#T_cr", "#T_wss", "#T_cc", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cr", "#T_wa", "#T_cr", "#T_wss", "#T_cc", "#T_wi", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_cabs", "#T_wf--1", "#T_cc", "#T_wf--2", "#T_cc", "#T_vz", "#T_wcel", "#T_cc", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cabs", "#T_cfv", "#T_cabs", "#T_cfv", "#T_vz", "#T_cmin", "#T_cabs", "#T_cfv", "#T_cA.wceq", "#T_cle", "#T_cabs", "#T_cfv", "#T_vz", "#T_cmin", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wa", "#T_vx", "#T_wcel", "#T_crp", "#T_wi", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_crp", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cc", "#T_cabs", "#T_cfv", "#T_vz", "#T_cmin", "#T_cA", "#T_clt", "#T_vy", "#T_wi", "#T_cabs", "#T_cfv", "#T_cabs", "#T_cfv", "#T_vz", "#T_cmin", "#T_cabs", "#T_cfv", "#T_cA", "#T_clt", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_absf", "#P_ax-resscn", "#P_mp2an", "#P_fss", "#P_abs2difabs", "#P_cn1lem" ]
+}

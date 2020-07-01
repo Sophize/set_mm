@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bloln on Metamath](http://us.metamath.org/mpegif/bloln.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | bloln.4 | |- L = ( U LnOp W ) |\n| 2 |  | bloln.5 | |- B = ( U BLnOp W ) |\n| 3 |  | #P_eqid | |- ( U normOpOLD W ) = ( U normOpOLD W ) |\n| 4 | 3, 1, 2 | #P_isblo | |- ( ( U e. NrmCVec /\\ W e. NrmCVec ) -> ( T e. B <-> ( T e. L /\\ ( ( U normOpOLD W ) ` T ) < +oo ) ) ) |\n| 5 | 4 | #P_simprbda | |- ( ( ( U e. NrmCVec /\\ W e. NrmCVec ) /\\ T e. B ) -> T e. L ) |\n| 6 | 5 | #P_3impa | |- ( ( U e. NrmCVec /\\ W e. NrmCVec /\\ T e. B ) -> T e. L ) |",
+  "conclusion" : "#P_bloln",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cL", "#T_wceq", "#T_cU", "#T_clno", "#T_cW", "#T_cB", "#T_wceq", "#T_cU", "#T_cblo", "#T_cW", "#T_cU", "#T_cnmoo", "#T_cW", "#T_wceq", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wi", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cT", "#T_wcel", "#T_cL", "#T_wa", "#T_cU", "#T_cnmoo", "#T_cW", "#T_cfv", "#T_cT", "#T_clt", "#T_cpnf", "#T_cU", "#T_wcel", "#T_cnv", "#T_wa", "#T_cW", "#T_wcel", "#T_cnv", "#T_wa", "#T_cT", "#T_wcel", "#T_cB.wceq", "#T_wi", "#T_cT", "#T_wcel", "#T_cL", "#T_cU", "#T_wcel", "#T_cnv", "#T_w3a--1", "#T_cW", "#T_wcel", "#T_cnv", "#T_w3a--2", "#T_cT", "#T_wcel", "#T_cB", "#T_wi", "#T_cT", "#T_wcel", "#T_cL" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_simprbda", "#P_isblo", "#P_3impa" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gen21nv on Metamath](http://us.metamath.org/mpegif/gen21nv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | gen21nv.1 | |- ( ph -> A. x ph ) |\n| 2 |  | gen21nv.2 | |- ( ps -> A. x ps ) |\n| 3 |  | gen21nv.3 | |- (. ph ,. ps ->. ch ). |\n| 4 | 3 | #P_dfvd2i | |- ( ph -> ( ps -> ch ) ) |\n| 5 | 1, 2, 4 | #P_alrimdh | |- ( ph -> ( ps -> A. x ch ) ) |\n| 6 | 5 | #P_dfvd2ir | |- (. ph ,. ps ->. A. x ch ). |",
+  "conclusion" : "#P_gen21nv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wps", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wch", "#T_wvd2--4", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wch", "#T_wvd2--1", "#T_wph", "#T_wvd2--2", "#T_wps", "#T_wvd2--3", "#T_wal", "#T_vx", "#T_wch", "#T_wvd2--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_alrimdh", "#P_dfvd2i", "#P_dfvd2ir" ]
+}

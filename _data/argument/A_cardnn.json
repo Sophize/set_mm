@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cardnn on Metamath](http://us.metamath.org/mpegif/cardnn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nnon | |- ( A e. _om -> A e. On ) |\n| 2 |  | #P_onenon | |- ( A e. On -> A e. dom card ) |\n| 3 |  | #P_cardid2 | |- ( A e. dom card -> ( card ` A ) ~~ A ) |\n| 4 | 1, 2, 3 | #P_3syl | |- ( A e. _om -> ( card ` A ) ~~ A ) |\n| 5 |  | #P_nnfi | |- ( A e. _om -> A e. Fin ) |\n| 6 |  | #P_ficardom | |- ( A e. Fin -> ( card ` A ) e. _om ) |\n| 7 | 5, 6 | #P_syl | |- ( A e. _om -> ( card ` A ) e. _om ) |\n| 8 |  | #P_nneneq | |- ( ( ( card ` A ) e. _om /\\ A e. _om ) -> ( ( card ` A ) ~~ A <-> ( card ` A ) = A ) ) |\n| 9 | 7, 8 | #P_mpancom | |- ( A e. _om -> ( ( card ` A ) ~~ A <-> ( card ` A ) = A ) ) |\n| 10 | 4, 9 | #P_mpbid | |- ( A e. _om -> ( card ` A ) = A ) |",
+  "conclusion" : "#P_cardnn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_ccrd", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_cA.wceq", "#T_wcel", "#T_cfn", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wa", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_cen", "#T_cA.wceq", "#T_wb", "#T_ccrd", "#T_cfv", "#T_cA.wceq", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_com", "#T_wi", "#T_ccrd", "#T_cfv", "#T_cA", "#T_wceq", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpancom", "#P_cardid2", "#P_3syl", "#P_mpbid", "#P_onenon", "#P_nnfi", "#P_syl", "#P_ficardom", "#P_nneneq", "#P_nnon" ]
+}

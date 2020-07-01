@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-hof on Metamath](http://us.metamath.org/mpegif/df-hof.html)"
+  } ],
+  "names" : [ "df-hof" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_chof", "#T_wceq", "#T_vc", "#T_cmpt--1", "#T_ccat", "#T_cmpt--2", "#T_cop--1", "#T_chomf", "#T_cfv", "#T_vc", "#T_cop--2", "#T_csb--1", "#T_cbs", "#T_cfv", "#T_vc", "#T_csb--2", "#T_vb", "#T_csb--3", "#T_vx", "#T_cmpt2--1", "#T_vb", "#T_cxp", "#T_vb", "#T_cmpt2--2", "#T_vy", "#T_cmpt2--3", "#T_vb", "#T_cxp", "#T_vb", "#T_cmpt2--4", "#T_vf", "#T_cmpt2--1", "#T_c1st", "#T_cfv", "#T_vy", "#T_chom", "#T_cfv", "#T_vc", "#T_c1st", "#T_cfv", "#T_vx", "#T_cmpt2--2", "#T_vg", "#T_cmpt2--3", "#T_c2nd", "#T_cfv", "#T_vx", "#T_chom", "#T_cfv", "#T_vc", "#T_c2nd", "#T_cfv", "#T_vy", "#T_cmpt2--4", "#T_vh", "#T_cmpt--1", "#T_chom", "#T_cfv", "#T_vc", "#T_cfv", "#T_vx", "#T_cmpt--2", "#T_vg", "#T_vx", "#T_cco", "#T_cfv", "#T_vc", "#T_c2nd", "#T_cfv", "#T_vy", "#T_vh", "#T_cop--1", "#T_c1st", "#T_cfv", "#T_vy", "#T_cop--2", "#T_c1st", "#T_cfv", "#T_vx", "#T_cop--3", "#T_cco", "#T_cfv", "#T_vc", "#T_c2nd", "#T_cfv", "#T_vy", "#T_vf", "#T_cop--3", "#T_vb", "#T_vc", "#T_vf", "#T_vg", "#T_vh", "#T_vx", "#T_vy" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the Hom functor, which is a bifunctor (a functor of two arguments), contravariant in the first argument and covariant in the second, from ` ( oppCat `` C ) X. C ` to ` SetCat ` , whose object part is the hom-function ` Hom ` , and with morphism part given by pre- and post-composition.  (Contributed by Mario Carneiro, 11-Jan-2017.) ",
+  "statement" : "df-hof $p |- HomF = ( c e. Cat |-> <. ( Homf ` c ) , [_ ( Base ` c ) / b ]_ ( x e. ( b X. b ) , y e. ( b X. b ) |-> ( f e. ( ( 1st ` y ) ( Hom ` c ) ( 1st ` x ) ) , g e. ( ( 2nd ` x ) ( Hom ` c ) ( 2nd ` y ) ) |-> ( h e. ( ( Hom ` c ) ` x ) |-> ( ( g ( x ( comp ` c ) ( 2nd ` y ) ) h ) ( <. ( 1st ` y ) , ( 1st ` x ) >. ( comp ` c ) ( 2nd ` y ) ) f ) ) ) ) >. ) $.\n$d b c f g h x y $."
+}

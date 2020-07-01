@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cotr3 on Metamath](http://us.metamath.org/mpegif/cotr3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cotr3.a | |- A = dom R |\n| 2 |  | cotr3.b | |- B = ( A i^i C ) |\n| 3 |  | cotr3.c | |- C = ran R |\n| 4 | 1 | #P_eqimss2i | |- dom R C_ A |\n| 5 | 1, 3 | #P_ineq12i | |- ( A i^i C ) = ( dom R i^i ran R ) |\n| 6 | 2, 5 | #P_eqtri | |- B = ( dom R i^i ran R ) |\n| 7 | 6 | #P_eqimss2i | |- ( dom R i^i ran R ) C_ B |\n| 8 | 3 | #P_eqimss2i | |- ran R C_ C |\n| 9 | 4, 7, 8 | #P_cotr2 | |- ( ( R o. R ) C_ R <-> A. x e. A A. y e. B A. z e. C ( ( x R y /\\ y R z ) -> x R z ) ) |",
+  "conclusion" : "#P_cotr3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wceq", "#T_cdm", "#T_cR", "#T_cB", "#T_wceq", "#T_cA", "#T_cin", "#T_cC", "#T_cC", "#T_wceq", "#T_crn", "#T_cR", "#T_cdm", "#T_cR", "#T_wss", "#T_cA.wceq", "#T_cA.wceq", "#T_cin", "#T_cC", "#T_wceq", "#T_cdm", "#T_cR", "#T_cin", "#T_crn", "#T_cR", "#T_cB.wceq", "#T_wceq", "#T_cdm", "#T_cR", "#T_cin", "#T_crn", "#T_cR", "#T_cdm", "#T_cR", "#T_cin", "#T_crn", "#T_cR", "#T_wss", "#T_cB.wceq", "#T_crn", "#T_cR", "#T_wss", "#T_cC", "#T_cR", "#T_ccom", "#T_cR", "#T_wss", "#T_cR", "#T_wb", "#T_wral--1", "#T_vx", "#T_wral--2", "#T_cA", "#T_wral--1", "#T_vy", "#T_wral--2", "#T_cB", "#T_wral--1", "#T_vz", "#T_wral--2", "#T_cC", "#T_vx", "#T_cR", "#T_vy", "#T_wa", "#T_vy", "#T_cR", "#T_vz", "#T_wi", "#T_vx", "#T_cR", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_ineq12i", "#P_cotr2", "#P_eqimss2i" ]
+}

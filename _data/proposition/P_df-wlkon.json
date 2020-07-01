@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-wlkon on Metamath](http://us.metamath.org/mpegif/df-wlkon.html)"
+  } ],
+  "names" : [ "df-wlkon" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cwlkon", "#T_wceq", "#T_vv", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_ve", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_va", "#T_cmpt2--1", "#T_vv", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_vv", "#T_cmpt2--4", "#T_copab--1", "#T_copab--2", "#T_vf", "#T_copab--3", "#T_vp", "#T_copab--4", "#T_copab--5", "#T_vf", "#T_vv", "#T_cwalk", "#T_ve", "#T_vp", "#T_w3a--1", "#T_vp", "#T_cfv", "#T_cc0", "#T_wceq", "#T_va", "#T_w3a--2", "#T_vp", "#T_cfv", "#T_chash", "#T_cfv", "#T_vf", "#T_wceq", "#T_vb", "#T_copab--6", "#T_va", "#T_vb", "#T_ve", "#T_vf", "#T_vp", "#T_vv" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the collection of walks with particular endpoints (in an un- directed graph).  This corresponds to the \"x0-x(l)-walks\", see Definition in [Bollobas] p. 5.  (Contributed by Alexander van der Vekens and Mario Carneiro, 4-Oct-2017.) ",
+  "statement" : "df-wlkon $p |- WalkOn = ( v e. _V , e e. _V |-> ( a e. v , b e. v |-> { <. f , p >. | ( f ( v Walks e ) p /\\ ( p ` 0 ) = a /\\ ( p ` ( # ` f ) ) = b ) } ) ) $.\n$d a b e f p v $."
+}

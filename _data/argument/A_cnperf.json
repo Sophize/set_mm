@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cnperf on Metamath](http://us.metamath.org/mpegif/cnperf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx y\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | recld2.1 | |- J = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_cnfldtopon | |- J e. ( TopOn ` CC ) |\n| 3 | 2 | #P_toponunii | |- CC = U. J |\n| 4 | 3 | #P_restid | |- ( J e. ( TopOn ` CC ) -> ( J |`t CC ) = J ) |\n| 5 | 2, 4 | #P_ax-mp | |- ( J |`t CC ) = J |\n| 6 |  | #P_recn | |- ( y e. RR -> y e. CC ) |\n| 7 |  | #P_addcl | |- ( ( x e. CC /\\ y e. CC ) -> ( x + y ) e. CC ) |\n| 8 | 6, 7 | #P_sylan2 | |- ( ( x e. CC /\\ y e. RR ) -> ( x + y ) e. CC ) |\n| 9 |  | #P_ssid | |- CC C_ CC |\n| 10 | 1, 8, 9 | #P_reperflem | |- ( J |`t CC ) e. Perf |\n| 11 | 5, 10 | #P_eqeltrri | |- J e. Perf |",
+  "conclusion" : "#P_cnperf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_vy", "#T_cJ", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cc", "#T_cc", "#T_wceq", "#T_cuni", "#T_cJ", "#T_cJ", "#T_wcel", "#T_ctopon", "#T_cfv", "#T_cc", "#T_wi", "#T_cJ", "#T_crest", "#T_cc", "#T_wceq", "#T_cJ", "#T_cJ", "#T_crest", "#T_cc", "#T_wceq", "#T_cJ", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_vx.wal", "#T_wcel", "#T_cc", "#T_wa", "#T_vy.tru", "#T_wcel", "#T_cr", "#T_wi", "#T_vx.wal", "#T_caddc", "#T_vy.tru", "#T_wcel", "#T_cc", "#T_cc", "#T_wss", "#T_cc", "#T_cJ", "#T_crest", "#T_cc", "#T_wcel", "#T_cperf", "#T_cJ", "#T_wcel", "#T_cperf" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_sylan2", "#P_ssid", "#P_addcl", "#P_restid", "#P_reperflem", "#P_toponunii", "#P_cnfldtopon", "#P_recn", "#P_eqeltrri" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See gamcvg on Metamath](http://us.metamath.org/mpegif/gamcvg.html)"
+  } ],
+  "names" : [ "gamcvg" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vm", "#T_cmpt--1", "#T_cn", "#T_cmpt--2", "#T_cA", "#T_cmul", "#T_clog", "#T_cfv", "#T_vm", "#T_caddc", "#T_c1", "#T_cdiv", "#T_vm", "#T_cmin", "#T_clog", "#T_cfv", "#T_cA", "#T_cdiv", "#T_vm", "#T_caddc", "#T_c1", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_cdif", "#T_cz", "#T_cdif", "#T_cn", "#T_wph", "#T_wi", "#T_ce", "#T_ccom", "#T_cseq--1", "#T_c1", "#T_caddc", "#T_cseq--2", "#T_cG", "#T_cli", "#T_cgam", "#T_cfv", "#T_cA", "#T_cmul", "#T_cA", "#T_cA", "#T_vm", "#T_vm", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The pointwise exponential of the series ` G ` converges to ` _G ( A ) x. A ` .  (Contributed by Mario Carneiro, 6-Jul-2017.) ",
+  "statement" : "lgamcvg.g $e |- G = ( m e. NN |-> ( ( A x. ( log ` ( ( m + 1 ) / m ) ) ) - ( log ` ( ( A / m ) + 1 ) ) ) ) $.\nlgamcvg.a $e |- ( ph -> A e. ( CC \\ ( ZZ \\ NN ) ) ) $.\ngamcvg $p |- ( ph -> ( exp o. seq 1 ( + , G ) ) ~~> ( ( _G ` A ) x. A ) ) $.\n$d A m $.\n$d m ph $."
+}

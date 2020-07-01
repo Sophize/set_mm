@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See infn0 on Metamath](http://us.metamath.org/mpegif/infn0.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano1 | |- (/) e. _om |\n| 2 |  | #P_infsdomnn | |- ( ( _om ~<_ A /\\ (/) e. _om ) -> (/) ~< A ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( _om ~<_ A -> (/) ~< A ) |\n| 4 |  | #P_reldom | |- Rel ~<_ |\n| 5 | 4 | #P_brrelex2i | |- ( _om ~<_ A -> A e. _V ) |\n| 6 |  | #P_0sdomg | |- ( A e. _V -> ( (/) ~< A <-> A =/= (/) ) ) |\n| 7 | 5, 6 | #P_syl | |- ( _om ~<_ A -> ( (/) ~< A <-> A =/= (/) ) ) |\n| 8 | 3, 7 | #P_mpbid | |- ( _om ~<_ A -> A =/= (/) ) |",
+  "conclusion" : "#P_infn0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wcel", "#T_com", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wa", "#T_c0", "#T_wcel", "#T_com", "#T_wi", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_wrel", "#T_cdom", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_com", "#T_cdom", "#T_cA.wceq", "#T_wi", "#T_c0", "#T_csdm", "#T_cA.wceq", "#T_wb", "#T_cA.wceq", "#T_wne", "#T_c0", "#T_com", "#T_cdom", "#T_cA", "#T_wi", "#T_cA", "#T_wne", "#T_c0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_peano1", "#P_mpbid", "#P_reldom", "#P_syl", "#P_mpan2", "#P_infsdomnn", "#P_brrelex2i", "#P_0sdomg" ]
+}

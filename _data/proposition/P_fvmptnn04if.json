@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fvmptnn04if on Metamath](http://us.metamath.org/mpegif/fvmptnn04if.html)"
+  } ],
+  "names" : [ "fvmptnn04if" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cG", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cc0", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_cif--1", "#T_vn", "#T_wceq", "#T_cS", "#T_cif--2", "#T_cC", "#T_cif--3", "#T_cif--1", "#T_cS", "#T_clt", "#T_vn", "#T_cif--2", "#T_cD", "#T_cif--3", "#T_cB", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cn", "#T_wph", "#T_wi", "#T_cN", "#T_wcel", "#T_cn0", "#T_wph", "#T_wi", "#T_cY", "#T_wcel", "#T_cV", "#T_wph", "#T_wa", "#T_cN", "#T_wceq", "#T_cc0", "#T_wi", "#T_cY", "#T_wceq", "#T_csb--1", "#T_cN", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_cA", "#T_wph", "#T_w3a--1", "#T_cc0", "#T_clt", "#T_cN", "#T_w3a--2", "#T_cN", "#T_clt", "#T_cS", "#T_wi", "#T_cY", "#T_wceq", "#T_csb--1", "#T_cN", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_cB", "#T_wph", "#T_wa", "#T_cN", "#T_wceq", "#T_cS", "#T_wi", "#T_cY", "#T_wceq", "#T_csb--1", "#T_cN", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_cC", "#T_wph", "#T_wa", "#T_cS", "#T_clt", "#T_cN", "#T_wi", "#T_cY", "#T_wceq", "#T_csb--1", "#T_cN", "#T_csb--2", "#T_vn", "#T_csb--3", "#T_cD", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_cN", "#T_wceq", "#T_cY", "#T_cN", "#T_vn", "#T_cS", "#T_vn" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The function values of a mapping from the nonnegative integers with four distinct cases.  (Contributed by AV, 10-Nov-2019.) ",
+  "statement" : "fvmptnn04if.g $e |- G = ( n e. NN0 |-> if ( n = 0 , A , if ( n = S , C , if ( S < n , D , B ) ) ) ) $.\nfvmptnn04if.s $e |- ( ph -> S e. NN ) $.\nfvmptnn04if.n $e |- ( ph -> N e. NN0 ) $.\nfvmptnn04if.y $e |- ( ph -> Y e. V ) $.\nfvmptnn04if.a $e |- ( ( ph /\\ N = 0 ) -> Y = [_ N / n ]_ A ) $.\nfvmptnn04if.b $e |- ( ( ph /\\ 0 < N /\\ N < S ) -> Y = [_ N / n ]_ B ) $.\nfvmptnn04if.c $e |- ( ( ph /\\ N = S ) -> Y = [_ N / n ]_ C ) $.\nfvmptnn04if.d $e |- ( ( ph /\\ S < N ) -> Y = [_ N / n ]_ D ) $.\nfvmptnn04if $p |- ( ph -> ( G ` N ) = Y ) $.\n$d N n $.\n$d S n $."
+}

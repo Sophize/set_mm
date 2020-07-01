@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ndmovcl on Metamath](http://us.metamath.org/mpegif/ndmovcl.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ndmov.1 | |- dom F = ( S X. S ) |\n| 2 |  | ndmovcl.2 | |- ( ( A e. S /\\ B e. S ) -> ( A F B ) e. S ) |\n| 3 |  | ndmovcl.3 | |- (/) e. S |\n| 4 | 1 | #P_ndmov | |- ( -. ( A e. S /\\ B e. S ) -> ( A F B ) = (/) ) |\n| 5 | 4, 3 | #P_syl6eqel | |- ( -. ( A e. S /\\ B e. S ) -> ( A F B ) e. S ) |\n| 6 | 2, 5 | #P_pm2.61i | |- ( A F B ) e. S |",
+  "conclusion" : "#P_ndmovcl",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cdm", "#T_cF", "#T_wceq", "#T_cS", "#T_cxp", "#T_cS", "#T_cA", "#T_wcel", "#T_cS", "#T_wa", "#T_cB", "#T_wcel", "#T_cS", "#T_wi", "#T_cA", "#T_cF", "#T_cB", "#T_wcel", "#T_cS", "#T_c0", "#T_wcel", "#T_cS", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_c0", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cS", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_wi", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wcel", "#T_cS", "#T_cA", "#T_cF", "#T_cB", "#T_wcel", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ndmov", "#P_pm2.61i", "#P_syl6eqel" ]
+}

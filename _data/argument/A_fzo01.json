@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzo01 on Metamath](http://us.metamath.org/mpegif/fzo01.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_1e0p1 | |- 1 = ( 0 + 1 ) |\n| 2 | 1 | #P_oveq2i | |- ( 0 ..^ 1 ) = ( 0 ..^ ( 0 + 1 ) ) |\n| 3 |  | #P_0z | |- 0 e. ZZ |\n| 4 |  | #P_fzosn | |- ( 0 e. ZZ -> ( 0 ..^ ( 0 + 1 ) ) = { 0 } ) |\n| 5 | 3, 4 | #P_ax-mp | |- ( 0 ..^ ( 0 + 1 ) ) = { 0 } |\n| 6 | 2, 5 | #P_eqtri | |- ( 0 ..^ 1 ) = { 0 } |",
+  "conclusion" : "#P_fzo01",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c1", "#T_wceq", "#T_cc0", "#T_caddc", "#T_c1", "#T_cc0", "#T_cfzo", "#T_c1", "#T_wceq", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_caddc", "#T_c1", "#T_cc0", "#T_wcel", "#T_cz", "#T_cc0", "#T_wcel", "#T_cz", "#T_wi", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_caddc", "#T_c1", "#T_wceq", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_caddc", "#T_c1", "#T_wceq", "#T_csn--1", "#T_cc0", "#T_csn--2", "#T_cc0", "#T_cfzo", "#T_c1", "#T_wceq", "#T_csn--1", "#T_cc0", "#T_csn--2" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_eqtri", "#P_1e0p1", "#P_fzosn", "#P_oveq2i", "#P_0z" ]
+}

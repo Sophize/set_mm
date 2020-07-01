@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See recmet on Metamath](http://us.metamath.org/mpegif/recmet.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_recld2 | |- RR e. ( Clsd ` ( TopOpen ` CCfld ) ) |\n| 3 |  | #P_eqid | |- ( abs o. - ) = ( abs o. - ) |\n| 4 | 3 | #P_cncmet | |- ( abs o. - ) e. ( CMet ` CC ) |\n| 5 | 1 | #P_cnfldtopn | |- ( TopOpen ` CCfld ) = ( MetOpen ` ( abs o. - ) ) |\n| 6 | 5 | #P_cmetss | |- ( ( abs o. - ) e. ( CMet ` CC ) -> ( ( ( abs o. - ) |` ( RR X. RR ) ) e. ( CMet ` RR ) <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) ) |\n| 7 | 4, 6 | #P_ax-mp | |- ( ( ( abs o. - ) |` ( RR X. RR ) ) e. ( CMet ` RR ) <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) |\n| 8 | 2, 7 | #P_mpbir | |- ( ( abs o. - ) |` ( RR X. RR ) ) e. ( CMet ` RR ) |",
+  "conclusion" : "#P_recmet",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wceq", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cms", "#T_cfv", "#T_cc", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_cmopn", "#T_cfv", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cabs", "#T_ccom", "#T_cmin", "#T_wcel", "#T_cms", "#T_cfv", "#T_cc", "#T_wi", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cms", "#T_cfv", "#T_cr", "#T_wb", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cms", "#T_cfv", "#T_cr", "#T_wb", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cabs", "#T_ccom", "#T_cmin", "#T_cres", "#T_cr", "#T_cxp", "#T_cr", "#T_wcel", "#T_cms", "#T_cfv", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_ax-mp", "#P_recld2", "#P_cncmet", "#P_cnfldtopn", "#P_cmetss", "#P_mpbir" ]
+}

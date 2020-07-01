@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See honpcani on Metamath](http://us.metamath.org/mpegif/honpcani.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hosd1.2 | |- T : ~H --> ~H |\n| 2 |  | hosd1.3 | |- U : ~H --> ~H |\n| 3 | 1, 2, 2 | #P_hoaddsubi | |- ( ( T +op U ) -op U ) = ( ( T -op U ) +op U ) |\n| 4 | 1, 2 | #P_hopncani | |- ( ( T +op U ) -op U ) = T |\n| 5 | 3, 4 | #P_eqtr3i | |- ( ( T -op U ) +op U ) = T |",
+  "conclusion" : "#P_honpcani",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cU", "#T_wf--1", "#T_chil", "#T_wf--2", "#T_chil", "#T_cT", "#T_chos", "#T_cU", "#T_chod", "#T_cU", "#T_wceq", "#T_cT", "#T_chod", "#T_cU", "#T_chos", "#T_cU", "#T_cT", "#T_chos", "#T_cU", "#T_chod", "#T_cU", "#T_wceq", "#T_cT", "#T_cT", "#T_chod", "#T_cU", "#T_chos", "#T_cU", "#T_wceq", "#T_cT" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtr3i", "#P_hopncani", "#P_hoaddsubi" ]
+}

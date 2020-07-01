@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax11a2 on Metamath](http://us.metamath.org/mpegif/ax11a2.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ax11a2.1 | |- ( x = z -> ( A. z ph -> A. x ( x = z -> ph ) ) ) |\n| 2 |  | #P_ax-17 | |- ( ph -> A. z ph ) |\n| 3 | 2, 1 | #P_syl5 | |- ( x = z -> ( ph -> A. x ( x = z -> ph ) ) ) |\n| 4 | 3 | #P_ax11v2 | |- ( -. A. x x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) |",
+  "conclusion" : "#P_ax11a2",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vz", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vz", "#T_wi", "#T_wph", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax11v2", "#P_ax-17", "#P_syl5" ]
+}

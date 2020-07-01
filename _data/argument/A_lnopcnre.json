@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See lnopcnre on Metamath](http://us.metamath.org/mpegif/lnopcnre.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_lnopcnbd | |- ( T e. LinOp -> ( T e. ConOp <-> T e. BndLinOp ) ) |\n| 2 |  | #P_elbdop2 | |- ( T e. BndLinOp <-> ( T e. LinOp /\\ ( normop ` T ) e. RR ) ) |\n| 3 | 2 | #P_baib | |- ( T e. LinOp -> ( T e. BndLinOp <-> ( normop ` T ) e. RR ) ) |\n| 4 | 1, 3 | #P_bitrd | |- ( T e. LinOp -> ( T e. ConOp <-> ( normop ` T ) e. RR ) ) |",
+  "conclusion" : "#P_lnopcnre",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cT", "#T_wcel", "#T_clo", "#T_wi", "#T_cT", "#T_wcel", "#T_ccop", "#T_wb", "#T_cT", "#T_wcel", "#T_cbo", "#T_cT", "#T_wcel", "#T_cbo", "#T_wb", "#T_cT", "#T_wcel", "#T_clo", "#T_wa", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cr", "#T_cT", "#T_wcel", "#T_clo", "#T_wi", "#T_cT", "#T_wcel", "#T_cbo", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cr", "#T_cT", "#T_wcel", "#T_clo", "#T_wi", "#T_cT", "#T_wcel", "#T_ccop", "#T_wb", "#T_cnop", "#T_cfv", "#T_cT", "#T_wcel", "#T_cr" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_bitrd", "#P_elbdop2", "#P_baib", "#P_lnopcnbd" ]
+}

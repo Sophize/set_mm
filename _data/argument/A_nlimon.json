@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nlimon on Metamath](http://us.metamath.org/mpegif/nlimon.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eloni | |- ( x e. On -> Ord x ) |\n| 2 |  | #P_dflim3 | |- ( Lim x <-> ( Ord x /\\ -. ( x = (/) \\/ E. y e. On x = suc y ) ) ) |\n| 3 | 2 | #P_baib | |- ( Ord x -> ( Lim x <-> -. ( x = (/) \\/ E. y e. On x = suc y ) ) ) |\n| 4 | 3 | #P_con2bid | |- ( Ord x -> ( ( x = (/) \\/ E. y e. On x = suc y ) <-> -. Lim x ) ) |\n| 5 | 1, 4 | #P_syl | |- ( x e. On -> ( ( x = (/) \\/ E. y e. On x = suc y ) <-> -. Lim x ) ) |\n| 6 | 5 | #P_rabbiia | |- { x e. On | ( x = (/) \\/ E. y e. On x = suc y ) } = { x e. On | -. Lim x } |",
+  "conclusion" : "#P_nlimon",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_vx.wal", "#T_wlim", "#T_vx.wal", "#T_wb", "#T_word", "#T_vx.wal", "#T_wa", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_word", "#T_vx.wal", "#T_wi", "#T_wlim", "#T_vx.wal", "#T_wb", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_word", "#T_vx.wal", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wlim", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy.tru", "#T_wrex--2", "#T_con0", "#T_vx.wal", "#T_wceq", "#T_csuc", "#T_vy.tru", "#T_wb", "#T_wn", "#T_wlim", "#T_vx.wal", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_vx", "#T_wceq", "#T_c0", "#T_wo", "#T_wrex--1", "#T_vy", "#T_wrex--2", "#T_con0", "#T_vx", "#T_wceq", "#T_csuc", "#T_vy", "#T_crab--4", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_con0", "#T_crab--3", "#T_wn", "#T_wlim", "#T_vx", "#T_crab--4" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_dflim3", "#P_eloni", "#P_baib", "#P_rabbiia", "#P_con2bid" ]
+}

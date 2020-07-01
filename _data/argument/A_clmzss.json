@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clmzss on Metamath](http://us.metamath.org/mpegif/clmzss.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | clm0.f | |- F = ( Scalar ` W ) |\n| 2 |  | clmsub.k | |- K = ( Base ` F ) |\n| 3 | 1, 2 | #P_clmsubrg | |- ( W e. CMod -> K e. ( SubRing ` CCfld ) ) |\n| 4 |  | #P_zsssubrg | |- ( K e. ( SubRing ` CCfld ) -> ZZ C_ K ) |\n| 5 | 3, 4 | #P_syl | |- ( W e. CMod -> ZZ C_ K ) |",
+  "conclusion" : "#P_clmzss",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cF", "#T_wceq", "#T_csca", "#T_cfv", "#T_cW", "#T_cK", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cF", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_cK", "#T_wcel", "#T_csubrg", "#T_cfv", "#T_ccnfld", "#T_wi", "#T_cz", "#T_wss", "#T_cK", "#T_cW", "#T_wcel", "#T_cclm", "#T_wi", "#T_cz", "#T_wss", "#T_cK" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl", "#P_zsssubrg", "#P_clmsubrg" ]
+}

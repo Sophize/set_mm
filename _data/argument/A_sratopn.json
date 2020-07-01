@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See sratopn on Metamath](http://us.metamath.org/mpegif/sratopn.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | srapart.a | |- ( ph -> A = ( ( subringAlg ` W ) ` S ) ) |\n| 2 |  | srapart.s | |- ( ph -> S C_ ( Base ` W ) ) |\n| 3 | 1, 2 | #P_srabase | |- ( ph -> ( Base ` W ) = ( Base ` A ) ) |\n| 4 | 1, 2 | #P_sratset | |- ( ph -> ( TopSet ` W ) = ( TopSet ` A ) ) |\n| 5 | 3, 4 | #P_topnpropd | |- ( ph -> ( TopOpen ` W ) = ( TopOpen ` A ) ) |",
+  "conclusion" : "#P_sratopn",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_csra", "#T_cfv", "#T_cW", "#T_cfv", "#T_cS", "#T_wph", "#T_wi", "#T_cS", "#T_wss", "#T_cbs", "#T_cfv", "#T_cW", "#T_wph", "#T_wi", "#T_cbs", "#T_cfv", "#T_cW", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cts", "#T_cfv", "#T_cW", "#T_wceq", "#T_cts", "#T_cfv", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_ctopn", "#T_cfv", "#T_cW", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sratset", "#P_topnpropd", "#P_srabase" ]
+}

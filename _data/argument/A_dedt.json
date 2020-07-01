@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedt on Metamath](http://us.metamath.org/mpegif/dedt.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dedt.1 | |- ( ( ph <-> ( ( ph /\\ ch ) \\/ ( ps /\\ -. ch ) ) ) -> ( th <-> ta ) ) |\n| 2 |  | dedt.2 | |- ta |\n| 3 |  | #P_dedlema | |- ( ch -> ( ph <-> ( ( ph /\\ ch ) \\/ ( ps /\\ -. ch ) ) ) ) |\n| 4 | 2, 1 | #P_mpbiri | |- ( ( ph <-> ( ( ph /\\ ch ) \\/ ( ps /\\ -. ch ) ) ) -> th ) |\n| 5 | 3, 4 | #P_syl | |- ( ch -> th ) |",
+  "conclusion" : "#P_dedt",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wb", "#T_wta", "#T_wta", "#T_wch", "#T_wi", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wch", "#T_wo", "#T_wps", "#T_wa", "#T_wn", "#T_wch", "#T_wi", "#T_wth", "#T_wch", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mpbiri", "#P_dedlema", "#P_syl" ]
+}

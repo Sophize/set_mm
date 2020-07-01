@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See caov32 on Metamath](http://us.metamath.org/mpegif/caov32.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | caov.1 | |- A e. _V |\n| 2 |  | caov.2 | |- B e. _V |\n| 3 |  | caov.3 | |- C e. _V |\n| 4 |  | caov.com | |- ( x F y ) = ( y F x ) |\n| 5 |  | caov.ass | |- ( ( x F y ) F z ) = ( x F ( y F z ) ) |\n| 6 | 2, 3, 4 | #P_caovcom | |- ( B F C ) = ( C F B ) |\n| 7 | 6 | #P_oveq2i | |- ( A F ( B F C ) ) = ( A F ( C F B ) ) |\n| 8 | 1, 2, 3, 5 | #P_caovass | |- ( ( A F B ) F C ) = ( A F ( B F C ) ) |\n| 9 | 1, 3, 2, 5 | #P_caovass | |- ( ( A F C ) F B ) = ( A F ( C F B ) ) |\n| 10 | 7, 8, 9 | #P_3eqtr4i | |- ( ( A F B ) F C ) = ( ( A F C ) F B ) |",
+  "conclusion" : "#P_caov32",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cvv", "#T_cB", "#T_wcel", "#T_cvv", "#T_cC", "#T_wcel", "#T_cvv", "#T_vx", "#T_cF", "#T_vy", "#T_wceq", "#T_vy", "#T_cF", "#T_vx", "#T_vx", "#T_cF", "#T_vy", "#T_cF", "#T_vz", "#T_wceq", "#T_vx", "#T_cF", "#T_vy", "#T_cF", "#T_vz", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_cF", "#T_cC", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cA.wceq", "#T_cF", "#T_cC", "#T_cF", "#T_cB.wceq", "#T_cA", "#T_cF", "#T_cB", "#T_cF", "#T_cC", "#T_wceq", "#T_cA", "#T_cF", "#T_cC", "#T_cF", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_3eqtr4i", "#P_caovcom", "#P_caovass", "#P_oveq2i" ]
+}

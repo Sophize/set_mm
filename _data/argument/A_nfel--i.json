@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See nfel on Metamath](http://us.metamath.org/mpegif/nfel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nz\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | nfnfc.1 | |- F/_ x A |\n| 2 |  | nfeq.2 | |- F/_ x B |\n| 3 |  | #P_df-clel | |- ( A e. B <-> E. z ( z = A /\\ z e. B ) ) |\n| 4 |  | #P_nfcv | |- F/_ x z |\n| 5 | 4, 1 | #P_nfeq | |- F/ x z = A |\n| 6 | 2 | #P_nfcri | |- F/ x z e. B |\n| 7 | 5, 6 | #P_nfan | |- F/ x ( z = A /\\ z e. B ) |\n| 8 | 7 | #P_nfex | |- F/ x E. z ( z = A /\\ z e. B ) |\n| 9 | 3, 8 | #P_nfxfr | |- F/ x A e. B |",
+  "conclusion" : "#P_nfel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vz", "#T_wnfc", "#T_vx", "#T_cA", "#T_wnfc", "#T_vx", "#T_cB", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnfc", "#T_vx.wal", "#T_vz", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx.wal", "#T_wex", "#T_vz", "#T_vz", "#T_wceq", "#T_cA.wceq", "#T_wa", "#T_vz", "#T_wcel", "#T_cB.wceq", "#T_wnf", "#T_vx", "#T_cA", "#T_wcel", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfcv", "#P_nfex", "#P_nfcri", "#P_df-clel", "#P_nfeq", "#P_nfan", "#P_nfxfr" ]
+}

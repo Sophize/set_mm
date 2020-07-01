@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See submid on Metamath](http://us.metamath.org/mpegif/submid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | submss.b | |- B = ( Base ` M ) |\n| 2 |  | #P_ssid | |- B C_ B |\n| 3 | 2 | #P_a1i | |- ( M e. Mnd -> B C_ B ) |\n| 4 |  | #P_eqid | |- ( 0g ` M ) = ( 0g ` M ) |\n| 5 | 1, 4 | #P_mndidcl | |- ( M e. Mnd -> ( 0g ` M ) e. B ) |\n| 6 | 1 | #P_ressid | |- ( M e. Mnd -> ( M |`s B ) = M ) |\n| 7 |  | #P_id | |- ( M e. Mnd -> M e. Mnd ) |\n| 8 | 6, 7 | #P_eqeltrd | |- ( M e. Mnd -> ( M |`s B ) e. Mnd ) |\n| 9 |  | #P_eqid | |- ( M |`s B ) = ( M |`s B ) |\n| 10 | 1, 4, 9 | #P_issubm2 | |- ( M e. Mnd -> ( B e. ( SubMnd ` M ) <-> ( B C_ B /\\ ( 0g ` M ) e. B /\\ ( M |`s B ) e. Mnd ) ) ) |\n| 11 | 3, 5, 8, 10 | #P_mpbir3and | |- ( M e. Mnd -> B e. ( SubMnd ` M ) ) |",
+  "conclusion" : "#P_submid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB", "#T_wceq", "#T_cbs", "#T_cfv", "#T_cM", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_c0g", "#T_cfv", "#T_cM", "#T_wceq", "#T_c0g", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_c0g", "#T_cfv", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cM", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cM", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cM", "#T_wcel", "#T_cmnd", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cM", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_cmnd", "#T_cM", "#T_cress", "#T_cB.wceq", "#T_wceq", "#T_cM", "#T_cress", "#T_cB.wceq", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cB.wceq", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM", "#T_wb", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_w3a--1", "#T_c0g", "#T_cfv", "#T_cM", "#T_wcel", "#T_cB.wceq", "#T_w3a--2", "#T_cM", "#T_cress", "#T_cB.wceq", "#T_wcel", "#T_cmnd", "#T_cM", "#T_wcel", "#T_cmnd", "#T_wi", "#T_cB", "#T_wcel", "#T_csubmnd", "#T_cfv", "#T_cM" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_mpbir3and", "#P_ssid", "#P_ressid", "#P_eqeltrd", "#P_a1i", "#P_issubm2", "#P_mndidcl", "#P_id" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ax-12 on Metamath](http://us.metamath.org/mpegif/ax-12.html)"
+  } ],
+  "names" : [ "ax-12" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vy", "#T_wph", "#T_wi", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Axiom of Substitution.  One of the 5 equality axioms of predicate calculus.  The final consequent ` A. x ( x = y -> ph ) ` is a way of expressing \" ` y ` substituted for ` x ` in wff ` ph ` \" (cf. ~ sb6 ).  It is based on Lemma 16 of [Tarski] p. 70 and Axiom C8 of [Monk2] p. 105, from which it can be proved by cases. The original version of this axiom was ~ ax-c15 and was replaced with this shorter ~ ax-12 in Jan. 2007.  The old axiom is proved from this one as theorem ~ axc15 .  Conversely, this axiom is proved from ~ ax-c15 as theorem ~ ax12 . Juha Arpiainen proved the metalogical independence of this axiom (in the form of the older axiom ~ ax-c15 ) from the others on 19-Jan-2006.  See item 9a at ~ http://us.metamath.org/award2003.html . See ~ ax12v and ~ ax12v2 for other equivalents of this axiom that (unlike this axiom) have distinct variable restrictions. This axiom scheme is logically redundant (see ~ ax12w ) but is used as an auxiliary axiom to achieve metalogical completeness.  (Contributed by NM, 22-Jan-2007.) ",
+  "statement" : "ax-12 $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $."
+}

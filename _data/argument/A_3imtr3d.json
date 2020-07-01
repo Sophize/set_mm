@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See 3imtr3d on Metamath](http://us.metamath.org/mpegif/3imtr3d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | 3imtr3d.1 | |- ( ph -> ( ps -> ch ) ) |\n| 2 |  | 3imtr3d.2 | |- ( ph -> ( ps <-> th ) ) |\n| 3 |  | 3imtr3d.3 | |- ( ph -> ( ch <-> ta ) ) |\n| 4 | 1, 3 | #P_sylibd | |- ( ph -> ( ps -> ta ) ) |\n| 5 | 2, 4 | #P_sylbird | |- ( ph -> ( th -> ta ) ) |",
+  "conclusion" : "#P_3imtr3d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wth", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wta", "#T_wph", "#T_wi", "#T_wth", "#T_wi", "#T_wta" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylibd", "#P_sylbird" ]
+}

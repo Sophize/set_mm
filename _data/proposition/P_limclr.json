@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See limclr on Metamath](http://us.metamath.org/mpegif/limclr.html)"
+  } ],
+  "names" : [ "limclr" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cK", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wph", "#T_wi", "#T_cA", "#T_wss", "#T_cr", "#T_cJ", "#T_wceq", "#T_ctg", "#T_cfv", "#T_crn", "#T_cioo", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_clp", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA", "#T_cin", "#T_cmnf", "#T_cioo", "#T_cB", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_clp", "#T_cfv", "#T_cJ", "#T_cfv", "#T_cA", "#T_cin", "#T_cB", "#T_cioo", "#T_cpnf", "#T_wph", "#T_wi", "#T_cL", "#T_wcel", "#T_cF", "#T_cres", "#T_cmnf", "#T_cioo", "#T_cB", "#T_climc", "#T_cB", "#T_wph", "#T_wi", "#T_cR", "#T_wcel", "#T_cF", "#T_cres", "#T_cB", "#T_cioo", "#T_cpnf", "#T_climc", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_climc", "#T_cB", "#T_wne", "#T_c0", "#T_wb", "#T_cL", "#T_wceq", "#T_cR", "#T_wa", "#T_cL", "#T_wceq", "#T_cR", "#T_wi", "#T_cL", "#T_wcel", "#T_cF", "#T_climc", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " For a limit point, both from the left and from the right, of the domain, the limit of the function exits only if the left and the right limits are equal.  In this case, the three limits coincide.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) ",
+  "statement" : "limclr.k $e |- K = ( TopOpen ` CCfld ) $.\nlimclr.a $e |- ( ph -> A C_ RR ) $.\nlimclr.j $e |- J = ( topGen ` ran (,) ) $.\nlimclr.f $e |- ( ph -> F : A --> CC ) $.\nlimclr.lp1 $e |- ( ph -> B e. ( ( limPt ` J ) ` ( A i^i ( -oo (,) B ) ) ) ) $.\nlimclr.lp2 $e |- ( ph -> B e. ( ( limPt ` J ) ` ( A i^i ( B (,) +oo ) ) ) ) $.\nlimclr.l $e |- ( ph -> L e. ( ( F |` ( -oo (,) B ) ) limCC B ) ) $.\nlimclr.r $e |- ( ph -> R e. ( ( F |` ( B (,) +oo ) ) limCC B ) ) $.\nlimclr $p |- ( ph -> ( ( ( F limCC B ) =/= (/) <-> L = R ) /\\ ( L = R -> L e. ( F limCC B ) ) ) ) $."
+}

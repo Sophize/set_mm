@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See eqtr3 on Metamath](http://us.metamath.org/mpegif/eqtr3.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqcom | |- ( B = C <-> C = B ) |\n| 2 |  | #P_eqtr | |- ( ( A = C /\\ C = B ) -> A = B ) |\n| 3 | 1, 2 | #P_sylan2b | |- ( ( A = C /\\ B = C ) -> A = B ) |",
+  "conclusion" : "#P_eqtr3",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_wa", "#T_cC", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cC", "#T_wa", "#T_cB", "#T_wceq", "#T_cC", "#T_wi", "#T_cA", "#T_wceq", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2b", "#P_eqtr", "#P_eqcom" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See vtocl4g on Metamath](http://us.metamath.org/mpegif/vtocl4g.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | vtocl4ga.1 | |- ( x = A -> ( ph <-> ps ) ) |\n| 2 |  | vtocl4ga.2 | |- ( y = B -> ( ps <-> ch ) ) |\n| 3 |  | vtocl4ga.3 | |- ( z = C -> ( ch <-> rh ) ) |\n| 4 |  | vtocl4ga.4 | |- ( w = D -> ( rh <-> th ) ) |\n| 5 |  | vtocl4g.5 | |- ph |\n| 6 | 3 | #P_imbi2d | |- ( z = C -> ( ( ( A e. Q /\\ B e. R ) -> ch ) <-> ( ( A e. Q /\\ B e. R ) -> rh ) ) ) |\n| 7 | 4 | #P_imbi2d | |- ( w = D -> ( ( ( A e. Q /\\ B e. R ) -> rh ) <-> ( ( A e. Q /\\ B e. R ) -> th ) ) ) |\n| 8 | 1, 2, 5 | #P_vtocl2g | |- ( ( A e. Q /\\ B e. R ) -> ch ) |\n| 9 | 6, 7, 8 | #P_vtocl2g | |- ( ( C e. S /\\ D e. T ) -> ( ( A e. Q /\\ B e. R ) -> th ) ) |\n| 10 | 9 | #P_impcom | |- ( ( ( A e. Q /\\ B e. R ) /\\ ( C e. S /\\ D e. T ) ) -> th ) |",
+  "conclusion" : "#P_vtocl4g",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wceq", "#T_cA", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_vy", "#T_wceq", "#T_cB", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_vz", "#T_wceq", "#T_cC", "#T_wi", "#T_wch", "#T_wb", "#T_wrh", "#T_vw", "#T_wceq", "#T_cD", "#T_wi", "#T_wrh", "#T_wb", "#T_wth", "#T_wph", "#T_vz", "#T_wceq", "#T_cC", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wch", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wrh", "#T_vw", "#T_wceq", "#T_cD", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wrh", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wth", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wch", "#T_cC", "#T_wcel", "#T_cS", "#T_wa", "#T_cD", "#T_wcel", "#T_cT", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cR", "#T_wi", "#T_wth", "#T_cA", "#T_wcel", "#T_cQ", "#T_wa", "#T_cB", "#T_wcel", "#T_cR", "#T_wa", "#T_cC", "#T_wcel", "#T_cS", "#T_wa", "#T_cD", "#T_wcel", "#T_cT", "#T_wi", "#T_wth" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_vtocl2g", "#P_imbi2d", "#P_impcom" ]
+}

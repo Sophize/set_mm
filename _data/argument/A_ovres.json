@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ovres on Metamath](http://us.metamath.org/mpegif/ovres.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_opelxpi | |- ( ( A e. C /\\ B e. D ) -> <. A , B >. e. ( C X. D ) ) |\n| 2 |  | #P_fvres | |- ( <. A , B >. e. ( C X. D ) -> ( ( F |` ( C X. D ) ) ` <. A , B >. ) = ( F ` <. A , B >. ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( A e. C /\\ B e. D ) -> ( ( F |` ( C X. D ) ) ` <. A , B >. ) = ( F ` <. A , B >. ) ) |\n| 4 |  | #P_df-ov | |- ( A ( F |` ( C X. D ) ) B ) = ( ( F |` ( C X. D ) ) ` <. A , B >. ) |\n| 5 |  | #P_df-ov | |- ( A F B ) = ( F ` <. A , B >. ) |\n| 6 | 3, 4, 5 | #P_3eqtr4g | |- ( ( A e. C /\\ B e. D ) -> ( A ( F |` ( C X. D ) ) B ) = ( A F B ) ) |",
+  "conclusion" : "#P_ovres",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cxp", "#T_cD", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wcel", "#T_cC", "#T_cxp", "#T_cD", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_cxp", "#T_cD", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_cD", "#T_wi", "#T_cF", "#T_cres", "#T_cC", "#T_cxp", "#T_cD", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_wceq", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_cF", "#T_cres", "#T_cC", "#T_cxp", "#T_cD", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cres", "#T_cC", "#T_cxp", "#T_cD", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA.wceq", "#T_cF", "#T_cB.wceq", "#T_wceq", "#T_cF", "#T_cfv", "#T_cop--1", "#T_cA.wceq", "#T_cop--2", "#T_cB.wceq", "#T_cop--3", "#T_cA", "#T_wcel", "#T_cC", "#T_wa", "#T_cB", "#T_wcel", "#T_cD", "#T_wi", "#T_cA", "#T_cF", "#T_cres", "#T_cC", "#T_cxp", "#T_cD", "#T_cB", "#T_wceq", "#T_cA", "#T_cF", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fvres", "#P_opelxpi", "#P_df-ov", "#P_syl", "#P_3eqtr4g" ]
+}

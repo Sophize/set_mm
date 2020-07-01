@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-bj-unc on Metamath](http://us.metamath.org/mpegif/df-bj-unc.html)"
+  } ],
+  "names" : [ "df-bj-unc" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cunc_", "#T_wceq", "#T_vx", "#T_cmpt3--1", "#T_cvv", "#T_cmpt3--2", "#T_vy", "#T_cmpt3--3", "#T_cvv", "#T_cmpt3--4", "#T_vz", "#T_cmpt3--5", "#T_cvv", "#T_cmpt3--6", "#T_vf", "#T_cmpt--1", "#T_vx", "#T_cfset", "#T_vy", "#T_cfset", "#T_vz", "#T_cmpt--2", "#T_va", "#T_cmpt2--1", "#T_vx", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_vy", "#T_cmpt2--4", "#T_vf", "#T_cfv", "#T_va", "#T_cfv", "#T_vb", "#T_va", "#T_vb", "#T_vf", "#T_vx", "#T_vy", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define uncurrying.  See also ~ df-unc .  (Contributed by BJ, 11-Apr-2020.) ",
+  "statement" : "df-bj-unc $p |- uncurry_ = ( x e. _V , y e. _V , z e. _V |-> ( f e. ( x -Set-> ( y -Set-> z ) ) |-> ( a e. x , b e. y |-> ( ( f ` a ) ` b ) ) ) ) $.\n$d a b f x y z $."
+}

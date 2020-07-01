@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See rb-imdf on Metamath](http://us.metamath.org/mpegif/rb-imdf.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_imor | |- ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) |\n| 2 |  | #P_rb-bijust | |- ( ( ( ph -> ps ) <-> ( -. ph \\/ ps ) ) <-> -. ( -. ( -. ( ph -> ps ) \\/ ( -. ph \\/ ps ) ) \\/ -. ( -. ( -. ph \\/ ps ) \\/ ( ph -> ps ) ) ) ) |\n| 3 | 1, 2 | #P_mpbi | |- -. ( -. ( -. ( ph -> ps ) \\/ ( -. ph \\/ ps ) ) \\/ -. ( -. ( -. ph \\/ ps ) \\/ ( ph -> ps ) ) ) |",
+  "conclusion" : "#P_rb-imdf",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wn", "#T_wn", "#T_wn", "#T_wph", "#T_wo", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_imor", "#P_rb-bijust", "#P_mpbi" ]
+}

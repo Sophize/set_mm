@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dvcnvre on Metamath](http://us.metamath.org/mpegif/dvcnvre.html)"
+  } ],
+  "names" : [ "dvcnvre" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cF", "#T_wcel", "#T_cX", "#T_ccncf", "#T_cr", "#T_wph", "#T_wi", "#T_cdm", "#T_cr", "#T_cdv", "#T_cF", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_wn", "#T_cc0", "#T_wcel", "#T_crn", "#T_cr", "#T_cdv", "#T_cF", "#T_wph", "#T_wi", "#T_cF", "#T_wf1o--1", "#T_cX", "#T_wf1o--2", "#T_cY", "#T_wph", "#T_wi", "#T_cr", "#T_cdv", "#T_ccnv", "#T_cF", "#T_wceq", "#T_vx", "#T_cmpt--1", "#T_cY", "#T_cmpt--2", "#T_c1", "#T_cdiv", "#T_cr", "#T_cdv", "#T_cF", "#T_cfv", "#T_ccnv", "#T_cF", "#T_cfv", "#T_vx", "#T_cF", "#T_vx", "#T_cX", "#T_vx", "#T_cY", "#T_vx", "#T_wph", "#T_vx" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The derivative rule for inverse functions.  If ` F ` is a continuous and differentiable bijective function from ` X ` to ` Y ` which never has derivative ` 0 ` , then ` ``' F ` is also differentiable, and its derivative is the reciprocal of the derivative of ` F ` .  (Contributed by Mario Carneiro, 24-Feb-2015.) ",
+  "statement" : "dvcnvre.f $e |- ( ph -> F e. ( X -cn-> RR ) ) $.\ndvcnvre.d $e |- ( ph -> dom ( RR _D F ) = X ) $.\ndvcnvre.z $e |- ( ph -> -. 0 e. ran ( RR _D F ) ) $.\ndvcnvre.1 $e |- ( ph -> F : X -1-1-onto-> Y ) $.\ndvcnvre $p |- ( ph -> ( RR _D `' F ) = ( x e. Y |-> ( 1 / ( ( RR _D F ) ` ( `' F ` x ) ) ) ) ) $.\n$d F x $.\n$d X x $.\n$d Y x $.\n$d ph x $."
+}

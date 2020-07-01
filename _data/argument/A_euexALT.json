@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See euexALT on Metamath](http://us.metamath.org/mpegif/euexALT.html)"
+  } ],
+  "argumentText" : "ARGUMENT\ny\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nfv | |- F/ y ph |\n| 2 | 1 | #P_eu1 | |- ( E! x ph <-> E. x ( ph /\\ A. y ( [ y / x ] ph -> x = y ) ) ) |\n| 3 |  | #P_exsimpl | |- ( E. x ( ph /\\ A. y ( [ y / x ] ph -> x = y ) ) -> E. x ph ) |\n| 4 | 2, 3 | #P_sylbi | |- ( E! x ph -> E. x ph ) |\n\\\n Alternate proof of ~ euex .  Shorter but uses more axioms.  (Contributed by NM, 15-Sep-1993.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_euex",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vy", "#T_wnf", "#T_vy.tru", "#T_wph", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wb", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wal", "#T_vy.tru", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wal", "#T_vy.tru", "#T_wsb--1", "#T_vy.tru", "#T_wsb--2", "#T_vx.wal", "#T_wsb--3", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_weu", "#T_vx", "#T_wph", "#T_wi", "#T_wex", "#T_vx", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_nfv", "#P_eu1", "#P_exsimpl", "#P_sylbi" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ehlval on Metamath](http://us.metamath.org/mpegif/ehlval.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nn\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ehlval.e | |- E = ( EEhil ` N ) |\n| 2 |  | #P_oveq2 | |- ( n = N -> ( 1 ... n ) = ( 1 ... N ) ) |\n| 3 | 2 | #P_fveq2d | |- ( n = N -> ( RR^ ` ( 1 ... n ) ) = ( RR^ ` ( 1 ... N ) ) ) |\n| 4 |  | #P_df-ehl | |- EEhil = ( n e. NN0 |-> ( RR^ ` ( 1 ... n ) ) ) |\n| 5 |  | #P_fvex | |- ( RR^ ` ( 1 ... N ) ) e. _V |\n| 6 | 3, 4, 5 | #P_fvmpt | |- ( N e. NN0 -> ( EEhil ` N ) = ( RR^ ` ( 1 ... N ) ) ) |\n| 7 | 1, 6 | #P_syl5eq | |- ( N e. NN0 -> E = ( RR^ ` ( 1 ... N ) ) ) |",
+  "conclusion" : "#P_ehlval",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vn", "#T_cE", "#T_wceq", "#T_cehl", "#T_cfv", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_c1", "#T_cfz", "#T_vn", "#T_wceq", "#T_c1", "#T_cfz", "#T_cN", "#T_vn", "#T_wceq", "#T_cN", "#T_wi", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_vn", "#T_wceq", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_cehl", "#T_wceq", "#T_vn", "#T_cmpt--1", "#T_cn0", "#T_cmpt--2", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_vn", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_wcel", "#T_cvv", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cehl", "#T_cfv", "#T_cN", "#T_wceq", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN", "#T_cN", "#T_wcel", "#T_cn0", "#T_wi", "#T_cE", "#T_wceq", "#T_crrx", "#T_cfv", "#T_c1", "#T_cfz", "#T_cN" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-ehl", "#P_fvmpt", "#P_fveq2d", "#P_oveq2", "#P_syl5eq", "#P_fvex" ]
+}

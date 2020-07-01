@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See hadbi123d on Metamath](http://us.metamath.org/mpegif/hadbi123d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | hadbid.1 | |- ( ph -> ( ps <-> ch ) ) |\n| 2 |  | hadbid.2 | |- ( ph -> ( th <-> ta ) ) |\n| 3 |  | hadbid.3 | |- ( ph -> ( et <-> ze ) ) |\n| 4 | 1, 2 | #P_xorbi12d | |- ( ph -> ( ( ps \\/_ th ) <-> ( ch \\/_ ta ) ) ) |\n| 5 | 4, 3 | #P_xorbi12d | |- ( ph -> ( ( ( ps \\/_ th ) \\/_ et ) <-> ( ( ch \\/_ ta ) \\/_ ze ) ) ) |\n| 6 |  | #P_df-had | |- ( hadd ( ps , th , et ) <-> ( ( ps \\/_ th ) \\/_ et ) ) |\n| 7 |  | #P_df-had | |- ( hadd ( ch , ta , ze ) <-> ( ( ch \\/_ ta ) \\/_ ze ) ) |\n| 8 | 5, 6, 7 | #P_3bitr4g | |- ( ph -> ( hadd ( ps , th , et ) <-> hadd ( ch , ta , ze ) ) ) |",
+  "conclusion" : "#P_hadbi123d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wch", "#T_wph", "#T_wi", "#T_wth", "#T_wb", "#T_wta", "#T_wph", "#T_wi", "#T_wet", "#T_wb", "#T_wze", "#T_wph", "#T_wi", "#T_wps", "#T_wxo", "#T_wth", "#T_wb", "#T_wch", "#T_wxo", "#T_wta", "#T_wph", "#T_wi", "#T_wps", "#T_wxo", "#T_wth", "#T_wxo", "#T_wet", "#T_wb", "#T_wch", "#T_wxo", "#T_wta", "#T_wxo", "#T_wze", "#T_whad--1", "#T_wps", "#T_whad--2", "#T_wth", "#T_whad--3", "#T_wet", "#T_wb", "#T_wps", "#T_wxo", "#T_wth", "#T_wxo", "#T_wet", "#T_whad--1", "#T_wch", "#T_whad--2", "#T_wta", "#T_whad--3", "#T_wze", "#T_wb", "#T_wch", "#T_wxo", "#T_wta", "#T_wxo", "#T_wze", "#T_wph", "#T_wi", "#T_whad--1", "#T_wps", "#T_whad--2", "#T_wth", "#T_whad--3", "#T_wet", "#T_wb", "#T_whad--1", "#T_wch", "#T_whad--2", "#T_wta", "#T_whad--3", "#T_wze" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_df-had", "#P_xorbi12d", "#P_3bitr4g" ]
+}

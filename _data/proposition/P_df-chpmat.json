@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See df-chpmat on Metamath](http://us.metamath.org/mpegif/df-chpmat.html)"
+  } ],
+  "names" : [ "df-chpmat" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cchpmat", "#T_wceq", "#T_vn", "#T_cmpt2--1", "#T_cfn", "#T_cmpt2--2", "#T_vr", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vm", "#T_cmpt--1", "#T_cbs", "#T_cfv", "#T_vn", "#T_cmat", "#T_vr", "#T_cmpt--2", "#T_vn", "#T_cmdat", "#T_cpl1", "#T_cfv", "#T_vr", "#T_cfv", "#T_cv1", "#T_cfv", "#T_vr", "#T_cvsca", "#T_cfv", "#T_vn", "#T_cmat", "#T_cpl1", "#T_cfv", "#T_vr", "#T_cur", "#T_cfv", "#T_vn", "#T_cmat", "#T_cpl1", "#T_cfv", "#T_vr", "#T_csg", "#T_cfv", "#T_vn", "#T_cmat", "#T_cpl1", "#T_cfv", "#T_vr", "#T_vn", "#T_cmat2pmat", "#T_vr", "#T_cfv", "#T_vm", "#T_vm", "#T_vn", "#T_vr" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Define the characteristic polynomial of a square matrix.  According to Wikipedia (\"Characteristic polynomial\", 31-Jul-2019, ~ https://en.wikipedia.org/wiki/Characteristic_polynomial ):  \"The characteristic polynomial of [an n x n matrix] A, denoted by p_A(t), is the polynomial defined by p_A ( t ) = det ( t I - A ) where I denotes the n-by-n identity matrix.\".  In addition, however, the underlying ring must be commutative, see definition in [Lang], p. 561:  \" Let k be a commutative ring ...  Let M be any n x n matrix in k ...  We define the characteristic polynomial P_M(t) to be the determinant det ( t I_n - M ) where I_n is the unit n x n matrix.\"  To be more precise, the matrices A and I on the right hand side are matrices with coefficients of a polynomial ring.  Therefore, the original matrix A over a given commutative ring must be transformed into corresponding matrices over the polynomial ring over the given ring.  (Contributed by AV, 2-Aug-2019.) ",
+  "statement" : "df-chpmat $p |- CharPlyMat = ( n e. Fin , r e. _V |-> ( m e. ( Base ` ( n Mat r ) ) |-> ( ( n maDet ( Poly1 ` r ) ) ` ( ( ( var1 ` r ) ( .s ` ( n Mat ( Poly1 ` r ) ) ) ( 1r ` ( n Mat ( Poly1 ` r ) ) ) ) ( -g ` ( n Mat ( Poly1 ` r ) ) ) ( ( n matToPolyMat r ) ` m ) ) ) ) ) $.\n$d m n r $."
+}
