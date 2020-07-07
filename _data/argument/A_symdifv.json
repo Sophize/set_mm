@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See symdifv on Metamath](http://us.metamath.org/mpegif/symdifv.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-symdif | |- ( A /_\\ _V ) = ( ( A \\ _V ) u. ( _V \\ A ) ) |\n| 2 |  | #P_ssv | |- A C_ _V |\n| 3 |  | #P_ssdif0 | |- ( A C_ _V <-> ( A \\ _V ) = (/) ) |\n| 4 | 2, 3 | #P_mpbi | |- ( A \\ _V ) = (/) |\n| 5 | 4 | #P_uneq1i | |- ( ( A \\ _V ) u. ( _V \\ A ) ) = ( (/) u. ( _V \\ A ) ) |\n| 6 |  | #P_uncom | |- ( (/) u. ( _V \\ A ) ) = ( ( _V \\ A ) u. (/) ) |\n| 7 |  | #P_un0 | |- ( ( _V \\ A ) u. (/) ) = ( _V \\ A ) |\n| 8 | 6, 7 | #P_eqtri | |- ( (/) u. ( _V \\ A ) ) = ( _V \\ A ) |\n| 9 | 5, 8 | #P_eqtri | |- ( ( A \\ _V ) u. ( _V \\ A ) ) = ( _V \\ A ) |\n| 10 | 1, 9 | #P_eqtri | |- ( A /_\\ _V ) = ( _V \\ A ) |",
+  "conclusion" : "#P_symdifv",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_csymdif", "#T_cvv", "#T_wceq", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_cA.wceq", "#T_wss", "#T_cvv", "#T_wb", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_wceq", "#T_c0", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_c0", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_c0", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cun", "#T_c0", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cun", "#T_c0", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_c0", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cA.wceq", "#T_cdif", "#T_cvv", "#T_cun", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA.wceq", "#T_cA", "#T_csymdif", "#T_cvv", "#T_wceq", "#T_cvv", "#T_cdif", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqtri", "#P_uneq1i", "#P_df-symdif", "#P_mpbi", "#P_un0", "#P_ssv", "#P_uncom", "#P_ssdif0" ]
+}

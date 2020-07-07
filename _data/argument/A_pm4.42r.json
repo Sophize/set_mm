@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See pm4.42r on Metamath](http://us.metamath.org/mpegif/pm4.42r.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_simpl | |- ( ( ph /\\ ps ) -> ph ) |\n| 2 |  | #P_simpl | |- ( ( ph /\\ -. ps ) -> ph ) |\n| 3 | 1, 2 | #P_jaoi | |- ( ( ( ph /\\ ps ) \\/ ( ph /\\ -. ps ) ) -> ph ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ia1 | |- ( ( ph /\\ ps ) -> ph ) |\n| 2 |  | #P_ax-ia1 | |- ( ( ph /\\ -. ps ) -> ph ) |\n| 3 | 1, 2 | #P_jaoi | |- ( ( ( ph /\\ ps ) \\/ ( ph /\\ -. ps ) ) -> ph ) |",
   "conclusion" : "#P_pm4.42r",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wo", "#T_wph", "#T_wa", "#T_wn", "#T_wps", "#T_wi", "#T_wph" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_jaoi", "#P_simpl" ]
+  "premises" : [ "#P_ax-ia1", "#P_jaoi" ]
 }

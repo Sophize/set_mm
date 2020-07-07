@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See euor2 on Metamath](http://us.metamath.org/mpegif/euor2.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hbe1 | |- ( E. x ph -> A. x E. x ph ) |\n| 2 | 1 | #P_hbn | |- ( -. E. x ph -> A. x -. E. x ph ) |\n| 3 |  | #P_19.8a | |- ( ph -> E. x ph ) |\n| 4 | 3 | #P_con3i | |- ( -. E. x ph -> -. ph ) |\n| 5 |  | #P_orel1 | |- ( -. ph -> ( ( ph \\/ ps ) -> ps ) ) |\n| 6 |  | #P_olc | |- ( ps -> ( ph \\/ ps ) ) |\n| 7 | 5, 6 | #P_impbid1 | |- ( -. ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 8 | 4, 7 | #P_syl | |- ( -. E. x ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 9 | 2, 8 | #P_eubidh | |- ( -. E. x ph -> ( E! x ( ph \\/ ps ) <-> E! x ps ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ie1 | |- ( E. x ph -> A. x E. x ph ) |\n| 2 | 1 | #P_hbn | |- ( -. E. x ph -> A. x -. E. x ph ) |\n| 3 |  | #P_19.8a | |- ( ph -> E. x ph ) |\n| 4 | 3 | #P_con3i | |- ( -. E. x ph -> -. ph ) |\n| 5 |  | #P_orel1 | |- ( -. ph -> ( ( ph \\/ ps ) -> ps ) ) |\n| 6 |  | #P_olc | |- ( ps -> ( ph \\/ ps ) ) |\n| 7 | 5, 6 | #P_impbid1 | |- ( -. ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 8 | 4, 7 | #P_syl | |- ( -. E. x ph -> ( ( ph \\/ ps ) <-> ps ) ) |\n| 9 | 2, 8 | #P_eubidh | |- ( -. E. x ph -> ( E! x ( ph \\/ ps ) <-> E! x ps ) ) |",
   "conclusion" : "#P_euor2",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wn", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_wps", "#T_wn", "#T_wex", "#T_vx", "#T_wph", "#T_wi", "#T_weu", "#T_vx", "#T_wph", "#T_wo", "#T_wps", "#T_wb", "#T_weu", "#T_vx", "#T_wps" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_hbe1", "#P_19.8a", "#P_con3i", "#P_olc", "#P_syl", "#P_orel1", "#P_eubidh", "#P_impbid1", "#P_hbn" ]
+  "premises" : [ "#P_ax-ie1", "#P_19.8a", "#P_con3i", "#P_olc", "#P_syl", "#P_orel1", "#P_eubidh", "#P_impbid1", "#P_hbn" ]
 }

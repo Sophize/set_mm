@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See pjvec on Metamath](http://us.metamath.org/mpegif/pjvec.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chss | |- ( H e. CH -> H C_ ~H ) |\n| 2 |  | #P_sseqin2 | |- ( H C_ ~H <-> ( ~H i^i H ) = H ) |\n| 3 | 1, 2 | #P_sylib | |- ( H e. CH -> ( ~H i^i H ) = H ) |\n| 4 |  | #P_pjch | |- ( ( H e. CH /\\ x e. ~H ) -> ( x e. H <-> ( ( projh ` H ) ` x ) = x ) ) |\n| 5 | 4 | #P_rabbi2dva | |- ( H e. CH -> ( ~H i^i H ) = { x e. ~H | ( ( projh ` H ) ` x ) = x } ) |\n| 6 | 3, 5 | #P_eqtr3d | |- ( H e. CH -> H = { x e. ~H | ( ( projh ` H ) ` x ) = x } ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_chss | |- ( H e. CH -> H C_ ~H ) |\n| 2 |  | #P_dfss1 | |- ( H C_ ~H <-> ( ~H i^i H ) = H ) |\n| 3 | 1, 2 | #P_sylib | |- ( H e. CH -> ( ~H i^i H ) = H ) |\n| 4 |  | #P_pjch | |- ( ( H e. CH /\\ x e. ~H ) -> ( x e. H <-> ( ( projh ` H ) ` x ) = x ) ) |\n| 5 | 4 | #P_rabbi2dva | |- ( H e. CH -> ( ~H i^i H ) = { x e. ~H | ( ( projh ` H ) ` x ) = x } ) |\n| 6 | 3, 5 | #P_eqtr3d | |- ( H e. CH -> H = { x e. ~H | ( ( projh ` H ) ` x ) = x } ) |",
   "conclusion" : "#P_pjvec",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_cH", "#T_wss", "#T_chil", "#T_cH", "#T_wss", "#T_chil", "#T_wb", "#T_chil", "#T_cin", "#T_cH", "#T_wceq", "#T_cH", "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_chil", "#T_cin", "#T_cH", "#T_wceq", "#T_cH", "#T_cH", "#T_wcel", "#T_cch", "#T_wa", "#T_vx.wal", "#T_wcel", "#T_chil", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_cH", "#T_wb", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_chil", "#T_cin", "#T_cH", "#T_wceq", "#T_crab--1", "#T_vx.wal", "#T_crab--2", "#T_chil", "#T_crab--3", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_crab--4", "#T_cH", "#T_wcel", "#T_cch", "#T_wi", "#T_cH", "#T_wceq", "#T_crab--1", "#T_vx", "#T_crab--2", "#T_chil", "#T_crab--3", "#T_cpjh", "#T_cfv", "#T_cH", "#T_cfv", "#T_vx", "#T_wceq", "#T_vx", "#T_crab--4" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_chss", "#P_sseqin2", "#P_sylib", "#P_pjch", "#P_eqtr3d", "#P_rabbi2dva" ]
+  "premises" : [ "#P_chss", "#P_dfss1", "#P_sylib", "#P_pjch", "#P_eqtr3d", "#P_rabbi2dva" ]
 }

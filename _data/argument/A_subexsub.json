@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See subexsub on Metamath](http://us.metamath.org/mpegif/subexsub.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | addlsub.a | |- ( ph -> A e. CC ) |\n| 2 |  | addlsub.b | |- ( ph -> B e. CC ) |\n| 3 |  | addlsub.c | |- ( ph -> C e. CC ) |\n| 4 | 1, 2, 3 | #P_addlsub | |- ( ph -> ( ( A + B ) = C <-> A = ( C - B ) ) ) |\n| 5 | 1, 2, 3 | #P_addrsub | |- ( ph -> ( ( A + B ) = C <-> B = ( C - A ) ) ) |\n| 6 | 4, 5 | #P_bitr3d | |- ( ph -> ( A = ( C - B ) <-> B = ( C - A ) ) ) |",
+  "conclusion" : "#P_subexsub",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cc", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cA.wceq", "#T_wceq", "#T_cC", "#T_cmin", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_wb", "#T_cB.wceq", "#T_wceq", "#T_cC", "#T_cmin", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_wceq", "#T_cC", "#T_cmin", "#T_cB", "#T_wb", "#T_cB", "#T_wceq", "#T_cC", "#T_cmin", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_addlsub", "#P_addrsub", "#P_bitr3d" ]
+}

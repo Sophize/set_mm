@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzof on Metamath](http://us.metamath.org/mpegif/fzof.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nm n\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_peano2zm | |- ( n e. ZZ -> ( n - 1 ) e. ZZ ) |\n| 2 |  | #P_fzf | |- ... : ( ZZ X. ZZ ) --> ~P ZZ |\n| 3 | 2 | #P_fovcl | |- ( ( m e. ZZ /\\ ( n - 1 ) e. ZZ ) -> ( m ... ( n - 1 ) ) e. ~P ZZ ) |\n| 4 | 1, 3 | #P_sylan2 | |- ( ( m e. ZZ /\\ n e. ZZ ) -> ( m ... ( n - 1 ) ) e. ~P ZZ ) |\n| 5 | 4 | #P_rgen2a | |- A. m e. ZZ A. n e. ZZ ( m ... ( n - 1 ) ) e. ~P ZZ |\n| 6 |  | #P_df-fzo | |- ..^ = ( m e. ZZ , n e. ZZ |-> ( m ... ( n - 1 ) ) ) |\n| 7 | 6 | #P_fmpt2 | |- ( A. m e. ZZ A. n e. ZZ ( m ... ( n - 1 ) ) e. ~P ZZ <-> ..^ : ( ZZ X. ZZ ) --> ~P ZZ ) |\n| 8 | 5, 7 | #P_mpbi | |- ..^ : ( ZZ X. ZZ ) --> ~P ZZ |",
+  "conclusion" : "#P_fzof",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vm", "#T_vn", "#T_vn", "#T_wcel", "#T_cz", "#T_wi", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cfz", "#T_wf--1", "#T_cz", "#T_cxp", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_vm", "#T_wcel", "#T_cz", "#T_wa", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cpw", "#T_cz", "#T_vm", "#T_wcel", "#T_cz", "#T_wa", "#T_vn", "#T_wcel", "#T_cz", "#T_wi", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cpw", "#T_cz", "#T_wral--1", "#T_vm", "#T_wral--2", "#T_cz", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cz", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cpw", "#T_cz", "#T_cfzo", "#T_wceq", "#T_vm", "#T_cmpt2--1", "#T_cz", "#T_cmpt2--2", "#T_vn", "#T_cmpt2--3", "#T_cz", "#T_cmpt2--4", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_wral--1", "#T_vm", "#T_wral--2", "#T_cz", "#T_wral--1", "#T_vn", "#T_wral--2", "#T_cz", "#T_vm", "#T_cfz", "#T_vn", "#T_cmin", "#T_c1", "#T_wcel", "#T_cpw", "#T_cz", "#T_wb", "#T_cfzo", "#T_wf--1", "#T_cz", "#T_cxp", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz", "#T_cfzo", "#T_wf--1", "#T_cz", "#T_cxp", "#T_cz", "#T_wf--2", "#T_cpw", "#T_cz" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sylan2", "#P_rgen2a", "#P_df-fzo", "#P_peano2zm", "#P_mpbi", "#P_fzf", "#P_fovcl", "#P_fmpt2" ]
+}

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dedlema on Metamath](http://us.metamath.org/mpegif/dedlema.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_orc | |- ( ( ps /\\ ph ) -> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) |\n| 2 | 1 | #P_expcom | |- ( ph -> ( ps -> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) ) |\n| 3 |  | #P_ax-ia1 | |- ( ( ps /\\ ph ) -> ps ) |\n| 4 | 3 | #P_a1i | |- ( ph -> ( ( ps /\\ ph ) -> ps ) ) |\n| 5 |  | #P_pm2.24 | |- ( ph -> ( -. ph -> ps ) ) |\n| 6 | 5 | #P_adantld | |- ( ph -> ( ( ch /\\ -. ph ) -> ps ) ) |\n| 7 | 4, 6 | #P_jaod | |- ( ph -> ( ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) -> ps ) ) |\n| 8 | 2, 7 | #P_impbid | |- ( ph -> ( ps <-> ( ( ps /\\ ph ) \\/ ( ch /\\ -. ph ) ) ) ) |",
+  "conclusion" : "#P_dedlema",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wph", "#T_wi", "#T_wps", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wo", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_pm2.24", "#P_adantld", "#P_orc", "#P_expcom", "#P_jaod", "#P_ax-ia1", "#P_impbid", "#P_a1i" ]
+}

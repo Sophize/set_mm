@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See elirr on Metamath](http://us.metamath.org/mpegif/elirr.html)"
   } ],
-  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( x = A -> x = A ) |\n| 2 | 1, 1 | #P_eleq12d | |- ( x = A -> ( x e. x <-> A e. A ) ) |\n| 3 | 2 | #P_notbid | |- ( x = A -> ( -. x e. x <-> -. A e. A ) ) |\n| 4 |  | #P_elirrv | |- -. x e. x |\n| 5 | 3, 4 | #P_vtoclg | |- ( A e. A -> -. A e. A ) |\n| 6 |  | #P_pm2.01 | |- ( ( A e. A -> -. A e. A ) -> -. A e. A ) |\n| 7 | 5, 6 | #P_ax-mp | |- -. A e. A |",
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( x = A -> x = A ) |\n| 2 | 1, 1 | #P_eleq12d | |- ( x = A -> ( x e. x <-> A e. A ) ) |\n| 3 | 2 | #P_notbid | |- ( x = A -> ( -. x e. x <-> -. A e. A ) ) |\n| 4 |  | #P_elirrv | |- -. x e. x |\n| 5 | 3, 4 | #P_vtoclg | |- ( A e. A -> -. A e. A ) |\n| 6 |  | #P_axin1 | |- ( ( A e. A -> -. A e. A ) -> -. A e. A ) |\n| 7 | 5, 6 | #P_ax-mp | |- -. A e. A |",
   "conclusion" : "#P_elirr",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_vx", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_vx.wal", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wn", "#T_vx.wal", "#T_wcel", "#T_vx.wal", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cA.wceq", "#T_wn", "#T_cA", "#T_wcel", "#T_cA" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_elirrv", "#P_ax-mp", "#P_pm2.01", "#P_vtoclg", "#P_notbid", "#P_id", "#P_eleq12d" ]
+  "premises" : [ "#P_elirrv", "#P_ax-mp", "#P_vtoclg", "#P_axin1", "#P_notbid", "#P_id", "#P_eleq12d" ]
 }

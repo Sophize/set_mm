@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzofig on Metamath](http://us.metamath.org/mpegif/fzofig.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fzoval | |- ( N e. ZZ -> ( M ..^ N ) = ( M ... ( N - 1 ) ) ) |\n| 2 | 1 | #P_adantl | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) = ( M ... ( N - 1 ) ) ) |\n| 3 |  | #P_peano2zm | |- ( N e. ZZ -> ( N - 1 ) e. ZZ ) |\n| 4 |  | #P_fzfig | |- ( ( M e. ZZ /\\ ( N - 1 ) e. ZZ ) -> ( M ... ( N - 1 ) ) e. Fin ) |\n| 5 | 3, 4 | #P_sylan2 | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ... ( N - 1 ) ) e. Fin ) |\n| 6 | 2, 5 | #P_eqeltrd | |- ( ( M e. ZZ /\\ N e. ZZ ) -> ( M ..^ N ) e. Fin ) |",
+  "conclusion" : "#P_fzofig",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wceq", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cfn", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfz", "#T_cN", "#T_cmin", "#T_c1", "#T_wcel", "#T_cfn", "#T_cM", "#T_wcel", "#T_cz", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_cfzo", "#T_cN", "#T_wcel", "#T_cfn" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fzfig", "#P_sylan2", "#P_adantl", "#P_eqeltrd", "#P_peano2zm", "#P_fzoval" ]
+}

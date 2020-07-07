@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trclfvlb on Metamath](http://us.metamath.org/mpegif/trclfvlb.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nr\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ssintab | |- ( R C_ |^| { r | ( R C_ r /\\ ( r o. r ) C_ r ) } <-> A. r ( ( R C_ r /\\ ( r o. r ) C_ r ) -> R C_ r ) ) |\n| 2 |  | #P_simpl | |- ( ( R C_ r /\\ ( r o. r ) C_ r ) -> R C_ r ) |\n| 3 | 1, 2 | #P_mpgbir | |- R C_ |^| { r | ( R C_ r /\\ ( r o. r ) C_ r ) } |\n| 4 |  | #P_trclfv | |- ( R e. V -> ( t+ ` R ) = |^| { r | ( R C_ r /\\ ( r o. r ) C_ r ) } ) |\n| 5 | 3, 4 | #P_syl5sseqr | |- ( R e. V -> R C_ ( t+ ` R ) ) |",
+  "conclusion" : "#P_trclfvlb",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vr", "#T_cR", "#T_wss", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_vr", "#T_ccom", "#T_vr", "#T_wss", "#T_vr", "#T_cab--3", "#T_wb", "#T_wal", "#T_vr", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_vr", "#T_ccom", "#T_vr", "#T_wss", "#T_vr", "#T_wi", "#T_cR", "#T_wss", "#T_vr", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_vr", "#T_ccom", "#T_vr", "#T_wss", "#T_vr", "#T_wi", "#T_cR", "#T_wss", "#T_vr", "#T_cR", "#T_wss", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_vr", "#T_ccom", "#T_vr", "#T_wss", "#T_vr", "#T_cab--3", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wceq", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_vr", "#T_ccom", "#T_vr", "#T_wss", "#T_vr", "#T_cab--3", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_cR", "#T_wss", "#T_ctcl", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_trclfv", "#P_ssintab", "#P_simpl", "#P_mpgbir", "#P_syl5sseqr" ]
+}

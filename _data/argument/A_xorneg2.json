@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See xorneg2 on Metamath](http://us.metamath.org/mpegif/xorneg2.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xorneg1 | |- ( ( -. ps \\/_ ph ) <-> -. ( ps \\/_ ph ) ) |\n| 2 |  | #P_xorcom | |- ( ( ph \\/_ -. ps ) <-> ( -. ps \\/_ ph ) ) |\n| 3 |  | #P_xorcom | |- ( ( ph \\/_ ps ) <-> ( ps \\/_ ph ) ) |\n| 4 | 3 | #P_notbii | |- ( -. ( ph \\/_ ps ) <-> -. ( ps \\/_ ph ) ) |\n| 5 | 1, 2, 4 | #P_3bitr4i | |- ( ( ph \\/_ -. ps ) <-> -. ( ph \\/_ ps ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor | |- ( ( ph \\/_ -. ps ) <-> -. ( ph <-> -. ps ) ) |\n| 2 |  | #P_pm5.18 | |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) |\n| 3 |  | #P_xnor | |- ( ( ph <-> ps ) <-> -. ( ph \\/_ ps ) ) |\n| 4 | 1, 2, 3 | #P_3bitr2i | |- ( ( ph \\/_ -. ps ) <-> -. ( ph \\/_ ps ) ) |",
   "conclusion" : "#P_xorneg2",
   "language" : "METAMATH_SET_MM",
-  "lookupTerms" : [ "#T_wn", "#T_wps", "#T_wxo", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wxo", "#T_wph", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wxo", "#T_wph", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wxo", "#T_wph", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wps", "#T_wxo", "#T_wph", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps" ],
+  "lookupTerms" : [ "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wph", "#T_wxo", "#T_wn", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_notbii", "#P_xorneg1", "#P_xorcom", "#P_3bitr4i" ]
+  "premises" : [ "#P_df-xor", "#P_xnor", "#P_3bitr2i", "#P_pm5.18" ]
 }

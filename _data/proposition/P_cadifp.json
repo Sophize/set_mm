@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cadifp on Metamath](http://us.metamath.org/mpegif/cadifp.html)"
+  } ],
+  "names" : [ "cadifp" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wif--1", "#T_wch", "#T_wif--2", "#T_wph", "#T_wo", "#T_wps", "#T_wif--3", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " The value of the carry is, if the previous carry was 1, the disjunction, and if the previous carry was 0, the conjunction, of the digits of the two summands.  (Contributed by BJ, 8-Oct-2019.) ",
+  "statement" : "cadifp $p |- ( cadd ( ph , ps , ch ) <-> if- ( ch , ( ph \\/ ps ) , ( ph /\\ ps ) ) ) $."
+}

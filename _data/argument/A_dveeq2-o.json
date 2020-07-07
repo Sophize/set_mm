@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See dveeq2-o on Metamath](http://us.metamath.org/mpegif/dveeq2-o.html)"
   } ],
-  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-5 | |- ( z = w -> A. x z = w ) |\n| 2 |  | #P_ax-5 | |- ( z = y -> A. w z = y ) |\n| 3 |  | #P_equequ2 | |- ( w = y -> ( z = w <-> z = y ) ) |\n| 4 | 1, 2, 3 | #P_dvelimf-o | |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) |\n\\\n Quantifier introduction when one pair of variables is distinct.  Version of ~ dveeq2 using ~ ax-c15 .  (Contributed by NM, 2-Jan-2002.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "argumentText" : "ARGUMENT\nw\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-5 | |- ( z = w -> A. x z = w ) |\n| 2 |  | #P_ax-5 | |- ( z = y -> A. w z = y ) |\n| 3 |  | #P_equequ2 | |- ( w = y -> ( z = w <-> z = y ) ) |\n| 4 | 1, 2, 3 | #P_dvelimh | |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) |\n\\\n Quantifier introduction when one pair of variables is distinct.  Version of ~ dveeq2 using ~ ax-c15 .  (Contributed by NM, 2-Jan-2002.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
   "conclusion" : "#P_dveeq2",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_vw", "#T_vz", "#T_wceq", "#T_vw", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vz", "#T_wceq", "#T_vw", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vw", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_vw", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_vz", "#T_wceq", "#T_vw", "#T_wb", "#T_vz", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_vz", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vx", "#T_vz", "#T_wceq", "#T_vy" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_equequ2", "#P_ax-5", "#P_dvelimf-o" ]
+  "premises" : [ "#P_dvelimh", "#P_equequ2", "#P_ax-5" ]
 }

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trcleq2lem on Metamath](http://us.metamath.org/mpegif/trcleq2lem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sseq2 | |- ( A = B -> ( R C_ A <-> R C_ B ) ) |\n| 2 |  | #P_id | |- ( A = B -> A = B ) |\n| 3 | 2, 2 | #P_coeq12d | |- ( A = B -> ( A o. A ) = ( B o. B ) ) |\n| 4 | 3, 2 | #P_sseq12d | |- ( A = B -> ( ( A o. A ) C_ A <-> ( B o. B ) C_ B ) ) |\n| 5 | 1, 4 | #P_anbi12d | |- ( A = B -> ( ( R C_ A /\\ ( A o. A ) C_ A ) <-> ( R C_ B /\\ ( B o. B ) C_ B ) ) ) |",
+  "conclusion" : "#P_trcleq2lem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cR", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cR", "#T_wss", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_ccom", "#T_cB.wceq", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_cA.wceq", "#T_ccom", "#T_cA.wceq", "#T_wss", "#T_cA.wceq", "#T_wb", "#T_cB.wceq", "#T_ccom", "#T_cB.wceq", "#T_wss", "#T_cB.wceq", "#T_cA", "#T_wceq", "#T_cB", "#T_wi", "#T_cR", "#T_wss", "#T_cA", "#T_wa", "#T_cA", "#T_ccom", "#T_cA", "#T_wss", "#T_cA", "#T_wb", "#T_cR", "#T_wss", "#T_cB", "#T_wa", "#T_cB", "#T_ccom", "#T_cB", "#T_wss", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sseq2", "#P_coeq12d", "#P_id", "#P_anbi12d", "#P_sseq12d" ]
+}

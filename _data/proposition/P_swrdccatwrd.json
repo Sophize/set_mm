@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cW", "#T_wne", "#T_c0", "#T_wi", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cmin", "#T_c1", "#T_cop--3", "#T_cconcat", "#T_cs1--1", "#T_clsw", "#T_cfv", "#T_cW", "#T_cs1--2", "#T_wceq", "#T_cW" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Reconstruct a nonempty word from its prefix and last symbol.  (Contributed by Alexander van der Vekens, 5-Aug-2018.) ",
-  "statement" : "swrdccatwrd $p |- ( ( W e. Word V /\\ W =/= (/) ) -> ( ( W substr <. 0 , ( ( # ` W ) - 1 ) >. ) concat <\" ( lastS ` W ) \"> ) = W ) $."
+  "statement" : "swrdccatwrd $p |- ( ( W e. Word V /\\ W =/= (/) ) -> ( ( W substr <. 0 , ( ( # ` W ) - 1 ) >. ) ++ <\" ( lastS ` W ) \"> ) = W ) $."
 }

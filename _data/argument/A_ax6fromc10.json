@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See ax6fromc10 on Metamath](http://us.metamath.org/mpegif/ax6fromc10.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-c10 | |- ( A. x ( x = y -> A. x -. A. x -. x = y ) -> -. A. x -. x = y ) |\n| 2 |  | #P_ax-c7 | |- ( -. A. x -. A. x -. x = y -> -. x = y ) |\n| 3 | 2 | #P_con4i | |- ( x = y -> A. x -. A. x -. x = y ) |\n| 4 | 1, 3 | #P_mpg | |- -. A. x -. x = y |",
-  "conclusion" : "#P_ax6fromc10",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_axc10 | |- ( A. x ( x = y -> A. x -. A. x -. x = y ) -> -. A. x -. x = y ) |\n| 2 |  | #P_axc7 | |- ( -. A. x -. A. x -. x = y -> -. x = y ) |\n| 3 | 2 | #P_con4i | |- ( x = y -> A. x -. A. x -. x = y ) |\n| 4 | 1, 3 | #P_mpg | |- -. A. x -. x = y |\n\\\n Rederivation of axiom ~ ax-6 from ~ ax-c10 and other older axioms.  See ~ axc10 for the derivation of ~ ax-c10 from ~ ax-6 .  Lemma L18 in [Megill] p. 446 (p. 14 of the preprint).  (Contributed by NM, 14-May-1993.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_ax-6",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wn", "#T_wal", "#T_vx.wal", "#T_wn", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wn", "#T_wal", "#T_vx", "#T_wn", "#T_vx", "#T_wceq", "#T_vy" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_con4i", "#P_ax-c10", "#P_ax-c7", "#P_mpg" ]
+  "premises" : [ "#P_con4i", "#P_axc7", "#P_axc10", "#P_mpg" ]
 }

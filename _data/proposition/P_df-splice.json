@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_csplice", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vb", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vs", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_c1st", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vb", "#T_cop--3", "#T_cconcat", "#T_c2nd", "#T_cfv", "#T_vb", "#T_cconcat", "#T_vs", "#T_csubstr", "#T_cop--1", "#T_c2nd", "#T_cfv", "#T_c1st", "#T_cfv", "#T_vb", "#T_cop--2", "#T_chash", "#T_cfv", "#T_vs", "#T_cop--3", "#T_vb", "#T_vs" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Define an operation which replaces portions of words.  (Contributed by Stefan O'Rear, 15-Aug-2015.) ",
-  "statement" : "df-splice $p |- splice = ( s e. _V , b e. _V |-> ( ( ( s substr <. 0 , ( 1st ` ( 1st ` b ) ) >. ) concat ( 2nd ` b ) ) concat ( s substr <. ( 2nd ` ( 1st ` b ) ) , ( # ` s ) >. ) ) ) $.\n$d b s $."
+  "statement" : "df-splice $p |- splice = ( s e. _V , b e. _V |-> ( ( ( s substr <. 0 , ( 1st ` ( 1st ` b ) ) >. ) ++ ( 2nd ` b ) ) ++ ( s substr <. ( 2nd ` ( 1st ` b ) ) , ( # ` s ) >. ) ) ) $.\n$d b s $."
 }

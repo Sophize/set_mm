@@ -6,6 +6,6 @@
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cconcat", "#T_wceq", "#T_vs", "#T_cmpt2--1", "#T_cvv", "#T_cmpt2--2", "#T_vt", "#T_cmpt2--3", "#T_cvv", "#T_cmpt2--4", "#T_vx", "#T_cmpt--1", "#T_cc0", "#T_cfzo", "#T_chash", "#T_cfv", "#T_vs", "#T_caddc", "#T_chash", "#T_cfv", "#T_vt", "#T_cmpt--2", "#T_cif--1", "#T_vx", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_chash", "#T_cfv", "#T_vs", "#T_cif--2", "#T_vs", "#T_cfv", "#T_vx", "#T_cif--3", "#T_vt", "#T_cfv", "#T_vx", "#T_cmin", "#T_chash", "#T_cfv", "#T_vs", "#T_vs", "#T_vt", "#T_vx" ],
   "metaLanguage" : "METAMATH",
-  "remarks" : " Define the concatenation operator which combines two words. (Contributed by FL, 14-Jan-2014.)  (Revised by Stefan O'Rear, 15-Aug-2015.) ",
-  "statement" : "df-concat $p |- concat = ( s e. _V , t e. _V |-> ( x e. ( 0 ..^ ( ( # ` s ) + ( # ` t ) ) ) |-> if ( x e. ( 0 ..^ ( # ` s ) ) , ( s ` x ) , ( t ` ( x - ( # ` s ) ) ) ) ) ) $.\n$d s t x $."
+  "remarks" : " Define the concatenation operator which combines two words.  Definition in section 9.1 of [AhoHopUll] p. 318.  (Contributed by FL, 14-Jan-2014.)  (Revised by Stefan O'Rear, 15-Aug-2015.) ",
+  "statement" : "df-concat $p |- ++ = ( s e. _V , t e. _V |-> ( x e. ( 0 ..^ ( ( # ` s ) + ( # ` t ) ) ) |-> if ( x e. ( 0 ..^ ( # ` s ) ) , ( s ` x ) , ( t ` ( x - ( # ` s ) ) ) ) ) ) $.\n$d s t x $."
 }

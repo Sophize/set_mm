@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See uzenom on Metamath](http://us.metamath.org/mpegif/uzenom.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | uzinf.1 | |- Z = ( ZZ>= ` M ) |\n| 2 |  | #P_id | |- ( M e. ZZ -> M e. ZZ ) |\n| 3 |  | #P_eqid | |- frec ( ( x e. ZZ |-> ( x + 1 ) ) , M ) = frec ( ( x e. ZZ |-> ( x + 1 ) ) , M ) |\n| 4 | 2, 3 | #P_frec2uzf1od | |- ( M e. ZZ -> frec ( ( x e. ZZ |-> ( x + 1 ) ) , M ) : _om -1-1-onto-> ( ZZ>= ` M ) ) |\n| 5 |  | #P_omex | |- _om e. _V |\n| 6 | 5 | #P_f1oen | |- ( frec ( ( x e. ZZ |-> ( x + 1 ) ) , M ) : _om -1-1-onto-> ( ZZ>= ` M ) -> _om ~~ ( ZZ>= ` M ) ) |\n| 7 | 4, 6 | #P_syl | |- ( M e. ZZ -> _om ~~ ( ZZ>= ` M ) ) |\n| 8 | 7, 1 | #P_syl6breqr | |- ( M e. ZZ -> _om ~~ Z ) |\n| 9 | 8 | #P_ensymd | |- ( M e. ZZ -> Z ~~ _om ) |",
+  "conclusion" : "#P_uzenom",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_cZ", "#T_wceq", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cM", "#T_wcel", "#T_cz", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cM", "#T_wceq", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cM", "#T_wf1o--1", "#T_com", "#T_wf1o--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_com", "#T_wcel", "#T_cvv", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cM", "#T_wf1o--1", "#T_com", "#T_wf1o--2", "#T_cuz", "#T_cfv", "#T_cM", "#T_wi", "#T_com", "#T_cen", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_com", "#T_cen", "#T_cuz", "#T_cfv", "#T_cM", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_com", "#T_cen", "#T_cZ", "#T_cM", "#T_wcel", "#T_cz", "#T_wi", "#T_cZ", "#T_cen", "#T_com" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_eqid", "#P_frec2uzf1od", "#P_f1oen", "#P_syl", "#P_syl6breqr", "#P_id", "#P_ensymd", "#P_omex" ]
+}

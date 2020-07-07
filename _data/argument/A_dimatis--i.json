@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dimatis on Metamath](http://us.metamath.org/mpegif/dimatis.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dimatis.maj | |- E. x ( ph /\\ ps ) |\n| 2 |  | dimatis.min | |- A. x ( ps -> ch ) |\n| 3 | 2 | #P_spi | |- ( ps -> ch ) |\n| 4 | 3 | #P_adantl | |- ( ( ph /\\ ps ) -> ch ) |\n| 5 |  | #P_ax-ia1 | |- ( ( ph /\\ ps ) -> ph ) |\n| 6 | 4, 5 | #P_jca | |- ( ( ph /\\ ps ) -> ( ch /\\ ph ) ) |\n| 7 | 1, 6 | #P_eximii | |- E. x ( ch /\\ ph ) |",
+  "conclusion" : "#P_dimatis",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wal", "#T_vx", "#T_wps", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wch", "#T_wa", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_adantl", "#P_ax-ia1", "#P_eximii", "#P_spi", "#P_jca" ]
+}

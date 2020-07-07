@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See riotaexg on Metamath](http://us.metamath.org/mpegif/riotaexg.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-riota | |- ( iota_ x e. A ps ) = ( iota x ( x e. A /\\ ps ) ) |\n| 2 |  | #P_uniexg | |- ( A e. V -> U. A e. _V ) |\n| 3 |  | #P_iotass | |- ( A. x ( ( x e. A /\\ ps ) -> x C_ U. A ) -> ( iota x ( x e. A /\\ ps ) ) C_ U. A ) |\n| 4 |  | #P_elssuni | |- ( x e. A -> x C_ U. A ) |\n| 5 | 4 | #P_adantr | |- ( ( x e. A /\\ ps ) -> x C_ U. A ) |\n| 6 | 3, 5 | #P_mpg | |- ( iota x ( x e. A /\\ ps ) ) C_ U. A |\n| 7 | 6 | #P_a1i | |- ( A e. V -> ( iota x ( x e. A /\\ ps ) ) C_ U. A ) |\n| 8 | 2, 7 | #P_ssexd | |- ( A e. V -> ( iota x ( x e. A /\\ ps ) ) e. _V ) |\n| 9 | 1, 8 | #P_syl5eqel | |- ( A e. V -> ( iota_ x e. A ps ) e. _V ) |",
+  "conclusion" : "#P_riotaexg",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_crio--1", "#T_vx.wal", "#T_crio--2", "#T_cA.wceq", "#T_wps", "#T_wceq", "#T_cio", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cuni", "#T_cA.wceq", "#T_wcel", "#T_cvv", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_wi", "#T_cio", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wi", "#T_vx.wal", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cio", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cio", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wss", "#T_cuni", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cV", "#T_wi", "#T_cio", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_cA.wceq", "#T_wa", "#T_wps", "#T_wcel", "#T_cvv", "#T_cA", "#T_wcel", "#T_cV", "#T_wi", "#T_crio--1", "#T_vx", "#T_crio--2", "#T_cA", "#T_wps", "#T_wcel", "#T_cvv" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_syl5eqel", "#P_uniexg", "#P_a1i", "#P_df-riota", "#P_iotass", "#P_ssexd", "#P_adantr", "#P_elssuni", "#P_mpg" ]
+}

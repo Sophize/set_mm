@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See clsslem on Metamath](http://us.metamath.org/mpegif/clsslem.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_sstr2 | |- ( R C_ S -> ( S C_ r -> R C_ r ) ) |\n| 2 | 1 | #P_anim1d | |- ( R C_ S -> ( ( S C_ r /\\ ph ) -> ( R C_ r /\\ ph ) ) ) |\n| 3 | 2 | #P_ss2abdv | |- ( R C_ S -> { r | ( S C_ r /\\ ph ) } C_ { r | ( R C_ r /\\ ph ) } ) |\n| 4 |  | #P_intss | |- ( { r | ( S C_ r /\\ ph ) } C_ { r | ( R C_ r /\\ ph ) } -> |^| { r | ( R C_ r /\\ ph ) } C_ |^| { r | ( S C_ r /\\ ph ) } ) |\n| 5 | 3, 4 | #P_syl | |- ( R C_ S -> |^| { r | ( R C_ r /\\ ph ) } C_ |^| { r | ( S C_ r /\\ ph ) } ) |",
+  "conclusion" : "#P_clsslem",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cR", "#T_wss", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_vr", "#T_wi", "#T_cR", "#T_wss", "#T_vr", "#T_cR", "#T_wss", "#T_cS", "#T_wi", "#T_cS", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_wi", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cR", "#T_wss", "#T_cS", "#T_wi", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cS", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_wss", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cS", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_wss", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_wi", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_wss", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cS", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_cR", "#T_wss", "#T_cS", "#T_wi", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cR", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3", "#T_wss", "#T_cint", "#T_cab--1", "#T_vr", "#T_cab--2", "#T_cS", "#T_wss", "#T_vr", "#T_wa", "#T_wph", "#T_cab--3" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_sstr2", "#P_ss2abdv", "#P_anim1d", "#P_syl", "#P_intss" ]
+}

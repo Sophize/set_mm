@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fresison on Metamath](http://us.metamath.org/mpegif/fresison.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | fresison.maj | |- A. x ( ph -> -. ps ) |\n| 2 |  | fresison.min | |- E. x ( ps /\\ ch ) |\n| 3 |  | #P_ax-ia2 | |- ( ( ps /\\ ch ) -> ch ) |\n| 4 | 1 | #P_spi | |- ( ph -> -. ps ) |\n| 5 | 4 | #P_con2i | |- ( ps -> -. ph ) |\n| 6 | 5 | #P_adantr | |- ( ( ps /\\ ch ) -> -. ph ) |\n| 7 | 3, 6 | #P_jca | |- ( ( ps /\\ ch ) -> ( ch /\\ -. ph ) ) |\n| 8 | 2, 7 | #P_eximii | |- E. x ( ch /\\ -. ph ) |",
+  "conclusion" : "#P_fresison",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wex", "#T_vx", "#T_wps", "#T_wa", "#T_wch", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wps", "#T_wa", "#T_wch", "#T_wi", "#T_wch", "#T_wa", "#T_wn", "#T_wph", "#T_wex", "#T_vx", "#T_wch", "#T_wa", "#T_wn", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-ia2", "#P_eximii", "#P_spi", "#P_con2i", "#P_jca", "#P_adantr" ]
+}

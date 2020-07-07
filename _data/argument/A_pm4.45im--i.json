@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See pm4.45im on Metamath](http://us.metamath.org/mpegif/pm4.45im.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-1 | |- ( ph -> ( ps -> ph ) ) |\n| 2 | 1 | #P_ancli | |- ( ph -> ( ph /\\ ( ps -> ph ) ) ) |\n| 3 |  | #P_ax-ia1 | |- ( ( ph /\\ ( ps -> ph ) ) -> ph ) |\n| 4 | 2, 3 | #P_impbii | |- ( ph <-> ( ph /\\ ( ps -> ph ) ) ) |",
+  "conclusion" : "#P_pm4.45im",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_impbii", "#P_ancli", "#P_ax-ia1", "#P_ax-1" ]
+}

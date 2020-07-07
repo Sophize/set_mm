@@ -2,8 +2,8 @@
   "citations" : [ {
     "textCitation" : "[See nfequid-o on Metamath](http://us.metamath.org/mpegif/nfequid-o.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hbequid | |- ( x = x -> A. y x = x ) |\n| 2 | 1 | #P_nfi | |- F/ y x = x |",
-  "conclusion" : "#P_nfequid-o",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hbequid | |- ( x = x -> A. y x = x ) |\n| 2 | 1 | #P_nfi | |- F/ y x = x |\n\\\n Bound-variable hypothesis builder for ` x = x ` .  This theorem tells us that any variable, including ` x ` , is effectively not free in ` x = x ` , even though ` x ` is technically free according to the traditional definition of free variable.  (The proof uses only ~ ax-4 , ~ ax-7 , ~ ax-c9 , and ~ ax-gen .  This shows that this can be proved without ~ ax6 , even though the theorem ~ equid cannot be.  A shorter proof using ~ ax6 is obtainable from ~ equid and ~ hbth .)  Remark added 2-Dec-2015 NM:  This proof does implicitly use ~ ax6v , which is used for the derivation of ~ axc9 , unless we consider ~ ax-c9 the starting axiom rather than ~ ax-13 .  (Contributed by NM, 13-Jan-2011.)  (Revised by Mario Carneiro, 12-Oct-2016.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_nfequid",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wi", "#T_wal", "#T_vy.tru", "#T_vx.wal", "#T_wceq", "#T_vx.wal", "#T_wnf", "#T_vy", "#T_vx", "#T_wceq", "#T_vx" ],
   "metaLanguage" : "METAMATH",

@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See ordon on Metamath](http://us.metamath.org/mpegif/ordon.html)"
   } ],
-  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tron | |- Tr On |\n| 2 |  | #P_df-on | |- On = { x | Ord x } |\n| 3 | 2 | #P_abeq2i | |- ( x e. On <-> Ord x ) |\n| 4 |  | #P_ordtr | |- ( Ord x -> Tr x ) |\n| 5 | 3, 4 | #P_sylbi | |- ( x e. On -> Tr x ) |\n| 6 | 5 | #P_rgen | |- A. x e. On Tr x |\n| 7 |  | #P_dford3--i | |- ( Ord On <-> ( Tr On /\\ A. x e. On Tr x ) ) |\n| 8 | 1, 6, 7 | #P_mpbir2an | |- Ord On |",
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_tron | |- Tr On |\n| 2 |  | #P_df-on | |- On = { x | Ord x } |\n| 3 | 2 | #P_abeq2i | |- ( x e. On <-> Ord x ) |\n| 4 |  | #P_ordtr | |- ( Ord x -> Tr x ) |\n| 5 | 3, 4 | #P_sylbi | |- ( x e. On -> Tr x ) |\n| 6 | 5 | #P_rgen | |- A. x e. On Tr x |\n| 7 |  | #P_df-iord | |- ( Ord On <-> ( Tr On /\\ A. x e. On Tr x ) ) |\n| 8 | 1, 6, 7 | #P_mpbir2an | |- Ord On |",
   "conclusion" : "#P_ordon",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_vx", "#T_wtr", "#T_con0", "#T_con0", "#T_wceq", "#T_cab--1", "#T_vx.wal", "#T_cab--2", "#T_word", "#T_vx.wal", "#T_cab--3", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_vx.wal", "#T_word", "#T_vx.wal", "#T_wi", "#T_wtr", "#T_vx.wal", "#T_vx.wal", "#T_wcel", "#T_con0", "#T_wi", "#T_wtr", "#T_vx.wal", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_con0", "#T_wtr", "#T_vx.wal", "#T_word", "#T_con0", "#T_wb", "#T_wtr", "#T_con0", "#T_wa", "#T_wral--1", "#T_vx.wal", "#T_wral--2", "#T_con0", "#T_wtr", "#T_vx.wal", "#T_word", "#T_con0" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_df-on", "#P_tron", "#P_ordtr", "#P_abeq2i", "#P_mpbir2an", "#P_dford3--i", "#P_rgen", "#P_sylbi" ]
+  "premises" : [ "#P_df-on", "#P_tron", "#P_ordtr", "#P_df-iord", "#P_abeq2i", "#P_mpbir2an", "#P_rgen", "#P_sylbi" ]
 }

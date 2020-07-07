@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See sb56 on Metamath](http://us.metamath.org/mpegif/sb56.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hba1 | |- ( A. x ( x = y -> ph ) -> A. x A. x ( x = y -> ph ) ) |\n| 2 |  | #P_ax11v | |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) |\n| 3 |  | #P_ax-4--i | |- ( A. x ( x = y -> ph ) -> ( x = y -> ph ) ) |\n| 4 | 3 | #P_com12 | |- ( x = y -> ( A. x ( x = y -> ph ) -> ph ) ) |\n| 5 | 2, 4 | #P_impbid | |- ( x = y -> ( ph <-> A. x ( x = y -> ph ) ) ) |\n| 6 | 1, 5 | #P_equsex--i | |- ( E. x ( x = y /\\ ph ) <-> A. x ( x = y -> ph ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ial | |- ( A. x ( x = y -> ph ) -> A. x A. x ( x = y -> ph ) ) |\n| 2 |  | #P_ax11v | |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) |\n| 3 |  | #P_ax-4--i | |- ( A. x ( x = y -> ph ) -> ( x = y -> ph ) ) |\n| 4 | 3 | #P_com12 | |- ( x = y -> ( A. x ( x = y -> ph ) -> ph ) ) |\n| 5 | 2, 4 | #P_impbid | |- ( x = y -> ( ph <-> A. x ( x = y -> ph ) ) ) |\n| 6 | 1, 5 | #P_equsex--i | |- ( E. x ( x = y /\\ ph ) <-> A. x ( x = y -> ph ) ) |",
   "conclusion" : "#P_sb56",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wb", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wph", "#T_wex", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wa", "#T_wph", "#T_wb", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_hba1", "#P_ax-4--i", "#P_impbid", "#P_equsex--i", "#P_ax11v", "#P_com12" ]
+  "premises" : [ "#P_ax-ial", "#P_ax-4--i", "#P_impbid", "#P_equsex--i", "#P_ax11v", "#P_com12" ]
 }

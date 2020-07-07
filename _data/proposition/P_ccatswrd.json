@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cword", "#T_cA", "#T_wa", "#T_cX", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cY", "#T_w3a--1", "#T_cY", "#T_wcel", "#T_cc0", "#T_cfz", "#T_cZ", "#T_w3a--2", "#T_cZ", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cS", "#T_wi", "#T_cS", "#T_csubstr", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cY", "#T_cop--3", "#T_cconcat", "#T_cS", "#T_csubstr", "#T_cop--1", "#T_cY", "#T_cop--2", "#T_cZ", "#T_cop--3", "#T_wceq", "#T_cS", "#T_csubstr", "#T_cop--1", "#T_cX", "#T_cop--2", "#T_cZ", "#T_cop--3" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Joining two adjacent subwords makes a longer subword.  (Contributed by Stefan O'Rear, 20-Aug-2015.) ",
-  "statement" : "ccatswrd $p |- ( ( S e. Word A /\\ ( X e. ( 0 ... Y ) /\\ Y e. ( 0 ... Z ) /\\ Z e. ( 0 ... ( # ` S ) ) ) ) -> ( ( S substr <. X , Y >. ) concat ( S substr <. Y , Z >. ) ) = ( S substr <. X , Z >. ) ) $."
+  "statement" : "ccatswrd $p |- ( ( S e. Word A /\\ ( X e. ( 0 ... Y ) /\\ Y e. ( 0 ... Z ) /\\ Z e. ( 0 ... ( # ` S ) ) ) ) -> ( ( S substr <. X , Y >. ) ++ ( S substr <. Y , Z >. ) ) = ( S substr <. X , Z >. ) ) $."
 }

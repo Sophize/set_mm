@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See elsymdifxor on Metamath](http://us.metamath.org/mpegif/elsymdifxor.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xnor | |- ( ( A e. B <-> A e. C ) <-> -. ( A e. B \\/_ A e. C ) ) |\n| 2 | 1 | #P_notbii | |- ( -. ( A e. B <-> A e. C ) <-> -. -. ( A e. B \\/_ A e. C ) ) |\n| 3 |  | #P_elsymdif | |- ( A e. ( B /_\\ C ) <-> -. ( A e. B <-> A e. C ) ) |\n| 4 |  | #P_notnot | |- ( ( A e. B \\/_ A e. C ) <-> -. -. ( A e. B \\/_ A e. C ) ) |\n| 5 | 2, 3, 4 | #P_3bitr4i | |- ( A e. ( B /_\\ C ) <-> ( A e. B \\/_ A e. C ) ) |",
+  "conclusion" : "#P_elsymdifxor",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wxo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_wn", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wxo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_csymdif", "#T_cC", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wb", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wxo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_wb", "#T_wn", "#T_wn", "#T_cA.wceq", "#T_wcel", "#T_cB.wceq", "#T_wxo", "#T_cA.wceq", "#T_wcel", "#T_cC", "#T_cA", "#T_wcel", "#T_cB", "#T_csymdif", "#T_cC", "#T_wb", "#T_cA", "#T_wcel", "#T_cB", "#T_wxo", "#T_cA", "#T_wcel", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_notbii", "#P_notnot", "#P_3bitr4i", "#P_xnor", "#P_elsymdif" ]
+}

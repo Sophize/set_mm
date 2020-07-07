@@ -2,7 +2,7 @@
   "citations" : [ {
     "textCitation" : "[See cats1cli on Metamath](http://us.metamath.org/mpegif/cats1cli.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cats1cld.1 | |- T = ( S concat <\" X \"> ) |\n| 2 |  | cats1cli.2 | |- S e. Word _V |\n| 3 |  | #P_s1cli | |- <\" X \"> e. Word _V |\n| 4 |  | #P_ccatcl | |- ( ( S e. Word _V /\\ <\" X \"> e. Word _V ) -> ( S concat <\" X \"> ) e. Word _V ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( S concat <\" X \"> ) e. Word _V |\n| 6 | 1, 5 | #P_eqeltri | |- T e. Word _V |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | cats1cld.1 | |- T = ( S ++ <\" X \"> ) |\n| 2 |  | cats1cli.2 | |- S e. Word _V |\n| 3 |  | #P_s1cli | |- <\" X \"> e. Word _V |\n| 4 |  | #P_ccatcl | |- ( ( S e. Word _V /\\ <\" X \"> e. Word _V ) -> ( S ++ <\" X \"> ) e. Word _V ) |\n| 5 | 2, 3, 4 | #P_mp2an | |- ( S ++ <\" X \"> ) e. Word _V |\n| 6 | 1, 5 | #P_eqeltri | |- T e. Word _V |",
   "conclusion" : "#P_cats1cli",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_cS", "#T_wcel", "#T_cword", "#T_cvv", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cS", "#T_wcel", "#T_cword", "#T_cvv", "#T_wa", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_wi", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wcel", "#T_cword", "#T_cvv", "#T_cT", "#T_wcel", "#T_cword", "#T_cvv" ],

@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cS", "#T_wcel", "#T_cword", "#T_cA", "#T_wph", "#T_wi", "#T_cX", "#T_wcel", "#T_cA", "#T_wph", "#T_wi", "#T_cF", "#T_wf--1", "#T_cA", "#T_wf--2", "#T_cB", "#T_wph", "#T_wi", "#T_cF", "#T_ccom", "#T_cS", "#T_wceq", "#T_cU", "#T_cV", "#T_wceq", "#T_cU", "#T_cconcat", "#T_cs1--1", "#T_cF", "#T_cfv", "#T_cX", "#T_cs1--2", "#T_wph", "#T_wi", "#T_cF", "#T_ccom", "#T_cT", "#T_wceq", "#T_cV" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Closure of concatenation with a singleton.  (Contributed by Mario Carneiro, 26-Feb-2016.) ",
-  "statement" : "cats1cld.1 $e |- T = ( S concat <\" X \"> ) $.\ncats1cld.2 $e |- ( ph -> S e. Word A ) $.\ncats1cld.3 $e |- ( ph -> X e. A ) $.\ncats1co.4 $e |- ( ph -> F : A --> B ) $.\ncats1co.5 $e |- ( ph -> ( F o. S ) = U ) $.\ncats1co.6 $e |- V = ( U concat <\" ( F ` X ) \"> ) $.\ncats1co $p |- ( ph -> ( F o. T ) = V ) $."
+  "statement" : "cats1cld.1 $e |- T = ( S ++ <\" X \"> ) $.\ncats1cld.2 $e |- ( ph -> S e. Word A ) $.\ncats1cld.3 $e |- ( ph -> X e. A ) $.\ncats1co.4 $e |- ( ph -> F : A --> B ) $.\ncats1co.5 $e |- ( ph -> ( F o. S ) = U ) $.\ncats1co.6 $e |- V = ( U ++ <\" ( F ` X ) \"> ) $.\ncats1co $p |- ( ph -> ( F o. T ) = V ) $."
 }

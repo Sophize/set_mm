@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See frec2uz0d on Metamath](http://us.metamath.org/mpegif/frec2uz0d.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | frec2uz.1 | |- ( ph -> C e. ZZ ) |\n| 2 |  | frec2uz.2 | |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) |\n| 3 | 2 | #P_fveq1i | |- ( G ` (/) ) = ( frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) ` (/) ) |\n| 4 |  | #P_frec0g | |- ( C e. ZZ -> ( frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) ` (/) ) = C ) |\n| 5 | 1, 4 | #P_syl | |- ( ph -> ( frec ( ( x e. ZZ |-> ( x + 1 ) ) , C ) ` (/) ) = C ) |\n| 6 | 3, 5 | #P_syl5eq | |- ( ph -> ( G ` (/) ) = C ) |",
+  "conclusion" : "#P_frec2uz0d",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_cC", "#T_wcel", "#T_cz", "#T_cG", "#T_wceq", "#T_cfrec--1", "#T_vx", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cC", "#T_cG", "#T_cfv", "#T_c0", "#T_wceq", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cC", "#T_cfv", "#T_c0", "#T_cC", "#T_wcel", "#T_cz", "#T_wi", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cC", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cfrec--1", "#T_vx.wal", "#T_cmpt--1", "#T_cz", "#T_cmpt--2", "#T_vx.wal", "#T_caddc", "#T_c1", "#T_cfrec--2", "#T_cC", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC", "#T_wph", "#T_wi", "#T_cG", "#T_cfv", "#T_c0", "#T_wceq", "#T_cC" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fveq1i", "#P_syl", "#P_syl5eq", "#P_frec0g" ]
+}

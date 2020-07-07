@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See pm2.18dc on Metamath](http://us.metamath.org/mpegif/pm2.18dc.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_pm2.21 | |- ( -. ph -> ( ph -> -. ( -. ph -> ph ) ) ) |\n| 2 | 1 | #P_a2i | |- ( ( -. ph -> ph ) -> ( -. ph -> -. ( -. ph -> ph ) ) ) |\n| 3 |  | #P_condc | |- ( DECID ph -> ( ( -. ph -> -. ( -. ph -> ph ) ) -> ( ( -. ph -> ph ) -> ph ) ) ) |\n| 4 | 2, 3 | #P_syl5 | |- ( DECID ph -> ( ( -. ph -> ph ) -> ( ( -. ph -> ph ) -> ph ) ) ) |\n| 5 | 4 | #P_pm2.43d | |- ( DECID ph -> ( ( -. ph -> ph ) -> ph ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-in2 | |- ( -. ph -> ( ph -> -. ( -. ph -> ph ) ) ) |\n| 2 | 1 | #P_a2i | |- ( ( -. ph -> ph ) -> ( -. ph -> -. ( -. ph -> ph ) ) ) |\n| 3 |  | #P_condc | |- ( DECID ph -> ( ( -. ph -> -. ( -. ph -> ph ) ) -> ( ( -. ph -> ph ) -> ph ) ) ) |\n| 4 | 2, 3 | #P_syl5 | |- ( DECID ph -> ( ( -. ph -> ph ) -> ( ( -. ph -> ph ) -> ph ) ) ) |\n| 5 | 4 | #P_pm2.43d | |- ( DECID ph -> ( ( -. ph -> ph ) -> ph ) ) |",
   "conclusion" : "#P_pm2.18dc",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wdc", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_condc", "#P_pm2.21", "#P_pm2.43d", "#P_a2i", "#P_syl5" ]
+  "premises" : [ "#P_condc", "#P_pm2.43d", "#P_ax-in2", "#P_a2i", "#P_syl5" ]
 }

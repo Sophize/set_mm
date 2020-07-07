@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See eupicka on Metamath](http://us.metamath.org/mpegif/eupicka.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hbeu1 | |- ( E! x ph -> A. x E! x ph ) |\n| 2 |  | #P_hbe1 | |- ( E. x ( ph /\\ ps ) -> A. x E. x ( ph /\\ ps ) ) |\n| 3 | 1, 2 | #P_hban | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( E! x ph /\\ E. x ( ph /\\ ps ) ) ) |\n| 4 |  | #P_eupick | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) |\n| 5 | 3, 4 | #P_alrimih | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( ph -> ps ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_hbeu1 | |- ( E! x ph -> A. x E! x ph ) |\n| 2 |  | #P_ax-ie1 | |- ( E. x ( ph /\\ ps ) -> A. x E. x ( ph /\\ ps ) ) |\n| 3 | 1, 2 | #P_hban | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( E! x ph /\\ E. x ( ph /\\ ps ) ) ) |\n| 4 |  | #P_eupick | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> ( ph -> ps ) ) |\n| 5 | 3, 4 | #P_alrimih | |- ( ( E! x ph /\\ E. x ( ph /\\ ps ) ) -> A. x ( ph -> ps ) ) |",
   "conclusion" : "#P_eupicka",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_weu", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wal", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx.wal", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_weu", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wex", "#T_vx.wal", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_weu", "#T_vx", "#T_wph", "#T_wa", "#T_wex", "#T_vx", "#T_wph", "#T_wa", "#T_wps", "#T_wi", "#T_wal", "#T_vx", "#T_wph", "#T_wi", "#T_wps" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_hban", "#P_hbe1", "#P_eupick", "#P_alrimih", "#P_hbeu1" ]
+  "premises" : [ "#P_hban", "#P_ax-ie1", "#P_eupick", "#P_alrimih", "#P_hbeu1" ]
 }

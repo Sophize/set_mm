@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See merlem2 on Metamath](http://us.metamath.org/mpegif/merlem2.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_merlem1 | |- ( ( ( ( ch -> ch ) -> ( -. ph -> -. th ) ) -> ph ) -> ( ph -> ph ) ) |\n| 2 |  | #P_ax-meredith | |- ( ( ( ( ( ch -> ch ) -> ( -. ph -> -. th ) ) -> ph ) -> ( ph -> ph ) ) -> ( ( ( ph -> ph ) -> ch ) -> ( th -> ch ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ( ph -> ph ) -> ch ) -> ( th -> ch ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_merlem1 | |- ( ( ( ( ch -> ch ) -> ( -. ph -> -. th ) ) -> ph ) -> ( ph -> ph ) ) |\n| 2 |  | #P_meredith | |- ( ( ( ( ( ch -> ch ) -> ( -. ph -> -. th ) ) -> ph ) -> ( ph -> ph ) ) -> ( ( ( ph -> ph ) -> ch ) -> ( th -> ch ) ) ) |\n| 3 | 1, 2 | #P_ax-mp | |- ( ( ( ph -> ph ) -> ch ) -> ( th -> ch ) ) |",
   "conclusion" : "#P_merlem2",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wch", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wch", "#T_wi", "#T_wch", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_ax-meredith", "#P_ax-mp", "#P_merlem1" ]
+  "premises" : [ "#P_ax-mp", "#P_merlem1", "#P_meredith" ]
 }

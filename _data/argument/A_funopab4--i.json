@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See funopab4 on Metamath](http://us.metamath.org/mpegif/funopab4.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ia2 | |- ( ( ph /\\ y = A ) -> y = A ) |\n| 2 | 1 | #P_ssopab2i | |- { <. x , y >. | ( ph /\\ y = A ) } C_ { <. x , y >. | y = A } |\n| 3 |  | #P_funopabeq | |- Fun { <. x , y >. | y = A } |\n| 4 |  | #P_funss | |- ( { <. x , y >. | ( ph /\\ y = A ) } C_ { <. x , y >. | y = A } -> ( Fun { <. x , y >. | y = A } -> Fun { <. x , y >. | ( ph /\\ y = A ) } ) ) |\n| 5 | 2, 3, 4 | #P_mp2 | |- Fun { <. x , y >. | ( ph /\\ y = A ) } |",
+  "conclusion" : "#P_funopab4",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_wi", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wss", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wfun", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wss", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wi", "#T_wfun", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wi", "#T_wfun", "#T_copab--1", "#T_copab--2", "#T_vx.wal", "#T_copab--3", "#T_vy.tru", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_wa", "#T_vy.tru", "#T_wceq", "#T_cA.wceq", "#T_copab--6", "#T_wfun", "#T_copab--1", "#T_copab--2", "#T_vx", "#T_copab--3", "#T_vy", "#T_copab--4", "#T_copab--5", "#T_wph", "#T_wa", "#T_vy", "#T_wceq", "#T_cA", "#T_copab--6" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_mp2", "#P_funss", "#P_funopabeq", "#P_ax-ia2", "#P_ssopab2i" ]
+}

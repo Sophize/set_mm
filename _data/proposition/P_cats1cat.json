@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cT", "#T_wceq", "#T_cS", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_cA", "#T_wcel", "#T_cword", "#T_cvv", "#T_cS", "#T_wcel", "#T_cword", "#T_cvv", "#T_cC", "#T_wceq", "#T_cB", "#T_cconcat", "#T_cs1--1", "#T_cX", "#T_cs1--2", "#T_cB", "#T_wceq", "#T_cA", "#T_cconcat", "#T_cS", "#T_cC", "#T_wceq", "#T_cA", "#T_cconcat", "#T_cT" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Closure of concatenation with a singleton.  (Contributed by Mario Carneiro, 26-Feb-2016.) ",
-  "statement" : "cats1cld.1 $e |- T = ( S concat <\" X \"> ) $.\ncats1cat.2 $e |- A e. Word _V $.\ncats1cat.3 $e |- S e. Word _V $.\ncats1cat.4 $e |- C = ( B concat <\" X \"> ) $.\ncats1cat.5 $e |- B = ( A concat S ) $.\ncats1cat $p |- C = ( A concat T ) $."
+  "statement" : "cats1cld.1 $e |- T = ( S ++ <\" X \"> ) $.\ncats1cat.2 $e |- A e. Word _V $.\ncats1cat.3 $e |- S e. Word _V $.\ncats1cat.4 $e |- C = ( B ++ <\" X \"> ) $.\ncats1cat.5 $e |- B = ( A ++ S ) $.\ncats1cat $p |- C = ( A ++ T ) $."
 }

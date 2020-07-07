@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cV", "#T_wa", "#T_cF", "#T_wcel", "#T_cW", "#T_w3a--1", "#T_cT", "#T_wcel", "#T_cX", "#T_w3a--2", "#T_cR", "#T_wcel", "#T_cY", "#T_wi", "#T_cS", "#T_csplice", "#T_cotp--1", "#T_cF", "#T_cotp--2", "#T_cT", "#T_cotp--3", "#T_cR", "#T_cotp--4", "#T_wceq", "#T_cS", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cF", "#T_cop--3", "#T_cconcat", "#T_cR", "#T_cconcat", "#T_cS", "#T_csubstr", "#T_cop--1", "#T_cT", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cS", "#T_cop--3" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Value of the substring replacement operator.  (Contributed by Stefan O'Rear, 15-Aug-2015.) ",
-  "statement" : "splval $p |- ( ( S e. V /\\ ( F e. W /\\ T e. X /\\ R e. Y ) ) -> ( S splice <. F , T , R >. ) = ( ( ( S substr <. 0 , F >. ) concat R ) concat ( S substr <. T , ( # ` S ) >. ) ) ) $."
+  "statement" : "splval $p |- ( ( S e. V /\\ ( F e. W /\\ T e. X /\\ R e. Y ) ) -> ( S splice <. F , T , R >. ) = ( ( ( S substr <. 0 , F >. ) ++ R ) ++ ( S substr <. T , ( # ` S ) >. ) ) ) $."
 }

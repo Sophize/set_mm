@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See erref on Metamath](http://us.metamath.org/mpegif/erref.html)"
+  } ],
+  "argumentText" : "ARGUMENT\nx\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | ersymb.1 | |- ( ph -> R Er X ) |\n| 2 |  | erref.2 | |- ( ph -> A e. X ) |\n| 3 |  | #P_erdm | |- ( R Er X -> dom R = X ) |\n| 4 | 1, 3 | #P_syl | |- ( ph -> dom R = X ) |\n| 5 | 2, 4 | #P_eleqtrrd | |- ( ph -> A e. dom R ) |\n| 6 |  | #P_eldmg | |- ( A e. X -> ( A e. dom R <-> E. x A R x ) ) |\n| 7 | 2, 6 | #P_syl | |- ( ph -> ( A e. dom R <-> E. x A R x ) ) |\n| 8 | 5, 7 | #P_mpbid | |- ( ph -> E. x A R x ) |\n| 9 | 1 | #P_adantr | |- ( ( ph /\\ A R x ) -> R Er X ) |\n| 10 |  | #P_ax-ia2 | |- ( ( ph /\\ A R x ) -> A R x ) |\n| 11 | 9, 10, 10 | #P_ertr4d | |- ( ( ph /\\ A R x ) -> A R A ) |\n| 12 | 8, 11 | #P_exlimddv | |- ( ph -> A R A ) |",
+  "conclusion" : "#P_erref",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_vx", "#T_wph", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cX", "#T_cR", "#T_wer", "#T_cX", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cdm", "#T_cR", "#T_wceq", "#T_cX", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_cA.wceq", "#T_wcel", "#T_cX", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wph", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_cdm", "#T_cR", "#T_wb", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wph", "#T_wi", "#T_wex", "#T_vx.wal", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wi", "#T_cR", "#T_wer", "#T_cX", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wph", "#T_wa", "#T_cA.wceq", "#T_cR", "#T_vx.wal", "#T_wi", "#T_cA.wceq", "#T_cR", "#T_cA.wceq", "#T_wph", "#T_wi", "#T_cA", "#T_cR", "#T_cA" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_erdm", "#P_ertr4d", "#P_mpbid", "#P_ax-ia2", "#P_syl", "#P_eleqtrrd", "#P_eldmg", "#P_adantr", "#P_exlimddv" ]
+}

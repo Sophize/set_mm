@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cword", "#T_cB", "#T_wa", "#T_cT", "#T_wcel", "#T_cword", "#T_cB", "#T_wi", "#T_cS", "#T_cconcat", "#T_cT", "#T_csubstr", "#T_cop--1", "#T_chash", "#T_cfv", "#T_cS", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cS", "#T_caddc", "#T_chash", "#T_cfv", "#T_cT", "#T_cop--3", "#T_wceq", "#T_cT" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Recover the right half of a concatenated word.  (Contributed by Mario Carneiro, 27-Sep-2015.) ",
-  "statement" : "swrdccat2 $p |- ( ( S e. Word B /\\ T e. Word B ) -> ( ( S concat T ) substr <. ( # ` S ) , ( ( # ` S ) + ( # ` T ) ) >. ) = T ) $."
+  "statement" : "swrdccat2 $p |- ( ( S e. Word B /\\ T e. Word B ) -> ( ( S ++ T ) substr <. ( # ` S ) , ( ( # ` S ) + ( # ` T ) ) >. ) = T ) $."
 }

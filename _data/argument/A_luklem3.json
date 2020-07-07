@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See luklem3 on Metamath](http://us.metamath.org/mpegif/luklem3.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luk-3 | |- ( ph -> ( -. ph -> -. th ) ) |\n| 2 |  | #P_luklem2 | |- ( ( -. ph -> -. th ) -> ( ( ( -. ph -> ps ) -> ch ) -> ( th -> ch ) ) ) |\n| 3 | 1, 2 | #P_luklem1 | |- ( ph -> ( ( ( -. ph -> ps ) -> ch ) -> ( th -> ch ) ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luk-3 | |- ( ph -> ( -. ph -> -. th ) ) |\n| 2 |  | #P_luklem2 | |- ( ( -. ph -> -. th ) -> ( ( ( -. ph -> ps ) -> ch ) -> ( th -> ch ) ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> ( ( ( -. ph -> ps ) -> ch ) -> ( th -> ch ) ) ) |",
   "conclusion" : "#P_luklem3",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wth", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wth", "#T_wi", "#T_wch" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_luklem2", "#P_luk-3", "#P_luklem1" ]
+  "premises" : [ "#P_luklem2", "#P_luk-3", "#P_syl" ]
 }

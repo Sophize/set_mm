@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See fzo0addel on Metamath](http://us.metamath.org/mpegif/fzo0addel.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fzoaddel | |- ( ( A e. ( 0 ..^ C ) /\\ D e. ZZ ) -> ( A + D ) e. ( ( 0 + D ) ..^ ( C + D ) ) ) |\n| 2 |  | #P_zcn | |- ( D e. ZZ -> D e. CC ) |\n| 3 |  | #P_addid2 | |- ( D e. CC -> ( 0 + D ) = D ) |\n| 4 | 3 | #P_eqcomd | |- ( D e. CC -> D = ( 0 + D ) ) |\n| 5 | 2, 4 | #P_syl | |- ( D e. ZZ -> D = ( 0 + D ) ) |\n| 6 | 5 | #P_adantl | |- ( ( A e. ( 0 ..^ C ) /\\ D e. ZZ ) -> D = ( 0 + D ) ) |\n| 7 | 6 | #P_oveq1d | |- ( ( A e. ( 0 ..^ C ) /\\ D e. ZZ ) -> ( D ..^ ( C + D ) ) = ( ( 0 + D ) ..^ ( C + D ) ) ) |\n| 8 | 1, 7 | #P_eleqtrrd | |- ( ( A e. ( 0 ..^ C ) /\\ D e. ZZ ) -> ( A + D ) e. ( D ..^ ( C + D ) ) ) |",
+  "conclusion" : "#P_fzo0addel",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cC", "#T_wa", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cD", "#T_wcel", "#T_cc0", "#T_caddc", "#T_cD", "#T_cfzo", "#T_cC", "#T_caddc", "#T_cD", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cD", "#T_wcel", "#T_cc", "#T_cD", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_caddc", "#T_cD", "#T_wceq", "#T_cD", "#T_cD", "#T_wcel", "#T_cc", "#T_wi", "#T_cD", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cD", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cD", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cC", "#T_wa", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cD", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cD", "#T_cA.wceq", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cC", "#T_wa", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cD", "#T_cfzo", "#T_cC", "#T_caddc", "#T_cD", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cD", "#T_cfzo", "#T_cC", "#T_caddc", "#T_cD", "#T_cA", "#T_wcel", "#T_cc0", "#T_cfzo", "#T_cC", "#T_wa", "#T_cD", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_caddc", "#T_cD", "#T_wcel", "#T_cD", "#T_cfzo", "#T_cC", "#T_caddc", "#T_cD" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_fzoaddel", "#P_adantl", "#P_addid2", "#P_eqcomd", "#P_syl", "#P_oveq1d", "#P_eleqtrrd", "#P_zcn" ]
+}

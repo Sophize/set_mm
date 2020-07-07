@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See dral2-o on Metamath](http://us.metamath.org/mpegif/dral2-o.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dral2-o.1 | |- ( A. x x = y -> ( ph <-> ps ) ) |\n| 2 |  | #P_hbae-o | |- ( A. x x = y -> A. z A. x x = y ) |\n| 3 | 2, 1 | #P_albidh | |- ( A. x x = y -> ( A. z ph <-> A. z ps ) ) |",
-  "conclusion" : "#P_dral2-o",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dral1.1 | |- ( A. x x = y -> ( ph <-> ps ) ) |\n| 2 |  | #P_hbae | |- ( A. x x = y -> A. z A. x x = y ) |\n| 3 | 2, 1 | #P_albidh | |- ( A. x x = y -> ( A. z ph <-> A. z ps ) ) |\n\\\n Formula-building lemma for use with the Distinctor Reduction Theorem. Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).  Version of ~ dral2 using ~ ax-c11 .  (Contributed by NM, 27-Feb-2005.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_dral2",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wph", "#T_wb", "#T_wps", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wi", "#T_wal", "#T_vz", "#T_wal", "#T_vx.wal", "#T_vx.wal", "#T_wceq", "#T_vy.tru", "#T_wal", "#T_vx", "#T_vx", "#T_wceq", "#T_vy", "#T_wi", "#T_wal", "#T_vz", "#T_wph", "#T_wb", "#T_wal", "#T_vz", "#T_wps" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_hbae-o", "#P_albidh" ]
+  "premises" : [ "#P_albidh", "#P_hbae" ]
 }

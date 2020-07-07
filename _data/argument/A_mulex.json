@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See mulex on Metamath](http://us.metamath.org/mpegif/mulex.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-mulf | |- x. : ( CC X. CC ) --> CC |\n| 2 |  | #P_cnex | |- CC e. _V |\n| 3 | 2, 2 | #P_xpex | |- ( CC X. CC ) e. _V |\n| 4 |  | #P_fex2 | |- ( ( x. : ( CC X. CC ) --> CC /\\ ( CC X. CC ) e. _V /\\ CC e. _V ) -> x. e. _V ) |\n| 5 | 1, 3, 2, 4 | #P_mp3an | |- x. e. _V |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_axmulf | |- x. : ( CC X. CC ) --> CC |\n| 2 |  | #P_cnex | |- CC e. _V |\n| 3 | 2, 2 | #P_xpex | |- ( CC X. CC ) e. _V |\n| 4 |  | #P_fex2 | |- ( ( x. : ( CC X. CC ) --> CC /\\ ( CC X. CC ) e. _V /\\ CC e. _V ) -> x. e. _V ) |\n| 5 | 1, 3, 2, 4 | #P_mp3an | |- x. e. _V |",
   "conclusion" : "#P_mulex",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cmul", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wf--2", "#T_cc", "#T_cc", "#T_wcel", "#T_cvv", "#T_cc", "#T_cxp", "#T_cc", "#T_wcel", "#T_cvv", "#T_cmul", "#T_wf--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wf--2", "#T_cc", "#T_w3a--1", "#T_cc", "#T_cxp", "#T_cc", "#T_wcel", "#T_cvv", "#T_w3a--2", "#T_cc", "#T_wcel", "#T_cvv", "#T_wi", "#T_cmul", "#T_wcel", "#T_cvv", "#T_cmul", "#T_wcel", "#T_cvv" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_mp3an", "#P_fex2", "#P_cnex", "#P_ax-mulf", "#P_xpex" ]
+  "premises" : [ "#P_mp3an", "#P_fex2", "#P_axmulf", "#P_cnex", "#P_xpex" ]
 }

@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See freccl on Metamath](http://us.metamath.org/mpegif/freccl.html)"
+  } ],
+  "names" : [ "freccl" ],
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wal", "#T_vz", "#T_cF", "#T_cfv", "#T_vz", "#T_wcel", "#T_cvv", "#T_wph", "#T_wi", "#T_cA", "#T_wcel", "#T_cS", "#T_wph", "#T_wa", "#T_vz", "#T_wcel", "#T_cS", "#T_wi", "#T_cF", "#T_cfv", "#T_vz", "#T_wcel", "#T_cS", "#T_wph", "#T_wi", "#T_cB", "#T_wcel", "#T_com", "#T_wph", "#T_wi", "#T_cfrec--1", "#T_cF", "#T_cfrec--2", "#T_cA", "#T_cfv", "#T_cB", "#T_wcel", "#T_cS", "#T_cA", "#T_vz", "#T_cF", "#T_vz", "#T_cS", "#T_vz", "#T_wph", "#T_vz" ],
+  "metaLanguage" : "METAMATH",
+  "remarks" : " Closure for finite recursion.  (Contributed by Jim Kingdon, 25-May-2020.) ",
+  "statement" : "freccl.ex $e |- ( ph -> A. z ( F ` z ) e. _V ) $.\nfreccl.a $e |- ( ph -> A e. S ) $.\nfreccl.cl $e |- ( ( ph /\\ z e. S ) -> ( F ` z ) e. S ) $.\nfreccl.b $e |- ( ph -> B e. _om ) $.\nfreccl $p |- ( ph -> ( frec ( F , A ) ` B ) e. S ) $.\n$d A z $.\n$d F z $.\n$d S z $.\n$d ph z $."
+}

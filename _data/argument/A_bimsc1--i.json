@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See bimsc1 on Metamath](http://us.metamath.org/mpegif/bimsc1.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ax-ia2 | |- ( ( ps /\\ ph ) -> ph ) |\n| 2 |  | #P_ancr | |- ( ( ph -> ps ) -> ( ph -> ( ps /\\ ph ) ) ) |\n| 3 | 1, 2 | #P_impbid2 | |- ( ( ph -> ps ) -> ( ( ps /\\ ph ) <-> ph ) ) |\n| 4 | 3 | #P_bibi2d | |- ( ( ph -> ps ) -> ( ( ch <-> ( ps /\\ ph ) ) <-> ( ch <-> ph ) ) ) |\n| 5 | 4 | #P_biimpa | |- ( ( ( ph -> ps ) /\\ ( ch <-> ( ps /\\ ph ) ) ) -> ( ch <-> ph ) ) |",
+  "conclusion" : "#P_bimsc1",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wa", "#T_wph", "#T_wb", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wb", "#T_wch", "#T_wb", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wa", "#T_wch", "#T_wb", "#T_wps", "#T_wa", "#T_wph", "#T_wi", "#T_wch", "#T_wb", "#T_wph" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_biimpa", "#P_ax-ia2", "#P_ancr", "#P_bibi2d", "#P_impbid2" ]
+}

@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See ax3 on Metamath](http://us.metamath.org/mpegif/ax3.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luklem2 | |- ( ( -. ph -> -. ps ) -> ( ( ( -. ph -> ph ) -> ph ) -> ( ps -> ph ) ) ) |\n| 2 |  | #P_luklem4 | |- ( ( ( ( -. ph -> ph ) -> ph ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) |\n| 3 | 1, 2 | #P_luklem1 | |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) |",
-  "conclusion" : "#P_ax3",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_luklem2 | |- ( ( -. ph -> -. ps ) -> ( ( ( -. ph -> ph ) -> ph ) -> ( ps -> ph ) ) ) |\n| 2 |  | #P_luklem4 | |- ( ( ( ( -. ph -> ph ) -> ph ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) |\n| 3 | 1, 2 | #P_syl | |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) |\n\\\n Standard propositional axiom derived from Lukasiewicz axioms. (Contributed by NM, 22-Dec-2002.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_ax-3",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wph", "#T_wn", "#T_wph", "#T_wi", "#T_wn", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wph" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_luklem2", "#P_luklem1", "#P_luklem4" ]
+  "premises" : [ "#P_luklem2", "#P_syl", "#P_luklem4" ]
 }

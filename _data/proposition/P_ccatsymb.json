@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cA", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_cB", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--2", "#T_cI", "#T_wcel", "#T_cz", "#T_wi", "#T_cA", "#T_cconcat", "#T_cB", "#T_cfv", "#T_cI", "#T_wceq", "#T_cif--1", "#T_cI", "#T_clt", "#T_chash", "#T_cfv", "#T_cA", "#T_cif--2", "#T_cA", "#T_cfv", "#T_cI", "#T_cif--3", "#T_cB", "#T_cfv", "#T_cI", "#T_cmin", "#T_chash", "#T_cfv", "#T_cA" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " The symbol at a given position in a concatenated word.  (Contributed by AV, 26-May-2018.)  (Proof shortened by AV, 24-Nov-2018.) ",
-  "statement" : "ccatsymb $p |- ( ( A e. Word V /\\ B e. Word V /\\ I e. ZZ ) -> ( ( A concat B ) ` I ) = if ( I < ( # ` A ) , ( A ` I ) , ( B ` ( I - ( # ` A ) ) ) ) ) $."
+  "statement" : "ccatsymb $p |- ( ( A e. Word V /\\ B e. Word V /\\ I e. ZZ ) -> ( ( A ++ B ) ` I ) = if ( I < ( # ` A ) , ( A ` I ) , ( B ` ( I - ( # ` A ) ) ) ) ) $."
 }

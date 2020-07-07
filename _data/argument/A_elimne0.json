@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See elimne0 on Metamath](http://us.metamath.org/mpegif/elimne0.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neeq1 | |- ( A = if ( A =/= 0 , A , 1 ) -> ( A =/= 0 <-> if ( A =/= 0 , A , 1 ) =/= 0 ) ) |\n| 2 |  | #P_neeq1 | |- ( 1 = if ( A =/= 0 , A , 1 ) -> ( 1 =/= 0 <-> if ( A =/= 0 , A , 1 ) =/= 0 ) ) |\n| 3 |  | #P_ax-1ne0 | |- 1 =/= 0 |\n| 4 | 1, 2, 3 | #P_elimhyp | |- if ( A =/= 0 , A , 1 ) =/= 0 |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_neeq1 | |- ( A = if ( A =/= 0 , A , 1 ) -> ( A =/= 0 <-> if ( A =/= 0 , A , 1 ) =/= 0 ) ) |\n| 2 |  | #P_neeq1 | |- ( 1 = if ( A =/= 0 , A , 1 ) -> ( 1 =/= 0 <-> if ( A =/= 0 , A , 1 ) =/= 0 ) ) |\n| 3 |  | #P_ax1ne0 | |- 1 =/= 0 |\n| 4 | 1, 2, 3 | #P_elimhyp | |- if ( A =/= 0 , A , 1 ) =/= 0 |",
   "conclusion" : "#P_elimne0",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cA.wceq", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wi", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_wb", "#T_cif--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wne", "#T_cc0", "#T_c1", "#T_wceq", "#T_cif--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wi", "#T_c1", "#T_wne", "#T_cc0", "#T_wb", "#T_cif--1", "#T_cA.wceq", "#T_wne", "#T_cc0", "#T_cif--2", "#T_cA.wceq", "#T_cif--3", "#T_c1", "#T_wne", "#T_cc0", "#T_c1", "#T_wne", "#T_cc0", "#T_cif--1", "#T_cA", "#T_wne", "#T_cc0", "#T_cif--2", "#T_cA", "#T_cif--3", "#T_c1", "#T_wne", "#T_cc0" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_neeq1", "#P_elimhyp", "#P_ax-1ne0" ]
+  "premises" : [ "#P_ax1ne0", "#P_neeq1", "#P_elimhyp" ]
 }

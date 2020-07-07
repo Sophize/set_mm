@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See addid2 on Metamath](http://us.metamath.org/mpegif/addid2.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0cn | |- 0 e. CC |\n| 2 |  | #P_addcom | |- ( ( A e. CC /\\ 0 e. CC ) -> ( A + 0 ) = ( 0 + A ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. CC -> ( A + 0 ) = ( 0 + A ) ) |\n| 4 |  | #P_addid1 | |- ( A e. CC -> ( A + 0 ) = A ) |\n| 5 | 3, 4 | #P_eqtr3d | |- ( A e. CC -> ( 0 + A ) = A ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_0cn | |- 0 e. CC |\n| 2 |  | #P_addcom | |- ( ( A e. CC /\\ 0 e. CC ) -> ( A + 0 ) = ( 0 + A ) ) |\n| 3 | 1, 2 | #P_mpan2 | |- ( A e. CC -> ( A + 0 ) = ( 0 + A ) ) |\n| 4 |  | #P_ax0id | |- ( A e. CC -> ( A + 0 ) = A ) |\n| 5 | 3, 4 | #P_eqtr3d | |- ( A e. CC -> ( 0 + A ) = A ) |",
   "conclusion" : "#P_addid2",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cc0", "#T_wcel", "#T_cc", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wa", "#T_cc0", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cc0", "#T_caddc", "#T_cA.wceq", "#T_cA.wceq", "#T_wcel", "#T_cc", "#T_wi", "#T_cA.wceq", "#T_caddc", "#T_cc0", "#T_wceq", "#T_cA.wceq", "#T_cA", "#T_wcel", "#T_cc", "#T_wi", "#T_cc0", "#T_caddc", "#T_cA", "#T_wceq", "#T_cA" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_0cn", "#P_addid1", "#P_mpan2", "#P_eqtr3d", "#P_addcom" ]
+  "premises" : [ "#P_ax0id", "#P_0cn", "#P_mpan2", "#P_eqtr3d", "#P_addcom" ]
 }

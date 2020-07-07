@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See recnprss on Metamath](http://us.metamath.org/mpegif/recnprss.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elpri | |- ( S e. { RR , CC } -> ( S = RR \\/ S = CC ) ) |\n| 2 |  | #P_ax-resscn | |- RR C_ CC |\n| 3 |  | #P_sseq1 | |- ( S = RR -> ( S C_ CC <-> RR C_ CC ) ) |\n| 4 | 2, 3 | #P_mpbiri | |- ( S = RR -> S C_ CC ) |\n| 5 |  | #P_eqimss | |- ( S = CC -> S C_ CC ) |\n| 6 | 4, 5 | #P_jaoi | |- ( ( S = RR \\/ S = CC ) -> S C_ CC ) |\n| 7 | 1, 6 | #P_syl | |- ( S e. { RR , CC } -> S C_ CC ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_elpri | |- ( S e. { RR , CC } -> ( S = RR \\/ S = CC ) ) |\n| 2 |  | #P_axresscn | |- RR C_ CC |\n| 3 |  | #P_sseq1 | |- ( S = RR -> ( S C_ CC <-> RR C_ CC ) ) |\n| 4 | 2, 3 | #P_mpbiri | |- ( S = RR -> S C_ CC ) |\n| 5 |  | #P_eqimss | |- ( S = CC -> S C_ CC ) |\n| 6 | 4, 5 | #P_jaoi | |- ( ( S = RR \\/ S = CC ) -> S C_ CC ) |\n| 7 | 1, 6 | #P_syl | |- ( S e. { RR , CC } -> S C_ CC ) |",
   "conclusion" : "#P_recnprss",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_cS", "#T_wceq", "#T_cr", "#T_wo", "#T_cS", "#T_wceq", "#T_cc", "#T_cr", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cr", "#T_wi", "#T_cS", "#T_wss", "#T_cc", "#T_wb", "#T_cr", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cr", "#T_wi", "#T_cS", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cc", "#T_wi", "#T_cS", "#T_wss", "#T_cc", "#T_cS", "#T_wceq", "#T_cr", "#T_wo", "#T_cS", "#T_wceq", "#T_cc", "#T_wi", "#T_cS", "#T_wss", "#T_cc", "#T_cS", "#T_wcel", "#T_cpr--1", "#T_cr", "#T_cpr--2", "#T_cc", "#T_cpr--3", "#T_wi", "#T_cS", "#T_wss", "#T_cc" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_ax-resscn", "#P_sseq1", "#P_mpbiri", "#P_elpri", "#P_jaoi", "#P_syl", "#P_eqimss" ]
+  "premises" : [ "#P_sseq1", "#P_mpbiri", "#P_elpri", "#P_jaoi", "#P_syl", "#P_eqimss", "#P_axresscn" ]
 }

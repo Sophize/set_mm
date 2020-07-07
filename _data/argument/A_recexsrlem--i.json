@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See recexsrlem on Metamath](http://us.metamath.org/mpegif/recexsrlem.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recexgt0sr | |- ( 0R <R A -> E. x e. R. ( 0R <R x /\\ ( A .R x ) = 1R ) ) |\n| 2 |  | #P_simpr | |- ( ( 0R <R x /\\ ( A .R x ) = 1R ) -> ( A .R x ) = 1R ) |\n| 3 | 2 | #P_reximi | |- ( E. x e. R. ( 0R <R x /\\ ( A .R x ) = 1R ) -> E. x e. R. ( A .R x ) = 1R ) |\n| 4 | 1, 3 | #P_syl | |- ( 0R <R A -> E. x e. R. ( A .R x ) = 1R ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_recexgt0sr | |- ( 0R <R A -> E. x e. R. ( 0R <R x /\\ ( A .R x ) = 1R ) ) |\n| 2 |  | #P_ax-ia2 | |- ( ( 0R <R x /\\ ( A .R x ) = 1R ) -> ( A .R x ) = 1R ) |\n| 3 | 2 | #P_reximi | |- ( E. x e. R. ( 0R <R x /\\ ( A .R x ) = 1R ) -> E. x e. R. ( A .R x ) = 1R ) |\n| 4 | 1, 3 | #P_syl | |- ( 0R <R A -> E. x e. R. ( A .R x ) = 1R ) |",
   "conclusion" : "#P_recexsrlem",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_c0r", "#T_cltr", "#T_cA.wceq", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cnr", "#T_c0r", "#T_cltr", "#T_vx.wal", "#T_wa", "#T_cA.wceq", "#T_cmr", "#T_vx.wal", "#T_wceq", "#T_c1r", "#T_c0r", "#T_cltr", "#T_vx.wal", "#T_wa", "#T_cA.wceq", "#T_cmr", "#T_vx.wal", "#T_wceq", "#T_c1r", "#T_wi", "#T_cA.wceq", "#T_cmr", "#T_vx.wal", "#T_wceq", "#T_c1r", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cnr", "#T_c0r", "#T_cltr", "#T_vx.wal", "#T_wa", "#T_cA.wceq", "#T_cmr", "#T_vx.wal", "#T_wceq", "#T_c1r", "#T_wi", "#T_wrex--1", "#T_vx.wal", "#T_wrex--2", "#T_cnr", "#T_cA.wceq", "#T_cmr", "#T_vx.wal", "#T_wceq", "#T_c1r", "#T_c0r", "#T_cltr", "#T_cA", "#T_wi", "#T_wrex--1", "#T_vx", "#T_wrex--2", "#T_cnr", "#T_cA", "#T_cmr", "#T_vx", "#T_wceq", "#T_c1r" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_recexgt0sr", "#P_syl", "#P_simpr", "#P_reximi" ]
+  "premises" : [ "#P_recexgt0sr", "#P_ax-ia2", "#P_syl", "#P_reximi" ]
 }

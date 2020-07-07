@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See cadifp on Metamath](http://us.metamath.org/mpegif/cadifp.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_cad1 | |- ( ch -> ( cadd ( ph , ps , ch ) <-> ( ph \\/ ps ) ) ) |\n| 2 |  | #P_cad0 | |- ( -. ch -> ( cadd ( ph , ps , ch ) <-> ( ph /\\ ps ) ) ) |\n| 3 | 1, 2 | #P_casesifp | |- ( cadd ( ph , ps , ch ) <-> if- ( ch , ( ph \\/ ps ) , ( ph /\\ ps ) ) ) |",
+  "conclusion" : "#P_cadifp",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wch", "#T_wi", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wo", "#T_wps", "#T_wn", "#T_wch", "#T_wi", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wph", "#T_wa", "#T_wps", "#T_wcad--1", "#T_wph", "#T_wcad--2", "#T_wps", "#T_wcad--3", "#T_wch", "#T_wb", "#T_wif--1", "#T_wch", "#T_wif--2", "#T_wph", "#T_wo", "#T_wps", "#T_wif--3", "#T_wph", "#T_wa", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_casesifp", "#P_cad0", "#P_cad1" ]
+}

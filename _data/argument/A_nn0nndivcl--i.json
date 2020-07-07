@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See nn0nndivcl on Metamath](http://us.metamath.org/mpegif/nn0nndivcl.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0re | |- ( K e. NN0 -> K e. RR ) |\n| 2 | 1 | #P_adantr | |- ( ( K e. NN0 /\\ L e. NN ) -> K e. RR ) |\n| 3 |  | #P_simpr | |- ( ( K e. NN0 /\\ L e. NN ) -> L e. NN ) |\n| 4 | 2, 3 | #P_nndivred | |- ( ( K e. NN0 /\\ L e. NN ) -> ( K / L ) e. RR ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_nn0re | |- ( K e. NN0 -> K e. RR ) |\n| 2 | 1 | #P_adantr | |- ( ( K e. NN0 /\\ L e. NN ) -> K e. RR ) |\n| 3 |  | #P_ax-ia2 | |- ( ( K e. NN0 /\\ L e. NN ) -> L e. NN ) |\n| 4 | 2, 3 | #P_nndivred | |- ( ( K e. NN0 /\\ L e. NN ) -> ( K / L ) e. RR ) |",
   "conclusion" : "#P_nn0nndivcl",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_cK", "#T_wcel", "#T_cn0", "#T_wi", "#T_cK", "#T_wcel", "#T_cr", "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cK", "#T_wcel", "#T_cr", "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cL", "#T_wcel", "#T_cn", "#T_cK", "#T_wcel", "#T_cn0", "#T_wa", "#T_cL", "#T_wcel", "#T_cn", "#T_wi", "#T_cK", "#T_cdiv", "#T_cL", "#T_wcel", "#T_cr" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_nn0re", "#P_simpr", "#P_nndivred", "#P_adantr" ]
+  "premises" : [ "#P_ax-ia2", "#P_nn0re", "#P_nndivred", "#P_adantr" ]
 }

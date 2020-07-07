@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_wa", "#T_cM", "#T_wcel", "#T_cc0", "#T_cfz", "#T_chash", "#T_cfv", "#T_cW", "#T_wi", "#T_chash", "#T_cfv", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cM", "#T_cop--3", "#T_cconcat", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cM", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3", "#T_wceq", "#T_chash", "#T_cfv", "#T_cW" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " The length of two concatenated parts of a word is the length of the word. (Contributed by AV, 21-Oct-2018.) ",
-  "statement" : "lencctswrd $p |- ( ( W e. Word V /\\ M e. ( 0 ... ( # ` W ) ) ) -> ( # ` ( ( W substr <. 0 , M >. ) concat ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $."
+  "statement" : "lencctswrd $p |- ( ( W e. Word V /\\ M e. ( 0 ... ( # ` W ) ) ) -> ( # ` ( ( W substr <. 0 , M >. ) ++ ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $."
 }

@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See olc on Metamath](http://us.metamath.org/mpegif/olc.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( ( ps \\/ ph ) -> ( ps \\/ ph ) ) |\n| 2 |  | #P_jaob | |- ( ( ( ps \\/ ph ) -> ( ps \\/ ph ) ) <-> ( ( ps -> ( ps \\/ ph ) ) /\\ ( ph -> ( ps \\/ ph ) ) ) ) |\n| 3 | 1, 2 | #P_mpbi | |- ( ( ps -> ( ps \\/ ph ) ) /\\ ( ph -> ( ps \\/ ph ) ) ) |\n| 4 | 3 | #P_simpri | |- ( ph -> ( ps \\/ ph ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_id | |- ( ( ps \\/ ph ) -> ( ps \\/ ph ) ) |\n| 2 |  | #P_ax-io | |- ( ( ( ps \\/ ph ) -> ( ps \\/ ph ) ) <-> ( ( ps -> ( ps \\/ ph ) ) /\\ ( ph -> ( ps \\/ ph ) ) ) ) |\n| 3 | 1, 2 | #P_mpbi | |- ( ( ps -> ( ps \\/ ph ) ) /\\ ( ph -> ( ps \\/ ph ) ) ) |\n| 4 | 3 | #P_simpri | |- ( ph -> ( ps \\/ ph ) ) |",
   "conclusion" : "#P_olc",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wps", "#T_wo", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wb", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wps", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wa", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph", "#T_wph", "#T_wi", "#T_wps", "#T_wo", "#T_wph" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_simpri", "#P_jaob", "#P_mpbi", "#P_id" ]
+  "premises" : [ "#P_simpri", "#P_mpbi", "#P_ax-io", "#P_id" ]
 }

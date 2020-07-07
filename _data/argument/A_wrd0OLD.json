@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See wrd0OLD on Metamath](http://us.metamath.org/mpegif/wrd0OLD.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_f0 | |- (/) : (/) --> S |\n| 2 |  | #P_fzo0 | |- ( 0 ..^ 0 ) = (/) |\n| 3 | 2 | #P_feq2i | |- ( (/) : ( 0 ..^ 0 ) --> S <-> (/) : (/) --> S ) |\n| 4 | 1, 3 | #P_mpbir | |- (/) : ( 0 ..^ 0 ) --> S |\n| 5 |  | #P_iswrdi | |- ( (/) : ( 0 ..^ 0 ) --> S -> (/) e. Word S ) |\n| 6 | 4, 5 | #P_ax-mp | |- (/) e. Word S |\n\\\n Obsolete proof of ~ wrd0 as of 13-May-2020.  (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Proof modification is discouraged.) (New usage is discouraged.) ",
+  "conclusion" : "#P_wrd0",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cS", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_wceq", "#T_c0", "#T_c0", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_wf--2", "#T_cS", "#T_wb", "#T_c0", "#T_wf--1", "#T_c0", "#T_wf--2", "#T_cS", "#T_c0", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_wf--2", "#T_cS", "#T_c0", "#T_wf--1", "#T_cc0", "#T_cfzo", "#T_cc0", "#T_wf--2", "#T_cS", "#T_wi", "#T_c0", "#T_wcel", "#T_cword", "#T_cS", "#T_c0", "#T_wcel", "#T_cword", "#T_cS" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ax-mp", "#P_feq2i", "#P_mpbir", "#P_iswrdi", "#P_f0", "#P_fzo0" ]
+}

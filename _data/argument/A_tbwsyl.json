@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See tbwsyl on Metamath](http://us.metamath.org/mpegif/tbwsyl.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | tbwsyl.1 | |- ( ph -> ps ) |\n| 2 |  | tbwsyl.2 | |- ( ps -> ch ) |\n| 3 |  | #P_tbw-ax1 | |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- ( ( ps -> ch ) -> ( ph -> ch ) ) |\n| 5 | 2, 4 | #P_ax-mp | |- ( ph -> ch ) |",
-  "conclusion" : "#P_tbwsyl",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | syl.1 | |- ( ph -> ps ) |\n| 2 |  | syl.2 | |- ( ps -> ch ) |\n| 3 |  | #P_imim1 | |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) |\n| 4 | 1, 3 | #P_ax-mp | |- ( ( ps -> ch ) -> ( ph -> ch ) ) |\n| 5 | 2, 4 | #P_ax-mp | |- ( ph -> ch ) |\n\\\n Used to rederive the Lukasiewicz axioms from Tarski-Bernays-Wajsberg'. (Contributed by Anthony Hart, 16-Aug-2011.) (Proof modification is discouraged.)  (New usage is discouraged.) ",
+  "conclusion" : "#P_syl",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wps", "#T_wps", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wps", "#T_wi", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wps", "#T_wi", "#T_wch", "#T_wi", "#T_wph", "#T_wi", "#T_wch", "#T_wph", "#T_wi", "#T_wch" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_ax-mp", "#P_tbw-ax1" ]
+  "premises" : [ "#P_ax-mp", "#P_imim1" ]
 }

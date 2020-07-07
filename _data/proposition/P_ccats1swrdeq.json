@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--1", "#T_cU", "#T_wcel", "#T_cword", "#T_cV", "#T_w3a--2", "#T_chash", "#T_cfv", "#T_cU", "#T_wceq", "#T_chash", "#T_cfv", "#T_cW", "#T_caddc", "#T_c1", "#T_wi", "#T_cW", "#T_wceq", "#T_cU", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3", "#T_wi", "#T_cU", "#T_wceq", "#T_cW", "#T_cconcat", "#T_cs1--1", "#T_clsw", "#T_cfv", "#T_cU", "#T_cs1--2" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " The last symbol of a word concatenated with the subword of the word having length less by 1 than the word results in the word itself.  (Contributed by Alexander van der Vekens, 24-Oct-2018.) ",
-  "statement" : "ccats1swrdeq $p |- ( ( W e. Word V /\\ U e. Word V /\\ ( # ` U ) = ( ( # ` W ) + 1 ) ) -> ( W = ( U substr <. 0 , ( # ` W ) >. ) -> U = ( W concat <\" ( lastS ` U ) \"> ) ) ) $."
+  "statement" : "ccats1swrdeq $p |- ( ( W e. Word V /\\ U e. Word V /\\ ( # ` U ) = ( ( # ` W ) + 1 ) ) -> ( W = ( U substr <. 0 , ( # ` W ) >. ) -> U = ( W ++ <\" ( lastS ` U ) \"> ) ) ) $."
 }

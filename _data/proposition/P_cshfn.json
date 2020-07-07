@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cW", "#T_wcel", "#T_cab--1", "#T_vf", "#T_cab--2", "#T_wrex--1", "#T_vl", "#T_wrex--2", "#T_cn0", "#T_vf", "#T_wfn", "#T_cc0", "#T_cfzo", "#T_vl", "#T_cab--3", "#T_wa", "#T_cN", "#T_wcel", "#T_cz", "#T_wi", "#T_cW", "#T_ccsh", "#T_cN", "#T_wceq", "#T_cif--1", "#T_cW", "#T_wceq", "#T_c0", "#T_cif--2", "#T_c0", "#T_cif--3", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cN", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--2", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3", "#T_cconcat", "#T_cW", "#T_csubstr", "#T_cop--1", "#T_cc0", "#T_cop--2", "#T_cN", "#T_cmo", "#T_chash", "#T_cfv", "#T_cW", "#T_cop--3", "#T_vf", "#T_vl" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Perform a cyclical shift for a function over a half-open range of nonnegative integers.  (Contributed by AV, 20-May-2018.)  (Revised by AV, 17-Nov-2018.) ",
-  "statement" : "cshfn $p |- ( ( W e. { f | E. l e. NN0 f Fn ( 0 ..^ l ) } /\\ N e. ZZ ) -> ( W cyclShift N ) = if ( W = (/) , (/) , ( ( W substr <. ( N mod ( # ` W ) ) , ( # ` W ) >. ) concat ( W substr <. 0 , ( N mod ( # ` W ) ) >. ) ) ) ) $.\n$d f l $."
+  "statement" : "cshfn $p |- ( ( W e. { f | E. l e. NN0 f Fn ( 0 ..^ l ) } /\\ N e. ZZ ) -> ( W cyclShift N ) = if ( W = (/) , (/) , ( ( W substr <. ( N mod ( # ` W ) ) , ( # ` W ) >. ) ++ ( W substr <. 0 , ( N mod ( # ` W ) ) >. ) ) ) ) $.\n$d f l $."
 }

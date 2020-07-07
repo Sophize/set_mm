@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See recms on Metamath](http://us.metamath.org/mpegif/recms.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_recld2 | |- RR e. ( Clsd ` ( TopOpen ` CCfld ) ) |\n| 3 |  | #P_cncms | |- CCfld e. CMetSp |\n| 4 |  | #P_ax-resscn | |- RR C_ CC |\n| 5 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 6 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 7 | 5, 6, 1 | #P_cmsss | |- ( ( CCfld e. CMetSp /\\ RR C_ CC ) -> ( RRfld e. CMetSp <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) ) |\n| 8 | 3, 4, 7 | #P_mp2an | |- ( RRfld e. CMetSp <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) |\n| 9 | 2, 8 | #P_mpbir | |- RRfld e. CMetSp |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eqid | |- ( TopOpen ` CCfld ) = ( TopOpen ` CCfld ) |\n| 2 | 1 | #P_recld2 | |- RR e. ( Clsd ` ( TopOpen ` CCfld ) ) |\n| 3 |  | #P_cncms | |- CCfld e. CMetSp |\n| 4 |  | #P_axresscn | |- RR C_ CC |\n| 5 |  | #P_df-refld | |- RRfld = ( CCfld |`s RR ) |\n| 6 |  | #P_cnfldbas | |- CC = ( Base ` CCfld ) |\n| 7 | 5, 6, 1 | #P_cmsss | |- ( ( CCfld e. CMetSp /\\ RR C_ CC ) -> ( RRfld e. CMetSp <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) ) |\n| 8 | 3, 4, 7 | #P_mp2an | |- ( RRfld e. CMetSp <-> RR e. ( Clsd ` ( TopOpen ` CCfld ) ) ) |\n| 9 | 2, 8 | #P_mpbir | |- RRfld e. CMetSp |",
   "conclusion" : "#P_recms",
   "language" : "METAMATH_SET_MM",
   "lookupTerms" : [ "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_wceq", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ccms", "#T_cr", "#T_wss", "#T_cc", "#T_crefld", "#T_wceq", "#T_ccnfld", "#T_cress", "#T_cr", "#T_cc", "#T_wceq", "#T_cbs", "#T_cfv", "#T_ccnfld", "#T_ccnfld", "#T_wcel", "#T_ccms", "#T_wa", "#T_cr", "#T_wss", "#T_cc", "#T_wi", "#T_crefld", "#T_wcel", "#T_ccms", "#T_wb", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crefld", "#T_wcel", "#T_ccms", "#T_wb", "#T_cr", "#T_wcel", "#T_ccld", "#T_cfv", "#T_ctopn", "#T_cfv", "#T_ccnfld", "#T_crefld", "#T_wcel", "#T_ccms" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_eqid", "#P_ax-resscn", "#P_mp2an", "#P_cncms", "#P_recld2", "#P_cmsss", "#P_mpbir", "#P_df-refld", "#P_cnfldbas" ]
+  "premises" : [ "#P_eqid", "#P_mp2an", "#P_cncms", "#P_recld2", "#P_cmsss", "#P_mpbir", "#P_df-refld", "#P_cnfldbas", "#P_axresscn" ]
 }

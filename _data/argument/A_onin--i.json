@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See onin on Metamath](http://us.metamath.org/mpegif/onin.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_eloni | |- ( A e. On -> Ord A ) |\n| 2 |  | #P_eloni | |- ( B e. On -> Ord B ) |\n| 3 |  | #P_ordin | |- ( ( Ord A /\\ Ord B ) -> Ord ( A i^i B ) ) |\n| 4 | 1, 2, 3 | #P_syl2an | |- ( ( A e. On /\\ B e. On ) -> Ord ( A i^i B ) ) |\n| 5 |  | #P_ax-ia1 | |- ( ( A e. On /\\ B e. On ) -> A e. On ) |\n| 6 |  | #P_inex1g | |- ( A e. On -> ( A i^i B ) e. _V ) |\n| 7 |  | #P_elong | |- ( ( A i^i B ) e. _V -> ( ( A i^i B ) e. On <-> Ord ( A i^i B ) ) ) |\n| 8 | 5, 6, 7 | #P_3syl | |- ( ( A e. On /\\ B e. On ) -> ( ( A i^i B ) e. On <-> Ord ( A i^i B ) ) ) |\n| 9 | 4, 8 | #P_mpbird | |- ( ( A e. On /\\ B e. On ) -> ( A i^i B ) e. On ) |",
+  "conclusion" : "#P_onin",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cB.wceq", "#T_word", "#T_cA.wceq", "#T_wa", "#T_word", "#T_cB.wceq", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_word", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_cvv", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA.wceq", "#T_wcel", "#T_con0", "#T_wa", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wi", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_wcel", "#T_con0", "#T_wb", "#T_word", "#T_cA.wceq", "#T_cin", "#T_cB.wceq", "#T_cA", "#T_wcel", "#T_con0", "#T_wa", "#T_cB", "#T_wcel", "#T_con0", "#T_wi", "#T_cA", "#T_cin", "#T_cB", "#T_wcel", "#T_con0" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_inex1g", "#P_3syl", "#P_ax-ia1", "#P_elong", "#P_syl2an", "#P_eloni", "#P_ordin", "#P_mpbird" ]
+}

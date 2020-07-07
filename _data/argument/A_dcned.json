@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See dcned on Metamath](http://us.metamath.org/mpegif/dcned.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | dcned.eq | |- ( ph -> DECID A = B ) |\n| 2 |  | #P_dcn | |- ( DECID A = B -> DECID -. A = B ) |\n| 3 | 1, 2 | #P_syl | |- ( ph -> DECID -. A = B ) |\n| 4 |  | #P_df-ne | |- ( A =/= B <-> -. A = B ) |\n| 5 | 4 | #P_dcbii | |- ( DECID A =/= B <-> DECID -. A = B ) |\n| 6 | 3, 5 | #P_sylibr | |- ( ph -> DECID A =/= B ) |",
+  "conclusion" : "#P_dcned",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wceq", "#T_cB", "#T_wdc", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wi", "#T_wdc", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wdc", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wdc", "#T_cA.wceq", "#T_wne", "#T_cB.wceq", "#T_wb", "#T_wdc", "#T_wn", "#T_cA.wceq", "#T_wceq", "#T_cB.wceq", "#T_wph", "#T_wi", "#T_wdc", "#T_cA", "#T_wne", "#T_cB" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_dcn", "#P_dcbii", "#P_sylibr", "#P_df-ne", "#P_syl" ]
+}

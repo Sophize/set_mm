@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See trclidm on Metamath](http://us.metamath.org/mpegif/trclidm.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_fvex | |- ( t+ ` R ) e. _V |\n| 2 | 1 | #P_a1i | |- ( R e. V -> ( t+ ` R ) e. _V ) |\n| 3 |  | #P_trclfvcotr | |- ( R e. V -> ( ( t+ ` R ) o. ( t+ ` R ) ) C_ ( t+ ` R ) ) |\n| 4 | 2, 3 | #P_jca | |- ( R e. V -> ( ( t+ ` R ) e. _V /\\ ( ( t+ ` R ) o. ( t+ ` R ) ) C_ ( t+ ` R ) ) ) |\n| 5 |  | #P_cotrtrclfv | |- ( ( ( t+ ` R ) e. _V /\\ ( ( t+ ` R ) o. ( t+ ` R ) ) C_ ( t+ ` R ) ) -> ( t+ ` ( t+ ` R ) ) = ( t+ ` R ) ) |\n| 6 | 4, 5 | #P_syl | |- ( R e. V -> ( t+ ` ( t+ ` R ) ) = ( t+ ` R ) ) |",
+  "conclusion" : "#P_trclidm",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_ctcl", "#T_cfv", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wcel", "#T_cvv", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_ctcl", "#T_cfv", "#T_cR", "#T_ccom", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wss", "#T_ctcl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_ctcl", "#T_cfv", "#T_cR", "#T_ccom", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wss", "#T_ctcl", "#T_cfv", "#T_cR", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wcel", "#T_cvv", "#T_wa", "#T_ctcl", "#T_cfv", "#T_cR", "#T_ccom", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wss", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wi", "#T_ctcl", "#T_cfv", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wceq", "#T_ctcl", "#T_cfv", "#T_cR", "#T_cR", "#T_wcel", "#T_cV", "#T_wi", "#T_ctcl", "#T_cfv", "#T_ctcl", "#T_cfv", "#T_cR", "#T_wceq", "#T_ctcl", "#T_cfv", "#T_cR" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_cotrtrclfv", "#P_syl", "#P_a1i", "#P_jca", "#P_fvex", "#P_trclfvcotr" ]
+}

@@ -7,5 +7,5 @@
   "lookupTerms" : [ "#T_cS", "#T_wcel", "#T_cword", "#T_cB", "#T_w3a--1", "#T_cT", "#T_wcel", "#T_cword", "#T_cB", "#T_w3a--2", "#T_cI", "#T_wcel", "#T_chash", "#T_cfv", "#T_cS", "#T_cfzo", "#T_chash", "#T_cfv", "#T_cS", "#T_caddc", "#T_chash", "#T_cfv", "#T_cT", "#T_wi", "#T_cS", "#T_cconcat", "#T_cT", "#T_cfv", "#T_cI", "#T_wceq", "#T_cT", "#T_cfv", "#T_cI", "#T_cmin", "#T_chash", "#T_cfv", "#T_cS" ],
   "metaLanguage" : "METAMATH",
   "remarks" : " Value of a symbol in the right half of a concatenated word. (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 22-Sep-2015.) ",
-  "statement" : "ccatval2 $p |- ( ( S e. Word B /\\ T e. Word B /\\ I e. ( ( # ` S ) ..^ ( ( # ` S ) + ( # ` T ) ) ) ) -> ( ( S concat T ) ` I ) = ( T ` ( I - ( # ` S ) ) ) ) $."
+  "statement" : "ccatval2 $p |- ( ( S e. Word B /\\ T e. Word B /\\ I e. ( ( # ` S ) ..^ ( ( # ` S ) + ( # ` T ) ) ) ) -> ( ( S ++ T ) ` I ) = ( T ` ( I - ( # ` S ) ) ) ) $."
 }

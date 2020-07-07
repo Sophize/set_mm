@@ -1,0 +1,11 @@
+{
+  "citations" : [ {
+    "textCitation" : "[See ifpid on Metamath](http://us.metamath.org/mpegif/ifpid.html)"
+  } ],
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_ifptru | |- ( ph -> ( if- ( ph , ps , ps ) <-> ps ) ) |\n| 2 |  | #P_ifpfal | |- ( -. ph -> ( if- ( ph , ps , ps ) <-> ps ) ) |\n| 3 | 1, 2 | #P_pm2.61i | |- ( if- ( ph , ps , ps ) <-> ps ) |",
+  "conclusion" : "#P_ifpid",
+  "language" : "METAMATH_SET_MM",
+  "lookupTerms" : [ "#T_wph", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wps", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wi", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wps", "#T_wb", "#T_wps", "#T_wif--1", "#T_wph", "#T_wif--2", "#T_wps", "#T_wif--3", "#T_wps", "#T_wb", "#T_wps" ],
+  "metaLanguage" : "METAMATH",
+  "premises" : [ "#P_ifpfal", "#P_ifptru", "#P_pm2.61i" ]
+}

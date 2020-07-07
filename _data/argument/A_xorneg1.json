@@ -2,10 +2,10 @@
   "citations" : [ {
     "textCitation" : "[See xorneg1 on Metamath](http://us.metamath.org/mpegif/xorneg1.html)"
   } ],
-  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_df-xor | |- ( ( -. ph \\/_ ps ) <-> -. ( -. ph <-> ps ) ) |\n| 2 |  | #P_nbbn | |- ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) |\n| 3 | 2 | #P_con2bii | |- ( ( ph <-> ps ) <-> -. ( -. ph <-> ps ) ) |\n| 4 |  | #P_xnor | |- ( ( ph <-> ps ) <-> -. ( ph \\/_ ps ) ) |\n| 5 | 1, 3, 4 | #P_3bitr2i | |- ( ( -. ph \\/_ ps ) <-> -. ( ph \\/_ ps ) ) |",
+  "argumentText" : "ARGUMENT\n\n| Step | Hyp | Ref | Expression |\n|---|---|---|---|\n\n| 1 |  | #P_xorcom | |- ( ( -. ph \\/_ ps ) <-> ( ps \\/_ -. ph ) ) |\n| 2 |  | #P_xorneg2 | |- ( ( ps \\/_ -. ph ) <-> -. ( ps \\/_ ph ) ) |\n| 3 |  | #P_xorcom | |- ( ( ps \\/_ ph ) <-> ( ph \\/_ ps ) ) |\n| 4 | 2, 3 | #P_xchbinx | |- ( ( ps \\/_ -. ph ) <-> -. ( ph \\/_ ps ) ) |\n| 5 | 1, 4 | #P_bitri | |- ( ( -. ph \\/_ ps ) <-> -. ( ph \\/_ ps ) ) |",
   "conclusion" : "#P_xorneg1",
   "language" : "METAMATH_SET_MM",
-  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wn", "#T_wph", "#T_wb", "#T_wps", "#T_wph", "#T_wb", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps" ],
+  "lookupTerms" : [ "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wps", "#T_wxo", "#T_wn", "#T_wph", "#T_wps", "#T_wxo", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wps", "#T_wxo", "#T_wph", "#T_wps", "#T_wxo", "#T_wph", "#T_wb", "#T_wph", "#T_wxo", "#T_wps", "#T_wps", "#T_wxo", "#T_wn", "#T_wph", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wn", "#T_wph", "#T_wxo", "#T_wps", "#T_wb", "#T_wn", "#T_wph", "#T_wxo", "#T_wps" ],
   "metaLanguage" : "METAMATH",
-  "premises" : [ "#P_df-xor", "#P_con2bii", "#P_xnor", "#P_nbbn", "#P_3bitr2i" ]
+  "premises" : [ "#P_xorneg2", "#P_xorcom", "#P_xchbinx", "#P_bitri" ]
 }
